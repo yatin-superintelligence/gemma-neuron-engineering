@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-10-29T18:36:00Z",
+  "checkpoint": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+  "revision": "0ae102ac289cc3f17500a607ad817849778b8ba7",
+  "official_parent": "google/gemma-4-E2B-it",
+  "instruction_tuned": true,
+  "official_parameters": "2.3 billion effective; 5.1 billion including per-layer embeddings",
+  "decoder_layers": 35,
+  "measured_MLP_channels": 337920,
+  "channel_scope": "Text decoder gated-MLP intermediate channels only; not a count of every type of neuron in the model",
+  "full_precision": false,
+  "actual_experiment_precision": "Mixed NF4 4-bit weight storage/BF16 quantized-linear compute, BF16 unquantized large matrices, FP32 normalization vectors; past trained LoRA factors FP32. New pilot edits/branches will have explicit dtype records.",
+  "advertised_capabilities": "Text output; text/image/audio inputs, video-frame understanding; coding, reasoning/thinking modes, native function calling and system prompts, multilingual use. E2B advertised context 128K.",
+  "measured_scope": "Our prior experiments use text only, short fixed prompts, greedy generation and thinking disabled. No independent validation of full advertised context, modalities, tool use or official benchmark numbers.",
+  "sources": [
+    "https://huggingface.co/google/gemma-4-E2B-it",
+    "https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "https://ai.google.dev/gemma/docs/core/model_card_4"
+  ],
+  "inference": "Affordable, hook-accessible model for a bounded quantized-E2B mechanistic study. Quantization is a scientific scope limitation; it cannot be assumed that an observed effect transfers to unquantized weights."
+}

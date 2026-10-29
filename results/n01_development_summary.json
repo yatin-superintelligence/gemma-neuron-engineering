@@ -1,0 +1,3349 @@
+{
+  "scope": "Complete development-only descriptive table;no winning edit selected,no inferential capability claim",
+  "all_condition_family_rows": [
+    {
+      "condition": "added8_zero",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.84375,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "added8_zero",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.555419921875,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "added8_zero",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 6.01446533203125,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "added8_zero",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.1396484375,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "base",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.84375,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "base",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.555419921875,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "base",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 6.01446533203125,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "base",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.1396484375,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3101_counterfactual_patch",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.8759765625,
+      "mean_margin_change": 0.0322265625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3101_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.724609375,
+      "mean_margin_change": -0.119140625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3101_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.4990234375,
+      "mean_margin_change": -0.056396484375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3101_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 5.97021484375,
+      "mean_margin_change": -0.04425048828125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3101_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.234375,
+      "mean_margin_change": 0.0947265625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3101_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.8359375,
+      "mean_margin_change": -0.0078125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3101_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.519287109375,
+      "mean_margin_change": -0.0361328125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3101_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 5.9521484375,
+      "mean_margin_change": -0.06231689453125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3101_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.205078125,
+      "mean_margin_change": 0.0654296875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3102_counterfactual_patch",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.8173828125,
+      "mean_margin_change": -0.0263671875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3102_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.7392578125,
+      "mean_margin_change": -0.1044921875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3102_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.49658203125,
+      "mean_margin_change": -0.058837890625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3102_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 6.0194091796875,
+      "mean_margin_change": 0.00494384765625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3102_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.0810546875,
+      "mean_margin_change": -0.05859375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3102_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.7822265625,
+      "mean_margin_change": -0.0615234375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3102_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.46630859375,
+      "mean_margin_change": -0.089111328125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3102_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 5.94970703125,
+      "mean_margin_change": -0.06475830078125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "boundary_random3102_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.294921875,
+      "mean_margin_change": 0.1552734375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "boundary_top1_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 10.4443359375,
+      "mean_margin_change": -3.3994140625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_top1_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 5.513916015625,
+      "mean_margin_change": -1.04150390625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "boundary_top1_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 4.296577453613281,
+      "mean_margin_change": -1.7178878784179688,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "boundary_top1_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 10.53857421875,
+      "mean_margin_change": -2.60107421875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "boundary_top1_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 18.9853515625,
+      "mean_margin_change": 5.1416015625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_top1_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 7.962158203125,
+      "mean_margin_change": 1.40673828125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "boundary_top1_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 8.62841796875,
+      "mean_margin_change": 2.61395263671875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "boundary_top1_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 17.09375,
+      "mean_margin_change": 3.9541015625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_counterfactual_patch",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 10.978561401367188,
+      "mean_margin_change": -2.8651885986328125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 8.0732421875,
+      "mean_margin_change": -5.7705078125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 4.0859375,
+      "mean_margin_change": -2.469482421875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 3.2451171875,
+      "mean_margin_change": -2.76934814453125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 8.5537109375,
+      "mean_margin_change": -4.5859375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain0.5",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 9.847412109375,
+      "mean_margin_change": -3.996337890625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain0.5",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 4.9208984375,
+      "mean_margin_change": -1.634521484375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain0.5",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 4.1123046875,
+      "mean_margin_change": -1.90216064453125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain0.5",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 10.11279296875,
+      "mean_margin_change": -3.02685546875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain1.5",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 21.82501220703125,
+      "mean_margin_change": 7.98126220703125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain1.5",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 10.13916015625,
+      "mean_margin_change": 3.583740234375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain1.5",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 8.65185546875,
+      "mean_margin_change": 2.63739013671875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain1.5",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 19.47265625,
+      "mean_margin_change": 6.3330078125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 18.296875,
+      "mean_margin_change": 4.453125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 13.94140625,
+      "mean_margin_change": 7.385986328125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 2.4189453125,
+      "mean_margin_change": -3.59552001953125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "boundary_top8_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 19.5078125,
+      "mean_margin_change": 6.3681640625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3101_counterfactual_patch",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.49755859375,
+      "mean_margin_change": -0.057861328125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3101_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.7373046875,
+      "mean_margin_change": -0.1064453125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3101_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.482666015625,
+      "mean_margin_change": -0.07275390625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3101_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 5.994392395019531,
+      "mean_margin_change": -0.02007293701171875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3101_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.134765625,
+      "mean_margin_change": -0.0048828125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3101_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.8828125,
+      "mean_margin_change": 0.0390625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3101_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.5234375,
+      "mean_margin_change": -0.031982421875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3101_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 6.01080322265625,
+      "mean_margin_change": -0.003662109375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3101_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.2724609375,
+      "mean_margin_change": 0.1328125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3102_counterfactual_patch",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.517333984375,
+      "mean_margin_change": -0.0380859375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3102_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.953125,
+      "mean_margin_change": 0.109375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3102_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.477783203125,
+      "mean_margin_change": -0.07763671875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3102_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 6.0977783203125,
+      "mean_margin_change": 0.08331298828125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3102_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.36328125,
+      "mean_margin_change": 0.2236328125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3102_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.7099609375,
+      "mean_margin_change": -0.1337890625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3102_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.3896484375,
+      "mean_margin_change": -0.165771484375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3102_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 5.934906005859375,
+      "mean_margin_change": -0.079559326171875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "dedup_random3102_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 12.9892578125,
+      "mean_margin_change": -0.150390625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "dedup_top1_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 10.4443359375,
+      "mean_margin_change": -3.3994140625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "dedup_top1_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 5.513916015625,
+      "mean_margin_change": -1.04150390625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_top1_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 4.296577453613281,
+      "mean_margin_change": -1.7178878784179688,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "dedup_top1_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 10.53857421875,
+      "mean_margin_change": -2.60107421875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "dedup_top1_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 18.9853515625,
+      "mean_margin_change": 5.1416015625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "dedup_top1_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 7.962158203125,
+      "mean_margin_change": 1.40673828125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_top1_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 8.62841796875,
+      "mean_margin_change": 2.61395263671875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "dedup_top1_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 17.09375,
+      "mean_margin_change": 3.9541015625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_counterfactual_patch",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 3.45428466796875,
+      "mean_margin_change": -3.10113525390625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 7.32568359375,
+      "mean_margin_change": -6.51806640625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 3.8857421875,
+      "mean_margin_change": -2.669677734375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 2.8583984375,
+      "mean_margin_change": -3.15606689453125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 8.3935546875,
+      "mean_margin_change": -4.74609375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain0.5",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 9.5765380859375,
+      "mean_margin_change": -4.2672119140625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain0.5",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 4.874267578125,
+      "mean_margin_change": -1.68115234375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain0.5",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 3.841796875,
+      "mean_margin_change": -2.17266845703125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain0.5",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 10.04736328125,
+      "mean_margin_change": -3.09228515625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain1.5",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 22.22039794921875,
+      "mean_margin_change": 8.37664794921875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain1.5",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 9.963134765625,
+      "mean_margin_change": 3.40771484375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain1.5",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 8.6171875,
+      "mean_margin_change": 2.60272216796875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain1.5",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 18.314453125,
+      "mean_margin_change": 5.1748046875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 22.951171875,
+      "mean_margin_change": 9.107421875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 16.132568359375,
+      "mean_margin_change": 9.5771484375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 2.24749755859375,
+      "mean_margin_change": -3.7669677734375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "dedup_top8_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 22.81640625,
+      "mean_margin_change": 9.6767578125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "division_random3101_counterfactual_patch",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 5.8546142578125,
+      "mean_margin_change": -0.15985107421875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "division_random3101_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.7060546875,
+      "mean_margin_change": -0.1376953125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "division_random3101_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.49169921875,
+      "mean_margin_change": -0.063720703125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "division_random3101_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 5.92724609375,
+      "mean_margin_change": -0.08721923828125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "division_random3101_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.0322265625,
+      "mean_margin_change": -0.107421875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "division_random3101_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.875,
+      "mean_margin_change": 0.03125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "division_random3101_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.597412109375,
+      "mean_margin_change": 0.0419921875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "division_random3101_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 6.024169921875,
+      "mean_margin_change": 0.00970458984375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "division_random3101_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.3779296875,
+      "mean_margin_change": 0.23828125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "division_random3102_counterfactual_patch",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 5.9427490234375,
+      "mean_margin_change": -0.07171630859375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "division_random3102_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.93359375,
+      "mean_margin_change": 0.08984375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "division_random3102_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.4208984375,
+      "mean_margin_change": -0.134521484375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "division_random3102_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 5.9656982421875,
+      "mean_margin_change": -0.04876708984375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "division_random3102_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.244140625,
+      "mean_margin_change": 0.1044921875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "division_random3102_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.8125,
+      "mean_margin_change": -0.03125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "division_random3102_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.4716796875,
+      "mean_margin_change": -0.083740234375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "division_random3102_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 5.996978759765625,
+      "mean_margin_change": -0.017486572265625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "division_random3102_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.0615234375,
+      "mean_margin_change": -0.078125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "division_top1_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 12.402587890625,
+      "mean_margin_change": -1.441162109375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "division_top1_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 5.78082275390625,
+      "mean_margin_change": -0.77459716796875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "division_top1_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 5.41656494140625,
+      "mean_margin_change": -0.597900390625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "division_top1_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 11.3072509765625,
+      "mean_margin_change": -1.8323974609375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "division_top1_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 14.619140625,
+      "mean_margin_change": 0.775390625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "division_top1_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 7.004852294921875,
+      "mean_margin_change": 0.449432373046875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "division_top1_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 6.4013671875,
+      "mean_margin_change": 0.38690185546875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "division_top1_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.892578125,
+      "mean_margin_change": 0.7529296875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "division_top8_counterfactual_patch",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 6.37969970703125,
+      "mean_margin_change": 0.365234375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain0",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 8.8616943359375,
+      "mean_margin_change": -4.9820556640625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain0",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 4.55078125,
+      "mean_margin_change": -2.004638671875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain0",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 3.70703125,
+      "mean_margin_change": -2.30743408203125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain0",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 8.828125,
+      "mean_margin_change": -4.3115234375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain0.5",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 10.79833984375,
+      "mean_margin_change": -3.04541015625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain0.5",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 5.26904296875,
+      "mean_margin_change": -1.286376953125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain0.5",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 4.5244140625,
+      "mean_margin_change": -1.49005126953125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain0.5",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 10.675048828125,
+      "mean_margin_change": -2.464599609375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain1.5",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 17.318359375,
+      "mean_margin_change": 3.474609375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain1.5",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 7.999755859375,
+      "mean_margin_change": 1.4443359375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain1.5",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 8.1343994140625,
+      "mean_margin_change": 2.11993408203125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain1.5",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 15.75390625,
+      "mean_margin_change": 2.6142578125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain2",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 20.04400634765625,
+      "mean_margin_change": 6.20025634765625,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain2",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 9.6953125,
+      "mean_margin_change": 3.139892578125,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain2",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 11,
+      "base_correct": 10,
+      "gains": 1,
+      "losses": 0,
+      "top1_label_correct": 11,
+      "mean_margin": 9.13671875,
+      "mean_margin_change": 3.12225341796875,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "condition": "division_top8_gain2",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 18.1142578125,
+      "mean_margin_change": 4.974609375,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "identity_gain1",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.84375,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "identity_gain1",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.555419921875,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "identity_gain1",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 6.01446533203125,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "identity_gain1",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.1396484375,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "condition": "new_MLP64_zero",
+      "family": "boundary",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.84375,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 5
+        },
+        "B": {
+          "n": 8,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "condition": "new_MLP64_zero",
+      "family": "dedup",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 12,
+      "base_correct": 12,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 12,
+      "mean_margin": 6.555419921875,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "condition": "new_MLP64_zero",
+      "family": "division",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 10,
+      "base_correct": 10,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 10,
+      "mean_margin": 6.01446533203125,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 4
+        },
+        "B": {
+          "n": 8,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "condition": "new_MLP64_zero",
+      "family": "json_control",
+      "prompts": 16,
+      "independent_instances": 4,
+      "correct": 13,
+      "base_correct": 13,
+      "gains": 0,
+      "losses": 0,
+      "top1_label_correct": 13,
+      "mean_margin": 13.1396484375,
+      "mean_margin_change": 0.0,
+      "strata": {
+        "A": {
+          "n": 8,
+          "correct": 8
+        },
+        "B": {
+          "n": 8,
+          "correct": 5
+        }
+      }
+    }
+  ],
+  "base_family_scores": {
+    "boundary": 13,
+    "division": 10,
+    "dedup": 12,
+    "json_control": 13
+  },
+  "base_total": 48,
+  "base_unconstrained_top1_label_correct": 48,
+  "four_independent_instances_per_development_family": true
+}

@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-10-29T19:28:00Z",
+  "status": "human_requested_direction_not_yet_a_frozen_GPU_protocol",
+  "question": "Do homologous native text MLP channels preserve activity and causal coding effects between unquantized Gemma4 E2B and an NF4 derivative?",
+  "training_allowed": false,
+  "first_feasibility_target": "Unquantized BF16 text decoder with embeddings and output head;exclude vision/audio through a verified loading path. FP32 is distinct and may exceed16GBT4memory.",
+  "source_checkpoint_pin": null,
+  "source_pin_status": "Establish exact original revision and derivative lineage before a pure precision claim.",
+  "existing_quantized_anchor": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit@0ae102ac289cc3f17500a607ad817849778b8ba7",
+  "mapping_gate": [
+    "same source architecture and text keys",
+    "same channel ordering or verified map",
+    "weight/quantization relationship,not shapes alone",
+    "no silent merges/pruning/adaptation",
+    "wrapper/cache/tokenization identity"
+  ],
+  "fallback": "Derive explicitly labelled NF4 from the same pinned float source;preserve Unsloth as separate anchor.",
+  "comparison": "Same tasks/coordinates/strengths,within-model baselines,paired difference of intervention effects,balanced selection,random/noop/retention controls.",
+  "GPU_jobs_launched": 0,
+  "sources": [
+    "https://huggingface.co/docs/transformers/v5.8.0/en/model_doc/gemma4",
+    "https://ai.google.dev/gemma/docs/core"
+  ],
+  "goal_unchanged": "Interpret neurons and improve coding via tweaks only;engineering first;all private."
+}

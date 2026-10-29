@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env*
+*.ipynb
+*.safetensors
+*.bin
+*.pt
+*.npz
+outputs/
+datasets/
+credentials/

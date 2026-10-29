@@ -1,0 +1,108 @@
+{
+  "generated_utc": "2026-10-29T19:57:00.565504+00:00",
+  "project": "Gemma Neuron Engineering: Interpretability and Control",
+  "edition": "Reviewed public projection; raw assets/private history excluded",
+  "training_allowed": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "abfafc9ea903e4e5bdba93f4f5e5d2a91cc9bf5a52c489d6a20559cbbad8f966",
+      "bytes": 107
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "8fb2f759c70fd8b1b547a8110bfed71603ca80bd59ce4554b738051a6450bdd8",
+      "bytes": 140
+    },
+    {
+      "path": "README.md",
+      "sha256": "954b97498b84d3d93917789e5dc45cfaa6a09be0eb9aa753e74d07f026ae7b73",
+      "bytes": 4118
+    },
+    {
+      "path": "docs/GOAL_AND_INTENT.html",
+      "sha256": "dfba89493646ef93b268095bbae593ca0c9cad7ab58980b33f5de6e9e1777c80",
+      "bytes": 103445
+    },
+    {
+      "path": "docs/RESEARCH_LOG.html",
+      "sha256": "9291db2d1882d7abb11e193e4a44d91628e65819310ffd78c1c65d5a1f69b8c5",
+      "bytes": 23204
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "2ed8a4c57503926fdc802191b03a8742e8905225fc4781eac5dafc2c91fa54d7",
+      "bytes": 12424
+    },
+    {
+      "path": "docs/model_identity.json",
+      "sha256": "7ea7f62e7e6a44bdb2daaead21cd8ad169b3443db6d0ffca317190f2dd225ac9",
+      "bytes": 1663
+    },
+    {
+      "path": "docs/precision_pair_intent.json",
+      "sha256": "9b6b1e77082879effcb835df0c30680f84973f28ba8e3be8aa45be138389869a",
+      "bytes": 1572
+    },
+    {
+      "path": "docs/research_questions.json",
+      "sha256": "255b88c0b0e5df9e12b6b44fc91ae7bd95cc3aee854f2bde25637b866b957137",
+      "bytes": 10910
+    },
+    {
+      "path": "interpretability/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "interpretability/expansion.py",
+      "sha256": "117d233e829d784750867f8b1d6c1218c550a9b8888491da977d4afc609c0168",
+      "bytes": 2853
+    },
+    {
+      "path": "interpretability/gated_mlp_surgery.py",
+      "sha256": "0d32d462c9ccbe13c77f3f432e2fdd8ff7f4fd943540f9efbdb02db29cbd9ecd",
+      "bytes": 7365
+    },
+    {
+      "path": "interpretability/probe.py",
+      "sha256": "cc29483c000cdbe0165d8d00a3cc9421c51d17088328d9d0d2996caef5e066f9",
+      "bytes": 5299
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "e426b08a9eae315fc42478d77a8b4ce9aa044a11045a1f8aec8b554a306bf9ae",
+      "bytes": 422
+    },
+    {
+      "path": "results/n01_development_summary.json",
+      "sha256": "7359121a0fd4553c1e90082a8021b4ba2dccf1d0988f729c05be62ead7655f84",
+      "bytes": 71956
+    },
+    {
+      "path": "results/n01_engineering_summary.json",
+      "sha256": "7612db1b28fca75cb2c6f4c4080a15310dd98a4c4892e4983027a73656841b3c",
+      "bytes": 2456
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "tests/test_expansion.py",
+      "sha256": "54d30cbb847cc609fe5264b4e73f2c537f222351787967e2c7f086df1ad5fb7a",
+      "bytes": 2819
+    },
+    {
+      "path": "tests/test_gated_mlp_surgery.py",
+      "sha256": "052557191d60b29134055d9ad03aeeab5eeea916ad8f86e51fe5621d331750da",
+      "bytes": 4816
+    }
+  ]
+}
