@@ -26,6 +26,7 @@ There are no optimizer updates, fine-tuning, fitted steering vectors or training
 | --- | --- | --- |
 | N01: localization, steering and additions | 43 conditions and 2,320 binary code-patch decisions. An 8-neuron parallel branch and a 64-neuron residual MLP addition with zero outgoing weights each preserved all 64 baseline logit hashes. | Silent additions establish compatibility. Selected counterfactual groups caused no choice flips on 48 recipient prompts. Activity matching was weak, so specificity is unresolved. |
 | N02: physical edits and matched precision | 460 measurements on text-only, unquantized BF16 and same-source NF4 models. Physical deletion matched activity zeroing; doubling an outgoing vector matched gain-2 steering; adding a zero-output neuron preserved its dense baseline. | One channel in layer 34, on 16 reused development prompts. BF16 split cloning changed logits by up to 0.125 within the fixed tolerance. No coding or speed improvement was tested. |
+| N03H: token-specific causal paths | Eight small random-weight Gemma configurations and 96 interventions. Predicted past-token zero paths had exactly unchanged later logits and zero measurement gradients. | An implementation fixture, not a pretrained E2B result or a semantic neuron role. |
 
 The N02 representations share the pinned floating-point parent. The NF4 intervention first dequantizes the selected MLP and uses its unchanged dense form as the comparison baseline. BF16 is unquantized, but is not FP32. Full transformer-layer insertion remains unvalidated.
 
@@ -41,6 +42,7 @@ models/n02/         BF16 and same-source NF4 physical-edit bundles
 tests/              Small independent fixtures, no pretrained download
 docs/               Goal & Intent and sequential Research Logbook
 results/            Reviewed experiment aggregates and run history
+research/experiments/n03/  Shared-KV causal-path fixture and frozen protocol
 ```
 
 The saved models are represented by immutable base revisions, compact exact tensors and deterministic edit recipes. This reconstructs the modified models without copying the full base into Git history. Each bundle records source identity, hashes, precision, coordinates and zero optimizer steps. Changed MLP widths require the supplied loader; an unchanged Transformers configuration cannot encode them on its own.
@@ -53,7 +55,7 @@ python -m unittest discover -s tests -v
 python -m reproduce.model_edits --bundle models/n02/bf16_text
 ```
 
-These commands inspect small fixtures and bundle files. They do not download a pretrained model. To reconstruct or verify an actual model on a compatible GPU, follow the explicit commands in [models/README.md](models/README.md). The public loader has local fixture checks; independent full-checkpoint package replay is tracked separately from the original experiment's replay checks.
+These commands inspect small fixtures and bundle files. They do not download a pretrained model. To reconstruct or verify an actual model on a compatible GPU, follow the explicit commands in [models/README.md](models/README.md). The public N02 loader also passed an independent T4 package replay: all 24 original output hashes matched, covering six edits in each representation on two existing development prompts. See the [R01 verification](results/r01_reconstruction.json). N01 loader replay is a separate pending check.
 
 ## Publication scope
 

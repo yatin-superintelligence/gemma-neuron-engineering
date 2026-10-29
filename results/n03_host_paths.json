@@ -1,0 +1,908 @@
+{
+  "experiment": "N03H",
+  "utc": "2026-10-29T21:43:52.143873+00:00",
+  "protocol_sha256": "cf6682437cbe97356adf747a084bfdd6c420903edc50d665fb9215546fa46e20",
+  "runner_sha256": "fa32c7b2dbc9adc20af7c3d9921a4a15573e12c8d97962240597adb8ac81629f",
+  "model_source_sha256": "64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933",
+  "torch": "2.11.0",
+  "transformers": "5.8.0",
+  "cases": 8,
+  "interventions": 96,
+  "model_forward_calls": 120,
+  "optimizer_steps": 0,
+  "seconds": 0.49972579200402834,
+  "all_expected_zero_paths_exact": true,
+  "all_other_fixture_interventions_changed_logits": true,
+  "full_checkpoint_tested": false,
+  "interpretation": "Random-weight actual-implementation fixture only. Shared-KV path constraints require actual-checkpoint verification before using them to interpret E2B neurons.",
+  "configuration_results": [
+    {
+      "seed": 196,
+      "PLE_width": 0,
+      "shared_KV_count": 0,
+      "last_new_KV_writer": 5,
+      "gradients": {
+        "0": {
+          "past_L2": 11.258771199871813,
+          "current_L2": 18.052831490379003
+        },
+        "1": {
+          "past_L2": 6.909264468742196,
+          "current_L2": 5.391046434874057
+        },
+        "2": {
+          "past_L2": 6.071681321549477,
+          "current_L2": 5.643014111038594
+        },
+        "3": {
+          "past_L2": 2.696485677393568,
+          "current_L2": 4.1621891473332004
+        },
+        "4": {
+          "past_L2": 1.2716909394842795,
+          "current_L2": 3.5471151706625537
+        },
+        "5": {
+          "past_L2": 0.0,
+          "current_L2": 4.368387943377979
+        }
+      },
+      "interventions": [
+        {
+          "layer": 0,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.08006952764818889
+        },
+        {
+          "layer": 0,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.10496767254935115
+        },
+        {
+          "layer": 1,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.058734089043796296
+        },
+        {
+          "layer": 1,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.12394023706721419
+        },
+        {
+          "layer": 2,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.05840759951108605
+        },
+        {
+          "layer": 2,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.02079228361070247
+        },
+        {
+          "layer": 3,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.015844515578470827
+        },
+        {
+          "layer": 3,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.017118073226760788
+        },
+        {
+          "layer": 4,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.007593981273045957
+        },
+        {
+          "layer": 4,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.02366972043513016
+        },
+        {
+          "layer": 5,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 5,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.014591938474631617
+        }
+      ],
+      "restored_exact": true,
+      "optimizer_steps": 0,
+      "expected_zero_exact": true,
+      "expected_zero_gradients": true,
+      "all_other_interventions_changed_logits": true
+    },
+    {
+      "seed": 196,
+      "PLE_width": 0,
+      "shared_KV_count": 2,
+      "last_new_KV_writer": 3,
+      "gradients": {
+        "0": {
+          "past_L2": 8.11253230305862,
+          "current_L2": 11.936171326930037
+        },
+        "1": {
+          "past_L2": 4.0370495727766205,
+          "current_L2": 3.415861808718253
+        },
+        "2": {
+          "past_L2": 2.613471037748636,
+          "current_L2": 2.833887807113797
+        },
+        "3": {
+          "past_L2": 0.0,
+          "current_L2": 3.763037831159554
+        },
+        "4": {
+          "past_L2": 0.0,
+          "current_L2": 2.991248607683235
+        },
+        "5": {
+          "past_L2": 0.0,
+          "current_L2": 2.730452597957947
+        }
+      },
+      "interventions": [
+        {
+          "layer": 0,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.0445128770886509
+        },
+        {
+          "layer": 0,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.0405876246148089
+        },
+        {
+          "layer": 1,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.011090522288499723
+        },
+        {
+          "layer": 1,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.019669146402567367
+        },
+        {
+          "layer": 2,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.016344248346423382
+        },
+        {
+          "layer": 2,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.017356311776200645
+        },
+        {
+          "layer": 3,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 3,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.012668944086647066
+        },
+        {
+          "layer": 4,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 4,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.015487219529053381
+        },
+        {
+          "layer": 5,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 5,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.01785125786274494
+        }
+      ],
+      "restored_exact": true,
+      "optimizer_steps": 0,
+      "expected_zero_exact": true,
+      "expected_zero_gradients": true,
+      "all_other_interventions_changed_logits": true
+    },
+    {
+      "seed": 196,
+      "PLE_width": 4,
+      "shared_KV_count": 0,
+      "last_new_KV_writer": 5,
+      "gradients": {
+        "0": {
+          "past_L2": 2.198514408667064,
+          "current_L2": 2.8168413130666603
+        },
+        "1": {
+          "past_L2": 1.4222839765608568,
+          "current_L2": 3.6506338339997693
+        },
+        "2": {
+          "past_L2": 1.1462714333362993,
+          "current_L2": 3.1887303254216395
+        },
+        "3": {
+          "past_L2": 0.7195008971532788,
+          "current_L2": 3.795606319763101
+        },
+        "4": {
+          "past_L2": 0.32693675621371865,
+          "current_L2": 4.05414089203793
+        },
+        "5": {
+          "past_L2": 0.0,
+          "current_L2": 3.681831474070693
+        }
+      },
+      "interventions": [
+        {
+          "layer": 0,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.01638849357953881
+        },
+        {
+          "layer": 0,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.03328719726016492
+        },
+        {
+          "layer": 1,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.011664495849744279
+        },
+        {
+          "layer": 1,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.021647373171998885
+        },
+        {
+          "layer": 2,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.007390475724754347
+        },
+        {
+          "layer": 2,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.028474559103476543
+        },
+        {
+          "layer": 3,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.024012069672452924
+        },
+        {
+          "layer": 3,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.028596109440708853
+        },
+        {
+          "layer": 4,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.003158075965150907
+        },
+        {
+          "layer": 4,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.023421047235859624
+        },
+        {
+          "layer": 5,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 5,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.018417621630475
+        }
+      ],
+      "restored_exact": true,
+      "optimizer_steps": 0,
+      "expected_zero_exact": true,
+      "expected_zero_gradients": true,
+      "all_other_interventions_changed_logits": true
+    },
+    {
+      "seed": 196,
+      "PLE_width": 4,
+      "shared_KV_count": 2,
+      "last_new_KV_writer": 3,
+      "gradients": {
+        "0": {
+          "past_L2": 9.681032898452255,
+          "current_L2": 13.14085353826207
+        },
+        "1": {
+          "past_L2": 5.045265022366788,
+          "current_L2": 10.040821926491422
+        },
+        "2": {
+          "past_L2": 3.40504001199029,
+          "current_L2": 6.682981110839725
+        },
+        "3": {
+          "past_L2": 0.0,
+          "current_L2": 6.420317310564673
+        },
+        "4": {
+          "past_L2": 0.0,
+          "current_L2": 4.7130060667849625
+        },
+        "5": {
+          "past_L2": 0.0,
+          "current_L2": 4.560273459823467
+        }
+      },
+      "interventions": [
+        {
+          "layer": 0,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.050848425708020964
+        },
+        {
+          "layer": 0,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.09121532166920317
+        },
+        {
+          "layer": 1,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.023980021488492875
+        },
+        {
+          "layer": 1,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.014532804881471309
+        },
+        {
+          "layer": 2,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.02114226932736807
+        },
+        {
+          "layer": 2,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.0344375347375792
+        },
+        {
+          "layer": 3,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 3,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.011919395983178954
+        },
+        {
+          "layer": 4,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 4,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.023524408771654327
+        },
+        {
+          "layer": 5,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 5,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.03620870748497737
+        }
+      ],
+      "restored_exact": true,
+      "optimizer_steps": 0,
+      "expected_zero_exact": true,
+      "expected_zero_gradients": true,
+      "all_other_interventions_changed_logits": true
+    },
+    {
+      "seed": 197,
+      "PLE_width": 0,
+      "shared_KV_count": 0,
+      "last_new_KV_writer": 5,
+      "gradients": {
+        "0": {
+          "past_L2": 41.51440468658709,
+          "current_L2": 7.104985240036088
+        },
+        "1": {
+          "past_L2": 8.660241273120372,
+          "current_L2": 5.314318388436022
+        },
+        "2": {
+          "past_L2": 3.338519633252974,
+          "current_L2": 4.200899245542017
+        },
+        "3": {
+          "past_L2": 2.2153880002715662,
+          "current_L2": 2.8594577792751745
+        },
+        "4": {
+          "past_L2": 1.3447591091007385,
+          "current_L2": 2.8566039552906926
+        },
+        "5": {
+          "past_L2": 0.0,
+          "current_L2": 2.7423440502698493
+        }
+      },
+      "interventions": [
+        {
+          "layer": 0,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.0867861520733591
+        },
+        {
+          "layer": 0,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.01815975348651682
+        },
+        {
+          "layer": 1,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.02401293513028735
+        },
+        {
+          "layer": 1,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.018419238580366135
+        },
+        {
+          "layer": 2,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.05599498501134989
+        },
+        {
+          "layer": 2,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.044123491923996255
+        },
+        {
+          "layer": 3,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.024484941657292744
+        },
+        {
+          "layer": 3,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.02315824978134523
+        },
+        {
+          "layer": 4,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.008920056223626405
+        },
+        {
+          "layer": 4,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.009500738531604574
+        },
+        {
+          "layer": 5,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 5,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.02208919980784145
+        }
+      ],
+      "restored_exact": true,
+      "optimizer_steps": 0,
+      "expected_zero_exact": true,
+      "expected_zero_gradients": true,
+      "all_other_interventions_changed_logits": true
+    },
+    {
+      "seed": 197,
+      "PLE_width": 0,
+      "shared_KV_count": 2,
+      "last_new_KV_writer": 3,
+      "gradients": {
+        "0": {
+          "past_L2": 5.6489668247714455,
+          "current_L2": 5.8654266920226
+        },
+        "1": {
+          "past_L2": 4.4701761934250275,
+          "current_L2": 6.508240790397104
+        },
+        "2": {
+          "past_L2": 3.4370277146013137,
+          "current_L2": 4.804256704222011
+        },
+        "3": {
+          "past_L2": 0.0,
+          "current_L2": 4.841287093690098
+        },
+        "4": {
+          "past_L2": 0.0,
+          "current_L2": 4.2996904901611295
+        },
+        "5": {
+          "past_L2": 0.0,
+          "current_L2": 4.526432362332116
+        }
+      },
+      "interventions": [
+        {
+          "layer": 0,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.04820786393781265
+        },
+        {
+          "layer": 0,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.03925395613849427
+        },
+        {
+          "layer": 1,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.03832162010892036
+        },
+        {
+          "layer": 1,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.03756917622746836
+        },
+        {
+          "layer": 2,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.01734199652602228
+        },
+        {
+          "layer": 2,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.03928163762313229
+        },
+        {
+          "layer": 3,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 3,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.03725182489090015
+        },
+        {
+          "layer": 4,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 4,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.043237436536224444
+        },
+        {
+          "layer": 5,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 5,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.022181567613839243
+        }
+      ],
+      "restored_exact": true,
+      "optimizer_steps": 0,
+      "expected_zero_exact": true,
+      "expected_zero_gradients": true,
+      "all_other_interventions_changed_logits": true
+    },
+    {
+      "seed": 197,
+      "PLE_width": 4,
+      "shared_KV_count": 0,
+      "last_new_KV_writer": 5,
+      "gradients": {
+        "0": {
+          "past_L2": 54.85296632528174,
+          "current_L2": 11.12517542998709
+        },
+        "1": {
+          "past_L2": 9.684313417611753,
+          "current_L2": 5.86939958845152
+        },
+        "2": {
+          "past_L2": 4.88327165257353,
+          "current_L2": 5.230519352999911
+        },
+        "3": {
+          "past_L2": 2.3954909690249306,
+          "current_L2": 6.462981832994609
+        },
+        "4": {
+          "past_L2": 1.2363687027179675,
+          "current_L2": 4.6454363121036435
+        },
+        "5": {
+          "past_L2": 0.0,
+          "current_L2": 3.1135797260534934
+        }
+      },
+      "interventions": [
+        {
+          "layer": 0,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.07375792325624404
+        },
+        {
+          "layer": 0,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.022070183062311205
+        },
+        {
+          "layer": 1,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.053545339603172204
+        },
+        {
+          "layer": 1,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.02350890341592024
+        },
+        {
+          "layer": 2,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.03338488120510022
+        },
+        {
+          "layer": 2,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.01768415726629792
+        },
+        {
+          "layer": 3,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.02171899426233058
+        },
+        {
+          "layer": 3,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.009229241210484417
+        },
+        {
+          "layer": 4,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.010366423073423225
+        },
+        {
+          "layer": 4,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.03245715731516626
+        },
+        {
+          "layer": 5,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 5,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.017096251067113724
+        }
+      ],
+      "restored_exact": true,
+      "optimizer_steps": 0,
+      "expected_zero_exact": true,
+      "expected_zero_gradients": true,
+      "all_other_interventions_changed_logits": true
+    },
+    {
+      "seed": 197,
+      "PLE_width": 4,
+      "shared_KV_count": 2,
+      "last_new_KV_writer": 3,
+      "gradients": {
+        "0": {
+          "past_L2": 25.327406633890437,
+          "current_L2": 9.412946329832076
+        },
+        "1": {
+          "past_L2": 13.01896452240859,
+          "current_L2": 8.04574671841239
+        },
+        "2": {
+          "past_L2": 2.4632404080257824,
+          "current_L2": 5.721054720383323
+        },
+        "3": {
+          "past_L2": 0.0,
+          "current_L2": 3.4929851481404626
+        },
+        "4": {
+          "past_L2": 0.0,
+          "current_L2": 4.54701249548355
+        },
+        "5": {
+          "past_L2": 0.0,
+          "current_L2": 5.728508115520076
+        }
+      },
+      "interventions": [
+        {
+          "layer": 0,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.11168950185649051
+        },
+        {
+          "layer": 0,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.01974601703613421
+        },
+        {
+          "layer": 1,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.021726344321108523
+        },
+        {
+          "layer": 1,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.0438535864512689
+        },
+        {
+          "layer": 2,
+          "scope": "past",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.016895175912194513
+        },
+        {
+          "layer": 2,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.02901753579091508
+        },
+        {
+          "layer": 3,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 3,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.009734901613042538
+        },
+        {
+          "layer": 4,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 4,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.013270548942252325
+        },
+        {
+          "layer": 5,
+          "scope": "past",
+          "exact_baseline": true,
+          "max_abs_logit_change": 0.0
+        },
+        {
+          "layer": 5,
+          "scope": "current",
+          "exact_baseline": false,
+          "max_abs_logit_change": 0.016346680879612982
+        }
+      ],
+      "restored_exact": true,
+      "optimizer_steps": 0,
+      "expected_zero_exact": true,
+      "expected_zero_gradients": true,
+      "all_other_interventions_changed_logits": true
+    }
+  ]
+}

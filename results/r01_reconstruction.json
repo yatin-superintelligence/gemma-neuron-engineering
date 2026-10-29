@@ -1,0 +1,43 @@
+{
+  "experiment": "R01",
+  "status": "complete_host_audited",
+  "utc": "2026-10-29T21:47:43.790061+00:00",
+  "public_commit": "5ea2dcd356b824c6bf55cf107f7daa2c83fc6de7",
+  "public_manifest_sha256": "635fd58d508ee5d15c4f6684a40ff65721e120be652589437a0fe2757781ff6f",
+  "protocol_sha256": "31a4fa309ec932db86e8c9d0428fca14a4dcb203f8713969120c218f90165502",
+  "audit_source_sha256": "78ca4ec2b30b73f9714797899834973649b32e0bcc4fda15a72cf30c8034b9f1",
+  "all_published_source_files_exact": true,
+  "all_original_output_hashes_exact": true,
+  "exact_output_replays": 24,
+  "prior_projection_hashes_exact": 18,
+  "edited_projection_hashes_recorded": 36,
+  "phases": [
+    {
+      "representation": "bf16_text",
+      "edits": 6,
+      "exact_output_replays": 12,
+      "projection_hashes": 18,
+      "seconds": 98.03192331000002,
+      "peak_cuda_allocated_bytes": 9606427136,
+      "result_sha256": "afa336f8ea51824b0b6a1496db98037a2d8f209f9e8a9519bdc8051f85d9be7d"
+    },
+    {
+      "representation": "nf4_text_same_source",
+      "edits": 6,
+      "exact_output_replays": 12,
+      "projection_hashes": 18,
+      "seconds": 46.72705621199998,
+      "peak_cuda_allocated_bytes": 7512023040,
+      "result_sha256": "a90fe258106813735173691165cb8677c08630bacacfd73fd4b32db02bcee9b2"
+    }
+  ],
+  "seed": 196,
+  "optimizer_steps": 0,
+  "generated_tokens": 0,
+  "processed_input_tokens": 3792,
+  "worker_seconds": 144.758979522,
+  "notebook_seconds": 192.81984896,
+  "output_bytes": 58647,
+  "host_audit_scope": "Host validates every output/hash record against frozen inputs and original results. Full-model forward execution and reconstructed tensor hashes are GPU witnesses,not recomputed on host.",
+  "limits": "Two existing development prompts,six fixed edits,two representations,pinned T4environment. Not portability,semantic-role,coding-improvement or speed evidence. N01 public-loader full-model replay remains unverified."
+}

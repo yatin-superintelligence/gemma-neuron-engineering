@@ -39,13 +39,28 @@
       "up_proj": "6b5513f1a11031deceab5613910e8e60310ed910fe7160f4c710c87e7b872e21",
       "down_proj": "2de2331e81c8c6a3c2d7f63434f00140260d2c6a197047fcdf6075fceadfcaca"
     },
+    "dense_clone_unsplit": {
+      "gate_proj": "86f98a04d3a6965b2963929661cd6d30f4d68d96e9739a5cbe5fdd2097fccabf",
+      "up_proj": "6ba7359bc92e0aa164e53545ee156ff6f19613222b947f7f364bbf0ef1b67d6a",
+      "down_proj": "c2daa2f283a7ad342a5d6b599efe7f208f382cdfe7480b10529b365a4a7fee39"
+    },
+    "dense_clone_split": {
+      "gate_proj": "86f98a04d3a6965b2963929661cd6d30f4d68d96e9739a5cbe5fdd2097fccabf",
+      "up_proj": "6ba7359bc92e0aa164e53545ee156ff6f19613222b947f7f364bbf0ef1b67d6a",
+      "down_proj": "26aa865899f6f435457896e280ed6633e0c1b3d63714fdcda9623f4012cd98f6"
+    },
+    "dense_new_zero": {
+      "gate_proj": "86f98a04d3a6965b2963929661cd6d30f4d68d96e9739a5cbe5fdd2097fccabf",
+      "up_proj": "67a58385b7bc20c62337208071ec3a5ac0192a212afdc8e20c76d7d982815569",
+      "down_proj": "cffa5630bf909f3436daaac17d4cdd40ffc64a4104a600239b88327d3730f980"
+    },
     "dense_recombined": {
       "gate_proj": "86f98a04d3a6965b2963929661cd6d30f4d68d96e9739a5cbe5fdd2097fccabf",
       "up_proj": "67a58385b7bc20c62337208071ec3a5ac0192a212afdc8e20c76d7d982815569",
       "down_proj": "2fb6ebb258b20a8d9bd87d6f96a9ec39c9469d48a07eb5b9455c4963179c6a87"
     }
   },
-  "expected_hash_scope": "Frozen N02 records cover delete/scale2/recombined;other edits are deterministic and awaiting independent package replay.",
+  "expected_hash_scope": "All six edit projection hashes recorded during R01;the original three edit hash sets and twelve full-output replays match N02 exactly in each representation.",
   "tensor_provenance": {
     "source_artifact_sha256": "e99437c568f61f640be935e7a89647c3ea7aacb5b3c543223f764f472273e167",
     "published_sha256": "810b648cfecf6408f21093d09b9b6dff679d99f1299165f44ab0ae1bf203aa9c",
@@ -75,5 +90,14 @@
     "basis.safetensors": "810b648cfecf6408f21093d09b9b6dff679d99f1299165f44ab0ae1bf203aa9c",
     "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "NOTICE": "283a77b0b455fb358c3006463d2ee9d9edb2338a9be6a38386dae37d54a22556"
+  },
+  "reconstruction_verification": {
+    "experiment": "R01v1",
+    "public_loader_commit": "5ea2dcd356b824c6bf55cf107f7daa2c83fc6de7",
+    "result_sha256": "afa336f8ea51824b0b6a1496db98037a2d8f209f9e8a9519bdc8051f85d9be7d",
+    "exact_output_replays": 12,
+    "all_original_hashes_exact": true,
+    "optimizer_steps": 0,
+    "environment": "T4,torch2.11.0+cu128,transformers5.8.0,bitsandbytes0.50.2"
   }
 }

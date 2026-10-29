@@ -39,13 +39,28 @@
       "up_proj": "3d646835921c5904b2d0b206cc94b214044b7bd6631f312fb1dc49babe23ae5a",
       "down_proj": "33d387c91a053ac5950b87461182c870cade9af92c06aa5cb246c5444e2e40a4"
     },
+    "dense_clone_unsplit": {
+      "gate_proj": "5e5d71180e076953c421af50b0b28b1b1f7dbf812d592c78bbbe333b6f216c04",
+      "up_proj": "c0c09a5da3b9cbed083066e35b4ad5b1756559dd5b9ff0a66210828662a8e218",
+      "down_proj": "8baf0635e8806b38de82aabf734f80adde62c928529c7316234302dd119ae67b"
+    },
+    "dense_clone_split": {
+      "gate_proj": "5e5d71180e076953c421af50b0b28b1b1f7dbf812d592c78bbbe333b6f216c04",
+      "up_proj": "c0c09a5da3b9cbed083066e35b4ad5b1756559dd5b9ff0a66210828662a8e218",
+      "down_proj": "695df81de32c51b15108df472b3475b0d3c2b8515e102f9ed2a510b7912bf550"
+    },
+    "dense_new_zero": {
+      "gate_proj": "5e5d71180e076953c421af50b0b28b1b1f7dbf812d592c78bbbe333b6f216c04",
+      "up_proj": "2db65a178082238939c2b78c2f9e49604699d4a303bbf06bd908485b2816fcb8",
+      "down_proj": "fad663a8570f58b9c147aca0223b585ff2bd2d79c2335b3fbe065256692416d7"
+    },
     "dense_recombined": {
       "gate_proj": "5e5d71180e076953c421af50b0b28b1b1f7dbf812d592c78bbbe333b6f216c04",
       "up_proj": "2db65a178082238939c2b78c2f9e49604699d4a303bbf06bd908485b2816fcb8",
       "down_proj": "86760fe80fe361153efce8bd0f8adecf7e4e89d71ccce99db342df11d15bb559"
     }
   },
-  "expected_hash_scope": "Frozen N02 records cover delete/scale2/recombined;other edits are deterministic and awaiting independent package replay.",
+  "expected_hash_scope": "All six edit projection hashes recorded during R01;the original three edit hash sets and twelve full-output replays match N02 exactly in each representation.",
   "tensor_provenance": {
     "source_artifact_sha256": "81415224d8503ad40bce5d938d5ac88ec1abb113e4b07e1d7b4fb694362f0a07",
     "published_sha256": "28e249bfdf2ec2037db84753f84145bba4e4a7c1908af039180460c79070710e",
@@ -76,5 +91,14 @@
     "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "NOTICE": "283a77b0b455fb358c3006463d2ee9d9edb2338a9be6a38386dae37d54a22556",
     "quantization_config.json": "03b7dee5f2a23a325bc45a9c37973d12c7a535363164849bdd379007bb8b234b"
+  },
+  "reconstruction_verification": {
+    "experiment": "R01v1",
+    "public_loader_commit": "5ea2dcd356b824c6bf55cf107f7daa2c83fc6de7",
+    "result_sha256": "a90fe258106813735173691165cb8677c08630bacacfd73fd4b32db02bcee9b2",
+    "exact_output_replays": 12,
+    "all_original_hashes_exact": true,
+    "optimizer_steps": 0,
+    "environment": "T4,torch2.11.0+cu128,transformers5.8.0,bitsandbytes0.50.2"
   }
 }

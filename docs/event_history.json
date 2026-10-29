@@ -739,6 +739,50 @@
       "question": "Q13",
       "status": "packaged_host_checks_complete",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 103,
+      "utc": "2026-10-29T21:41:32.418818+00:00",
+      "event": "r01_public_package_replay_frozen_after_public_bundle_release",
+      "experiment": "R01",
+      "question": "Q13",
+      "status": "frozen_not_launched",
+      "optimizer_steps": 0,
+      "predictions": 24
+    },
+    {
+      "sequence": 104,
+      "utc": "2026-10-29T21:42:06.284131+00:00",
+      "event": "r01_public_model_package_replay_launched_private",
+      "experiment": "R01",
+      "question": "Q13",
+      "version": 1,
+      "status": "running",
+      "optimizer_steps": 0,
+      "predictions": 24
+    },
+    {
+      "sequence": 105,
+      "utc": "2026-10-29T21:44:33.545876+00:00",
+      "event": "n03h_random_weight_token_path_fixture_complete",
+      "experiment": "N03H",
+      "question": "Q12",
+      "status": "host_fixture_complete",
+      "conditions": 8,
+      "total_measurements": 96,
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 106,
+      "utc": "2026-10-29T21:48:14.498962+00:00",
+      "event": "r01_public_model_reconstruction_complete_24exact_output_replays",
+      "experiment": "R01",
+      "question": "Q13",
+      "version": 1,
+      "status": "complete_host_audited",
+      "optimizer_steps": 0,
+      "runner_seconds": 144.758979522,
+      "predictions": 24
     }
   ]
 }

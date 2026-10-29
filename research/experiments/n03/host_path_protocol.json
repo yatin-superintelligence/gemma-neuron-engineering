@@ -1,0 +1,49 @@
+{
+  "experiment": "N03H",
+  "question": "Q12",
+  "frozen_utc": "2026-10-29T21:43:19.157514+00:00",
+  "purpose": "Cheap actual-implementation fixture for token-specific causal paths before semantic neuron localization. Not a pretrained Gemma finding or novelty claim.",
+  "source": "Installed Transformers5.8.0 modeling_gemma4.py;Gemma4ForConditionalGeneration random tiny text-only model.",
+  "model_source_sha256": "64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933",
+  "seeds": [
+    196,
+    197
+  ],
+  "layers": 6,
+  "layer_types": [
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention"
+  ],
+  "shared_KV_counts": [
+    0,
+    2
+  ],
+  "PLE_widths": [
+    0,
+    4
+  ],
+  "hidden": 16,
+  "MLP_width": 24,
+  "vocab": 32,
+  "dtype": "float64",
+  "tokens": [
+    2,
+    7,
+    4,
+    9,
+    6
+  ],
+  "interventions": "For each MLP,zero all gated features at past positions only,then current(last)position only. Unchanged other positions. Restore every hook.",
+  "gradient": "Last-token logit3-minus-logit4 derivative with respect to each native gated feature;measurement only.",
+  "estimands": "Exact full last-token logit equality and maximum absolute difference;past/current gradient L2. Layer-specific KVwriter identity from actual modules.",
+  "predictions": "Expected no path from past MLP at/after last new KV writer to later-token logits. Last-token effects should remain observable. The final MLP has no future path in nonshared control too.",
+  "stopping_rule": "One bounded host run,all8configurations/all96interventions recorded;preserve exceptions. Do not alter assertions after seeing results.",
+  "expected_model_forward_calls": 120,
+  "optimizer_updates": 0,
+  "full_model_proof": false,
+  "next": "If fixture supports architecture reasoning,freeze a small actual-checkpoint position/localization study with executable coding and matched controls."
+}

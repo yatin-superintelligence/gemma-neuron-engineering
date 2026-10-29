@@ -172,34 +172,34 @@
     {
       "id": "Q12",
       "experiment": "N03: functional coding follow-up",
-      "status": "proposal_only_no_GPU_launch",
+      "status": "host_path_fixture_complete_GPU_functional_study_not_frozen",
       "question": "Can neurons localized at semantic input and code-continuation positions support a role that survives new output formats and transfers to executable coding?",
       "question_provenance": "Prospective intent after N01 control analysis; exact data, conditions and GPU protocol are not frozen.",
       "parents": [
         "Q10",
         "Q11"
       ],
-      "method": "Prepare semantic opposites and paraphrases, code continuations, closer activity-matched randoms, necessity/rescue and retention tests. First check which token positions can influence later outputs under shared KV. No training.",
-      "result": "No functional-coding experiment result yet. N02 engineering has completed;no GPU job is active.",
+      "method": "First test token-specific causal paths in the actual Gemma implementation, varying shared KV, per-layer input embeddings and seeds. Then prepare semantic opposites, paraphrases, code continuations, closer activity-matched controls, necessity, rescue and retention tests. No training.",
+      "result": "N03H tested eight small random-weight Gemma configurations with 96 interventions and 120 forward calls, with zero optimizer updates. All predicted past-token zero paths had exactly unchanged later logits and zero measurement gradients. Every other fixture intervention changed logits. This is not a pretrained E2B measurement or evidence of a semantic neuron role.",
       "interpretation": "This broadens the study beyond A/B readout confidence while retaining direct neuron edits as the mechanism. A structural-path hypothesis is not a measured E2B finding.",
-      "next_question": "Which semantic-position/code-position measurements distinguish a coding computation from a late output-format signal?",
+      "next_question": "Do the same token-specific path constraints hold in the real text checkpoint, and which native neurons support coding outcomes under necessity and rescue tests?",
       "direction_decision": "Prepare source and host controls,then freeze a small decisive coding protocol. Preserve the completed engineering evidence;do not rerun N02 or launch an unfocused sweep."
     },
     {
       "id": "Q13",
       "experiment": "R01: public model reconstruction",
-      "status": "packaged_host_checks_complete_GPU_integration_pending",
+      "status": "complete_public_package_GPU_replay_host_audited",
       "question": "Can a clean public code checkout reconstruct every released physical edit from the pinned base and match the original weights and development outputs?",
       "question_provenance": "Prospective reconstruction check after the human requested saved edited models on GitHub;not a new coding-benefit experiment.",
       "parents": [
         "Q09",
         "Q10"
       ],
-      "method": "Publish lossless compact bundles,verify source and file hashes,run independent fixture checks,then if free headroom permits run a bounded clean-package replay of six fixed edits in each representation on two existing N02 prompts.",
-      "result": "Three compact bundles packaged,all four tensor files retain exact original values. Eighteen public fixture checks pass. GPU package replay is pending;original N02 custom-recipe replay is a different completed check.",
-      "interpretation": "Reproducibility requires executable model recipes and exact tensors,not only a narrative. These bundles avoid full base duplication and do not establish coding benefit.",
-      "next_question": "Does clean-package replay preserve the recorded projection and output hashes? Then return to functional coding and semantic-role experiments.",
-      "direction_decision": "Complete one small integration check if justified by free quota. Do not repeat the full N02 panel or let packaging replace N03 science."
+      "method": "Reconstruct all six fixed physical edits in each representation from the published code and pinned base. Compare all available weight hashes and the original outputs on two unchanged N02 development prompts. No new model selection or training.",
+      "result": "All 24 original output hashes and all 18 previously recorded projection hashes matched exactly. All 36 edited projection hashes are saved in the model bundles. Zero optimizer updates. A separate full-model replay of the N01 public loader remains unverified.",
+      "interpretation": "The public package reconstructs the N02 models in the pinned T4 environment. This verifies reconstruction, not a semantic role, coding improvement or bitwise portability across platforms.",
+      "next_question": "Which native neurons compute useful coding distinctions, and can controlled direct edits improve executable outcomes?",
+      "direction_decision": "Close R01. Return to N03 functional coding. Further routine reconstruction runs are unnecessary."
     }
   ]
 }

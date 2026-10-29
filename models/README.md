@@ -62,7 +62,7 @@ python -m reproduce.verify_models --bundle models/n02/bf16_text \
   --device cuda:0 --report verification_bf16.json
 ```
 
-Repeat with `models/n02/nf4_text_same_source` for the paired condition. Verification reconstructs every declared edit from an unchanged parent and records all projection hashes. The original experiment recorded hashes for deletion, doubling and recombination; the manifest identifies where original hashes are available. Local fixture checks and the original experiment's custom replay are complete. Independent package replay is a separate pending integration check.
+Repeat with `models/n02/nf4_text_same_source` for the paired condition. Verification reconstructs every declared edit from an unchanged parent and records all projection hashes. The manifests contain hashes for all six edits. R01 independently reconstructed the models from the published code and matched all 24 original output hashes across the two representations and two existing development prompts. It also matched all 18 previously recorded edited projection hashes. See the [R01 verification](../results/r01_reconstruction.json). The loader, model source and environment are pinned in that record.
 
 Exact weights do not guarantee identical outputs across environments. BF16 split cloning already produced a small bounded logit difference in the original experiment. No semantic function, unrestricted coding improvement or speedup is established by these engineering checks.
 

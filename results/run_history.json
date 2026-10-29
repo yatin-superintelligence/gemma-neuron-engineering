@@ -139,6 +139,20 @@
       "outcome": "Complete host-audited engineering:460measurements across unquantized BF16and same-parent NF4;all hard gates and10algebra comparisons pass. Physical delete/direct output edit/clone/zero and prescribed nonzero new neuron executed. BF16split clone has max0.125logit deviation within fixed tolerance;no coding benefit tested.",
       "duration_scope": "Sum of two sequential workers,318.37s;notebook total380.30s retained separately,not added again. Not charged quota.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N03H_host_paths",
+      "recorded_script_seconds": 0.49972579200402834,
+      "outcome": "8configs/96interventions/120forwardcalls;all predicted paths pass;random weights only",
+      "duration_scope": "Host CPU actual-implementation fixture;not Kaggle GPU quota",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "R01_v1",
+      "recorded_script_seconds": 144.758979522,
+      "outcome": "24/24output hashes and18/18prior projection hashes exact;36edited projection hashes recorded;zero training",
+      "duration_scope": "Sum of two sequential clean public-package reconstruction workers;notebook192.81985s,not charged quota",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": []
