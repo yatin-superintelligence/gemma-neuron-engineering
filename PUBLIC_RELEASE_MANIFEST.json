@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-29T19:57:00.565504+00:00",
+  "generated_utc": "2026-10-29T20:00:01.287272+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -26,18 +26,18 @@
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "dfba89493646ef93b268095bbae593ca0c9cad7ab58980b33f5de6e9e1777c80",
-      "bytes": 103445
+      "sha256": "19829dbf5ca29b936d65f45d1ef815a7940ff3133103c0b579da94cb683bbfd2",
+      "bytes": 103443
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "9291db2d1882d7abb11e193e4a44d91628e65819310ffd78c1c65d5a1f69b8c5",
-      "bytes": 23204
+      "sha256": "d393ea17c37456da5846667ad12444d37a8818fb630e1aca655991fb3ee38a88",
+      "bytes": 23206
     },
     {
       "path": "docs/index.html",
-      "sha256": "2ed8a4c57503926fdc802191b03a8742e8905225fc4781eac5dafc2c91fa54d7",
-      "bytes": 12424
+      "sha256": "c6b8440aae9b0bbf11aba1630fe79190bc8cdcfbd640b2e2d951609c8b01121d",
+      "bytes": 12426
     },
     {
       "path": "docs/model_identity.json",
