@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gemma-neuron-engineering"
-version = "0.1.0"
+version = "0.2.0"
 description = "Interpretability and direct neural intervention without training"
 requires-python = ">=3.11"
 dependencies = ["torch>=2.11,<2.12"]
 
 [project.optional-dependencies]
 test = ["transformers==5.8.0"]
+reproduce = ["transformers==5.8.0", "accelerate==1.14.0", "bitsandbytes==0.50.2", "safetensors>=0.7,<0.9"]
 
 [tool.setuptools.packages.find]
-include = ["interpretability*"]
+include = ["interpretability*", "reproduce*"]

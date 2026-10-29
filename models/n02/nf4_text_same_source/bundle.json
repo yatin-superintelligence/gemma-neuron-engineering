@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "n02_physical_edits",
+  "source_experiment": "N02 v3",
+  "base": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "payload_sha256": "2db5482b20d746879bb3ef79b5203e9075a2e2b98f54ec7c2f281c1477ddc550"
+  },
+  "representation": "nf4_text_same_source",
+  "text_only": true,
+  "norm_parameter_promotion": false,
+  "layer": 34,
+  "target": 4063,
+  "partner": 7978,
+  "edits": [
+    "dense_delete",
+    "dense_scale2",
+    "dense_clone_unsplit",
+    "dense_clone_split",
+    "dense_new_zero",
+    "dense_recombined"
+  ],
+  "original_width": 12288,
+  "hidden_size": 1536,
+  "original_projection_hashes": {
+    "gate_proj": "1789991206bcf10e13aea36f0cb2da356aec4bac24e7d86210fef677938a8a58",
+    "up_proj": "be288ee61f9e26a13f10ec5e8fccefd512ff3f96469b652b5013673d517c5c76",
+    "down_proj": "20a89ecb2054d6291929c746ee91d402df00937558880248322d38ed6a56e1b0"
+  },
+  "expected_edited_projection_hashes": {
+    "dense_delete": {
+      "gate_proj": "ef287b133eacc18e0e1d1f8115c2863844c85706af5f0ea433ac70e970eb5d2d",
+      "up_proj": "c2d406f2589aea998f07785f451dd645da0029b80dd05ee143eddbf33a425ec2",
+      "down_proj": "985479c15a140d813697063fad73505af7a3bcb3de93ec67dd1b51032d5cc711"
+    },
+    "dense_scale2": {
+      "gate_proj": "38d4733f17f16dad779992c07c510f5a42aebbc3b803c1cabf8987b7a972e18f",
+      "up_proj": "3d646835921c5904b2d0b206cc94b214044b7bd6631f312fb1dc49babe23ae5a",
+      "down_proj": "33d387c91a053ac5950b87461182c870cade9af92c06aa5cb246c5444e2e40a4"
+    },
+    "dense_recombined": {
+      "gate_proj": "5e5d71180e076953c421af50b0b28b1b1f7dbf812d592c78bbbe333b6f216c04",
+      "up_proj": "2db65a178082238939c2b78c2f9e49604699d4a303bbf06bd908485b2816fcb8",
+      "down_proj": "86760fe80fe361153efce8bd0f8adecf7e4e89d71ccce99db342df11d15bb559"
+    }
+  },
+  "expected_hash_scope": "Frozen N02 records cover delete/scale2/recombined;other edits are deterministic and awaiting independent package replay.",
+  "tensor_provenance": {
+    "source_artifact_sha256": "81415224d8503ad40bce5d938d5ac88ec1abb113e4b07e1d7b4fb694362f0a07",
+    "published_sha256": "28e249bfdf2ec2037db84753f84145bba4e4a7c1908af039180460c79070710e",
+    "tensor_shapes": {
+      "down_target": [
+        1536
+      ],
+      "gate_target": [
+        1536
+      ],
+      "up_partner": [
+        1536
+      ]
+    },
+    "tensor_dtypes": {
+      "down_target": "torch.bfloat16",
+      "gate_target": "torch.bfloat16",
+      "up_partner": "torch.bfloat16"
+    },
+    "tensor_values_unchanged": true,
+    "bytes": 9832
+  },
+  "optimizer_steps": 0,
+  "modification_notice": "Model variants are constructed by declared direct edits. No training. Use this bundle loader for changed per-layer widths.",
+  "validated_scope": "N02engineering:one channel/layer34,16development prompts,exact or fixed-tolerance comparisons,custom recipe reload. No coding benefit tested.",
+  "files": {
+    "basis.safetensors": "28e249bfdf2ec2037db84753f84145bba4e4a7c1908af039180460c79070710e",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE": "283a77b0b455fb358c3006463d2ee9d9edb2338a9be6a38386dae37d54a22556",
+    "quantization_config.json": "03b7dee5f2a23a325bc45a9c37973d12c7a535363164849bdd379007bb8b234b"
+  }
+}

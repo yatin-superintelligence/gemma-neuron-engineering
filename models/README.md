@@ -1,0 +1,85 @@
+# Saved neuron edits
+
+These bundles preserve the tested neuron modifications as a pinned base, exact small tensors and deterministic recipes. Base checkpoints are downloaded from their original publisher only when an explicit reconstruction command is run. No training is performed.
+
+| Bundle | Base and precision | Saved modifications |
+| --- | --- | --- |
+| `n01` | `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, revision `0ae102ac289cc3f17500a607ad817849778b8ba7`; mixed NF4/BF16 with FP32 vectors and new branches | Exact 8-neuron and 64-neuron branch tensors; fixed last-position steering groups and gains |
+| `n02/bf16_text` | `google/gemma-4-E2B-it`, revision `3e22461f65e89153144f8adb70e3b8c2cc9845a7`; unquantized BF16 text decoder | Six physical edits at layer 34, channel 4063 |
+| `n02/nf4_text_same_source` | The same Google revision, quantized with the included configuration | The same six edits after explicitly dequantizing the selected MLP to BF16 |
+
+The N02 text model retains token embeddings, per-layer embeddings, decoder and tied output head. Audio and vision modules are excluded. It has 4,628,569,344 unique text parameters. The selected partner channel for the prescribed recombination is 7978; it is a control coordinate, not a known semantic feature.
+
+## Inspect without downloading the base
+
+Run from the repository root after installing the project:
+
+```bash
+python -m reproduce.model_edits --bundle models/n01
+python -m reproduce.model_edits --bundle models/n02/bf16_text
+python -m reproduce.model_edits --bundle models/n02/nf4_text_same_source
+```
+
+The inspector checks the bundle schema, declared file hashes and zero training steps. It does not load pretrained weights. `PUBLIC_RELEASE_MANIFEST.json` also records the bundle manifest's hash.
+
+## Reconstruct N02
+
+The measured environment used Python 3.12, PyTorch 2.11.0, Transformers 5.8.0, Accelerate 1.14.0 and bitsandbytes 0.50.2 on a Kaggle T4. These are recorded versions, not a promise of bitwise portability across hardware or libraries.
+
+```bash
+python -m pip install -e '.[reproduce]'
+python -m reproduce.model_edits --bundle models/n02/bf16_text \
+  --rebuild --edit dense_delete --device cuda:0
+```
+
+This explicit command downloads the pinned base, verifies its payload SHA-256, constructs the text model, checks the original target-layer hashes, applies the stored edit and prints the resulting hashes. It leaves the edit applied to the loaded model. To use that model in an application:
+
+```python
+from reproduce.model_edits import reconstruct_n02
+
+model, receipt = reconstruct_n02(
+    'models/n02/bf16_text', 'dense_recombined', device='cuda:0'
+)
+```
+
+Six declared edit names are available:
+
+| Edit | Stored change |
+| --- | --- |
+| `dense_delete` | Remove the coordinated gate/up rows and down column |
+| `dense_scale2` | Double the selected outgoing vector |
+| `dense_clone_unsplit` | Add a full clone, giving amplification |
+| `dense_clone_split` | Add a clone and split the outgoing contribution |
+| `dense_new_zero` | Add a prescribed neuron with zero outgoing vector |
+| `dense_recombined` | Add the target gate, partner up vector and half the target outgoing vector |
+
+For the NF4 bundle, the selected layer becomes dense BF16 before the edit. The packed quantized storage is never sliced as if it were a dense matrix. Other quantized layers keep their declared representation.
+
+## Verify the reconstructed weights
+
+```bash
+python -m reproduce.verify_models --bundle models/n02/bf16_text \
+  --device cuda:0 --report verification_bf16.json
+```
+
+Repeat with `models/n02/nf4_text_same_source` for the paired condition. Verification reconstructs every declared edit from an unchanged parent and records all projection hashes. The original experiment recorded hashes for deletion, doubling and recombination; the manifest identifies where original hashes are available. Local fixture checks and the original experiment's custom replay are complete. Independent package replay is a separate pending integration check.
+
+Exact weights do not guarantee identical outputs across environments. BF16 split cloning already produced a small bounded logit difference in the original experiment. No semantic function, unrestricted coding improvement or speedup is established by these engineering checks.
+
+## Use N01 branches and steering
+
+```python
+from reproduce.model_edits import load_n01_base, apply_n01_branch, apply_n01_gain
+
+model, manifest = load_n01_base('models/n01', device='cuda:0')
+with apply_n01_branch(model, 'models/n01', 'added8_zero'):
+    pass  # Run inference here with the saved branch installed.
+with apply_n01_gain(model, 'models/n01', 'boundary_top8', 0.5):
+    pass  # Run inference here with the fixed activation intervention.
+```
+
+`new_MLP64_zero` adds a normalized residual MLP branch; it is not a full transformer layer. The contexts restore the original computation on exit. Steering affects the last position of each forward pass. Family labels describe how groups were selected, not proven neuron meanings. These bundles exclude counterfactual donor examples and private task records. The N01 public loader has not yet received a separate full-checkpoint package replay.
+
+## Storage and provenance
+
+The complete bundle set occupies about 1.4 MB. All four Safetensors files contain the exact tensor values saved by the experiments, with added attribution metadata. Each `bundle.json` records file hashes and tensor provenance. Retain the bundle, its license and notice, the reconstruction code revision and the base revision together. Do not rely on `save_pretrained` with the original configuration to reload heterogeneous edited widths.

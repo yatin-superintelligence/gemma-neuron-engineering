@@ -730,6 +730,15 @@
       "utc": "2026-10-29T21:17:48.454785+00:00",
       "event": "human_authorizes_reproducible_edited_model_bundles_and_professional_README_code",
       "experiment": "research_operations"
+    },
+    {
+      "sequence": 102,
+      "utc": "2026-10-29T21:36:36.901207+00:00",
+      "event": "public_model_bundles_packaged_exact_values_and_18_host_tests_pass",
+      "experiment": "R01",
+      "question": "Q13",
+      "status": "packaged_host_checks_complete",
+      "optimizer_steps": 0
     }
   ]
 }

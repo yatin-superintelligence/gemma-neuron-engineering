@@ -1,54 +1,66 @@
 # Gemma Neuron Engineering: Interpretability and Control
 
-**Interpretability and control through direct neural interventions, without training.**
+We investigate what individual neurons and small groups do in a language model, and whether direct changes to them can improve coding. The current study uses Gemma 4 E2B. All current interventions use zero training: we steer activations, edit connections, remove neurons, clone them and construct prescribed additions.
 
-Current study: **Gemma Neuron Engineering: Interpretability and Control**.
+**Engineering feasibility is established for the tested edits. A semantic neuron role and a coding improvement are not yet established.**
 
-We study how individual gated-MLP neurons and small groups affect coding. We test activity steering, prescribed connection edits, removal, cloning and the construction of new neurons. The current validation uses Gemma; compatible models can use the same intervention primitives.
+## Documentation
 
-- [Goal & Intent: detailed technical specification](docs/GOAL_AND_INTENT.html)
-- [Research Logbook: sequential questions, evidence and decisions](docs/RESEARCH_LOG.html)
-- [Current model and precision](docs/model_identity.json)
-- [Planned matched-precision comparison](docs/precision_pair_intent.json)
-- [Complete N01 condition/family aggregates](results/n01_development_summary.json)
+- [Goal & Intent](docs/GOAL_AND_INTENT.html): research questions, technical design, controls and decision rules.
+- [Research Logbook](docs/RESEARCH_LOG.html): every recorded experiment, failure, result and subsequent decision.
+- [Model identity and precision](docs/model_identity.json).
+- [Model bundles and reconstruction instructions](models/README.md).
+- [Release inventory and file hashes](PUBLIC_RELEASE_MANIFEST.json).
 
-Download the repository and open `docs/index.html` to read the HTML locally. GitHub's file viewer displays HTML source.
+Clone the repository and open `docs/index.html` to read the HTML documents. GitHub's file viewer shows their source.
 
-## Research scope
+## Research method
 
-No optimizer updates, fine-tuning, learned steering vectors or training of added neurons/layers in the current sprint. Gradients may measure influence; they are never applied as parameter updates. Direct prescribed weight assignments are allowed. Discovery and development select hypotheses; fresh confirmation tests them. Correlation does not establish a neuron function. Existing steering, pruning and function-preserving growth methods are precedents, not our novelty claims.
+A gated-MLP neuron has an incoming gate vector, an incoming value vector and an outgoing vector. We observe its activity and test its causal contribution by changing these computations. Necessity, counterfactual rescue, prompt-format controls, matched random interventions, executable coding and retention tests are needed before assigning it a useful function.
 
-## Current results
+There are no optimizer updates, fine-tuning, fitted steering vectors or training of new neurons in the current study. Gradients may measure influence, but are never applied as parameter updates. Development selection and fresh confirmation are kept separate. Earlier training experiments are retained as historical groundwork in the logbook and are closed.
 
-N01 is an engineering and development pilot, not a capability result: 32 discovery prompts, 64 development prompts, 43 fixed conditions, 2,320 decisions and zero optimizer updates. The actual quantized E2B checkpoint accepted an 8-neuron parallel branch and a 64-neuron residual MLP block with zero outgoing weights. Each preserved all 64 baseline logit hashes. A silent addition proves compatibility, not new capability. Physical dense width surgery and complete transformer-layer insertion remain unvalidated on the checkpoint. **No coding improvement is established.**
+## Results so far
 
-The pilot uses binary code-patch decisions. Broader executable coding and retention tests are required before an improvement claim. The current checkpoint is mixed NF4/BF16, with FP32 vectors/branches; it is not full precision. Unquantized BF16 and FP32 feasibility are distinct questions.
+| Study | Evidence | Limit |
+| --- | --- | --- |
+| N01: localization, steering and additions | 43 conditions and 2,320 binary code-patch decisions. An 8-neuron parallel branch and a 64-neuron residual MLP addition with zero outgoing weights each preserved all 64 baseline logit hashes. | Silent additions establish compatibility. Selected counterfactual groups caused no choice flips on 48 recipient prompts. Activity matching was weak, so specificity is unresolved. |
+| N02: physical edits and matched precision | 460 measurements on text-only, unquantized BF16 and same-source NF4 models. Physical deletion matched activity zeroing; doubling an outgoing vector matched gain-2 steering; adding a zero-output neuron preserved its dense baseline. | One channel in layer 34, on 16 reused development prompts. BF16 split cloning changed logits by up to 0.125 within the fixed tolerance. No coding or speed improvement was tested. |
 
-## Physical edits and matched precision
+The N02 representations share the pinned floating-point parent. The NF4 intervention first dequantizes the selected MLP and uses its unchanged dense form as the comparison baseline. BF16 is unquantized, but is not FP32. Full transformer-layer insertion remains unvalidated.
 
-N02 completed 460 engineering measurements on text-only E2B in unquantized BF16 and NF4 derived from the same pinned floating-point source. The NF4 condition explicitly dequantized the selected MLP. Within each unchanged dense target-layer baseline, physical deletion matched activity zeroing and doubling an outgoing weight vector matched gain-2 steering exactly on all 16 prompts. Adding a zero-output neuron preserved that dense baseline exactly. All hard checks and ten algebra comparisons passed.
+Complete aggregates: [N01 conditions](results/n01_development_summary.json), [N01 functional controls](results/n01_function_controls.json), [N02 engineering audit](results/n02_engineering_summary.json). Startup failures and scientific nulls remain in the [logbook](docs/RESEARCH_LOG.html).
 
-Splitting a cloned neuron was not bitwise exact in BF16: the largest logit difference was 0.125, within the fixed tolerance, with unchanged top-1 tokens. These checks cover one channel in layer 34 and custom patch replay. They do not establish a neuron function, coding improvement or a speedup. Both startup failures are retained in the log. [Audited N02 engineering summary](results/n02_engineering_summary.json).
+## Code and saved model edits
 
-## Code
+```text
+interpretability/   Observation, activation steering and dense neuron surgery
+reproduce/          Pinned-base loaders, reconstruction and verification
+models/n01/         Two saved branch tensors and fixed steering policies
+models/n02/         BF16 and same-source NF4 physical-edit bundles
+tests/              Small independent fixtures, no pretrained download
+docs/               Goal & Intent and sequential Research Logbook
+results/            Reviewed experiment aggregates and run history
+```
 
-`interpretability/gated_mlp_surgery.py` implements scoped reversible activity steering and explicit dense-matrix connection/width edits. Packed integer/quantized matrices are refused by dense surgery. Gate/up rows and down columns must be coordinated.
+The saved models are represented by immutable base revisions, compact exact tensors and deterministic edit recipes. This reconstructs the modified models without copying the full base into Git history. Each bundle records source identity, hashes, precision, coordinates and zero optimizer steps. Changed MLP widths require the supplied loader; an unchanged Transformers configuration cannot encode them on its own.
 
-`interpretability/expansion.py` provides separately stored new gated neurons and a normalized residual MLP branch. A residual MLP block is not a full attention/transformer layer. `interpretability/probe.py` supplies compact observation utilities.
+Install and run the local checks:
 
 ```bash
 python -m pip install -e '.[test]'
 python -m unittest discover -s tests -v
+python -m reproduce.model_edits --bundle models/n02/bf16_text
 ```
 
-The tests use small random-weight fixtures, including the Transformers Gemma MLP class. They download no pretrained weights and do not train a model. Passing these fixtures does not establish full-checkpoint structural compatibility.
+These commands inspect small fixtures and bundle files. They do not download a pretrained model. To reconstruct or verify an actual model on a compatible GPU, follow the explicit commands in [models/README.md](models/README.md). The public loader has local fixture checks; independent full-checkpoint package replay is tracked separately from the original experiment's replay checks.
 
-## Publication boundary
+## Publication scope
 
-This repository is a reviewed public projection with an independent history. It includes goals, methods, generic code, fixture tests and aggregate progress. Private notebooks, task records, predictions, activation arrays, model weights, adapters/patches, the unpublished paper and credentials are excluded. The full internal forensic log remains private during the study. Public aggregates do not provide a complete reproduction package yet.
+This repository contains reviewed goals, methods, code, tests, validated edit bundles and aggregate research records. Private notebooks, datasets, raw predictions, activation traces, historical trained adapters, credentials and the unpublished paper remain outside the repository. The public log records every experiment while the full internal forensic record remains private.
 
-Updates are generated from the private question/evidence register and reviewed before publication. `PUBLIC_RELEASE_MANIFEST.json` records payload hashes. No competition entry or submission is implied.
+Updates are reviewed before publication. A model edit that changes behavior is not automatically a useful improvement. Existing steering, pruning and function-preserving growth methods are prior work; this project does not claim to have invented them.
 
 ## License
 
-Original code/documentation: Apache License 2.0. Model checkpoints and third-party assets retain their own licenses; no model weights are distributed here.
+Original code and documentation use the Apache License 2.0. Gemma 4 is also released under [Apache 2.0](https://ai.google.dev/gemma/apache_2). Model bundles include source attribution, modification notices and their license. Third-party dependencies retain their own licenses.

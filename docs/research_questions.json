@@ -184,6 +184,22 @@
       "interpretation": "This broadens the study beyond A/B readout confidence while retaining direct neuron edits as the mechanism. A structural-path hypothesis is not a measured E2B finding.",
       "next_question": "Which semantic-position/code-position measurements distinguish a coding computation from a late output-format signal?",
       "direction_decision": "Prepare source and host controls,then freeze a small decisive coding protocol. Preserve the completed engineering evidence;do not rerun N02 or launch an unfocused sweep."
+    },
+    {
+      "id": "Q13",
+      "experiment": "R01: public model reconstruction",
+      "status": "packaged_host_checks_complete_GPU_integration_pending",
+      "question": "Can a clean public code checkout reconstruct every released physical edit from the pinned base and match the original weights and development outputs?",
+      "question_provenance": "Prospective reconstruction check after the human requested saved edited models on GitHub;not a new coding-benefit experiment.",
+      "parents": [
+        "Q09",
+        "Q10"
+      ],
+      "method": "Publish lossless compact bundles,verify source and file hashes,run independent fixture checks,then if free headroom permits run a bounded clean-package replay of six fixed edits in each representation on two existing N02 prompts.",
+      "result": "Three compact bundles packaged,all four tensor files retain exact original values. Eighteen public fixture checks pass. GPU package replay is pending;original N02 custom-recipe replay is a different completed check.",
+      "interpretation": "Reproducibility requires executable model recipes and exact tensors,not only a narrative. These bundles avoid full base duplication and do not establish coding benefit.",
+      "next_question": "Does clean-package replay preserve the recorded projection and output hashes? Then return to functional coding and semantic-role experiments.",
+      "direction_decision": "Complete one small integration check if justified by free quota. Do not repeat the full N02 panel or let packaging replace N03 science."
     }
   ]
 }

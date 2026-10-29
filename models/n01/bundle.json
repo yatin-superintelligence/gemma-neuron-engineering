@@ -1,0 +1,478 @@
+{
+  "schema_version": 1,
+  "kind": "n01_branches_and_gain_policies",
+  "source_experiment": "N01 v1",
+  "base": {
+    "checkpoint": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "revision": "0ae102ac289cc3f17500a607ad817849778b8ba7"
+  },
+  "text_only": false,
+  "norm_parameter_promotion": "Floating1Dparameter vectors cast toFP32;large embeddings retainBF16. Match frozen N01preparation.",
+  "branches": {
+    "added8_zero": {
+      "hidden_size": 1536,
+      "width": 8,
+      "seed": 196,
+      "normalize": false,
+      "dtype": "torch.float32",
+      "placement": "parallel",
+      "target_module": "model.language_model.layers.17.mlp",
+      "file": "added8_zero.safetensors",
+      "tensor_provenance": {
+        "source_artifact_sha256": "6412cdc1482a6a35beffba12a4536f723e4c41c412848199e2595f521c5a301a",
+        "published_sha256": "6ac2423e16aa7d7cfcda6562b7ac442c7567ed7e39eb3ecd34416fe0d62f3f3c",
+        "tensor_shapes": {
+          "down": [
+            1536,
+            8
+          ],
+          "gate": [
+            8,
+            1536
+          ],
+          "up": [
+            8,
+            1536
+          ]
+        },
+        "tensor_dtypes": {
+          "down": "torch.float32",
+          "gate": "torch.float32",
+          "up": "torch.float32"
+        },
+        "tensor_values_unchanged": true,
+        "bytes": 148088
+      }
+    },
+    "new_MLP64_zero": {
+      "hidden_size": 1536,
+      "width": 64,
+      "seed": 196,
+      "normalize": true,
+      "dtype": "torch.float32",
+      "placement": "residual",
+      "target_module": "model.language_model.layers.17",
+      "file": "new_MLP64_zero.safetensors",
+      "tensor_provenance": {
+        "source_artifact_sha256": "bb4b47f2c32d23954765e8d46594d637a3d71bae5e436bb28f9b013b0fd0d125",
+        "published_sha256": "0230dc629abffcc8fdb014216e6be25889ebfa389927c0c9944473efb147b4bb",
+        "tensor_shapes": {
+          "down": [
+            1536,
+            64
+          ],
+          "gate": [
+            64,
+            1536
+          ],
+          "up": [
+            64,
+            1536
+          ]
+        },
+        "tensor_dtypes": {
+          "down": "torch.float32",
+          "gate": "torch.float32",
+          "up": "torch.float32"
+        },
+        "tensor_values_unchanged": true,
+        "bytes": 1180288
+      }
+    }
+  },
+  "steering_groups": {
+    "boundary_top1": [
+      {
+        "layer": 34,
+        "channel": 4063
+      }
+    ],
+    "boundary_top8": [
+      {
+        "layer": 34,
+        "channel": 4063
+      },
+      {
+        "layer": 24,
+        "channel": 4872
+      },
+      {
+        "layer": 34,
+        "channel": 6608
+      },
+      {
+        "layer": 32,
+        "channel": 4529
+      },
+      {
+        "layer": 23,
+        "channel": 8241
+      },
+      {
+        "layer": 22,
+        "channel": 8455
+      },
+      {
+        "layer": 28,
+        "channel": 2141
+      },
+      {
+        "layer": 28,
+        "channel": 6453
+      }
+    ],
+    "boundary_random3101": [
+      {
+        "layer": 34,
+        "channel": 7978
+      },
+      {
+        "layer": 24,
+        "channel": 1948
+      },
+      {
+        "layer": 34,
+        "channel": 11307
+      },
+      {
+        "layer": 32,
+        "channel": 8824
+      },
+      {
+        "layer": 23,
+        "channel": 2089
+      },
+      {
+        "layer": 22,
+        "channel": 11965
+      },
+      {
+        "layer": 28,
+        "channel": 6371
+      },
+      {
+        "layer": 28,
+        "channel": 5732
+      }
+    ],
+    "boundary_random3102": [
+      {
+        "layer": 34,
+        "channel": 11464
+      },
+      {
+        "layer": 24,
+        "channel": 9083
+      },
+      {
+        "layer": 34,
+        "channel": 9044
+      },
+      {
+        "layer": 32,
+        "channel": 7401
+      },
+      {
+        "layer": 23,
+        "channel": 11855
+      },
+      {
+        "layer": 22,
+        "channel": 2810
+      },
+      {
+        "layer": 28,
+        "channel": 10350
+      },
+      {
+        "layer": 28,
+        "channel": 8468
+      }
+    ],
+    "division_top1": [
+      {
+        "layer": 32,
+        "channel": 4529
+      }
+    ],
+    "division_top8": [
+      {
+        "layer": 32,
+        "channel": 4529
+      },
+      {
+        "layer": 25,
+        "channel": 330
+      },
+      {
+        "layer": 24,
+        "channel": 5403
+      },
+      {
+        "layer": 24,
+        "channel": 4872
+      },
+      {
+        "layer": 23,
+        "channel": 1501
+      },
+      {
+        "layer": 12,
+        "channel": 4578
+      },
+      {
+        "layer": 21,
+        "channel": 10251
+      },
+      {
+        "layer": 15,
+        "channel": 11711
+      }
+    ],
+    "division_random3101": [
+      {
+        "layer": 32,
+        "channel": 2298
+      },
+      {
+        "layer": 25,
+        "channel": 6061
+      },
+      {
+        "layer": 24,
+        "channel": 7175
+      },
+      {
+        "layer": 24,
+        "channel": 1802
+      },
+      {
+        "layer": 23,
+        "channel": 2089
+      },
+      {
+        "layer": 12,
+        "channel": 1023
+      },
+      {
+        "layer": 21,
+        "channel": 4529
+      },
+      {
+        "layer": 15,
+        "channel": 3910
+      }
+    ],
+    "division_random3102": [
+      {
+        "layer": 32,
+        "channel": 4231
+      },
+      {
+        "layer": 25,
+        "channel": 7625
+      },
+      {
+        "layer": 24,
+        "channel": 1860
+      },
+      {
+        "layer": 24,
+        "channel": 158
+      },
+      {
+        "layer": 23,
+        "channel": 11855
+      },
+      {
+        "layer": 12,
+        "channel": 3768
+      },
+      {
+        "layer": 21,
+        "channel": 7776
+      },
+      {
+        "layer": 15,
+        "channel": 2518
+      }
+    ],
+    "dedup_top1": [
+      {
+        "layer": 34,
+        "channel": 4063
+      }
+    ],
+    "dedup_top8": [
+      {
+        "layer": 34,
+        "channel": 4063
+      },
+      {
+        "layer": 34,
+        "channel": 6608
+      },
+      {
+        "layer": 23,
+        "channel": 8241
+      },
+      {
+        "layer": 23,
+        "channel": 1501
+      },
+      {
+        "layer": 24,
+        "channel": 1159
+      },
+      {
+        "layer": 29,
+        "channel": 9942
+      },
+      {
+        "layer": 26,
+        "channel": 1460
+      },
+      {
+        "layer": 24,
+        "channel": 4872
+      }
+    ],
+    "dedup_random3101": [
+      {
+        "layer": 34,
+        "channel": 7978
+      },
+      {
+        "layer": 34,
+        "channel": 5071
+      },
+      {
+        "layer": 23,
+        "channel": 6096
+      },
+      {
+        "layer": 23,
+        "channel": 2431
+      },
+      {
+        "layer": 24,
+        "channel": 6001
+      },
+      {
+        "layer": 29,
+        "channel": 6244
+      },
+      {
+        "layer": 26,
+        "channel": 6312
+      },
+      {
+        "layer": 24,
+        "channel": 8868
+      }
+    ],
+    "dedup_random3102": [
+      {
+        "layer": 34,
+        "channel": 11464
+      },
+      {
+        "layer": 34,
+        "channel": 6287
+      },
+      {
+        "layer": 23,
+        "channel": 4178
+      },
+      {
+        "layer": 23,
+        "channel": 2747
+      },
+      {
+        "layer": 24,
+        "channel": 563
+      },
+      {
+        "layer": 29,
+        "channel": 8229
+      },
+      {
+        "layer": 26,
+        "channel": 2059
+      },
+      {
+        "layer": 24,
+        "channel": 3719
+      }
+    ]
+  },
+  "allowed_gains_by_group": {
+    "boundary_top1": [
+      0,
+      2
+    ],
+    "boundary_top8": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2
+    ],
+    "boundary_random3101": [
+      0,
+      2
+    ],
+    "boundary_random3102": [
+      0,
+      2
+    ],
+    "division_top1": [
+      0,
+      2
+    ],
+    "division_top8": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2
+    ],
+    "division_random3101": [
+      0,
+      2
+    ],
+    "division_random3102": [
+      0,
+      2
+    ],
+    "dedup_top1": [
+      0,
+      2
+    ],
+    "dedup_top8": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2
+    ],
+    "dedup_random3101": [
+      0,
+      2
+    ],
+    "dedup_random3102": [
+      0,
+      2
+    ]
+  },
+  "token_scope": "last",
+  "optimizer_steps": 0,
+  "scope": "Silent-branch compatibility and development gain policies. Family names identify selection objectives,not established neuron functions. Counterfactual donor data are not released.",
+  "modification_notice": "Added untrained FP32branches and declared activation-gain policies;original base frozen.",
+  "files": {
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE": "283a77b0b455fb358c3006463d2ee9d9edb2338a9be6a38386dae37d54a22556",
+    "added8_zero.safetensors": "6ac2423e16aa7d7cfcda6562b7ac442c7567ed7e39eb3ecd34416fe0d62f3f3c",
+    "new_MLP64_zero.safetensors": "0230dc629abffcc8fdb014216e6be25889ebfa389927c0c9944473efb147b4bb"
+  }
+}

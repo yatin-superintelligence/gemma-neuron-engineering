@@ -1,0 +1,7 @@
+Gemma Neuron Engineering: Interpretability and Control
+Compact edit bundles derived from Google Gemma 4 E2B.
+Google model source: https://huggingface.co/google/gemma-4-E2B-it
+Gemma 4 license: Apache License 2.0, https://ai.google.dev/gemma/apache_2
+Edit recipes, extracts and packaging modified by yatin-superintelligence,2026.
+No training was performed for these neuron edits.
+Full base checkpoints are referenced by immutable revision,not duplicated here.
