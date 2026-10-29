@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-29T21:52:26.880293+00:00",
+  "generated_utc": "2026-10-29T22:23:55.650606+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -26,18 +26,18 @@
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "bac84b7fc11c2c82c263f876e06b151d4900f90f34806c8ef056a9ded7c89fbe",
-      "bytes": 106316
+      "sha256": "b2854b9f3928a60eff96573478c7edf3e957d494033baefb92fe31f0f774f4b5",
+      "bytes": 110318
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "970e35eeef9580ce4a6b38ccedf8b75deb3fa6517ddb2314281e64760765591b",
-      "bytes": 49932
+      "sha256": "639b57f33ca3566ff52c21eb1935d798a1bfe24136320a95bdf9049340e668f2",
+      "bytes": 50407
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "bf6dc007f39e8f8a078b0e129cc128e38d8466c97bcc38516d4274b6201438e6",
-      "bytes": 22521
+      "sha256": "b9b35cde6fb88f7dcf938d685b90c18d206632b39d777dcaaadbb10bf50474ce",
+      "bytes": 23129
     },
     {
       "path": "docs/index.html",
@@ -56,8 +56,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "62fac56825ccf5a149d772f13c2ccfbdc5ee484786fb4a9bfcef30d104648d27",
-      "bytes": 17279
+      "sha256": "d515baed6b5956d4042c2b7e2cae9ae70ef8f91c8157b8f637daf74a9b1b5086",
+      "bytes": 17280
     },
     {
       "path": "interpretability/__init__.py",
@@ -211,8 +211,8 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "306139eb396cb64b15d47267c623b44cd741d05fc4e73e85dbe9f104d6e307aa",
-      "bytes": 601
+      "sha256": "8b8ffe692fd071348bf00c108e1ca0f956e6ab5dcff302097bfb8c4e240a3154",
+      "bytes": 758
     },
     {
       "path": "results/r01_reconstruction.json",
@@ -221,8 +221,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "ffdc0b32cf1f436ad348014f273f2207c5a1954a42560138e19e86db0a7af056",
-      "bytes": 7861
+      "sha256": "d3d22f581f034fa73f661b83937b095f9fde2232c8393e400a4872abf26221a5",
+      "bytes": 8018
     },
     {
       "path": "tests/__init__.py",

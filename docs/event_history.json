@@ -783,6 +783,27 @@
       "optimizer_steps": 0,
       "runner_seconds": 144.758979522,
       "predictions": 24
+    },
+    {
+      "sequence": 107,
+      "utc": "2026-10-29T22:10:47.147907+00:00",
+      "event": "n03_native_neuron_coding_protocol_frozen_preflight_passed",
+      "experiment": "N03",
+      "question": "Q12",
+      "status": "frozen_not_launched",
+      "optimizer_steps": 0,
+      "predictions": 896
+    },
+    {
+      "sequence": 108,
+      "utc": "2026-10-29T22:12:10.484780+00:00",
+      "event": "n03_private_native_neuron_coding_pilot_launched",
+      "experiment": "N03",
+      "question": "Q12",
+      "version": 1,
+      "status": "running",
+      "optimizer_steps": 0,
+      "predictions": 896
     }
   ]
 }

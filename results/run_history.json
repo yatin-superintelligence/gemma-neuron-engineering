@@ -155,5 +155,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N03_v1",
+      "launched_utc": "2026-10-29T22:12:10.484780+00:00",
+      "status": "private_native_neuron_coding_pilot_running"
+    }
+  ]
 }

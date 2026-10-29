@@ -172,18 +172,18 @@
     {
       "id": "Q12",
       "experiment": "N03: functional coding follow-up",
-      "status": "host_path_fixture_complete_GPU_functional_study_not_frozen",
-      "question": "Can neurons localized at semantic input and code-continuation positions support a role that survives new output formats and transfers to executable coding?",
-      "question_provenance": "Prospective intent after N01 control analysis; exact data, conditions and GPU protocol are not frozen.",
+      "status": "N03v1_private_GPU_running_source_verified",
+      "question": "Do native neurons conditionally support inclusive-boundary coding across reversed comparison forms, and can fixed edits affect executable completions without damaging retention?",
+      "question_provenance": "Intent followed the N01 control analysis. The exact N03 protocol was frozen before task implementation and GPU outcomes. The host analysis plan was recorded after launch and before retrieving any outputs.",
       "parents": [
         "Q10",
         "Q11"
       ],
-      "method": "First test token-specific causal paths in the actual Gemma implementation, varying shared KV, per-layer input embeddings and seeds. Then prepare semantic opposites, paraphrases, code continuations, closer activity-matched controls, necessity, rescue and retention tests. No training.",
-      "result": "N03H tested eight small random-weight Gemma configurations with 96 interventions and 120 forward calls, with zero optimizer updates. All predicted past-token zero paths had exactly unchanged later logits and zero measurement gradients. Every other fixture intervention changed logits. This is not a pretrained E2B measurement or evidence of a semantic neuron role.",
+      "method": "Freeze BF16 discovery selection, activity-matched random controls, same-source NF4 coordinate transfer, real-model token-path checks, identity and semantic/self patches. Test every condition on generated Python line completions and division/JSON retention. No training.",
+      "result": "N03 is running privately with 896 planned generated continuations across paired BF16 and NF4 conditions. Source and privacy metadata are verified. N03H remains a completed random-weight fixture; no real-model N03 outcome has been inspected.",
       "interpretation": "This broadens the study beyond A/B readout confidence while retaining direct neuron edits as the mechanism. A structural-path hypothesis is not a measured E2B finding.",
       "next_question": "Do the same token-specific path constraints hold in the real text checkpoint, and which native neurons support coding outcomes under necessity and rescue tests?",
-      "direction_decision": "Prepare source and host controls,then freeze a small decisive coding protocol. Preserve the completed engineering evidence;do not rerun N02 or launch an unfocused sweep."
+      "direction_decision": "Run the frozen N03 panel and audit all conditions. Interpret code outcomes, semantic patches and retention together. Preserve failures and nulls; use fresh confirmation for any later improvement claim."
     },
     {
       "id": "Q13",
