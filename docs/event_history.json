@@ -1,0 +1,735 @@
+{
+  "scope": "Reviewed event fields in original sequence;missing timestamps remain unknown;raw records private",
+  "events": [
+    {
+      "sequence": 1,
+      "utc": null,
+      "event": "launched_private",
+      "experiment": "E00",
+      "version": 1,
+      "privacy_server_verified": true
+    },
+    {
+      "sequence": 2,
+      "utc": null,
+      "event": "failed_dependency_compatibility",
+      "experiment": "E00",
+      "version": 1,
+      "recorded_script_seconds": 125.71
+    },
+    {
+      "sequence": 3,
+      "utc": "2026-10-28T20:01:49.696610+00:00",
+      "event": "failed_instrumentation_scope",
+      "experiment": "E00",
+      "version": 2
+    },
+    {
+      "sequence": 4,
+      "utc": "2026-10-28T20:02:05.882412+00:00",
+      "event": "launched_private",
+      "experiment": "E00",
+      "version": 3
+    },
+    {
+      "sequence": 5,
+      "utc": "2026-10-28T20:05:56.879581+00:00",
+      "event": "complete_measurement_validation",
+      "experiment": "E00",
+      "version": 3,
+      "recorded_script_seconds": 108.68
+    },
+    {
+      "sequence": 6,
+      "utc": "2026-10-28T20:06:43.443486+00:00",
+      "event": "dataset_version_cli_failure",
+      "experiment": "E01"
+    },
+    {
+      "sequence": 7,
+      "utc": "2026-10-28T20:07:47.603250+00:00",
+      "event": "dataset_ready_private",
+      "experiment": "E01",
+      "version": 2
+    },
+    {
+      "sequence": 8,
+      "utc": "2026-10-28T20:09:48.300822+00:00",
+      "event": "launched_private",
+      "experiment": "E01",
+      "version": 1
+    },
+    {
+      "sequence": 9,
+      "utc": "2026-10-28T20:10:31.905049+00:00",
+      "event": "failed_input_mount_validation",
+      "experiment": "E01",
+      "version": 1
+    },
+    {
+      "sequence": 10,
+      "utc": "2026-10-28T20:12:02.076651+00:00",
+      "event": "input_manifest_repaired",
+      "experiment": "E01"
+    },
+    {
+      "sequence": 11,
+      "utc": "2026-10-28T20:13:25.483933+00:00",
+      "event": "launched_private",
+      "experiment": "E01",
+      "version": 2
+    },
+    {
+      "sequence": 12,
+      "utc": "2026-10-28T20:21:24.508749+00:00",
+      "event": "known_cache_path_confound_identified_before_results",
+      "experiment": "E01",
+      "version": 2
+    },
+    {
+      "sequence": 13,
+      "utc": "2026-10-28T20:35:26.540258+00:00",
+      "event": "failed_training_preparation_memory",
+      "experiment": "E01",
+      "version": 2
+    },
+    {
+      "sequence": 14,
+      "utc": "2026-10-28T20:38:35.284626+00:00",
+      "event": "launched_private_with_fresh_generation_fallback",
+      "experiment": "E01",
+      "version": 1
+    },
+    {
+      "sequence": 15,
+      "utc": "2026-10-28T20:40:23.092235+00:00",
+      "event": "independent_stress_audit_complete",
+      "experiment": "E01"
+    },
+    {
+      "sequence": 16,
+      "utc": "2026-10-28T20:41:33.506290+00:00",
+      "event": "failed_device_consistency_preflight",
+      "experiment": "E01",
+      "version": 1
+    },
+    {
+      "sequence": 17,
+      "utc": "2026-10-28T20:45:12.120963+00:00",
+      "event": "launched_private_with_verified_recovery_dataset",
+      "experiment": "E01",
+      "version": 2
+    },
+    {
+      "sequence": 18,
+      "utc": "2026-10-28T20:51:04.279949+00:00",
+      "event": "source_gate_diagnostic_no_training_changes",
+      "experiment": "E01"
+    },
+    {
+      "sequence": 19,
+      "utc": "2026-10-28T21:54:17.035634+00:00",
+      "event": "completed_verified_development_experiment",
+      "experiment": "E01",
+      "version": 2,
+      "privacy_server_verified": true
+    },
+    {
+      "sequence": 20,
+      "utc": "2026-10-28T22:05:27.067211+00:00",
+      "event": "launched_private",
+      "experiment": "E01B",
+      "version": 1
+    },
+    {
+      "sequence": 21,
+      "utc": "2026-10-28T22:12:16.968175+00:00",
+      "event": "all_fixed_predictions_regraded_under_evaluation_v2",
+      "experiment": "E01"
+    },
+    {
+      "sequence": 22,
+      "utc": "2026-10-28T22:15:08.142823+00:00",
+      "event": "prefix_control_invariance_check",
+      "experiment": "E01B"
+    },
+    {
+      "sequence": 23,
+      "utc": "2026-10-28T23:10:01.506022+00:00",
+      "event": "prospective_channel_groups_frozen_locally",
+      "experiment": "E02",
+      "conditions": 8
+    },
+    {
+      "sequence": 24,
+      "utc": "2026-10-28T23:19:29.353208+00:00",
+      "event": "completed_validated_private",
+      "experiment": "E01B",
+      "version": 1,
+      "runner_seconds": 3857.61
+    },
+    {
+      "sequence": 25,
+      "utc": "2026-10-28T23:22:14.019128+00:00",
+      "event": "launched_private",
+      "experiment": "E02",
+      "version": 1,
+      "conditions": 8
+    },
+    {
+      "sequence": 26,
+      "utc": "2026-10-28T23:23:01.931903+00:00",
+      "event": "analysis_clarification_before_outcomes",
+      "experiment": "E02"
+    },
+    {
+      "sequence": 27,
+      "utc": "2026-10-29T00:01:17.845322+00:00",
+      "event": "private_paper_development_draft_built"
+    },
+    {
+      "sequence": 28,
+      "utc": "2026-10-29T00:55:13.017530+00:00",
+      "event": "complete_validated_private",
+      "experiment": "E02",
+      "version": 1,
+      "runner_seconds": 3330.72
+    },
+    {
+      "sequence": 29,
+      "utc": "2026-10-29T00:56:42.269005+00:00",
+      "event": "launched_private",
+      "experiment": "E02",
+      "version": 1,
+      "conditions": 8
+    },
+    {
+      "sequence": 30,
+      "utc": "2026-10-29T01:06:42.468318+00:00",
+      "event": "prospective_development_diagnostic_design_recorded",
+      "experiment": "E03"
+    },
+    {
+      "sequence": 31,
+      "utc": "2026-10-29T02:03:37.177084+00:00",
+      "event": "complete_validated_private",
+      "experiment": "E02",
+      "version": 1,
+      "runner_seconds": 3508.56
+    },
+    {
+      "sequence": 32,
+      "utc": "2026-10-29T02:09:27.060878+00:00",
+      "event": "launched_private",
+      "experiment": "E02",
+      "version": 1,
+      "conditions": 8
+    },
+    {
+      "sequence": 33,
+      "utc": "2026-10-29T02:32:27.946716+00:00",
+      "event": "analysis_clarification_before_GPU_launch",
+      "experiment": "E03"
+    },
+    {
+      "sequence": 34,
+      "utc": "2026-10-29T02:46:26.466136+00:00",
+      "event": "private_input_dataset_and_notebook_prepared",
+      "experiment": "E03"
+    },
+    {
+      "sequence": 35,
+      "utc": "2026-10-29T03:15:50.559275+00:00",
+      "event": "complete_validated_private",
+      "experiment": "E02",
+      "version": 1,
+      "runner_seconds": 3335.45
+    },
+    {
+      "sequence": 36,
+      "utc": "2026-10-29T03:16:34.036184+00:00",
+      "event": "launched_private",
+      "experiment": "E02",
+      "version": 1,
+      "conditions": 8
+    },
+    {
+      "sequence": 37,
+      "utc": "2026-10-29T03:16:34.036184+00:00",
+      "event": "host_analysis_frozen_before_GPU",
+      "experiment": "E03"
+    },
+    {
+      "sequence": 38,
+      "utc": "2026-10-29T03:21:56.490037+00:00",
+      "event": "data_independent_grader_validated",
+      "experiment": "final_confirmation_preparation"
+    },
+    {
+      "sequence": 39,
+      "utc": "2026-10-29T03:55:04.303455+00:00",
+      "event": "direct_numerical_prior_work_recorded_before_GPU",
+      "experiment": "E03"
+    },
+    {
+      "sequence": 40,
+      "utc": "2026-10-29T04:07:14.935215+00:00",
+      "event": "separated_pipeline_sources_prepared_before_test_access",
+      "experiment": "final_confirmation_preparation"
+    },
+    {
+      "sequence": 41,
+      "utc": "2026-10-29T04:51:50.700012+00:00",
+      "event": "complete_validated_private",
+      "experiment": "E02",
+      "version": 1,
+      "runner_seconds": 3512.38
+    },
+    {
+      "sequence": 42,
+      "utc": "2026-10-29T04:53:20.818064+00:00",
+      "event": "launched_private",
+      "experiment": "E03",
+      "version": 1
+    },
+    {
+      "sequence": 43,
+      "utc": "2026-10-29T04:54:34.701529+00:00",
+      "event": "protocol_frozen_before_final_data_and_predictions",
+      "experiment": "C01"
+    },
+    {
+      "sequence": 44,
+      "utc": "2026-10-29T05:05:10.649298+00:00",
+      "event": "reference_audit_and_private_question_packet_ready",
+      "experiment": "C01"
+    },
+    {
+      "sequence": 45,
+      "utc": "2026-10-29T05:11:53.657067+00:00",
+      "event": "dated_continuation_version_guard_and_package_recheck",
+      "experiment": "C01"
+    },
+    {
+      "sequence": 46,
+      "utc": "2026-10-29T06:02:45.707696+00:00",
+      "event": "complete_validated_private",
+      "experiment": "E03",
+      "runner_seconds": 1778.71
+    },
+    {
+      "sequence": 47,
+      "utc": "2026-10-29T06:03:43.155527+00:00",
+      "event": "launched_private_prediction_only",
+      "experiment": "C01",
+      "version": 1,
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 48,
+      "utc": "2026-10-29T06:49:50.379495+00:00",
+      "event": "conditionally_planned_replication_prepared_private_not_launched",
+      "experiment": "E03R"
+    },
+    {
+      "sequence": 49,
+      "utc": "2026-10-29T06:49:50.379495+00:00",
+      "event": "private_paper_updated_and_visual_QA_passed"
+    },
+    {
+      "sequence": 50,
+      "utc": "2026-10-29T07:00:23.377321+00:00",
+      "event": "paper_embedded_label_word_audit"
+    },
+    {
+      "sequence": 51,
+      "utc": "2026-10-29T07:23:15.822141+00:00",
+      "event": "ungraded_artifact_auditor_and_replication_summary_prepared"
+    },
+    {
+      "sequence": 52,
+      "utc": "2026-10-29T08:08:53.086494+00:00",
+      "event": "partial_complete_validated_private_ungraded",
+      "experiment": "C01",
+      "status": "paused_budget_ungraded",
+      "optimizer_steps": 0,
+      "runner_seconds": 5126.07,
+      "predictions": 179
+    },
+    {
+      "sequence": 53,
+      "utc": "2026-10-29T08:09:46.340342+00:00",
+      "event": "launched_private_ungraded_continuation",
+      "experiment": "C01",
+      "version": 1,
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 54,
+      "utc": "2026-10-29T08:15:21.560562+00:00",
+      "event": "all_comparison_confirmation_figure_source_prepared"
+    },
+    {
+      "sequence": 55,
+      "utc": "2026-10-29T09:17:56.210209+00:00",
+      "event": "posthoc_development_two_seed_activation_description"
+    },
+    {
+      "sequence": 56,
+      "utc": "2026-10-29T10:14:10.590821+00:00",
+      "event": "partial_complete_validated_private_ungraded",
+      "experiment": "C01",
+      "status": "paused_budget_ungraded",
+      "optimizer_steps": 0,
+      "runner_seconds": 5111.55,
+      "predictions": 359
+    },
+    {
+      "sequence": 57,
+      "utc": "2026-10-29T10:14:14.558761+00:00",
+      "event": "launched_private_ungraded_continuation",
+      "experiment": "C01",
+      "version": 1,
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 58,
+      "utc": "2026-10-29T11:15:20.094748+00:00",
+      "event": "posthoc_development_ranking_stability_validated"
+    },
+    {
+      "sequence": 59,
+      "utc": "2026-10-29T11:21:35.069917+00:00",
+      "event": "private_paper_tightened_new_posthoc_descriptions_integrated"
+    },
+    {
+      "sequence": 60,
+      "utc": "2026-10-29T12:16:27.773911+00:00",
+      "event": "partial_complete_validated_private_ungraded",
+      "experiment": "C01",
+      "status": "paused_budget_ungraded",
+      "optimizer_steps": 0,
+      "runner_seconds": 5106.48,
+      "predictions": 586
+    },
+    {
+      "sequence": 61,
+      "utc": "2026-10-29T12:16:30.448289+00:00",
+      "event": "launched_private_ungraded_continuation",
+      "experiment": "C01",
+      "version": 1,
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 62,
+      "utc": "2026-10-29T12:25:22.832101+00:00",
+      "event": "complete_panel_integrity_checks_and_replication_inputs_ready"
+    },
+    {
+      "sequence": 63,
+      "utc": "2026-10-29T13:18:48.862680+00:00",
+      "event": "complete_validated_private_ungraded",
+      "experiment": "C01",
+      "status": "complete_ungraded",
+      "optimizer_steps": 0,
+      "runner_seconds": 1113.8,
+      "predictions": 640
+    },
+    {
+      "sequence": 64,
+      "utc": "2026-10-29T13:19:24.567982+00:00",
+      "event": "launched_private_frozen_seed_replication",
+      "experiment": "E03R",
+      "version": 1,
+      "cell_sources_exact": true
+    },
+    {
+      "sequence": 65,
+      "utc": "2026-10-29T13:25:58.983592+00:00",
+      "event": "complete_frozen_heldout_confirmation_scored_private",
+      "experiment": "C01"
+    },
+    {
+      "sequence": 66,
+      "utc": "2026-10-29T14:04:12.760387+00:00",
+      "event": "complete_private_development_replication_validated",
+      "experiment": "E03R",
+      "runner_seconds": 1788.43
+    },
+    {
+      "sequence": 67,
+      "utc": "2026-10-29T14:13:17.803217+00:00",
+      "event": "candidate_E04_CPU_controls_prepared_not_GPU_measurement"
+    },
+    {
+      "sequence": 68,
+      "utc": "2026-10-29T14:13:17.803217+00:00",
+      "event": "private_paper_complete_confirmation_and_optimizer_replication_integrated"
+    },
+    {
+      "sequence": 69,
+      "utc": "2026-10-29T14:34:31.633108+00:00",
+      "event": "precision_reporting_erratum_and_private_paper_corrected"
+    },
+    {
+      "sequence": 70,
+      "utc": "2026-10-29T14:34:31.633108+00:00",
+      "event": "E04_private_inputs_and_frozen_GPU_analysis_ready",
+      "version": 1,
+      "conditions": 13,
+      "optimizer_steps": 0,
+      "predictions": 208
+    },
+    {
+      "sequence": 71,
+      "utc": "2026-10-29T14:39:15.771035+00:00",
+      "event": "launched_private_frozen_rank_controls",
+      "experiment": "E04",
+      "version": 1,
+      "conditions": 13,
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 72,
+      "utc": "2026-10-29T14:45:01.469430+00:00",
+      "event": "E04_v1_engineering_precision_guard_failure_preserved",
+      "optimizer_steps": 0,
+      "predictions": 0
+    },
+    {
+      "sequence": 73,
+      "utc": "2026-10-29T14:54:17.791809+00:00",
+      "event": "launched_private_engineering_retry_before_own_predictions",
+      "experiment": "E04",
+      "version": 2,
+      "conditions": 13,
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 74,
+      "utc": "2026-10-29T14:40:16.061866+00:00",
+      "event": "temporary_literature_render_cache_cleaned"
+    },
+    {
+      "sequence": 75,
+      "utc": "2026-10-29T15:21:05.730165+00:00",
+      "event": "E04_v2_scope_guard_failure_diagnosed_before_any_predictions",
+      "optimizer_steps": 0,
+      "predictions": 0
+    },
+    {
+      "sequence": 76,
+      "utc": "2026-10-29T15:39:57.868819+00:00",
+      "event": "launched_private_text_scope_guard_repair_before_experimental_predictions",
+      "experiment": "E04",
+      "version": 3,
+      "conditions": 13,
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 77,
+      "utc": "2026-10-29T15:39:57.868819+00:00",
+      "event": "posthoc_all_optimizer_token_agreement_pairs_retained"
+    },
+    {
+      "sequence": 78,
+      "utc": "2026-10-29T17:04:31.184606+00:00",
+      "event": "v3_complete_private_validated",
+      "experiment": "E04",
+      "optimizer_steps": 0,
+      "runner_seconds": 3617.1,
+      "predictions": 208
+    },
+    {
+      "sequence": 79,
+      "utc": "2026-10-29T17:10:46.768762+00:00",
+      "event": "private_E04_integration_visual_QA_complete",
+      "experiment": "PAPER"
+    },
+    {
+      "sequence": 80,
+      "utc": "2026-10-29T18:18:15.730267+00:00",
+      "event": "user_scope_correction_and_neuron_edit_engineering"
+    },
+    {
+      "sequence": 81,
+      "utc": "2026-10-29T18:31:43.197229+00:00",
+      "event": "human_neuron_scope_and_fresh_48h_recorded"
+    },
+    {
+      "sequence": 82,
+      "utc": "2026-10-29T18:44:40.613273+00:00",
+      "event": "prospective_protocol_data_sources_and_preflight_ready",
+      "experiment": "N01"
+    },
+    {
+      "sequence": 83,
+      "utc": "2026-10-29T18:45:43.103251+00:00",
+      "event": "v1_running_server_private_source_exact",
+      "experiment": "N01",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 84,
+      "utc": "2026-10-29T18:48:25.479102+00:00",
+      "event": "engineering_feasibility_gate_explicit_after_human_clarification",
+      "experiment": "N01",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 85,
+      "utc": "2026-10-29T18:57:38.188504+00:00",
+      "event": "human_hard_no_training_constraint"
+    },
+    {
+      "sequence": 86,
+      "utc": "2026-10-29T19:19:11.165385+00:00",
+      "event": "complete_private_host_validated",
+      "experiment": "N01",
+      "conditions": 43,
+      "optimizer_steps": 0,
+      "runner_seconds": 961.737887508,
+      "decisions": 2320
+    },
+    {
+      "sequence": 87,
+      "utc": "2026-10-29T19:29:14.625125+00:00",
+      "event": "human_precision_pair_and_html_logbook_intent",
+      "training_allowed": false
+    },
+    {
+      "sequence": 88,
+      "utc": "2026-10-29T19:41:03.076808+00:00",
+      "event": "human_authorizes_public_project_repository",
+      "training_allowed": false
+    },
+    {
+      "sequence": 89,
+      "utc": "2026-10-29T19:58:01.073922+00:00",
+      "event": "public_project_created_from_reviewed_allowlist"
+    },
+    {
+      "sequence": 90,
+      "utc": "2026-10-29T19:59:59.129619+00:00",
+      "event": "goal_intent_logbook_public_project_and_automation_aligned",
+      "experiment": "research_operations"
+    },
+    {
+      "sequence": 91,
+      "utc": "2026-10-29T20:02:38.045319+00:00",
+      "event": "writing_preference_recorded"
+    },
+    {
+      "sequence": 92,
+      "utc": "2026-10-29T20:23:51.059441+00:00",
+      "event": "n01_posthoc_function_analysis_complete",
+      "experiment": "N01",
+      "question": "Q11",
+      "selected_counterfactual_choice_flips": 0,
+      "selected_counterfactual_prompts": 48
+    },
+    {
+      "sequence": 93,
+      "utc": "2026-10-29T20:23:51.059441+00:00",
+      "event": "n02_prospective_engineering_prepared",
+      "experiment": "N02",
+      "question": "Q10",
+      "status": "local_checks_passed_not_launched",
+      "conditions_per_representation": 14,
+      "total_measurements": 460,
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 94,
+      "utc": "2026-10-29T20:24:22.292040+00:00",
+      "event": "n02_v1_launched_private_source_verified",
+      "experiment": "N02",
+      "question": "Q10",
+      "version": 1,
+      "conditions_per_representation": 14,
+      "total_measurements": 460,
+      "optimizer_steps": 0,
+      "privacy_server_verified": true,
+      "cell_sources_exact": true
+    },
+    {
+      "sequence": 95,
+      "utc": "2026-10-29T20:32:09.586567+00:00",
+      "event": "n02_v1_buffer_inventory_failure_preserved_amendment_before_retry",
+      "experiment": "N02",
+      "question": "Q10",
+      "version": 1,
+      "status": "failed_before_predictions",
+      "optimizer_steps": 0,
+      "recorded_script_seconds": 137.16149735300002,
+      "predictions": 0
+    },
+    {
+      "sequence": 96,
+      "utc": "2026-10-29T20:33:46.934580+00:00",
+      "event": "n02_v2_launched_private_source_verified_after_buffer_repair",
+      "experiment": "N02",
+      "question": "Q10",
+      "version": 2,
+      "status": "running",
+      "conditions_per_representation": 14,
+      "total_measurements": 460,
+      "optimizer_steps": 0,
+      "privacy_server_verified": true,
+      "cell_sources_exact": true
+    },
+    {
+      "sequence": 97,
+      "utc": "2026-10-29T20:43:39.444137+00:00",
+      "event": "n02_v2_diagnostic_serialization_failure_preserved_amendment_before_retry",
+      "experiment": "N02",
+      "question": "Q10",
+      "version": 2,
+      "status": "failed_before_predictions",
+      "optimizer_steps": 0,
+      "recorded_script_seconds": 131.767853017,
+      "predictions": 0
+    },
+    {
+      "sequence": 98,
+      "utc": "2026-10-29T20:49:10.587470+00:00",
+      "event": "n02_v3_launched_private_source_verified_after_CPU_loading_rehearsal",
+      "experiment": "N02",
+      "question": "Q10",
+      "version": 3,
+      "status": "running",
+      "conditions_per_representation": 14,
+      "total_measurements": 460,
+      "optimizer_steps": 0,
+      "privacy_server_verified": true,
+      "cell_sources_exact": true
+    },
+    {
+      "sequence": 99,
+      "utc": "2026-10-29T20:51:47.973579+00:00",
+      "event": "n03_functional_coding_and_token_role_intent_recorded_no_GPU_launch",
+      "experiment": "N03",
+      "question": "Q12",
+      "status": "proposal_only",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 100,
+      "utc": "2026-10-29T21:01:59.102871+00:00",
+      "event": "n02_v3_complete_private_host_audited_physical_surgery_precision_pair",
+      "experiment": "N02",
+      "question": "Q10",
+      "version": 3,
+      "status": "complete_engineering",
+      "total_measurements": 460,
+      "optimizer_steps": 0,
+      "runner_seconds": 318.367959736
+    },
+    {
+      "sequence": 101,
+      "utc": "2026-10-29T21:17:48.454785+00:00",
+      "event": "human_authorizes_reproducible_edited_model_bundles_and_professional_README_code",
+      "experiment": "research_operations"
+    }
+  ]
+}

@@ -6,28 +6,28 @@
       "experiment": "Early pilots / E00",
       "status": "historical_engineering_complete",
       "question": "Can the Kaggle Gemma environment load the intended model, capture the correct text MLP tensors and preserve execution semantics?",
-      "question_provenance": "Retrospective summary of preserved engineering runs;not a newly preregistered question.",
+      "question_provenance": "Retrospective summary of preserved engineering runs; not a newly preregistered question.",
       "parents": [],
-      "method": "Dependency/model smoke runs,text-versus-media module selection,hook and cache checks;preserve and repair failures.",
-      "result": "Real text-channel capture became possible after dependency,scope and cache issues. Early failures remain in receipts and compute ledger.",
+      "method": "Dependency/model smoke runs, text-versus-media module selection, hook and cache checks; preserve and repair failures.",
+      "result": "Real text-channel capture became possible after dependency, scope and cache issues. Early failures remain in receipts and compute ledger.",
       "interpretation": "Engineering access is necessary but does not identify a functional neuron role.",
       "next_question": "Which measured changes correspond to useful behaviour rather than formatting or numerical execution?",
-      "direction_decision": "Retain the instrumentation;do not repeat smoke tests without a new implementation change or failure."
+      "direction_decision": "Retain the instrumentation; do not repeat smoke tests without a new implementation change or failure."
     },
     {
       "id": "Q02",
       "experiment": "E01",
       "status": "historical_complete_superseded_method",
       "question": "Can verified self-generated code and controlled response-format adaptation produce useful changes in the model?",
-      "question_provenance": "Retrospective summary;original sources/receipts retain the precise historical conditions.",
+      "question_provenance": "Retrospective summary; original sources/receipts retain the precise historical conditions.",
       "parents": [
         "Q01"
       ],
-      "method": "Generate96solutions,independently verify candidates,compare adaptation objectives and paired activation changes.",
-      "result": "37/96accepted solutions,concentrated in two families. Corrected12-task development scores:base5,full6,boundary4. No general improvement established.",
+      "method": "Generate96 solutions, independently verify candidates, compare adaptation objectives and paired activation changes.",
+      "result": "Accepted 37 of 96 generated solutions, concentrated in two families. On the corrected 12-task development set, the base passed 5 tasks, the full-response adapter passed 6, and the boundary adapter passed 4. No general improvement was established.",
       "interpretation": "Data acceptance concentration and response-format confounding require controlled analysis.",
       "next_question": "Do position/format effects explain observed activation changes?",
-      "direction_decision": "Historical training is superseded. Reuse only its infrastructure/lessons;no more adapter training."
+      "direction_decision": "Historical training is superseded. Reuse only its infrastructure/lessons; no more adapter training."
     },
     {
       "id": "Q03",
@@ -38,11 +38,11 @@
       "parents": [
         "Q02"
       ],
-      "method": "Position controls,paired prompts/activations and independently graded development code.",
-      "result": "24tasks:base10,full14,boundary9,header10,random11. Full gains4/losses0,p0.125;exploratory and inconclusive.",
+      "method": "Position controls, paired prompts/activations and independently graded development code.",
+      "result": "On 24 development tasks, the base passed 10, the full-response condition passed 14, boundary passed 9, header passed 10, and random passed 11. The full condition had four gains and no losses against base (paired p = 0.125). This was exploratory and inconclusive.",
       "interpretation": "Activity drift alone is not useful learning or a functional role.",
       "next_question": "Are selected channel groups causally important and more useful than matched random groups?",
-      "direction_decision": "Move to causal tests;do not optimize these training objectives in the current sprint."
+      "direction_decision": "Move to causal tests; do not optimize these training objectives in the current sprint."
     },
     {
       "id": "Q04",
@@ -53,8 +53,8 @@
       "parents": [
         "Q03"
       ],
-      "method": "338/3380-channel groups,two original adapter seeds,sham and matched random groups;fixed development panels.",
-      "result": "No replicated steering benefit. A secondary first-seed gain failed to replicate;all conditions remain recorded.",
+      "method": "338/3380-channel groups, two original adapter seeds, sham and matched random groups; fixed development panels.",
+      "result": "No replicated steering benefit. A secondary first-seed gain failed to replicate; all conditions remain recorded.",
       "interpretation": "Changed channels are not automatically domain-functional units.",
       "next_question": "Can native-neuron semantic contrasts and direct causal tests identify bounded functions without training?",
       "direction_decision": "Broaden the scientific basis from training-drift groups to native functional localization."
@@ -72,7 +72,7 @@
       "result": "Activation approximation criterion failed at both seeds despite smaller weight differences. No general coding improvement.",
       "interpretation": "Optimizer diagnostics did not answer the user's current neuron-function goal.",
       "next_question": "Which controls are necessary to distinguish actual neuron effects from numerical effects?",
-      "direction_decision": "Closed groundwork;no continuation under the hard no-training constraint."
+      "direction_decision": "Closed groundwork; no continuation under the hard no-training constraint."
     },
     {
       "id": "Q06",
@@ -84,25 +84,25 @@
         "Q02",
         "Q03"
       ],
-      "method": "128eligible tasks,five fixed conditions,640predictions,one frozen host scoring pass.",
-      "result": "Base56/128;four adapters57,59,56,60. All paired intervals include zero;no reliable positive transfer.",
+      "method": "128 eligible tasks, five fixed conditions,640 predictions, one frozen host scoring pass.",
+      "result": "Base56/128; four adapters57,59,56,60. All paired intervals include zero; no reliable positive transfer.",
       "interpretation": "The development signal did not establish transfer.",
       "next_question": "The new neuron study needs its own prospective fresh confirmation after valid causal and engineering evidence.",
-      "direction_decision": "CLOSED. Never rerun the scorer,choose edits from these outcomes or reuse its answers for new selection."
+      "direction_decision": "CLOSED. Never rerun the scorer, choose edits from these outcomes or reuse its answers for new selection."
     },
     {
       "id": "Q07",
       "experiment": "E04",
       "status": "historical_complete_numerical_control",
       "question": "Can equivalent adapter refactorizations alter execution despite exact repeat/identity controls?",
-      "question_provenance": "Retrospective summary;frozen protocol and original failed/startup versions preserved.",
+      "question_provenance": "Retrospective summary; frozen protocol and original failed/startup versions preserved.",
       "parents": [
         "Q04",
         "Q05"
       ],
-      "method": "13fixed numerical conditions,208predictions,1820compact arrays,2460factor proofs;zero new optimizer updates.",
-      "result": "Repeat/identity/power-of-two controls exact. Rank permutations perturb some activities/outputs;one development correctness gain is inconclusive.",
-      "interpretation": "Numerical execution matters;closest prior already reports equivalent-refactorization effects. No novelty or coding improvement claim.",
+      "method": "13 fixed numerical conditions,208 predictions,1820 compact arrays,2460 factor proofs; zero new optimizer updates.",
+      "result": "Repeat/identity/power-of-two controls exact. Rank permutations perturb some activities/outputs; one development correctness gain is inconclusive.",
+      "interpretation": "Numerical execution matters; closest prior already reports equivalent-refactorization effects. No novelty or coding improvement claim.",
       "next_question": "Can functional neuron edits be validated against exact noops and representation-matched baselines?",
       "direction_decision": "Keep the control lesson. Do not let numerical diagnostics displace neuron-function/coding questions."
     },
@@ -111,48 +111,79 @@
       "experiment": "E05",
       "status": "prepared_deferred_never_launched",
       "question": "Would fixed causal masks retain their apparent effects under an equivalent numerical refactorization?",
-      "question_provenance": "Prepared frozen protocol;no GPU results.",
+      "question_provenance": "Prepared frozen protocol; no GPU results.",
       "parents": [
         "Q04",
         "Q07"
       ],
-      "method": "Prepared fixed-mask numerical crossover;no run in this direction authorized under the current focus.",
+      "method": "Prepared fixed-mask numerical crossover; no run in this direction authorized under the current focus.",
       "result": "No measurements. Prepared notebooks are not results.",
-      "interpretation": "Potentially useful diagnostics,but not the strongest current goal.",
+      "interpretation": "Potentially useful diagnostics, but not the strongest current goal.",
       "next_question": "Prioritize the human's native-neuron interpretation and direct-edit objective.",
-      "direction_decision": "Deferred;do not launch simply because source exists."
+      "direction_decision": "Deferred; do not launch simply because source exists."
     },
     {
       "id": "Q09",
       "experiment": "N01",
       "status": "complete_host_validated_development_only",
-      "question": "Can native E2B MLP neurons be localized and steered in a controlled patch-choice pilot,and can silent new-neuron/residual-MLP additions preserve actual-model behaviour?",
-      "question_provenance": "Question summarized from the prospective N01 protocol,frozen before GPU outputs;subsequent no-training scope amendment changed no runtime conditions.",
+      "question": "Can native E2B MLP neurons be localized and steered in a controlled patch-choice pilot, and can silent new-neuron/residual-MLP additions preserve actual-model behaviour?",
+      "question_provenance": "Question summarized from the prospective N01 protocol, frozen before GPU outputs; subsequent no-training scope amendment changed no runtime conditions.",
       "parents": [
         "Q01",
         "Q04",
         "Q07"
       ],
-      "method": "32discovery/64development prompts,43fixed conditions,2320decisions,individual/group gains,matched randoms,counterfactual patches and silent8/64-unit branches;zero optimizer updates.",
-      "result": "All2320rows host checked. Both additions preserve64baseline logit hashes each;identity/reload/cached-generation/restoration gates pass under receipt limits. Runner961.74s,peak7.77GiB,18.02MBcompact output.",
-      "interpretation": "Actual checkpoint compatibility for these two branch forms is established. Physical dense add/delete,full decoder insertion,individual semantic roles and fresh coding improvement are not established.",
-      "next_question": "Can matched neurons be compared across original floating-point and NF4 representations,and can prescribed permanent edits pass the same engineering and functional controls?",
-      "direction_decision": "Go deeper on provenance,precision pairing and direct connection surgery. Broaden beyond binary patch choice before a coding-capability claim."
+      "method": "32 discovery prompts and 64 development prompts; 43 fixed conditions and 2,320 decisions. Individual/group gains, random controls, counterfactual patches and silent 8-neuron/64-unit branches. Zero optimizer updates.",
+      "result": "All 2,320 rows were checked on the host. Both additions preserved all 64 baseline logit hashes. Identity, cached-generation, reload and restoration checks passed within the receipt limits. Runtime: 961.74 seconds; peak allocated CUDA memory: 7.77 GiB; compact output: 18.02 MB.",
+      "interpretation": "Actual checkpoint compatibility for these two branch forms is established. Physical dense add/delete, full decoder insertion, individual semantic roles and fresh coding improvement are not established.",
+      "next_question": "Can matched neurons be compared across original floating-point and NF4 representations, and can prescribed permanent edits pass the same engineering and functional controls?",
+      "direction_decision": "Go deeper on provenance, precision pairing and direct connection surgery. Broaden beyond binary patch choice before a coding-capability claim."
     },
     {
       "id": "Q10",
-      "experiment": "Paired precision / direct surgery",
-      "status": "human_requested_proposal_not_launched",
-      "question": "Are corresponding neurons' causal effects preserved between unquantized text-only E2B and NF4,and do direct no-training tweaks produce precision-dependent coding effects?",
-      "question_provenance": "Latest direct human proposal;intent recorded but exact GPU protocol not yet frozen.",
+      "experiment": "N02: shared-source precision and physical surgery",
+      "status": "complete_host_audited_engineering",
+      "question": "Can text-only E2B run in unquantized BF16 and same-parent NF4, and can physical deletion, cloning, prescribed addition and permanent connection edits pass explicit equivalence/reload checks?",
+      "question_provenance": "Direct human request, developed into the N02 protocol and frozen before GPU outputs. Versions 2 and 3 repair inventory and diagnostic logging under dated amendments; conditions and tolerances are unchanged.",
       "parents": [
         "Q09"
       ],
-      "method": "First pin shared source,validate correspondence/text-only loading and measure BF16memory. Then freeze shared-coordinate within-model-baseline interventions and prescribed surgery with numerical/equivalent/random controls.",
-      "result": "No GPU job launched or precision-pair outcome measured.",
-      "interpretation": "Promising extension,not a result. BF16unquantized and FP32are different feasibility conditions;equal tensor shapes alone do not prove neuron correspondence.",
-      "next_question": "Which original source revision and loader provide a valid matched pair within free T4memory?",
-      "direction_decision": "Do the smallest bounded feasibility test after a host provenance review;no training and no simultaneous broad experimental branches."
+      "method": "Two representations of the same pinned floating-point parent. Fourteen conditions on 16 reused development prompts per representation, plus 12 reload measurements: 460 measurements in total. Zero training. Fixed algebra tolerances and exact identity/restoration gates. NF4 physical edits use an explicitly dequantized target MLP and its unchanged dense baseline;the original-to-dense numerical change is recorded separately.",
+      "result": "Version 3 completed all 460 measurements across unquantized BF16 and same-parent NF4. All hard gates and ten algebra comparisons passed. Deletion matched zeroing, and outgoing-weight doubling matched gain-2 steering exactly on all 16 prompts in each representation. Physical zero-output addition preserved the dense target-layer baseline exactly. BF16 split cloning changed some logits by up to 0.125 but passed the fixed tolerance and preserved top-1 tokens. Peak allocated CUDA memory was 8.95 GiB (BF16) and 7.00 GiB (NF4). Both startup failures remain recorded.",
+      "interpretation": "Physical editing and custom patch replay now work on the actual pinned text model in both representations within the tested scope:one channel in layer 34 and 16 development prompts. This does not establish a neuron function, new capability, coding improvement or speedup.",
+      "next_question": "Can a bounded causal neuron role survive changed wording/output formats and transfer to executable coding?",
+      "direction_decision": "Engineering gate passed. Move to the functional coding study;retain exact and tolerance-qualified comparisons without rerunning N02."
+    },
+    {
+      "id": "Q11",
+      "experiment": "N01 posthoc function checks",
+      "status": "complete_host_only_posthoc",
+      "question": "Do the N01 selected channels show a specific coding role or mainly change patch-choice confidence?",
+      "question_provenance": "Posthoc question and contrast plan recorded after all N01 outcomes were read. No prospective semantic claim.",
+      "parents": [
+        "Q09"
+      ],
+      "method": "Use all existing conditions and selected traces. Compute coordinate overlap, balanced semantic/label/order contrasts, all9 counterfactual comparisons and random-activity matching quality. No model forwards or final data.",
+      "result": "The three selected counterfactual groups changed margins but produced no answer-choice flips across 48 recipient prompts. Boundary and deduplication groups shared 4 of 8 channels and the same top-ranked channel. Across 48 random-control matches, the median control/selected activity-RMS ratio was 0.102; none were within 10% of the selected activity RMS. All contrasts and controls are retained.",
+      "interpretation": "N01 does not identify a domain-specific neuron function or establish coding benefit. Margin effects alone are insufficient.",
+      "next_question": "Can localization at intermediate semantic/code-continuation positions survive new output formats and actual executable coding tests?",
+      "direction_decision": "Broaden beyond A/Bdecision-token screening. Use closer activity/effect-size controls in the next functional study; do not relabel the pilot as successful interpretation."
+    },
+    {
+      "id": "Q12",
+      "experiment": "N03: functional coding follow-up",
+      "status": "proposal_only_no_GPU_launch",
+      "question": "Can neurons localized at semantic input and code-continuation positions support a role that survives new output formats and transfers to executable coding?",
+      "question_provenance": "Prospective intent after N01 control analysis; exact data, conditions and GPU protocol are not frozen.",
+      "parents": [
+        "Q10",
+        "Q11"
+      ],
+      "method": "Prepare semantic opposites and paraphrases, code continuations, closer activity-matched randoms, necessity/rescue and retention tests. First check which token positions can influence later outputs under shared KV. No training.",
+      "result": "No functional-coding experiment result yet. N02 engineering has completed;no GPU job is active.",
+      "interpretation": "This broadens the study beyond A/B readout confidence while retaining direct neuron edits as the mechanism. A structural-path hypothesis is not a measured E2B finding.",
+      "next_question": "Which semantic-position/code-position measurements distinguish a coding computation from a late output-format signal?",
+      "direction_decision": "Prepare source and host controls,then freeze a small decisive coding protocol. Preserve the completed engineering evidence;do not rerun N02 or launch an unfocused sweep."
     }
   ]
 }

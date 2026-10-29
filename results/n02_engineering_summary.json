@@ -1,0 +1,502 @@
+{
+  "utc": "2026-10-29T20:59:50.231631+00:00",
+  "experiment": "N02",
+  "version": 3,
+  "status": "complete_host_audited_engineering",
+  "source_manifest_exact": true,
+  "protocol_unchanged": true,
+  "oracle": {
+    "rows": 16,
+    "candidate_probe_executions": 1264,
+    "all_labels_uniquely_verified": true,
+    "families": [
+      "boundary",
+      "division",
+      "dedup",
+      "json_control"
+    ]
+  },
+  "measurements": 460,
+  "raw_AB_rows_host_checked": 448,
+  "reload_rows": 12,
+  "same_parent_payload_and_prompt_tokens": true,
+  "optimizer_steps": 0,
+  "summaries": [
+    {
+      "representation": "bf16_text",
+      "hard_gates_pass": true,
+      "algebra": [
+        {
+          "left": "dense_delete",
+          "right": "dense_zero",
+          "all_pass": true,
+          "all16_full_logits_hash_exact": true,
+          "max_abs": 0.0,
+          "max_relative_L2": 0.0,
+          "top1_agreement": 16
+        },
+        {
+          "left": "dense_scale2",
+          "right": "dense_gain2",
+          "all_pass": true,
+          "all16_full_logits_hash_exact": true,
+          "max_abs": 0.0,
+          "max_relative_L2": 0.0,
+          "top1_agreement": 16
+        },
+        {
+          "left": "dense_clone_unsplit",
+          "right": "dense_gain2",
+          "all_pass": true,
+          "all16_full_logits_hash_exact": true,
+          "max_abs": 0.0,
+          "max_relative_L2": 0.0,
+          "top1_agreement": 16
+        },
+        {
+          "left": "dense_clone_split",
+          "right": "dense_base",
+          "all_pass": true,
+          "all16_full_logits_hash_exact": false,
+          "max_abs": 0.125,
+          "max_relative_L2": 0.00022102649381849915,
+          "top1_agreement": 16
+        },
+        {
+          "left": "dense_new_zero",
+          "right": "dense_base",
+          "all_pass": true,
+          "all16_full_logits_hash_exact": true,
+          "max_abs": 0.0,
+          "max_relative_L2": 0.0,
+          "top1_agreement": 16
+        }
+      ],
+      "raw_decisions_sha256": "913c5c9aa4e4de5fa3c11797e6a31bb768cbcf42c6d4f01fb36ed83108c49173",
+      "runner_seconds": 181.508997314,
+      "peak_cuda_allocated_bytes": 9606466048,
+      "stored_parameter_tensor_elements_by_dtype": {
+        "torch.bfloat16": 4628569344
+      },
+      "buffer_dtype_counts": {
+        "torch.bfloat16": 37,
+        "torch.float32": 4
+      },
+      "all_condition_scores_development_only": [
+        {
+          "condition": "original",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "repeat_original",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_base",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_repeat",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_identity",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_zero",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_delete",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_gain2",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_scale2",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_clone_unsplit",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_clone_split",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_new_zero",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_recombined",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "restore_original",
+          "correct": 12,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 3,
+            "dedup": 3,
+            "json_control": 3
+          }
+        }
+      ],
+      "output_tokens": 56,
+      "original_to_dense_max_abs": 0.0
+    },
+    {
+      "representation": "nf4_text_same_source",
+      "hard_gates_pass": true,
+      "algebra": [
+        {
+          "left": "dense_delete",
+          "right": "dense_zero",
+          "all_pass": true,
+          "all16_full_logits_hash_exact": true,
+          "max_abs": 0.0,
+          "max_relative_L2": 0.0,
+          "top1_agreement": 16
+        },
+        {
+          "left": "dense_scale2",
+          "right": "dense_gain2",
+          "all_pass": true,
+          "all16_full_logits_hash_exact": true,
+          "max_abs": 0.0,
+          "max_relative_L2": 0.0,
+          "top1_agreement": 16
+        },
+        {
+          "left": "dense_clone_unsplit",
+          "right": "dense_gain2",
+          "all_pass": true,
+          "all16_full_logits_hash_exact": true,
+          "max_abs": 0.0,
+          "max_relative_L2": 0.0,
+          "top1_agreement": 16
+        },
+        {
+          "left": "dense_clone_split",
+          "right": "dense_base",
+          "all_pass": true,
+          "all16_full_logits_hash_exact": true,
+          "max_abs": 0.0,
+          "max_relative_L2": 0.0,
+          "top1_agreement": 16
+        },
+        {
+          "left": "dense_new_zero",
+          "right": "dense_base",
+          "all_pass": true,
+          "all16_full_logits_hash_exact": true,
+          "max_abs": 0.0,
+          "max_relative_L2": 0.0,
+          "top1_agreement": 16
+        }
+      ],
+      "raw_decisions_sha256": "ce20f13f883ca30f0c1913c631c0c82bf117073af657675d015228536a877913",
+      "runner_seconds": 136.858962422,
+      "peak_cuda_allocated_bytes": 7512061952,
+      "stored_parameter_tensor_elements_by_dtype": {
+        "torch.uint8": 705429504,
+        "torch.bfloat16": 3217710336
+      },
+      "buffer_dtype_counts": {
+        "torch.bfloat16": 37,
+        "torch.float32": 4
+      },
+      "all_condition_scores_development_only": [
+        {
+          "condition": "original",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "repeat_original",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_base",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_repeat",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_identity",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_zero",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_delete",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_gain2",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_scale2",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_clone_unsplit",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_clone_split",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_new_zero",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "dense_recombined",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        },
+        {
+          "condition": "restore_original",
+          "correct": 11,
+          "prompts": 16,
+          "independent_instances": 4,
+          "family_scores": {
+            "boundary": 3,
+            "division": 2,
+            "dedup": 3,
+            "json_control": 3
+          }
+        }
+      ],
+      "output_tokens": 56,
+      "original_to_dense_max_abs": 0.0
+    }
+  ],
+  "recorded_worker_seconds": 318.367959736,
+  "notebook_seconds": 380.29918516400005,
+  "actual_output_bytes": 517223,
+  "host_model_forwards": 0,
+  "final_data_touched": false,
+  "coding_improvement_tested": false,
+  "limits": "Full-vocabulary hashes,global numerical norms,source-weight/requantization and reload-weight checks are GPU witnesses. Host checks source/manifests,all rows,AB grades,hash equality,metric bounds,first-token generation consistency and small basis files;it does not rerun the model or recompute full logits. No capability or efficiency inference.",
+  "analysis_timing": "Host auditor implemented after completed result headers and algebra summaries were read. No new conditions,training or model calls.",
+  "audit_source_sha256": "1bf1f0dd0a30bfc7a6d4a95ea72b173b8631ba77f38c85f4e9d45bfd2a2ebfba"
+}

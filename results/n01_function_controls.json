@@ -1,0 +1,121 @@
+{
+  "analysis": "posthoc_description_only",
+  "plan_sha256": "becef95324e578c8f2fb0a4d787d5f5b116f3e427e722ca5d876ca268460e390",
+  "selected_unique_channels": 17,
+  "group_overlaps": [
+    {
+      "left": "boundary",
+      "right": "division",
+      "overlap": 2,
+      "out_of": 8
+    },
+    {
+      "left": "boundary",
+      "right": "dedup",
+      "overlap": 4,
+      "out_of": 8
+    },
+    {
+      "left": "division",
+      "right": "dedup",
+      "overlap": 2,
+      "out_of": 8
+    }
+  ],
+  "random_activity_matching_quality": {
+    "groups": 6,
+    "coordinate_matches": 48,
+    "RMS_ratio_median": 0.10221261644941645,
+    "RMS_ratio_min": 0.033950805040890264,
+    "RMS_ratio_max": 1.302130485708621,
+    "within_10_percent": 0,
+    "limitation": "Same layer/RMSdecile is a coarse match;selected high-tail units often have much larger RMS than randoms. Do not infer specificity solely from larger selected effect."
+  },
+  "all_counterfactual_conditions": [
+    {
+      "condition": "boundary_random3101_counterfactual_patch",
+      "n": 16,
+      "recipient_accuracy": 13,
+      "base_accuracy": 13,
+      "choice_flips": 0,
+      "matches_donor_base_choice": 6,
+      "mean_recipient_margin_change": 0.0322265625
+    },
+    {
+      "condition": "boundary_random3102_counterfactual_patch",
+      "n": 16,
+      "recipient_accuracy": 13,
+      "base_accuracy": 13,
+      "choice_flips": 0,
+      "matches_donor_base_choice": 6,
+      "mean_recipient_margin_change": -0.0263671875
+    },
+    {
+      "condition": "boundary_top8_counterfactual_patch",
+      "n": 16,
+      "recipient_accuracy": 13,
+      "base_accuracy": 13,
+      "choice_flips": 0,
+      "matches_donor_base_choice": 6,
+      "mean_recipient_margin_change": -2.8651885986328125
+    },
+    {
+      "condition": "dedup_random3101_counterfactual_patch",
+      "n": 16,
+      "recipient_accuracy": 12,
+      "base_accuracy": 12,
+      "choice_flips": 0,
+      "matches_donor_base_choice": 8,
+      "mean_recipient_margin_change": -0.057861328125
+    },
+    {
+      "condition": "dedup_random3102_counterfactual_patch",
+      "n": 16,
+      "recipient_accuracy": 12,
+      "base_accuracy": 12,
+      "choice_flips": 0,
+      "matches_donor_base_choice": 8,
+      "mean_recipient_margin_change": -0.0380859375
+    },
+    {
+      "condition": "dedup_top8_counterfactual_patch",
+      "n": 16,
+      "recipient_accuracy": 12,
+      "base_accuracy": 12,
+      "choice_flips": 0,
+      "matches_donor_base_choice": 8,
+      "mean_recipient_margin_change": -3.10113525390625
+    },
+    {
+      "condition": "division_random3101_counterfactual_patch",
+      "n": 16,
+      "recipient_accuracy": 11,
+      "base_accuracy": 10,
+      "choice_flips": 1,
+      "matches_donor_base_choice": 11,
+      "mean_recipient_margin_change": -0.15985107421875
+    },
+    {
+      "condition": "division_random3102_counterfactual_patch",
+      "n": 16,
+      "recipient_accuracy": 11,
+      "base_accuracy": 10,
+      "choice_flips": 1,
+      "matches_donor_base_choice": 11,
+      "mean_recipient_margin_change": -0.07171630859375
+    },
+    {
+      "condition": "division_top8_counterfactual_patch",
+      "n": 16,
+      "recipient_accuracy": 10,
+      "base_accuracy": 10,
+      "choice_flips": 0,
+      "matches_donor_base_choice": 12,
+      "mean_recipient_margin_change": 0.365234375
+    }
+  ],
+  "direction_decision": "N01does not establish domain specificity or coding benefit. Test intermediate/code-continuation positions and changed output formats before naming a neuron role. Structural engineering and shared-source BF16/NF4pairing remain valid bounded gates.",
+  "training_updates": 0,
+  "new_model_forward_calls": 0,
+  "final_data_touched": false
+}

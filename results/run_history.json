@@ -1,0 +1,145 @@
+{
+  "scope": "Every run recorded in the private compute ledger;raw assets remain private",
+  "runs": [
+    {
+      "run": "engineering_smoke_v1_v2_v3",
+      "recorded_script_seconds": 917.22
+    },
+    {
+      "run": "E00_v1",
+      "recorded_script_seconds": 125.71,
+      "outcome": "dependency failure"
+    },
+    {
+      "run": "E00_v2",
+      "recorded_script_seconds": null,
+      "outcome": "text/vision MLP selection failure; exact duration unavailable"
+    },
+    {
+      "run": "E00_v3",
+      "recorded_script_seconds": 108.68,
+      "outcome": "hook IO valid; cache-off semantics invalid for scientific use"
+    },
+    {
+      "run": "E01_v1",
+      "recorded_script_seconds": null,
+      "outcome": "failed before model load; no optimizer steps"
+    },
+    {
+      "run": "E01_v2",
+      "recorded_script_seconds": 1111.498368208,
+      "outcome": "96 base generations, 37 verified; OOM before optimizer updates"
+    },
+    {
+      "run": "E01_corrected_v1",
+      "recorded_script_seconds": 108.90616575000001,
+      "outcome": "two-device consistency gate failed; no generation or training"
+    },
+    {
+      "run": "E01_corrected_v2",
+      "recorded_script_seconds": 1842.43,
+      "outcome": "Complete: 40 updates per adapter, 72 dev predictions, paired 35-layer traces"
+    },
+    {
+      "run": "E01B_v1",
+      "recorded_script_seconds": 3857.61,
+      "outcome": "Complete: four arms40 successful updates each,150 development predictions,25 NLL references/arms,175 layer/arm traces"
+    },
+    {
+      "run": "E02_seed7341_fraction0.001_v1",
+      "recorded_script_seconds": 3330.72,
+      "outcome": "Complete validated:192 dev predictions, checkpoint/sham replay exact, all hooks observed; residual group11/24 equals sham with no task flips"
+    },
+    {
+      "run": "E02_seed8462_fraction0.001_v1",
+      "recorded_script_seconds": 3508.56,
+      "outcome": "Complete validated192 predictions; sham14/residual12/full12/boundary13/weight13/random12,14,13"
+    },
+    {
+      "run": "E02_seed7341_fraction0.01_v1",
+      "recorded_script_seconds": 3335.45,
+      "outcome": "Complete validated192 predictions; sham11/residual14/full12/boundary11/weight11/random9,12,11. Single secondary seed, inconclusive."
+    },
+    {
+      "run": "E02_seed8462_fraction0.01_v1",
+      "recorded_script_seconds": 3512.38,
+      "outcome": "Complete validated192 predictions; sham14/residual13/full12/boundary12/weight13/random9,13,11. First-seed gain not replicated."
+    },
+    {
+      "run": "E03_seed8462_v1",
+      "recorded_script_seconds": 1778.71,
+      "outcome": "Complete validated163 optimizer calls/445 supervised targets/74 synthetic-zero steps/96 dev predictions/840 arrays. All6 same8/16 outcomes;zero-vs-standard late effective error.0111,activation error.2513 (fails.10 tolerance)."
+    },
+    {
+      "run": "C01_batch01_v1",
+      "recorded_script_seconds": 5126.07,
+      "outcome": "Clean budget pause;179/640 fixed ungraded predictions,43439 tokens,all replay/input-source audits pass"
+    },
+    {
+      "run": "C01_batch02_v1",
+      "recorded_script_seconds": 5111.55,
+      "outcome": "Clean budget pause;359/640 cumulative fixed ungraded predictions,180 new/43532 new tokens,prior179 preserved;all replay/hash/version audits pass."
+    },
+    {
+      "run": "C01_batch03_v1",
+      "recorded_script_seconds": 5106.48,
+      "outcome": "Clean budget pause;586/640 cumulative fixed ungraded predictions,227 new/43680 new tokens,prior359 preserved;all replay/hash/version audits pass."
+    },
+    {
+      "run": "C01_batch04_v1",
+      "recorded_script_seconds": 1113.8,
+      "outcome": "Complete640/640 frozen ungraded predictions;54 new/9013 tokens;all4 batches,source/history/privacy and offline token/text audits pass."
+    },
+    {
+      "run": "E03R_seed7341_v1",
+      "recorded_script_seconds": 1788.43,
+      "outcome": "Complete validated163 optimizer calls/445 targets/74 zero updates/96 dev predictions/840 arrays. Weight error.02794,activation error.21195 fails tolerance. Standard9/16,others8/16;one gainp1 survives stress,with cap qualifiers."
+    },
+    {
+      "run": "E04_rank_controls_v1",
+      "recorded_script_seconds": 110.15001725100001,
+      "outcome": "ERROR before measurements:live precision guard rejected inventory before saving its values;0 predictions/0 optimizer steps. Failed source and receipts preserved.",
+      "duration_scope": "Notebook elapsed through dependency setup,model load and guard failure;runner-only duration unavailable."
+    },
+    {
+      "run": "E04_rank_controls_v2",
+      "recorded_script_seconds": 126.797673188,
+      "outcome": "ERROR before experimental predictions:scope guard included247 nontext placeholder states;all129 decoder modules valid NF4/BF16. Exact source/diagnostic preserved.",
+      "duration_scope": "Notebook through dependencies,model load,four bare-base cache checks and guard failure."
+    },
+    {
+      "run": "E04_rank_controls_v3",
+      "recorded_script_seconds": 3617.1,
+      "outcome": "COMPLETE private validated:13conditions/208predictions/1820arrays/2460proofs,zero optimizer updates;all noops and independent host grades exact.",
+      "duration_scope": "Runner only;excludes dependencies/finalization and is not Kaggle quota charged."
+    },
+    {
+      "run": "N01_v1",
+      "recorded_script_seconds": 961.737887508,
+      "outcome": "Complete private hostvalidated43conditions/2320decisions;silent8newneurons+64unitresidualMLPcompatibility passes;zero optimizer updates;no coding improvement claim.",
+      "duration_scope": "Runner only;not Kaggle quota charged."
+    },
+    {
+      "run": "N02_v1_failed_buffer_inventory",
+      "recorded_script_seconds": 137.16149735300002,
+      "outcome": "Engineering failure before predictions:layer_scalar is a buffer;parameter-only shape lookup failed. BF16source downloaded/hashed and text model loaded;no interventions or coding conclusions.",
+      "duration_scope": "Notebook START through failure,including dependencies/download/load;worker-only duration unknown;not charged quota.",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "N02_v2_failed_diagnostic_JSON",
+      "recorded_script_seconds": 131.767853017,
+      "outcome": "Engineering failure before predictions:HFloading diagnostics contain sets;strict JSON serialization failed. Source/shapes/media/head checks had passed.",
+      "duration_scope": "Notebook START through failure,including dependencies/download/load;worker-only duration unknown;not charged quota.",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "N02_v3",
+      "recorded_script_seconds": 318.367959736,
+      "outcome": "Complete host-audited engineering:460measurements across unquantized BF16and same-parent NF4;all hard gates and10algebra comparisons pass. Physical delete/direct output edit/clone/zero and prescribed nonzero new neuron executed. BF16split clone has max0.125logit deviation within fixed tolerance;no coding benefit tested.",
+      "duration_scope": "Sum of two sequential workers,318.37s;notebook total380.30s retained separately,not added again. Not charged quota.",
+      "optimizer_steps": 0
+    }
+  ],
+  "active_runs": []
+}

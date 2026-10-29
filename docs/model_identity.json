@@ -17,5 +17,23 @@
     "https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
     "https://ai.google.dev/gemma/docs/core/model_card_4"
   ],
-  "inference": "Affordable, hook-accessible model for a bounded quantized-E2B mechanistic study. Quantization is a scientific scope limitation; it cannot be assumed that an observed effect transfers to unquantized weights."
+  "inference": "Affordable, hook-accessible model for a bounded quantized-E2B mechanistic study. Quantization is a scientific scope limitation; it cannot be assumed that an observed effect transfers to unquantized weights.",
+  "N02_matched_text_pair": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "unique_text_parameters": 4628569344,
+    "text_only": true,
+    "representations": [
+      "Unquantized BF16parameter tensors",
+      "NF4derived from the same pinned floating-point source,with129quantized linears and BF16unquantized parameters"
+    ],
+    "buffer_precision": "Actual named-buffer dtypes recorded in N02outputs,includingFP32RoPE. This pair does not reuse the older FP32norm-vector conversion.",
+    "BF16_peak_allocated_GiB": 8.946718692779541,
+    "NF4_peak_allocated_GiB": 6.996152877807617,
+    "training_steps": 0,
+    "receipt": "runs/n02/version3/result_receipt.json",
+    "coding_benefit_tested": false
+  },
+  "checkpoint_scope": "Original historical quantized anchor used through N01. N02uses the separately pinned official shared-source text-only pair below.",
+  "next_study_model_intent": "Prefer unquantized BF16as the prospective primary after its inference feasibility proof,subject to a fresh attribution-memory gate. Use same-parent NF4as a robustness condition. No model choice from held-out outcomes."
 }
