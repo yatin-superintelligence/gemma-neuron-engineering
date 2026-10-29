@@ -6,8 +6,8 @@ Current study: **Gemma Neuron Engineering: Interpretability and Control**.
 
 We investigate what individual gated-MLP neurons and small groups contribute to coding, then test whether steering, prescribed connection edits, removal, cloning or construction can change useful behaviour. The current validation is Gemma-specific; the intervention primitives can be extended to other compatible models.
 
-- [Goal & Intent — detailed technical specification](docs/GOAL_AND_INTENT.html)
-- [Research Logbook — sequential questions, evidence and decisions](docs/RESEARCH_LOG.html)
+- [Goal & Intent: detailed technical specification](docs/GOAL_AND_INTENT.html)
+- [Research Logbook: sequential questions, evidence and decisions](docs/RESEARCH_LOG.html)
 - [Current model and precision](docs/model_identity.json)
 - [Planned matched-precision comparison](docs/precision_pair_intent.json)
 - [Complete N01 condition/family aggregates](results/n01_development_summary.json)
