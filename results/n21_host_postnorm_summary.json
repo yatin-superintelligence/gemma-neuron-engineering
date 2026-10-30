@@ -1,0 +1,70 @@
+{
+  "utc": "2026-10-30T17:54:23.050543+00:00",
+  "status": "host_probe_complete_closed_no_pretrained_experiment",
+  "result_sha256": "6db93edb0bf9c5d26324b844e1a5330313bb7e04e7febebfc54c9483d8c96a2a",
+  "protocol_sha256": "b84d725c679b4171dc65c655d20fe7cf1c9b3517109fe1d7e7a1cbac57497e2d",
+  "source_sha256": "6f3ac0510e421570566ab2564ec845f60f29b934ed2e97e1f87cb1f8f7808ffb",
+  "seed": 3521,
+  "actual_counters": {
+    "MLP_calls": 12,
+    "MLP_synthetic_positions": 36,
+    "norm_calls": 26,
+    "norm_synthetic_positions": 50
+  },
+  "pretrained_model_forwards": 0,
+  "actual_decoder_model_forwards": 0,
+  "text_input_tokens": 0,
+  "generated_tokens": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "all_scope_parameter_and_restoration_guards_pass": true,
+  "all4stored_activity_raw_and_postnorm_pairs_exact_on_fixture": true,
+  "uniform_whole_MLP_scale": {
+    "FP32_raw_norm_ratio": 2.0,
+    "FP32_postnorm_relative_L2": 0.0001153221511179777,
+    "BF16_raw_norm_ratio": 2.0,
+    "BF16_postnorm_byte_equal": true
+  },
+  "isolated_scale_examples": [
+    {
+      "amplitude": 1.0,
+      "input_dtype": "torch.float32",
+      "FP64_exact_uniform_gain_ratio": 1.000000582885239,
+      "actual_output_norm_ratio": 1.0000005696447232
+    },
+    {
+      "amplitude": 1.0,
+      "input_dtype": "torch.bfloat16",
+      "FP64_exact_uniform_gain_ratio": 1.000000582885239,
+      "actual_output_norm_ratio": 1.0
+    },
+    {
+      "amplitude": 0.01,
+      "input_dtype": "torch.float32",
+      "FP64_exact_uniform_gain_ratio": 1.0057895342981065,
+      "actual_output_norm_ratio": 1.0057894858753693
+    },
+    {
+      "amplitude": 0.01,
+      "input_dtype": "torch.bfloat16",
+      "FP64_exact_uniform_gain_ratio": 1.0057895342981065,
+      "actual_output_norm_ratio": 1.0054243145540098
+    },
+    {
+      "amplitude": 0.0001,
+      "input_dtype": "torch.float32",
+      "FP64_exact_uniform_gain_ratio": 1.9810943364099014,
+      "actual_output_norm_ratio": 1.9810943794693172
+    },
+    {
+      "amplitude": 0.0001,
+      "input_dtype": "torch.bfloat16",
+      "FP64_exact_uniform_gain_ratio": 1.9810943364099014,
+      "actual_output_norm_ratio": 1.9794026883181042
+    }
+  ],
+  "coupling_example": "Changing one constructed raw output coordinate changes the other three normalized coordinates. This is normalization arithmetic,not a pretrained semantic finding.",
+  "interpretation": "Distinguish raw neuron contribution from the normalized residual update. Uniform positive gain can mostly cancel when variance dominates epsilon,while small-variance inputs show a different response. Selective gains also change the normalization denominator. Do not use this known property as a quantitative explanation of N13/N17 nulls.",
+  "pretrained_equivalence_or_coding_improvement_established": false,
+  "seconds": 0.08641474999603815
+}

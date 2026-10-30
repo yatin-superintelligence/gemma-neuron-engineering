@@ -1,0 +1,85 @@
+{
+  "utc": "2026-10-30T17:45:35.780451+00:00",
+  "experiment": "N21H",
+  "question_id": "Q35",
+  "status": "prospective_host_protocol_before_implementation_or_outputs",
+  "purpose": "Understand the normalization stage and validate fixed connection-gain scope before considering any fresh coding utility study.",
+  "model_scope": "Only local random-weight Gemma4TextMLP and Gemma4RMSNorm modules. No pretrained checkpoint,decoder generation,task prompt or new neuron training.",
+  "seed": 3521,
+  "source_version": "transformers5.8.0",
+  "official_source_url": "https://raw.githubusercontent.com/huggingface/transformers/v5.8.0/src/transformers/models/gemma4/modeling_gemma4.py",
+  "official_file_sha256": "64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933",
+  "installed_class_source_sha256": {
+    "Gemma4TextMLP": "0f49f020324cda81ba94fe0fcae0f86a719150fec879358c4883a0c21764be17",
+    "Gemma4TextDecoderLayer": "5da6355e651407f7ab66a72e0d17e92dd9f9a9f9cc7883b2f935bb308c87566e",
+    "Gemma4RMSNorm": "048ef2767efd6480217ca5e915be681246b00a11400c7a0f43c0caac3b2c2e3b"
+  },
+  "official_and_installed_selected_class_AST_exact": true,
+  "parent_config_sha256": "1b28f3d2c3100f6c594754b81107428bd7b822a7f48272ca681dae9d2ec38330",
+  "rms_epsilon": 1e-06,
+  "analytical_probe": {
+    "dimension": 16,
+    "input_amplitudes": [
+      1.0,
+      0.01,
+      0.0001
+    ],
+    "fixed_gain": 2,
+    "arithmetic": "FP64 analytical reference; actual library RMSNorm uses FP32 internal arithmetic and casts to input dtype.",
+    "dtypes": [
+      "torch.float32",
+      "torch.bfloat16"
+    ],
+    "equation": "For R(y)=w*y/sqrt(mean(y^2)+eps),R(2y)/R(y)=sqrt((m+eps)/(m+eps/4)) elementwise where nonzero. Positive uniform scaling approximately cancels only when m dominates eps.",
+    "theorem_check": "FP64 formula relativeL2<=1e-12. No prescribed equality tolerance or universal numerical floor for the actual implementation. Report all differences."
+  },
+  "coupling_probe": {
+    "raw_before": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "raw_after": [
+      2,
+      2,
+      3,
+      4
+    ],
+    "requirement": "Only raw coordinate0 changes;actual normalization changes all three other output coordinates. This is a constructed arithmetic example,not a discovered pretrained neuron."
+  },
+  "module_probe": {
+    "hidden_size": 16,
+    "intermediate_size": 24,
+    "layer_idx": 0,
+    "synthetic_positions": 3,
+    "group": [
+      1,
+      3,
+      7,
+      9
+    ],
+    "conditions": [
+      "base",
+      "uniform_all_columns2",
+      "group_stored0",
+      "group_activity0",
+      "group_stored2",
+      "group_activity2"
+    ],
+    "dtypes": [
+      "torch.float32",
+      "torch.bfloat16"
+    ],
+    "weight_edits": "Only declared down columns;each assignment followed by exact original-matrix restoration. Expected six total down-parameter version increments per dtype. All gate/up/norm versions and gradient flags unchanged;all p.grad None.",
+    "comparison": "Measure raw and normalized outputs for stored and activation forms,including hashes,maxabs/relativeL2. Do not assume exact equivalence or choose a form by numerical success.",
+    "scope": "Hooks apply to all three positions in a module forward and are removed. All outside edited columns remain byte-exact."
+  },
+  "stopping": "Any scope,restoration,hook/version,gradient or FP64 theorem check failure is preserved and stops interpretation. No pretrained model conclusion.",
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "pretrained_model_forwards": 0,
+  "text_input_tokens": 0,
+  "generated_tokens": 0,
+  "GPU_job_launched": false
+}

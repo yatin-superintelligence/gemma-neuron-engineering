@@ -1,0 +1,69 @@
+{
+  "utc": "2026-10-30T17:51:53.462053+00:00",
+  "experiment": "N21",
+  "question_id": "Q35",
+  "status": "conditional_utility_intent_only_not_a_GPU_protocol",
+  "parent_questions": [
+    "Q33",
+    "Q34"
+  ],
+  "N20_outputs_exist": false,
+  "N20_GPU_launched": false,
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "question": "Can a fixed native-channel connection edit help fresh executable coding when it acts on the whole prompt and generation,without knowing where the answer comparator occurs?",
+  "why_this_question": "N19 establishes full current-state control but its response-derived prefix and all-correct baselines cannot establish a deployable coding improvement. N20 tests a fixed sparse hypothesis on those same cases. A separate utility assay needs fresh cases and an answer-independent edit.",
+  "candidate_source": {
+    "parent": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "representation": "original text-only unquantized BF16",
+    "selection_receipt_sha256": "fcbb5cf85dd794b9be4f9c21008ac348ed291e5f187a1c6c06b9dc974af0f395",
+    "groups": "The already frozen selected64 and both random64 groups only. No nested16 substitution, new ranking, new coordinate, per-neuron strength or outcome-selected gain.",
+    "selection_limits": "Matching refers to the saved discovery current-position RMS,donor-change RMS and outgoing norm. It does not establish global-position or fresh-task activity matching."
+  },
+  "candidate_edits": {
+    "primary": "One prescribed factor2 applied to the selected native outgoing columns for the entire prompt and generation. No response-derived trigger, donor state or task-answer lookup.",
+    "controls": "Original parent;same-scope factor1 identity;factor2 on each fixed random group. Prescribed factor0 conditions may test loss separately if included prospectively. All retained conditions need a frozen final protocol before any fresh outcome.",
+    "mathematics": "At fixed native input,selected-column gain g changes raw MLP output y by (g-1)*sum(v_j*h_j). Gemma applies RMSNorm(y) before residual addition,so the resulting residual change is not this raw vector alone. Uniform positive scaling can mostly cancel when variance dominates epsilon.",
+    "implementation_gate": "A global activation hook and a stored-column assignment have equal ideal raw algebra but finite-precision equivalence is an empirical guard,not assumed. Pick one implementation prospectively;do not choose it using coding outcomes. Validate dense BF16 scope,identity,restoration and declared parameter-version increments on the actual checkpoint before utility interpretation. Never index packed NF4 as dense.",
+    "no_fitting": "No strength search,closed-form fitted coefficients,learned bridge,contrast vector application,optimizer or training of added neurons/layers. Measurement-based ranking remains a development choice."
+  },
+  "fresh_evaluation_design": {
+    "status": "Design constraints only. No task prompts,answers or model responses created yet. Counts/caps/inferential thresholds are not a frozen GPU protocol.",
+    "unit": "Complete small Python functions with supplied interface specifications and independently implemented executable oracles. Distinguish algorithm families from repeated names or input variants.",
+    "candidate_families": [
+      "strict and inclusive range boundaries",
+      "stable ordering and tie handling",
+      "binary-search insertion bounds",
+      "interval overlap and endpoint conventions",
+      "signed integer quotient and remainder rules",
+      "window slicing and short-input tails",
+      "deduplication with order constraints",
+      "string delimiter and escape handling"
+    ],
+    "separation": "New tasks must stay outside N20 generation/training assets and all old C01/final panels. No old answers are opened. Hidden oracle code/answers never enter model inputs or external APIs.",
+    "selection": "Freeze prompts,parsing,oracles,all variants and primary contrasts before model outputs. Retain every original coding case for gains and losses;do not select the original-error subset as the headline denominator.",
+    "baseline_stops": "A prospective baseline gate may stop if there is no room for improvement or if format/execution failures prevent a meaningful assay. Preserve all original outputs;do not rewrite the same cases and rerun them as confirmation.",
+    "outcomes": "Report intended function correctness,source/execution failures,caps,all gains/losses and independent retention. A functional score change is separate from a semantic neuron role and from sampling/output-format elicitation.",
+    "statistics": "Predeclare the primary selected-factor2 contrasts against the original and both random-factor2 controls. Treat task families as dependence clusters;do not treat nuisance replications as independent algorithms or report a winning dose. Small-sample claims must retain uncertainty and multiplicity.",
+    "decoding": "Identical frozen tokenizer/chat template,greedy parameters and caps for every arm. No sampling rerolls or answer-conditioned prefix. Final runtime and cap must fit one bounded free job;no current launch-ready count exists."
+  },
+  "normalization_gate": "N21H is a separately frozen host-only mathematical/scope probe using random-weight modules and constructed vectors. Its result cannot establish a pretrained function or explain an earlier scientific null.",
+  "relationship_to_N20": "N20 is first. No new GPU job before its terminal status and guard audit or preserved failure. A failed N20 role screen remains failed;utility,if later tested,does not retroactively validate that role. Any implementation guard failure must be resolved before a utility claim.",
+  "construction_route": "New neuron/layer construction remains conditional on a validated source-function hypothesis and equivalent-gain/random controls. Extra capacity or recombination alone is not a new capability.",
+  "resources": "No money. Fresh permitted free quota and>=2h reserve required;one private job<=7200s and the original31October18:22:58UTC deadline. No browser-permission bypass.",
+  "release": "Only reviewed generic methods,fixture code and aggregate progress may be public. Fresh raw tasks,answers,outputs,activations and unpublished paper stay private. Validated future compact edit recipes need exact parent/source/scope proofs;no full base copies.",
+  "new_pretrained_model_forwards": 0,
+  "text_input_tokens": 0,
+  "generated_tokens": 0,
+  "GPU_job_launched": false,
+  "cache_path_prediction": {
+    "recorded_before_any_pretrained_N21_forward": true,
+    "candidate_and_controls_minimum_layer": 24,
+    "last_native_KV_producer": 14,
+    "prediction": "All candidate/control down-column edits follow the native K/V producers. On an identical fixed prompt,the first-prefill whole-cache fingerprint should remain exact while current logits may change. Verify this in the future actual-checkpoint scope gate.",
+    "limit": "Free generation can emit different tokens,which can change later cache entries through changed text. Do not claim entire edited generation has the same cache or that memory semantics are unchanged.",
+    "efficiency": "No speedup or reusable-decoder implementation is established;do not build a new caching engine in this sprint without evidence and a specific budgeted question."
+  },
+  "updated_utc": "2026-10-30T17:57:53.364646+00:00"
+}

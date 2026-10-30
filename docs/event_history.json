@@ -1776,6 +1776,27 @@
       "event": "completed_N18_N19_evidence_integrated_all19policies_and_all_latest_pages_verified",
       "experiment": "Private_neuron_paper",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 231,
+      "utc": "2026-10-30T17:45:35.780451+00:00",
+      "event": "postnorm_host_protocol_frozen_before_module_probe",
+      "experiment": "N21H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 232,
+      "utc": "2026-10-30T17:48:04.581245+00:00",
+      "event": "random_module_norm_scope_probe_complete_all_fixed_comparisons_retained",
+      "experiment": "N21H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 233,
+      "utc": "2026-10-30T17:51:53.462053+00:00",
+      "event": "conditional_global_connection_fresh_coding_intent_recorded_no_dataset_or_launch",
+      "experiment": "N21",
+      "optimizer_steps": 0
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-30T17:45:35.780451+00:00",
+  "source_version": "transformers5.8.0",
+  "official_source_url": "https://raw.githubusercontent.com/huggingface/transformers/v5.8.0/src/transformers/models/gemma4/modeling_gemma4.py",
+  "official_file_sha256": "64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933",
+  "installed_class_source_sha256": {
+    "Gemma4TextMLP": "0f49f020324cda81ba94fe0fcae0f86a719150fec879358c4883a0c21764be17",
+    "Gemma4TextDecoderLayer": "5da6355e651407f7ab66a72e0d17e92dd9f9a9f9cc7883b2f935bb308c87566e",
+    "Gemma4RMSNorm": "048ef2767efd6480217ca5e915be681246b00a11400c7a0f43c0caac3b2c2e3b"
+  },
+  "official_and_installed_selected_class_AST_exact": true,
+  "parent_config_sha256": "1b28f3d2c3100f6c594754b81107428bd7b822a7f48272ca681dae9d2ec38330"
+}
