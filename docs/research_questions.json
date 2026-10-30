@@ -380,15 +380,15 @@
     {
       "id": "Q25",
       "experiment": "N14: full-site semantic positive control",
-      "status": "protocol_frozen_before_implementation",
-      "question": "Does a full native site support controlled contextual-rule transfer on the unchanged broader coding prefixes,where one rule-correlated unit did not?",
-      "question_provenance": "Prospective scope check after N13 complete null. All N13 outcomes fixed. No N14 code or pretrained outputs yet.",
+      "status": "private_GPU_version1_active_outputs_unseen",
+      "question": "Can a whole native site transfer the contextual rule in the unchanged coding tasks?",
+      "question_provenance": "Prospective scope check after the complete N13 null. No N14 implementation or outputs existed when its protocol was frozen.",
       "parents": [
         "Q23",
         "Q24"
       ],
       "method": "Keep every prompt, grade and base completion. Compare actual opposite-rule and reversed-label same-rule donors at layer 0, layers 5 to 9 and layers 0 to 13. Use exact self, identity and restoration guards.",
-      "result": "Protocol frozen before implementation. Four hundred records planned, including forty carried originals. Zero training.",
+      "result": "The exact source and auditor were frozen before launch. All forty inherited token/oracle checks, six actual tiny-Gemma self/foreign/cached cases and the native-only capture test pass. The notebook is server-verified private with exact source JSON. No new pretrained output has been read.",
       "interpretation": "A full-site positive control is needed in these changed semantic prefixes before sparse failure is interpreted as a localization conclusion. This is not a construction or coding-improvement claim.",
       "next_question": "Which declared native site, if any, supports rule-specific executable transfer beyond label identity?",
       "direction_decision": "Use the smallest decisive forward control. Defer arbitrary neuron construction and another sparse ranking until a site passes. Recheck actual jobs and free quota before launch."

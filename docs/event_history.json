@@ -1263,6 +1263,13 @@
       "event": "N14_full_site_scope_check_protocol_frozen_before_implementation",
       "experiment": "N14",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 159,
+      "utc": "2026-10-30T09:23:59.465723+00:00",
+      "event": "N14_private_version1_launched_frozen_source_and_privacy_verified",
+      "experiment": "N14",
+      "optimizer_steps": 0
     }
   ]
 }
