@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-30T18:49:31.125396+00:00",
+  "status": "private_GPU_running_no_outputs_read",
+  "source_freeze_unchanged": true,
+  "server_source_JSON_exact": true,
+  "server_private_verified": true,
+  "other_recent_jobs_terminal": 18,
+  "fresh_free_resource_gate_passed": true,
+  "maximum_seconds": 5400,
+  "optimizer_steps": 0,
+  "records_planned": 840,
+  "new_tails_planned": 486,
+  "scope": "Prospective development causal screen. No N20 result or coding improvement reported."
+}

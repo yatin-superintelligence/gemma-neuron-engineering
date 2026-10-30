@@ -9,5 +9,5 @@
   "N20_GPU_launched": false,
   "resource_gate_still_required": true,
   "optimizer_steps": 0,
-  "scope": "Private checkpoint experiment not launched. Published generic primitives and random-weight fixtures establish engineering feasibility only."
+  "scope": "Historical source-freeze snapshot before launch. Consult progress_snapshot.json and the question register for current status. Generic primitives and random-weight fixtures establish engineering feasibility only."
 }

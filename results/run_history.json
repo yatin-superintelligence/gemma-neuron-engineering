@@ -309,5 +309,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N20_v1_strict_current_groups",
+      "launched_utc": "2026-10-30T18:49:31.125396+00:00",
+      "status": "running"
+    }
+  ]
 }
