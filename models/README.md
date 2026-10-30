@@ -123,3 +123,7 @@ Donor policies require unmodified activations from the caller's donor prompt at 
 ## N06 full-site donor policies
 
 [The N06 recipe](n06/recipe.json) saves all ten fixed policies and the validated MLP/shared-read helper contract. Capture actual donor states from caller-supplied prompts at identical absolute selector positions. The original GPU study and host audit passed all no-op, restoration and cache guards. This is a conditional inference policy. A separate clean-package replay and release of the private behavioral panel are not claimed.
+
+## N07 individual-layer policies
+
+[The N07 recipe](n07/recipe.json) retains every layer and donor policy, including the failed rule-specificity control. Apply actual caller-supplied donor states with the same native MLP helper used by N06. All original GPU and host guards passed; a separate clean-package replay is not claimed. No individual layer met the scientific eligibility criterion.

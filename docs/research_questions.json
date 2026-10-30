@@ -255,17 +255,33 @@
     {
       "id": "Q17",
       "experiment": "N07: individual-layer decomposition of the native MLP site",
-      "status": "private_gpu_running",
+      "status": "complete_host_audited_no_eligible_individual_layer",
       "question": "Which of the fourteen early native MLP layers is sufficient for policy transfer beyond a reversed-mapping same-policy donor control?",
       "question_provenance": "Proposed after the complete N06 all-condition audit. The joint early-MLP site transfers every tested opposite policy while keys and values do not.",
       "parents": [
         "Q16"
       ],
       "method": "All fourteen individual layers, opposite and same-policy actual donors, exact carried original predictions, live original replay, per-layer self hashes and exact restoration. No sparse selection or optimization.",
-      "result": "Six actual tiny-Gemma single-layer self/donor/restoration fixtures passed. N07 version 1 is running privately with a frozen protocol and auditor. No N07 outputs have been read.",
-      "interpretation": "This measures conditional whole-layer sufficiency on development prompts. It does not assign native neuron meanings, establish necessity or improve coding.",
-      "next_question": "Does any individual layer pass the fixed transfer/same-policy criterion, or is a multi-layer decomposition required?",
-      "direction_decision": "Only an eligible controlled layer warrants subsequent sparse necessity/rescue. Otherwise study predeclared layer blocks rather than rank channels blindly."
+      "result": "All 600 records passed audit, including twenty carried originals, 280 self hashes, twenty identity generations and sixty restorations. Layer 0 switched all sixteen filter programs under both opposite-rule and same-rule donors. Layers 4 and 9 each switched two prompts under opposite donors only, in a single direction/mapping stratum. Other individual-layer donor conditions preserved all sixteen. All JSON controls passed, with no caps.",
+      "interpretation": "The layer 0 effect fails the reversed-label same-policy control. No individual layer meets the fixed eligibility criterion. This supports conditional label dependence at the tested whole-layer site, not an abstract-rule neuron or coding improvement.",
+      "next_question": "Can later-layer blocks specifically rescue a fixed label-corruption background using same-rule donor states?",
+      "direction_decision": "Follow the prospective branch for no eligible layer: fixed block decomposition and counterfactual rescue. Do not choose layer 0 as an abstract semantic site or rank sparse units blindly."
+    },
+    {
+      "id": "Q18",
+      "experiment": "N08: fixed-block decomposition and conditional rescue",
+      "status": "private_gpu_running",
+      "question": "Do later native MLP blocks provide rule-specific rescue after a fixed layer 0 label corruption?",
+      "question_provenance": "Proposed after the complete N07 audit under its predeclared no-eligible-layer branch. Joint early-layer swaps transfer policies, but layer 0 alone follows the label even under a same-rule donor.",
+      "parents": [
+        "Q16",
+        "Q17"
+      ],
+      "method": "Six fixed contiguous blocks in layers 1 through 13. Clean opposite/same-rule swaps and a common layer 0 label-corruption background with opposite, same-rule and recipient donors. Sixty existing reference records are carried without completion regeneration.",
+      "result": "Three actual tiny-Gemma composition tests and all 660 assignment routes passed. N08 version 1 is running privately with a frozen protocol and auditor. No N08 outputs have been read.",
+      "interpretation": "This tests conditional block sufficiency and contextual compensation. It cannot by itself identify sparse neuron meanings or establish useful coding improvement.",
+      "next_question": "Does any prescribed block pass a fixed rescue-specificity criterion, warranting native-channel necessity/rescue?",
+      "direction_decision": "Freeze before code. Keep every block/control and stop interpretation on any failed identity or restoration guard."
     }
   ]
 }

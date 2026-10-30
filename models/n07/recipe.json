@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "kind": "native_MLP_layer_donor_policies",
+  "experiment": "N07",
+  "utc": "2026-10-30T05:40:47.887566+00:00",
+  "base": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "representation": "text_only_unquantized_BF16"
+  },
+  "optimizer_steps": 0,
+  "helper": "interpretability/selector_site.py",
+  "helper_sha256": "5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60",
+  "policies": [
+    {
+      "name": "base",
+      "donor": "self",
+      "layers": []
+    },
+    {
+      "name": "identity",
+      "donor": "self",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "name": "opposite_L00",
+      "donor": "opposite",
+      "layers": [
+        0
+      ]
+    },
+    {
+      "name": "samepolicy_L00",
+      "donor": "samepolicy",
+      "layers": [
+        0
+      ]
+    },
+    {
+      "name": "opposite_L01",
+      "donor": "opposite",
+      "layers": [
+        1
+      ]
+    },
+    {
+      "name": "samepolicy_L01",
+      "donor": "samepolicy",
+      "layers": [
+        1
+      ]
+    },
+    {
+      "name": "opposite_L02",
+      "donor": "opposite",
+      "layers": [
+        2
+      ]
+    },
+    {
+      "name": "samepolicy_L02",
+      "donor": "samepolicy",
+      "layers": [
+        2
+      ]
+    },
+    {
+      "name": "opposite_L03",
+      "donor": "opposite",
+      "layers": [
+        3
+      ]
+    },
+    {
+      "name": "samepolicy_L03",
+      "donor": "samepolicy",
+      "layers": [
+        3
+      ]
+    },
+    {
+      "name": "opposite_L04",
+      "donor": "opposite",
+      "layers": [
+        4
+      ]
+    },
+    {
+      "name": "samepolicy_L04",
+      "donor": "samepolicy",
+      "layers": [
+        4
+      ]
+    },
+    {
+      "name": "opposite_L05",
+      "donor": "opposite",
+      "layers": [
+        5
+      ]
+    },
+    {
+      "name": "samepolicy_L05",
+      "donor": "samepolicy",
+      "layers": [
+        5
+      ]
+    },
+    {
+      "name": "opposite_L06",
+      "donor": "opposite",
+      "layers": [
+        6
+      ]
+    },
+    {
+      "name": "samepolicy_L06",
+      "donor": "samepolicy",
+      "layers": [
+        6
+      ]
+    },
+    {
+      "name": "opposite_L07",
+      "donor": "opposite",
+      "layers": [
+        7
+      ]
+    },
+    {
+      "name": "samepolicy_L07",
+      "donor": "samepolicy",
+      "layers": [
+        7
+      ]
+    },
+    {
+      "name": "opposite_L08",
+      "donor": "opposite",
+      "layers": [
+        8
+      ]
+    },
+    {
+      "name": "samepolicy_L08",
+      "donor": "samepolicy",
+      "layers": [
+        8
+      ]
+    },
+    {
+      "name": "opposite_L09",
+      "donor": "opposite",
+      "layers": [
+        9
+      ]
+    },
+    {
+      "name": "samepolicy_L09",
+      "donor": "samepolicy",
+      "layers": [
+        9
+      ]
+    },
+    {
+      "name": "opposite_L10",
+      "donor": "opposite",
+      "layers": [
+        10
+      ]
+    },
+    {
+      "name": "samepolicy_L10",
+      "donor": "samepolicy",
+      "layers": [
+        10
+      ]
+    },
+    {
+      "name": "opposite_L11",
+      "donor": "opposite",
+      "layers": [
+        11
+      ]
+    },
+    {
+      "name": "samepolicy_L11",
+      "donor": "samepolicy",
+      "layers": [
+        11
+      ]
+    },
+    {
+      "name": "opposite_L12",
+      "donor": "opposite",
+      "layers": [
+        12
+      ]
+    },
+    {
+      "name": "samepolicy_L12",
+      "donor": "samepolicy",
+      "layers": [
+        12
+      ]
+    },
+    {
+      "name": "opposite_L13",
+      "donor": "opposite",
+      "layers": [
+        13
+      ]
+    },
+    {
+      "name": "samepolicy_L13",
+      "donor": "samepolicy",
+      "layers": [
+        13
+      ]
+    }
+  ],
+  "donor_contract": "Use actual unmodified recipient, opposite-rule or reversed-mapping same-rule states at an identical absolute selector position. No fitted or averaged vectors. Skip the base no-edit condition; identity uses actual self states.",
+  "application": "Capture states with capture_selector, then apply selector_site(kind=MLP,mlp_layers=declared layers) for each caller-supplied recipient and donor. MLP hooks act during prefill only. No native weight updates.",
+  "validation": "All 600 original records and host checks passed, including 280 self hashes, twenty identity generations and sixty restorations. No independent clean-package pretrained replay is claimed.",
+  "storage": "Exact mechanisms, layer coordinates and all thirty policies. No base duplication or raw activation release. This is an inference policy, not a trained checkpoint.",
+  "limits": "No individual layer passed the fixed rule-transfer/same-rule criterion. Layer 0 follows the changed label under both donor conditions. No abstract-rule neuron or coding improvement established."
+}

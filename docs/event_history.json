@@ -1022,6 +1022,54 @@
       "predictions": 600,
       "privacy_server_verified": true,
       "cell_sources_exact": true
+    },
+    {
+      "sequence": 129,
+      "utc": "2026-10-30T05:22:43.937203+00:00",
+      "event": "N07_complete_all600_audited_no_eligible_single_layer",
+      "experiment": "N07",
+      "question": "Q17",
+      "conditions": 30,
+      "optimizer_steps": 0,
+      "predictions": 600
+    },
+    {
+      "sequence": 130,
+      "utc": "2026-10-30T05:25:13.417274+00:00",
+      "event": "N08_fixed_block_rescue_protocol_frozen_before_code",
+      "experiment": "N08",
+      "question": "Q18",
+      "conditions": 33,
+      "optimizer_steps": 0,
+      "predictions": 660
+    },
+    {
+      "sequence": 131,
+      "utc": "2026-10-30T05:36:47.613310+00:00",
+      "event": "N08_v1_launched_private_source_verified",
+      "experiment": "N08",
+      "question": "Q18",
+      "conditions": 33,
+      "optimizer_steps": 0,
+      "predictions": 660,
+      "privacy_server_verified": true,
+      "cell_sources_exact": true
+    },
+    {
+      "sequence": 132,
+      "utc": "2026-10-30T05:42:13.393068+00:00",
+      "event": "N06_allcondition_aggregate_figure_reviewed",
+      "experiment": "N06",
+      "question": "Q16",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 133,
+      "utc": "2026-10-30T05:42:13.393068+00:00",
+      "event": "N07_allcondition_aggregate_figure_reviewed",
+      "experiment": "N07",
+      "question": "Q17",
+      "optimizer_steps": 0
     }
   ]
 }

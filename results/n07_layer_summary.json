@@ -1,0 +1,2085 @@
+{
+  "utc": "2026-10-30T05:20:00.435090+00:00",
+  "experiment": "N07",
+  "version": 1,
+  "status": "host_audited",
+  "predictions": 600,
+  "new_predictions": 580,
+  "carried_original_exact": 20,
+  "all_raw_token_grades_and_guards_pass": true,
+  "optimizer_steps": 0,
+  "conditions": [
+    {
+      "condition": "base",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "identity",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L00",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "directions_with_flip": [
+        -1,
+        1
+      ],
+      "mappings_with_flip": [
+        0,
+        1
+      ],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L00",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "directions_with_flip": [
+        -1,
+        1
+      ],
+      "mappings_with_flip": [
+        0,
+        1
+      ],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L01",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L01",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L02",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L02",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L03",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L03",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L04",
+      "target_correct": 14,
+      "opposite_correct": 2,
+      "directions_with_flip": [
+        -1
+      ],
+      "mappings_with_flip": [
+        0
+      ],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L04",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L05",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L05",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L06",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L06",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L07",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L07",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L08",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L08",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L09",
+      "target_correct": 14,
+      "opposite_correct": 2,
+      "directions_with_flip": [
+        1
+      ],
+      "mappings_with_flip": [
+        1
+      ],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L09",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L10",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L10",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L11",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L11",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L12",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L12",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_L13",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L13",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "directions_with_flip": [],
+      "mappings_with_flip": [],
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    }
+  ],
+  "eligible_layers": [],
+  "lowest_eligible_layer": null,
+  "scope": "Whole-layer conditional sufficiency on reused development prompts. Not necessity, neuron meaning, coding gain or fresh confirmation.",
+  "worker_seconds": 897.503293518,
+  "notebook_seconds": 942.748541083,
+  "actual_forward_calls": 7668,
+  "actual_input_token_exposures": 135528,
+  "new_generated_tokens": 6728,
+  "coding_improvement_established": false,
+  "semantic_neuron_role_established": false,
+  "interpretation": "No layer meets the prospective rule-transfer/same-policy criterion. Layer0opposite and same-policy donors both flip16/16, exposing label dependence. Layers4and9opposite donors flip2/16each in one direction/mapping;their same-policy controls preserve16/16. Every other individual-layer donor condition preserves all16. AllJSON4/4,no caps. The N06joint MLP effect cannot be assigned to one abstract-rule layer.",
+  "next_decision": "Test fixed later-layer blocks with and without a layer0same-policy label-corruption background. Compare same-rule,opposite-rule and recipient donors to separate specific rescue from generic restoration. No blind sparse ranking."
+}

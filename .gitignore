@@ -16,3 +16,5 @@ credentials/
 !/models/n02/bf16_text/basis.safetensors
 !/models/n02/nf4_text_same_source/basis.safetensors
 !/docs/figures/n04_summary.png
+!/docs/figures/n06_summary.png
+!/docs/figures/n07_summary.png

@@ -1,18 +1,18 @@
 {
-  "generated_utc": "2026-10-30T04:13:21.404565+00:00",
-  "question_records": 17,
-  "recorded_terminal_runs": 33,
+  "generated_utc": "2026-10-30T05:42:15.418708+00:00",
+  "question_records": 18,
+  "recorded_terminal_runs": 34,
   "active_runs": [
     {
-      "run": "N07_v1",
-      "launched_utc": "2026-10-30T04:09:05.008782+00:00",
-      "status": "Private fixed layer decomposition: 580 new outputs and 20 exact carried originals; no training."
+      "run": "N08_v1",
+      "launched_utc": "2026-10-30T05:34:57.548054+00:00",
+      "status": "Private fixed block rescue: 600 new outputs and 60 exact carried references; no training."
     }
   ],
-  "ledger_events": 128,
-  "question_register_source_sha256": "f98655e6dd48c2ee18f46de0ddca3e86831786254d9c20a8f0861da26f50d016",
-  "event_ledger_source_sha256": "7115bfb932557e0bfaa621034f207c0f6ca5633e61f437995d27fc912e389295",
-  "compute_ledger_source_sha256": "d94d45eaa466cd46ca1e78513d31b3f5ce8e66c0fe4884a937df49e672cde50d",
+  "ledger_events": 133,
+  "question_register_source_sha256": "7950ec528023e9ad1c998490ec4ba3c9a849c898c1388c6bccdbed76256ecf24",
+  "event_ledger_source_sha256": "6cb4b3e3a98ca4ad95b6ee2a5fd982a579e7fed9d932bb5634982552999279b6",
+  "compute_ledger_source_sha256": "afae73b41b9ef48feb77c84f9e2e6061b6d2cb679a533ce7dbf84a334b38b0c9",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0

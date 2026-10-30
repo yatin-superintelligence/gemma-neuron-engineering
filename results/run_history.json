@@ -188,13 +188,20 @@
       "outcome": "All 200 outputs audited. Joint early MLP opposite transfer16/16,same-policy preservation14/16;K/V no flips;no gain or individual role.",
       "duration_scope": "Worker 355.719s;notebook 410.109s;not charged quota",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N07_v1",
+      "recorded_script_seconds": 897.503293518,
+      "outcome": "All600audited. No eligible layer. Layer0flips16/16under both donor controls;layers4/9have2restricted flips each. No semantic-role or coding-gain claim.",
+      "duration_scope": "Worker 897.503s;notebook 942.749s;20original records carried,580new;not charged quota",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N07_v1",
-      "launched_utc": "2026-10-30T04:09:05.008782+00:00",
-      "status": "Private fixed layer decomposition: 580 new outputs and 20 exact carried originals; no training."
+      "run": "N08_v1",
+      "launched_utc": "2026-10-30T05:34:57.548054+00:00",
+      "status": "Private fixed block rescue: 600 new outputs and 60 exact carried references; no training."
     }
   ]
 }
