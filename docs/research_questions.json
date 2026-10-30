@@ -220,7 +220,7 @@
     {
       "id": "Q15",
       "experiment": "N05: native semantic-anchor roles and executable functions",
-      "status": "private_GPU_v1_running",
+      "status": "complete_host_audited_no_specific_role_or_gain",
       "question": "Can a small native neuron group at an instruction anchor transmit a rounding policy and causally change correct function behavior without training?",
       "question_provenance": "Proposed after the complete N03 and N04 audits. N03 missed dominant alternatives and selected late units. N04 opens their historical path but does not establish a semantic role.",
       "parents": [
@@ -228,10 +228,29 @@
         "Q14"
       ],
       "method": "Use forward activity at the same punctuation token in six crossed policy strata to select 32 native channels in layers 0 through 13, with nested eight-channel diagnostics and two strict matched random groups. Test 13 fixed policies on 24 new complete-function and retention prompts, plus 24 descriptive discovery outputs. No fitted vectors, measurement gradients or optimizer updates.",
-      "result": "All 48 original prompts passed tokenization and independent oracle checks. All instruction anchors map to the same token ID. Eight tiny actual-Gemma intervention checks passed. The private BF16 pilot is running with 336 planned outputs; no N05 result has been read.",
-      "interpretation": "A sign-consistent activity contrast selects a candidate group, not a semantic function. Suppression and donor patches have two matched random controls each. Amplification has no matched random amplification condition and remains exploratory; any gain needs that follow-up and fresh confirmation.",
-      "next_question": "Do the native groups pass exact self/rescue/restoration gates and show policy-specific effects beyond random groups on complete functions?",
-      "direction_decision": "Launch one private bounded BF16 panel after a fresh quota check and source freeze. Keep every fixed condition. Preserve a null or failed gate without expanding an unproductive sweep."
+      "result": "All 336 outputs, 48 self/rescue rows, 26 restorations and exact identity controls passed the host audit. The baseline scored 1/16 rounding functions, 4/4 filters and 0/4 strict JSON. Every nonidentity condition scored 0/16, 4/4 and 0/4. Selected and matched random interventions caused the same single loss. No role or gain was established.",
+      "interpretation": "Nine baseline rounding outputs hit the ceiling and fourteen failed the source/execution gate. Baseline JSON values were correct inside forbidden outer fences; this posthoc content diagnostic leaves the strict grades unchanged. Activity contrast did not establish policy transmission. The missing full-vector anchor control and poor baseline prevent a broad conclusion about native neuron function.",
+      "next_question": "Can a counterbalanced selector task produce reliable executable expressions, and can full native state transplantation at the selector actually change policy before sparse localization?",
+      "direction_decision": "Broaden and require a prospective baseline-usability gate plus full-state positive controls. Do not repeat or enlarge the sparse punctuation-anchor sweep. Preserve source/format/cap limitations and every null."
+    },
+    {
+      "id": "Q16",
+      "experiment": "N06: baseline usability and causal-site gate",
+      "status": "private_gpu_running",
+      "question": "Can a usable counterbalanced mode selector control executable expressions, and is its information causally accessible through full MLP or reused attention-memory states?",
+      "question_provenance": "Proposed after N05 complete audit and structure diagnosis. It replaces an inadequate full-function assay and adds the missing full-state positive control.",
+      "parents": [
+        "Q12",
+        "Q14",
+        "Q15"
+      ],
+      "method": "Counterbalanced red/blue integer-filter expressions. Gate usable baseline first, then joint full native MLP or reuse-only K/V donor replacements. Same-policy mapping reversal controls label meaning. No sparse localization yet.",
+      "result": "Fifteen actual tiny-Gemma cases and twenty token/oracle checks passed. N06 version 1 is running privately with a frozen protocol, auditor and baseline-usability stop. No model outputs have been read.",
+      "interpretation": "Attention-memory coordinates and native MLP channels are different units. The gate may locate a useful causal site but cannot establish a sparse semantic feature, new capability or novelty.",
+      "next_question": "Does the baseline meet fixed usability thresholds, and does any complete-state transplant predictably transfer the policy across label reversal?",
+      "direction_decision": "Run the smallest bounded gate. Stop after baseline if unusable. Only a controlled positive result warrants subsequent sparse localization.",
+      "protocol": "research/experiments/n06/protocol.json",
+      "decision": "The proposed rounding assay changed to filtering because N05 filter controls were correct on four of four inputs while rounding was correct on one of sixteen. This is a prospective new assay. N05 grades are unchanged."
     }
   ]
 }

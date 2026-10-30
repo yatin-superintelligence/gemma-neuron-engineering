@@ -29,11 +29,12 @@ There are no optimizer updates, fine-tuning, fitted steering vectors or training
 | N03H: token-specific causal paths | Eight small random-weight Gemma configurations and 96 interventions. Predicted past-token zero paths had exactly unchanged later logits and zero measurement gradients. | An implementation fixture, not a pretrained E2B result or a semantic neuron role. |
 | N03: native-neuron coding pilot | All 896 BF16/NF4 outputs audited. Every fixed condition scored 4/16 threshold, 4/8 signed division and 8/8 JSON controls. Identity, self-patch, rescue and restoration passed. Real-checkpoint fixed-input late-past path nulls were exact. | No coding gain or semantic role. A two-token contrast missed most dominant errors, and task wording omitted integer types. These limitations and the unchanged grades are retained. |
 | N04: copied memory connection | All 288 outputs and controls audited. Historical memory opens the tested late-past causal path; original, off and current-only controls retain the exact null. All fixed policies and reconstruction recipes are retained. | Full replacements fail all 32 outputs. Quarter-strength key-only gains two division completions on four reused name pairs, with unadjusted paired p = 0.5. No confirmed coding benefit or semantic role. |
-| N05: native policy transmission | A private forward-only pilot is running: 32 native channels before layer 14, shared instruction-anchor tokens, paraphrase/negation contrasts, two matched random groups, necessity, donor patches and rescue, with complete generated functions. | No N05 result yet. Activity selects a hypothesis. Amplification lacks matched random amplification and remains exploratory. |
+| N05: native policy transmission | All 336 outputs and identity/self/rescue/restoration controls audited. Original scored 1/16 rounding functions, 4/4 filters and 0/4 strict JSON. Every nonidentity condition lost the same single rounding success. | No specific role or gain. Selected and matched random groups agree. Token caps, function-format violations and fenced JSON limit the assay. Original grades remain unchanged. |
+| N06: usability and causal-site gate | A private pilot first tests 20 short expression/extraction outputs. Only a usable baseline permits the full 10-condition MLP/key/value donor matrix. | Running, no result yet. Full-state control is a prerequisite for sparse localization. Opposite-policy transfer would show control, not improved coding. |
 
 The N02 representations share the pinned floating-point parent. The NF4 intervention first dequantizes the selected MLP and uses its unchanged dense form as the comparison baseline. BF16 is unquantized, but is not FP32. Full transformer-layer insertion remains unvalidated.
 
-Complete aggregates: [N01 conditions](results/n01_development_summary.json), [N01 functional controls](results/n01_function_controls.json), [N02 engineering audit](results/n02_engineering_summary.json), [N03 coding audit](results/n03_coding_summary.json), [N04 host gate](results/n04_host_gate.json), [N04 connection audit](results/n04_connection_summary.json). Startup failures and scientific nulls remain in the [logbook](docs/RESEARCH_LOG.html).
+Complete aggregates: [N01 conditions](results/n01_development_summary.json), [N01 functional controls](results/n01_function_controls.json), [N02 engineering audit](results/n02_engineering_summary.json), [N03 coding audit](results/n03_coding_summary.json), [N04 host gate](results/n04_host_gate.json), [N04 connection audit](results/n04_connection_summary.json), [N05 complete results](results/n05_anchor_summary.json). Startup failures and scientific nulls remain in the [logbook](docs/RESEARCH_LOG.html).
 
 ![Complete N04 policy grid and its interpretation limits](docs/figures/n04_summary.png)
 
@@ -45,12 +46,14 @@ reproduce/          Pinned-base loaders, reconstruction and verification
 models/n01/         Two saved branch tensors and fixed steering policies
 models/n02/         BF16 and same-source NF4 physical-edit bundles
 models/n04/         Copied-memory recipes and source-module hashes
+models/n05/         Fixed native groups and all activation-edit policies
 tests/              Small independent fixtures, no pretrained download
 docs/               Goal & Intent and sequential Research Logbook
 results/            Reviewed experiment aggregates and run history
 research/experiments/n03/  Shared-KV causal-path fixture and frozen protocol
 research/experiments/n04/  Copied-memory fixture and cache amendment
 research/experiments/n05/  Native-anchor intervention fixture
+tests/test_selector_site.py  Shared-read donor and cache fixture
 ```
 
 The saved models are represented by immutable base revisions, compact exact tensors and deterministic edit recipes. This reconstructs the modified models without copying the full base into Git history. Each bundle records source identity, hashes, precision, coordinates and zero optimizer steps. Changed MLP widths require the supplied loader; an unchanged Transformers configuration cannot encode them on its own.
@@ -65,7 +68,7 @@ python -m reproduce.model_edits --bundle models/n02/bf16_text
 
 These commands inspect small fixtures and bundle files. They do not download a pretrained model. To reconstruct or verify an actual model on a compatible GPU, follow the explicit commands in [models/README.md](models/README.md). The public N02 loader also passed an independent T4 package replay: all 24 original output hashes matched, covering six edits in each representation on two existing development prompts. See the [R01 verification](results/r01_reconstruction.json). N01 loader replay is a separate pending check.
 
-## Current connection experiment
+## Completed connection experiment
 
 The prototype copies an existing trained key/value projection into a new frozen branch. It asks whether past activity from later native layers can reach future outputs through that new memory route. Fixed historical, current-only and feature-permuted controls separate access to past activity from additional computation and projection compatibility. Original weights receive no updates.
 
@@ -76,6 +79,12 @@ python -m research.experiments.n04.host_gate
 ```
 
 The fixture writes local records under `runs/n04/host/version2` and refuses to overwrite a completed result. Its source, cache amendment and aggregate result are public. The real-model gate is complete and its aggregate result is published. All nine model policies are saved in [the N04 recipe](models/n04/recipe.json). The notebook, prompts and raw outputs remain private. A new internal path alone does not show coding improvement.
+
+## Current localization question
+
+The current pilot tests where a selected instruction can change short executable filtering code. It counterbalances label meanings and compares full early-MLP donor states with keys and values exposed only to later shared-attention readers. It first requires a reliable baseline. A failed usability gate stops the matrix before more GPU work.
+
+N05 showed why this gate is necessary: its selected neurons and matched random groups produced the same single loss, while most rounding functions failed the requested format or reached the token ceiling. We preserve those results and change the next question. We have not identified rounding neurons or shown coding improvement.
 
 ## Publication scope
 

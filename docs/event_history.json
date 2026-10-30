@@ -954,6 +954,52 @@
       "predictions": 336,
       "privacy_server_verified": true,
       "cell_sources_exact": true
+    },
+    {
+      "sequence": 122,
+      "utc": "2026-10-30T03:35:08.563499+00:00",
+      "event": "n05_complete_host_audited_no_specific_role_with_assay_limits",
+      "experiment": "N05",
+      "question": "Q15",
+      "version": 1,
+      "status": "complete_host_audited_null",
+      "optimizer_steps": 0,
+      "runner_seconds": 1665.502675963,
+      "predictions": 336
+    },
+    {
+      "sequence": 123,
+      "utc": "2026-10-30T03:47:03.610562+00:00",
+      "event": "N06_protocol_frozen_before_code",
+      "question": "Q16",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 124,
+      "utc": "2026-10-30T03:50:00.696588+00:00",
+      "event": "N06H_attempt1_failed_pretrained_work_not_started",
+      "question": "Q16",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 125,
+      "utc": "2026-10-30T03:52:25.902844+00:00",
+      "event": "N06_notebook_builder_import_repaired",
+      "question": "Q16",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 126,
+      "utc": "2026-10-30T03:54:05.921117+00:00",
+      "event": "N06_v1_launched_private_source_verified",
+      "experiment": "N06",
+      "question": "Q16",
+      "version": 1,
+      "conditions": 10,
+      "optimizer_steps": 0,
+      "predictions": 200,
+      "privacy_server_verified": true,
+      "cell_sources_exact": true
     }
   ]
 }

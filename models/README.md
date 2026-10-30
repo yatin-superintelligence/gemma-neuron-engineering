@@ -113,3 +113,9 @@ All conditions and their limits are in the [N04 aggregate audit](../results/n04_
 ## Storage and provenance
 
 The exact tensor bundles occupy about 1.4 MB; the N04 recipe adds only small JSON metadata. All four Safetensors files contain the exact tensor values saved by the experiments, with added attribution metadata. Each `bundle.json` records file hashes and tensor provenance. Retain the bundle, its license and notice, the reconstruction code revision and the base revision together. Do not rely on `save_pretrained` with the original configuration to reload heterogeneous edited widths.
+
+## N05 native activation policies
+
+[The N05 recipe](n05/recipe.json) saves every fixed coordinate group and all thirteen policies. The supplied anchor helper applies prescribed gains or actual donor-state swaps and removes hooks on exit. These are inference policies, not new trained weight checkpoints. The original GPU audit verified identity, self/rescue and restoration controls; a separate clean-package replay is not claimed.
+
+Donor policies require unmodified activations from the caller's donor prompt at the mapped position. Raw original prompts and activation traces remain private. Fixed edit reconstruction and exact replication of the private behavioral panel are separate scopes. No coding benefit or specific neuron role was established.

@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-30T03:00:44.498940+00:00",
+  "generated_utc": "2026-10-30T03:57:24.048975+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "f0a3822a60e25fc15a7f2f0874f9d91fb228068fcf72125cfbbc5d017b3725fe",
-      "bytes": 9171
+      "sha256": "00fa058e92aaac32e15cd69d6043bc8d2b25e18b646fef653cb45ab49d7b1f56",
+      "bytes": 10443
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "c193e5d9a46f9fab8bccbb2b2a2b8f9f565102df7c0f29ac54b5ed383a3a8b49",
-      "bytes": 125915
+      "sha256": "b84d1483523fcbaa09ca976764a5d55d7d1ac4b94671bfc5eef31c45ff388eff",
+      "bytes": 131659
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "4171aa5fcddabb8fdb745e06287f0ed221d2c3145e466e294fef0d84d13502b4",
-      "bytes": 57546
+      "sha256": "4d844ade37fc31c7e7df603cb7fd0739aadcfaf97e8426411a3c25a3ee8e8ed7",
+      "bytes": 60259
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "ba04b376c9e2f7743f9e932f33741061eaba9691bf13f327af4d4cb328407b42",
-      "bytes": 27632
+      "sha256": "fc3545c7c47dc686fc3e2b52539c3acf4f15a3313dfd8edfb30e80c8a4db6c83",
+      "bytes": 28955
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -66,8 +66,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "7abd950b9e40e6a4a54ef1a951afad507536caa2a74b9ae5fab55af7c9b345a3",
-      "bytes": 21629
+      "sha256": "372a6de0af25922de61c715d267ad0d49efcedf85e19ade68323c86c46b8e302",
+      "bytes": 23814
     },
     {
       "path": "interpretability/__init__.py",
@@ -100,9 +100,14 @@
       "bytes": 5299
     },
     {
+      "path": "interpretability/selector_site.py",
+      "sha256": "5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60",
+      "bytes": 4368
+    },
+    {
       "path": "models/README.md",
-      "sha256": "37f1a5e51c04d0e230303bffa2e34ae00139037c0ee587dd0a21e1fb974f2f03",
-      "bytes": 8121
+      "sha256": "0e4a25ea7b416d3fc250792369583e31f6fcb456f069e9ec8391c921a0542038",
+      "bytes": 8875
     },
     {
       "path": "models/n01/LICENSE",
@@ -178,6 +183,11 @@
       "path": "models/n04/recipe.json",
       "sha256": "042f7072f594f116a07f7cfd4ed3a8ca57035061dafb1cdce56c9d07054952df",
       "bytes": 3412
+    },
+    {
+      "path": "models/n05/recipe.json",
+      "sha256": "9d4d181a7fa3ad07b92c485e887dcdc19e109b844c122c5fa6d4841204e1e71c",
+      "bytes": 12233
     },
     {
       "path": "pyproject.toml",
@@ -275,14 +285,24 @@
       "bytes": 835
     },
     {
+      "path": "results/n05_anchor_summary.json",
+      "sha256": "97a5ab4ab9e7b9b8d0394d0f528604765585b1f376fcfddb749eb50b470b20a8",
+      "bytes": 13441
+    },
+    {
       "path": "results/n05_host_gate.json",
       "sha256": "4e37d647ab5bf266684b7dff3cd67a4c0b6ed7dec14a4c16991ea491bd2da497",
       "bytes": 261
     },
     {
+      "path": "results/n06_host_gate.json",
+      "sha256": "fa77f128b4e78557ffbe9072eec8358dff6b06d4695b9d571ea12c6e530f6c54",
+      "bytes": 299
+    },
+    {
       "path": "results/progress_snapshot.json",
-      "sha256": "8213fc0e72cd00b63f26ef5fc73a77e4c5f84be2b1976f4ec33a9ff62d28a374",
-      "bytes": 769
+      "sha256": "f9d90a8035608d91a020792d48fdaa400791c7227d8f444914d8e39cd8a72586",
+      "bytes": 796
     },
     {
       "path": "results/r01_reconstruction.json",
@@ -291,8 +311,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "f00d8fc927b8e5fd0732fd4b62e23d01a18422e8fb53525d07aba44d804a44e3",
-      "bytes": 9091
+      "sha256": "d822dfdb382f5b3da6516763daf63496ee26bc89fa439513b702ca3604475719",
+      "bytes": 9427
     },
     {
       "path": "scripts/plot_n04_summary.py",
@@ -318,6 +338,11 @@
       "path": "tests/test_reproduction.py",
       "sha256": "f305d079af44e5ba6ebba6b706ec4e2412741a02a84b4d3d0809850ee3b84e94",
       "bytes": 3591
+    },
+    {
+      "path": "tests/test_selector_site.py",
+      "sha256": "3752946ceff23bf1b3591640a8d8a830c7f2473f20e3e4c50c07c9571355ff20",
+      "bytes": 3256
     }
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-30T03:50:08.442823+00:00",
+  "all_gates_passed": true,
+  "optimizer_steps": 0,
+  "random_weight_fixture_only": true,
+  "helper_sha256": "5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60",
+  "cases": 15,
+  "paired_token_checks": 20,
+  "pretrained_result": false
+}

@@ -174,13 +174,20 @@
       "outcome": "All288records audited;copied history opens late-past path;key-only2/8development gains,p.5;full replacements break32/32;no established coding gain",
       "duration_scope": "Worker758.768s;notebook809.995s;32predictions carried fromv1,256new;not charged GPUquota",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N05_v1",
+      "recorded_script_seconds": 1665.502675963,
+      "outcome": "336outputs audited;selected/randoms same1loss;rounding format/cap dominated;no role/gain;0updates",
+      "duration_scope": "Worker1665.503s;notebook1717.976s;not charged quota",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N05_v1",
-      "launched_utc": "2026-10-30T02:40:10.753308+00:00",
-      "status": "private_source_verified_one_bounded_native_anchor_job"
+      "run": "N06_v1",
+      "launched_utc": "2026-10-30T03:53:33.468562+00:00",
+      "status": "private bounded GPUjob launched;20baseline usability gate before expanding to200"
     }
   ]
 }

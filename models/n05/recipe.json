@@ -1,0 +1,638 @@
+{
+  "schema_version": 1,
+  "kind": "native_activation_policy_recipe",
+  "experiment": "N05",
+  "utc": "2026-10-30T03:56:41.079527+00:00",
+  "base": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "representation": "text_only_unquantized_BF16"
+  },
+  "optimizer_steps": 0,
+  "historical_trained_adapters_used": false,
+  "helper": "interpretability/anchor_intervention.py",
+  "helper_sha256": "15ec139c69423fc309d4a9c75f19f2e04d2494ad57bff27523c5aa56656490c5",
+  "groups": {
+    "selected32": [
+      {
+        "flat": 85762,
+        "layer": 13,
+        "channel": 5890
+      },
+      {
+        "flat": 5400,
+        "layer": 0,
+        "channel": 5400
+      },
+      {
+        "flat": 34049,
+        "layer": 5,
+        "channel": 3329
+      },
+      {
+        "flat": 40626,
+        "layer": 6,
+        "channel": 3762
+      },
+      {
+        "flat": 84816,
+        "layer": 13,
+        "channel": 4944
+      },
+      {
+        "flat": 81543,
+        "layer": 13,
+        "channel": 1671
+      },
+      {
+        "flat": 47815,
+        "layer": 7,
+        "channel": 4807
+      },
+      {
+        "flat": 12348,
+        "layer": 2,
+        "channel": 60
+      },
+      {
+        "flat": 75767,
+        "layer": 12,
+        "channel": 2039
+      },
+      {
+        "flat": 40119,
+        "layer": 6,
+        "channel": 3255
+      },
+      {
+        "flat": 36485,
+        "layer": 5,
+        "channel": 5765
+      },
+      {
+        "flat": 60565,
+        "layer": 9,
+        "channel": 5269
+      },
+      {
+        "flat": 67905,
+        "layer": 11,
+        "channel": 321
+      },
+      {
+        "flat": 76839,
+        "layer": 12,
+        "channel": 3111
+      },
+      {
+        "flat": 13946,
+        "layer": 2,
+        "channel": 1658
+      },
+      {
+        "flat": 55418,
+        "layer": 9,
+        "channel": 122
+      },
+      {
+        "flat": 74023,
+        "layer": 12,
+        "channel": 295
+      },
+      {
+        "flat": 77829,
+        "layer": 12,
+        "channel": 4101
+      },
+      {
+        "flat": 82851,
+        "layer": 13,
+        "channel": 2979
+      },
+      {
+        "flat": 41428,
+        "layer": 6,
+        "channel": 4564
+      },
+      {
+        "flat": 258,
+        "layer": 0,
+        "channel": 258
+      },
+      {
+        "flat": 83696,
+        "layer": 13,
+        "channel": 3824
+      },
+      {
+        "flat": 40300,
+        "layer": 6,
+        "channel": 3436
+      },
+      {
+        "flat": 59448,
+        "layer": 9,
+        "channel": 4152
+      },
+      {
+        "flat": 66158,
+        "layer": 10,
+        "channel": 4718
+      },
+      {
+        "flat": 2931,
+        "layer": 0,
+        "channel": 2931
+      },
+      {
+        "flat": 80228,
+        "layer": 13,
+        "channel": 356
+      },
+      {
+        "flat": 5032,
+        "layer": 0,
+        "channel": 5032
+      },
+      {
+        "flat": 38592,
+        "layer": 6,
+        "channel": 1728
+      },
+      {
+        "flat": 72270,
+        "layer": 11,
+        "channel": 4686
+      },
+      {
+        "flat": 82601,
+        "layer": 13,
+        "channel": 2729
+      },
+      {
+        "flat": 75398,
+        "layer": 12,
+        "channel": 1670
+      }
+    ],
+    "selected8": [
+      {
+        "flat": 85762,
+        "layer": 13,
+        "channel": 5890
+      },
+      {
+        "flat": 5400,
+        "layer": 0,
+        "channel": 5400
+      },
+      {
+        "flat": 34049,
+        "layer": 5,
+        "channel": 3329
+      },
+      {
+        "flat": 40626,
+        "layer": 6,
+        "channel": 3762
+      },
+      {
+        "flat": 84816,
+        "layer": 13,
+        "channel": 4944
+      },
+      {
+        "flat": 81543,
+        "layer": 13,
+        "channel": 1671
+      },
+      {
+        "flat": 47815,
+        "layer": 7,
+        "channel": 4807
+      },
+      {
+        "flat": 12348,
+        "layer": 2,
+        "channel": 60
+      }
+    ],
+    "random5101": [
+      {
+        "flat": 83620,
+        "layer": 13,
+        "channel": 3748
+      },
+      {
+        "flat": 3260,
+        "layer": 0,
+        "channel": 3260
+      },
+      {
+        "flat": 31407,
+        "layer": 5,
+        "channel": 687
+      },
+      {
+        "flat": 40613,
+        "layer": 6,
+        "channel": 3749
+      },
+      {
+        "flat": 81988,
+        "layer": 13,
+        "channel": 2116
+      },
+      {
+        "flat": 85160,
+        "layer": 13,
+        "channel": 5288
+      },
+      {
+        "flat": 45753,
+        "layer": 7,
+        "channel": 2745
+      },
+      {
+        "flat": 13023,
+        "layer": 2,
+        "channel": 735
+      },
+      {
+        "flat": 78902,
+        "layer": 12,
+        "channel": 5174
+      },
+      {
+        "flat": 41348,
+        "layer": 6,
+        "channel": 4484
+      },
+      {
+        "flat": 34126,
+        "layer": 5,
+        "channel": 3406
+      },
+      {
+        "flat": 56655,
+        "layer": 9,
+        "channel": 1359
+      },
+      {
+        "flat": 71811,
+        "layer": 11,
+        "channel": 4227
+      },
+      {
+        "flat": 77882,
+        "layer": 12,
+        "channel": 4154
+      },
+      {
+        "flat": 13801,
+        "layer": 2,
+        "channel": 1513
+      },
+      {
+        "flat": 56641,
+        "layer": 9,
+        "channel": 1345
+      },
+      {
+        "flat": 78433,
+        "layer": 12,
+        "channel": 4705
+      },
+      {
+        "flat": 77593,
+        "layer": 12,
+        "channel": 3865
+      },
+      {
+        "flat": 85242,
+        "layer": 13,
+        "channel": 5370
+      },
+      {
+        "flat": 41215,
+        "layer": 6,
+        "channel": 4351
+      },
+      {
+        "flat": 4507,
+        "layer": 0,
+        "channel": 4507
+      },
+      {
+        "flat": 84219,
+        "layer": 13,
+        "channel": 4347
+      },
+      {
+        "flat": 41183,
+        "layer": 6,
+        "channel": 4319
+      },
+      {
+        "flat": 61302,
+        "layer": 9,
+        "channel": 6006
+      },
+      {
+        "flat": 63799,
+        "layer": 10,
+        "channel": 2359
+      },
+      {
+        "flat": 967,
+        "layer": 0,
+        "channel": 967
+      },
+      {
+        "flat": 84872,
+        "layer": 13,
+        "channel": 5000
+      },
+      {
+        "flat": 959,
+        "layer": 0,
+        "channel": 959
+      },
+      {
+        "flat": 42285,
+        "layer": 6,
+        "channel": 5421
+      },
+      {
+        "flat": 72043,
+        "layer": 11,
+        "channel": 4459
+      },
+      {
+        "flat": 83861,
+        "layer": 13,
+        "channel": 3989
+      },
+      {
+        "flat": 73787,
+        "layer": 12,
+        "channel": 59
+      }
+    ],
+    "random5102": [
+      {
+        "flat": 81123,
+        "layer": 13,
+        "channel": 1251
+      },
+      {
+        "flat": 5895,
+        "layer": 0,
+        "channel": 5895
+      },
+      {
+        "flat": 31091,
+        "layer": 5,
+        "channel": 371
+      },
+      {
+        "flat": 42898,
+        "layer": 6,
+        "channel": 6034
+      },
+      {
+        "flat": 85292,
+        "layer": 13,
+        "channel": 5420
+      },
+      {
+        "flat": 81683,
+        "layer": 13,
+        "channel": 1811
+      },
+      {
+        "flat": 43809,
+        "layer": 7,
+        "channel": 801
+      },
+      {
+        "flat": 14487,
+        "layer": 2,
+        "channel": 2199
+      },
+      {
+        "flat": 77123,
+        "layer": 12,
+        "channel": 3395
+      },
+      {
+        "flat": 39458,
+        "layer": 6,
+        "channel": 2594
+      },
+      {
+        "flat": 36061,
+        "layer": 5,
+        "channel": 5341
+      },
+      {
+        "flat": 61332,
+        "layer": 9,
+        "channel": 6036
+      },
+      {
+        "flat": 73241,
+        "layer": 11,
+        "channel": 5657
+      },
+      {
+        "flat": 74041,
+        "layer": 12,
+        "channel": 313
+      },
+      {
+        "flat": 17295,
+        "layer": 2,
+        "channel": 5007
+      },
+      {
+        "flat": 55755,
+        "layer": 9,
+        "channel": 459
+      },
+      {
+        "flat": 74984,
+        "layer": 12,
+        "channel": 1256
+      },
+      {
+        "flat": 78149,
+        "layer": 12,
+        "channel": 4421
+      },
+      {
+        "flat": 84045,
+        "layer": 13,
+        "channel": 4173
+      },
+      {
+        "flat": 39134,
+        "layer": 6,
+        "channel": 2270
+      },
+      {
+        "flat": 619,
+        "layer": 0,
+        "channel": 619
+      },
+      {
+        "flat": 82211,
+        "layer": 13,
+        "channel": 2339
+      },
+      {
+        "flat": 37324,
+        "layer": 6,
+        "channel": 460
+      },
+      {
+        "flat": 57143,
+        "layer": 9,
+        "channel": 1847
+      },
+      {
+        "flat": 63144,
+        "layer": 10,
+        "channel": 1704
+      },
+      {
+        "flat": 4318,
+        "layer": 0,
+        "channel": 4318
+      },
+      {
+        "flat": 84444,
+        "layer": 13,
+        "channel": 4572
+      },
+      {
+        "flat": 3655,
+        "layer": 0,
+        "channel": 3655
+      },
+      {
+        "flat": 40747,
+        "layer": 6,
+        "channel": 3883
+      },
+      {
+        "flat": 73437,
+        "layer": 11,
+        "channel": 5853
+      },
+      {
+        "flat": 85514,
+        "layer": 13,
+        "channel": 5642
+      },
+      {
+        "flat": 78131,
+        "layer": 12,
+        "channel": 4403
+      }
+    ]
+  },
+  "policies": [
+    {
+      "name": "base",
+      "op": "none"
+    },
+    {
+      "name": "identity",
+      "op": "gain",
+      "gain": 1,
+      "scope": "anchor",
+      "group": "selected32"
+    },
+    {
+      "name": "selected_zero_anchor",
+      "op": "gain",
+      "gain": 0,
+      "scope": "anchor",
+      "group": "selected32"
+    },
+    {
+      "name": "selected_double_anchor",
+      "op": "gain",
+      "gain": 2,
+      "scope": "anchor",
+      "group": "selected32"
+    },
+    {
+      "name": "selected_swap",
+      "op": "swap",
+      "scope": "anchor",
+      "group": "selected32"
+    },
+    {
+      "name": "random5101_swap",
+      "op": "swap",
+      "scope": "anchor",
+      "group": "random5101"
+    },
+    {
+      "name": "random5102_swap",
+      "op": "swap",
+      "scope": "anchor",
+      "group": "random5102"
+    },
+    {
+      "name": "random5101_zero_anchor",
+      "op": "gain",
+      "gain": 0,
+      "scope": "anchor",
+      "group": "random5101"
+    },
+    {
+      "name": "random5102_zero_anchor",
+      "op": "gain",
+      "gain": 0,
+      "scope": "anchor",
+      "group": "random5102"
+    },
+    {
+      "name": "selected_zero_all",
+      "op": "gain",
+      "gain": 0,
+      "scope": "all",
+      "group": "selected32"
+    },
+    {
+      "name": "selected_double_all",
+      "op": "gain",
+      "gain": 2,
+      "scope": "all",
+      "group": "selected32"
+    },
+    {
+      "name": "random5101_zero_all",
+      "op": "gain",
+      "gain": 0,
+      "scope": "all",
+      "group": "random5101"
+    },
+    {
+      "name": "random5102_zero_all",
+      "op": "gain",
+      "gain": 0,
+      "scope": "all",
+      "group": "random5102"
+    }
+  ],
+  "anchor": "Token covering the final period in End of policy. Caller validates offsets and the shared token identity for the supplied prompt.",
+  "donor_contract": "Donor patch policies require actual unmodified donor activations at the mapped anchor. They are not fitted vectors. Capture those from the caller-supplied donor prompt; raw original prompts and activation traces are private.",
+  "application": "Pass recipe group, mapped anchor, prescribed operation/gain/scope and actual donor dictionary to anchor_intervention. Context exit removes hooks and asserts unchanged parameter versions/gradient flags.",
+  "validation": "Original N05 GPU panel and host audit: all 336 outputs, 24 identity generations, 48 self/rescue hashes and 26 restorations. No independent clean-package pretrained replay of this recipe is claimed.",
+  "storage": "No base tensors or raw activations duplicated. This saves an activation-edit policy, not a new trained weight checkpoint.",
+  "limits": "Selected and matched random interventions cause the same loss. No semantic neuron role or coding gain established. Raw-task behavioral replication is not provided by this public recipe."
+}
