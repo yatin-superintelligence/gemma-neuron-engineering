@@ -1,0 +1,455 @@
+{
+  "utc": "2026-10-30T07:04:50.669622+00:00",
+  "status": "host_audited",
+  "worker_stage": "stopped_new_site_gate",
+  "predictions": 168,
+  "all_raw_token_grades_and_guards_pass": true,
+  "conditions": [
+    {
+      "condition": "base",
+      "filter_correct": 16,
+      "opposite_correct": 0,
+      "filter_valid": 16,
+      "capped": 0,
+      "JSON_correct": 0,
+      "arithmetic_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0",
+      "filter_correct": 0,
+      "opposite_correct": 16,
+      "filter_valid": 16,
+      "capped": 0,
+      "JSON_correct": 0,
+      "arithmetic_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "clean_full_opposite",
+      "filter_correct": 0,
+      "opposite_correct": 16,
+      "filter_valid": 16,
+      "capped": 0,
+      "JSON_correct": 0,
+      "arithmetic_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "clean_full_same",
+      "filter_correct": 16,
+      "opposite_correct": 0,
+      "filter_valid": 16,
+      "capped": 0,
+      "JSON_correct": 0,
+      "arithmetic_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "corrupt_full_recipient",
+      "filter_correct": 16,
+      "opposite_correct": 0,
+      "filter_valid": 16,
+      "capped": 0,
+      "JSON_correct": 0,
+      "arithmetic_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "corrupt_full_opposite",
+      "filter_correct": 0,
+      "opposite_correct": 16,
+      "filter_valid": 16,
+      "capped": 0,
+      "JSON_correct": 0,
+      "arithmetic_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt_full_same",
+      "filter_correct": 12,
+      "opposite_correct": 4,
+      "filter_valid": 16,
+      "capped": 0,
+      "JSON_correct": 0,
+      "arithmetic_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2
+        }
+      ]
+    }
+  ],
+  "optimizer_steps": 0,
+  "notebook_seconds": 399.48721033,
+  "scope": "Development-only conditional neuron interventions. Rescue of induced corruption is not improvement of the original model.",
+  "site_gate_checks": {
+    "baseline_filter": true,
+    "baseline_valid": true,
+    "baseline_directions": true,
+    "baseline_retention": false,
+    "baseline_sentinels": true,
+    "corruption": true,
+    "same_rescue": true,
+    "opposite_rescue": true,
+    "recipient_rescue": true,
+    "clean_same": true,
+    "all_retention": false
+  },
+  "site_gate_passed": false,
+  "worker_seconds": 328.922184742,
+  "actual_forward_calls": 2178,
+  "actual_input_token_exposures": 38258,
+  "new_generated_tokens": 1932,
+  "actual_new_backwards": 0,
+  "inherited_backwards": 32,
+  "selection_exclusions": 89,
+  "matching_pool_minima": {
+    "random9101": 17,
+    "random9102": 17
+  },
+  "sparse_interventions_executed": false,
+  "posthoc_JSON_objects_with_correct_tag": 28,
+  "original_JSON_grades_unchanged": true,
+  "coding_improvement_established": false,
+  "semantic_neuron_role_established": false
+}

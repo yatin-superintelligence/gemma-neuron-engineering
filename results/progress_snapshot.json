@@ -1,18 +1,18 @@
 {
-  "generated_utc": "2026-10-30T06:55:28.046428+00:00",
-  "question_records": 20,
-  "recorded_terminal_runs": 36,
+  "generated_utc": "2026-10-30T07:39:48.540215+00:00",
+  "question_records": 21,
+  "recorded_terminal_runs": 37,
   "active_runs": [
     {
-      "run": "N10_v1_matchable_native_neurons",
-      "launched_utc": "2026-10-30T06:51:16.933512+00:00",
-      "status": "running_private_source_and_dataset_verified"
+      "run": "N11_v1_native_neuron_necessity",
+      "launched_utc": "2026-10-30T07:13:46.800945+00:00",
+      "status": "running_private_source_and_input_verified"
     }
   ],
-  "ledger_events": 143,
-  "question_register_source_sha256": "3413cac6637b6b33a1730b2db1d59bb7b3b9340d587adcde7aae494422ac3aa8",
-  "event_ledger_source_sha256": "4783d8c859010d30e0af280da405fde46ee0703b7c6e4253158ebf0edc6ca47d",
-  "compute_ledger_source_sha256": "a169e95fcfb729f91f0b983dfa521b0cdf8af82537c62ff5f679ece7a3066ffd",
+  "ledger_events": 148,
+  "question_register_source_sha256": "64bdd23da4047544109afae9d13ad56480dc5c180fd354c00f1a5e5f5bce1905",
+  "event_ledger_source_sha256": "888f6ff1a9e074ad39983f5787bf4d6cc161de58a63abc91b966583f7d242934",
+  "compute_ledger_source_sha256": "a7365aa897a6e4dfe3b82089426f88ee8ad6b30791ea96b48d579fa1ecc58dba",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0

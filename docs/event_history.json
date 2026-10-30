@@ -1152,6 +1152,45 @@
       "version": 1,
       "status": "running",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 144,
+      "utc": "2026-10-30T07:08:28.307068+00:00",
+      "event": "N10_planned_new_site_retention_stop_host_audited",
+      "experiment": "N10",
+      "optimizer_steps": 0,
+      "runner_seconds": 328.922184742,
+      "predictions": 168
+    },
+    {
+      "sequence": 145,
+      "utc": "2026-10-30T07:08:28.307068+00:00",
+      "event": "N11_wording_only_protocol_frozen_before_code",
+      "experiment": "N11",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 146,
+      "utc": "2026-10-30T07:15:48.978945+00:00",
+      "event": "N11_v1_private_launch_source_and_input_verified",
+      "experiment": "N11",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 147,
+      "utc": "2026-10-30T07:35:45.032530+00:00",
+      "event": "Post_N11_direction_review_recorded_before_output_access",
+      "experiment": "Methods review",
+      "status": "proposal_only",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 148,
+      "utc": "2026-10-30T07:35:45.032530+00:00",
+      "event": "Bounded_generic_NIM_method_review_timeout_preserved",
+      "experiment": "Methods consultation",
+      "status": "timeout40seconds_no_response",
+      "optimizer_steps": 0
     }
   ]
 }

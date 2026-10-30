@@ -209,13 +209,20 @@
       "outcome": "Planned strict matching stop;0newoutputs,32measurement backwards,4exact logits,zerooptimizerupdates.",
       "duration_scope": "Worker including model loading and discovery;notebook160.192735s. Not charged GPU quota.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N10_v1_matchable_native_neurons",
+      "recorded_script_seconds": 328.922184742,
+      "outcome": "Planned baseline retention stop after168outputs;allguards pass;0sparse interventions,0newbackwards,0updates.",
+      "duration_scope": "Worker328.922185s;notebook399.487210s. Not charged quota.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N10_v1_matchable_native_neurons",
-      "launched_utc": "2026-10-30T06:51:16.933512+00:00",
-      "status": "running_private_source_and_dataset_verified"
+      "run": "N11_v1_native_neuron_necessity",
+      "launched_utc": "2026-10-30T07:13:46.800945+00:00",
+      "status": "running_private_source_and_input_verified"
     }
   ]
 }
