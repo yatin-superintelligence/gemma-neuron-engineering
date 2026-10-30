@@ -272,13 +272,14 @@
       "outcome": "Pre-inference local-variable shadowing error,0predictions/0modelforwards/0weightinterventions/0updates. Source/privacy/failure preserved.",
       "duration_scope": "Worker duration not saved. Notebook133.21150887s;not charged quota.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "B02_v2_whole_MLP_reversal",
-      "launched_utc": "2026-10-30T11:59:15.082276+00:00",
-      "status": "One private bounded job active;64records,56new,128derivedreadings. V1zero-inference failure preserved."
+      "recorded_script_seconds": 486.23437941699996,
+      "outcome": "All64records/128derivedreadings audited. Base/aligned normal raw4/4coding;all other cells0/4. All48restorations and source/parameter/counter guards pass;0updates. No semantic inversion or gain.",
+      "duration_scope": "Worker486.234379417s;notebook538.176173556s.Notchargedquota.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

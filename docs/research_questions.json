@@ -459,7 +459,7 @@
     {
       "id": "Q30",
       "experiment": "B02: neuron and text reversal controls",
-      "status": "private_GPU_version2_active_after_preserved_zero_inference_failure",
+      "status": "complete_private_host_audited_all_readings_closed",
       "question": "What changes under precisely defined native-neuron reversals and normal/reversed user text, when every answer is read both ways?",
       "question_provenance": "Direct human proposal; mathematical definitions recorded before implementation or model results.",
       "parents": [
@@ -467,10 +467,10 @@
         "Q10"
       ],
       "method": "Four fixed model operations by normal or reversed user code points, using eight unchanged prompts. Both answer readings are retained. The planned 64 records contain 56 new generations and eight exact B01 base carries, giving 128 derived readings. Host algebra, scope and restoration checks pass.",
-      "result": "Version1 stopped before any forward, edit or prediction because a local case ID shadowed the built-in id. Its failure is preserved. The corrected source passes Ruff, isolated imports and the unchanged host gates. Version2 is running privately with the same 64-record grid, eight carried originals and 56 new predictions. No B02 behavioral output has been read.",
-      "interpretation": "Hidden channel order has a known permutation symmetry when connections move with it. An unmatched permutation or sign flip changes the computation; neither is a semantic inverse of knowledge.",
-      "next_question": "What happens on a small fixed normal/reversed-user-text grid in the pretrained model, with raw and reversed answer readings retained?",
-      "direction_decision": "At terminal version2 status, pull compact outputs once and run the frozen auditor. Rate all 64 blinded chat readings before unblinding. Keep both answer-reading grades separate. Preserve any failure; do not change conditions or regenerate completed predictions."
+      "result": "All 64 records pass, with 56 new predictions, eight exact carried originals and 128 derived readings. All 64 chat readings were rated before unblinding. Original and aligned reversal score 4/4 coding on normal prompts. Every other model/input/reading cell scores 0/4. Unmatched reversal and sign inversion produce unusable chat in this panel. All 48 restorations and parameter guards pass; zero backward passes and updates.",
+      "interpretation": "Coordinated reversal preserves ideal algebra but is not numerically bit-identical: all sixteen first-logit hashes differ, while first tokens agree. It changes one normal-input reply and six reversed-input replies, without changing coding correctness. Unmatched reversal and sign inversion do not create a semantic inverse; reversing the displayed answer does not restore the tested behavior. This is a small capped development panel.",
+      "next_question": "Can native channels in the selected three-layer site support specific causal function and useful coding edits?",
+      "direction_decision": "Close B02 and retain every model/input/reading cell plus the startup failure. No new reversal strengths or prompt edits from these outcomes. Return to Q31 native-channel coverage, necessity, rescue and matched controls."
     },
     {
       "id": "Q31",

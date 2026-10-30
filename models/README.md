@@ -205,3 +205,16 @@ with stored_neuron_gain(model, layer=9, channel=4632, factor=0):
 ```
 
 The context applies the declared column assignment throughout inference and restores the original matrix on exit. All eight B01 conditions passed the private raw-output and scope audit. This establishes reproduction evidence for those prescribed edits, not a personality-specific neuron or coding improvement. Raw prompts, replies and observer notes remain private. Independent clean-package B01 replay is not claimed.
+
+## B02 reversal variants
+
+[B02 recipes](b02/recipe.json) retain the original model, aligned channel reversal, unmatched outgoing-column reversal and outgoing sign inversion. Every target matrix has exact source, edited and restored hashes and declared version increments. Apply a condition to the same frozen pinned BF16 text model:
+
+```python
+from interpretability.mlp_reversal import reverse_native_mlps
+
+with reverse_native_mlps(model, 'aligned_channel_reverse'):
+    outputs = model.generate(**inputs, max_new_tokens=96, do_sample=False)
+```
+
+The helper covers dense native text MLPs and refuses packed quantized matrices. Context exit restores the parent weights. All 64 private records and 48 baseline-logit restorations passed. This validates these deterministic weight recipes on the recorded checkpoint; it is not an independent clean-package replay or a useful capability claim. Unmatched reversal and sign inversion failed the tested coding probes. Raw inputs and replies remain private.

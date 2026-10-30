@@ -1,0 +1,293 @@
+{
+  "utc": "2026-10-30T12:22:04.765841+00:00",
+  "status": "complete_private_host_audited_all_readings_preserved",
+  "all64_readings_rated_before_unblinding": true,
+  "ratings_freeze_commit": "3b46ad7",
+  "ratings_sha256": "7dede57fd183ddf7a4c4b0375bbe1301e970490808fa95bbe5ae3d1295936802",
+  "audit_sha256": "c1cf5adb8e48d0ace18eeb73131018e78ee2c93553d5b82b2536394df5d049d7",
+  "predictions": 64,
+  "new_predictions": 56,
+  "carried_records": 8,
+  "derived_readings": 128,
+  "independent_generations_are_not_reading_count": true,
+  "conditions": [
+    {
+      "condition": "base",
+      "orientation": "normal",
+      "records": 8,
+      "coding_and_chat_readings": {
+        "raw": {
+          "coding_correct": 4,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 0,
+            "1": 1,
+            "2": 3
+          },
+          "chat_rows": 4
+        },
+        "reversed_output_codepoints": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        }
+      },
+      "capped_chat": 3,
+      "capped_coding": 0,
+      "raw_reply_text_changes_from_base": 0,
+      "exact_first_logits_from_base": 8,
+      "top1_token_changes": 0,
+      "max_first_logit_abs_difference": 0.0
+    },
+    {
+      "condition": "base",
+      "orientation": "reversed_user_codepoints",
+      "records": 8,
+      "coding_and_chat_readings": {
+        "raw": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 0,
+            "1": 4,
+            "2": 0
+          },
+          "chat_rows": 4
+        },
+        "reversed_output_codepoints": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        }
+      },
+      "capped_chat": 3,
+      "capped_coding": 4,
+      "raw_reply_text_changes_from_base": 0,
+      "exact_first_logits_from_base": 8,
+      "top1_token_changes": 0,
+      "max_first_logit_abs_difference": 0.0
+    },
+    {
+      "condition": "aligned_channel_reverse",
+      "orientation": "normal",
+      "records": 8,
+      "coding_and_chat_readings": {
+        "raw": {
+          "coding_correct": 4,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 0,
+            "1": 1,
+            "2": 3
+          },
+          "chat_rows": 4
+        },
+        "reversed_output_codepoints": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        }
+      },
+      "capped_chat": 3,
+      "capped_coding": 0,
+      "raw_reply_text_changes_from_base": 1,
+      "exact_first_logits_from_base": 0,
+      "top1_token_changes": 0,
+      "max_first_logit_abs_difference": 1.125
+    },
+    {
+      "condition": "aligned_channel_reverse",
+      "orientation": "reversed_user_codepoints",
+      "records": 8,
+      "coding_and_chat_readings": {
+        "raw": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 0,
+            "1": 4,
+            "2": 0
+          },
+          "chat_rows": 4
+        },
+        "reversed_output_codepoints": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        }
+      },
+      "capped_chat": 3,
+      "capped_coding": 4,
+      "raw_reply_text_changes_from_base": 6,
+      "exact_first_logits_from_base": 0,
+      "top1_token_changes": 0,
+      "max_first_logit_abs_difference": 1.03125
+    },
+    {
+      "condition": "uncompensated_channel_reverse",
+      "orientation": "normal",
+      "records": 8,
+      "coding_and_chat_readings": {
+        "raw": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        },
+        "reversed_output_codepoints": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        }
+      },
+      "capped_chat": 4,
+      "capped_coding": 4,
+      "raw_reply_text_changes_from_base": 8,
+      "exact_first_logits_from_base": 0,
+      "top1_token_changes": 8,
+      "max_first_logit_abs_difference": 54.875
+    },
+    {
+      "condition": "uncompensated_channel_reverse",
+      "orientation": "reversed_user_codepoints",
+      "records": 8,
+      "coding_and_chat_readings": {
+        "raw": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        },
+        "reversed_output_codepoints": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        }
+      },
+      "capped_chat": 4,
+      "capped_coding": 4,
+      "raw_reply_text_changes_from_base": 8,
+      "exact_first_logits_from_base": 0,
+      "top1_token_changes": 8,
+      "max_first_logit_abs_difference": 53.375
+    },
+    {
+      "condition": "sign_flip",
+      "orientation": "normal",
+      "records": 8,
+      "coding_and_chat_readings": {
+        "raw": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        },
+        "reversed_output_codepoints": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        }
+      },
+      "capped_chat": 4,
+      "capped_coding": 4,
+      "raw_reply_text_changes_from_base": 8,
+      "exact_first_logits_from_base": 0,
+      "top1_token_changes": 8,
+      "max_first_logit_abs_difference": 57.625
+    },
+    {
+      "condition": "sign_flip",
+      "orientation": "reversed_user_codepoints",
+      "records": 8,
+      "coding_and_chat_readings": {
+        "raw": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        },
+        "reversed_output_codepoints": {
+          "coding_correct": 0,
+          "coding_rows": 4,
+          "chat_cooperation_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 0
+          },
+          "chat_rows": 4
+        }
+      },
+      "capped_chat": 4,
+      "capped_coding": 4,
+      "raw_reply_text_changes_from_base": 8,
+      "exact_first_logits_from_base": 0,
+      "top1_token_changes": 8,
+      "max_first_logit_abs_difference": 54.875
+    }
+  ],
+  "optimizer_steps": 0,
+  "actual_backward_passes": 0,
+  "worker_seconds": 486.23437941699996,
+  "notebook_seconds": 538.176173556,
+  "interpretation": "Coordinated channel reversal retains the tested coding outcomes on normal prompts, with some numerical/text differences. Uncompensated reversal and sign inversion destroy task usability in this panel; reading the output backwards does not recover it. Reversed user inputs do not establish coding recovery. This is a small development test, not semantic inversion, an individual neuron role, a new capability or useful improvement.",
+  "limitations": [
+    "All8prompts reused development;only4codingprobes.",
+    "Both answer readings are deterministic views of one generation and are not independent.",
+    "Many responses are capped;continuing them is not part of this experiment.",
+    "Qualitative ratings are agent observer judgments;legibility can reveal orientation despite hidden labels.",
+    "Aligned permutations have known mathematical symmetry;numeric differences do not establish a semantic feature."
+  ],
+  "coding_improvement_established": false,
+  "semantic_reversal_established": false
+}

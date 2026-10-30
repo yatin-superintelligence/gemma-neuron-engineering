@@ -68,6 +68,7 @@ models/n14/         All ten full-site donor policies
 models/n15/         All parent, single-layer and adjacent-pair policies
 models/n16/         All remaining subset policies and source hashes
 models/b01/         Eight validated conversational column-edit recipes
+models/b02/         Four whole-MLP reversal recipes and exact hash proofs
 tests/              Small independent fixtures, no pretrained download
 docs/               Goal & Intent and sequential Research Logbook
 results/            Reviewed experiment aggregates and run history
@@ -123,4 +124,6 @@ Original code and documentation use the Apache License 2.0. Gemma 4 is also rele
 
 ## Reversal pilot
 
-The human also proposed reversing neuron information, prompt text and answer readings. The host feasibility gate passes for three precisely defined MLP edits: coordinated channel reversal, unmatched outgoing-column reversal and outgoing sign inversion. Coordinated reversal preserves the calculation in exact arithmetic; the other two change it. These are random-weight checks, not pretrained behavior. The [generic implementation](interpretability/mlp_reversal.py) includes exact restoration and scope guards. The pretrained grid is frozen before GPU implementation: four model conditions, two input orientations and eight prompts, with both answer readings reported separately. B02 is the only active private GPU job. Its source, auditor, parent records and resource checks were frozen before launch. No result is reported before the complete audit passes. No training is introduced.
+The human also proposed reversing neuron information, prompt text and answer readings. The host feasibility gate passes for three precisely defined MLP edits: coordinated channel reversal, unmatched outgoing-column reversal and outgoing sign inversion. Coordinated reversal preserves the calculation in exact arithmetic; the other two change it. These are random-weight checks, not pretrained behavior. The [generic implementation](interpretability/mlp_reversal.py) includes exact restoration and scope guards. The pretrained grid is frozen before GPU implementation: four model conditions, two input orientations and eight prompts, with both answer readings reported separately. B02 is complete and audited. Original and aligned channel reversal preserve 4/4 coding probes on normal prompts; unmatched reversal and sign inversion give 0/4. Reversed prompts and backward answer readings do not recover the probes. All 64 records, 128 derived readings and 48 restorations are retained. Aligned reversal changes some logits and text despite its mathematical symmetry. See the [complete grid](results/b02_reversal_summary.json). No training is introduced.
+
+The next question returns to native-channel function in the selected layers 5, 6 and 9. It is an intent, not a launched experiment. No GPU job is currently active.

@@ -1475,6 +1475,14 @@
       "event": "prospective_receipt_destination_isolated_to_preserve_version1_failure",
       "experiment": "B02v2 analysis",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 189,
+      "utc": "2026-10-30T12:25:19.538158+00:00",
+      "event": "complete_private_all_conditions_readings_and_guards_audited",
+      "experiment": "B02v2",
+      "optimizer_steps": 0,
+      "predictions": 64
     }
   ]
 }
