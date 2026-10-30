@@ -46,5 +46,14 @@ class SelectorSiteTests(unittest.TestCase):
             if kind in ['MLP','both']:
                 self.assertEqual(receipt['MLP_prefill_hits'],3);self.assertEqual(receipt['MLP_decode_skips'],6)
 
+    def test_single_layer_sites(self):
+        with torch.inference_mode():base=self.model(self.ids,use_cache=True).logits
+        for layer in range(3):
+            for identity in [True,False]:
+                with selector_site(self.model,2,self.donors[0 if identity else 1],'MLP',mlp_layers=[layer],producer=3):
+                    with torch.inference_mode():changed=self.model(self.ids,use_cache=True).logits
+                self.assertEqual(torch.equal(base,changed),identity)
+                with torch.inference_mode():self.assertTrue(torch.equal(base,self.model(self.ids,use_cache=True).logits))
+
 
 if __name__=='__main__':unittest.main()

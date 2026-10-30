@@ -1000,6 +1000,28 @@
       "predictions": 200,
       "privacy_server_verified": true,
       "cell_sources_exact": true
+    },
+    {
+      "sequence": 127,
+      "utc": "2026-10-30T04:05:26.767465+00:00",
+      "event": "N06_complete_all200_host_audited_joint_MLP_site_transfer",
+      "experiment": "N06",
+      "question": "Q16",
+      "conditions": 10,
+      "optimizer_steps": 0,
+      "predictions": 200
+    },
+    {
+      "sequence": 128,
+      "utc": "2026-10-30T04:10:32.017326+00:00",
+      "event": "N07_v1_launched_private_source_verified",
+      "experiment": "N07",
+      "question": "Q17",
+      "conditions": 30,
+      "optimizer_steps": 0,
+      "predictions": 600,
+      "privacy_server_verified": true,
+      "cell_sources_exact": true
     }
   ]
 }

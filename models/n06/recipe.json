@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "kind": "native_full_site_activation_policy",
+  "experiment": "N06",
+  "utc": "2026-10-30T04:09:55.223192+00:00",
+  "base": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "representation": "text_only_unquantized_BF16"
+  },
+  "optimizer_steps": 0,
+  "helper": "interpretability/selector_site.py",
+  "helper_sha256": "5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60",
+  "policies": [
+    {
+      "name": "base",
+      "kind": "none",
+      "donor": "self"
+    },
+    {
+      "name": "self_both",
+      "kind": "both",
+      "donor": "self"
+    },
+    {
+      "name": "opposite_K",
+      "kind": "K",
+      "donor": "opposite"
+    },
+    {
+      "name": "opposite_V",
+      "kind": "V",
+      "donor": "opposite"
+    },
+    {
+      "name": "opposite_KV",
+      "kind": "KV",
+      "donor": "opposite"
+    },
+    {
+      "name": "opposite_MLP",
+      "kind": "MLP",
+      "donor": "opposite"
+    },
+    {
+      "name": "samepolicy_K",
+      "kind": "K",
+      "donor": "samepolicy"
+    },
+    {
+      "name": "samepolicy_V",
+      "kind": "V",
+      "donor": "samepolicy"
+    },
+    {
+      "name": "samepolicy_KV",
+      "kind": "KV",
+      "donor": "samepolicy"
+    },
+    {
+      "name": "samepolicy_MLP",
+      "kind": "MLP",
+      "donor": "samepolicy"
+    }
+  ],
+  "MLP_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "KV_producer": 14,
+  "KV_readers": [
+    19,
+    24,
+    29,
+    34
+  ],
+  "position_contract": "Recipient and donor selector must have identical absolute token position. Actual post-gating MLP and normalized/rotated K/V values come from unmodified donor forwards. No averaged or fitted vectors.",
+  "application": "Use capture_selector on each caller-supplied prompt, then selector_site with the actual donor dictionary and the declared kind. MLP changes prefill only; K/V changes shared reads each cached step. Context exit restores hooks and verifies native parameter versions.",
+  "validation": "All 200 original GPU outputs and host audit passed. Forty individual self hashes, twenty joint self generations and twenty restorations were exact. K/V producer-output and native-cache value guards passed. No independent clean-package pretrained replay is claimed.",
+  "scope": "Saves exact mechanisms and fixed policies. Raw prompts and donor activation traces are private. No base weights are duplicated. This is a conditional inference policy, not a trained model checkpoint.",
+  "result_limit": "Joint opposite-policy MLP donor control transferred sixteen of sixteen programs. Same-policy mapping-reversed donors preserved fourteen. No individual neuron meaning or coding improvement established."
+}

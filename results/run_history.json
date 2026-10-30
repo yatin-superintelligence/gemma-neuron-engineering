@@ -181,13 +181,20 @@
       "outcome": "336outputs audited;selected/randoms same1loss;rounding format/cap dominated;no role/gain;0updates",
       "duration_scope": "Worker1665.503s;notebook1717.976s;not charged quota",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N06_v1",
+      "recorded_script_seconds": 355.718531732,
+      "outcome": "All 200 outputs audited. Joint early MLP opposite transfer16/16,same-policy preservation14/16;K/V no flips;no gain or individual role.",
+      "duration_scope": "Worker 355.719s;notebook 410.109s;not charged quota",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N06_v1",
-      "launched_utc": "2026-10-30T03:53:33.468562+00:00",
-      "status": "private bounded GPUjob launched;20baseline usability gate before expanding to200"
+      "run": "N07_v1",
+      "launched_utc": "2026-10-30T04:09:05.008782+00:00",
+      "status": "Private fixed layer decomposition: 580 new outputs and 20 exact carried originals; no training."
     }
   ]
 }

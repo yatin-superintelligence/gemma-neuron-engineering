@@ -1,0 +1,732 @@
+{
+  "utc": "2026-10-30T04:02:02.736128+00:00",
+  "experiment": "N06",
+  "version": 1,
+  "status": "host_audited",
+  "predictions": 200,
+  "all_raw_token_grades_and_guards_pass": true,
+  "baseline_gate": {
+    "target_correct": 16,
+    "direction_correct": {
+      "-1": 8,
+      "1": 8
+    },
+    "both_correct_pairs": 8,
+    "valid_expression": 16,
+    "JSON_content_correct": 4,
+    "passed": true
+  },
+  "conditions": [
+    {
+      "condition": "base",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "gains": 0,
+      "losses": 0,
+      "originally_correct_policy_flips": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strict_format": 16,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "self_both",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "gains": 0,
+      "losses": 0,
+      "originally_correct_policy_flips": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strict_format": 16,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_K",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "gains": 0,
+      "losses": 0,
+      "originally_correct_policy_flips": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strict_format": 16,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_V",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "gains": 0,
+      "losses": 0,
+      "originally_correct_policy_flips": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strict_format": 16,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_KV",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "gains": 0,
+      "losses": 0,
+      "originally_correct_policy_flips": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strict_format": 16,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "opposite_MLP",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "gains": 0,
+      "losses": 16,
+      "originally_correct_policy_flips": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strict_format": 16,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_K",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "gains": 0,
+      "losses": 0,
+      "originally_correct_policy_flips": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strict_format": 16,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_V",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "gains": 0,
+      "losses": 0,
+      "originally_correct_policy_flips": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strict_format": 16,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_KV",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "gains": 0,
+      "losses": 0,
+      "originally_correct_policy_flips": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strict_format": 16,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_MLP",
+      "target_correct": 14,
+      "opposite_correct": 2,
+      "gains": 0,
+      "losses": 2,
+      "originally_correct_policy_flips": 2,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strict_format": 16,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    }
+  ],
+  "optimizer_steps": 0,
+  "actual_forward_calls": 2600,
+  "actual_input_token_exposures": 42980,
+  "generated_tokens": 2320,
+  "worker_seconds": 355.718531732,
+  "notebook_seconds": 410.10945167799997,
+  "native_joint_MLP_site_passes_descriptive_gate": true,
+  "coding_improvement_established": false,
+  "semantic_neuron_role_established": false,
+  "interpretation": "Joint early MLP opposite donors transfer16/16;reversed-mapping same-policy donors preserve14/16. K/V donors produce no functional flips. All JSON4/4 and no caps. This locates a conditional site, not individual neuron meanings or coding improvement. Four crossed instruction strata with nuisance-name replications, not sixteen algorithms.",
+  "next_decision": "Decompose the early-MLP site by all14individual layers with both donor controls before selecting sparse native units. Reuse development only;fresh confirmation remains separate."
+}

@@ -1,18 +1,18 @@
 {
-  "generated_utc": "2026-10-30T03:57:24.048975+00:00",
-  "question_records": 16,
-  "recorded_terminal_runs": 32,
+  "generated_utc": "2026-10-30T04:13:21.404565+00:00",
+  "question_records": 17,
+  "recorded_terminal_runs": 33,
   "active_runs": [
     {
-      "run": "N06_v1",
-      "launched_utc": "2026-10-30T03:53:33.468562+00:00",
-      "status": "private bounded GPUjob launched;20baseline usability gate before expanding to200"
+      "run": "N07_v1",
+      "launched_utc": "2026-10-30T04:09:05.008782+00:00",
+      "status": "Private fixed layer decomposition: 580 new outputs and 20 exact carried originals; no training."
     }
   ],
-  "ledger_events": 126,
-  "question_register_source_sha256": "8099efc3afd1f831f387b66b482a5571df3c94654e81f3c14963ef171ae2d90b",
-  "event_ledger_source_sha256": "cc7fe58296619eff305bb4ca2e98657be2a72b927718001f28979112bb6c2405",
-  "compute_ledger_source_sha256": "388a182eafcb3ac57caeb2b2307335dbe699b362efa6d335f9f1749bbba5ab18",
+  "ledger_events": 128,
+  "question_register_source_sha256": "f98655e6dd48c2ee18f46de0ddca3e86831786254d9c20a8f0861da26f50d016",
+  "event_ledger_source_sha256": "7115bfb932557e0bfaa621034f207c0f6ca5633e61f437995d27fc912e389295",
+  "compute_ledger_source_sha256": "d94d45eaa466cd46ca1e78513d31b3f5ce8e66c0fe4884a937df49e672cde50d",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0

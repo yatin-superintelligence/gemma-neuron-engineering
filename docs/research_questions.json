@@ -236,7 +236,7 @@
     {
       "id": "Q16",
       "experiment": "N06: baseline usability and causal-site gate",
-      "status": "private_gpu_running",
+      "status": "complete_host_audited_joint_MLP_causal_site",
       "question": "Can a usable counterbalanced mode selector control executable expressions, and is its information causally accessible through full MLP or reused attention-memory states?",
       "question_provenance": "Proposed after N05 complete audit and structure diagnosis. It replaces an inadequate full-function assay and adds the missing full-state positive control.",
       "parents": [
@@ -245,12 +245,27 @@
         "Q15"
       ],
       "method": "Counterbalanced red/blue integer-filter expressions. Gate usable baseline first, then joint full native MLP or reuse-only K/V donor replacements. Same-policy mapping reversal controls label meaning. No sparse localization yet.",
-      "result": "Fifteen actual tiny-Gemma cases and twenty token/oracle checks passed. N06 version 1 is running privately with a frozen protocol, auditor and baseline-usability stop. No model outputs have been read.",
-      "interpretation": "Attention-memory coordinates and native MLP channels are different units. The gate may locate a useful causal site but cannot establish a sparse semantic feature, new capability or novelty.",
-      "next_question": "Does the baseline meet fixed usability thresholds, and does any complete-state transplant predictably transfer the policy across label reversal?",
-      "direction_decision": "Run the smallest bounded gate. Stop after baseline if unusable. Only a controlled positive result warrants subsequent sparse localization.",
+      "result": "All 200 outputs and guards passed. Baseline filtering was correct on 16/16 and JSON on 4/4. Joint early-MLP opposite donors transferred all sixteen programs to the opposite policy. Reversed-mapping same-policy donors preserved fourteen of sixteen. Keys, values and joint K/V produced no functional flips. No outputs hit the cap.",
+      "interpretation": "Joint early MLP opposite donors transfer16/16;reversed-mapping same-policy donors preserve14/16. K/V donors produce no functional flips. All JSON4/4 and no caps. This locates a conditional site, not individual neuron meanings or coding improvement. Four crossed instruction strata with nuisance-name replications, not sixteen algorithms.",
+      "next_question": "Which individual layers carry the joint early-MLP effect, and where is native-channel localization justified?",
+      "direction_decision": "Deepen at the measured MLP site. Decompose every early layer with both donor controls before a sparse search. Opposite-policy transfer is control, not coding improvement.",
       "protocol": "research/experiments/n06/protocol.json",
       "decision": "The proposed rounding assay changed to filtering because N05 filter controls were correct on four of four inputs while rounding was correct on one of sixteen. This is a prospective new assay. N05 grades are unchanged."
+    },
+    {
+      "id": "Q17",
+      "experiment": "N07: individual-layer decomposition of the native MLP site",
+      "status": "private_gpu_running",
+      "question": "Which of the fourteen early native MLP layers is sufficient for policy transfer beyond a reversed-mapping same-policy donor control?",
+      "question_provenance": "Proposed after the complete N06 all-condition audit. The joint early-MLP site transfers every tested opposite policy while keys and values do not.",
+      "parents": [
+        "Q16"
+      ],
+      "method": "All fourteen individual layers, opposite and same-policy actual donors, exact carried original predictions, live original replay, per-layer self hashes and exact restoration. No sparse selection or optimization.",
+      "result": "Six actual tiny-Gemma single-layer self/donor/restoration fixtures passed. N07 version 1 is running privately with a frozen protocol and auditor. No N07 outputs have been read.",
+      "interpretation": "This measures conditional whole-layer sufficiency on development prompts. It does not assign native neuron meanings, establish necessity or improve coding.",
+      "next_question": "Does any individual layer pass the fixed transfer/same-policy criterion, or is a multi-layer decomposition required?",
+      "direction_decision": "Only an eligible controlled layer warrants subsequent sparse necessity/rescue. Otherwise study predeclared layer blocks rather than rank channels blindly."
     }
   ]
 }

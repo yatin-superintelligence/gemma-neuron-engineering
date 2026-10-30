@@ -119,3 +119,7 @@ The exact tensor bundles occupy about 1.4 MB; the N04 recipe adds only small JSO
 [The N05 recipe](n05/recipe.json) saves every fixed coordinate group and all thirteen policies. The supplied anchor helper applies prescribed gains or actual donor-state swaps and removes hooks on exit. These are inference policies, not new trained weight checkpoints. The original GPU audit verified identity, self/rescue and restoration controls; a separate clean-package replay is not claimed.
 
 Donor policies require unmodified activations from the caller's donor prompt at the mapped position. Raw original prompts and activation traces remain private. Fixed edit reconstruction and exact replication of the private behavioral panel are separate scopes. No coding benefit or specific neuron role was established.
+
+## N06 full-site donor policies
+
+[The N06 recipe](n06/recipe.json) saves all ten fixed policies and the validated MLP/shared-read helper contract. Capture actual donor states from caller-supplied prompts at identical absolute selector positions. The original GPU study and host audit passed all no-op, restoration and cache guards. This is a conditional inference policy. A separate clean-package replay and release of the private behavioral panel are not claimed.

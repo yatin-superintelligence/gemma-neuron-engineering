@@ -30,11 +30,12 @@ There are no optimizer updates, fine-tuning, fitted steering vectors or training
 | N03: native-neuron coding pilot | All 896 BF16/NF4 outputs audited. Every fixed condition scored 4/16 threshold, 4/8 signed division and 8/8 JSON controls. Identity, self-patch, rescue and restoration passed. Real-checkpoint fixed-input late-past path nulls were exact. | No coding gain or semantic role. A two-token contrast missed most dominant errors, and task wording omitted integer types. These limitations and the unchanged grades are retained. |
 | N04: copied memory connection | All 288 outputs and controls audited. Historical memory opens the tested late-past causal path; original, off and current-only controls retain the exact null. All fixed policies and reconstruction recipes are retained. | Full replacements fail all 32 outputs. Quarter-strength key-only gains two division completions on four reused name pairs, with unadjusted paired p = 0.5. No confirmed coding benefit or semantic role. |
 | N05: native policy transmission | All 336 outputs and identity/self/rescue/restoration controls audited. Original scored 1/16 rounding functions, 4/4 filters and 0/4 strict JSON. Every nonidentity condition lost the same single rounding success. | No specific role or gain. Selected and matched random groups agree. Token caps, function-format violations and fenced JSON limit the assay. Original grades remain unchanged. |
-| N06: usability and causal-site gate | A private pilot first tests 20 short expression/extraction outputs. Only a usable baseline permits the full 10-condition MLP/key/value donor matrix. | Running, no result yet. Full-state control is a prerequisite for sparse localization. Opposite-policy transfer would show control, not improved coding. |
+| N06: usability and causal-site gate | All 200 outputs audited. Original filtering was correct on 16/16. Joint early-MLP opposite donors transferred 16/16 to the opposite policy; reversed-mapping same-policy donors preserved 14/16. K/V donors caused no functional flips. All JSON controls passed. | A conditional joint MLP site, not individual neuron meanings or improved coding. Four crossed instruction strata with nuisance-name replications. |
+| N07: individual-layer decomposition | A private, fixed panel separates all 14 early MLP layers with opposite-policy and same-policy donor controls. | Running, no result yet. Whole-layer sufficiency must precede sparse-channel claims. |
 
 The N02 representations share the pinned floating-point parent. The NF4 intervention first dequantizes the selected MLP and uses its unchanged dense form as the comparison baseline. BF16 is unquantized, but is not FP32. Full transformer-layer insertion remains unvalidated.
 
-Complete aggregates: [N01 conditions](results/n01_development_summary.json), [N01 functional controls](results/n01_function_controls.json), [N02 engineering audit](results/n02_engineering_summary.json), [N03 coding audit](results/n03_coding_summary.json), [N04 host gate](results/n04_host_gate.json), [N04 connection audit](results/n04_connection_summary.json), [N05 complete results](results/n05_anchor_summary.json). Startup failures and scientific nulls remain in the [logbook](docs/RESEARCH_LOG.html).
+Complete aggregates: [N01 conditions](results/n01_development_summary.json), [N01 functional controls](results/n01_function_controls.json), [N02 engineering audit](results/n02_engineering_summary.json), [N03 coding audit](results/n03_coding_summary.json), [N04 host gate](results/n04_host_gate.json), [N04 connection audit](results/n04_connection_summary.json), [N05 complete results](results/n05_anchor_summary.json), [N06 causal-site audit](results/n06_site_summary.json). Startup failures and scientific nulls remain in the [logbook](docs/RESEARCH_LOG.html).
 
 ![Complete N04 policy grid and its interpretation limits](docs/figures/n04_summary.png)
 
@@ -47,6 +48,7 @@ models/n01/         Two saved branch tensors and fixed steering policies
 models/n02/         BF16 and same-source NF4 physical-edit bundles
 models/n04/         Copied-memory recipes and source-module hashes
 models/n05/         Fixed native groups and all activation-edit policies
+models/n06/         Full-site MLP and shared-read donor policies
 tests/              Small independent fixtures, no pretrained download
 docs/               Goal & Intent and sequential Research Logbook
 results/            Reviewed experiment aggregates and run history
@@ -82,9 +84,9 @@ The fixture writes local records under `runs/n04/host/version2` and refuses to o
 
 ## Current localization question
 
-The current pilot tests where a selected instruction can change short executable filtering code. It counterbalances label meanings and compares full early-MLP donor states with keys and values exposed only to later shared-attention readers. It first requires a reliable baseline. A failed usability gate stops the matrix before more GPU work.
+N06 passed its baseline-usability gate and produced controlled policy transfers through the joint early-MLP site. Opposite donors switched all sixteen filter programs; reversed-mapping same-policy donors preserved fourteen. Keys and values exposed only to later shared readers caused no functional flips. All retention controls remained correct.
 
-N05 showed why this gate is necessary: its selected neurons and matched random groups produced the same single loss, while most rounding functions failed the requested format or reached the token ceiling. We preserve those results and change the next question. We have not identified rounding neurons or shown coding improvement.
+The current pilot separates every early MLP layer using both donor controls. It asks where sparse native-channel localization is justified. No individual neuron meaning or coding improvement is established. N05's earlier null and format limitations remain unchanged in the logbook.
 
 ## Publication scope
 
