@@ -609,7 +609,7 @@
     {
       "id": "Q39",
       "experiment": "N25: answer-independent runtime coding controller",
-      "status": "intent_only_not_frozen_not_implemented_not_launched",
+      "status": "host_feasibility_complete_closed_GPU_protocol_not_frozen",
       "question": "Can a fixed runtime syntax trigger make the existing native gain-of-two edit useful for complete coding without a baseline answer or known comparator position?",
       "question_provenance": "N24 shows selected64 causal comparator-score shifts well above both matched controls, but every parent program still stays unchanged. N21 global gain two has no selected coding gain and an unassessable format gate. The old current decision uses an original response-derived prefix, so it is not a deployable controller. N23 semantic/lexical counterbalance failed and remains closed.",
       "parents": [
@@ -620,9 +620,9 @@
         "Q38"
       ],
       "method": "Keep exactly selected64 and both already fixed random64 groups and the already prescribed factor two. Compare original, same-scope identity, selected gain two and both random gain-two policies. No new coordinate, rank, strength, fitted vector or dose search. A fixed Python-prefix recognizer may apply the activation gain only before syntactic decision opportunities during the model's own free generation. The recognizer may inspect only tokens already generated in that same response. It may parse generated parameter/iterator bindings and identify a trailing bound name after return or if. It must not use task IDs, expected programs, hidden oracles, correct comparator tokens, baseline completions, future tokens or a learned activation classifier. Its grammar, exact boundary rules and event cap must be frozen and host-tested before model outcomes.",
-      "result": "Proposal only. No N25 protocol, dataset, runner or model output exists. The next gate is a small prospectively frozen host check of grammar and cached-control feasibility.",
+      "result": "N25H passes all 58 fixed host cases in actual random Gemma modules in FP32 and BF16. Exact identity, restoration, nonaliasing shadow caches, whole-current-cache equality, scope, parameter, stopping and counter guards pass. The host records 708 tiny forwards, 816 input-token exposures and 578 random-model tokens, with zero pretrained forwards or tokens, backwards or optimizer updates, in 3.14014 CPU seconds. The initial Python 3.14 unfinished-parenthesis parser failure had zero model forwards. Its compatibility repair and original sources remain preserved. No N25 GPU protocol, dataset or pretrained execution exists.",
       "interpretation": "A causal contribution to the model's chosen operator is not a correctness signal. Reinforcing that contribution may reinforce mistakes. The new study must test this uncertainty directly, rather than infer benefit from N24. New development candidate, not confirmation of a useful edit. Fresh confirmation stays separate. Conditional steering and code steering are known. No semantic neuron meaning, new capability, novelty or benefit claimed.",
-      "next_question": "First freeze a small host feasibility protocol. Only then freeze the exact prospective coding protocol and independent sources/auditor before a private model run. Fresh permitted quota and two-hour reserve remain required. No N25 GPU job or launch-ready protocol exists.",
+      "next_question": "Freeze the bounded complete-coding design and independent hidden oracles before any pretrained output. Record all gains and losses, unusable-baseline stops, trigger-positive noncomparison retention and family dependence prospectively. Keep the exact groups and gain of two.",
       "direction_decision": "Test usefulness separately from the bounded N24 score contribution. Keep the exact existing groups and gain two. No outcome-based dose, coordinate or trigger fitting."
     }
   ],

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-30T23:47:01.473174+00:00",
+  "status": "dated_compatibility_repair_frozen_before_execution",
+  "source_sha256": {
+    "interpretability/python_prefix.py": "6a8403b695f185cb78d335c8f770f32c3d9b53416a7c8b013edb35c31c5ebdcc",
+    "interpretability/prefix_decode.py": "4b7f12bcab65de95b2f7a63dcdfbc4ee4fd2d4731cade70e56c23e3ea71c8a44",
+    "research/experiments/n25/host.py": "3b2f1426778e2a248aca417957b72d44398178d3a8fdd3eb50b344e64d7c088b",
+    "interpretability/current_group.py": "f0accf9f472f8ae4d084b80141804d39bd8e483bdffefa78593c0fe8c9381990",
+    "interpretability/decode_step.py": "4324dd756c03966ebceb257160c2ad5f92eb23c4492c2b6983836f8db5fd3650",
+    "interpretability/scoped_channel.py": "75d9e1c5c9e1c467a68892ebd81e470741976f4205d2adace2272462d299d925",
+    "research/experiments/n25/host_protocol.json": "064ae9cfa783bdc17c51c344409f2f66ddbfde8e2194f27ab6b5d9071539e8e6"
+  },
+  "parent_freeze": "runs/n25/host_source_freeze.json",
+  "change": "Accept the Python3.14 tokenize message unexpected EOF in multi-line statement in addition to the older exact EOF message. Update host freeze path only. Grammar,cache,identity and all scientific requirements unchanged.",
+  "python_version": "3.12.7 (main, Oct 25 2025, 01:56:31) [Clang 17.0.0 (clang-1700.0.13.5)]",
+  "original_failure_model_forwards": 0,
+  "optimizer_steps": 0
+}

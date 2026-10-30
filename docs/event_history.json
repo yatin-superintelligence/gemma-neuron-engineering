@@ -2276,6 +2276,34 @@
       "event": "conditional_runtime_coding_controller_intent_recorded",
       "experiment": "N25",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 302,
+      "utc": "2026-10-30T23:48:05.740006+00:00",
+      "event": "host_protocol_frozen_before_implementation",
+      "experiment": "N25H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 303,
+      "utc": "2026-10-30T23:48:05.740006+00:00",
+      "event": "host_parser_message_compatibility_failure_preserved",
+      "experiment": "N25H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 304,
+      "utc": "2026-10-30T23:48:05.740006+00:00",
+      "event": "host_tokenizer_message_repair_frozen_before_execution",
+      "experiment": "N25H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 305,
+      "utc": "2026-10-30T23:48:05.740006+00:00",
+      "event": "host_controller_feasibility_complete_closed",
+      "experiment": "N25H",
+      "optimizer_steps": 0
     }
   ]
 }

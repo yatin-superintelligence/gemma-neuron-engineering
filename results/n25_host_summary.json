@@ -1,0 +1,49 @@
+{
+  "receipt": {
+    "utc": "2026-10-30T23:47:11.256082+00:00",
+    "status": "complete_host_validated",
+    "question_id": "Q39",
+    "experiment": "N25H",
+    "source_sha256": {
+      "interpretability/python_prefix.py": "6a8403b695f185cb78d335c8f770f32c3d9b53416a7c8b013edb35c31c5ebdcc",
+      "interpretability/prefix_decode.py": "4b7f12bcab65de95b2f7a63dcdfbc4ee4fd2d4731cade70e56c23e3ea71c8a44",
+      "research/experiments/n25/host.py": "3b2f1426778e2a248aca417957b72d44398178d3a8fdd3eb50b344e64d7c088b",
+      "interpretability/current_group.py": "f0accf9f472f8ae4d084b80141804d39bd8e483bdffefa78593c0fe8c9381990",
+      "interpretability/decode_step.py": "4324dd756c03966ebceb257160c2ad5f92eb23c4492c2b6983836f8db5fd3650",
+      "interpretability/scoped_channel.py": "75d9e1c5c9e1c467a68892ebd81e470741976f4205d2adace2272462d299d925",
+      "research/experiments/n25/host_protocol.json": "064ae9cfa783bdc17c51c344409f2f66ddbfde8e2194f27ab6b5d9071539e8e6"
+    },
+    "actual_tiny_Gemma_forward_calls": 708,
+    "actual_tiny_input_token_exposures": 816,
+    "tiny_random_generated_tokens": 578,
+    "pretrained_model_forwards": 0,
+    "pretrained_generated_tokens": 0,
+    "actual_backward_calls": 0,
+    "actual_optimizer_steps": 0,
+    "seconds": 3.1401421669979754,
+    "failure": null,
+    "cases": 58,
+    "semantic_role_or_coding_benefit_established": false
+  },
+  "interpretation": {
+    "utc": "2026-10-30T23:48:05.740006+00:00",
+    "status": "N25H_complete_closed_GPU_study_not_frozen",
+    "question_id": "Q39",
+    "result": "All 58 fixed host cases pass. Actual random Gemma generation in FP32 and BF16 passes exact identity and restoration, isolated native shadows, whole-current-cache equality, scope, EOS/fence/cap stops and independent counters.",
+    "counters": {
+      "actual_tiny_Gemma_forward_calls": 708,
+      "actual_tiny_input_token_exposures": 816,
+      "tiny_random_generated_tokens": 578,
+      "pretrained_model_forwards": 0,
+      "pretrained_generated_tokens": 0,
+      "actual_backward_calls": 0,
+      "actual_optimizer_steps": 0,
+      "seconds": 3.1401421669979754
+    },
+    "preserved_failure": "Python3.14 tokenizer uses unexpected EOF in multi-line statement. First host check rejected that unfinished-parenthesis message after two grammar cases,with zero model forwards. Both source editions,first freeze/failure and compatibility-only repair remain preserved.",
+    "limits": "Host mock-decoded fragments test controller wiring,not language or coding ability. The production path must decode actual generated token IDs with the pinned tokenizer. No new pretrained outcome,semantic role,coding gain,efficiency or novelty.",
+    "next": "Freeze bounded new complete coding cases,independent hidden oracles,baseline/edited branches,all gains/losses and retention before execution. No new ranking,dose or fitted trigger. Fresh confirmation remains separate."
+  },
+  "software_feasibility_only": true,
+  "pretrained_model_forwards": 0
+}

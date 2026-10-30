@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-30T23:21:29.690260+00:00",
+  "generated_utc": "2026-10-30T23:49:10.548408+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "c2a4dee3c8a4899c664bcf20cd7409e1da7f05f41285d41c899e71d0dddc8c7d",
-      "bytes": 10516
+      "sha256": "5f76501659105319d2f98370722751b25741e53761374531db445fca555b7056",
+      "bytes": 10811
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "93a3e5b4b24d4fdb3acb46a2ae0718405bc2f0e5fc9f6456dad4459606d67c78",
-      "bytes": 226498
+      "sha256": "c40a3f85424e5ccddc7a4608bb2f6786be3bd63c16dbafa86fb9bbcbd14c532f",
+      "bytes": 227703
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "f0e87685fa88f5e8e26139bf1999204f0d2a6610861ea053ae23dadd1211540f",
-      "bytes": 146465
+      "sha256": "c20addbe327fb8bb813aeb37255f4f41e6e35a675a27e3d859482a188418def8",
+      "bytes": 147449
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "355d57f848b3b6de8fa1a067e3d62b5f81bfe7f9f7b9905a9e252fd3d22e9b7a",
-      "bytes": 69206
+      "sha256": "914faeae5854d4a2fd61b561eadeb2f63ffcd77995707b0d1dfffd2f27922788",
+      "bytes": 70031
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -176,8 +176,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "59cd906de7e1f1f75732d6656255b50b1131a92a09c58b95d9b9620fcd73db8f",
-      "bytes": 74405
+      "sha256": "2b9c05a0a635f97fd5f3afc20e25a6fb0652986337548b588e5cdfeb2bd232eb",
+      "bytes": 74864
     },
     {
       "path": "interpretability/__init__.py",
@@ -260,9 +260,19 @@
       "bytes": 4705
     },
     {
+      "path": "interpretability/prefix_decode.py",
+      "sha256": "4b7f12bcab65de95b2f7a63dcdfbc4ee4fd2d4731cade70e56c23e3ea71c8a44",
+      "bytes": 8193
+    },
+    {
       "path": "interpretability/probe.py",
       "sha256": "cc29483c000cdbe0165d8d00a3cc9421c51d17088328d9d0d2996caef5e066f9",
       "bytes": 5299
+    },
+    {
+      "path": "interpretability/python_prefix.py",
+      "sha256": "6a8403b695f185cb78d335c8f770f32c3d9b53416a7c8b013edb35c31c5ebdcc",
+      "bytes": 5349
     },
     {
       "path": "interpretability/scoped_channel.py",
@@ -498,6 +508,16 @@
       "path": "methods/n24_transport_amendment_v2.json",
       "sha256": "9bc7aabccf20ab4e2fd99806b4e958cf7dd2fd47662e5e8501c33034cfad44d6",
       "bytes": 1386
+    },
+    {
+      "path": "methods/n25_host_compatibility_repair.json",
+      "sha256": "97d89373982158eebdf2d8523454788ddff115edcf4752a89ea1d3551ff1213c",
+      "bytes": 1357
+    },
+    {
+      "path": "methods/n25_host_protocol.json",
+      "sha256": "064ae9cfa783bdc17c51c344409f2f66ddbfde8e2194f27ab6b5d9071539e8e6",
+      "bytes": 7608
     },
     {
       "path": "methods/n25_literature_prospective.json",
@@ -1025,8 +1045,13 @@
       "bytes": 1221
     },
     {
+      "path": "results/n25_host_summary.json",
+      "sha256": "1c9bea2e4a2e3eb86bd9e77d5e94a46ef1243f39885389d5a317ab6ddfc9a573",
+      "bytes": 2983
+    },
+    {
       "path": "results/progress_snapshot.json",
-      "sha256": "50c04fc9368cc29a0443e1fc0cfd6b94b0d2b393e5b67bf488f419019319e675",
+      "sha256": "fedb54bb84040475c609a21e34faa837cb0fee9d4825985844ccc0c7dd0ecd39",
       "bytes": 601
     },
     {

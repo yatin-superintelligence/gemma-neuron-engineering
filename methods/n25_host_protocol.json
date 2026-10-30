@@ -1,0 +1,223 @@
+{
+  "utc": "2026-10-30T23:40:27.311020+00:00",
+  "experiment": "N25H",
+  "question_id": "Q39",
+  "status": "prospective_host_protocol_before_implementation",
+  "question": "Can the fixed prefix recognizer and native cached-gain pipeline operate without future answers,cache contamination or identity drift?",
+  "parents": [
+    "runs/n24/version1/result_receipt.json",
+    "research/experiments/n25/intent.json"
+  ],
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "seed": 3925,
+  "event_cap": 4,
+  "maximum_prefix_characters": 16384,
+  "grammar": "Only a trailing syntactically declared parameter or simple for-target NAME after return/if,with at most two intervening opening parentheses and at most one not. No future token is read. The current identifier can later be continued;these are candidate opportunities,not a guaranteed comparison or valid complete program. Ignore indentation/newline tokens;reject malformed/unclosed strings and complete fences.",
+  "positive_cases": [
+    {
+      "prefix": "def f(left, right):\n    return left",
+      "name": "left",
+      "case": "parameter after return"
+    },
+    {
+      "prefix": "def f(left, right):\n    if right",
+      "name": "right",
+      "case": "parameter after if"
+    },
+    {
+      "prefix": "def f(left, right):\n    return (left",
+      "name": "left",
+      "case": "one open parenthesis"
+    },
+    {
+      "prefix": "def f(left, right):\n    if not (left",
+      "name": "left",
+      "case": "negation and parenthesis"
+    },
+    {
+      "prefix": "```python\ndef f(left, right):\n    if left",
+      "name": "left",
+      "case": "open Python fence"
+    },
+    {
+      "prefix": "def f(values, edge):\n    return [item for item in values if item",
+      "name": "item",
+      "case": "simple comprehension target"
+    },
+    {
+      "prefix": "def f(left: int, *, right=0):\n    return right",
+      "name": "right",
+      "case": "annotated and keyword-only parameters"
+    },
+    {
+      "prefix": "def f(\n    left,\n    right\n):\n    if left",
+      "name": "left",
+      "case": "multiline signature"
+    },
+    {
+      "prefix": "def f(a, amount):\n    return a",
+      "name": "a",
+      "case": "currently valid name may later continue;future is not inspected"
+    }
+  ],
+  "negative_cases": [
+    {
+      "prefix": "",
+      "case": "empty prefix"
+    },
+    {
+      "prefix": "return left",
+      "case": "no generated declaration"
+    },
+    {
+      "prefix": "def f(left, right):\n    if unknown",
+      "case": "undeclared name"
+    },
+    {
+      "prefix": "def f(left, right):\n    if le",
+      "case": "incomplete name not declared"
+    },
+    {
+      "prefix": "def f(left, right):\n    return left >",
+      "case": "operator already emitted"
+    },
+    {
+      "prefix": "def f(left, right):\n    return left + right",
+      "case": "right operand after arithmetic"
+    },
+    {
+      "prefix": "def f(left, right):\n    return max(left",
+      "case": "call argument"
+    },
+    {
+      "prefix": "def f(left, right):\n    # if left",
+      "case": "comment"
+    },
+    {
+      "prefix": "def f(left, right):\n    x = \"if left\"",
+      "case": "complete string"
+    },
+    {
+      "prefix": "def f(left, right):\n    x = 'if left",
+      "case": "unfinished ordinary string"
+    },
+    {
+      "prefix": "def f(left, right):\n    x = \"\"\"if left",
+      "case": "unfinished multiline string"
+    },
+    {
+      "prefix": "```python\ndef f(left, right):\n    return left\n```",
+      "case": "closed fence"
+    },
+    {
+      "prefix": "def f(left, right):\n    elif left",
+      "case": "elif is outside this fixed grammar"
+    }
+  ],
+  "event_tests": "No cache means no event. Repeated same canonical prefix or trailing whitespace does not consume another event. Four distinct opportunities fire;the fifth does not. Invalid event cap and prefix types are rejected.",
+  "tiny_model": "Actual random-weight six-layer Gemma4 classes,hidden16,intermediate24,double-wide last two,shared KV tail2,four cache slots,vocabulary32. FP32 and BF16,untrained/frozen parameters. No pretrained weights or historical adapters.",
+  "tiny_groups": {
+    "selected": [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "randomA": [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "randomB": [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        10
+      ]
+    ]
+  },
+  "conditions": [
+    "original",
+    "identity_selected_gain1",
+    "selected_gain2",
+    "randomA_gain2",
+    "randomB_gain2"
+  ],
+  "synthetic_decoder_segments": [
+    "```python\n",
+    "def f(left, right):\n",
+    "    if left",
+    " ",
+    "< right:\n        pass\n",
+    "    if right",
+    " > left:\n        pass\n",
+    "    if (",
+    "left",
+    " < right):\n        pass\n",
+    "    return ",
+    "right",
+    " + left\n",
+    "\n",
+    "# end\n",
+    "```"
+  ],
+  "decoder_scope": "The host mock decoder appends these known fragments as the RANDOM model emits token IDs. It tests trigger wiring and stopping only,not text quality. Real pinned-tokenizer prefix boundary checks are separate and use no model forwards. The future GPU package must use the actual pinned tokenizer,not this stub.",
+  "cap_mode": {
+    "max_new_tokens": 20,
+    "eos_ids": [],
+    "stop_at_fence": false
+  },
+  "fence_mode": {
+    "max_new_tokens": 20,
+    "eos_ids": [],
+    "stop_at_fence": true,
+    "expected_tokens": 16
+  },
+  "expected_fires_per_complete_mock_response": 4,
+  "EOS_case": "Use the first original random greedy token as a declared EOS for a separate test. Expect one generated token,one prefill call and no trigger.",
+  "cache_and_identity_guards": "Each trigger uses an exact nonaliasing DynamicCache copy for a native same-prefix shadow. Edited and shadow WHOLE current cache must match. Original/identity whole logits and token IDs match at every step. Gain2 changes at least one current logit hash per fixed group/dtype. After each nonidentity response,a restored original response is exact. Reject absent/truncated/empty caches. Directly perturbing a disposable clone must not affect the original cache. Do not use inference-cache tensor version counters.",
+  "counter_contract": "For a response with n prompt tokens,T generated tokens and F shadow events: actual root calls T+F,input exposures n+T-1+F. Independently compare an outer meter for every response. Record random generated token counts separately from zero pretrained tokens. No full logits/activation arrays are saved.",
+  "versions": "All original model parameter versions,gradient flags,p.gradNone and hook inventories unchanged. Actual backwards and optimizer updates are zero.",
+  "real_tokenizer_reference": "def f(left, right, values, edge):\n    if left < right:\n        return left\n    return [item for item in values if item > edge]\n",
+  "tokenizer_parent": "google/gemma-4-E2B-it",
+  "tokenizer_revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "tokenizer_scope": "Walk only already-decoded reference prefixes. Check candidates against the declared source boundaries. No pretrained model inference or benchmark answer source.",
+  "failure_policy": "Preserve source and failed receipts before a dated repair. Do not weaken exact cache/identity guards. This host result cannot establish a native semantic role or useful coding gain."
+}
