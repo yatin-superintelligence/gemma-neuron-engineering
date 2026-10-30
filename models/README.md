@@ -190,3 +190,18 @@ All 400 original records, 120 self-logit comparisons, 120 generated identity/rec
 [The N15 recipe](n15/recipe.json) retains all twenty-three policies, including the five parent controls and every single layer and adjacent pair. Use the same native capture and composition example as N14, replacing the declared layer list with the recipe's list. Donors must remain actual aligned native states. No weights are learned or supplied by this policy bundle.
 
 All 920 original records passed audit. Two hundred parent records and their live first-logit replays matched, along with 560 native-state hashes, 360 prefill self checks, 108 cached-self hashes and 46 restorations. No individual layer or adjacent pair met the predefined semantic gate. The partial transfers, failed criteria and all coding gains and losses remain public aggregates. These are inference mechanisms over caller-supplied contexts. Independent clean-package pretrained replay and release of the original private behavioral panel are not claimed.
+
+## N16 layer subsets and B01 conversations
+
+[N16 recipes](n16/recipe.json) retain every tested donor policy inside layers 5 to 9. Donor policies require caller-supplied unmodified contexts and aligned selector positions, using the existing capture and composition helpers. The private grid passes its source, identity and restoration guards. A separate clean-package pretrained replay has not been performed.
+
+[B01 recipes](b01/recipe.json) specify all eight original, identity and outgoing-column zero/double policies, including exact source/edited/restored hashes. The pinned BF16 base supplies the original columns, so no full model copy is needed. Use the existing helper on a frozen model loaded from the N02 BF16 bundle:
+
+```python
+from interpretability.stored_neuron_gain import stored_neuron_gain
+
+with stored_neuron_gain(model, layer=9, channel=4632, factor=0):
+    outputs = model.generate(**inputs, max_new_tokens=96, do_sample=False)
+```
+
+The context applies the declared column assignment throughout inference and restores the original matrix on exit. All eight B01 conditions passed the private raw-output and scope audit. This establishes reproduction evidence for those prescribed edits, not a personality-specific neuron or coding improvement. Raw prompts, replies and observer notes remain private. Independent clean-package B01 replay is not claimed.

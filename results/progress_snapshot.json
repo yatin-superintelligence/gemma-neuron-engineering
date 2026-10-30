@@ -1,18 +1,18 @@
 {
-  "generated_utc": "2026-10-30T11:26:59.310208+00:00",
-  "question_records": 30,
-  "recorded_terminal_runs": 43,
+  "generated_utc": "2026-10-30T12:07:23.092776+00:00",
+  "question_records": 31,
+  "recorded_terminal_runs": 45,
   "active_runs": [
     {
-      "run": "B01_v1_chat_native_column_edits",
-      "launched_utc": "2026-10-30T11:13:36.001781+00:00",
-      "status": "One private bounded job active;192records,at most168new predictions,0updates."
+      "run": "B02_v2_whole_MLP_reversal",
+      "launched_utc": "2026-10-30T11:59:15.082276+00:00",
+      "status": "One private bounded job active;64records,56new,128derivedreadings. V1zero-inference failure preserved."
     }
   ],
-  "ledger_events": 180,
-  "question_register_source_sha256": "f37b8384a219bf8ee7c339d176f7ea85b8de9d4f6f9a110ccf4e0e0a50a312ab",
-  "event_ledger_source_sha256": "b796e036be834d783c9734dd3ba51b9e7470c8abdb2930176e5791ca23dcdef3",
-  "compute_ledger_source_sha256": "27d93592384108e0ec051ec8bb009ca44bd7f6c05a109709e0ead78375287942",
+  "ledger_events": 188,
+  "question_register_source_sha256": "4acdaad5db56b0440d431e0fa965c6e8787d4f7044220daa8735216b4a940a53",
+  "event_ledger_source_sha256": "ec3216e1b5c7b02fde6968c7b3b08c541197cd3abb6daee0e5e45a0f037165f8",
+  "compute_ledger_source_sha256": "804c55fdd46c33940897fc673399686ea616c553e5d9b8bf1e9a76e16b33b1bb",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0

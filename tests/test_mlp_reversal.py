@@ -18,6 +18,10 @@ class ReversalTests(unittest.TestCase):
                 if operation == 'aligned_channel_reverse': self.assertLessEqual(difference, 1e-10)
                 else: self.assertGreater(difference, 0)
             self.assertTrue(receipt['all_target_hashes_restored_exact'])
+            for target in receipt['targets']:
+                self.assertEqual(target['source_sha256'], target['restored_sha256'])
+                self.assertEqual(target['edited_version'], target['source_version'] + 1)
+                self.assertEqual(target['restored_version'], target['source_version'] + 2)
             self.assertEqual(before, {n: tensor_sha(p) for n, p in model.named_parameters()})
 
     def test_exception_restoration_and_validation(self):

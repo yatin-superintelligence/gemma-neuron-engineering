@@ -40,7 +40,7 @@ def reverse_native_mlps(model, operation):
         selected = [(gate, 0), (up, 0), (down, 1)] if operation == 'aligned_channel_reverse' else [(down, 1 if operation == 'uncompensated_channel_reverse' else None)]
         for weight, axis in selected:
             targets.append({'name': names[id(weight)], 'weight': weight, 'axis': axis,
-                'layer': index, 'source_sha256': tensor_sha(weight)})
+                'layer': index, 'source_sha256': tensor_sha(weight), 'source_version': weight._version})
     if len({id(t['weight']) for t in targets}) != len(targets):
         raise ValueError('Shared target parameters require a separate protocol')
     versions = {n: p._version for n, p in params.items()}
@@ -50,15 +50,28 @@ def reverse_native_mlps(model, operation):
         'optimizer_steps': 0, 'actual_backward_passes': 0, 'targets': receipts}
     try:
         for target in targets:
-            _transform(target['weight'], target['axis']); applied.append(target)
+            applied.append(target)
+            _transform(target['weight'], target['axis'])
             receipts.append({k: v for k, v in target.items() if k != 'weight'})
             receipts[-1]['edited_sha256'] = tensor_sha(target['weight'])
+            receipts[-1]['edited_version'] = target['weight']._version
+            assert receipts[-1]['edited_version'] == target['source_version'] + 1
         yield receipt
     finally:
-        for target in reversed(applied):
+        # Restore every changed target before validating receipts, including an
+        # interruption between the assignment and the receipt append.
+        changed = [t for t in applied if t['weight']._version != t['source_version']]
+        for target in reversed(changed):
             _transform(target['weight'], target['axis'])
-            assert tensor_sha(target['weight']) == target['source_sha256']
-        selected_names = {t['name'] for t in applied}
+        proofs = {r['name']: r for r in receipts}
+        for target in changed:
+            restored = tensor_sha(target['weight'])
+            assert restored == target['source_sha256']
+            proof = proofs.get(target['name'])
+            if proof is not None:
+                proof.update(restored_sha256=restored, restored_version=target['weight']._version)
+                assert proof['restored_version'] == proof['source_version'] + 2
+        selected_names = {t['name'] for t in changed}
         assert all(p._version == versions[n] + (2 if n in selected_names else 0) for n, p in params.items())
         assert flags == {n: p.requires_grad for n, p in params.items()}
         assert all(p.grad is None for p in params.values())

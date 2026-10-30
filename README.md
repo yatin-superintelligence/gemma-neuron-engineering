@@ -67,6 +67,7 @@ models/n13/         Exact outgoing columns and all fixed-unit recipes
 models/n14/         All ten full-site donor policies
 models/n15/         All parent, single-layer and adjacent-pair policies
 models/n16/         All remaining subset policies and source hashes
+models/b01/         Eight validated conversational column-edit recipes
 tests/              Small independent fixtures, no pretrained download
 docs/               Goal & Intent and sequential Research Logbook
 results/            Reviewed experiment aggregates and run history
@@ -108,7 +109,7 @@ N07 tested every early MLP layer and found no eligible layer. Layer 0 switches t
 
 ## Conversational behavior
 
-B01 is the only active private GPU experiment. It compares twelve first-turn prompts and four followups under eight fixed native-neuron policies, using both own and common baseline histories plus four unchanged coding probes. All 192 records and controls will be retained; qualitative ratings are condition blinded. No conversational change is established yet. Existing persona-steering research is prior work.
+B01 is complete. All 192 records pass the raw-output and scope audit, and all 160 chat records were rated before unblinding. Native edits change wording, but all conditions preserve the bounded factual, uncertainty and remembered-name checks and score 4/4 coding. No clear personality shift is established. Twelve or thirteen of twenty chat records per condition are capped at 96 tokens. Ratings are exploratory observer judgments; fixed random controls are not activity matched. See the [complete aggregates](results/b01_chat_summary.json).
 
 ## Publication scope
 
@@ -122,4 +123,4 @@ Original code and documentation use the Apache License 2.0. Gemma 4 is also rele
 
 ## Reversal pilot
 
-The human also proposed reversing neuron information, prompt text and answer readings. The host feasibility gate passes for three precisely defined MLP edits: coordinated channel reversal, unmatched outgoing-column reversal and outgoing sign inversion. Coordinated reversal preserves the calculation in exact arithmetic; the other two change it. These are random-weight checks, not pretrained behavior. The [generic implementation](interpretability/mlp_reversal.py) includes exact restoration and scope guards. The pretrained grid is frozen before GPU implementation: four model conditions, two input orientations and eight prompts, with both answer readings reported separately. It has not run. No training is introduced.
+The human also proposed reversing neuron information, prompt text and answer readings. The host feasibility gate passes for three precisely defined MLP edits: coordinated channel reversal, unmatched outgoing-column reversal and outgoing sign inversion. Coordinated reversal preserves the calculation in exact arithmetic; the other two change it. These are random-weight checks, not pretrained behavior. The [generic implementation](interpretability/mlp_reversal.py) includes exact restoration and scope guards. The pretrained grid is frozen before GPU implementation: four model conditions, two input orientations and eight prompts, with both answer readings reported separately. B02 is the only active private GPU job. Its source, auditor, parent records and resource checks were frozen before launch. No result is reported before the complete audit passes. No training is introduced.

@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "experiment": "B01",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only unquantized BF16, no historical adapters",
+  "optimizer_steps": 0,
+  "actual_backward_passes": 0,
+  "conditions": [
+    {
+      "name": "base",
+      "layer": null,
+      "channel": null,
+      "factor": null
+    },
+    {
+      "name": "identity",
+      "layer": 9,
+      "channel": 4632,
+      "factor": 1
+    },
+    {
+      "name": "target_0",
+      "layer": 9,
+      "channel": 4632,
+      "factor": 0
+    },
+    {
+      "name": "target_2",
+      "layer": 9,
+      "channel": 4632,
+      "factor": 2
+    },
+    {
+      "name": "random1_0",
+      "layer": 9,
+      "channel": 850,
+      "factor": 0
+    },
+    {
+      "name": "random1_2",
+      "layer": 9,
+      "channel": 850,
+      "factor": 2
+    },
+    {
+      "name": "random2_0",
+      "layer": 9,
+      "channel": 6085,
+      "factor": 0
+    },
+    {
+      "name": "random2_2",
+      "layer": 9,
+      "channel": 6085,
+      "factor": 2
+    }
+  ],
+  "mechanism": "Apply stored_neuron_gain to the declared native outgoing column throughout prompt and generated positions. All other columns and native parameters remain unchanged. Context exit restores the original weight.",
+  "source_columns": {
+    "4632": {
+      "sha256": "7adc62fe9a2797a64f5bfde2919675a59f5802e290daa2134dafdea9a4361a2a",
+      "norm": 0.91639244556427
+    },
+    "850": {
+      "sha256": "d6bfff23c0547fe6ca64a4db448597b3ddbc9a2ba49b1a68949b2620da6e87f2",
+      "norm": 1.034844994544983
+    },
+    "6085": {
+      "sha256": "52dbc4ddaa077277233400d7bd6757fcba6ba2a67d53de7bca63d4dbd81c585d",
+      "norm": 0.8198044896125793
+    }
+  },
+  "all_main_edit_receipts": [
+    {
+      "phase": "main",
+      "policy": "base",
+      "receipt": {
+        "base": true,
+        "optimizer_steps": 0
+      }
+    },
+    {
+      "phase": "main",
+      "policy": "identity",
+      "receipt": {
+        "layer": 9,
+        "channel": 4632,
+        "factor": 1,
+        "optimizer_steps": 0,
+        "source_column_sha256": "7adc62fe9a2797a64f5bfde2919675a59f5802e290daa2134dafdea9a4361a2a",
+        "expected_column_sha256": "7adc62fe9a2797a64f5bfde2919675a59f5802e290daa2134dafdea9a4361a2a",
+        "source_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "target_parameter_version_before": 6,
+        "edited_column_sha256": "7adc62fe9a2797a64f5bfde2919675a59f5802e290daa2134dafdea9a4361a2a",
+        "edited_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "other_columns_exact": true,
+        "target_parameter_version_during": 7,
+        "original_matrix_restored_exact": true,
+        "restored_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "all_other_parameter_versions_unchanged": true,
+        "all_parameter_gradients_none": true,
+        "target_parameter_version_after": 8
+      }
+    },
+    {
+      "phase": "main",
+      "policy": "target_0",
+      "receipt": {
+        "layer": 9,
+        "channel": 4632,
+        "factor": 0,
+        "optimizer_steps": 0,
+        "source_column_sha256": "7adc62fe9a2797a64f5bfde2919675a59f5802e290daa2134dafdea9a4361a2a",
+        "expected_column_sha256": "dfa2be821c76a7635c31b9f8073126af0ba5a9ca4b6373e21f3838fd6ab447fb",
+        "source_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "target_parameter_version_before": 8,
+        "edited_column_sha256": "dfa2be821c76a7635c31b9f8073126af0ba5a9ca4b6373e21f3838fd6ab447fb",
+        "edited_matrix_sha256": "67301e4874893c0bfa604dabc431c45d4e6cf87ca421b4d56e74356873ef0a2d",
+        "other_columns_exact": true,
+        "target_parameter_version_during": 9,
+        "original_matrix_restored_exact": true,
+        "restored_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "all_other_parameter_versions_unchanged": true,
+        "all_parameter_gradients_none": true,
+        "target_parameter_version_after": 10
+      }
+    },
+    {
+      "phase": "main",
+      "policy": "target_2",
+      "receipt": {
+        "layer": 9,
+        "channel": 4632,
+        "factor": 2,
+        "optimizer_steps": 0,
+        "source_column_sha256": "7adc62fe9a2797a64f5bfde2919675a59f5802e290daa2134dafdea9a4361a2a",
+        "expected_column_sha256": "f3ab41d66f9675d01cc7e11228700ac720eac5731c6e6a2bef0ef87477fd8886",
+        "source_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "target_parameter_version_before": 10,
+        "edited_column_sha256": "f3ab41d66f9675d01cc7e11228700ac720eac5731c6e6a2bef0ef87477fd8886",
+        "edited_matrix_sha256": "9642b5e69630eee068d921d3b288887f3e0ad34bb804a2ab1f53a3fa30902132",
+        "other_columns_exact": true,
+        "target_parameter_version_during": 11,
+        "original_matrix_restored_exact": true,
+        "restored_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "all_other_parameter_versions_unchanged": true,
+        "all_parameter_gradients_none": true,
+        "target_parameter_version_after": 12
+      }
+    },
+    {
+      "phase": "main",
+      "policy": "random1_0",
+      "receipt": {
+        "layer": 9,
+        "channel": 850,
+        "factor": 0,
+        "optimizer_steps": 0,
+        "source_column_sha256": "d6bfff23c0547fe6ca64a4db448597b3ddbc9a2ba49b1a68949b2620da6e87f2",
+        "expected_column_sha256": "7344d219688c6c3855c74188f18ab2693110a11b82f169c1e60481ff1e4edbfe",
+        "source_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "target_parameter_version_before": 12,
+        "edited_column_sha256": "7344d219688c6c3855c74188f18ab2693110a11b82f169c1e60481ff1e4edbfe",
+        "edited_matrix_sha256": "6148ce87d460fb893c34fe0e071d1c7c4493f612325ee2118561bad44e8baf83",
+        "other_columns_exact": true,
+        "target_parameter_version_during": 13,
+        "original_matrix_restored_exact": true,
+        "restored_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "all_other_parameter_versions_unchanged": true,
+        "all_parameter_gradients_none": true,
+        "target_parameter_version_after": 14
+      }
+    },
+    {
+      "phase": "main",
+      "policy": "random1_2",
+      "receipt": {
+        "layer": 9,
+        "channel": 850,
+        "factor": 2,
+        "optimizer_steps": 0,
+        "source_column_sha256": "d6bfff23c0547fe6ca64a4db448597b3ddbc9a2ba49b1a68949b2620da6e87f2",
+        "expected_column_sha256": "38ac9e1eeca8198dbe304960b5102fa4fc06a7048366e532a02f213e47b2682e",
+        "source_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "target_parameter_version_before": 14,
+        "edited_column_sha256": "38ac9e1eeca8198dbe304960b5102fa4fc06a7048366e532a02f213e47b2682e",
+        "edited_matrix_sha256": "636d9542b085052dd392beb8ab0c674751f4d685bd80e5d1f77c5305d7ed5c62",
+        "other_columns_exact": true,
+        "target_parameter_version_during": 15,
+        "original_matrix_restored_exact": true,
+        "restored_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "all_other_parameter_versions_unchanged": true,
+        "all_parameter_gradients_none": true,
+        "target_parameter_version_after": 16
+      }
+    },
+    {
+      "phase": "main",
+      "policy": "random2_0",
+      "receipt": {
+        "layer": 9,
+        "channel": 6085,
+        "factor": 0,
+        "optimizer_steps": 0,
+        "source_column_sha256": "52dbc4ddaa077277233400d7bd6757fcba6ba2a67d53de7bca63d4dbd81c585d",
+        "expected_column_sha256": "3061b22ab1215c953395615680983fe257d4301706dde3c071ea213b71e45786",
+        "source_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "target_parameter_version_before": 16,
+        "edited_column_sha256": "3061b22ab1215c953395615680983fe257d4301706dde3c071ea213b71e45786",
+        "edited_matrix_sha256": "24a9e950e56233e29d157962cd8e567403cd36b5a25b13c189712fa0a3e36a23",
+        "other_columns_exact": true,
+        "target_parameter_version_during": 17,
+        "original_matrix_restored_exact": true,
+        "restored_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "all_other_parameter_versions_unchanged": true,
+        "all_parameter_gradients_none": true,
+        "target_parameter_version_after": 18
+      }
+    },
+    {
+      "phase": "main",
+      "policy": "random2_2",
+      "receipt": {
+        "layer": 9,
+        "channel": 6085,
+        "factor": 2,
+        "optimizer_steps": 0,
+        "source_column_sha256": "52dbc4ddaa077277233400d7bd6757fcba6ba2a67d53de7bca63d4dbd81c585d",
+        "expected_column_sha256": "87357f75ade6f632b1b3718dcea373b851a3649f5d943bdfcb576b5df008a040",
+        "source_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "target_parameter_version_before": 18,
+        "edited_column_sha256": "87357f75ade6f632b1b3718dcea373b851a3649f5d943bdfcb576b5df008a040",
+        "edited_matrix_sha256": "a9915b38f313c1df365d483938a4c3eb14df28569477289de8f4353a97319f97",
+        "other_columns_exact": true,
+        "target_parameter_version_during": 19,
+        "original_matrix_restored_exact": true,
+        "restored_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7",
+        "all_other_parameter_versions_unchanged": true,
+        "all_parameter_gradients_none": true,
+        "target_parameter_version_after": 20
+      }
+    }
+  ],
+  "validation": {
+    "all192records_host_audited": true,
+    "all160chat_records_rated_before_unblinding": true,
+    "generated_identity_comparisons": 16,
+    "restorations": 24,
+    "protocol_sha256": "039a442728c07285ce0321eab977dd49fdc34eb447a274d59d382abee0a1caca",
+    "intervention_source_sha256": "6169b400b3f2a2a8d54010413e07324925ebb7ef2c4541f26eda3bbb73aa8f88",
+    "independent_clean_package_pretrained_replay": false
+  },
+  "scope": "Small exploratory chat panel and four coding probes. Random controls are not activity matched. No personality-specific neuron meaning or coding improvement is established."
+}

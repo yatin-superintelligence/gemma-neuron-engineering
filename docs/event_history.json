@@ -1417,6 +1417,64 @@
       "event": "prospective_pretrained_reversal_grid_frozen_before_GPU_implementation",
       "experiment": "B02",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 181,
+      "utc": "2026-10-30T11:46:31.152289+00:00",
+      "event": "complete_private_audit_and_frozen_blinded_assessment",
+      "experiment": "B01",
+      "optimizer_steps": 0,
+      "predictions": 192
+    },
+    {
+      "sequence": 182,
+      "utc": "2026-10-30T11:46:31.152289+00:00",
+      "event": "current_scope_receipts_and_full_counter_grid_passed",
+      "experiment": "B02 host",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 183,
+      "utc": "2026-10-30T11:46:31.152289+00:00",
+      "event": "source_auditor_data_and_analysis_frozen_before_launch",
+      "experiment": "B02",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 184,
+      "utc": "2026-10-30T11:47:48.326480+00:00",
+      "event": "private_reversal_grid_launched",
+      "experiment": "B02",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 185,
+      "utc": "2026-10-30T11:58:38.252185+00:00",
+      "event": "startup_failure_preserved_and_scope_repair_frozen",
+      "experiment": "B02v1",
+      "optimizer_steps": 0,
+      "predictions": 0
+    },
+    {
+      "sequence": 186,
+      "utc": "2026-10-30T12:01:47.959026+00:00",
+      "event": "corrected_private_grid_launched_with_unchanged_conditions",
+      "experiment": "B02v2",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 187,
+      "utc": "2026-10-30T12:01:47.959026+00:00",
+      "event": "native_channel_followup_intent_recorded_not_an_experiment",
+      "experiment": "N17 planning",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 188,
+      "utc": "2026-10-30T12:07:20.669609+00:00",
+      "event": "prospective_receipt_destination_isolated_to_preserve_version1_failure",
+      "experiment": "B02v2 analysis",
+      "optimizer_steps": 0
     }
   ]
 }

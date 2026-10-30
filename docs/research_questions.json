@@ -443,7 +443,7 @@
     {
       "id": "Q29",
       "experiment": "B01: conversational behavior alongside coding",
-      "status": "private_GPU_version1_active_outputs_unseen",
+      "status": "complete_private_host_audited_blinded_assessment_closed",
       "question": "Do prescribed native-neuron edits change conversational behavior, and do those changes coincide with coding degradation?",
       "question_provenance": "Direct human suggestion to chat with edited Gemma, supported by a screenshot offered as an unverified lead. No chat outputs exist when this panel and assessment rubric are prepared.",
       "parents": [
@@ -451,15 +451,15 @@
         "Q28"
       ],
       "method": "Twelve fixed first prompts and four followups compare baseline, identity and whole-conversation zero/double edits of the fixed rare unit and two same-layer random controls. Natural histories and fixed baseline histories separate dialogue feedback from the current edit. Four unchanged coding probes measure retention.",
-      "result": "The final protocol, source and auditor were frozen before launch. Sixteen closed N13 coding records are carried into 192 total records, with 144 to 168 new predictions after exact-input deduplication. Actual tiny-Gemma scope, cache, counter and parent token/oracle gates pass. One private bounded job is running. No B01 outputs have been read.",
-      "interpretation": "Tone, uncertainty, disagreement and consistency are observable behaviors. A dramatic reply is not a validated personality trait or an individual semantic role. Random controls are fixed but not activity-matched. Persona steering already has prior work.",
-      "next_question": "Does a fixed edit produce a repeatable change across prompts and histories while preserving executable coding?",
-      "direction_decision": "Wait for the job to finish while doing useful host work. Audit every guard and history, then rate all 160 condition-blinded replies before reading the key or condition summaries. Keep every outcome."
+      "result": "All 192 records pass raw-token, carry, scope, identity, counter and restoration audits. There are 158 new predictions, 16 exact closed-parent carries and 18 within-run reuses. All 160 chat records were rated before unblinding, using 55 exact-content groups. Edits change wording but every condition scores 4/4 coding; bounded false-premise, uncertainty and name-memory checks all pass. Twelve or thirteen of twenty chat records per condition are capped.",
+      "interpretation": "No clear personality shift or coding improvement is established. Qualitative scores are exploratory observer judgments, not an independent validated trait instrument. Random controls also change wording and are not activity matched. The high cap rate limits conclusions.",
+      "next_question": "Does the separately frozen reversal grid alter coding or conversation under normal and reversed text?",
+      "direction_decision": "Close B01. Preserve every reply, all conditions and blinded ratings. Proceed with the fixed small reversal pilot; do not reroll or select a dramatic quote."
     },
     {
       "id": "Q30",
       "experiment": "B02: neuron and text reversal controls",
-      "status": "host_feasibility_passed_pretrained_grid_frozen_not_launched",
+      "status": "private_GPU_version2_active_after_preserved_zero_inference_failure",
       "question": "What changes under precisely defined native-neuron reversals and normal/reversed user text, when every answer is read both ways?",
       "question_provenance": "Direct human proposal; mathematical definitions recorded before implementation or model results.",
       "parents": [
@@ -467,10 +467,27 @@
         "Q10"
       ],
       "method": "Four fixed model operations by normal or reversed user code points, using eight unchanged prompts. Both answer readings are retained. The planned 64 records contain 56 new generations and eight exact B01 base carries, giving 128 derived readings. Host algebra, scope and restoration checks pass.",
-      "result": "Six actual tiny-Gemma cases pass in FP64 and BF16, including normal and shared double-width MLPs, cached generation, exception restoration and exact parent weight/logit restoration. Coordinated reversals preserve fixture logits; uncompensated reversal and sign inversion change them. No pretrained reversal result is available.",
+      "result": "Version1 stopped before any forward, edit or prediction because a local case ID shadowed the built-in id. Its failure is preserved. The corrected source passes Ruff, isolated imports and the unchanged host gates. Version2 is running privately with the same 64-record grid, eight carried originals and 56 new predictions. No B02 behavioral output has been read.",
       "interpretation": "Hidden channel order has a known permutation symmetry when connections move with it. An unmatched permutation or sign flip changes the computation; neither is a semantic inverse of knowledge.",
       "next_question": "What happens on a small fixed normal/reversed-user-text grid in the pretrained model, with raw and reversed answer readings retained?",
-      "direction_decision": "B01 remains the only GPU job. Freeze B02 prompt/model/reading grid and source/auditor before launching. Keep all answer readings separate and preserve chat-template roles/delimiters."
+      "direction_decision": "At terminal version2 status, pull compact outputs once and run the frozen auditor. Rate all 64 blinded chat readings before unblinding. Keep both answer-reading grades separate. Preserve any failure; do not change conditions or regenerate completed predictions."
+    },
+    {
+      "id": "Q31",
+      "experiment": "N17: native-channel coverage in the selected site",
+      "status": "intent_only_not_frozen_or_launched",
+      "question": "Can native post-gating channels reproduce the selected full-MLP donor effect, and which small groups are necessary or sufficient under matched controls?",
+      "question_provenance": "Prescribed next branch from the complete N16 subset audit. This proposal keeps the original native-neuron goal active while the requested behavior pilots run.",
+      "parents": [
+        "Q28",
+        "Q29",
+        "Q30"
+      ],
+      "method": "Freeze a bounded forward-only channel coverage/localization study within layers5,6,9, with actual unmodified donor values, predeclared strengths/partition or rank rules, strict activity/output-norm matched randoms, clean necessity and counterfactual rescue. Any ranking is a hypothesis and development selection. No fitted or applied contrast vector, optimization or learned bridge.",
+      "result": "No N17 protocol, model run or result. First establish native-channel full-site coverage before a sparse interpretation.",
+      "interpretation": "A whole-MLP donor effect does not identify individual neurons. A scalar-level positive control, matched causal controls, necessity, rescue and fresh useful outcomes remain required.",
+      "next_question": "Can native post-gating channels reproduce the selected full-MLP donor effect, and which small groups are necessary or sufficient under matched controls?",
+      "direction_decision": "After B02 closes, review the exact closest priors and freeze the smallest useful native-channel study. Do not spend more routine GPU time on packaging or new architectural branches without a measured function."
     }
   ],
   "active_question_id": "Q28",

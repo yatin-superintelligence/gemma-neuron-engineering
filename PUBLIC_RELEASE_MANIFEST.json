@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-30T11:26:59.310208+00:00",
+  "generated_utc": "2026-10-30T12:07:23.092776+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "291f12a85a9a0df5a0c8c114467d101db34bd98fc83b83ef09481dadd9e6f51a",
-      "bytes": 18455
+      "sha256": "e13d5393e1950c12910d22f79085d3f0d65332eccba61fc1c2d1fe7ed54a39ca",
+      "bytes": 18820
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "87b792762c11014f1fbbda7a53e42f26de2090c2338cb02e2fb22b6701e17143",
-      "bytes": 181350
+      "sha256": "0835e3bd99562078681c247c3a6d99b7eaff38334e9a3123a39ef91eaaaed577",
+      "bytes": 184204
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "a15fc92f079ca418056f97187693790fb8e5b539ff696b887dafcac9831b40f9",
-      "bytes": 98986
+      "sha256": "64dd4616a242484153739f9506e21582423a8ee9ab3619ec79d57a93d86d3361",
+      "bytes": 102554
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "2713a869cec37671767f672d1d9717d8d1ca9ddc5617b813c0ff4d39e0b325d7",
-      "bytes": 41606
+      "sha256": "336e12d7eb3853c410e03fa9882cc49ec40cd869c0eb759b3e00bfd62c24fab2",
+      "bytes": 43367
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -136,8 +136,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "d0fc7f1ae46a0ab975a9a97b8257c0e7ac15c62548bcfefb2a9ba3ded9023230",
-      "bytes": 49688
+      "sha256": "1943e5c37f6df85276063d4e8413a5aebae6e10559646445bfbf90cdbb4d7636",
+      "bytes": 51661
     },
     {
       "path": "interpretability/__init__.py",
@@ -176,8 +176,8 @@
     },
     {
       "path": "interpretability/mlp_reversal.py",
-      "sha256": "dec91d690b240301d869429f4bf7f409b0bfbad72c51a3bf33bf65ec3a09df8e",
-      "bytes": 3665
+      "sha256": "3b1ba007500563849f7bf6d287f07e1a2d7de9e336e31dec5d300bd434d581ca",
+      "bytes": 4473
     },
     {
       "path": "interpretability/native_capture.py",
@@ -206,8 +206,13 @@
     },
     {
       "path": "models/README.md",
-      "sha256": "4a60863b1a76078fe8b982b7e618ac64ca79d8365294cc388158378519cc5d84",
-      "bytes": 17047
+      "sha256": "6a41152b8bad8de64e184a60da212736545da74cf5641486bc56aba96288701b",
+      "bytes": 18418
+    },
+    {
+      "path": "models/b01/recipe.json",
+      "sha256": "17353cc30c7d15a89425df28b70ea14214c6a419b6dce191241abb2385bca4d1",
+      "bytes": 10363
     },
     {
       "path": "models/n01/LICENSE",
@@ -395,6 +400,11 @@
       "bytes": 3295
     },
     {
+      "path": "results/b01_chat_summary.json",
+      "sha256": "5746c2228529abda7860351b5d3f2dbf54dd538e0d1fb3f5c182892af43481a7",
+      "bytes": 9863
+    },
+    {
       "path": "results/n01_development_summary.json",
       "sha256": "7359121a0fd4553c1e90082a8021b4ba2dccf1d0988f729c05be62ead7655f84",
       "bytes": 71956
@@ -516,8 +526,8 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "445c9161fbffe8f91e4988475f1a6e543d632661e42c5f8431f36617c7e014cb",
-      "bytes": 818
+      "sha256": "3f2accadf0a0268bd8b6cd263bb0f612d2ad01d60dc78857c996dc6f95f5854b",
+      "bytes": 837
     },
     {
       "path": "results/r01_reconstruction.json",
@@ -526,8 +536,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "bb630b63b7ff5eaae620fdb3cacbfb66fd47b592e293374698f201679ac0f11d",
-      "bytes": 13808
+      "sha256": "ec44c98819115bf6349f4692eba8680240fdf9c8494e9ff9bf671567ea504806",
+      "bytes": 14628
     },
     {
       "path": "scripts/plot_n04_summary.py",
@@ -596,8 +606,8 @@
     },
     {
       "path": "tests/test_mlp_reversal.py",
-      "sha256": "9e7940c37ad8e51e614cbe920f0065a399410cf82aea2301c01961d92733ffc5",
-      "bytes": 2015
+      "sha256": "41e395e0aa4bf389efc81ccd63495815e8c8c6a57c39dac686fcb7fa0e168685",
+      "bytes": 2326
     },
     {
       "path": "tests/test_native_capture.py",
