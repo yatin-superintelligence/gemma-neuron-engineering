@@ -314,13 +314,14 @@
       "outcome": "All840audited;selected64/random64/nested16all0transfer/cleanloss/conditionalcutloss;primaryfailed;all exact guards pass.",
       "duration_scope": "Worker and notebook seconds;not charged quota.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "N21_v1_global_native_columns",
-      "launched_utc": "2026-10-30T20:13:01.982544+00:00",
-      "status": "RUNNING_PRIVATE_SOURCE_VERIFIED"
+      "recorded_script_seconds": 2203.105832758,
+      "outcome": "All160audited. Original/identity/selected12of24,randoms14of24. Baseline10sourceformat failures exceed8limit;benefit unassessable. No selected gain,all mandatory guards pass.",
+      "duration_scope": "Worker and notebook seconds;not charged quota.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

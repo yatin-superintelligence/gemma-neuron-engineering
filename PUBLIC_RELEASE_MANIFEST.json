@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-10-30T20:52:58.759378+00:00",
+  "generated_utc": "2026-10-30T21:26:19.658705+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "5e275b183794dd73b44c0380b554bde6646a0f6b6e17da27f6726d443cf1da9d",
-      "bytes": 631
+      "sha256": "4e0ae6d2fe298fd1fd67d319657b9e2422c6858ee5b68fc1279a428ef655f259",
+      "bytes": 702
     },
     {
       "path": "LICENSE",
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "55cc1ca63352eb311d75a4630555021afe561d9fbe371907b49a885e568370f7",
-      "bytes": 8286
+      "sha256": "16a2eb8377e7ad028714de90813b41b5e8024d9b3503692c994a7317bcc7b331",
+      "bytes": 8796
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "9fee76fe9d631c2c31962fd87c62cc8ecd59306c298783c6a23a87b79b29d20e",
-      "bytes": 215295
+      "sha256": "282ad6d79bcc144952201e22f9166bc5698b48357398925f43d3b4d4f070b84d",
+      "bytes": 215228
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "d6e51da81f05ece12dc61983fe0173f2284712364c8fe9cdcfe9ed1ca006feda",
-      "bytes": 131794
+      "sha256": "3ebed20a1cd027cb3a5171ea4488184ef6801ed99d79de938203fe8af61ff601",
+      "bytes": 131915
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "6f86c9236569751b0aeaaa68fb1b728a8f88b63d5712a8fd10fc40ec9a80c65a",
-      "bytes": 61913
+      "sha256": "e80327dde49c0a924431c65f7c7fac7ba6bdaa8963c88d46d0727a0fa3fa5105",
+      "bytes": 62817
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -130,6 +130,16 @@
       "bytes": 223859
     },
     {
+      "path": "docs/figures/n21_summary.png",
+      "sha256": "594db49b7cfb3553ab73de4e1132749d6b1d3064fa4cfec2a9f3363d52a4be25",
+      "bytes": 148451
+    },
+    {
+      "path": "docs/figures/n21_summary.svg",
+      "sha256": "b3e8312b43208a0794300458a69a271e115d21db4421ef8f45b6d9d27013d57a",
+      "bytes": 38069
+    },
+    {
       "path": "docs/index.html",
       "sha256": "ca72c3c5068ea9c4b510b1ff4cf1638974eaed911e1e4fe1ccafaa23d6b4df2e",
       "bytes": 12427
@@ -146,8 +156,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "71eb77fd7cd4721331e4b0ad81deeec3a1330a9dfc02baeb8def93e46c28ac75",
-      "bytes": 66495
+      "sha256": "cf7d73d6b604956c09200ef940cfb130cc8968bf40df4defd7e15fc9b891dd93",
+      "bytes": 65572
     },
     {
       "path": "interpretability/__init__.py",
@@ -401,8 +411,8 @@
     },
     {
       "path": "models/README.md",
-      "sha256": "1e0112a952580f9ff941b4764dc16363495c4d61403fc4e401def3edd907fa0f",
-      "bytes": 21356
+      "sha256": "cf5a6cc7131e4b8b6dee74cbe7da92b8983525fe713dc817cabd3571e9b7d1ea",
+      "bytes": 22747
     },
     {
       "path": "models/b01/recipe.json",
@@ -570,6 +580,26 @@
       "bytes": 41896
     },
     {
+      "path": "models/n21/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "models/n21/NOTICE",
+      "sha256": "910a383bad80d9b73a66c9977f7909462b31ad36c2584e10075a7213f499351e",
+      "bytes": 412
+    },
+    {
+      "path": "models/n21/native_columns.safetensors",
+      "sha256": "3d6d4257a6894897b64e988db4ff5139b809450fbe2d252854ee72feac232a5d",
+      "bytes": 1186512
+    },
+    {
+      "path": "models/n21/recipe.json",
+      "sha256": "0f2ee5896e5cd62514903551a02c2260714b413b825df5c49fbd43cd91c70ff2",
+      "bytes": 77870
+    },
+    {
       "path": "pyproject.toml",
       "sha256": "5e70a9b80325b4f0d526c86b15da0efc4cd9ec964371ed29a5972dcdfc8ead98",
       "bytes": 576
@@ -578,6 +608,11 @@
       "path": "reproduce/__init__.py",
       "sha256": "38dff64fec5c2d8db1e0e8f8677c88e840298e802a9f26bb6b860c672cc3f310",
       "bytes": 79
+    },
+    {
+      "path": "reproduce/global_native.py",
+      "sha256": "aee62a3f8befc69b13609487d7c0357d07b26fcbd6a024ad1bb055e6054cab79",
+      "bytes": 5587
     },
     {
       "path": "reproduce/model_edits.py",
@@ -831,8 +866,13 @@
     },
     {
       "path": "results/n21_preparation_summary.json",
-      "sha256": "21ec13cce271d8b62ad90ad8c21cd224747c1f4a0de52fe390c5fd8405c827e4",
-      "bytes": 2505
+      "sha256": "225358e986137d6109dc28d9a2cb1afa7cdee06b63d8e904cfa007a1193845b0",
+      "bytes": 2679
+    },
+    {
+      "path": "results/n21_utility_summary.json",
+      "sha256": "2bb320870f718297ee73f97c48467f48fcef80ce64055004c1b2ef912fa57268",
+      "bytes": 10024
     },
     {
       "path": "results/n22_parent_lineage_summary.json",
@@ -841,8 +881,8 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "42e76a3b3e1d69adb2431b50a31b545977afb0d996b2ae10063370452a364e22",
-      "bytes": 769
+      "sha256": "9766fe08f92670a7c206d437c2cd49255b742c8a887edf0a3798c368fd49a773",
+      "bytes": 601
     },
     {
       "path": "results/r01_reconstruction.json",
@@ -851,8 +891,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "cf3f1f68ed8a6d82812be1856d8f6632d919e2b2832df8e814c3b6e969b91116",
-      "bytes": 17014
+      "sha256": "598ed42ab287eeec6a18c4999fa717f22a3939e116ce3b28477b6c5b6b56e074",
+      "bytes": 17248
     },
     {
       "path": "scripts/plot_n04_summary.py",
@@ -900,6 +940,11 @@
       "bytes": 3715
     },
     {
+      "path": "scripts/plot_n21_summary.py",
+      "sha256": "dd7e7af475cffb6071102a3adb8e75bdfe64fe7e52c9c175c7f631d8bcc4a719",
+      "bytes": 4756
+    },
+    {
       "path": "tests/__init__.py",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
@@ -928,6 +973,11 @@
       "path": "tests/test_gated_mlp_surgery.py",
       "sha256": "052557191d60b29134055d9ad03aeeab5eeea916ad8f86e51fe5621d331750da",
       "bytes": 4816
+    },
+    {
+      "path": "tests/test_global_native.py",
+      "sha256": "d452e8342688844dc6254c29b58a57f67e2777efcd48ac4f93df587618da2271",
+      "bytes": 3829
     },
     {
       "path": "tests/test_mlp_composition.py",

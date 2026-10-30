@@ -1,6 +1,6 @@
 {
   "utc": "2026-10-30T20:15:31.173092+00:00",
-  "status": "one_private_GPU_job_running_no_pretrained_results_accessed",
+  "status": "complete_host_audited_closed_no_selected_gain_baseline_unassessable",
   "prospective_design_sha256": "5223c775bb5773a854a29124793b4fb5ee31209716096b855955d3390fd955b2",
   "coding_functions": 24,
   "algorithm_families": 8,
@@ -14,7 +14,7 @@
   "global_group_fixture_model_forwards": 84,
   "global_group_fixture_synthetic_token_exposures": 168,
   "all_identity_cache_restoration_and_negative_guards_pass": true,
-  "pretrained_model_forwards": "Not yet retrieved;job running.",
+  "pretrained_model_forwards": 27263,
   "optimizer_steps": 0,
   "failures_preserved": [
     "Private integer-case generator index failure,repaired prospectively.",
@@ -51,5 +51,7 @@
   "analysis_plan_sha256": "a55732fba3de50f3eda53170786d054a65638bced0a8e4b41539d9c6dc9085bf",
   "notebook_sha256": "255cdfc9625ee04fb996e99cca1bda2fba88a77aacbed633ced34ed162ba0b6e",
   "source_freeze_utc": "2026-10-30T20:11:15.904361+00:00",
-  "actual_model_outputs_accessed": false
+  "actual_model_outputs_accessed": true,
+  "outcome": "Selected12/24matchesbase;randoms14/24. Ten baseline source-format failures exceed8limit. All mandatory gates pass;no selected utility gain.",
+  "no_new_model_runs_allowed": true
 }

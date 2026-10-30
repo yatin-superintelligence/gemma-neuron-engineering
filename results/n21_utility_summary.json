@@ -1,0 +1,329 @@
+{
+  "receipt": {
+    "utc": "2026-10-30T20:57:02.712314+00:00",
+    "status": "complete_host_audited",
+    "all160records_and_mandatory_guards_pass": true,
+    "predictions": 160,
+    "new_generations": 160,
+    "identity_comparisons": 32,
+    "restorations": 10,
+    "unique_original_columns": 188,
+    "deduplicated_task_and_raw_response_grade_groups": 65,
+    "optimizer_steps": 0,
+    "backward_calls": 0,
+    "development_signal_gate_passed": false,
+    "worker": {
+      "status": "complete",
+      "predictions": 160,
+      "identity_generations": 32,
+      "restorations": 10,
+      "unique_original_columns": 188,
+      "actual_model_forward_calls": 27263,
+      "actual_input_token_exposures": 56453,
+      "new_generated_tokens": 27093,
+      "actual_optimizer_steps": 0,
+      "optimizer_steps": 0,
+      "actual_backward_calls": 0,
+      "all_parameter_versions_match_declared_assignments": true,
+      "all_original_columns_restored": true,
+      "all_gradient_flags_unchanged": true,
+      "all_parameter_gradients_none": true,
+      "all_hooks_restored": true,
+      "seconds": 2203.105832758,
+      "peak_cuda_allocated_bytes": 9333444608,
+      "environment": {
+        "torch": "2.11.0+cu128",
+        "transformers": "5.8.0",
+        "GPU": "Tesla T4",
+        "dtype_elements": {
+          "torch.bfloat16": 4628569344
+        }
+      },
+      "base_source_revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "hidden_oracles_on_GPU": false
+    },
+    "notebook_seconds": 2247.203080889,
+    "host_recomputes_pretrained_weights_logits_or_activations": false,
+    "scope": "Fresh hand-authored development functions,not formal confirmation. Utility does not retrovalidate the closed N20role null."
+  },
+  "descriptive": {
+    "conditions": [
+      {
+        "condition": "base",
+        "coding_correct": 12,
+        "coding_total": 24,
+        "retention_correct": 6,
+        "retention_total": 8,
+        "family_correct": {
+          "boundaries": 3,
+          "intervals": 1,
+          "ordering": 1,
+          "search": 2,
+          "sequences": 2,
+          "signed_arithmetic": 0,
+          "strings": 2,
+          "windows": 1
+        },
+        "coding_status_counts": {
+          "passed": 12,
+          "source_error": 10,
+          "wrong_answer": 2
+        },
+        "cap_terminations": 10
+      },
+      {
+        "condition": "identity",
+        "coding_correct": 12,
+        "coding_total": 24,
+        "retention_correct": 6,
+        "retention_total": 8,
+        "family_correct": {
+          "boundaries": 3,
+          "intervals": 1,
+          "ordering": 1,
+          "search": 2,
+          "sequences": 2,
+          "signed_arithmetic": 0,
+          "strings": 2,
+          "windows": 1
+        },
+        "coding_status_counts": {
+          "passed": 12,
+          "source_error": 10,
+          "wrong_answer": 2
+        },
+        "cap_terminations": 10
+      },
+      {
+        "condition": "random34202_64_gain2",
+        "coding_correct": 14,
+        "coding_total": 24,
+        "retention_correct": 6,
+        "retention_total": 8,
+        "family_correct": {
+          "boundaries": 3,
+          "intervals": 1,
+          "ordering": 2,
+          "search": 2,
+          "sequences": 3,
+          "signed_arithmetic": 0,
+          "strings": 2,
+          "windows": 1
+        },
+        "coding_status_counts": {
+          "passed": 14,
+          "source_error": 9,
+          "wrong_answer": 1
+        },
+        "cap_terminations": 9
+      },
+      {
+        "condition": "selected64_gain2",
+        "coding_correct": 12,
+        "coding_total": 24,
+        "retention_correct": 6,
+        "retention_total": 8,
+        "family_correct": {
+          "boundaries": 3,
+          "intervals": 1,
+          "ordering": 1,
+          "search": 2,
+          "sequences": 2,
+          "signed_arithmetic": 0,
+          "strings": 2,
+          "windows": 1
+        },
+        "coding_status_counts": {
+          "passed": 12,
+          "source_error": 11,
+          "wrong_answer": 1
+        },
+        "cap_terminations": 11
+      },
+      {
+        "condition": "random34201_64_gain2",
+        "coding_correct": 14,
+        "coding_total": 24,
+        "retention_correct": 6,
+        "retention_total": 8,
+        "family_correct": {
+          "boundaries": 3,
+          "intervals": 1,
+          "ordering": 2,
+          "search": 2,
+          "sequences": 3,
+          "signed_arithmetic": 0,
+          "strings": 2,
+          "windows": 1
+        },
+        "coding_status_counts": {
+          "passed": 14,
+          "source_error": 9,
+          "wrong_answer": 1
+        },
+        "cap_terminations": 9
+      }
+    ],
+    "contrasts": {
+      "base": {
+        "sensitivity": {
+          "leave_one_family_out_net_range": [
+            0,
+            0
+          ],
+          "descriptive_family_resample95_net_interval": [
+            0,
+            0
+          ],
+          "seed": 3529,
+          "resamples": 2000,
+          "scope": "Eight hand-authored dependent families;descriptive sensitivity only,no IID or coverage guarantee."
+        },
+        "net": 0,
+        "family_net": {
+          "boundaries": 0,
+          "intervals": 0,
+          "ordering": 0,
+          "search": 0,
+          "sequences": 0,
+          "signed_arithmetic": 0,
+          "strings": 0,
+          "windows": 0
+        },
+        "positive_families": 0,
+        "net_and_family_gate": false,
+        "gains_count": 0,
+        "losses_count": 0
+      },
+      "random34201_64_gain2": {
+        "sensitivity": {
+          "leave_one_family_out_net_range": [
+            -2,
+            -1
+          ],
+          "descriptive_family_resample95_net_interval": [
+            -5,
+            0
+          ],
+          "seed": 3529,
+          "resamples": 2000,
+          "scope": "Eight hand-authored dependent families;descriptive sensitivity only,no IID or coverage guarantee."
+        },
+        "net": -2,
+        "family_net": {
+          "boundaries": 0,
+          "intervals": 0,
+          "ordering": -1,
+          "search": 0,
+          "sequences": -1,
+          "signed_arithmetic": 0,
+          "strings": 0,
+          "windows": 0
+        },
+        "positive_families": 0,
+        "net_and_family_gate": false,
+        "gains_count": 0,
+        "losses_count": 2
+      },
+      "random34202_64_gain2": {
+        "sensitivity": {
+          "leave_one_family_out_net_range": [
+            -2,
+            -1
+          ],
+          "descriptive_family_resample95_net_interval": [
+            -5,
+            0
+          ],
+          "seed": 3529,
+          "resamples": 2000,
+          "scope": "Eight hand-authored dependent families;descriptive sensitivity only,no IID or coverage guarantee."
+        },
+        "net": -2,
+        "family_net": {
+          "boundaries": 0,
+          "intervals": 0,
+          "ordering": -1,
+          "search": 0,
+          "sequences": -1,
+          "signed_arithmetic": 0,
+          "strings": 0,
+          "windows": 0
+        },
+        "positive_families": 0,
+        "net_and_family_gate": false,
+        "gains_count": 0,
+        "losses_count": 2
+      }
+    },
+    "baseline_interpretable": false,
+    "baseline_correct": 12,
+    "baseline_source_compile_failures": 10,
+    "selected_preserves_originally_correct_retention": true,
+    "all_claimed_improvements_pass_stress": true,
+    "development_signal_gate_passed": false,
+    "scope": "All24original functions retained;hand-authored development panel,not formal statistical confirmation or a semantic neuron interpretation."
+  },
+  "diagnostics": {
+    "utc": "2026-10-30T21:04:17.166968+00:00",
+    "status": "posthoc_descriptive_only_original_grades_unchanged",
+    "conditions": [
+      {
+        "condition": "base",
+        "changed_raw_token_sequences_vs_base": 0,
+        "changed_first_prefill_logit_hashes_vs_base": 0,
+        "source_errors": 10,
+        "source_errors_at_cap": 10,
+        "source_errors_single_unclosed_fence": 10,
+        "Python_retention_correct": 4,
+        "JSON_retention_correct": 2
+      },
+      {
+        "condition": "identity",
+        "changed_raw_token_sequences_vs_base": 0,
+        "changed_first_prefill_logit_hashes_vs_base": 0,
+        "source_errors": 10,
+        "source_errors_at_cap": 10,
+        "source_errors_single_unclosed_fence": 10,
+        "Python_retention_correct": 4,
+        "JSON_retention_correct": 2
+      },
+      {
+        "condition": "random34202_64_gain2",
+        "changed_raw_token_sequences_vs_base": 12,
+        "changed_first_prefill_logit_hashes_vs_base": 32,
+        "source_errors": 9,
+        "source_errors_at_cap": 9,
+        "source_errors_single_unclosed_fence": 9,
+        "Python_retention_correct": 4,
+        "JSON_retention_correct": 2
+      },
+      {
+        "condition": "selected64_gain2",
+        "changed_raw_token_sequences_vs_base": 15,
+        "changed_first_prefill_logit_hashes_vs_base": 32,
+        "source_errors": 11,
+        "source_errors_at_cap": 11,
+        "source_errors_single_unclosed_fence": 11,
+        "Python_retention_correct": 4,
+        "JSON_retention_correct": 2
+      },
+      {
+        "condition": "random34201_64_gain2",
+        "changed_raw_token_sequences_vs_base": 13,
+        "changed_first_prefill_logit_hashes_vs_base": 32,
+        "source_errors": 9,
+        "source_errors_at_cap": 9,
+        "source_errors_single_unclosed_fence": 9,
+        "Python_retention_correct": 4,
+        "JSON_retention_correct": 2
+      }
+    ],
+    "stress_failures_among_primary_correct": 0,
+    "new_model_forwards": 0,
+    "new_scorer_invocations": 0,
+    "optimizer_steps": 0,
+    "interpretation": "Source-format failures coincide with capped replies and unclosed fences. No fence stripping,source repair,regrading or cap extension was performed. Raw text/logit changes do not establish an individual meaning or coding improvement. Random outcomes remain controls,not selected winners."
+  },
+  "raw_task_identifiers_predictions_and_answers_private": true
+}

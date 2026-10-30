@@ -4,7 +4,7 @@ A no-training study of native neurons, small groups and direct model edits in Ge
 
 **The tested physical edits are reproducible. Individual neuron meanings and a confirmed coding improvement remain unestablished.**
 
-N21 is running privately: five fixed conditions on 24 new complete Python functions and eight retention inputs. Its source, data, auditor and interpretation rules were frozen before launch. No N21 model outcome has been accessed or interpreted.
+N21 is complete: all 160 records pass audit. The selected edit matches the original at 12/24 coding functions; both random controls score 14/24. Ten capped source-format failures exceed the predeclared baseline limit, making the planned benefit interpretation unassessable. There is no selected coding gain.
 
 ## Read the research
 
@@ -28,15 +28,15 @@ Clone this repository and open `docs/index.html` to view the HTML documents. Git
 
 Every tested condition and scientific null remains in the logbook. The [N19 grid](results/n19_current_decision_summary.json), [N20 grid](results/n20_summary.json), [B01 assessment](results/b01_chat_summary.json) and [B02 reversal grid](results/b02_reversal_summary.json) provide complete aggregates.
 
-## Current coding test
+## Fresh coding result
 
 N21 applies the same prescribed global outgoing-column factor of two to the existing selected64 group and each fixed random64 group. Original and same-scope identity are separate arms. The edit has no answer-derived trigger, fitted strength or new coordinate selection. All 24 coding functions remain in gains/losses, with eight family-level tables and eight retention inputs.
 
-The private GPU package contains inference code and prompt records. Hidden oracles, stress inputs and host grading code are excluded. Host gates cover paired executable oracles, strict output parsing, bounded isolated execution, exact identity and restoration, first-prefill cache preservation and native generation counters. These gates establish software readiness, not a pretrained coding result. A positive development screen would still require separately frozen fresh confirmation.
+The private GPU package contains inference code and prompt records. Hidden oracles, stress inputs and host grading code are excluded. Host gates cover paired executable oracles, strict output parsing, bounded isolated execution, exact identity and restoration, first-prefill cache preservation and native generation counters. All actual-checkpoint identity, cache, restoration and declared parameter guards pass with zero optimizer updates. The selected edit has zero coding gains or losses against the original. Every arm scores 6/8 under the frozen retention checks. Source-format failures coincide with capped unclosed code fences; no outputs are repaired or regraded. Random-arm gains remain controls, not selected winners.
 
 Retention scores follow the frozen checks. One rotation probe checks returned values without testing fresh-list identity; this limit is recorded before output access.
 
-See the [prospective protocol](methods/n21_prospective_protocol.json) and [preparation record](results/n21_preparation_summary.json).
+See the [complete N21 result](results/n21_utility_summary.json), [all five weight recipes](models/n21/recipe.json) and [prospective protocol](methods/n21_prospective_protocol.json). The [next control](methods/n22_prospective_protocol.json) separates stage from layer coverage on the same inherited cohort. It is frozen and has not launched.
 
 ## Reproduce an edit
 

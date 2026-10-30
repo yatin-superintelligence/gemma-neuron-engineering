@@ -2039,6 +2039,34 @@
       "event": "conditional_missing_cell_protocol_frozen_before_model_implementation_52new_273total",
       "experiment": "N22_protocol",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 268,
+      "utc": "2026-10-30T21:11:31.590396+00:00",
+      "event": "terminal_private_source_and_all_frozen_guards_verified",
+      "experiment": "N21",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 269,
+      "utc": "2026-10-30T21:11:31.590396+00:00",
+      "event": "frozen_auditor_once_all160pass_selected_no_gain_baseline_format_gate_unassessable",
+      "experiment": "N21",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 270,
+      "utc": "2026-10-30T21:11:31.590396+00:00",
+      "event": "posthoc_all_source_errors_are_capped_single_unclosed_fences_no_regrading",
+      "experiment": "N21",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 271,
+      "utc": "2026-10-30T21:11:31.590396+00:00",
+      "event": "all_five_compact_weight_recipes_and_exact376BF16vectors_preserved",
+      "experiment": "N21",
+      "optimizer_steps": 0
     }
   ]
 }

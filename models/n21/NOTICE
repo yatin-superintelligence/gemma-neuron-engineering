@@ -1,0 +1,5 @@
+N21 native outgoing-column recipes for Gemma Neuron Engineering.
+Base: google/gemma-4-E2B-it, revision 3e22461f65e89153144f8adb70e3b8c2cc9845a7.
+Original and prescribed doubled BF16 native columns only. Zero optimizer updates.
+All five studied recipes are retained. No selected coding benefit was established.
+Base checkpoint is referenced, not duplicated. Donor activations, tasks and predictions are excluded.

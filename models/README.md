@@ -233,4 +233,18 @@ The helper covers dense native text MLPs and refuses packed quantized matrices. 
 
 [All forty policies and exact native coordinate groups](n20/recipe.json) retain the selected and matched random groups at both sizes. Every recorded scope, cache, self and restoration guard passes, but all small groups fail the functional role screen. Opposite donors, clean suppression and conditional cuts produce zero functional effects for every group. Donor values and raw coding contexts remain private. These are activation recipes, with no trained adapter or duplicate base weights. Independent clean-package pretrained replay is not claimed.
 
-The separate [global stored-column helper](../interpretability/stored_group_gain.py) supports prescribed factor one or two across layers and restores exact matrices on exit. Its random-Gemma fixtures and exception-restoration tests pass. Global group edits have not yet been tested on pretrained fresh coding tasks, so this prototype is separate from the validated N20 activation recipes.
+The separate [global stored-column helper](../interpretability/stored_group_gain.py) supports prescribed factor one or two across layers and restores exact matrices on exit. Its random-Gemma fixtures and exception-restoration tests pass. N21 has now tested these global groups on fresh complete coding functions. The selected edit has no measured gain, and the baseline format gate is unassessable. The exact weight bundle and replay limits follow below.
+
+
+## N21 global native-column weights
+
+[All five recipes](n21/recipe.json) and the [exact compact BF16 tensor file](n21/native_columns.safetensors) preserve 188 original columns and their prescribed doubles. The file is 1,186,512 bytes; it contains no full base copy or activation dump. Every source and edited down-matrix hash is retained.
+
+```python
+from reproduce.global_native import reconstruct_n21
+
+model, proof = reconstruct_n21('models/n21', 'selected64_gain2')
+assert proof['all_expected_projection_hashes_exact']
+```
+
+The loader references the pinned BF16 parent, verifies all original columns and full target matrices before assignment, and applies only the selected saved variants. A post-assignment verification failure restores both source values and their full matrix hashes. Synthetic tests cover exact multi-layer reconstruction, refusal before any edit when a later source mismatches, and restoration after a failed edited hash. The private study validated all five weight scopes and all 160 raw records. Independent clean-package pretrained inference replay has not been performed. The selected edit matches the original at 12/24, both random arms score 14/24, and baseline formatting failures make the utility interpretation unassessable. These are reproducible edits, not a confirmed coding improvement.
