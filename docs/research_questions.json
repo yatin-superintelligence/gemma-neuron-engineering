@@ -567,12 +567,12 @@
       "result": "All 273 records pass: 52 new generations, 147 exact parent carries, 42 guarded self references and 32 non-applicable donor references. On the same thirteen role cases, both the three-layer and all-35-layer last-input sites transfer 0/13. The three-layer current site also transfers 0/13; only the inherited all-35-layer current site transfers 13/13. Same-rule donors preserve 13/13 in every cell. All 46 native sources, 94 live parent guards, 42 new self checks, 16 paired cache trajectories and 26 restorations pass. Actual zero backwards and optimizer updates, 1, 168 forwards, 22, 918 input-token exposures and 332 new tokens. Worker duration is 231.32 seconds; notebook duration is 272.70 seconds, not charged quota. Posthoc structure review finds that 12 of 13 broad-current changes are single strict-operator substitutions and 12 of 13 exactly match opposite-donor tokens. No grade or model rerun occurs.",
       "interpretation": "Neither missing cell passes. Within this bounded grid, the broad 35-layer intervention and current generated-code context coincide with successful transfer. This does not prove formal interaction, native necessity, individual neuron meanings or an accuracy gain. The cohort does not independently counterbalance semantic relation and emitted comparator identity. N/A retention references remain explicit.",
       "next_question": "Before another sparse ranking, design a task counterbalance that separates intended comparison direction from the written comparator token by reversing operand order. Preserve every closed outcome and freeze any new task/eligibility rules before model access.",
-      "direction_decision": "Close N22. Follow its no-eligible-missing-cell branch by reconsidering task adequacy. Q37/N23 is an intent only; no new protocol or GPU job exists."
+      "direction_decision": "Close N22. Follow its no-eligible-missing-cell branch by reconsidering task adequacy. Q37/N23 now runs only an original task gate; a later donor-control study still requires a separate freeze."
     },
     {
       "id": "Q37",
       "experiment": "N23: comparison meaning versus operator spelling",
-      "status": "intent_only_not_frozen_not_launched",
+      "status": "baseline_only_running_private_source_verified_no_results_accessed",
       "question": "Does broad current-site donor control carry the requested comparison relation, or mainly a local operator-token state?",
       "question_provenance": "Neither N22 missing cell transfers. The all 35/current parent effect mostly changes one strict operator token; semantic direction and written spelling remain confounded. The prospective branch calls for task reconsideration before another larger search.",
       "parents": [
@@ -581,11 +581,11 @@
         "Q35",
         "Q36"
       ],
-      "method": "Propose fresh filtering/predicate development prompts that independently cross contextual rule, label mapping, wording and written operand order. Same-order and reversed-order same-rule/opposite-rule donor controls must distinguish semantic transfer from donor-token copying. Counts, format, eligibility, oracles and prospective auditor are not frozen yet.",
-      "result": "Intent and scoped primary-source review only. No N23 dataset, model forward, activation/weight edit, GPU job or outcome exists.",
+      "method": "The separately frozen first stage measures original behavior only. Thirty-two fresh comparison expressions cross two families, two wordings, two Amber/Teal mappings, two selected labels and two written operand orders; eight fresh retention cases remain separate. Operand order is part of the primary grade. A complete eight-case block qualifies only when all denotation, type, orientation and comparator-token gates pass. At least three of four blocks and all eight retention cases must pass before any separate causal study is frozen.",
+      "result": "The original-only GPU protocol was frozen before task, runner or auditor implementation. The host oracle pairs agree on 20,112 checks, reject 208 semantic/orientation/type/boundary/format mutants, and validate 64 reference comparator-token boundaries. All forty tokenizations, both isolated imports, Ruff, actual fifteen-slot cache layout and independent counter bounds pass. One new preflight parser error stopped before execution; its original source is preserved and the repair leaves data and thresholds unchanged. All model sources, data, hidden oracles, prospective auditor and notebook are frozen. The one private job is running with exact server source JSON and private metadata. No N23 output has been accessed. No neuron intervention runs in this stage.",
       "interpretation": "A task control is not an individual neuron meaning, a new steering method, a formal causal abstraction or a coding improvement. Cross-operand prefix changes are intentional context differences and require explicit controls.",
-      "next_question": "Freeze the smallest complete counterbalance and independent executable/orientation oracles. Preserve any baseline stop without rewriting or rerunning the cohort.",
-      "direction_decision": "Reconsider task adequacy before another sparse rank or constructed-neuron sweep. No training, new winning strength, coordinate selection or fitted alignment."
+      "next_question": "At terminal status audit all forty original responses and both restoration witnesses. If the predeclared complete-block gate fails, close without edits or prompt/cap changes. A passed gate supports a separately frozen future donor-control study with exact parent carries.",
+      "direction_decision": "Establish usable semantic/lexical counterbalance before another sparse search. Do not treat an original-only gate as a neuron effect or coding improvement. No duplicate GPU job or new dose/coordinate selection."
     }
   ],
   "active_question_id": "Q35",

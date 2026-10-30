@@ -1,0 +1,74 @@
+{
+  "utc": "2026-10-30T22:03:53.834735+00:00",
+  "experiment": "N23",
+  "question_id": "Q37",
+  "version": 1,
+  "status": "prospective_baseline_task_adequacy_protocol_before_implementation",
+  "question": "Can an independently counterbalanced comparison task support a later test of semantic-relation versus operator-token donor control? This run measures original behavior only,not that causal effect.",
+  "parents": [
+    "runs/n22/version1/result_receipt.json",
+    "runs/n22/version1/task_adequacy_posthoc.json",
+    "research/experiments/n23/intent.json"
+  ],
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only unquantized BF16,4628569344unique parameters;35MLPs/15native cache slots. No historical adapters.",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "seed": 3723,
+  "conditions": [
+    "original"
+  ],
+  "data": {
+    "role_cases": 32,
+    "retention_cases": 8,
+    "total_records": 40,
+    "factorial": "Two families(filter/predicate) x two fixed wordings x two Amber/Teal label-to-rule mappings x two selected labels x two written operand orders. Direction follows the mapping/label relationship. No nuisance-name multiplication.",
+    "role_format": "One Python comparison expression,or one list-comprehension expression with exactly one direct comparison. Bare expression or one complete Python code fence is explicitly permitted before outcomes. No explanations,negation,extra comparisons or algebraic workaround.",
+    "role_semantics": "Strict preference above/below the boundary. Exclude equality. Predicate returns an exact Boolean. Filter preserves order and duplicates and returns an exact integer list.",
+    "operand_order": "Each task explicitly requires canonical or reversed variable order in its one comparison. Required order is part of the primary executable-and-syntax grade,not a posthoc diagnostic.",
+    "retention": "Four fresh JSON tag extractions requiring one bare JSON string and four fresh arithmetic expressions(two signed sums,two Python remainders). No closed old prompt is regenerated.",
+    "dataset_status": "Fresh hand-authored development,not final confirmation. All32role and8retention outputs stay in the record."
+  },
+  "edits": "None. No intervention,gradient,weight assignment,neuron selection,new vector or strength search. This baseline-only gate precedes any separate frozen causal-interchange study.",
+  "decoding": {
+    "Python_cap": 96,
+    "JSON_cap": 64,
+    "greedy": true,
+    "sampling": false,
+    "EOS_ids": [
+      1,
+      106,
+      50
+    ],
+    "stop": "Native EOS or fixed cap;never repair,strip an incomplete fence,extend or reroll.",
+    "maximum_new_tokens": 3712
+  },
+  "measurement": "For each40input,one independent first-prefill full-logit/top1/15-slot-cache witness,followed by one native generate call. Require the first generated token to match the witness. At completion replay two fixed prefill sentinels exactly. Do not duplicate original generations.",
+  "counter_contract": "Each original result with prompt n and generated T has T+1root forwards and2n+T-1input-token exposures. Two restoration measurements each1forward/nexposures. Derive all42trajectories independently;do not hand-sum an overhead.",
+  "scope_guards": "Every original parameter version and requires_grad flag unchanged,p.gradNone,all hooks restored;all4628569344parametersBF16. No historical adapter,attention hook or KVedit. Record actual0backwards/optimizersteps,time,rawtokens/text/termination and source/data hashes.",
+  "host_primary_oracles": "Frozen host-only independent denotational references and orientation checks. Predicates test all361integer pairs[-9,9]^2;filters use256fixed diverse signed/boundary/duplicate/order probes;arithmetic256fixed signed pairs. Exact types required. Every Python output also gets256independent stress probes. Validate each correct reference and prescribed semantic,operand-order,type and boundary mutant before model access. No oracle,expected program or grader in the GPU package or model prompts.",
+  "decision_point_extraction": "Host only,from each original generated expression. Parse the unique direct Compare node and locate the one native token containing its strict comparator. Its decoded token span may contain only whitespace plus that comparator. Save own native prefix before that token. Reject fused or ambiguous boundaries,missing comparator,EOS/emptyprefix or fewer than2remaining original tokens. No divergent comparator token is supplied to a future model. This is response-derived development eligibility,not a deployable trigger.",
+  "future_donor_maps": "Within each family/wording block:opposite rule same written order(same mapping,other label),same rule same order(other mapping,other label),opposite rule reversed order(same mapping,other label,other order),same rule reversed order(other mapping,other label,other order). Sources use their own native prefixes. Only prospective metadata maps are constructed;no state capture or donor experiment runs here.",
+  "baseline_gate": "Four complete blocks(family x wording),each containing all8mapping/label/order cases. A block qualifies only if every case passes its primary denotation/type/orientation grade and unique operator-token/prefix gate. At least3of4blocks must qualify,covering both families and both wordings,and all8retention grades must pass. No qualifying single case replaces a failed block. Report all32original role grades and every block failure.",
+  "branching": [
+    "If the gate fails,close this40-record baseline panel. Preserve original grades and stop before any edit. Do not rewrite its prompts,raise caps or rerun it as confirmation.",
+    "If the gate passes,close the baseline panel and prospectively freeze a separate causal study on the fixed qualifying complete blocks. Carry every original exactly;no new baseline generation. Compare semantic and donor-operator predictions in all four donor-map cells with native/self/cache/restoration guards. No new rank or strength is implied."
+  ],
+  "host_gates": "RuffF821/F823,both isolated runner/auditor imports,allsource/data/cell hashes,forty tokenizations,independent oracles,orientation/point-extraction mutants and preserved native-generation counter fixtures before launch. Frozen audit re-decodes/regrades all40andchecks all42trajectory scopes/counters.",
+  "privacy": "All raw prompts,oracles,answers,outputs,prefixes,notebook and full witnesses remain private. Public reviewed methods/aggregate readiness only until a completed audit. Never send private assets to external APIs.",
+  "resources": {
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1500,
+    "maximum_two_device_reservation_hours": 1,
+    "minimum_free_reserve_hours": 2,
+    "fresh_quota_required": true,
+    "one_private_free_job": true,
+    "cash_usd": 0,
+    "fixed_deadline_UTC": "2026-10-31T18:22:58Z"
+  },
+  "interpretation": "A successful baseline only validates this task counterbalance. It proves no donor effect,semantic neuron role,original-model improvement,new capability or novelty. Fresh confirmation remains separate.",
+  "raw_prompts_oracles_and_outputs_private": true
+}

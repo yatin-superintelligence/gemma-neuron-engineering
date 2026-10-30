@@ -36,7 +36,7 @@ The private GPU package contains inference code and prompt records. Hidden oracl
 
 Retention scores follow the frozen checks. One rotation probe checks returned values without testing fresh-list identity; this limit is recorded before output access.
 
-See the [complete N21 result](results/n21_utility_summary.json), [all five weight recipes](models/n21/recipe.json) and [prospective protocol](methods/n21_prospective_protocol.json). The [completed stage/site control](results/n22_stage_site_summary.json) separates stage from coverage on the same inherited cohort. Both missing cells transfer 0/13; only the inherited all-35-layer current-decision cell transfers 13/13. Same-rule preservation is 13/13 throughout. All 273 records and mandatory guards pass. The [next intent](methods/n23_task_adequacy_intent.json) reconsiders semantic relation versus operator spelling before another sparse ranking. No GPU job is active.
+See the [complete N21 result](results/n21_utility_summary.json), [all five weight recipes](models/n21/recipe.json) and [prospective protocol](methods/n21_prospective_protocol.json). The [completed stage/site control](results/n22_stage_site_summary.json) separates stage from coverage on the same inherited cohort. Both missing cells transfer 0/13; only the inherited all-35-layer current-decision cell transfers 13/13. Same-rule preservation is 13/13 throughout. All 273 records and mandatory guards pass. The [next baseline protocol](methods/n23_baseline_protocol.json) reconsiders semantic relation versus operator spelling before another sparse ranking. Its 40 original-only responses are running privately, with no neuron edits or outputs accessed. All source and host gates pass.
 
 ## Reproduce an edit
 

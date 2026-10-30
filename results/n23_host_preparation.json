@@ -1,0 +1,57 @@
+{
+  "host": {
+    "utc": "2026-10-30T22:09:28.695448+00:00",
+    "status": "independent_oracle_orientation_and_reference_token_gates_passed",
+    "rows": 40,
+    "role_cases": 32,
+    "retention": 8,
+    "complete_blocks": 4,
+    "cases_per_block": 8,
+    "independent_oracle_pair_comparisons": 20112,
+    "valid_reference_format_stress_checks": 148,
+    "semantic_orientation_type_boundary_format_mutants_rejected": 208,
+    "reference_comparator_token_checks": 64,
+    "malformed_point_refusals": 32,
+    "all40tokenizations_exact": true,
+    "prompts_sha256": "d0691552f0c65cc6a7654c8413b13473ef4bbe2fc0035de54ab1bb46fefe1d39",
+    "metadata_sha256": "ee7795ee87b72bcd8cf42d0c837da9f89891f643f120e6b7837a1af0b560ff3c",
+    "pretrained_model_forwards": 0,
+    "text_generated_tokens": 0,
+    "optimizer_steps": 0,
+    "seconds": 2.3032208750009886,
+    "scope": "Reference/tokenizer gates only;no model response or semantic-interchange result."
+  },
+  "preflight": {
+    "utc": "2026-10-30T22:15:22.552566+00:00",
+    "status": "passed",
+    "all40tokenizations_exact": true,
+    "all_packaged_sources_inputs_and_cells_exact": true,
+    "isolated_runner_and_auditor_imports": true,
+    "GPU_has_no_host_oracles_grader_metadata_or_point_code": true,
+    "ruff_F821_F823": true,
+    "actual_pinned_cache_entries": 15,
+    "all32role_blocks_and8retention_frozen": true,
+    "point_fused_short_unstable_and_roundtrip_refusals": 4,
+    "native_generation_counter_source_matches_closed_validated_fixture": true,
+    "independent_counter_bounds": [
+      {
+        "max_cap": false,
+        "calls": 82,
+        "input_token_exposures": 8212,
+        "generated_tokens": 40
+      },
+      {
+        "max_cap": true,
+        "calls": 3754,
+        "input_token_exposures": 11884,
+        "generated_tokens": 3712
+      }
+    ],
+    "GPU_source_files": 14,
+    "GPU_input_files": 8,
+    "pretrained_model_forwards": 0,
+    "optimizer_steps": 0,
+    "GPU_launched": false
+  },
+  "interpretation": "Original-task software and oracle readiness only;not a pretrained semantic or utility result."
+}

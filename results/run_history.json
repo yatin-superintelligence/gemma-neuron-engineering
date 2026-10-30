@@ -330,5 +330,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N23_v1_operand_order_baseline",
+      "launched_utc": "2026-10-30T22:19:20.090812+00:00",
+      "status": "RUNNING_PRIVATE_SOURCE_VERIFIED_ORIGINAL_ONLY"
+    }
+  ]
 }

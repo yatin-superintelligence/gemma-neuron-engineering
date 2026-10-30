@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-30T22:16:54.054144+00:00",
+  "status": "all_sources_data_oracles_auditor_and_notebook_frozen_before_launch",
+  "protocol_sha256": "2651b705da15574459c43e32c0cfb1d3aa97f6479d65d8de435f033a2fb9f6c8",
+  "auditor_sha256": "41c8ddbf4a76c6b5966ec3de2a06e641581bb491e7d2b31eec10aea073948285",
+  "analysis_plan_sha256": "075cc5968a99817789abd9fdfbc53e5b270280b2975d92fe2d4496f8bfe16597",
+  "notebook_sha256": "b70346680bf73cf23d1d6b1fc95ef466371cc28cbc05ff713695963a948af81d",
+  "optimizer_steps": 0,
+  "private_source_data_files": 38,
+  "current_status_source": "../results/progress_snapshot.json"
+}

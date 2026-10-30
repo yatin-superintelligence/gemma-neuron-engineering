@@ -28,5 +28,7 @@
   "model_forwards": 0,
   "GPU_launched": false,
   "resources": "One free private capped job only after a full prospective freeze, actual-job guard, fresh quota and>=2 hreserve. Original 31October 18:22:58UTC deadline unchanged. No paid fallback.",
-  "publication": "Reviewed intent/aggregate methods may enter the authorized repo. Raw tasks,oracles,prefixes,outputs,notebooks and activations stay private."
+  "publication": "Reviewed intent/aggregate methods may enter the authorized repo. Raw tasks,oracles,prefixes,outputs,notebooks and activations stay private.",
+  "historical_intent_snapshot": true,
+  "current_status_source": "../results/progress_snapshot.json"
 }
