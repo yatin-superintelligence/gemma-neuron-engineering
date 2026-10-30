@@ -323,5 +323,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N22_v1_stage_by_site",
+      "launched_utc": "2026-10-30T21:38:36.381977+00:00",
+      "status": "RUNNING_PRIVATE_SOURCE_VERIFIED"
+    }
+  ]
 }

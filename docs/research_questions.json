@@ -555,7 +555,7 @@
     {
       "id": "Q36",
       "experiment": "N22: separate intervention stage from native-site coverage",
-      "status": "protocol_frozen_host_implementation_no_GPU_launch",
+      "status": "running_private_source_verified_no_results_accessed",
       "question": "On identical inherited cases, does the difference between N18 and N19 depend on intervention stage, layer coverage or both?",
       "question_provenance": "N18 changes three layers at the final input token; N19 changes all 35 at a later generated-code decision. Their comparison cannot isolate stage. A source review verifies the same 13-case cohort. The new protocol was frozen before N21 output access. N21 has since closed without a selected utility gain.",
       "parents": [
@@ -563,11 +563,11 @@
         "Q33",
         "Q35"
       ],
-      "method": "A conditional two-by-two control would retain both closed cells and measure only all 35 layers at last input and layers 5, 6 and 9 at the current comparator. Use the same 13 inherited cases, opposite/same-rule actual donors and exact source/self/cache/restoration checks. The complete protocol is now frozen before model-runner and auditor implementation.",
-      "result": "A source-only posthoc comparison verifies the same 40 packaged tasks, the same 13 recipient/donor mappings, all 21 exact parsed baseline records and tokenization hashes. Original recorded grades on that inherited subset are 0/13 opposite transfer and 13/13 same-policy preservation for N18, and 13/13 for both in N19. No scorer or model is invoked; N18 original grades remain unchanged. There is no N22 model outcome. The prospective protocol fixes 13 conditions and 273 records: 52 new generations, 147 exact parent carries, 42 guarded self references and32 non-applicable donor references. Its 276 measurement/generation trajectories are derived by stage and prefix length. The generic stage helper and host fixture protocol now exist. The model runner and auditor remain pending. No N22 pretrained forward or GPU launch has occurred.",
+      "method": "The frozen two-by-two control retains both closed cells and measures only all 35 native MLPs at last input and layers 5, 6, 9 at the current comparator. All 13 inherited role cases and eight retention references remain fixed. Actual unmodified donors are applied during one target forward, then hooks are removed. No weights, gradients or fitted strengths change.",
+      "result": "The source-only alignment preserves the exact inherited cohort and original grades. All 32 random-Gemma FP32/BF16 stage/site self and foreign cases pass, with 16 scope refusals and four separately prescribed EOS/cap counter branches. The host fixture records 166 tiny forwards and 370 synthetic exposures, zero pretrained forwards or updates. All forty token/oracle checks, both isolated imports, Ruff, cells and actual fifteen-slot cache layout pass. The complete runner, auditor, data and notebook freeze precedes launch. N22 is now the one running private job;server source JSON and private metadata are exact. No N22 result has been accessed. The fixed 273 records contain only 52 new generations;all other rows are explicitly classified parent or reference records.",
       "interpretation": "This removes cohort mismatch for a proposed control. Stage still includes available generated prefix and cache state, not merely a token index. Completing two cells would address the confound, not identify individual meanings, formal synergy or coding improvement.",
-      "next_question": "Validate the frozen stage, cache-prefix, identity, source and counter paths on tiny Gemma. Then implement and freeze the model runner, prospective auditor and notebook. A later launch requires fresh free-resource and actual-job guards.",
-      "direction_decision": "Proceed with host implementation under the existing frozen protocol. N21 is closed; no N22 GPU job is active. A later launch requires every host, source, auditor, privacy and fresh-resource guard."
+      "next_question": "At terminal status, retrieve compact outputs once and invoke the frozen prospective auditor. Report all four stage/site cells and every failure before choosing any next causal decomposition.",
+      "direction_decision": "Deepen this fixed causal control while N21 stays closed. Use the remaining run time for substantive host/source/claim work. No duplicate GPU job or further neuron ranking."
     }
   ],
   "active_question_id": "Q35",

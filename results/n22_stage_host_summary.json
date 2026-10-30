@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-30T21:28:28.885019+00:00",
+  "status": "actual_random_Gemma_stage_scope_cache_and_counter_gates_passed",
+  "malformed_scope_and_forward_refusals": 16,
+  "counter_cases": [
+    {
+      "stage": "end",
+      "mode": "first_EOS",
+      "T": 1,
+      "calls": 1,
+      "input_token_exposures": 3
+    },
+    {
+      "stage": "end",
+      "mode": "cap_without_EOS",
+      "T": 4,
+      "calls": 4,
+      "input_token_exposures": 6
+    },
+    {
+      "stage": "current",
+      "mode": "first_EOS",
+      "T": 1,
+      "calls": 3,
+      "input_token_exposures": 5
+    },
+    {
+      "stage": "current",
+      "mode": "cap_without_EOS",
+      "T": 4,
+      "calls": 6,
+      "input_token_exposures": 8
+    }
+  ],
+  "actual_model_forward_calls": 166,
+  "actual_input_token_exposures": 370,
+  "pretrained_forwards": 0,
+  "text_tokens": 0,
+  "backwards": 0,
+  "optimizer_steps": 0,
+  "seconds": 0.5725033340004302,
+  "scope": "Random modules and prescribed counter construction only;no pretrained causal role or coding result.",
+  "stage_site_cases": 32,
+  "generic_source_sha256": "de60cddcc4af15f205047b157ee440aac4de14e9bdd23b318ade947c28c11e35",
+  "all_cases_and_source_hashes_preserved_privately": true
+}

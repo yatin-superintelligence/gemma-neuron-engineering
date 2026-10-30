@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-30T21:36:46.285819+00:00",
+  "status": "all_actual_sources_parents_data_auditor_and_notebook_frozen_before_launch",
+  "protocol_sha256": "39aa308ad11df112dd88e325224782d345e1f011fcf79a5b0734132df22dd284",
+  "auditor_sha256": "cf5b20d64632679811ce3a4d765932a007d0e7047355ac1541c05a722e5ff0ff",
+  "analysis_plan_sha256": "d07e95c905c357fd21786234d3b37d951eebe155b2ceb49d1f69e2bb7000b749",
+  "notebook_sha256": "bfacd2d8d4ed6714aecffc0e406cc30d4845818150095eab571f99a9fdc0542f",
+  "optimizer_steps": 0,
+  "actual_source_and_parent_files": 53,
+  "N22_outcomes_not_yet_reported": true,
+  "current_status_source": "../results/progress_snapshot.json"
+}

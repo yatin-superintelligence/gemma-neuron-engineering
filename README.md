@@ -36,7 +36,7 @@ The private GPU package contains inference code and prompt records. Hidden oracl
 
 Retention scores follow the frozen checks. One rotation probe checks returned values without testing fresh-list identity; this limit is recorded before output access.
 
-See the [complete N21 result](results/n21_utility_summary.json), [all five weight recipes](models/n21/recipe.json) and [prospective protocol](methods/n21_prospective_protocol.json). The [next control](methods/n22_prospective_protocol.json) separates stage from layer coverage on the same inherited cohort. It is frozen and has not launched.
+See the [complete N21 result](results/n21_utility_summary.json), [all five weight recipes](models/n21/recipe.json) and [prospective protocol](methods/n21_prospective_protocol.json). The [next control](methods/n22_prospective_protocol.json) separates stage from layer coverage on the same inherited cohort. It is frozen and running privately, with no outcome accessed.
 
 ## Reproduce an edit
 

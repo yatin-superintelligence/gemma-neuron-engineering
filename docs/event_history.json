@@ -2067,6 +2067,27 @@
       "event": "all_five_compact_weight_recipes_and_exact376BF16vectors_preserved",
       "experiment": "N21",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 272,
+      "utc": "2026-10-30T21:30:02.173616+00:00",
+      "event": "frozen_stage_host_fixture_complete",
+      "experiment": "N22H",
+      "question": "Do native whole-h swaps preserve declared stage/scope/cache paths and exact self/restoration?"
+    },
+    {
+      "sequence": 273,
+      "utc": "2026-10-30T21:38:14.911125+00:00",
+      "event": "all_actual_sources_and_prospective_auditor_frozen_before_launch",
+      "experiment": "N22",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 274,
+      "utc": "2026-10-30T21:40:12.292713+00:00",
+      "event": "one_private_bounded_job_launched_and_source_verified",
+      "experiment": "N22",
+      "optimizer_steps": 0
     }
   ]
 }
