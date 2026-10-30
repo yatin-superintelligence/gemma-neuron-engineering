@@ -1,0 +1,150 @@
+{
+  "receipt": {
+    "utc": "2026-10-30T22:23:29.352464+00:00",
+    "status": "complete_host_audited",
+    "all40records_and_guards_pass": true,
+    "records": 40,
+    "new_generations": 40,
+    "interventions": 0,
+    "restorations": 2,
+    "task_adequacy_gate_passed": false,
+    "worker": {
+      "status": "complete",
+      "records": 40,
+      "new_generations": 40,
+      "interventions": 0,
+      "actual_model_forward_calls": 697,
+      "actual_input_token_exposures": 8827,
+      "new_generated_tokens": 655,
+      "actual_backward_calls": 0,
+      "actual_optimizer_steps": 0,
+      "all_parameter_versions_unchanged": true,
+      "all_gradient_flags_unchanged": true,
+      "all_parameter_gradients_none": true,
+      "all_hooks_restored": true,
+      "hidden_oracles_or_grader_on_GPU": false,
+      "seconds": 152.965202267,
+      "peak_cuda_allocated_bytes": 9333444608,
+      "environment": {
+        "torch": "2.11.0+cu128",
+        "transformers": "5.8.0",
+        "GPU": "Tesla T4",
+        "dtype_elements": {
+          "torch.bfloat16": 4628569344
+        }
+      }
+    },
+    "notebook_seconds": 195.597720159,
+    "optimizer_steps": 0,
+    "backward_calls": 0,
+    "host_recomputes_pretrained_weights_logits_or_activations": false,
+    "next_decision": "Close this baseline without edits,prompt changes,cap extension or rerun.",
+    "scope": "Task usability only,not a semantic donor or utility result."
+  },
+  "descriptive": {
+    "all_original_role_cases": 32,
+    "all_original_role_correct": 16,
+    "retention_correct": 5,
+    "retention_total": 8,
+    "family_correct": {
+      "filter": 8,
+      "predicate": 8,
+      "json": 4,
+      "arithmetic": 1
+    },
+    "primary_status_counts": {
+      "passed": 21,
+      "orientation_error": 12,
+      "source_or_execution_error": 5,
+      "wrong_answer": 2
+    },
+    "blocks": [
+      {
+        "block": "filter_s0",
+        "family": "filter",
+        "wording": 0,
+        "cases": 8,
+        "primary_correct": 4,
+        "eligible_points": 4,
+        "qualifies": false
+      },
+      {
+        "block": "filter_s1",
+        "family": "filter",
+        "wording": 1,
+        "cases": 8,
+        "primary_correct": 4,
+        "eligible_points": 4,
+        "qualifies": false
+      },
+      {
+        "block": "predicate_s0",
+        "family": "predicate",
+        "wording": 0,
+        "cases": 8,
+        "primary_correct": 4,
+        "eligible_points": 4,
+        "qualifies": false
+      },
+      {
+        "block": "predicate_s1",
+        "family": "predicate",
+        "wording": 1,
+        "cases": 8,
+        "primary_correct": 4,
+        "eligible_points": 6,
+        "qualifies": false
+      }
+    ],
+    "qualifying_complete_blocks": [],
+    "task_adequacy_gate_passed": false,
+    "capped_original_outputs": 2,
+    "scope": "Original-only fresh development gate. No neuron edit,donor result,individual meaning or coding improvement. All failures and original cases retained."
+  },
+  "posthoc_requirement_diagnostic": {
+    "utc": "2026-10-30T22:30:19.832243+00:00",
+    "status": "descriptive_posthoc_closed",
+    "question": "Which fixed requirements explain the failed original-only task gate?",
+    "source_sha256": "35d691b69222d08b2d18436ecc19184d877ddc5803741b03e1b71dba3ad510e6",
+    "role_cases": 32,
+    "primary_correct": 16,
+    "denotation_correct_diagnostic": 28,
+    "by_written_order": [
+      {
+        "written_order": 0,
+        "cases": 16,
+        "primary_correct": 15,
+        "denotation_correct_diagnostic": 15,
+        "status_counts": {
+          "passed": 15,
+          "wrong_answer": 1
+        }
+      },
+      {
+        "written_order": 1,
+        "cases": 16,
+        "primary_correct": 1,
+        "denotation_correct_diagnostic": 13,
+        "status_counts": {
+          "orientation_error": 12,
+          "source_or_execution_error": 2,
+          "passed": 1,
+          "wrong_answer": 1
+        }
+      }
+    ],
+    "point_reason_counts": {
+      "eligible": 18,
+      "required_operand_order_failed": 12,
+      "invalid_direct_comparison": 2
+    },
+    "new_model_calls": 0,
+    "new_program_executions": 0,
+    "scorer_reruns": 0,
+    "optimizer_steps": 0,
+    "interpretation": "The diagnostic does not change primary grades. The operand-order counterbalance is unusable under the frozen complete-block gate. This is a task-usability result, not a neuron effect.",
+    "decision": "Close N23 before any neuron edit. No prompt rewrite, cap extension or rerun."
+  },
+  "raw_prompts_outputs_grades_and_oracles_private": true,
+  "neuron_edits": 0
+}

@@ -328,13 +328,14 @@
       "outcome": "All273audited,52new. Missingall35/end andthree/current both0of13transfer,same13of13. Existingcurrent/all35transfers13of13. Allmandatoryguards pass.",
       "duration_scope": "Worker/notebook seconds,not charged quota.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "N23_v1_operand_order_baseline",
-      "launched_utc": "2026-10-30T22:19:20.090812+00:00",
-      "status": "RUNNING_PRIVATE_SOURCE_VERIFIED_ORIGINAL_ONLY"
+      "recorded_script_seconds": 152.965202267,
+      "outcome": "All 40 records audited. Primary role 16/32, zero complete blocks, retention 5/8. Planned stop before every neuron edit.",
+      "duration_scope": "Worker/notebook seconds, not charged quota.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

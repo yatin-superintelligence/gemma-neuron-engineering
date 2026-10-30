@@ -30,7 +30,6 @@
     "GPU_has_no_host_oracles_grader_metadata_or_point_code": true,
     "ruff_F821_F823": true,
     "actual_pinned_cache_entries": 15,
-    "all32role_blocks_and8retention_frozen": true,
     "point_fused_short_unstable_and_roundtrip_refusals": 4,
     "native_generation_counter_source_matches_closed_validated_fixture": true,
     "independent_counter_bounds": [
@@ -51,7 +50,11 @@
     "GPU_input_files": 8,
     "pretrained_model_forwards": 0,
     "optimizer_steps": 0,
-    "GPU_launched": false
+    "GPU_launched": false,
+    "all32role_cases_and8retention_frozen": true,
+    "complete_blocks": 4,
+    "cases_per_block": 8,
+    "field_label_clarification": "The original frozen private field said blocks where it meant cases. Values and scientific checks are unchanged."
   },
   "interpretation": "Original-task software and oracle readiness only;not a pretrained semantic or utility result."
 }

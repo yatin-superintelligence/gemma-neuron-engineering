@@ -2150,6 +2150,20 @@
       "event": "one_original_only_private_baseline_launched_source_verified",
       "experiment": "N23",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 284,
+      "utc": "2026-10-30T22:30:19.832243+00:00",
+      "event": "complete_private_host_audited_original_task_gate_failed_closed",
+      "experiment": "N23",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 285,
+      "utc": "2026-10-30T22:30:19.832243+00:00",
+      "event": "posthoc_fixed_grade_requirement_summary_without_rerun",
+      "experiment": "N23",
+      "optimizer_steps": 0
     }
   ]
 }
