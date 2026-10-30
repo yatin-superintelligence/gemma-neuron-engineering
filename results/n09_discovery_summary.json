@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-30T06:39:54.018970+00:00",
+  "status": "host_audited",
+  "worker_stage": "stopped_discovery_gate",
+  "discovery_gate": {
+    "passed": false,
+    "reason": "strict_control_pool_failure",
+    "seed": 9101,
+    "selected_block_flat": 29208,
+    "pool": 12,
+    "positive": 4622
+  },
+  "optimizer_steps": 0,
+  "predictions": 0,
+  "scope": "Development-only conditional neuron interventions. Rescue of induced corruption is not improvement of the original model.",
+  "notebook_seconds": 160.19273489,
+  "measurement_backward_passes": 32,
+  "measurement_program_token_targets": 384,
+  "actual_forward_calls": 52,
+  "actual_input_token_exposures": 4924,
+  "worker_seconds": 114.863314576,
+  "new_generated_tokens": 0,
+  "original_parameter_versions_unchanged": true,
+  "all_parameter_gradients_none": true,
+  "coding_improvement_established": false,
+  "semantic_neuron_role_established": false
+}

@@ -127,3 +127,11 @@ Donor policies require unmodified activations from the caller's donor prompt at 
 ## N07 individual-layer policies
 
 [The N07 recipe](n07/recipe.json) retains every layer and donor policy, including the failed rule-specificity control. Apply actual caller-supplied donor states with the same native MLP helper used by N06. All original GPU and host guards passed; a separate clean-package replay is not claimed. No individual layer met the scientific eligibility criterion.
+
+## N08: fixed conditional block policies
+
+[The N08 recipe](n08/recipe.json) retains all thirty-three conditions, the six native layer blocks, the common layer 0 corruption and exact helper hashes. It uses caller-supplied actual donor activations, with no fitted vector or native parameter update. The generic composition helper is `interpretability/mlp_composition.py`; it composes disjoint native MLP assignments during prompt prefill and removes the hooks afterward.
+
+The original experiment passed all 660 audited records and its self, identity, replay and restoration guards. These records establish the original experiment's execution. A separate clean-package pretrained replay has not been performed. The recipe reconstructs the mechanisms; reproducing the exact private task table requires the unreleased original inputs. Raw task and donor traces remain private.
+
+Layers 5 to 9 meet the predefined whole-block rescue criterion. This is a conditional inference policy, not a trained checkpoint, an individual-neuron interpretation or an improvement of the unmodified model. N09 stopped before interventions because strict matching failed. N10's subsequent sparse study is separate and has no result in this release.

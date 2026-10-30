@@ -1070,6 +1070,88 @@
       "experiment": "N07",
       "question": "Q17",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 134,
+      "utc": "2026-10-30T06:01:55.787486+00:00",
+      "event": "N08_complete_all660_audited_B05_09_selected_by_frozen_rule",
+      "experiment": "N08",
+      "question": "Q18",
+      "conditions": 33,
+      "optimizer_steps": 0,
+      "predictions": 660
+    },
+    {
+      "sequence": 135,
+      "utc": "2026-10-30T06:11:15.898512+00:00",
+      "event": "N09_sparse_role_protocol_frozen_before_code",
+      "experiment": "N09",
+      "question": "Q19",
+      "optimizer_steps": 0,
+      "predictions": 1152
+    },
+    {
+      "sequence": 136,
+      "utc": "2026-10-30T06:19:39.652246+00:00",
+      "event": "N09H_finite_difference_step_diagnostic_and_repair",
+      "experiment": "N09",
+      "question": "Q19",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 137,
+      "utc": "2026-10-30T06:35:36.052480+00:00",
+      "event": "N09_v1_private_launch_verified",
+      "experiment": "N09"
+    },
+    {
+      "sequence": 138,
+      "utc": "2026-10-30T06:38:27.609211+00:00",
+      "event": "N08_complete_aggregate_figure_and_all33_model_recipes_reviewed",
+      "experiment": "N08",
+      "optimizer_steps": 0,
+      "predictions": 660
+    },
+    {
+      "sequence": 139,
+      "utc": "2026-10-30T06:42:39.745791+00:00",
+      "event": "N09_planned_discovery_stop_complete_host_audited",
+      "experiment": "N09",
+      "status": "stopped_discovery_gate",
+      "optimizer_steps": 0,
+      "runner_seconds": 114.863314576,
+      "predictions": 0
+    },
+    {
+      "sequence": 140,
+      "utc": "2026-10-30T06:42:39.745791+00:00",
+      "event": "N10_matchable_subpopulation_protocol_frozen_before_code",
+      "experiment": "N10",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 141,
+      "utc": "2026-10-30T06:52:56.245624+00:00",
+      "event": "N10_host_matchability_selection_complete",
+      "experiment": "N10",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 142,
+      "utc": "2026-10-30T06:52:56.245624+00:00",
+      "event": "N10_prelaunch_SaveKernel400_preserved_and_private_asset_delivery_repaired",
+      "experiment": "N10",
+      "optimizer_steps": 0,
+      "predictions": 0
+    },
+    {
+      "sequence": 143,
+      "utc": "2026-10-30T06:52:56.245624+00:00",
+      "event": "N10_v1_private_launch_source_and_input_privacy_verified",
+      "experiment": "N10",
+      "version": 1,
+      "status": "running",
+      "optimizer_steps": 0
     }
   ]
 }

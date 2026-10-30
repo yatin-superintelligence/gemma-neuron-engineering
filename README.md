@@ -32,13 +32,15 @@ There are no optimizer updates, fine-tuning, fitted steering vectors or training
 | N05: native policy transmission | All 336 outputs and identity/self/rescue/restoration controls audited. Original scored 1/16 rounding functions, 4/4 filters and 0/4 strict JSON. Every nonidentity condition lost the same single rounding success. | No specific role or gain. Selected and matched random groups agree. Token caps, function-format violations and fenced JSON limit the assay. Original grades remain unchanged. |
 | N06: usability and causal-site gate | All 200 outputs audited. Original filtering was correct on 16/16. Joint early-MLP opposite donors transferred 16/16 to the opposite policy; reversed-mapping same-policy donors preserved 14/16. K/V donors caused no functional flips. All JSON controls passed. | A conditional joint MLP site, not individual neuron meanings or improved coding. Four crossed instruction strata with nuisance-name replications. |
 | N07: individual-layer decomposition | All 600 records audited. Layer 0 switches all 16 programs under both opposite-rule and same-rule donors. Layers 4 and 9 each switch two prompts under opposite donors only. All JSON controls pass. | No layer meets the fixed eligibility criterion. The layer 0 effect is label-dependent; an abstract-rule interpretation is unsupported. |
-| N08: conditional block rescue | A private fixed-block panel tests whether later activity can rescue the same label-corruption background in a rule-specific way. | Running, no result yet. Rescue of an experimentally created error is separate from improving the unmodified model. |
+| N08: conditional block rescue | All 660 records audited. Under fixed layer 0 corruption, layers 5 to 9 restore 14/16 programs with same-rule donors, 0/16 with opposite-rule donors and 16/16 with recipient values. All JSON controls pass. | Selected by the frozen smallest-eligible-block rule. Whole-block sufficiency on reused development, without sparse neuron meaning or original-model improvement. |
+| N09: influence and matching gate | All 32 activation-gradient measurements passed with frozen weights and four exact ordinary/instrumented logit checks. The highest-ranked coordinate had only 12 eligible controls, below the required 16. | Planned stop with zero new code outputs. No causal neuron effect was tested; the strict controls were preserved. |
+| N10: matchable sparse necessity and rescue | Reuses the audited discovery measurements and tests a separately frozen matchable group, with zero new backward passes. Fixed zeroing, amplification, donor swaps and individual units have two matched random controls. | Running, no result yet. Selection excludes 89 control-infeasible candidates, so its scope is the matchable population. |
 
 The N02 representations share the pinned floating-point parent. The NF4 intervention first dequantizes the selected MLP and uses its unchanged dense form as the comparison baseline. BF16 is unquantized, but is not FP32. Full transformer-layer insertion remains unvalidated.
 
-Complete aggregates: [N01 conditions](results/n01_development_summary.json), [N01 functional controls](results/n01_function_controls.json), [N02 engineering audit](results/n02_engineering_summary.json), [N03 coding audit](results/n03_coding_summary.json), [N04 host gate](results/n04_host_gate.json), [N04 connection audit](results/n04_connection_summary.json), [N05 complete results](results/n05_anchor_summary.json), [N06 causal-site audit](results/n06_site_summary.json), [N07 full layer audit](results/n07_layer_summary.json). Startup failures and scientific nulls remain in the [logbook](docs/RESEARCH_LOG.html).
+Complete aggregates: [N01 conditions](results/n01_development_summary.json), [N01 functional controls](results/n01_function_controls.json), [N02 engineering audit](results/n02_engineering_summary.json), [N03 coding audit](results/n03_coding_summary.json), [N04 host gate](results/n04_host_gate.json), [N04 connection audit](results/n04_connection_summary.json), [N05 complete results](results/n05_anchor_summary.json), [N06 causal-site audit](results/n06_site_summary.json), [N07 full layer audit](results/n07_layer_summary.json), [N08 complete block audit](results/n08_block_summary.json), [N09 planned discovery stop](results/n09_discovery_summary.json). Startup failures and scientific nulls remain in the [logbook](docs/RESEARCH_LOG.html).
 
-![N07: all individual layers under both donor controls](docs/figures/n07_summary.png)
+![N08: all fixed blocks and donor controls](docs/figures/n08_summary.png)
 
 ## Code and saved model edits
 
@@ -51,6 +53,7 @@ models/n04/         Copied-memory recipes and source-module hashes
 models/n05/         Fixed native groups and all activation-edit policies
 models/n06/         Full-site MLP and shared-read donor policies
 models/n07/         All thirty individual-layer policies
+models/n08/         All thirty-three conditional block policies
 tests/              Small independent fixtures, no pretrained download
 docs/               Goal & Intent and sequential Research Logbook
 results/            Reviewed experiment aggregates and run history
@@ -88,7 +91,7 @@ The fixture writes local records under `runs/n04/host/version2` and refuses to o
 
 N06 passed its baseline-usability gate and produced controlled policy transfers through the joint early-MLP site. Opposite donors switched all sixteen filter programs; reversed-mapping same-policy donors preserved fourteen. Keys and values exposed only to later shared readers caused no functional flips. All retention controls remained correct.
 
-N07 tested every early MLP layer and found no eligible layer. Layer 0 switches the rule even when the donor preserves its meaning under reversed labels. The current pilot follows that control failure with fixed later-layer blocks and conditional rescue. No individual neuron meaning or coding improvement is established. N05's earlier null and format limitations remain unchanged in the logbook.
+N07 tested every early MLP layer and found no eligible layer. Layer 0 switches the rule even when the donor preserves its meaning under reversed labels. N08 followed that control failure with six fixed later-layer blocks. Layers 5 to 9 passed the predefined conditional-rescue gate. N09 stopped before code testing because strict control matching failed for its highest-ranked coordinate. N10 uses a separately frozen rule to select from matchable coordinates, then asks whether selected native neurons within that block show necessity and rescue beyond activity-matched random groups. It also tests individual units and direct amplification, without training. No individual neuron meaning or coding improvement is established. N05's earlier null and format limitations remain unchanged in the logbook.
 
 ## Publication scope
 

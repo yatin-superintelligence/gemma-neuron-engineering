@@ -1,0 +1,2305 @@
+{
+  "utc": "2026-10-30T05:56:39.059131+00:00",
+  "status": "host_audited",
+  "predictions": 660,
+  "new_predictions": 600,
+  "carried_records_exact": 60,
+  "all_raw_token_grades_and_guards_pass": true,
+  "optimizer_steps": 0,
+  "conditions": [
+    {
+      "condition": "base",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_L00",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "identity_corrupt0",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "clean_opposite_B01_04",
+      "target_correct": 4,
+      "opposite_correct": 12,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "clean_samepolicy_B01_04",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_recipient_B01_04",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_opposite_B01_04",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_samepolicy_B01_04",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "clean_opposite_B05_09",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "clean_samepolicy_B05_09",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_recipient_B05_09",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_opposite_B05_09",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_samepolicy_B05_09",
+      "target_correct": 14,
+      "opposite_correct": 2,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "clean_opposite_B10_13",
+      "target_correct": 12,
+      "opposite_correct": 4,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "clean_samepolicy_B10_13",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_recipient_B10_13",
+      "target_correct": 10,
+      "opposite_correct": 6,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_opposite_B10_13",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_samepolicy_B10_13",
+      "target_correct": 7,
+      "opposite_correct": 9,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 1
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "clean_opposite_B01_06",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "clean_samepolicy_B01_06",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_recipient_B01_06",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_opposite_B01_06",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_samepolicy_B01_06",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "clean_opposite_B07_13",
+      "target_correct": 2,
+      "opposite_correct": 14,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "clean_samepolicy_B07_13",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_recipient_B07_13",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_opposite_B07_13",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_samepolicy_B07_13",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "clean_opposite_B01_13",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "clean_samepolicy_B01_13",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_recipient_B01_13",
+      "target_correct": 16,
+      "opposite_correct": 0,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "corrupt0_opposite_B01_13",
+      "target_correct": 0,
+      "opposite_correct": 16,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        }
+      ]
+    },
+    {
+      "condition": "samepolicy_MLP",
+      "target_correct": 14,
+      "opposite_correct": 2,
+      "valid": 16,
+      "capped": 0,
+      "JSON_content_correct": 4,
+      "strata": [
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 2
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 2,
+          "opposite_correct": 0
+        },
+        {
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 2,
+          "opposite_correct": 0
+        }
+      ]
+    }
+  ],
+  "block_gates": [
+    {
+      "block_id": "B01_04",
+      "layers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "eligible": false,
+      "conditional_same_rule_correct": 0,
+      "conditional_opposite_rule_correct": 0,
+      "conditional_recipient_correct": 16,
+      "clean_same_rule_correct": 16,
+      "same_minus_opposite_correct": 0
+    },
+    {
+      "block_id": "B05_09",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "eligible": true,
+      "conditional_same_rule_correct": 14,
+      "conditional_opposite_rule_correct": 0,
+      "conditional_recipient_correct": 16,
+      "clean_same_rule_correct": 16,
+      "same_minus_opposite_correct": 14
+    },
+    {
+      "block_id": "B10_13",
+      "layers": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "eligible": false,
+      "conditional_same_rule_correct": 7,
+      "conditional_opposite_rule_correct": 0,
+      "conditional_recipient_correct": 10,
+      "clean_same_rule_correct": 16,
+      "same_minus_opposite_correct": 7
+    },
+    {
+      "block_id": "B01_06",
+      "layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "eligible": false,
+      "conditional_same_rule_correct": 0,
+      "conditional_opposite_rule_correct": 0,
+      "conditional_recipient_correct": 16,
+      "clean_same_rule_correct": 16,
+      "same_minus_opposite_correct": 0
+    },
+    {
+      "block_id": "B07_13",
+      "layers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "eligible": true,
+      "conditional_same_rule_correct": 16,
+      "conditional_opposite_rule_correct": 0,
+      "conditional_recipient_correct": 16,
+      "clean_same_rule_correct": 16,
+      "same_minus_opposite_correct": 16
+    },
+    {
+      "block_id": "B01_13",
+      "layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "eligible": true,
+      "conditional_same_rule_correct": 14,
+      "conditional_opposite_rule_correct": 0,
+      "conditional_recipient_correct": 16,
+      "clean_same_rule_correct": 16,
+      "same_minus_opposite_correct": 14
+    }
+  ],
+  "selected_development_block": "B05_09",
+  "scope": "Conditional whole-block rescue on reused development prompts. Not sparse neuron meaning, necessity, coding improvement or fresh confirmation.",
+  "worker_seconds": 919.7235324609999,
+  "notebook_seconds": 968.7468046299999,
+  "actual_forward_calls": 7966,
+  "actual_input_token_exposures": 143068,
+  "new_generated_tokens": 6960,
+  "coding_improvement_established": false,
+  "semantic_neuron_role_established": false
+}

@@ -270,7 +270,7 @@
     {
       "id": "Q18",
       "experiment": "N08: fixed-block decomposition and conditional rescue",
-      "status": "private_gpu_running",
+      "status": "complete_host_audited_B05_09_eligible",
       "question": "Do later native MLP blocks provide rule-specific rescue after a fixed layer 0 label corruption?",
       "question_provenance": "Proposed after the complete N07 audit under its predeclared no-eligible-layer branch. Joint early-layer swaps transfer policies, but layer 0 alone follows the label even under a same-rule donor.",
       "parents": [
@@ -278,10 +278,41 @@
         "Q17"
       ],
       "method": "Six fixed contiguous blocks in layers 1 through 13. Clean opposite/same-rule swaps and a common layer 0 label-corruption background with opposite, same-rule and recipient donors. Sixty existing reference records are carried without completion regeneration.",
-      "result": "Three actual tiny-Gemma composition tests and all 660 assignment routes passed. N08 version 1 is running privately with a frozen protocol and auditor. No N08 outputs have been read.",
-      "interpretation": "This tests conditional block sufficiency and contextual compensation. It cannot by itself identify sparse neuron meanings or establish useful coding improvement.",
-      "next_question": "Does any prescribed block pass a fixed rescue-specificity criterion, warranting native-channel necessity/rescue?",
-      "direction_decision": "Freeze before code. Keep every block/control and stop interpretation on any failed identity or restoration guard."
+      "result": "All 660 records passed audit, including sixty carried references, 240 block-self hashes, twenty corrupted identities and sixty-six restorations. Three blocks met the frozen gate. The size/start rule selects layers 5–9: same-rule donors restore 14/16, opposite-rule donors 0/16, recipient donors 16/16 and clean same-rule donors preserve 16/16. All JSON controls pass, with no caps.",
+      "interpretation": "A controlled conditional block-rescue effect survives same-selector-token donor controls. It is a whole-block result on reused development prompts. It does not establish necessity, sparse neuron meanings, fresh transfer or improvement of the unmodified model.",
+      "next_question": "Can a small native group within the selected block account for rule-specific rescue beyond strong random controls on new development prompts?",
+      "direction_decision": "Deepen in the prospectively chosen five-layer block. Freeze discovery scoring and controls before code; use new development prompts and retain fresh confirmation."
+    },
+    {
+      "id": "Q19",
+      "experiment": "N09: sparse native groups and new-development necessity/rescue",
+      "status": "complete_planned_discovery_gate_stop_host_audited",
+      "question": "Can small native groups in layers 5–9 support controlled rule-specific rescue beyond matched random groups on new prompts?",
+      "question_provenance": "Proposed after the complete N08 audit. The fixed size/start criterion selected B05_09 from three eligible blocks.",
+      "parents": [
+        "Q18"
+      ],
+      "method": "Discovery-only full-program influence ranking from old verified self-generated code;strict activity/write/context-delta matching;64/256native groups;new-development full-site gate;selected/random necessity,amplification and conditional rescue;matched top-eight individual diagnostics. Zero training.",
+      "result": "All32measurement backwards,384reference-token targets and4exact ordinary/gradient hashes passed,with frozen weights and no parameter gradients. There are4622positive candidates. The highest-ranked coordinate(layer9,channel4632) has only12eligible controls after exclusions,below16. Planned stop:0new predictions.",
+      "interpretation": "No sparse coding effect was measured. Strict matching exposed a rare high-ranked coordinate;the result does not establish a semantic role or a null causal effect.",
+      "next_question": "Can a separately frozen matchability-limited native group be tested without weakening the control ratios or pool minimum?",
+      "direction_decision": "Close N09,preserve failure and reuse compact discovery measurements only. Select from control feasibility before any unused development outputs;do not rerun32backwards."
+    },
+    {
+      "id": "Q20",
+      "experiment": "N10: matchable native-neuron necessity/rescue",
+      "status": "running_private_source_and_dataset_verified",
+      "question": "Within the controlled block,does a strictly matchable native group show necessity and rescue beyond both random controls?",
+      "question_provenance": "Prospective continuation after N09planned discovery stop;unused development outputs remain unseen.",
+      "parents": [
+        "Q18",
+        "Q19"
+      ],
+      "method": "Reuse saved discovery measurements. Bounded deterministic exclusion of control-infeasible selected candidates;allratio limits,pool minimum,seeds,downstream conditions anddecision rules unchanged. Replay native captures before new outputs.",
+      "result": "Frozen selection excludes89control-infeasible candidates before any new code outputs. All256selected coordinates have two strict random groups;minimum eligible pool17. Eight host tests pass. One private bounded job replays native captures and gates new development before sparse tests.",
+      "interpretation": "The estimand covers matchable coordinates,excluding rare unmatched candidates. It is a new selection scope,not evidence about the excluded highest neuron.",
+      "next_question": "Do sparse necessity/rescue effects survive controls and new development wording?",
+      "direction_decision": "Proceed only after matching feasibility and frozen host auditor. No gradient rerun or relaxed controls."
     }
   ]
 }

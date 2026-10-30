@@ -195,13 +195,27 @@
       "outcome": "All600audited. No eligible layer. Layer0flips16/16under both donor controls;layers4/9have2restricted flips each. No semantic-role or coding-gain claim.",
       "duration_scope": "Worker 897.503s;notebook 942.749s;20original records carried,580new;not charged quota",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N08_v1",
+      "recorded_script_seconds": 919.7235324609999,
+      "outcome": "All660audited;B05_09selected byfixed size/start rule:conditional same-rule14/16,opposite0/16,recipient16/16. No sparse role or original-model gain.",
+      "duration_scope": "Worker 919.724s;notebook 968.747s;60references carried,600new;not charged quota",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "N09_v1_native_neuron_discovery",
+      "recorded_script_seconds": 114.863314576,
+      "outcome": "Planned strict matching stop;0newoutputs,32measurement backwards,4exact logits,zerooptimizerupdates.",
+      "duration_scope": "Worker including model loading and discovery;notebook160.192735s. Not charged GPU quota.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N08_v1",
-      "launched_utc": "2026-10-30T05:34:57.548054+00:00",
-      "status": "Private fixed block rescue: 600 new outputs and 60 exact carried references; no training."
+      "run": "N10_v1_matchable_native_neurons",
+      "launched_utc": "2026-10-30T06:51:16.933512+00:00",
+      "status": "running_private_source_and_dataset_verified"
     }
   ]
 }

@@ -1,0 +1,576 @@
+{
+  "schema_version": 1,
+  "kind": "conditional_native_MLP_block_donor_policies",
+  "experiment": "N08",
+  "utc": "2026-10-30T06:38:27.609211+00:00",
+  "base": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "representation": "text_only_unquantized_BF16"
+  },
+  "optimizer_steps": 0,
+  "helpers": {
+    "interpretability/mlp_composition.py": "769e1477149fd11b19950c19d8452fd4b691a6a71908abfb5361bc2f63820ae2",
+    "interpretability/selector_site.py": "5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60"
+  },
+  "blocks": {
+    "B01_04": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "B05_09": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "B10_13": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "B01_06": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "B07_13": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "B01_13": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "policies": [
+    {
+      "name": "base",
+      "background": false,
+      "block": [],
+      "donor": "none",
+      "carried": true
+    },
+    {
+      "name": "samepolicy_L00",
+      "background": true,
+      "block": [],
+      "donor": "none",
+      "carried": true
+    },
+    {
+      "name": "identity_corrupt0",
+      "background": true,
+      "block": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "donor": "background_self",
+      "carried": false
+    },
+    {
+      "name": "clean_opposite_B01_04",
+      "background": false,
+      "block": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "block_id": "B01_04",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "clean_samepolicy_B01_04",
+      "background": false,
+      "block": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "block_id": "B01_04",
+      "donor": "samepolicy",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_recipient_B01_04",
+      "background": true,
+      "block": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "block_id": "B01_04",
+      "donor": "recipient",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_opposite_B01_04",
+      "background": true,
+      "block": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "block_id": "B01_04",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_samepolicy_B01_04",
+      "background": true,
+      "block": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "block_id": "B01_04",
+      "donor": "samepolicy",
+      "carried": false
+    },
+    {
+      "name": "clean_opposite_B05_09",
+      "background": false,
+      "block": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "block_id": "B05_09",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "clean_samepolicy_B05_09",
+      "background": false,
+      "block": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "block_id": "B05_09",
+      "donor": "samepolicy",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_recipient_B05_09",
+      "background": true,
+      "block": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "block_id": "B05_09",
+      "donor": "recipient",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_opposite_B05_09",
+      "background": true,
+      "block": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "block_id": "B05_09",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_samepolicy_B05_09",
+      "background": true,
+      "block": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "block_id": "B05_09",
+      "donor": "samepolicy",
+      "carried": false
+    },
+    {
+      "name": "clean_opposite_B10_13",
+      "background": false,
+      "block": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B10_13",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "clean_samepolicy_B10_13",
+      "background": false,
+      "block": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B10_13",
+      "donor": "samepolicy",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_recipient_B10_13",
+      "background": true,
+      "block": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B10_13",
+      "donor": "recipient",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_opposite_B10_13",
+      "background": true,
+      "block": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B10_13",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_samepolicy_B10_13",
+      "background": true,
+      "block": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B10_13",
+      "donor": "samepolicy",
+      "carried": false
+    },
+    {
+      "name": "clean_opposite_B01_06",
+      "background": false,
+      "block": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "block_id": "B01_06",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "clean_samepolicy_B01_06",
+      "background": false,
+      "block": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "block_id": "B01_06",
+      "donor": "samepolicy",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_recipient_B01_06",
+      "background": true,
+      "block": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "block_id": "B01_06",
+      "donor": "recipient",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_opposite_B01_06",
+      "background": true,
+      "block": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "block_id": "B01_06",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_samepolicy_B01_06",
+      "background": true,
+      "block": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "block_id": "B01_06",
+      "donor": "samepolicy",
+      "carried": false
+    },
+    {
+      "name": "clean_opposite_B07_13",
+      "background": false,
+      "block": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B07_13",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "clean_samepolicy_B07_13",
+      "background": false,
+      "block": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B07_13",
+      "donor": "samepolicy",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_recipient_B07_13",
+      "background": true,
+      "block": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B07_13",
+      "donor": "recipient",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_opposite_B07_13",
+      "background": true,
+      "block": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B07_13",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_samepolicy_B07_13",
+      "background": true,
+      "block": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B07_13",
+      "donor": "samepolicy",
+      "carried": false
+    },
+    {
+      "name": "clean_opposite_B01_13",
+      "background": false,
+      "block": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B01_13",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "clean_samepolicy_B01_13",
+      "background": false,
+      "block": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B01_13",
+      "donor": "samepolicy",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_recipient_B01_13",
+      "background": true,
+      "block": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B01_13",
+      "donor": "recipient",
+      "carried": false
+    },
+    {
+      "name": "corrupt0_opposite_B01_13",
+      "background": true,
+      "block": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B01_13",
+      "donor": "opposite",
+      "carried": false
+    },
+    {
+      "name": "samepolicy_MLP",
+      "background": true,
+      "block": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "block_id": "B01_13",
+      "donor": "samepolicy",
+      "carried": true
+    }
+  ],
+  "donor_contract": "Actual original recipient,opposite-rule,reversed-mapping same-rule or corrupted-recipient post-gating states at the same absolute selector position. Values remain caller-supplied transient inference state. No fitted/averaged vectors.",
+  "application": "Capture each original state with capture_selector. For background policies,first assign the same-rule reversed-mapping donor at native MLP0. Compose the declared disjoint later block with compose_mlp_donors. The background_self identity uses values captured under that background. All hooks apply during prefill only;cached steps skip them.",
+  "validation": "All660 original records,240 block-self hashes,20 corrupted identity generations,66 restorations and60 live carried-reference replays passed the original frozen audit. No independent clean-package pretrained replay is claimed.",
+  "storage": "Pinned base,helper hashes,all33 inference policies and layer coordinates. No duplicated base,raw prompts,activation traces or trained adapter.",
+  "limits": "Whole-block conditional sufficiency on reused development inputs. No sparse neuron meaning,necessity,new capability or original-model coding gain."
+}
