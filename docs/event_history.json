@@ -1923,6 +1923,73 @@
       "event": "all28reference_programs_and_mutants_type_format_timeout_RSS_and_OS_restriction_gates_pass",
       "experiment": "N21_execution_host",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 252,
+      "utc": "2026-10-30T20:12:04.609643+00:00",
+      "event": "actual_tiny_Gemma_native_generation_identity_cache_EOS_cap_counter_guards_pass",
+      "experiment": "N21_prelaunch",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 253,
+      "utc": "2026-10-30T20:12:04.609643+00:00",
+      "event": "strict_JSON_type_and_synthetic_utility_criteria_pass",
+      "experiment": "N21_prelaunch",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 254,
+      "utc": "2026-10-30T20:12:04.609643+00:00",
+      "event": "isolated_GPU_and_host_packages_pass_without_hidden_answers_on_GPU",
+      "experiment": "N21_prelaunch",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 255,
+      "utc": "2026-10-30T20:12:04.609643+00:00",
+      "event": "all_N21_source_data_auditor_notebook_frozen_before_launch",
+      "experiment": "N21_prelaunch",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 256,
+      "utc": "2026-10-30T20:15:31.173092+00:00",
+      "event": "administrative_prelaunch_caller_and_builder_import_repairs_no_science_change",
+      "experiment": "N21",
+      "optimizer_steps": 0,
+      "training_allowed": false
+    },
+    {
+      "sequence": 257,
+      "utc": "2026-10-30T20:15:31.173092+00:00",
+      "event": "private_GPU_launch_frozen_five_arms_160new_outputs",
+      "experiment": "N21",
+      "optimizer_steps": 0,
+      "training_allowed": false
+    },
+    {
+      "sequence": 258,
+      "utc": "2026-10-30T20:15:31.173092+00:00",
+      "event": "server_JSON_serialization_guard_stopped_then_verified_exact_parsed_source",
+      "experiment": "N21",
+      "optimizer_steps": 0,
+      "training_allowed": false
+    },
+    {
+      "sequence": 259,
+      "utc": "2026-10-30T20:15:31.173092+00:00",
+      "event": "private_server_metadata_and_all_source_cells_verified_running",
+      "experiment": "N21",
+      "optimizer_steps": 0,
+      "training_allowed": false
+    },
+    {
+      "sequence": 260,
+      "utc": "2026-10-30T20:16:46.967405+00:00",
+      "event": "active_reservation_question_metadata_repaired_before_public_release",
+      "experiment": "N21_documentation",
+      "optimizer_steps": 0
     }
   ]
 }

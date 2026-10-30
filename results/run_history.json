@@ -316,5 +316,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N21_v1_global_native_columns",
+      "launched_utc": "2026-10-30T20:13:01.982544+00:00",
+      "status": "RUNNING_PRIVATE_SOURCE_VERIFIED"
+    }
+  ]
 }

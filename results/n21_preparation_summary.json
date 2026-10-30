@@ -1,6 +1,6 @@
 {
-  "utc": "2026-10-30T19:15:00.712416+00:00",
-  "status": "evaluation_and_global_group_host_preparation_complete_no_pretrained_utility_result",
+  "utc": "2026-10-30T20:15:31.173092+00:00",
+  "status": "one_private_GPU_job_running_no_pretrained_results_accessed",
   "prospective_design_sha256": "5223c775bb5773a854a29124793b4fb5ee31209716096b855955d3390fd955b2",
   "coding_functions": 24,
   "algorithm_families": 8,
@@ -14,13 +14,15 @@
   "global_group_fixture_model_forwards": 84,
   "global_group_fixture_synthetic_token_exposures": 168,
   "all_identity_cache_restoration_and_negative_guards_pass": true,
-  "pretrained_model_forwards": 0,
+  "pretrained_model_forwards": "Not yet retrieved;job running.",
   "optimizer_steps": 0,
   "failures_preserved": [
     "Private integer-case generator index failure,repaired prospectively.",
-    "Temporary tokenizer cache missing,restored only pinned tokenizer/config."
+    "Temporary tokenizer cache missing,restored only pinned tokenizer/config.",
+    "Prelaunch wrapper caller and direct builder import failures repaired without scientific changes.",
+    "Server raw JSON indentation differed;exact parsed notebook and every source cell verified,with both hashes retained."
   ],
-  "GPU_protocol_runner_auditor_ready": false,
+  "GPU_protocol_runner_auditor_ready": true,
   "scope": "No neuron function,new capability,pretrained equivalence or coding improvement established.",
   "full_GPU_protocol_frozen": true,
   "additional_distinct_stress_oracle_checks": 7168,
@@ -33,5 +35,21 @@
     5,
     6,
     7
-  ]
+  ],
+  "GPU_launched": true,
+  "native_generation_host_trajectories": 24,
+  "native_generation_host_forwards": 124,
+  "native_generation_synthetic_input_exposures": 276,
+  "native_generation_restorations": 12,
+  "native_generation_identity_EOS_cap_cache_counter_guards_pass": true,
+  "strict_JSON_and_synthetic_assessment_gates_pass": true,
+  "isolated_GPU_source_files": 14,
+  "isolated_GPU_input_files": 8,
+  "GPU_package_excludes_hidden_answers_oracles_stress_and_graders": true,
+  "protocol_sha256": "81ec3555df2de31aba5ea091a7cac23ba7ac25b3e534ccd3124944c0c994955b",
+  "auditor_sha256": "7ed591bab2a86403b656e3ae6aed2d7277cdbf8077e38708199001ab51d007fe",
+  "analysis_plan_sha256": "a55732fba3de50f3eda53170786d054a65638bced0a8e4b41539d9c6dc9085bf",
+  "notebook_sha256": "255cdfc9625ee04fb996e99cca1bda2fba88a77aacbed633ced34ed162ba0b6e",
+  "source_freeze_utc": "2026-10-30T20:11:15.904361+00:00",
+  "actual_model_outputs_accessed": false
 }
