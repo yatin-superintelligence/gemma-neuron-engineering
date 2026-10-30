@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-30T17:07:06.179376+00:00",
+  "generated_utc": "2026-10-30T17:31:11.606268+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -26,18 +26,18 @@
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "9249edbdc7bfb172e23cd8b0378b92e7753f953b153acd07e65a5a26736470df",
-      "bytes": 202671
+      "sha256": "758ffd12d77a9d7b19e21a524aede081103c3743849a8d2168a50a3b49675697",
+      "bytes": 203270
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "358aa810145104fc376996f000db02f1eac4a8e52a8bbf39aa01c8575cf44d4a",
-      "bytes": 118129
+      "sha256": "d0e305a52248adb793c390188e3d0d5b438b15db44cb324d2c403b27b0fd475d",
+      "bytes": 118375
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "1ec690c7a6f42128f9ccead88347cc403e6dbb4559e70c88c77f9de910623b1f",
-      "bytes": 52574
+      "sha256": "a46837e927b62fa215cd76058d177ce20b3ad5e9009d6a0d7e39e0563fbaf30a",
+      "bytes": 52830
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -701,7 +701,7 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "1b660a64d245aa2288c76c5ead02695d89914997f26b140a4e2af2264ab6af92",
+      "sha256": "7864287c50ce87f1761bfa4f7833c6ada88db3243c14fcb76ff06acc5944a7d8",
       "bytes": 601
     },
     {

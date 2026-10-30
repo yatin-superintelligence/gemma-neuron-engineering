@@ -1769,6 +1769,13 @@
       "event": "runner_auditor_private_notebook_and_parent_lineage_frozen_after_host_gates",
       "experiment": "N20",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 230,
+      "utc": "2026-10-30T17:24:42.508046+00:00",
+      "event": "completed_N18_N19_evidence_integrated_all19policies_and_all_latest_pages_verified",
+      "experiment": "Private_neuron_paper",
+      "optimizer_steps": 0
     }
   ]
 }
