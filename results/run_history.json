@@ -251,13 +251,20 @@
       "outcome": "All 920 records and mandatory guards pass; no single layer or adjacent pair meets the predefined semantic gate. Zero backward passes and updates.",
       "duration_scope": "Worker 1293.975734467 seconds; notebook 1350.308286923 seconds. Not charged quota.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N16_v1_complete_remaining_layer_subsets",
+      "recorded_script_seconds": 2812.6459598320002,
+      "outcome": "All1880records and mandatory guards pass. Prospective site layers5,6,9 selected:opposite8/16,same16/16,all8retention. No individual role or useful gain.0updates.",
+      "duration_scope": "Worker2812.645959832s;notebook2856.489192321s.Notchargedquota.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N16_v1_complete_remaining_layer_subsets",
-      "launched_utc": "2026-10-30T10:20:48.816699+00:00",
-      "status": "One private bounded job active, maximum 1880 records, 1680 new and 200 carried. Zero training."
+      "run": "B01_v1_chat_native_column_edits",
+      "launched_utc": "2026-10-30T11:13:36.001781+00:00",
+      "status": "One private bounded job active;192records,at most168new predictions,0updates."
     }
   ]
 }

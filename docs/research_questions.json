@@ -427,7 +427,7 @@
     {
       "id": "Q28",
       "experiment": "N16: remaining native layer subsets",
-      "status": "private_GPU_version1_active_outputs_unseen",
+      "status": "complete_host_audited_proper_three_layer_site_selected",
       "question": "Which remaining native layer subset inside layers 5 to 9 passes the unchanged semantic donor controls?",
       "question_provenance": "Prospective no-eligible-site branch after all N15 outputs and guards pass. No N16 implementation or outputs exist at protocol freeze.",
       "parents": [
@@ -435,15 +435,15 @@
         "Q27"
       ],
       "method": "Test the six nonadjacent pairs, all ten triples and all five four-layer subsets. Preserve all forty inputs and grades, actual opposite/same-rule donors and the fixed role gate. Carry 200 necessary common parent records exactly.",
-      "result": "No N16 result. Planned 1,880 records: 1,680 new and 200 carried. All 31 nonempty subsets are covered only when combining this grid with the closed parent results.",
-      "interpretation": "This is a bounded forward sufficiency comparison inside a validated block, not a search over arbitrary layers or a new capability claim. Discrete count differences do not prove formal synergy.",
-      "next_question": "Does any proper subset pass the same rule-transfer and retention gate?",
-      "direction_decision": "Use the smallest eligible cardinality, then lexicographic layer order. Follow with prospective channel partitions in that site; if none passes, retain the full block and use a fixed joint-channel test. Do not lower the threshold or select from incidental gains."
+      "result": "All 1,880 records were audited, including 1,680 new outputs and 200 exact carried parents. Across all 31 nonempty subsets, no singleton or pair passes the gate. Five triples pass. The prescribed smallest-cardinality and lexicographic selection is layers 5, 6 and 9: opposite-rule transfer in 8/16 cases, same-rule preservation in 16/16 and all eight retention controls correct. Every guard passes, with zero backward passes and updates.",
+      "interpretation": "Conditional rule transfer is localized to a three-layer site on reused development prompts. This is sufficiency under donor interventions, not individual neuron meaning, formal synergy, necessity or original-model improvement.",
+      "next_question": "Which native channels inside layers5,6,9 carry the controlled donor effect?",
+      "direction_decision": "Keep every one of the 31 subset outcomes. Queue prospective channel partitions, necessity/rescue and matched random controls after the requested behavior pilots. Do not select a higher-scoring triple."
     },
     {
       "id": "Q29",
       "experiment": "B01: conversational behavior alongside coding",
-      "status": "private_prompt_panel_prepared_not_launched",
+      "status": "private_GPU_version1_active_outputs_unseen",
       "question": "Do prescribed native-neuron edits change conversational behavior, and do those changes coincide with coding degradation?",
       "question_provenance": "Direct human suggestion to chat with edited Gemma, supported by a screenshot offered as an unverified lead. No chat outputs exist when this panel and assessment rubric are prepared.",
       "parents": [
@@ -451,10 +451,26 @@
         "Q28"
       ],
       "method": "Twelve fixed first prompts and four followups compare baseline, identity and whole-conversation zero/double edits of the fixed rare unit and two same-layer random controls. Natural histories and fixed baseline histories separate dialogue feedback from the current edit. Four unchanged coding probes measure retention.",
-      "result": "Private twelve-prompt/four-followup panel, fixed eight-policy intent and assessment rubric prepared. All twelve first-turn templates, four mock followup templates, and unchanged forty-row parent token/oracle checks pass. Two host-only API/inherited-helper failures were repaired and preserved. No model execution or chat result. Final GPU source, audit, counts, identity/restoration guards and resource check remain pending.",
+      "result": "The final protocol, source and auditor were frozen before launch. Sixteen closed N13 coding records are carried into 192 total records, with 144 to 168 new predictions after exact-input deduplication. Actual tiny-Gemma scope, cache, counter and parent token/oracle gates pass. One private bounded job is running. No B01 outputs have been read.",
       "interpretation": "Tone, uncertainty, disagreement and consistency are observable behaviors. A dramatic reply is not a validated personality trait or an individual semantic role. Random controls are fixed but not activity-matched. Persona steering already has prior work.",
       "next_question": "Does a fixed edit produce a repeatable change across prompts and histories while preserving executable coding?",
-      "direction_decision": "Queue one bounded chat pilot after N16 closes and is audited. Keep the coding objective and no-training constraint. Save every reply, blind qualitative condition labels, preserve caps and negative results, and require fresh confirmation before claiming a trait change. Do not copy Qwen coordinates or fit a persona vector."
+      "direction_decision": "Wait for the job to finish while doing useful host work. Audit every guard and history, then rate all 160 condition-blinded replies before reading the key or condition summaries. Keep every outcome."
+    },
+    {
+      "id": "Q30",
+      "experiment": "B02: neuron and text reversal controls",
+      "status": "host_feasibility_passed_pretrained_grid_frozen_not_launched",
+      "question": "What changes under precisely defined native-neuron reversals and normal/reversed user text, when every answer is read both ways?",
+      "question_provenance": "Direct human proposal; mathematical definitions recorded before implementation or model results.",
+      "parents": [
+        "Q29",
+        "Q10"
+      ],
+      "method": "Four fixed model operations by normal or reversed user code points, using eight unchanged prompts. Both answer readings are retained. The planned 64 records contain 56 new generations and eight exact B01 base carries, giving 128 derived readings. Host algebra, scope and restoration checks pass.",
+      "result": "Six actual tiny-Gemma cases pass in FP64 and BF16, including normal and shared double-width MLPs, cached generation, exception restoration and exact parent weight/logit restoration. Coordinated reversals preserve fixture logits; uncompensated reversal and sign inversion change them. No pretrained reversal result is available.",
+      "interpretation": "Hidden channel order has a known permutation symmetry when connections move with it. An unmatched permutation or sign flip changes the computation; neither is a semantic inverse of knowledge.",
+      "next_question": "What happens on a small fixed normal/reversed-user-text grid in the pretrained model, with raw and reversed answer readings retained?",
+      "direction_decision": "B01 remains the only GPU job. Freeze B02 prompt/model/reading grid and source/auditor before launching. Keep all answer readings separate and preserve chat-template roles/delimiters."
     }
   ],
   "active_question_id": "Q28",

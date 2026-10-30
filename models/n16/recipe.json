@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "experiment": "N16",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only, unquantized BF16",
+  "optimizer_steps": 0,
+  "actual_backward_passes": 0,
+  "conditions": [
+    {
+      "name": "base",
+      "layers": [],
+      "donor": null
+    },
+    {
+      "name": "identity",
+      "layers": [],
+      "donor": null
+    },
+    {
+      "name": "block5_9_opposite",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "block5_9_samepolicy",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "block5_9_recipient",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "donor": "recipient"
+    },
+    {
+      "name": "S05_07_opposite",
+      "layers": [
+        5,
+        7
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_07_samepolicy",
+      "layers": [
+        5,
+        7
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_08_opposite",
+      "layers": [
+        5,
+        8
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_08_samepolicy",
+      "layers": [
+        5,
+        8
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_09_opposite",
+      "layers": [
+        5,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_09_samepolicy",
+      "layers": [
+        5,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S06_08_opposite",
+      "layers": [
+        6,
+        8
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S06_08_samepolicy",
+      "layers": [
+        6,
+        8
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S06_09_opposite",
+      "layers": [
+        6,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S06_09_samepolicy",
+      "layers": [
+        6,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S07_09_opposite",
+      "layers": [
+        7,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S07_09_samepolicy",
+      "layers": [
+        7,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_06_07_opposite",
+      "layers": [
+        5,
+        6,
+        7
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_06_07_samepolicy",
+      "layers": [
+        5,
+        6,
+        7
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_06_08_opposite",
+      "layers": [
+        5,
+        6,
+        8
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_06_08_samepolicy",
+      "layers": [
+        5,
+        6,
+        8
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_06_09_opposite",
+      "layers": [
+        5,
+        6,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_06_09_samepolicy",
+      "layers": [
+        5,
+        6,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_07_08_opposite",
+      "layers": [
+        5,
+        7,
+        8
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_07_08_samepolicy",
+      "layers": [
+        5,
+        7,
+        8
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_07_09_opposite",
+      "layers": [
+        5,
+        7,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_07_09_samepolicy",
+      "layers": [
+        5,
+        7,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_08_09_opposite",
+      "layers": [
+        5,
+        8,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_08_09_samepolicy",
+      "layers": [
+        5,
+        8,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S06_07_08_opposite",
+      "layers": [
+        6,
+        7,
+        8
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S06_07_08_samepolicy",
+      "layers": [
+        6,
+        7,
+        8
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S06_07_09_opposite",
+      "layers": [
+        6,
+        7,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S06_07_09_samepolicy",
+      "layers": [
+        6,
+        7,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S06_08_09_opposite",
+      "layers": [
+        6,
+        8,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S06_08_09_samepolicy",
+      "layers": [
+        6,
+        8,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S07_08_09_opposite",
+      "layers": [
+        7,
+        8,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S07_08_09_samepolicy",
+      "layers": [
+        7,
+        8,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_06_07_08_opposite",
+      "layers": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_06_07_08_samepolicy",
+      "layers": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_06_07_09_opposite",
+      "layers": [
+        5,
+        6,
+        7,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_06_07_09_samepolicy",
+      "layers": [
+        5,
+        6,
+        7,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_06_08_09_opposite",
+      "layers": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_06_08_09_samepolicy",
+      "layers": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S05_07_08_09_opposite",
+      "layers": [
+        5,
+        7,
+        8,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S05_07_08_09_samepolicy",
+      "layers": [
+        5,
+        7,
+        8,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "S06_07_08_09_opposite",
+      "layers": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "S06_07_08_09_samepolicy",
+      "layers": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "donor": "samepolicy"
+    }
+  ],
+  "mechanism": "Use compose_mlp_donors at the declared selector prefill position with actual unmodified native states from capture_native_mlp. Use a fresh cache for each policy.",
+  "donor_contract": "Caller-supplied aligned recipient, opposite-rule or reversed-label same-rule contexts. Raw original tasks and traces remain private. No fitted vector or oracle completion.",
+  "validation": {
+    "all1880records_host_audited": true,
+    "carried_parent_records_exact": 200,
+    "live_carried_logit_hashes_exact": 200,
+    "native_vector_hashes_exact": 560,
+    "prefill_self_logit_checks": 840,
+    "cached_self_logit_checks": 252,
+    "postcondition_restorations": 94,
+    "protocol_sha256": "9c0636ee2d709698bedecb8abfdaf719a3f630979c45da1cb051c6b43a29a324",
+    "result_receipt_sha256": "5c16a1530b0d4fa128f8b07651a65e6e165a7c0ccde635c817f583a3d38ca422",
+    "capture_source_sha256": "71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1",
+    "composition_source_sha256": "769e1477149fd11b19950c19d8452fd4b691a6a71908abfb5361bc2f63820ae2",
+    "independent_clean_package_pretrained_replay": false
+  },
+  "interpretation": "Complete31subset grid includes closed parent results. No singleton/pair passes;five triples do. Prescribed smallest-cardinality then lexicographic selection chooses layers5,6,9 with opposite8/16,same16/16,all8retention. Higher counts do not choose another site. No individual role or original-model improvement.",
+  "scope": "Forward sufficiency of native layer subsets on reused development. No individual neuron function or original-model improvement is established."
+}
