@@ -252,3 +252,9 @@ The loader references the pinned BF16 parent, verifies all original columns and 
 ## N22 stage and site donor policies
 
 [All thirteen policies](n22/recipe.json) preserve the exact parent, native layer sets, intervention stages and reference treatment. Actual donor values remain private. The validated generic [stage helper](../interpretability/native_stage_site.py) replaces native post-gating values once, then removes its hooks before continuation. All 273 study records and scope, self, cache, restoration and unchanged-parameter guards pass. The two newly measured cells yield no opposite-policy transfer; all conditions remain reported. These are inference recipes without new weights or a confirmed coding gain. Independent clean-package pretrained replay is not claimed.
+
+## N24 finite-score policies
+
+[All 24 N24 recipes](n24/recipe.json) retain the six fixed native groups and four existing current-token operations. All 578 measured trajectories and mandatory guards passed; the edited current-state hashes reproduce the original N20 witnesses. The study changes activation values at one cached decision and introduces no new tensor blob or permanent parameter edit. Reconstruct the pinned original model and supply your own actual unmodified donor states. Raw study donors and tasks remain private.
+
+The selected group has a controlled comparator-score contribution, with no established semantic neuron meaning or coding improvement. An independent clean-package pretrained replay was not performed. The existing N21 column bundle remains the exact stored-weight artifact for those fixed coordinates.

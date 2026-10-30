@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-30T23:19:00.786980+00:00",
+  "experiment": "N25",
+  "question_id": "Q39",
+  "status": "intent_only_before_protocol_data_and_implementation",
+  "question": "Can a fixed runtime syntax trigger make the existing native gain-of-two edit useful for complete coding without a baseline answer or known comparator position?",
+  "parents": [
+    "Q34",
+    "Q35",
+    "Q36",
+    "Q37",
+    "Q38"
+  ],
+  "parent_evidence": "N24 shows selected64 causal comparator-score shifts well above both matched controls, but every parent program still stays unchanged. N21 global gain two has no selected coding gain and an unassessable format gate. The old current decision uses an original response-derived prefix, so it is not a deployable controller. N23 semantic/lexical counterbalance failed and remains closed.",
+  "candidate": "Keep exactly selected64 and both already fixed random64 groups and the already prescribed factor two. Compare original, same-scope identity, selected gain two and both random gain-two policies. No new coordinate, rank, strength, fitted vector or dose search. A fixed Python-prefix recognizer may apply the activation gain only before syntactic decision opportunities during the model's own free generation.",
+  "trigger_boundary": "The recognizer may inspect only tokens already generated in that same response. It may parse generated parameter/iterator bindings and identify a trailing bound name after return or if. It must not use task IDs, expected programs, hidden oracles, correct comparator tokens, baseline completions, future tokens or a learned activation classifier. Its grammar, exact boundary rules and event cap must be frozen and host-tested before model outcomes.",
+  "critical_uncertainty": "A causal contribution to the model's chosen operator is not a correctness signal. Reinforcing that contribution may reinforce mistakes. The new study must test this uncertainty directly, rather than infer benefit from N24.",
+  "coding_design_requirements": "New complete Python functions with independent hidden executable oracles and retention, including trigger-positive noncomparison controls. Freeze all tasks, caps, stopping/parsing rules, gains/losses, family dependence and gate branches before outputs. Keep every original case and failure. No benchmark answer in generation assets. Unusable or all-correct baselines remain unassessable; no rewrite or cap extension as confirmation. Decide the exact bounded baseline/edited phase design before implementation.",
+  "engineering_requirements": "Validate fixed grammar positive/negative/fused/incomplete-code cases, actual tiny-Gemma cached generation, exact identity/restoration and all original parameter/gradflag/hook counters. A same-prefix native shadow can verify whole-current-cache equality and immediate logit effects without changing generation history. Any cache copy must have exact values and no aliasing; no new decoding engine or speedup claim.",
+  "next": "First freeze a small host feasibility protocol. Only then freeze the exact prospective coding protocol and independent sources/auditor before a private model run. Fresh permitted quota and two-hour reserve remain required. No N25 GPU job or launch-ready protocol exists.",
+  "scope": "New development candidate, not confirmation of a useful edit. Fresh confirmation stays separate. Conditional steering and code steering are known. No semantic neuron meaning, new capability, novelty or benefit claimed.",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "new_model_forwards": 0
+}

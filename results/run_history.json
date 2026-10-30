@@ -335,13 +335,14 @@
       "outcome": "All 40 records audited. Primary role 16/32, zero complete blocks, retention 5/8. Planned stop before every neuron edit.",
       "duration_scope": "Worker/notebook seconds, not charged quota.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "N24_v1_finite_decision_scores",
-      "launched_utc": "2026-10-30T22:49:51.579886+00:00",
-      "status": "RUNNING_PRIVATE_SOURCE_VERIFIED_ZERO_GENERATIONS"
+      "recorded_script_seconds": 728.519442795,
+      "outcome": "All 578 measurement trajectories audited. Selected64 opposite margin +1.57358 versus matched +0.02502/-0.05078; same-policy +0.02194. All current hashes reproduce N20. Zero new completions or program regrading; prior program null unchanged.",
+      "duration_scope": "Worker/notebook seconds, not charged quota.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

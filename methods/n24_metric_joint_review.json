@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-30T23:01:17.796473+00:00",
+  "status": "scoped_primary_review_while_job_runs_before_output_access",
+  "source": "https://arxiv.org/html/2309.16042v2",
+  "read_scope": "Sections 2.1 metrics, 4, 5 and 6. No complete paper or appendix replication.",
+  "findings": [
+    "Probability can miss components with negative effects when the relevant probability is already small. The paper motivates logit difference and discusses KL as a distribution metric.",
+    "Joint multi-layer patch effects differ from adding separate single-layer effects. The authors describe their joint-window result as a joint effect, not evidence for one layer.",
+    "Which tokens are corrupted changes what information an intervention traces."
+  ],
+  "application": "Keep all signed finite margins and KL. Do not infer individual neuron meanings or formal synergy from the broad-state control. N22 stage/site results remain bounded by the chosen prompts, donors and positions. Actual donor states do not prove that every joint internal combination is on distribution.",
+  "protocol_or_metric_changes": false,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

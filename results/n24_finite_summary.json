@@ -1,0 +1,5774 @@
+{
+  "receipt": {
+    "utc": "2026-10-30T23:05:01.476698+00:00",
+    "status": "complete_host_audited",
+    "all578trajectories_and_guards_pass": true,
+    "new_generations": 0,
+    "optimizer_steps": 0,
+    "backward_calls": 0,
+    "worker": {
+      "status": "complete",
+      "trajectories": 578,
+      "new_generated_tokens": 0,
+      "new_program_generations": 0,
+      "new_program_executions": 0,
+      "actual_backward_calls": 0,
+      "actual_optimizer_steps": 0,
+      "actual_model_forward_calls": 3330,
+      "actual_input_token_exposures": 48228,
+      "all_parameter_versions_unchanged": true,
+      "all_gradient_flags_unchanged": true,
+      "all_parameter_gradients_none": true,
+      "all_hooks_restored": true,
+      "full_output_vectors_saved": false,
+      "seconds": 728.519442795,
+      "peak_cuda_allocated_bytes": 9333444608,
+      "environment": {
+        "torch": "2.11.0+cu128",
+        "transformers": "5.8.0",
+        "GPU": "Tesla T4",
+        "model_dtype": "torch.bfloat16",
+        "unique_parameters": 4628569344
+      }
+    },
+    "notebook_seconds": 765.087176256,
+    "scope": "Finite token-level causal measurement on reused development. No new program result, semantic meaning, coding improvement or novelty.",
+    "host_recomputes_pretrained_logits_activations_or_full_vector_statistics": false
+  },
+  "descriptive": {
+    "groups": {
+      "selected64": {
+        "opposite": {
+          "all13": {
+            "cases": 13,
+            "mean": 1.5735802283653846,
+            "median": 1.44091796875,
+            "minimum": 0.9453125,
+            "maximum": 2.484375,
+            "positive": 13,
+            "zero": 0,
+            "negative": 0
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 1.638671875,
+            "median": 1.484375,
+            "minimum": 1.0625,
+            "maximum": 2.484375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 1.46943359375,
+            "median": 1.44091796875,
+            "minimum": 0.9453125,
+            "maximum": 2.0625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 1.8578125,
+            "median": 1.734375,
+            "minimum": 0.9453125,
+            "maximum": 2.484375,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 1.39593505859375,
+            "median": 1.33203125,
+            "minimum": 1.0625,
+            "maximum": 2.0625,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 1.638671875,
+            "median": 1.484375,
+            "minimum": 1.0625,
+            "maximum": 2.484375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 1.46943359375,
+            "median": 1.44091796875,
+            "minimum": 0.9453125,
+            "maximum": 2.0625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 1.55859375,
+            "median": 1.44921875,
+            "minimum": 1.0625,
+            "maximum": 2.40625,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 1.58642578125,
+            "median": 1.44091796875,
+            "minimum": 0.9453125,
+            "maximum": 2.484375,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 1.5613839285714286,
+            "median": 1.484375,
+            "minimum": 0.9453125,
+            "maximum": 2.40625,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 1.5878092447916667,
+            "median": 1.427490234375,
+            "minimum": 1.203125,
+            "maximum": 2.484375,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 1.4821428571428572,
+            "median": 1.4140625,
+            "minimum": 0.9453125,
+            "maximum": 2.0625,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 1.6802571614583333,
+            "median": 1.462646484375,
+            "minimum": 1.0625,
+            "maximum": 2.484375,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          }
+        },
+        "samepolicy": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.021935096153846152,
+            "median": 0.00390625,
+            "minimum": -0.25,
+            "maximum": 0.296875,
+            "positive": 7,
+            "zero": 0,
+            "negative": 6
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.02734375,
+            "median": 0.046875,
+            "minimum": -0.25,
+            "maximum": 0.25,
+            "positive": 5,
+            "zero": 0,
+            "negative": 3
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.01328125,
+            "median": -0.015625,
+            "minimum": -0.1796875,
+            "maximum": 0.296875,
+            "positive": 2,
+            "zero": 0,
+            "negative": 3
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 0.0265625,
+            "median": 0.03125,
+            "minimum": -0.046875,
+            "maximum": 0.125,
+            "positive": 3,
+            "zero": 0,
+            "negative": 2
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.01904296875,
+            "median": -0.005859375,
+            "minimum": -0.25,
+            "maximum": 0.296875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 4
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.02734375,
+            "median": 0.046875,
+            "minimum": -0.25,
+            "maximum": 0.25,
+            "positive": 5,
+            "zero": 0,
+            "negative": 3
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.01328125,
+            "median": -0.015625,
+            "minimum": -0.1796875,
+            "maximum": 0.296875,
+            "positive": 2,
+            "zero": 0,
+            "negative": 3
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.044921875,
+            "median": 0.064453125,
+            "minimum": -0.25,
+            "maximum": 0.296875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 2
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.002232142857142857,
+            "median": -0.015625,
+            "minimum": -0.1796875,
+            "maximum": 0.25,
+            "positive": 3,
+            "zero": 0,
+            "negative": 4
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.11272321428571429,
+            "median": 0.125,
+            "minimum": -0.0390625,
+            "maximum": 0.296875,
+            "positive": 5,
+            "zero": 0,
+            "negative": 2
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": -0.083984375,
+            "median": -0.0703125,
+            "minimum": -0.25,
+            "maximum": 0.0625,
+            "positive": 2,
+            "zero": 0,
+            "negative": 4
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": -0.009486607142857142,
+            "median": -0.015625,
+            "minimum": -0.25,
+            "maximum": 0.25,
+            "positive": 3,
+            "zero": 0,
+            "negative": 4
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.05859375,
+            "median": 0.09375,
+            "minimum": -0.1796875,
+            "maximum": 0.296875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 2
+          }
+        },
+        "zero": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.7307692307692307,
+            "median": 0.6640625,
+            "minimum": 0.375,
+            "maximum": 1.234375,
+            "positive": 13,
+            "zero": 0,
+            "negative": 0
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.771484375,
+            "median": 0.734375,
+            "minimum": 0.375,
+            "maximum": 1.234375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.665625,
+            "median": 0.6640625,
+            "minimum": 0.4453125,
+            "maximum": 0.90625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 0.9234375,
+            "median": 0.9375,
+            "minimum": 0.4453125,
+            "maximum": 1.234375,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.6103515625,
+            "median": 0.5859375,
+            "minimum": 0.375,
+            "maximum": 0.90625,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.771484375,
+            "median": 0.734375,
+            "minimum": 0.375,
+            "maximum": 1.234375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.665625,
+            "median": 0.6640625,
+            "minimum": 0.4453125,
+            "maximum": 0.90625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.7669270833333334,
+            "median": 0.71484375,
+            "minimum": 0.375,
+            "maximum": 1.234375,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.6997767857142857,
+            "median": 0.546875,
+            "minimum": 0.4453125,
+            "maximum": 1.15625,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.7600446428571429,
+            "median": 0.765625,
+            "minimum": 0.4453125,
+            "maximum": 1.234375,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 0.6966145833333334,
+            "median": 0.60546875,
+            "minimum": 0.375,
+            "maximum": 1.15625,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 0.6674107142857143,
+            "median": 0.6640625,
+            "minimum": 0.375,
+            "maximum": 0.9375,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.8046875,
+            "median": 0.6953125,
+            "minimum": 0.5,
+            "maximum": 1.234375,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          }
+        },
+        "conditional_cut": {
+          "all13": {
+            "cases": 13,
+            "mean": 12.888822115384615,
+            "median": 12.890625,
+            "minimum": 8.671875,
+            "maximum": 18.7578125,
+            "positive": 13,
+            "zero": 0,
+            "negative": 0
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 10.9150390625,
+            "median": 11.0234375,
+            "minimum": 8.671875,
+            "maximum": 12.9375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 16.046875,
+            "median": 17.2421875,
+            "minimum": 13.46875,
+            "maximum": 18.7578125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 13.9359375,
+            "median": 12.890625,
+            "minimum": 12.5,
+            "maximum": 18.7578125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 12.234375,
+            "median": 11.5078125,
+            "minimum": 8.671875,
+            "maximum": 17.296875,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 10.9150390625,
+            "median": 11.0234375,
+            "minimum": 8.671875,
+            "maximum": 12.9375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 16.046875,
+            "median": 17.2421875,
+            "minimum": 13.46875,
+            "maximum": 18.7578125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 13.013020833333334,
+            "median": 12.9140625,
+            "minimum": 8.671875,
+            "maximum": 17.296875,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 12.782366071428571,
+            "median": 12.59375,
+            "minimum": 9.140625,
+            "maximum": 18.7578125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 13.311383928571429,
+            "median": 12.9375,
+            "minimum": 8.671875,
+            "maximum": 18.7578125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 12.395833333333334,
+            "median": 12.7421875,
+            "minimum": 9.0390625,
+            "maximum": 17.2421875,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 13.349330357142858,
+            "median": 12.890625,
+            "minimum": 9.0390625,
+            "maximum": 18.7578125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 12.3515625,
+            "median": 12.765625,
+            "minimum": 8.671875,
+            "maximum": 17.296875,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "conditional_margin_loss_all13": {
+            "cases": 13,
+            "mean": 0.7863581730769231,
+            "median": 0.796875,
+            "minimum": 0.40625,
+            "maximum": 1.125,
+            "positive": 13,
+            "zero": 0,
+            "negative": 0
+          }
+        }
+      },
+      "random34201_64": {
+        "opposite": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.02501502403846154,
+            "median": 0.015625,
+            "minimum": -0.25,
+            "maximum": 0.2734375,
+            "positive": 7,
+            "zero": 0,
+            "negative": 6
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": -0.01171875,
+            "median": -0.03125,
+            "minimum": -0.25,
+            "maximum": 0.1875,
+            "positive": 3,
+            "zero": 0,
+            "negative": 5
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.0837890625,
+            "median": 0.0390625,
+            "minimum": -0.0810546875,
+            "maximum": 0.2734375,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": -0.0171875,
+            "median": -0.046875,
+            "minimum": -0.25,
+            "maximum": 0.2734375,
+            "positive": 2,
+            "zero": 0,
+            "negative": 3
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.0513916015625,
+            "median": 0.02734375,
+            "minimum": -0.0810546875,
+            "maximum": 0.1875,
+            "positive": 5,
+            "zero": 0,
+            "negative": 3
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": -0.01171875,
+            "median": -0.03125,
+            "minimum": -0.25,
+            "maximum": 0.1875,
+            "positive": 3,
+            "zero": 0,
+            "negative": 5
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.0837890625,
+            "median": 0.0390625,
+            "minimum": -0.0810546875,
+            "maximum": 0.2734375,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.051595052083333336,
+            "median": 0.0546875,
+            "minimum": -0.0810546875,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 2
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.002232142857142857,
+            "median": -0.03125,
+            "minimum": -0.25,
+            "maximum": 0.2734375,
+            "positive": 3,
+            "zero": 0,
+            "negative": 4
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.07254464285714286,
+            "median": 0.09375,
+            "minimum": -0.15625,
+            "maximum": 0.2734375,
+            "positive": 5,
+            "zero": 0,
+            "negative": 2
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": -0.030436197916666668,
+            "median": -0.0390625,
+            "minimum": -0.25,
+            "maximum": 0.1875,
+            "positive": 2,
+            "zero": 0,
+            "negative": 4
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 0.04534040178571429,
+            "median": -0.03125,
+            "minimum": -0.15625,
+            "maximum": 0.2734375,
+            "positive": 3,
+            "zero": 0,
+            "negative": 4
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.0013020833333333333,
+            "median": 0.02734375,
+            "minimum": -0.25,
+            "maximum": 0.140625,
+            "positive": 4,
+            "zero": 0,
+            "negative": 2
+          }
+        },
+        "samepolicy": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.023737980769230768,
+            "median": 0.0,
+            "minimum": -0.05078125,
+            "maximum": 0.125,
+            "positive": 6,
+            "zero": 4,
+            "negative": 3
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.0224609375,
+            "median": 0.0,
+            "minimum": -0.03125,
+            "maximum": 0.125,
+            "positive": 3,
+            "zero": 3,
+            "negative": 2
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.02578125,
+            "median": 0.046875,
+            "minimum": -0.05078125,
+            "maximum": 0.0703125,
+            "positive": 3,
+            "zero": 1,
+            "negative": 1
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 0.025,
+            "median": 0.0,
+            "minimum": -0.03125,
+            "maximum": 0.125,
+            "positive": 2,
+            "zero": 1,
+            "negative": 2
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.02294921875,
+            "median": 0.0078125,
+            "minimum": -0.05078125,
+            "maximum": 0.0859375,
+            "positive": 4,
+            "zero": 3,
+            "negative": 1
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.0224609375,
+            "median": 0.0,
+            "minimum": -0.03125,
+            "maximum": 0.125,
+            "positive": 3,
+            "zero": 3,
+            "negative": 2
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.02578125,
+            "median": 0.046875,
+            "minimum": -0.05078125,
+            "maximum": 0.0703125,
+            "positive": 3,
+            "zero": 1,
+            "negative": 1
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.024088541666666668,
+            "median": 0.0,
+            "minimum": -0.05078125,
+            "maximum": 0.125,
+            "positive": 2,
+            "zero": 2,
+            "negative": 2
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.0234375,
+            "median": 0.015625,
+            "minimum": -0.03125,
+            "maximum": 0.0703125,
+            "positive": 4,
+            "zero": 2,
+            "negative": 1
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.04575892857142857,
+            "median": 0.046875,
+            "minimum": 0.0,
+            "maximum": 0.125,
+            "positive": 4,
+            "zero": 3,
+            "negative": 0
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": -0.001953125,
+            "median": -0.0078125,
+            "minimum": -0.05078125,
+            "maximum": 0.0703125,
+            "positive": 2,
+            "zero": 1,
+            "negative": 3
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 0.006138392857142857,
+            "median": 0.0,
+            "minimum": -0.05078125,
+            "maximum": 0.0625,
+            "positive": 2,
+            "zero": 3,
+            "negative": 2
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.044270833333333336,
+            "median": 0.04296875,
+            "minimum": -0.03125,
+            "maximum": 0.125,
+            "positive": 4,
+            "zero": 1,
+            "negative": 1
+          }
+        },
+        "zero": {
+          "all13": {
+            "cases": 13,
+            "mean": -0.014122596153846154,
+            "median": -0.03125,
+            "minimum": -0.21875,
+            "maximum": 0.1328125,
+            "positive": 6,
+            "zero": 0,
+            "negative": 7
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": -0.0107421875,
+            "median": 0.0,
+            "minimum": -0.21875,
+            "maximum": 0.125,
+            "positive": 4,
+            "zero": 0,
+            "negative": 4
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": -0.01953125,
+            "median": -0.0390625,
+            "minimum": -0.19140625,
+            "maximum": 0.1328125,
+            "positive": 2,
+            "zero": 0,
+            "negative": 3
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": -0.0390625,
+            "median": -0.03125,
+            "minimum": -0.21875,
+            "maximum": 0.125,
+            "positive": 1,
+            "zero": 0,
+            "negative": 4
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.00146484375,
+            "median": 0.046875,
+            "minimum": -0.19140625,
+            "maximum": 0.1328125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 3
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": -0.0107421875,
+            "median": 0.0,
+            "minimum": -0.21875,
+            "maximum": 0.125,
+            "positive": 4,
+            "zero": 0,
+            "negative": 4
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": -0.01953125,
+            "median": -0.0390625,
+            "minimum": -0.19140625,
+            "maximum": 0.1328125,
+            "positive": 2,
+            "zero": 0,
+            "negative": 3
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": -0.009765625,
+            "median": 0.015625,
+            "minimum": -0.19140625,
+            "maximum": 0.125,
+            "positive": 3,
+            "zero": 0,
+            "negative": 3
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": -0.017857142857142856,
+            "median": -0.03125,
+            "minimum": -0.21875,
+            "maximum": 0.1328125,
+            "positive": 3,
+            "zero": 0,
+            "negative": 4
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": -0.022321428571428572,
+            "median": -0.0390625,
+            "minimum": -0.21875,
+            "maximum": 0.125,
+            "positive": 3,
+            "zero": 0,
+            "negative": 4
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": -0.004557291666666667,
+            "median": 0.0,
+            "minimum": -0.19140625,
+            "maximum": 0.1328125,
+            "positive": 3,
+            "zero": 0,
+            "negative": 3
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": -0.05970982142857143,
+            "median": -0.0390625,
+            "minimum": -0.21875,
+            "maximum": 0.125,
+            "positive": 2,
+            "zero": 0,
+            "negative": 5
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.0390625,
+            "median": 0.06640625,
+            "minimum": -0.125,
+            "maximum": 0.1328125,
+            "positive": 4,
+            "zero": 0,
+            "negative": 2
+          }
+        },
+        "conditional_cut": {
+          "all13": {
+            "cases": 13,
+            "mean": 13.710036057692308,
+            "median": 13.859375,
+            "minimum": 9.171875,
+            "maximum": 19.7578125,
+            "positive": 13,
+            "zero": 0,
+            "negative": 0
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 11.7041015625,
+            "median": 11.75,
+            "minimum": 9.171875,
+            "maximum": 14.046875,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 16.91953125,
+            "median": 18.0546875,
+            "minimum": 14.265625,
+            "maximum": 19.7578125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 14.9453125,
+            "median": 13.859375,
+            "minimum": 13.40625,
+            "maximum": 19.7578125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 12.93798828125,
+            "median": 12.1796875,
+            "minimum": 9.171875,
+            "maximum": 18.08984375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 11.7041015625,
+            "median": 11.75,
+            "minimum": 9.171875,
+            "maximum": 14.046875,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 16.91953125,
+            "median": 18.0546875,
+            "minimum": 14.265625,
+            "maximum": 19.7578125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 13.819661458333334,
+            "median": 13.953125,
+            "minimum": 9.171875,
+            "maximum": 18.08984375,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 13.616071428571429,
+            "median": 13.65625,
+            "minimum": 9.703125,
+            "maximum": 19.7578125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 14.151227678571429,
+            "median": 13.859375,
+            "minimum": 9.171875,
+            "maximum": 19.7578125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 13.1953125,
+            "median": 13.7265625,
+            "minimum": 9.6953125,
+            "maximum": 18.0546875,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 14.247767857142858,
+            "median": 14.046875,
+            "minimum": 9.6953125,
+            "maximum": 19.7578125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 13.082682291666666,
+            "median": 13.6328125,
+            "minimum": 9.171875,
+            "maximum": 18.08984375,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "conditional_margin_loss_all13": {
+            "cases": 13,
+            "mean": -0.03485576923076923,
+            "median": -0.03125,
+            "minimum": -0.15625,
+            "maximum": 0.015625,
+            "positive": 2,
+            "zero": 2,
+            "negative": 9
+          }
+        }
+      },
+      "random34202_64": {
+        "opposite": {
+          "all13": {
+            "cases": 13,
+            "mean": -0.05078125,
+            "median": -0.0625,
+            "minimum": -0.21875,
+            "maximum": 0.1640625,
+            "positive": 3,
+            "zero": 1,
+            "negative": 9
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": -0.0419921875,
+            "median": -0.046875,
+            "minimum": -0.21875,
+            "maximum": 0.1640625,
+            "positive": 2,
+            "zero": 1,
+            "negative": 5
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": -0.06484375,
+            "median": -0.0859375,
+            "minimum": -0.09765625,
+            "maximum": 0.015625,
+            "positive": 1,
+            "zero": 0,
+            "negative": 4
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": -0.08125,
+            "median": -0.0625,
+            "minimum": -0.21875,
+            "maximum": 0.015625,
+            "positive": 1,
+            "zero": 0,
+            "negative": 4
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": -0.03173828125,
+            "median": -0.07421875,
+            "minimum": -0.125,
+            "maximum": 0.1640625,
+            "positive": 2,
+            "zero": 1,
+            "negative": 5
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": -0.0419921875,
+            "median": -0.046875,
+            "minimum": -0.21875,
+            "maximum": 0.1640625,
+            "positive": 2,
+            "zero": 1,
+            "negative": 5
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": -0.06484375,
+            "median": -0.0859375,
+            "minimum": -0.09765625,
+            "maximum": 0.015625,
+            "positive": 1,
+            "zero": 0,
+            "negative": 4
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": -0.043619791666666664,
+            "median": -0.080078125,
+            "minimum": -0.125,
+            "maximum": 0.1640625,
+            "positive": 1,
+            "zero": 0,
+            "negative": 5
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": -0.056919642857142856,
+            "median": -0.0625,
+            "minimum": -0.21875,
+            "maximum": 0.046875,
+            "positive": 2,
+            "zero": 1,
+            "negative": 4
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": -0.03236607142857143,
+            "median": -0.03125,
+            "minimum": -0.21875,
+            "maximum": 0.1640625,
+            "positive": 2,
+            "zero": 1,
+            "negative": 4
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": -0.072265625,
+            "median": -0.091796875,
+            "minimum": -0.125,
+            "maximum": 0.046875,
+            "positive": 1,
+            "zero": 0,
+            "negative": 5
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": -0.08984375,
+            "median": -0.09765625,
+            "minimum": -0.21875,
+            "maximum": 0.015625,
+            "positive": 1,
+            "zero": 1,
+            "negative": 5
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": -0.005208333333333333,
+            "median": -0.046875,
+            "minimum": -0.0859375,
+            "maximum": 0.1640625,
+            "positive": 2,
+            "zero": 0,
+            "negative": 4
+          }
+        },
+        "samepolicy": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.030348557692307692,
+            "median": 0.015625,
+            "minimum": -0.125,
+            "maximum": 0.1875,
+            "positive": 8,
+            "zero": 3,
+            "negative": 2
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.00390625,
+            "median": 0.0078125,
+            "minimum": -0.125,
+            "maximum": 0.0625,
+            "positive": 4,
+            "zero": 3,
+            "negative": 1
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.07265625,
+            "median": 0.078125,
+            "minimum": -0.04296875,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 0.0015625,
+            "median": 0.015625,
+            "minimum": -0.125,
+            "maximum": 0.0625,
+            "positive": 3,
+            "zero": 1,
+            "negative": 1
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.04833984375,
+            "median": 0.0390625,
+            "minimum": -0.04296875,
+            "maximum": 0.1875,
+            "positive": 5,
+            "zero": 2,
+            "negative": 1
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.00390625,
+            "median": 0.0078125,
+            "minimum": -0.125,
+            "maximum": 0.0625,
+            "positive": 4,
+            "zero": 3,
+            "negative": 1
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.07265625,
+            "median": 0.078125,
+            "minimum": -0.04296875,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.026692708333333332,
+            "median": 0.0,
+            "minimum": -0.04296875,
+            "maximum": 0.1875,
+            "positive": 2,
+            "zero": 3,
+            "negative": 1
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.033482142857142856,
+            "median": 0.0625,
+            "minimum": -0.125,
+            "maximum": 0.0859375,
+            "positive": 6,
+            "zero": 0,
+            "negative": 1
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.036830357142857144,
+            "median": 0.0546875,
+            "minimum": -0.125,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 2,
+            "negative": 1
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 0.022786458333333332,
+            "median": 0.015625,
+            "minimum": -0.04296875,
+            "maximum": 0.0859375,
+            "positive": 4,
+            "zero": 1,
+            "negative": 1
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 0.006138392857142857,
+            "median": 0.015625,
+            "minimum": -0.125,
+            "maximum": 0.078125,
+            "positive": 4,
+            "zero": 1,
+            "negative": 2
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.05859375,
+            "median": 0.0390625,
+            "minimum": 0.0,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 2,
+            "negative": 0
+          }
+        },
+        "zero": {
+          "all13": {
+            "cases": 13,
+            "mean": -0.023137019230769232,
+            "median": 0.00390625,
+            "minimum": -0.3125,
+            "maximum": 0.203125,
+            "positive": 7,
+            "zero": 1,
+            "negative": 5
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": -0.05078125,
+            "median": -0.015625,
+            "minimum": -0.3125,
+            "maximum": 0.203125,
+            "positive": 3,
+            "zero": 1,
+            "negative": 4
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.02109375,
+            "median": 0.03125,
+            "minimum": -0.09375,
+            "maximum": 0.109375,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": -0.025,
+            "median": 0.0,
+            "minimum": -0.21875,
+            "maximum": 0.109375,
+            "positive": 2,
+            "zero": 1,
+            "negative": 2
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": -0.02197265625,
+            "median": 0.017578125,
+            "minimum": -0.3125,
+            "maximum": 0.203125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 3
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": -0.05078125,
+            "median": -0.015625,
+            "minimum": -0.3125,
+            "maximum": 0.203125,
+            "positive": 3,
+            "zero": 1,
+            "negative": 4
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.02109375,
+            "median": 0.03125,
+            "minimum": -0.09375,
+            "maximum": 0.109375,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": -0.014973958333333334,
+            "median": 0.009765625,
+            "minimum": -0.3125,
+            "maximum": 0.203125,
+            "positive": 4,
+            "zero": 0,
+            "negative": 2
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": -0.030133928571428572,
+            "median": 0.0,
+            "minimum": -0.21875,
+            "maximum": 0.109375,
+            "positive": 3,
+            "zero": 1,
+            "negative": 3
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": -0.022321428571428572,
+            "median": -0.03125,
+            "minimum": -0.21875,
+            "maximum": 0.203125,
+            "positive": 3,
+            "zero": 0,
+            "negative": 4
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": -0.024088541666666668,
+            "median": 0.009765625,
+            "minimum": -0.3125,
+            "maximum": 0.09375,
+            "positive": 4,
+            "zero": 1,
+            "negative": 1
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": -0.09319196428571429,
+            "median": -0.09375,
+            "minimum": -0.3125,
+            "maximum": 0.109375,
+            "positive": 3,
+            "zero": 0,
+            "negative": 4
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.05859375,
+            "median": 0.04296875,
+            "minimum": -0.03125,
+            "maximum": 0.203125,
+            "positive": 4,
+            "zero": 1,
+            "negative": 1
+          }
+        },
+        "conditional_cut": {
+          "all13": {
+            "cases": 13,
+            "mean": 13.78485576923077,
+            "median": 13.9375,
+            "minimum": 9.171875,
+            "maximum": 19.8203125,
+            "positive": 13,
+            "zero": 0,
+            "negative": 0
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 11.7705078125,
+            "median": 11.8515625,
+            "minimum": 9.171875,
+            "maximum": 14.140625,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 17.0078125,
+            "median": 18.15625,
+            "minimum": 14.328125,
+            "maximum": 19.8203125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 15.0421875,
+            "median": 13.9375,
+            "minimum": 13.53125,
+            "maximum": 19.8203125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 12.9990234375,
+            "median": 12.25,
+            "minimum": 9.171875,
+            "maximum": 18.1953125,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 11.7705078125,
+            "median": 11.8515625,
+            "minimum": 9.171875,
+            "maximum": 14.140625,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 17.0078125,
+            "median": 18.15625,
+            "minimum": 14.328125,
+            "maximum": 19.8203125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 13.888020833333334,
+            "median": 14.0390625,
+            "minimum": 9.171875,
+            "maximum": 18.1953125,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 13.696428571428571,
+            "median": 13.78125,
+            "minimum": 9.703125,
+            "maximum": 19.8203125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 14.225446428571429,
+            "median": 13.9375,
+            "minimum": 9.171875,
+            "maximum": 19.8203125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 13.270833333333334,
+            "median": 13.8359375,
+            "minimum": 9.703125,
+            "maximum": 18.1953125,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 14.339285714285714,
+            "median": 14.140625,
+            "minimum": 9.7265625,
+            "maximum": 19.8203125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 13.138020833333334,
+            "median": 13.734375,
+            "minimum": 9.171875,
+            "maximum": 18.15625,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "conditional_margin_loss_all13": {
+            "cases": 13,
+            "mean": -0.10967548076923077,
+            "median": -0.125,
+            "minimum": -0.15625,
+            "maximum": -0.046875,
+            "positive": 0,
+            "zero": 0,
+            "negative": 13
+          }
+        }
+      },
+      "selected16": {
+        "opposite": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.5537860576923077,
+            "median": 0.515625,
+            "minimum": 0.34375,
+            "maximum": 0.890625,
+            "positive": 13,
+            "zero": 0,
+            "negative": 0
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.572265625,
+            "median": 0.5078125,
+            "minimum": 0.34375,
+            "maximum": 0.890625,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.52421875,
+            "median": 0.54296875,
+            "minimum": 0.359375,
+            "maximum": 0.734375,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 0.609375,
+            "median": 0.53125,
+            "minimum": 0.34375,
+            "maximum": 0.890625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.51904296875,
+            "median": 0.5078125,
+            "minimum": 0.359375,
+            "maximum": 0.734375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.572265625,
+            "median": 0.5078125,
+            "minimum": 0.34375,
+            "maximum": 0.890625,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.52421875,
+            "median": 0.54296875,
+            "minimum": 0.359375,
+            "maximum": 0.734375,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.595703125,
+            "median": 0.537109375,
+            "minimum": 0.5,
+            "maximum": 0.890625,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.5178571428571429,
+            "median": 0.4375,
+            "minimum": 0.34375,
+            "maximum": 0.890625,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.5580357142857143,
+            "median": 0.515625,
+            "minimum": 0.34375,
+            "maximum": 0.890625,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 0.548828125,
+            "median": 0.515625,
+            "minimum": 0.359375,
+            "maximum": 0.890625,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 0.49720982142857145,
+            "median": 0.5,
+            "minimum": 0.34375,
+            "maximum": 0.734375,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.6197916666666666,
+            "median": 0.5546875,
+            "minimum": 0.359375,
+            "maximum": 0.890625,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          }
+        },
+        "samepolicy": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.03365384615384615,
+            "median": 0.015625,
+            "minimum": -0.125,
+            "maximum": 0.28125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 6
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.009765625,
+            "median": -0.0390625,
+            "minimum": -0.125,
+            "maximum": 0.1875,
+            "positive": 3,
+            "zero": 0,
+            "negative": 5
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.071875,
+            "median": 0.046875,
+            "minimum": -0.0546875,
+            "maximum": 0.28125,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 0.0140625,
+            "median": -0.03125,
+            "minimum": -0.09375,
+            "maximum": 0.171875,
+            "positive": 2,
+            "zero": 0,
+            "negative": 3
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.0458984375,
+            "median": 0.03125,
+            "minimum": -0.125,
+            "maximum": 0.28125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 3
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.009765625,
+            "median": -0.0390625,
+            "minimum": -0.125,
+            "maximum": 0.1875,
+            "positive": 3,
+            "zero": 0,
+            "negative": 5
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.071875,
+            "median": 0.046875,
+            "minimum": -0.0546875,
+            "maximum": 0.28125,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.06770833333333333,
+            "median": 0.0625,
+            "minimum": -0.125,
+            "maximum": 0.28125,
+            "positive": 4,
+            "zero": 0,
+            "negative": 2
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.004464285714285714,
+            "median": -0.03125,
+            "minimum": -0.09375,
+            "maximum": 0.1875,
+            "positive": 3,
+            "zero": 0,
+            "negative": 4
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.1015625,
+            "median": 0.078125,
+            "minimum": -0.09375,
+            "maximum": 0.28125,
+            "positive": 6,
+            "zero": 0,
+            "negative": 1
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": -0.045572916666666664,
+            "median": -0.05078125,
+            "minimum": -0.125,
+            "maximum": 0.046875,
+            "positive": 1,
+            "zero": 0,
+            "negative": 5
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 0.0078125,
+            "median": 0.015625,
+            "minimum": -0.125,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 3
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.06380208333333333,
+            "median": 0.0234375,
+            "minimum": -0.0625,
+            "maximum": 0.28125,
+            "positive": 3,
+            "zero": 0,
+            "negative": 3
+          }
+        },
+        "zero": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.22806490384615385,
+            "median": 0.2421875,
+            "minimum": -0.1640625,
+            "maximum": 0.671875,
+            "positive": 12,
+            "zero": 0,
+            "negative": 1
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.2265625,
+            "median": 0.1953125,
+            "minimum": 0.015625,
+            "maximum": 0.484375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.23046875,
+            "median": 0.2421875,
+            "minimum": -0.1640625,
+            "maximum": 0.671875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 0.2671875,
+            "median": 0.2421875,
+            "minimum": 0.03125,
+            "maximum": 0.484375,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.20361328125,
+            "median": 0.171875,
+            "minimum": -0.1640625,
+            "maximum": 0.671875,
+            "positive": 7,
+            "zero": 0,
+            "negative": 1
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.2265625,
+            "median": 0.1953125,
+            "minimum": 0.015625,
+            "maximum": 0.484375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.23046875,
+            "median": 0.2421875,
+            "minimum": -0.1640625,
+            "maximum": 0.671875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.22591145833333334,
+            "median": 0.1953125,
+            "minimum": 0.078125,
+            "maximum": 0.484375,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.22991071428571427,
+            "median": 0.2421875,
+            "minimum": -0.1640625,
+            "maximum": 0.671875,
+            "positive": 6,
+            "zero": 0,
+            "negative": 1
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.29129464285714285,
+            "median": 0.2421875,
+            "minimum": 0.078125,
+            "maximum": 0.671875,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 0.154296875,
+            "median": 0.140625,
+            "minimum": -0.1640625,
+            "maximum": 0.484375,
+            "positive": 5,
+            "zero": 0,
+            "negative": 1
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 0.39564732142857145,
+            "median": 0.375,
+            "minimum": 0.2421875,
+            "maximum": 0.671875,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.032552083333333336,
+            "median": 0.0546875,
+            "minimum": -0.1640625,
+            "maximum": 0.140625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 1
+          }
+        },
+        "conditional_cut": {
+          "all13": {
+            "cases": 13,
+            "mean": 13.403245192307692,
+            "median": 13.5625,
+            "minimum": 8.859375,
+            "maximum": 19.3515625,
+            "positive": 13,
+            "zero": 0,
+            "negative": 0
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 11.388671875,
+            "median": 11.5,
+            "minimum": 8.859375,
+            "maximum": 13.609375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 16.6265625,
+            "median": 17.7890625,
+            "minimum": 14.03125,
+            "maximum": 19.3515625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 14.5671875,
+            "median": 13.5625,
+            "minimum": 13.125,
+            "maximum": 19.3515625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 12.67578125,
+            "median": 11.953125,
+            "minimum": 8.859375,
+            "maximum": 17.8046875,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 11.388671875,
+            "median": 11.5,
+            "minimum": 8.859375,
+            "maximum": 13.609375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 16.6265625,
+            "median": 17.7890625,
+            "minimum": 14.03125,
+            "maximum": 19.3515625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 13.515625,
+            "median": 13.5859375,
+            "minimum": 8.859375,
+            "maximum": 17.8046875,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 13.306919642857142,
+            "median": 13.1875,
+            "minimum": 9.421875,
+            "maximum": 19.3515625,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 13.828125,
+            "median": 13.5625,
+            "minimum": 8.859375,
+            "maximum": 19.3515625,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 12.907552083333334,
+            "median": 13.3671875,
+            "minimum": 9.421875,
+            "maximum": 17.7890625,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 13.919642857142858,
+            "median": 13.609375,
+            "minimum": 9.46875,
+            "maximum": 19.3515625,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 12.80078125,
+            "median": 13.34375,
+            "minimum": 8.859375,
+            "maximum": 17.8046875,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "conditional_margin_loss_all13": {
+            "cases": 13,
+            "mean": 0.27193509615384615,
+            "median": 0.25,
+            "minimum": 0.125,
+            "maximum": 0.4375,
+            "positive": 13,
+            "zero": 0,
+            "negative": 0
+          }
+        }
+      },
+      "random34201_16": {
+        "opposite": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.06430288461538461,
+            "median": 0.078125,
+            "minimum": -0.1015625,
+            "maximum": 0.203125,
+            "positive": 9,
+            "zero": 2,
+            "negative": 2
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.0595703125,
+            "median": 0.0703125,
+            "minimum": -0.0625,
+            "maximum": 0.15625,
+            "positive": 5,
+            "zero": 2,
+            "negative": 1
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.071875,
+            "median": 0.0859375,
+            "minimum": -0.1015625,
+            "maximum": 0.203125,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 0.065625,
+            "median": 0.0625,
+            "minimum": -0.0625,
+            "maximum": 0.203125,
+            "positive": 3,
+            "zero": 1,
+            "negative": 1
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.0634765625,
+            "median": 0.08203125,
+            "minimum": -0.1015625,
+            "maximum": 0.15625,
+            "positive": 6,
+            "zero": 1,
+            "negative": 1
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.0595703125,
+            "median": 0.0703125,
+            "minimum": -0.0625,
+            "maximum": 0.15625,
+            "positive": 5,
+            "zero": 2,
+            "negative": 1
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.071875,
+            "median": 0.0859375,
+            "minimum": -0.1015625,
+            "maximum": 0.203125,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.026041666666666668,
+            "median": 0.03125,
+            "minimum": -0.1015625,
+            "maximum": 0.1171875,
+            "positive": 3,
+            "zero": 2,
+            "negative": 1
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.09709821428571429,
+            "median": 0.09375,
+            "minimum": -0.0625,
+            "maximum": 0.203125,
+            "positive": 6,
+            "zero": 0,
+            "negative": 1
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.09263392857142858,
+            "median": 0.09375,
+            "minimum": -0.0625,
+            "maximum": 0.203125,
+            "positive": 6,
+            "zero": 0,
+            "negative": 1
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 0.03125,
+            "median": 0.0390625,
+            "minimum": -0.1015625,
+            "maximum": 0.125,
+            "positive": 3,
+            "zero": 2,
+            "negative": 1
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 0.041294642857142856,
+            "median": 0.0,
+            "minimum": -0.1015625,
+            "maximum": 0.203125,
+            "positive": 3,
+            "zero": 2,
+            "negative": 2
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.09114583333333333,
+            "median": 0.08203125,
+            "minimum": 0.0625,
+            "maximum": 0.125,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          }
+        },
+        "samepolicy": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.03125,
+            "median": 0.03125,
+            "minimum": -0.125,
+            "maximum": 0.1484375,
+            "positive": 7,
+            "zero": 2,
+            "negative": 4
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.0146484375,
+            "median": 0.0,
+            "minimum": -0.0625,
+            "maximum": 0.125,
+            "positive": 3,
+            "zero": 2,
+            "negative": 3
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.0578125,
+            "median": 0.109375,
+            "minimum": -0.125,
+            "maximum": 0.1484375,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 0.0453125,
+            "median": 0.03125,
+            "minimum": -0.0625,
+            "maximum": 0.1484375,
+            "positive": 3,
+            "zero": 0,
+            "negative": 2
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.0224609375,
+            "median": 0.015625,
+            "minimum": -0.125,
+            "maximum": 0.125,
+            "positive": 4,
+            "zero": 2,
+            "negative": 2
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.0146484375,
+            "median": 0.0,
+            "minimum": -0.0625,
+            "maximum": 0.125,
+            "positive": 3,
+            "zero": 2,
+            "negative": 3
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.0578125,
+            "median": 0.109375,
+            "minimum": -0.125,
+            "maximum": 0.1484375,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": -0.0013020833333333333,
+            "median": -0.0078125,
+            "minimum": -0.125,
+            "maximum": 0.125,
+            "positive": 2,
+            "zero": 1,
+            "negative": 3
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.05915178571428571,
+            "median": 0.0625,
+            "minimum": -0.0625,
+            "maximum": 0.1484375,
+            "positive": 5,
+            "zero": 1,
+            "negative": 1
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.049107142857142856,
+            "median": 0.03125,
+            "minimum": -0.0625,
+            "maximum": 0.1484375,
+            "positive": 4,
+            "zero": 1,
+            "negative": 2
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 0.010416666666666666,
+            "median": 0.015625,
+            "minimum": -0.125,
+            "maximum": 0.109375,
+            "positive": 3,
+            "zero": 1,
+            "negative": 2
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 0.010044642857142858,
+            "median": 0.0,
+            "minimum": -0.125,
+            "maximum": 0.1484375,
+            "positive": 2,
+            "zero": 2,
+            "negative": 3
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.055989583333333336,
+            "median": 0.046875,
+            "minimum": -0.0234375,
+            "maximum": 0.125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 1
+          }
+        },
+        "zero": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.019230769230769232,
+            "median": -0.0234375,
+            "minimum": -0.0859375,
+            "maximum": 0.1875,
+            "positive": 6,
+            "zero": 0,
+            "negative": 7
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.0009765625,
+            "median": -0.02734375,
+            "minimum": -0.0625,
+            "maximum": 0.15625,
+            "positive": 3,
+            "zero": 0,
+            "negative": 5
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.0484375,
+            "median": 0.0625,
+            "minimum": -0.0859375,
+            "maximum": 0.1875,
+            "positive": 3,
+            "zero": 0,
+            "negative": 2
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 0.040625,
+            "median": 0.0625,
+            "minimum": -0.046875,
+            "maximum": 0.15625,
+            "positive": 3,
+            "zero": 0,
+            "negative": 2
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.005859375,
+            "median": -0.02734375,
+            "minimum": -0.0859375,
+            "maximum": 0.1875,
+            "positive": 3,
+            "zero": 0,
+            "negative": 5
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.0009765625,
+            "median": -0.02734375,
+            "minimum": -0.0625,
+            "maximum": 0.15625,
+            "positive": 3,
+            "zero": 0,
+            "negative": 5
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.0484375,
+            "median": 0.0625,
+            "minimum": -0.0859375,
+            "maximum": 0.1875,
+            "positive": 3,
+            "zero": 0,
+            "negative": 2
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.005208333333333333,
+            "median": -0.03515625,
+            "minimum": -0.0859375,
+            "maximum": 0.1875,
+            "positive": 2,
+            "zero": 0,
+            "negative": 4
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.03125,
+            "median": 0.015625,
+            "minimum": -0.0625,
+            "maximum": 0.15625,
+            "positive": 4,
+            "zero": 0,
+            "negative": 3
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.04352678571428571,
+            "median": 0.0625,
+            "minimum": -0.0625,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 3
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": -0.009114583333333334,
+            "median": -0.0390625,
+            "minimum": -0.0859375,
+            "maximum": 0.15625,
+            "positive": 2,
+            "zero": 0,
+            "negative": 4
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": -0.016741071428571428,
+            "median": -0.046875,
+            "minimum": -0.0859375,
+            "maximum": 0.109375,
+            "positive": 2,
+            "zero": 0,
+            "negative": 5
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.061197916666666664,
+            "median": 0.0390625,
+            "minimum": -0.03125,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 2
+          }
+        },
+        "conditional_cut": {
+          "all13": {
+            "cases": 13,
+            "mean": 13.659555288461538,
+            "median": 13.84375,
+            "minimum": 9.109375,
+            "maximum": 19.6953125,
+            "positive": 13,
+            "zero": 0,
+            "negative": 0
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 11.638671875,
+            "median": 11.71875,
+            "minimum": 9.109375,
+            "maximum": 13.984375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 16.89296875,
+            "median": 18.0234375,
+            "minimum": 14.25,
+            "maximum": 19.6953125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 14.8921875,
+            "median": 13.84375,
+            "minimum": 13.375,
+            "maximum": 19.6953125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 12.88916015625,
+            "median": 12.15625,
+            "minimum": 9.109375,
+            "maximum": 18.10546875,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 11.638671875,
+            "median": 11.71875,
+            "minimum": 9.109375,
+            "maximum": 13.984375,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 16.89296875,
+            "median": 18.0234375,
+            "minimum": 14.25,
+            "maximum": 19.6953125,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 13.781901041666666,
+            "median": 13.9140625,
+            "minimum": 9.109375,
+            "maximum": 18.10546875,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 13.5546875,
+            "median": 13.5625,
+            "minimum": 9.546875,
+            "maximum": 19.6953125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 14.109933035714286,
+            "median": 13.84375,
+            "minimum": 9.109375,
+            "maximum": 19.6953125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 13.134114583333334,
+            "median": 13.6796875,
+            "minimum": 9.546875,
+            "maximum": 18.0234375,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 14.191964285714286,
+            "median": 13.984375,
+            "minimum": 9.625,
+            "maximum": 19.6953125,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 13.038411458333334,
+            "median": 13.609375,
+            "minimum": 9.109375,
+            "maximum": 18.10546875,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "conditional_margin_loss_all13": {
+            "cases": 13,
+            "mean": 0.015625,
+            "median": 0.015625,
+            "minimum": -0.03125,
+            "maximum": 0.0625,
+            "positive": 7,
+            "zero": 4,
+            "negative": 2
+          }
+        }
+      },
+      "random34202_16": {
+        "opposite": {
+          "all13": {
+            "cases": 13,
+            "mean": -0.0015024038461538462,
+            "median": 0.0234375,
+            "minimum": -0.1875,
+            "maximum": 0.1875,
+            "positive": 7,
+            "zero": 1,
+            "negative": 5
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.0,
+            "median": 0.0078125,
+            "minimum": -0.1875,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 4
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": -0.00390625,
+            "median": 0.0234375,
+            "minimum": -0.12109375,
+            "maximum": 0.046875,
+            "positive": 3,
+            "zero": 1,
+            "negative": 1
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": -0.0625,
+            "median": -0.046875,
+            "minimum": -0.1875,
+            "maximum": 0.046875,
+            "positive": 2,
+            "zero": 0,
+            "negative": 3
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.03662109375,
+            "median": 0.02734375,
+            "minimum": -0.12109375,
+            "maximum": 0.1875,
+            "positive": 5,
+            "zero": 1,
+            "negative": 2
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.0,
+            "median": 0.0078125,
+            "minimum": -0.1875,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 4
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": -0.00390625,
+            "median": 0.0234375,
+            "minimum": -0.12109375,
+            "maximum": 0.046875,
+            "positive": 3,
+            "zero": 1,
+            "negative": 1
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.034505208333333336,
+            "median": 0.03125,
+            "minimum": -0.12109375,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 2
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": -0.03236607142857143,
+            "median": 0.0,
+            "minimum": -0.1875,
+            "maximum": 0.0625,
+            "positive": 3,
+            "zero": 1,
+            "negative": 3
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.024553571428571428,
+            "median": 0.03125,
+            "minimum": -0.1875,
+            "maximum": 0.1875,
+            "positive": 5,
+            "zero": 1,
+            "negative": 1
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": -0.031901041666666664,
+            "median": -0.03125,
+            "minimum": -0.15625,
+            "maximum": 0.125,
+            "positive": 2,
+            "zero": 0,
+            "negative": 4
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": -0.017299107142857144,
+            "median": 0.0,
+            "minimum": -0.1875,
+            "maximum": 0.125,
+            "positive": 3,
+            "zero": 1,
+            "negative": 3
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.016927083333333332,
+            "median": 0.02734375,
+            "minimum": -0.15625,
+            "maximum": 0.1875,
+            "positive": 4,
+            "zero": 0,
+            "negative": 2
+          }
+        },
+        "samepolicy": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.024338942307692308,
+            "median": 0.03125,
+            "minimum": -0.0625,
+            "maximum": 0.09375,
+            "positive": 7,
+            "zero": 2,
+            "negative": 4
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": -0.001953125,
+            "median": 0.0,
+            "minimum": -0.0625,
+            "maximum": 0.0625,
+            "positive": 3,
+            "zero": 2,
+            "negative": 3
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 0.06640625,
+            "median": 0.0859375,
+            "minimum": -0.01171875,
+            "maximum": 0.09375,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 0.0078125,
+            "median": 0.0,
+            "minimum": -0.046875,
+            "maximum": 0.0859375,
+            "positive": 2,
+            "zero": 1,
+            "negative": 2
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.03466796875,
+            "median": 0.046875,
+            "minimum": -0.0625,
+            "maximum": 0.09375,
+            "positive": 5,
+            "zero": 1,
+            "negative": 2
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": -0.001953125,
+            "median": 0.0,
+            "minimum": -0.0625,
+            "maximum": 0.0625,
+            "positive": 3,
+            "zero": 2,
+            "negative": 3
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 0.06640625,
+            "median": 0.0859375,
+            "minimum": -0.01171875,
+            "maximum": 0.09375,
+            "positive": 4,
+            "zero": 0,
+            "negative": 1
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.011067708333333334,
+            "median": 0.009765625,
+            "minimum": -0.0625,
+            "maximum": 0.09375,
+            "positive": 3,
+            "zero": 0,
+            "negative": 3
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.03571428571428571,
+            "median": 0.03125,
+            "minimum": -0.03125,
+            "maximum": 0.0859375,
+            "positive": 4,
+            "zero": 2,
+            "negative": 1
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.027901785714285716,
+            "median": 0.03125,
+            "minimum": -0.0625,
+            "maximum": 0.09375,
+            "positive": 4,
+            "zero": 1,
+            "negative": 2
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 0.020182291666666668,
+            "median": 0.015625,
+            "minimum": -0.046875,
+            "maximum": 0.0859375,
+            "positive": 3,
+            "zero": 1,
+            "negative": 2
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 0.01953125,
+            "median": 0.0,
+            "minimum": -0.046875,
+            "maximum": 0.0859375,
+            "positive": 3,
+            "zero": 1,
+            "negative": 3
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.029947916666666668,
+            "median": 0.03125,
+            "minimum": -0.0625,
+            "maximum": 0.09375,
+            "positive": 4,
+            "zero": 1,
+            "negative": 1
+          }
+        },
+        "zero": {
+          "all13": {
+            "cases": 13,
+            "mean": 0.0078125,
+            "median": 0.0,
+            "minimum": -0.125,
+            "maximum": 0.1640625,
+            "positive": 5,
+            "zero": 3,
+            "negative": 5
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 0.0185546875,
+            "median": 0.0,
+            "minimum": -0.125,
+            "maximum": 0.1640625,
+            "positive": 3,
+            "zero": 3,
+            "negative": 2
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": -0.009375,
+            "median": -0.015625,
+            "minimum": -0.125,
+            "maximum": 0.09375,
+            "positive": 2,
+            "zero": 0,
+            "negative": 3
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": -0.0125,
+            "median": 0.0,
+            "minimum": -0.125,
+            "maximum": 0.09375,
+            "positive": 1,
+            "zero": 2,
+            "negative": 2
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 0.0205078125,
+            "median": 0.015625,
+            "minimum": -0.125,
+            "maximum": 0.1640625,
+            "positive": 4,
+            "zero": 1,
+            "negative": 3
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 0.0185546875,
+            "median": 0.0,
+            "minimum": -0.125,
+            "maximum": 0.1640625,
+            "positive": 3,
+            "zero": 3,
+            "negative": 2
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": -0.009375,
+            "median": -0.015625,
+            "minimum": -0.125,
+            "maximum": 0.09375,
+            "positive": 2,
+            "zero": 0,
+            "negative": 3
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 0.006510416666666667,
+            "median": -0.015625,
+            "minimum": -0.125,
+            "maximum": 0.1640625,
+            "positive": 2,
+            "zero": 1,
+            "negative": 3
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 0.008928571428571428,
+            "median": 0.0,
+            "minimum": -0.125,
+            "maximum": 0.09375,
+            "positive": 3,
+            "zero": 2,
+            "negative": 2
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 0.018973214285714284,
+            "median": 0.0,
+            "minimum": -0.125,
+            "maximum": 0.1640625,
+            "positive": 3,
+            "zero": 2,
+            "negative": 2
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": -0.005208333333333333,
+            "median": -0.0078125,
+            "minimum": -0.125,
+            "maximum": 0.078125,
+            "positive": 2,
+            "zero": 1,
+            "negative": 3
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": -0.013392857142857142,
+            "median": 0.0,
+            "minimum": -0.125,
+            "maximum": 0.09375,
+            "positive": 3,
+            "zero": 1,
+            "negative": 3
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 0.032552083333333336,
+            "median": 0.0,
+            "minimum": -0.03125,
+            "maximum": 0.1640625,
+            "positive": 2,
+            "zero": 2,
+            "negative": 2
+          }
+        },
+        "conditional_cut": {
+          "all13": {
+            "cases": 13,
+            "mean": 13.725961538461538,
+            "median": 13.84375,
+            "minimum": 9.171875,
+            "maximum": 19.7265625,
+            "positive": 13,
+            "zero": 0,
+            "negative": 0
+          },
+          "discovery8": {
+            "cases": 8,
+            "mean": 11.69140625,
+            "median": 11.765625,
+            "minimum": 9.171875,
+            "maximum": 14.046875,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "other5_development": {
+            "cases": 5,
+            "mean": 16.98125,
+            "median": 18.15625,
+            "minimum": 14.34375,
+            "maximum": 19.7265625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_filter": {
+            "cases": 5,
+            "mean": 14.9359375,
+            "median": 13.84375,
+            "minimum": 13.4375,
+            "maximum": 19.7265625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "family_predicate": {
+            "cases": 8,
+            "mean": 12.9697265625,
+            "median": 12.21875,
+            "minimum": 9.171875,
+            "maximum": 18.1640625,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_0": {
+            "cases": 8,
+            "mean": 11.69140625,
+            "median": 11.765625,
+            "minimum": 9.171875,
+            "maximum": 14.046875,
+            "positive": 8,
+            "zero": 0,
+            "negative": 0
+          },
+          "style_1": {
+            "cases": 5,
+            "mean": 16.98125,
+            "median": 18.15625,
+            "minimum": 14.34375,
+            "maximum": 19.7265625,
+            "positive": 5,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_0": {
+            "cases": 6,
+            "mean": 13.84765625,
+            "median": 13.9453125,
+            "minimum": 9.171875,
+            "maximum": 18.1640625,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "mapping_1": {
+            "cases": 7,
+            "mean": 13.621651785714286,
+            "median": 13.625,
+            "minimum": 9.609375,
+            "maximum": 19.7265625,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_0": {
+            "cases": 7,
+            "mean": 14.161830357142858,
+            "median": 13.84375,
+            "minimum": 9.171875,
+            "maximum": 19.7265625,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "label_1": {
+            "cases": 6,
+            "mean": 13.217447916666666,
+            "median": 13.7421875,
+            "minimum": 9.609375,
+            "maximum": 18.1640625,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_-1": {
+            "cases": 7,
+            "mean": 14.267857142857142,
+            "median": 14.046875,
+            "minimum": 9.703125,
+            "maximum": 19.7265625,
+            "positive": 7,
+            "zero": 0,
+            "negative": 0
+          },
+          "direction_1": {
+            "cases": 6,
+            "mean": 13.09375,
+            "median": 13.640625,
+            "minimum": 9.171875,
+            "maximum": 18.15625,
+            "positive": 6,
+            "zero": 0,
+            "negative": 0
+          },
+          "conditional_margin_loss_all13": {
+            "cases": 13,
+            "mean": -0.05078125,
+            "median": -0.0625,
+            "minimum": -0.125,
+            "maximum": 0.0,
+            "positive": 0,
+            "zero": 2,
+            "negative": 11
+          }
+        }
+      }
+    },
+    "selected64_minus_random64_opposite": {
+      "random34201_64": {
+        "cases": 13,
+        "mean": 1.5485652043269231,
+        "median": 1.46875,
+        "minimum": 0.671875,
+        "maximum": 2.734375,
+        "positive": 13,
+        "zero": 0,
+        "negative": 0
+      },
+      "random34202_64": {
+        "cases": 13,
+        "mean": 1.6243614783653846,
+        "median": 1.52685546875,
+        "minimum": 0.8984375,
+        "maximum": 2.546875,
+        "positive": 13,
+        "zero": 0,
+        "negative": 0
+      }
+    },
+    "gradient_finite_calibration": {
+      "selected64": [
+        {
+          "stratum": 0,
+          "cases": 2,
+          "archived_first_order_sum": 1.7487046085298061,
+          "actual_finite_mean": 1.734375,
+          "finite_minus_estimate": -0.014329608529806137,
+          "finite_over_estimate": 0.991805586569676
+        },
+        {
+          "stratum": 1,
+          "cases": 2,
+          "archived_first_order_sum": 1.4646523371338844,
+          "actual_finite_mean": 1.4921875,
+          "finite_minus_estimate": 0.02753516286611557,
+          "finite_over_estimate": 1.0187997944413199
+        },
+        {
+          "stratum": 2,
+          "cases": 2,
+          "archived_first_order_sum": 1.4190400764346123,
+          "actual_finite_mean": 1.484375,
+          "finite_minus_estimate": 0.06533492356538773,
+          "finite_over_estimate": 1.0460416338131506
+        },
+        {
+          "stratum": 3,
+          "cases": 2,
+          "archived_first_order_sum": 1.8240351416170597,
+          "actual_finite_mean": 1.84375,
+          "finite_minus_estimate": 0.019714858382940292,
+          "finite_over_estimate": 1.010808376403024
+        }
+      ],
+      "random34201_64": [
+        {
+          "stratum": 0,
+          "cases": 2,
+          "archived_first_order_sum": -0.013566494977567345,
+          "actual_finite_mean": 0.1171875,
+          "finite_minus_estimate": 0.13075399497756734,
+          "finite_over_estimate": -8.638008578765072
+        },
+        {
+          "stratum": 1,
+          "cases": 2,
+          "archived_first_order_sum": 0.019789671729085967,
+          "actual_finite_mean": 0.0703125,
+          "finite_minus_estimate": 0.05052282827091403,
+          "finite_over_estimate": 3.552989709104566
+        },
+        {
+          "stratum": 2,
+          "cases": 2,
+          "archived_first_order_sum": -0.016526288527529687,
+          "actual_finite_mean": -0.09375,
+          "finite_minus_estimate": -0.07722371147247031,
+          "finite_over_estimate": 5.672780058500742
+        },
+        {
+          "stratum": 3,
+          "cases": 2,
+          "archived_first_order_sum": -0.08365351730026305,
+          "actual_finite_mean": -0.140625,
+          "finite_minus_estimate": -0.05697148269973695,
+          "finite_over_estimate": 1.6810410911384095
+        }
+      ],
+      "random34202_64": [
+        {
+          "stratum": 0,
+          "cases": 2,
+          "archived_first_order_sum": 0.015113705390831456,
+          "actual_finite_mean": 0.06640625,
+          "finite_minus_estimate": 0.051292544609168544,
+          "finite_over_estimate": 4.393776925166514
+        },
+        {
+          "stratum": 1,
+          "cases": 2,
+          "archived_first_order_sum": -0.07201344132772647,
+          "actual_finite_mean": -0.1171875,
+          "finite_minus_estimate": -0.04517405867227353,
+          "finite_over_estimate": 1.6273003739217322
+        },
+        {
+          "stratum": 2,
+          "cases": 2,
+          "archived_first_order_sum": -0.09586633235448971,
+          "actual_finite_mean": -0.109375,
+          "finite_minus_estimate": -0.013508667645510286,
+          "finite_over_estimate": 1.140911489088355
+        },
+        {
+          "stratum": 3,
+          "cases": 2,
+          "archived_first_order_sum": -0.03733005095273256,
+          "actual_finite_mean": -0.0078125,
+          "finite_minus_estimate": 0.029517550952732563,
+          "finite_over_estimate": 0.20928179310261896
+        }
+      ],
+      "selected16": [
+        {
+          "stratum": 0,
+          "cases": 2,
+          "archived_first_order_sum": 0.5994968451559544,
+          "actual_finite_mean": 0.703125,
+          "finite_minus_estimate": 0.10362815484404564,
+          "finite_over_estimate": 1.1728585491006005
+        },
+        {
+          "stratum": 1,
+          "cases": 2,
+          "archived_first_order_sum": 0.5133863463997841,
+          "actual_finite_mean": 0.515625,
+          "finite_minus_estimate": 0.002238653600215912,
+          "finite_over_estimate": 1.004360563181929
+        },
+        {
+          "stratum": 2,
+          "cases": 2,
+          "archived_first_order_sum": 0.49790237098932266,
+          "actual_finite_mean": 0.390625,
+          "finite_minus_estimate": -0.10727737098932266,
+          "finite_over_estimate": 0.7845413534059608
+        },
+        {
+          "stratum": 3,
+          "cases": 2,
+          "archived_first_order_sum": 0.6363687105476856,
+          "actual_finite_mean": 0.6796875,
+          "finite_minus_estimate": 0.04331878945231438,
+          "finite_over_estimate": 1.0680718406394187
+        }
+      ],
+      "random34201_16": [
+        {
+          "stratum": 0,
+          "cases": 2,
+          "archived_first_order_sum": 0.023093885043635964,
+          "actual_finite_mean": 0.08984375,
+          "finite_minus_estimate": 0.06674986495636404,
+          "finite_over_estimate": 3.8903696727614245
+        },
+        {
+          "stratum": 1,
+          "cases": 2,
+          "archived_first_order_sum": 0.009566384367644787,
+          "actual_finite_mean": 0.0,
+          "finite_minus_estimate": -0.009566384367644787,
+          "finite_over_estimate": 0.0
+        },
+        {
+          "stratum": 2,
+          "cases": 2,
+          "archived_first_order_sum": 0.007840597128961235,
+          "actual_finite_mean": 0.046875,
+          "finite_minus_estimate": 0.039034402871038765,
+          "finite_over_estimate": 5.978498732814021
+        },
+        {
+          "stratum": 3,
+          "cases": 2,
+          "archived_first_order_sum": 0.03784315753728151,
+          "actual_finite_mean": 0.1015625,
+          "finite_minus_estimate": 0.06371934246271849,
+          "finite_over_estimate": 2.6837744683419937
+        }
+      ],
+      "random34202_16": [
+        {
+          "stratum": 0,
+          "cases": 2,
+          "archived_first_order_sum": -0.01042087096720934,
+          "actual_finite_mean": 0.109375,
+          "finite_minus_estimate": 0.11979587096720934,
+          "finite_over_estimate": -10.495763774847902
+        },
+        {
+          "stratum": 1,
+          "cases": 2,
+          "archived_first_order_sum": -0.007861908758059144,
+          "actual_finite_mean": 0.0390625,
+          "finite_minus_estimate": 0.046924408758059144,
+          "finite_over_estimate": -4.968577123202749
+        },
+        {
+          "stratum": 2,
+          "cases": 2,
+          "archived_first_order_sum": -0.008082851767539978,
+          "actual_finite_mean": -0.0625,
+          "finite_minus_estimate": -0.05441714823246002,
+          "finite_over_estimate": 7.732419422931211
+        },
+        {
+          "stratum": 3,
+          "cases": 2,
+          "archived_first_order_sum": -0.029151429422199726,
+          "actual_finite_mean": -0.0859375,
+          "finite_minus_estimate": -0.056786070577800274,
+          "finite_over_estimate": 2.9479686486507553
+        }
+      ]
+    },
+    "prior_program_null_unchanged": true,
+    "full_state_control": {
+      "cases": 13,
+      "mean": 13.675180288461538,
+      "minimum": 9.109375,
+      "maximum": 19.6953125,
+      "interpretation": "Descriptive scale, not mediation or circuit fraction."
+    },
+    "native_operator_margin": {
+      "cases": 13,
+      "mean": -6.993990384615385,
+      "minimum": -10.5078125,
+      "maximum": -1.5
+    },
+    "actual_operator_margins": {
+      "selected64": {
+        "opposite": {
+          "cases": 13,
+          "mean": -5.42041015625,
+          "minimum": -9.5625,
+          "maximum": -0.25
+        },
+        "samepolicy": {
+          "cases": 13,
+          "mean": -6.972055288461538,
+          "minimum": -10.546875,
+          "maximum": -1.75
+        },
+        "zero": {
+          "cases": 13,
+          "mean": -6.263221153846154,
+          "minimum": -10.0625,
+          "maximum": -1.125
+        },
+        "conditional_cut": {
+          "cases": 13,
+          "mean": 5.894831730769231,
+          "minimum": 0.5,
+          "maximum": 9.171875
+        }
+      },
+      "random34201_64": {
+        "opposite": {
+          "cases": 13,
+          "mean": -6.968975360576923,
+          "minimum": -10.234375,
+          "maximum": -1.3125
+        },
+        "samepolicy": {
+          "cases": 13,
+          "mean": -6.970252403846154,
+          "minimum": -10.4609375,
+          "maximum": -1.5
+        },
+        "zero": {
+          "cases": 13,
+          "mean": -7.008112980769231,
+          "minimum": -10.546875,
+          "maximum": -1.4375
+        },
+        "conditional_cut": {
+          "cases": 13,
+          "mean": 6.716045673076923,
+          "minimum": 1.0,
+          "maximum": 9.96484375
+        }
+      },
+      "random34202_64": {
+        "opposite": {
+          "cases": 13,
+          "mean": -7.044771634615385,
+          "minimum": -10.4921875,
+          "maximum": -1.625
+        },
+        "samepolicy": {
+          "cases": 13,
+          "mean": -6.963641826923077,
+          "minimum": -10.453125,
+          "maximum": -1.5
+        },
+        "zero": {
+          "cases": 13,
+          "mean": -7.017127403846154,
+          "minimum": -10.3984375,
+          "maximum": -1.8125
+        },
+        "conditional_cut": {
+          "cases": 13,
+          "mean": 6.790865384615385,
+          "minimum": 1.0,
+          "maximum": 10.03125
+        }
+      },
+      "selected16": {
+        "opposite": {
+          "cases": 13,
+          "mean": -6.440204326923077,
+          "minimum": -10.1171875,
+          "maximum": -1.0
+        },
+        "samepolicy": {
+          "cases": 13,
+          "mean": -6.960336538461538,
+          "minimum": -10.4375,
+          "maximum": -1.625
+        },
+        "zero": {
+          "cases": 13,
+          "mean": -6.765925480769231,
+          "minimum": -10.265625,
+          "maximum": -1.25
+        },
+        "conditional_cut": {
+          "cases": 13,
+          "mean": 6.4092548076923075,
+          "minimum": 0.6875,
+          "maximum": 9.6796875
+        }
+      },
+      "random34201_16": {
+        "opposite": {
+          "cases": 13,
+          "mean": -6.9296875,
+          "minimum": -10.3046875,
+          "maximum": -1.5
+        },
+        "samepolicy": {
+          "cases": 13,
+          "mean": -6.962740384615385,
+          "minimum": -10.359375,
+          "maximum": -1.5
+        },
+        "zero": {
+          "cases": 13,
+          "mean": -6.974759615384615,
+          "minimum": -10.4453125,
+          "maximum": -1.5625
+        },
+        "conditional_cut": {
+          "cases": 13,
+          "mean": 6.665564903846154,
+          "minimum": 0.9375,
+          "maximum": 9.98046875
+        }
+      },
+      "random34202_16": {
+        "opposite": {
+          "cases": 13,
+          "mean": -6.995492788461538,
+          "minimum": -10.4609375,
+          "maximum": -1.375
+        },
+        "samepolicy": {
+          "cases": 13,
+          "mean": -6.9696514423076925,
+          "minimum": -10.421875,
+          "maximum": -1.4375
+        },
+        "zero": {
+          "cases": 13,
+          "mean": -6.986177884615385,
+          "minimum": -10.4140625,
+          "maximum": -1.4375
+        },
+        "conditional_cut": {
+          "cases": 13,
+          "mean": 6.731971153846154,
+          "minimum": 1.0,
+          "maximum": 10.03125
+        }
+      }
+    },
+    "secondary_metrics": {
+      "selected64": {
+        "opposite": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.023481609768156424,
+            "minimum": 1.7710682047994107e-05,
+            "maximum": 0.14588660509178106
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 221.42327677651485,
+            "minimum": 68.91171862987684,
+            "maximum": 407.3514273496161
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 64.43612764245628,
+            "minimum": 47.51258362179773,
+            "maximum": 88.7054225021785
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.4324673374541306,
+            "minimum": 0.1345932004489782,
+            "maximum": 0.7956082565422189
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 1.3812725360576923,
+            "minimum": 0.9375,
+            "maximum": 2.109375
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.1366099533265843,
+            "minimum": -0.7096734713196353,
+            "maximum": -0.00010801278490468746
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -5.557020109576584,
+            "minimum": -9.562608012784905,
+            "maximum": -0.838660642168584
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -0.7019230769230769,
+            "minimum": -1.5625,
+            "maximum": 0.09375
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.8716571514423077,
+            "minimum": -0.1484375,
+            "maximum": 2.109375
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 4.378928502002462,
+            "minimum": 1.777335124883741,
+            "maximum": 8.325389566363715
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -1.6314422680087075,
+            "minimum": -3.8698539128338743,
+            "maximum": 0.19017668136932644
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 2.7474862339937545,
+            "minimum": -0.18657109045740927,
+            "maximum": 7.429795834144545
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.11984558754534912,
+            "minimum": 0.047996826656088856,
+            "maximum": 0.18574766355140188
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "samepolicy": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.0006787861393703405,
+            "minimum": 8.228200945809261e-08,
+            "maximum": 0.004484736523369589
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 63.322447352395336,
+            "minimum": 25.71104069019383,
+            "maximum": 142.24571696237686
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 33.91505362823181,
+            "minimum": 25.637257330382056,
+            "maximum": 43.172428743477674
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.12367665498514714,
+            "minimum": 0.050216876348034824,
+            "maximum": 0.2778236659421423
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.3894230769230769,
+            "minimum": 0.25,
+            "maximum": 0.625
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.08242648723041815,
+            "minimum": -0.7251401466912162,
+            "maximum": -6.0168577833863424e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.054481775691956,
+            "minimum": -10.546935168577834,
+            "maximum": -1.9178633136145127
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.02403846153846154,
+            "minimum": -0.21875,
+            "maximum": 0.25
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.045973557692307696,
+            "minimum": -0.265625,
+            "maximum": 0.25
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.22990809136618057,
+            "minimum": -3.112264409518376,
+            "maximum": 4.604877159974074
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.2406680879058308,
+            "minimum": -1.454171734728655,
+            "maximum": 2.1867451845203854
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.4705761792720114,
+            "minimum": -1.4884742828131363,
+            "maximum": 3.150705425245419
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.0013959281090904555,
+            "minimum": -0.025889967637540454,
+            "maximum": 0.02476780185758514
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "zero": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.003080545290016127,
+            "minimum": 3.538044260714803e-06,
+            "maximum": 0.011327766667833283
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 142.1302869557946,
+            "minimum": 50.132667243465306,
+            "maximum": 306.53258150806903
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 53.25062685749533,
+            "minimum": 39.679430444875486,
+            "maximum": 64.25029251918517
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.2775982167105363,
+            "minimum": 0.09791536570989318,
+            "maximum": 0.5986964482579473
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.7884615384615384,
+            "minimum": 0.4375,
+            "maximum": 1.453125
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.0971152497562197,
+            "minimum": -0.7092896169591469,
+            "maximum": -7.965326420134033e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -6.360336403602374,
+            "minimum": -10.062579653264201,
+            "maximum": -1.4163948012001946
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -0.2980769230769231,
+            "minimum": -0.875,
+            "maximum": 0.21875
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.4326923076923077,
+            "minimum": 0.0390625,
+            "maximum": 1.453125
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 3.053223276957216,
+            "minimum": 1.377520980130241,
+            "maximum": 6.383063531129223
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -1.2462977737153962,
+            "minimum": -2.94425789119342,
+            "maximum": 0.36537714669346416
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 1.8069255032418192,
+            "minimum": 0.1407359154309676,
+            "maximum": 5.106450824903378
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.05513811539288006,
+            "minimum": 0.02261007536691789,
+            "maximum": 0.08936651583710407
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "conditional_cut": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 5.625309025678309,
+            "minimum": 0.9738688885487536,
+            "maximum": 8.420481409569648
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 1629.9604560885346,
+            "minimum": 771.8801220021982,
+            "maximum": 2591.995492449273
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 457.65804866001844,
+            "minimum": 337.16306520718393,
+            "maximum": 583.0266482432133
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 3.183516515797919,
+            "minimum": 1.5075783632855433,
+            "maximum": 5.0624911961899866
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 11.447716346153847,
+            "minimum": 7.078125,
+            "maximum": 16.0
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -6.009913491141838,
+            "minimum": -9.173848475226244,
+            "maximum": -0.9858292171538867
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -0.11508176037260702,
+            "minimum": -0.655355553820768,
+            "maximum": -0.0019734752262436928
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -6.9609375,
+            "minimum": -16.0,
+            "maximum": 0.8125
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 5.927884615384615,
+            "minimum": -0.828125,
+            "maximum": 14.09375
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 4.395038040629228,
+            "minimum": 2.469140096363517,
+            "maximum": 6.33258955719821
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -2.3576300155642684,
+            "minimum": -4.901785745790565,
+            "maximum": 0.16394223440522443
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 2.0374080250649604,
+            "minimum": -0.16358053138408302,
+            "maximum": 4.601085553730959
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.9420865727589338,
+            "minimum": 0.9174311926605505,
+            "maximum": 0.9574468085106383
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        }
+      },
+      "random34201_64": {
+        "opposite": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.00028308593214587614,
+            "minimum": 5.958543652103197e-07,
+            "maximum": 0.002731958207768628
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 109.37112732385529,
+            "minimum": 50.97384738984752,
+            "maximum": 205.0088733729817
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 48.44704619352035,
+            "minimum": 38.37026175500159,
+            "maximum": 59.288610998359296
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.21361548305440486,
+            "minimum": 0.09955829568329594,
+            "maximum": 0.4004079558066049
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.6153846153846154,
+            "minimum": 0.4375,
+            "maximum": 0.875
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.07956315506732335,
+            "minimum": -0.6328137468819159,
+            "maximum": -7.32896170898556e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.048538515644245,
+            "minimum": -10.23444828961709,
+            "maximum": -1.5603187225678692
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -0.03365384615384615,
+            "minimum": -0.4375,
+            "maximum": 0.34375
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": -0.008638822115384616,
+            "minimum": -0.484375,
+            "maximum": 0.3828125
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.26286744125100203,
+            "minimum": -1.848596061694174,
+            "maximum": 2.3681827211360806
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -0.174855187780921,
+            "minimum": -1.8833186999951734,
+            "maximum": 1.2528907264314617
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.08801225347008097,
+            "minimum": -2.0796705694059456,
+            "maximum": 2.213108487433013
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.002050982258260406,
+            "minimum": -0.018691588785046728,
+            "maximum": 0.019417475728155338
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "samepolicy": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 6.119861626502748e-06,
+            "minimum": 3.478899569550432e-08,
+            "maximum": 3.9242124222341216e-05
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 73.92283835879178,
+            "minimum": 28.673745878543507,
+            "maximum": 152.9327318939371
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 34.65444836969378,
+            "minimum": 24.235941701922,
+            "maximum": 40.79195190150393
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.1443805436695152,
+            "minimum": 0.056003409919030286,
+            "maximum": 0.2986967419803459
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.40865384615384615,
+            "minimum": 0.25,
+            "maximum": 0.625
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.07928139934406388,
+            "minimum": -0.6625922542712699,
+            "maximum": -6.067616290117428e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.049533803190219,
+            "minimum": -10.460998176162901,
+            "maximum": -1.7103900825968559
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.01201923076923077,
+            "minimum": -0.375,
+            "maximum": 0.125
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.035757211538461536,
+            "minimum": -0.390625,
+            "maximum": 0.1875
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.21854703302477924,
+            "minimum": -0.2386824539941457,
+            "maximum": 1.2949549485860867
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.18450692782309053,
+            "minimum": -1.720031728878262,
+            "maximum": 1.1160034735449589
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.4030539608478698,
+            "minimum": -1.5050277627684792,
+            "maximum": 1.2949549485860867
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.0019604981385091705,
+            "minimum": -0.00281507145950628,
+            "maximum": 0.009433962264150943
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "zero": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.0004689620027947847,
+            "minimum": 2.397954736692033e-07,
+            "maximum": 0.004374596535352004
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 67.84163723166353,
+            "minimum": 41.62283686170105,
+            "maximum": 167.69552855834266
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 45.97763257661127,
+            "minimum": 40.16752301913362,
+            "maximum": 55.952585217887666
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.13250319771809282,
+            "minimum": 0.08129460324550987,
+            "maximum": 0.327530329215513
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.5384615384615384,
+            "minimum": 0.4375,
+            "maximum": 0.75
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.07306182228482652,
+            "minimum": -0.5761428989582917,
+            "maximum": -6.198968472403976e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.081174803054058,
+            "minimum": -10.546936989684724,
+            "maximum": -1.6592216625726959
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.055288461538461536,
+            "minimum": -0.125,
+            "maximum": 0.3125
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.041165865384615384,
+            "minimum": -0.19140625,
+            "maximum": 0.1875
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -0.10128188196375791,
+            "minimum": -2.218582475774997,
+            "maximum": 1.3088654974959661
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.55381039951628,
+            "minimum": -1.2197050668314393,
+            "maximum": 2.546263905813606
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.45252851755252205,
+            "minimum": -1.5246313335392991,
+            "maximum": 1.9632982462439492
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": -0.00035433786964662043,
+            "minimum": -0.016055045871559634,
+            "maximum": 0.011149228130360206
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "conditional_cut": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 6.419227867497937,
+            "minimum": 1.3106951253022987,
+            "maximum": 9.553886610549643
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 1610.9771472215086,
+            "minimum": 766.2858929274764,
+            "maximum": 2520.4682140132445
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 461.688088482017,
+            "minimum": 339.37594927995656,
+            "maximum": 587.9433275088322
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 3.146439740667009,
+            "minimum": 1.4966521346239774,
+            "maximum": 4.922789480494618
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 11.819711538461538,
+            "minimum": 7.328125,
+            "maximum": 16.46875
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -6.814166275006375,
+            "minimum": -9.966016384510313,
+            "maximum": -1.3234666740411836
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -0.0981206019294521,
+            "minimum": -0.7413441602977944,
+            "maximum": -0.0011726345103131308
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -7.377103365384615,
+            "minimum": -16.46875,
+            "maximum": 0.375
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 6.3329326923076925,
+            "minimum": -0.21875,
+            "maximum": 14.46875
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 4.725505686315871,
+            "minimum": 2.7233035361595443,
+            "maximum": 6.741278099958221
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -2.529796667599082,
+            "minimum": -5.068642168992091,
+            "maximum": 0.07617632268977746
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 2.195709018716788,
+            "minimum": -0.0446214520003932,
+            "maximum": 4.896344868970595
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 1.0030715870354778,
+            "minimum": 0.9989059080962801,
+            "maximum": 1.0163666121112929
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        }
+      },
+      "random34202_64": {
+        "opposite": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.00019023083186645113,
+            "minimum": 1.1424916519122327e-07,
+            "maximum": 0.0011788460914321838
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 79.134395854289,
+            "minimum": 35.7975800809851,
+            "maximum": 132.40026147591854
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 46.79431509333393,
+            "minimum": 33.89646065828313,
+            "maximum": 57.745026504942416
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.1545593669029082,
+            "minimum": 0.06991714859567402,
+            "maximum": 0.2585942606951534
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.5769230769230769,
+            "minimum": 0.3125,
+            "maximum": 0.75
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.07622632011493216,
+            "minimum": -0.6475640655395356,
+            "maximum": -5.719094571787764e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.120997954730317,
+            "minimum": -10.492244690945718,
+            "maximum": -1.812742531348535
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.06490384615384616,
+            "minimum": -0.3125,
+            "maximum": 0.3125
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.014122596153846154,
+            "minimum": -0.328125,
+            "maximum": 0.25
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -0.44782087063137044,
+            "minimum": -1.717439344964337,
+            "maximum": 0.799455161767197
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.5326524716437919,
+            "minimum": -1.522771736699423,
+            "maximum": 2.5761590174465057
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.08483160101242151,
+            "minimum": -1.4596362702922032,
+            "maximum": 0.9667654623422411
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": -0.0031850105986835535,
+            "minimum": -0.016055045871559634,
+            "maximum": 0.018010291595197257
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "samepolicy": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.000180805011213931,
+            "minimum": 7.742806401944738e-08,
+            "maximum": 0.0019536754329017715
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 62.963598143740825,
+            "minimum": 25.488655334299853,
+            "maximum": 120.05350776450682
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 34.26641194991412,
+            "minimum": 25.179770651321725,
+            "maximum": 44.47978278611927
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.1229757776244938,
+            "minimum": 0.0497825299498044,
+            "maximum": 0.23447950735255238
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.3798076923076923,
+            "minimum": 0.25,
+            "maximum": 0.625
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.08446356882366371,
+            "minimum": -0.725119244831558,
+            "maximum": -5.9524624575146845e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.04810539574674,
+            "minimum": -10.453184524624575,
+            "maximum": -1.7102962615997708
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.055288461538461536,
+            "minimum": -0.125,
+            "maximum": 0.25
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.08563701923076923,
+            "minimum": -0.0703125,
+            "maximum": 0.25
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.20184513815001098,
+            "minimum": -1.1817348694280676,
+            "maximum": 1.255460501164135
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.33202354036155673,
+            "minimum": -1.2934311378333885,
+            "maximum": 2.363469738856135
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.5338686785115676,
+            "minimum": -0.7427042143171061,
+            "maximum": 1.255460501164135
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.002048493029877554,
+            "minimum": -0.009174311926605505,
+            "maximum": 0.010364931980133881
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "zero": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.0007425199420804464,
+            "minimum": 4.859746325954358e-07,
+            "maximum": 0.006769585267301183
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 103.9126033307302,
+            "minimum": 46.420799486867956,
+            "maximum": 225.59464931771154
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 48.29913712885923,
+            "minimum": 39.260709069844864,
+            "maximum": 57.91662161102289
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.20295430338033243,
+            "minimum": 0.09066562399778898,
+            "maximum": 0.44061454944865536
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.6153846153846154,
+            "minimum": 0.375,
+            "maximum": 0.875
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.07845863607547662,
+            "minimum": -0.7091029202267345,
+            "maximum": -6.708874877681126e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.095586039921629,
+            "minimum": -10.398504588748777,
+            "maximum": -1.9723773985643724
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.09615384615384616,
+            "minimum": -0.375,
+            "maximum": 0.4375
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.07301682692307693,
+            "minimum": -0.171875,
+            "maximum": 0.375
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -0.11652716944199558,
+            "minimum": -1.2659873370261248,
+            "maximum": 0.9567019232638434
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.3090838600253072,
+            "minimum": -1.7662189352563264,
+            "maximum": 2.03708943341665
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.1925566905833116,
+            "minimum": -1.0627861860850814,
+            "maximum": 1.1742785851000759
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": -0.0021610288194854974,
+            "minimum": -0.032362459546925564,
+            "maximum": 0.022298456260720412
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "conditional_cut": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 6.491958593611068,
+            "minimum": 1.3106998178177425,
+            "maximum": 9.644983267778588
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 1615.6084627641596,
+            "minimum": 757.8992317967854,
+            "maximum": 2525.9925289458865
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 461.3546216293963,
+            "minimum": 338.3759028006324,
+            "maximum": 587.6505779775199
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 3.1554852788362493,
+            "minimum": 1.4802719371030966,
+            "maximum": 4.933579158097435
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 11.917067307692308,
+            "minimum": 7.328125,
+            "maximum": 16.65625
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -6.888822707978306,
+            "minimum": -10.032335426306327,
+            "maximum": -1.3233621299236962
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -0.09795732336292222,
+            "minimum": -0.7413218509662034,
+            "maximum": -0.0010854263063269087
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -7.427884615384615,
+            "minimum": -16.65625,
+            "maximum": 0.3125
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 6.356971153846154,
+            "minimum": -0.1875,
+            "maximum": 14.59375
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 4.725498762158596,
+            "minimum": 2.7543555993131683,
+            "maximum": 6.557780269706083
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -2.5232050329513247,
+            "minimum": -5.132871183215401,
+            "maximum": 0.06361098381785608
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 2.202293729207271,
+            "minimum": -0.03800486299936185,
+            "maximum": 4.9505261947620225
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 1.0083356891260136,
+            "minimum": 1.0032822757111597,
+            "maximum": 1.0163666121112929
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        }
+      },
+      "selected16": {
+        "opposite": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.002808140275478709,
+            "minimum": 2.4293378005154785e-06,
+            "maximum": 0.02059154972963257
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 121.29632473680546,
+            "minimum": 35.389680761410254,
+            "maximum": 296.2251248632022
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 43.17350954959349,
+            "minimum": 32.84577260874766,
+            "maximum": 57.599319519729924
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.23690688425157316,
+            "minimum": 0.0691204702371294,
+            "maximum": 0.5785646969984418
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.6298076923076923,
+            "minimum": 0.375,
+            "maximum": 1.109375
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.10001827150771994,
+            "minimum": -0.7579269716342818,
+            "maximum": -7.381103502979158e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -6.540222598430797,
+            "minimum": -10.11726131103503,
+            "maximum": -1.3237100173349265
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -0.22355769230769232,
+            "minimum": -0.5625,
+            "maximum": 0.21875
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.33022836538461536,
+            "minimum": -0.01953125,
+            "maximum": 1.109375
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 3.206087070777083,
+            "minimum": 1.0694597965960184,
+            "maximum": 6.39996013393468
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -1.2506010208356455,
+            "minimum": -2.8481433679770896,
+            "maximum": 0.3780908187707643
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 1.9554860499414368,
+            "minimum": -0.03846977685597188,
+            "maximum": 5.624207390427446
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.04260110100614505,
+            "minimum": 0.019833399444664817,
+            "maximum": 0.06658878504672897
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "samepolicy": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.00035249542142925855,
+            "minimum": 5.050271546011621e-07,
+            "maximum": 0.0019560831067024706
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 55.37856492781001,
+            "minimum": 26.06028214858892,
+            "maximum": 113.78758929916577
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 30.920644835999,
+            "minimum": 24.57418962311148,
+            "maximum": 40.16607877417742
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.10816125962462893,
+            "minimum": 0.05089898857146274,
+            "maximum": 0.22224138534993315
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.34615384615384615,
+            "minimum": 0.25,
+            "maximum": 0.5
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.08344613618698805,
+            "minimum": -0.7251324759023197,
+            "maximum": -6.679599827386085e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.043782674648527,
+            "minimum": -10.437566795998274,
+            "maximum": -1.8127356273187374
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.007211538461538462,
+            "minimum": -0.1875,
+            "maximum": 0.25
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.040865384615384616,
+            "minimum": -0.109375,
+            "maximum": 0.28125
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.32051429373595497,
+            "minimum": -1.898176323884325,
+            "maximum": 2.725164068273607
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -0.08567236950534272,
+            "minimum": -2.725164068273607,
+            "maximum": 2.8472644858264875
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.2348419242306123,
+            "minimum": -1.5525685672538188,
+            "maximum": 2.2613151961615094
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.002039322585930258,
+            "minimum": -0.012944983818770227,
+            "maximum": 0.018575851393188854
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "zero": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.0015091901811619761,
+            "minimum": 8.881157951416083e-07,
+            "maximum": 0.005976491671156519
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 75.63317291107377,
+            "minimum": 32.71600394397977,
+            "maximum": 214.37180668090147
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 38.268357664293426,
+            "minimum": 30.507320108645434,
+            "maximum": 54.05003959785465
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.14772104084194096,
+            "minimum": 0.06389844520308549,
+            "maximum": 0.4186949349236357
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.46153846153846156,
+            "minimum": 0.3125,
+            "maximum": 0.875
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.09569426001796923,
+            "minimum": -0.7745203672754117,
+            "maximum": -6.780570531539354e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -6.8616197407872,
+            "minimum": -10.265692805705315,
+            "maximum": -1.511548378511657
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -0.14182692307692307,
+            "minimum": -0.375,
+            "maximum": 0.1875
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.08623798076923077,
+            "minimum": -0.06640625,
+            "maximum": 0.328125
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 1.4353087866929466,
+            "minimum": -2.479328921801599,
+            "maximum": 4.140488080236857
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -0.8239119591495209,
+            "minimum": -2.3109700912949895,
+            "maximum": 2.3612656398110468
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.6113968275434258,
+            "minimum": -0.8932054629778298,
+            "maximum": 1.8295179889418667
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.017082832149746943,
+            "minimum": -0.011487964989059081,
+            "maximum": 0.046536796536796536
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "conditional_cut": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 6.125300650082166,
+            "minimum": 1.0931749498215344,
+            "maximum": 9.124643166440867
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 1620.026194379023,
+            "minimum": 769.9559440007005,
+            "maximum": 2536.846211237262
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 460.1949094268154,
+            "minimum": 338.7336207465791,
+            "maximum": 586.9696681440331
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 3.1641136608965295,
+            "minimum": 1.503820203126368,
+            "maximum": 4.954777756322778
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 11.725961538461538,
+            "minimum": 7.265625,
+            "maximum": 16.34375
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -6.515596703117959,
+            "minimum": -9.681050739207755,
+            "maximum": -1.1052795667242403
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -0.10634189542565266,
+            "minimum": -0.7012880658918821,
+            "maximum": -0.0013632392077553845
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -7.220552884615385,
+            "minimum": -16.34375,
+            "maximum": 0.46875
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 6.1826923076923075,
+            "minimum": -0.53125,
+            "maximum": 14.40625
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 4.577716098030669,
+            "minimum": 2.6489583681631785,
+            "maximum": 6.323035451538867
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -2.446484242783708,
+            "minimum": -5.012673801464785,
+            "maximum": 0.0946056560058278
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 2.131231855246962,
+            "minimum": -0.10884587452793501,
+            "maximum": 4.831445265128853
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.97972499153605,
+            "minimum": 0.9678899082568807,
+            "maximum": 0.9869067103109657
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        }
+      },
+      "random34201_16": {
+        "opposite": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.00011275179718622551,
+            "minimum": 3.1522571775653327e-07,
+            "maximum": 0.0008537624779651312
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 70.97884806541461,
+            "minimum": 34.4066192025065,
+            "maximum": 147.41808193484155
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 37.55432195148698,
+            "minimum": 30.83173762224776,
+            "maximum": 44.5700990889046
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.1386305626277629,
+            "minimum": 0.0672004281298955,
+            "maximum": 0.2879259412789874
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.44711538461538464,
+            "minimum": 0.375,
+            "maximum": 0.625
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.07791243751556151,
+            "minimum": -0.6328269737477736,
+            "maximum": -6.908254268189751e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.007599937515561,
+            "minimum": -10.304756582542682,
+            "maximum": -1.7102899640288616
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -0.016826923076923076,
+            "minimum": -0.25,
+            "maximum": 0.1875
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.047475961538461536,
+            "minimum": -0.1875,
+            "maximum": 0.25
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.5090071340852871,
+            "minimum": -0.9300535984561024,
+            "maximum": 2.2307862363786715
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -0.07652393169463458,
+            "minimum": -2.745583060158365,
+            "maximum": 2.790160795368307
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.43248320239065224,
+            "minimum": -1.0970496424896274,
+            "maximum": 1.8601071969122047
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.005178781533447969,
+            "minimum": -0.00563014291901256,
+            "maximum": 0.015479876160990712
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "samepolicy": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 2.2478924942298053e-05,
+            "minimum": 6.607952623935247e-07,
+            "maximum": 0.00012213962378169015
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 64.76337562432762,
+            "minimum": 23.829959506097694,
+            "maximum": 122.17254569014332
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 33.04612120426582,
+            "minimum": 21.743415708129618,
+            "maximum": 40.8568711540907
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.1264909680162649,
+            "minimum": 0.04654288966034706,
+            "maximum": 0.23861825330106118
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.3701923076923077,
+            "minimum": 0.25,
+            "maximum": 0.5
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.07805972205375628,
+            "minimum": -0.6475860210607474,
+            "maximum": -6.85617452038656e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.040800106669142,
+            "minimum": -10.359443561745204,
+            "maximum": -1.710122538089573
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.036057692307692304,
+            "minimum": -0.21875,
+            "maximum": 0.1875
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.0673076923076923,
+            "minimum": -0.234375,
+            "maximum": 0.203125
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.2552569845366385,
+            "minimum": -0.6381644349141854,
+            "maximum": 1.6557535271676949
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.4474952419767628,
+            "minimum": -1.3333338627233053,
+            "maximum": 2.320240293838534
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.7027522265134013,
+            "minimum": -1.4285719957749698,
+            "maximum": 2.1688155849302517
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.0021776470000558594,
+            "minimum": -0.006929406669553919,
+            "maximum": 0.00904977375565611
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "zero": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.000522231730405637,
+            "minimum": 5.6787513653354826e-08,
+            "maximum": 0.00597658689047123
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 57.84106180022319,
+            "minimum": 29.320836945541163,
+            "maximum": 95.9554470311165
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 35.613015853913474,
+            "minimum": 28.78176247610447,
+            "maximum": 43.91479443297481
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.11297082382856091,
+            "minimum": 0.057267259659260085,
+            "maximum": 0.18741298248264943
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.39903846153846156,
+            "minimum": 0.25,
+            "maximum": 0.5
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.0861555783807529,
+            "minimum": -0.7745418984542232,
+            "maximum": -6.126253064486775e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.060915193765368,
+            "minimum": -10.445373762530645,
+            "maximum": -1.7610937779913751
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.019230769230769232,
+            "minimum": -0.15625,
+            "maximum": 0.1875
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.038461538461538464,
+            "minimum": -0.203125,
+            "maximum": 0.15625
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.2145056191381875,
+            "minimum": -1.0913740306743276,
+            "maximum": 2.2565627310809404
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.3279466641237906,
+            "minimum": -1.1282813655404702,
+            "maximum": 2.186112552828395
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.5424522832619781,
+            "minimum": -1.301908136516764,
+            "maximum": 1.6313984262483214
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.0008561748379841076,
+            "minimum": -0.006472491909385114,
+            "maximum": 0.011682242990654205
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "conditional_cut": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 6.368385335400721,
+            "minimum": 1.265404549863132,
+            "maximum": 9.492304392192572
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 1619.3988574109217,
+            "minimum": 769.5718192929176,
+            "maximum": 2537.5065877361003
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 461.80034969017083,
+            "minimum": 340.0374383939487,
+            "maximum": 589.0296428685556
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 3.1628883933807064,
+            "minimum": 1.5030699595564796,
+            "maximum": 4.956067554172071
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 11.861778846153847,
+            "minimum": 7.328125,
+            "maximum": 16.53125
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -6.764202154116863,
+            "minimum": -9.981647282186481,
+            "maximum": -1.2777977571987886
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -0.09863725027070906,
+            "minimum": -0.7091326084608038,
+            "maximum": -0.0011785321864810072
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -7.35546875,
+            "minimum": -16.53125,
+            "maximum": 0.40625
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 6.304086538461538,
+            "minimum": -0.34375,
+            "maximum": 14.53125
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 4.670604467944888,
+            "minimum": 2.705192008672975,
+            "maximum": 6.466101038737614
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -2.494738271134437,
+            "minimum": -5.072036737132679,
+            "maximum": 0.08216704699240344
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 2.1758661968104507,
+            "minimum": -0.06935942584370698,
+            "maximum": 4.875438400859503
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.9987443110253035,
+            "minimum": 0.9954128440366973,
+            "maximum": 1.002262443438914
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        }
+      },
+      "random34202_16": {
+        "opposite": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 0.00022717637534245405,
+            "minimum": 3.4889157297834e-08,
+            "maximum": 0.001192015477885264
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 60.684601836162415,
+            "minimum": 26.81932730133403,
+            "maximum": 102.4593061473614
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 36.54382362752317,
+            "minimum": 26.01981853573617,
+            "maximum": 41.35505169850325
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.11852461296125472,
+            "minimum": 0.05238149863541803,
+            "maximum": 0.20011583231906524
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.4230769230769231,
+            "minimum": 0.25,
+            "maximum": 0.5
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.07793554882312727,
+            "minimum": -0.6182931673251844,
+            "maximum": -6.107972657787286e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.073428337284664,
+            "minimum": -10.460998579726578,
+            "maximum": -1.6095949087718697
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.03125,
+            "minimum": -0.375,
+            "maximum": 0.5
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.029747596153846152,
+            "minimum": -0.1875,
+            "maximum": 0.3125
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.14185587903968858,
+            "minimum": -1.2125102209554588,
+            "maximum": 2.386338750443474
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.07242957803379069,
+            "minimum": -2.386338750443474,
+            "maximum": 2.4985529340966814
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.2142854570734792,
+            "minimum": -1.6234969560771788,
+            "maximum": 1.561595583810426
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.0008148835508241304,
+            "minimum": -0.013761467889908258,
+            "maximum": 0.02058319039451115
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "samepolicy": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 4.0136482401235064e-05,
+            "minimum": 3.111829754792796e-07,
+            "maximum": 0.00029968947418975903
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 57.28222694850574,
+            "minimum": 22.928772474289467,
+            "maximum": 120.96182121939687
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 31.19841881472525,
+            "minimum": 22.083756418756227,
+            "maximum": 38.544711599649524
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.11187934950880027,
+            "minimum": 0.044782758738846615,
+            "maximum": 0.2362535570691345
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.35096153846153844,
+            "minimum": 0.1875,
+            "maximum": 0.5
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.08128303247526247,
+            "minimum": -0.6778662069431469,
+            "maximum": -6.549799847199722e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.050934474782954,
+            "minimum": -10.421940497998472,
+            "maximum": -1.6596821413732776
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.021634615384615384,
+            "minimum": -0.0625,
+            "maximum": 0.1875
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.045973557692307696,
+            "minimum": -0.109375,
+            "maximum": 0.21875
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.16933859477806226,
+            "minimum": -0.632392667515907,
+            "maximum": 0.9327444169628762
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.16470664912945016,
+            "minimum": -0.9875735232719844,
+            "maximum": 1.3956263919441085
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.3340452439075125,
+            "minimum": -1.1727435588854815,
+            "maximum": 1.492234630052265
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.0015256982763888912,
+            "minimum": -0.00686106346483705,
+            "maximum": 0.006472491909385114
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "zero": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 5.8314354066916293e-05,
+            "minimum": 2.656048518150456e-07,
+            "maximum": 0.0002981162393003787
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 73.4738180675308,
+            "minimum": 33.991742197152185,
+            "maximum": 115.78899397390185
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 37.27554558757032,
+            "minimum": 31.512871140925917,
+            "maximum": 46.30218276786568
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 0.1435035509131461,
+            "minimum": 0.06639012147881286,
+            "maximum": 0.22615037885527706
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 0.4375,
+            "minimum": 0.3125,
+            "maximum": 0.625
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -0.0790517345199297,
+            "minimum": -0.647577728127259,
+            "maximum": -6.505729176708996e-05
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -7.065229619135315,
+            "minimum": -10.414127557291767,
+            "maximum": -1.6595237038379533
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": 0.01201923076923077,
+            "minimum": -0.3125,
+            "maximum": 0.3125
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 0.019831730769230768,
+            "minimum": -0.15625,
+            "maximum": 0.21875
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.09913178158106538,
+            "minimum": -0.8910789612079547,
+            "maximum": 1.4121076737285159
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.12350781866432857,
+            "minimum": -1.584696120780305,
+            "maximum": 2.227697403019887
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 0.22263960024539398,
+            "minimum": -1.0240676521824825,
+            "maximum": 1.4121076737285159
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 0.0014181272326652416,
+            "minimum": -0.009174311926605505,
+            "maximum": 0.018010291595197257
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        },
+        "conditional_cut": {
+          "KL_native_to_edited": {
+            "cases": 13,
+            "mean": 6.432332815387818,
+            "minimum": 1.3104292030780236,
+            "maximum": 9.55401381134423
+          },
+          "L2_change": {
+            "cases": 13,
+            "mean": 1620.4261065537435,
+            "minimum": 764.5819016866778,
+            "maximum": 2534.5767016049085
+          },
+          "centered_L2_change": {
+            "cases": 13,
+            "mean": 461.5458796402632,
+            "minimum": 339.5894178195835,
+            "maximum": 588.7631967751396
+          },
+          "vocabulary_RMS_change": {
+            "cases": 13,
+            "mean": 3.16489473936278,
+            "minimum": 1.4933240267317927,
+            "maximum": 4.950345120322087
+          },
+          "max_abs_change": {
+            "cases": 13,
+            "mean": 11.905048076923077,
+            "minimum": 7.328125,
+            "maximum": 16.59375
+          },
+          "own_log_probability": {
+            "cases": 13,
+            "mean": -6.828611200898914,
+            "minimum": -10.032384843924106,
+            "maximum": -1.3230628625042193
+          },
+          "opposite_log_probability": {
+            "cases": 13,
+            "mean": -0.09664004705276036,
+            "minimum": -0.7091084087390076,
+            "maximum": -0.0011348439241061214
+          },
+          "own_logit_shift": {
+            "cases": 13,
+            "mean": -7.3954326923076925,
+            "minimum": -16.59375,
+            "maximum": 0.40625
+          },
+          "opposite_logit_shift": {
+            "cases": 13,
+            "mean": 6.330528846153846,
+            "minimum": -0.3125,
+            "maximum": 14.59375
+          },
+          "margin_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 4.691025369379679,
+            "minimum": 2.714457209222962,
+            "maximum": 6.511777457586477
+          },
+          "own_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": -2.5071058777643165,
+            "minimum": -5.093439647870485,
+            "maximum": 0.0820649853951128
+          },
+          "opposite_shift_over_vocabulary_RMS": {
+            "cases": 13,
+            "mean": 2.183919491615362,
+            "minimum": -0.06399554994665571,
+            "maximum": 4.907257145013554
+          },
+          "fraction_full_opposite": {
+            "cases": 13,
+            "mean": 1.0038001297954637,
+            "minimum": 1.0,
+            "maximum": 1.006929406669554
+          },
+          "nonpositive_scale_cases": 0,
+          "zero_vocabulary_change_cases": 0
+        }
+      }
+    },
+    "cohort_dependence": {
+      "discovery8": {
+        "cases": 8,
+        "family": {
+          "filter": 4,
+          "predicate": 4
+        },
+        "style": {
+          "0": 8
+        },
+        "mapping": {
+          "1": 4,
+          "0": 4
+        },
+        "label": {
+          "0": 4,
+          "1": 4
+        },
+        "direction": {
+          "-1": 4,
+          "1": 4
+        }
+      },
+      "other5_development": {
+        "cases": 5,
+        "family": {
+          "filter": 1,
+          "predicate": 4
+        },
+        "style": {
+          "1": 5
+        },
+        "mapping": {
+          "1": 3,
+          "0": 2
+        },
+        "label": {
+          "0": 3,
+          "1": 2
+        },
+        "direction": {
+          "-1": 3,
+          "1": 2
+        }
+      },
+      "all13": {
+        "cases": 13,
+        "family": {
+          "filter": 5,
+          "predicate": 8
+        },
+        "style": {
+          "0": 8,
+          "1": 5
+        },
+        "mapping": {
+          "0": 6,
+          "1": 7
+        },
+        "label": {
+          "0": 7,
+          "1": 6
+        },
+        "direction": {
+          "1": 6,
+          "-1": 7
+        }
+      }
+    },
+    "raw_case_ids_top_tokens_native_values_and_answers_private": true,
+    "source_receipt_sha256": "272d21c363c6cd812f697f71ea412860d7a396688d535f46a748656282096f76",
+    "source_descriptive_sha256": "43ecc86e8596d7480a42e69223aafac50e346c90edb2c8bf1ee4dee22e2fa5ee",
+    "all_fixed_groups_and_operations_retained": true
+  },
+  "interpretation": {
+    "utc": "2026-10-30T23:13:57.447489+00:00",
+    "status": "complete_private_host_audited_bounded_score_effect_closed",
+    "question_id": "Q38",
+    "result_receipt_sha256": "272d21c363c6cd812f697f71ea412860d7a396688d535f46a748656282096f76",
+    "selected64_opposite_margin_mean": 1.5735802283653846,
+    "matched_random64_opposite_means": {
+      "random34201_64": 0.02501502403846154,
+      "random34202_64": -0.05078125
+    },
+    "selected64_samepolicy_margin_mean": 0.021935096153846152,
+    "selected64_clean_zero_margin_mean": 0.7307692307692307,
+    "selected64_conditional_margin_loss": {
+      "cases": 13,
+      "mean": 0.7863581730769231,
+      "median": 0.796875,
+      "minimum": 0.40625,
+      "maximum": 1.125,
+      "positive": 13,
+      "zero": 0,
+      "negative": 0
+    },
+    "selected64_beats_each_random64_on_all13_score_changes": true,
+    "selected64_opposite_score_change_positive_all13": true,
+    "selected64_operator_margin_stays_negative_all13": true,
+    "conclusion": "The fixed small group has a controlled finite causal contribution to comparator-token scores in this assay. Opposite donors change the margin substantially more than same-policy donors and both magnitude-matched random groups. Clean zeroing also shifts scores, and cuts reduce the engineered full-opposite margin. These score effects are insufficient to switch any of the thirteen programs in the closed parent study.",
+    "gradient_interpretation": "The selected64 finite means approximately match the archived first-order sums on the same eight discovery cases. This does not establish a universal approximation bound or a precision-specific mechanism. All six groups and all four strata remain reported.",
+    "limits": "Reused, dependent development cases; response-derived current decision; semantic versus lexical role unresolved; no individual neuron meaning, program-level necessity/sufficiency, deployable trigger, novelty or coding improvement. The other-five cohort has one filter and four predicates, all under the second wording.",
+    "prior_N20_program_null_unchanged": true,
+    "prior_N21_no_selected_gain_and_baseline_limit_unchanged": true,
+    "new_model_calls_for_interpretation": 0,
+    "new_program_executions": 0,
+    "scorer_reruns": 0,
+    "optimizer_steps": 0,
+    "next_question": "Consider a separately frozen answer-independent runtime trigger for the already prescribed gain of two and fixed groups on new error-bearing complete coding tasks. This would be development, not confirmation. Do not assume that reinforcing a chosen operator improves correctness or choose a new dose or coordinate from N24."
+  },
+  "raw_tasks_top_tokens_replies_and_native_values_private": true
+}

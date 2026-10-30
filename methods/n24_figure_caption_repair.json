@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-30T23:12:58.876427+00:00",
+  "status": "figure_caption_completeness_repair",
+  "reason": "The first render omitted the already planned separate full-state control scale and an explicit key for the four stratum markers. Add those caption details.",
+  "original_source_sha256": "17dd87063a07a5435adbd5ab06c4eb7a55298675904068885182f619b36ee5d1",
+  "original_source_preserved": "research/experiments/n24/figure_frozen_v1.py.txt",
+  "original_figures": {
+    "research/figures/n24_summary.png": "717171a1c0d9dfab738020a8f17dc303ac65fe2844a548413418d0c0c57f8160",
+    "research/figures/n24_summary.svg": "c791ef7ad2db330ad0cc3908821237caa087c284909b4a82761135fe276f066d"
+  },
+  "all_scientific_values_rows_operations_axes_and_estimates_unchanged": true,
+  "runner_protocol_and_auditor_unchanged": true,
+  "new_model_forwards": 0,
+  "new_program_executions": 0,
+  "optimizer_steps": 0
+}

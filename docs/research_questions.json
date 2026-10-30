@@ -590,7 +590,7 @@
     {
       "id": "Q38",
       "experiment": "N24: finite causal decision-score effects",
-      "status": "running_private_source_verified_outputs_unread",
+      "status": "complete_private_host_audited_bounded_score_effect_closed",
       "question": "How large and direction-specific are the finite decision-score effects of the fixed native groups that caused zero program flips?",
       "question_provenance": "N20 saves current logit hashes and argmax tokens, not the two operator logits or full-vocabulary changes. The archived score is a gradient hypothesis for a continuous margin, not a prediction of program flips.",
       "parents": [
@@ -601,12 +601,31 @@
         "Q37"
       ],
       "method": "Reuse all six N20 groups, original recipients, actual donor states and existing four operations: opposite, same-policy, zero and conditional cut. No new strengths, coordinates, tasks, ranking, fitted values or continuation generation. Compare exact finite margins to the already saved stratum-averaged first-order estimates only on the identical eight discovery cases.",
-      "result": "The missing-outcome review and protocol preceded implementation. Six independent numerical metric cases, five invalid-metric refusals, 48 actual random-Gemma current/group/conditional/self/restoration cases and two malformed-cache refusals pass. The fixture records 312 tiny forwards, 520 input-token exposures and zero generated tokens, backwards or optimizer updates. Both isolated modules import; Ruff and all packaged hashes/cells pass. Independent trajectory arithmetic gives 578 trajectories, 3,330 root forwards and 48,228 input-token exposures, with zero generations. All 53 actual source and parent files, the metric, auditor and private notebook are frozen. At the source freeze, no N24 pretrained output existed. The first notebook creation returned HTTP 400; authenticated own-job inventory confirms no job was created. A separately frozen lossless wrapper reduces transport from 2,516,154 to 722,963 bytes. Every original cell, input and all fifty-three frozen source/parent hashes remain exact. The original runner, auditor, metrics, counts and caps are unchanged. One bounded private N24 job is now running. Exact server transport source and private metadata pass verification, with no datasets. The lossless transport proof retains the exact original notebook and every scientific source/input hash. No N24 measurement output has been accessed.",
-      "interpretation": "This is a post-null follow-up on reused development data. It can quantify a bounded token-level causal contribution or a failed finite approximation. It cannot rescue the failed program-level screen, establish semantic meaning, independence of nuisance replications, a deployable trigger, novelty or coding improvement. The full-state scale ratio is descriptive, not a circuit fraction or mediation estimate. Uncentered RMS can reflect probability-invariant logit offsets; centered L2 and KL remain separate. The prospective source-to-claim limits are recorded before output access.",
-      "next_question": "At terminal status retrieve the compact measurements once, verify original and lossless-transport source/privacy/manifest witnesses, and run the frozen auditor once. Preserve any failed guard. If the audit passes, report all finite scores and matched contrasts while keeping the program-level null unchanged. No new rank or dose follows from these outcomes; broader claims require a separate fresh design.",
-      "direction_decision": "Measure the missing continuous outcome with the exact existing groups and historical current-state hashes. Do not create another rank, dose or rewritten task panel."
+      "result": "All 578 trajectories and mandatory guards pass. Selected64 opposite donors shift the operator margin by mean +1.57358, positive on all thirteen reused cases, versus matched random means +0.02502 and -0.05078. The selected shift exceeds each random shift on every case. Same-policy donors average +0.02194. Native zeroing shifts +0.73077; conditional cuts reduce the full-opposite margin by +0.78636, positive on all thirteen. Nested16 opposite shift averages +0.55379; every group and operation remains reported. The selected64 actual margin remains negative on all thirteen, so the original zero program flips remain unchanged. Actual zero backwards/updates, 3,330 forwards, 48,228 input-token exposures and zero generated tokens. Worker 728.52 seconds and notebook 765.09 seconds, not charged quota. All 525 native h hashes, current-state, self, conditional-self, cache, restoration, parameter and source/transport guards pass.",
+      "interpretation": "Controlled finite causal contribution to comparator-token scores on reused development, with clear separation from same-policy and matched-random controls. This is insufficient for the prior program-level necessity/sufficiency screen. The selected64 finite means approximately agree with archived first-order estimates on the same eight discovery cases. Semantic versus lexical interpretation remains unresolved; no individual neuron meaning, deployable trigger, coding improvement or novelty. Full-state ratios are descriptive, not mediation. Other-five means are unbalanced second-wording development, not fresh confirmation.",
+      "next_question": "Review a separately frozen answer-independent runtime syntax trigger for the already prescribed gain of two and fixed groups on new error-bearing complete functions. Do not assume that reinforcing a chosen operator improves correctness. Keep the global-edit null and every old grade unchanged.",
+      "direction_decision": "Deepen the bounded score-contribution evidence while testing usefulness separately. No new coordinate, strength, rank or fitted trigger. No N24 rerun."
+    },
+    {
+      "id": "Q39",
+      "experiment": "N25: answer-independent runtime coding controller",
+      "status": "intent_only_not_frozen_not_implemented_not_launched",
+      "question": "Can a fixed runtime syntax trigger make the existing native gain-of-two edit useful for complete coding without a baseline answer or known comparator position?",
+      "question_provenance": "N24 shows selected64 causal comparator-score shifts well above both matched controls, but every parent program still stays unchanged. N21 global gain two has no selected coding gain and an unassessable format gate. The old current decision uses an original response-derived prefix, so it is not a deployable controller. N23 semantic/lexical counterbalance failed and remains closed.",
+      "parents": [
+        "Q34",
+        "Q35",
+        "Q36",
+        "Q37",
+        "Q38"
+      ],
+      "method": "Keep exactly selected64 and both already fixed random64 groups and the already prescribed factor two. Compare original, same-scope identity, selected gain two and both random gain-two policies. No new coordinate, rank, strength, fitted vector or dose search. A fixed Python-prefix recognizer may apply the activation gain only before syntactic decision opportunities during the model's own free generation. The recognizer may inspect only tokens already generated in that same response. It may parse generated parameter/iterator bindings and identify a trailing bound name after return or if. It must not use task IDs, expected programs, hidden oracles, correct comparator tokens, baseline completions, future tokens or a learned activation classifier. Its grammar, exact boundary rules and event cap must be frozen and host-tested before model outcomes.",
+      "result": "Proposal only. No N25 protocol, dataset, runner or model output exists. The next gate is a small prospectively frozen host check of grammar and cached-control feasibility.",
+      "interpretation": "A causal contribution to the model's chosen operator is not a correctness signal. Reinforcing that contribution may reinforce mistakes. The new study must test this uncertainty directly, rather than infer benefit from N24. New development candidate, not confirmation of a useful edit. Fresh confirmation stays separate. Conditional steering and code steering are known. No semantic neuron meaning, new capability, novelty or benefit claimed.",
+      "next_question": "First freeze a small host feasibility protocol. Only then freeze the exact prospective coding protocol and independent sources/auditor before a private model run. Fresh permitted quota and two-hour reserve remain required. No N25 GPU job or launch-ready protocol exists.",
+      "direction_decision": "Test usefulness separately from the bounded N24 score contribution. Keep the exact existing groups and gain two. No outcome-based dose, coordinate or trigger fitting."
     }
   ],
-  "active_question_id": "Q38",
-  "next_question_id": "Q38"
+  "active_question_id": "Q39",
+  "next_question_id": "Q39"
 }

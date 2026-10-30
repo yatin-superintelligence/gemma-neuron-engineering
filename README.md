@@ -4,6 +4,8 @@ A no-training study of native neurons, small groups and direct model edits in Ge
 
 **The tested physical edits are reproducible. Individual neuron meanings and a confirmed coding improvement remain unestablished.**
 
+N24 finds a controlled comparator-score contribution: selected64 opposite-policy donors shift the logit margin by +1.574 on average, versus +0.025 and -0.051 for matched random groups. Same-policy donors average +0.022. All 578 trajectories and guards pass, with zero updates. Every nominated operator margin remains on the original side, so the prior program-level null remains unchanged. See the [complete result and limits](results/n24_finite_summary.json).
+
 N21 is complete: all 160 records pass audit. The selected edit matches the original at 12/24 coding functions; both random controls score 14/24. Ten capped source-format failures exceed the predeclared baseline limit, making the planned benefit interpretation unassessable. There is no selected coding gain.
 
 ## Read the research
@@ -38,7 +40,7 @@ Retention scores follow the frozen checks. One rotation probe checks returned va
 
 See the [complete N21 result](results/n21_utility_summary.json), [all five weight recipes](models/n21/recipe.json) and [prospective protocol](methods/n21_prospective_protocol.json). The [completed stage/site control](results/n22_stage_site_summary.json) separates stage from coverage on the same inherited cohort. Both missing cells transfer 0/13; only the inherited all-35-layer current-decision cell transfers 13/13. Same-rule preservation is 13/13 throughout. All 273 records and mandatory guards pass. The [N23 original-only task gate](results/n23_task_gate_summary.json) stopped before any neuron edit. Full role requirements pass 16/32, no complete counterbalance block qualifies, and retention passes 5/8. Diagnostic denotation passes 28/32 but does not replace the required operand-order checks. All 40 records and mandatory guards pass audit; no prompts, caps or grades were changed. The [prospective protocol](methods/n23_baseline_protocol.json) remains preserved.
 
-The [next finite-score protocol](methods/n24_finite_score_protocol.json) measures the existing groups' effects on operator logits and the full output distribution. It uses exact prior-state hash guards, matched controls and zero new completions. One private job is running; no N24 measurement result is reported. The [generic metric helper](interpretability/decision_scores.py) computes compact score changes without fitting parameters. A preserved notebook-creation failure was repaired through lossless transport; all scientific sources and settings remain fixed.
+The [finite-score study](methods/n24_finite_score_protocol.json) is complete. [Every group and operation](docs/figures/n24_summary.png), [all 24 runtime recipes](models/n24/recipe.json), the [metric helper](interpretability/decision_scores.py) and [plot source](scripts/plot_n24_summary.py) are preserved. This is a bounded score contribution on reused development, with no individual semantic meaning or coding gain. The [next controller intent](methods/n25_runtime_controller_intent.json) considers a fixed runtime syntax trigger without a known comparator position or baseline answer. It is not implemented or launched.
 
 ## Reproduce an edit
 

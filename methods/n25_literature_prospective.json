@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-30T23:19:00.786980+00:00",
+  "read_scope": "Three primary abstract and bibliography pages only. No full-paper or appendix replication.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2409.05907",
+      "title": "Programming Refusal with Conditional Activation Steering",
+      "supported": "Inference-time conditional activation steering already exists.",
+      "boundary": "Do not extract or fit a condition/steering vector for this study."
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.01878",
+      "title": "GAPS: Dimension-Level Gates for Conditional Activation Steering",
+      "supported": "Conditional control over when and which dimensions to steer already exists.",
+      "boundary": "Do not adopt statistical separability, Gaussian posterior or tuned activation gates; the proposed recognizer is fixed syntax, not a fitted model."
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.19238",
+      "title": "LLMs program using Reusable and Composable Abstract Representations",
+      "supported": "Manipulating code function,language and implementation through activation steering is prior work.",
+      "boundary": "Its fine-tuning and trained synthetic-model experiments are prohibited here. No claim that this native-channel controller reproduces its abstractions."
+    }
+  ],
+  "decision": "No new method or capability claim. Fixed syntax-triggered native gains need direct executable evidence and separate confirmation.",
+  "optimizer_steps": 0
+}
