@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-30T13:15:28.457507+00:00",
+  "before_any_N17_output_access": true,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0,
+  "error": "Protocol/host auditor sum for fixed overhead calls was646. The listed components sum to546. GPU runner and all scientific conditions are unaffected.",
+  "components": {
+    "native_capture_and_base_replay": 40,
+    "parent_full_site_replay": 80,
+    "group_self": 120,
+    "unit_self": 54,
+    "native_cached": 12,
+    "group_cached": 36,
+    "unit_cached": 108,
+    "restorations": 96
+  },
+  "actual_fixed_sum": 546,
+  "correct_total_formula": "546+sum(new_generated_tokens+1)=1254+sum(new_generated_tokens)",
+  "input_exposure_formula": "Unchanged:6*S40+9*S6+13*S4+104+21*S2main+27*S2unit+sum(2*input_tokens+generated_tokens-1).",
+  "repair": "Original frozen protocol, analysis plan and auditor remain byte-preserved. New auditor_v2 changes only646to546and the versioned analysis-plan pathname. All grades, thresholds, conditions, sources and other checks remain identical. No original scorer has been run on N17outputs.",
+  "original_auditor_sha256": "3cb11a0215dd77f475840d2e2b1665b093e7d9c51ac80a2678f7f491c1216257",
+  "new_auditor_sha256": "1c0114559edede558f528eb892e7508eee1d43a6723a35cf8a2b2a6798b5dde0",
+  "inverse_substitution_exact": true,
+  "not_a_tolerance_change": true,
+  "GPU_rerun_required": false
+}

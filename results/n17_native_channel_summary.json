@@ -1,0 +1,1990 @@
+{
+  "utc": "2026-10-30T13:28:37.777850+00:00",
+  "source_sha256": "f71d83b2bec801df56ef0f6cb6ccfe0ffdfe3a5f45e5e18be6bb6d8aa4d3d45e",
+  "extraction_only_no_new_grades": true,
+  "predictions": 1002,
+  "new_predictions": 708,
+  "exact_parent_carries": 120,
+  "baseline_reference_rescues": 174,
+  "optimizer_steps": 0,
+  "new_backward_passes": 0,
+  "estimands": {
+    "sufficiency_pass": false,
+    "clean_necessity_pass": false,
+    "conditional_transfer_necessity_pass": false,
+    "bounded_group_role_candidate": false,
+    "opposite_transfer": {
+      "selected96": 0,
+      "random17101": 0,
+      "random17102": 0
+    },
+    "same_policy_preservation": {
+      "selected96": 16,
+      "random17101": 16,
+      "random17102": 16
+    },
+    "clean_role_losses": {
+      "selected96": 0,
+      "random17101": 0,
+      "random17102": 0
+    },
+    "conditional_transfer_losses": {
+      "selected96": 0,
+      "random17101": 0,
+      "random17102": 0
+    },
+    "parent_alternative_correct": 8,
+    "conditions": [
+      {
+        "condition": "base",
+        "cohort": "main",
+        "record_kind": "carry",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "S05_06_09_opposite",
+        "cohort": "main",
+        "record_kind": "carry",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 4,
+            "opposite_correct": 4
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 3,
+            "opposite_correct": 4
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 1,
+        "coding_losses": 9,
+        "capped": 0
+      },
+      {
+        "condition": "S05_06_09_samepolicy",
+        "cohort": "main",
+        "record_kind": "carry",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "selected96_opposite",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "selected96_samepolicy",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 1,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "selected96_zero",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "selected96_gain2",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "selected96_rescue",
+        "cohort": "main",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "selected96_cut",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 4,
+            "opposite_correct": 4
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 3,
+            "opposite_correct": 4
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 1,
+        "coding_losses": 9,
+        "capped": 0
+      },
+      {
+        "condition": "random17101_opposite",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "random17101_samepolicy",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "random17101_zero",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "random17101_gain2",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "random17101_rescue",
+        "cohort": "main",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "random17101_cut",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 4,
+            "opposite_correct": 4
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 3,
+            "opposite_correct": 4
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 1,
+        "coding_losses": 9,
+        "capped": 1
+      },
+      {
+        "condition": "random17102_opposite",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "random17102_samepolicy",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "random17102_zero",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "random17102_gain2",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 1,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "random17102_rescue",
+        "cohort": "main",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "random17102_cut",
+        "cohort": "main",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 8,
+            "correct": 4,
+            "opposite_correct": 4
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 4,
+            "opposite_correct": 4
+          },
+          "extremum": {
+            "rows": 8,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 1,
+        "coding_losses": 8,
+        "capped": 1
+      },
+      {
+        "condition": "unit_L5_selected96_opposite",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L5_selected96_zero",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L5_selected96_rescue",
+        "cohort": "unit",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L5_random17101_opposite",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L5_random17101_zero",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L5_random17101_rescue",
+        "cohort": "unit",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L5_random17102_opposite",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L5_random17102_zero",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L5_random17102_rescue",
+        "cohort": "unit",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L6_selected96_opposite",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L6_selected96_zero",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L6_selected96_rescue",
+        "cohort": "unit",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L6_random17101_opposite",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L6_random17101_zero",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L6_random17101_rescue",
+        "cohort": "unit",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L6_random17102_opposite",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L6_random17102_zero",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L6_random17102_rescue",
+        "cohort": "unit",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L9_selected96_opposite",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L9_selected96_zero",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L9_selected96_rescue",
+        "cohort": "unit",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L9_random17101_opposite",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L9_random17101_zero",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L9_random17101_rescue",
+        "cohort": "unit",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L9_random17102_opposite",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L9_random17102_zero",
+        "cohort": "unit",
+        "record_kind": "new",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "unit_L9_random17102_rescue",
+        "cohort": "unit",
+        "record_kind": "reference",
+        "families": {
+          "filter": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 2,
+            "correct": 2,
+            "opposite_correct": 0
+          },
+          "extremum": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "rounding": {
+            "rows": 0,
+            "correct": 0,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 1,
+            "correct": 1,
+            "opposite_correct": 0
+          }
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      }
+    ],
+    "scope": "Reused development; no individual semantic meaning or confirmed original-model improvement."
+  },
+  "counters": {
+    "actual_model_forward_calls": 9800,
+    "actual_input_token_exposures": 167136,
+    "new_generated_tokens": 8546,
+    "seconds": 1123.037815663
+  },
+  "notebook_seconds": 1203.30374148,
+  "matching": {
+    "groups": 3,
+    "per_group": 96,
+    "per_layer": 32,
+    "random_seeds": [
+      17101,
+      17102
+    ],
+    "cross_random_overlap": 5,
+    "controls_match_activity_column_norm_and_paired_delta_magnitude": true
+  },
+  "guards": {
+    "native_hashes": 120,
+    "parent_logits": 80,
+    "self_logits": 174,
+    "cached_self_hashes": 144,
+    "restorations": 96,
+    "all_scope_and_parameter_guards_pass": true
+  },
+  "incidental_gains": "All six condition-level gains refer to one extremum instance, including the inherited donor arm and a random amplification arm. No selected improvement or confirmation.",
+  "counter_erratum": "Fixed overhead546,not646;clerical amendment frozen before output access,all original sources preserved.",
+  "interpretation": "All three causal gates fail. Nine unit sentinels match their controls. No useful coding improvement or individual semantic function established."
+}

@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-30T13:17:15.939622+00:00",
+  "posthoc": true,
+  "before_N17_output_access": true,
+  "new_model_forwards": 0,
+  "new_grades": 0,
+  "optimizer_steps": 0,
+  "source_sha256": "4cdfbd5be0746fa228586f1aab0ef5f53418151af04fcebf163890916b707be9",
+  "condition": "S05_06_09_opposite",
+  "cells": [
+    {
+      "style": 0,
+      "mapping": 0,
+      "label": 0,
+      "filter_opposite_correct": false,
+      "predicate_opposite_correct": false
+    },
+    {
+      "style": 0,
+      "mapping": 0,
+      "label": 1,
+      "filter_opposite_correct": true,
+      "predicate_opposite_correct": true
+    },
+    {
+      "style": 0,
+      "mapping": 1,
+      "label": 0,
+      "filter_opposite_correct": true,
+      "predicate_opposite_correct": true
+    },
+    {
+      "style": 0,
+      "mapping": 1,
+      "label": 1,
+      "filter_opposite_correct": false,
+      "predicate_opposite_correct": false
+    },
+    {
+      "style": 1,
+      "mapping": 0,
+      "label": 0,
+      "filter_opposite_correct": true,
+      "predicate_opposite_correct": true
+    },
+    {
+      "style": 1,
+      "mapping": 0,
+      "label": 1,
+      "filter_opposite_correct": false,
+      "predicate_opposite_correct": false
+    },
+    {
+      "style": 1,
+      "mapping": 1,
+      "label": 0,
+      "filter_opposite_correct": false,
+      "predicate_opposite_correct": false
+    },
+    {
+      "style": 1,
+      "mapping": 1,
+      "label": 1,
+      "filter_opposite_correct": true,
+      "predicate_opposite_correct": true
+    }
+  ],
+  "all_marginal_splits": "4/8 transfer successes within each family, wording, mapping, label and requested direction. Marginal balance is not independent generalization.",
+  "interpretation": "Existing16results span crossed settings but use eight unique prefix states. Keep all joint cells; do not infer a universal abstract-rule unit from balanced marginal counts.",
+  "joint_pattern": "Both families agree in all8prefixcells. Transfer succeeds for lower-mode requests in wording0 and higher-mode requests in wording1;the opposite direction in each wording does not transfer. This is a wording-by-request-direction interaction on reused development,not full rule invariance."
+}

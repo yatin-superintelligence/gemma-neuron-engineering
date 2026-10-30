@@ -88,9 +88,10 @@
   "clean_coding": "Report every main/unit condition and all main 32 coding gains/losses against the original baseline, alongside retention. Gain 2 is fixed and has both matched random amplification controls. No winning-strength or incidental-gain selection. Useful improvement requires a separate frozen fresh confirmation.",
   "decode": "Greedy 64 newtokenEOS decoding, unchanged graders, raw text/tokenIDs saved. No rerolls.256 fresh executable stress probes, seed 3117 on eligible correct/changed outputs.",
   "counter_contract": {
-    "fixed_calls": 646,
-    "total_calls": "646 + sum(new_generated_tokens+1) =1354 +sum(new_generated_tokens)",
-    "input_exposures": "6*S40+9*S6+13*S4+104+21*S2 main+27*S2 unit+sum(2*input_tokens+generated_tokens-1 for 708 new). S40 allpromptlengths;S6 unitcase lengths;S4 cache sentinel lengths;S2 first 2 restore lengths per grid."
+    "fixed_calls": 546,
+    "total_calls": "546 + sum(new_generated_tokens+1) = 1254 + sum(new_generated_tokens)",
+    "input_exposures": "6*S40+9*S6+13*S4+104+21*S2 main+27*S2 unit+sum(2*input_tokens+generated_tokens-1 for 708 new). S40 allpromptlengths;S6 unitcase lengths;S4 cache sentinel lengths;S2 first 2 restore lengths per grid.",
+    "dated_amendment": "n17_counter_amendment.json"
   },
   "stopping": "Any lineage, self, cache, scope, restoration, unexpected mutation, matching or counter gate failure stops interpretation. Preserve partials. No tolerance changes or completed-panel regeneration. Matching stop is not a scientific neuron null.",
   "resources": {

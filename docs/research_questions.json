@@ -436,7 +436,7 @@
       ],
       "method": "Test the six nonadjacent pairs, all ten triples and all five four-layer subsets. Preserve all forty inputs and grades, actual opposite/same-rule donors and the fixed role gate. Carry 200 necessary common parent records exactly.",
       "result": "All 1,880 records were audited, including 1,680 new outputs and 200 exact carried parents. Across all 31 nonempty subsets, no singleton or pair passes the gate. Five triples pass. The prescribed smallest-cardinality and lexicographic selection is layers 5, 6 and 9: opposite-rule transfer in 8/16 cases, same-rule preservation in 16/16 and all eight retention controls correct. Every guard passes, with zero backward passes and updates.",
-      "interpretation": "Conditional rule transfer is localized to a three-layer site on reused development prompts. This is sufficiency under donor interventions, not individual neuron meaning, formal synergy, necessity or original-model improvement.",
+      "interpretation": "Conditional rule transfer is localized to a three-layer site on reused development prompts. This is sufficiency under donor interventions, not individual neuron meaning, formal synergy, necessity or original-model improvement. A later posthoc reading found matching filter/predicate outcomes in every prefix cell. The selected site transfers lower-mode requests in wording 0 and higher-mode requests in wording 1; it fails the opposite direction in each wording. Balanced marginal counts do not establish complete rule invariance.",
       "next_question": "Which native channels inside layers5,6,9 carry the controlled donor effect?",
       "direction_decision": "Keep every one of the 31 subset outcomes. Queue prospective channel partitions, necessity/rescue and matched random controls after the requested behavior pilots. Do not select a higher-scoring triple."
     },
@@ -475,7 +475,7 @@
     {
       "id": "Q31",
       "experiment": "N17: matched native-channel necessity and transfer",
-      "status": "private_source_verified_running_no_outputs_accessed",
+      "status": "complete_private_host_audited_all_primary_gates_failed_closed",
       "question": "Which small native post-gating groups within the already validated layers 5, 6 and 9 site causally mediate the conditional rule transfer, and do prescribed edits improve clean coding?",
       "question_provenance": "The prescribed next branch follows the complete N16 subset audit. It returns to the native-neuron goal after the requested behavior pilots.",
       "parents": [
@@ -484,12 +484,28 @@
         "Q30"
       ],
       "method": "Forward-only activity contrasts select 96 native post-gating coordinates in layers 5, 6 and 9. Two fixed random groups match activation RMS, outgoing-column norm and paired donor-change RMS. Fixed actual-donor swaps, clean gains 0 and 2, exact rescue and conditional transfer cuts separate the causal questions. Nine individual-unit sentinels are also tested. There are zero optimizer updates.",
-      "result": "N17v1 is the one active private notebook. Source and privacy verified; no pretrained outcomes read. Ten tiny-Gemma scope/cache cases and forty token/oracle checks passed before launch.",
-      "interpretation": "The full-site positive control is inherited from N16. Sparse necessity, sufficiency and useful gains remain untested. The 174 rescue rows are baseline references after self/cache proofs, not newly generated identity outputs.",
-      "next_question": "Do selected native scalar groups exceed both matched controls on clean necessity and controlled transfer?",
-      "direction_decision": "Execute the frozen 1,002-record grid and preserve every outcome. Keep a strict-matching stop if it occurs, without relaxing tolerances or changing coordinates from results. All closed panels remain closed."
+      "result": "All 1,002 records pass, including 708 new predictions, 120 parent carries and 174 baseline-reference rescues. Selected and both random groups produce zero opposite-rule transfers, zero clean-role losses and zero conditional-transfer losses. Same-rule preservation is 16/16 for all. All nine individual-unit sentinel arms match their controls. Retention passes throughout.",
+      "interpretation": "All three primary causal criteria fail. Six condition-level incidental gains concern the same extremum instance, also improved by a random amplification arm and the inherited full donor. There is no confirmed coding improvement or individual semantic function. A prospective arithmetic erratum corrected fixed call overhead from 646 to 546 before output access; every original record remains preserved.",
+      "next_question": "Can a fixed broader native-channel partition locate the inherited full-vector donor effect before further sparse ranking?",
+      "direction_decision": "Close N17 without new strengths, re-ranking or reruns. Broaden to prescribed native-channel coverage while preserving all matched nulls and the wording-by-direction limits of the parent site."
+    },
+    {
+      "id": "Q32",
+      "experiment": "N18: task-informed position and native-channel coverage",
+      "status": "protocol_frozen_not_implemented_or_launched",
+      "question": "Does moving observation and intervention after the coding task strengthen causal policy control, and can a prescribed broader channel partition locate that effect?",
+      "question_provenance": "N17 null and its pre-result interpretation options require broadening beyond a prefix that has not read the task.",
+      "parents": [
+        "Q28",
+        "Q31"
+      ],
+      "method": "Use the same forty inputs at the final prompt position. Require a controlled full-site donor gate first, then compare all four magnitude-stratified native-channel quarters with same-rule donors, clean gains, exact rescue and conditional cuts. Zero training.",
+      "result": "No N18 model execution or output. Protocol is frozen before implementation.",
+      "interpretation": "This is a new observation position and a bounded causal coverage question. It cannot retroactively reinterpret N17 or establish individual neuron meanings.",
+      "next_question": "Does the task-informed full-site donor gate pass, and can a quarter preserve that controlled effect?",
+      "direction_decision": "Implement and independently validate the frozen phase gate and source/auditor before any launch. Fresh quota and two-hour reserve remain mandatory."
     }
   ],
-  "active_question_id": "Q31",
-  "next_question_id": "Q31"
+  "active_question_id": "Q32",
+  "next_question_id": "Q32"
 }

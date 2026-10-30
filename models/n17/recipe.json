@@ -1,0 +1,1886 @@
+{
+  "schema_version": 1,
+  "title": "N17 validated native scalar policies",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only unquantized BF16",
+  "optimizer_steps": 0,
+  "actual_backward_passes": 0,
+  "layers": [
+    5,
+    6,
+    9
+  ],
+  "coordinate_convention": "Native post-gating down-projection input. flat=layer*6144+channel for these layers. Not residual coordinates.",
+  "groups": {
+    "selected96": [
+      {
+        "flat": 31529,
+        "layer": 5,
+        "channel": 809
+      },
+      {
+        "flat": 33603,
+        "layer": 5,
+        "channel": 2883
+      },
+      {
+        "flat": 33403,
+        "layer": 5,
+        "channel": 2683
+      },
+      {
+        "flat": 33995,
+        "layer": 5,
+        "channel": 3275
+      },
+      {
+        "flat": 36454,
+        "layer": 5,
+        "channel": 5734
+      },
+      {
+        "flat": 35301,
+        "layer": 5,
+        "channel": 4581
+      },
+      {
+        "flat": 36826,
+        "layer": 5,
+        "channel": 6106
+      },
+      {
+        "flat": 36726,
+        "layer": 5,
+        "channel": 6006
+      },
+      {
+        "flat": 36586,
+        "layer": 5,
+        "channel": 5866
+      },
+      {
+        "flat": 33516,
+        "layer": 5,
+        "channel": 2796
+      },
+      {
+        "flat": 36197,
+        "layer": 5,
+        "channel": 5477
+      },
+      {
+        "flat": 32297,
+        "layer": 5,
+        "channel": 1577
+      },
+      {
+        "flat": 35853,
+        "layer": 5,
+        "channel": 5133
+      },
+      {
+        "flat": 34637,
+        "layer": 5,
+        "channel": 3917
+      },
+      {
+        "flat": 35128,
+        "layer": 5,
+        "channel": 4408
+      },
+      {
+        "flat": 30727,
+        "layer": 5,
+        "channel": 7
+      },
+      {
+        "flat": 36067,
+        "layer": 5,
+        "channel": 5347
+      },
+      {
+        "flat": 35701,
+        "layer": 5,
+        "channel": 4981
+      },
+      {
+        "flat": 31728,
+        "layer": 5,
+        "channel": 1008
+      },
+      {
+        "flat": 35948,
+        "layer": 5,
+        "channel": 5228
+      },
+      {
+        "flat": 32401,
+        "layer": 5,
+        "channel": 1681
+      },
+      {
+        "flat": 35712,
+        "layer": 5,
+        "channel": 4992
+      },
+      {
+        "flat": 34740,
+        "layer": 5,
+        "channel": 4020
+      },
+      {
+        "flat": 35143,
+        "layer": 5,
+        "channel": 4423
+      },
+      {
+        "flat": 34818,
+        "layer": 5,
+        "channel": 4098
+      },
+      {
+        "flat": 30746,
+        "layer": 5,
+        "channel": 26
+      },
+      {
+        "flat": 33921,
+        "layer": 5,
+        "channel": 3201
+      },
+      {
+        "flat": 34692,
+        "layer": 5,
+        "channel": 3972
+      },
+      {
+        "flat": 31818,
+        "layer": 5,
+        "channel": 1098
+      },
+      {
+        "flat": 34859,
+        "layer": 5,
+        "channel": 4139
+      },
+      {
+        "flat": 31722,
+        "layer": 5,
+        "channel": 1002
+      },
+      {
+        "flat": 31002,
+        "layer": 5,
+        "channel": 282
+      },
+      {
+        "flat": 40189,
+        "layer": 6,
+        "channel": 3325
+      },
+      {
+        "flat": 41559,
+        "layer": 6,
+        "channel": 4695
+      },
+      {
+        "flat": 39109,
+        "layer": 6,
+        "channel": 2245
+      },
+      {
+        "flat": 37356,
+        "layer": 6,
+        "channel": 492
+      },
+      {
+        "flat": 37371,
+        "layer": 6,
+        "channel": 507
+      },
+      {
+        "flat": 37485,
+        "layer": 6,
+        "channel": 621
+      },
+      {
+        "flat": 41979,
+        "layer": 6,
+        "channel": 5115
+      },
+      {
+        "flat": 37999,
+        "layer": 6,
+        "channel": 1135
+      },
+      {
+        "flat": 39029,
+        "layer": 6,
+        "channel": 2165
+      },
+      {
+        "flat": 41847,
+        "layer": 6,
+        "channel": 4983
+      },
+      {
+        "flat": 37750,
+        "layer": 6,
+        "channel": 886
+      },
+      {
+        "flat": 39311,
+        "layer": 6,
+        "channel": 2447
+      },
+      {
+        "flat": 38881,
+        "layer": 6,
+        "channel": 2017
+      },
+      {
+        "flat": 38685,
+        "layer": 6,
+        "channel": 1821
+      },
+      {
+        "flat": 39677,
+        "layer": 6,
+        "channel": 2813
+      },
+      {
+        "flat": 39919,
+        "layer": 6,
+        "channel": 3055
+      },
+      {
+        "flat": 42077,
+        "layer": 6,
+        "channel": 5213
+      },
+      {
+        "flat": 39319,
+        "layer": 6,
+        "channel": 2455
+      },
+      {
+        "flat": 38732,
+        "layer": 6,
+        "channel": 1868
+      },
+      {
+        "flat": 37548,
+        "layer": 6,
+        "channel": 684
+      },
+      {
+        "flat": 41776,
+        "layer": 6,
+        "channel": 4912
+      },
+      {
+        "flat": 38531,
+        "layer": 6,
+        "channel": 1667
+      },
+      {
+        "flat": 40495,
+        "layer": 6,
+        "channel": 3631
+      },
+      {
+        "flat": 42686,
+        "layer": 6,
+        "channel": 5822
+      },
+      {
+        "flat": 37017,
+        "layer": 6,
+        "channel": 153
+      },
+      {
+        "flat": 38066,
+        "layer": 6,
+        "channel": 1202
+      },
+      {
+        "flat": 41447,
+        "layer": 6,
+        "channel": 4583
+      },
+      {
+        "flat": 42752,
+        "layer": 6,
+        "channel": 5888
+      },
+      {
+        "flat": 40502,
+        "layer": 6,
+        "channel": 3638
+      },
+      {
+        "flat": 42265,
+        "layer": 6,
+        "channel": 5401
+      },
+      {
+        "flat": 38735,
+        "layer": 6,
+        "channel": 1871
+      },
+      {
+        "flat": 39278,
+        "layer": 6,
+        "channel": 2414
+      },
+      {
+        "flat": 57244,
+        "layer": 9,
+        "channel": 1948
+      },
+      {
+        "flat": 59236,
+        "layer": 9,
+        "channel": 3940
+      },
+      {
+        "flat": 61008,
+        "layer": 9,
+        "channel": 5712
+      },
+      {
+        "flat": 55563,
+        "layer": 9,
+        "channel": 267
+      },
+      {
+        "flat": 60460,
+        "layer": 9,
+        "channel": 5164
+      },
+      {
+        "flat": 57195,
+        "layer": 9,
+        "channel": 1899
+      },
+      {
+        "flat": 56271,
+        "layer": 9,
+        "channel": 975
+      },
+      {
+        "flat": 58937,
+        "layer": 9,
+        "channel": 3641
+      },
+      {
+        "flat": 55368,
+        "layer": 9,
+        "channel": 72
+      },
+      {
+        "flat": 57041,
+        "layer": 9,
+        "channel": 1745
+      },
+      {
+        "flat": 60986,
+        "layer": 9,
+        "channel": 5690
+      },
+      {
+        "flat": 57637,
+        "layer": 9,
+        "channel": 2341
+      },
+      {
+        "flat": 59730,
+        "layer": 9,
+        "channel": 4434
+      },
+      {
+        "flat": 61110,
+        "layer": 9,
+        "channel": 5814
+      },
+      {
+        "flat": 61414,
+        "layer": 9,
+        "channel": 6118
+      },
+      {
+        "flat": 60238,
+        "layer": 9,
+        "channel": 4942
+      },
+      {
+        "flat": 59636,
+        "layer": 9,
+        "channel": 4340
+      },
+      {
+        "flat": 59186,
+        "layer": 9,
+        "channel": 3890
+      },
+      {
+        "flat": 59734,
+        "layer": 9,
+        "channel": 4438
+      },
+      {
+        "flat": 55962,
+        "layer": 9,
+        "channel": 666
+      },
+      {
+        "flat": 55540,
+        "layer": 9,
+        "channel": 244
+      },
+      {
+        "flat": 58467,
+        "layer": 9,
+        "channel": 3171
+      },
+      {
+        "flat": 61012,
+        "layer": 9,
+        "channel": 5716
+      },
+      {
+        "flat": 56318,
+        "layer": 9,
+        "channel": 1022
+      },
+      {
+        "flat": 58741,
+        "layer": 9,
+        "channel": 3445
+      },
+      {
+        "flat": 57080,
+        "layer": 9,
+        "channel": 1784
+      },
+      {
+        "flat": 57548,
+        "layer": 9,
+        "channel": 2252
+      },
+      {
+        "flat": 58141,
+        "layer": 9,
+        "channel": 2845
+      },
+      {
+        "flat": 57147,
+        "layer": 9,
+        "channel": 1851
+      },
+      {
+        "flat": 60758,
+        "layer": 9,
+        "channel": 5462
+      },
+      {
+        "flat": 58091,
+        "layer": 9,
+        "channel": 2795
+      },
+      {
+        "flat": 56506,
+        "layer": 9,
+        "channel": 1210
+      }
+    ],
+    "random17101": [
+      {
+        "flat": 31801,
+        "layer": 5,
+        "channel": 1081
+      },
+      {
+        "flat": 34699,
+        "layer": 5,
+        "channel": 3979
+      },
+      {
+        "flat": 35727,
+        "layer": 5,
+        "channel": 5007
+      },
+      {
+        "flat": 31836,
+        "layer": 5,
+        "channel": 1116
+      },
+      {
+        "flat": 31781,
+        "layer": 5,
+        "channel": 1061
+      },
+      {
+        "flat": 32830,
+        "layer": 5,
+        "channel": 2110
+      },
+      {
+        "flat": 34164,
+        "layer": 5,
+        "channel": 3444
+      },
+      {
+        "flat": 34544,
+        "layer": 5,
+        "channel": 3824
+      },
+      {
+        "flat": 35068,
+        "layer": 5,
+        "channel": 4348
+      },
+      {
+        "flat": 36313,
+        "layer": 5,
+        "channel": 5593
+      },
+      {
+        "flat": 33771,
+        "layer": 5,
+        "channel": 3051
+      },
+      {
+        "flat": 33494,
+        "layer": 5,
+        "channel": 2774
+      },
+      {
+        "flat": 33239,
+        "layer": 5,
+        "channel": 2519
+      },
+      {
+        "flat": 36228,
+        "layer": 5,
+        "channel": 5508
+      },
+      {
+        "flat": 35339,
+        "layer": 5,
+        "channel": 4619
+      },
+      {
+        "flat": 34229,
+        "layer": 5,
+        "channel": 3509
+      },
+      {
+        "flat": 33972,
+        "layer": 5,
+        "channel": 3252
+      },
+      {
+        "flat": 32914,
+        "layer": 5,
+        "channel": 2194
+      },
+      {
+        "flat": 36262,
+        "layer": 5,
+        "channel": 5542
+      },
+      {
+        "flat": 35725,
+        "layer": 5,
+        "channel": 5005
+      },
+      {
+        "flat": 35860,
+        "layer": 5,
+        "channel": 5140
+      },
+      {
+        "flat": 36300,
+        "layer": 5,
+        "channel": 5580
+      },
+      {
+        "flat": 32067,
+        "layer": 5,
+        "channel": 1347
+      },
+      {
+        "flat": 32997,
+        "layer": 5,
+        "channel": 2277
+      },
+      {
+        "flat": 34184,
+        "layer": 5,
+        "channel": 3464
+      },
+      {
+        "flat": 31075,
+        "layer": 5,
+        "channel": 355
+      },
+      {
+        "flat": 36335,
+        "layer": 5,
+        "channel": 5615
+      },
+      {
+        "flat": 32022,
+        "layer": 5,
+        "channel": 1302
+      },
+      {
+        "flat": 31782,
+        "layer": 5,
+        "channel": 1062
+      },
+      {
+        "flat": 32062,
+        "layer": 5,
+        "channel": 1342
+      },
+      {
+        "flat": 36661,
+        "layer": 5,
+        "channel": 5941
+      },
+      {
+        "flat": 34078,
+        "layer": 5,
+        "channel": 3358
+      },
+      {
+        "flat": 39612,
+        "layer": 6,
+        "channel": 2748
+      },
+      {
+        "flat": 38225,
+        "layer": 6,
+        "channel": 1361
+      },
+      {
+        "flat": 41514,
+        "layer": 6,
+        "channel": 4650
+      },
+      {
+        "flat": 38556,
+        "layer": 6,
+        "channel": 1692
+      },
+      {
+        "flat": 41794,
+        "layer": 6,
+        "channel": 4930
+      },
+      {
+        "flat": 42297,
+        "layer": 6,
+        "channel": 5433
+      },
+      {
+        "flat": 41715,
+        "layer": 6,
+        "channel": 4851
+      },
+      {
+        "flat": 37954,
+        "layer": 6,
+        "channel": 1090
+      },
+      {
+        "flat": 38325,
+        "layer": 6,
+        "channel": 1461
+      },
+      {
+        "flat": 42795,
+        "layer": 6,
+        "channel": 5931
+      },
+      {
+        "flat": 37232,
+        "layer": 6,
+        "channel": 368
+      },
+      {
+        "flat": 41066,
+        "layer": 6,
+        "channel": 4202
+      },
+      {
+        "flat": 38614,
+        "layer": 6,
+        "channel": 1750
+      },
+      {
+        "flat": 37229,
+        "layer": 6,
+        "channel": 365
+      },
+      {
+        "flat": 38745,
+        "layer": 6,
+        "channel": 1881
+      },
+      {
+        "flat": 38736,
+        "layer": 6,
+        "channel": 1872
+      },
+      {
+        "flat": 40636,
+        "layer": 6,
+        "channel": 3772
+      },
+      {
+        "flat": 41811,
+        "layer": 6,
+        "channel": 4947
+      },
+      {
+        "flat": 39465,
+        "layer": 6,
+        "channel": 2601
+      },
+      {
+        "flat": 39410,
+        "layer": 6,
+        "channel": 2546
+      },
+      {
+        "flat": 40734,
+        "layer": 6,
+        "channel": 3870
+      },
+      {
+        "flat": 40641,
+        "layer": 6,
+        "channel": 3777
+      },
+      {
+        "flat": 41501,
+        "layer": 6,
+        "channel": 4637
+      },
+      {
+        "flat": 40129,
+        "layer": 6,
+        "channel": 3265
+      },
+      {
+        "flat": 37043,
+        "layer": 6,
+        "channel": 179
+      },
+      {
+        "flat": 40708,
+        "layer": 6,
+        "channel": 3844
+      },
+      {
+        "flat": 37067,
+        "layer": 6,
+        "channel": 203
+      },
+      {
+        "flat": 42088,
+        "layer": 6,
+        "channel": 5224
+      },
+      {
+        "flat": 37656,
+        "layer": 6,
+        "channel": 792
+      },
+      {
+        "flat": 40099,
+        "layer": 6,
+        "channel": 3235
+      },
+      {
+        "flat": 42654,
+        "layer": 6,
+        "channel": 5790
+      },
+      {
+        "flat": 37177,
+        "layer": 6,
+        "channel": 313
+      },
+      {
+        "flat": 61286,
+        "layer": 9,
+        "channel": 5990
+      },
+      {
+        "flat": 58825,
+        "layer": 9,
+        "channel": 3529
+      },
+      {
+        "flat": 58895,
+        "layer": 9,
+        "channel": 3599
+      },
+      {
+        "flat": 59477,
+        "layer": 9,
+        "channel": 4181
+      },
+      {
+        "flat": 59792,
+        "layer": 9,
+        "channel": 4496
+      },
+      {
+        "flat": 58738,
+        "layer": 9,
+        "channel": 3442
+      },
+      {
+        "flat": 60413,
+        "layer": 9,
+        "channel": 5117
+      },
+      {
+        "flat": 57383,
+        "layer": 9,
+        "channel": 2087
+      },
+      {
+        "flat": 59738,
+        "layer": 9,
+        "channel": 4442
+      },
+      {
+        "flat": 58440,
+        "layer": 9,
+        "channel": 3144
+      },
+      {
+        "flat": 55448,
+        "layer": 9,
+        "channel": 152
+      },
+      {
+        "flat": 57114,
+        "layer": 9,
+        "channel": 1818
+      },
+      {
+        "flat": 58004,
+        "layer": 9,
+        "channel": 2708
+      },
+      {
+        "flat": 58311,
+        "layer": 9,
+        "channel": 3015
+      },
+      {
+        "flat": 60847,
+        "layer": 9,
+        "channel": 5551
+      },
+      {
+        "flat": 57094,
+        "layer": 9,
+        "channel": 1798
+      },
+      {
+        "flat": 55456,
+        "layer": 9,
+        "channel": 160
+      },
+      {
+        "flat": 60771,
+        "layer": 9,
+        "channel": 5475
+      },
+      {
+        "flat": 57693,
+        "layer": 9,
+        "channel": 2397
+      },
+      {
+        "flat": 59371,
+        "layer": 9,
+        "channel": 4075
+      },
+      {
+        "flat": 56169,
+        "layer": 9,
+        "channel": 873
+      },
+      {
+        "flat": 61188,
+        "layer": 9,
+        "channel": 5892
+      },
+      {
+        "flat": 61351,
+        "layer": 9,
+        "channel": 6055
+      },
+      {
+        "flat": 60999,
+        "layer": 9,
+        "channel": 5703
+      },
+      {
+        "flat": 58592,
+        "layer": 9,
+        "channel": 3296
+      },
+      {
+        "flat": 59302,
+        "layer": 9,
+        "channel": 4006
+      },
+      {
+        "flat": 58660,
+        "layer": 9,
+        "channel": 3364
+      },
+      {
+        "flat": 59745,
+        "layer": 9,
+        "channel": 4449
+      },
+      {
+        "flat": 57867,
+        "layer": 9,
+        "channel": 2571
+      },
+      {
+        "flat": 56511,
+        "layer": 9,
+        "channel": 1215
+      },
+      {
+        "flat": 55329,
+        "layer": 9,
+        "channel": 33
+      },
+      {
+        "flat": 61239,
+        "layer": 9,
+        "channel": 5943
+      }
+    ],
+    "random17102": [
+      {
+        "flat": 36633,
+        "layer": 5,
+        "channel": 5913
+      },
+      {
+        "flat": 35806,
+        "layer": 5,
+        "channel": 5086
+      },
+      {
+        "flat": 34544,
+        "layer": 5,
+        "channel": 3824
+      },
+      {
+        "flat": 33524,
+        "layer": 5,
+        "channel": 2804
+      },
+      {
+        "flat": 34300,
+        "layer": 5,
+        "channel": 3580
+      },
+      {
+        "flat": 31706,
+        "layer": 5,
+        "channel": 986
+      },
+      {
+        "flat": 34114,
+        "layer": 5,
+        "channel": 3394
+      },
+      {
+        "flat": 36541,
+        "layer": 5,
+        "channel": 5821
+      },
+      {
+        "flat": 35469,
+        "layer": 5,
+        "channel": 4749
+      },
+      {
+        "flat": 33544,
+        "layer": 5,
+        "channel": 2824
+      },
+      {
+        "flat": 32050,
+        "layer": 5,
+        "channel": 1330
+      },
+      {
+        "flat": 32372,
+        "layer": 5,
+        "channel": 1652
+      },
+      {
+        "flat": 32837,
+        "layer": 5,
+        "channel": 2117
+      },
+      {
+        "flat": 32102,
+        "layer": 5,
+        "channel": 1382
+      },
+      {
+        "flat": 35047,
+        "layer": 5,
+        "channel": 4327
+      },
+      {
+        "flat": 32038,
+        "layer": 5,
+        "channel": 1318
+      },
+      {
+        "flat": 30955,
+        "layer": 5,
+        "channel": 235
+      },
+      {
+        "flat": 32039,
+        "layer": 5,
+        "channel": 1319
+      },
+      {
+        "flat": 31420,
+        "layer": 5,
+        "channel": 700
+      },
+      {
+        "flat": 36484,
+        "layer": 5,
+        "channel": 5764
+      },
+      {
+        "flat": 30834,
+        "layer": 5,
+        "channel": 114
+      },
+      {
+        "flat": 32603,
+        "layer": 5,
+        "channel": 1883
+      },
+      {
+        "flat": 31880,
+        "layer": 5,
+        "channel": 1160
+      },
+      {
+        "flat": 35941,
+        "layer": 5,
+        "channel": 5221
+      },
+      {
+        "flat": 33038,
+        "layer": 5,
+        "channel": 2318
+      },
+      {
+        "flat": 35318,
+        "layer": 5,
+        "channel": 4598
+      },
+      {
+        "flat": 31678,
+        "layer": 5,
+        "channel": 958
+      },
+      {
+        "flat": 31314,
+        "layer": 5,
+        "channel": 594
+      },
+      {
+        "flat": 35693,
+        "layer": 5,
+        "channel": 4973
+      },
+      {
+        "flat": 32872,
+        "layer": 5,
+        "channel": 2152
+      },
+      {
+        "flat": 35584,
+        "layer": 5,
+        "channel": 4864
+      },
+      {
+        "flat": 32890,
+        "layer": 5,
+        "channel": 2170
+      },
+      {
+        "flat": 40984,
+        "layer": 6,
+        "channel": 4120
+      },
+      {
+        "flat": 38225,
+        "layer": 6,
+        "channel": 1361
+      },
+      {
+        "flat": 41482,
+        "layer": 6,
+        "channel": 4618
+      },
+      {
+        "flat": 37321,
+        "layer": 6,
+        "channel": 457
+      },
+      {
+        "flat": 41237,
+        "layer": 6,
+        "channel": 4373
+      },
+      {
+        "flat": 37021,
+        "layer": 6,
+        "channel": 157
+      },
+      {
+        "flat": 38898,
+        "layer": 6,
+        "channel": 2034
+      },
+      {
+        "flat": 40447,
+        "layer": 6,
+        "channel": 3583
+      },
+      {
+        "flat": 40697,
+        "layer": 6,
+        "channel": 3833
+      },
+      {
+        "flat": 40933,
+        "layer": 6,
+        "channel": 4069
+      },
+      {
+        "flat": 42666,
+        "layer": 6,
+        "channel": 5802
+      },
+      {
+        "flat": 37914,
+        "layer": 6,
+        "channel": 1050
+      },
+      {
+        "flat": 38325,
+        "layer": 6,
+        "channel": 1461
+      },
+      {
+        "flat": 37792,
+        "layer": 6,
+        "channel": 928
+      },
+      {
+        "flat": 41514,
+        "layer": 6,
+        "channel": 4650
+      },
+      {
+        "flat": 39122,
+        "layer": 6,
+        "channel": 2258
+      },
+      {
+        "flat": 40965,
+        "layer": 6,
+        "channel": 4101
+      },
+      {
+        "flat": 42213,
+        "layer": 6,
+        "channel": 5349
+      },
+      {
+        "flat": 38894,
+        "layer": 6,
+        "channel": 2030
+      },
+      {
+        "flat": 40138,
+        "layer": 6,
+        "channel": 3274
+      },
+      {
+        "flat": 37198,
+        "layer": 6,
+        "channel": 334
+      },
+      {
+        "flat": 36978,
+        "layer": 6,
+        "channel": 114
+      },
+      {
+        "flat": 38540,
+        "layer": 6,
+        "channel": 1676
+      },
+      {
+        "flat": 38774,
+        "layer": 6,
+        "channel": 1910
+      },
+      {
+        "flat": 38010,
+        "layer": 6,
+        "channel": 1146
+      },
+      {
+        "flat": 40437,
+        "layer": 6,
+        "channel": 3573
+      },
+      {
+        "flat": 39386,
+        "layer": 6,
+        "channel": 2522
+      },
+      {
+        "flat": 37438,
+        "layer": 6,
+        "channel": 574
+      },
+      {
+        "flat": 37221,
+        "layer": 6,
+        "channel": 357
+      },
+      {
+        "flat": 37381,
+        "layer": 6,
+        "channel": 517
+      },
+      {
+        "flat": 42700,
+        "layer": 6,
+        "channel": 5836
+      },
+      {
+        "flat": 39139,
+        "layer": 6,
+        "channel": 2275
+      },
+      {
+        "flat": 58465,
+        "layer": 9,
+        "channel": 3169
+      },
+      {
+        "flat": 57279,
+        "layer": 9,
+        "channel": 1983
+      },
+      {
+        "flat": 59372,
+        "layer": 9,
+        "channel": 4076
+      },
+      {
+        "flat": 58507,
+        "layer": 9,
+        "channel": 3211
+      },
+      {
+        "flat": 60125,
+        "layer": 9,
+        "channel": 4829
+      },
+      {
+        "flat": 58795,
+        "layer": 9,
+        "channel": 3499
+      },
+      {
+        "flat": 61105,
+        "layer": 9,
+        "channel": 5809
+      },
+      {
+        "flat": 61267,
+        "layer": 9,
+        "channel": 5971
+      },
+      {
+        "flat": 61155,
+        "layer": 9,
+        "channel": 5859
+      },
+      {
+        "flat": 60312,
+        "layer": 9,
+        "channel": 5016
+      },
+      {
+        "flat": 60099,
+        "layer": 9,
+        "channel": 4803
+      },
+      {
+        "flat": 58302,
+        "layer": 9,
+        "channel": 3006
+      },
+      {
+        "flat": 61222,
+        "layer": 9,
+        "channel": 5926
+      },
+      {
+        "flat": 60051,
+        "layer": 9,
+        "channel": 4755
+      },
+      {
+        "flat": 59371,
+        "layer": 9,
+        "channel": 4075
+      },
+      {
+        "flat": 59402,
+        "layer": 9,
+        "channel": 4106
+      },
+      {
+        "flat": 57532,
+        "layer": 9,
+        "channel": 2236
+      },
+      {
+        "flat": 55484,
+        "layer": 9,
+        "channel": 188
+      },
+      {
+        "flat": 58584,
+        "layer": 9,
+        "channel": 3288
+      },
+      {
+        "flat": 57457,
+        "layer": 9,
+        "channel": 2161
+      },
+      {
+        "flat": 61274,
+        "layer": 9,
+        "channel": 5978
+      },
+      {
+        "flat": 58086,
+        "layer": 9,
+        "channel": 2790
+      },
+      {
+        "flat": 56373,
+        "layer": 9,
+        "channel": 1077
+      },
+      {
+        "flat": 59279,
+        "layer": 9,
+        "channel": 3983
+      },
+      {
+        "flat": 58347,
+        "layer": 9,
+        "channel": 3051
+      },
+      {
+        "flat": 59252,
+        "layer": 9,
+        "channel": 3956
+      },
+      {
+        "flat": 56867,
+        "layer": 9,
+        "channel": 1571
+      },
+      {
+        "flat": 55671,
+        "layer": 9,
+        "channel": 375
+      },
+      {
+        "flat": 60783,
+        "layer": 9,
+        "channel": 5487
+      },
+      {
+        "flat": 57639,
+        "layer": 9,
+        "channel": 2343
+      },
+      {
+        "flat": 55631,
+        "layer": 9,
+        "channel": 335
+      },
+      {
+        "flat": 59251,
+        "layer": 9,
+        "channel": 3955
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "name": "base",
+      "cohort": "main",
+      "kind": "carry",
+      "group": null,
+      "operation": null
+    },
+    {
+      "name": "S05_06_09_opposite",
+      "cohort": "main",
+      "kind": "carry",
+      "group": null,
+      "operation": null
+    },
+    {
+      "name": "S05_06_09_samepolicy",
+      "cohort": "main",
+      "kind": "carry",
+      "group": null,
+      "operation": null
+    },
+    {
+      "name": "selected96_opposite",
+      "cohort": "main",
+      "kind": "new",
+      "group": "selected96",
+      "operation": "opposite"
+    },
+    {
+      "name": "selected96_samepolicy",
+      "cohort": "main",
+      "kind": "new",
+      "group": "selected96",
+      "operation": "samepolicy"
+    },
+    {
+      "name": "selected96_zero",
+      "cohort": "main",
+      "kind": "new",
+      "group": "selected96",
+      "operation": "zero"
+    },
+    {
+      "name": "selected96_gain2",
+      "cohort": "main",
+      "kind": "new",
+      "group": "selected96",
+      "operation": "gain2"
+    },
+    {
+      "name": "selected96_rescue",
+      "cohort": "main",
+      "kind": "reference",
+      "group": "selected96",
+      "operation": "rescue"
+    },
+    {
+      "name": "selected96_cut",
+      "cohort": "main",
+      "kind": "new",
+      "group": "selected96",
+      "operation": "cut"
+    },
+    {
+      "name": "random17101_opposite",
+      "cohort": "main",
+      "kind": "new",
+      "group": "random17101",
+      "operation": "opposite"
+    },
+    {
+      "name": "random17101_samepolicy",
+      "cohort": "main",
+      "kind": "new",
+      "group": "random17101",
+      "operation": "samepolicy"
+    },
+    {
+      "name": "random17101_zero",
+      "cohort": "main",
+      "kind": "new",
+      "group": "random17101",
+      "operation": "zero"
+    },
+    {
+      "name": "random17101_gain2",
+      "cohort": "main",
+      "kind": "new",
+      "group": "random17101",
+      "operation": "gain2"
+    },
+    {
+      "name": "random17101_rescue",
+      "cohort": "main",
+      "kind": "reference",
+      "group": "random17101",
+      "operation": "rescue"
+    },
+    {
+      "name": "random17101_cut",
+      "cohort": "main",
+      "kind": "new",
+      "group": "random17101",
+      "operation": "cut"
+    },
+    {
+      "name": "random17102_opposite",
+      "cohort": "main",
+      "kind": "new",
+      "group": "random17102",
+      "operation": "opposite"
+    },
+    {
+      "name": "random17102_samepolicy",
+      "cohort": "main",
+      "kind": "new",
+      "group": "random17102",
+      "operation": "samepolicy"
+    },
+    {
+      "name": "random17102_zero",
+      "cohort": "main",
+      "kind": "new",
+      "group": "random17102",
+      "operation": "zero"
+    },
+    {
+      "name": "random17102_gain2",
+      "cohort": "main",
+      "kind": "new",
+      "group": "random17102",
+      "operation": "gain2"
+    },
+    {
+      "name": "random17102_rescue",
+      "cohort": "main",
+      "kind": "reference",
+      "group": "random17102",
+      "operation": "rescue"
+    },
+    {
+      "name": "random17102_cut",
+      "cohort": "main",
+      "kind": "new",
+      "group": "random17102",
+      "operation": "cut"
+    },
+    {
+      "name": "unit_L5_selected96_opposite",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L5_selected96",
+      "operation": "opposite"
+    },
+    {
+      "name": "unit_L5_selected96_zero",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L5_selected96",
+      "operation": "zero"
+    },
+    {
+      "name": "unit_L5_selected96_rescue",
+      "cohort": "unit",
+      "kind": "reference",
+      "group": "unit_L5_selected96",
+      "operation": "rescue"
+    },
+    {
+      "name": "unit_L5_random17101_opposite",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L5_random17101",
+      "operation": "opposite"
+    },
+    {
+      "name": "unit_L5_random17101_zero",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L5_random17101",
+      "operation": "zero"
+    },
+    {
+      "name": "unit_L5_random17101_rescue",
+      "cohort": "unit",
+      "kind": "reference",
+      "group": "unit_L5_random17101",
+      "operation": "rescue"
+    },
+    {
+      "name": "unit_L5_random17102_opposite",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L5_random17102",
+      "operation": "opposite"
+    },
+    {
+      "name": "unit_L5_random17102_zero",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L5_random17102",
+      "operation": "zero"
+    },
+    {
+      "name": "unit_L5_random17102_rescue",
+      "cohort": "unit",
+      "kind": "reference",
+      "group": "unit_L5_random17102",
+      "operation": "rescue"
+    },
+    {
+      "name": "unit_L6_selected96_opposite",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L6_selected96",
+      "operation": "opposite"
+    },
+    {
+      "name": "unit_L6_selected96_zero",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L6_selected96",
+      "operation": "zero"
+    },
+    {
+      "name": "unit_L6_selected96_rescue",
+      "cohort": "unit",
+      "kind": "reference",
+      "group": "unit_L6_selected96",
+      "operation": "rescue"
+    },
+    {
+      "name": "unit_L6_random17101_opposite",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L6_random17101",
+      "operation": "opposite"
+    },
+    {
+      "name": "unit_L6_random17101_zero",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L6_random17101",
+      "operation": "zero"
+    },
+    {
+      "name": "unit_L6_random17101_rescue",
+      "cohort": "unit",
+      "kind": "reference",
+      "group": "unit_L6_random17101",
+      "operation": "rescue"
+    },
+    {
+      "name": "unit_L6_random17102_opposite",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L6_random17102",
+      "operation": "opposite"
+    },
+    {
+      "name": "unit_L6_random17102_zero",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L6_random17102",
+      "operation": "zero"
+    },
+    {
+      "name": "unit_L6_random17102_rescue",
+      "cohort": "unit",
+      "kind": "reference",
+      "group": "unit_L6_random17102",
+      "operation": "rescue"
+    },
+    {
+      "name": "unit_L9_selected96_opposite",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L9_selected96",
+      "operation": "opposite"
+    },
+    {
+      "name": "unit_L9_selected96_zero",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L9_selected96",
+      "operation": "zero"
+    },
+    {
+      "name": "unit_L9_selected96_rescue",
+      "cohort": "unit",
+      "kind": "reference",
+      "group": "unit_L9_selected96",
+      "operation": "rescue"
+    },
+    {
+      "name": "unit_L9_random17101_opposite",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L9_random17101",
+      "operation": "opposite"
+    },
+    {
+      "name": "unit_L9_random17101_zero",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L9_random17101",
+      "operation": "zero"
+    },
+    {
+      "name": "unit_L9_random17101_rescue",
+      "cohort": "unit",
+      "kind": "reference",
+      "group": "unit_L9_random17101",
+      "operation": "rescue"
+    },
+    {
+      "name": "unit_L9_random17102_opposite",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L9_random17102",
+      "operation": "opposite"
+    },
+    {
+      "name": "unit_L9_random17102_zero",
+      "cohort": "unit",
+      "kind": "new",
+      "group": "unit_L9_random17102",
+      "operation": "zero"
+    },
+    {
+      "name": "unit_L9_random17102_rescue",
+      "cohort": "unit",
+      "kind": "reference",
+      "group": "unit_L9_random17102",
+      "operation": "rescue"
+    }
+  ],
+  "donor_contract": "Caller supplies actual unmodified native states for the counterfactual and recipient prompts at an exactly mapped selector position. Private task prompts and donor values are not distributed. Group gain0/2 and zero-then-recipient rescue use the same scalar coordinates.",
+  "application": "Use compose_mlp_donors for a declared full-site background, then scoped_channel for scalar swaps/gains/rescue. Only selector prefill is changed; cached token steps skip it. Conditional cut restores recipient group values on a full-opposite background.",
+  "validation": {
+    "all1002records_host_audited": true,
+    "new_predictions": 708,
+    "parent_carries": 120,
+    "baseline_reference_rescues": 174,
+    "self_logits": 174,
+    "cached_self_hashes": 144,
+    "restorations": 96,
+    "native_parameters_and_hook_inventory_unchanged": true,
+    "source_sha256": {
+      "interpretability/scoped_channel.py": "75d9e1c5c9e1c467a68892ebd81e470741976f4205d2adace2272462d299d925",
+      "interpretability/anchor_intervention.py": "15ec139c69423fc309d4a9c75f19f2e04d2494ad57bff27523c5aa56656490c5",
+      "interpretability/mlp_composition.py": "769e1477149fd11b19950c19d8452fd4b691a6a71908abfb5361bc2f63820ae2",
+      "interpretability/native_capture.py": "71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1"
+    },
+    "independent_clean_package_pretrained_replay": false
+  },
+  "limitations": "Every fixed policy is retained. All primary causal gates fail; no specific neuron meaning or confirmed coding benefit. Reference rescues are not new generated identity completions. Full base weights are not duplicated.",
+  "individual_groups": {
+    "unit_L5_selected96": [
+      {
+        "flat": 31529,
+        "layer": 5,
+        "channel": 809
+      }
+    ],
+    "unit_L5_random17101": [
+      {
+        "flat": 31801,
+        "layer": 5,
+        "channel": 1081
+      }
+    ],
+    "unit_L5_random17102": [
+      {
+        "flat": 36633,
+        "layer": 5,
+        "channel": 5913
+      }
+    ],
+    "unit_L6_selected96": [
+      {
+        "flat": 40189,
+        "layer": 6,
+        "channel": 3325
+      }
+    ],
+    "unit_L6_random17101": [
+      {
+        "flat": 39612,
+        "layer": 6,
+        "channel": 2748
+      }
+    ],
+    "unit_L6_random17102": [
+      {
+        "flat": 40984,
+        "layer": 6,
+        "channel": 4120
+      }
+    ],
+    "unit_L9_selected96": [
+      {
+        "flat": 57244,
+        "layer": 9,
+        "channel": 1948
+      }
+    ],
+    "unit_L9_random17101": [
+      {
+        "flat": 61286,
+        "layer": 9,
+        "channel": 5990
+      }
+    ],
+    "unit_L9_random17102": [
+      {
+        "flat": 58465,
+        "layer": 9,
+        "channel": 3169
+      }
+    ]
+  }
+}

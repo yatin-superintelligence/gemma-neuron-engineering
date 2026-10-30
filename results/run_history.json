@@ -279,13 +279,14 @@
       "outcome": "All64records/128derivedreadings audited. Base/aligned normal raw4/4coding;all other cells0/4. All48restorations and source/parameter/counter guards pass;0updates. No semantic inversion or gain.",
       "duration_scope": "Worker486.234379417s;notebook538.176173556s.Notchargedquota.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "N17_v1_matched_native_channels",
-      "launched_utc": "2026-10-30T13:01:16.370726+00:00",
-      "status": "private_source_verified_running"
+      "recorded_script_seconds": 1123.037815663,
+      "outcome": "All1002records audited,708new/120parent/174references. Allthreecausalgatesfail;9unitsnull. Oneincidentalextremumcasealsogainedbyrandom. Allscope/cache/self/restorationguards pass.0updates.",
+      "duration_scope": "Worker1123.037815663s;notebook1203.30374148s.Notchargedquota.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }
