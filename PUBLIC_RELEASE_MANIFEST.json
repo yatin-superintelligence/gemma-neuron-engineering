@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-30T10:26:16.008102+00:00",
+  "generated_utc": "2026-10-30T10:45:33.547631+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "78b002953cc71361b02041faa34c4b59f0eb781c58ffa499bccd744d88f2c47d",
-      "bytes": 16834
+      "sha256": "92d3495d330d52bf8f7fb8f54000b3fad9c3692c93b5d2dbf67dbfbd8883f702",
+      "bytes": 17308
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "bbeed80a3b8afb20ed91b0b46b1d751d1d4b59836d187bad9ed15f6e0583113d",
-      "bytes": 171271
+      "sha256": "6a0491ebea9374fc3b84ca5fc16dacbb586f3c11b78cefec77590baa94429db9",
+      "bytes": 175614
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "6a106d80ac65bf0eedd699b18e8fe69686bb33737af61e51a463ded9f5f1d118",
-      "bytes": 93159
+      "sha256": "2ae9474771f67d7fe1c045ff18efaaef4bd79568c8c8d180f719b1bf0f61171a",
+      "bytes": 95569
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "e70e8dfa85a0902b3d13182af4e0a9607c554c97e7922bb2680e3c9d84a45a9d",
-      "bytes": 39709
+      "sha256": "d11ce4ae072002182c566482d0a1dcaf9cee785f5530091609e248f5d983d901",
+      "bytes": 40176
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -126,8 +126,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "f9f9fa378b830d3cadbe74075c0b5b75981f56f7dd184644c706077686b37520",
-      "bytes": 45739
+      "sha256": "7dc12154d99ae1ee9f1414b92f9cd05793fc670203e9605f129176933f0b0e7e",
+      "bytes": 47866
     },
     {
       "path": "interpretability/__init__.py",
@@ -491,7 +491,7 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "929b5d1b502a745abc6a3fad2b91f28e6c964f5f284c3bb741b34db0f5049b74",
+      "sha256": "a382a68be91bdf9b0d6fbb96145200e6e8e42d6c1ca5df1eeaa6d355e9eb3084",
       "bytes": 843
     },
     {

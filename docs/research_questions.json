@@ -439,6 +439,22 @@
       "interpretation": "This is a bounded forward sufficiency comparison inside a validated block, not a search over arbitrary layers or a new capability claim. Discrete count differences do not prove formal synergy.",
       "next_question": "Does any proper subset pass the same rule-transfer and retention gate?",
       "direction_decision": "Use the smallest eligible cardinality, then lexicographic layer order. Follow with prospective channel partitions in that site; if none passes, retain the full block and use a fixed joint-channel test. Do not lower the threshold or select from incidental gains."
+    },
+    {
+      "id": "Q29",
+      "experiment": "B01: conversational behavior alongside coding",
+      "status": "private_prompt_panel_prepared_not_launched",
+      "question": "Do prescribed native-neuron edits change conversational behavior, and do those changes coincide with coding degradation?",
+      "question_provenance": "Direct human suggestion to chat with edited Gemma, supported by a screenshot offered as an unverified lead. No chat outputs exist when this panel and assessment rubric are prepared.",
+      "parents": [
+        "Q23",
+        "Q28"
+      ],
+      "method": "Twelve fixed first prompts and four followups compare baseline, identity and whole-conversation zero/double edits of the fixed rare unit and two same-layer random controls. Natural histories and fixed baseline histories separate dialogue feedback from the current edit. Four unchanged coding probes measure retention.",
+      "result": "Private twelve-prompt/four-followup panel, fixed eight-policy intent and assessment rubric prepared. All twelve first-turn templates, four mock followup templates, and unchanged forty-row parent token/oracle checks pass. Two host-only API/inherited-helper failures were repaired and preserved. No model execution or chat result. Final GPU source, audit, counts, identity/restoration guards and resource check remain pending.",
+      "interpretation": "Tone, uncertainty, disagreement and consistency are observable behaviors. A dramatic reply is not a validated personality trait or an individual semantic role. Random controls are fixed but not activity-matched. Persona steering already has prior work.",
+      "next_question": "Does a fixed edit produce a repeatable change across prompts and histories while preserving executable coding?",
+      "direction_decision": "Queue one bounded chat pilot after N16 closes and is audited. Keep the coding objective and no-training constraint. Save every reply, blind qualitative condition labels, preserve caps and negative results, and require fresh confirmation before claiming a trait change. Do not copy Qwen coordinates or fit a persona vector."
     }
   ],
   "active_question_id": "Q28",
