@@ -307,13 +307,14 @@
       "outcome": "All399records audited. Full current-state13/13opposite transfer,same13/13. Three fixed units0transfers/losses,all clean8retention. Rare-unit primary fails. Startup/auditor failures preserved.",
       "duration_scope": "Worker426.552776961s;notebook469.251850964s. Not charged quota.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "N20_v1_strict_current_groups",
-      "launched_utc": "2026-10-30T18:49:31.125396+00:00",
-      "status": "running"
+      "recorded_script_seconds": 1052.4234948419999,
+      "outcome": "All840audited;selected64/random64/nested16all0transfer/cleanloss/conditionalcutloss;primaryfailed;all exact guards pass.",
+      "duration_scope": "Worker and notebook seconds;not charged quota.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

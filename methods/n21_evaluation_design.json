@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-30T18:55:15.626063+00:00",
+  "experiment": "N21E",
+  "question_id": "Q35",
+  "status": "prospective_evaluation_design_before_task_implementation_not_GPU_protocol",
+  "parent_intent_sha256": "d8ae0e20c126ed693d510d9c904fe626960010f2ee4dd9917aacf9e5195f93f7",
+  "N20_outputs_accessed": false,
+  "no_training": true,
+  "optimizer_steps": 0,
+  "selection": "Fixed N20 selected64 and both fixed random64 groups. No new ranking,nested16 substitution,dose search or N20-outcome-dependent choice.",
+  "policies": [
+    "original",
+    "selected64_stored_factor1_identity",
+    "selected64_stored_factor2",
+    "randomA64_stored_factor2",
+    "randomB64_stored_factor2"
+  ],
+  "implementation": "Prescribed dense BF16 outgoing-column assignment globally throughout prompt and generation. Original columns restored exactly between arms. No donor states,answer-position trigger,new parameters,attention hooks or gradients.",
+  "counts": {
+    "distinct_coding_functions": 24,
+    "algorithm_families": 8,
+    "functions_per_family": 3,
+    "retention": 8,
+    "conditions": 5,
+    "maximum_generations": 160,
+    "new_original_completions": 32,
+    "parent_output_carries": 0
+  },
+  "retention": "Four new simple typed Python functions and four strict JSON transformations. Report them separately;four variants are not four independent domains.",
+  "data": "New private interface/specification prompts. No old C01/final data opened. Hidden oracle modules and stress inputs are separate from prompt records and must never enter model text. None of these tasks is a held-out final benchmark.",
+  "case_generation_seed": 3523,
+  "oracle_cases_per_function": 256,
+  "independence_gate": "Two independently structured executable oracles must agree on every fixed case,with at least one prespecified semantic mutant rejected per function. Document all failures and repairs before any model run. This is oracle validation,not evidence about Gemma.",
+  "prompt_contract": "Complete Python3 function with exact supplied name and arguments,stdlib allowed,no printing or IO. No solution examples or answer prefix. Fixed request for source only. No prompt rewrite after seeing model outputs.",
+  "parsing": "Accept raw Python module or exactly one Python/plain fenced code block with whitespace outside. Reject additional prose or multiple blocks. Strict JSON means the entire stripped reply must parse,with no fences. Preserve raw text and classify source/compile/execution/oracle failures separately.",
+  "generation_caps": {
+    "coding_new_tokens": 256,
+    "JSON_new_tokens": 128,
+    "sampling": "greedy;same pinned tokenizer,chat template and resolved-neutral generation parameters for every arm;no rerolls",
+    "normal_stop": "EOS only,no newline stopping"
+  },
+  "baseline_interpretability_gate": "The full original24-function cohort remains the denominator. If original correctness is0/24 or24/24,or more than8original functions fail source/compile parsing,the planned accuracy-benefit interpretation is marked unassessable. All fixed outputs/conditions still remain reported. Do not remove errors,revise prompts or regenerate this panel as confirmation.",
+  "primary_estimands": "For selected-factor2 versus original,and versus each random-factor2,report all24 paired correctness gains/losses and the net paired difference. All8 family-level net differences remain visible. Identity must reproduce all32original outputs exactly. Retention must match every originally correct retention case.",
+  "signal_gate": "A development utility signal requires net>=4additional correct functions against original AND each random arm,positive family-net differences in>=4of8families in every contrast,and no loss on any originally correct retention case. This screen is not a statistical confirmation or broad improvement claim. Any passed screen requires a separately frozen fresh confirmation cohort. Do not replace it with a winning subgroup or dose.",
+  "uncertainty": "Report family-level paired tables and descriptive confidence/sensitivity intervals with8families explicit. Do not call hand-authored families IID or present nuisance replications as algorithms. No threshold-specific p-value optimization.",
+  "scope_guards": "Actual checkpoint:all32factor1 generated outputs exact,exact parent-weight restoration and declared column-only version increments,all other parameter versions/gradflags unchanged,p.gradNone. No backward/optimizer. First-prefill whole cache exact for allfixed identical prompts because all edited layers24..34follow producer14. Changed emitted tokens may alter later cache;no global cache-equality or speedup claim.",
+  "normalization": "Post-MLP RMSNorm precedes residual addition. Raw contribution algebra is not an isolated final residual direction. N21H random-module results do not prove pretrained equivalence.",
+  "conditional_launch": "N20 must reach terminal status and its guards must be audited or failure preserved first. This design alone is not a launch-ready protocol. Freeze exact prompts/oracles/runner/auditor/source hashes and live-scope fixtures before any N21 GPU launch.",
+  "resource": "One free private job<=7200seconds,fresh resource review and>=2hreserve;original31October18:22:58UTC deadline. Exact runtime/counter contract requires final runner design.",
+  "outputs": "Only raw text/token IDs,compact scope/cache hashes and small exact column patches;no full model/activation dumps. No answers/predictions/oracle test cases published.",
+  "family_counts": {
+    "boundaries": 3,
+    "ordering": 3,
+    "search": 3,
+    "intervals": 3,
+    "signed_arithmetic": 3,
+    "windows": 3,
+    "sequences": 3,
+    "strings": 3
+  },
+  "raw_prompts_answers_oracle_sources_private": true
+}

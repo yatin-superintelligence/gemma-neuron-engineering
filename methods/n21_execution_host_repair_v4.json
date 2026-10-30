@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-30T19:36:50.078964+00:00",
+  "preserved_failure": "Child resource.setrlimit(RLIMIT_AS,512MiB) raises ValueError on this macOS host before candidate execution.",
+  "change": "Use the supported512MiB data-segment limit,with2CPU seconds,4wall seconds,zero file size/core limits and OS network/file-write denial retained. Do not claim a portable total-memory or adversarial-security guarantee.",
+  "source_before_sha256": "a719728ac7e9e6ceade6c2776af57c677fa4aa857bf308cbef038f61e981408c",
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

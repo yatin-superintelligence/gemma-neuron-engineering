@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-30T19:42:10.657372+00:00",
+  "diagnosis": "All28reference/mutant fixtures passed,but the prose-classification fixture found bare Explanation is a valid Python name expression. It was classified as runtime_error instead of rejected source.",
+  "repair": "Reject top-level executable expression/prose nodes while allowing imports,function/class definitions,assignments and literal module docstrings. No oracle,data,model condition or correctness rule changed.",
+  "source_before_sha256": "74a05a6afd84131a5259bf4b5edb738b95fa2032f4d9452af918018f92a0eda3",
+  "pretrained_model_forwards": 0,
+  "optimizer_steps": 0
+}

@@ -10,5 +10,7 @@
   "optimizer_steps": 0,
   "records_planned": 840,
   "new_tails_planned": 486,
-  "scope": "Prospective development causal screen. No N20 result or coding improvement reported."
+  "scope": "Prospective development causal screen. No N20 result or coding improvement reported.",
+  "historical_launch_snapshot": true,
+  "current_status": "Consult the question register and progress snapshot;this file records launch-time state."
 }

@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-30T19:36:16.307032+00:00",
+  "status": "host_execution_profile_adjustment_before_model_responses",
+  "evidence": "Trusted Python startup fails under the narrow file-read allowlist and succeeds when runtime reads are permitted. No candidate/model code was used in these diagnostics.",
+  "change": "Permit runtime file reads while retaining OS denial of file writes and all network access. Keep a clean child environment,isolated stdlib startup,empty temporary working directory,CPU/address-space/wall limits and source admission refusing IO,process and reflection. This is a bounded benign-code grading harness,not a general adversarial security guarantee.",
+  "source_before_sha256": "3cb1f75076b7f8fba3a613b4280c2f7e925710cb73a5c70c73f5a2e11ef0bdf4",
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

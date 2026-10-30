@@ -227,3 +227,10 @@ The helper covers dense native text MLPs and refuses packed quantized matrices. 
 ## N19 current-code-decision policies
 
 [All nineteen recipes](n19/recipe.json) describe one cached-token native activation intervention. They retain all fixed neurons, whole-state controls and explicit donor contracts. The full-state control transfers the opposite rule in 13/13 development cases; the three fixed neurons remain null. Raw prefixes and donor states stay private. Caller-supplied native contexts are required, and independent clean-package pretrained replay is not claimed.
+
+
+## N20 matched current-decision groups
+
+[All forty policies and exact native coordinate groups](n20/recipe.json) retain the selected and matched random groups at both sizes. Every recorded scope, cache, self and restoration guard passes, but all small groups fail the functional role screen. Opposite donors, clean suppression and conditional cuts produce zero functional effects for every group. Donor values and raw coding contexts remain private. These are activation recipes, with no trained adapter or duplicate base weights. Independent clean-package pretrained replay is not claimed.
+
+The separate [global stored-column helper](../interpretability/stored_group_gain.py) supports prescribed factor one or two across layers and restores exact matrices on exit. Its random-Gemma fixtures and exception-restoration tests pass. Global group edits have not yet been tested on pretrained fresh coding tasks, so this prototype is separate from the validated N20 activation recipes.

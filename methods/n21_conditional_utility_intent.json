@@ -65,5 +65,7 @@
     "limit": "Free generation can emit different tokens,which can change later cache entries through changed text. Do not claim entire edited generation has the same cache or that memory semantics are unchanged.",
     "efficiency": "No speedup or reusable-decoder implementation is established;do not build a new caching engine in this sprint without evidence and a specific budgeted question."
   },
-  "updated_utc": "2026-10-30T17:57:53.364646+00:00"
+  "updated_utc": "2026-10-30T17:57:53.364646+00:00",
+  "historical_intent_snapshot": true,
+  "current_status": "Consult the question register for later preparation and outcomes."
 }

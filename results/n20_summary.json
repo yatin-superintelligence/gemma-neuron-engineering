@@ -1,0 +1,833 @@
+{
+  "utc": "2026-10-30T19:15:00.712416+00:00",
+  "status": "complete_private_host_audited_primary_failed_closed",
+  "result_receipt_sha256": "b4a0abbc7097a515b538ff5ef622d3227a8d98cc72c92ec11a0eb32f71fdcdfa",
+  "all840records_audited": true,
+  "new_tails": 486,
+  "parent_carries": 84,
+  "guarded_references": 126,
+  "nonapplicable_donor_references": 144,
+  "groups": {
+    "selected64": {
+      "opposite_correct": 0,
+      "opposite_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "clean_zero_losses": 0,
+      "zero_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "conditional_transfer_losses": 0,
+      "conditional_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "same_policy_preserved": 13,
+      "clean_retention": {
+        "zero": 8,
+        "gain2": 8
+      }
+    },
+    "random34201_64": {
+      "opposite_correct": 0,
+      "opposite_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "clean_zero_losses": 0,
+      "zero_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "conditional_transfer_losses": 0,
+      "conditional_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "same_policy_preserved": 13,
+      "clean_retention": {
+        "zero": 8,
+        "gain2": 8
+      }
+    },
+    "random34202_64": {
+      "opposite_correct": 0,
+      "opposite_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "clean_zero_losses": 0,
+      "zero_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "conditional_transfer_losses": 0,
+      "conditional_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "same_policy_preserved": 13,
+      "clean_retention": {
+        "zero": 8,
+        "gain2": 8
+      }
+    },
+    "selected16": {
+      "opposite_correct": 0,
+      "opposite_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "clean_zero_losses": 0,
+      "zero_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "conditional_transfer_losses": 0,
+      "conditional_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "same_policy_preserved": 13,
+      "clean_retention": {
+        "zero": 8,
+        "gain2": 8
+      }
+    },
+    "random34201_16": {
+      "opposite_correct": 0,
+      "opposite_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "clean_zero_losses": 0,
+      "zero_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "conditional_transfer_losses": 0,
+      "conditional_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "same_policy_preserved": 13,
+      "clean_retention": {
+        "zero": 8,
+        "gain2": 8
+      }
+    },
+    "random34202_16": {
+      "opposite_correct": 0,
+      "opposite_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "clean_zero_losses": 0,
+      "zero_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "conditional_transfer_losses": 0,
+      "conditional_loss_coverage": {
+        "family": [],
+        "style": [],
+        "mapping": [],
+        "label": [],
+        "direction": []
+      },
+      "same_policy_preserved": 13,
+      "clean_retention": {
+        "zero": 8,
+        "gain2": 8
+      }
+    }
+  },
+  "primary": {
+    "advantages": {
+      "random34201_64": {
+        "opposite_correct": 0,
+        "clean_zero_losses": 0,
+        "conditional_transfer_losses": 0
+      },
+      "random34202_64": {
+        "opposite_correct": 0,
+        "clean_zero_losses": 0,
+        "conditional_transfer_losses": 0
+      }
+    },
+    "effect_advantages_pass": false,
+    "coverage_pass": false,
+    "same_policy_pass": true,
+    "retention_pass": true,
+    "behavioral_components_passed": false
+  },
+  "all40conditions": [
+    {
+      "condition": "base",
+      "record_kinds": {
+        "carry": 21,
+        "new": 0,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "full_opposite",
+      "record_kinds": {
+        "carry": 21,
+        "new": 0,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 0,
+      "opposite_correct": 13,
+      "retention_correct_references_included": 8,
+      "coding_losses": 13,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "full_samepolicy",
+      "record_kinds": {
+        "carry": 21,
+        "new": 0,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "full_self",
+      "record_kinds": {
+        "carry": 21,
+        "new": 0,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected64_opposite",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected64_samepolicy",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected64_zero",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected64_gain2",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected64_rescue",
+      "record_kinds": {
+        "carry": 0,
+        "new": 0,
+        "guarded_reference": 21,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected64_conditional_cut",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 0,
+      "opposite_correct": 13,
+      "retention_correct_references_included": 8,
+      "coding_losses": 13,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_64_opposite",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_64_samepolicy",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_64_zero",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_64_gain2",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_64_rescue",
+      "record_kinds": {
+        "carry": 0,
+        "new": 0,
+        "guarded_reference": 21,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_64_conditional_cut",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 0,
+      "opposite_correct": 13,
+      "retention_correct_references_included": 8,
+      "coding_losses": 13,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_64_opposite",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_64_samepolicy",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_64_zero",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_64_gain2",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_64_rescue",
+      "record_kinds": {
+        "carry": 0,
+        "new": 0,
+        "guarded_reference": 21,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_64_conditional_cut",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 0,
+      "opposite_correct": 13,
+      "retention_correct_references_included": 8,
+      "coding_losses": 13,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected16_opposite",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected16_samepolicy",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected16_zero",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected16_gain2",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected16_rescue",
+      "record_kinds": {
+        "carry": 0,
+        "new": 0,
+        "guarded_reference": 21,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "selected16_conditional_cut",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 0,
+      "opposite_correct": 13,
+      "retention_correct_references_included": 8,
+      "coding_losses": 13,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_16_opposite",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_16_samepolicy",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_16_zero",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_16_gain2",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_16_rescue",
+      "record_kinds": {
+        "carry": 0,
+        "new": 0,
+        "guarded_reference": 21,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34201_16_conditional_cut",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 0,
+      "opposite_correct": 13,
+      "retention_correct_references_included": 8,
+      "coding_losses": 13,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_16_opposite",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_16_samepolicy",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_16_zero",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_16_gain2",
+      "record_kinds": {
+        "carry": 0,
+        "new": 21,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_16_rescue",
+      "record_kinds": {
+        "carry": 0,
+        "new": 0,
+        "guarded_reference": 21,
+        "nonapplicable_reference": 0
+      },
+      "role_correct": 13,
+      "opposite_correct": 0,
+      "retention_correct_references_included": 8,
+      "coding_losses": 0,
+      "coding_gains": 0,
+      "capped": 0
+    },
+    {
+      "condition": "random34202_16_conditional_cut",
+      "record_kinds": {
+        "carry": 0,
+        "new": 13,
+        "guarded_reference": 0,
+        "nonapplicable_reference": 8
+      },
+      "role_correct": 0,
+      "opposite_correct": 13,
+      "retention_correct_references_included": 8,
+      "coding_losses": 13,
+      "coding_gains": 0,
+      "capped": 0
+    }
+  ],
+  "exact_native_replays": 805,
+  "native_group_self_trajectories": 126,
+  "conditional_group_self_trajectories": 78,
+  "restoration_trajectories": 80,
+  "all_late_cache_scope_parameter_and_hook_guards_pass": true,
+  "original_parameter_versions_unchanged": true,
+  "model_forward_calls": 6122,
+  "input_token_exposures": 72706,
+  "new_generated_tokens": 2192,
+  "worker_seconds": 1052.4234948419999,
+  "notebook_seconds": 1105.627626237,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "scope": "Every selected64/random64/nested16 group has zero opposite transfers,zero clean-zero losses and zero conditional-transfer losses. Full-state opposite control remains13/13 from the parent replay. No coding improvement,specific native-unit function or confirmed utility. N/A donor retention is not a successful edit."
+}

@@ -1,18 +1,12 @@
 {
-  "generated_utc": "2026-10-30T18:51:08.973532+00:00",
+  "generated_utc": "2026-10-30T19:46:02.701209+00:00",
   "question_records": 35,
-  "recorded_terminal_runs": 50,
-  "active_runs": [
-    {
-      "run": "N20_v1_strict_current_groups",
-      "launched_utc": "2026-10-30T18:49:31.125396+00:00",
-      "status": "running"
-    }
-  ],
-  "ledger_events": 236,
-  "question_register_source_sha256": "62cf7ca551a99a9648f84781bafa61f79771917d77baeb6b2dd916eb3f2793d2",
-  "event_ledger_source_sha256": "98db17bd69d26c169fb3b7373835d07e8e4029e48c60ce7fde72169e0f5e0924",
-  "compute_ledger_source_sha256": "335663d53b7f3cb096239f752cab0c076e25b1c6ce09ce7c6f3e55bb90dd8b67",
+  "recorded_terminal_runs": 51,
+  "active_runs": [],
+  "ledger_events": 251,
+  "question_register_source_sha256": "807a5fb0b1977fcbc1f573dcf98498550af2c15fb3d4c59a218cd9b41de4d8de",
+  "event_ledger_source_sha256": "adabf21cffb038ac8a0bd6c743e76542bc99092b2d6202b6c86a1ca2dad10270",
+  "compute_ledger_source_sha256": "a842e692978f8dec9eed5a1e1bbd50a502f639a51ee1eed98335c06949d07cf7",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0

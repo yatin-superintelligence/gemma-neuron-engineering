@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-30T19:15:00.712416+00:00",
+  "status": "evaluation_and_global_group_host_preparation_complete_no_pretrained_utility_result",
+  "prospective_design_sha256": "5223c775bb5773a854a29124793b4fb5ee31209716096b855955d3390fd955b2",
+  "coding_functions": 24,
+  "algorithm_families": 8,
+  "retention": 8,
+  "conditions": 5,
+  "oracle_pairs": 28,
+  "oracle_case_comparisons": 7168,
+  "all_semantic_mutants_rejected": true,
+  "tokenized_inputs": 32,
+  "sum_input_tokens": 2873,
+  "global_group_fixture_model_forwards": 84,
+  "global_group_fixture_synthetic_token_exposures": 168,
+  "all_identity_cache_restoration_and_negative_guards_pass": true,
+  "pretrained_model_forwards": 0,
+  "optimizer_steps": 0,
+  "failures_preserved": [
+    "Private integer-case generator index failure,repaired prospectively.",
+    "Temporary tokenizer cache missing,restored only pinned tokenizer/config."
+  ],
+  "GPU_protocol_runner_auditor_ready": false,
+  "scope": "No neuron function,new capability,pretrained equivalence or coding improvement established.",
+  "full_GPU_protocol_frozen": true,
+  "additional_distinct_stress_oracle_checks": 7168,
+  "execution_reference_modules_passed": 28,
+  "execution_semantic_mutant_modules_rejected": 28,
+  "host_executor_failure_amendments_preserved": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

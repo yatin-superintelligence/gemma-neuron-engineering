@@ -1,0 +1,89 @@
+{
+  "utc": "2026-10-30T19:28:08.495172+00:00",
+  "experiment": "N21",
+  "version": 1,
+  "status": "prospective_GPU_protocol_before_runner_and_auditor_implementation",
+  "question_id": "Q35",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "original text-only unquantized BF16,4628569344unique parameters;no historical adapters",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "evaluation_design_sha256": "5223c775bb5773a854a29124793b4fb5ee31209716096b855955d3390fd955b2",
+  "prompts_sha256": "66a83e783e459221e160a039ff9d917b66e3039f53f922e1d080c242e3cea16a",
+  "groups_sha256": "3ff1e306b43b296e9f19df233941f8801e71b1bc98a33a002f973147d5363797",
+  "preN20_output_task_freeze": "runs/n21/evaluation/source_freeze_v2.json",
+  "N20_status": "Closed,840host-audited,primary failed. Its null does not change this pre-outcome utility design or fixed groups.",
+  "model_seed": 3525,
+  "prompt_order_seed": 3526,
+  "conditions": [
+    {
+      "name": "base",
+      "group": null,
+      "factor": 1
+    },
+    {
+      "name": "identity",
+      "group": "selected64",
+      "factor": 1
+    },
+    {
+      "name": "random34202_64_gain2",
+      "group": "random34202_64",
+      "factor": 2
+    },
+    {
+      "name": "selected64_gain2",
+      "group": "selected64",
+      "factor": 2
+    },
+    {
+      "name": "random34201_64_gain2",
+      "group": "random34201_64",
+      "factor": 2
+    }
+  ],
+  "counts": {
+    "conditions": 5,
+    "inputs": 32,
+    "coding_functions": 24,
+    "algorithm_families": 8,
+    "retention_python_functions": 4,
+    "retention_json_inputs": 4,
+    "new_generations": 160,
+    "prefill_scope_measurements": 160,
+    "identity_generation_comparisons": 32,
+    "restoration_measurements": 10,
+    "parent_carries": 0,
+    "maximum_generated_tokens": 38400
+  },
+  "edit": "Apply the prescribed stored down-column factor throughout all prompt and generated positions,using the frozen stored_group_gain helper. Only explicit64-unit groups across native layers24..34;no new coordinates,doses,donors,answer-prefix triggers or fitted strengths. Original matrices restored exactly on context exit.",
+  "source_lineage": "Load the same pinned original BF16 parent through the N02 text loader and source bundle;retain token/PLE embeddings,decoder and tiedhead,exclude media. No trained adapter loaded. No weights from N20 activation patches are reused.",
+  "generation_assets": "Embed only this protocol,groups,prompt-only records,tokenization witness and model-source bundle plus generic inference/edit helpers. Do NOT upload hidden oracle modules,JSONanswers,stress inputs or host evaluator source to the GPU notebook. No final data.",
+  "decode": "Same pinned native model.generate for every arm,do_sampleFalse,use_cacheTrue,one sequence. Python256new tokens;JSON128new tokens;EOS only. Same pinned tokenizer/template with enable_thinkingFalse. Save raw token IDs/text,EOS/cap status and actual resolved generation config. No rerolls or source repair.",
+  "scope_measurements": "Before each of160generations,run one ordinary full-prompt forward with a fresh native DynamicCache. Save final-position full-vocabulary logit hash/top1 and the15-entry whole-cache fingerprint. The first generated token must equal that top1. All later conditions must preserve the matching base first-prefill cache exactly. Identity must match final-position logits and all generated token IDs/text for every32input. These are GPU witnesses,not host model replay.",
+  "restoration": "After each of5conditions,run ordinary full-prompt forward on both fixed sentinels after all assignments restore. Require final-position logit hash and entire cache fingerprint exact to base. Tenrestoration measurements are distinct from generation.",
+  "parameter_guards": "Track every parameter version/gradflag before the first condition. Only edited down matrices may increment2per context in which their layer occurs. Compute expected increments from groups and actual arm order,not a handwritten count. Other columns hash exact during every scope,all original matrices hash exact on exit. Everyp.gradNone,all flags frozen,all noncounter hooks unchanged. No backward/optimizer.",
+  "patch_outputs": "Save only original and factor2 values for the deduplicated188native columns in small Safetensors,with parent/coordinate/dtype/source hashes and recipes for all5arms. No full model or activation dumps. Validate scope before any future public release;no clean-package pretrained replay claimed.",
+  "counter_contract": "Each prediction withninputtokens andTreturnedtokens hasT+1rootforwards and2*n+T-1input-token exposures:one separate scope prefill plus native cached generation. Each restoration adds1forward andn exposures. Derive all160prediction and10restoration trajectories individually. No other inference calls or gradients in worker. Cap/EOS counter fixtures must pass on actual tinyGemma before launch.",
+  "oracle_policy": "Host only. Same frozen28Python oracle pairs and4JSONanswers,strict type-aware recursive equality. Primary function grade requires all256fixed cases. Record source/compile/import/runtime/timeout/wronganswer/cap separately. No generated source execution on GPU,answer lookup,reflection or externalIO. Executor must use a bounded isolated child with OS file-write/network restrictions and benign-code/source-admission tests. Keep original grades if a later stress check fails.",
+  "additional_stress": "Before launch,freeze256new distinct valid stress cases per Pythonfunction,excluding its original-case inputs,seed3527. Independently validate both oracles on them. Stress is a separate robustness diagnostic;any claimed improved function must pass. It is not fresh-task confirmation.",
+  "primary_interpretation": "Use the unchanged evaluation-design original24function denominator. Report all5arms,paired gains/losses and all8family tables. Original0or24correct,or>8original source/compile failures,makes benefit interpretation unassessable without rewriting this cohort. A signal requires selected-factor2 net>=4more correct thanbase AND eachrandomarm,positive family nets in>=4families for everycontrast,and no loss on originallycorrect retention. Not a formal significance claim. Any positive result needs separately frozen fresh confirmation.",
+  "scope_limits": "Fresh tothis study,not verified absent from pretraining. Discovery-position matching is not global-position activity matching. A coding result would not prove individual semantic meaning,new capability,efficiency or novelty of neuron scaling. Post-MLP normalization remains part of the computation.",
+  "stopping": "Any source,scope,cache,identity,restoration,parameter,counter or completeness failure stops interpretation,preserves all partial outputs and prevents scientific selection. No tolerance amendments,new strength,coordinate or wording from outcomes. Do not regenerate completed panel arms.",
+  "resources": {
+    "platform_seconds": 7200,
+    "notebook_seconds": 7000,
+    "worker_seconds": 6600,
+    "max_paid_usd": 0,
+    "maximum_two_device_reservation_hours": 4,
+    "minimum_free_reserve_hours": 2,
+    "fresh_quota_before_launch_required": true,
+    "one_active_private_job_only": true,
+    "deadline_UTC": "2026-10-31T18:22:58Z"
+  },
+  "readiness": "Runner,auditor,execution harness and stress fixtures must be implemented/imported/Ruffchecked and source/data/auditor/notebook hashes frozen before launch. N21G/N21E host gates are preparation only.",
+  "publication": "Raw prompts,answers,predictions,activations,notebook,paper and private history remain private. Only reviewed methods/generic code/aggregate records and validated compact edits may reach the authorized public repo.",
+  "raw_prompt_identifiers_private": true
+}

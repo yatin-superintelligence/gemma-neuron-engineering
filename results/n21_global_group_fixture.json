@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-30T19:08:13.882686+00:00",
+  "status": "random_Gemma_global_group_scope_passed",
+  "observations": [
+    {
+      "dtype": "torch.float32",
+      "stored_vs_activity_all6logit_hashes_exact": true,
+      "maxabs": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "stored_vs_activity_all6logit_hashes_exact": true,
+      "maxabs": 0.0
+    }
+  ],
+  "actual_model_forwards": 84,
+  "actual_input_token_exposures": 168,
+  "all_identity_restoration_and_late_cache_guards_exact": true,
+  "malformed_group_guards_passed": 10,
+  "pretrained_model_forwards": 0,
+  "text_tokens": 0,
+  "generated_tokens": 0,
+  "backwards": 0,
+  "optimizer_steps": 0,
+  "seconds": 0.2499064169999201,
+  "scope": "Random-weight actual Gemma fixtures only. Not a pretrained role,coding benefit,universal numerical equivalence or final GPU readiness."
+}

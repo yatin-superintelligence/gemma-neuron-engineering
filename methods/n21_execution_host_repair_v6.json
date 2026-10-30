@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-30T19:41:28.939304+00:00",
+  "diagnosis": "Repeated short communicate(input=None) calls could leave the large initial stdin payload unfinished after the first timeout,so the child waited for EOF. The first256-case reference fixture timed out before any model execution.",
+  "repair": "Run a single communicate(payload) in a dedicated I/O thread while the parent monitors wall time and RSS. Preserve all scope/source admission/CPU/OS restrictions and scientific data.",
+  "original_source_sha256": "8ab9e21dbc40c2ae80b3816bc1913dd45d1ed9a571f011135bdb89fdb665b2d0",
+  "pretrained_model_forwards": 0,
+  "optimizer_steps": 0
+}

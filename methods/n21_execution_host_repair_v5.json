@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-30T19:38:49.044893+00:00",
+  "preserved_failure": "Trusted standalone Python also refuses reducing DATA or AS limits,including soft-only DATA. This is not a candidate-code failure.",
+  "repair": "Keep supported2CPU-second/4wall-second limits and OS network/file-write denial. Replace unsupported memory rlimit with a parent-side RSS monitor,512MiB threshold. Sampling can overshoot,so it is not a strict total-memory or adversarial-security guarantee.",
+  "source_before_sha256": "5df24f26bf63847e90801055f1586cf4b39f951310b0a4da76a464a236c2325c",
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

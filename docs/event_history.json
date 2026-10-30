@@ -1818,6 +1818,111 @@
       "event": "server_private_source_JSON_exact_and_RUNNING_verified_before_output_access",
       "experiment": "N20",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 237,
+      "utc": "2026-10-30T18:55:15.626063+00:00",
+      "event": "fresh24function_evaluation_design_frozen_before_tasks_or_model_outcomes",
+      "experiment": "N21E",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 238,
+      "utc": "2026-10-30T19:01:06.859664+00:00",
+      "event": "host_signed_integer_case_generator_index_failure_preserved_and_repaired_before_model_run",
+      "experiment": "N21E_host",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 239,
+      "utc": "2026-10-30T19:01:07.170420+00:00",
+      "event": "all28independent_oracle_pairs_and_semantic_mutants_pass_no_model_execution",
+      "experiment": "N21E_host",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 240,
+      "utc": "2026-10-30T19:03:16.672142+00:00",
+      "event": "pinned_tokenizer_cache_restored_and32prompt_roundtrips_pass_without_model_forwards",
+      "experiment": "N21E_tokenization",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 241,
+      "utc": "2026-10-30T19:08:13.882686+00:00",
+      "event": "global_stored_group_scope_identity_cache_restoration_pass_on_random_Gemma_only",
+      "experiment": "N21G_host",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 242,
+      "utc": "2026-10-30T19:10:39.538383+00:00",
+      "event": "all840records_host_audited_exact_guards_pass_primary_role_screen_fails_all_groups_null_closed",
+      "experiment": "N20",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 243,
+      "utc": "2026-10-30T19:28:08.495172+00:00",
+      "event": "fixed5arm_global_connection_utility_GPU_protocol_frozen_before_runner_or_auditor_implementation",
+      "experiment": "N21",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 244,
+      "utc": "2026-10-30T19:32:35.506699+00:00",
+      "event": "host_execution_implementation_failure_and_dated_repair_v2_before_any_model_responses",
+      "experiment": "N21_execution_host",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 245,
+      "utc": "2026-10-30T19:36:16.307032+00:00",
+      "event": "host_execution_implementation_failure_and_dated_repair_v3_before_any_model_responses",
+      "experiment": "N21_execution_host",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 246,
+      "utc": "2026-10-30T19:36:50.078964+00:00",
+      "event": "host_execution_implementation_failure_and_dated_repair_v4_before_any_model_responses",
+      "experiment": "N21_execution_host",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 247,
+      "utc": "2026-10-30T19:38:49.044893+00:00",
+      "event": "host_execution_implementation_failure_and_dated_repair_v5_before_any_model_responses",
+      "experiment": "N21_execution_host",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 248,
+      "utc": "2026-10-30T19:41:28.939304+00:00",
+      "event": "host_execution_implementation_failure_and_dated_repair_v6_before_any_model_responses",
+      "experiment": "N21_execution_host",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 249,
+      "utc": "2026-10-30T19:42:10.657372+00:00",
+      "event": "host_execution_implementation_failure_and_dated_repair_v7_before_any_model_responses",
+      "experiment": "N21_execution_host",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 250,
+      "utc": "2026-10-30T19:29:17.752195+00:00",
+      "event": "all28independent_oracles_agree_on7168new_distinct_stress_inputs",
+      "experiment": "N21_stress",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 251,
+      "utc": "2026-10-30T19:42:17.317232+00:00",
+      "event": "all28reference_programs_and_mutants_type_format_timeout_RSS_and_OS_restriction_gates_pass",
+      "experiment": "N21_execution_host",
+      "optimizer_steps": 0
     }
   ]
 }

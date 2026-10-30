@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-30T19:32:35.506699+00:00",
+  "diagnosis": "The Python binary links Homebrew gettext libintl outside its Python prefix;the initial read allowlist omitted that runtime library. Official otool-L output verified the dependency.",
+  "repair": "Allow read access only to the gettext library directory/symlink target and public locale files. Keep default deny,private file reads and all network/file writes denied. No settings changed.",
+  "source_before_sha256": "85d7239d00228231d18699d39f89354dcedc99de53f7df52e521504c76b5203c",
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}
