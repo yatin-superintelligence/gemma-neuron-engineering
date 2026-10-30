@@ -1,0 +1,93 @@
+{
+  "utc": "2026-10-30T22:35:00.898857+00:00",
+  "experiment": "N24",
+  "question_id": "Q38",
+  "version": 1,
+  "status_at_freeze": "before_runner_auditor_and_metric_helper_implementation",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "original text-only unquantized BF16",
+  "seed": 3824,
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "question": "How large and direction-specific are the finite decision-score effects of the fixed native groups that caused zero program flips?",
+  "selection": "All six groups copied exactly from closed N20 selection; no recomputation, fitting or new selection.",
+  "groups_sha256": "fcbb5cf85dd794b9be4f9c21008ac348ed291e5f187a1c6c06b9dc974af0f395",
+  "case_manifest_sha256": "6b625bd759258e8fe68f905cec5589c128fbfb38664ad8dd4f942cb489c147c3",
+  "case_scope": "All thirteen closed role cases, same prompts and original prefix tokens. Eight discovery and five other development cases are reported separately; neither is fresh confirmation. No completed continuation is generated or regraded. Retention/program outcomes remain the closed N20 results, not new N24 successes.",
+  "group_order": [
+    "selected64",
+    "random34201_64",
+    "random34202_64",
+    "selected16",
+    "random34201_16",
+    "random34202_16"
+  ],
+  "operations": [
+    "opposite",
+    "samepolicy",
+    "zero",
+    "conditional_cut"
+  ],
+  "edits": "Exactly the existing native post-gating h policies at current cached decision. Conditional cut applies all-35-layer opposite states first, then actual recipient group values. No attention/KV/weight edit or extra branch. Remove hooks before any other call.",
+  "parent_measurements": [
+    "full_self",
+    "full_opposite",
+    "full_samepolicy"
+  ],
+  "guard_measurements": [
+    "native_group_self",
+    "conditional_group_self"
+  ],
+  "guards": [
+    "Replay all 525 native h hashes for the fifteen source trajectories, plus exact current full-logit and whole-cache witnesses from N20.",
+    "Full self reproduces native logits/cache. Full opposite and full same-policy reproduce exact N20 current logits/cache for all thirteen cases.",
+    "Every new group-operation current-logit hash and argmax matches its corresponding closed N20 prediction. No tolerance amendment or old continuation regeneration.",
+    "Each native group self reproduces native whole logits/cache; each conditional group self reproduces the live full-opposite background whole logits/cache.",
+    "All group edits lie in layers 24 to 34: clean edits preserve native whole cache byte-exact; conditional cuts preserve the full-opposite whole cache byte-exact.",
+    "Two native restoration sentinels after every group-operation block and each of the three parent blocks; two more after the complete self-guard phase.",
+    "Original parameter versions, gradient flags, p.grad None and hooks remain unchanged. Reject malformed or truncated cache; actual pinned layout has fifteen entries."
+  ],
+  "metric_precision": "Compute compact metrics in CPU FP64 from the actual BF16 logits converted to FP32. This is not FP64 model inference or unrounded reconstruction. Full vectors are ephemeral and never saved.",
+  "primary_estimands": [
+    "Per case m = logit(opposite next token) - logit(own next token). For each group and operation report m_edited - m_native and the two component logits.",
+    "For conditional cuts also report m_full_opposite - m_cut. Full-opposite minus native margin is the fixed positive-control scale; report raw values and the ratio, with any zero/nonpositive denominator flagged instead of silently excluded.",
+    "For selected64 opposite donors, report its mean finite margin shift minus each matched random64 shift, with raw per-case pairs. Report nested16 separately; it cannot replace selected64.",
+    "Report all thirteen means, medians, ranges and sign counts; both task-family means; all mapping/label/wording/direction strata. Report the eight discovery and five other development cases separately. No independent-algorithm p-value or confirmed-role pass/fail claim."
+  ],
+  "secondary_estimands": [
+    "For every measured state save own/opposite log probabilities, logsumexp, top1 and deterministic top8 token IDs/logits with lower token ID resolving ties.",
+    "Relative to native logits, report maximum absolute change, L2 norm, centered L2 norm, vocabulary RMS and KL(native||edited) in FP64. Also report each operator logit shift and margin shift divided by vocabulary RMS when nonzero, flagging zero separately. These describe output selectivity; they do not prove semantics.",
+    "On exactly the eight N19 discovery cases, compare per-stratum finite opposite-margin means with sums of archived FP32 stratum_score entries for each fixed group. Each stratum averages two families. Report signed differences and ratios only with nonzero denominators. No new gradients, individual-case prediction reconstruction or unrounded-precision claim.",
+    "Keep existing N20 program flips/losses and N21 utility failures explicit. Continuous effects cannot replace those outcomes."
+  ],
+  "counts": {
+    "native_source_trajectories": 15,
+    "native_layer_hashes": 525,
+    "parent_measurements": 39,
+    "native_group_self": 78,
+    "conditional_group_self": 78,
+    "group_operation_measurements": 312,
+    "restorations": 56,
+    "total_trajectories": 578,
+    "new_generated_tokens": 0,
+    "new_program_generations": 0,
+    "new_program_executions": 0
+  },
+  "counter_contract": "Every source, parent, self, edit and restoration uses a fresh cache. For prompt length n and prefix length k: k+1 root forwards and n+k input-token exposures. Derive totals from the exact 578-row prospective trajectory manifest; no hand-summed constant and no generation loop.",
+  "host_gates": "Before GPU: independent metric fixtures including additive logit shift, identity, extreme logits and tie order; actual tiny-Gemma current/group/conditional/self/rescue/restoration/cache paths; both runner/auditor isolated imports; Ruff F821/F823; exact tokenization and all packaged cells/sources. Do not rerun closed scorers or unchanged old fixtures.",
+  "outputs": "Compact metrics, hashes, native scalar source witnesses, edit receipts and trajectory counters only. No full logits, hidden activations, base weights, raw answers or fitted tensors in public or Kaggle outputs.",
+  "stopping": "Any guard failure stops interpretation. Preserve partials and failures. No changed tolerance, new dose/group, prompt rewrite or tail regeneration. Finite effects absent, positive or negative are all reported. No claimed semantic role or useful coding benefit from this reused token-level study.",
+  "resources": {
+    "platform_seconds": 2400,
+    "notebook_seconds": 2300,
+    "worker_seconds": 2000,
+    "minimum_free_reserve_hours": 2,
+    "free_private_only": true,
+    "one_job": true,
+    "original_deadline_utc": "2026-10-31T18:22:58Z"
+  },
+  "raw_tasks_and_reference_states_private": true,
+  "generic_metric_source_sha256": "56706de0281fc94460050572ad344dcb400122916c25009fc9d52d78483f3ada"
+}

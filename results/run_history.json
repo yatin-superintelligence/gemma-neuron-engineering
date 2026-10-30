@@ -337,5 +337,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N24_v1_finite_decision_scores",
+      "launched_utc": "2026-10-30T22:49:51.579886+00:00",
+      "status": "RUNNING_PRIVATE_SOURCE_VERIFIED_ZERO_GENERATIONS"
+    }
+  ]
 }

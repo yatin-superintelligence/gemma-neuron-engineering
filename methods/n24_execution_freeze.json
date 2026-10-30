@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-30T22:43:53.148496+00:00",
+  "status": "all_sources_data_metric_and_auditor_frozen_before_launch",
+  "protocol_sha256": "4daf3c60815d091c3f6b79fe8c36bbe0607021084f811a254d7f3b1307fac0e4",
+  "auditor_sha256": "174c76846bbc7313586c358b03e3d16fb7c04000c087641a073484e957652c1a",
+  "analysis_plan_sha256": "8e6a852e5092ed59713459f60c9087d69793f829e1c11a28d146be56b32ddd07",
+  "notebook_sha256": "306d6074ee1af986e3a1b051504638f0cb20754d0fd4731719c1d50e19ed94a5",
+  "source_file_count": 53,
+  "optimizer_steps": 0,
+  "historical_freeze_before_launch": true,
+  "current_status_source": "../results/progress_snapshot.json"
+}

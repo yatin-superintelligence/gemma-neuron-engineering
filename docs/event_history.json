@@ -2164,6 +2164,69 @@
       "event": "posthoc_fixed_grade_requirement_summary_without_rerun",
       "experiment": "N23",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 286,
+      "utc": "2026-10-30T22:36:26.142533+00:00",
+      "event": "saved_schema_review_missing_continuous_outcome",
+      "experiment": "N24",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 287,
+      "utc": "2026-10-30T22:36:26.142533+00:00",
+      "event": "prospective_protocol_frozen_before_implementation",
+      "experiment": "N24",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 288,
+      "utc": "2026-10-30T22:46:44.742745+00:00",
+      "event": "new_metric_and_actual_random_Gemma_host_paths_passed",
+      "experiment": "N24",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 289,
+      "utc": "2026-10-30T22:46:44.742745+00:00",
+      "event": "all_sources_metric_data_and_prospective_auditor_frozen",
+      "experiment": "N24",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 290,
+      "utc": "2026-10-30T22:46:44.742745+00:00",
+      "event": "prelaunch_CSV_warning_header_guard_stop",
+      "experiment": "N24",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 291,
+      "utc": "2026-10-30T22:49:51.310703+00:00",
+      "event": "first_notebook_creation_HTTP400_no_job_created",
+      "experiment": "N24",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 292,
+      "utc": "2026-10-30T22:49:51.310703+00:00",
+      "event": "lossless_transport_amendment_frozen_before_any_model_run",
+      "experiment": "N24",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 293,
+      "utc": "2026-10-30T22:51:10.947313+00:00",
+      "event": "private_finite_measurement_launched_source_verified",
+      "experiment": "N24",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 294,
+      "utc": "2026-10-30T22:53:47.258786+00:00",
+      "event": "prospective_source_to_claim_limits_before_output_access",
+      "experiment": "N24",
+      "optimizer_steps": 0
     }
   ]
 }

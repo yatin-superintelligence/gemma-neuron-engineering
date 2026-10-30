@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-30T22:35:00.898857+00:00",
+  "scope": "Official primary abstract and bibliography pages only. No full-paper, appendix, AtP* or second-order method replication.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2403.00745",
+      "title": "AtP*: An efficient and scalable method for localizing LLM behaviour to components",
+      "supported": "Gradient-based attribution patching approximates activation patching and has documented failure modes.",
+      "limit": "No implementation of AtP*, error bound, exhaustive neuron sweep or novelty claim."
+    },
+    {
+      "url": "https://arxiv.org/abs/2309.16042",
+      "title": "Towards Best Practices of Activation Patching in Language Models: Metrics and Methods",
+      "supported": "Evaluation metric and corruption choices can change localization results.",
+      "limit": "A new continuous metric does not overturn the prior program-level null or prove a semantic role."
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.09899",
+      "title": "When Attribution Patching Lies: Diagnosis and a Second-Order Correction",
+      "supported": "The abstract analyzes first-order approximation errors and proposes second-order corrections.",
+      "limit": "No HVP, integrated gradients, coefficient fitting or new gradient computation is proposed here."
+    }
+  ],
+  "decision": "Measure exact finite output changes for already fixed groups. Do not claim a new attribution method or explain earlier nulls before evidence."
+}

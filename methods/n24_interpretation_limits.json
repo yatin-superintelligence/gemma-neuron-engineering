@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-30T22:53:47.258786+00:00",
+  "status": "prospective_source_to_claim_review_before_measurement_output_access",
+  "question_id": "Q38",
+  "parent_protocol_sha256": "4daf3c60815d091c3f6b79fe8c36bbe0607021084f811a254d7f3b1307fac0e4",
+  "source_review_only": true,
+  "new_model_forwards": 0,
+  "new_program_executions": 0,
+  "optimizer_steps": 0,
+  "constraints": [
+    {
+      "measurement": "Archived gradient versus finite donor effect",
+      "limit": "The first-order group sum is compared only with the identical eight-case stratum means. Differences combine finite nonlinearity, BF16 inference and saved FP32 profile rounding. No individual gradient is reconstructed and no universal error bound or precision mechanism is inferred."
+    },
+    {
+      "measurement": "Fraction of full-opposite margin change",
+      "limit": "This is a descriptive scale ratio, not a percentage of a circuit explained or a mediation estimate. The full all-35-layer intervention can alter current K/V paths; every selected/random group is after the producers and preserves native current cache. These interventions have different scopes."
+    },
+    {
+      "measurement": "Output selectivity",
+      "limit": "Uncentered vocabulary RMS changes under a uniform logit offset even when probabilities do not. Margin, centered L2 and KL are also reported. No semantic specificity claim follows from a large margin-to-RMS ratio alone."
+    },
+    {
+      "measurement": "Discovery eight versus other five",
+      "limit": "Both sets are reused development. N19/N20 outcomes were accessed. Nuisance names, mappings and wordings are not thirteen independent algorithms or fresh confirmation."
+    },
+    {
+      "measurement": "Neuron function and utility",
+      "limit": "The N23 semantic/lexical counterbalance failed before edits and remains unresolved. A finite token-margin effect can be lexical. It does not establish an abstract neuron meaning, native necessity for correct programs, a deployable answer-independent trigger or a coding gain."
+    },
+    {
+      "measurement": "Original program nulls",
+      "limit": "All N20 program transfers and losses remain zero. N21 selected utility gain remains absent and its baseline format gate unassessable. No N24 completion is generated or graded."
+    }
+  ],
+  "protocol_runner_auditor_metrics_inputs_counts_and_caps_changed": false,
+  "decision": "Report every fixed metric and contrast. Any broader functional or useful-coding claim requires a new prospective fresh design."
+}

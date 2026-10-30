@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-30T22:49:10.453186+00:00",
+  "status": "lossless_transport_amendment_frozen_before_launch",
+  "reason": "The first notebook creation returned HTTP 400 without a detailed server reason. Its 2,516,154-byte notebook is now compressed for transport. Size is a likely cause, not a server-confirmed diagnosis.",
+  "server_own_list_contains_original_slug_after_failure": false,
+  "original_notebook_sha256": "306d6074ee1af986e3a1b051504638f0cb20754d0fd4731719c1d50e19ed94a5",
+  "original_notebook_bytes": 2516154,
+  "transport_notebook_sha256": "e0df2a581d3661ef12ea011bdcdd1ad265ef56e2327e46c60aeb9e82a7e02bd4",
+  "transport_notebook_bytes": 722963,
+  "transport_metadata_sha256": "0bca113b48f02aa039874499af50582bd623c0e9351f7061d96d91a1048dff11",
+  "transport_builder_sha256": "3bbdc75c192bd4aabf8c96b382e779c175df65ae256a42b05d9292b81993fec5",
+  "all53original_source_and_parent_hashes_unchanged": true,
+  "all_original_cell_sources_byte_exact_after_decompression": true,
+  "original_protocol_auditor_runner_metrics_inputs_counts_and_caps_unchanged": true,
+  "original_analysis_plan_sha256": "8e6a852e5092ed59713459f60c9087d69793f829e1c11a28d146be56b32ddd07",
+  "original_auditor_sha256": "174c76846bbc7313586c358b03e3d16fb7c04000c087641a073484e957652c1a",
+  "private_no_datasets": true,
+  "new_model_forwards": 0,
+  "new_generated_tokens": 0,
+  "optimizer_steps": 0
+}
