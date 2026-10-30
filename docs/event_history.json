@@ -1599,6 +1599,76 @@
       "event": "N17nulls_added_word_limit_and_all_five_pages_verified",
       "experiment": "private_neuron_paper",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 206,
+      "utc": "2026-10-30T15:05:22.596782+00:00",
+      "event": "manual_pipeline_fixture_FP64_transport_failure_preserved",
+      "experiment": "N19H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 207,
+      "utc": "2026-10-30T15:07:49.970909+00:00",
+      "event": "requested_capture_key_count_fixture_failure_preserved",
+      "experiment": "N19H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 208,
+      "utc": "2026-10-30T15:11:55.103683+00:00",
+      "event": "manual_pipeline_source_and_auditor_frozen_before_GPU",
+      "experiment": "N19",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 209,
+      "utc": "2026-10-30T15:17:28.054433+00:00",
+      "event": "current_step_helper_scope_limit_recorded_before_outputs",
+      "experiment": "N19",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 210,
+      "utc": "2026-10-30T15:18:57.797642+00:00",
+      "event": "private_bounded_launch_source_and_privacy_verified",
+      "experiment": "N19v1",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 211,
+      "utc": "2026-10-30T15:19:57.438770+00:00",
+      "event": "conditional_post_N19_scientific_decisions_recorded_before_outputs",
+      "experiment": "N19/N20",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 212,
+      "utc": "2026-10-30T15:22:30.868839+00:00",
+      "event": "generation_config_gate_failure_before_model_inference",
+      "experiment": "N19v1",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 213,
+      "utc": "2026-10-30T15:24:33.472389+00:00",
+      "event": "optional_boolean_generation_config_host_failure_preserved",
+      "experiment": "N19H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 214,
+      "utc": "2026-10-30T15:25:57.196957+00:00",
+      "event": "generation_default_startup_repair_frozen_before_launch",
+      "experiment": "N19v2",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 215,
+      "utc": "2026-10-30T15:28:11.522187+00:00",
+      "event": "private_corrected_launch_source_and_privacy_verified",
+      "experiment": "N19v2",
+      "optimizer_steps": 0
     }
   ]
 }

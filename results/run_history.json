@@ -293,7 +293,20 @@
       "outcome": "All160records audited;full-site opposite0/16,same16/16,all8retention. Plannedstop before quarter selection/intervention. All40self/12pairedcache/8restorationguards pass;0updates.",
       "duration_scope": "Worker219.2653160729999s;notebook266.379231798s.Notchargedquota.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N19_v1_generation_config_gate_failure",
+      "recorded_script_seconds": null,
+      "outcome": "Raw repetition_penalty None rejected before any model forward, edit or prediction. Preserve all source and failure.",
+      "duration_scope": "Worker unknown; notebook135.703395535s. Not charged quota.",
+      "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N19_v2_current_code_decision",
+      "launched_utc": "2026-10-30T15:26:47.776849+00:00",
+      "status": "private_source_verified_running_no_outputs_accessed"
+    }
+  ]
 }

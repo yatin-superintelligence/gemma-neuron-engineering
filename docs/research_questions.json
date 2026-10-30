@@ -508,7 +508,7 @@
     {
       "id": "Q33",
       "experiment": "N19: current code-decision neuron feasibility",
-      "status": "host_feasibility_passed_GPU_protocol_frozen_not_implemented_or_launched",
+      "status": "version2_private_source_verified_running_version1_pre_inference_failure_preserved",
       "question": "Can native neurons at the actual generated comparison decision support controlled function, rather than activity at an earlier prompt position?",
       "question_provenance": "N18 planned full-site stop motivates checking a later computation where the model actually chooses a comparator.",
       "parents": [
@@ -516,10 +516,10 @@
         "Q32"
       ],
       "method": "Edit exactly one cached code-decision forward after a native prefix shared across three contexts. Compare fixed neuron L9C4632 and existing controls 850/6085 under actual donor swaps, clean gains 0 and 2, and rescue. Full 35-layer current-state controls and eight activation-gradient measurements are predeclared. No profile selects an intervention. There are 19 conditions and 399 records; retention donor cells are non-applicable references.",
-      "result": "Actual tiny-Gemma feasibility passes: six prescribed edits, exact ordinary/instrumented logits, nonzero current-layer activation gradients, rejection of prefill and repeat calls, and full restoration. Zero pretrained N19 forwards. The real-model protocol is frozen before worker implementation.",
+      "result": "N19 version 1 stopped before any inference because raw repetition_penalty was None rather than explicit 1.0. Zero model forwards, edits or predictions. A source-only repair resolves the pinned library defaults and rejects nontrivial processors. Version 2 is the one active private job, with protocol and all scientific conditions unchanged. No N19 scientific output has been accessed.",
       "interpretation": "Thirteen role cases include eleven exact same-token controls and two same-direction lexical variants. They reuse development contexts with correct baselines, so this assay cannot demonstrate improved original accuracy. Gradients are measurements, never updates. Fixed controls are not activity matched.",
       "next_question": "Can the current-step primitives preserve exact identity/cache behavior and isolate only declared scalars?",
-      "direction_decision": "Implement and verify the frozen current-step pipeline, native program replays and tagged counter traces before one bounded private free job. No coordinates or strengths are selected from N19 feedback."
+      "direction_decision": "Keep the single frozen job unchanged. At terminal, verify final source/privacy and input manifest, pull compact outputs once, and run its frozen raw-output and scope auditor. Fixed controls are not activity matched; no original-accuracy gain can be established on these correct baselines."
     }
   ],
   "active_question_id": "Q33",
