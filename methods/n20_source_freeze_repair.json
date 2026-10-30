@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-30T16:59:50.521187+00:00",
+  "stage": "host source-freeze preparation",
+  "error": "Root n06/__init__.py contains a newline while the reviewed notebook emits an empty package marker. Comparing those byte-distinct but behaviorally equivalent markers stopped before writing an analysis plan or source freeze.",
+  "N20_model_forwards": 0,
+  "GPU_launched": false,
+  "optimizer_steps": 0,
+  "resolution": "Separate actual canonical source hashes from explicit synthetic package-marker hashes. Preserve notebook bytes and successful isolated imports. No scientific change."
+}

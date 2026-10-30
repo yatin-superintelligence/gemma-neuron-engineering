@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-30T16:57:23.426086+00:00",
+  "status": "all_packaged_preflight_gates_passed",
+  "isolated_runner_and_auditor_imports": true,
+  "ruff_F821_F823_all_packaged_sources": true,
+  "all_notebook_cells_compile": true,
+  "source_files": 34,
+  "input_files": 14,
+  "all_source_input_hashes_exact": true,
+  "all40tokenizations_exact_parent": true,
+  "oracle": {
+    "rows": 40,
+    "fresh_targets": 32,
+    "unchanged_retention": 8,
+    "independent_oracle_checks_pass": true,
+    "balanced_deranged_permutation": true,
+    "final_data_present": false,
+    "optimizer_steps": 0
+  },
+  "record_kinds": {
+    "carry": 84,
+    "new": 486,
+    "nonapplicable_reference": 144,
+    "guarded_reference": 126
+  },
+  "trajectory_categories": {
+    "native_source": 23,
+    "parent_live": 47,
+    "native_self": 126,
+    "conditional_self": 78,
+    "restoration": 80,
+    "generation": 486
+  },
+  "trajectory_counter_derivation": "Per native/parent/self/restore:k+1calls,n+kexposures;per newtail:k+Tcalls,n+k+T-1exposures;verified actual tiny-Gemma first-EOS/cap traces separately.",
+  "pretrained_model_forwards": 0,
+  "optimizer_steps": 0,
+  "GPU_launched": false,
+  "fresh_resource_gate_required": true
+}

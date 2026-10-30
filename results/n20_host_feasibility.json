@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-30T16:57:08.505079+00:00",
+  "status": "all_current_group_host_gates_passed",
+  "tests": 3,
+  "pretrained_model_forwards": 0,
+  "optimizer_steps": 0,
+  "actual_tiny_model_forward_calls": 189,
+  "actual_tiny_input_token_exposures": 377,
+  "actual_backward_calls": 0,
+  "actual_tiny_Gemma_architecture": true,
+  "no_new_semantic_or_coding_result": true,
+  "seconds": 0.49470245899283327,
+  "prescribed_full_group_conditional_paths": 24,
+  "malformed_cache_variants_rejected": 5,
+  "separate_cap_and_EOS_counter_traces": 2,
+  "representations": [
+    "random-weight FP32",
+    "random-weight BF16"
+  ],
+  "N20_GPU_launched": false
+}

@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-30T17:00:28.613181+00:00",
+  "status": "source_data_auditor_host_gates_frozen_no_GPU_launched",
+  "protocol_sha256": "a64929d5b3a230ca1dba4390f45b1a8b932b91ae787dda8074f5e5833a1c9b48",
+  "analysis_plan_sha256": "6b9d00120f8f95f9c52def46d6338d439caded8017be94467b7e72e47925548c",
+  "auditor_sha256": "52fa5ddbb35d30a1506bd2d121fa1379c765929f43f3aaf3183e995d4e70c536",
+  "notebook_sha256": "491d397f8d0f4a2e1fa2aec6ddd3fea384078f3b19878c3c47b3c13dffe1864b",
+  "N20_outputs_accessed": false,
+  "N20_GPU_launched": false,
+  "resource_gate_still_required": true,
+  "optimizer_steps": 0,
+  "scope": "Private checkpoint experiment not launched. Published generic primitives and random-weight fixtures establish engineering feasibility only."
+}
