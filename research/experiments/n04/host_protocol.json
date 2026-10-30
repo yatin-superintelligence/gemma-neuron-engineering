@@ -1,0 +1,41 @@
+{
+  "experiment": "N04H",
+  "recorded_utc": "2026-10-29T23:13:57.871938+00:00",
+  "timing": "Before running the new connection on any model",
+  "source": "Transformers 5.8.0 actual Gemma 4 implementation, small random-weight text models only",
+  "seeds": [
+    196,
+    197
+  ],
+  "model": "Six layers, two final KV-sharing layers, alternating sliding/full attention, PLE width4, float64. Clone producer3 into a connection at reader5. Keep original double-wide MLP widths.",
+  "tokens": [
+    2,
+    7,
+    4,
+    9,
+    6
+  ],
+  "modes": [
+    "kv",
+    "key_only",
+    "value_history",
+    "value_current",
+    "value_permuted"
+  ],
+  "strengths": [
+    0,
+    0.25,
+    1
+  ],
+  "gates": [
+    "Off mode exactly preserves original full logits and cached token generation",
+    "All modes restore original configuration, widths, sharing flags and parameter versions",
+    "Fixed-token full-prefix and incremental outputs agree within1e-10 absolute/relative tolerance",
+    "Native past-position MLP4zeroing preserves later logits exactly",
+    "Historical-value connection makes the same past-position intervention affect later logits",
+    "Current-only value connection preserves the past-position null",
+    "All weights remain frozen, all parameter gradients absent, zero optimizer updates"
+  ],
+  "limits": "Fixture feasibility only. No pretrained checkpoint, semantic role, coding improvement or novelty claim.",
+  "stopping": "Preserve every failure. A failing identity/cache gate blocks GPU launch until a dated implementation repair is checked. Never loosen the declared tolerances after results."
+}

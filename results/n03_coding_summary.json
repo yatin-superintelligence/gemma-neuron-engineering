@@ -1,0 +1,1336 @@
+{
+  "experiment": "N03",
+  "version": 1,
+  "utc": "2026-10-29T23:10:10.188626+00:00",
+  "status": "complete_host_audited_null_with_task_limits",
+  "protocol_sha256": "43d1e76d4e3273306ba7b46cc45afe1ba6fdc8d20bbef65eb34dd9694d3586ad",
+  "predictions": 896,
+  "optimizer_steps": 0,
+  "all_host_grades_and_token_decodes_exact": true,
+  "all_identity_self_patch_rescue_restoration_gates_passed": true,
+  "fixed_condition_correctness_changed": false,
+  "all_condition_scores": {
+    "threshold": "4/16",
+    "division_retention": "4/8",
+    "JSON_retention": "8/8"
+  },
+  "coding_improvement_established": false,
+  "semantic_neuron_role_established": false,
+  "worker_seconds": 2176.918844961,
+  "notebook_seconds": 2223.678317084,
+  "recorded_generated_tokens": 4591,
+  "recorded_prediction_input_tokens": 54656,
+  "interpretation_limits": [
+    "The fixed gains and semantic patches did not improve executable outcomes. Other neurons and interventions remain untested.",
+    "Posthoc: 12 of 16 threshold baseline top tokens are outside the nominated operator contrast in each representation.",
+    "Development wording omitted explicit integer element types while the oracle requires integers. Preserve the grades without inferring a general model deficit.",
+    "All selected units are at layers 14,15,16 or23. Current/all-position policies have exact logits and tokens in all32paired prompts at both strengths in each representation.",
+    "Internal-path statements condition on fixed input tokens. Changed emitted tokens remain an indirect route to later behavior."
+  ],
+  "next_decision": "Broaden from last-position pairwise-gradient screening. Verify typed task clarity and a bounded new memory-connection feasibility gate. No training.",
+  "representations": [
+    {
+      "representation": "bf16_text",
+      "predictions": 448,
+      "all_condition_family_results": [
+        {
+          "condition": "base",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "base",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "base",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "identity",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "identity",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "identity",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected1_zero",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected1_zero",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected1_zero",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected1_double",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected1_double",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected1_double",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected8_zero",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected8_zero",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected8_zero",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected8_double",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected8_double",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected8_double",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "random3101_zero",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3101_zero",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "random3101_zero",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "random3101_double",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3101_double",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "random3101_double",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "random3102_zero",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3102_zero",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "random3102_zero",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "random3102_double",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3102_double",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "random3102_double",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected8_all_zero",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected8_all_zero",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected8_all_zero",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected8_all_double",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected8_all_double",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected8_all_double",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "self_patch",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "semantic_swap",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3101_swap",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3102_swap",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        }
+      ],
+      "identity_and_self_patch_rows_exact": 48,
+      "rescue_rows_exact": 16,
+      "restoration_rows_exact": 2,
+      "path_rows": 24,
+      "all_current_path_controls_changed": true,
+      "late_past_paths_exact": true,
+      "stress_outputs": 113,
+      "originally_correct_stress_failures": 0,
+      "limits": "Constrained executable continuations and four paired threshold template instances. Development results,not fresh capability confirmation. Full logits/weights/gradient norms are GPU witnesses. Saved matching moments are FP32;host validates ratios within rounding tolerance."
+    },
+    {
+      "representation": "nf4_text_same_source",
+      "predictions": 448,
+      "all_condition_family_results": [
+        {
+          "condition": "base",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "base",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "base",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "identity",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "identity",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "identity",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected1_zero",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected1_zero",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected1_zero",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected1_double",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 7,
+            "wrong_answer": 5
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected1_double",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected1_double",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected8_zero",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected8_zero",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected8_zero",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected8_double",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected8_double",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected8_double",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "random3101_zero",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3101_zero",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "random3101_zero",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "random3101_double",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3101_double",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "random3101_double",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "random3102_zero",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3102_zero",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "random3102_zero",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "random3102_double",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3102_double",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "random3102_double",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected8_all_zero",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected8_all_zero",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected8_all_zero",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "selected8_all_double",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "selected8_all_double",
+          "family": "division",
+          "correct": 4,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "wrong_answer": 4,
+            "passed": 4
+          }
+        },
+        {
+          "condition": "selected8_all_double",
+          "family": "json",
+          "correct": 8,
+          "prompts": 8,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "graded_json": 8
+          }
+        },
+        {
+          "condition": "self_patch",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "semantic_swap",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3101_swap",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        },
+        {
+          "condition": "random3102_swap",
+          "family": "threshold",
+          "correct": 4,
+          "prompts": 16,
+          "gains_vs_base": 0,
+          "losses_vs_base": 0,
+          "at_cap": 0,
+          "source_statuses": {
+            "passed": 4,
+            "source_gate": 8,
+            "wrong_answer": 4
+          },
+          "semantic_form_correct": {
+            "s0_f0": 4,
+            "s0_f1": 0,
+            "s1_f0": 0,
+            "s1_f1": 0
+          },
+          "opposite_semantics_correct": 0
+        }
+      ],
+      "identity_and_self_patch_rows_exact": 48,
+      "rescue_rows_exact": 16,
+      "restoration_rows_exact": 2,
+      "path_rows": 24,
+      "all_current_path_controls_changed": true,
+      "late_past_paths_exact": true,
+      "stress_outputs": 113,
+      "originally_correct_stress_failures": 0,
+      "limits": "Constrained executable continuations and four paired threshold template instances. Development results,not fresh capability confirmation. Full logits/weights/gradient norms are GPU witnesses. Saved matching moments are FP32;host validates ratios within rounding tolerance."
+    }
+  ],
+  "edition": "Reviewed aggregates; raw prompts, predictions, moments and traces remain private."
+}

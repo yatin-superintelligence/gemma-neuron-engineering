@@ -172,7 +172,7 @@
     {
       "id": "Q12",
       "experiment": "N03: functional coding follow-up",
-      "status": "N03v1_private_GPU_running_source_verified",
+      "status": "complete_host_audited_no_behavior_gain",
       "question": "Do native neurons conditionally support inclusive-boundary coding across reversed comparison forms, and can fixed edits affect executable completions without damaging retention?",
       "question_provenance": "Intent followed the N01 control analysis. The exact N03 protocol was frozen before task implementation and GPU outcomes. The host analysis plan was recorded after launch and before retrieving any outputs.",
       "parents": [
@@ -180,10 +180,10 @@
         "Q11"
       ],
       "method": "Freeze BF16 discovery selection, activity-matched random controls, same-source NF4 coordinate transfer, real-model token-path checks, identity and semantic/self patches. Test every condition on generated Python line completions and division/JSON retention. No training.",
-      "result": "N03 is running privately with 896 planned generated continuations across paired BF16 and NF4 conditions. Source and privacy metadata are verified. N03H remains a completed random-weight fixture; no real-model N03 outcome has been inspected.",
-      "interpretation": "This broadens the study beyond A/B readout confidence while retaining direct neuron edits as the mechanism. A structural-path hypothesis is not a measured E2B finding.",
-      "next_question": "Do the same token-specific path constraints hold in the real text checkpoint, and which native neurons support coding outcomes under necessity and rescue tests?",
-      "direction_decision": "Run the frozen N03 panel and audit all conditions. Interpret code outcomes, semantic patches and retention together. Preserve failures and nulls; use fresh confirmation for any later improvement claim."
+      "result": "All 896 outputs and grades passed the host audit. Every condition scored 4/16 threshold, 4/8 division and 8/8 JSON in each representation. No semantic-patch success change or coding gain occurred. All no-op and restoration checks passed.",
+      "interpretation": "The selected neurons affect internal scores but do not establish a semantic role. Most dominant threshold outputs were outside the token contrast; development wording also omitted explicit integer types. Shared-KV path controls and current/all-position equivalence passed.",
+      "next_question": "Can typed tasks and a new fixed memory connection reveal native-neuron functions beyond late output readout?",
+      "direction_decision": "Broaden. Preserve the null and frozen grades. Verify task clarity and connection feasibility before another localization matrix."
     },
     {
       "id": "Q13",
@@ -200,6 +200,22 @@
       "interpretation": "The public package reconstructs the N02 models in the pinned T4 environment. This verifies reconstruction, not a semantic role, coding improvement or bitwise portability across platforms.",
       "next_question": "Which native neurons compute useful coding distinctions, and can controlled direct edits improve executable outcomes?",
       "direction_decision": "Close R01. Return to N03 functional coding. Further routine reconstruction runs are unnecessary."
+    },
+    {
+      "id": "Q14",
+      "experiment": "N04: typed coding and memory-connection gate",
+      "status": "private_GPU_v2_running_after_native_baseline_gate_failure",
+      "question": "Can a prescribed new memory connection make late native neuron activity causally available to later positions and affect typed coding without training?",
+      "question_provenance": "Proposed after N03 complete null. The GPU protocol was frozen after 30 random-weight CPU cases and task/oracle preflight, before GPU outcomes.",
+      "parents": [
+        "Q10",
+        "Q12"
+      ],
+      "method": "Copy full-attention key/value projections from layer 14 into a frozen memory branch at layer 24. Compare nine fixed policies, historical versus current-only values, feature-permuted controls, typed executable continuations, native-neuron interventions and measurement gradients. No training.",
+      "result": "Thirty amended random-weight cases passed. Real-model version 1 preserved 32 original completions, then stopped on the unchanged BF16 cache discrepancy before applying any connection. The dated version 2 amendment requires relative L2 error at most 0.02 and identical top-1 tokens, reports every absolute error, and adds exact off-mode incremental-hash checks. One bounded resume carries the original predictions and generates the remaining 256 outputs.",
+      "interpretation": "The first failure concerns the original BF16 numerical gate. The copied connection had not executed. The revised gate is weaker and does not establish full-logit cache equivalence. A new internal path alone would not establish a useful neuron role or coding gain.",
+      "next_question": "Can the copied branch pass the amended real-model controls, open access to past native activity, and improve typed coding while retaining other behavior?",
+      "direction_decision": "Allow one bounded resume with the original outputs preserved. Do not change cache tolerances again in this pilot. Retain every condition and return to functional localization if the branch fails or provides no useful evidence."
     }
   ]
 }

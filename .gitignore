@@ -8,6 +8,7 @@ __pycache__/
 *.pt
 *.npz
 outputs/
+runs/
 datasets/
 credentials/
 !/models/n01/added8_zero.safetensors

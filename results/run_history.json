@@ -153,13 +153,27 @@
       "outcome": "24/24output hashes and18/18prior projection hashes exact;36edited projection hashes recorded;zero training",
       "duration_scope": "Sum of two sequential clean public-package reconstruction workers;notebook192.81985s,not charged quota",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N03_v1",
+      "recorded_script_seconds": 2176.918844961,
+      "outcome": "896predictions/allhostchecks pass;no outcome changes;task and contrast limitations preserved",
+      "duration_scope": "Sum of two native coding-neuron workers;notebook2223.67832s,not charged quota",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "N04_v1",
+      "recorded_script_seconds": 201.53555546400003,
+      "outcome": "Original32predictions preserved;native baseline cache bound failed before any connection execution",
+      "duration_scope": "Notebook wall seconds,worker duration unavailable;not charged GPU quota",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N03_v1",
-      "launched_utc": "2026-10-29T22:12:10.484780+00:00",
-      "status": "private_native_neuron_coding_pilot_running"
+      "run": "N04_v2",
+      "launched_utc": "2026-10-30T00:57:19.291177+00:00",
+      "status": "private_source_verified_bounded_resume_32originals_preserved"
     }
   ]
 }

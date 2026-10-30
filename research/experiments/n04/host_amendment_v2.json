@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-30T00:31:48.663858+00:00",
+  "timing": "After preserving the original failed CPUfixture;before code repair or rerun",
+  "failure": "Transformers5.8DynamicCache unconditionally slices layer_types by negative num_kv_shared_layers. A zero count yields an empty layer list,not full allocation. The prototype correctly refused an unavailable new slot.",
+  "repair": "Keep model configuration and original cache layers unchanged. Provision or extend a fresh DynamicCache from a cache-only generic configuration with all native layer types and no num_kv_shared_layers attribute. Root-forward hook handles both direct forward and generate. Only empty native caches may be expanded.",
+  "unchanged": "All modes,strengths,causal predictions,exact off/restoration gates and1e-10cache tolerance unchanged. No GPUrun or training.",
+  "test_strengthening": "Assert model config remains at its original sharing count throughout;preserve double-wide MLPwidths.",
+  "output_version": 2
+}
