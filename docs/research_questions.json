@@ -474,22 +474,22 @@
     },
     {
       "id": "Q31",
-      "experiment": "N17: native-channel coverage in the selected site",
-      "status": "intent_only_not_frozen_or_launched",
-      "question": "Can native post-gating channels reproduce the selected full-MLP donor effect, and which small groups are necessary or sufficient under matched controls?",
-      "question_provenance": "Prescribed next branch from the complete N16 subset audit. This proposal keeps the original native-neuron goal active while the requested behavior pilots run.",
+      "experiment": "N17: matched native-channel necessity and transfer",
+      "status": "private_source_verified_running_no_outputs_accessed",
+      "question": "Which small native post-gating groups within the already validated layers 5, 6 and 9 site causally mediate the conditional rule transfer, and do prescribed edits improve clean coding?",
+      "question_provenance": "The prescribed next branch follows the complete N16 subset audit. It returns to the native-neuron goal after the requested behavior pilots.",
       "parents": [
         "Q28",
         "Q29",
         "Q30"
       ],
-      "method": "Freeze a bounded forward-only channel coverage/localization study within layers5,6,9, with actual unmodified donor values, predeclared strengths/partition or rank rules, strict activity/output-norm matched randoms, clean necessity and counterfactual rescue. Any ranking is a hypothesis and development selection. No fitted or applied contrast vector, optimization or learned bridge.",
-      "result": "No N17 protocol, model run or result. First establish native-channel full-site coverage before a sparse interpretation.",
-      "interpretation": "A whole-MLP donor effect does not identify individual neurons. A scalar-level positive control, matched causal controls, necessity, rescue and fresh useful outcomes remain required.",
-      "next_question": "Can native post-gating channels reproduce the selected full-MLP donor effect, and which small groups are necessary or sufficient under matched controls?",
-      "direction_decision": "After B02 closes, review the exact closest priors and freeze the smallest useful native-channel study. Do not spend more routine GPU time on packaging or new architectural branches without a measured function."
+      "method": "Forward-only activity contrasts select 96 native post-gating coordinates in layers 5, 6 and 9. Two fixed random groups match activation RMS, outgoing-column norm and paired donor-change RMS. Fixed actual-donor swaps, clean gains 0 and 2, exact rescue and conditional transfer cuts separate the causal questions. Nine individual-unit sentinels are also tested. There are zero optimizer updates.",
+      "result": "N17v1 is the one active private notebook. Source and privacy verified; no pretrained outcomes read. Ten tiny-Gemma scope/cache cases and forty token/oracle checks passed before launch.",
+      "interpretation": "The full-site positive control is inherited from N16. Sparse necessity, sufficiency and useful gains remain untested. The 174 rescue rows are baseline references after self/cache proofs, not newly generated identity outputs.",
+      "next_question": "Do selected native scalar groups exceed both matched controls on clean necessity and controlled transfer?",
+      "direction_decision": "Execute the frozen 1,002-record grid and preserve every outcome. Keep a strict-matching stop if it occurs, without relaxing tolerances or changing coordinates from results. All closed panels remain closed."
     }
   ],
-  "active_question_id": "Q28",
-  "next_question_id": null
+  "active_question_id": "Q31",
+  "next_question_id": "Q31"
 }

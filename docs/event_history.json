@@ -1483,6 +1483,41 @@
       "experiment": "B02v2",
       "optimizer_steps": 0,
       "predictions": 64
+    },
+    {
+      "sequence": 190,
+      "utc": "2026-10-30T13:01:05.126049+00:00",
+      "event": "source_site_clarification_no_model_forwards",
+      "experiment": "N17v1",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 191,
+      "utc": "2026-10-30T13:01:05.126049+00:00",
+      "event": "host_preparation_import_failure_repaired",
+      "experiment": "N17v1",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 192,
+      "utc": "2026-10-30T13:01:05.126049+00:00",
+      "event": "protocol_source_auditor_frozen_host_and_lint_passed",
+      "experiment": "N17v1",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 193,
+      "utc": "2026-10-30T13:02:51.403202+00:00",
+      "event": "private_bounded_launch_source_and_privacy_verified",
+      "experiment": "N17v1",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 194,
+      "utc": "2026-10-30T13:05:08.274914+00:00",
+      "event": "documentation_build_schema_repairs",
+      "experiment": "N17v1",
+      "optimizer_steps": 0
     }
   ]
 }

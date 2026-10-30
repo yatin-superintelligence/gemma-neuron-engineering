@@ -281,5 +281,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N17_v1_matched_native_channels",
+      "launched_utc": "2026-10-30T13:01:16.370726+00:00",
+      "status": "private_source_verified_running"
+    }
+  ]
 }

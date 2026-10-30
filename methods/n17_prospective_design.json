@@ -1,0 +1,107 @@
+{
+  "experiment": "N17",
+  "question": "Q31",
+  "version": 1,
+  "utc": "2026-10-30T12:53:30.328595+00:00",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only unquantized BF16; no historical adapters",
+  "seed": 3117,
+  "question_text": "Which small native post-gating groups within the already validated layers 5,6,9 site causally mediate the conditional rule transfer, and do prescribed edits improve clean coding?",
+  "layers": [
+    5,
+    6,
+    9
+  ],
+  "per_layer_selected": 32,
+  "groups": [
+    "selected96",
+    "random17101",
+    "random17102"
+  ],
+  "random_seeds": [
+    17101,
+    17102
+  ],
+  "parent_evidence": "N16 already patches native post-gating down_proj inputs. Its selected full-vector site layers 5,6,9 transfers 8/16, same-rule preserves 16/16 and all 8 retention. This is reused development and conditional sufficiency, not native necessity or improvement. No separate full-channel panel is required.",
+  "data": "Exact forty N12/N16 development prompts and unchanged graders. Main role cohort sixteen baseline-correct filter/predicate cases. All thirty-two coding plus eight retention are always reported. No final data or wording changes.",
+  "selection": "Eight filter prefixes, all 2 styles x 2 mappings x 2 labels, are canonical activity representatives. Verify that the four coding families have exactly matching native prefix hashes at fixed style/mapping/label. For each of four style/mapping strata compute h(higher)-h(lower). Score each coordinate by max(min(delta/RMS),min(-delta/RMS)) across four strata. Require positive sign-consistent score. Descending score then native channel order within each layer; accept first 32 strictly matchable coordinates per layer. No correctness feedback, gradients, learned bridge or applied contrast vector.",
+  "matching": {
+    "same_layer": true,
+    "RMS_ratio": [
+      0.9,
+      1.1
+    ],
+    "down_column_norm_ratio": [
+      0.8,
+      1.25
+    ],
+    "paired_delta_RMS_ratio": [
+      0.9,
+      1.1
+    ],
+    "minimum_pool": 16,
+    "exclusions": "Exclude proposed selected coordinates and already used coordinates within that random group. Seeds are independent; cross-random overlap is permitted and reported. Rebuild both groups deterministically for each proposed selected set. No relaxation; fewer than 32 accepted in any layer is a planned pre-intervention stop.",
+    "precision": "Activity differences, RMS and scores computed/savedF64 from exact BF16 captures. Frozen down-column norms computedF32 and saved exactly. Host recomputes rank/matches from these compact moments, not checkpoint weights or full activations. Per-unit norm matching does not equate the group projected residual direction/norm."
+  },
+  "main_operations": [
+    "opposite",
+    "samepolicy",
+    "zero",
+    "gain2",
+    "rescue",
+    "cut"
+  ],
+  "main_mechanisms": "For each of three 96-channel groups: actual sparse opposite/same-policy donor swaps; clean gain 0/2 at selector; zero_then_recipient rescue; full-site opposite background followed by recipient replacement of the group (conditional cut). All only at selector prefill, skipping cached decoding. Cut necessity is conditional on engineered donor transfer, not clean native necessity.",
+  "unit_design": "Top accepted selected unit per layer and its corresponding two random controls, nine units. Opposite swap, clean zero and zero_then_recipient rescue on four fixed role sentinels plus first JSON and first arithmetic rows in unchanged task order. Six per arm. Exploratory individual evidence, not universal semantic meaning.",
+  "unit_operations": [
+    "opposite",
+    "zero",
+    "rescue"
+  ],
+  "self_controls": "All 3 group rescues on 40 inputs and 9 unit rescues on 6 inputs require exact original first logits. Each 3 group and 9 unit rescue also replays prefill plus first 2 teacher-forced original tokens on 4 cache sentinels, exactly paired with native cache hashes. Reference rescue records reuse baseline tokens after these proofs, without regenerating completions. These 174 references are not newly generated identity demonstrations.",
+  "scope": "Read-only before/after observer proves all other channels and positions unchanged relative to each live local pre-edit down-input, including on an opposite full-site background. Earlier-layer interventions can legitimately change later live activations. Check prescribed target values, skip counts, hook removal, native parameter versions/gradflags unchanged, p.gradNone. No attention/KV hook or weight change.",
+  "counts": {
+    "main_conditions": 21,
+    "main_records": 840,
+    "unit_conditions": 27,
+    "unit_records": 162,
+    "total_records": 1002,
+    "new_predictions": 708,
+    "exact_parent_carries": 120,
+    "baseline_reference_rescues": 174,
+    "native_vector_hash_replays": 120,
+    "parent_full_site_logit_replays": 80,
+    "prefill_self_checks": 174,
+    "cached_self_hash_comparisons": 144,
+    "native_cache_hashes": 12,
+    "restorations": 96
+  },
+  "role_gates": {
+    "sufficiency": "Selected opposite produces at least 4 alternative-correct role programs and at least 4 more than each random group, spanning both families,styles,labels,mappings,directions. Selected same-policy preserves>=14/16. Selected opposite and same-policy retainall 8 controls.",
+    "clean_necessity": "Selected zero loses>=4 more of 16 baseline-correct programs than each random group, spanning both families,labels,mappings,directions; retainsall 8 controls. Rescue hashes exact. This is bounded clean-context necessity, not exclusive representation.",
+    "conditional_necessity": "Among 8 parent full-opposite alternative-correct cases, selected cut loses>=4 more transfers than each random group; report all 16 role cases and all 32 coding,retainall 8 controls. This is conditional transfer necessity only.",
+    "role_interpretation": "Report each gate independently. Only all three passed can support a bounded group-role candidate. No complete semantic label from an activity rank or donor transfer. Individual sentinels exploratory. No post-result threshold/gain/coordinate revision."
+  },
+  "clean_coding": "Report every main/unit condition and all main 32 coding gains/losses against the original baseline, alongside retention. Gain 2 is fixed and has both matched random amplification controls. No winning-strength or incidental-gain selection. Useful improvement requires a separate frozen fresh confirmation.",
+  "decode": "Greedy 64 newtokenEOS decoding, unchanged graders, raw text/tokenIDs saved. No rerolls.256 fresh executable stress probes, seed 3117 on eligible correct/changed outputs.",
+  "counter_contract": {
+    "fixed_calls": 646,
+    "total_calls": "646 + sum(new_generated_tokens+1) =1354 +sum(new_generated_tokens)",
+    "input_exposures": "6*S40+9*S6+13*S4+104+21*S2 main+27*S2 unit+sum(2*input_tokens+generated_tokens-1 for 708 new). S40 allpromptlengths;S6 unitcase lengths;S4 cache sentinel lengths;S2 first 2 restore lengths per grid."
+  },
+  "stopping": "Any lineage, self, cache, scope, restoration, unexpected mutation, matching or counter gate failure stops interpretation. Preserve partials. No tolerance changes or completed-panel regeneration. Matching stop is not a scientific neuron null.",
+  "resources": {
+    "platform_seconds": 3600,
+    "notebook_seconds": 3500,
+    "worker_seconds": 3200,
+    "one_free_job": true,
+    "fresh_quota_required": true,
+    "reserve_hours": 2
+  },
+  "protocol_sha256": "0ab59e5a42be020e5a8e6569f630beb202660b946279f369813b0e81b616a36b",
+  "source_site_audit_sha256": "a60aa2db37005bf162c98711f86fa4de4e201912ff337d59ffc04b1cb3e0878e",
+  "edition": "Reviewed methods only. Raw tasks, prompts, outputs and donor states stay private."
+}
