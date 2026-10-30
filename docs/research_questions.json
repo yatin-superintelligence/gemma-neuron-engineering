@@ -380,7 +380,7 @@
     {
       "id": "Q25",
       "experiment": "N14: full-site semantic positive control",
-      "status": "private_GPU_version1_active_outputs_unseen",
+      "status": "complete_host_audited_block5_9_eligible",
       "question": "Can a whole native site transfer the contextual rule in the unchanged coding tasks?",
       "question_provenance": "Prospective scope check after the complete N13 null. No N14 implementation or outputs existed when its protocol was frozen.",
       "parents": [
@@ -388,10 +388,41 @@
         "Q24"
       ],
       "method": "Keep every prompt, grade and base completion. Compare actual opposite-rule and reversed-label same-rule donors at layer 0, layers 5 to 9 and layers 0 to 13. Use exact self, identity and restoration guards.",
-      "result": "The exact source and auditor were frozen before launch. All forty inherited token/oracle checks, six actual tiny-Gemma self/foreign/cached cases and the native-only capture test pass. The notebook is server-verified private with exact source JSON. No new pretrained output has been read.",
-      "interpretation": "A full-site positive control is needed in these changed semantic prefixes before sparse failure is interpreted as a localization conclusion. This is not a construction or coding-improvement claim.",
-      "next_question": "Which declared native site, if any, supports rule-specific executable transfer beyond label identity?",
-      "direction_decision": "Use the smallest decisive forward control. Defer arbitrary neuron construction and another sparse ranking until a site passes. Recheck actual jobs and free quota before launch."
+      "result": "All 400 records audited, including forty carried originals. Layers 5 to 9 transfer the opposite rule in 14/16 usable programs and preserve all 16 under reversed-label same-rule donors. All eight retention cases pass. Layer 0 transfers under both donor types and fails the control; layers 0 to 13 preserve only 13/16 under same-rule donors and fail the threshold.",
+      "interpretation": "The declared block passes whole-site conditional sufficiency across two coding families. This does not identify individual neuron meanings or a useful model edit. The complete grid includes one incidental development coding gain, which is not confirmed.",
+      "next_question": "Which individual layer or adjacent pair within the validated block can pass the same semantic controls?",
+      "direction_decision": "Follow the frozen positive-site branch. Use a new prospective forward layer/pair grid, retain every control and carry the necessary full-site originals exactly. No re-ranking from a single secondary gain."
+    },
+    {
+      "id": "Q26",
+      "experiment": "Prospective position and construction review",
+      "status": "host_literature_and_design_review_complete_no_model_calls",
+      "question": "Which next intervention would resolve a functional uncertainty rather than repeat a sparse null?",
+      "question_provenance": "Conditional proposals recorded while N14 is active and before its output access. Not a frozen GPU experiment.",
+      "parents": [
+        "Q25"
+      ],
+      "method": "Compare forward site decomposition, current-readout controls and prescribed neuron-source connections against exact closest priors and the no-training constraint. Require source/position/cache and gain-equivalent controls before construction.",
+      "result": "Reviewed primary abstracts and selected methods show direct precedents for activation steering, generated-token steering, shared/local history and internal-state augmentation. No new model call, learned vector or GPU launch occurred.",
+      "interpretation": "A new causal route alone is not a useful new capability. Candidate construction still lacks the native functional evidence required by its trigger.",
+      "next_question": "Which branch of the frozen N14 decision rule is supported by its complete audited grid?",
+      "direction_decision": "Keep N14 unchanged. Use its outcome to select the already stated site-or-anchor branch. Do not start a construction sweep merely because an activity signal is large."
+    },
+    {
+      "id": "Q27",
+      "experiment": "N15: semantic layer and adjacent-pair decomposition",
+      "status": "private_GPU_version1_active_outputs_unseen",
+      "question": "Which single layer or adjacent pair inside the validated native block can transfer the contextual rule while preserving same-rule behavior?",
+      "question_provenance": "Prospective positive-site branch after N14 complete audit. No N15 code or pretrained outputs exist at protocol freeze.",
+      "parents": [
+        "Q25",
+        "Q26"
+      ],
+      "method": "All five single layers and four adjacent pairs inside layers 5 to 9 receive actual opposite and reversed-label same-rule donors. Keep all forty inputs and grades. Carry two hundred necessary parent-control records exactly, with live logit replays.",
+      "result": "The source, inherited data and independent auditor were frozen before launch. All eighteen actual tiny-Gemma self/foreign/cached cases, nine paired cached-self fixtures and forty inherited token/oracle checks passed. One notebook is server-verified private with exact source JSON. No new output has been read.",
+      "interpretation": "A whole-layer or pair effect would localize conditional sufficiency, not identify individual neuron meaning or a coding improvement. Parent selection and this panel are development research.",
+      "next_question": "What is the smallest eligible tested native site within the validated block?",
+      "direction_decision": "Follow the declared smallest-layer-count and earliest-start rule. No secondary gain or strongest observed transfer chooses the site. Keep every failed candidate."
     }
   ]
 }

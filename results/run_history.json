@@ -237,13 +237,20 @@
       "outcome": "All640records audited,600new/40carried. All16conditionssamecorrectness;0ruletransfers/0gains/losses. Permanent0/2matchesglobalhookexact80cases. All200identity/32restorationguards pass;0updates.",
       "duration_scope": "Worker964.256537s,notebook1020.436609s.Notchargedquota.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N14_v1_full_site_semantic_positive_control",
+      "recorded_script_seconds": 618.540516689,
+      "outcome": "400records audited,360new/40carried. Block5..9opposite14/16,same16/16 passes;L0same0/16confound;early0..13same13/16fails. All8retention and120self/120generatedidentity/20restorationguards pass.0updates.",
+      "duration_scope": "Worker618.540517s,notebook662.294767s.Notchargedquota.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N14_v1_full_site_positive_control",
-      "launched_utc": "2026-10-30T09:20:48.859571+00:00",
-      "status": "Private bounded version1 active,400records maximum/360new/40carried;zero training"
+      "run": "N15_v1_semantic_layer_pair_decomposition",
+      "launched_utc": "2026-10-30T09:48:07.612750+00:00",
+      "status": "Oneprivateboundedjobactive,920recordsmax/720new/200carried,zero training"
     }
   ]
 }

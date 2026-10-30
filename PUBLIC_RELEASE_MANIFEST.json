@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-10-30T09:28:02.977137+00:00",
+  "generated_utc": "2026-10-30T10:01:21.951810+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "2875e4df5818d4f38d14edeff7938906ad0f995a11f4256e61d5a767e6c66de8",
-      "bytes": 476
+      "sha256": "c0ccc2cf77dd2f45638242c22f4ef3bc6f438696f0be03e2d5c54dfe4706f0ce",
+      "bytes": 507
     },
     {
       "path": "LICENSE",
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "ab917a3847d7526d746441e566221ac527a00ac659c18c3bdf714c872a5b7fc0",
-      "bytes": 15261
+      "sha256": "defa0d03d87fe6a975f8f7ea0851e9200d1fd94b81f95bd2807b7a37a386f9d6",
+      "bytes": 16128
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "8ca47c4be7c895d571dab1a15324ecbec5e0d81ef1c3f28fd10204e8143d0062",
-      "bytes": 163639
+      "sha256": "48c66c1af17bfec6cad8687cba4b27bd820bcb80cc0cf188789247efd944da66",
+      "bytes": 168180
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "6535b306a05ec46a4cd70d11c25fbdba337926bbd59942f9d6347ce08c171b65",
-      "bytes": 84539
+      "sha256": "5d2ba687b670428dd87d2b846504cb772118c9f23c929de9555ee555516bbb1c",
+      "bytes": 89253
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "c7167bb20b88a9a575754b8cca11a9bf7cd7caeccc5f792d9e7df0b2a396715f",
-      "bytes": 37052
+      "sha256": "24431b0624abc5b9159f3a2dcd90f90b0a8a2ba6c8df299cb4e0359a9d6cbc1f",
+      "bytes": 38178
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -90,6 +90,16 @@
       "bytes": 56429
     },
     {
+      "path": "docs/figures/n14_summary.png",
+      "sha256": "84bf759e828a2ddd0eeac87cf829c2b2afc1bbb873b5440cc3d681ee3696528e",
+      "bytes": 242049
+    },
+    {
+      "path": "docs/figures/n14_summary.svg",
+      "sha256": "c90a050df9166a13609d1cd5f640da4d5a7b67817426e391ec65c2248f75abbb",
+      "bytes": 43211
+    },
+    {
       "path": "docs/index.html",
       "sha256": "d3e337ff1741f2d8c6b9c4d2656bde54f4421b3c6d6373e5057dc3f57fc69f8e",
       "bytes": 12399
@@ -106,8 +116,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "065bd890fa752cd6b4283912436c81ec6e181ec33f05dde6b002ff297fdaf441",
-      "bytes": 40188
+      "sha256": "886acef9bf381c125df8985024f1d024d284787269f3a4d011584485aca8966b",
+      "bytes": 43473
     },
     {
       "path": "interpretability/__init__.py",
@@ -295,6 +305,11 @@
       "bytes": 5207
     },
     {
+      "path": "models/n14/recipe.json",
+      "sha256": "ac875e793b75a69f5988206914c90e25c5b0ace9919b541c4f6f84e0e3e59915",
+      "bytes": 3487
+    },
+    {
       "path": "pyproject.toml",
       "sha256": "5e70a9b80325b4f0d526c86b15da0efc4cd9ec964371ed29a5972dcdfc8ead98",
       "bytes": 576
@@ -450,9 +465,14 @@
       "bytes": 17723
     },
     {
+      "path": "results/n14_site_summary.json",
+      "sha256": "be0102dd48ae6d61df9633fdfe5004c88c462f5e94ae8f5daab2fa7f983a2541",
+      "bytes": 41352
+    },
+    {
       "path": "results/progress_snapshot.json",
-      "sha256": "e2dc11d844e3cf8eae821089fee898d55a93eaac5315336a2c362063cd87b461",
-      "bytes": 824
+      "sha256": "a5328c31c860610f87ba5ad65ccacfa36c707aec55b61d00af0b3b60fa76ef92",
+      "bytes": 822
     },
     {
       "path": "results/r01_reconstruction.json",
@@ -461,8 +481,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "9112da72ee62a48a51ae43b8ba9468b79789af4cf3444ac521bd51d5bee8ebf6",
-      "bytes": 12519
+      "sha256": "fd75843c052790c8c2cb55a5131c6800a8dcdd15950d2f40c5832e45f07d7d54",
+      "bytes": 12969
     },
     {
       "path": "scripts/plot_n04_summary.py",
@@ -488,6 +508,11 @@
       "path": "scripts/plot_n11_summary.py",
       "sha256": "2bb7462a1aec34d874bc181d2d3cba34560633433c0020e4db58f0d3d9611d3e",
       "bytes": 5486
+    },
+    {
+      "path": "scripts/plot_n14_summary.py",
+      "sha256": "c203bc26e7670f61bd77ec43ff1f8d3a3d0b79fcab47e82e7b6a50000e37c952",
+      "bytes": 4999
     },
     {
       "path": "tests/__init__.py",

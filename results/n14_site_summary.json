@@ -1,0 +1,1828 @@
+{
+  "utc": "2026-10-30T09:33:51.075887+00:00",
+  "status": "host_audited",
+  "predictions": 400,
+  "new_predictions": 360,
+  "carried_records_exact": 40,
+  "optimizer_steps": 0,
+  "all_raw_token_grades_and_guards_pass": true,
+  "conditions": [
+    {
+      "condition": "base",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        }
+      },
+      "capped": 0,
+      "role_strata": [
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "identity",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        }
+      },
+      "capped": 0,
+      "role_strata": [
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "layer0_opposite",
+      "families": {
+        "filter": {
+          "correct": 0,
+          "opposite_correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 0,
+          "opposite_correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 1,
+          "opposite_correct": 1,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        }
+      },
+      "capped": 0,
+      "role_strata": [
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        }
+      ]
+    },
+    {
+      "condition": "layer0_samepolicy",
+      "families": {
+        "filter": {
+          "correct": 0,
+          "opposite_correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 0,
+          "opposite_correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 1,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        }
+      },
+      "capped": 0,
+      "role_strata": [
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        }
+      ]
+    },
+    {
+      "condition": "block5_9_opposite",
+      "families": {
+        "filter": {
+          "correct": 0,
+          "opposite_correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 1,
+          "opposite_correct": 6,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 1,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        }
+      },
+      "capped": 1,
+      "role_strata": [
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        }
+      ]
+    },
+    {
+      "condition": "block5_9_samepolicy",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 1,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        }
+      },
+      "capped": 0,
+      "role_strata": [
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "block5_9_recipient",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        }
+      },
+      "capped": 0,
+      "role_strata": [
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "early0_13_opposite",
+      "families": {
+        "filter": {
+          "correct": 0,
+          "opposite_correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 0,
+          "opposite_correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 1,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        }
+      },
+      "capped": 0,
+      "role_strata": [
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 0,
+          "opposite_correct": 1
+        }
+      ]
+    },
+    {
+      "condition": "early0_13_samepolicy",
+      "families": {
+        "filter": {
+          "correct": 7,
+          "opposite_correct": 1,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 6,
+          "opposite_correct": 2,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 1,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        }
+      },
+      "capped": 0,
+      "role_strata": [
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 0,
+          "opposite_correct": 1
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        }
+      ]
+    },
+    {
+      "condition": "early0_13_recipient",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "opposite_correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "opposite_correct": null,
+          "rows": 4
+        }
+      },
+      "capped": 0,
+      "role_strata": [
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "filter",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 0,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 0,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": -1,
+          "correct": 1,
+          "opposite_correct": 0
+        },
+        {
+          "family": "predicate",
+          "style": 1,
+          "mapping": 1,
+          "direction": 1,
+          "correct": 1,
+          "opposite_correct": 0
+        }
+      ]
+    }
+  ],
+  "estimands": {
+    "role_cohort": 16,
+    "site_gates": [
+      {
+        "site": "layer0",
+        "layers": [
+          0
+        ],
+        "opposite_alternative_correct": 16,
+        "same_rule_preserved": 0,
+        "checks": {
+          "opposite_transfer": true,
+          "same_rule_preservation": false,
+          "coverage": true,
+          "retention": true
+        },
+        "eligible": false
+      },
+      {
+        "site": "block5_9",
+        "layers": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "opposite_alternative_correct": 14,
+        "same_rule_preserved": 16,
+        "checks": {
+          "opposite_transfer": true,
+          "same_rule_preservation": true,
+          "coverage": true,
+          "retention": true
+        },
+        "eligible": true
+      },
+      {
+        "site": "early0_13",
+        "layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "opposite_alternative_correct": 16,
+        "same_rule_preserved": 13,
+        "checks": {
+          "opposite_transfer": true,
+          "same_rule_preservation": false,
+          "coverage": true,
+          "retention": true
+        },
+        "eligible": false
+      }
+    ],
+    "selected_site": "block5_9",
+    "coding_conditions": [
+      {
+        "condition": "base",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0
+      },
+      {
+        "condition": "identity",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0
+      },
+      {
+        "condition": "layer0_opposite",
+        "gains": 1,
+        "losses": 16,
+        "net": -15,
+        "retention_losses": 0
+      },
+      {
+        "condition": "layer0_samepolicy",
+        "gains": 1,
+        "losses": 16,
+        "net": -15,
+        "retention_losses": 0
+      },
+      {
+        "condition": "block5_9_opposite",
+        "gains": 1,
+        "losses": 15,
+        "net": -14,
+        "retention_losses": 0
+      },
+      {
+        "condition": "block5_9_samepolicy",
+        "gains": 1,
+        "losses": 0,
+        "net": 1,
+        "retention_losses": 0
+      },
+      {
+        "condition": "block5_9_recipient",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0
+      },
+      {
+        "condition": "early0_13_opposite",
+        "gains": 1,
+        "losses": 16,
+        "net": -15,
+        "retention_losses": 0
+      },
+      {
+        "condition": "early0_13_samepolicy",
+        "gains": 1,
+        "losses": 3,
+        "net": -2,
+        "retention_losses": 0
+      },
+      {
+        "condition": "early0_13_recipient",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0
+      }
+    ],
+    "original_model_improvement_established": false,
+    "individual_semantic_role_established": false,
+    "scope": "Whole-site conditional sufficiency on reused development. Opposite-rule swaps change the instruction signal and do not count as useful model improvement."
+  },
+  "notebook_seconds": 662.294766602,
+  "host_recomputes_full_checkpoint_logits": false,
+  "scope": "Full-site semantic positive control on reused development,not a new neuron role or useful original-model improvement.",
+  "experiment": "N14",
+  "version": 1,
+  "actual_new_backwards": 0,
+  "worker_seconds": 618.540516689,
+  "actual_forward_calls": 5060,
+  "actual_input_token_exposures": 82312,
+  "new_generated_tokens": 4520,
+  "coding_improvement_established": false,
+  "individual_semantic_role_established": false,
+  "interpretation": "Layers 5 to 9 pass the predefined whole-site gate: opposite-rule transfer 14/16, same-rule preservation 16/16, retention 8/8. Layer 0 fails the label control; layers 0 to 13 preserve only 13/16 and fail the threshold. One incidental development gain is not confirmed improvement. Every condition and failed gate is retained.",
+  "next_decision": "Test all five individual layers and four adjacent pairs inside layers 5 to 9 using prospective donor controls. No selection from an incidental gain."
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "experiment": "N14",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only, unquantized BF16",
+  "optimizer_steps": 0,
+  "actual_backward_passes": 0,
+  "conditions": [
+    {
+      "name": "base",
+      "layers": [],
+      "donor": null
+    },
+    {
+      "name": "identity",
+      "layers": [],
+      "donor": null
+    },
+    {
+      "name": "layer0_opposite",
+      "layers": [
+        0
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "layer0_samepolicy",
+      "layers": [
+        0
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "block5_9_opposite",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "block5_9_samepolicy",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "block5_9_recipient",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "donor": "recipient"
+    },
+    {
+      "name": "early0_13_opposite",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "early0_13_samepolicy",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "early0_13_recipient",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "donor": "recipient"
+    }
+  ],
+  "mechanism": "Use interpretability.mlp_composition.compose_mlp_donors at the caller-declared absolute selector position. Capture donors with interpretability.native_capture.capture_native_mlp.",
+  "donor_contract": "Use actual unmodified recipient, opposite-rule or same-rule MLP values at matching positions. No fitted vector or answer prompt. The caller provides the donor context; raw tasks and traces remain private.",
+  "validation": {
+    "original_all400_records_host_audited": true,
+    "carry_originals_exact": 40,
+    "self_logit_comparisons": 120,
+    "generated_identity_pairs": 120,
+    "postcondition_restorations": 20,
+    "protocol_sha256": "700b89955d1dc5279dfb34904e4c8fa2dad458f28d806657674edd50a7547ec5",
+    "result_receipt_sha256": "3d15a53ab38c17978b1b9f6406be217315342a306e9692492b885013f47546b5",
+    "capture_source_sha256": "71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1",
+    "composition_source_sha256": "769e1477149fd11b19950c19d8452fd4b691a6a71908abfb5361bc2f63820ae2",
+    "independent_clean_package_pretrained_replay": false
+  },
+  "interpretation": "Layers 5 to 9 pass the predefined whole-site gate: opposite-rule transfer 14/16, same-rule preservation 16/16, retention 8/8. Layer 0 fails the label control; layers 0 to 13 preserve only 13/16 and fail the threshold. One incidental development gain is not confirmed improvement. Every condition and failed gate is retained.",
+  "scope": "Whole-site control on reused development cases. No individual neuron meaning or useful original-model improvement is established."
+}
