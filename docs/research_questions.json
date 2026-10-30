@@ -389,7 +389,7 @@
       ],
       "method": "Keep every prompt, grade and base completion. Compare actual opposite-rule and reversed-label same-rule donors at layer 0, layers 5 to 9 and layers 0 to 13. Use exact self, identity and restoration guards.",
       "result": "All 400 records audited, including forty carried originals. Layers 5 to 9 transfer the opposite rule in 14/16 usable programs and preserve all 16 under reversed-label same-rule donors. All eight retention cases pass. Layer 0 transfers under both donor types and fails the control; layers 0 to 13 preserve only 13/16 under same-rule donors and fail the threshold.",
-      "interpretation": "The declared block passes whole-site conditional sufficiency across two coding families. This does not identify individual neuron meanings or a useful model edit. The complete grid includes one incidental development coding gain, which is not confirmed.",
+      "interpretation": "The declared block passes whole-site conditional sufficiency across two coding families. This does not identify individual neuron meanings or a useful model edit. The complete grid includes one incidental development coding gain, which is not confirmed. A posthoc syntax check finds thirteen of the sixteen block-opposite outputs differ only by a strict comparison polarity after fence and bound-variable normalization. Same-rule donors preserve thirteen raw strings, two normalized syntax trees and one equivalent Boolean formulation. This describes saved programs and does not establish a neuron meaning or change the frozen gate. The six incidental condition-level gains concern only two existing extremum cases, both requesting the higher value; they are not six independent replications.",
       "next_question": "Which individual layer or adjacent pair within the validated block can pass the same semantic controls?",
       "direction_decision": "Follow the frozen positive-site branch. Use a new prospective forward layer/pair grid, retain every control and carry the necessary full-site originals exactly. No re-ranking from a single secondary gain."
     },
@@ -411,7 +411,7 @@
     {
       "id": "Q27",
       "experiment": "N15: semantic layer and adjacent-pair decomposition",
-      "status": "private_GPU_version1_active_outputs_unseen",
+      "status": "complete_host_audited_no_eligible_layer_or_pair",
       "question": "Which single layer or adjacent pair inside the validated native block can transfer the contextual rule while preserving same-rule behavior?",
       "question_provenance": "Prospective positive-site branch after N14 complete audit. No N15 code or pretrained outputs exist at protocol freeze.",
       "parents": [
@@ -419,10 +419,28 @@
         "Q26"
       ],
       "method": "All five single layers and four adjacent pairs inside layers 5 to 9 receive actual opposite and reversed-label same-rule donors. Keep all forty inputs and grades. Carry two hundred necessary parent-control records exactly, with live logit replays.",
-      "result": "The source, inherited data and independent auditor were frozen before launch. All eighteen actual tiny-Gemma self/foreign/cached cases, nine paired cached-self fixtures and forty inherited token/oracle checks passed. One notebook is server-verified private with exact source JSON. No new output has been read.",
-      "interpretation": "A whole-layer or pair effect would localize conditional sufficiency, not identify individual neuron meaning or a coding improvement. Parent selection and this panel are development research.",
-      "next_question": "What is the smallest eligible tested native site within the validated block?",
-      "direction_decision": "Follow the declared smallest-layer-count and earliest-start rule. No secondary gain or strongest observed transfer chooses the site. Keep every failed candidate."
+      "result": "All 920 records audited, with 720 new outputs and 200 exact carried parent records. Single-layer transfers are 0, 0, 0, 0 and 4 of 16. Adjacent-pair transfers are 0, 0, 3 and 6. Every same-rule condition preserves all sixteen programs; all eight retention cases pass throughout. No candidate meets the predefined gate.",
+      "interpretation": "The whole-block result has not localized to any tested single layer or adjacent pair. Partial transfers do not establish an individual neuron role or coding improvement. This supports testing the missing combinations; it does not prove a formal high-order interaction.",
+      "next_question": "Which remaining layer subset inside the validated block can pass the unchanged semantic gate?",
+      "direction_decision": "Follow the frozen no-eligible-site branch. Test all remaining combinations once, keep all parent conditions, and use fewest layers then fixed lexical order rather than highest score."
+    },
+    {
+      "id": "Q28",
+      "experiment": "N16: remaining native layer subsets",
+      "status": "private_GPU_version1_active_outputs_unseen",
+      "question": "Which remaining native layer subset inside layers 5 to 9 passes the unchanged semantic donor controls?",
+      "question_provenance": "Prospective no-eligible-site branch after all N15 outputs and guards pass. No N16 implementation or outputs exist at protocol freeze.",
+      "parents": [
+        "Q25",
+        "Q27"
+      ],
+      "method": "Test the six nonadjacent pairs, all ten triples and all five four-layer subsets. Preserve all forty inputs and grades, actual opposite/same-rule donors and the fixed role gate. Carry 200 necessary common parent records exactly.",
+      "result": "No N16 result. Planned 1,880 records: 1,680 new and 200 carried. All 31 nonempty subsets are covered only when combining this grid with the closed parent results.",
+      "interpretation": "This is a bounded forward sufficiency comparison inside a validated block, not a search over arbitrary layers or a new capability claim. Discrete count differences do not prove formal synergy.",
+      "next_question": "Does any proper subset pass the same rule-transfer and retention gate?",
+      "direction_decision": "Use the smallest eligible cardinality, then lexicographic layer order. Follow with prospective channel partitions in that site; if none passes, retain the full block and use a fixed joint-channel test. Do not lower the threshold or select from incidental gains."
     }
-  ]
+  ],
+  "active_question_id": "Q28",
+  "next_question_id": null
 }

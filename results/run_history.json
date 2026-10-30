@@ -244,13 +244,20 @@
       "outcome": "400records audited,360new/40carried. Block5..9opposite14/16,same16/16 passes;L0same0/16confound;early0..13same13/16fails. All8retention and120self/120generatedidentity/20restorationguards pass.0updates.",
       "duration_scope": "Worker618.540517s,notebook662.294767s.Notchargedquota.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N15_v1_semantic_layer_pair_decomposition",
+      "recorded_script_seconds": 1293.975734467,
+      "outcome": "All 920 records and mandatory guards pass; no single layer or adjacent pair meets the predefined semantic gate. Zero backward passes and updates.",
+      "duration_scope": "Worker 1293.975734467 seconds; notebook 1350.308286923 seconds. Not charged quota.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N15_v1_semantic_layer_pair_decomposition",
-      "launched_utc": "2026-10-30T09:48:07.612750+00:00",
-      "status": "Oneprivateboundedjobactive,920recordsmax/720new/200carried,zero training"
+      "run": "N16_v1_complete_remaining_layer_subsets",
+      "launched_utc": "2026-10-30T10:20:48.816699+00:00",
+      "status": "One private bounded job active, maximum 1880 records, 1680 new and 200 carried. Zero training."
     }
   ]
 }

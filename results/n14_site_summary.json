@@ -1824,5 +1824,145 @@
   "coding_improvement_established": false,
   "individual_semantic_role_established": false,
   "interpretation": "Layers 5 to 9 pass the predefined whole-site gate: opposite-rule transfer 14/16, same-rule preservation 16/16, retention 8/8. Layer 0 fails the label control; layers 0 to 13 preserve only 13/16 and fail the threshold. One incidental development gain is not confirmed improvement. Every condition and failed gate is retained.",
-  "next_decision": "Test all five individual layers and four adjacent pairs inside layers 5 to 9 using prospective donor controls. No selection from an incidental gain."
+  "next_decision": "Test all five individual layers and four adjacent pairs inside layers 5 to 9 using prospective donor controls. No selection from an incidental gain.",
+  "posthoc_code_structure": {
+    "status": "posthoc_saved_output_description",
+    "source_sha256": "b61e07b6ef1de66120de35563c3fc3cba9a5211697b6e442e687da320c6fe327",
+    "analysis_source_sha256": "916dd54a62dba377497e673fee6e030d1e01939b15a8ccdd4c0e72d0c366366a",
+    "new_model_forwards": 0,
+    "new_execution_grades": 0,
+    "optimizer_steps": 0,
+    "summary": [
+      {
+        "condition": "base",
+        "role_cases": 16,
+        "counts": {
+          "raw_exact": 16,
+          "same_AST_after_fence_and_local_name_normalization": 0,
+          "single_comparison_polarity_only": 0,
+          "other_AST_change": 0,
+          "parse_failure": 0
+        }
+      },
+      {
+        "condition": "identity",
+        "role_cases": 16,
+        "counts": {
+          "raw_exact": 16,
+          "same_AST_after_fence_and_local_name_normalization": 0,
+          "single_comparison_polarity_only": 0,
+          "other_AST_change": 0,
+          "parse_failure": 0
+        }
+      },
+      {
+        "condition": "layer0_opposite",
+        "role_cases": 16,
+        "counts": {
+          "raw_exact": 0,
+          "same_AST_after_fence_and_local_name_normalization": 0,
+          "single_comparison_polarity_only": 15,
+          "other_AST_change": 1,
+          "parse_failure": 0
+        }
+      },
+      {
+        "condition": "layer0_samepolicy",
+        "role_cases": 16,
+        "counts": {
+          "raw_exact": 0,
+          "same_AST_after_fence_and_local_name_normalization": 0,
+          "single_comparison_polarity_only": 15,
+          "other_AST_change": 1,
+          "parse_failure": 0
+        }
+      },
+      {
+        "condition": "block5_9_opposite",
+        "role_cases": 16,
+        "counts": {
+          "raw_exact": 1,
+          "same_AST_after_fence_and_local_name_normalization": 0,
+          "single_comparison_polarity_only": 13,
+          "other_AST_change": 2,
+          "parse_failure": 0
+        }
+      },
+      {
+        "condition": "block5_9_samepolicy",
+        "role_cases": 16,
+        "counts": {
+          "raw_exact": 13,
+          "same_AST_after_fence_and_local_name_normalization": 2,
+          "single_comparison_polarity_only": 0,
+          "other_AST_change": 1,
+          "parse_failure": 0
+        }
+      },
+      {
+        "condition": "block5_9_recipient",
+        "role_cases": 16,
+        "counts": {
+          "raw_exact": 16,
+          "same_AST_after_fence_and_local_name_normalization": 0,
+          "single_comparison_polarity_only": 0,
+          "other_AST_change": 0,
+          "parse_failure": 0
+        }
+      },
+      {
+        "condition": "early0_13_opposite",
+        "role_cases": 16,
+        "counts": {
+          "raw_exact": 0,
+          "same_AST_after_fence_and_local_name_normalization": 0,
+          "single_comparison_polarity_only": 15,
+          "other_AST_change": 1,
+          "parse_failure": 0
+        }
+      },
+      {
+        "condition": "early0_13_samepolicy",
+        "role_cases": 16,
+        "counts": {
+          "raw_exact": 11,
+          "same_AST_after_fence_and_local_name_normalization": 1,
+          "single_comparison_polarity_only": 3,
+          "other_AST_change": 1,
+          "parse_failure": 0
+        }
+      },
+      {
+        "condition": "early0_13_recipient",
+        "role_cases": 16,
+        "counts": {
+          "raw_exact": 16,
+          "same_AST_after_fence_and_local_name_normalization": 0,
+          "single_comparison_polarity_only": 0,
+          "other_AST_change": 0,
+          "parse_failure": 0
+        }
+      }
+    ],
+    "interpretation": "Syntactic changes describe saved development outputs. A comparison-operator change is not an individual neuron function. All original executable grades and the N14/N15 selection rules remain unchanged."
+  },
+  "incidental_gain_posthoc": {
+    "utc": "2026-10-30T10:10:00.248793+00:00",
+    "posthoc": true,
+    "source_sha256": "b61e07b6ef1de66120de35563c3fc3cba9a5211697b6e442e687da320c6fe327",
+    "new_model_forwards": 0,
+    "new_execution_grades": 0,
+    "optimizer_steps": 0,
+    "condition_level_gains": 6,
+    "unique_development_instances": 2,
+    "families": [
+      "extremum"
+    ],
+    "directions": [
+      1
+    ],
+    "N15_protocol_unchanged": true,
+    "N15_outputs_accessed": false,
+    "interpretation": "Six condition-level gains concern only two existing extremum instances, both requesting the higher value. Gains under both donor policies do not establish rule specificity, independent replication or confirmed improvement."
+  }
 }

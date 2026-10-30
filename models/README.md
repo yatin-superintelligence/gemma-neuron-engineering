@@ -112,7 +112,7 @@ All conditions and their limits are in the [N04 aggregate audit](../results/n04_
 
 ## Storage and provenance
 
-The exact tensor bundles occupy about 1.4 MB; the N04 recipe adds only small JSON metadata. All four Safetensors files contain the exact tensor values saved by the experiments, with added attribution metadata. Each `bundle.json` records file hashes and tensor provenance. Retain the bundle, its license and notice, the reconstruction code revision and the base revision together. Do not rely on `save_pretrained` with the original configuration to reload heterogeneous edited widths.
+The exact tensor bundles occupy about 1.4 MB; the donor-policy recipes add only small JSON metadata. All five Safetensors files contain the exact tensor values saved by the experiments, with added attribution metadata. Each `bundle.json` records file hashes and tensor provenance. Retain the bundle, its license and notice, the reconstruction code revision and the base revision together. Do not rely on `save_pretrained` with the original configuration to reload heterogeneous edited widths.
 
 ## N05 native activation policies
 
@@ -155,3 +155,38 @@ The selected 256-neuron group rescued two corrupted programs, below the required
 Load the original parent with `load_n02_base`, verify the source-column hash in the recipe, and evaluate a prescribed factor inside `with stored_neuron_gain(model, 9, 4632, 0):`. Use factor `2` for doubling. The utility assigns the native weight column for the entire evaluation context and restores the parent when the context ends. The saved columns preserve the exact parameter variants without storing another full base model.
 
 The original experiment passed 640 audited records, forty carried-original replays, two hundred generated identity comparisons and thirty-two restorations. Factors zero and two matched their global-activity equivalents exactly on forty inputs each. Every fixed condition had the same correctness. These verified edits produced no coding improvement. A separate clean-package pretrained replay of this bundle has not been performed.
+
+## N14 full-site control policies
+
+[The N14 recipe](n14/recipe.json) contains all ten original policies, the pinned parent, the exact helper hashes and the original validation scope. It stores no learned weights. The native-only capture helper observes post-gating scalars without attention hooks. The composition helper replaces only the declared selector position during prompt prefill and skips subsequent cached single-token decoding.
+
+After loading the pinned BF16 text parent, supply your own aligned donor and recipient token inputs and an identical absolute selector position:
+
+```python
+import torch
+from interpretability.native_capture import capture_native_mlp
+from interpretability.mlp_composition import compose_mlp_donors
+
+layers = list(range(5, 10))
+with capture_native_mlp(model, selector_position, layers) as donor:
+    with torch.no_grad():
+        model(**donor_inputs, use_cache=False)
+
+with compose_mlp_donors(
+    model, selector_position, [{'layers': layers, 'donor': donor}]
+):
+    with torch.no_grad():
+        output = model.generate(**recipient_inputs, do_sample=False,
+                                max_new_tokens=64, use_cache=True)
+```
+
+Donors must come from unmodified model activity. Check the tokenizer, absolute positions, source hashes and context alignment before interpreting an edit. An off condition uses no assignments. A recipient self swap uses values captured from the recipient itself. These checks are part of the mechanism, not optional evidence of a semantic role.
+
+All 400 original records, 120 self-logit comparisons, 120 generated identity/recipient comparisons and twenty restorations passed the original audit. Layers 5 to 9 transfer 14/16 opposite-rule programs and preserve 16/16 under reversed-label same-rule donors. All eight retention checks pass. Other sites and failed gates remain in the recipe and aggregate report. This is conditional whole-site control on reused development, without an individual neuron meaning or confirmed coding gain. Independent clean-package pretrained replay has not been performed. Exact replication of the private behavioral table requires the original unreleased prompts and traces.
+
+
+## N15 single-layer and adjacent-pair policies
+
+[The N15 recipe](n15/recipe.json) retains all twenty-three policies, including the five parent controls and every single layer and adjacent pair. Use the same native capture and composition example as N14, replacing the declared layer list with the recipe's list. Donors must remain actual aligned native states. No weights are learned or supplied by this policy bundle.
+
+All 920 original records passed audit. Two hundred parent records and their live first-logit replays matched, along with 560 native-state hashes, 360 prefill self checks, 108 cached-self hashes and 46 restorations. No individual layer or adjacent pair met the predefined semantic gate. The partial transfers, failed criteria and all coding gains and losses remain public aggregates. These are inference mechanisms over caller-supplied contexts. Independent clean-package pretrained replay and release of the original private behavioral panel are not claimed.

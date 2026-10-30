@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "experiment": "N15",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only, unquantized BF16",
+  "optimizer_steps": 0,
+  "actual_backward_passes": 0,
+  "conditions": [
+    {
+      "name": "base",
+      "layers": [],
+      "donor": null
+    },
+    {
+      "name": "identity",
+      "layers": [],
+      "donor": null
+    },
+    {
+      "name": "block5_9_opposite",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "block5_9_samepolicy",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "block5_9_recipient",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "donor": "recipient"
+    },
+    {
+      "name": "L05_opposite",
+      "layers": [
+        5
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "L05_samepolicy",
+      "layers": [
+        5
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "L06_opposite",
+      "layers": [
+        6
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "L06_samepolicy",
+      "layers": [
+        6
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "L07_opposite",
+      "layers": [
+        7
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "L07_samepolicy",
+      "layers": [
+        7
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "L08_opposite",
+      "layers": [
+        8
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "L08_samepolicy",
+      "layers": [
+        8
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "L09_opposite",
+      "layers": [
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "L09_samepolicy",
+      "layers": [
+        9
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "P05_06_opposite",
+      "layers": [
+        5,
+        6
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "P05_06_samepolicy",
+      "layers": [
+        5,
+        6
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "P06_07_opposite",
+      "layers": [
+        6,
+        7
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "P06_07_samepolicy",
+      "layers": [
+        6,
+        7
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "P07_08_opposite",
+      "layers": [
+        7,
+        8
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "P07_08_samepolicy",
+      "layers": [
+        7,
+        8
+      ],
+      "donor": "samepolicy"
+    },
+    {
+      "name": "P08_09_opposite",
+      "layers": [
+        8,
+        9
+      ],
+      "donor": "opposite"
+    },
+    {
+      "name": "P08_09_samepolicy",
+      "layers": [
+        8,
+        9
+      ],
+      "donor": "samepolicy"
+    }
+  ],
+  "mechanism": "Use compose_mlp_donors at the declared selector prefill position with actual unmodified native states from capture_native_mlp. Use a fresh cache for each policy.",
+  "donor_contract": "Caller-supplied aligned recipient, opposite-rule or reversed-label same-rule contexts. Raw original tasks and traces remain private. No fitted vector or oracle completion.",
+  "validation": {
+    "all920records_host_audited": true,
+    "carried_parent_records_exact": 200,
+    "live_carried_logit_hashes_exact": 200,
+    "native_vector_hashes_exact": 560,
+    "prefill_self_logit_checks": 360,
+    "cached_self_logit_checks": 108,
+    "postcondition_restorations": 46,
+    "protocol_sha256": "cac432c86174a90333e723b9ee634c5e061b485d9e01d19878c173d0e970557e",
+    "result_receipt_sha256": "3e1b0a19b93e9c3b8d78112dc1be38b0ae67d1d1a33d886d18db560e4d2bd3b0",
+    "capture_source_sha256": "71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1",
+    "composition_source_sha256": "769e1477149fd11b19950c19d8452fd4b691a6a71908abfb5361bc2f63820ae2",
+    "independent_clean_package_pretrained_replay": false
+  },
+  "interpretation": "No single layer or adjacent pair passes the predefined semantic gate. Single-layer opposite transfers are 0, 0, 0, 0 and 4 of 16; adjacent-pair transfers are 0, 0, 3 and 6. Every same-rule condition preserves 16/16 and every condition retains all eight controls. All candidate and parent outcomes remain reported. A partial transfer is not an eligible neuron role or confirmed coding benefit.",
+  "scope": "Forward sufficiency of native layer subsets on reused development. No individual neuron function or original-model improvement is established."
+}
