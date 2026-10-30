@@ -7,6 +7,6 @@
   "notebook_sha256": "bfacd2d8d4ed6714aecffc0e406cc30d4845818150095eab571f99a9fdc0542f",
   "optimizer_steps": 0,
   "actual_source_and_parent_files": 53,
-  "N22_outcomes_not_yet_reported": true,
+  "N22_outcomes_not_yet_reported": false,
   "current_status_source": "../results/progress_snapshot.json"
 }

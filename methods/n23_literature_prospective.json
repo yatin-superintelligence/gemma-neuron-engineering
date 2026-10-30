@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-30T21:52:24.656742+00:00",
+  "scope": "Three primary abstract/bibliography pages rechecked. No full-paper,appendix or new method replication claimed.",
+  "sources": [
+    {
+      "url": "https://aclanthology.org/2022.emnlp-main.3/",
+      "title": "Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space",
+      "read": "Official abstract and bibliography.",
+      "supported": "FFN parameter-vector contributions and prediction control already have direct precedent.",
+      "limit": "This does not validate identical algebra or efficiency in Gemma4with post-feedforward normalization."
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.22424",
+      "title": "Causality != Invariance: Function and Concept Vectors in LLMs",
+      "read": "v1abstract and bibliography.",
+      "supported": "The paper separates causally effective function vectors from input-format-invariant concept representations.",
+      "limit": "It concerns selected attention-head representations;we do not reproduce its RSA selection,extract vectors or claim its method applies unchanged to native MLP channels."
+    },
+    {
+      "url": "https://jmlr.org/papers/v26/23-0058.html",
+      "title": "Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability",
+      "read": "Official abstract and bibliography;earlier scoped definitions remain in N16review.",
+      "supported": "Causal abstraction supplies a formal framework unifying multiple intervention methods.",
+      "limit": "The proposed donor tests are not automatically a proven causal abstraction or a trained distributed alignment."
+    }
+  ],
+  "decision": "Counterbalance semantic relation and emitted comparator identity before another sparse search. No new novelty claim,fitted vector or model run."
+}

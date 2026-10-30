@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-30T21:48:40.580111+00:00",
+  "status": "posthoc_parser_and_aggregate_layout_repairs_scientific_records_unchanged",
+  "posthoc_parser_failure": "Missing whitespace joined __name__ and for;Ruff and parser stopped before execution. Original source preserved,0newmodel/scorer calls.",
+  "posthoc_original_sha256": "2eadc59b93d9e67fc163c68d0c0b5506225a0719876dbb290ac24705ce2a2275",
+  "figure_original_source_sha256": "655f691c162cf6388897f4327e1afe6f65dbb5e431c92cf174fe0f4cf36b07d0",
+  "figure_original_PNG_sha256": "b8fca68242713dd96e21c645e3c13952a90bc8a5eeedbe3de05d07384f82e53a",
+  "figure_fix": "Move legend above bars;insert spaces in labels. Fixed cell order,all13policies,axes,counts and source records unchanged.",
+  "figure_scientific_data_changed": false,
+  "frozen_model_runner_and_auditor_changed": false,
+  "optimizer_steps": 0
+}

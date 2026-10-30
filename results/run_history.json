@@ -321,13 +321,14 @@
       "outcome": "All160audited. Original/identity/selected12of24,randoms14of24. Baseline10sourceformat failures exceed8limit;benefit unassessable. No selected gain,all mandatory guards pass.",
       "duration_scope": "Worker and notebook seconds;not charged quota.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "N22_v1_stage_by_site",
-      "launched_utc": "2026-10-30T21:38:36.381977+00:00",
-      "status": "RUNNING_PRIVATE_SOURCE_VERIFIED"
+      "recorded_script_seconds": 231.31825739800001,
+      "outcome": "All273audited,52new. Missingall35/end andthree/current both0of13transfer,same13of13. Existingcurrent/all35transfers13of13. Allmandatoryguards pass.",
+      "duration_scope": "Worker/notebook seconds,not charged quota.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

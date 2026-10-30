@@ -248,3 +248,7 @@ assert proof['all_expected_projection_hashes_exact']
 ```
 
 The loader references the pinned BF16 parent, verifies all original columns and full target matrices before assignment, and applies only the selected saved variants. A post-assignment verification failure restores both source values and their full matrix hashes. Synthetic tests cover exact multi-layer reconstruction, refusal before any edit when a later source mismatches, and restoration after a failed edited hash. The private study validated all five weight scopes and all 160 raw records. Independent clean-package pretrained inference replay has not been performed. The selected edit matches the original at 12/24, both random arms score 14/24, and baseline formatting failures make the utility interpretation unassessable. These are reproducible edits, not a confirmed coding improvement.
+
+## N22 stage and site donor policies
+
+[All thirteen policies](n22/recipe.json) preserve the exact parent, native layer sets, intervention stages and reference treatment. Actual donor values remain private. The validated generic [stage helper](../interpretability/native_stage_site.py) replaces native post-gating values once, then removes its hooks before continuation. All 273 study records and scope, self, cache, restoration and unchanged-parameter guards pass. The two newly measured cells yield no opposite-policy transfer; all conditions remain reported. These are inference recipes without new weights or a confirmed coding gain. Independent clean-package pretrained replay is not claimed.

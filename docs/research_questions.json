@@ -555,7 +555,7 @@
     {
       "id": "Q36",
       "experiment": "N22: separate intervention stage from native-site coverage",
-      "status": "running_private_source_verified_no_results_accessed",
+      "status": "complete_private_host_audited_closed",
       "question": "On identical inherited cases, does the difference between N18 and N19 depend on intervention stage, layer coverage or both?",
       "question_provenance": "N18 changes three layers at the final input token; N19 changes all 35 at a later generated-code decision. Their comparison cannot isolate stage. A source review verifies the same 13-case cohort. The new protocol was frozen before N21 output access. N21 has since closed without a selected utility gain.",
       "parents": [
@@ -564,10 +564,28 @@
         "Q35"
       ],
       "method": "The frozen two-by-two control retains both closed cells and measures only all 35 native MLPs at last input and layers 5, 6, 9 at the current comparator. All 13 inherited role cases and eight retention references remain fixed. Actual unmodified donors are applied during one target forward, then hooks are removed. No weights, gradients or fitted strengths change.",
-      "result": "The source-only alignment preserves the exact inherited cohort and original grades. All 32 random-Gemma FP32/BF16 stage/site self and foreign cases pass, with 16 scope refusals and four separately prescribed EOS/cap counter branches. The host fixture records 166 tiny forwards and 370 synthetic exposures, zero pretrained forwards or updates. All forty token/oracle checks, both isolated imports, Ruff, cells and actual fifteen-slot cache layout pass. The complete runner, auditor, data and notebook freeze precedes launch. N22 is now the one running private job;server source JSON and private metadata are exact. No N22 result has been accessed. The fixed 273 records contain only 52 new generations;all other rows are explicitly classified parent or reference records.",
-      "interpretation": "This removes cohort mismatch for a proposed control. Stage still includes available generated prefix and cache state, not merely a token index. Completing two cells would address the confound, not identify individual meanings, formal synergy or coding improvement.",
-      "next_question": "At terminal status, retrieve compact outputs once and invoke the frozen prospective auditor. Report all four stage/site cells and every failure before choosing any next causal decomposition.",
-      "direction_decision": "Deepen this fixed causal control while N21 stays closed. Use the remaining run time for substantive host/source/claim work. No duplicate GPU job or further neuron ranking."
+      "result": "All 273 records pass: 52 new generations, 147 exact parent carries, 42 guarded self references and 32 non-applicable donor references. On the same thirteen role cases, both the three-layer and all-35-layer last-input sites transfer 0/13. The three-layer current site also transfers 0/13; only the inherited all-35-layer current site transfers 13/13. Same-rule donors preserve 13/13 in every cell. All 46 native sources, 94 live parent guards, 42 new self checks, 16 paired cache trajectories and 26 restorations pass. Actual zero backwards and optimizer updates, 1, 168 forwards, 22, 918 input-token exposures and 332 new tokens. Worker duration is 231.32 seconds; notebook duration is 272.70 seconds, not charged quota. Posthoc structure review finds that 12 of 13 broad-current changes are single strict-operator substitutions and 12 of 13 exactly match opposite-donor tokens. No grade or model rerun occurs.",
+      "interpretation": "Neither missing cell passes. Within this bounded grid, the broad 35-layer intervention and current generated-code context coincide with successful transfer. This does not prove formal interaction, native necessity, individual neuron meanings or an accuracy gain. The cohort does not independently counterbalance semantic relation and emitted comparator identity. N/A retention references remain explicit.",
+      "next_question": "Before another sparse ranking, design a task counterbalance that separates intended comparison direction from the written comparator token by reversing operand order. Preserve every closed outcome and freeze any new task/eligibility rules before model access.",
+      "direction_decision": "Close N22. Follow its no-eligible-missing-cell branch by reconsidering task adequacy. Q37/N23 is an intent only; no new protocol or GPU job exists."
+    },
+    {
+      "id": "Q37",
+      "experiment": "N23: comparison meaning versus operator spelling",
+      "status": "intent_only_not_frozen_not_launched",
+      "question": "Does broad current-site donor control carry the requested comparison relation, or mainly a local operator-token state?",
+      "question_provenance": "Neither N22 missing cell transfers. The all 35/current parent effect mostly changes one strict operator token; semantic direction and written spelling remain confounded. The prospective branch calls for task reconsideration before another larger search.",
+      "parents": [
+        "Q33",
+        "Q34",
+        "Q35",
+        "Q36"
+      ],
+      "method": "Propose fresh filtering/predicate development prompts that independently cross contextual rule, label mapping, wording and written operand order. Same-order and reversed-order same-rule/opposite-rule donor controls must distinguish semantic transfer from donor-token copying. Counts, format, eligibility, oracles and prospective auditor are not frozen yet.",
+      "result": "Intent and scoped primary-source review only. No N23 dataset, model forward, activation/weight edit, GPU job or outcome exists.",
+      "interpretation": "A task control is not an individual neuron meaning, a new steering method, a formal causal abstraction or a coding improvement. Cross-operand prefix changes are intentional context differences and require explicit controls.",
+      "next_question": "Freeze the smallest complete counterbalance and independent executable/orientation oracles. Preserve any baseline stop without rewriting or rerunning the cohort.",
+      "direction_decision": "Reconsider task adequacy before another sparse rank or constructed-neuron sweep. No training, new winning strength, coordinate selection or fitted alignment."
     }
   ],
   "active_question_id": "Q35",

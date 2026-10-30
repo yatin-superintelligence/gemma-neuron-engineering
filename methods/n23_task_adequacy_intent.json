@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-30T21:52:24.656742+00:00",
+  "experiment": "N23",
+  "question_id": "Q37",
+  "status": "intent_only_no_frozen_GPU_protocol_dataset_or_launch",
+  "question": "Does the broad current-site donor effect carry an abstract comparison relation, or mainly the next operator token associated with the donor code?",
+  "parents": [
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q36"
+  ],
+  "parent_evidence": "N22 fills the stage/site grid:three/end 0 of 13, all 35/end 0 of 13, three/current 0 of 13, all 35/current 13 of 13;all same-rule 13 of 13. N20 strict small groups remain null and N21 global selected gain is absent. The next step is task adequacy, not another rank or larger group.",
+  "posthoc_source_review": "Twelve of 13 broad-current transfers are exactly one strict comparison-operator substitution, and 12 of 13 match the actual opposite donor tokens. All new missing-cell logits change, but functional transfer stays 0. Original grades and all thirteen outcomes remain unchanged.",
+  "competing_hypotheses": [
+    "An abstract relation state should support the recipient requested semantic relation across an independently changed operand order, even when the correct operator spelling differs.",
+    "A local operator-token state should follow the donor operator identity when semantic direction and lexical spelling are put in conflict.",
+    "Mixed or failed transfers may reflect contextual binding or an inadequate donor site;do not force a binary semantic label."
+  ],
+  "proposed_task_control": "Fresh filtering and predicate development prompts would independently cross contextual rule, label mapping, wording and written operand order. Reversing operand order changes the required lexical comparator while preserving the intended denotation. Both same-order and reversed-order same-rule/opposite-rule donors are needed. Equality, duplicates/order and exact Boolean types must be checked by independent executable oracles. No benchmark answer is supplied as a model input.",
+  "scope_still_to_freeze": "Choose the smallest complete counterbalance and exact whole-program or expression format before implementation. Freeze prompts, oracles, eligibility/format stops, source capture positions, donor maps, counts, all primary contrasts, decoding/token/time budgets and prospective auditor before any model output. A baseline gate must preserve failures and never justify rewriting or rerunning this panel.",
+  "method_boundary": "Actual unmodified native post-gating h only. No new coordinate/dose/ranking, parameter fitting, steering-vector extraction or learned alignment. Full-site positive control precedes any prospective small-group claim. Current-token donor sources use their own recorded prefixes;cross-operand prefix differences are an intentional contextual change and need explicit controls.",
+  "interpretation": "This is a proposed control of semantic-versus-lexical confounding, not a new steering method. Whole-site success would still not prove native necessity, individual neuron meaning, a complete circuit or original-model coding gain. Development eligibility is selection, not fresh confirmation.",
+  "utility_boundary": "Keep original-cohort coding gains/losses and all retention outcomes. Any later useful edit needs an answer-independent trigger and separate fresh error-bearing coding cases. Do not choose a winning strength or random group from closed N20/N21.",
+  "prior_review": "literature_prospective.json",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "model_forwards": 0,
+  "GPU_launched": false,
+  "resources": "One free private capped job only after a full prospective freeze, actual-job guard, fresh quota and>=2 hreserve. Original 31October 18:22:58UTC deadline unchanged. No paid fallback.",
+  "publication": "Reviewed intent/aggregate methods may enter the authorized repo. Raw tasks,oracles,prefixes,outputs,notebooks and activations stay private."
+}

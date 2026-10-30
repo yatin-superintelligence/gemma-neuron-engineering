@@ -1,0 +1,397 @@
+{
+  "receipt": {
+    "utc": "2026-10-30T21:45:08.642520+00:00",
+    "status": "complete_host_audited",
+    "all273records_and_mandatory_guards_pass": true,
+    "records": 273,
+    "new_generations": 52,
+    "exact_parent_carries": 147,
+    "guarded_self_references": 42,
+    "nonapplicable_donor_references": 32,
+    "native_sources": 46,
+    "parent_live_guards": 94,
+    "new_self_guards": 42,
+    "cache_trajectories": 16,
+    "restorations": 26,
+    "tagged_trajectories": 276,
+    "optimizer_steps": 0,
+    "backward_calls": 0,
+    "worker": {
+      "status": "complete",
+      "records": 273,
+      "new_generations": 52,
+      "exact_parent_carries": 147,
+      "guarded_self_references": 42,
+      "nonapplicable_donor_references": 32,
+      "tagged_trajectories": 276,
+      "actual_model_forward_calls": 1168,
+      "actual_input_token_exposures": 22918,
+      "new_generated_tokens": 332,
+      "actual_optimizer_steps": 0,
+      "actual_backward_calls": 0,
+      "all_parameter_versions_unchanged": true,
+      "all_gradient_flags_unchanged": true,
+      "all_parameter_gradients_none": true,
+      "all_hooks_restored": true,
+      "no_attention_or_KV_hooks": true,
+      "seconds": 231.31825739800001,
+      "peak_cuda_allocated_bytes": 9333444608,
+      "environment": {
+        "torch": "2.11.0+cu128",
+        "transformers": "5.8.0",
+        "GPU": "Tesla T4",
+        "dtype_elements": {
+          "torch.bfloat16": 4628569344
+        }
+      }
+    },
+    "notebook_seconds": 272.70050852300005,
+    "host_recomputes_pretrained_weights_logits_or_states": false,
+    "scope": "Inherited development cohort,not fresh confirmation. N/A donor retention is not an intervention result. Stage includes generated context and cache."
+  },
+  "descriptive": {
+    "stage_by_site_cells": [
+      {
+        "stage": "end",
+        "site": "three",
+        "opposite_correct": 0,
+        "role_total": 13,
+        "same_policy_preserved": 13,
+        "coverage": {
+          "family": [],
+          "style": [],
+          "label": [],
+          "mapping": [],
+          "direction": []
+        },
+        "eligible": false
+      },
+      {
+        "stage": "end",
+        "site": "all35",
+        "opposite_correct": 0,
+        "role_total": 13,
+        "same_policy_preserved": 13,
+        "coverage": {
+          "family": [],
+          "style": [],
+          "label": [],
+          "mapping": [],
+          "direction": []
+        },
+        "eligible": false
+      },
+      {
+        "stage": "current",
+        "site": "three",
+        "opposite_correct": 0,
+        "role_total": 13,
+        "same_policy_preserved": 13,
+        "coverage": {
+          "family": [],
+          "style": [],
+          "label": [],
+          "mapping": [],
+          "direction": []
+        },
+        "eligible": false
+      },
+      {
+        "stage": "current",
+        "site": "all35",
+        "opposite_correct": 13,
+        "role_total": 13,
+        "same_policy_preserved": 13,
+        "coverage": {
+          "family": [
+            "filter",
+            "predicate"
+          ],
+          "style": [
+            0,
+            1
+          ],
+          "label": [
+            0,
+            1
+          ],
+          "mapping": [
+            0,
+            1
+          ],
+          "direction": [
+            -1,
+            1
+          ]
+        },
+        "eligible": true
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "base",
+        "record_kinds": {
+          "exact_parent_carry": 21,
+          "new_generation": 0,
+          "guarded_self_reference": 0,
+          "nonapplicable_donor_reference": 0
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "end_opposite",
+        "record_kinds": {
+          "exact_parent_carry": 21,
+          "new_generation": 0,
+          "guarded_self_reference": 0,
+          "nonapplicable_donor_reference": 0
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "end_samepolicy",
+        "record_kinds": {
+          "exact_parent_carry": 21,
+          "new_generation": 0,
+          "guarded_self_reference": 0,
+          "nonapplicable_donor_reference": 0
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "end_recipient",
+        "record_kinds": {
+          "exact_parent_carry": 21,
+          "new_generation": 0,
+          "guarded_self_reference": 0,
+          "nonapplicable_donor_reference": 0
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "full_opposite",
+        "record_kinds": {
+          "exact_parent_carry": 21,
+          "new_generation": 0,
+          "guarded_self_reference": 0,
+          "nonapplicable_donor_reference": 0
+        },
+        "role_correct": 0,
+        "opposite_correct": 13,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 13,
+        "capped": 0
+      },
+      {
+        "condition": "full_samepolicy",
+        "record_kinds": {
+          "exact_parent_carry": 21,
+          "new_generation": 0,
+          "guarded_self_reference": 0,
+          "nonapplicable_donor_reference": 0
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "full_self",
+        "record_kinds": {
+          "exact_parent_carry": 21,
+          "new_generation": 0,
+          "guarded_self_reference": 0,
+          "nonapplicable_donor_reference": 0
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "all35_end_opposite",
+        "record_kinds": {
+          "exact_parent_carry": 0,
+          "new_generation": 13,
+          "guarded_self_reference": 0,
+          "nonapplicable_donor_reference": 8
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "all35_end_samepolicy",
+        "record_kinds": {
+          "exact_parent_carry": 0,
+          "new_generation": 13,
+          "guarded_self_reference": 0,
+          "nonapplicable_donor_reference": 8
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "three_current_opposite",
+        "record_kinds": {
+          "exact_parent_carry": 0,
+          "new_generation": 13,
+          "guarded_self_reference": 0,
+          "nonapplicable_donor_reference": 8
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "three_current_samepolicy",
+        "record_kinds": {
+          "exact_parent_carry": 0,
+          "new_generation": 13,
+          "guarded_self_reference": 0,
+          "nonapplicable_donor_reference": 8
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "all35_end_self",
+        "record_kinds": {
+          "exact_parent_carry": 0,
+          "new_generation": 0,
+          "guarded_self_reference": 21,
+          "nonapplicable_donor_reference": 0
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      },
+      {
+        "condition": "three_current_self",
+        "record_kinds": {
+          "exact_parent_carry": 0,
+          "new_generation": 0,
+          "guarded_self_reference": 21,
+          "nonapplicable_donor_reference": 0
+        },
+        "role_correct": 13,
+        "opposite_correct": 0,
+        "retention_reference_correct": 8,
+        "foreign_donor_retention_applicable": false,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "capped": 0
+      }
+    ],
+    "scope": "Same inherited development cohort. Stage includes prefix/cache context. No formal interaction,individual neuron meaning,native necessity or coding improvement."
+  },
+  "posthoc": {
+    "utc": "2026-10-30T21:48:40.960562+00:00",
+    "status": "posthoc_source_structure_description_original_grades_unchanged",
+    "after_N22functional_outcome_access": true,
+    "role_cases": 13,
+    "single_strict_operator_substitutions": 12,
+    "exact_donor_token_matches": 12,
+    "missing_cell_raw_changes": [
+      {
+        "condition": "all35_end_opposite",
+        "cases": 13,
+        "changed_token_sequences_vs_original": 1,
+        "changed_first_logit_hashes_vs_native_stage": 13,
+        "recorded_maxabs_range": [
+          1.375,
+          7.421875
+        ]
+      },
+      {
+        "condition": "all35_end_samepolicy",
+        "cases": 13,
+        "changed_token_sequences_vs_original": 1,
+        "changed_first_logit_hashes_vs_native_stage": 13,
+        "recorded_maxabs_range": [
+          1.0,
+          2.84375
+        ]
+      },
+      {
+        "condition": "three_current_opposite",
+        "cases": 13,
+        "changed_token_sequences_vs_original": 0,
+        "changed_first_logit_hashes_vs_native_stage": 13,
+        "recorded_maxabs_range": [
+          0.25,
+          0.9921875
+        ]
+      },
+      {
+        "condition": "three_current_samepolicy",
+        "cases": 13,
+        "changed_token_sequences_vs_original": 1,
+        "changed_first_logit_hashes_vs_native_stage": 13,
+        "recorded_maxabs_range": [
+          0.375,
+          0.625
+        ]
+      }
+    ],
+    "new_model_forwards": 0,
+    "new_execution_or_scorer_invocations": 0,
+    "optimizer_steps": 0,
+    "interpretation": "The broad current-site effect is compatible with local operator-token control on this panel. Abstract comparison direction and emitted operator identity are not independently counterbalanced. Consider operand-order and boundary-inclusion task controls before another broad sparse ranking. These observations do not identify individual neurons or improve native accuracy."
+  },
+  "raw_tasks_predictions_and_values_private": true
+}
