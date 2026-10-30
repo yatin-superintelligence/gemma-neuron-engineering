@@ -1990,6 +1990,55 @@
       "event": "active_reservation_question_metadata_repaired_before_public_release",
       "experiment": "N21_documentation",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 261,
+      "utc": "2026-10-30T20:26:57.902206+00:00",
+      "event": "terminal_collector_ready_exact_frozen_auditor_once_no_outputs_read",
+      "experiment": "N21_prospective_analysis",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 262,
+      "utc": "2026-10-30T20:26:57.902206+00:00",
+      "event": "complete_figure_layout_prepared_before_N21_output_access_no_figure_yet",
+      "experiment": "N21_prospective_analysis",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 263,
+      "utc": "2026-10-30T20:26:57.902206+00:00",
+      "event": "prospective_direction_review_separates_utility_confirmation_from_causal_localization",
+      "experiment": "N21_prospective_analysis",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 264,
+      "utc": "2026-10-30T20:42:16.177500+00:00",
+      "event": "retention_object_identity_not_covered_frozen_value_grades_unchanged",
+      "experiment": "N21_source_review",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 265,
+      "utc": "2026-10-30T20:42:16.177500+00:00",
+      "event": "closed_parent_prompts_donors_baselines_and_two_existing_cells_aligned_no_scorer",
+      "experiment": "N22_posthoc_source_review",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 266,
+      "utc": "2026-10-30T20:42:16.177500+00:00",
+      "event": "conditional_missing_stage_by_site_cells_intent_only_no_model_protocol_or_launch",
+      "experiment": "N22_proposal",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 267,
+      "utc": "2026-10-30T20:52:56.598406+00:00",
+      "event": "conditional_missing_cell_protocol_frozen_before_model_implementation_52new_273total",
+      "experiment": "N22_protocol",
+      "optimizer_steps": 0
     }
   ]
 }

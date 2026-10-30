@@ -34,6 +34,8 @@ N21 applies the same prescribed global outgoing-column factor of two to the exis
 
 The private GPU package contains inference code and prompt records. Hidden oracles, stress inputs and host grading code are excluded. Host gates cover paired executable oracles, strict output parsing, bounded isolated execution, exact identity and restoration, first-prefill cache preservation and native generation counters. These gates establish software readiness, not a pretrained coding result. A positive development screen would still require separately frozen fresh confirmation.
 
+Retention scores follow the frozen checks. One rotation probe checks returned values without testing fresh-list identity; this limit is recorded before output access.
+
 See the [prospective protocol](methods/n21_prospective_protocol.json) and [preparation record](results/n21_preparation_summary.json).
 
 ## Reproduce an edit

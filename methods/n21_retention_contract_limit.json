@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-30T20:39:24.944792+00:00",
+  "status": "source_review_limitation_recorded_before_N21_output_access",
+  "question_id": "Q35",
+  "affected_task_role": "One of the four Python retention functions",
+  "contract_clause": "Return a new list when rotating the input.",
+  "frozen_evaluator": "Checks exact type/value correctness across the fixed inputs;it does not test result object identity. Explicit input nonmutation is checked only for the two functions named in the frozen grader.",
+  "consequence": "A passed retention score supports the frozen value and named-mutation checks,not every possible reference/aliasing property in prose. Report retention as measured under those checks. A future confirmation must encode each required contract clause before outputs.",
+  "changes_to_primary_grades_or_signal_thresholds": "None. Do not modify the frozen auditor,regenerate outputs or reclassify current primary grades.",
+  "N21_outputs_accessed": false,
+  "new_model_forwards": 0,
+  "new_scorer_invocations": 0,
+  "optimizer_steps": 0
+}

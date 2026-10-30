@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-30T20:34:25.091115+00:00",
+  "status": "closed_parent_lineage_and_two_existing_factorial_cells_verified",
+  "question": "Can the missing position-by-site comparisons isolate the N18/N19 confound on the same13cases?",
+  "same_all40packaged_tasks": true,
+  "same13recipient_and_opposite_samepolicy_donor_mappings": true,
+  "all21pinned_input_tokenization_hashes_exact": true,
+  "same_pinned_parent": true,
+  "existing_cells": {
+    "last_input_three_layers": {
+      "role_cases": 13,
+      "opposite_correct": 0,
+      "same_policy_original_correct": 13,
+      "new_grades_computed": false
+    },
+    "current_decision_all35": {
+      "role_cases": 13,
+      "opposite_correct": 13,
+      "same_policy_original_correct": 13,
+      "new_grades_computed": false
+    }
+  },
+  "planned_missing_cells": [
+    "all35nativeMLPs at last input",
+    "nativeMLPs5,6,9 at current comparator"
+  ],
+  "parent_scope": "N18 original16-role results and all399N19records remain unchanged. The13case subset is inherited from N19 eligibility,not selected from new outcomes.",
+  "raw_task_or_output_release": false,
+  "new_model_forwards": 0,
+  "scorer_invocations": 0,
+  "optimizer_steps": 0,
+  "N21_outputs_accessed": false,
+  "all21base_records_exact_JSON_objects": true,
+  "base_equivalence_scope": "Parsed JSON objects are exactly equal;raw line serialization was not compared."
+}

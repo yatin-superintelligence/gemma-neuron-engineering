@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-30T20:25:53.615277+00:00",
+  "status": "prospective_direction_review_during_N21_no_outputs_accessed",
+  "question_id": "Q35",
+  "parent_receipt_sha256": {
+    "N19_receipt": "b8f3191bf6df7140f042b0a29bc0c679c2f9f5a720ee88bfaee9a5d29915f180",
+    "N20_receipt": "b4a0abbc7097a515b538ff5ef622d3227a8d98cc72c92ec11a0eb32f71fdcdfa",
+    "N21_protocol": "81ec3555df2de31aba5ea091a7cac23ba7ac25b3e534ccd3124944c0c994955b"
+  },
+  "N21_outputs_accessed": false,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0,
+  "current_priority": "Finish and audit the unchanged N21 run. Do not launch another job or change its score,coordinates,gain or prompts.",
+  "evidence_distinctions": [
+    "N19 establishes joint current-site donor sufficiency on13reused correct programs,not minimality or original-model necessity.",
+    "N20 establishes no tested sparse functional transfer or clean/conditional loss. It does not show that its gradient estimates have a quantified error: the recorded functional threshold and the gradient metric are different quantities.",
+    "A final-choice or executable-correctness null can coexist with changed logits or text. Do not infer no information or no function from unchanged binary scores.",
+    "The N21 utility assay uses a global answer-independent edit and new functions. It cannot retrovalidate the failed N20role claim."
+  ],
+  "decision_branches": [
+    {
+      "trigger": "Any N21 mandatory guard fails",
+      "action": "Preserve partials and exact sources;diagnose the specific defect before any scientific interpretation or repair. No tolerance amendment or automatic completed-arm regeneration."
+    },
+    {
+      "trigger": "N21 passes all guards and its fixed utility signal screen",
+      "action": "Freeze a new disjoint complete-function confirmation with the same candidate,controls,gain,grading and retention. Do not replace the screen with a better dose or only the original-error subset."
+    },
+    {
+      "trigger": "N21 passes all guards but fails the fixed utility screen or baseline interpretability gate",
+      "action": "Close the utility claim on this panel. Do not amplify further or repeat a sparse rank sweep. If another causal study fits resources,first separate coarse current-computation sites under actual donors before any new native-channel rank. It would be a new prospective study,not a rerun of N20."
+    }
+  ],
+  "conditional_causal_option": {
+    "status": "Intent option only,no protocol,runner,data or launch authorized by this file",
+    "question": "At the already validated code-decision step,does donor sufficiency live in one coarse native MLP block or require a joint site?",
+    "reason": "The current35-layer positive control has never been decomposed by forward-only blocks at that current step. Earlier5..9subset work used a different prompt position. N20selectedonlylatechannels via a proxy,so its null does not locate the full-site pathway.",
+    "candidate_method": "A fixed small partition of the existing35-layer universe,actual opposite/same-rule donors and recipient self/rescue. Report single-block sufficiency separately from recipient cuts inside the full-donor background. Freeze the complete partition,all comparisons,continuous and executable metrics,scope/cached controls and stopping rules before implementation. No method is selected by a winning outcome.",
+    "not_proven": "Even a sufficient block would not be an individual semantic neuron,formal synergy,native necessity or coding improvement. Negative blocks would not prove no distributed representation. An operator-token preference needs lexical/same-rule controls and fresh evidence.",
+    "no_new_GPU_before_N21_closes": true
+  },
+  "literature_scope": [
+    {
+      "title": "How to use and interpret activation patching",
+      "url": "https://arxiv.org/html/2404.15255v1",
+      "reviewed": "Sections2.1-2.3 and table of sections3-4;selected source text,not full appendix replication.",
+      "supported_summary": "The authors distinguish exploratory localization from confirmatory joint interventions,and discuss coarse-to-fine sites,patch direction and metric-dependent interpretation.",
+      "application": "Use this as prior-method guidance,not novelty or evidence about Gemma. A coarse block option must retain direction and metric distinctions."
+    },
+    {
+      "title": "AtP*: An efficient and scalable method for localizing LLM behaviour to components",
+      "url": "https://arxiv.org/abs/2403.00745",
+      "reviewed": "Primary abstract and bibliographic record only.",
+      "supported_summary": "The work treats attribution patching as a scalable approximation and reports failure modes including false negatives.",
+      "application": "A gradient rank remains a screening hypothesis;our discrete functional null does not replicate or explain those approximation errors."
+    },
+    {
+      "title": "Correcting Attribution Patching with a Few Exact Measurements",
+      "url": "https://arxiv.org/abs/2610.27393v1",
+      "reviewed": "Primary abstract and bibliographic record only.",
+      "supported_summary": "The abstract proposes exact-measurement-guided corrections and includes learned corrections across prompts.",
+      "application": "Do not adopt fitted corrections or strengths under the no-training constraint. Its existence is prior art,not a prescription or a full-paper evaluation."
+    }
+  ],
+  "changes_to_frozen_N21_science": "None. Original source/data/auditor hashes remain fixed."
+}

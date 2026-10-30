@@ -1,0 +1,80 @@
+{
+  "utc": "2026-10-30T20:36:36.877813+00:00",
+  "experiment": "N22",
+  "question_id": "Q36",
+  "status": "conditional_intent_only_not_a_frozen_protocol_or_launch",
+  "question": "On the same inherited cases, is the N18/N19 donor-transfer difference associated with intervention stage, native layer coverage, or their combination?",
+  "parents": [
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q35"
+  ],
+  "current_priority": "N21 is the one running job. Finish its frozen audit first. A passed utility screen takes priority for independent fresh confirmation. This option cannot modify,duplicate or interrupt N21.",
+  "rationale": "N18 used layers5,6,9 at the last prompt token. N19 used all35MLPs at a later model-generated comparator decision. The comparison therefore changes layer coverage,stage and cohort. A source-only review now verifies an exact common13-case cohort with identical prompts,tokenization,donor mappings and parent baseline records. Two missing cells can distinguish these factors more directly than another sparse ranking.",
+  "existing_cells": [
+    {
+      "site": [
+        5,
+        6,
+        9
+      ],
+      "stage": "last input",
+      "source": "Closed N18,posthoc restricted to the N19 cohort",
+      "opposite_correct": 0,
+      "samepolicy_preserved": 13,
+      "role_cases": 13
+    },
+    {
+      "site": "all35nativeMLPs",
+      "stage": "current comparator decision",
+      "source": "Closed N19",
+      "opposite_correct": 13,
+      "samepolicy_preserved": 13,
+      "role_cases": 13
+    }
+  ],
+  "missing_cells": [
+    {
+      "site": "all35nativeMLPs",
+      "stage": "last input",
+      "policies": [
+        "actual opposite-rule donor",
+        "actual same-rule reversed-label donor"
+      ]
+    },
+    {
+      "site": [
+        5,
+        6,
+        9
+      ],
+      "stage": "current comparator decision",
+      "policies": [
+        "actual opposite-rule donor",
+        "actual same-rule reversed-label donor"
+      ]
+    }
+  ],
+  "lineage": "Carry the completed existing cells and originals exactly. Do not regenerate N18/N19 completions or rerun their scorers. A new frozen study may replay native hashes as lineage guards and generate only the missing cells. The inherited13-case cohort remains development selection;all16original N18role outcomes remain recorded.",
+  "interpretation_limit": "Stage includes token context,available generated prefix and cache state. It is not an isolated geometric token-position variable. Complete the matrix before attributing the old contrast to stage alone. Do not claim formal synergy from discrete counts. Donor sufficiency does not establish native necessity,individual neuron meaning or useful original-model improvement.",
+  "mechanism": "Actual unmodified post-gating down-projection inputs,patched once at the declared stage. No gradients,weight changes,KVhooks,new branches,fitted vectors or trained adapters. Use one validated greedy engine in new cells,with exact inherited native logit/token/cache parity guards.",
+  "retention": "Distinguish actual clean/self controls from non-applicable donor cells. Never count a baseline-reference row as successful foreign-donor retention. Freeze the exact retention treatment before implementation.",
+  "source_gates": "Verify all donor IDs and original hashes before implementation. Last-input captures replay the three saved N18native hashes;current captures replay the relevant N19hashes. Validate fresh15-slot caches,scope,self/rescue,restoration and unchanged parameter versions/gradflags. Save hashes rather than full activation tensors.",
+  "decision_branches": [
+    "If N21passes its fixed utility screen,queue this option behind a separately frozen fresh utility confirmation.",
+    "If N21has a valid null,and this causal question remains worth free compute,freeze the smallest complete missing-cell protocol,counts,coverage/interpretation rules,auditor and source/data hashes before any implementation or outcome.",
+    "If either missing cell supports a smaller usable site,only then design forward-only native-channel coverage and matched necessity/rescue there. No automatic new rank or strength sweep.",
+    "If neither missing cell supports transfer,retain the conjunction limit and reconsider task-family design before a larger search. No claim that neurons lack functions."
+  ],
+  "closest_priors": "Activation patching,coarse-to-fine localization,interchange interventions and metric/patch-direction limitations are established methods. The scoped primary review is recorded in the N21 next-direction review. This is a control of the current study's confound,not a new general method.",
+  "freeze_still_required": "Counts,exact carried-record manifest,decoding,role criteria,random/source controls,token/time budget and prospective auditor are not frozen here. No launch-ready runner or dataset exists.",
+  "resource": "One free private capped job only after N21closes and is audited or failure preserved. Fresh permitted quota with at least2hreserve,no money,and the original31October2026at18:22:58UTC deadline. No new launch if cap plus checkpoint cannot fit.",
+  "new_model_forwards": 0,
+  "scorer_invocations": 0,
+  "optimizer_steps": 0,
+  "N21_outputs_accessed": false,
+  "publication": "Reviewed aggregate intent may be public. Raw tasks,donor maps,prefixes,outputs and all notebook/data assets remain private.",
+  "historical_intent_snapshot": true,
+  "current_status": "Consult the question register and later prospective protocol."
+}

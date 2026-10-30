@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-30T20:23:15.470694+00:00",
+  "status": "plot_source_prepared_before_any_N21_output_access_not_executed",
+  "source_sha256": "dd7e7af475cffb6071102a3adb8e75bdfe64fe7e52c9c175c7f631d8bcc4a719",
+  "panels": [
+    "All5arms correct/24,fixed0..24axis",
+    "Selected64paired gains/losses versus original and bothcontrols,fixed-24..24axis",
+    "Every arm and every family correct/3,fixed0..3colors"
+  ],
+  "retention": "Every arm correct/8 displayed. No task names,raw predictions or prompt text.",
+  "interpretation": "Report fixed development screen verbatim. No best family,dose,reading or subgroup headline.",
+  "N21_outputs_accessed": false,
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}
