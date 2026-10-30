@@ -1,0 +1,5 @@
+{
+  "private_selection_source_sha256": "001bd05d9675b27ad5aa434240b79e468696164bd8f431634aa4e3d79dcb3029",
+  "function_body_sha256": "02e468d9efee31dd0b4ecf92905b531327ea2907cf55cce1e6e6e17b9544b528",
+  "projection": "Function-only export; terminal blank lines are normalized and private profile paths/CLI are excluded. No model execution or training."
+}

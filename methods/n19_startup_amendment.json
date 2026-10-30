@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-30T15:25:57.196957+00:00",
+  "status": "source_only_startup_repair_frozen_before_v2_launch",
+  "failure": "runs/n19/version1/result_receipt.json",
+  "original_protocol_sha256": "1741cbe0f09d24012f59eff095d94e1f9467578471289884e3d09900a13d7edf",
+  "scientific_protocol_changed": false,
+  "model_tasks_seeds_conditions_strengths_graders_thresholds_unchanged": true,
+  "completed_panels_regenerated": false,
+  "original_runner_sha256": "c03ed79de15924f72398d19dd661ea041d5b9fb5447dc4de90161880b3488e13",
+  "corrected_runner_sha256": "03394021a19ea198188323061fa25be7d9aaafb7b615437a85ea30cb1409ac27",
+  "repair": "Resolve Transformers5.8 model/global generation defaults before checking the manual-greedy contract. None neutral representations were rejected before any v1 inference. Explicitly reject nontrivial processors and preserve raw/resolved configs.",
+  "primary_source": "runs/n19/generation_host/primary_resolution_method.txt",
+  "host_proof": "runs/n19/generation_host/result.json",
+  "auditor_addition": "Independent exact reconstruction of the resolved configuration and extra neutral-processor checks. Every pre-existing scientific and grading check is byte-identical after removing only this added block, import and four output/plan path substitutions.",
+  "original_auditor_sha256": "efa7d39365b4809f65447f8492c7dc583eec99e61a988adebc2bc02ae7c597d1",
+  "v2_auditor_sha256": "054e27dbbff7b2c6567d5cec42776df3d8048088485acaae9f7583584ff177d9",
+  "existing_scientific_checks_byte_identical_after_documented_normalization": true,
+  "v1_model_forward_calls": 0,
+  "v1_new_predictions": 0,
+  "optimizer_steps": 0
+}

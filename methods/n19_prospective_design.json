@@ -76,5 +76,5 @@
     "reserved_hours": 2
   },
   "protocol_sha256": "1741cbe0f09d24012f59eff095d94e1f9467578471289884e3d09900a13d7edf",
-  "edition": "Reviewed frozen methods; the private job is active. Raw programs, prefixes, answers and model states remain private. No real-model N19 result."
+  "edition": "Reviewed frozen methods; N19 is complete and audited. Raw programs, prefixes, answers and model states remain private. Results and limitations are in the aggregate record."
 }

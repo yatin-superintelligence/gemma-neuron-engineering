@@ -300,13 +300,14 @@
       "outcome": "Raw repetition_penalty None rejected before any model forward, edit or prediction. Preserve all source and failure.",
       "duration_scope": "Worker unknown; notebook135.703395535s. Not charged quota.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "N19_v2_current_code_decision",
-      "launched_utc": "2026-10-30T15:26:47.776849+00:00",
-      "status": "private_source_verified_running_no_outputs_accessed"
+      "recorded_script_seconds": 426.552776961,
+      "outcome": "All399records audited. Full current-state13/13opposite transfer,same13/13. Three fixed units0transfers/losses,all clean8retention. Rare-unit primary fails. Startup/auditor failures preserved.",
+      "duration_scope": "Worker426.552776961s;notebook469.251850964s. Not charged quota.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

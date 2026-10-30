@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "title": "N19 current-decision native activation recipes",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only unquantized BF16",
+  "optimizer_steps": 0,
+  "activation_measurement_backward_calls": 8,
+  "native_site": "Post-gating down_proj input h during exactly one cached current-token forward. Build a fresh native cache from a caller-supplied common prefix; never supply the divergent answer token.",
+  "decoder_layer_widths": [
+    6144,
+    6144,
+    6144,
+    6144,
+    6144,
+    6144,
+    6144,
+    6144,
+    6144,
+    6144,
+    6144,
+    6144,
+    6144,
+    6144,
+    6144,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288,
+    12288
+  ],
+  "conditions": [
+    {
+      "name": "base",
+      "unit": null,
+      "operation": "base"
+    },
+    {
+      "name": "full_opposite",
+      "unit": null,
+      "operation": "opposite"
+    },
+    {
+      "name": "full_samepolicy",
+      "unit": null,
+      "operation": "samepolicy"
+    },
+    {
+      "name": "full_self",
+      "unit": null,
+      "operation": "self"
+    },
+    {
+      "name": "target4632_opposite",
+      "unit": 4632,
+      "operation": "opposite"
+    },
+    {
+      "name": "target4632_samepolicy",
+      "unit": 4632,
+      "operation": "samepolicy"
+    },
+    {
+      "name": "target4632_zero",
+      "unit": 4632,
+      "operation": "zero"
+    },
+    {
+      "name": "target4632_gain2",
+      "unit": 4632,
+      "operation": "gain2"
+    },
+    {
+      "name": "target4632_rescue",
+      "unit": 4632,
+      "operation": "rescue"
+    },
+    {
+      "name": "control850_opposite",
+      "unit": 850,
+      "operation": "opposite"
+    },
+    {
+      "name": "control850_samepolicy",
+      "unit": 850,
+      "operation": "samepolicy"
+    },
+    {
+      "name": "control850_zero",
+      "unit": 850,
+      "operation": "zero"
+    },
+    {
+      "name": "control850_gain2",
+      "unit": 850,
+      "operation": "gain2"
+    },
+    {
+      "name": "control850_rescue",
+      "unit": 850,
+      "operation": "rescue"
+    },
+    {
+      "name": "control6085_opposite",
+      "unit": 6085,
+      "operation": "opposite"
+    },
+    {
+      "name": "control6085_samepolicy",
+      "unit": 6085,
+      "operation": "samepolicy"
+    },
+    {
+      "name": "control6085_zero",
+      "unit": 6085,
+      "operation": "zero"
+    },
+    {
+      "name": "control6085_gain2",
+      "unit": 6085,
+      "operation": "gain2"
+    },
+    {
+      "name": "control6085_rescue",
+      "unit": 6085,
+      "operation": "rescue"
+    }
+  ],
+  "donor_contract": "Actual unmodified recipient/opposite/same-policy states at each source own current-token position. Raw prompts, native prefixes, activations and target answers remain private; caller supplies valid contexts. No fitted vector or base-model duplicate.",
+  "validation": {
+    "all399records_host_audited": true,
+    "full_opposite_transfers": 13,
+    "full_same_preserved": 13,
+    "role_cases": 13,
+    "fixed_target_and_two_controls_transfers": 0,
+    "clean_retention_per_condition": 8,
+    "nonapplicable_donor_references": 64,
+    "all84self_logits_and_whole_cache_checks_pass": true,
+    "all38restorations_pass": true,
+    "whole_cache_slots": 15,
+    "all35native_MLP_layers_retained": true,
+    "independent_clean_package_pretrained_replay": false,
+    "source_sha256": {
+      "interpretability/decode_step.py": "4324dd756c03966ebceb257160c2ad5f92eb23c4492c2b6983836f8db5fd3650",
+      "research/experiments/n19/trajectory.py": "83cf4a826204553013ae169ca11ec613c6faf05450201dffc4d685fca92a95a1",
+      "research/experiments/n19/design.py": "2c4468fab822a9c2d142e8c5c68cd382a80cdd6b033d07768f5a691281367f16"
+    }
+  },
+  "limitations": "The fixed rare-unit role criterion fails. Full-state transfer is not sparse meaning, novelty or improvement. Controls are not activity matched. Shape alone does not prove cache presence; the frozen runner explicitly creates and passes caches. Edited-cache fingerprints for every new tail are not saved, so persistent-cache and immediate-token routes are not separated. No donor-retention claim from N/A references."
+}

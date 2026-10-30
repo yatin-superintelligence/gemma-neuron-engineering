@@ -1,0 +1,835 @@
+{
+  "utc": "2026-10-30T15:51:58.265603+00:00",
+  "source_sha256": "b8f3191bf6df7140f042b0a29bc0c679c2f9f5a720ee88bfaee9a5d29915f180",
+  "extraction_only_no_new_grades": true,
+  "status": "complete_host_audited_closed",
+  "predictions": 399,
+  "new_predictions": 230,
+  "exact_parent_carries": 21,
+  "guarded_baseline_references": 84,
+  "nonapplicable_donor_references": 64,
+  "optimizer_steps": 0,
+  "activation_measurement_backward_calls": 8,
+  "estimands": {
+    "full_site_gate": {
+      "opposite_correct": 13,
+      "coverage": {
+        "family": [
+          "filter",
+          "predicate"
+        ],
+        "style": [
+          0,
+          1
+        ],
+        "mapping": [
+          0,
+          1
+        ],
+        "label": [
+          0,
+          1
+        ],
+        "direction": [
+          -1,
+          1
+        ]
+      },
+      "role_correct": 0,
+      "same_policy_preserved": 13,
+      "eligible": true
+    },
+    "fixed_units": [
+      {
+        "opposite_correct": 0,
+        "coverage": {
+          "family": [],
+          "style": [],
+          "mapping": [],
+          "label": [],
+          "direction": []
+        },
+        "role_correct": 13,
+        "unit": "target4632",
+        "clean_zero_losses": 0,
+        "loss_coverage": {
+          "family": [],
+          "style": [],
+          "direction": []
+        },
+        "same_policy_preserved": 13,
+        "clean_retention": {
+          "zero": 8,
+          "gain2": 8
+        },
+        "advantages": {
+          "control850": {
+            "transfer": 0,
+            "zero_loss": 0
+          },
+          "control6085": {
+            "transfer": 0,
+            "zero_loss": 0
+          }
+        },
+        "primary_gate_passed": false
+      },
+      {
+        "opposite_correct": 0,
+        "coverage": {
+          "family": [],
+          "style": [],
+          "mapping": [],
+          "label": [],
+          "direction": []
+        },
+        "role_correct": 13,
+        "unit": "control850",
+        "clean_zero_losses": 0,
+        "loss_coverage": {
+          "family": [],
+          "style": [],
+          "direction": []
+        },
+        "same_policy_preserved": 13,
+        "clean_retention": {
+          "zero": 8,
+          "gain2": 8
+        }
+      },
+      {
+        "opposite_correct": 0,
+        "coverage": {
+          "family": [],
+          "style": [],
+          "mapping": [],
+          "label": [],
+          "direction": []
+        },
+        "role_correct": 13,
+        "unit": "control6085",
+        "clean_zero_losses": 0,
+        "loss_coverage": {
+          "family": [],
+          "style": [],
+          "direction": []
+        },
+        "same_policy_preserved": 13,
+        "clean_retention": {
+          "zero": 8,
+          "gain2": 8
+        }
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "base",
+        "record_kinds": {
+          "carry": 21,
+          "new": 0,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 0
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "full_opposite",
+        "record_kinds": {
+          "carry": 0,
+          "new": 13,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 8
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 0,
+            "opposite_correct": 5
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 0,
+            "opposite_correct": 8
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 13,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 0,
+        "lexical_variant_role_correct": 0
+      },
+      {
+        "condition": "full_samepolicy",
+        "record_kinds": {
+          "carry": 0,
+          "new": 13,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 8
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "full_self",
+        "record_kinds": {
+          "carry": 0,
+          "new": 0,
+          "guarded_reference": 21,
+          "nonapplicable_reference": 0
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "target4632_opposite",
+        "record_kinds": {
+          "carry": 0,
+          "new": 13,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 8
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "target4632_samepolicy",
+        "record_kinds": {
+          "carry": 0,
+          "new": 13,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 8
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "target4632_zero",
+        "record_kinds": {
+          "carry": 0,
+          "new": 21,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 0
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "target4632_gain2",
+        "record_kinds": {
+          "carry": 0,
+          "new": 21,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 0
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "target4632_rescue",
+        "record_kinds": {
+          "carry": 0,
+          "new": 0,
+          "guarded_reference": 21,
+          "nonapplicable_reference": 0
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "control850_opposite",
+        "record_kinds": {
+          "carry": 0,
+          "new": 13,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 8
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "control850_samepolicy",
+        "record_kinds": {
+          "carry": 0,
+          "new": 13,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 8
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "control850_zero",
+        "record_kinds": {
+          "carry": 0,
+          "new": 21,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 0
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "control850_gain2",
+        "record_kinds": {
+          "carry": 0,
+          "new": 21,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 0
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "control850_rescue",
+        "record_kinds": {
+          "carry": 0,
+          "new": 0,
+          "guarded_reference": 21,
+          "nonapplicable_reference": 0
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "control6085_opposite",
+        "record_kinds": {
+          "carry": 0,
+          "new": 13,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 8
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "control6085_samepolicy",
+        "record_kinds": {
+          "carry": 0,
+          "new": 13,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 8
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "control6085_zero",
+        "record_kinds": {
+          "carry": 0,
+          "new": 21,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 0
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "control6085_gain2",
+        "record_kinds": {
+          "carry": 0,
+          "new": 21,
+          "guarded_reference": 0,
+          "nonapplicable_reference": 0
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      },
+      {
+        "condition": "control6085_rescue",
+        "record_kinds": {
+          "carry": 0,
+          "new": 0,
+          "guarded_reference": 21,
+          "nonapplicable_reference": 0
+        },
+        "families": {
+          "filter": {
+            "rows": 5,
+            "correct": 5,
+            "opposite_correct": 0
+          },
+          "predicate": {
+            "rows": 8,
+            "correct": 8,
+            "opposite_correct": 0
+          },
+          "json": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          },
+          "arithmetic": {
+            "rows": 4,
+            "correct": 4,
+            "opposite_correct": 0
+          }
+        },
+        "coding_losses": 0,
+        "coding_gains": 0,
+        "capped": 0,
+        "strict_same_token_role_correct": 11,
+        "lexical_variant_role_correct": 2
+      }
+    ],
+    "scope": "Reused correct development programs and response-derived comparator position. No possible original-accuracy gain in this assay. Fixed controls are not activity matched; no exclusive semantic specificity claim."
+  },
+  "guards": {
+    "native_program_replays": 24,
+    "requested_current_native_state_keys": 23,
+    "native_MLP_layer_hashes": 805,
+    "whole_cache_slots_from_pinned_config": 15,
+    "gradient_logit_state_cache_checks": 8,
+    "self_logit_and_whole_cache_checks": 84,
+    "restorations": 38,
+    "all_scope_parameter_and_counter_guards_pass": true
+  },
+  "counters": {
+    "actual_model_forward_calls": 2886,
+    "actual_input_token_exposures": 33438,
+    "new_generated_tokens": 1036,
+    "seconds": 426.552776961
+  },
+  "notebook_seconds": 469.251850964,
+  "audit_amendments": [
+    "Startup default resolution before v2 launch; original v1 zero forwards preserved.",
+    "Import-only auditor repair before main/grades.",
+    "Post-retrieval cache-layout correction from pinned architecture35hidden/20shared=>15cache entries. Existing behavior grades and thresholds unchanged."
+  ],
+  "interpretation": "At the actual generated comparator decision, full35-layer actual opposite native h donors transfer13/13; same-rule preserves13/13. Fixed target4632 and both fixed controls have zero transfers/losses; primary rare-unit gate fails. Retention donor cells are N/A references, not new tests. All clean gain/rescue retention controls pass. Response-derived reused development positions and correct baselines do not establish a deployable controller, individual meaning or original-model gain."
+}

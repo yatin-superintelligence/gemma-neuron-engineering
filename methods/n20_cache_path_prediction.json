@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-30T16:00:59.814938+00:00",
+  "status": "prospective_derived_cache_path_prediction_before_GPU_code_or_outcomes",
+  "selection_sha256": "fcbb5cf85dd794b9be4f9c21008ac348ed291e5f187a1c6c06b9dc974af0f395",
+  "all_six_groups_layers": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "minimum_selected_or_random_layer": 24,
+  "pinned_decoder_layers": 35,
+  "shared_tail_layers": 20,
+  "native_cache_slots": 15,
+  "primary_source": "runs/n19/cache_layout_host/pinned_config.json",
+  "mechanical_prediction": "Every selected/random current MLP edit is after all native K/V producers. Its current logits may change, but all15 stored key/value entries must remain byte-identical. Later effects can follow the changed emitted token; do not claim absence of all future influence.",
+  "mandatory_before_new_outcomes": {
+    "clean_opposite_samepolicy_zero_gain2_rescue": "Exact whole-cache equality to the unmodified recipient current snapshot.",
+    "conditional_cut": "Exact whole-cache equality to the live full-opposite parent current snapshot, since its early full-state background can change cache but the late partial group cannot.",
+    "self_and_restoration": "All pre-existing exact full-logit and cache controls remain mandatory."
+  },
+  "changes_to_protocol": "Adds a stricter architecture-derived guard only. No condition, strength, task, selection, primary effect threshold, tolerance, counter formula or prediction count changes.",
+  "new_model_forwards": 0,
+  "optimizer_steps": 0,
+  "N20_GPU_launched": false
+}

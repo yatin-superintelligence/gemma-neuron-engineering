@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-30T15:42:16.694606+00:00",
+  "status": "auditor_startup_import_repair_after_retrieval_before_grading",
+  "failure_receipt": "runs/n19/version2/audit_execution_receipt.json",
+  "failure": "The frozen auditor imported expression from n11.tasks, which does not export it. ImportError occurs before main(), output reads, model grades or scientific checks.",
+  "original_auditor_sha256": "054e27dbbff7b2c6567d5cec42776df3d8048088485acaae9f7583584ff177d9",
+  "corrected_auditor_sha256": "e11af1924895e9a24dfb151c1236cfc2ddef8f8b2a161bcb8d053e3610c1ee5a",
+  "correction": "Import the unchanged expression parser from n06.tasks, the same helper used in prior N18 auditing. Change only that import and versioned analysis-plan path.",
+  "all_scientific_checks_byte_identical_after_two_inverse_substitutions": true,
+  "scientific_thresholds_graders_conditions_changed": false,
+  "GPU_notebook_or_outputs_changed": false,
+  "additional_model_forwards": 0,
+  "optimizer_steps": 0,
+  "N19_scientific_outcomes_interpreted": false
+}

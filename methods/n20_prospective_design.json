@@ -1,0 +1,88 @@
+{
+  "experiment": "N20",
+  "question": "Q34",
+  "version": 1,
+  "utc": "2026-10-30T15:57:56.184992+00:00",
+  "status": "protocol_frozen_before_selection_code_and_profile_ranking",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "measurement_backward_calls": 0,
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only unquantized BF16",
+  "seed": 3420,
+  "question_text": "Can a small strictly matched native-channel group support and reproduce the validated current code-decision effect?",
+  "parent_evidence": "N19 full current-state donors transfer13/13 and same-rule preserves13/13; three previously fixed units have no functional effect. All399 records and scope/cache/parameter guards pass. N19 remains closed.",
+  "cohort": "Exact N19 development cohort:13 usable code-decision cases (five filters,eight predicates),eleven strict same-token controls plus two same-direction lexical variants,eight retention cases. These are reused nuisance/wording/mapping cases,not thirteen independent algorithms or fresh confirmation. No prompt,grader,prefix or cap changes.",
+  "selection": {
+    "estimand": "First64 strictly matchable positive minimum-stratum influence coordinates from the archived337920-channel profile.",
+    "score": "Saved FP32 min_score, the minimum across four mapping/label strata, each averaging two task families. It does not prove positivity within each family.",
+    "precision": "Treat archived FP32 moments/scores/norms as the numerical selection input. Upcast those saved arrays to FP64 for ratio arithmetic; do not pretend to reconstruct unrounded activations or gradients.",
+    "validity": "Score>0; finite RMS,delta_RMS,down_norm all>1e-12. Sort by descending saved score then native flat index. Measure native offsets from widths[6144]*15+[12288]*20.",
+    "count": 64,
+    "nested_count": 16,
+    "seeds": [
+      34201,
+      34202
+    ],
+    "minimum_pool": 16,
+    "maximum_excluded_candidates": 512,
+    "activity_RMS_ratio": [
+      0.9,
+      1.1
+    ],
+    "down_column_norm_ratio": [
+      0.8,
+      1.25
+    ],
+    "donor_delta_RMS_ratio": [
+      0.9,
+      1.1
+    ],
+    "algorithm": "Greedily propose ranked candidates. Recompute both fixed-seed random groups for the entire proposed selected set. For each seed initialize random.Random(seed), visit selected units in rank order, form a native-index-sorted same-layer pool excluding all proposed selected units and already used controls in that random group, require pool>=16, then draw uniformly. Controls are not filtered by influence score. Accept a candidate only if both complete draws pass. Record every rejected candidate/pool witness. Stop if64 are not accepted before513th rejection or the positive ranking ends.",
+    "cross_random_overlap": "Allowed and reported. No duplicates within a group; no random unit overlaps the selected group.",
+    "nested_controls": "First16 selected units and their corresponding already-drawn matches. No new draws for the nested dose.",
+    "failure_action": "Planned host-only matching stop with zero N20 pretrained forwards/predictions. Never relax ratios or replace the primary size.",
+    "selection_uses_new_coding_outcomes": false
+  },
+  "site": "Exactly one current cached-token down_proj-input h intervention after the existing actual native common prefix. The divergent comparator is withheld. Every trajectory starts a fresh explicit cache, hooks remove before later decoding. No direct K/V hooks, weight edits, historical adapters, fitted vectors or gradient passes.",
+  "conditions": "Carry the four N19 parent conditions exactly(84records). Six groups: selected64,random34201_64,random34202_64,selected16 and corresponding nested randoms. Each receives opposite,samepolicy,zero,gain2,rescue,conditional_cut:36new policies. Forty conditions on21cases=840records.",
+  "retention_scope": "Opposite/samepolicy/conditional-cut donor cells have no comparison-rule meaning for eight retention cases. They are explicitly non-applicable baseline references. Clean zero/gain2 and self/rescue test retention; never count N/A references as successful donor retention.",
+  "conditional_cut": "First patch all35 MLP current states to actual opposite donor h, then replace the selected group with actual recipient h. Later forced donor states can block paths. This is conditional necessity inside an engineered transfer, not native necessity or a free-running complement swap.",
+  "counts": {
+    "conditions": 40,
+    "records": 840,
+    "new_edited_tail_generations": 486,
+    "exact_parent_carries": 84,
+    "guarded_baseline_references": 126,
+    "nonapplicable_donor_references": 144,
+    "native_source_capture_trajectories": 23,
+    "parent_live_measurement_trajectories": 47,
+    "native_group_self_trajectories": 126,
+    "conditional_group_self_trajectories": 78,
+    "restoration_trajectories": 80,
+    "all_tagged_trajectories": 840,
+    "new_original_completions": 0,
+    "new_gradient_passes": 0
+  },
+  "parent_replay": "Replay the23 frozen(row,step) native source states/logits/whole-cache fingerprints and all805 native MLP hashes against N19. Carry all84 parent records byte-exact without regenerating their continuations. Parent base21 and donor-N/A16 reuse the native capture witnesses. Live parent measurement trajectories are13 full-opposite,13 full-samepolicy and21 full-self; verify their decision-logit hashes exactly, record full cache fingerprints and all scopes. Parent original-prefill hashes are not substituted for current-decision hashes.",
+  "identity_guards": "For each of six groups,21 native zero-then-recipient self guards require exact current logits and entire cache against ordinary native. For each group,13 full-opposite-plus-group-opposite self guards require exact logits and entire cache against the live full-opposite parent. These78 conditional guards are measurements,not regenerated outputs. All unchanged scalar/channel values are byte-exact.",
+  "decoding": "Same native greedy engine as N19,combined program cap64,EOS1/106/50,pad0. Same pinned resolved-neutral generation contract. Whole cached current-step fingerprints are also saved for every new prediction to distinguish exact cache equality/change descriptively; they do not quantify path-specific mediation.",
+  "counter_contract": "Every trajectory gets a tagged root-forward/input-exposure receipt. For a source,parent,self or restoration at prefix length k and n prompt tokens: calls k+1, exposures n+k. For a new tail of Ttokens: calls k+T, exposures n+k+T-1. Aggregate23source+47parent+126native-self+78conditional-self+80restore+486newtail trajectories. Host derives every term from frozen manifests and raw lengths; no hand-summed forward constant.",
+  "primary_gate": "Selected64 must exceed EACHmatched random64 by at least4opposite-correct programs,at least4clean-zero role losses and at least4conditional-transfer losses. Each selected effect spans both families,wordings,mappings,labels,directions. Same-rule preserves>=12/13; both clean gain conditions retainall8; all native and conditional self/rescue/cache guards exact. Report every component separately. A failed component fails the primary role screen.",
+  "nested_dose": "All16-unit arms remain descriptive and cannot replace a failed64-unit primary gate. No individual-unit sweep in N20.",
+  "coding_scope": "All main baselines are correct,so original-model accuracy cannot improve in this assay. Preserve all losses,opposite-policy programs,caps and retention. A passing group would be a bounded development causal candidate,possibly lexical,not an abstract comparison concept,new capability,novel method or useful coding gain.",
+  "stopping": "Host matching failure prevents a GPU launch. Any source,native replay,scope,parameter,cache or counter failure stops interpretation with partials preserved. No tolerance amendments,completed-panel regeneration,new doses or outcome-selected coordinates.",
+  "audit": "Freeze and import-check BOTH runner and auditor before launch,run RuffF821/F823,actual tiny-Gemma full/scalar/native/cut self fixtures and malformed-cache checks. Verify15 cache slots from the pinned35-layer/20-shared configuration,not an assumed35 slots. Re-decode/regrade all840,verify all references,scopes,lineages,counters and256fresh executable stress probes seed3420. Saved GPU witnesses are audited;host does not recompute full checkpoint logits/weights/gradients.",
+  "resources": {
+    "platform_seconds": 5400,
+    "notebook_seconds": 5200,
+    "worker_seconds": 4900,
+    "one_private_free_job": true,
+    "fresh_quota_required": true,
+    "reserve_hours": 2
+  },
+  "next_decision": "A passing primary supports a separate prospective finer localization and lexical-specificity/generalization test. Failure remains a failed screen; do not select nested dose or new strengths from it. A deployable coding edit requires a fixed answer-independent trigger and fresh error-bearing tasks. Construction proposals stay conditional on a validated source function.",
+  "protocol_sha256": "a64929d5b3a230ca1dba4390f45b1a8b932b91ae787dda8074f5e5833a1c9b48",
+  "edition": "Frozen prospective study with profile-only matching completed. No N20 pretrained test or result."
+}

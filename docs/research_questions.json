@@ -508,7 +508,7 @@
     {
       "id": "Q33",
       "experiment": "N19: current code-decision neuron feasibility",
-      "status": "version2_private_source_verified_running_version1_pre_inference_failure_preserved",
+      "status": "complete_private_host_audited_full_site_passed_fixed_unit_primary_failed_closed",
       "question": "Can native neurons at the actual generated comparison decision support controlled function, rather than activity at an earlier prompt position?",
       "question_provenance": "N18 planned full-site stop motivates checking a later computation where the model actually chooses a comparator.",
       "parents": [
@@ -516,12 +516,27 @@
         "Q32"
       ],
       "method": "Edit exactly one cached code-decision forward after a native prefix shared across three contexts. Compare fixed neuron L9C4632 and existing controls 850/6085 under actual donor swaps, clean gains 0 and 2, and rescue. Full 35-layer current-state controls and eight activation-gradient measurements are predeclared. No profile selects an intervention. There are 19 conditions and 399 records; retention donor cells are non-applicable references.",
-      "result": "N19 version 1 stopped before any inference because raw repetition_penalty was None rather than explicit 1.0. Zero model forwards, edits or predictions. A source-only repair resolves the pinned library defaults and rejects nontrivial processors. Version 2 is the one active private job, with protocol and all scientific conditions unchanged. No N19 scientific output has been accessed.",
-      "interpretation": "Thirteen role cases include eleven exact same-token controls and two same-direction lexical variants. They reuse development contexts with correct baselines, so this assay cannot demonstrate improved original accuracy. Gradients are measurements, never updates. Fixed controls are not activity matched.",
-      "next_question": "Can the current-step primitives preserve exact identity/cache behavior and isolate only declared scalars?",
-      "direction_decision": "Keep the single frozen job unchanged. At terminal, verify final source/privacy and input manifest, pull compact outputs once, and run its frozen raw-output and scope auditor. Fixed controls are not activity matched; no original-accuracy gain can be established on these correct baselines."
+      "result": "All 399 records pass audit: 230 new tails, 21 exact parent carries, 84 guarded references and 64 non-applicable donor references. Full current-state opposite donors transfer 13/13 programs; same-rule preserves 13/13. The fixed target and both existing controls each have zero transfers and zero clean losses. All clean-gain/rescue retention controls pass. Every native replay, scope, self-cache, measurement and restoration guard passes.",
+      "interpretation": "The actual code-decision site supports controlled donor transfer. It does not establish an individual neuron function, abstract comparison meaning, a deployable trigger or original-model improvement. The rare-unit primary criterion fails. Retention donor references are not successful new donor tests. Two host auditor repairs preserve the original code and failures; grades and scientific thresholds do not change.",
+      "next_question": "Can a strictly matched small native group reproduce and causally support the validated current-decision effect?",
+      "direction_decision": "Keep N19 closed. Freeze N20 selection, matched controls, native necessity/rescue, donor sufficiency, conditional cuts and all outcomes before new work. No retuning of N19 units or strengths."
+    },
+    {
+      "id": "Q34",
+      "experiment": "N20: strict current-decision native-group localization",
+      "status": "protocol_frozen_host_matching_passed_GPU_not_implemented_or_launched",
+      "question": "Can a small strictly matched native group reproduce and support the validated code-decision effect?",
+      "question_provenance": "N19 full-state current-token donors transfer 13/13 programs, while three fixed neurons remain null. The new group is selected from archived discovery measurements before any N20 coding outcome.",
+      "parents": [
+        "Q33"
+      ],
+      "method": "Rank the saved minimum influence across four mapping/label strata, then accept the first 64 strictly matchable positive units. Two fixed random groups match native layer, activity RMS, donor-change RMS and outgoing norm. Nested 16-unit doses remain descriptive. Six groups receive opposite/same-rule swaps, clean gains of zero and two, exact rescue and conditional cuts. Forty conditions contain 840 records, including 486 new tails and 84 exact parent carries.",
+      "result": "Host selection accepts 64 units after 212 exclusions from 53,617 positive candidates. Both random groups pass all strict ratios and minimum pools of 16 candidates. Four controls overlap between the random groups. All six groups lie in native layers 24 through 34. No N20 pretrained forward or coding outcome exists.",
+      "interpretation": "This is a profile-selected development hypothesis, not a neuron meaning or coding improvement. All selected and random edits follow the fifteen K/V producers, so exact current-cache invariance is prospectively required. The existing correct baselines cannot show an accuracy gain.",
+      "next_question": "Do the strictly matched groups pass native necessity, donor transfer, exact rescue and the predicted cache-path controls?",
+      "direction_decision": "Implement the frozen runner and prospective auditor with actual small-Gemma current, conditional-cut and cache fixtures. Import both modules and run lint before GPU use. Recheck actual jobs and fresh free quota with at least two hours reserved. Preserve every outcome and the fixed 64-unit primary criterion."
     }
   ],
-  "active_question_id": "Q33",
-  "next_question_id": "Q33"
+  "active_question_id": "Q34",
+  "next_question_id": "Q34"
 }

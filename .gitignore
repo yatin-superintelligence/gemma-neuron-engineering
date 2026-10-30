@@ -17,6 +17,7 @@ credentials/
 !/models/n02/nf4_text_same_source/basis.safetensors
 !/models/n13/down_columns.safetensors
 !/docs/figures/n17_summary.png
+!/docs/figures/n19_summary.png
 !/docs/figures/n04_summary.png
 !/docs/figures/n06_summary.png
 !/docs/figures/n07_summary.png

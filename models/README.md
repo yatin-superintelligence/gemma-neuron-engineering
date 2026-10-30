@@ -222,3 +222,8 @@ The helper covers dense native text MLPs and refuses packed quantized matrices. 
 ## N18 full-site end-position policies
 
 [The four executed recipes](n18/recipe.json) capture native post-gating states at each prompt's own final input position. All 160 records pass audit, but the semantic-transfer gate fails and the planned channel-quarter stage is not executed. These recipes require caller-supplied native donor states; they contain no base-model duplicate or private task answers. Independent clean-package pretrained replay is not claimed.
+
+
+## N19 current-code-decision policies
+
+[All nineteen recipes](n19/recipe.json) describe one cached-token native activation intervention. They retain all fixed neurons, whole-state controls and explicit donor contracts. The full-state control transfers the opposite rule in 13/13 development cases; the three fixed neurons remain null. Raw prefixes and donor states stay private. Caller-supplied native contexts are required, and independent clean-package pretrained replay is not claimed.

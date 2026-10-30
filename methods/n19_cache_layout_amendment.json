@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-30T15:46:55.195792+00:00",
+  "status": "auditor_cache_layout_correction_after_retrieval",
+  "failure_receipt": "runs/n19/version2/audit_v3_execution_receipt.json",
+  "error": "Auditor confused35 decoder MLP layers with the number of native cache entries.",
+  "independent_primary_proof": "The exact pinned public configuration declares35 decoder layers and20 KV-shared layers. Transformers5.8 DynamicCache removes shared tail entries, creating15 cache slots. The constructor and pinned config were archived and independently instantiated without a model.",
+  "proof": "runs/n19/cache_layout_host/result.json",
+  "original_auditor_sha256": "e11af1924895e9a24dfb151c1236cfc2ddef8f8b2a161bcb8d053e3610c1ee5a",
+  "corrected_auditor_sha256": "16c27cc8073f745183ae8e90badc4d0579e1d1b6d1a419ab86ced05fcdb032b4",
+  "correction": "Derive exact cache cardinality from the pinned configuration and actual library constructor. Require all15 entries and contiguous indices, preserving every byte/dtype/shape/hash and no-op identity check. All35 MLP captures remain required.",
+  "all_other_scientific_checks_byte_identical_after_documented_normalization": true,
+  "grading_changed": false,
+  "model_parameters_tasks_conditions_thresholds_changed": false,
+  "GPU_rerun": false,
+  "additional_model_forwards": 0,
+  "optimizer_steps": 0,
+  "output_access_scope": "Audit v3 re-decoded/regraded399 records before failing this later structural assertion. No aggregate score or behavioral outcome was read, selected or interpreted. Cache metadata alone was inspected to diagnose the schema. This is a post-retrieval amendment, not a prospective freeze."
+}

@@ -1669,6 +1669,64 @@
       "event": "private_corrected_launch_source_and_privacy_verified",
       "experiment": "N19v2",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 216,
+      "utc": "2026-10-30T15:36:22.628044+00:00",
+      "event": "current_token_cache_path_limits_recorded_before_outputs",
+      "experiment": "N19",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 217,
+      "utc": "2026-10-30T15:39:48.295083+00:00",
+      "event": "within_layer_gate_value_construction_route_recorded_before_N19_outputs",
+      "experiment": "N20_conditional_intent",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 218,
+      "utc": "2026-10-30T15:42:16.694606+00:00",
+      "event": "auditor_import_failure_preserved_and_two_substitution_repair_frozen",
+      "experiment": "N19v2_audit",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 219,
+      "utc": "2026-10-30T15:46:55.195792+00:00",
+      "event": "wrong_cache_slot_assumption_preserved_and_pinned_schema_correction_frozen",
+      "experiment": "N19v2_audit",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 220,
+      "utc": "2026-10-30T15:51:58.265603+00:00",
+      "event": "all399records_host_audited_full_site_passed_rare_unit_primary_failed_closed",
+      "experiment": "N19v2",
+      "optimizer_steps": 0,
+      "runner_seconds": 426.552776961,
+      "predictions": 399
+    },
+    {
+      "sequence": 221,
+      "utc": "2026-10-30T15:57:56.184992+00:00",
+      "event": "strict_current_decision_group_protocol_frozen_before_profile_ranking_or_code",
+      "experiment": "N20",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 222,
+      "utc": "2026-10-30T16:00:59.814938+00:00",
+      "event": "strict64and_nested16_matched_before_GPU_and_late_cache_invariance_predicted",
+      "experiment": "N20_selection",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 223,
+      "utc": "2026-10-30T16:06:12.901049+00:00",
+      "event": "goal_fragment_wrapper_assumption_repaired_without_duplicate_records",
+      "experiment": "Project_documents",
+      "optimizer_steps": 0
     }
   ]
 }
