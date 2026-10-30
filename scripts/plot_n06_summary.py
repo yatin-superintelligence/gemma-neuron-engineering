@@ -52,7 +52,9 @@ def main():
     out=ROOT/('research/figures'if private.exists()else'docs/figures');out.mkdir(parents=True,exist_ok=True)
     paths=[]
     for suffix in ['png','svg']:
-        path=out/f'n06_summary.{suffix}';fig.savefig(path,dpi=180,facecolor='white');paths.append(path)
+        path=out/f'n06_summary.{suffix}';fig.savefig(path,dpi=180,facecolor='white')
+        if suffix=='svg':path.write_text('\n'.join(line.rstrip()for line in path.read_text().splitlines())+'\n')
+        paths.append(path)
     plt.close(fig)
     receipt={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'private_figure_prepared_visual_QA_pending',
         'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),

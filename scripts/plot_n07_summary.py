@@ -38,7 +38,9 @@ def main():
     fig.text(.04,.064,'600 audited records, including 20 carried originals. Zero training. No abstract-rule neuron or coding improvement established.',fontsize=10,color='#364b56')
     out=ROOT/('research/figures'if private.exists()else'docs/figures');out.mkdir(parents=True,exist_ok=True);paths=[]
     for suffix in ['png','svg']:
-        p=out/f'n07_summary.{suffix}';fig.savefig(p,dpi=180,facecolor='white');paths.append(p)
+        p=out/f'n07_summary.{suffix}';fig.savefig(p,dpi=180,facecolor='white')
+        if suffix=='svg':p.write_text('\n'.join(line.rstrip()for line in p.read_text().splitlines())+'\n')
+        paths.append(p)
     plt.close(fig)
     receipt={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'figure_prepared_visual_QA_pending',
         'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'plot_source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),

@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-30T05:42:15.418708+00:00",
+  "generated_utc": "2026-10-30T05:50:48.596137+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -26,12 +26,12 @@
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "6ec05aa58e25446fa4089d4cf855b115d3915923561ffdca9fe56cb448a03826",
+      "sha256": "93166b1f459fb6109d873e97b6d4f5251b84487c729aa136c7f087f3bb64bb6e",
       "bytes": 139059
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "2b0e4fd2929dc88551020a759cd8fc26ca77593b7de5aa7834f6c6ce61fad768",
+      "sha256": "6eb0759a7936885037d8466aec30aafdd9ecf6ea55b99cefe06df727bda816d6",
       "bytes": 66120
     },
     {
@@ -56,8 +56,8 @@
     },
     {
       "path": "docs/figures/n06_summary.svg",
-      "sha256": "422974fbaffc55a1083d13f50330bb226d53ac6260545626223a96a749e1d2ad",
-      "bytes": 21781
+      "sha256": "b1e58f62a7a072645c3c69cbc817718e46d354d5d4d6508fe3c14cc73810d804",
+      "bytes": 21623
     },
     {
       "path": "docs/figures/n07_summary.png",
@@ -66,8 +66,8 @@
     },
     {
       "path": "docs/figures/n07_summary.svg",
-      "sha256": "7d99bbd0096561052468c247cb9ea56d53ff3dfbcd68e723f521dcc767d31aff",
-      "bytes": 19599
+      "sha256": "930335aea8f07d30f94e00165637da22eb17eb65e5b733613c1d5bbd97f94ab1",
+      "bytes": 19453
     },
     {
       "path": "docs/index.html",
@@ -346,7 +346,7 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "5417709af158298ead96e8381a63de55b9248fbe7b7594ca2e5aebf8b1581702",
+      "sha256": "58a1044e3f697ac20fe9ce1deee0b813a61ada15dd2e07c392afd19670808a94",
       "bytes": 805
     },
     {
@@ -366,13 +366,13 @@
     },
     {
       "path": "scripts/plot_n06_summary.py",
-      "sha256": "14774dd278feb98aaad04ac7755891cd15480058ae928cb2a6452f63a6af7318",
-      "bytes": 4692
+      "sha256": "d32e130c62347cd87d495c4dd4948351d67b2387ff06a675c043bcbcc78f77b8",
+      "bytes": 4813
     },
     {
       "path": "scripts/plot_n07_summary.py",
-      "sha256": "b82544b89879e131f0d04c8626e758ff29d7fa0f1c3d5793d50194aa446dbe92",
-      "bytes": 3754
+      "sha256": "15a88e5fcf9848e1324a4d1c375cfc56cf443aa033aa0821f0977d39c83aa460",
+      "bytes": 3869
     },
     {
       "path": "tests/__init__.py",
