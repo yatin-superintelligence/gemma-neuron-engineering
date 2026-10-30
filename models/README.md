@@ -134,4 +134,15 @@ Donor policies require unmodified activations from the caller's donor prompt at 
 
 The original experiment passed all 660 audited records and its self, identity, replay and restoration guards. These records establish the original experiment's execution. A separate clean-package pretrained replay has not been performed. The recipe reconstructs the mechanisms; reproducing the exact private task table requires the unreleased original inputs. Raw task and donor traces remain private.
 
-Layers 5 to 9 meet the predefined whole-block rescue criterion. This is a conditional inference policy, not a trained checkpoint, an individual-neuron interpretation or an improvement of the unmodified model. N09 stopped before interventions because strict matching failed. N10 stopped at a retention-baseline gate before sparse tests. N11's subsequent sparse panel remains separate and pending.
+Layers 5 to 9 meet the predefined whole-block rescue criterion. This is a conditional inference policy, not a trained checkpoint, an individual-neuron interpretation or an improvement of the unmodified model. N09 stopped before interventions because strict matching failed. N10 stopped at a retention-baseline gate before sparse tests. N11 subsequently completed its full sparse panel and failed the primary criterion; all results and controls are retained.
+
+
+## N11 native groups and conditional control policies
+
+[The complete recipe](n11/recipe.json) contains all 40 main policies, 48 individual policies and all three 256-coordinate groups in their fixed order. Use `interpretability.native_group_policy.native_group_policy` with caller-supplied actual donor states. Slice the named group to its declared size; individual policies use the declared rank. The helper composes a layer 0 background, a full block donor and sparse native-channel changes in that order.
+
+These are reproducible activation policies, not a standalone edited checkpoint. Raw donor traces remain private. The original pretrained experiment passed its declared guards, and the public interface has an actual tiny-Gemma fixture. Independent pretrained reconstruction of this new interface has not been run. N02's separate clean-package reconstruction remains verified.
+
+The selected 256-neuron group rescued two corrupted programs, below the required four, and its coverage failed. Cutting it from full rescue caused four losses, a result restricted to that engineered context. All individual conditions matched controls. No semantic neuron role or coding improvement is established.
+
+`interpretability.stored_neuron_gain.stored_neuron_gain` supports prescribed factors 0, 1 and 2 for one dense outgoing column, with exact scope and restoration checks. Packed quantized weights are refused. Host fixtures cover this utility. N12 stopped before pretrained weight edits; N13 is testing them privately. No new stored-weight model bundle is claimed verified at this edition.

@@ -216,13 +216,27 @@
       "outcome": "Planned baseline retention stop after168outputs;allguards pass;0sparse interventions,0newbackwards,0updates.",
       "duration_scope": "Worker328.922185s;notebook399.487210s. Not charged quota.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N11_v1_native_neuron_necessity",
+      "recorded_script_seconds": 1505.443869393,
+      "outcome": "All1152records audited;primary criterion fails;selected2rescues/4conditional cut losses versusrandom0/0;allindividualcontrols equal;nooriginal-modelgain.",
+      "duration_scope": "Worker1505.443869s,notebook1560.601931s.Notchargedquota.",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "N12_v1_rare_unit_baseline_stop",
+      "recorded_script_seconds": 140.02227294500005,
+      "outcome": "Planned40record baseline stop before any edit;32new/8carried,filter8/8,predicate8/8,extremum0/8,rounding0/8,retention8/8.0updates.",
+      "duration_scope": "Worker140.022273s,notebook191.946817s.Notchargedquota.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N11_v1_native_neuron_necessity",
-      "launched_utc": "2026-10-30T07:13:46.800945+00:00",
-      "status": "running_private_source_and_input_verified"
+      "run": "N13_v1_scoped_rare_unit",
+      "launched_utc": "2026-10-30T08:36:29.323030+00:00",
+      "status": "One private bounded job active,640records maximum/600new/40exactcarried,zero training"
     }
   ]
 }

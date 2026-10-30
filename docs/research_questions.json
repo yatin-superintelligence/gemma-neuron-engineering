@@ -317,19 +317,50 @@
     {
       "id": "Q21",
       "experiment": "N11: native-neuron necessity with clarified retention wording",
-      "status": "running_private_source_and_input_verified",
+      "status": "complete_host_audited_primary_criterion_failed",
       "question": "After clarifying the requested JSON output shape, do the fixed native groups show controlled necessity and rescue?",
-      "question_provenance": "Prospective wording-only continuation after N10 planned retention stop. No sparse outcomes have been measured.",
+      "question_provenance": "Prospective wording-only continuation after N10 stopped at its retention gate. Sparse outcomes were unseen when the protocol was frozen.",
       "parents": [
         "Q18",
         "Q19",
         "Q20"
       ],
       "method": "Keep all selected/control groups, filter/arithmetic prompts, grading, conditions and criteria fixed. Change only four JSON instruction suffixes to previously usable wording. Carry 140 unchanged completions exactly and verify their live logits. Maximum 1,012 new outputs.",
-      "result": "Eight host tests and the 140-record carry check passed. One private capped job is running, with source cells and shared input privacy verified. No new JSON or sparse output has been read.",
-      "interpretation": "A development assay clarification, not model improvement or independent confirmation. Old JSON grades remain zero.",
-      "next_question": "Does native-neuron necessity/rescue exceed both matched random groups?",
-      "direction_decision": "One fixed clarification only. Stop on any gate failure; do not keep revising prompts or rerun completed completions."
+      "result": "All 1,152 records audited: 1,012 new and 140 exact carried. The selected 256-neuron group restores two corrupted programs and causes four losses when cut from full rescue, versus zero for both random groups. The primary four-rescue threshold and direction/mapping coverage fail. All 48 individual conditions match their respective baselines and random controls. Every main condition retains 4/4 JSON and 4/4 arithmetic; no caps.",
+      "interpretation": "A limited conditional group effect, not a passing functional-role candidate. The cut measures dependence within an engineered full-rescue context. Clean zero/double gains do not improve original-model correctness. Individual meaning, useful benefit and novelty remain unestablished.",
+      "next_question": "Does the originally highest-ranked rare coordinate show a reproducible, context-specific effect under within-unit controls and direct weight edits?",
+      "direction_decision": "Close this predefined matchable-group test. Preserve all failures and do not promote secondary outcomes. A rare-unit study needs its own prospective scope and cannot claim unavailable matched between-unit specificity."
+    },
+    {
+      "id": "Q22",
+      "experiment": "N12: rare native unit and permanent connection edits",
+      "status": "complete_host_audited_planned_baseline_stop",
+      "question": "Does the originally highest-ranked rare native neuron carry a context-specific rule signal, and do prescribed permanent edits improve fresh development code?",
+      "question_provenance": "Prospective separate estimand after N11 failed primary. The original highest-ranked rare coordinate and this alternative route predate N11 output access.",
+      "parents": [
+        "Q19",
+        "Q21"
+      ],
+      "method": "One fixed native neuron, actual within-unit counterfactual values and balanced shuffled donors; anchor and global gains; prescribed outgoing-column assignments. Four coding families and eight unchanged retention inputs were planned.",
+      "result": "All 40 baseline records were audited: 32 new and eight exact carried originals. Filtering and predicates each scored 8/8. Extremum and rounding each scored 0/8. All eight retention cases passed. The validity and per-family guards stopped the run before any edit.",
+      "interpretation": "This is a planned baseline stop, not an intervention null. No neuron or weight edit was executed. The original code and output-format failures remain unchanged.",
+      "next_question": "With unchanged prompts and grades, does the neuron affect the two usable rule tasks, and do prescribed edits improve any of the four coding families?",
+      "direction_decision": "No further wording repairs. Carry all forty originals exactly. Declare the narrower role cohort before interventions and retain every family for coding gains and losses."
+    },
+    {
+      "id": "Q23",
+      "experiment": "N13: fixed native unit on usable rule domains and all coding outcomes",
+      "status": "private_GPU_version1_active_outputs_unseen",
+      "question": "Within the two usable rule domains, does the fixed neuron carry a controlled rule signal, and do prescribed connection edits improve coding?",
+      "question_provenance": "Prospective narrower scope after N12 baseline-only stop. No neuron-intervention outcomes available. Development baseline selection explicitly acknowledged.",
+      "parents": [
+        "Q22"
+      ],
+      "method": "Carry all forty N12 originals exactly. Keep all sixteen conditions, prompts, graders and strengths. Use the sixteen filtering and predicate cases for the role question, and all thirty-two coding cases for gains and losses. Verify live baseline and native-capture hashes before edits.",
+      "result": "Host task, tokenizer, oracle and permanent-edit fixtures pass. Isolated packaged imports and all source cells pass. One private job was launched after a fresh quota check; its server metadata and source are verified. No intervention output has been read at this edition.",
+      "interpretation": "A within-unit development test. The role cohort was narrowed after baseline access, so it is not independent confirmation. Matched between-unit specificity remains unavailable.",
+      "next_question": "Does the original highest-ranked coordinate cause rule-selective changes or useful direct weight changes?",
+      "direction_decision": "Use the known working baselines without another wording iteration. Keep all four coding families and every failed original grade. Do not rerun N12."
     }
   ]
 }

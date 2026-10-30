@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-30T08:31:58.487423+00:00",
+  "status": "host_audited",
+  "worker_stage": "stopped_baseline_gate",
+  "predictions": 40,
+  "new_predictions": 32,
+  "carried_records_exact": 8,
+  "optimizer_steps": 0,
+  "all_raw_token_grades_and_guards_pass": true,
+  "conditions": [
+    {
+      "condition": "base",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    }
+  ],
+  "notebook_seconds": 191.94681711699997,
+  "scope": "Within one fixed native unit. No matched between-unit specificity or confirmed model improvement.",
+  "experiment": "N12",
+  "version": 1,
+  "baseline_gate_checks": {
+    "valid_sources": false,
+    "target_correct": true,
+    "all_families": false,
+    "retention": true
+  },
+  "family_scores": {
+    "filter": 8,
+    "predicate": 8,
+    "extremum": 0,
+    "rounding": 0
+  },
+  "worker_seconds": 140.02227294500005,
+  "actual_forward_calls": 527,
+  "actual_input_token_exposures": 10333,
+  "new_generated_tokens": 445,
+  "actual_new_backwards": 0,
+  "interventions_executed": false,
+  "interpretation": "Planned baseline stop before any neuron or weight edit. Filtering and predicates8/8each;extremum androunding0/8each. Retention8/8. This is neither an intervention null nor a coding benefit. No prompt repair or regrading.",
+  "next_decision": "Broaden causal coverage only after a separately frozen scoped question. Preserve all40base completions and all original grades. No further output-wording revisions."
+}

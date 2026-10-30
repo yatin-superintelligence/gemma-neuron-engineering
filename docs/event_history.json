@@ -1191,6 +1191,50 @@
       "experiment": "Methods consultation",
       "status": "timeout40seconds_no_response",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 149,
+      "utc": "2026-10-30T07:49:58.532444+00:00",
+      "event": "N11_complete_all_records_host_audited_primary_failed",
+      "experiment": "N11",
+      "optimizer_steps": 0,
+      "runner_seconds": 1505.443869393,
+      "predictions": 1152
+    },
+    {
+      "sequence": 150,
+      "utc": "2026-10-30T07:57:08.592764+00:00",
+      "event": "N12_rare_unit_and_permanent_edit_protocol_frozen_before_code",
+      "experiment": "N12",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 151,
+      "utc": "2026-10-30T08:27:14.930566+00:00",
+      "event": "N12_private_version1_launched_frozen_sources_and_privacy_verified",
+      "experiment": "N12",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 152,
+      "utc": "2026-10-30T08:33:03.176338+00:00",
+      "event": "N12_planned_baseline_stop_complete_host_audit",
+      "experiment": "N12",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 153,
+      "utc": "2026-10-30T08:33:50.877359+00:00",
+      "event": "N13_narrow_role_scope_frozen_before_code_and_interventions",
+      "experiment": "N13",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 154,
+      "utc": "2026-10-30T08:37:11.713638+00:00",
+      "event": "N13_private_version1_launched_source_privacy_verified",
+      "experiment": "N13",
+      "optimizer_steps": 0
     }
   ]
 }
