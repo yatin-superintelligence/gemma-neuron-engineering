@@ -1,0 +1,804 @@
+{
+  "utc": "2026-10-30T08:57:08.473151+00:00",
+  "status": "host_audited",
+  "worker_stage": "complete",
+  "predictions": 640,
+  "new_predictions": 600,
+  "carried_records_exact": 40,
+  "optimizer_steps": 0,
+  "all_raw_token_grades_and_guards_pass": true,
+  "conditions": [
+    {
+      "condition": "base",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "anchor_identity",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "anchor_zero",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "anchor_double",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "anchor_self",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "anchor_same",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "anchor_opposite",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "anchor_shuffled_same",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "anchor_shuffled_opposite",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "anchor_zero_restore",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "global_hook_zero",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "global_hook_double",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "weight_zero",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "weight_double",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "weight_identity",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    },
+    {
+      "condition": "weight_restore",
+      "families": {
+        "filter": {
+          "correct": 8,
+          "rows": 8
+        },
+        "predicate": {
+          "correct": 8,
+          "rows": 8
+        },
+        "extremum": {
+          "correct": 0,
+          "rows": 8
+        },
+        "rounding": {
+          "correct": 0,
+          "rows": 8
+        },
+        "json": {
+          "correct": 4,
+          "rows": 4
+        },
+        "arithmetic": {
+          "correct": 4,
+          "rows": 4
+        }
+      },
+      "capped": 0
+    }
+  ],
+  "notebook_seconds": 1020.43660897,
+  "scope": "Within one fixed native unit. No matched between-unit specificity or confirmed model improvement.",
+  "estimands": {
+    "role_cohort": 16,
+    "same_preserved": 16,
+    "opposite_alternative": 0,
+    "same_shuffled_correct": 16,
+    "opposite_shuffled_alternative": 0,
+    "role_checks": {
+      "same_preservation": true,
+      "opposite_transfer": false,
+      "same_alignment_advantage": false,
+      "opposite_alignment_advantage": false,
+      "coverage": false,
+      "retention": true
+    },
+    "within_unit_development_candidate": false,
+    "matched_between_unit_specificity": false,
+    "coding_conditions": [
+      {
+        "condition": "base",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "anchor_identity",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "anchor_zero",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "anchor_double",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "anchor_self",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "anchor_same",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "anchor_opposite",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "anchor_shuffled_same",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "anchor_shuffled_opposite",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "anchor_zero_restore",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "global_hook_zero",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "global_hook_double",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "weight_zero",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "weight_double",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "weight_identity",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      },
+      {
+        "condition": "weight_restore",
+        "gains": 0,
+        "losses": 0,
+        "net": 0,
+        "retention_losses": 0,
+        "gain_families": [],
+        "fresh_confirmation_candidate": false
+      }
+    ],
+    "permanent_edit_confirmation_candidate": null,
+    "confirmed_model_improvement": false
+  },
+  "experiment": "N13",
+  "version": 1,
+  "baseline_gate_checks": {
+    "fixed_usable_role_baselines": true,
+    "all_retention": true
+  },
+  "worker_seconds": 964.256536831,
+  "actual_forward_calls": 8207,
+  "actual_input_token_exposures": 120815,
+  "new_generated_tokens": 7495,
+  "actual_new_backwards": 0,
+  "first_logit_and_raw_output_effects": [
+    {
+      "condition": "base",
+      "rows": 40,
+      "first_logit_hash_changes": 0,
+      "raw_token_sequence_changes": 0,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "anchor_identity",
+      "rows": 40,
+      "first_logit_hash_changes": 0,
+      "raw_token_sequence_changes": 0,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "anchor_zero",
+      "rows": 40,
+      "first_logit_hash_changes": 40,
+      "raw_token_sequence_changes": 1,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "anchor_double",
+      "rows": 40,
+      "first_logit_hash_changes": 40,
+      "raw_token_sequence_changes": 2,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "anchor_self",
+      "rows": 40,
+      "first_logit_hash_changes": 0,
+      "raw_token_sequence_changes": 0,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "anchor_same",
+      "rows": 40,
+      "first_logit_hash_changes": 40,
+      "raw_token_sequence_changes": 4,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "anchor_opposite",
+      "rows": 40,
+      "first_logit_hash_changes": 40,
+      "raw_token_sequence_changes": 2,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "anchor_shuffled_same",
+      "rows": 40,
+      "first_logit_hash_changes": 16,
+      "raw_token_sequence_changes": 1,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "anchor_shuffled_opposite",
+      "rows": 40,
+      "first_logit_hash_changes": 26,
+      "raw_token_sequence_changes": 3,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "anchor_zero_restore",
+      "rows": 40,
+      "first_logit_hash_changes": 0,
+      "raw_token_sequence_changes": 0,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "global_hook_zero",
+      "rows": 40,
+      "first_logit_hash_changes": 40,
+      "raw_token_sequence_changes": 3,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "global_hook_double",
+      "rows": 40,
+      "first_logit_hash_changes": 40,
+      "raw_token_sequence_changes": 2,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "weight_zero",
+      "rows": 40,
+      "first_logit_hash_changes": 40,
+      "raw_token_sequence_changes": 3,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "weight_double",
+      "rows": 40,
+      "first_logit_hash_changes": 40,
+      "raw_token_sequence_changes": 2,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "weight_identity",
+      "rows": 40,
+      "first_logit_hash_changes": 0,
+      "raw_token_sequence_changes": 0,
+      "correctness_changes": 0
+    },
+    {
+      "condition": "weight_restore",
+      "rows": 40,
+      "first_logit_hash_changes": 0,
+      "raw_token_sequence_changes": 0,
+      "correctness_changes": 0
+    }
+  ],
+  "numerical_controls": {
+    "0": {
+      "rows": 40,
+      "exact_logits": 40,
+      "same_raw_tokens": 40,
+      "max_absolute": 0.0,
+      "max_relative_L2": 0.0
+    },
+    "2": {
+      "rows": 40,
+      "exact_logits": 40,
+      "same_raw_tokens": 40,
+      "max_absolute": 0.0,
+      "max_relative_L2": 0.0
+    }
+  },
+  "coding_improvement_established": false,
+  "semantic_neuron_role_established": false,
+  "interpretation": "Every fixed condition retains the same functional scores:filter8/8,predicate8/8,extremum0/8,rounding0/8,JSON4/4,arithmetic4/4. Opposite native scalar donors switchzeroof16usable rule programs;shuffledcontrolsalsozero. Firstlogitsandafewrawstringschange,butcorrectnessdoesnot. Permanent0/2andglobalhook0/2areexactacross80comparisons. The activityassociationdoesnotestablish a causal semantic role or useful edit.",
+  "next_decision": "Close the fixed rare-unit hypothesis without newgains orreselection. Broaden to whole-site semantic positivecontrols onunchanged task prefixes before another sparse ranking or constructed-neuron sweep."
+}

@@ -230,13 +230,14 @@
       "outcome": "Planned40record baseline stop before any edit;32new/8carried,filter8/8,predicate8/8,extremum0/8,rounding0/8,retention8/8.0updates.",
       "duration_scope": "Worker140.022273s,notebook191.946817s.Notchargedquota.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N13_v1_fixed_rare_unit_and_permanent_edits",
+      "recorded_script_seconds": 964.256536831,
+      "outcome": "All640records audited,600new/40carried. All16conditionssamecorrectness;0ruletransfers/0gains/losses. Permanent0/2matchesglobalhookexact80cases. All200identity/32restorationguards pass;0updates.",
+      "duration_scope": "Worker964.256537s,notebook1020.436609s.Notchargedquota.",
+      "optimizer_steps": 0
     }
   ],
-  "active_runs": [
-    {
-      "run": "N13_v1_scoped_rare_unit",
-      "launched_utc": "2026-10-30T08:36:29.323030+00:00",
-      "status": "One private bounded job active,640records maximum/600new/40exactcarried,zero training"
-    }
-  ]
+  "active_runs": []
 }

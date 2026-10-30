@@ -145,4 +145,13 @@ These are reproducible activation policies, not a standalone edited checkpoint. 
 
 The selected 256-neuron group rescued two corrupted programs, below the required four, and its coverage failed. Cutting it from full rescue caused four losses, a result restricted to that engineered context. All individual conditions matched controls. No semantic neuron role or coding improvement is established.
 
-`interpretability.stored_neuron_gain.stored_neuron_gain` supports prescribed factors 0, 1 and 2 for one dense outgoing column, with exact scope and restoration checks. Packed quantized weights are refused. Host fixtures cover this utility. N12 stopped before pretrained weight edits; N13 is testing them privately. No new stored-weight model bundle is claimed verified at this edition.
+`interpretability.stored_neuron_gain.stored_neuron_gain` supports prescribed factors 0, 1 and 2 for one dense outgoing column, with exact scope and restoration checks. Packed quantized weights are refused. Host fixtures cover this utility. N12 stopped before pretrained weight edits; N13 completed those pretrained edits and its host audit. The exact compact columns are now available below.
+
+
+## N13 stored native outgoing-column edits
+
+[The N13 recipe](n13/recipe.json) retains all sixteen conditions. [The compact tensor file](n13/down_columns.safetensors) contains the original, zero and doubled outgoing columns for native layer 9 channel 4632 in the pinned BF16 parent. Its total size is 9,608 bytes. It contains no task or activation trace.
+
+Load the original parent with `load_n02_base`, verify the source-column hash in the recipe, and evaluate a prescribed factor inside `with stored_neuron_gain(model, 9, 4632, 0):`. Use factor `2` for doubling. The utility assigns the native weight column for the entire evaluation context and restores the parent when the context ends. The saved columns preserve the exact parameter variants without storing another full base model.
+
+The original experiment passed 640 audited records, forty carried-original replays, two hundred generated identity comparisons and thirty-two restorations. Factors zero and two matched their global-activity equivalents exactly on forty inputs each. Every fixed condition had the same correctness. These verified edits produced no coding improvement. A separate clean-package pretrained replay of this bundle has not been performed.

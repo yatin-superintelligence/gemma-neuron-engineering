@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-30T08:50:39.538623+00:00",
+  "posthoc": true,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0,
+  "source_sha256": "567922a3f23ee7effa8fb075ef23f4070c1620b6737314ad66d69a2eb39f3814",
+  "no_N13_intervention_outputs_accessed": true,
+  "interpretation": "The selector precedes the task text. Causal prefix activations therefore cannot distinguish these four later task domains. Identical values/hash verifythis onrecordedprompts. Domain-dependent effectswouldconcern downstream use,not domain-specific activation atthisanchor. A nonzero ruleinteraction is descriptive anddoesnotassignsemanticfunction.",
+  "cells": [
+    {
+      "style": 0,
+      "centered_energy_fractions": {
+        "label": 0.03946085937961754,
+        "mapping": 0.010084841841696623,
+        "rule": 0.9504542987786858
+      },
+      "all_four_task_families_share_exact_native_value_and_full_MLP_hash": true
+    },
+    {
+      "style": 1,
+      "centered_energy_fractions": {
+        "label": 0.004004378168471024,
+        "mapping": 0.004939470261917874,
+        "rule": 0.9910561515696111
+      },
+      "all_four_task_families_share_exact_native_value_and_full_MLP_hash": true
+    }
+  ],
+  "edition": "Only aggregate contrast fractions are public. Raw activation values and reconstructive contrast coefficients remain private."
+}

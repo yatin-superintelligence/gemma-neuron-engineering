@@ -350,17 +350,48 @@
     {
       "id": "Q23",
       "experiment": "N13: fixed native unit on usable rule domains and all coding outcomes",
-      "status": "private_GPU_version1_active_outputs_unseen",
+      "status": "complete_host_audited_no_role_or_coding_gain",
       "question": "Within the two usable rule domains, does the fixed neuron carry a controlled rule signal, and do prescribed connection edits improve coding?",
       "question_provenance": "Prospective narrower scope after N12 baseline-only stop. No neuron-intervention outcomes available. Development baseline selection explicitly acknowledged.",
       "parents": [
         "Q22"
       ],
       "method": "Carry all forty N12 originals exactly. Keep all sixteen conditions, prompts, graders and strengths. Use the sixteen filtering and predicate cases for the role question, and all thirty-two coding cases for gains and losses. Verify live baseline and native-capture hashes before edits.",
-      "result": "Host task, tokenizer, oracle and permanent-edit fixtures pass. Isolated packaged imports and all source cells pass. One private job was launched after a fresh quota check; its server metadata and source are verified. No intervention output has been read at this edition.",
-      "interpretation": "A within-unit development test. The role cohort was narrowed after baseline access, so it is not independent confirmation. Matched between-unit specificity remains unavailable.",
-      "next_question": "Does the original highest-ranked coordinate cause rule-selective changes or useful direct weight changes?",
-      "direction_decision": "Use the known working baselines without another wording iteration. Keep all four coding families and every failed original grade. Do not rerun N12."
+      "result": "All 640 records were audited: 600 new and forty exact carried originals. Every condition has the same correctness. Opposite donors switch none of the sixteen usable rule programs. All permanent edits execute and restore correctly. Stored-column and global activity factors zero and two agree exactly across eighty comparisons.",
+      "interpretation": "The recorded activity tracks the rule, but this native scalar is insufficient to transfer it under the fixed donor swaps. Zeroing or doubling it gives no coding gain or loss on this panel. Logit and some raw-text changes do not establish a useful function.",
+      "next_question": "Does a whole native site support contextual-rule transfer on these unchanged prefixes before further sparse localization?",
+      "direction_decision": "Close the rare-unit test without new strengths or coordinate reselection. Validate a full-site positive control in the broader semantic context before claiming a localization failure or constructing new neurons."
+    },
+    {
+      "id": "Q24",
+      "experiment": "N12P: recorded prefix activity contrasts",
+      "status": "posthoc_host_analysis_complete_no_new_forwards",
+      "question": "Does the fixed rare neuron track the requested relation or the selector label in its recorded prefix activity?",
+      "question_provenance": "Posthoc description of N12 captures, completed before N13 intervention-output access. Does not change N13 conditions or thresholds.",
+      "parents": [
+        "Q22"
+      ],
+      "method": "Exactly decompose each four-cell label-by-definition mapping table into its mean, label effect, mapping effect and rule interaction. No fitted vector, model update or new forward call. Check identical selector-state hashes across four later task domains.",
+      "result": "The rule interaction accounts for 95.05% and 99.11% of centered four-cell activity energy in the two instruction wordings. Every later task domain has the same selector value and full native MLP hash for a fixed prefix.",
+      "interpretation": "A bounded descriptive association with the contextual comparison rule. The selector precedes task text, so this site cannot distinguish those later domains. No individual semantic function, necessity or coding benefit follows from activity alone.",
+      "next_question": "Do actual counterfactual and prescribed connection interventions produce rule-specific executable changes?",
+      "direction_decision": "Keep N13 unchanged and await its complete frozen causal panel. Do not reselect the coordinate or promote this posthoc association to a confirmed role."
+    },
+    {
+      "id": "Q25",
+      "experiment": "N14: full-site semantic positive control",
+      "status": "protocol_frozen_before_implementation",
+      "question": "Does a full native site support controlled contextual-rule transfer on the unchanged broader coding prefixes,where one rule-correlated unit did not?",
+      "question_provenance": "Prospective scope check after N13 complete null. All N13 outcomes fixed. No N14 code or pretrained outputs yet.",
+      "parents": [
+        "Q23",
+        "Q24"
+      ],
+      "method": "Keep every prompt, grade and base completion. Compare actual opposite-rule and reversed-label same-rule donors at layer 0, layers 5 to 9 and layers 0 to 13. Use exact self, identity and restoration guards.",
+      "result": "Protocol frozen before implementation. Four hundred records planned, including forty carried originals. Zero training.",
+      "interpretation": "A full-site positive control is needed in these changed semantic prefixes before sparse failure is interpreted as a localization conclusion. This is not a construction or coding-improvement claim.",
+      "next_question": "Which declared native site, if any, supports rule-specific executable transfer beyond label identity?",
+      "direction_decision": "Use the smallest decisive forward control. Defer arbitrary neuron construction and another sparse ranking until a site passes. Recheck actual jobs and free quota before launch."
     }
   ]
 }

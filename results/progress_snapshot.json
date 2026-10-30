@@ -1,18 +1,12 @@
 {
-  "generated_utc": "2026-10-30T08:42:32.271112+00:00",
-  "question_records": 23,
-  "recorded_terminal_runs": 39,
-  "active_runs": [
-    {
-      "run": "N13_v1_scoped_rare_unit",
-      "launched_utc": "2026-10-30T08:36:29.323030+00:00",
-      "status": "One private bounded job active,640records maximum/600new/40exactcarried,zero training"
-    }
-  ],
-  "ledger_events": 154,
-  "question_register_source_sha256": "6aa4b7fce90ed449adb22806c39c45994a27919fa845585d5d81e34032be3c33",
-  "event_ledger_source_sha256": "8db0bf645848e331ccfd7f0a9c6c7a706f8b71beb645dcd61fcb20adab5a252a",
-  "compute_ledger_source_sha256": "50da0f2093c21e68c0bdbe35e25faecefd04419e698b13c91f3e7a13f8ed369f",
+  "generated_utc": "2026-10-30T09:06:06.914201+00:00",
+  "question_records": 25,
+  "recorded_terminal_runs": 40,
+  "active_runs": [],
+  "ledger_events": 158,
+  "question_register_source_sha256": "1c02cedd1687ee71b7bcb3e0a6feaeb488d91fa36b76420284aa48337041841e",
+  "event_ledger_source_sha256": "d7533e6547a21632ec299b3be6d9a14ce93b6e51eece91acc574c1135089a78d",
+  "compute_ledger_source_sha256": "a2de453b7e14bc5a47c5795614792867e94efc1e99ccc61ea76935435af4adba",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0

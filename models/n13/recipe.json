@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "title": "N13 fixed native unit, activation policies and stored-column variants",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Text-only unquantized BF16",
+  "coordinate": {
+    "layer": 9,
+    "channel": 4632,
+    "native_width": 6144,
+    "selection": "Original top N09 minimum-stratum program-margin score, before any N10/N11 outputs",
+    "selection_source_moments_sha256": "a3283e05aaea432464d61756f1f08e5a898430cbeb12aec3cb1b2285366cb616"
+  },
+  "optimizer_steps": 0,
+  "actual_backward_passes": 0,
+  "conditions": [
+    {
+      "name": "base",
+      "scope": "none"
+    },
+    {
+      "name": "anchor_identity",
+      "scope": "anchor",
+      "operation": "gain",
+      "gain": 1
+    },
+    {
+      "name": "anchor_zero",
+      "scope": "anchor",
+      "operation": "gain",
+      "gain": 0
+    },
+    {
+      "name": "anchor_double",
+      "scope": "anchor",
+      "operation": "gain",
+      "gain": 2
+    },
+    {
+      "name": "anchor_self",
+      "scope": "anchor",
+      "operation": "swap",
+      "donor": "recipient"
+    },
+    {
+      "name": "anchor_same",
+      "scope": "anchor",
+      "operation": "swap",
+      "donor": "samepolicy"
+    },
+    {
+      "name": "anchor_opposite",
+      "scope": "anchor",
+      "operation": "swap",
+      "donor": "opposite"
+    },
+    {
+      "name": "anchor_shuffled_same",
+      "scope": "anchor",
+      "operation": "swap",
+      "donor": "shuffled_samepolicy"
+    },
+    {
+      "name": "anchor_shuffled_opposite",
+      "scope": "anchor",
+      "operation": "swap",
+      "donor": "shuffled_opposite"
+    },
+    {
+      "name": "anchor_zero_restore",
+      "scope": "anchor",
+      "operation": "rescue",
+      "donor": "recipient"
+    },
+    {
+      "name": "global_hook_zero",
+      "scope": "all",
+      "operation": "gain",
+      "gain": 0
+    },
+    {
+      "name": "global_hook_double",
+      "scope": "all",
+      "operation": "gain",
+      "gain": 2
+    },
+    {
+      "name": "weight_zero",
+      "scope": "stored_column",
+      "factor": 0
+    },
+    {
+      "name": "weight_double",
+      "scope": "stored_column",
+      "factor": 2
+    },
+    {
+      "name": "weight_identity",
+      "scope": "stored_column",
+      "factor": 1
+    },
+    {
+      "name": "weight_restore",
+      "scope": "stored_column",
+      "factor": "zero_then_original"
+    }
+  ],
+  "permutation_contract": "For each of8 family/style four-row cells, enumerate permutations of the four mapping/label rows that are derangements and preserve exactly two rule-aligned and two rule-misaligned assignments. Choose once with Python Random(2212), in fixed family/style order. Apply this one row permutation separately to same-rule and opposite-rule donor sources. All four actual values occur once per cell. Retention donor shuffles are a fixed pairwise label exchange within each two-row retention pair. No output-based choice.",
+  "column_hashes": {
+    "shape": [
+      1536,
+      6144
+    ],
+    "dtype": "torch.bfloat16",
+    "columns": {
+      "original": "7adc62fe9a2797a64f5bfde2919675a59f5802e290daa2134dafdea9a4361a2a",
+      "zero": "dfa2be821c76a7635c31b9f8073126af0ba5a9ca4b6373e21f3838fd6ab447fb",
+      "double": "f3ab41d66f9675d01cc7e11228700ac720eac5731c6e6a2bef0ef87477fd8886"
+    },
+    "source_matrix_sha256": "9b7d60980721656e81b45aabb119459b6c4fc6bd8a1d9569674cc667935126a7"
+  },
+  "files": {
+    "down_columns.safetensors": "80217ca82e910a2d247192af7b3cd0084fac627bfe468e696e50a19a2692c9a1",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE": "e61db7855d4a2f0fe0005ef6ab0352bf3f34a8408d243878bb967c220fa49e50"
+  },
+  "application": {
+    "loader": "reproduce.model_edits.load_n02_base(Path(models/n02/bf16_text))",
+    "activation_module": "interpretability.anchor_intervention",
+    "stored_column_module": "interpretability.stored_neuron_gain",
+    "stored_column_function": "stored_neuron_gain",
+    "example": "with stored_neuron_gain(model,9,4632,0): evaluate(model)",
+    "scope": "The context assigns a native parameter column for every token,then restores it. Saved exact columns preserve the prescribed edits without duplicating the base. Caller-supplied actual donors are required for donor-based activation policies."
+  },
+  "validation": {
+    "protocol_sha256": "7e839b0a6987b3afdd78078ee6fe6f93de59462e236a8d57e4fa74986e692a52",
+    "result_receipt_sha256": "281a3c5ec4f77075c9c450b0a6f49c2f4d681f44c0c206fdcd508247ff9c6757",
+    "source_helper_sha256": "6169b400b3f2a2a8d54010413e07324925ebb7ef2c4541f26eda3bbb73aa8f88",
+    "all640records_host_audited": true,
+    "carried_originals_exact": 40,
+    "identity_generations": 200,
+    "postcondition_restorations": 32,
+    "weight_conditions": 4,
+    "target_assignment_version_increments": 9,
+    "all_other_parameters_unchanged": true,
+    "global_activity_and_column_variants_exact_cases": 80,
+    "independent_clean_package_pretrained_replay": false
+  },
+  "result": "No condition changes coding correctness. No role or improvement established. All outcomes retained.",
+  "raw_tasks_and_donor_values": "Private;not part of this bundle."
+}
