@@ -895,6 +895,65 @@
       "predictions": 288,
       "privacy_server_verified": true,
       "cell_sources_exact": true
+    },
+    {
+      "sequence": 117,
+      "utc": "2026-10-30T02:12:39.461017+00:00",
+      "event": "n04_v2_complete_host_audited_late_path_opened_coding_effect_unconfirmed",
+      "experiment": "N04",
+      "question": "Q14",
+      "version": 2,
+      "status": "complete_host_audited",
+      "optimizer_steps": 0,
+      "runner_seconds": 758.7681007449999,
+      "predictions": 288
+    },
+    {
+      "sequence": 118,
+      "utc": "2026-10-30T02:15:37.787093+00:00",
+      "event": "n05_native_anchor_role_protocol_frozen_before_task_code",
+      "experiment": "N05",
+      "question": "Q15",
+      "version": 1,
+      "status": "frozen_not_launched",
+      "conditions": 13,
+      "optimizer_steps": 0,
+      "predictions": 336
+    },
+    {
+      "sequence": 119,
+      "utc": "2026-10-30T02:40:05.614303+00:00",
+      "event": "n05_prelaunch_guard_false_assumption_resolved_by_owned_kernel_search",
+      "experiment": "N05",
+      "question": "Q15",
+      "version": 1,
+      "status": "host_launch_guard_resolved_no_GPUrun",
+      "optimizer_steps": 0,
+      "predictions": 0
+    },
+    {
+      "sequence": 120,
+      "utc": "2026-10-30T02:42:07.292757+00:00",
+      "event": "n05_host_anchor_hooks_8cases_and48token_oracle_checks_passed",
+      "experiment": "N05H",
+      "question": "Q15",
+      "status": "host_preflight_complete",
+      "conditions": 8,
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 121,
+      "utc": "2026-10-30T02:42:07.292757+00:00",
+      "event": "n05_private_native_anchor_functional_pilot_launched",
+      "experiment": "N05",
+      "question": "Q15",
+      "version": 1,
+      "status": "running",
+      "conditions": 13,
+      "optimizer_steps": 0,
+      "predictions": 336,
+      "privacy_server_verified": true,
+      "cell_sources_exact": true
     }
   ]
 }

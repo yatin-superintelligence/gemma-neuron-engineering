@@ -204,7 +204,7 @@
     {
       "id": "Q14",
       "experiment": "N04: typed coding and memory-connection gate",
-      "status": "private_GPU_v2_running_after_native_baseline_gate_failure",
+      "status": "complete_host_audited_structural_path_change_unconfirmed_coding_effect",
       "question": "Can a prescribed new memory connection make late native neuron activity causally available to later positions and affect typed coding without training?",
       "question_provenance": "Proposed after N03 complete null. The GPU protocol was frozen after 30 random-weight CPU cases and task/oracle preflight, before GPU outcomes.",
       "parents": [
@@ -212,10 +212,26 @@
         "Q12"
       ],
       "method": "Copy full-attention key/value projections from layer 14 into a frozen memory branch at layer 24. Compare nine fixed policies, historical versus current-only values, feature-permuted controls, typed executable continuations, native-neuron interventions and measurement gradients. No training.",
-      "result": "Thirty amended random-weight cases passed. Real-model version 1 preserved 32 original completions, then stopped on the unchanged BF16 cache discrepancy before applying any connection. The dated version 2 amendment requires relative L2 error at most 0.02 and identical top-1 tokens, reports every absolute error, and adds exact off-mode incremental-hash checks. One bounded resume carries the original predictions and generates the remaining 256 outputs.",
-      "interpretation": "The first failure concerns the original BF16 numerical gate. The copied connection had not executed. The revised gate is weaker and does not establish full-logit cache equivalence. A new internal path alone would not establish a useful neuron role or coding gain.",
-      "next_question": "Can the copied branch pass the amended real-model controls, open access to past native activity, and improve typed coding while retaining other behavior?",
-      "direction_decision": "Allow one bounded resume with the original outputs preserved. Do not change cache tolerances again in this pilot. Retain every condition and return to functional localization if the branch fails or provides no useful evidence."
+      "result": "All 288 records passed the host audit, including 32 carried original outputs, 32 exact off-mode rows, 18 amended cache checks, 54 path interventions, 18 gradient records and 9 restorations. Historical connections make the tested late native activity affect later outputs; original, off and current-only controls retain the exact past-path null. Full K/V and value replacements score zero on all 32 inputs. Quarter-strength key-only gains two of eight division completions with no observed losses; the unadjusted paired p value is 0.5.",
+      "interpretation": "The architecture changes access to past native activity without training. This is a structural result, not a semantic neuron role. The small key-only effect reuses four function-name pairs and is unconfirmed across multiple conditions. The typed baseline improves on N03 because prompts changed; that is not a model-edit gain. Cache equivalence remains qualified by the weaker dated diagnostic.",
+      "next_question": "Which native channels transmit a rounding requirement at a shared instruction anchor, and do necessity, opposite-policy patches and rescue change executable function behavior beyond matched random groups?",
+      "direction_decision": "Close the connection engineering gate and retain the complete grid. Do not select a winning permutation or strength. Move to early native-neuron functional localization; any later connection benefit test must be prospective and retain mild controls."
+    },
+    {
+      "id": "Q15",
+      "experiment": "N05: native semantic-anchor roles and executable functions",
+      "status": "private_GPU_v1_running",
+      "question": "Can a small native neuron group at an instruction anchor transmit a rounding policy and causally change correct function behavior without training?",
+      "question_provenance": "Proposed after the complete N03 and N04 audits. N03 missed dominant alternatives and selected late units. N04 opens their historical path but does not establish a semantic role.",
+      "parents": [
+        "Q12",
+        "Q14"
+      ],
+      "method": "Use forward activity at the same punctuation token in six crossed policy strata to select 32 native channels in layers 0 through 13, with nested eight-channel diagnostics and two strict matched random groups. Test 13 fixed policies on 24 new complete-function and retention prompts, plus 24 descriptive discovery outputs. No fitted vectors, measurement gradients or optimizer updates.",
+      "result": "All 48 original prompts passed tokenization and independent oracle checks. All instruction anchors map to the same token ID. Eight tiny actual-Gemma intervention checks passed. The private BF16 pilot is running with 336 planned outputs; no N05 result has been read.",
+      "interpretation": "A sign-consistent activity contrast selects a candidate group, not a semantic function. Suppression and donor patches have two matched random controls each. Amplification has no matched random amplification condition and remains exploratory; any gain needs that follow-up and fresh confirmation.",
+      "next_question": "Do the native groups pass exact self/rescue/restoration gates and show policy-specific effects beyond random groups on complete functions?",
+      "direction_decision": "Launch one private bounded BF16 panel after a fresh quota check and source freeze. Keep every fixed condition. Preserve a null or failed gate without expanding an unproductive sweep."
     }
   ]
 }

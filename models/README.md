@@ -7,6 +7,7 @@ These bundles preserve the tested neuron modifications as a pinned base, exact s
 | `n01` | `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, revision `0ae102ac289cc3f17500a607ad817849778b8ba7`; mixed NF4/BF16 with FP32 vectors and new branches | Exact 8-neuron and 64-neuron branch tensors; fixed last-position steering groups and gains |
 | `n02/bf16_text` | `google/gemma-4-E2B-it`, revision `3e22461f65e89153144f8adb70e3b8c2cc9845a7`; unquantized BF16 text decoder | Six physical edits at layer 34, channel 4063 |
 | `n02/nf4_text_same_source` | The same Google revision, quantized with the included configuration | The same six edits after explicitly dequantizing the selected MLP to BF16 |
+| `n04/recipe.json` | The same pinned Google BF16 text model | Nine fixed memory policies, copied source-module hashes and the cache-aware reconstruction helper |
 
 The N02 text model retains token embeddings, per-layer embeddings, decoder and tied output head. Audio and vision modules are excluded. It has 4,628,569,344 unique text parameters. The selected partner channel for the prescribed recombination is 7978; it is a control coordinate, not a known semantic feature.
 
@@ -80,6 +81,35 @@ with apply_n01_gain(model, 'models/n01', 'boundary_top8', 0.5):
 
 `new_MLP64_zero` adds a normalized residual MLP branch; it is not a full transformer layer. The contexts restore the original computation on exit. Steering affects the last position of each forward pass. Family labels describe how groups were selected, not proven neuron meanings. These bundles exclude counterfactual donor examples and private task records. The N01 public loader has not yet received a separate full-checkpoint package replay.
 
+## Reconstruct the N04 memory connections
+
+[recipe.json](n04/recipe.json) preserves all nine fixed policies, the immutable parent, source-module hashes and the exact helper hash. The added K/V weights are copies of existing parent weights, so another tensor file would duplicate the source. The recipe installs a custom memory connection; it does not insert a full transformer layer or change native MLP widths.
+
+```python
+from contextlib import nullcontext
+from pathlib import Path
+import json
+from reproduce.model_edits import load_n02_base
+from interpretability.memory_connection import memory_connection
+
+recipe = json.loads(Path('models/n04/recipe.json').read_text())
+model, manifest = load_n02_base('models/n02/bf16_text', device='cuda:0')
+for policy in recipe['policies']:
+    context = nullcontext() if policy['mode'] is None else memory_connection(
+        model, source_index=recipe['source_layer'],
+        target_index=recipe['target_layer'], mode=policy['mode'],
+        strength=policy['strength'],
+    )
+    with context:
+        pass  # Run inference using a fresh cache for each sequence and policy.
+```
+
+The context restores the original model on exit. A cache created for one policy must never be reused with another. Reconstruct through this helper and recipe; the original `save_pretrained` configuration does not describe the added branch.
+
+The internal real-checkpoint experiment used the same published helper source and verified copied-weight equality, 32 exact off-mode rows and nine restorations. Its full-prefix versus incremental test uses a disclosed weaker BF16 diagnostic after the original numerical bound failed on the unchanged base. This is not a separate public recipe package replay or a portability guarantee. Raw task data remain private, so the complete behavior experiment is not yet publicly reproducible.
+
+All conditions and their limits are in the [N04 aggregate audit](../results/n04_connection_summary.json). Full replacements fail all 32 tested outputs. A small key-only development gain is inconclusive. Neither a new semantic capability nor a speedup is established.
+
 ## Storage and provenance
 
-The complete bundle set occupies about 1.4 MB. All four Safetensors files contain the exact tensor values saved by the experiments, with added attribution metadata. Each `bundle.json` records file hashes and tensor provenance. Retain the bundle, its license and notice, the reconstruction code revision and the base revision together. Do not rely on `save_pretrained` with the original configuration to reload heterogeneous edited widths.
+The exact tensor bundles occupy about 1.4 MB; the N04 recipe adds only small JSON metadata. All four Safetensors files contain the exact tensor values saved by the experiments, with added attribution metadata. Each `bundle.json` records file hashes and tensor provenance. Retain the bundle, its license and notice, the reconstruction code revision and the base revision together. Do not rely on `save_pretrained` with the original configuration to reload heterogeneous edited widths.

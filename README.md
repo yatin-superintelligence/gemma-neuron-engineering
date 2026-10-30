@@ -28,11 +28,14 @@ There are no optimizer updates, fine-tuning, fitted steering vectors or training
 | N02: physical edits and matched precision | 460 measurements on text-only, unquantized BF16 and same-source NF4 models. Physical deletion matched activity zeroing; doubling an outgoing vector matched gain-2 steering; adding a zero-output neuron preserved its dense baseline. | One channel in layer 34, on 16 reused development prompts. BF16 split cloning changed logits by up to 0.125 within the fixed tolerance. No coding or speed improvement was tested. |
 | N03H: token-specific causal paths | Eight small random-weight Gemma configurations and 96 interventions. Predicted past-token zero paths had exactly unchanged later logits and zero measurement gradients. | An implementation fixture, not a pretrained E2B result or a semantic neuron role. |
 | N03: native-neuron coding pilot | All 896 BF16/NF4 outputs audited. Every fixed condition scored 4/16 threshold, 4/8 signed division and 8/8 JSON controls. Identity, self-patch, rescue and restoration passed. Real-checkpoint fixed-input late-past path nulls were exact. | No coding gain or semantic role. A two-token contrast missed most dominant errors, and task wording omitted integer types. These limitations and the unchanged grades are retained. |
-| N04: copied memory connection | Thirty random-weight cases passed after a preserved cache-allocation failure. The first real-model job stopped at a native BF16 cache-tolerance check before applying any connection. Its 32 baseline outputs are preserved; one amended private resume tests the eight remaining conditions. | No pretrained connection result yet. The amended cache diagnostic is weaker and disclosed. A copied connection is not a complete transformer layer or a demonstrated capability. |
+| N04: copied memory connection | All 288 outputs and controls audited. Historical memory opens the tested late-past causal path; original, off and current-only controls retain the exact null. All fixed policies and reconstruction recipes are retained. | Full replacements fail all 32 outputs. Quarter-strength key-only gains two division completions on four reused name pairs, with unadjusted paired p = 0.5. No confirmed coding benefit or semantic role. |
+| N05: native policy transmission | A private forward-only pilot is running: 32 native channels before layer 14, shared instruction-anchor tokens, paraphrase/negation contrasts, two matched random groups, necessity, donor patches and rescue, with complete generated functions. | No N05 result yet. Activity selects a hypothesis. Amplification lacks matched random amplification and remains exploratory. |
 
 The N02 representations share the pinned floating-point parent. The NF4 intervention first dequantizes the selected MLP and uses its unchanged dense form as the comparison baseline. BF16 is unquantized, but is not FP32. Full transformer-layer insertion remains unvalidated.
 
-Complete aggregates: [N01 conditions](results/n01_development_summary.json), [N01 functional controls](results/n01_function_controls.json), [N02 engineering audit](results/n02_engineering_summary.json), [N03 coding audit](results/n03_coding_summary.json), [N04 host gate](results/n04_host_gate.json). Startup failures and scientific nulls remain in the [logbook](docs/RESEARCH_LOG.html).
+Complete aggregates: [N01 conditions](results/n01_development_summary.json), [N01 functional controls](results/n01_function_controls.json), [N02 engineering audit](results/n02_engineering_summary.json), [N03 coding audit](results/n03_coding_summary.json), [N04 host gate](results/n04_host_gate.json), [N04 connection audit](results/n04_connection_summary.json). Startup failures and scientific nulls remain in the [logbook](docs/RESEARCH_LOG.html).
+
+![Complete N04 policy grid and its interpretation limits](docs/figures/n04_summary.png)
 
 ## Code and saved model edits
 
@@ -41,11 +44,13 @@ interpretability/   Observation, activation steering and dense neuron surgery
 reproduce/          Pinned-base loaders, reconstruction and verification
 models/n01/         Two saved branch tensors and fixed steering policies
 models/n02/         BF16 and same-source NF4 physical-edit bundles
+models/n04/         Copied-memory recipes and source-module hashes
 tests/              Small independent fixtures, no pretrained download
 docs/               Goal & Intent and sequential Research Logbook
 results/            Reviewed experiment aggregates and run history
 research/experiments/n03/  Shared-KV causal-path fixture and frozen protocol
 research/experiments/n04/  Copied-memory fixture and cache amendment
+research/experiments/n05/  Native-anchor intervention fixture
 ```
 
 The saved models are represented by immutable base revisions, compact exact tensors and deterministic edit recipes. This reconstructs the modified models without copying the full base into Git history. Each bundle records source identity, hashes, precision, coordinates and zero optimizer steps. Changed MLP widths require the supplied loader; an unchanged Transformers configuration cannot encode them on its own.
@@ -70,7 +75,7 @@ The generic helper is in [memory_connection.py](interpretability/memory_connecti
 python -m research.experiments.n04.host_gate
 ```
 
-The fixture writes local records under `runs/n04/host/version2` and refuses to overwrite a completed result. Its source, cache amendment and aggregate result are public. The real-model notebook, prompts and raw outputs remain private. A new internal path alone would not show coding improvement.
+The fixture writes local records under `runs/n04/host/version2` and refuses to overwrite a completed result. Its source, cache amendment and aggregate result are public. The real-model gate is complete and its aggregate result is published. All nine model policies are saved in [the N04 recipe](models/n04/recipe.json). The notebook, prompts and raw outputs remain private. A new internal path alone does not show coding improvement.
 
 ## Publication scope
 

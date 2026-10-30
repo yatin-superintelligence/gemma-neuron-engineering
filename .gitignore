@@ -15,3 +15,4 @@ credentials/
 !/models/n01/new_MLP64_zero.safetensors
 !/models/n02/bf16_text/basis.safetensors
 !/models/n02/nf4_text_same_source/basis.safetensors
+!/docs/figures/n04_summary.png

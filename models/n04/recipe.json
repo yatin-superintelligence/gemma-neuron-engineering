@@ -1,0 +1,82 @@
+{
+  "schema": "fixed-memory-connection-recipe-v1",
+  "title": "N04 frozen copied memory connections",
+  "base": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "representation": "Text-only unquantized BF16",
+    "loader_bundle": "models/n02/bf16_text"
+  },
+  "helper": "interpretability/memory_connection.py",
+  "helper_sha256": "e12c2ab21bab699cda71869a107403816d0e895a0e925039fb9a7417f12e3d5b",
+  "source_layer": 14,
+  "target_layer": 24,
+  "copied_parameter_hashes": {
+    "k_proj.weight": "1ec5e5d37311d526bf3464c2619420f7c701767858c0ec1999fefaa9bcd311a7",
+    "v_proj.weight": "6479103478386493b76bddc3cd91e96404cd356526f9c55213ed4c26fa583380",
+    "k_norm.weight": "afabf88facaef68176e3dd9551965d08e579fe70f6d25d6ba1adb963d05131e3"
+  },
+  "added_frozen_parameters": 1573376,
+  "optimizer_steps": 0,
+  "training_allowed": false,
+  "policies": [
+    {
+      "name": "original",
+      "mode": null,
+      "strength": 0
+    },
+    {
+      "name": "off",
+      "mode": "kv",
+      "strength": 0
+    },
+    {
+      "name": "kv25",
+      "mode": "kv",
+      "strength": 0.25
+    },
+    {
+      "name": "kv100",
+      "mode": "kv",
+      "strength": 1
+    },
+    {
+      "name": "key25",
+      "mode": "key_only",
+      "strength": 0.25
+    },
+    {
+      "name": "value_history25",
+      "mode": "value_history",
+      "strength": 0.25
+    },
+    {
+      "name": "value_history100",
+      "mode": "value_history",
+      "strength": 1
+    },
+    {
+      "name": "value_current25",
+      "mode": "value_current",
+      "strength": 0.25
+    },
+    {
+      "name": "value_permuted25",
+      "mode": "value_permuted",
+      "strength": 0.25
+    }
+  ],
+  "reconstruction": "Load the pinned original BF16text model with load_n02_base. For each declared non-original policy,install memory_connection(source_index=14,target_index=24,strength=policy.strength,mode=policy.mode). The context creates exact frozen copies and verifies copied-source equality. Start every sequence/policy with a fresh cache. No original model configuration or native widths change.",
+  "serialization": "The base is referenced,not duplicated. Copies are exact source weights,so the recipe and pinned source recover them without an extra tensor blob. This custom branch requires its helper;ordinary save_pretrained with the original model configuration does not describe it.",
+  "validation": {
+    "all_original_off_rows_exact": 32,
+    "restoration_rows_exact": 9,
+    "cache_checks": 18,
+    "cache_precision_limit": "Full/incremental relativeL2<=.02 and top1agreement after a preserved native baseline failure of the former absolute bound. This is not full-logit cache equivalence.",
+    "hash_scope": "Raw copied BF16parameter bytes,as measured by the frozen helper. No hash of private task or activation content is included."
+  },
+  "behavior_limit": "All nine fixed policies retained. Full replacements break all32development/retention outcomes. Key-only.25has2exploratory division gains,p.5,on four reused name pairs. No established coding improvement,semantic neuron role,speedup or novel capability.",
+  "license": "Apache-2.0",
+  "modification_notice": "Temporary copied K/V/norm modules and a prescribed shared-memory read are added. Original base parameters remain unchanged;no training.",
+  "equivalent_public_source_commit": "50e440bcc8a495a564da82ed0fda6e7404c501f3"
+}

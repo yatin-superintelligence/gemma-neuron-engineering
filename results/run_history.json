@@ -167,13 +167,20 @@
       "outcome": "Original32predictions preserved;native baseline cache bound failed before any connection execution",
       "duration_scope": "Notebook wall seconds,worker duration unavailable;not charged GPU quota",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N04_v2",
+      "recorded_script_seconds": 758.7681007449999,
+      "outcome": "All288records audited;copied history opens late-past path;key-only2/8development gains,p.5;full replacements break32/32;no established coding gain",
+      "duration_scope": "Worker758.768s;notebook809.995s;32predictions carried fromv1,256new;not charged GPUquota",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N04_v2",
-      "launched_utc": "2026-10-30T00:57:19.291177+00:00",
-      "status": "private_source_verified_bounded_resume_32originals_preserved"
+      "run": "N05_v1",
+      "launched_utc": "2026-10-30T02:40:10.753308+00:00",
+      "status": "private_source_verified_one_bounded_native_anchor_job"
     }
   ]
 }

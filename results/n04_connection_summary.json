@@ -1,0 +1,535 @@
+{
+  "utc": "2026-10-30T02:12:39.461017+00:00",
+  "experiment": "N04",
+  "version": 2,
+  "status": "complete_host_audited",
+  "predictions": 288,
+  "new_predictions_v2": 256,
+  "original_predictions_preserved_from_v1": 32,
+  "optimizer_steps": 0,
+  "all_original_off_and_restoration_gates_passed": true,
+  "cache_gate_amended_and_weaker": true,
+  "max_relative_cache_L2": 0.012744894251227379,
+  "max_absolute_cache_logit_error": 0.8125,
+  "all_condition_family_results": [
+    {
+      "condition": "original",
+      "family": "threshold",
+      "prompts": 16,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 8,
+        "wrong_answer": 8
+      }
+    },
+    {
+      "condition": "original",
+      "family": "division",
+      "prompts": 8,
+      "correct": 4,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 4,
+        "wrong_answer": 4
+      }
+    },
+    {
+      "condition": "original",
+      "family": "json",
+      "prompts": 8,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "graded_json": 8
+      }
+    },
+    {
+      "condition": "off",
+      "family": "threshold",
+      "prompts": 16,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 8,
+        "wrong_answer": 8
+      }
+    },
+    {
+      "condition": "off",
+      "family": "division",
+      "prompts": 8,
+      "correct": 4,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 4,
+        "wrong_answer": 4
+      }
+    },
+    {
+      "condition": "off",
+      "family": "json",
+      "prompts": 8,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "graded_json": 8
+      }
+    },
+    {
+      "condition": "kv25",
+      "family": "threshold",
+      "prompts": 16,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 8,
+        "wrong_answer": 8
+      }
+    },
+    {
+      "condition": "kv25",
+      "family": "division",
+      "prompts": 8,
+      "correct": 4,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 4,
+        "wrong_answer": 4
+      }
+    },
+    {
+      "condition": "kv25",
+      "family": "json",
+      "prompts": 8,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "graded_json": 8
+      }
+    },
+    {
+      "condition": "kv100",
+      "family": "threshold",
+      "prompts": 16,
+      "correct": 0,
+      "gains_vs_original": 0,
+      "losses_vs_original": 8,
+      "at_cap": 0,
+      "statuses": {
+        "source_gate": 5,
+        "source_or_execution_error": 7,
+        "wrong_answer": 4
+      }
+    },
+    {
+      "condition": "kv100",
+      "family": "division",
+      "prompts": 8,
+      "correct": 0,
+      "gains_vs_original": 0,
+      "losses_vs_original": 4,
+      "at_cap": 0,
+      "statuses": {
+        "source_gate": 8
+      }
+    },
+    {
+      "condition": "kv100",
+      "family": "json",
+      "prompts": 8,
+      "correct": 0,
+      "gains_vs_original": 0,
+      "losses_vs_original": 8,
+      "at_cap": 0,
+      "statuses": {
+        "invalid_json": 8
+      }
+    },
+    {
+      "condition": "key25",
+      "family": "threshold",
+      "prompts": 16,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 8,
+        "wrong_answer": 8
+      }
+    },
+    {
+      "condition": "key25",
+      "family": "division",
+      "prompts": 8,
+      "correct": 6,
+      "gains_vs_original": 2,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 6,
+        "wrong_answer": 2
+      }
+    },
+    {
+      "condition": "key25",
+      "family": "json",
+      "prompts": 8,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "graded_json": 8
+      }
+    },
+    {
+      "condition": "value_history25",
+      "family": "threshold",
+      "prompts": 16,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 8,
+        "wrong_answer": 8
+      }
+    },
+    {
+      "condition": "value_history25",
+      "family": "division",
+      "prompts": 8,
+      "correct": 4,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 4,
+        "wrong_answer": 4
+      }
+    },
+    {
+      "condition": "value_history25",
+      "family": "json",
+      "prompts": 8,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "graded_json": 8
+      }
+    },
+    {
+      "condition": "value_history100",
+      "family": "threshold",
+      "prompts": 16,
+      "correct": 0,
+      "gains_vs_original": 0,
+      "losses_vs_original": 8,
+      "at_cap": 0,
+      "statuses": {
+        "source_gate": 4,
+        "wrong_answer": 4,
+        "source_or_execution_error": 8
+      }
+    },
+    {
+      "condition": "value_history100",
+      "family": "division",
+      "prompts": 8,
+      "correct": 0,
+      "gains_vs_original": 0,
+      "losses_vs_original": 4,
+      "at_cap": 0,
+      "statuses": {
+        "source_gate": 8
+      }
+    },
+    {
+      "condition": "value_history100",
+      "family": "json",
+      "prompts": 8,
+      "correct": 0,
+      "gains_vs_original": 0,
+      "losses_vs_original": 8,
+      "at_cap": 0,
+      "statuses": {
+        "invalid_json": 3,
+        "graded_json": 5
+      }
+    },
+    {
+      "condition": "value_current25",
+      "family": "threshold",
+      "prompts": 16,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 8,
+        "wrong_answer": 8
+      }
+    },
+    {
+      "condition": "value_current25",
+      "family": "division",
+      "prompts": 8,
+      "correct": 4,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 4,
+        "wrong_answer": 4
+      }
+    },
+    {
+      "condition": "value_current25",
+      "family": "json",
+      "prompts": 8,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "graded_json": 8
+      }
+    },
+    {
+      "condition": "value_permuted25",
+      "family": "threshold",
+      "prompts": 16,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 8,
+        "wrong_answer": 8
+      }
+    },
+    {
+      "condition": "value_permuted25",
+      "family": "division",
+      "prompts": 8,
+      "correct": 3,
+      "gains_vs_original": 0,
+      "losses_vs_original": 1,
+      "at_cap": 0,
+      "statuses": {
+        "passed": 3,
+        "wrong_answer": 5
+      }
+    },
+    {
+      "condition": "value_permuted25",
+      "family": "json",
+      "prompts": 8,
+      "correct": 8,
+      "gains_vs_original": 0,
+      "losses_vs_original": 0,
+      "at_cap": 0,
+      "statuses": {
+        "graded_json": 8
+      }
+    }
+  ],
+  "added_frozen_parameters": 1573376,
+  "new_raw_KV_bytes_per_token": 2048,
+  "worker_seconds_v2": 758.7681007449999,
+  "notebook_seconds_v2": 809.9948052480001,
+  "new_generated_tokens_v2": 1777,
+  "new_prediction_input_tokens_v2": 21824,
+  "stress_outputs": 134,
+  "originally_correct_stress_failures": 0,
+  "coding_improvement_established": false,
+  "semantic_neuron_role_established": false,
+  "exploratory_key_only_result": {
+    "gains": 2,
+    "losses": 0,
+    "development_division_prompts": 8,
+    "unadjusted_exact_two_sided_p": 0.5,
+    "independence_limit": "Four pairs reuse the same user instruction and differ in numeric function names;two gains are not independent algorithms. Multiple fixed conditions were tested.",
+    "winning_edit_selected_for_confirmation": false
+  },
+  "interpretation": "Historical copied connections open the tested fixed-input late-past route and measured gradients;original/off/current-only controls retain the exact null. Full replacements fail all32outcomes. Quarter-strength key-only has2exploratory division gains with no measured collateral losses;not confirmed improvement. No semantic function or novelty claim.",
+  "next_decision": "Stop engineering sweeps. Return to native semantic-anchor localization before layer14,using shared anchor tokens,paraphrase/negation controls,necessity/rescue,strict activity-matched random groups and executable function coding. A branch follow-up must retain all mild controls and be prospective.",
+  "path_logit_effect_ranges": {
+    "original": {
+      "past": {
+        "min": 0.0,
+        "max": 0.0,
+        "prompts": 2
+      },
+      "last": {
+        "min": 11.9375,
+        "max": 21.625,
+        "prompts": 2
+      },
+      "selected_past": {
+        "min": 0.0,
+        "max": 0.0,
+        "prompts": 2
+      }
+    },
+    "off": {
+      "past": {
+        "min": 0.0,
+        "max": 0.0,
+        "prompts": 2
+      },
+      "last": {
+        "min": 11.9375,
+        "max": 21.625,
+        "prompts": 2
+      },
+      "selected_past": {
+        "min": 0.0,
+        "max": 0.0,
+        "prompts": 2
+      }
+    },
+    "kv25": {
+      "past": {
+        "min": 2.75,
+        "max": 2.9375,
+        "prompts": 2
+      },
+      "last": {
+        "min": 10.6875,
+        "max": 20.5,
+        "prompts": 2
+      },
+      "selected_past": {
+        "min": 0.5,
+        "max": 0.625,
+        "prompts": 2
+      }
+    },
+    "kv100": {
+      "past": {
+        "min": 9.75,
+        "max": 11.0625,
+        "prompts": 2
+      },
+      "last": {
+        "min": 19.3125,
+        "max": 22.5625,
+        "prompts": 2
+      },
+      "selected_past": {
+        "min": 0.5625,
+        "max": 0.625,
+        "prompts": 2
+      }
+    },
+    "key25": {
+      "past": {
+        "min": 0.625,
+        "max": 0.75,
+        "prompts": 2
+      },
+      "last": {
+        "min": 10.9375,
+        "max": 19.1875,
+        "prompts": 2
+      },
+      "selected_past": {
+        "min": 0.25,
+        "max": 0.375,
+        "prompts": 2
+      }
+    },
+    "value_history25": {
+      "past": {
+        "min": 2.25,
+        "max": 3.25,
+        "prompts": 2
+      },
+      "last": {
+        "min": 12.6875,
+        "max": 24.875,
+        "prompts": 2
+      },
+      "selected_past": {
+        "min": 0.25,
+        "max": 0.625,
+        "prompts": 2
+      }
+    },
+    "value_history100": {
+      "past": {
+        "min": 13.0625,
+        "max": 16.625,
+        "prompts": 2
+      },
+      "last": {
+        "min": 32.9375,
+        "max": 39.75,
+        "prompts": 2
+      },
+      "selected_past": {
+        "min": 1.1875,
+        "max": 1.3125,
+        "prompts": 2
+      }
+    },
+    "value_current25": {
+      "past": {
+        "min": 0.0,
+        "max": 0.0,
+        "prompts": 2
+      },
+      "last": {
+        "min": 11.4375,
+        "max": 21.8125,
+        "prompts": 2
+      },
+      "selected_past": {
+        "min": 0.0,
+        "max": 0.0,
+        "prompts": 2
+      }
+    },
+    "value_permuted25": {
+      "past": {
+        "min": 3.25,
+        "max": 4.5625,
+        "prompts": 2
+      },
+      "last": {
+        "min": 14.1875,
+        "max": 24.75,
+        "prompts": 2
+      },
+      "selected_past": {
+        "min": 0.5,
+        "max": 0.5,
+        "prompts": 2
+      }
+    }
+  },
+  "edition": "Reviewed aggregates only. Raw tasks, outputs, activations and gradients remain private."
+}
