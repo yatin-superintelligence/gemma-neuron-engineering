@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-30T13:38:38.041101+00:00",
+  "generated_utc": "2026-10-30T14:50:48.343046+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "948ceb0d311e0aed91e7962ccd2e08e024a8c4ec91bbf854ea459552289ab9af",
-      "bytes": 20373
+      "sha256": "78f067cb77852ad600fbdac567e1dd98de1b5ec419d5bf8eeca03070fd5617c2",
+      "bytes": 21230
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "8622301f079423fff797bb46eae654bb0414ea87c77c00fbe00605eecd614683",
-      "bytes": 193741
+      "sha256": "7c4aa3f96bbbed4385f8ca31123c433c78e6094f4025d90d4466cccd00415b51",
+      "bytes": 197409
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "12af27f795d15d8e0f5eaf4ee26d9be11adebb47b1b693192ee46b0aad460f60",
-      "bytes": 106904
+      "sha256": "2572f6e54a31fb3d982ebe8aae3aca33ae6a3e62e034856d59666c6387bcb058",
+      "bytes": 110650
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "3d5fd7051571f47ef4b8f99af6aa3c6bee9b4474ab351f889c248de22f865762",
-      "bytes": 45568
+      "sha256": "07f3041fbc18928dc257d0cb283a0461ad1cadd2818fcb203996cddcc317f860",
+      "bytes": 47192
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -141,8 +141,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "542c0ca2e3b0fd0d33b980ad27a9eea0bd39abcfe755b9b49deaba7cb19325e6",
-      "bytes": 54086
+      "sha256": "eb495fb23a392619eb933e732257b84dbb5b603fcb3070730d5af1d1c0e169f3",
+      "bytes": 56553
     },
     {
       "path": "interpretability/__init__.py",
@@ -158,6 +158,11 @@
       "path": "interpretability/anchor_intervention.py",
       "sha256": "15ec139c69423fc309d4a9c75f19f2e04d2494ad57bff27523c5aa56656490c5",
       "bytes": 3556
+    },
+    {
+      "path": "interpretability/decode_step.py",
+      "sha256": "4324dd756c03966ebceb257160c2ad5f92eb23c4492c2b6983836f8db5fd3650",
+      "bytes": 5294
     },
     {
       "path": "interpretability/expansion.py",
@@ -225,9 +230,14 @@
       "bytes": 7903
     },
     {
+      "path": "methods/n19_prospective_design.json",
+      "sha256": "96aa21c37f649d5bff7be2f11f0ce9770496162a8d06f6bc38d8d83bf6941ede",
+      "bytes": 8960
+    },
+    {
       "path": "models/README.md",
-      "sha256": "5d9c898082dd11ee2b14498af9694db8eb9a3336da895da5d58d6115db83f10c",
-      "bytes": 19418
+      "sha256": "8f20c825938d038bfe733fc0b4ffa3a10628b81bb8ee594ade402326f2e54c0e",
+      "bytes": 19882
     },
     {
       "path": "models/b01/recipe.json",
@@ -380,6 +390,11 @@
       "bytes": 35191
     },
     {
+      "path": "models/n18/recipe.json",
+      "sha256": "c8ca4deb6ec49dc7b286deff7dbdc1354736815471c6305d86196deb8a04e2f4",
+      "bytes": 2138
+    },
+    {
       "path": "pyproject.toml",
       "sha256": "5e70a9b80325b4f0d526c86b15da0efc4cd9ec964371ed29a5972dcdfc8ead98",
       "bytes": 576
@@ -428,6 +443,11 @@
       "path": "research/experiments/n05/host_gate.py",
       "sha256": "6d1b1d2724fbb43e01bf5f28e8767175ca5436c0d979fe7e30e875fe63107a2b",
       "bytes": 3295
+    },
+    {
+      "path": "research/experiments/n19/host.py",
+      "sha256": "2dde5c55e697c1caaa73312e3c31f936d3e5d8c2c3984006ddd26de8e301ea2c",
+      "bytes": 4995
     },
     {
       "path": "results/b01_chat_summary.json",
@@ -570,8 +590,18 @@
       "bytes": 47652
     },
     {
+      "path": "results/n18_task_position_summary.json",
+      "sha256": "f2a0a87224b019f736f19828cb979f706c356c8ddb946f447bbe706f7ce9bffc",
+      "bytes": 18192
+    },
+    {
+      "path": "results/n19_host_feasibility.json",
+      "sha256": "30f6bf5b400617662f4e5ae43d53c7281cedbff534abe464825e3916a4159ffd",
+      "bytes": 1129
+    },
+    {
       "path": "results/progress_snapshot.json",
-      "sha256": "a714f134a3253f49fd5570333af7cda501ae4bd7486fb793134acf00540688b4",
+      "sha256": "0dda29b0a7233205194805c637489f1ea5a64ad350d90c4af701fa32b28b68ad",
       "bytes": 601
     },
     {
@@ -581,8 +611,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "a0073650584cadf334f9654b01ad6139d5c422748fe0130d0da7d440084bccf6",
-      "bytes": 15263
+      "sha256": "cb48704954ace6a1f69214e495de6a69e7af7ad50654d54897e2685fd0fe44d8",
+      "bytes": 15702
     },
     {
       "path": "scripts/plot_n04_summary.py",

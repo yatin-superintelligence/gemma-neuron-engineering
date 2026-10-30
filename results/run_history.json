@@ -286,6 +286,13 @@
       "outcome": "All1002records audited,708new/120parent/174references. Allthreecausalgatesfail;9unitsnull. Oneincidentalextremumcasealsogainedbyrandom. Allscope/cache/self/restorationguards pass.0updates.",
       "duration_scope": "Worker1123.037815663s;notebook1203.30374148s.Notchargedquota.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N18_v1_task_informed_position_gate_stop",
+      "recorded_script_seconds": 219.2653160729999,
+      "outcome": "All160records audited;full-site opposite0/16,same16/16,all8retention. Plannedstop before quarter selection/intervention. All40self/12pairedcache/8restorationguards pass;0updates.",
+      "duration_scope": "Worker219.2653160729999s;notebook266.379231798s.Notchargedquota.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": []

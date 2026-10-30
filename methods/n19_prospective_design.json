@@ -1,0 +1,80 @@
+{
+  "experiment": "N19",
+  "question": "Q33",
+  "version": 1,
+  "utc": "2026-10-30T14:46:29.963891+00:00",
+  "status": "frozen_before_pretrained_runner_implementation_and_any_N19_GPU_output",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "measurement_backward_calls": 8,
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only unquantized BF16",
+  "seed": 3319,
+  "question_text": "Does the fixed native neuron L9 C4632 contribute causally at a generated comparator decision, rather than merely correlate with the earlier instruction prefix?",
+  "parent_evidence": "N13/N17 scalar prefix edits lack functional effects;N18 last-input full-site control transfers 0/16 andstops. Current cached code-decision computation is different from a past prompt state. N19 H actual tiny-Gemma capture,activation gradients,scope,one-forward guards andrestoration pass;this is not a pretrained finding.",
+  "role_cases": 13,
+  "strict_same_token_role_subset": 11,
+  "same_direction_lexical_variant_subset": 2,
+  "retention_cases": 8,
+  "cohort": "Exact existing development inputs and native greedy programs. Three cases are excluded because the first three-way divergence is a variable/format choice. Retain all 16 screened cases and both eligibility definitions. Thirteen comparator cases use a natural common prefix shared by recipient,opposite,same-rule outputs. The divergent token is NEVER inserted as a prompt/prefix. Two same-rule variants differ lexically(>versus>=)but preserve direction;report them separately.",
+  "prefix_position": "Cached decision after kcommon native output tokens. Allk>=1. Initial prompt and firstk-1 tokens build a fresh cache;the last common token is processed once under the current-step intervention. Hooks are removed immediately before later decoding. Every prediction starts a fresh cache;never reuse a mutated one.",
+  "native_replay": "Teacher-force all 24 already recorded usable role/retention base programs,verifying every next raw-argmax token and EOS against their immutable tokenIDs. This is an exact lineage replay,not a regenerated baseline completion or new grading outcome. Capture only requested current-step native states in transient memory and hashes on disk. Source donor rows can be excluded as evaluation cases yet remain valid native-prefix sources. Preserve allrequested(row,step)keys.",
+  "greedy_contract": "Manual greedy continuation has no sampling or fitted policy. Pin and verify native EOSIDs[1,106,50],pad 0 and no nontrivial logits processors. Existing do_sampleTrue/top_k 64/top_p.95 defaults are disabled bygreedy decoding. Newtail cap 64-kkeeps combined program cap 64. Verify native full-trajectory argmax parity before any edit. Edited output is commonnativeprefix+newtail;the divergent token is produced bythe edited model,never supplied.",
+  "full_site": "One current cached forward patches actual post-gating native h at all 35 MLPlayers using actual opposite/same-policy/recipient states. Native widths/offsets are measured;late 20 layers are double-wide. A full swap is a control,not individual neuron meaning.",
+  "fixed_units": {
+    "target4632": {
+      "layer": 9,
+      "channel": 4632
+    },
+    "control850": {
+      "layer": 9,
+      "channel": 850
+    },
+    "control6085": {
+      "layer": 9,
+      "channel": 6085
+    }
+  },
+  "unit_provenance": "Allthreecoordinates predate N19 outputs. Target 4632 is the original rare hypothesis. Controls 850/6085 were alreadyfixed inB01. They are NOT activity matched;differences alone cannot establish exclusive semantic specificity. No coordinate or dose is selected from N19 gradient profiles.",
+  "unit_operations": [
+    "opposite",
+    "samepolicy",
+    "zero",
+    "gain2",
+    "rescue"
+  ],
+  "unit_mechanism": "Actual scalar donor swaps,gain 0/2 andzero_then_native-recipient rescue at one cached decision. The same prescribed edits run separately for each ofthreefixed units. No weight change,new connection,adapter or optimizer. One-forward and non-target byte-scope guards mandatory.",
+  "retention_scope": "JSON/arithmetic have no opposite comparison rule. Their donor-swap cells are explicitly non-applicable baseline references,not new interventions or evidence of semantic retention. Only clean zero/gain 2 andself/rescue controls test those 8 retention cases. Never summarize non-applicable references as a successful donor-retention test.",
+  "conditions": "Basecarry,full_opposite,full_samepolicy,full_self,then fiveoperations for eachofthreeunits:19 conditions on 21 cases=399 records. Code donor swaps are new;retention donor swaps are non-applicable references. Fullself andunitrescue are guarded baseline references.",
+  "counts": {
+    "conditions": 19,
+    "records": 399,
+    "new_edited_tail_generations": 230,
+    "exact_parent_carries": 21,
+    "guarded_baseline_references": 84,
+    "nonapplicable_donor_references": 64,
+    "all_baseline_references": 148,
+    "native_parent_program_replays": 24,
+    "activation_measurement_backwards": 8,
+    "self_logit_and_full_cache_comparisons": 84,
+    "postcondition_restorations": 38
+  },
+  "measurement_profiles": "After exact ordinary native replay,measure ordinary activation gradients at all 35 native current MLPinputs on eightwording 0 cases(both families,mappings,labels). Require exact ordinary/instrumented full logits,native activation hashes andwholeKVcache fingerprints. Use autograd.grad only;allparametergradflags remainfalse,p.gradNone. Scoregradient(opposite-minus-own next-tokenlogit)times actualopposite-minus-own nativeh;aggregate fourmapping/label strata acrossfamilies. Save only compact per-unit aggregate scores,RMS,paired-deltaRMS anddown-column norms. No per-case full activation or gradient dumps. Profiles nominate FUTURE hypotheses only;no N19 intervention depends on them.",
+  "full_site_gate": "Report whether fullopposite transfers>=7/13 alternative-correct programs spanningboth families,wordings,labels,mappings,directions andfullsame preserves>=12/13. This is an interpretive positive control,not an adaptive stop or selection gate;all threefixed-unit panels run once regardless. Failure blocks a semantic-role interpretation,not raw outcome reporting.",
+  "primary_target_gate": "For target 4632,require>=4 more opposite-rule transfers AND>=4 more clean-zero role losses than EACHfixed control. Effects mustspanboth families,bothrequested directions andbothwordings. Same-rule preserves>=12/13;cleanzero/gain 2 retainall 8 controls;rescue logs+cacheexact. Full-site control mustpass. Report eachcomponent independently. Even success supports onlya bounded development role candidate because controls are notactivitymatched andtriggeruses a response-derived position.",
+  "coding_scope": "All 21 main baselines are correct,so this assay cannot demonstrate improved original accuracy. Report all code losses,opposite-correct continuations,operator changes,caps andretention. A useful coding controller would require a fixed trigger-free recipe andfresh error-bearing executable cases. No claimed new capability or novel steering method.",
+  "counter_contract": "No hand-summed fixed constant. Letk_i be nativeprefixlength,T editedtailtokens,L nativeparent outputlength,n_i prompttokens. A native teacher-forced program replay callsLtimes andexposes n_i+L-1 tokens. A gradient orself/restoration trajectory calls k_i+1 times andexposes n_i+k_i. A new editedtail trajectory calls k_i+Ttimes andexposes n_i+k_i+T-1. Aggregate 24 native replays+8 gradient trajectories+4*21 self trajectories+19*2 sentinelrestorations+230 newtails. Everytrajectory needs a tagged counter receipt;the host independently recomputes root totals fromcase manifests andrawtokens.",
+  "guards": "Pin protocol/source/data/auditorhashes before launch/outputs. Allnative parameters/gradflags unchanged,p.gradNone,allhooks remove,sourceprefixes exact,ordinary/instrumented andselfwholelogit+KVhashesexact. No directKVedit. Any guardfailure stops interpretation without tolerance changes. Preserve partials. No completed-panel rerun or oldfinal data.",
+  "audit": "Decode/regradeall 399 records using unchanged oracles. Check 21 exactparentcarries,84 guardedreferences,64 non-applicable references,all 24 native replaytraces,8 measurementguards,scope/cache/parameter/counter proofs,38 restorations. Independentlystress correct/changed executable tails 256 probes, seed 3319. Host audits saved witnesses,not full pretrained weight/logit recomputation.",
+  "resources": {
+    "platform_seconds": 5400,
+    "notebook_seconds": 5200,
+    "worker_seconds": 4900,
+    "one_private_free_job": true,
+    "fresh_quota_required": true,
+    "reserved_hours": 2
+  },
+  "protocol_sha256": "1741cbe0f09d24012f59eff095d94e1f9467578471289884e3d09900a13d7edf",
+  "edition": "Reviewed prospective methods; raw programs, prefixes, answers and model states remain private. No real-model N19 result."
+}

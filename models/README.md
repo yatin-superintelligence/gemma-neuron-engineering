@@ -218,3 +218,7 @@ with reverse_native_mlps(model, 'aligned_channel_reverse'):
 ```
 
 The helper covers dense native text MLPs and refuses packed quantized matrices. Context exit restores the parent weights. All 64 private records and 48 baseline-logit restorations passed. This validates these deterministic weight recipes on the recorded checkpoint; it is not an independent clean-package replay or a useful capability claim. Unmatched reversal and sign inversion failed the tested coding probes. Raw inputs and replies remain private.
+
+## N18 full-site end-position policies
+
+[The four executed recipes](n18/recipe.json) capture native post-gating states at each prompt's own final input position. All 160 records pass audit, but the semantic-transfer gate fails and the planned channel-quarter stage is not executed. These recipes require caller-supplied native donor states; they contain no base-model duplicate or private task answers. Independent clean-package pretrained replay is not claimed.

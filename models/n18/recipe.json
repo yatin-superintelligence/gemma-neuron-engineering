@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "title": "N18 tested full-site end-position policies",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only unquantized BF16",
+  "optimizer_steps": 0,
+  "actual_backward_passes": 0,
+  "layers": [
+    5,
+    6,
+    9
+  ],
+  "native_site": "Post-gating down-projection input h. Donor capture uses each prompt own last input token. Recipient patch uses recipient last input token. Skip cached single-token decode steps.",
+  "conditions": [
+    {
+      "name": "base",
+      "kind": "carry",
+      "group": null,
+      "donor": null,
+      "operation": null
+    },
+    {
+      "name": "end_opposite",
+      "kind": "new",
+      "group": null,
+      "donor": "opposite",
+      "operation": null
+    },
+    {
+      "name": "end_samepolicy",
+      "kind": "new",
+      "group": null,
+      "donor": "samepolicy",
+      "operation": null
+    },
+    {
+      "name": "end_recipient",
+      "kind": "reference",
+      "group": null,
+      "donor": "recipient",
+      "operation": null
+    }
+  ],
+  "donor_contract": "Actual unmodified recipient/opposite/same-policy states. Raw task prompts and donor activations are private;caller must supply states and mapped positions.",
+  "validation": {
+    "all160records_host_audited": true,
+    "new_predictions": 80,
+    "self_logits": 40,
+    "paired_cached_self_hashes": 12,
+    "restorations": 8,
+    "no_native_parameter_or_hook_inventory_change": true,
+    "independent_clean_package_pretrained_replay": false,
+    "source_sha256": {
+      "interpretability/native_capture.py": "71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1",
+      "interpretability/mlp_composition.py": "769e1477149fd11b19950c19d8452fd4b691a6a71908abfb5361bc2f63820ae2",
+      "interpretability/selector_site.py": "5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60"
+    }
+  },
+  "limitations": "Full-site semantic gate fails. Four-quarter stage was not selected or executed. No individual function or coding gain claim. Baseline references are not newly generated identity completions."
+}

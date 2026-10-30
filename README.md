@@ -128,4 +128,14 @@ The human also proposed reversing neuron information, prompt text and answer rea
 
 N17 is complete: all 1,002 records pass the host audit, including 708 new outputs, 120 exact parent carries and 174 baseline-reference rescues. The selected 96-channel group and both strict magnitude-matched random groups each produce zero rule transfers, zero clean-role losses and zero conditional-transfer losses. All nine individual-unit sentinels match their controls. An incidental extremum gain also occurs under random amplification. No specific role or useful improvement is established. The [complete aggregates](results/n17_native_channel_summary.json), [all policies](models/n17/recipe.json) and [prospective design](methods/n17_prospective_design.json) are retained. A clerical forward-count correction was frozen before output access; scientific conditions and grades were unchanged.
 
-N18 is the next frozen protocol, with no model result yet. It moves the intervention after the model has read the actual task. A controlled full-site gate precedes four fixed native-channel coverage partitions. The [scope observer](interpretability/scoped_channel.py) verifies each live scalar assignment and every untouched channel and position. All experiments use zero training.
+N18 stopped at its predefined full-site gate. All 160 records pass audit: opposite-rule donors at the final prompt position transfer 0/16 programs, same-rule preservation is 16/16 and all eight retention controls pass. Channel-quarter selection and interventions never run. The [complete record](results/n18_task_position_summary.json) and [four tested recipes](models/n18/recipe.json) retain this limit.
+
+N19 moves to the actual comparator decision during cached code generation. The protocol is frozen, but its real-model worker is not implemented or launched. It uses a native common prefix and withholds the divergent comparator token. The fixed target and two existing control neurons receive one-step edits; no new coordinate is selected from the planned influence profiles. The [current-step primitive](interpretability/decode_step.py) and [tiny-Gemma fixture](research/experiments/n19/host.py) establish software feasibility. They do not demonstrate a pretrained semantic role or coding improvement.
+
+To run the small fixture without downloading a checkpoint:
+
+```bash
+python -m research.experiments.n19.host
+```
+
+All experiments use zero optimizer updates. Activation gradients measure influence and are never applied as updates.

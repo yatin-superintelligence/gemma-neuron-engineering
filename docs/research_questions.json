@@ -492,7 +492,7 @@
     {
       "id": "Q32",
       "experiment": "N18: task-informed position and native-channel coverage",
-      "status": "protocol_frozen_not_implemented_or_launched",
+      "status": "planned_full_site_gate_stop_private_host_audited_closed",
       "question": "Does moving observation and intervention after the coding task strengthen causal policy control, and can a prescribed broader channel partition locate that effect?",
       "question_provenance": "N17 null and its pre-result interpretation options require broadening beyond a prefix that has not read the task.",
       "parents": [
@@ -500,12 +500,28 @@
         "Q31"
       ],
       "method": "Use the same forty inputs at the final prompt position. Require a controlled full-site donor gate first, then compare all four magnitude-stratified native-channel quarters with same-rule donors, clean gains, exact rescue and conditional cuts. Zero training.",
-      "result": "No N18 model execution or output. Protocol is frozen before implementation.",
-      "interpretation": "This is a new observation position and a bounded causal coverage question. It cannot retroactively reinterpret N17 or establish individual neuron meanings.",
-      "next_question": "Does the task-informed full-site donor gate pass, and can a quarter preserve that controlled effect?",
-      "direction_decision": "Implement and independently validate the frozen phase gate and source/auditor before any launch. Fresh quota and two-hour reserve remain mandatory."
+      "result": "All 160 records pass: 80 new outputs, 40 exact original carries and 40 baseline references. Opposite full-site end-position donors transfer 0/16; same-policy preserves 16/16, and all eight retention cases remain correct. Forty self-logit checks, twelve paired cached hashes and eight restorations pass. Quarter selection and intervention never run.",
+      "interpretation": "This is the predeclared full-site gate stop. It does not establish that the neurons have no function. The final prompt position and the comparison decision during code generation are different computational contexts.",
+      "next_question": "Can an actual native code-decision state provide a controlled causal observation site without supplying the divergent answer token?",
+      "direction_decision": "Keep N18 closed. Validate native-prefix alignment and exact current-step intervention feasibility on the host before freezing another study. Do not expand N18 layers, weaken its gate or run its quarter stage."
+    },
+    {
+      "id": "Q33",
+      "experiment": "N19: current code-decision neuron feasibility",
+      "status": "host_feasibility_passed_GPU_protocol_frozen_not_implemented_or_launched",
+      "question": "Can native neurons at the actual generated comparison decision support controlled function, rather than activity at an earlier prompt position?",
+      "question_provenance": "N18 planned full-site stop motivates checking a later computation where the model actually chooses a comparator.",
+      "parents": [
+        "Q31",
+        "Q32"
+      ],
+      "method": "Edit exactly one cached code-decision forward after a native prefix shared across three contexts. Compare fixed neuron L9C4632 and existing controls 850/6085 under actual donor swaps, clean gains 0 and 2, and rescue. Full 35-layer current-state controls and eight activation-gradient measurements are predeclared. No profile selects an intervention. There are 19 conditions and 399 records; retention donor cells are non-applicable references.",
+      "result": "Actual tiny-Gemma feasibility passes: six prescribed edits, exact ordinary/instrumented logits, nonzero current-layer activation gradients, rejection of prefill and repeat calls, and full restoration. Zero pretrained N19 forwards. The real-model protocol is frozen before worker implementation.",
+      "interpretation": "Thirteen role cases include eleven exact same-token controls and two same-direction lexical variants. They reuse development contexts with correct baselines, so this assay cannot demonstrate improved original accuracy. Gradients are measurements, never updates. Fixed controls are not activity matched.",
+      "next_question": "Can the current-step primitives preserve exact identity/cache behavior and isolate only declared scalars?",
+      "direction_decision": "Implement and verify the frozen current-step pipeline, native program replays and tagged counter traces before one bounded private free job. No coordinates or strengths are selected from N19 feedback."
     }
   ],
-  "active_question_id": "Q32",
-  "next_question_id": "Q32"
+  "active_question_id": "Q33",
+  "next_question_id": "Q33"
 }

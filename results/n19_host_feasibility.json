@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-30T14:33:00.301568+00:00",
+  "status": "host_feasibility_passed",
+  "pretrained_model_forwards": 0,
+  "instrumented_tiny_model_forward_calls": 40,
+  "fixture_setup_calls": 2,
+  "prescribed_interventions": 6,
+  "gradient_measurement_backward_calls": 1,
+  "optimizer_steps": 0,
+  "all_parameter_gradients_none": true,
+  "ordinary_instrumented_logits_bit_exact": true,
+  "late_current_layer_gradients_nonzero": true,
+  "prefill_and_second_call_rejected": true,
+  "all_hooks_and_parameter_versions_restore": true,
+  "gradient_hashes": [
+    "0d92292bd1ba516d1afffda563e2704e4cefd44d92b6f33bbd6385ba34dfcc62",
+    "95641d94ae013c24c8562509ede60e82baeebe950332e5132b9b5173f31cc149",
+    "93bfdaf32c90700a44afb9be5e570b6a12d704be04f7d839e5120f7e818397a2",
+    "50d46e69f68fccbf5c9c239cdf8461c987789f394d60b6a071bfacbbbc6b120b",
+    "d34427c8a5f89910b8966ae5643a28077e92d2693e3dba9bb45ec9dfa04ea654",
+    "00fa83d2d89a1281a03f7630083c73f07fdc1031b78169ca8ee05838b09d5436"
+  ],
+  "seconds": 0.17766337501234375,
+  "scope": "Tiny random-weight Gemma engineering proof,not a pretrained neuron role or new capability."
+}
