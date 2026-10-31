@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T02:18:05.731619+00:00",
+  "status": "source_review_corrects_intent_before_any_protocol_or_task_implementation",
+  "prior_intent_preserved": "research/experiments/n27/intent_v1.json",
+  "prior_intent_sha256": "13c748c0be9eb016a83ef72fc0a8f70187f21e13211b31a0bd2fb7fc090b1289",
+  "current_intent_sha256": "bbfbaa3ed17b7fcb94be4ea7cde8d202a96c6babef76b4ddfaf8bb1b7044eb1f",
+  "reviewed_sources_sha256": {
+    "research/experiments/n14/runner.py": "d092a158de9182ddb41a0c64a846245f875c15ef1aa4d4c0ca85a94bf847078b",
+    "research/experiments/n14/tasks.py": "1d3cda43218c2b8b92761c832b335875c45d26be0b1fbbbcbc1484ada6eabc78",
+    "research/experiments/n12/tasks.py": "ccf244b63d087644b1858d80292d1e45181bace77376c4d8a55a2948a7325d19",
+    "research/experiments/n11/tasks.py": "fce20d85312a94059204cb7e485d4ba718be2eab17f4996d68567cfb9ab44210",
+    "research/experiments/n06/tasks.py": "4a98c55814ee5274a4886873b0406b8b86fd6bd30b26ac4f62ed70fd11e8e716",
+    "interpretability/native_capture.py": "71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1",
+    "interpretability/mlp_composition.py": "769e1477149fd11b19950c19d8452fd4b691a6a71908abfb5361bc2f63820ae2"
+  },
+  "correction": "N14 captures actual post-gating down_proj inputs at the selected red/blue label token via inherited N06 tokenize. The first N27 intent incorrectly described that site as a shared end-of-policy anchor. No N27 protocol,dataset,runner or model execution existed;the proposed site is now specified exactly. N05 used a different end-of-policy period,which is not inherited here.",
+  "next_model_forwards": 0,
+  "optimizer_steps": 0
+}

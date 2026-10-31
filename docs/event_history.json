@@ -2535,6 +2535,62 @@
       "event": "all_condition_figure_caption_limit_added_before_model_output_access",
       "experiment": "N26 independent host work",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 339,
+      "utc": "2026-10-31T01:46:35.021745+00:00",
+      "event": "causal_vs_format_invariance_primary_methods_review_scoped_before_output_access",
+      "experiment": "N26 independent literature review",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 340,
+      "utc": "2026-10-31T02:05:17.157359+00:00",
+      "event": "future_fresh_return_checker12cases_pass_source_review_requires_strong_reference_v2",
+      "experiment": "N26 and independent host work",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 341,
+      "utc": "2026-10-31T02:05:17.157359+00:00",
+      "event": "future_only_fresh_return_checker13cases_pass_no_current_score_changes",
+      "experiment": "N26 and independent host work",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 342,
+      "utc": "2026-10-31T02:05:17.157359+00:00",
+      "event": "all320records_and_mandatory_guards_pass_both_primary_screens_failed_fixed_global_hypothesis_closed",
+      "experiment": "N26 and independent host work",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 343,
+      "utc": "2026-10-31T02:05:17.157359+00:00",
+      "event": "all_condition_gains_losses_collapse_to_two_unique_gain_and_two_unique_loss_instances",
+      "experiment": "N26 and independent host work",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 344,
+      "utc": "2026-10-31T02:13:12.448902+00:00",
+      "event": "early_contextual_binding_across_operand_order_intent_recorded_no_protocol_or_model_run",
+      "experiment": "N27",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 345,
+      "utc": "2026-10-31T02:17:06.136115+00:00",
+      "event": "N26_all_condition_revision_complete_6pages_visual_and_numeric_QA_pass_private_only",
+      "experiment": "Private neuron paper",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 346,
+      "utc": "2026-10-31T02:18:05.731619+00:00",
+      "event": "source_review_corrects_selector_site_before_protocol_or_implementation_original_intent_preserved",
+      "experiment": "N27",
+      "optimizer_steps": 0
     }
   ]
 }

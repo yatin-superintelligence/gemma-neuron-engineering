@@ -1,0 +1,281 @@
+{
+  "first_host": {
+    "utc": "2026-10-31T01:51:27.903053+00:00",
+    "status": "all12future_contract_cases_pass",
+    "cases": [
+      {
+        "case": "top_level_alias",
+        "result": {
+          "correct": false,
+          "status": "returned_input_alias",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "fresh_copy",
+        "result": {
+          "correct": true,
+          "status": "passed",
+          "cases_completed": 2
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "input_mutation",
+        "result": {
+          "correct": false,
+          "status": "input_mutation",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "nested_input_alias",
+        "result": {
+          "correct": false,
+          "status": "returned_input_alias",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "nested_fresh_copy",
+        "result": {
+          "correct": true,
+          "status": "passed",
+          "cases_completed": 1
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "restored_nested_alias",
+        "result": {
+          "correct": false,
+          "status": "returned_input_alias",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "fresh_outer_with_shared_inner",
+        "result": {
+          "correct": true,
+          "status": "passed",
+          "cases_completed": 1
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "scalar_no_list_contract",
+        "result": {
+          "correct": true,
+          "status": "passed",
+          "cases_completed": 1
+        },
+        "require_new_return_list": false
+      },
+      {
+        "case": "scalar_violates_list_contract",
+        "result": {
+          "correct": false,
+          "status": "return_type_error",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "wrong_values",
+        "result": {
+          "correct": false,
+          "status": "wrong_answer",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "runtime_error",
+        "result": {
+          "correct": false,
+          "status": "runtime_error",
+          "cases_completed": 0,
+          "error_type": "ZeroDivisionError",
+          "error": "division by zero"
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "forbidden_IO",
+        "result": {
+          "correct": false,
+          "status": "source_error",
+          "cases_completed": 0,
+          "error": "IO/reflection prohibited"
+        },
+        "require_new_return_list": true
+      }
+    ],
+    "seconds": 0.7226992910000263,
+    "new_model_forwards": 0,
+    "new_generated_tokens": 0,
+    "optimizer_steps": 0,
+    "current_study_sources_or_grades_changed": false,
+    "scope": "Future-only macOS bounded executor. Fresh top-level returned list is checked before serialization;all old study grades remain fixed."
+  },
+  "source_review_repair": {
+    "utc": "2026-10-31T01:52:50.920799+00:00",
+    "source_review": "Integer object IDs alone do not keep input objects alive. A candidate could replace a nested list and the allocator could reuse its address. V2 holds original list objects and compares with is,avoiding address-reuse false positives.",
+    "old_version_preserved": true,
+    "old_source_sha256": "f8ead0574faea562e66274934fa1c14065e76a23cf40db77682a90fd2aa16968",
+    "old_host_result_preserved": "runs/fresh_return_host/result.json",
+    "N25_N26_sources_or_grades_changed": false,
+    "model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "v2_host": {
+    "utc": "2026-10-31T01:52:52.044753+00:00",
+    "status": "all13future_contract_v2_cases_pass",
+    "cases": [
+      {
+        "case": "top_level_alias",
+        "result": {
+          "correct": false,
+          "status": "returned_input_alias",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "fresh_copy",
+        "result": {
+          "correct": true,
+          "status": "passed",
+          "cases_completed": 2
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "input_mutation",
+        "result": {
+          "correct": false,
+          "status": "input_mutation",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "nested_input_alias",
+        "result": {
+          "correct": false,
+          "status": "returned_input_alias",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "nested_fresh_copy",
+        "result": {
+          "correct": true,
+          "status": "passed",
+          "cases_completed": 1
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "restored_nested_alias",
+        "result": {
+          "correct": false,
+          "status": "returned_input_alias",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "fresh_outer_with_shared_inner",
+        "result": {
+          "correct": true,
+          "status": "passed",
+          "cases_completed": 1
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "scalar_no_list_contract",
+        "result": {
+          "correct": true,
+          "status": "passed",
+          "cases_completed": 1
+        },
+        "require_new_return_list": false
+      },
+      {
+        "case": "scalar_violates_list_contract",
+        "result": {
+          "correct": false,
+          "status": "return_type_error",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "wrong_values",
+        "result": {
+          "correct": false,
+          "status": "wrong_answer",
+          "cases_completed": 0,
+          "wrong_case": 0
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "runtime_error",
+        "result": {
+          "correct": false,
+          "status": "runtime_error",
+          "cases_completed": 0,
+          "error_type": "ZeroDivisionError",
+          "error": "division by zero"
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "forbidden_IO",
+        "result": {
+          "correct": false,
+          "status": "source_error",
+          "cases_completed": 0,
+          "error": "IO/reflection prohibited"
+        },
+        "require_new_return_list": true
+      },
+      {
+        "case": "replacement_allocation",
+        "result": {
+          "correct": true,
+          "status": "passed",
+          "cases_completed": 1
+        },
+        "require_new_return_list": true
+      }
+    ],
+    "seconds": 0.7824142919998849,
+    "new_model_forwards": 0,
+    "new_generated_tokens": 0,
+    "optimizer_steps": 0,
+    "current_study_sources_or_grades_changed": false,
+    "scope": "Future-only macOS bounded executor. Fresh top-level returned list is checked before serialization;all old study grades remain fixed."
+  },
+  "current_study_sources_and_grades_unchanged": true,
+  "future_only": true
+}

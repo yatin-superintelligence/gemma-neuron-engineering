@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-31T02:03:28.768569+00:00",
+  "status": "both_primary_screens_failed_fixed_global_hypothesis_closed",
+  "result": "Suppression:original23/32,selected25,randomA25,randomB24;selected2gains/0losses equal the same two gained cases under randomA. Amplification:selected22,randomA23,randomB22;selected0gains/1loss. Every condition8/8retention.",
+  "limits": "Both predeclared primary screens fail. Gain slots are dependent repeats of two instances,not six independent discoveries. Every observed correctness change is in a scalar-return family,so the returned-list identity limit does not explain those changes. It still limits the overall contract checked. Scores and all cases unchanged;no fresh confirmation or specific neuron function.",
+  "decision": "Close this fixed global group. No new dose,coordinate,wording or winning secondary. Next address semantic versus literal operator control with an adequate prospective task interface before more sparse ranking.",
+  "optimizer_steps": 0
+}

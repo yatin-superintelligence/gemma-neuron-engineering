@@ -46,9 +46,24 @@ The [runtime syntax controller](methods/n25_runtime_protocol.json) is complete a
 
 N25 uses only already-generated Python for its fixed trigger, with no baseline answers or hidden oracles in model inputs. The [original-only stage](results/n25_baseline_summary.json) passes every prospective usability requirement. The [host record](results/n25_host_summary.json) preserves the zero-forward parser failure and compatibility repair. Original grades, source failures and all dependent-family results remain fixed. The [example runner](examples/run_n25_policy.py) accepts your own prompt file; independent clean-package pretrained replay is not claimed.
 
-The [global suppression follow-up](methods/n26_global_protocol.json) is now the one active private job. It keeps the exact N25 cases, grades and three fixed groups. Suppression is primary; amplification is secondary. All 53 random-Gemma host paths, isolated package checks and the prospective audit's 62 corruption refusals pass. [Preparation and preserved repairs](results/n26_preparation.json) describe software feasibility, with no pretrained N26 outcome. All sources are frozen before launch. No original completion is regenerated.
+The [global suppression study](results/n26_global_summary.json) is complete. All 320 records and mandatory guards pass. Its two primary screens fail: selected suppression matches random A on the same two gained cases, and no group loses an originally correct case under suppression. All retention checks stay correct. These are reused development cases, and the four variants in each family are dependent.
 
-A [generic host-only checker probe](results/return_identity_host_summary.json), completed before N26 output access, finds an [untested return-list identity property](methods/n26_return_identity_limit.json). The frozen scores check values, types and input preservation. They do not guarantee a newly allocated returned list. All original grades and cases remain unchanged; future confirmation must check the full contract.
+| Policy | Coding /32 | Gains / losses vs original | Retention /8 |
+| --- | ---: | ---: | ---: |
+| Original carry | 23 | 0 / 0 | 8 |
+| Guarded identity reference | 23 | 0 / 0 | 8 |
+| Selected 64, factor 0 | 25 | 2 / 0 | 8 |
+| Random A64, factor 0 | 25 | 2 / 0 | 8 |
+| Random B64, factor 0 | 24 | 1 / 0 | 8 |
+| Selected 64, factor 2 | 22 | 0 / 1 | 8 |
+| Random A64, factor 2 | 23 | 1 / 1 | 8 |
+| Random B64, factor 2 | 22 | 0 / 1 | 8 |
+
+See the [complete grid](docs/figures/n26_summary.png), [all eight recipes](models/n26/recipe.json) and [caller-prompt example](examples/run_n26_policy.py). The fixed global hypothesis is closed. No winning dose replaces the failed primary. The source, cache, identity, restoration and declared weight-version checks pass with zero optimizer updates. Existing exact N21 columns support these recipes without new tensor blobs or base duplication. Independent clean-package pretrained replay is not claimed.
+
+A [generic host-only checker probe](results/return_identity_host_summary.json), completed before N26 output access, finds an [untested return-list identity property](methods/n26_return_identity_limit.json). The frozen scores check values, types and input preservation. They do not guarantee a newly allocated returned list. All original grades and cases remain unchanged; future confirmation must check the full contract. A [future-only macOS checker](evaluation/contract_execution_v2.py) now enforces fresh top-level result identity before serialization. Its [thirteen fixed host cases](results/future_return_contract_host.json) pass, including aliases of nested inputs and input mutation. It is not applied to N25 or N26.
+
+The [next contextual-binding question](methods/n27_intent.json) is source-reviewed intent only, with no new model result or launch-ready protocol. It would test whether the earlier selected-label site transfers a policy across recipient operand orders. Task adequacy and full-site controls come before new sparse localization.
 
 ## Reproduce an edit
 

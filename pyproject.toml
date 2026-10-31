@@ -13,6 +13,7 @@ dependencies = ["torch>=2.11,<2.12"]
 test = ["transformers==5.8.0"]
 reproduce = ["transformers==5.8.0", "accelerate==1.14.0", "bitsandbytes==0.50.2", "safetensors>=0.7,<0.9"]
 figures = ["matplotlib==3.10.9"]
+evaluation = ["psutil>=7,<8"]
 
 [tool.setuptools.packages.find]
-include = ["interpretability*", "reproduce*"]
+include = ["interpretability*", "reproduce*", "evaluation*"]

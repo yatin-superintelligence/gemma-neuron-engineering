@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-31T01:46:35.021745+00:00",
+  "status": "scoped_primary_methods_review_before_N26_output_access",
+  "N26_outputs_accessed": false,
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2602.22424v1",
+      "title": "Causality != Invariance: Function and Concept Vectors in LLMs",
+      "read_scope": "Sections2.1.3-2.1.5,3.1 and selected paragraphs of AppendicesM/O,plus abstract. Not a full-paper or appendix replication.",
+      "summary": "Causal head selection and format-invariant representation selection can differ. The method forms averaged head-output vectors and sweeps strength and head count;those procedures are not adopted. AppendixM controls output word versus letter format,and AppendixO studies cross-format patching. An output change alone therefore does not identify an invariant concept.",
+      "implication": "Test semantic versus token-format alternatives explicitly. Do not extract averaged vectors,fit an alignment or select a winning gain."
+    },
+    {
+      "url": "https://arxiv.org/abs/2311.17030v2",
+      "title": "Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching",
+      "read_scope": "Official abstract and bibliography recheck only.",
+      "summary": "A successful patch may exploit a pathway different from the feature use one hopes to identify.",
+      "implication": "Retain clean necessity,rescue,specificity and native-path controls;do not infer original feature use from donor sufficiency."
+    },
+    {
+      "url": "https://jmlr.org/papers/v26/23-0058.html",
+      "title": "Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability",
+      "read_scope": "Official abstract and bibliography in this review. Earlier bounded definitions review remains separate.",
+      "summary": "The framework formalizes faithful high-level descriptions and intervention relations.",
+      "implication": "A small transfer count is not by itself a formal causal abstraction."
+    }
+  ],
+  "design_consequence": "Keep the current N26 protocol fixed. For a later rule-versus-spelling assay,distinguish a state at an actual operator decision from an earlier instruction anchor. Full-site current-state swaps also transplant output-format information;an earlier anchor cannot see later operand order. These are different interventions,not interchangeable proofs of semantic encoding.",
+  "conditional_next_branch": "A N26 utility signal requires fresh complete-contract confirmation. If both primary screens fail,close this fixed global sparse group and prioritize a prospective task-adequacy and contextual-binding control before another rank or construction sweep. This review fixes no new dataset,threshold,layer universe or GPU launch.",
+  "new_model_forwards": 0,
+  "new_generated_tokens": 0,
+  "optimizer_steps": 0
+}

@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-31T02:18:05.731619+00:00",
+  "question_id": "Q41",
+  "experiment": "N27",
+  "status": "intent_only_not_GPU_protocol_dataset_or_launch",
+  "question": "Can the previously controlled early policy site transfer a contextual comparison rule across recipient operand order,without copying a later donor operator?",
+  "parents_sha256": {
+    "runs/n14/version1/result_receipt.json": "3d15a53ab38c17978b1b9f6406be217315342a306e9692492b885013f47546b5",
+    "runs/n23/version1/result_receipt.json": "6a830cce3f3059de0841508078188606ac3f7f48b0a5edf9d48d5c4962773899",
+    "runs/n26/version1/result_receipt.json": "1d1df7c504d10022407f9d5a67152175953b6562c6c55b1e0b25aa4473f1951a",
+    "research/experiments/n26/next_question_review.json": "93a840b8ffd84d360b4fbce64c2302a8ad1da95bc65afd7cab631f46bc15d10b",
+    "research/experiments/n26/literature_next_question.json": "2a63a67533c2accd940eb5af0ed9e1067a744c267924d1c18cd7850a2efb3be3"
+  },
+  "parent_evidence": "N26 closes both primary screens;selected suppression shares the same two gained cases with randomA. N23 reversed-order competence fails before edits. N14 native MLP5..9 transfers14/16 earlier rule-bound programs with same-policy16/16. N24 current-token score contributions do not resolve rule versus operator spelling. No new dose or sparse rank follows.",
+  "candidate_scope": "Use the existing native MLP5..9 site at the selected-label token BEFORE the later task/code prefix. N14 inherited this red/blue selector token from the N06 tokenizer;it did not patch a shared end-of-policy period. This is contextual instruction binding,not future comparison computation. Actual donor post-gating states only,no weights,attention/KV hooks,gradients,fitted vectors or added neurons.",
+  "new_interface": "Consider a new controlled code-completion panel with a mechanically supplied function/return prefix. The prefix fixes left/right operand order without supplying the comparator. Generate the continuation freely and grade the assembled program under strict syntax and independent executable oracles. This is conditional completion,not whole-program improvement or fresh utility confirmation. Do not rerun or regrade N23.",
+  "provisional_factorial_design": "Two families(filter and predicate),two policy wordings,two label mappings,two selected labels andtwo operand orders give32role cases. Four family/wording blocks contain8cases each. Eight new noncomparison/JSON retention cases receive actual policy-site edits. Exact prompts/counts/caps/gates require a prospective protocol before implementation or model outcomes.",
+  "baseline_gate_to_freeze": "Require complete counterbalanced blocks and all retention before donor tests. Candidate minimum3of4complete8caseblocks. Keep every baseline failure and grade. Do not lower thresholds or repair wording after a stop. No incomplete-cell role selection.",
+  "donors": "Opposite policy changes the selected label under the same mapping. Same-policy control reverses mapping and selected label together. Fix donor later operand order canonically for both recipient orders. The early anchor cannot see that later code;do not count duplicate later-context donor prefixes as independent semantic evidence. Self and recipient restoration/rescue controls must be exact.",
+  "primary_role_question_to_freeze": "Evaluate paired recipient operand-order outcomes,not just marginal counts. A successful semantic-transfer pair must implement the opposite requested relation under BOTH written orders. Report complete joint cells and preserve both direction/mapping/label/family/wording coverage. Same-policy preservation and actual retention are mandatory. Full-site success is conditional sufficiency,not native necessity,individual neuron meaning or a complete causal abstraction.",
+  "engineering_gate": "Reuse existing prefill-only native capture/composition primitives at the exact selected-label token. Align each recipient/donor by its own tokenizer offset and validate it lies before later task/code text. Both foreign donors change the recipient label in the same way;the reversed-mapping same-rule donor distinguishes label copying from contextual policy. Validate actual random-Gemma self/foreign/rescue/cache paths,unmodified parameter versions/gradient flags,isolated BOTH-runner/auditor imports and Ruff F821/F823. No new caching engine or tolerance fitting.",
+  "next_gate": "If full-site and task controls fail,stop before sparse localization. If they pass,freeze a small fixed coverage/necessity/rescue design with stronger activity controls before any new ranking. Do not assume that the old96or64groups acquire a role.",
+  "no_training": true,
+  "optimizer_steps": 0,
+  "new_model_forwards": 0,
+  "new_generated_tokens": 0,
+  "current_GPU_job": null,
+  "launch_authorized_by_this_intent": false,
+  "next_action": "Freeze the smallest decisive protocol before task/runner/auditor implementation. The exact N14 selector and post-gating site have been source-reviewed. Recheck fresh official quota and actual jobs before any eventual private job.",
+  "version": 2
+}

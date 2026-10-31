@@ -354,13 +354,13 @@
       "recorded_script_seconds": 886.118979984,
       "outcome": "All200audited,160new/40exact carried. All5conditions23/32coding,8/8retention;zero gains/losses;fixed utility primary fails. Every new token sequence equalsoriginal.54immediate logit hashes change ineachgain arm without cache/history persistence.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "n26_v1",
-      "launched_utc": "2026-10-31T01:20:06.650879+00:00",
-      "status": "running_private_source_verified"
+      "recorded_script_seconds": 1629.2459186310002,
+      "outcome": "All320audited:240new/40carry/40guardedrefs. Suppression coding23base/25selected/25randomA/24randomB. Selectedsame2gainsasrandomA. Amplification22selected/23randomA/22randomB. All8retention. Bothprimaryscreensfail. No specific group advantage.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

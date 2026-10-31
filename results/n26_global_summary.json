@@ -1,0 +1,486 @@
+{
+  "receipt": {
+    "utc": "2026-10-31T01:54:55.122116+00:00",
+    "status": "complete_host_audited",
+    "all_records_and_mandatory_guards_pass": true,
+    "records": 320,
+    "worker": {
+      "status": "complete",
+      "records": 320,
+      "new_records": 240,
+      "carried_records": 40,
+      "guarded_references": 40,
+      "actual_forward_calls": 18568,
+      "input_token_exposures": 97423,
+      "new_generated_tokens": 15160,
+      "actual_backward_calls": 0,
+      "actual_optimizer_steps": 0,
+      "all_parameter_versions_match_declared_assignments": true,
+      "all_gradient_flags_unchanged": true,
+      "all_parameter_gradients_none": true,
+      "all_hooks_restored": true,
+      "all_source_matrices_restored": true,
+      "hidden_oracles_or_grader_on_GPU": false,
+      "seconds": 1629.2459186310002,
+      "environment": {
+        "torch": "2.11.0+cu128",
+        "transformers": "5.8.0",
+        "GPU": "Tesla T4",
+        "dtype": "torch.bfloat16",
+        "unique_parameters": 4628569344
+      }
+    },
+    "notebook_seconds": 1671.136985142,
+    "optimizer_steps": 0,
+    "original_grades_carried_without_scorer_rerun": true,
+    "host_recomputes_pretrained_logits_activations_or_full_weights": false
+  },
+  "descriptive": {
+    "conditions": [
+      {
+        "condition": "base",
+        "coding_correct": 23,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 3,
+          "circular_window": 1,
+          "capped_signed_step": 3,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "gain_count": 0,
+        "loss_count": 0,
+        "caps": 4,
+        "exact_token_sequences_vs_original": 40,
+        "status_counts": {
+          "passed": 31,
+          "wrong_answer": 5,
+          "source_error": 4
+        }
+      },
+      {
+        "condition": "identity_selected64_gain1",
+        "coding_correct": 23,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 3,
+          "circular_window": 1,
+          "capped_signed_step": 3,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "gain_count": 0,
+        "loss_count": 0,
+        "caps": 4,
+        "exact_token_sequences_vs_original": 40,
+        "status_counts": {
+          "passed": 31,
+          "wrong_answer": 5,
+          "source_error": 4
+        }
+      },
+      {
+        "condition": "selected64_gain0",
+        "coding_correct": 25,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 4,
+          "circular_window": 1,
+          "capped_signed_step": 4,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "gain_count": 2,
+        "loss_count": 0,
+        "caps": 4,
+        "exact_token_sequences_vs_original": 36,
+        "status_counts": {
+          "passed": 33,
+          "wrong_answer": 4,
+          "source_error": 3
+        }
+      },
+      {
+        "condition": "random34201_64_gain0",
+        "coding_correct": 25,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 4,
+          "circular_window": 1,
+          "capped_signed_step": 4,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "gain_count": 2,
+        "loss_count": 0,
+        "caps": 4,
+        "exact_token_sequences_vs_original": 37,
+        "status_counts": {
+          "passed": 33,
+          "wrong_answer": 4,
+          "source_error": 3
+        }
+      },
+      {
+        "condition": "random34202_64_gain0",
+        "coding_correct": 24,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 3,
+          "circular_window": 1,
+          "capped_signed_step": 4,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "gain_count": 1,
+        "loss_count": 0,
+        "caps": 4,
+        "exact_token_sequences_vs_original": 38,
+        "status_counts": {
+          "passed": 32,
+          "wrong_answer": 5,
+          "source_error": 3
+        }
+      },
+      {
+        "condition": "selected64_gain2",
+        "coding_correct": 22,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 2,
+          "circular_window": 1,
+          "capped_signed_step": 3,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "gain_count": 0,
+        "loss_count": 1,
+        "caps": 4,
+        "exact_token_sequences_vs_original": 39,
+        "status_counts": {
+          "passed": 30,
+          "wrong_answer": 6,
+          "source_error": 4
+        }
+      },
+      {
+        "condition": "random34201_64_gain2",
+        "coding_correct": 23,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 3,
+          "circular_window": 1,
+          "capped_signed_step": 3,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "gain_count": 1,
+        "loss_count": 1,
+        "caps": 4,
+        "exact_token_sequences_vs_original": 36,
+        "status_counts": {
+          "passed": 31,
+          "wrong_answer": 5,
+          "source_error": 4
+        }
+      },
+      {
+        "condition": "random34202_64_gain2",
+        "coding_correct": 22,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 3,
+          "circular_window": 1,
+          "capped_signed_step": 2,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "gain_count": 0,
+        "loss_count": 1,
+        "caps": 4,
+        "exact_token_sequences_vs_original": 37,
+        "status_counts": {
+          "passed": 30,
+          "wrong_answer": 5,
+          "source_error": 5
+        }
+      }
+    ],
+    "primary_operation": 0,
+    "primary_suppression": {
+      "contrasts": {
+        "base": {
+          "net": 2,
+          "family_nets": {
+            "boundary_filter": 0,
+            "interval_overlap": 0,
+            "clamp_unordered": 1,
+            "circular_window": 0,
+            "capped_signed_step": 1,
+            "adjacent_filter": 0,
+            "closest_bound": 0,
+            "triangle_validity": 0
+          },
+          "positive_families": 2,
+          "leave_one_family_out_net_range": [
+            1,
+            2
+          ],
+          "gain_count": 2,
+          "loss_count": 0
+        },
+        "random34201_64_gain0": {
+          "net": 0,
+          "family_nets": {
+            "boundary_filter": 0,
+            "interval_overlap": 0,
+            "clamp_unordered": 0,
+            "circular_window": 0,
+            "capped_signed_step": 0,
+            "adjacent_filter": 0,
+            "closest_bound": 0,
+            "triangle_validity": 0
+          },
+          "positive_families": 0,
+          "leave_one_family_out_net_range": [
+            0,
+            0
+          ],
+          "gain_count": 0,
+          "loss_count": 0
+        },
+        "random34202_64_gain0": {
+          "net": 1,
+          "family_nets": {
+            "boundary_filter": 0,
+            "interval_overlap": 0,
+            "clamp_unordered": 1,
+            "circular_window": 0,
+            "capped_signed_step": 0,
+            "adjacent_filter": 0,
+            "closest_bound": 0,
+            "triangle_validity": 0
+          },
+          "positive_families": 1,
+          "leave_one_family_out_net_range": [
+            0,
+            1
+          ],
+          "gain_count": 1,
+          "loss_count": 0
+        }
+      },
+      "selected_retention_preserved": true,
+      "selected_all_claimed_gains_pass_stress": true,
+      "utility_screen_passed": false,
+      "clean_necessity_comparisons": {
+        "random34201_64_gain0": {
+          "selected_losses": 0,
+          "random_losses": 0,
+          "loss_excess": 0,
+          "selected_only_loss_families": 0,
+          "passes": false
+        },
+        "random34202_64_gain0": {
+          "selected_losses": 0,
+          "random_losses": 0,
+          "loss_excess": 0,
+          "selected_only_loss_families": 0,
+          "passes": false
+        }
+      },
+      "clean_necessity_screen_passed": false
+    },
+    "secondary_amplification": {
+      "contrasts": {
+        "base": {
+          "net": -1,
+          "family_nets": {
+            "boundary_filter": 0,
+            "interval_overlap": 0,
+            "clamp_unordered": -1,
+            "circular_window": 0,
+            "capped_signed_step": 0,
+            "adjacent_filter": 0,
+            "closest_bound": 0,
+            "triangle_validity": 0
+          },
+          "positive_families": 0,
+          "leave_one_family_out_net_range": [
+            -1,
+            0
+          ],
+          "gain_count": 0,
+          "loss_count": 1
+        },
+        "random34201_64_gain2": {
+          "net": -1,
+          "family_nets": {
+            "boundary_filter": 0,
+            "interval_overlap": 0,
+            "clamp_unordered": -1,
+            "circular_window": 0,
+            "capped_signed_step": 0,
+            "adjacent_filter": 0,
+            "closest_bound": 0,
+            "triangle_validity": 0
+          },
+          "positive_families": 0,
+          "leave_one_family_out_net_range": [
+            -1,
+            0
+          ],
+          "gain_count": 1,
+          "loss_count": 2
+        },
+        "random34202_64_gain2": {
+          "net": 0,
+          "family_nets": {
+            "boundary_filter": 0,
+            "interval_overlap": 0,
+            "clamp_unordered": -1,
+            "circular_window": 0,
+            "capped_signed_step": 1,
+            "adjacent_filter": 0,
+            "closest_bound": 0,
+            "triangle_validity": 0
+          },
+          "positive_families": 1,
+          "leave_one_family_out_net_range": [
+            -1,
+            1
+          ],
+          "gain_count": 1,
+          "loss_count": 1
+        }
+      },
+      "selected_retention_preserved": true,
+      "selected_all_claimed_gains_pass_stress": true,
+      "utility_screen_passed": false,
+      "clean_necessity_comparisons": {
+        "random34201_64_gain2": {
+          "selected_losses": 1,
+          "random_losses": 1,
+          "loss_excess": 0,
+          "selected_only_loss_families": 1,
+          "passes": false
+        },
+        "random34202_64_gain2": {
+          "selected_losses": 1,
+          "random_losses": 1,
+          "loss_excess": 0,
+          "selected_only_loss_families": 1,
+          "passes": false
+        }
+      },
+      "clean_necessity_screen_passed": false
+    },
+    "scope": "Reused development. Amplification cannot replace failed suppression. No semantic meaning or confirmed coding benefit."
+  },
+  "instance_dependence": {
+    "utc": "2026-10-31T02:03:28.768569+00:00",
+    "status": "post_audit_all_condition_instance_dependence_review",
+    "unique_gain_instances": 2,
+    "unique_loss_instances": 2,
+    "gain_family_names": [
+      "capped_signed_step",
+      "clamp_unordered"
+    ],
+    "loss_family_names": [
+      "capped_signed_step",
+      "clamp_unordered"
+    ],
+    "all_correctness_changes_in_scalar_return_families": true,
+    "selected0_and_randomA0_gain_ids_identical": true,
+    "new_model_forwards": 0,
+    "new_generated_tokens": 0,
+    "optimizer_steps": 0,
+    "grades_unchanged": true,
+    "gain_original_status_counts": {
+      "source_error": 1,
+      "wrong_answer": 1
+    }
+  },
+  "return_identity_limit": {
+    "utc": "2026-10-31T01:36:31.401235+00:00",
+    "status": "additional_interpretation_limit_before_N26_output_access",
+    "question_id": "Q40",
+    "evidence": "runs/return_identity_host/result.json",
+    "evidence_sha256": "00b72e63d22ba24636f0be1fe8c07c9b666f59d1e2545bf0360f59a2fa64255a",
+    "finding": "Two N25 coding families request a new list. The frozen checker verifies returned values/types and input preservation but not returned-object identity. A generic alias-return fixture passes value checks;fresh-copy also passes;input mutation is refused. No study task,response or closed scorer was rerun.",
+    "restriction": "Keep all32coding/all8retention and every original/new grade. Report outcomes under the frozen checks. A primary screen pass cannot establish complete-contract improvement without checking this omitted property in a separately frozen fresh confirmation. No semantic role or confirmed useful gain follows.",
+    "protocol_auditor_tasks_caps_or_conditions_changed": false,
+    "N26_outputs_accessed": false,
+    "new_model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "all_fixed_conditions_and_cases_retained": true,
+  "raw_tasks_predictions_oracles_and_reference_tokens_private": true,
+  "counter_decomposition": {
+    "native": {
+      "trajectories": 40,
+      "calls": 40,
+      "input_token_exposures": 3795
+    },
+    "identity_reference": {
+      "trajectories": 40,
+      "calls": 2517,
+      "input_token_exposures": 6272
+    },
+    "restoration": {
+      "trajectories": 280,
+      "calls": 280,
+      "input_token_exposures": 26565
+    },
+    "edited_scope": {
+      "trajectories": 240,
+      "calls": 240,
+      "input_token_exposures": 22770
+    },
+    "generation": {
+      "trajectories": 240,
+      "calls": 15491,
+      "input_token_exposures": 38021
+    }
+  }
+}
