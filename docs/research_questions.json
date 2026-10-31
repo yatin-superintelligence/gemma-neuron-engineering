@@ -696,17 +696,17 @@
     {
       "id": "Q44",
       "experiment": "N30: one fixed native unit and finite output bias",
-      "status": "intent_only_not_launched",
+      "status": "host_validated_source_frozen_not_launched",
       "question": "Does the first previously fixed native channel have a specific finite comparator-score contribution, and can direct ablation/rescue distinguish it from matched controls?",
       "question_provenance": "N24 finite group effects are positive; N26 utility and N28/N29 semantic controls are negative. The first original N20 unit is fixed before individual finite outcomes, and a duplicate matched-control draw is identified before protocol implementation.",
       "parents": [
         "Q38",
         "Q43"
       ],
-      "method": "Use the unchanged thirteen N19/N24 role cases and eight retention references, with exact native/current lineage guards. Compare actual opposite/same donors, native zeroing, conditional cut and native rescue for the target and both distinct matched controls. Record compact full-vocabulary metrics and executable continuation outcomes. Never infer a new program result from a score alone.",
-      "result": "No protocol, runner, GPU launch or new model outputs. The fixed target is L34 C3271. Both original first-position random draws collide at L34 C9170, so they count as one unique control. A distinct strict control must be frozen prospectively; no relaxed matching or outcome-based redraw.",
+      "method": "Three fixed individual channels at native layer 34: target 3271, retained strict control 9170 and newly prescribed distinct strict control 4059. Keep all thirteen inherited role cases and eight retention cases. Four parent conditions and fifteen individual policies give 399 records: 180 new tails, 84 exact carries, 63 guarded rescues and 72 new non-applicable donor-retention references. The 84 carries also contain sixteen inherited N/A donor-retention cells. Direct finite-score effects and actual program outcomes remain separate. Every comparison, source, counter and stopping rule is frozen before GPU inference.",
+      "result": "Profile-only matching preserves the exact original 21-member pool; one draw from the remaining twenty gives C4059 under unchanged bounds. Forty-two actual random Gemma path cases pass in FP32/BF16, with 154 forwards, 254 input-token exposures and eight random tokens. Twenty-two malformed cache/coordinate cases are rejected. A separate twenty-one-case actual BF16 auditor fixture passes, with 72 forwards and 120 exposures, and rejects six corrupted receipts. Five failed endpoint fixtures, 200 independently checked synthetic primary tables, four metric fixtures and independently derived counters pass. A first host stress fixture fails because random predicate probes miss equality; its source/failure are preserved. The new N30-only boundary-aware stress helper passes before launch; primary graders and all closed outcomes stay unchanged. Both isolated imports, all notebook cells and Ruff pass. All eighty source/parent files, the prospective auditor and private notebook are frozen. No N30 pretrained forwards or outputs exist.",
       "interpretation": "This proposed unit-level test concerns finite output bias. It does not reopen the closed semantic anchor search or establish coding gain.",
-      "next_question": "Freeze the smallest decisive protocol, exact distinct controls, all endpoints and counter manifest before implementation. Validate actual tiny-Gemma current/self/rescue/cache paths and import both runner/auditor with Ruff. Fresh quota and terminal-job checks remain mandatory before any launch.",
+      "next_question": "After fresh official free-quota and actual-job checks, checkpoint and launch the one bounded private N30 job. Verify exact server source and private metadata. At terminal status collect compact outputs once and run the unchanged frozen auditor. Preserve any mandatory guard failure before interpretation.",
       "direction_decision": "Deepen the controlled finite-score lead at a fixed native unit. Keep future fresh confirmation and answer-independent utility separate."
     }
   ],

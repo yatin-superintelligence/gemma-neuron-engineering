@@ -1,0 +1,242 @@
+{
+  "strict_control_selection": {
+    "utc": "2026-10-31T05:14:15.424628+00:00",
+    "status": "profile_only_distinct_strict_control_selected_once",
+    "protocol_sha256": "ee893de12d3f008b34d957a02b8d6a35e873b6637997bcbd2dce87c2d70909ca",
+    "source_sha256": "4673e99b3b76f310786d4785ccfefb89caf24ccd8932fc17fc5adf592e0ec0b8",
+    "profile_sha256": "a9afec53b9eb21b8a3377a34a8b9501ab2451cf481cfaaee0a861df23c6d8627",
+    "original_pool_size": 21,
+    "original_pool_sha256": "61156e4ff4af94cfb84479e750f11d9d22ab3a15f127f85f1290c380286ec902",
+    "distinct_pool_size": 20,
+    "distinct_pool_sha256": "e58041e776c6c4d7a722e5308fab8151624e29c993694d317098ee16c58bd18b",
+    "seed": 4430,
+    "groups": {
+      "target": {
+        "flat": 328903,
+        "layer": 34,
+        "channel": 3271,
+        "ratios": {
+          "RMS": 1.0,
+          "delta_RMS": 1.0,
+          "down_norm": 1.0
+        }
+      },
+      "random_A": {
+        "flat": 334802,
+        "layer": 34,
+        "channel": 9170,
+        "ratios": {
+          "RMS": 0.9799904968023915,
+          "delta_RMS": 0.9130538225937549,
+          "down_norm": 1.0640086347836695
+        }
+      },
+      "random_B": {
+        "flat": 329691,
+        "layer": 34,
+        "channel": 4059,
+        "ratios": {
+          "RMS": 1.0649540261397248,
+          "delta_RMS": 0.9371640192273533,
+          "down_norm": 0.9207892244888639
+        }
+      }
+    },
+    "global_reranking": false,
+    "new_model_forwards": 0,
+    "new_outputs_accessed": false,
+    "optimizer_steps": 0
+  },
+  "actual_Gemma_paths": {
+    "utc": "2026-10-31T05:26:51.574343+00:00",
+    "status": "passed",
+    "cases": 42,
+    "refusals": [
+      {
+        "case": "invalid_cache",
+        "index": 0,
+        "dtype": "torch.float32"
+      },
+      {
+        "case": "invalid_cache",
+        "index": 1,
+        "dtype": "torch.float32"
+      },
+      {
+        "case": "invalid_cache",
+        "index": 2,
+        "dtype": "torch.float32"
+      },
+      {
+        "case": "invalid_cache",
+        "index": 3,
+        "dtype": "torch.float32"
+      },
+      {
+        "case": "invalid_cache",
+        "index": 4,
+        "dtype": "torch.float32"
+      },
+      {
+        "case": "invalid_cache",
+        "index": 5,
+        "dtype": "torch.float32"
+      },
+      {
+        "case": "invalid_coordinate",
+        "index": 0,
+        "dtype": "torch.float32"
+      },
+      {
+        "case": "invalid_coordinate",
+        "index": 1,
+        "dtype": "torch.float32"
+      },
+      {
+        "case": "invalid_coordinate",
+        "index": 2,
+        "dtype": "torch.float32"
+      },
+      {
+        "case": "invalid_coordinate",
+        "index": 3,
+        "dtype": "torch.float32"
+      },
+      {
+        "case": "invalid_coordinate",
+        "index": 4,
+        "dtype": "torch.float32"
+      },
+      {
+        "case": "invalid_cache",
+        "index": 0,
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "case": "invalid_cache",
+        "index": 1,
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "case": "invalid_cache",
+        "index": 2,
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "case": "invalid_cache",
+        "index": 3,
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "case": "invalid_cache",
+        "index": 4,
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "case": "invalid_cache",
+        "index": 5,
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "case": "invalid_coordinate",
+        "index": 0,
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "case": "invalid_coordinate",
+        "index": 1,
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "case": "invalid_coordinate",
+        "index": 2,
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "case": "invalid_coordinate",
+        "index": 3,
+        "dtype": "torch.bfloat16"
+      },
+      {
+        "case": "invalid_coordinate",
+        "index": 4,
+        "dtype": "torch.bfloat16"
+      }
+    ],
+    "calls": 154,
+    "input_token_exposures": 254,
+    "new_random_tokens": 8,
+    "pretrained_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "random_module_seed": 2841,
+    "seconds": 1.9615857079988928
+  },
+  "prospective_auditor_paths": {
+    "utc": "2026-10-31T05:34:59.784981+00:00",
+    "status": "passed",
+    "actual_BF16_Gemma_auditor_receipt_cases": 21,
+    "corrupted_actual_receipts_refused": 6,
+    "failed_endpoint_fixtures_refused": [
+      "tie",
+      "same_boundary",
+      "family",
+      "other5",
+      "stratum"
+    ],
+    "independent_synthetic_primary_tables": 200,
+    "independent_counter_decompositions_match": true,
+    "metric_fixture_cases": 4,
+    "host_only_stress_cases": 4,
+    "stress_probe_count": 514,
+    "calls": 72,
+    "input_token_exposures": 120,
+    "pretrained_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "not_a_full_GPU_auditor_golden_replay": true,
+    "seconds": 2.1244413340027677
+  },
+  "preflight": {
+    "utc": "2026-10-31T05:41:25.614816+00:00",
+    "status": "passed",
+    "all_cells_compile": true,
+    "all_package_hashes_exact": true,
+    "isolated_GPU_runner_import": true,
+    "isolated_BOTH_runner_auditor_import": true,
+    "ruff_F821_F823": "pass",
+    "no_hidden_grader_or_oracle_on_GPU": true,
+    "record_and_trajectory_manifests_match_protocol": true,
+    "metadata_id_matches_fixed_title": true,
+    "packaged_sources": 21,
+    "packaged_inputs": 15,
+    "new_model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "preserved_host_failure": {
+    "utc": "2026-10-31T05:34:50.991281+00:00",
+    "status": "host_only_auditor_fixture_failed_before_GPU_launch",
+    "failure": "audit_host.py line203: expected both changed equality mutants to fail256random stress probes;at least one survived. The primary grader still rejects the mutant on its exhaustive equality checks.",
+    "traceback_tail": "AssertionError at assert sum(r[passed] for r in stress)==2 and all(not r[passed] for r in stress if r[condition]==changed)",
+    "actual_pretrained_forwards": 0,
+    "GPU_predictions": 0,
+    "optimizer_steps": 0,
+    "completed_assertions_before_failure": [
+      "21actualBF16auditorreceiptchecks",
+      "6corruptedreceiptrefusals",
+      "5failedendpointfixtures",
+      "200independentprimarytables",
+      "independentcounterdecompositions",
+      "4metricfixtures"
+    ],
+    "actual_host_forward_counter_not_saved_due_failure": true,
+    "host_seconds": null,
+    "source_snapshots_sha256": {
+      "audit_host_source_freeze.json": "1b85d95ce903fcfbadfffc353a6f3143b2480bdc5721a5acd9a80a82647877f5",
+      "audit.py": "0a44114c96cd40103ff3c751a1eb0f0dafc968a1af126baf6c583a4732c81b61",
+      "audit_host.py": "af599fa392ae22c9b2b3663b6f4ef0043bf16e63d1490e9175ebade3886deb7b"
+    },
+    "repair": "Add a new N30-only host stress helper with forced equality and adjacent-boundary probes before any GPU outcomes. Keep256probes/seed4431 and primary graders unchanged. Preserve original source and failure. No old scorer rerun."
+  },
+  "no_pretrained_outputs": true
+}

@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-31T05:13:55.763018+00:00",
+  "question_id": "Q44",
+  "status": "prospective_profile_only_rule_before_helper_or_distinct_control_access",
+  "intent_sha256": "1204ba8d413931cfa2d9bdad090b88d3eb0899c116a7d73af7a3cf49f0035068",
+  "selection_source": "runs/n20/selection/result.json",
+  "selection_sha256": "fcbb5cf85dd794b9be4f9c21008ac348ed291e5f187a1c6c06b9dc974af0f395",
+  "profile_input": "outputs/n19_v2/n19/bf16_text/influence_aggregates.npz",
+  "profile_sha256": "a9afec53b9eb21b8a3377a34a8b9501ab2451cf481cfaaee0a861df23c6d8627",
+  "layout_input": "outputs/n19_v2/n19/bf16_text/coordinate_layout.json",
+  "layout_sha256": "8d46e96673652bb8b37400c6e13cb872dfc8bf7751a4061ed8d1b650e6a4cebd",
+  "target": {
+    "flat": 328903,
+    "layer": 34,
+    "channel": 3271
+  },
+  "retained_control": {
+    "flat": 334802,
+    "layer": 34,
+    "channel": 9170
+  },
+  "original_pool_sha256": "61156e4ff4af94cfb84479e750f11d9d22ab3a15f127f85f1290c380286ec902",
+  "original_pool_size": 21,
+  "bounds": {
+    "RMS": [
+      0.9,
+      1.1
+    ],
+    "delta_RMS": [
+      0.9,
+      1.1
+    ],
+    "down_norm": [
+      0.8,
+      1.25
+    ]
+  },
+  "blocked": "Every original selected64 coordinate; no score filter on controls. This is the exact original first-target pool,where no earlier control has been used.",
+  "distinct_draw": "Remove only the retained control from the verified original pool. Draw once from the remaining sorted flat indices using Python random.Random(4430).choice. No redraw or outcome access.",
+  "seed": 4430,
+  "minimum_original_pool": 16,
+  "minimum_distinct_draw_pool": 16,
+  "interpretation": "These magnitudes come from saved FP32 profile values,not unrounded activations. The new draw is prospective selection,not fitting or proof of semantic matching.",
+  "no_model_calls": true,
+  "no_global_reranking": true,
+  "optimizer_steps": 0
+}

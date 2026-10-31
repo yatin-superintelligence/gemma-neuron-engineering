@@ -1,0 +1,11 @@
+{
+  "private_runner_sha256": "0d05ca9d66591d7286db2ed37a2d6d16608c15951fbba9535ca71a005d884119",
+  "exported_function_names": [
+    "sha_tensor",
+    "unit_policy",
+    "validate_live_cache",
+    "witness"
+  ],
+  "function_bodies_sha256": "11f6ef997af224230ac1da45ae53aa6e346b4da3ef6e2e3246991593ec0ce9d8",
+  "scope": "Function-only projection with public imports. No task text, raw states or model execution. Actual host fixtures exercise the identical function bodies; no pretrained result yet."
+}

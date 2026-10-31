@@ -2934,6 +2934,62 @@
       "event": "bounded_closest_priors_and_no_new_method_claim_reviewed",
       "experiment": "N30",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 396,
+      "utc": "2026-10-31T05:17:06.918612+00:00",
+      "event": "distinct_control_rule_frozen_before_helper_implementation",
+      "experiment": "N30",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 397,
+      "utc": "2026-10-31T05:17:06.918612+00:00",
+      "event": "original_pool_exact_and_distinct_strict_control_selected_once_no_model_calls",
+      "experiment": "N30",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 398,
+      "utc": "2026-10-31T05:48:31.922227+00:00",
+      "event": "GPU_protocol_frozen_before_runner_auditor_implementation",
+      "experiment": "N30",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 399,
+      "utc": "2026-10-31T05:48:31.922227+00:00",
+      "event": "actual42random_Gemma_paths_pass_and22malformed_cases_refused",
+      "experiment": "N30",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 400,
+      "utc": "2026-10-31T05:48:31.922227+00:00",
+      "event": "host_stress_equality_mutant_sensitivity_failure_preserved_before_GPU",
+      "experiment": "N30",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 401,
+      "utc": "2026-10-31T05:48:31.922227+00:00",
+      "event": "boundary_aware_stress_and_actual21auditor_paths_pass_before_GPU",
+      "experiment": "N30",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 402,
+      "utc": "2026-10-31T05:48:31.922227+00:00",
+      "event": "private21source15input_payload_both_isolated_imports_cells_and_Ruff_pass",
+      "experiment": "N30",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 403,
+      "utc": "2026-10-31T05:48:31.922227+00:00",
+      "event": "all80source_parent_hashes_and_auditor_notebook_frozen_before_outputs",
+      "experiment": "N30",
+      "optimizer_steps": 0
     }
   ]
 }

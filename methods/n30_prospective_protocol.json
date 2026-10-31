@@ -1,0 +1,193 @@
+{
+  "utc": "2026-10-31T05:19:55.252684+00:00",
+  "experiment": "N30",
+  "question_id": "Q44",
+  "version": 1,
+  "status_at_freeze": "before_GPU_runner_design_auditor_or_notebook_implementation",
+  "question": "Does the first fixed native unit contribute a specific finite comparator-score bias, and what happens to actual programs under its direct ablation and donor controls?",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "original_text_only_unquantized_BF16",
+  "unique_parameters": 4628569344,
+  "native_cache_entries": 15,
+  "seed": 4430,
+  "host_stress_seed": 4431,
+  "parents_sha256": {
+    "research/experiments/n30/intent.json": "1204ba8d413931cfa2d9bdad090b88d3eb0899c116a7d73af7a3cf49f0035068",
+    "research/experiments/n30/control_selection_protocol.json": "ee893de12d3f008b34d957a02b8d6a35e873b6637997bcbd2dce87c2d70909ca",
+    "research/experiments/n30/controls.py": "4673e99b3b76f310786d4785ccfefb89caf24ccd8932fc17fc5adf592e0ec0b8",
+    "runs/n30/control_protocol_freeze.json": "c73111b5c7efab55c84f904bea361bd78b79447c28103c91617c069ff339f83f",
+    "runs/n30/control_selection.json": "62f3cbdbfca7e651df158e7e7153db9bd8f193b370169dc348c0a6965d96615b",
+    "research/experiments/n19/case_manifest.json": "6b625bd759258e8fe68f905cec5589c128fbfb38664ad8dd4f942cb489c147c3",
+    "runs/n19/version2/result_receipt.json": "b8f3191bf6df7140f042b0a29bc0c679c2f9f5a720ee88bfaee9a5d29915f180",
+    "runs/n20/version1/result_receipt.json": "b4a0abbc7097a515b538ff5ef622d3227a8d98cc72c92ec11a0eb32f71fdcdfa",
+    "runs/n24/version1/result_receipt.json": "272d21c363c6cd812f697f71ea412860d7a396688d535f46a748656282096f76",
+    "runs/n24/version1/public_aggregate.json": "b76e24ffff6c91beacfca03b714fbc8a5a8c9126a009b64fe234677ac5efea78",
+    "research/experiments/n30/literature_prospective.json": "ce13e721adfe09d5da4ac91c8f546864acc2202f1d927fb20accf7ca5e8e8401"
+  },
+  "coordinates": {
+    "target": {
+      "flat": 328903,
+      "layer": 34,
+      "channel": 3271,
+      "ratios": {
+        "RMS": 1.0,
+        "delta_RMS": 1.0,
+        "down_norm": 1.0
+      }
+    },
+    "random_A": {
+      "flat": 334802,
+      "layer": 34,
+      "channel": 9170,
+      "ratios": {
+        "RMS": 0.9799904968023915,
+        "delta_RMS": 0.9130538225937549,
+        "down_norm": 1.0640086347836695
+      }
+    },
+    "random_B": {
+      "flat": 329691,
+      "layer": 34,
+      "channel": 4059,
+      "ratios": {
+        "RMS": 1.0649540261397248,
+        "delta_RMS": 0.9371640192273533,
+        "down_norm": 0.9207892244888639
+      }
+    }
+  },
+  "coordinate_order": [
+    "target",
+    "random_A",
+    "random_B"
+  ],
+  "control_provenance": "Target is first original N20 selected coordinate. Original two first-position random draws collide at C9170. Keep that single physical control; the distinct C4059 was drawn once using the separately frozen strict profile-only rule. No new rank, relaxed bound, score filter or response-based choice.",
+  "site": "Exactly one native post-gating down_proj scalar at L34 during the one current cached-token forward. No edit during prompt/prefix preparation or subsequent continuation. No attention/KV hook, weights, learned vector, branch, gradients or fitted strength.",
+  "case_manifest": "research/experiments/n19/case_manifest.json",
+  "case_manifest_sha256": "6b625bd759258e8fe68f905cec5589c128fbfb38664ad8dd4f942cb489c147c3",
+  "role_case_ids": [
+    "n12_filter_0_0_l0",
+    "n12_filter_0_0_l1",
+    "n12_filter_0_1_l0",
+    "n12_filter_0_1_l1",
+    "n12_filter_1_1_l0",
+    "n12_predicate_0_0_l0",
+    "n12_predicate_0_0_l1",
+    "n12_predicate_0_1_l0",
+    "n12_predicate_0_1_l1",
+    "n12_predicate_1_0_l0",
+    "n12_predicate_1_0_l1",
+    "n12_predicate_1_1_l0",
+    "n12_predicate_1_1_l1"
+  ],
+  "discovery_case_ids": [
+    "n12_filter_0_0_l0",
+    "n12_filter_0_0_l1",
+    "n12_filter_0_1_l0",
+    "n12_filter_0_1_l1",
+    "n12_predicate_0_0_l0",
+    "n12_predicate_0_0_l1",
+    "n12_predicate_0_1_l0",
+    "n12_predicate_0_1_l1"
+  ],
+  "cohort": "Exact thirteen N19/N24 role cases and eight retention cases. Eight discovery cases are wording0; the other five are wording1, with only one filter and four predicate cases. Reused development and response-derived prefixes, not fresh confirmation or a deployable trigger.",
+  "closed_lineage": "Carry exactly the four N19 parent conditions, 84 records, without decoding/regrading their original outputs again. The inherited full-opposite/full-same retention cells include sixteen non-applicable references; do not call them successful donor-retention tests. Never regenerate original completions.",
+  "conditions": {
+    "parents": [
+      "base",
+      "full_opposite",
+      "full_samepolicy",
+      "full_self"
+    ],
+    "unit_operations": [
+      "opposite",
+      "samepolicy",
+      "zero",
+      "rescue",
+      "conditional_cut"
+    ],
+    "order": "Four parents first, then target/random_A/random_B, each in the listed operation order."
+  },
+  "edits": {
+    "opposite": "Assign the actual unmodified opposite-donor scalar for the same common prefix length.",
+    "samepolicy": "Assign the actual unmodified same-rule donor scalar. Preserve the original same-token versus lexical-control labels.",
+    "zero": "Multiply only the one actual native scalar by prescribed zero.",
+    "rescue": "Within the declared scalar hook, write zero then the actual recipient value. Its entire current logits/cache must be exact native. These are guarded baseline references, not newly generated successes.",
+    "conditional_cut": "Apply actual all-35-layer opposite states first, then assign the one actual recipient scalar at L34. This tests necessity in the engineered donor background, not native necessity or a free-running complement."
+  },
+  "generation": "Unchanged N19 greedy combined-program cap64 and pinned resolved EOS/default configuration. Prefix tokens are exact original shared prefixes for the declared decision only; they never include the divergent answer token. Free tails start from the actual edited current logits. No rerolls, answer lookup, posthoc cap/wording repair or hidden oracle in inference inputs.",
+  "metrics": "Use the already validated decision_scores.summarize helper. CPU FP64 arithmetic on actual BF16-to-FP32 logits is not FP64 inference or unrounded reconstruction. Save own/opposite logits and probabilities, margin, top8 IDs/logits, log-partition, max/L2/centered-L2/RMS changes and KL. Full vectors remain ephemeral. For conditional cut also compute full-opposite minus cut margin; never report it as a mediation fraction.",
+  "primary_finite_bias_criterion": {
+    "label": "Development finite-output-bias screen, not a semantic-role or accuracy-improvement test.",
+    "effects": "Opposite donor margin shift from native; native-zero margin shift from native; conditional loss of the full-opposite margin.",
+    "all13_and_families": "For EACH of the three effects, target mean must be strictly positive and strictly exceed EACH distinct control mean on all13 and within each of the two families.",
+    "discovery_strata": "For EACH effect, target means must be strictly positive and exceed EACH control in every mapping x label stratum of the eight discovery cases (two families per stratum).",
+    "other5": "For EACH effect, target mean over the five other development cases must be strictly positive and exceed EACH control. This remains unbalanced development, not confirmation.",
+    "same_rule_specificity": "For target on all13, discovery8 and other5 separately, absolute mean same-rule shift must be strictly less than half its positive mean opposite shift.",
+    "ties": "Ties, zero effects or a failed component fail the conjunction. No OR, best metric/unit/cohort or threshold amendment.",
+    "no_sampling_inference": "These deterministic dependent instances do not justify independent-algorithm p-values. Report every per-case value, mean/median/range/sign count and all failed components."
+  },
+  "secondary_reports": [
+    "Actual original-request and opposite-request executable outcomes for every new tail, all gains/losses and caps; original-role baselines are all correct so accuracy cannot improve.",
+    "All full-vocabulary change/selectivity metrics and top8 values. A large pairwise score effect is not by itself semantic specificity.",
+    "Zero-operation retention on all eight cases per unit is newly generated. Foreign donor retention is non-applicable and must stay marked N/A. Rescue and parent carries are references, not new generations.",
+    "Both family means and every wording/mapping/label/direction stratum, plus separate discovery8/other5 tables. Do not headline a favorable subset."
+  ],
+  "native_source_capture": "Reuse the exact N20 requested23 native trajectories and prefixes, checking all805 layer hashes, old fixed-unit source witnesses, current full-logit/whole-cache values and native decision argmax. Save only three new scalar values per native source plus hashes, not full states.",
+  "guards": [
+    "Replay all47 live parent measurements:13full-opposite,13full-same,21full-self; require exact saved current logits and whole caches. Do not compare the original prompt-prefill hash instead.",
+    "For each unit,21 native scalar rescue measurements must exactly reproduce native whole logits/cache. For each unit,13 conditional-self measurements with its opposite scalar under the full-opposite background must exactly reproduce that live full background.",
+    "All three coordinates are in final layer34, after all K/V producers. Every new clean/opposite/same/zero/rescue unit edit preserves native whole current cache byte-exact. Every conditional cut preserves live full-opposite cache byte-exact.",
+    "Two fixed native restoration sentinels after each of19 condition blocks,38 total. Exact whole logits/cache and parameter/hook/gradient guards, no tolerance amendment.",
+    "Every unit receipt must show exactly one coordinate, one L34 hit, exact target assignment and all other h values unchanged. Full-background receipts must show all337920 coordinates across35layers. Hooks must be removed before continuation.",
+    "All native parameter versions and gradient flags unchanged, p.grad None, zero backwards/optimizer updates. Actual pinned cache schema has15 populated entries; reject malformed/truncated/nonfinite caches."
+  ],
+  "counts": {
+    "conditions": 19,
+    "records": 399,
+    "exact_parent_carries": 84,
+    "new_tail_generations": 180,
+    "guarded_rescue_references": 63,
+    "new_nonapplicable_donor_references": 72,
+    "inherited_parent_nonapplicable_donor_retention_references_within_carries": 16,
+    "native_source_trajectories": 23,
+    "native_layer_hashes": 805,
+    "parent_live_trajectories": 47,
+    "native_scalar_rescue_trajectories": 63,
+    "conditional_self_trajectories": 39,
+    "restoration_trajectories": 38,
+    "total_trajectories": 390
+  },
+  "counter_contract": {
+    "measurement": "For prompt length n and shared prefix length k, each source/parent/self/rescue/restoration trajectory uses k+1 root forwards and n+k input-token exposures.",
+    "new_tail": "For actual nonempty tail length T, prepare plus current plus continuation uses k+T forwards and n+k+T-1 exposures. The first edited current forward also supplies finite metrics, not a second uncounted measurement.",
+    "derivation": "Freeze an explicit390-row trajectory manifest and399-row record manifest. Derive every term from those rows. Independently sum category/condition decompositions and validate EOS/cap traces before launch. Do not hand-copy old N20 constants."
+  },
+  "restoration_sentinels": [
+    "n12_filter_0_0_l0",
+    "n12_predicate_0_0_l0"
+  ],
+  "host_gates": [
+    "Actual random-Gemma35layer/shared-tail20 current single-unit/native/foreign/conditional/self/rescue/restoration paths in FP32 and BF16, plus hook exception cleanup and exact late-cache invariants.",
+    "Actual runner policy-to-coordinate and receipt mapping; malformed cache and coordinate refusal, independent metric and primary-boundary fixtures, new-tail EOS/cap counter traces.",
+    "Import BOTH runner and auditor in isolation, compile every packaged cell, Ruff F821/F823 and exact tokenization/parent lineage. No host grader, hidden oracle or stress function in inference source closure."
+  ],
+  "audit": "Freeze prospective host auditor and all actual source/data/parent/notebook hashes before launch or output access. Retrieve compact terminal outputs once, verify final private server source, metadata and input_manifest. Audit805source hashes, every current/cache/scope/counter/parameter/restoration proof and390 trajectories. Decode/regrade ONLY180 new tails, carry84closed parent grades unchanged, and label63guarded/72N/A references. Correct/changed/alternative-correct new outputs receive256fresh executable stress probes seeded4431. Saved full-vector statistics are GPU witnesses, not host full-checkpoint recomputation.",
+  "stopping": "Any mandatory guard failure stops interpretation and preserves original partials/failure/source. No relaxed tolerances, criteria, task wording, cap, dose, new coordinate or original completion regeneration. A failed fixed-unit screen does not authorize advancing down the ranked list this sprint. A passing local bias needs separate fresh confirmation; native semantic meaning and useful coding benefit remain unestablished.",
+  "resources": {
+    "platform_seconds": 2400,
+    "notebook_seconds": 2300,
+    "worker_seconds": 2000,
+    "one_private_free_job": true,
+    "fresh_explicit_quota_and_actual_terminal_jobs_required": true,
+    "minimum_reserve_hours": 2,
+    "fixed_deadline_utc": "2026-10-31T18:22:58Z"
+  },
+  "storage": "Caches/tmp on Kaggle. Compact hashes, scalar moments/metrics, exact source receipts and raw predictions only. No activation dumps, full logits, new base copies or private raw assets in the public projection.",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "new_model_outputs_accessed": false,
+  "GPU_launch_authorized_by_protocol_alone": false
+}
