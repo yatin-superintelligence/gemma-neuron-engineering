@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-31T02:46:21.726062+00:00",
+  "status": "caller_interpreter_correction_before_any_auditor_main_or_output_grading",
+  "original_failure": "audit_execution.json",
+  "cause": "Prepending the isolated Kaggle bin directory before the shell python command selected its Python without Transformers. The audit import failed before main,output reads or grading.",
+  "transformers": "5.8.0",
+  "audit_source_unchanged_sha256": "2fce7fdf49b89f46bfe39b00395a5c4dae25484843b08cb081a926bfe3d8bdee",
+  "new_model_forwards": 0,
+  "new_generations": 0,
+  "original_grades_computed": 0,
+  "future_invocation": "Start with the research Python,then prefix PATH inside that process only for authenticated Kaggle subprocesses. Never choose Python through the Kaggle-prefixed shell PATH."
+}

@@ -360,13 +360,13 @@
       "recorded_script_seconds": 1629.2459186310002,
       "outcome": "All320audited:240new/40carry/40guardedrefs. Suppression coding23base/25selected/25randomA/24randomB. Selectedsame2gainsasrandomA. Amplification22selected/23randomA/22randomB. All8retention. Bothprimaryscreensfail. No specific group advantage.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "n27_phase_A_v1",
-      "launched_utc": "2026-10-31T02:40:42.932401+00:00",
-      "status": "running_private_source_verified"
+      "recorded_script_seconds": 180.39021498799997,
+      "outcome": "All40 records and mandatory guards pass. Baseline21/32 coding,8/8 retention;all32 role sources valid,11 wrong answers,no complete8-case block. Planned stop before all edits. Host interpreter import failure preserved;unchanged auditor passes under validated research Python.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

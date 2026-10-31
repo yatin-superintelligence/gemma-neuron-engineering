@@ -2647,6 +2647,41 @@
       "event": "one_private_original_only_job_launched_source_and_server_privacy_verified_no_outputs_accessed",
       "experiment": "N27 stage A",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 355,
+      "utc": "2026-10-31T02:52:01.764863+00:00",
+      "event": "audit_import_failed_before_main_due_to_isolated_CLI_python_original_failure_preserved",
+      "experiment": "N27 stage A",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 356,
+      "utc": "2026-10-31T02:52:01.764863+00:00",
+      "event": "unchanged_frozen_auditor_passes40records_under_validated_research_python",
+      "experiment": "N27 stage A",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 357,
+      "utc": "2026-10-31T02:52:01.764863+00:00",
+      "event": "baseline21of32_zero_complete_blocks_planned_stop_before_all_edits",
+      "experiment": "N27 stage A",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 358,
+      "utc": "2026-10-31T02:52:01.764863+00:00",
+      "event": "saved_grade_order_and_factor_analysis_no_scorer_rerun",
+      "experiment": "N27 stage A",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 359,
+      "utc": "2026-10-31T02:53:45.625083+00:00",
+      "event": "direct_relation_four_donor_cell_question_recorded_intent_only_after_N27_planned_stop",
+      "experiment": "N28",
+      "optimizer_steps": 0
     }
   ]
 }

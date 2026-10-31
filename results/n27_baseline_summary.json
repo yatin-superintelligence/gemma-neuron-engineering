@@ -1,0 +1,149 @@
+{
+  "utc": "2026-10-31T02:52:01.764863+00:00",
+  "status": "complete_private_host_audited_planned_baseline_stop_closed",
+  "records": 40,
+  "coding_correct": 21,
+  "coding_total": 32,
+  "source_valid_coding": 32,
+  "retention_correct": 8,
+  "retention_total": 8,
+  "qualifying_blocks": 0,
+  "required_complete_blocks": 3,
+  "all4block_scores": {
+    "filter_s0": {
+      "correct": 4,
+      "total": 8
+    },
+    "filter_s1": {
+      "correct": 7,
+      "total": 8
+    },
+    "predicate_s0": {
+      "correct": 5,
+      "total": 8
+    },
+    "predicate_s1": {
+      "correct": 5,
+      "total": 8
+    }
+  },
+  "all_factor_breakdowns": {
+    "order": {
+      "0": {
+        "correct": 14,
+        "total": 16
+      },
+      "1": {
+        "correct": 7,
+        "total": 16
+      }
+    },
+    "family": {
+      "filter": {
+        "correct": 11,
+        "total": 16
+      },
+      "predicate": {
+        "correct": 10,
+        "total": 16
+      }
+    },
+    "style": {
+      "0": {
+        "correct": 9,
+        "total": 16
+      },
+      "1": {
+        "correct": 12,
+        "total": 16
+      }
+    },
+    "mapping": {
+      "0": {
+        "correct": 10,
+        "total": 16
+      },
+      "1": {
+        "correct": 11,
+        "total": 16
+      }
+    },
+    "label": {
+      "0": {
+        "correct": 10,
+        "total": 16
+      },
+      "1": {
+        "correct": 11,
+        "total": 16
+      }
+    },
+    "direction": {
+      "1": {
+        "correct": 13,
+        "total": 16
+      },
+      "-1": {
+        "correct": 8,
+        "total": 16
+      }
+    },
+    "block": {
+      "filter_s0": {
+        "correct": 4,
+        "total": 8
+      },
+      "filter_s1": {
+        "correct": 7,
+        "total": 8
+      },
+      "predicate_s0": {
+        "correct": 5,
+        "total": 8
+      },
+      "predicate_s1": {
+        "correct": 5,
+        "total": 8
+      }
+    }
+  },
+  "wrong_answer_coding": 11,
+  "at_cap": 0,
+  "interventions_executed": false,
+  "stage_B_launched": false,
+  "all_records_and_mandatory_guards_pass": true,
+  "worker": {
+    "utc": "2026-10-31T02:44:43.681994+00:00",
+    "status": "complete",
+    "phase": "A",
+    "records": 40,
+    "new_generations": 40,
+    "exact_parent_carries": 0,
+    "new_generated_tokens": 150,
+    "calls": 192,
+    "input_token_exposures": 9632,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "all_parameter_versions_and_flags_unchanged": true,
+    "all_parameter_gradients_none": true,
+    "all_hooks_restored": true,
+    "attention_hooks_or_weight_edits": false,
+    "seconds": 180.39021498799997,
+    "torch": "2.11.0+cu128",
+    "GPU": "Tesla T4",
+    "dtype": "torch.bfloat16",
+    "unique_parameters": 4628569344
+  },
+  "notebook_seconds": 231.15543043600002,
+  "all_source_parent_hashes": 50,
+  "all200native_h_hashes_and40whole_cache_witnesses_saved": true,
+  "baseline_grades_frozen_no_scorer_rerun": true,
+  "interpreter_import_failure": {
+    "before_auditor_main_or_output_grading": true,
+    "zero_original_grades_computed": true,
+    "source_changed": false,
+    "corrected_research_python_imported_validated_Transformers": true
+  },
+  "raw_tasks_answers_and_outputs_private": true,
+  "optimizer_steps": 0
+}

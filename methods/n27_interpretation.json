@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-31T02:52:01.764863+00:00",
+  "status": "complete_private_host_audited_planned_baseline_stop_closed",
+  "finding": "All 32 role outputs pass the strict source/order contract, but eleven compute the wrong requested relation. Block scores are 4/8,7/8,5/8,5/8;none qualifies. All eight retention cases pass. The completion interface does not resolve the combined contextual-label/operand-order adequacy problem.",
+  "limits": "Saved-grade posthoc counts only: canonical order14/16 and reversed order7/16. N23 used different prompts/interfaces;the difference is not model improvement or an isolated position effect. No model edit ran. Keep the frozen stop and all original grades.",
+  "next": "Close N27. Consider a separate directly specified comparison assay,with no arbitrary label mapping,to test literal operator copying versus relation transfer at the already controlled current site. Freeze its own adequacy gate before any outcomes. Do not repair or rerun N27.",
+  "optimizer_steps": 0
+}

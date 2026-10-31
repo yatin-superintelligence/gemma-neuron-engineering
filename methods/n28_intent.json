@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-31T02:53:45.625083+00:00",
+  "question_id": "Q42",
+  "experiment": "N28",
+  "status": "intent_only_no_protocol_task_dataset_runner_or_launch",
+  "question": "Does full current-site donor transfer follow an explicit comparison relation across operand order, or copy the donor operator?",
+  "parents_sha256": {
+    "runs/n27/phase_A/version1/result_receipt.json": "4848a1c7d49b3508f355e936338d64adb35b30a8ea9246bb4e52fe2c116c8621",
+    "runs/n27/phase_A/version1/baseline_factor_posthoc.json": "8fb9d21242be265272b7e21c153d2b8967ab1cebe6f57a285434f5577187855b",
+    "runs/n22/version1/result_receipt.json": "a874e833e09d6ab286eb3af6fe65261732f564ed7634c5ea86208b73b86ad63d",
+    "runs/n24/version1/interpretation.json": "c432804c8ee9536e275b83865667c2dcde263d16fa000d368df212285f9211e0",
+    "research/experiments/n26/next_question_review.json": "93a840b8ffd84d360b4fbce64c2302a8ad1da95bc65afd7cab631f46bc15d10b",
+    "research/experiments/n26/literature_next_question.json": "2a63a67533c2accd940eb5af0ed9e1067a744c267924d1c18cd7850a2efb3be3"
+  },
+  "why_a_different_question": "N27 closes before edits: every source/order contract passes, but eleven of32 programs implement the wrong relation under arbitrary contextual labels. No block qualifies. Do not repair that panel or select its7/8 block. A direct-language relation assay removes the arbitrary label-binding problem and asks a narrower current-state semantic-versus-spelling question. This is new development, not confirmation or improvement over N27.",
+  "candidate_task_scope": "Consider16 role completions crossing filter/predicate family, two direct natural-language phrasings, two requested directions and both written operand orders. A mechanical assistant prefix supplies only syntax and the first operand, never a comparator. Eight new retention inputs form four same-task paraphrase pairs. Freeze all new inputs and independent hidden oracles before model output. No task wording is selected from alternative model completions.",
+  "candidate_adequacy_gate": "Require all16 original role cases and all8 retention cases to pass before edits. No partial-cell eligibility or prompt repair after a stop. Exact thresholds and counts must be frozen prospectively before implementation.",
+  "candidate_site": "Use actual unmodified post-gating down-projection inputs at all35 native MLPs, at each prompt last-input code-decision position. This is the previously controlled broad current-site family, not the earlier N27 selector. Each donor uses its own last input position; different absolute positions and wording lengths are intentional context differences, not numerical invariance assumptions. Validate actual source paths, self, cached self, rescue and restoration before semantic interpretation. No attention/KV hook or fitted alignment.",
+  "four_donor_controls": "For each role recipient, all four actual donors use the other fixed wording. Cross same/opposite requested relation with same/reversed written operand order. Same relation plus reversed donor order changes the donor comparator spelling; opposite relation plus reversed order preserves the recipient original comparator spelling. This separates relation transfer from copying the donor operator. Do not combine the four cells into an OR score.",
+  "retention": "Use a fixed paired paraphrase of the same noncomparison or JSON task, with actual donor states in every foreign arm. The four role-defined donor policies reuse that same retention donor; report these repeats and do not call them independent directional tests. Retention is never N/A masquerading as success.",
+  "candidate_conditions_and_counts": "Original, exact identity, four foreign donor cells and ordered opposite-then-recipient rescue would give7conditions over24 inputs:168 records,144 new after24 exact parent carries. These are proposed counts, not a frozen protocol or a launch authorization. Both stages and their guards require a prospective freeze before original output access.",
+  "primary_question_to_freeze": "Require successful opposite-relation programs under both recipient orders and both donor orders, with same-relation preservation, family/wording/direction coverage and actual retention. Preserve every invalid source and every joint cell. A donor-operator copying pattern requires valid executable evidence; failure of semantic transfer alone is not proof of copying.",
+  "scope_limits": "This tests conditional completion and controlled full-site information, not individual neuron meaning, native necessity, a complete causal abstraction, whole-program improvement or novelty. N22 stage/site controls and established causal-versus-invariance priors already motivate it. Changes from N27 include task semantics, context and site, so no isolated position explanation follows.",
+  "next_branch": "If this adequate full-site control succeeds, freeze a bounded native-group necessity/rescue and specificity follow-up before any new ranking. Existing fixed-group nulls remain closed. If the direct-language baseline fails, stop further comparison-interface attempts in this sprint and reassess the task/checkpoint direction. Do not pursue more gains, ranks or constructed neurons to hide an adequacy failure.",
+  "no_training": true,
+  "optimizer_steps": 0,
+  "new_model_forwards": 0,
+  "new_generated_tokens": 0,
+  "GPU_launch_authorized": false
+}

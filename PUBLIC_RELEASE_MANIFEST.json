@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-31T02:42:09.693417+00:00",
+  "generated_utc": "2026-10-31T02:59:09.896653+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "6648fd6498d95774c6b21b1fe61226f2be7d483e56f91725b91a1860411b6024",
-      "bytes": 14190
+      "sha256": "766a09cde004214ea1948478baa7e2b33263447c7963b42230f6f54faa3b9dff",
+      "bytes": 14499
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "278782dcc50782917e1e201709061729a2f7e8f7613fd4e8213e7ee2867a7233",
-      "bytes": 243445
+      "sha256": "4af3d9bd8c34aba684522c71ce4bbada354b592fba866f1e4b50f628039acb78",
+      "bytes": 245020
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "e1546222bf7474c80b324169570332669b5e2dee88289d533e9fc39a7edd9681",
-      "bytes": 167052
+      "sha256": "e00faea3c8fad962143800ba1496f7edd6f34e3edb1b81fae562faa27e145193",
+      "bytes": 170155
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "f44ff83fce688d2762b255d765882ec893d80fea890c9e3c528ef542007c49b1",
-      "bytes": 81483
+      "sha256": "5bd9b6df306d7433761e86711322ecc4bacac167a8c9cf12dbb038d854be97b8",
+      "bytes": 82664
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -196,8 +196,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "762b753493438345affcf0baa7995d4c0d11d4af4ac1f10b0575d91f2dd7ff56",
-      "bytes": 84657
+      "sha256": "75340462264f2527bc1a7a78b05b24a8c37223d50c668a5a6356b5a9aa1c871e",
+      "bytes": 86841
     },
     {
       "path": "evaluation/__init__.py",
@@ -645,6 +645,11 @@
       "bytes": 1077
     },
     {
+      "path": "methods/n27_audit_environment_repair.json",
+      "sha256": "e454725457093be8157532701010e7fe7b6aef23634704949da89202338bf74e",
+      "bytes": 787
+    },
+    {
       "path": "methods/n27_execution_freeze.json",
       "sha256": "3357f97f469fccd65bd28109115daa7b5927c0952c028294b2c96ed7908bb3c7",
       "bytes": 592
@@ -653,6 +658,11 @@
       "path": "methods/n27_intent.json",
       "sha256": "bbfbaa3ed17b7fcb94be4ea7cde8d202a96c6babef76b4ddfaf8bb1b7044eb1f",
       "bytes": 5089
+    },
+    {
+      "path": "methods/n27_interpretation.json",
+      "sha256": "2652dadb8f71cd8b53b3c16833e4cf52358d1eede9511c1002d62d5b856e0dd3",
+      "bytes": 1011
     },
     {
       "path": "methods/n27_lineage_freeze_clarification.json",
@@ -668,6 +678,11 @@
       "path": "methods/n27_source_site_review.json",
       "sha256": "bd236cf77fa43e9fdf7e24335f247058c9242a902ed382af3f732453a207eef8",
       "bytes": 1642
+    },
+    {
+      "path": "methods/n28_intent.json",
+      "sha256": "da8ec49ccbd1240bfce8ea3321f6d4b6006e0c01bdc8e9c7459455d8b12454c7",
+      "bytes": 5385
     },
     {
       "path": "methods/strict_profile_matching.py",
@@ -1230,14 +1245,19 @@
       "bytes": 3947
     },
     {
+      "path": "results/n27_baseline_summary.json",
+      "sha256": "19df86ff70209cc8c6ce845ddca6de1fb9ab3de89ce380968c77542bffbb4a76",
+      "bytes": 3185
+    },
+    {
       "path": "results/n27_preparation.json",
       "sha256": "31d361f88227425be74567fc2655dba3b48f23e87493aea6585df7a583147846",
       "bytes": 1962
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "3d4e5ea940018a99e87ff65ccb8d881acd7a411e864a98a9aebc15150c58720b",
-      "bytes": 755
+      "sha256": "caecac2ff6d6a535052cb092122e0699b65f2bd3c3aef905563b50acf30b36a2",
+      "bytes": 601
     },
     {
       "path": "results/r01_reconstruction.json",
@@ -1251,8 +1271,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "9530bca5b9333c29fc48ae90ee3b38c554510e0aa5f71f46a23693fb0a32fab9",
-      "bytes": 19628
+      "sha256": "1428eca304f454282489d70d7ddfe11886f988cb4bf8dc8e9441c949de527fac",
+      "bytes": 19892
     },
     {
       "path": "scripts/plot_n04_summary.py",
