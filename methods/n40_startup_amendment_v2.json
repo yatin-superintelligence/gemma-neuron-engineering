@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-31T18:58:42.294047+00:00",
+  "status": "prospective_repair_before_v2_implementation_and_any_utility_outputs",
+  "experiment": "N40",
+  "question_id": "Q54",
+  "failure_receipt": "runs/n40/version1/result_receipt.json",
+  "original_protocol_sha256": "5e43bebb85a10a73a7d1817e32e8639866b11394a38057d688fc10a99f42be9a",
+  "repair": "Version the runner and replace only the import research.experiments.n35.loader.validate_text with existing research.experiments.n35.loader_v2.validate_text. The latter scans at most1048576elements at once and retains all dtype/finite/tied-head/parameter-count/media/projection checks. No tolerance or scientific edit.",
+  "existing_chunked_validator_sha256": "bbdfc73180817f95ad0d87e0728b82831a594201c9d8eab30373f7cfaa7bce64",
+  "existing_closed_fixture": "runs/n35/memory_host/version2/result.json",
+  "fixture": "Eight finite cases and eighteen nonfinite refusals already passed; do not rerun unchanged. New integration checks must prove actual versioned runner resolves this validator.",
+  "scientific_conditions_data_groups_gains_oracles_counters_unchanged": true,
+  "all69old_source_parent_hashes_and_failed_raw_outputs_preserved": true,
+  "v1_model_forwards_responses_and_edits": 0,
+  "versioned_auditor_changes": "Only execution-version paths for plan/freeze/build/input folder and identical union helper import. Every logical check and grading call must reconstruct original under inverse substitutions.",
+  "transport": "A new private versioned payload and attachment plus notebook source; same scientific slug after actual version1terminal status. No duplicate active job.",
+  "optimizer_steps": 0
+}

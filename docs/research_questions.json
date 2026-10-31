@@ -864,7 +864,7 @@
     {
       "id": "Q54",
       "experiment": "N40: conditional complete-function utility",
-      "status": "running_private_source_verified",
+      "status": "version_2_active_private_after_preserved_startup_failure",
       "question": "Can a fixed native group reduce unnecessary output while preserving complete-program correctness, and how does it compare with a simple instruction?",
       "question_provenance": "Direct human coding and practical surgery goals. Separate program utility from the current lexical role assay; fixed before any N39 output access.",
       "parents": [
@@ -872,13 +872,13 @@
         "Q51"
       ],
       "method": "Keep exactly the audited N39 selected32 and both random32 groups under prescribed outgoing-column factor zero. All 32 coding and 16 retention cases remain, with exact native carries and one fixed simple instruction. Require exact physical versus all-position activation-zero agreement before any new reply.",
-      "result": "N40 source, data and prospective auditor are frozen. Host preparation used zero pretrained forwards; the active GPU counters and outputs have not been accessed. Actual random Gemma checks pass in FP32 and BF16: 18 group paths across input lengths 1, 6 and 20, exact physical/activation logits and cache, restored matrices and declared versions. Ten malformed coordinate/storage cases are refused. The compact BF16 original and signed-zero bundle checks pass. Ten synthetic text-accounting checks pass; the earlier 21 exact paired-metrics checks remain closed. All 96 tokenizations, isolated runner/auditor imports and Ruff checks pass. One bounded private job is now running with exact server source and private dataset metadata. Fresh prelaunch quota was 26.80 free GPU hours; the conservative two-device cap reservation is four hours plus a two-hour reserve. This is not current balance. No N40 outcome has been accessed.",
+      "result": "Version 1 stops before any model forward, edit or reply when a whole-parameter finiteness check exceeds available GPU memory. Its original source and failure remain preserved. Recorded worker time is 75.694 seconds and notebook time 125.693 seconds; neither is charged quota. Version 2 changes only the runner import to the existing chunked validator. Every finite, dtype and source check and every scientific condition remains. Inverse substitutions reconstruct the original runner and auditor logic exactly. The existing 26-case validator fixture is reused without rerunning it. Current isolated imports, source/data hashes and Ruff checks pass. One private version 2 job is now active with exact server notebook and private dataset. All 101 current source/data/parent hashes are frozen, preserving all 69 originals. Fresh prelaunch quota is 26.76 free GPU hours, with an unchanged four-hour conservative cap reservation plus a two-hour reserve. No utility output or active GPU counter has been accessed.",
       "interpretation": "Metadata shows possible output headroom, not the outcome of removing comments or neurons. Utility must preserve every originally-correct coding and retention case, reduce output on all 32 cases and separately on already-correct programs, and report both random controls plus the simple prompt. Token counts do not prove wall-clock speedup or better coding accuracy. A failed N39 role primary stays failed.",
-      "next_question": "At actual terminal status, verify all 69 source/data/parent hashes and final private metadata, retrieve compact outputs once, then run the frozen auditor once. Keep every case and both random controls plus the instruction control.",
+      "next_question": "At terminal verify all original and versioned source hashes, retrieve compact outputs once with collect_n40_outputs_v2 and invoke the frozen versioned auditor once. Keep all cases, original carries, both randoms and instruction control; no winning dose or grade change.",
       "direction_decision": "Test practical alternatives and avoid credit for shortening already-wrong programs. No transplant or failed-prerequisite bypass."
     }
   ],
   "active_question_id": "Q54",
   "next_question_id": "Q54",
-  "utc": "2026-10-31T18:45:24.311569+00:00"
+  "utc": "2026-10-31T19:06:07.749796+00:00"
 }

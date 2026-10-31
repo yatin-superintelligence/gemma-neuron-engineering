@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-31T18:58:42.294047+00:00",
+  "status": "startup_memory_validation_failure_preserved_closed",
+  "question_id": "Q54",
+  "source_protocol_sha256": "5e43bebb85a10a73a7d1817e32e8639866b11394a38057d688fc10a99f42be9a",
+  "model_forwards": 0,
+  "generated_responses": 0,
+  "generated_tokens": 0,
+  "intervention_parameter_assignments": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "counter_registration_reached": false,
+  "zero_forward_evidence": "Exception source order: load_n02_base performs source weight/hash checks only; validate_text fails before Counter registration, physical edit, teacher or generation. Current counter is null, not a measured zero.",
+  "worker_seconds": 75.69447812700002,
+  "notebook_seconds": 125.69257726400002,
+  "scientific_outcome_assessable": false,
+  "failure": "Whole-parameter torch.isfinite temporary allocation exhausted GPU memory. Existing chunked validator should have been reused.",
+  "all69frozen_sources_exact_before_collection": true,
+  "final_source_and_private_metadata_verified": true,
+  "auditor_invoked": false,
+  "collection_runs": 1
+}

@@ -448,12 +448,19 @@
       "outcome": "42contexts/1302current interventions/48new retention responses;full late donor control passes,sparse primary fails;all guards pass under versioned tie-metadata auditor repair. No model rerun.",
       "duration_scope": "Worker wall duration,not charged GPU quota. Notebook672.83875714seconds.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N40_v1_startup_memory_validation_failure",
+      "recorded_script_seconds": 75.69447812700002,
+      "outcome": "Whole-parameter finite validation OOM before Counter registration. Zero forwards, edits and predictions by source-order proof. Existing chunked validator reused in a versioned repair; conditions unchanged.",
+      "duration_scope": "Worker elapsed time before any forward; not charged GPU quota.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N40_v1_global_column_utility",
-      "launched_utc": "2026-10-31T18:43:43.153395+00:00",
+      "run": "N40_v2_global_column_utility",
+      "launched_utc": "2026-10-31T19:04:29.160232+00:00",
       "status": "active_private"
     }
   ]

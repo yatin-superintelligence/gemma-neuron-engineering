@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-31T18:59:29.909715+00:00",
+  "status": "passed",
+  "actual_versioned_runner_resolves_existing_chunked_validator": true,
+  "runner_only_import_change_inverse_exact": true,
+  "auditor_only_versioned_paths_inverse_exact": true,
+  "isolated_current_runner_and_auditor_imports": true,
+  "existing_26case_memory_fixture_closed_not_rerun": true,
+  "new_pretrained_forwards": 0,
+  "new_random_model_forwards": 0,
+  "optimizer_steps": 0,
+  "sources": {
+    "research/experiments/n40/runner_v2.py": "e0d2feb6ca829b5c8d30d35006e7f5a7d13394678a47700544d74082bed55fef",
+    "research/experiments/n40/audit_v2.py": "dcc7ee5c9318d59efd2c6b86b2dc50aa35095e1089c42d78310daa5d6baaad69",
+    "research/experiments/n35/loader_v2.py": "bbdfc73180817f95ad0d87e0728b82831a594201c9d8eab30373f7cfaa7bce64"
+  }
+}

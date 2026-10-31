@@ -3957,6 +3957,34 @@
       "event": "public_reporting_missing_actual_launch_time_preserved_and_repaired_no_scientific_change",
       "experiment": "N40",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 541,
+      "utc": "2026-10-31T19:02:48.554397+00:00",
+      "event": "startup_full_tensor_finite_validation_OOM_before_any_forward_preserved",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 542,
+      "utc": "2026-10-31T19:02:48.554397+00:00",
+      "event": "minimal_existing_chunked_validator_repair_and_versioned_auditor_source_frozen",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 543,
+      "utc": "2026-10-31T19:02:48.554397+00:00",
+      "event": "human_requires_prompt_removal_of_viewed_QA_screenshots",
+      "experiment": "Digital Surgery",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 544,
+      "utc": "2026-10-31T19:06:07.749796+00:00",
+      "event": "one_private_version2_launch_existing_chunked_validator_only_science_unchanged",
+      "experiment": "N40",
+      "optimizer_steps": 0
     }
   ]
 }
