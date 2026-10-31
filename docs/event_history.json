@@ -3172,6 +3172,13 @@
       "event": "all_phase_algorithms_data_and_auditor_frozen_before_originals",
       "experiment": "N32",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 430,
+      "utc": "2026-10-31T08:05:41.465306+00:00",
+      "event": "single_private_original_only_phase_launched_exact_server_source_and_privacy_verified",
+      "experiment": "N32_A",
+      "optimizer_steps": 0
     }
   ]
 }

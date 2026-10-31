@@ -1,5 +1,5 @@
 {
-  "status": "host_validated_all_phase_algorithms_frozen_no_pretrained_run",
+  "status": "phase_A_active_private_no_outputs_read",
   "prospective_protocol_sha256": "760b7db01753c7430f398c406762325170c3876793a6f53e20badfe45cc842bf",
   "original_host_failure_preserved": true,
   "failure_scope": "All125planned oracle/source/execution outcomes complete,then a default tokenizer-cache lookup fails. A tokenizer-only continuation uses the established pinned local cache,without repeating the completed panel.",
@@ -43,5 +43,6 @@
   "source_data_parent_hashes": 109,
   "pretrained_model_forwards": 0,
   "optimizer_steps": 0,
-  "pending": "Actual job and fresh quota checks,source checkpoint and phase A original-only launch. No pretrained model result exists. Later phase payloads derive from exact audited predecessors under already frozen code."
+  "pending": "At terminal status retrieve compact phase A outputs once and invoke the frozen auditor once. All forty originals and every source/position/cap gate must pass before B. No new job while A is active.",
+  "host_measurement_scope": "All zero pretrained-forward counts in this preparation record refer to host fixtures, not a running private phase. No pretrained outcome is reported here."
 }

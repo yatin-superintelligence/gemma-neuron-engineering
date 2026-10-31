@@ -392,5 +392,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "n32_A_v1",
+      "launched_utc": "2026-10-31T08:04:51.623781+00:00",
+      "status": "private_running_no_outputs_read"
+    }
+  ]
 }
