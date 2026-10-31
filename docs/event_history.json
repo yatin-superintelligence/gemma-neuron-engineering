@@ -3375,6 +3375,90 @@
       "event": "scientific_anatomical_copying_protocol_frozen_before_intervention_implementation",
       "experiment": "N34",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 459,
+      "utc": "2026-10-31T10:43:55.225444+00:00",
+      "event": "direct_human_U15_neuron_and_layer_transplant_intent_recorded",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 460,
+      "utc": "2026-10-31T10:43:55.225444+00:00",
+      "event": "public_donor_metadata_review_three_candidates_preserves_access_failures",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 461,
+      "utc": "2026-10-31T10:43:55.225444+00:00",
+      "event": "header_helper_syntax_guard_repaired_before_execution",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 462,
+      "utc": "2026-10-31T10:43:55.225444+00:00",
+      "event": "pinned105dense_BF16_shapes_and_exact_tokenizer_identity_verified",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 463,
+      "utc": "2026-10-31T11:08:23.772299+00:00",
+      "event": "scientific_quality_protocol_frozen_before_task_implementation",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 464,
+      "utc": "2026-10-31T11:08:23.772299+00:00",
+      "event": "task_oracle_encoder_host_268_outcomes_passed",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 465,
+      "utc": "2026-10-31T11:08:23.772299+00:00",
+      "event": "conditional_transplant_intent_frozen_before_N35_outputs",
+      "experiment": "N36",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 466,
+      "utc": "2026-10-31T11:16:18.418992+00:00",
+      "event": "actual_random_Gemma_trace_and_refusal_gates_pass",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 467,
+      "utc": "2026-10-31T11:16:18.418992+00:00",
+      "event": "isolated_imports_private_transport_and_lint_pass",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 468,
+      "utc": "2026-10-31T11:16:18.418992+00:00",
+      "event": "all62execution_data_source_hashes_frozen_before_outputs",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 469,
+      "utc": "2026-10-31T11:17:57.375544+00:00",
+      "event": "one_private_paired_quality_job_launched_source_exact_outputs_unseen",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 470,
+      "utc": "2026-10-31T11:18:40.293154+00:00",
+      "event": "public_export_active_reservation_schema_stop",
+      "experiment": "N35",
+      "optimizer_steps": 0
     }
   ]
 }

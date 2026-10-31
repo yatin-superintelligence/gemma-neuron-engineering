@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-31T11:09:38.052935+00:00",
+  "checkpoint": "ArnavKewalram/gemma-4-E2B-coder-v1",
+  "revision": "4631872892d56dab6c079b2c57a54ca633297819",
+  "shards": {
+    "model-00001-of-00003.safetensors": {
+      "bytes": 4697620648,
+      "sha256": "2ea02bad44856b48a53786446e9d32217ea9c377b26d16032919b8785c2b87be"
+    },
+    "model-00002-of-00003.safetensors": {
+      "bytes": 3976943350,
+      "sha256": "436ddfe2c10f13dc70e36ee5d8f43413a71f381821bc7d200ac91c2c20015204"
+    },
+    "model-00003-of-00003.safetensors": {
+      "bytes": 1534287984,
+      "sha256": "ba1a41ac5004b7678aa4a49814142bd7402ba7448638748e5875fc32b7be09d8"
+    }
+  },
+  "config_sha256": "687203b00cb97806b350f2357ba9e41a1f325a430d1c0cb5513869c07be6c18d",
+  "index_sha256": "6e0035ee30ee45f1c9caabbc557ca0d48d973779d7e7db938d6c5facb20408c2",
+  "parameter_count": 4628569344,
+  "optimizer_steps": 0,
+  "complete_weights_downloaded": false,
+  "source": "Official public pinned Hub model_info(files_metadata=True), no credentials"
+}

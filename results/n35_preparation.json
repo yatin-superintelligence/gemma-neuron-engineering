@@ -1,0 +1,63 @@
+{
+  "task_oracle_encoder": {
+    "utc": "2026-10-31T11:01:34.803693+00:00",
+    "status": "passed",
+    "fixture_outcomes": 268,
+    "correct_fixtures": 96,
+    "refusals": 172,
+    "independent_reference_comparisons": 15392,
+    "actual_encoder_input_tensors_all48_exact": true,
+    "all_correct_fixture_token_lengths_below_caps": true,
+    "maximum_correct_fixture_tokens": 99,
+    "data_sha256": "bdce827bad8b579e460a64c13b15f56bf7ead32aedd9c6f013f61897fc0732ff",
+    "model_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 13.161220875001163
+  },
+  "random_Gemma_trace_guards": {
+    "utc": "2026-10-31T11:12:51.101749+00:00",
+    "status": "passed",
+    "trace_cases": 6,
+    "malformed_or_state_refusals": 14,
+    "refusals": [
+      "torch.float32:token",
+      "torch.float32:logit_hash",
+      "torch.float32:cache",
+      "torch.float32:counter",
+      "torch.float32:termination",
+      "torch.float32:input_identity",
+      "torch.float32:config_mutation",
+      "torch.bfloat16:token",
+      "torch.bfloat16:logit_hash",
+      "torch.bfloat16:cache",
+      "torch.bfloat16:counter",
+      "torch.bfloat16:termination",
+      "torch.bfloat16:input_identity",
+      "torch.bfloat16:config_mutation"
+    ],
+    "actual_random_model_forwards": 14,
+    "actual_input_token_exposures": 26,
+    "random_generated_tokens": 14,
+    "pretrained_model_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 0.40861704100097995
+  },
+  "isolated_transport": {
+    "utc": "2026-10-31T11:15:03.111045+00:00",
+    "status": "passed",
+    "isolated_GPU_import": true,
+    "isolated_BOTH_runner_auditor_import": true,
+    "all_cells_compile": true,
+    "exact_package_and_inputs": true,
+    "hidden_answers_or_grader_in_GPU_package": false,
+    "source_count": 16,
+    "input_count": 8,
+    "ruff_F821_F823": "passed",
+    "model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "pretrained_quality_outcomes_exist": false,
+  "interpretation": "Host software and structural compatibility only. The private paired unmodified-model comparison is separate from any recipient improvement or neuron transplant."
+}

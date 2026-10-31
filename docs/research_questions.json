@@ -761,7 +761,7 @@
     {
       "id": "Q48",
       "experiment": "N34: anatomical localization of donor comparator copying",
-      "status": "scientific_protocol_frozen_before_intervention_implementation",
+      "status": "scientific_protocol_frozen_queued_after_latest_human_transplant_steering",
       "question": "Which native MLP blocks control the observed donor comparator-token copying, and does zeroing those sites disrupt original correct conditional programs?",
       "question_provenance": "N28 has a usable closed conditional panel and an observed full-site copying failure. Its semantic criterion remains failed. N32 and N33 stop before edits on separate baseline gates. This proposal studies where the copying occurs, using the complete older panel rather than selecting passing new cases.",
       "parents": [
@@ -772,11 +772,46 @@
       "method": "Seven fixed contiguous five-layer MLP blocks cover all 35 native layers. Each receives all four original donor relation/order policies, native zeroing and ordered recipient rescue. All 24 N28 cases remain. The 49-condition grid contains 1176 records: 168 exact parent carries, 840 actual edited tails and 168 guarded rescues. The original 32-token, newline and EOS contract stays fixed. Native token-only teacher lineage is measurement, never an edited prompt or continuation cache. All parent logits, 840 native h hashes, self/rescue and restoration paths must pass. No new task wording, score rank, fitted strength, gradient or weight update.",
       "result": "A read-only review confirms that the N28 parent patched all 35 MLP layers at a predefined last input position. Each of its four foreign policies matches all 16 donor first tokens and all 16 complete donor suffixes. The two token-changing policies change all 16 first choices; the other two preserve them. Invalid cross-order assembled programs remain failures. This reads saved outputs without any new forward, generation, grading or optimizer update. The scientific protocol is now frozen before any intervention implementation. It requires both token-changing donor policies to copy at least 12/16 donor first tokens each, both token-preserving policies to retain at least 14/16 native first tokens each, same-order program preservation, clean-zero losses with changed first choices in at least four cases spanning both families, and all retention cases correct. Every clause is required. The earliest qualifying fixed block is only a development choice. Runner, auditor, host gates and execution freeze remain pending. No N34 model run exists.",
       "interpretation": "Literal comparator copying is a narrower endpoint than semantic transfer. Localizing that failure could identify a conditional native site, but cannot establish individual meanings, semantic invariance, a complete circuit, formal synergy, novelty or coding improvement. Whole blocks are anatomical coverage probes, not activity-matched controls. All cases remain reused dependent development.",
-      "next_question": "Implement and validate the frozen block, stop-string, teacher-lineage separation, scope, state and counter paths. Import both runner and auditor, freeze every source and parent hash, and check fresh free resources before one private bounded job. No new model run is authorized by the scientific protocol alone.",
+      "next_question": "Protocol remains unchanged and unlaunched. The latest direct human transplant proposal takes priority for metadata feasibility and quality-design work. Return here if that proposal fails its gates and time permits.",
       "direction_decision": "Broaden from another baseline redesign to the mechanism of an already observed copying failure. Do not revive a failed semantic or utility prerequisite."
+    },
+    {
+      "id": "Q49",
+      "experiment": "N35: donor neuron transplantation feasibility",
+      "status": "private_version1_active_outputs_unseen",
+      "question": "Does the structurally compatible full donor show a coding advantage under the recipient interface before a separately gated neuron transplant?",
+      "question_provenance": "The human asks whether a constructed neuron group or layers borrowed from another model could improve coding. Earlier silent additions and physical edits establish limited engineering gates, while no useful coding gain exists. This new proposal tests pre-existing donor knowledge through direct copying, with zero training.",
+      "parents": [
+        "Q09",
+        "Q10",
+        "Q13",
+        "Q48"
+      ],
+      "method": "A protocol frozen before task implementation fixes 32 complete Python functions across eight algorithm families and 16 arithmetic/JSON retention questions. Both unmodified text-only BF16 models receive identical recipient-tokenizer inputs and manual full-vocabulary greedy decoding. Independent host-only executable oracles, all outputs and gains/losses remain fixed. No parameter assignment, backward or optimizer update.",
+      "result": "All 268 host fixture outcomes pass: 96 correct fixtures and 172 refusals, with 15392 independent-reference comparisons. All 48 actual input tensors and fixture cap checks pass. The fixed donor has matching dense shapes and tokenizer bytes, with no pretrained quality output generated during these host checks. The card architecture inconsistency and unknown ancestral revision remain explicit. Actual random Gemma FP32/BF16 trace tests pass six cap/identity/EOS paths and fourteen malformed/state refusals: 14 forwards, 26 exposures, zero pretrained forwards or updates. Both isolated runner/auditor imports and all private cells pass. All 62 execution/source/data hashes are frozen before launch. One bounded private job is launched from checkpoint f7e45e3. Server source JSON is exact and private; fresh official free quota is 28.45 hours at launch, with a 1.5-hour conservative reservation and two-hour reserve. No outputs have been accessed.",
+      "interpretation": "Structural compatibility does not establish shared feature meanings or useful coding transfer. Copying an already-trained donor is a permitted direct-edit hypothesis, not training performed here. Whole transformer insertion remains unvalidated and is more involved than adding an MLP branch.",
+      "next_question": "At terminal status, retrieve compact outputs once, verify exact server source, input manifest and privacy, then run the frozen auditor once on all 96 records. N36 remains conditional on every adequacy and donor-quality clause. Do not change the donor, tasks, thresholds, doses or grades after outcomes.",
+      "direction_decision": "Follow the latest direct human construction proposal. Keep the earlier N34 scientific protocol unchanged and queued. Preserve every earlier null and failed utility prerequisite."
+    },
+    {
+      "id": "Q50",
+      "experiment": "N36: conditional connected-neuron transplant",
+      "status": "conditional_intent_not_implemented",
+      "question": "Can a fixed already-trained donor group improve recipient coding through direct copying without fitting?",
+      "question_provenance": "Latest human neuron-transplant proposal U15. N35 must first establish a usable original and stronger donor under the same interface.",
+      "parents": [
+        "Q49",
+        "Q10",
+        "Q13"
+      ],
+      "method": "A pre-output intent fixes final native MLP34, 128 connected neurons and branch strength 1. Twelve arms retain original/donor parents, silent branch, native addition/amplification, two random donor groups, incoming/outgoing hybrids, group replacement and whole-final-MLP replacement. Source-only selection and strict matching must freeze before execution. No learned bridge or training.",
+      "result": "Intent only. No group selection, added parameters, pretrained forward or model outcome exists.",
+      "interpretation": "A compatible branch does not establish useful knowledge transfer. Coarse final-MLP replacement is a secondary control and not full transformer insertion. Reused development results would still require fresh confirmation.",
+      "next_question": "Only after N35 passes every fixed adequacy and donor-quality clause, freeze exact source selection, controls, implementation, auditor and resources. Otherwise leave N36 unexecuted.",
+      "direction_decision": "Test useful donor quality before adding donor weights. Keep N34 unchanged and queued."
     }
   ],
-  "active_question_id": "Q48",
-  "next_question_id": "Q48",
-  "utc": "2026-10-31T10:08:15.587278+00:00"
+  "active_question_id": "Q49",
+  "next_question_id": "Q49",
+  "utc": "2026-10-31T11:17:57.375544+00:00"
 }

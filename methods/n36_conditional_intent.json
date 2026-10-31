@@ -1,0 +1,57 @@
+{
+  "utc": "2026-10-31T10:55:24.564719+00:00",
+  "question_id": "Q50",
+  "experiment": "N36",
+  "status": "conditional_intent_frozen_before_N35_outputs_not_implemented",
+  "prerequisite": "N35 original adequacy and donor-quality gates must pass with all guards. If not, this remains unexecuted.",
+  "question": "Can direct copying of a fixed already-trained donor group add useful coding behavior to the recipient without fitting any parameter?",
+  "recipient": {
+    "id": "recipient",
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "loader": "Validated original N02 text-only BF16 loader, including exact payload and original projection hashes."
+  },
+  "donor": {
+    "id": "donor",
+    "checkpoint": "ArnavKewalram/gemma-4-E2B-coder-v1",
+    "revision": "4631872892d56dab6c079b2c57a54ca633297819",
+    "loader": "Independent text-only BF16 loader, no remote code or adapters. Pin config/index/all three source shard hashes, check loading keys, tied embeddings, all dense MLP shapes, finite native parameters and text parameter count."
+  },
+  "fixed_site": 34,
+  "fixed_group_size": 128,
+  "fixed_branch_strength": 1,
+  "branch": "Copy gate/up rows and corresponding down columns into a frozen parallel MLP branch before the existing recipient post-FFN norm. No learned bridge, norm fitting, optimizer, adapter or new-neuron training.",
+  "conditions": [
+    "recipient_parent",
+    "donor_parent",
+    "silent_donor_branch",
+    "native_group_addition",
+    "native_group_gain2",
+    "selected_donor_group_addition",
+    "random_A_donor_group_addition",
+    "random_B_donor_group_addition",
+    "selected_donor_incoming_native_outgoing_hybrid",
+    "selected_native_incoming_donor_outgoing_hybrid",
+    "selected_donor_group_replacement",
+    "whole_donor_final_MLP_replacement"
+  ],
+  "source_only_selection": "Fix a source-only ranking by normalized combined gate/up/down weight difference at final MLP34. Keep the first128strictlymatchable channels, with two fixed random control draws4951/4952,pool>=16, no selected overlap. Matching uses four separately frozen neutral calibration prompts, native and donor-on-host activation RMS, incoming/outgoing weight norms and donor-change magnitude. No coding grade or output chooses coordinates, dose, layer, scale or matching tolerance. Full bands, code and source hashes must freeze before N36 output access. No rematching after failure.",
+  "utility_primary": "Selected donor addition must gain at least4net correct coding cases over the original across at least2families, beat EACH random donor group and native-addition/amplification controls by at least2correct cases, and preserve every originally correct retention case. Keep all32coding and16retention in denominators. All conditions and failures reported. Same suite is reused development, not confirmation.",
+  "joint_connection_secondary": "Report complete incoming/outgoing hybrid contrasts separately. A readout-only effect is not evidence that a self-contained coding feature was transferred.",
+  "whole_MLP_secondary": "Whole final-MLP replacement is a predeclared coarse transfer control, not a complete transformer-layer insertion and not a substitute for a failed small-group primary. Any positive secondary signal requires its own prospective fresh confirmation.",
+  "expected_grid_if_launched": {
+    "conditions": 12,
+    "records": 576,
+    "exact_N35_parent_carries": 96,
+    "guarded_silent_references": 48,
+    "new_edited_generations": 432
+  },
+  "baseline_lineage": "No original completion regeneration or closed scorer rerun. Exact native-token teacher measurements and cache/logit hashes guard inherited references. Teacher caches/tokens must be isolated from free edited generation.",
+  "restoration": "Record exact native weights, declared assignment/version increments only, unchanged other parameters/gradflags, no gradients, actual branch count and exact source BF16 tensors. Restore and verify every arm; validate compact recipes and bounded reload witnesses inside the same job.",
+  "fresh_confirmation": "Required before established useful-improvement claims. No winner dose, donor, task wording, alternate layer or new group selected from N35/N36 outcomes.",
+  "priority": "N34 remains queued and frozen under the latest direct human transplant steering.",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "model_forwards": 0,
+  "GPU_launch_ready": false
+}

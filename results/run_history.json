@@ -410,5 +410,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N35_v1_paired_donor_quality",
+      "launched_utc": "2026-10-31T11:16:56.564451+00:00",
+      "status": "private_active_outputs_unseen"
+    }
+  ]
 }

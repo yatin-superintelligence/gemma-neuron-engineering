@@ -1,0 +1,119 @@
+{
+  "utc": "2026-10-31T10:55:24.564719+00:00",
+  "experiment": "N35",
+  "question_id": "Q49",
+  "version": 1,
+  "status_at_freeze": "before_quality_task_oracle_runner_auditor_implementation",
+  "question": "Does the single structurally compatible donor show a useful coding advantage under the recipient interface, sufficient to justify a separately frozen neuron-transplant experiment?",
+  "human_idea": "U15",
+  "intent_sha256": "f690da919984edd67b9211da042e26472d0c88536200346778f06da03cf881a9",
+  "parents_sha256": {
+    "runs/n35/donor_metadata/version1/result.json": "6ed89898d8f0ebecd3361705c680335ece17680aeb6fce6dbc0932436cf36192",
+    "runs/n35/header_review/version1/result.json": "8dace9ae1e8d0376d67800d4d8b721be37aa537188dd28e94a756dafaec4d991",
+    "research/experiments/n35/literature_context.json": "157412ce2e1e8f378145169103302387317f0385e8ce45b8ac06626f6c91e7a1",
+    "runs/n33/phase_A/version1/result_receipt.json": "eae737e90e8f303e784d17dd1e44c69a6e9ca1898ed80850ce8ef660f3fcfc3a"
+  },
+  "models": [
+    {
+      "id": "recipient",
+      "checkpoint": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "loader": "Validated original N02 text-only BF16 loader, including exact payload and original projection hashes."
+    },
+    {
+      "id": "donor",
+      "checkpoint": "ArnavKewalram/gemma-4-E2B-coder-v1",
+      "revision": "4631872892d56dab6c079b2c57a54ca633297819",
+      "loader": "Independent text-only BF16 loader, no remote code or adapters. Pin config/index/all three source shard hashes, check loading keys, tied embeddings, all dense MLP shapes, finite native parameters and text parameter count."
+    }
+  ],
+  "representation": "Unquantized text-only BF16, each with 4628569344 unique parameters. Preserve decoder, token/per-layer embeddings and tied head; exclude media modules. BF16 is not FP32 or a T4 acceleration claim.",
+  "provenance": "Donor is an already-trained full checkpoint, not an adapter loaded in this study. Its card architecture narrative is inconsistent and its ancestral Google revision unverified. No claimed quality is accepted before this assay. No optimization or fitting is performed here.",
+  "model_seed": 4901,
+  "host_seed": 4902,
+  "data_seed": 4903,
+  "stress_seed": 4904,
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "new_parameter_assignments": 0,
+  "data": {
+    "coding": 32,
+    "retention": 16,
+    "total_inputs": 48,
+    "coding_design": "Eight fixed pure-Python algorithm families, each with two fixed wordings and two nuisance function/parameter-name variants. All32 cases remain in every denominator. These are eight algorithms with dependent variants, not32 independent algorithms.",
+    "families": [
+      "exact signed ceiling division for nonzero divisor",
+      "stable integer-list deduplication with a fresh returned list",
+      "run-length encoding into a list of two-item lists",
+      "length of the union of integer half-open intervals",
+      "maximum parenthesis depth ignoring other characters, or -1 if unbalanced",
+      "rotate integer list right by any signed integer amount, returning a fresh list even when empty",
+      "first index whose inclusive prefix sum reaches a threshold, including negative elements",
+      "filter whitespace-split tokens whose Python length exceeds a given nonnegative threshold"
+    ],
+    "retention_design": "Eight exact signed arithmetic questions requiring a bare integer, and eight JSON extraction questions requiring a bare JSON value. Fixed new inputs, not old C01/final data. All16 remain in retention denominators.",
+    "source_format": "Complete function from an empty assistant answer, requested in the user prompt with exact function and parameter names. No supplied assistant source, solved examples or answer token. Pure Python built-ins only, no imports or external dependencies. Allow bare source or one complete Python code fence, with no surrounding prose or best-block extraction.",
+    "scoring": "Strict declared signature, syntax and safe-source gate; independent executable oracles with exact types, input preservation and fresh root-list identity where requested. Exhaustive small domains plus256 independently seeded stress inputs per coding case. A cap is always incorrect. Retention uses exact typed parsing, no best reading or fenced-content fallback.",
+    "freshness": "All new custom inputs and hidden oracles are frozen before model outputs. This is a development donor-quality assay, not fresh confirmation of a transplant. Selection remains selection."
+  },
+  "inputs": "Use the pinned recipient tokenizer and exact same input IDs/chat template for both checkpoints, thinking disabled. Donor tokenizer bytes already match. Full input/template hashes and all48tokenizations must pass before launch. Only IDs, prompts and role labels enter the GPU; no grader, correct output or executable reference program.",
+  "decoding": {
+    "coding_cap": 256,
+    "retention_cap": 128,
+    "EOS_ids": [
+      1,
+      106,
+      50
+    ],
+    "policy": "Manual full-vocabulary greedy argmax, native cache, no sampling, forced answers, repetition/logit processors, newline stopping or rerolls. Same policy for both models regardless of unverified advertised donor settings. Save every decision argmax, full-logit hash and compact full-cache root hash; save detailed first-cache witness.",
+    "scope": "These are complete small function outputs, not an agent benchmark or unrestricted long-program claim."
+  },
+  "records": {
+    "conditions": [
+      "recipient",
+      "donor"
+    ],
+    "records": 96,
+    "new_generations": 96,
+    "parent_carries": 0
+  },
+  "execution_order": "Recipient then donor, each on all48inputs in a fixed data-seed shuffle. Save incremental compact predictions. Unload each model and clear only its task-owned /tmp weight cache before loading the next to avoid two full base copies on disk. Retain tokenizer in memory. Never delete user or unrelated caches.",
+  "adequacy_gate": {
+    "recipient_coding_correct_minimum": 16,
+    "recipient_coding_errors_minimum": 4,
+    "recipient_retention_correct_minimum": 12,
+    "rule": "Require at least16correct and at least4incorrect original coding cases and at least12/16original retention. Count all source, execution and cap failures. If the baseline is unusable or too close to ceiling for the fixed gain criterion, close this assay without prompt, data, cap, grader or cohort repair."
+  },
+  "donor_quality_gate": {
+    "net_coding_gain_minimum": 4,
+    "gain_family_coverage_minimum": 2,
+    "retention_new_losses_maximum": 1,
+    "retention_score_rule": "Donor retention must be at least original retention minus1.",
+    "rule": "All clauses plus baseline adequacy and every mandatory engineering/source guard must pass. Report all gains/losses, families, caps and error classes. Do not headline only originally wrong cases. No p-value from treating nuisance variants as independent algorithms.",
+    "next": "If failed, preserve all outcomes and leave the conditional transplant unexecuted. Do not choose another donor, threshold or task wording from these results. If passed, exact outputs/grades may seed the separately predeclared N36 development transplant, whose own code/auditor/resources must freeze before launch."
+  },
+  "guards": [
+    "Verify all pinned source configs, exact shards and text-only tensor scope; no missing required text keys, unverified weight conversion, packed-NF4 slicing or adapter load.",
+    "Every output token equals the actual unprocessed vocabulary argmax and has a full-logit/cache hash. EOS/cap termination exact.",
+    "All native parameter versions/gradflags, empty gradients, buffers, model/generation config and hooks unchanged during each model panel. Explicit deterministic algorithms, workspace, TF32-off and CPU threads1. No unsupported-operation fallback.",
+    "Both models see identical frozen input IDs. Correct fixtures and hidden oracles never enter the model package.",
+    "Import BOTHrunner/auditor, RuffF821/F823, actual tiny-Gemma EOS/cap/trace/counter/source-state fixtures and isolated package/cell gates before GPU.",
+    "Freeze data, source, model/shard metadata, every criterion and auditor before launch or outputs. Pull compact terminal outputs once and audit once; preserve failures rather than weakening checks."
+  ],
+  "counters": "Every new output of T tokens requires T forwards and n+T-1 input-token exposures. Derive all96paths from explicit manifests and reconcile to actual root counters per model and combined. Count 0 backwards, optimizer steps and direct parameter assignments. Record exact source/data hashes, seeds, time, failures and all outcomes.",
+  "resources": {
+    "platform_seconds": 2700,
+    "notebook_seconds": 2600,
+    "worker_seconds": 2300,
+    "minimum_free_reserve_hours": 2,
+    "conservative_two_device_reservation_hours": 1.5,
+    "fresh_official_quota_and_actual_jobs_required": true,
+    "one_private_free_job": true,
+    "deadline_UTC": "2026-10-31T18:22:58+00:00"
+  },
+  "storage": "Task-owned caches under/tmp on Kaggle. Compact predictions, scalar traces/cache hashes, source receipts and aggregates only. No full weight/model or activation dumps in outputs, no paid resources, no external inference APIs.",
+  "publication": "Reviewed complete aggregates, methods, generic source and source hashes only. Raw tasks, answers, outputs, notebooks, credentials, paths and paper private. No submission. No neuron-transplant or coding-improvement claim about the recipient from donor metadata or this unmodified-donor comparison.",
+  "new_model_outputs_accessed": false,
+  "GPU_launch_authorized_by_protocol_alone": false
+}

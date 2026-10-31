@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-31T10:43:55.225444+00:00",
+  "scope": "Primary source abstracts and selected official documentation, not full-paper replications.",
+  "sources": [
+    {
+      "url": "https://github.com/arcee-ai/mergekit/blob/main/docs/merge_methods.md#passthrough-passthrough",
+      "reviewed": "Passthrough section and official repository description.",
+      "claim": "Direct tensor copying and layer stacking are established model-merging operations; the operation itself is not a novelty claim."
+    },
+    {
+      "url": "https://arxiv.org/abs/2312.15166",
+      "reviewed": "Primary abstract and official model-card summary.",
+      "claim": "SOLAR depth up-scaling includes continued pretraining. Its performance is not evidence that layer stacking alone works under our no-training rule."
+    },
+    {
+      "url": "https://arxiv.org/abs/2209.04836",
+      "reviewed": "Primary abstract.",
+      "claim": "Unit permutation and alignment matter in model merging. Do not infer compatible functions from matching indices or shapes. Its optimization/alignment algorithms are not imported into this project."
+    },
+    {
+      "url": "https://huggingface.co/google/codegemma-2b",
+      "reviewed": "Official model-card description and access terms.",
+      "claim": "Code-specialized pretrained models exist, but that older family is not a verified drop-in donor for our Gemma4 recipient."
+    }
+  ],
+  "prohibited": "No fitted permutation,least-squares bridge,optimizer or new training, irrespective of a method being called training-free.",
+  "optimizer_steps": 0
+}

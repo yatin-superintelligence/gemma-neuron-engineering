@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-31T10:29:39.774061+00:00",
+  "status": "actual_pinned_header_review_complete",
+  "repo": "ArnavKewalram/gemma-4-E2B-coder-v1",
+  "revision": "4631872892d56dab6c079b2c57a54ca633297819",
+  "file_count": 3,
+  "all105declared_MLP_shapes_and_dense_dtypes_match": true,
+  "quantization_config": null,
+  "checkpoint_tensor_dtype_counts": {
+    "BF16": 1951
+  },
+  "tokenizer_bytes_exact_to_pinned_recipient": true,
+  "tokenizer_bytes": 32169626,
+  "card_has_26_layer_or_Griffin_claim": true,
+  "actual_text_layers": 35,
+  "ancestral_parent_revision_independently_verified": false,
+  "coding_quality_independently_measured": false,
+  "interpretation": "Dense shape and tokenizer compatibility are engineering evidence only. The card contains an architecture inconsistency; do not trust its training narrative or infer a coding gain. Exact tensor values and quality need a prospective test.",
+  "complete_weights_downloaded": false,
+  "model_forwards": 0,
+  "optimizer_steps": 0,
+  "seconds": 5.908852542001114
+}
