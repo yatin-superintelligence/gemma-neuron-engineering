@@ -2843,6 +2843,48 @@
       "event": "protocol_frozen_before_host_runner_auditor_implementation",
       "experiment": "N29",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 383,
+      "utc": "2026-10-31T04:23:08.274693+00:00",
+      "event": "all24actual_random_Gemma_before_code_paths_and24token_positions_pass",
+      "experiment": "N29 host paths",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 384,
+      "utc": "2026-10-31T04:44:09.691442+00:00",
+      "event": "actual16runner_mapping_scope_and_retention_donor_cases_pass",
+      "experiment": "N29",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 385,
+      "utc": "2026-10-31T04:44:09.691442+00:00",
+      "event": "prospective_schema_endpoint_counter_and_seed2943stress_fixtures_pass",
+      "experiment": "N29",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 386,
+      "utc": "2026-10-31T04:44:09.691442+00:00",
+      "event": "isolated_payload_imports_cells_Ruff_and_all_hashes_pass",
+      "experiment": "N29",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 387,
+      "utc": "2026-10-31T04:44:09.691442+00:00",
+      "event": "all70source_parent_hashes_auditor_notebook_and_exact_lineage_frozen_before_outputs",
+      "experiment": "N29",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 388,
+      "utc": "2026-10-31T04:49:49.202579+00:00",
+      "event": "private_launch_source_and_metadata_verified_after_fresh_quota_and51terminal_jobs",
+      "experiment": "N29",
+      "optimizer_steps": 0
     }
   ]
 }

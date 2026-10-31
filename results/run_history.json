@@ -380,5 +380,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "n29_v1",
+      "launched_utc": "2026-10-31T04:46:57.413859+00:00",
+      "status": "One private N29 instruction-state job running. All120records/fiveconditions fixed;24exact original carries and96new responses."
+    }
+  ]
 }

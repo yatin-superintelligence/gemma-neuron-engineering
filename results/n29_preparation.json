@@ -1,0 +1,62 @@
+{
+  "host": {
+    "utc": "2026-10-31T04:21:26.334392+00:00",
+    "status": "passed",
+    "cases": 24,
+    "malformed_cache_or_position_refusals": 14,
+    "token_positions_validated": 24,
+    "common_token_prefix_pairs": 8,
+    "calls": 66,
+    "input_token_exposures": 258,
+    "random_model_tokens": 20,
+    "pretrained_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 2.4844835000039893
+  },
+  "actual_runner_mapping_scope": {
+    "utc": "2026-10-31T04:31:40.865241+00:00",
+    "status": "passed",
+    "cases": 16,
+    "calls": 22,
+    "input_token_exposures": 136,
+    "pretrained_forwards": 0,
+    "new_generated_tokens": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 0.5209717920006369
+  },
+  "synthetic_audit_and_fresh_stress": {
+    "utc": "2026-10-31T04:34:35.769821+00:00",
+    "status": "passed",
+    "cache_schema_refusals": 18,
+    "scope_or_donor_refusals": 8,
+    "forbidden_path_refusals": 2,
+    "endpoint_failure_fixtures": 4,
+    "six_pair_fourteen_preservation_boundary_passes": true,
+    "independent_manifest_counter_formulas_match": true,
+    "fresh_stress_seed": 2943,
+    "correct_fixture_stress_probes": 9220,
+    "whole_GPU_auditor_golden_replay_claimed": false,
+    "new_model_forwards": 0,
+    "optimizer_steps": 0,
+    "seconds": 0.09424462499737274
+  },
+  "preflight": {
+    "utc": "2026-10-31T04:41:41.263526+00:00",
+    "status": "passed",
+    "all_cells_compile": true,
+    "all_package_hashes_exact": true,
+    "isolated_GPU_runner_import": true,
+    "isolated_BOTH_runner_auditor_import": true,
+    "ruff_F821_F823": "pass",
+    "no_hidden_grader_or_oracle_on_GPU": true,
+    "canonical_donor_mapping_matches_protocol": true,
+    "metadata_id_matches_fixed_title": true,
+    "packaged_sources": 30,
+    "packaged_inputs": 9,
+    "new_model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "new_pretrained_outcomes_reported": false
+}
