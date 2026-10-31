@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T08:10:58.686399+00:00",
+  "status": "private_pre_inference_engineering_failure_closed",
+  "phase": "A",
+  "version": 1,
+  "result": "Frozen expected tokenization records contain input_tokens only. The unchanged runner encoder returns id,input_tokens,template_text_sha256,input_ids_sha256. Full-dictionary equality therefore stops before any forward.",
+  "actual_model_forward_calls": 0,
+  "actual_input_token_exposures": 0,
+  "records": 0,
+  "new_generated_tokens": 0,
+  "worker_seconds": 87.33032311400007,
+  "notebook_seconds": 141.03469788899997,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "auditor_invoked": false,
+  "no_behavioral_outputs_exist": true,
+  "no_completed_panel_rerun": true,
+  "preserved_notebook_sha256": "f362465c13387d321e7feabb23a47d6688e6f333dc999838aec533c12b4fdab5"
+}

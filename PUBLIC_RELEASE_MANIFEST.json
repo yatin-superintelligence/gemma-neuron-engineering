@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-31T08:08:06.769528+00:00",
+  "generated_utc": "2026-10-31T08:19:06.818030+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "07974baf7f5f4fc3fa9226ffd70c52d856b0ab364d6580bbd552e1d999eadf19",
-      "bytes": 18444
+      "sha256": "8f9a7189452a9811ff7332e28b2aab479d1da18cbd4ff142cd39240f8dae14da",
+      "bytes": 18820
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "bb4991269593170a7bc447da4898b56769f987cbe3772f91a719107942289a9b",
-      "bytes": 265564
+      "sha256": "4379a60c96695a9a44b06f62734276ff90485b13f223fd14faa98c577ee837d0",
+      "bytes": 267167
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "ab77355029c1ba8bed9c782d0fed8a36c5411ee228837f18e8d1de99dbc75901",
-      "bytes": 196880
+      "sha256": "cd9e539a491f27d3ad43c8df7214e9437b8f3069b8f3221a156e8afe8403acf9",
+      "bytes": 199335
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "cdcfb68577c962547e4f09e54920ecd42678c431540a6d13f69f86eeefbb98f3",
-      "bytes": 98580
+      "sha256": "76a8e21c388660c397164bfe55820770100383a095780ee62db0337ae2a89e8c",
+      "bytes": 100160
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -216,8 +216,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "729d02cb6ce7ea225409b037a07e53b651583fc8c134d296a034bd6576cdf086",
-      "bytes": 100190
+      "sha256": "b9a5aedd07b745b42bdd60d2ba6d86b7a302f24ea5a29f4866f6e2a86c5434d5",
+      "bytes": 101297
     },
     {
       "path": "evaluation/__init__.py",
@@ -848,6 +848,11 @@
       "path": "methods/n32_prospective_protocol.json",
       "sha256": "760b7db01753c7430f398c406762325170c3876793a6f53e20badfe45cc842bf",
       "bytes": 10653
+    },
+    {
+      "path": "methods/n32_startup_metadata_repair_v2.json",
+      "sha256": "f8c48a27dda15db62b707fa635a7d554f8ea7f92730d1d81c8c8b072edd2f065",
+      "bytes": 881
     },
     {
       "path": "methods/strict_profile_matching.py",
@@ -1486,12 +1491,17 @@
     },
     {
       "path": "results/n32_preparation.json",
-      "sha256": "a21688131957bbda14f8fc98ac4360a2907a6f4cf674b1c39b08b94d38561526",
-      "bytes": 2990
+      "sha256": "d532a142cf51f99f9f0f34973b6ea62e01a4f1f63943d7e6427a60d0a8e2e702",
+      "bytes": 3328
+    },
+    {
+      "path": "results/n32_startup_v1.json",
+      "sha256": "36f2a79f2645031a3e302e0be942507d33fa2d33de881fc488d616859409d5b9",
+      "bytes": 823
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "c3edd630aa50b1c80000adb839232b6b468da0ffcc7c59140f2b96b7dc668f36",
+      "sha256": "d9d4dd45f0acb1a369fd5fcc3a8dbe3edd5e700a20d55ee64bd0677b794e7fba",
       "bytes": 749
     },
     {
@@ -1506,8 +1516,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "6ca2352da8130018903f281a985b55b3ea19a4da0280f80b2b6f8d06ff4daa58",
-      "bytes": 21966
+      "sha256": "60b57f07e4e32b847e5c09c2a77f90a59f8cf181a0a495cb27991d6c24c4d44d",
+      "bytes": 22320
     },
     {
       "path": "scripts/plot_n04_summary.py",

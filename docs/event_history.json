@@ -3179,6 +3179,55 @@
       "event": "single_private_original_only_phase_launched_exact_server_source_and_privacy_verified",
       "experiment": "N32_A",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 431,
+      "utc": "2026-10-31T08:10:58.686399+00:00",
+      "event": "zero_forward_tokenization_metadata_schema_failure_preserved_original_source_unchanged",
+      "experiment": "N32_A_v1",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 432,
+      "utc": "2026-10-31T08:16:02.123541+00:00",
+      "event": "same40token_tensors_and_lengths_verified_full_metadata_added",
+      "experiment": "N32_v2",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 433,
+      "utc": "2026-10-31T08:16:02.123541+00:00",
+      "event": "actual_unchanged_runner_encoder_accepts_full_metadata",
+      "experiment": "N32_v2",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 434,
+      "utc": "2026-10-31T08:16:02.123541+00:00",
+      "event": "versioned_auditor_is_byte_exact_under_only_path_substitutions",
+      "experiment": "N32_v2",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 435,
+      "utc": "2026-10-31T08:16:02.123541+00:00",
+      "event": "all_versioned_synthetic_transport_paths_pass",
+      "experiment": "N32_v2",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 436,
+      "utc": "2026-10-31T08:16:02.123541+00:00",
+      "event": "all143versioned_source_data_parent_hashes_frozen_before_model_outputs",
+      "experiment": "N32_v2",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 437,
+      "utc": "2026-10-31T08:17:29.268432+00:00",
+      "event": "unchanged_inference_relaunched_with_verified_full_metadata_single_private_job",
+      "experiment": "N32_A_v2",
+      "optimizer_steps": 0
     }
   ]
 }

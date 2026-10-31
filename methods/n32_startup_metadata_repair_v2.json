@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-31T08:10:58.689323+00:00",
+  "status": "before_metadata_supplement_or_versioned_transport_implementation",
+  "failure_receipt_sha256": "36f2a79f2645031a3e302e0be942507d33fa2d33de881fc488d616859409d5b9",
+  "repair": "Supply the full existing encoder metadata schema from the same frozen prompts and pinned tokenizer. Do not change the inference sources, scientific criteria, grader or original data. Compare input-token IDs/template bytes between direct and shared encoders, require all original lengths exact. Version every changed payload/path/auditor and preserve original109hashes. Auditor changes limited to versioned transport paths, proven by inverse substitution.",
+  "forbidden": "No weaker equality check, new wording, changed cap/grade, silent source overwrite, or completed-program regeneration.",
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}
