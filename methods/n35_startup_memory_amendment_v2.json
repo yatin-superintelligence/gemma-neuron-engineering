@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-31T11:23:49.063077+00:00",
+  "experiment": "N35",
+  "version": 2,
+  "reason": "Preserve v1 CUDA OOM before inference; replace only full-parameter finite mask with an exhaustive bounded-chunk predicate.",
+  "original_source": "research/experiments/n35/loader.py",
+  "original_sha256": "761b81463db442124736e5f27a544348a3f03a3e71beb175c04be90c37f74936",
+  "unchanged": "All model revisions, tensor bytes/dtypes, finite predicate, configuration, tasks, oracles, seeds, decoding, caps, metrics, denominators, thresholds and primary clauses. No outputs exist for selection. No gradients/updates.",
+  "chunk_elements": 1048576,
+  "memory_bound": "Each isfinite input slice contains at most1048576elements; no full embedding mask or cast is allocated. Every element is still checked.",
+  "new_sources": "Versioned loader/runner/auditor and execution package. Original source/freeze/failure/server proof retained.",
+  "pretrained_outputs_before_repair": 0,
+  "optimizer_steps": 0
+}

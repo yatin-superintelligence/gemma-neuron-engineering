@@ -1,0 +1,9 @@
+{
+  "experiment": "N35H_memory_v2",
+  "question_id": "Q49",
+  "status_at_freeze": "before_fixture_implementation_and_outputs",
+  "question": "Does bounded finite validation exhaustively accept finite tensors and reject NaN/infinities while touching at most1048576elements per predicate call?",
+  "design": "CPU FP32/BF16 tensors of sizes0,1,1048575,1048583. Compare all positive cases with an independent NumPy finite predicate. Place NaN,+inf,-inf at first,middle,last of the cross-boundary size. Instrument finite-call slice sizes and complete positive coverage. Hash all inputs before/after. No pretrained/model forwards or parameter edits. Check inverse-substitution byte identity of runner and auditor scientific code.",
+  "optimizer_steps": 0,
+  "model_forwards": 0
+}

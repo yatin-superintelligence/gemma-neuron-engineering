@@ -1,0 +1,184 @@
+{
+  "utc": "2026-10-31T11:24:41.451618+00:00",
+  "status": "passed",
+  "outcomes": [
+    {
+      "dtype": "torch.float32",
+      "size": 0,
+      "kind": "finite_accept",
+      "slice_lengths": []
+    },
+    {
+      "dtype": "torch.float32",
+      "size": 1,
+      "kind": "finite_accept",
+      "slice_lengths": [
+        1
+      ]
+    },
+    {
+      "dtype": "torch.float32",
+      "size": 1048575,
+      "kind": "finite_accept",
+      "slice_lengths": [
+        1048575
+      ]
+    },
+    {
+      "dtype": "torch.float32",
+      "size": 1048583,
+      "kind": "finite_accept",
+      "slice_lengths": [
+        1048576,
+        7
+      ]
+    },
+    {
+      "dtype": "torch.float32",
+      "position": 0,
+      "kind": "nonfinite_refusal",
+      "value": "nan"
+    },
+    {
+      "dtype": "torch.float32",
+      "position": 524291,
+      "kind": "nonfinite_refusal",
+      "value": "nan"
+    },
+    {
+      "dtype": "torch.float32",
+      "position": 1048582,
+      "kind": "nonfinite_refusal",
+      "value": "nan"
+    },
+    {
+      "dtype": "torch.float32",
+      "position": 0,
+      "kind": "nonfinite_refusal",
+      "value": "inf"
+    },
+    {
+      "dtype": "torch.float32",
+      "position": 524291,
+      "kind": "nonfinite_refusal",
+      "value": "inf"
+    },
+    {
+      "dtype": "torch.float32",
+      "position": 1048582,
+      "kind": "nonfinite_refusal",
+      "value": "inf"
+    },
+    {
+      "dtype": "torch.float32",
+      "position": 0,
+      "kind": "nonfinite_refusal",
+      "value": "-inf"
+    },
+    {
+      "dtype": "torch.float32",
+      "position": 524291,
+      "kind": "nonfinite_refusal",
+      "value": "-inf"
+    },
+    {
+      "dtype": "torch.float32",
+      "position": 1048582,
+      "kind": "nonfinite_refusal",
+      "value": "-inf"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "size": 0,
+      "kind": "finite_accept",
+      "slice_lengths": []
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "size": 1,
+      "kind": "finite_accept",
+      "slice_lengths": [
+        1
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "size": 1048575,
+      "kind": "finite_accept",
+      "slice_lengths": [
+        1048575
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "size": 1048583,
+      "kind": "finite_accept",
+      "slice_lengths": [
+        1048576,
+        7
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "position": 0,
+      "kind": "nonfinite_refusal",
+      "value": "nan"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "position": 524291,
+      "kind": "nonfinite_refusal",
+      "value": "nan"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "position": 1048582,
+      "kind": "nonfinite_refusal",
+      "value": "nan"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "position": 0,
+      "kind": "nonfinite_refusal",
+      "value": "inf"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "position": 524291,
+      "kind": "nonfinite_refusal",
+      "value": "inf"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "position": 1048582,
+      "kind": "nonfinite_refusal",
+      "value": "inf"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "position": 0,
+      "kind": "nonfinite_refusal",
+      "value": "-inf"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "position": 524291,
+      "kind": "nonfinite_refusal",
+      "value": "-inf"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "position": 1048582,
+      "kind": "nonfinite_refusal",
+      "value": "-inf"
+    }
+  ],
+  "positive_cases": 8,
+  "nonfinite_refusals": 18,
+  "slice_elements_maximum": 1048576,
+  "scientific_runner_and_auditor_byte_identical_under_inverse_path_substitution": true,
+  "model_forwards": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "seconds": 0.11747429100068985
+}

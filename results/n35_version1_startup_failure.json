@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-31T11:23:49.063077+00:00",
+  "status": "closed_pre_inference_memory_validation_failure",
+  "model_forwards": 0,
+  "records": 0,
+  "generated_tokens": 0,
+  "parameter_assignments": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "worker_seconds": 81.43286318100002,
+  "notebook_seconds": 127.70517030099998,
+  "cause": "An unchunked finite-value mask for the largest BF16 embedding exhausted device memory before the root counter, any inference or any edit.",
+  "no_completed_panel_regenerated": true
+}

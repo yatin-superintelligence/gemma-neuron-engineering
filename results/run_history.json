@@ -408,12 +408,17 @@
       "recorded_script_seconds": 128.4106988110001,
       "outcome": "All40audited. Planned baseline stop: role28/32,predicate12/16,filter16/16,retention3/8,one cap,required first operators28/32. No edits or later phases.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N35_v1_memory_validation_failure",
+      "recorded_script_seconds": 81.43286318100002,
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N35_v1_paired_donor_quality",
-      "launched_utc": "2026-10-31T11:16:56.564451+00:00",
+      "run": "N35_v2_paired_donor_quality",
+      "launched_utc": "2026-10-31T11:27:07.463548+00:00",
       "status": "private_active_outputs_unseen"
     }
   ]

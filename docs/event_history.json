@@ -3459,6 +3459,55 @@
       "event": "public_export_active_reservation_schema_stop",
       "experiment": "N35",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 471,
+      "utc": "2026-10-31T11:25:34.881948+00:00",
+      "event": "version1_pre_inference_memory_failure_preserved",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 472,
+      "utc": "2026-10-31T11:25:34.881948+00:00",
+      "event": "version2_bounded_memory_validation_repair_frozen_without_scientific_change",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 473,
+      "utc": "2026-10-31T11:25:34.881948+00:00",
+      "event": "version2_exhaustive_chunk_host_checks_pass",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 474,
+      "utc": "2026-10-31T11:25:34.881948+00:00",
+      "event": "version2_sources_auditor_and_transport_frozen_before_any_quality_output",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 475,
+      "utc": "2026-10-31T11:27:49.661132+00:00",
+      "event": "version2_one_private_quality_job_launched_exact_server_source",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 476,
+      "utc": "2026-10-31T11:27:49.661132+00:00",
+      "event": "connected_donor_branch_architecture_and_parameter_budget_source_review",
+      "experiment": "N36",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 477,
+      "utc": "2026-10-31T11:28:29.643879+00:00",
+      "event": "source_hash_label_corrected_no_new_forward",
+      "experiment": "N36",
+      "optimizer_steps": 0
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T11:27:19.160300+00:00",
+  "status": "source_review_only_no_experiment",
+  "installed_transformers": "5.8.0",
+  "decoder_forward_source_sha256": "d861b3d79f0d2a2fefefb86f7711658f7d3d62408e0b76df3039981ab6eae903",
+  "input_group": "A complete gated neuron consists of gate/up incoming rows and its matching down column.",
+  "insertion": "The prescribed parallel branch must add its raw projection output to native MLP output before existing post-feedforward RMSNorm and residual addition. The subsequent per-layer-input branch and layer scalar stay native.",
+  "fixed_site": 34,
+  "branch_width": 128,
+  "parameter_count": 589824,
+  "BF16_payload_bytes": 1179648,
+  "full_transformer_insertion_validated": false,
+  "new_models_or_weights_built": false,
+  "model_forwards": 0,
+  "optimizer_steps": 0,
+  "known_math_not_novelty": true,
+  "administrative_lookup_failure": "Initial read-only import used Gemma4MLP instead of actual Gemma4TextMLP. Correct class inspected; no model forward or scientific output.",
+  "MLP_class_source_sha256": "0f49f020324cda81ba94fe0fcae0f86a719150fec879358c4883a0c21764be17",
+  "hash_label_correction": "The original field said AST; this hashes exact class source bytes. No new forward or source change."
+}
