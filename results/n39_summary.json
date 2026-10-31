@@ -1,0 +1,1445 @@
+{
+  "experiment": "N39",
+  "question_id": "Q53",
+  "receipt": {
+    "utc": "2026-10-31T18:06:01.158413+00:00",
+    "status": "complete_private_host_audited_closed",
+    "planned_phase": "complete_sparse_panel",
+    "all_mandatory_guards_pass": true,
+    "contexts": 42,
+    "intervention_records": 1302,
+    "new_retention_responses": 48,
+    "actual_counter": {
+      "calls": 3446,
+      "input_token_exposures": 7295
+    },
+    "new_generated_tokens": 207,
+    "worker_seconds": 623.919648493,
+    "backward_calls": 0,
+    "parameter_assignments": 0,
+    "optimizer_steps": 0,
+    "host_recomputed_checkpoint_weights_or_full_activations": false,
+    "auditor_version": 2,
+    "original_frozen_auditor_failure_preserved": true,
+    "auditor_sha256": "de2dbae9c4c14c4da01b920aaf3766130b838c04103a2a37fbc5624e0f15131b",
+    "metadata_amendment": "research/experiments/n39/audit_metadata_amendment_v2.json",
+    "notebook_seconds": 672.83875714,
+    "new_GPU_run_for_repair": false,
+    "original_collector_invocations": 1,
+    "original_auditor_invocations": 1,
+    "versioned_auditor_invocations": 1
+  },
+  "full_site_counts": [
+    {
+      "operation": "full_self",
+      "native_class": "entry",
+      "cases": 20,
+      "comment_top1": 20,
+      "native_category_preserved": 20
+    },
+    {
+      "operation": "full_opposite",
+      "native_class": "entry",
+      "cases": 20,
+      "comment_top1": 1,
+      "native_category_preserved": 1
+    },
+    {
+      "operation": "full_same",
+      "native_class": "entry",
+      "cases": 20,
+      "comment_top1": 19,
+      "native_category_preserved": 19
+    },
+    {
+      "operation": "restore",
+      "native_class": "entry",
+      "cases": 20,
+      "comment_top1": 20,
+      "native_category_preserved": 20
+    },
+    {
+      "operation": "full_self",
+      "native_class": "code",
+      "cases": 22,
+      "comment_top1": 0,
+      "native_category_preserved": 22
+    },
+    {
+      "operation": "full_opposite",
+      "native_class": "code",
+      "cases": 22,
+      "comment_top1": 21,
+      "native_category_preserved": 1
+    },
+    {
+      "operation": "full_same",
+      "native_class": "code",
+      "cases": 22,
+      "comment_top1": 0,
+      "native_category_preserved": 22
+    },
+    {
+      "operation": "restore",
+      "native_class": "code",
+      "cases": 22,
+      "comment_top1": 0,
+      "native_category_preserved": 22
+    }
+  ],
+  "complete_condition_summary": {
+    "full_site": {
+      "clauses": {
+        "entry_opposite_half": true,
+        "entry_same_90percent": true,
+        "entry_ceil_ratio_opposite": true,
+        "entry_rotate_right_opposite": true,
+        "entry_union_length_opposite": true,
+        "code_opposite_half": true,
+        "code_same_90percent": true,
+        "code_ceil_ratio_opposite": true,
+        "code_rotate_right_opposite": true,
+        "code_union_length_opposite": true
+      },
+      "passed": true
+    },
+    "all_original_grades_unchanged": true,
+    "new_coding_programs": 0,
+    "scope": "Matched current-context native control on reused development; no useful coding improvement or individual role.",
+    "all_groups": {
+      "selected32": {
+        "opposite": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "same": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "zero": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "gain2": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "conditional_cut": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 1
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 21
+          }
+        }
+      },
+      "randomA32": {
+        "opposite": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "same": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "zero": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "gain2": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "conditional_cut": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 1
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 21
+          }
+        }
+      },
+      "randomB32": {
+        "opposite": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "same": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "zero": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "gain2": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 20
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 0
+          }
+        },
+        "conditional_cut": {
+          "entry": {
+            "cases": 20,
+            "comment_top1": 1
+          },
+          "code": {
+            "cases": 22,
+            "comment_top1": 21
+          }
+        }
+      }
+    },
+    "effects": {
+      "selected32": {
+        "opposite": {
+          "count": 0,
+          "families": []
+        },
+        "clean_entry_loss": {
+          "count": 0,
+          "families": []
+        },
+        "conditional_transfer_loss": {
+          "count": 0,
+          "families": []
+        },
+        "same_preserved": {
+          "entry": 20,
+          "code": 22
+        }
+      },
+      "randomA32": {
+        "opposite": {
+          "count": 0,
+          "families": []
+        },
+        "clean_entry_loss": {
+          "count": 0,
+          "families": []
+        },
+        "conditional_transfer_loss": {
+          "count": 0,
+          "families": []
+        },
+        "same_preserved": {
+          "entry": 20,
+          "code": 22
+        }
+      },
+      "randomB32": {
+        "opposite": {
+          "count": 0,
+          "families": []
+        },
+        "clean_entry_loss": {
+          "count": 0,
+          "families": []
+        },
+        "conditional_transfer_loss": {
+          "count": 0,
+          "families": []
+        },
+        "same_preserved": {
+          "entry": 20,
+          "code": 22
+        }
+      }
+    },
+    "primary_clauses": {
+      "opposite_beats_randomA32": false,
+      "opposite_beats_randomB32": false,
+      "opposite_all_families": false,
+      "clean_entry_loss_beats_randomA32": false,
+      "clean_entry_loss_beats_randomB32": false,
+      "clean_entry_loss_all_families": false,
+      "conditional_transfer_loss_beats_randomA32": false,
+      "conditional_transfer_loss_beats_randomB32": false,
+      "conditional_transfer_loss_all_families": false,
+      "same_entry_90percent": true,
+      "same_code_90percent": true
+    },
+    "role_primary_before_retention": false,
+    "retention": {
+      "selected32": {
+        "cases": 16,
+        "correct": 7,
+        "baseline_correct": 7,
+        "gains": 0,
+        "losses": 0,
+        "all_original_correct_preserved": true,
+        "caps": 0
+      },
+      "randomA32": {
+        "cases": 16,
+        "correct": 7,
+        "baseline_correct": 7,
+        "gains": 0,
+        "losses": 0,
+        "all_original_correct_preserved": true,
+        "caps": 0
+      },
+      "randomB32": {
+        "cases": 16,
+        "correct": 7,
+        "baseline_correct": 7,
+        "gains": 0,
+        "losses": 0,
+        "all_original_correct_preserved": true,
+        "caps": 0
+      }
+    },
+    "complete_primary_passed": false
+  },
+  "posthoc_probability_effects": {
+    "utc": "2026-10-31T18:13:46.781301+00:00",
+    "posthoc": true,
+    "primary_unchanged_failed": true,
+    "scope": "Python F64 aggregation of saved F32 probability masses,not full-logit recomputation or unrounded checkpoint probabilities. Report context mean,case-balanced mean,mean absolute delta,min/max and signed counts.",
+    "dependence": "42contexts share12native programs and3families;do not treat as42independent algorithms. No inferential p-value or replacement primary.",
+    "new_model_forwards": 0,
+    "scorer_calls": 0,
+    "optimizer_steps": 0,
+    "all_context_classes": [
+      {
+        "group": "full",
+        "operation": "full_self",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "full",
+        "operation": "full_opposite",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": -0.916140510930348,
+        "case_balanced_mean_delta": -0.9081807632559902,
+        "mean_absolute_delta": 0.916140510930348,
+        "min_delta": -0.9999966592647525,
+        "max_delta": -0.4358338713645935,
+        "negative": 20,
+        "zero": 0,
+        "positive": 0
+      },
+      {
+        "group": "full",
+        "operation": "full_same",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": -0.0012064293026924134,
+        "case_balanced_mean_delta": -0.00957899292310079,
+        "mean_absolute_delta": 0.07996419817209244,
+        "min_delta": -0.5312266647815704,
+        "max_delta": 0.2771257758140564,
+        "negative": 11,
+        "zero": 0,
+        "positive": 9
+      },
+      {
+        "group": "full",
+        "operation": "restore",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "full",
+        "operation": "full_self",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "full",
+        "operation": "full_opposite",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.8735973861859988,
+        "case_balanced_mean_delta": 0.8348347786058855,
+        "mean_absolute_delta": 0.8735973861859988,
+        "min_delta": 0.2222619502986242,
+        "max_delta": 0.9999752497651766,
+        "negative": 0,
+        "zero": 0,
+        "positive": 22
+      },
+      {
+        "group": "full",
+        "operation": "full_same",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0072351715662662954,
+        "case_balanced_mean_delta": 0.008919620006688183,
+        "mean_absolute_delta": 0.06413008983573766,
+        "min_delta": -0.3486116685344314,
+        "max_delta": 0.499999733128778,
+        "negative": 7,
+        "zero": 0,
+        "positive": 15
+      },
+      {
+        "group": "full",
+        "operation": "restore",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "selected32",
+        "operation": "self",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "selected32",
+        "operation": "opposite",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": -0.0020999938249588014,
+        "case_balanced_mean_delta": -0.004139731327692668,
+        "mean_absolute_delta": 0.0032635658979415895,
+        "min_delta": -0.02585846185684204,
+        "max_delta": 0.011340677738189697,
+        "negative": 8,
+        "zero": 6,
+        "positive": 6
+      },
+      {
+        "group": "selected32",
+        "operation": "same",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0030643492937088013,
+        "case_balanced_mean_delta": 0.003437897397412194,
+        "mean_absolute_delta": 0.0030874878168106077,
+        "min_delta": -0.00012671947479248047,
+        "max_delta": 0.022386014461517334,
+        "negative": 5,
+        "zero": 6,
+        "positive": 9
+      },
+      {
+        "group": "selected32",
+        "operation": "zero",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": -0.001960313320159912,
+        "case_balanced_mean_delta": -0.004933113853136699,
+        "mean_absolute_delta": 0.005363494157791138,
+        "min_delta": -0.03543287515640259,
+        "max_delta": 0.022386014461517334,
+        "negative": 8,
+        "zero": 5,
+        "positive": 7
+      },
+      {
+        "group": "selected32",
+        "operation": "gain2",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0010321557521820069,
+        "case_balanced_mean_delta": 0.00039575083388222585,
+        "mean_absolute_delta": 0.003823256492614746,
+        "min_delta": -0.02789020538330078,
+        "max_delta": 0.022386014461517334,
+        "negative": 3,
+        "zero": 5,
+        "positive": 12
+      },
+      {
+        "group": "selected32",
+        "operation": "rescue",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "selected32",
+        "operation": "conditional_self",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "selected32",
+        "operation": "conditional_cut",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.00029363676095801595,
+        "case_balanced_mean_delta": 0.0004785090098556013,
+        "mean_absolute_delta": 0.0002936780800146366,
+        "min_delta": -2.0385789412102895e-07,
+        "max_delta": 0.0056117624044418335,
+        "negative": 5,
+        "zero": 4,
+        "positive": 11
+      },
+      {
+        "group": "selected32",
+        "operation": "restore",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "selected32",
+        "operation": "self",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "selected32",
+        "operation": "opposite",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0015203981152733979,
+        "case_balanced_mean_delta": 0.0008717496911116434,
+        "mean_absolute_delta": 0.0017835686863080797,
+        "min_delta": -0.0028946632519364357,
+        "max_delta": 0.028895705938339233,
+        "negative": 6,
+        "zero": 1,
+        "positive": 15
+      },
+      {
+        "group": "selected32",
+        "operation": "same",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0009587423628750065,
+        "case_balanced_mean_delta": 0.00044454645799806426,
+        "mean_absolute_delta": 0.0016682446650922887,
+        "min_delta": -0.00668330118060112,
+        "max_delta": 0.028895705938339233,
+        "negative": 9,
+        "zero": 0,
+        "positive": 13
+      },
+      {
+        "group": "selected32",
+        "operation": "zero",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0012776167932419596,
+        "case_balanced_mean_delta": 0.0007368415984611473,
+        "mean_absolute_delta": 0.0013495459835117885,
+        "min_delta": -0.0007911752909421921,
+        "max_delta": 0.028895705938339233,
+        "negative": 8,
+        "zero": 2,
+        "positive": 12
+      },
+      {
+        "group": "selected32",
+        "operation": "gain2",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0016525199343237255,
+        "case_balanced_mean_delta": 0.0011133846412386815,
+        "mean_absolute_delta": 0.001652749852316158,
+        "min_delta": -2.237618900835514e-06,
+        "max_delta": 0.028895705938339233,
+        "negative": 7,
+        "zero": 3,
+        "positive": 12
+      },
+      {
+        "group": "selected32",
+        "operation": "rescue",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "selected32",
+        "operation": "conditional_self",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "selected32",
+        "operation": "conditional_cut",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": -0.00335816429419951,
+        "case_balanced_mean_delta": -0.0050323278539710576,
+        "mean_absolute_delta": 0.0039026418870145626,
+        "min_delta": -0.03733474016189575,
+        "max_delta": 0.004411160945892334,
+        "negative": 6,
+        "zero": 8,
+        "positive": 8
+      },
+      {
+        "group": "selected32",
+        "operation": "restore",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "randomA32",
+        "operation": "self",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "randomA32",
+        "operation": "opposite",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0017111629247665405,
+        "case_balanced_mean_delta": 0.0008458048105239868,
+        "mean_absolute_delta": 0.0033480972051620483,
+        "min_delta": -0.01609361171722412,
+        "max_delta": 0.022386014461517334,
+        "negative": 6,
+        "zero": 5,
+        "positive": 9
+      },
+      {
+        "group": "randomA32",
+        "operation": "same",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0011378824710845947,
+        "case_balanced_mean_delta": 0.00023124615351359049,
+        "mean_absolute_delta": 0.002930384874343872,
+        "min_delta": -0.01470869779586792,
+        "max_delta": 0.022386014461517334,
+        "negative": 7,
+        "zero": 3,
+        "positive": 10
+      },
+      {
+        "group": "randomA32",
+        "operation": "zero",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0021301329135894774,
+        "case_balanced_mean_delta": 0.0010715764429834154,
+        "mean_absolute_delta": 0.004467236995697022,
+        "min_delta": -0.012513279914855957,
+        "max_delta": 0.043272554874420166,
+        "negative": 6,
+        "zero": 7,
+        "positive": 7
+      },
+      {
+        "group": "randomA32",
+        "operation": "gain2",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.001025184988975525,
+        "case_balanced_mean_delta": 0.0016808004842864142,
+        "mean_absolute_delta": 0.002135726809501648,
+        "min_delta": -0.009126842021942139,
+        "max_delta": 0.022679507732391357,
+        "negative": 5,
+        "zero": 6,
+        "positive": 9
+      },
+      {
+        "group": "randomA32",
+        "operation": "rescue",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "randomA32",
+        "operation": "conditional_self",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "randomA32",
+        "operation": "conditional_cut",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.00015568534108929556,
+        "case_balanced_mean_delta": 0.0003458992735123129,
+        "mean_absolute_delta": 0.0003639203985333239,
+        "min_delta": -0.0020797457545995712,
+        "max_delta": 0.005188338458538055,
+        "negative": 10,
+        "zero": 0,
+        "positive": 10
+      },
+      {
+        "group": "randomA32",
+        "operation": "restore",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "randomA32",
+        "operation": "self",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "randomA32",
+        "operation": "opposite",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.00027135337805551425,
+        "case_balanced_mean_delta": -0.00024586517291205696,
+        "mean_absolute_delta": 0.0023729691415174834,
+        "min_delta": -0.02087940275669098,
+        "max_delta": 0.028895705938339233,
+        "negative": 11,
+        "zero": 2,
+        "positive": 9
+      },
+      {
+        "group": "randomA32",
+        "operation": "same",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0016940959129982272,
+        "case_balanced_mean_delta": 0.0011865043134990526,
+        "mean_absolute_delta": 0.00170493843182643,
+        "min_delta": -0.00011651928070932627,
+        "max_delta": 0.028895705938339233,
+        "negative": 9,
+        "zero": 0,
+        "positive": 13
+      },
+      {
+        "group": "randomA32",
+        "operation": "zero",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0004939943462062665,
+        "case_balanced_mean_delta": 1.1293680655397849e-05,
+        "mean_absolute_delta": 0.0024801599640443396,
+        "min_delta": -0.020882874727249146,
+        "max_delta": 0.028895705938339233,
+        "negative": 8,
+        "zero": 0,
+        "positive": 14
+      },
+      {
+        "group": "randomA32",
+        "operation": "gain2",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": -0.00019985777750048785,
+        "case_balanced_mean_delta": -0.00022340541242542037,
+        "mean_absolute_delta": 0.00020006956984058603,
+        "min_delta": -0.0034342408180236816,
+        "max_delta": 1.6987323760986328e-06,
+        "negative": 12,
+        "zero": 3,
+        "positive": 7
+      },
+      {
+        "group": "randomA32",
+        "operation": "rescue",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "randomA32",
+        "operation": "conditional_self",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "randomA32",
+        "operation": "conditional_cut",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": -0.0015480945056135004,
+        "case_balanced_mean_delta": -0.0029486496415403155,
+        "mean_absolute_delta": 0.004200159826061942,
+        "min_delta": -0.02083323895931244,
+        "max_delta": 0.02215254306793213,
+        "negative": 9,
+        "zero": 4,
+        "positive": 9
+      },
+      {
+        "group": "randomA32",
+        "operation": "restore",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "randomB32",
+        "operation": "self",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "randomB32",
+        "operation": "opposite",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": -0.0009909570217132568,
+        "case_balanced_mean_delta": -0.0020818859338760376,
+        "mean_absolute_delta": 0.0020073771476745604,
+        "min_delta": -0.016677498817443848,
+        "max_delta": 0.00931084156036377,
+        "negative": 10,
+        "zero": 4,
+        "positive": 6
+      },
+      {
+        "group": "randomB32",
+        "operation": "same",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 9.126663208007813e-05,
+        "case_balanced_mean_delta": -0.0003001458115047879,
+        "mean_absolute_delta": 0.0017974376678466797,
+        "min_delta": -0.014902234077453613,
+        "max_delta": 0.00925976037979126,
+        "negative": 6,
+        "zero": 6,
+        "positive": 8
+      },
+      {
+        "group": "randomB32",
+        "operation": "zero",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": -0.0007861495018005371,
+        "case_balanced_mean_delta": -0.0013761478993627762,
+        "mean_absolute_delta": 0.0009138643741607666,
+        "min_delta": -0.015230119228363037,
+        "max_delta": 0.0010163187980651855,
+        "negative": 8,
+        "zero": 8,
+        "positive": 4
+      },
+      {
+        "group": "randomB32",
+        "operation": "gain2",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.002093690633773804,
+        "case_balanced_mean_delta": 0.0018524328867594402,
+        "mean_absolute_delta": 0.002280837297439575,
+        "min_delta": -0.0018429756164550781,
+        "max_delta": 0.022386014461517334,
+        "negative": 4,
+        "zero": 9,
+        "positive": 7
+      },
+      {
+        "group": "randomB32",
+        "operation": "rescue",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "randomB32",
+        "operation": "conditional_self",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "randomB32",
+        "operation": "conditional_cut",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": -9.156890067334445e-05,
+        "case_balanced_mean_delta": -7.628323557333043e-05,
+        "mean_absolute_delta": 0.00011693332220783504,
+        "min_delta": -0.0020797457545995712,
+        "max_delta": 0.00025349878706038,
+        "negative": 9,
+        "zero": 4,
+        "positive": 7
+      },
+      {
+        "group": "randomB32",
+        "operation": "restore",
+        "native_class": "entry",
+        "level": "all",
+        "identity": "all",
+        "contexts": 20,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 20,
+        "positive": 0
+      },
+      {
+        "group": "randomB32",
+        "operation": "self",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "randomB32",
+        "operation": "opposite",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0022817629642978027,
+        "case_balanced_mean_delta": 0.0017253095450809012,
+        "mean_absolute_delta": 0.0022817715684912716,
+        "min_delta": -4.1036003040062496e-08,
+        "max_delta": 0.028895705938339233,
+        "negative": 8,
+        "zero": 2,
+        "positive": 12
+      },
+      {
+        "group": "randomB32",
+        "operation": "same",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0014423260830274858,
+        "case_balanced_mean_delta": 0.0008877294352772408,
+        "mean_absolute_delta": 0.0015144782901783148,
+        "min_delta": -0.0007911752909421921,
+        "max_delta": 0.028895705938339233,
+        "negative": 7,
+        "zero": 2,
+        "positive": 13
+      },
+      {
+        "group": "randomB32",
+        "operation": "zero",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0017984156558740888,
+        "case_balanced_mean_delta": 0.0012070913748664282,
+        "mean_absolute_delta": 0.001885948698402101,
+        "min_delta": -0.0007911752909421921,
+        "max_delta": 0.028895705938339233,
+        "negative": 6,
+        "zero": 0,
+        "positive": 16
+      },
+      {
+        "group": "randomB32",
+        "operation": "gain2",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0008003277375388458,
+        "case_balanced_mean_delta": 0.0002682201805367465,
+        "mean_absolute_delta": 0.0018270406558777764,
+        "min_delta": -0.00975601002573967,
+        "max_delta": 0.028895705938339233,
+        "negative": 8,
+        "zero": 2,
+        "positive": 12
+      },
+      {
+        "group": "randomB32",
+        "operation": "rescue",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "randomB32",
+        "operation": "conditional_self",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      },
+      {
+        "group": "randomB32",
+        "operation": "conditional_cut",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": -0.0013495473699136214,
+        "case_balanced_mean_delta": -0.002314242637819714,
+        "mean_absolute_delta": 0.004152103581211783,
+        "min_delta": -0.021590709686279297,
+        "max_delta": 0.02215254306793213,
+        "negative": 4,
+        "zero": 7,
+        "positive": 11
+      },
+      {
+        "group": "randomB32",
+        "operation": "restore",
+        "native_class": "code",
+        "level": "all",
+        "identity": "all",
+        "contexts": 22,
+        "native_cases": 12,
+        "mean_delta": 0.0,
+        "case_balanced_mean_delta": 0.0,
+        "mean_absolute_delta": 0.0,
+        "min_delta": 0.0,
+        "max_delta": 0.0,
+        "negative": 0,
+        "zero": 22,
+        "positive": 0
+      }
+    ]
+  },
+  "matching_summary": {
+    "positive_candidates": 3345,
+    "accepted": 32,
+    "required": 32,
+    "cross_random_overlap": 1,
+    "status": "matched",
+    "excluded_candidates": 6
+  },
+  "interpretation": "Full late actual-donor states give bounded comment-choice control,not a complete circuit. The selected32and both strict random groups give zero opposite/zeroing/conditional-cut choice effects. Sparse primary fails. Probability masses move with mixed signs. No edited full coding program or useful coding gain is tested.",
+  "source_protocol_sha256": "1823ebe6d635e3a24f893e4ca94e079cfc00a1cfbc3802047c880734ad6b8131",
+  "host_audit_amendment": "metadata-only tied-maximality guard,after original frozen auditor failure;no inference/condition/criterion/grade change"
+}

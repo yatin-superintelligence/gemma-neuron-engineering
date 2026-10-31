@@ -3873,6 +3873,90 @@
       "event": "all32native_metadata_profile_closed_correct_program_utility_guard_added",
       "experiment": "N40H",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 529,
+      "utc": "2026-10-31T18:12:45.981364+00:00",
+      "event": "paired_metrics_helper21synthetic_checks_pass_exact_rational_bounds_before_N39output_access",
+      "experiment": "N40M",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 530,
+      "utc": "2026-10-31T18:12:45.981364+00:00",
+      "event": "frozen_auditor_tie_order_failure_preserved_before_retention_grading",
+      "experiment": "N39",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 531,
+      "utc": "2026-10-31T18:12:45.981364+00:00",
+      "event": "independent_tie_guard_diagnostic6valid14invalid_host_cases_pass",
+      "experiment": "N39H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 532,
+      "utc": "2026-10-31T18:12:45.981364+00:00",
+      "event": "dated_metadata_only_auditor_v2_frozen_original_source57_and_outputs_exact",
+      "experiment": "N39",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 533,
+      "utc": "2026-10-31T18:12:45.981364+00:00",
+      "event": "complete_host_audited_full_site_control_passes_sparse_primary_fails_no_choice_effects",
+      "experiment": "N39",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 534,
+      "utc": "2026-10-31T18:22:59.479673+00:00",
+      "event": "posthoc_all_fixed_probability_effects_no_forward_or_regrading_primary_unchanged",
+      "experiment": "N39",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 535,
+      "utc": "2026-10-31T18:22:59.479673+00:00",
+      "event": "complete_function_utility_protocol_frozen_before_implementation_no_new_dose",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 536,
+      "utc": "2026-10-31T18:42:06.668042+00:00",
+      "event": "actual_random_Gemma_physical_and_activation_zero_equivalence_passed",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 537,
+      "utc": "2026-10-31T18:42:06.668042+00:00",
+      "event": "conservative_new_text_accounting_examples_passed",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 538,
+      "utc": "2026-10-31T18:42:06.668042+00:00",
+      "event": "source_data_auditor_frozen_before_launch_all_groups_and_controls_fixed",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 539,
+      "utc": "2026-10-31T18:45:24.311569+00:00",
+      "event": "one_private_bounded_job_launched_actual_server_source_and_dataset_private_exact",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 540,
+      "utc": "2026-10-31T18:48:50.617207+00:00",
+      "event": "public_reporting_missing_actual_launch_time_preserved_and_repaired_no_scientific_change",
+      "experiment": "N40",
+      "optimizer_steps": 0
     }
   ]
 }

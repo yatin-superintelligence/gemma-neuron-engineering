@@ -1,0 +1,83 @@
+{
+  "experiment": "N40",
+  "question_id": "Q54",
+  "utc": "2026-10-31T18:19:28.475773+00:00",
+  "status": "frozen_before_implementation_and_utility_outputs",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "measurement_backward_calls": 0,
+  "question": "Do the prescribed native group deletions reduce unnecessary output without losing complete-program correctness,and how do they compare with a fixed simple instruction?",
+  "parent_result": "N39 full late donor transfer is40/42 with same-class preservation41/42. Selected32 and both strict matched controls have0opposite-choice transfer,0clean-entry loss and0conditional-transfer loss;all retain7/16strict retention. Its complete role primary fails. The original auditor metadata-order error is preserved and repaired in a dated host-only version,without new inference. This utility test cannot repair that failed role claim.",
+  "why_distinct": "A global outgoing-column factor0 changes every native token path;it is not the one-current-token intervention measured in N39. Strength0,groups,and the prompt comparison were fixed in N40intent before N39output access. There is no winning-dose selection or new coordinate rank. This is a bounded complete-program utility test on reused development,not fresh confirmation or a reopened N31/N36transplant.",
+  "model": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "representation": "text-only unquantized BF16",
+    "unique_parameters": 4628569344,
+    "MLP_layers": 35,
+    "KV_entries": 15,
+    "last_KV_producer": 14
+  },
+  "groups": "Exactly selected32/randomA32/randomB32 from the audited N39selection file,all native layers24..34. Keep all coordinates,matching seeds3901/3902 and cross-random overlap. No rematching,reselection,incoming changes or fitted vector/sign/strength.",
+  "edits": "Use prescribed_columns(factor=0) on native dense down-projection columns. It multiplies actual original BF16columns by integer0,including exact signed-zero representation. Gate/up rows and widths remain unchanged. Preserve original/zero small columns and full matrix/source/outside hashes. Explicit assignment and restoration are allowed manual edits,not optimizer steps.",
+  "conditions": [
+    "original_exact_N37_carry",
+    "selected_zero",
+    "randomA_zero",
+    "randomB_zero",
+    "prompt_only"
+  ],
+  "data": "All48unchanged original N37cases:32coding/eight dependent four-case families and16retention. Every already-finished baseline reply and grade carries exactly;never regenerate or regrade it. The fixed prompt-only appendix is the only new wording,applied to each original user prompt. No hidden oracle/grade/expected answer enters generation assets. No donor model or historical adapter loads.",
+  "records": {
+    "total": 240,
+    "exact_carried_originals": 48,
+    "new_responses_max": 192,
+    "new_conditions": 4
+  },
+  "inference": "Fresh native DynamicCache for every new generation,greedy argmax,shared2048-token budget,nativeEOS{1,106,50},no newline stop,sampling reroll or repetition setting adjustment. Verify actual context n+2048<=configured maximum,without claiming empirical full131072context validation. Interrupted/capped results remain failures with raw tokens preserved;no silent continuation or changed cap within this run.",
+  "source_replay": "For all48original prompts replay only first k_i=min(3,len(native_generated_ids)) decisions. Require exact native greedy IDs,full-FP32-logit hashes and whole raw-cache hashes before any edit. Native reference tokens are separate measurement inputs,never new generation prompts or cache. Do not regenerate old completions.",
+  "engineering_gate": "Before ANY new utility response,compare global activation zero and physical outgoing-column zero on every48prompt and those same first k_i teacher-forced native tokens. Both paths must produce exact full-logit/greedy/cache equality. All late fixed-input cache hashes must also equal native. Run an explicit union-of-groups physical factor1identity over the same paths first. No tolerance amendment or unchanged dense baseline replacement. At any mismatch stop before utility and preserve all measurements.",
+  "physical_context_order": [
+    "union factor1 identity measurements",
+    "selected factor0 measurements",
+    "randomA factor0 measurements",
+    "randomB factor0 measurements",
+    "selected factor0 new generations",
+    "randomA factor0 new generations",
+    "randomB factor0 new generations"
+  ],
+  "restoration": "After each of seven physical contexts,replay the first native decision on the first coding and first retention case by frozen original order. All14restoration full-logit/cache hashes exact. Original matrices restored byte-exact;all unedited parameter versions/gradflags unchanged,p.gradNone. Only declared down-projection parameters increment versions. Buffers,configuration,training mode,hooks,RNG and all original tensor bytes restored. Track counts from actual receipts,do not call manual assignments optimizer updates.",
+  "generation_order": "Generate all48cases per group in frozen original order,then all48prompt-only cases under restored original weights. No baseline generation. Do not pass reference IDs or a reused cache to free generation. Save each complete raw token/text/trace record and exact current counters incrementally.",
+  "counter_contract": "Let S=sum(k_i),P=sum(n_i+k_i-1). Eight48-case measurement panels=native+unionidentity+3activationzero+3physicalzero,so8*S calls and8*P exposures. Seven physical-context restorations add14calls and7*(n_firstCoding+n_firstRetention) exposures. Every new reply T addsTcalls and n_condition+T-1 exposures. Total=8*S+14+sum(T),exposures=8*P+7*(n_c+n_r)+sum(n_condition+T-1). Derive S,P,n and all token terms from frozen manifests,independently verify before launch. There are7physical contexts;per-layer declared increments=2*(union_membership+2*number_of_group_layer_memberships). Actual assignment count=sum of declared layer increments,all optimizer/backward counts0.",
+  "grading": "On the host only,grade all192new replies once with the unchanged N35complete-function/source/input/type and exact arithmetic/JSON oracles,including the existing256stress probes per new coding program. Original48grades carry unchanged. Keep every source failure,wrong answer,cap,gain and loss. This does not rerun C01 or any old scorer. Eight dependent families are not32independent algorithms.",
+  "comment_measurement": "Use frozen lexical helpers on NEWresponses only. Original labels carry from the archived pre-activation N38annotations. Count definite comment tokens and every ambiguous possible-comment token separately. Unaligned/mixed/boundary spans are unknown;unparsed non-whitespace spans and tokenization failures are conservative unknown. If a coding reply has no recognized Python region,all non-special nonempty tokens are unknown. Never infer that malformed text removed comments. Report conservative lower/upper reduction bounds. Keep actual generated-token denominator including EOS. No original grade or annotation changes.",
+  "metrics": "Use evaluation.paired_generation_metrics.summarize and assess_n40_intent with exact rational count arithmetic. Float values are display only. Preserve every ID and condition;means of per-case ratios,not ratios of pooled totals. Baseline24correct coding/7correct retention and zero original caps required. All32and separately original-correct24remain.",
+  "primary": {
+    "preserve_original_correct_coding": 24,
+    "preserve_original_correct_retention": 7,
+    "new_caps": 0,
+    "all32_conservative_mean_comment_fraction_reduction_min": "1/10",
+    "all32_mean_new_to_original_token_ratio_max": "9/10",
+    "correct24_conservative_mean_comment_fraction_reduction_min": "1/20",
+    "correct24_mean_new_to_original_token_ratio_max": "9/10",
+    "selected_ratio_reduction_advantage_over_each_random_on_both_subsets_min": "1/20",
+    "coding_families_with_token_and_conservative_comment_reduction_min": 2
+  },
+  "interpretation": "All primary clauses conjunctive. Report prompt-only alongside each edit;do not claim surgery necessary or superior if the simple instruction matches or improves those measures. No fresh-confirmed accuracy gain,new capability,individual neuron function or hardware acceleration claim. Original retention7/16is weak and remains explicit. Any useful development effect requires separately frozen fresh error-bearing confirmation. No winner dose/task selection from this panel.",
+  "artifacts": "One compact union-column BF16Safetensors file with exact original and factor0 tensors,external coordinate mapping and every source/edit/restore proof. At most96union columns;deduplicate cross-random overlap. No full base or activation dump. Raw replies/prompts/oracles stay private. Reviewed validated exact small tensors/recipes/source may be public even when utility fails,with the null retained.",
+  "host_prerequisites": "Actual random35-layer Gemma FP32/BF16 engineering paths for late group identity/physical0/activation0/restore and cache invariance across sliding-window boundaries. Reject malformed/packed/duplicate coordinates;validate declared parameter versions and saved signed-zero columns. Both runner/auditor import in isolated packaged environment;all original and prompt-only tokenizations exact;RuffF821/F823;notebook cells/source/data/graders/counter manifests frozen before launch. The pure metrics helper already passes21independent synthetic checks;do not rerun it unchanged.",
+  "failure_rule": "Stop on any engineering/state/source/counter guard failure,preserve partials and original hashes. No completed panel regeneration,hidden repair,tolerance change or new strength. Real source defects require an explicit dated versioned repair. Utility outputs do not rewrite original grades or old failed prerequisites.",
+  "output_budget_bytes": 67108864,
+  "resources": {
+    "platform_seconds": 7200,
+    "notebook_seconds": 7000,
+    "worker_seconds": 6700,
+    "one_private_free_job": true,
+    "fresh_official_quota_before_launch": true,
+    "minimum_free_reserve_hours": 2,
+    "deadline_utc": "2026-11-01T13:24:39Z"
+  },
+  "no_training": "Zero optimizer/backward calls. No fitted coefficient,learned bridge,DSIoptimization,SAE/IIT/SFT/LoRA/RL or training of additions. Existing no-training edit helpers only. Explicit parameter assignments/restores are fully counted.",
+  "protocol_sha256": "5e43bebb85a10a73a7d1817e32e8639866b11394a38057d688fc10a99f42be9a",
+  "edition": "Frozen prospective methods. Raw task and control wording, reference tokens and oracles remain private. No pretrained utility outcome is implied."
+}

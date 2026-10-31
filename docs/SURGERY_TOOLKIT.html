@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_cache_branch</h2><p>Clone an actual native past for one current-token causal measurement.
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option><option>Evaluate</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_cache_branch</h2><p>Clone an actual native past for one current-token causal measurement.
 
 The clone is ephemeral. It is not a reusable past for a changed conversation.
 Only the pinned DynamicCache with initialized dense KV layers is accepted.</p><p><a href="../interpretability/native_cache_branch.py">Exact source file</a></p><p class="small">APIs: tensor_hash, _value, fingerprint, _storages, native_cache_branch</p><p class="hash">SHA-256 a11a55a52e908bc2f6f19ee00f20d00e1f66c6cf673a5c7969082d581b2ee6e7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Clone an actual native past for one current-token causal measurement.
@@ -1686,4 +1686,176 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>paired_generation_metrics</h2><p>Account for every paired generation from caller-supplied labels and counts.
+
+No model, tokenizer, grader or data lookup is performed. Exact count arithmetic
+separates output reduction on all coding cases from reduction on programs that
+were already correct. Unknown comment spans remain explicit uncertainty.</p><p><a href="../evaluation/paired_generation_metrics.py">Exact source file</a></p><p class="small">APIs: _exact, _fraction, _mean, _display, _manifest, _records, _paired, summarize, assess_n40_intent</p><p class="hash">SHA-256 0f35b1c96e24b6fcb7df87f3b8b8829f0859c99accace79cc154f83aa4cc244a</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Account for every paired generation from caller-supplied labels and counts.
+
+No model, tokenizer, grader or data lookup is performed. Exact count arithmetic
+separates output reduction on all coding cases from reduction on programs that
+were already correct. Unknown comment spans remain explicit uncertainty.
+&quot;&quot;&quot;
+
+from fractions import Fraction
+import hashlib
+import json
+
+FIELDS = {&#x27;id&#x27;, &#x27;correct&#x27;, &#x27;at_cap&#x27;, &#x27;generated_tokens&#x27;, &#x27;comment_tokens&#x27;, &#x27;unknown_comment_tokens&#x27;}
+
+
+def _exact(value):
+    return None if value is None else {&#x27;numerator&#x27;: value.numerator, &#x27;denominator&#x27;: value.denominator}
+
+
+def _fraction(value):
+    return Fraction(value[&#x27;numerator&#x27;], value[&#x27;denominator&#x27;])
+
+
+def _mean(values):
+    return sum(values, Fraction()) / len(values) if values else None
+
+
+def _display(value):
+    return None if value is None else float(value)
+
+
+def _manifest(rows):
+    output = {}
+    for row in rows:
+        if not isinstance(row, dict) or set(row) != {&#x27;id&#x27;, &#x27;role&#x27;, &#x27;family&#x27;}:
+            raise ValueError(&#x27;Only explicit case identity, role and family required&#x27;)
+        if any(not isinstance(row[k], str) or not row[k].strip() for k in row):
+            raise ValueError(&#x27;Nonempty text identity, role and family required&#x27;)
+        if row[&#x27;role&#x27;] not in {&#x27;coding&#x27;, &#x27;retention&#x27;} or row[&#x27;id&#x27;] in output:
+            raise ValueError(&#x27;Unique cases with a declared coding or retention role required&#x27;)
+        output[row[&#x27;id&#x27;]] = dict(row)
+    if not output:
+        raise ValueError(&#x27;Nonempty case manifest required&#x27;)
+    return dict(sorted(output.items()))
+
+
+def _records(rows, cases):
+    output = {}
+    for row in rows:
+        if not isinstance(row, dict) or set(row) != FIELDS or not isinstance(row[&#x27;id&#x27;], str) or row[&#x27;id&#x27;] not in cases or row[&#x27;id&#x27;] in output:
+            raise ValueError(&#x27;Exactly one complete record per immutable case ID required&#x27;)
+        if type(row[&#x27;correct&#x27;]) is not bool or type(row[&#x27;at_cap&#x27;]) is not bool:
+            raise ValueError(&#x27;Actual Boolean correctness and cap labels required&#x27;)
+        count = row[&#x27;generated_tokens&#x27;]
+        if type(count) is not int or count &lt;= 0:
+            raise ValueError(&#x27;A positive generated-token count required&#x27;)
+        for key in [&#x27;comment_tokens&#x27;, &#x27;unknown_comment_tokens&#x27;]:
+            if type(row[key]) is not int or row[key] &lt; 0:
+                raise ValueError(&#x27;Nonnegative integer classified and unknown counts required&#x27;)
+        if row[&#x27;comment_tokens&#x27;] + row[&#x27;unknown_comment_tokens&#x27;] &gt; count:
+            raise ValueError(&#x27;Classified and uncertain comment counts must be disjoint and bounded&#x27;)
+        if row[&#x27;correct&#x27;] and row[&#x27;at_cap&#x27;]:
+            raise ValueError(&#x27;An unfinished capped response cannot be labelled correct&#x27;)
+        output[row[&#x27;id&#x27;]] = dict(row)
+    if set(output) != set(cases):
+        raise ValueError(&#x27;Every manifest case must remain in every condition&#x27;)
+    return dict(sorted(output.items()))
+
+
+def _paired(ids, baseline, treatment):
+    ratios, lower, upper = [], [], []
+    gains, losses = [], []
+    for identity in ids:
+        b, t = baseline[identity], treatment[identity]
+        ratios.append(Fraction(t[&#x27;generated_tokens&#x27;], b[&#x27;generated_tokens&#x27;]))
+        lower.append(Fraction(b[&#x27;comment_tokens&#x27;], b[&#x27;generated_tokens&#x27;]) - Fraction(t[&#x27;comment_tokens&#x27;] + t[&#x27;unknown_comment_tokens&#x27;], t[&#x27;generated_tokens&#x27;]))
+        upper.append(Fraction(b[&#x27;comment_tokens&#x27;] + b[&#x27;unknown_comment_tokens&#x27;], b[&#x27;generated_tokens&#x27;]) - Fraction(t[&#x27;comment_tokens&#x27;], t[&#x27;generated_tokens&#x27;]))
+        if t[&#x27;correct&#x27;] and not b[&#x27;correct&#x27;]: gains.append(identity)
+        if b[&#x27;correct&#x27;] and not t[&#x27;correct&#x27;]: losses.append(identity)
+    ratio, low, high = _mean(ratios), _mean(lower), _mean(upper)
+    return {&#x27;cases&#x27;: len(ids), &#x27;original_correct&#x27;: sum(baseline[i][&#x27;correct&#x27;] for i in ids),
+            &#x27;correct&#x27;: sum(treatment[i][&#x27;correct&#x27;] for i in ids), &#x27;gains&#x27;: gains, &#x27;losses&#x27;: losses,
+            &#x27;caps&#x27;: sum(treatment[i][&#x27;at_cap&#x27;] for i in ids),
+            &#x27;generated_tokens&#x27;: sum(treatment[i][&#x27;generated_tokens&#x27;] for i in ids),
+            &#x27;unknown_comment_tokens&#x27;: sum(treatment[i][&#x27;unknown_comment_tokens&#x27;] for i in ids),
+            &#x27;mean_token_ratio&#x27;: _display(ratio), &#x27;mean_token_ratio_exact&#x27;: _exact(ratio),
+            &#x27;mean_comment_reduction_lower&#x27;: _display(low), &#x27;mean_comment_reduction_lower_exact&#x27;: _exact(low),
+            &#x27;mean_comment_reduction_upper&#x27;: _display(high), &#x27;mean_comment_reduction_upper_exact&#x27;: _exact(high)}
+
+
+def summarize(manifest, baseline, conditions):
+    &quot;&quot;&quot;Pair by ID, preserve all conditions and report exact rational witnesses.
+
+    ``comment_tokens`` counts definite labels; ``unknown_comment_tokens`` covers
+    every ambiguous span that could contain a comment. The producer remains
+    responsible for those labels and for executing an independent program oracle.
+    &quot;&quot;&quot;
+    cases = _manifest(manifest)
+    base = _records(baseline, cases)
+    if not isinstance(conditions, dict) or not conditions or any(not isinstance(name, str) or not name.strip() for name in conditions):
+        raise ValueError(&#x27;Explicit named conditions required&#x27;)
+    treatments = {name: _records(rows, cases) for name, rows in conditions.items()}
+    coding = [i for i, c in cases.items() if c[&#x27;role&#x27;] == &#x27;coding&#x27;]
+    retention = [i for i, c in cases.items() if c[&#x27;role&#x27;] == &#x27;retention&#x27;]
+    originally_correct = [i for i in coding if base[i][&#x27;correct&#x27;]]
+    output = {}
+    for name, treatment in treatments.items():
+        families = {}
+        for role, family in sorted({(c[&#x27;role&#x27;], c[&#x27;family&#x27;]) for c in cases.values()}):
+            cohort = [i for i, c in cases.items() if c[&#x27;role&#x27;] == role and c[&#x27;family&#x27;] == family]
+            families[role + &#x27;:&#x27; + family] = _paired(cohort, base, treatment)
+        output[name] = {&#x27;coding&#x27;: _paired(coding, base, treatment),
+                        &#x27;retention&#x27;: _paired(retention, base, treatment),
+                        &#x27;original_correct_coding&#x27;: _paired(originally_correct, base, treatment),
+                        &#x27;families&#x27;: families}
+    canonical = {&#x27;manifest&#x27;: list(cases.values()), &#x27;baseline&#x27;: list(base.values()),
+                 &#x27;conditions&#x27;: {n: list(rows.values()) for n, rows in sorted(treatments.items())}}
+    digest = hashlib.sha256(json.dumps(canonical, sort_keys=True, separators=(&#x27;,&#x27;, &#x27;:&#x27;)).encode()).hexdigest()
+    return {&#x27;input_sha256&#x27;: digest, &#x27;case_counts&#x27;: {&#x27;coding&#x27;: len(coding), &#x27;retention&#x27;: len(retention)},
+            &#x27;baseline&#x27;: {&#x27;coding&#x27;: _paired(coding, base, base), &#x27;retention&#x27;: _paired(retention, base, base)},
+            &#x27;conditions&#x27;: output,
+            &#x27;scope&#x27;: &#x27;Caller-supplied measured labels and counts, not independent grading, a model run, a semantic role or fresh confirmation.&#x27;}
+
+
+def assess_n40_intent(summary):
+    &quot;&quot;&quot;Evaluate the predeclared conditional intent without choosing a winner.
+
+    This is statistical accounting only. Source, tokenization, actual edits,
+    state restoration and complete grading still require a separate frozen audit.
+    &quot;&quot;&quot;
+    expected = {&#x27;selected_zero&#x27;, &#x27;randomA_zero&#x27;, &#x27;randomB_zero&#x27;, &#x27;prompt_only&#x27;}
+    if summary[&#x27;case_counts&#x27;] != {&#x27;coding&#x27;: 32, &#x27;retention&#x27;: 16} or set(summary[&#x27;conditions&#x27;]) != expected:
+        raise ValueError(&#x27;The complete intended N40 panel must be present&#x27;)
+    if summary[&#x27;baseline&#x27;][&#x27;coding&#x27;][&#x27;correct&#x27;] != 24 or summary[&#x27;baseline&#x27;][&#x27;retention&#x27;][&#x27;correct&#x27;] != 7 or summary[&#x27;baseline&#x27;][&#x27;coding&#x27;][&#x27;caps&#x27;] or summary[&#x27;baseline&#x27;][&#x27;retention&#x27;][&#x27;caps&#x27;]:
+        raise ValueError(&#x27;Frozen adequate-output original scores must be carried&#x27;)
+    selected = summary[&#x27;conditions&#x27;][&#x27;selected_zero&#x27;]
+    coding, retention, correct = [selected[k] for k in [&#x27;coding&#x27;, &#x27;retention&#x27;, &#x27;original_correct_coding&#x27;]]
+    if correct[&#x27;cases&#x27;] != 24:
+        raise ValueError(&#x27;All originally-correct coding cases required&#x27;)
+    coding_families = [v for k, v in selected[&#x27;families&#x27;].items() if k.startswith(&#x27;coding:&#x27;)]
+    if len(coding_families) != 8 or any(v[&#x27;cases&#x27;] != 4 for v in coding_families):
+        raise ValueError(&#x27;Eight dependent four-case coding families required&#x27;)
+    beneficial_families = sum(_fraction(v[&#x27;mean_token_ratio_exact&#x27;]) &lt; 1 and _fraction(v[&#x27;mean_comment_reduction_lower_exact&#x27;]) &gt; 0 for v in coding_families)
+    clauses = {&#x27;preserve_original_correct_coding&#x27;: not coding[&#x27;losses&#x27;],
+               &#x27;preserve_original_correct_retention&#x27;: not retention[&#x27;losses&#x27;],
+               &#x27;no_new_caps&#x27;: coding[&#x27;caps&#x27;] + retention[&#x27;caps&#x27;] == 0,
+               &#x27;all32_comment_reduction_at_least_point10&#x27;: _fraction(coding[&#x27;mean_comment_reduction_lower_exact&#x27;]) &gt;= Fraction(1, 10),
+               &#x27;all32_token_ratio_at_most_point90&#x27;: _fraction(coding[&#x27;mean_token_ratio_exact&#x27;]) &lt;= Fraction(9, 10),
+               &#x27;correct24_comment_reduction_at_least_point05&#x27;: _fraction(correct[&#x27;mean_comment_reduction_lower_exact&#x27;]) &gt;= Fraction(1, 20),
+               &#x27;correct24_token_ratio_at_most_point90&#x27;: _fraction(correct[&#x27;mean_token_ratio_exact&#x27;]) &lt;= Fraction(9, 10),
+               &#x27;benefit_at_least_two_families&#x27;: beneficial_families &gt;= 2}
+    for random in [&#x27;randomA_zero&#x27;, &#x27;randomB_zero&#x27;]:
+        for key in [&#x27;coding&#x27;, &#x27;original_correct_coding&#x27;]:
+            gap = _fraction(summary[&#x27;conditions&#x27;][random][key][&#x27;mean_token_ratio_exact&#x27;]) - _fraction(selected[key][&#x27;mean_token_ratio_exact&#x27;])
+            clauses[key + &#x27;_ratio_advantage_over_&#x27; + random] = gap &gt;= Fraction(1, 20)
+    prompt = summary[&#x27;conditions&#x27;][&#x27;prompt_only&#x27;]
+    prompt_checks = {}
+    for key in [&#x27;coding&#x27;, &#x27;retention&#x27;]:
+        prompt_checks[key + &#x27;_correct_not_lower&#x27;] = prompt[key][&#x27;correct&#x27;] &gt;= selected[key][&#x27;correct&#x27;]
+        prompt_checks[key + &#x27;_baseline_losses_not_higher&#x27;] = len(prompt[key][&#x27;losses&#x27;]) &lt;= len(selected[key][&#x27;losses&#x27;])
+        prompt_checks[key + &#x27;_caps_not_higher&#x27;] = prompt[key][&#x27;caps&#x27;] &lt;= selected[key][&#x27;caps&#x27;]
+    for key in [&#x27;coding&#x27;, &#x27;original_correct_coding&#x27;]:
+        prompt_checks[key + &#x27;_token_ratio_not_higher&#x27;] = _fraction(prompt[key][&#x27;mean_token_ratio_exact&#x27;]) &lt;= _fraction(selected[key][&#x27;mean_token_ratio_exact&#x27;])
+        prompt_checks[key + &#x27;_conservative_comment_reduction_not_lower&#x27;] = _fraction(prompt[key][&#x27;mean_comment_reduction_lower_exact&#x27;]) &gt;= _fraction(selected[key][&#x27;mean_comment_reduction_lower_exact&#x27;])
+    return {&#x27;primary_clauses&#x27;: clauses, &#x27;primary_passed&#x27;: all(clauses.values()),
+            &#x27;beneficial_coding_families&#x27;: beneficial_families,
+            &#x27;prompt_comparison_clauses&#x27;: prompt_checks,
+            &#x27;simple_prompt_matches_or_improves_these_measures&#x27;: all(prompt_checks.values()),
+            &#x27;scope&#x27;: &#x27;Conditional intent criteria on supplied development labels. No automatic claim of accuracy gain, necessity, speedup or confirmed utility.&#x27;}
 </pre></details></article></div></main><footer>Offline HTML. No external scripts, uploads or inference API. <a href="../scripts/build_surgery_assets.py">Asset builder source</a> · <a href="../PUBLIC_RELEASE_MANIFEST.json">Release hashes</a></footer><script>const q=document.getElementById('query'),c=document.getElementById('category');function filter(){let n=0;for(const e of document.querySelectorAll('.tool')){e.hidden=!(e.textContent.toLowerCase().includes(q.value.toLowerCase())&&(c.value==='All'||e.dataset.category===c.value));if(!e.hidden)n++}document.getElementById('count').textContent=n+' source files shown'}q.oninput=c.onchange=filter;filter();</script></body></html>

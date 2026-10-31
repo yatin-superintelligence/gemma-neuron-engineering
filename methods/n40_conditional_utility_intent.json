@@ -1,7 +1,7 @@
 {
   "experiment": "N40",
   "question_id": "Q54",
-  "status": "conditional_intent_only_not_execution_protocol",
+  "status": "historical_intent_before_N39_outputs",
   "source_intent_sha256": "b0f490e146877a0bb81c13af6dc18d9eb78b2e8b867940cb9677b7e52aa58e21",
   "utility_supplement_sha256": "ebd074802c86a7c7940bc86bb9920400ca66c7fca285be7efd3ce1f614b79484",
   "question": "Can a fixed native group reduce unnecessary output while preserving complete-program correctness, and how does it compare with a simple instruction?",
@@ -39,7 +39,7 @@
   "control_interpretation": "Report the simple instruction alongside every edit. If it works as well or better, state that. Do not attribute token reductions on already-wrong programs to useful coding efficiency.",
   "engineering": "Require physical-column versus all-position activation-zero equivalence, exact restore and declared parameter-version changes before utility. No optimizer or gradient update.",
   "limits": "Conditional intent, not a model outcome. Existing strict retention is weak. All cases and gains/losses remain. Reused development requires fresh confirmation. Token counts do not establish hardware acceleration or wall-clock speedup. Raw task and control wording remain private.",
-  "new_model_forwards": 0,
+  "new_model_forwards_at_intent": 0,
   "optimizer_steps": 0,
-  "GPU_launched": false
+  "GPU_launched_at_intent": false
 }

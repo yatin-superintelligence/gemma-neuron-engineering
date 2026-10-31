@@ -178,6 +178,22 @@
         "apply_n01_gain",
         "main"
       ]
+    },
+    {
+      "category": "Evaluate",
+      "path": "evaluation/paired_generation_metrics.py",
+      "sha256": "0f35b1c96e24b6fcb7df87f3b8b8829f0859c99accace79cc154f83aa4cc244a",
+      "symbols": [
+        "_exact",
+        "_fraction",
+        "_mean",
+        "_display",
+        "_manifest",
+        "_records",
+        "_paired",
+        "summarize",
+        "assess_n40_intent"
+      ]
     }
   ],
   "bundles": [
@@ -486,6 +502,15 @@
         "policies": 49
       },
       "sha256": "cbda2f50a19d96f14e3b9b53b9afecc92df600150af9e5cadea7a6fe6a0385a2"
+    },
+    {
+      "path": "models/n39/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "See recipe",
+      "kind": "Edit recipe",
+      "counts": {},
+      "sha256": "3289084c9b229c545e07b53593628fc58f769aea3be391b30c4c0ca1cfac00fb"
     }
   ],
   "tensor_assets": [

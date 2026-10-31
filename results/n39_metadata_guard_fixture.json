@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-31T18:03:44.564660+00:00",
+  "status": "passed_closed",
+  "torch_version": "2.11.0",
+  "cases": [
+    {
+      "dtype": "torch.float32",
+      "kind": "actual_torch_topk_two_equal_maxima",
+      "old_order_predicate": false,
+      "corrected_guard_passes": true
+    },
+    {
+      "dtype": "torch.float32",
+      "kind": "documented_equal_maximum_order_permutation",
+      "corrected_guard_passes": true
+    },
+    {
+      "dtype": "torch.float32",
+      "kind": "unique_maximum",
+      "corrected_guard_passes": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "kind": "actual_torch_topk_two_equal_maxima",
+      "old_order_predicate": false,
+      "corrected_guard_passes": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "kind": "documented_equal_maximum_order_permutation",
+      "corrected_guard_passes": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "kind": "unique_maximum",
+      "corrected_guard_passes": true
+    }
+  ],
+  "refused": [
+    "torch.float32:larger_tied_ID",
+    "torch.float32:nonmaximal_ID",
+    "torch.float32:missing_argmax",
+    "torch.float32:nonfinite",
+    "torch.float32:unsorted",
+    "torch.float32:duplicate_ID",
+    "torch.float32:probability",
+    "torch.bfloat16:larger_tied_ID",
+    "torch.bfloat16:nonmaximal_ID",
+    "torch.bfloat16:missing_argmax",
+    "torch.bfloat16:nonfinite",
+    "torch.bfloat16:unsorted",
+    "torch.bfloat16:duplicate_ID",
+    "torch.bfloat16:probability"
+  ],
+  "new_model_forwards": 0,
+  "new_generated_tokens": 0,
+  "scorer_calls": 0,
+  "optimizer_steps": 0,
+  "host_wall_seconds": 0.0022749170020688325
+}

@@ -441,12 +441,19 @@
       "recorded_script_seconds": 1883.8467989750002,
       "outcome": "All96native traces and10467exact decision/cache checks pass. Compact scientific outputs29521849bytes. Read-only observation;no role or coding-gain claim.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N39_v1_native_comment_control",
+      "recorded_script_seconds": 623.919648493,
+      "outcome": "42contexts/1302current interventions/48new retention responses;full late donor control passes,sparse primary fails;all guards pass under versioned tie-metadata auditor repair. No model rerun.",
+      "duration_scope": "Worker wall duration,not charged GPU quota. Notebook672.83875714seconds.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N39_v1_native_comment_control",
-      "launched_utc": "2026-10-31T17:10:25.269946+00:00",
+      "run": "N40_v1_global_column_utility",
+      "launched_utc": "2026-10-31T18:43:43.153395+00:00",
       "status": "active_private"
     }
   ]

@@ -19,6 +19,7 @@ SOURCES = {
     'Edit weights': ['interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
     'Edit connections': ['interpretability/memory_connection.py'],
     'Reconstruct': ['reproduce/model_edits.py'],
+    'Evaluate': ['evaluation/paired_generation_metrics.py'],
 }
 
 

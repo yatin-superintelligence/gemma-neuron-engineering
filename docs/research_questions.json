@@ -848,7 +848,7 @@
     {
       "id": "Q53",
       "experiment": "N39: native comment-entry control",
-      "status": "active_private_source_frozen",
+      "status": "complete_private_host_audited_closed",
       "question": "Can a fixed native channel group control entry into Python comments while preserving executable correctness and retention?",
       "question_provenance": "Development hypothesis from U19 native observation and the pre-activation text-context checks. It is not a reopened N36 transplant.",
       "parents": [
@@ -856,29 +856,29 @@
         "Q51"
       ],
       "method": "The frozen N39 protocol uses 42 contexts with the same task family and processed-token ID, divided into six strata. Actual native donors at layers 24 to 34 must pass a fixed bidirectional full-site gate before any 32-channel selection. Two random groups use strict magnitude matching. Native zeroing, gain 2, rescue, conditional cuts and sixteen retention cases remain separate. No trained vector or parameter update.",
-      "result": "Both actual random Gemma host panels pass in FP32 and BF16: 230 forwards and 254 input-token exposures, with zero pretrained calls or updates. Forty-two malformed cache or consumption cases are refused. All 48 input tokenizations and the fixed 54-token comment contrast pass. Source, data, auditor and notebook were frozen before launch. Two initial metadata/API preparation failures have zero model forwards and remain preserved. One private bounded job is launched with exact server source and private metadata. No N39 pretrained output has been accessed.",
-      "interpretation": "Reducing comment generation could be useful only with preserved executable correctness and retention. A rank or syntax-associated activation is not a role. Selection remains development; useful claims need a separate fresh confirmation.",
-      "next_question": "At terminal collect compact outputs once, verify private source/input lineage, and invoke the frozen auditor exactly once. Full-site failure is a planned stop, not permission to change layers or thresholds.",
-      "direction_decision": "Use matched current code contexts instead of another blind activity sweep. Keep the failed N36 prerequisite closed."
+      "result": "All N39 guards pass after a preserved, dated host metadata-order repair. Full late opposite donors change 19 of 20 native comment-entry choices and 21 of 22 native code choices; same-class donors preserve 41 of 42. The selected 32 channels and both strictly matched random groups each cause zero opposite-choice transfers, zero clean-entry losses and zero conditional-transfer losses. Each group retains 7 of 16 strict retention cases with no gain, loss or cap. The complete sparse primary fails. All 1937 native decision replays, 1302 current-cache checks, 294 native self/rescue checks, 126 conditional-self checks and 168 restorations pass. Zero backwards, parameter assignments or optimizer updates.",
+      "interpretation": "The complete sparse role primary fails. A whole late site is conditionally sufficient for the current comment choice; this is not individual neuron meaning, a complete circuit or coding improvement. Posthoc saved probabilities move with mixed signs without choice flips. The original frozen auditor fails on one tied maximum because topk order differs from greedy argmax; six valid and fourteen invalid synthetic checks validate the versioned maximality repair. Original source, outputs, criteria and failed audit remain preserved. The host does not recompute checkpoint logits or weights.",
+      "next_question": "Q54: freeze and implement the independent full-program utility protocol using exactly the prescribed groups and factor zero, with both randoms and the fixed simple instruction. The N39 role failure stays failed; no new rank, dose or transplant.",
+      "direction_decision": "Keep every negative and finite effect. Evaluate the already-prescribed global intervention on complete programs separately; do not infer utility from current-token probabilities."
     },
     {
       "id": "Q54",
       "experiment": "N40: conditional complete-function utility",
-      "status": "conditional_intent_only_host_metadata_profile_closed",
+      "status": "running_private_source_verified",
       "question": "Can a fixed native group reduce unnecessary output while preserving complete-program correctness, and how does it compare with a simple instruction?",
       "question_provenance": "Direct human coding and practical surgery goals. Separate program utility from the current lexical role assay; fixed before any N39 output access.",
       "parents": [
         "Q53",
         "Q51"
       ],
-      "method": "If N39 closes with passing guards and its prescribed groups exist, retain exactly those groups under outgoing-column factor zero. No winning N39 dose or new coordinates. Keep all 32 coding and 16 retention cases, carry all 48 native originals exactly, and compare the three group edits with one fixed no-comment instruction. This is conditional intent, not a frozen execution protocol.",
-      "result": "No N40 neuron edit or GPU run exists. A closed host-only profile reads all 32 original coding grades and lexical labels without a scorer or model. Comments average 20.26% per reply overall, 14.56% on the 24 already-correct programs, and 37.36% on the eight wrong programs. Seven already-correct programs contain comments, across three dependent families. The original host script fails on a missing role field before computing results; its versioned repair joins the frozen annotations. Both sources and the failure remain.",
+      "method": "Keep exactly the audited N39 selected32 and both random32 groups under prescribed outgoing-column factor zero. All 32 coding and 16 retention cases remain, with exact native carries and one fixed simple instruction. Require exact physical versus all-position activation-zero agreement before any new reply.",
+      "result": "N40 source, data and prospective auditor are frozen. Host preparation used zero pretrained forwards; the active GPU counters and outputs have not been accessed. Actual random Gemma checks pass in FP32 and BF16: 18 group paths across input lengths 1, 6 and 20, exact physical/activation logits and cache, restored matrices and declared versions. Ten malformed coordinate/storage cases are refused. The compact BF16 original and signed-zero bundle checks pass. Ten synthetic text-accounting checks pass; the earlier 21 exact paired-metrics checks remain closed. All 96 tokenizations, isolated runner/auditor imports and Ruff checks pass. One bounded private job is now running with exact server source and private dataset metadata. Fresh prelaunch quota was 26.80 free GPU hours; the conservative two-device cap reservation is four hours plus a two-hour reserve. This is not current balance. No N40 outcome has been accessed.",
       "interpretation": "Metadata shows possible output headroom, not the outcome of removing comments or neurons. Utility must preserve every originally-correct coding and retention case, reduce output on all 32 cases and separately on already-correct programs, and report both random controls plus the simple prompt. Token counts do not prove wall-clock speedup or better coding accuracy. A failed N39 role primary stays failed.",
-      "next_question": "Await N39 closure and actual group availability. If groups do not exist, leave this intent unexecuted. Otherwise freeze the complete source, data, oracle and counter protocol before any utility run; fresh confirmation remains separate.",
+      "next_question": "At actual terminal status, verify all 69 source/data/parent hashes and final private metadata, retrieve compact outputs once, then run the frozen auditor once. Keep every case and both random controls plus the instruction control.",
       "direction_decision": "Test practical alternatives and avoid credit for shortening already-wrong programs. No transplant or failed-prerequisite bypass."
     }
   ],
-  "active_question_id": "Q53",
-  "next_question_id": "Q53",
-  "utc": "2026-10-31T17:32:07.803356+00:00"
+  "active_question_id": "Q54",
+  "next_question_id": "Q54",
+  "utc": "2026-10-31T18:45:24.311569+00:00"
 }

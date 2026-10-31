@@ -1,0 +1,237 @@
+{
+  "random_model_paths": {
+    "utc": "2026-10-31T18:35:18.892166+00:00",
+    "status": "passed",
+    "paths": [
+      {
+        "dtype": "torch.float32",
+        "input_length": 1,
+        "group": "a",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "input_length": 1,
+        "group": "b",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "input_length": 1,
+        "group": "c",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "input_length": 6,
+        "group": "a",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "input_length": 6,
+        "group": "b",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "input_length": 6,
+        "group": "c",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "input_length": 20,
+        "group": "a",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "input_length": 20,
+        "group": "b",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "input_length": 20,
+        "group": "c",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "input_length": 1,
+        "group": "a",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "input_length": 1,
+        "group": "b",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "input_length": 1,
+        "group": "c",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "input_length": 6,
+        "group": "a",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "input_length": 6,
+        "group": "b",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "input_length": 6,
+        "group": "c",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "input_length": 20,
+        "group": "a",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "input_length": 20,
+        "group": "b",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "input_length": 20,
+        "group": "c",
+        "physical_activation_logits_cache_exact": true,
+        "generation_first_cache_exact": true,
+        "restoration_exact": true
+      }
+    ],
+    "malformed_coordinate_refusals": [
+      "torch.float32:empty",
+      "torch.float32:duplicate",
+      "torch.float32:layer",
+      "torch.float32:channel",
+      "torch.float32:packed",
+      "torch.bfloat16:empty",
+      "torch.bfloat16:duplicate",
+      "torch.bfloat16:layer",
+      "torch.bfloat16:channel",
+      "torch.bfloat16:packed"
+    ],
+    "actual_random_model_forward_calls": 288,
+    "input_token_exposures": 1056,
+    "random_generated_tokens": 72,
+    "pretrained_model_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 3.6808869579981547,
+    "signed_zero_bundle_exact": true,
+    "all_declared_versions_and_restorations_exact": true
+  },
+  "conservative_text_examples": {
+    "utc": "2026-10-31T18:37:59.854768+00:00",
+    "status": "passed_closed",
+    "complete_text_examples": 5,
+    "ambiguous_span_checks": 3,
+    "special_and_retention_checks": 2,
+    "model_forwards": 0,
+    "tokenizer_calls": 0,
+    "scorer_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 0.001040292001562193
+  },
+  "exact_paired_metrics_examples": {
+    "utc": "2026-10-31T17:55:09.153967+00:00",
+    "status": "passed_closed",
+    "scope": "Synthetic supplied scalar labels/counts only. Not model outputs,program execution or new scientific efficacy.",
+    "source_freeze_sha256": "3a31810b948bf5239f306f9a62100bdee205f3f5cf972f01e8e9166f40a628d1",
+    "seed": 4041,
+    "new_model_forwards": 0,
+    "new_generated_tokens": 0,
+    "scorer_calls": 0,
+    "tokenizer_calls": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "host_wall_seconds": 1.0373887499881675
+  },
+  "source_transport_preflight": {
+    "utc": "2026-10-31T18:38:46.859079+00:00",
+    "status": "passed_closed",
+    "sources": 22,
+    "inputs": 11,
+    "all_source_data_and_payload_hashes_exact": true,
+    "notebook_cells_compile": true,
+    "isolated_runner_and_auditor_imports": true,
+    "Ruff_F821_F823": true,
+    "pretrained_model_forwards": 0,
+    "optimizer_steps": 0,
+    "no_server_creation_or_launch": true
+  },
+  "independent_counter_review": {
+    "utc": "2026-10-31T18:39:49.479709+00:00",
+    "status": "passed_before_launch",
+    "independent_enumerated_input_lengths_match_formula": {
+      "calls": 1166,
+      "input_token_exposures": 38730
+    },
+    "teacher_panels": 8,
+    "restoration_calls": 14,
+    "new_tail_rule": "Each actual T contributes T calls and n+T-1 exposures. New totals remain unknown.",
+    "model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "reporting_failure_preserved": {
+    "utc": "2026-10-31T18:48:50.617207+00:00",
+    "stage": "public_export_before_push",
+    "error": "KeyError: launched_utc in active reservation",
+    "cause": "The new active reservation omitted the existing reporting schema field.",
+    "exporter_sha256": "fdb104b4df2bbe61b18418ddd107d50f17acf33903a477221eba3f82cc2a11cc",
+    "repair": "Copy actual launched_utc from runs/n40/version1/launch.json. Scientific source, job, outputs and thresholds unchanged.",
+    "public_push_performed": false,
+    "new_model_forwards_for_repair": 0,
+    "optimizer_steps": 0
+  },
+  "scope": "Software and random-model feasibility only. No N40 pretrained utility result."
+}

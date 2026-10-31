@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "experiment": "N39",
+  "question_id": "Q53",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "parameter_assignments": 0,
+  "base": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "representation": "text-only unquantized BF16"
+  },
+  "site": {
+    "layers": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "channels": 135168,
+    "position": "One actual current cached token,with exact native past and no future token input."
+  },
+  "full_current_policies": [
+    "native_observation",
+    "full_self",
+    "full_opposite",
+    "full_same",
+    "restore"
+  ],
+  "group_current_policies": [
+    "self",
+    "opposite",
+    "same",
+    "zero",
+    "gain2",
+    "rescue",
+    "conditional_self",
+    "conditional_cut",
+    "restore"
+  ],
+  "group_generation_policies": [
+    "global_zero_retention"
+  ],
+  "groups": {
+    "selected32": [
+      {
+        "layer": 24,
+        "channel": 7755,
+        "flat": 210507
+      },
+      {
+        "layer": 34,
+        "channel": 4622,
+        "flat": 330254
+      },
+      {
+        "layer": 29,
+        "channel": 10816,
+        "flat": 275008
+      },
+      {
+        "layer": 25,
+        "channel": 5137,
+        "flat": 220177
+      },
+      {
+        "layer": 30,
+        "channel": 11953,
+        "flat": 288433
+      },
+      {
+        "layer": 25,
+        "channel": 2847,
+        "flat": 217887
+      },
+      {
+        "layer": 26,
+        "channel": 3721,
+        "flat": 231049
+      },
+      {
+        "layer": 24,
+        "channel": 2409,
+        "flat": 205161
+      },
+      {
+        "layer": 24,
+        "channel": 4549,
+        "flat": 207301
+      },
+      {
+        "layer": 30,
+        "channel": 10891,
+        "flat": 287371
+      },
+      {
+        "layer": 33,
+        "channel": 1120,
+        "flat": 314464
+      },
+      {
+        "layer": 24,
+        "channel": 9445,
+        "flat": 212197
+      },
+      {
+        "layer": 24,
+        "channel": 1289,
+        "flat": 204041
+      },
+      {
+        "layer": 34,
+        "channel": 1747,
+        "flat": 327379
+      },
+      {
+        "layer": 33,
+        "channel": 9815,
+        "flat": 323159
+      },
+      {
+        "layer": 29,
+        "channel": 11087,
+        "flat": 275279
+      },
+      {
+        "layer": 27,
+        "channel": 11018,
+        "flat": 250634
+      },
+      {
+        "layer": 32,
+        "channel": 1337,
+        "flat": 302393
+      },
+      {
+        "layer": 24,
+        "channel": 10159,
+        "flat": 212911
+      },
+      {
+        "layer": 30,
+        "channel": 9221,
+        "flat": 285701
+      },
+      {
+        "layer": 34,
+        "channel": 6975,
+        "flat": 332607
+      },
+      {
+        "layer": 29,
+        "channel": 3510,
+        "flat": 267702
+      },
+      {
+        "layer": 24,
+        "channel": 6749,
+        "flat": 209501
+      },
+      {
+        "layer": 29,
+        "channel": 7609,
+        "flat": 271801
+      },
+      {
+        "layer": 29,
+        "channel": 7390,
+        "flat": 271582
+      },
+      {
+        "layer": 29,
+        "channel": 9196,
+        "flat": 273388
+      },
+      {
+        "layer": 24,
+        "channel": 1922,
+        "flat": 204674
+      },
+      {
+        "layer": 32,
+        "channel": 377,
+        "flat": 301433
+      },
+      {
+        "layer": 30,
+        "channel": 9497,
+        "flat": 285977
+      },
+      {
+        "layer": 24,
+        "channel": 1747,
+        "flat": 204499
+      },
+      {
+        "layer": 29,
+        "channel": 11487,
+        "flat": 275679
+      },
+      {
+        "layer": 26,
+        "channel": 785,
+        "flat": 228113
+      }
+    ],
+    "randomA32": [
+      {
+        "layer": 24,
+        "channel": 10930,
+        "flat": 213682
+      },
+      {
+        "layer": 34,
+        "channel": 2187,
+        "flat": 327819
+      },
+      {
+        "layer": 29,
+        "channel": 12015,
+        "flat": 276207
+      },
+      {
+        "layer": 25,
+        "channel": 9212,
+        "flat": 224252
+      },
+      {
+        "layer": 30,
+        "channel": 7273,
+        "flat": 283753
+      },
+      {
+        "layer": 25,
+        "channel": 217,
+        "flat": 215257
+      },
+      {
+        "layer": 26,
+        "channel": 7161,
+        "flat": 234489
+      },
+      {
+        "layer": 24,
+        "channel": 9266,
+        "flat": 212018
+      },
+      {
+        "layer": 24,
+        "channel": 11109,
+        "flat": 213861
+      },
+      {
+        "layer": 30,
+        "channel": 277,
+        "flat": 276757
+      },
+      {
+        "layer": 33,
+        "channel": 2810,
+        "flat": 316154
+      },
+      {
+        "layer": 24,
+        "channel": 7458,
+        "flat": 210210
+      },
+      {
+        "layer": 24,
+        "channel": 6042,
+        "flat": 208794
+      },
+      {
+        "layer": 34,
+        "channel": 2324,
+        "flat": 327956
+      },
+      {
+        "layer": 33,
+        "channel": 9167,
+        "flat": 322511
+      },
+      {
+        "layer": 29,
+        "channel": 1106,
+        "flat": 265298
+      },
+      {
+        "layer": 27,
+        "channel": 10185,
+        "flat": 249801
+      },
+      {
+        "layer": 32,
+        "channel": 497,
+        "flat": 301553
+      },
+      {
+        "layer": 24,
+        "channel": 11337,
+        "flat": 214089
+      },
+      {
+        "layer": 30,
+        "channel": 12278,
+        "flat": 288758
+      },
+      {
+        "layer": 34,
+        "channel": 9281,
+        "flat": 334913
+      },
+      {
+        "layer": 29,
+        "channel": 11598,
+        "flat": 275790
+      },
+      {
+        "layer": 24,
+        "channel": 5953,
+        "flat": 208705
+      },
+      {
+        "layer": 29,
+        "channel": 9293,
+        "flat": 273485
+      },
+      {
+        "layer": 29,
+        "channel": 10555,
+        "flat": 274747
+      },
+      {
+        "layer": 29,
+        "channel": 7193,
+        "flat": 271385
+      },
+      {
+        "layer": 24,
+        "channel": 8170,
+        "flat": 210922
+      },
+      {
+        "layer": 32,
+        "channel": 544,
+        "flat": 301600
+      },
+      {
+        "layer": 30,
+        "channel": 6840,
+        "flat": 283320
+      },
+      {
+        "layer": 24,
+        "channel": 2537,
+        "flat": 205289
+      },
+      {
+        "layer": 29,
+        "channel": 3131,
+        "flat": 267323
+      },
+      {
+        "layer": 26,
+        "channel": 9407,
+        "flat": 236735
+      }
+    ],
+    "randomB32": [
+      {
+        "layer": 24,
+        "channel": 6932,
+        "flat": 209684
+      },
+      {
+        "layer": 34,
+        "channel": 8760,
+        "flat": 334392
+      },
+      {
+        "layer": 29,
+        "channel": 10498,
+        "flat": 274690
+      },
+      {
+        "layer": 25,
+        "channel": 5890,
+        "flat": 220930
+      },
+      {
+        "layer": 30,
+        "channel": 5872,
+        "flat": 282352
+      },
+      {
+        "layer": 25,
+        "channel": 217,
+        "flat": 215257
+      },
+      {
+        "layer": 26,
+        "channel": 453,
+        "flat": 227781
+      },
+      {
+        "layer": 24,
+        "channel": 7830,
+        "flat": 210582
+      },
+      {
+        "layer": 24,
+        "channel": 9369,
+        "flat": 212121
+      },
+      {
+        "layer": 30,
+        "channel": 6353,
+        "flat": 282833
+      },
+      {
+        "layer": 33,
+        "channel": 6981,
+        "flat": 320325
+      },
+      {
+        "layer": 24,
+        "channel": 2907,
+        "flat": 205659
+      },
+      {
+        "layer": 24,
+        "channel": 8636,
+        "flat": 211388
+      },
+      {
+        "layer": 34,
+        "channel": 10843,
+        "flat": 336475
+      },
+      {
+        "layer": 33,
+        "channel": 2720,
+        "flat": 316064
+      },
+      {
+        "layer": 29,
+        "channel": 7153,
+        "flat": 271345
+      },
+      {
+        "layer": 27,
+        "channel": 416,
+        "flat": 240032
+      },
+      {
+        "layer": 32,
+        "channel": 11537,
+        "flat": 312593
+      },
+      {
+        "layer": 24,
+        "channel": 1664,
+        "flat": 204416
+      },
+      {
+        "layer": 30,
+        "channel": 8823,
+        "flat": 285303
+      },
+      {
+        "layer": 34,
+        "channel": 9318,
+        "flat": 334950
+      },
+      {
+        "layer": 29,
+        "channel": 2346,
+        "flat": 266538
+      },
+      {
+        "layer": 24,
+        "channel": 7000,
+        "flat": 209752
+      },
+      {
+        "layer": 29,
+        "channel": 9421,
+        "flat": 273613
+      },
+      {
+        "layer": 29,
+        "channel": 7758,
+        "flat": 271950
+      },
+      {
+        "layer": 29,
+        "channel": 944,
+        "flat": 265136
+      },
+      {
+        "layer": 24,
+        "channel": 3551,
+        "flat": 206303
+      },
+      {
+        "layer": 32,
+        "channel": 6428,
+        "flat": 307484
+      },
+      {
+        "layer": 30,
+        "channel": 10574,
+        "flat": 287054
+      },
+      {
+        "layer": 24,
+        "channel": 7664,
+        "flat": 210416
+      },
+      {
+        "layer": 29,
+        "channel": 5349,
+        "flat": 269541
+      },
+      {
+        "layer": 26,
+        "channel": 2835,
+        "flat": 230163
+      }
+    ]
+  },
+  "matching": {
+    "seeds": [
+      3901,
+      3902
+    ],
+    "same_layer": true,
+    "RMS_ratio_bounds": [
+      0.9,
+      1.1
+    ],
+    "delta_RMS_ratio_bounds": [
+      0.9,
+      1.1
+    ],
+    "downnorm_ratio_bounds": [
+      0.8,
+      1.25
+    ],
+    "minimum_pool": 16,
+    "controls_score_filtered": false,
+    "cross_random_overlap": 1
+  },
+  "sources": {
+    "research/experiments/n39/operations.py": "c1338c3d2299617b7db2e97514ac72cb4413bce162c15ba910c1fd2fd5dd1f54",
+    "research/experiments/n39/selection.py": "3634177d04cf7681036aa0080246c8db3af0aa3553d54cb09f98f482f587571f",
+    "interpretability/current_group.py": "f0accf9f472f8ae4d084b80141804d39bd8e483bdffefa78593c0fe8c9381990",
+    "interpretability/native_cache_branch.py": "a11a55a52e908bc2f6f19ee00f20d00e1f66c6cf673a5c7969082d581b2ee6e7",
+    "interpretability/anchor_intervention.py": "15ec139c69423fc309d4a9c75f19f2e04d2494ad57bff27523c5aa56656490c5"
+  },
+  "donors": "Caller supplies actual unmodified same-checkpoint native context values. Private donor states,prompts,replies and trajectories are excluded.",
+  "validation": {
+    "all_guards_pass": true,
+    "contexts": 42,
+    "intervention_records": 1302,
+    "new_retention_replies": 48,
+    "full_site_choice_changes": 40,
+    "full_site_choice_cases": 42,
+    "same_donor_preserved": 41,
+    "selected_and_each_random_opposite_transfers": 0,
+    "selected_and_each_random_clean_entry_losses": 0,
+    "selected_and_each_random_conditional_losses": 0,
+    "sparse_primary_passed": false,
+    "independent_clean_package_pretrained_replay": false,
+    "metadata_auditor_amendment_disclosed": true
+  },
+  "scope": "Runtime activation policies,not new checkpoint weights or an added capability. Exact saved coordinates support caller-context reconstruction;raw states remain private."
+}

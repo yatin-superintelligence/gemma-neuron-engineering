@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-31T18:05:53.042424+00:00",
+  "status": "dated_host_metadata_repair_frozen_before_behavioral_aggregate_interpretation",
+  "experiment": "N39",
+  "question_id": "Q53",
+  "original_auditor_sha256": "afdecaf5b853a74bbb3c26a1cb15fbaceec079aa0271d01d18b23322d8f30d6e",
+  "versioned_auditor_sha256": "de2dbae9c4c14c4da01b920aaf3766130b838c04103a2a37fbc5624e0f15131b",
+  "original_frozen_auditor_runs": 1,
+  "collector_and_output_download_runs": 1,
+  "old_assertion": "torch.topk first listed ID must equal greedy argmax.",
+  "corrected_assertion": "Greedy argmax must equal the smallest token ID among stored exactly maximal logits. The stored top10 must still have ten distinct IDs,finite descending logits and valid probability.",
+  "scope": "One exact tie-order disagreement in saved metadata. No behavior,text,grade,group,dose,model source,cache equality,identity/restoration guard,primary clause or threshold changes. No tolerance.",
+  "new_predicate_allows_unknown_top1_outside_top10": false,
+  "official_sources": [
+    {
+      "url": "https://docs.pytorch.org/docs/2.11/generated/torch.topk.html",
+      "scope": "API note: tied indices have no stable-order guarantee."
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.11/generated/torch.argmax.html",
+      "scope": "API note: first maximal position is chosen."
+    }
+  ],
+  "diagnostic": "Private raw metadata witness retained.",
+  "host_fixture": "../results/n39_metadata_guard_fixture.json",
+  "other_source_differences": "Only two versioned plan/freeze paths. An exact inverse substitution reconstructs the original auditor source.",
+  "original_auditor_computed_summary_in_memory": true,
+  "summary_was_not_written_printed_or_read_before_repair": true,
+  "retention_scorer_calls_before_repair": 0,
+  "full_checkpoint_logits_or_weights_recomputed_on_host": false,
+  "top10_limit": "This verifies maximality within the saved top10; it does not reconstruct every logit. The frozen worker computes global greedy argmax and saves exact full-logit hashes.",
+  "optimizer_steps": 0,
+  "new_model_forwards": 0,
+  "new_generated_tokens": 0,
+  "closed_scores_changed": false
+}
