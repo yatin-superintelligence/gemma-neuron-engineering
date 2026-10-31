@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-31T06:36:22.431488+00:00",
+  "status": "before_extraction_helper_implementation_and_all_pretrained_outputs",
+  "parent_protocol_sha256": "760b7db01753c7430f398c406762325170c3876793a6f53e20badfe45cc842bf",
+  "role_position": "Parse the complete original under the frozen source contract. Locate its unique strict comparator character using Python tokens. Map that character to the actual generated token stream by incremental decode. Require a single token containing only that operator and surrounding whitespace. Derive the opposite comparator by symbol substitution under the same tokenization; require identical preceding generated tokens and one alternative operator token. Retain neither divergent token nor later completion in GPU context.",
+  "common_prefix": "Within each family,wording,name,order pair,opposite-relation originals must have the same exact generated prefix before their operator token. Donors under reversed operand order use their own original prefix; no equal-prefix claim across orders.",
+  "retention_clarification": "The first generated retention token is decided by initial prefill. Apply zero/self only at its last input position,leaving all earlier positions untouched. Cached role decisions use one-token current forwards. This resolves the phrase cached-token site for the explicitly declared retention first-token case without changing any planned condition,task,counter formula or gate.",
+  "counter": "A zero-length generated prefix uses one original prefill call,not an extra artificial cached last-prompt-token replay. Retain the k+1measurement and n+kexposure formula. All counters remain manifest-derived.",
+  "full_vocabulary": "Two operator IDs are measurement labels only. Generated continuations always use the full-vocabulary argmax,never these IDs as allowed tokens or a forced answer.",
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

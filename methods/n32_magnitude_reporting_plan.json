@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-31T06:52:18.881348+00:00",
+  "status": "prospective_measurement_plan_before_any_pretrained_outputs",
+  "reason": "The fixed random groups match old discovery magnitudes. Their activity or executed edit energy need not remain matched on new prompts. Do not call them newly activity matched or infer semantic specificity solely from a larger score effect.",
+  "groups": "Keep all original selected64and both fixed random64groups. No new matching,rank,gain,normalization coefficient or outcome-based selection.",
+  "source_moments": "Report native and donor-minus-recipient coefficient RMS for all four donor policies and zeroing,per fixed group and planned cohort. Arithmetic on actual BF16coefficients is a measurement,not higher-precision inference or an unrounded reconstruction.",
+  "executed_local_energy": "A read-only observer around declared group hooks may measure actual live coefficient delta and the FP32norm of down-column times delta before post-feedforward normalization,per native layer. Do not sum this into a claimed normalized residual effect or mediation fraction. Save compact moments/norms only,no full vectors.",
+  "decision": "The frozen15component primary and both secondary conjunctions remain unchanged. Report every group/cohort and any magnitude mismatch. Apply no measured coefficient or vector to activations or weights.",
+  "host_gates": "Validate any observer on fixed tiny modules against an independent explicit column sum and prove it never changes targets,parameters,caches,logits,counters or hook restoration. This observer code and gate remain pending.",
+  "pretrained_model_forwards": 0,
+  "optimizer_steps": 0
+}

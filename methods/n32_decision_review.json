@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-31T06:28:03.554397+00:00",
+  "question_id": "Q46",
+  "status": "decision_review_before_new_data_or_code",
+  "parents": {
+    "N24": "c432804c8ee9536e275b83865667c2dcde263d16fa000d368df212285f9211e0",
+    "N28": "6cc3c46ceced09c047b90922663d4a05ada6d8ec0b3c5dedcd3cf1d1f2549bf2",
+    "N30": "449a5f8882d567d2887f8d55eebd210bda5f21062585e1ef30fd9e7e00781479",
+    "N31_stop": "c9cc0023e534eb567a9c46801219800cd3f59db1212b31d006cded441f6e2b41"
+  },
+  "rejected_directions": [
+    "Advancing down the native-unit ranking violates the N30 stopping rule.",
+    "Running the blocked N31 permanent-unit utility test under another name would bypass its prerequisite.",
+    "Another anchor, layer or wording search on the closed N28/N29 panel is excluded.",
+    "Constructing a new semantic neuron without a validated native role would add an unsupported interpretation."
+  ],
+  "chosen_direction": "Test the older fixed GROUP score effect on new counterbalanced inputs. Cross semantic relation with operand order so donor rule and donor comparator token can disagree. Keep the original selected64 and both matched random64 groups without any reranking or fitted strength.",
+  "why_distinct": "N24 establishes a controlled group score contribution on reused development, not its fresh generalization or an abstract rule. N30 tests one unit and fails its full conjunction. N32 concerns the pre-existing group, different fresh inputs and a semantic-versus-token contrast; it provides no unit-utility test or relaxed N30 result.",
+  "limits": "The fresh inputs use familiar comparison concepts, not unseen algorithms. The measurement position is response-derived and cannot support a deployable trigger or coding-improvement claim. Full-site transfer is a positive control, not proof of native semantic use.",
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

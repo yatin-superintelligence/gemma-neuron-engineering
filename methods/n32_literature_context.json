@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-31T06:28:03.554397+00:00",
+  "status": "bounded_primary_review_before_protocol_implementation",
+  "sources": [
+    {
+      "url": "https://aclanthology.org/2022.emnlp-main.3/",
+      "title": "Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space",
+      "read_scope": "Official abstract and bibliography rechecked now. The older N30 record separately documents selected paper sections.",
+      "consequence": "FFN vocabulary contributions and prediction control are prior work. A comparator-score effect is not a new method or a semantic algorithm."
+    },
+    {
+      "url": "https://jmlr.org/papers/v26/23-0058.html",
+      "title": "Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability",
+      "read_scope": "Official abstract and bibliography rechecked now; earlier scoped definitions are in the N16 literature record.",
+      "consequence": "Donor interventions need a specified high-level variable and counterfactual controls. This small native-group assay is not a proof of formal causal abstraction."
+    },
+    {
+      "url": "https://arxiv.org/abs/2311.17030v2",
+      "title": "Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching",
+      "read_scope": "Official abstract and version metadata only.",
+      "consequence": "Behavioral control need not identify the natively used feature. Even a passing transfer screen would not establish native semantic necessity."
+    }
+  ],
+  "no_new_method_or_full_paper_replication_claim": true,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

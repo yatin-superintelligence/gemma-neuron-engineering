@@ -75,6 +75,8 @@ The target remains L34 C3271, with strict controls C9170 and C4059. The original
 
 A [conditional fresh coding intent](methods/n31_conditional_intent.json) fixed both permanent column factors, zero and two, before N30 outputs. Its parent prerequisite fails, so it remains unexecuted. There is no N31 dataset or model result. No GPU job is active.
 
+A separate [fresh group study](methods/n32_prospective_protocol.json) is frozen before implementation. It keeps the older selected 64 channels and both matched groups, and crosses the requested relation with source operand order. The aim is to distinguish rule-sensitive score effects from comparator-token bias. Original-only and full-site gates precede sparse tests. Private data and host source/oracle checks are prepared, with a preserved tokenizer-cache failure and tokenizer-only continuation. The [current-position helper](research/experiments/n32/current_site.py) passes actual random Gemma path checks in FP32 and BF16, with additional fixed-future and scope refusals. These are software tests; runners, auditors and the execution freeze remain pending. No N32 model result exists; the failed N30 criterion and N31 stop remain unchanged.
+
 ## Reproduce an edit
 
 The common parent is `google/gemma-4-E2B-it` at revision `3e22461f65e89153144f8adb70e3b8c2cc9845a7`. The primary text-only representation is unquantized BF16. It retains decoder, token/per-layer embeddings and tied output head while excluding media modules. BF16 is distinct from FP32; no native BF16 acceleration on T4 is claimed.

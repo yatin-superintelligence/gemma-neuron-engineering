@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-31T06:28:03.554397+00:00",
+  "experiment": "N32",
+  "question_id": "Q46",
+  "question": "Does the fixed group score effect generalize to fresh coding contexts, and does it follow the requested relation or the donor comparator token?",
+  "status": "prospective_design_before_data_code_and_model_outputs",
+  "group_source": "runs/n20/selection/result.json",
+  "group_source_sha256": "fcbb5cf85dd794b9be4f9c21008ac348ed291e5f187a1c6c06b9dc974af0f395",
+  "groups": [
+    "selected64",
+    "random34201_64",
+    "random34202_64"
+  ],
+  "no_new_coordinate_or_strength_selection": true,
+  "mechanism": "Actual post-gating donor values in the fixed native channels at their original layers24through34, for one current cached-token forward. No fitted contrast vector, gradient, global gain, weights, new branch or training.",
+  "freshness": "New prospective prompt instances and two fixed new wordings. The two familiar comparison families and nuisance-name variants are dependent; do not count32independent algorithms. No old final data or old task answers are used.",
+  "independent_of_blocked_N31": "This is a fixed-group mechanism replication, not single-unit permanent-edit utility. N30 remains failed, N31 remains unexecuted, and no next-ranked unit is selected.",
+  "GPU_launched": false,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

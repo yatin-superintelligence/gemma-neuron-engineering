@@ -1,0 +1,103 @@
+{
+  "utc": "2026-10-31T06:28:03.554397+00:00",
+  "experiment": "N32",
+  "question_id": "Q46",
+  "version": 1,
+  "status_at_freeze": "before_task_builder_oracle_runner_auditor_implementation",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "original text-only unquantized BF16",
+  "native_cache_entries": 15,
+  "model_seed": 4601,
+  "data_seed": 4602,
+  "host_stress_seed": 4603,
+  "intent_sha256": "95c6d0f44b8662619d102955987e265e55edc42c0e72736bc25494e73a534c14",
+  "groups_sha256": "fcbb5cf85dd794b9be4f9c21008ac348ed291e5f187a1c6c06b9dc974af0f395",
+  "groups": [
+    "selected64",
+    "random34201_64",
+    "random34202_64"
+  ],
+  "data": {
+    "role_cases": 32,
+    "retention_cases": 8,
+    "factorial": "2families x2wordings x2semantic relations x2operand orders x2nuisance names. Eight complete four-case blocks. Cases are dependent within families and blocks.",
+    "families": [
+      "strict_integer_predicate",
+      "stable_strict_integer_filter"
+    ],
+    "relation": "Smaller versus larger, with equality excluded.",
+    "operand_order": "Require the two declared operands in the requested left-to-right source order. Reversing their order reverses the correct comparator token for the same mathematical request.",
+    "style": "Two fixed direct natural-language wordings, with no arbitrary rule labels or label-to-rule mapping.",
+    "source_contract": "Complete Python function. Predicate has one comparison return; filter has one stable list-comprehension return. Respect declared names and operand order. Independent exhaustive integer oracles, strict bool/list types, duplicates, order, input preservation and a fresh returned filter list before serialization.",
+    "retention": "Eight new complete-function contracts with independent host oracles. Their measurement position is the first generated token, not a selected operator.",
+    "no_answers_in_inputs": "No expected source, hidden test, oracle or post-decision token is included in model prompts or later GPU payloads. Only actual generated prefixes before the declared current decision are context for measurement.",
+    "frozen_data_before_baseline": true
+  },
+  "decoding": "Greedy full-vocabulary generation, fixed96new-token cap and pinned EOS/default configuration for every original or edited complete continuation. No newline stop, sampling reroll or cap repair.",
+  "phases": {
+    "A": "Generate all40originals once, with a whole-logit hash for each generation decision. No intervention. Host audit every raw output and complete source/return contract before any later launch.",
+    "A_gate": "All32role programs and all8retention cases must pass, with no caps. Every complete block must have a single-token comparator, correct declared operand order and exact equal generated prefixes between opposite relations within each fixed order. Otherwise planned stop after40originals; no wording, source, cap or grade repair.",
+    "B": "Carry40originals exactly. Generate40identity and four full35-layer donor policies on32role cases. Donor retention is N/A. Total240records:40carries,168new and32N/A. Replay baseline decision-logit hashes; capture1400native h hashes. Donors use their own unmodified current states, before their comparator token, with no future token in context.",
+    "B_gate": "Same-order opposite-relation full donors must yield at least24/32alternative-correct programs with both families, wordings, names, operand orders and directions represented. Same-order same-relation donors must preserve at least28/32original programs. Identity generations must be exact on40/40, including all8retention. All mandatory guards pass. Otherwise close before C without expanding the panel or changing thresholds.",
+    "C": "Carry all240B records byte-exact, including32inherited N/A cells. For each fixed64group run all four donor policies on32role cases, native zero on40cases and guarded native rescue on40cases. Complete grid960records:240carries,504new tails,120guarded rescues and96new N/A references. There are128N/A records including inherited cells. Across all phases exactly712new generations at most; no old completion regenerated."
+  },
+  "donor_policies": {
+    "S0O0": "Same semantic relation, same operand order, other wording and same nuisance names.",
+    "S1O0": "Opposite semantic relation, same operand order, other wording and same nuisance names.",
+    "S0O1": "Same semantic relation, reversed operand order, other wording and same nuisance names. The correct donor comparator token is opposite to the recipient token.",
+    "S1O1": "Opposite semantic relation, reversed operand order, other wording and same nuisance names. The correct donor comparator token equals the recipient token."
+  },
+  "conditions_C": "SixBparent conditions, then each selected64/randomA64/randomB64 with S0O0,S1O0,S0O1,S1O1,zero,rescue. All24conditions reported.",
+  "site": "At the actual cached comparison decision in an originally generated complete program. Capture each donor at its own original prefix. Only the one current forward is edited; remove hooks before free continuation. This is response-derived measurement, not a deployable answer-independent trigger.",
+  "native_zero": "Prescribed zero of the declared64actual post-gating coefficients, only at the current forward. This tests finite score contribution and clean program loss; no loss is presumed.",
+  "rescue": "Write zero then the actual recipient values in the same declared scope. Require whole current logits/cache exact native; use guarded original references rather than new rescue generations.",
+  "primary_replication": {
+    "name": "fresh_group_score_replication",
+    "donor_effect": "Selected64 mean S1O0 opposite-minus-own margin shift must be positive and greater than EACH fixed random64 mean in all32,both families,both wordings,both operand orders and both nuisance-name cohorts:9components.",
+    "zero_effect": "Selected64 native-zero mean opposite-minus-own margin shift must be positive and greater than EACH random64 mean in all32and each family:3components.",
+    "same_rule_specificity": "Absolute selected64 mean S0O0 shift must be strictly below half its positive S1O0 shift in all32and each family:3components.",
+    "decision": "All15components must pass; ties or any failed component fail. All originally correct role programs and every retention outcome remain reported. This is a prospective narrow group-score replication, not coding improvement or the N30unit criterion."
+  },
+  "predefined_secondary_classifications": {
+    "cohorts": [
+      "all32",
+      "family_predicate",
+      "family_filter"
+    ],
+    "semantic_rule_pattern": "In EACH cohort,S1O0andS1O1selected shifts must each be positive and beat both corresponding controls. Absolute S0O0andS0O1means must each be below half the smaller of the two positive selected means.",
+    "comparator_token_pattern": "In EACH cohort,S1O0andS0O1selected shifts must each be positive and beat both corresponding controls. Absolute S0O0andS1O1means must each be below half the smaller of the two positive selected means.",
+    "decision": "Report both complete precommitted conjunctions, including every failure and tie. If neither passes, classify neither. Do not select an attractive wording, cohort, donor or metric. A token pattern is not individual meaning; a rule pattern is not formal abstraction or native algorithm necessity."
+  },
+  "metrics": "Use the existing whole-vocabulary decision_scores helper. Retain both component logits/probabilities, margin, full-vector distances, centered distances, KL and compact top-token diagnostics privately. Arithmetic on saved BF16-to-FP32 logits may use CPUFP64; do not call it FP64 inference. GPU witnesses are not host checkpoint recomputation.",
+  "guards": [
+    "All original sources/tokenization/oracles and baseline decision positions pass before B.",
+    "Exact original decision-logit replay, all native capture hashes and carry lines.",
+    "Every identity and native rescue current logits/cache exact, with exact generated identity outputs.",
+    "Late-group current edits preserve the whole native cache byte-exact. Full35-layer foreign edits need not preserve it; full self does.",
+    "Actual pinned15-entry cache layout; reject truncated, malformed or nonfinite caches.",
+    "All original parameter versions, gradflags and p.gradNone unchanged; zero backwards/optimizer steps.",
+    "Only declared native h hooks at the current token; all hooks removed before continuation and restored after every condition.",
+    "Two original sentinel restorations after every condition block. Native and edited cached-self path fixtures before GPU.",
+    "Derive all forward-call and input-exposure terms from actual prompt/prefix/tail manifests. Never copy a hand-summed constant.",
+    "Import BOTH runner and auditor, RuffF821/F823, isolated packaged imports/cells and actual-Gemma fixtures before source freeze."
+  ],
+  "counter_contract": "At prompt lengthn and generated prefix lengthk, a measurement costs k+1calls and n+kexposures. A new tail of lengthT costs k+Tcalls and n+k+T-1exposures. A ordinary original generation of lengthG costs Gcalls and n+G-1exposures. Derive each phase from explicit trajectory manifests, recording exceptional EOS/cap paths.",
+  "audit": "Freeze all task, oracle, source, data and auditor hashes before Aoutputs. Later exact lineage manifests use the frozen extraction algorithm. Every phase is pulled once and audited once. Never rerun a closed scorer or regenerate originals. Keep every partial and failure without tolerance amendments.",
+  "resources": {
+    "A_platform_seconds": 900,
+    "B_platform_seconds": 1800,
+    "C_platform_seconds": 3600,
+    "minimum_free_reserve_hours": 2,
+    "one_private_free_job_at_a_time": true,
+    "fresh_official_quota_before_each_launch": true,
+    "cap_plus_checkpoint_must_fit_fixed_deadline": true
+  },
+  "publication": "Reviewed complete aggregates, generic utilities and exact coordinate recipes only. Raw tasks, oracle answers, generated prefixes/replies, states, notebooks and paper remain private. No new full-model blobs.",
+  "stopping": "Any failed mandatory guard stops interpretation. Failed AorBgates stop later phases. Failed score replication or secondary patterns do not authorize new coordinates, gains, task wording, layer universe or threshold changes on this panel. N30failed/N31unexecuted remain unchanged.",
+  "training_allowed": false,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "new_model_outputs_accessed": false,
+  "GPU_launch_authorized_by_protocol_alone": false
+}
