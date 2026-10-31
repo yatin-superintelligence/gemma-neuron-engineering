@@ -1,0 +1,143 @@
+{
+  "utc": "2026-10-31T02:24:46.914352+00:00",
+  "experiment": "N27",
+  "version": 1,
+  "question_id": "Q41",
+  "status": "prospective_protocol_before_task_runner_or_auditor_implementation",
+  "question": "Can actual native policy states at layers 5 through 9 transfer a contextual comparison relation under both recipient operand orders?",
+  "parents_sha256": {
+    "runs/n14/version1/result_receipt.json": "3d15a53ab38c17978b1b9f6406be217315342a306e9692492b885013f47546b5",
+    "runs/n23/version1/result_receipt.json": "6a830cce3f3059de0841508078188606ac3f7f48b0a5edf9d48d5c4962773899",
+    "runs/n26/version1/result_receipt.json": "1d1df7c504d10022407f9d5a67152175953b6562c6c55b1e0b25aa4473f1951a",
+    "runs/n27/source_site_review.json": "bd236cf77fa43e9fdf7e24335f247058c9242a902ed382af3f732453a207eef8",
+    "research/experiments/n26/literature_next_question.json": "2a63a67533c2accd940eb5af0ed9e1067a744c267924d1c18cd7850a2efb3be3"
+  },
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "original_text_only_unquantized_BF16",
+  "unique_parameters": 4628569344,
+  "native_cache_slots": 15,
+  "site": {
+    "layers": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "signal": "actual post-gating down_proj input",
+    "position": "selected red/blue label token in the policy prefix, located by character offsets before all task text",
+    "source": "The exact N14 runner inherits N06 tokenize through N12/N11. No end-of-policy period is substituted.",
+    "intervention": "One prefill-only actual donor swap. No attention/KV hooks, weights, gradients, fitted vectors or added branches. Cached steps skip the early-position hooks."
+  },
+  "task_design": {
+    "new_development_only": true,
+    "role_cases": 32,
+    "retention_cases": 8,
+    "families": [
+      "filter",
+      "predicate"
+    ],
+    "wordings": 2,
+    "label_mappings": 2,
+    "selected_labels": [
+      "red",
+      "blue"
+    ],
+    "recipient_operand_orders": 2,
+    "blocks": "Four family/wording blocks, eight cases each. Mapping x label x order is complete in every block.",
+    "policy_definitions": "Use exactly the two N12 integer-preference wording pairs, without modifying the closed N12 records. Selected mode: red/blue follows the definitions.",
+    "interface": "New conditional function completion. Append a mechanical assistant function prefix after the chat generation marker. For predicate, prefix ends return left or return right. For filtering, prefix ends the single comprehension condition with item or pivot. The comparator and second operand are never supplied. The task asks for the same semantic relation under both orders.",
+    "grading": "Assemble the supplied function prefix and raw generated suffix. One named function with one return; role source must have exactly the prescribed single direct comparison and operand order. Filtering has one list comprehension, preserving values/order/duplicates and excluding equality. Predicate returns a strict Boolean and equality is false. No generated program is repaired.",
+    "retention": "Four one-return noncomparison function completions: signed sum, signed remainder, integer negation and fresh list copy. Four bare JSON tag-string extractions. All include the same policy prefix plus an explicit instruction to ignore the selected mode. All four intervention arms act on every retention input with actual donors.",
+    "all_cases_reported": true,
+    "no_original_answers_in_generation_assets": true
+  },
+  "generation": {
+    "model_seed": 2741,
+    "greedy": true,
+    "do_sample": false,
+    "max_new_tokens": 32,
+    "stopping": "EOS or first generated newline, otherwise the fixed cap. The stopping newline stays in raw token/text records. No suffix repair, rerolls or best reading.",
+    "assistant_prefill": "Mechanical task syntax only; never the comparison answer. JSON has no assistant prefill.",
+    "hidden_oracles": "Host-only independent executable references. No grader, expected suffix, oracle inputs or reference programs on GPU."
+  },
+  "stage_A": {
+    "purpose": "Original-only complete-counterbalance/task-adequacy gate before any donor inference.",
+    "records": 40,
+    "new_generations": 40,
+    "native_captures": 40,
+    "restorations": 2,
+    "gate": "At least three of the four complete eight-case blocks are correct under every frozen source/order/execution check. All eight retention cases must be correct. Every baseline failure remains reported.",
+    "eligible_role_cohort": "The union of all complete passing blocks, either 24 or 32 cases. No partial-cell selection. All 32 role cases remain in every condition table and gains/losses.",
+    "on_failure": "Close at forty originals before every edit. No wording, threshold, cap or grade repair. Never regenerate originals.",
+    "counter_calls": "40 native capture calls + 2 restoration calls + sum(T over 40 new generations).",
+    "counter_exposures": "2*S40 + S2 + sum(T-1), where S40 sums input lengths and S2 sums the first two row lengths."
+  },
+  "stage_B": {
+    "requires": "Stage A frozen audit passes and complete-block adequacy passes. Recheck fresh quota, jobs and exact frozen sources.",
+    "conditions": [
+      "base",
+      "identity",
+      "opposite",
+      "same_policy",
+      "rescue"
+    ],
+    "total_records": 200,
+    "new_generations": 160,
+    "exact_parent_carries": 40,
+    "native_recaptures": 40,
+    "self_measurements": 40,
+    "rescue_measurements": 40,
+    "restorations": 10,
+    "donors": "For role recipients, use the same family and wording, canonical donor operand order0. Opposite changes label under fixed mapping. Same-policy reverses mapping and label together. Both donors therefore change the selector spelling identically. For retention index i0..7, use a fixed filter donor prefix with style i%2, mapping (i//2)%2, label (i//4)%2; its opposite and same-policy donors use the same rules. These are actual source states, not averaged vectors.",
+    "identity": "Recipient actual states at all five layers. All forty generations, first full logits and current cache hashes must equal original.",
+    "rescue": "Apply opposite actual states then actual recipient states at the same five layers in two ordered nested contexts. Final every-step generations, first logits and cache must equal original; both assignments must be witnessed.",
+    "parent_lineage": "Replay all forty original first-logit and whole-cache hashes, plus all two hundred five-layer native h hashes, before any new output. Never regenerate complete parent outputs.",
+    "cached_self": "Six fixed sentinels: filter(s0,m1,l0,o1),filter(s1,m0,l1,o0),predicate(s0,m0,l0,o0),predicate(s1,m1,l1,o1),sum retention and JSON0. Fresh native and self contexts compare prefill and first min(2,T_original) teacher tokens, including exact full logits, whole cache, cache nonalias and hook skips. Reference tokens are lineage measurements only and never seed new generation.",
+    "per_new_output": "One fresh first-logit/cache measurement, then an independent greedy generation under the same frozen assignment. First emitted token must match the measured argmax.",
+    "counter_calls": "40 native + 40 self + 40 rescue + 12 sentinel prefills + 2*sum(K_sentinel) cached calls + 10 restorations + 160 new-output measurements + sum(T_new). Equals 302 + 2*sum(K_sentinel) + sum(T_new), derived independently from the row/condition manifests.",
+    "counter_exposures": "11*S40 + 2*S_sentinel + 2*sum(K_sentinel) + 5*S2 + sum(T_new-1). Derive every term independently; do not trust only the written simplification."
+  },
+  "primary": {
+    "eligible_N": "24 or32, selected only by complete Stage A blocks.",
+    "paired_order_transfer": "For each eligible family/wording/mapping/label cell, both recipient orders must yield executable opposite-relation programs with the correct fixed syntax. Require at least half of all eligible order pairs, rounded up.",
+    "coverage": "Successful pairs must include both families, both wordings, both mappings, both labels and both requested relation directions. Report the complete joint cells; marginal balance alone is insufficient.",
+    "same_policy": "At least N-2 eligible role programs preserve the intended relation.",
+    "retention": "All eight actual opposite and all eight actual same-policy retention tests correct. Identity and rescue exact on all forty rows.",
+    "interpretation": "Conditional contextual transfer on this completion interface, not native necessity, individual meanings, a formal causal abstraction or original-model coding improvement.",
+    "failure_branch": "Stop before sparse localization, preserve all outcomes and reconsider the adequacy/control question. No new rank, layer, dose or posthoc criterion replacement."
+  },
+  "guards": [
+    "Pinned original parent, unique parameter count, BF16 and no historical adapters.",
+    "All native parameter versions and requires_grad flags unchanged, all p.grad None; zero backwards and optimizer updates.",
+    "Exactly fifteen populated native cache entries with expected layout; reject malformed or truncated caches. No equality requirement for foreign caches, since these early edits can change downstream K/V.",
+    "Only declared MLP down-input hooks; every context removed and all hook counts restored.",
+    "Self and rescue full-logit/current-cache equality, exact identity/rescue generated token sequences, parent native state replay and every restoration.",
+    "Root forward hook counts calls and actual input-token exposures; independent host decomposition must match exactly.",
+    "Decode every raw record and grade it once under frozen source. Preserve caps, invalid source and all failures. Host does not recompute full pretrained tensors or logits."
+  ],
+  "host_gates_before_launch": [
+    "Actual random-Gemma selected-label self/foreign/nested-rescue/prefill/cached/restoration paths in FP32 and BF16.",
+    "Both recipient orders and donor mappings tokenize; labels occupy one aligned token per matching policy prefix before task text.",
+    "Independent executable oracles agree with exhaustive bounded references, reject prescribed semantic/order/equality/alias mutants, and stress correct or changed source with256additional cases, seed2742.",
+    "Import BOTH runner and auditor in isolation; compile notebook cells; Ruff F821/F823 on all new runner/auditor modules.",
+    "Prospective auditor fixtures reject corrupt source/scope/cache/counter/identity witnesses without new pretrained outputs."
+  ],
+  "caps_seconds": {
+    "A_platform": 1200,
+    "A_notebook": 1100,
+    "A_worker": 900,
+    "B_platform": 2400,
+    "B_notebook": 2300,
+    "B_worker": 2000
+  },
+  "resources": "One private free job at a time. Fresh official quota and actual jobs before each stage, conservative two-device cap reservation plus at least two hours reserve. Stage cap plus audit/checkpoint must fit 31 October18:22:58UTC. No money.",
+  "storage": "Compact raw generated tokens/text, grades, source hashes, native state and cache fingerprints, exact context receipts and aggregate counters. Full donor states remain ephemeral, no activation dumps or full base output blobs. Raw tasks/oracles/notebooks private.",
+  "source_freeze": "This protocol precedes task/runner/auditor implementation. Freeze every input/source/prospective auditor hash for BOTH stages before any Stage A model output. A later real defect needs a dated preserved amendment before dependent outcomes.",
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "training_allowed": false,
+  "new_model_outputs_accessed": false,
+  "GPU_launch_authorized_by_protocol_alone": false
+}

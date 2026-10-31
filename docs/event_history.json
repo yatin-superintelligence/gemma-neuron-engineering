@@ -2591,6 +2591,62 @@
       "event": "source_review_corrects_selector_site_before_protocol_or_implementation_original_intent_preserved",
       "experiment": "N27",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 347,
+      "utc": "2026-10-31T02:24:46.914352+00:00",
+      "event": "two_stage_operand_order_protocol_frozen_before_task_runner_auditor_implementation",
+      "experiment": "N27",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 348,
+      "utc": "2026-10-31T02:33:38.767779+00:00",
+      "event": "prospective_two_stage_exact_parent_lineage_freeze_clarification_no_scientific_change",
+      "experiment": "N27",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 349,
+      "utc": "2026-10-31T02:28:47.376641+00:00",
+      "event": "actual_random_Gemma17cases_pass_no_pretrained_forwards",
+      "experiment": "N27",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 350,
+      "utc": "2026-10-31T02:28:28.885356+00:00",
+      "event": "all40task_oracle_checks_pass43304checks165mutants",
+      "experiment": "N27",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 351,
+      "utc": "2026-10-31T02:33:45.457853+00:00",
+      "event": "actual_runner6paired_live_cache_cases_pass",
+      "experiment": "N27",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 352,
+      "utc": "2026-10-31T02:34:59.039355+00:00",
+      "event": "prospective_synthetic_guard_counter_endpoint_helpers_pass",
+      "experiment": "N27",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 353,
+      "utc": "2026-10-31T02:37:56.855768+00:00",
+      "event": "both_stage_sources_and_A_notebook_frozen_before_outputs",
+      "experiment": "N27",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 354,
+      "utc": "2026-10-31T02:42:07.219967+00:00",
+      "event": "one_private_original_only_job_launched_source_and_server_privacy_verified_no_outputs_accessed",
+      "experiment": "N27 stage A",
+      "optimizer_steps": 0
     }
   ]
 }

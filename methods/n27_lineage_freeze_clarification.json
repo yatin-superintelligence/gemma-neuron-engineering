@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-31T02:33:38.767779+00:00",
+  "status": "prospective_lineage_clarification_before_any_A_model_output",
+  "protocol_sha256": "4696f807989768b461c6d6c793ba344321074553d2e20e31c4954c44904b711c",
+  "clarification": "Freeze all inference, auditor, builder and both-stage condition sources plus all common task/token/protocol inputs before Stage A. Stage B necessarily adds the exact Stage A raw outputs and native hashes, which do not exist before A. These are the only prospective dynamic inputs;hash them in a dated parent supplement before B launch. Freeze the B construction algorithm and source template before A, then verify its actual source payload is identical before B. No prompt, condition, gate, seed, cap or grading choice depends on A except the already frozen complete-block gate. All forty original outputs remain exact carries;new generation never consumes their tokens.",
+  "scientific_conditions_or_thresholds_changed": false,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

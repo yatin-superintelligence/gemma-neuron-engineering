@@ -646,8 +646,8 @@
     {
       "id": "Q41",
       "experiment": "N27: contextual policy transfer across operand order",
-      "status": "intent_only_source_reviewed_not_protocol_dataset_or_launch",
-      "question": "Can the previously controlled early policy site transfer a contextual comparison rule across recipient operand order,without copying a later donor operator?",
+      "status": "private_original_only_stage_A_active_outputs_unseen",
+      "question": "Can the previously controlled early policy site transfer a contextual comparison rule across recipient operand order, without copying a later donor operator?",
       "question_provenance": "N26 fails both fixed global screens; selected suppression and random A share the same two gained cases. N23 fails reverse-order task adequacy before edits. N14 supplies a controlled earlier full-site result, but the operand-order generalization question remains open. N24 score contributions do not establish abstract rule meaning.",
       "parents": [
         "Q25",
@@ -655,14 +655,14 @@
         "Q38",
         "Q40"
       ],
-      "method": "Intent only. Reuse native post-gating layers 5 through 9 at the selected-label token before later task/code text. Consider a new controlled-completion interface that fixes written operand order without supplying the comparison answer. Freeze exact prompts, hidden executable oracles, complete-block baseline adequacy, paired recipient-order transfer, same-rule donor, self/rescue and actual retention controls before outcomes. No sparse ranking, fitted vector, dose search, gradients or weight changes.",
-      "result": "No model run, task dataset, runner or launch-ready protocol exists. Source review confirms that N14 uses the selected-label token from the N06 tokenizer, not an end-of-policy period. The first intent and this zero-forward correction are preserved.",
+      "method": "The prospective two-stage protocol fixes 32 conditional function completions crossing family, wording, mapping, label and operand order, plus eight actual retention tests. A mechanical assistant prefix fixes the first operand without its comparator. Stage A requires three complete eight-case blocks and all eight retention cases before edits. Stage B carries forty originals and generates 160 identity, opposite, same-policy and exact rescue completions. The native site is post-gating layers 5 through 9 at the selected-label token before task text. Primary transfer requires both orders in at least half the eligible pairs with full family, style, mapping, label and direction coverage, same-policy preservation on at least N minus two cases and actual 8/8 retention in both foreign arms.",
+      "result": "Both-stage sources, all common inputs, the prospective auditor and Stage A notebook are frozen before model outputs. All forty tokenizations and 43,304 independent oracle checks pass, with 165 mutant refusals. Seventeen actual random-Gemma cases pass in FP32 and BF16, including self/foreign/rescue, cached steps, EOS/cap stops and malformed-cache refusals: 56 forwards, 168 input-token exposures, twenty random-model tokens and zero pretrained forwards or updates. Six additional actual-runner paired live-cache guards pass with 26 forwards and 82 exposures. Synthetic auditor helpers reject fourteen cache/scope corruptions and three bad endpoint patterns; both independent counter formulas match. This is software feasibility, with no pretrained N27 outcome reported. Stage A is now the one active private job. Fresh quota shows 29.18 free GPU hours before a conservative two-device reservation and two-hour reserve; all 48 recent account jobs were terminal. Exact private server source and metadata are verified. No output has been accessed.",
       "interpretation": "The selected label precedes later task text, so its state cannot already compute the later operation. A successful donor would support conditional contextual-rule transfer across the tested recipient orders, not individual neuron meaning, native necessity, a complete causal abstraction, coding improvement or novelty. Donor later-context duplicates are not independent controls.",
-      "next_question": "Freeze a small two-stage baseline/task-adequacy and full-site transfer protocol before implementation. Stop on inadequate complete counterbalanced blocks, rather than select passing partial cells or rewrite failed prompts.",
+      "next_question": "Run original-only Stage A after fresh quota/jobs/source/privacy gates. Stop if complete counterbalanced blocks or retention fail. Only its frozen audited gate authorizes Stage B. Exact A parent outputs are the sole prospectively declared dynamic B inputs;all B inference/auditor/builder sources are already frozen.",
       "direction_decision": "Close the global sparse-group hypothesis. First establish adequate task order and a controlled full-site semantic generalization before more sparse localization or construction."
     }
   ],
   "active_question_id": "Q41",
   "next_question_id": "Q41",
-  "utc": "2026-10-31T02:18:05.731619+00:00"
+  "utc": "2026-10-31T02:42:07.219967+00:00"
 }

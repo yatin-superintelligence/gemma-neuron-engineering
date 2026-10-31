@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-31T02:37:56.855768+00:00",
+  "status": "both_stage_sources_and_A_notebook_frozen_before_A_outputs",
+  "protocol_sha256": "4696f807989768b461c6d6c793ba344321074553d2e20e31c4954c44904b711c",
+  "analysis_plan_sha256": "f99250b078f1703c3df6ecc88a21d3abad7ed76c1dc9bf6bfd1a6cd8923d486b",
+  "auditor_sha256": "2fce7fdf49b89f46bfe39b00395a5c4dae25484843b08cb081a926bfe3d8bdee",
+  "notebook_A_sha256": "eb2b66894f640c06e73577e69c1a34f986bac0f7b317b32c4c6df5cd3f14b1c6",
+  "frozen_source_parent_count": 50,
+  "B_exact_A_lineage_supplement_required": true,
+  "optimizer_steps": 0
+}

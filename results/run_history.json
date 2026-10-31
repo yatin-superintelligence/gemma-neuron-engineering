@@ -362,5 +362,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "n27_phase_A_v1",
+      "launched_utc": "2026-10-31T02:40:42.932401+00:00",
+      "status": "running_private_source_verified"
+    }
+  ]
 }

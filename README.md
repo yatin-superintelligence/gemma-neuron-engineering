@@ -63,7 +63,7 @@ See the [complete grid](docs/figures/n26_summary.png), [all eight recipes](model
 
 A [generic host-only checker probe](results/return_identity_host_summary.json), completed before N26 output access, finds an [untested return-list identity property](methods/n26_return_identity_limit.json). The frozen scores check values, types and input preservation. They do not guarantee a newly allocated returned list. All original grades and cases remain unchanged; future confirmation must check the full contract. A [future-only macOS checker](evaluation/contract_execution_v2.py) now enforces fresh top-level result identity before serialization. Its [thirteen fixed host cases](results/future_return_contract_host.json) pass, including aliases of nested inputs and input mutation. It is not applied to N25 or N26.
 
-The [next contextual-binding question](methods/n27_intent.json) is source-reviewed intent only, with no new model result or launch-ready protocol. It would test whether the earlier selected-label site transfers a policy across recipient operand orders. Task adequacy and full-site controls come before new sparse localization.
+The [contextual-binding study](methods/n27_prospective_protocol.json) is source-frozen, with its original-only first stage running privately. A controlled completion prefix fixes operand order without supplying the comparator. At least three complete counterbalance blocks and all eight retention cases must pass before donor testing. [Host preparation](results/n27_preparation.json) verifies software paths and independent oracles, with no pretrained result yet. The earlier selected-label site and both recipient orders come before new sparse localization.
 
 ## Reproduce an edit
 
