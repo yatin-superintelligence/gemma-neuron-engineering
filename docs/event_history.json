@@ -3852,6 +3852,27 @@
       "event": "new_active_reservation_link_contract_caught_missing_question_repaired",
       "experiment": "Reporting",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 526,
+      "utc": "2026-10-31T17:32:07.803356+00:00",
+      "event": "conditional_complete_function_utility_intent_before_N39outputs",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 527,
+      "utc": "2026-10-31T17:32:07.803356+00:00",
+      "event": "host_metadata_role_field_failure_preserved_zero_model_or_scorer_calls",
+      "experiment": "N40H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 528,
+      "utc": "2026-10-31T17:32:07.803356+00:00",
+      "event": "all32native_metadata_profile_closed_correct_program_utility_guard_added",
+      "experiment": "N40H",
+      "optimizer_steps": 0
     }
   ]
 }

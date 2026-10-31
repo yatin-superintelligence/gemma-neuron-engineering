@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-31T17:14:59.808576+00:00",
+  "generated_utc": "2026-10-31T17:36:39.493343+00:00",
   "project": "Digital Surgery",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,8 +21,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "3f49e083ab87f38dbe1e59575ce63af53c57c93f5f9d4e20a608fb5bbbf2d16b",
-      "bytes": 8188
+      "sha256": "3e83f1ec8da2d1b7bfcc8b962fca022f4f249a32f79f80751f2ac2785b1aa704",
+      "bytes": 8416
     },
     {
       "path": "docs/ACTIVATION_VIEWER.html",
@@ -31,8 +31,8 @@
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "d4502a67848d82f6187bcec945c5c26c32738ac89304e2a7184c4fb6013ca0b3",
-      "bytes": 284868
+      "sha256": "cc75ea94d5e06d6c4594fec283ca2e14f361c4f27ae7839c5efe33c05ebf4af9",
+      "bytes": 287407
     },
     {
       "path": "docs/MODEL_REGISTRY.html",
@@ -41,8 +41,8 @@
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "bf9679bc89a86c686af55b3c2552d11ad0b99c58f91965823be562ff7d42c45f",
-      "bytes": 230667
+      "sha256": "031f8fd2cc8b42168746fce2d2b2b84a636c066c901899544259c56181412c1b",
+      "bytes": 233467
     },
     {
       "path": "docs/SURGERY_ASSET_INDEX.json",
@@ -66,8 +66,8 @@
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "11bf6dfb9e2664534b1a4a591447601a607545e5e442ac8a2ac32f863b58f7e0",
-      "bytes": 119946
+      "sha256": "92dcfa046a88147374c0d0fa8a812dfe57aa7776925000fadf80d64c3acfda94",
+      "bytes": 120624
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -276,8 +276,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "68d8c6330d724a3be2cf46dcb9817497eceee870162c03446872631bb8108a32",
-      "bytes": 116865
+      "sha256": "abadd09311a478051d1d378776b4216155016f7eb2271cd75e7e1fc7e442e583",
+      "bytes": 119243
     },
     {
       "path": "docs/storage_policy.json",
@@ -1128,6 +1128,11 @@
       "path": "methods/n39_native_comment_intent.json",
       "sha256": "3da7e7e99c6552e4d5d8bbe3f5c99b20344cbf194e2e5686829f74b2f4f03fd4",
       "bytes": 3659
+    },
+    {
+      "path": "methods/n40_conditional_utility_intent.json",
+      "sha256": "c1ddda6fc7406c3a504027291025839af13606cffde1108aac45f62e874a0a1e",
+      "bytes": 2702
     },
     {
       "path": "methods/strict_profile_matching.py",
@@ -2005,8 +2010,18 @@
       "bytes": 9471
     },
     {
+      "path": "results/n40_baseline_metadata_summary.json",
+      "sha256": "bb6d990eaf602c7ae6ef96cadde0c839ca07c963a86d3046364dab17bcc5df8d",
+      "bytes": 4391
+    },
+    {
+      "path": "results/n40_host_metadata_receipts.json",
+      "sha256": "c7f7b1c53eef88cb24115f90f9305fc13381d4ca153fb623753edd271e86c726",
+      "bytes": 1806
+    },
+    {
       "path": "results/progress_snapshot.json",
-      "sha256": "4912106b76aa58bdec456d37e847c12fa96965966a42fdec65ccf89cf8bbcbb5",
+      "sha256": "ebe880df2cad83ca239771676d8d9f604da41bbfe147e5a26849c7855f35e778",
       "bytes": 753
     },
     {

@@ -1,0 +1,35 @@
+{
+  "failure": {
+    "utc": "2026-10-31T17:30:18.025991+00:00",
+    "status": "host_metadata_failure_preserved",
+    "error": "KeyError role: carried N37 records do not contain role. The frozen lexical annotations supply the role.",
+    "source_sha256": "d474a81fe4e6d8eefda4076c11a21b4e606feaf586d49c8d5c44e53a5aa33db8",
+    "new_model_forwards": 0,
+    "new_generated_tokens": 0,
+    "scorer_calls": 0,
+    "optimizer_steps": 0,
+    "duration_seconds": null,
+    "repair": "A versioned host script joins annotations to native parent IDs before filtering roles. Same data,thresholds,questions and carried grades. No current worker code is changed."
+  },
+  "result": {
+    "utc": "2026-10-31T17:30:18.439857+00:00",
+    "status": "complete_host_only_closed",
+    "protocol_sha256": "9aeefba93f2b992b2ccc2f98606546b2da47b72fa2cd0e4f1e63c6c49a476a75",
+    "source_sha256": "2f4f2903d5445d5165d685044c8b5f10a1a5cd8eaee2382b20e9448c06e3b6b0",
+    "input_sha256": {
+      "runs/n37/version1/graded_records.jsonl": "0cdda8c99dbec9553470898df4fc098e1f9fe5026c0680513620d6e7485b416f",
+      "runs/n38/lexical_annotation/annotations.jsonl.gz": "5a6e96c99e8980f9d29bfdee2b096ea571103ccbdc1b533f98c10f7d4138f41f",
+      "research/experiments/n40/intent.json": "b0f490e146877a0bb81c13af6dc18d9eb78b2e8b867940cb9677b7e52aa58e21"
+    },
+    "original_cases": 32,
+    "recorded_generated_tokens": 7561,
+    "new_model_forwards": 0,
+    "new_generated_tokens": 0,
+    "scorer_calls": 0,
+    "optimizer_steps": 0,
+    "N39_outputs_accessed": false,
+    "host_wall_seconds": 0.038766750003560446,
+    "summary_sha256": "bb6d990eaf602c7ae6ef96cadde0c839ca07c963a86d3046364dab17bcc5df8d"
+  },
+  "scope": "Closed native labels and carried grades only. No model, tokenizer, scorer or program execution. No N39 output access."
+}

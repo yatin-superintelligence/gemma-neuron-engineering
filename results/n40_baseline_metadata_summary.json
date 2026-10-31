@@ -1,0 +1,140 @@
+{
+  "all32": {
+    "cases": 32,
+    "generated_tokens": 7561,
+    "mean_generated_tokens": 236.28125,
+    "mean_comment_fraction": 0.2026280551572461,
+    "pooled_comment_fraction": 0.46131464092051316,
+    "cases_with_any_comment": 12,
+    "cases_with_comment_fraction_at_least_point1": 12,
+    "families_with_any_comment": [
+      "ceil_ratio",
+      "rotate_right",
+      "union_length"
+    ]
+  },
+  "baseline_correct24": {
+    "cases": 24,
+    "generated_tokens": 4264,
+    "mean_generated_tokens": 177.66666666666666,
+    "mean_comment_fraction": 0.14564174375369696,
+    "pooled_comment_fraction": 0.3433395872420263,
+    "cases_with_any_comment": 7,
+    "cases_with_comment_fraction_at_least_point1": 7,
+    "families_with_any_comment": [
+      "ceil_ratio",
+      "rotate_right",
+      "union_length"
+    ]
+  },
+  "baseline_wrong8": {
+    "cases": 8,
+    "generated_tokens": 3297,
+    "mean_generated_tokens": 412.125,
+    "mean_comment_fraction": 0.3735869893678936,
+    "pooled_comment_fraction": 0.6138914164391871,
+    "cases_with_any_comment": 5,
+    "cases_with_comment_fraction_at_least_point1": 5,
+    "families_with_any_comment": [
+      "ceil_ratio",
+      "union_length"
+    ]
+  },
+  "families": {
+    "ceil_ratio": {
+      "cases": 4,
+      "generated_tokens": 2848,
+      "mean_generated_tokens": 712.0,
+      "mean_comment_fraction": 0.7378462346131971,
+      "pooled_comment_fraction": 0.7521067415730337,
+      "cases_with_any_comment": 4,
+      "cases_with_comment_fraction_at_least_point1": 4,
+      "families_with_any_comment": [
+        "ceil_ratio"
+      ],
+      "original_correct": 1
+    },
+    "first_prefix": {
+      "cases": 4,
+      "generated_tokens": 544,
+      "mean_generated_tokens": 136.0,
+      "mean_comment_fraction": 0.0,
+      "pooled_comment_fraction": 0.0,
+      "cases_with_any_comment": 0,
+      "cases_with_comment_fraction_at_least_point1": 0,
+      "families_with_any_comment": [],
+      "original_correct": 4
+    },
+    "long_tokens": {
+      "cases": 4,
+      "generated_tokens": 228,
+      "mean_generated_tokens": 57.0,
+      "mean_comment_fraction": 0.0,
+      "pooled_comment_fraction": 0.0,
+      "cases_with_any_comment": 0,
+      "cases_with_comment_fraction_at_least_point1": 0,
+      "families_with_any_comment": [],
+      "original_correct": 4
+    },
+    "parenthesis_depth": {
+      "cases": 4,
+      "generated_tokens": 426,
+      "mean_generated_tokens": 106.5,
+      "mean_comment_fraction": 0.0,
+      "pooled_comment_fraction": 0.0,
+      "cases_with_any_comment": 0,
+      "cases_with_comment_fraction_at_least_point1": 0,
+      "families_with_any_comment": [],
+      "original_correct": 1
+    },
+    "rotate_right": {
+      "cases": 4,
+      "generated_tokens": 1553,
+      "mean_generated_tokens": 388.25,
+      "mean_comment_fraction": 0.5881084769688071,
+      "pooled_comment_fraction": 0.6188023180940115,
+      "cases_with_any_comment": 4,
+      "cases_with_comment_fraction_at_least_point1": 4,
+      "families_with_any_comment": [
+        "rotate_right"
+      ],
+      "original_correct": 4
+    },
+    "run_lengths": {
+      "cases": 4,
+      "generated_tokens": 500,
+      "mean_generated_tokens": 125.0,
+      "mean_comment_fraction": 0.0,
+      "pooled_comment_fraction": 0.0,
+      "cases_with_any_comment": 0,
+      "cases_with_comment_fraction_at_least_point1": 0,
+      "families_with_any_comment": [],
+      "original_correct": 4
+    },
+    "stable_unique": {
+      "cases": 4,
+      "generated_tokens": 242,
+      "mean_generated_tokens": 60.5,
+      "mean_comment_fraction": 0.0,
+      "pooled_comment_fraction": 0.0,
+      "cases_with_any_comment": 0,
+      "cases_with_comment_fraction_at_least_point1": 0,
+      "families_with_any_comment": [],
+      "original_correct": 4
+    },
+    "union_length": {
+      "cases": 4,
+      "generated_tokens": 1220,
+      "mean_generated_tokens": 305.0,
+      "mean_comment_fraction": 0.2950697296759646,
+      "pooled_comment_fraction": 0.3155737704918033,
+      "cases_with_any_comment": 4,
+      "cases_with_comment_fraction_at_least_point1": 4,
+      "families_with_any_comment": [
+        "union_length"
+      ],
+      "original_correct": 2
+    }
+  },
+  "scope": "Frozen native token labels and carried grades only. Comments can be functional. This is metadata headroom,not the outcome of deleting comments or neurons,not a speed estimate or new score."
+}
