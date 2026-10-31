@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-31T01:03:26.019519+00:00",
+  "scope": "Official primary abstract and bibliography recheck only. Earlier scoped source reviews remain preserved;no new full-paper or appendix audit.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2607.07128v2",
+      "title": "Distributed Sparse Interventions in Language Models",
+      "relevance": "Distributed neuron interventions and iterative refinement of coordinates/strengths are prior work. No iterative fitting or common-gain optimization is adopted."
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35530v1",
+      "title": "CANS: Capability-Preserving Neuron Steering for Large Language Models",
+      "relevance": "Neuron scaling for behavioral control and retention is prior work. Closed-form fitted coefficients are prohibited here."
+    },
+    {
+      "url": "https://arxiv.org/abs/2203.14680v3",
+      "title": "Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space",
+      "relevance": "FFN vocabulary contributions and prediction control are prior work. No general novelty or transferred benchmark gain is claimed."
+    }
+  ],
+  "boundary": "Prescribed0/2 operations use fixed native coordinates and unchanged tasks,not fitted coefficients. Neither finite token scores nor global perturbation identify an abstract meaning by themselves.",
+  "optimizer_steps": 0
+}

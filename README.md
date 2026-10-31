@@ -46,6 +46,8 @@ The [runtime syntax controller](methods/n25_runtime_protocol.json) is complete a
 
 N25 uses only already-generated Python for its fixed trigger, with no baseline answers or hidden oracles in model inputs. The [original-only stage](results/n25_baseline_summary.json) passes every prospective usability requirement. The [host record](results/n25_host_summary.json) preserves the zero-forward parser failure and compatibility repair. Original grades, source failures and all dependent-family results remain fixed. The [example runner](examples/run_n25_policy.py) accepts your own prompt file; independent clean-package pretrained replay is not claimed.
 
+The [global suppression follow-up](methods/n26_global_protocol.json) is now the one active private job. It keeps the exact N25 cases, grades and three fixed groups. Suppression is primary; amplification is secondary. All 53 random-Gemma host paths, isolated package checks and the prospective audit's 62 corruption refusals pass. [Preparation and preserved repairs](results/n26_preparation.json) describe software feasibility, with no pretrained N26 outcome. All sources are frozen before launch. No original completion is regenerated.
+
 ## Reproduce an edit
 
 The common parent is `google/gemma-4-E2B-it` at revision `3e22461f65e89153144f8adb70e3b8c2cc9845a7`. The primary text-only representation is unquantized BF16. It retains decoder, token/per-layer embeddings and tied output head while excluding media modules. BF16 is distinct from FP32; no native BF16 acceleration on T4 is claimed.

@@ -1,0 +1,78 @@
+{
+  "host": {
+    "utc": "2026-10-31T01:06:20.921051+00:00",
+    "status": "all_fixed_host_paths_pass",
+    "cases": 53,
+    "actual_tiny_forward_calls": 414,
+    "actual_tiny_input_token_exposures": 864,
+    "random_model_generated_tokens": 208,
+    "pretrained_model_forwards": 0,
+    "pretrained_text_tokens": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 1.1452564579994942,
+    "sources": {
+      "research/experiments/n26/host_protocol.json": "ea62f68bac899656a57c6b38e50f2784cc8977216cf40b96524561cf027f87bf",
+      "research/experiments/n26/host.py": "8b774d631b0e9121dcbcd7821b8ceff857b82e264a29bbb3465922c3bfc3d798",
+      "research/experiments/n26/measure.py": "a51f250139a92d12d83267aa8ca018def0b3d078b193834e1f3fd73dd25dbb74",
+      "interpretability/prescribed_columns.py": "8db8b7a1a819e3cf20114a48bf1957b8d0119a013988af4d3ace14ed8e2afa87",
+      "interpretability/prefix_decode.py": "4b7f12bcab65de95b2f7a63dcdfbc4ee4fd2d4731cade70e56c23e3ea71c8a44",
+      "research/experiments/n25/host.py": "3b2f1426778e2a248aca417957b72d44398178d3a8fdd3eb50b344e64d7c088b"
+    }
+  },
+  "prospective_auditor_fixture": {
+    "utc": "2026-10-31T01:12:57.464179+00:00",
+    "status": "archived_and_synthetic_auditor_fixtures_pass",
+    "accepted_fixtures": 8,
+    "corruptions_rejected": 62,
+    "new_model_forwards": 0,
+    "optimizer_steps": 0,
+    "synthetic_zero_full_matrix_digest_is_not_a_pretrained_witness": true,
+    "sources": {
+      "research/experiments/n26/audit.py": "57dbaa927506ac521cba9a058e4a9a25d8ed79fcbbc2a9b85dd990bf9b201f4c",
+      "research/experiments/n26/audit_host.py": "23a3621c99410bbcec930b50b56463af89e388c3f45931ce770d9a8ca67e646b"
+    }
+  },
+  "fixture_expectation_repair": {
+    "utc": "2026-10-31T01:12:50.219963+00:00",
+    "status": "pretrained_launch_blocked_until_repaired_fixture_passes",
+    "failure": "The corruption fixture derived expected parameter versions from the damaged receipt,so it accepted a deliberately wrong version. The production auditor already compares against a separate parameter plan.",
+    "repair": "Fixture now keeps immutable versions from the unmodified archive before corrupting a copy. Production audit.py,protocol,conditions,data,grades and thresholds are unchanged.",
+    "original_source_sha256": "ef6127cb0ae5de406966932a8ccfa6eacd538796fb44d1f14433fbbdd4254879",
+    "production_auditor_sha256": "57dbaa927506ac521cba9a058e4a9a25d8ed79fcbbc2a9b85dd990bf9b201f4c",
+    "new_model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "package_path_repair": {
+    "utc": "2026-10-31T01:14:37.885562+00:00",
+    "failure": "macOS TemporaryDirectory uses /var while resolved child paths use /private/var. The ownership check compared resolved children against an unresolved parent and stopped before imports.",
+    "repair": "Resolve both sides of the path containment check. No model,protocol,condition,source package or auditor change.",
+    "original_source_sha256": "d988cb5ebe6b20a8dc6ec5a266e11a8d7e3dea26a2d876dbcf862f122a4d865d",
+    "new_model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "preflight": {
+    "utc": "2026-10-31T01:14:50.592922+00:00",
+    "status": "passed",
+    "all_packaged_source_and_data_hashes_exact": true,
+    "isolated_GPU_runner_import": true,
+    "isolated_BOTH_runner_auditor_import": true,
+    "ruff_F821_F823": "pass",
+    "all_cells_compile": true,
+    "exact_inherited40_token_oracle_source_gates_preserved_without_rerun": true,
+    "GPU_hidden_oracles_or_grader": false,
+    "packaged_sources": 22,
+    "packaged_data_files": 10,
+    "counter_bounds": {
+      "trajectories": 840,
+      "max_calls": 33221,
+      "max_input_exposures": 112076,
+      "max_new_tokens": 29184,
+      "derived_by_manifest_rows_not_hand_constant": true
+    },
+    "new_model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "new_pretrained_model_outputs_reported": false,
+  "raw_tasks_oracles_parent_references_and_notebook_private": true
+}

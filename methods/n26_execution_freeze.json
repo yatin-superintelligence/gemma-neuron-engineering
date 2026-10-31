@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-31T01:15:56.990949+00:00",
+  "experiment": "N26",
+  "status": "sources_data_and_prospective_audit_frozen_before_new_pretrained_outputs",
+  "auditor_sha256": "57dbaa927506ac521cba9a058e4a9a25d8ed79fcbbc2a9b85dd990bf9b201f4c",
+  "protocol_sha256": "96421b5cb6e89fdb818a5b6bcb85f48a8c9c81b157fc1a50e480d5dfd8ca7d78",
+  "primary_operation": 0,
+  "analysis_plan_sha256": "4995ece412bf6a225dcbe37e526e11a0c1df2c566c21bfffc7b55fdb2d9a75f7",
+  "notebook_sha256": "3a055e6c6a5a2cfc5aac9bbcd72f2cf675641c818c4082e98cf7056ac7aed42e",
+  "frozen_source_parent_count": 67,
+  "optimizer_steps": 0
+}

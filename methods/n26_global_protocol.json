@@ -1,0 +1,157 @@
+{
+  "utc": "2026-10-31T01:03:26.019519+00:00",
+  "experiment": "N26",
+  "question_id": "Q40",
+  "status": "prospective_protocol_before_new_helper_runner_auditor_implementation",
+  "question": "Does global suppression of the fixed native group affect executable coding more than both matched controls on the unchanged usable N25 cohort?",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only unquantized BF16,4628569344 unique parameters,35 MLPs and15 native cache slots. No historical adapters or prior edits.",
+  "seed": 4026,
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "parents": {
+    "runs/n25/phase_A/version1/result_receipt.json": "7a4d82fe0bdd4a595ffb44039b007b559470cb531ce06ce2911c17b60f76c7dc",
+    "runs/n25/phase_A/version1/baseline_gate.json": "60113c7f05ab17dd8305196da40b30ed0d74e57077e1268941b727f99365e13d",
+    "runs/n25/phase_A/version1/original_records.jsonl": "9ad395ecd438ed6dcccd7e8d84d91ed119d4163aa5d65759492bf5cee8b121b6",
+    "runs/n25/phase_A/version1/grades.json": "d98085e82ca0074d3dd8d86598096df576914df754d07f7335ef5c853da71cd7",
+    "runs/n25/phase_B/version1/result_receipt.json": "ab6db087661056c9f20f5d561436ca1a5b5c51cc8a529912cdf57c4ae6f7470a",
+    "runs/n25/phase_B/version1/mechanical_diagnostics.json": "0b9d69ce5e53361eb31fc9f16db42d3287505289cb6be433232ffe20ada84e4e",
+    "runs/n24/version1/result_receipt.json": "272d21c363c6cd812f697f71ea412860d7a396688d535f46a748656282096f76",
+    "research/experiments/n25/prompts.jsonl": "7ff4f50e33e119ec12fb5481db0fc3aafe6cc90bb18a638910eefb5a06b06294",
+    "research/experiments/n25/groups.json": "3ff1e306b43b296e9f19df233941f8801e71b1bc98a33a002f973147d5363797",
+    "runs/n25/task_host/tokenization.json": "01570ff7af21dc9606e9235f01347b4b0028db84018b8d0f3f509a9c1ed27f54",
+    "research/experiments/n25/task_metadata.json": "d531395d3fb4635cdf45dd8fa12aaff07344da8643b42eaa775db7c359824656",
+    "research/experiments/n25/oracles.py": "da508668dd8e86bab1bc30ce43c29dc9bbbf93de1fbfdc9ec58a63a44548e725",
+    "research/experiments/n25/grading.py": "8038ce5db27d33efc036e03b388dd7a662636cbd5b4a73c2e3d51d9c64687148",
+    "research/experiments/n25/json_oracles.json": "2639e3b380cbd6a6e55efc12e1e2374f08a2626f618426278a00d7ccfe3f5d6a"
+  },
+  "parent_evidence": "N24 selected64 suppression changes the operator margin more than both controls but not programs. N25 runtime gain2 changes54 immediate logits without any emitted-token change, on a usable23/32 baseline. Global suppression has not been tested on these complete tasks. Earlier N21 global2 has an unassessable format gate. None establishes coding improvement.",
+  "fixed_edit": "Exact same selected64 and both fixed random64 groups from N20,all layers24..34. Assign only their original dense outgoing down columns multiplied by0 or2 throughout prompt and all generated positions. Factor1 identity assigns/restores the same columns. No new rank,coordinate,strength,fitted vector,gradient,trigger,task wording or optimizer. Do not modify old frozen stored_group_gain.py;new helper must preserve exact scope/restoration guards.",
+  "conditions": [
+    {
+      "name": "base",
+      "group": null,
+      "factor": 1,
+      "record_kind": "exact_N25_A_carry"
+    },
+    {
+      "name": "identity_selected64_gain1",
+      "group": "selected64",
+      "factor": 1,
+      "record_kind": "guarded_reference_only"
+    },
+    {
+      "name": "selected64_gain0",
+      "group": "selected64",
+      "factor": 0,
+      "record_kind": "new_free_generation"
+    },
+    {
+      "name": "random34201_64_gain0",
+      "group": "random34201_64",
+      "factor": 0,
+      "record_kind": "new_free_generation"
+    },
+    {
+      "name": "random34202_64_gain0",
+      "group": "random34202_64",
+      "factor": 0,
+      "record_kind": "new_free_generation"
+    },
+    {
+      "name": "selected64_gain2",
+      "group": "selected64",
+      "factor": 2,
+      "record_kind": "new_free_generation"
+    },
+    {
+      "name": "random34201_64_gain2",
+      "group": "random34201_64",
+      "factor": 2,
+      "record_kind": "new_free_generation"
+    },
+    {
+      "name": "random34202_64_gain2",
+      "group": "random34202_64",
+      "factor": 2,
+      "record_kind": "new_free_generation"
+    }
+  ],
+  "cohort": {
+    "coding": 32,
+    "families": 8,
+    "dependent_variants_per_family": 4,
+    "retention": 8,
+    "source": "Exact forty N25 prompts,signatures,graders,caps and original grades. Reused development,not fresh confirmation. No exclusion of source failures,inactive cases or originally correct functions. No task rewrite after this result."
+  },
+  "generation": {
+    "coding_cap": 128,
+    "json_cap": 64,
+    "seed": 4026,
+    "eos_ids": [
+      1,
+      50,
+      106
+    ],
+    "rule": "Unmodified N25 raw-argmax cached decoder,enable_thinkingFalse,EOS/firstclosingPythonfence/cap. Call generate_prefix_gain with empty coordinates and gain1 inside each global weight context. Syntax recognizer only adds read-only same-edited-model self shadows;it never triggers or selects a weight edit. No answer/reference input or teacher path in any new generation.",
+    "decoder_sha256": "4b7f12bcab65de95b2f7a63dcdfbc4ee4fd2d4731cade70e56c23e3ea71c8a44"
+  },
+  "lineage": {
+    "carry": "Forty complete N25_A records byte-exact,never regenerate originals or rerun their scorer.",
+    "identity": "One factor1 context:forty teacher-forced measurement trajectories replay every original generated-step full-logit hash. Teacher token IDs are read only by this lineage helper,not by new free generation. Require greedy argmax equals every parent token. This is not a new response generation. Carry forty identity references only after all guards pass.",
+    "native": "Before assignments,capture forty fresh full-prompt final logit hashes and complete15-entry cache fingerprints. Match first logits to parent. No original completion is regenerated.",
+    "scope": "Before each new generation,one separate full-prompt edited prefill must preserve the complete native current cache byte-exact. Record full-logit hash/top1 and require actual first generated token/top1/hash agreement. Later emitted-token feedback may change later caches.",
+    "restore": "After each of seven contexts,all forty original first-prefill logit and whole-cache witnesses replay exactly:280 restorations. Save exact source/edited/restored full down-matrix hashes and untouched-column hashes. No full matrices or activation dumps."
+  },
+  "counts": {
+    "conditions": 8,
+    "records": 320,
+    "new_free_generations": 240,
+    "exact_parent_carries": 40,
+    "guarded_identity_references": 40,
+    "native_prefill_measurements": 40,
+    "identity_measurement_trajectories": 40,
+    "edited_prefill_measurements": 240,
+    "restoration_measurements": 280,
+    "weight_contexts": 7
+  },
+  "counter_contract": {
+    "native_or_scope_or_restore": "1 call and n input-token exposures per prefill.",
+    "identity_reference": "T0 calls,n+T0-1 exposures for each carried original token path. No generated token is counted.",
+    "new_generation": "T+F calls,n+T-1+F exposures under unchanged prefix decoder,whereF read-only same-edited-model diagnostic shadows. Separate edited scope prefill adds1 call and n exposures.",
+    "totals": "Sum individual manifest trajectories and compare independent outer root-forward meter. New generated tokens=sumT over240 new responses only. No handwritten fixed overhead."
+  },
+  "guards": "All p.gradNone,all gradient flags frozen. Only declared down parameters may increment2 per actual context touching their layer,derived from ordered groups. All other versions unchanged. Exact source columns/matrices restored after every context,including failures. Hook inventory exact. No backwards. Stop interpretation on any source,parent,identity,scope,cache,restoration,counter or completeness failure;preserve partials and original sources. No tolerance amendments or completed-panel regeneration.",
+  "primary_operation": 0,
+  "primary_clean_necessity_screen": {
+    "losses": "On all23 originally correct coding cases,selected0 losses must exceed EACH random0 loss count by at least4.",
+    "coverage": "Selected-only losses relative to each random must span at least2 algorithm families. Report every family and every originally wrong/source-failure case too.",
+    "retention": "All8 original retention cases must remain correct in selected0.",
+    "interpretation": "A pass is a bounded clean global group contribution on these tasks,not an abstract semantic neuron role. Controls matched the earlier decision profile,not activity at every new global position. No single-neuron meaning or complete circuit claim."
+  },
+  "primary_suppression_utility_screen": {
+    "selected_minus_base_net_at_least": 3,
+    "selected_minus_each_random0_net_at_least": 2,
+    "positive_family_nets_against_each_comparator_at_least": 2,
+    "retention": "All8 originally correct retention cases preserved.",
+    "stress": "Every claimed gain and changed executable response gets unchanged independent256 stress probes;retain primary grades even if stress fails.",
+    "interpretation": "Separate utility endpoint on the same factor0 arms. It need not co-occur with necessity losses. Report both predetermined endpoints without substituting one for the other. Candidate development only;any signal requires fresh frozen confirmation."
+  },
+  "secondary_amplification": "All three factor2 arms are reported under the same utility counts and retention/stress checks. They cannot replace a failed factor0 primary or be called a confirmed winner. Any future pursuit is a new prospective development decision with separate fresh confirmation. No selected strength search.",
+  "assessment": "Carry original grades without scorer rerun. Guarded identity copies them after exact measurement lineage. Grade240 new outputs once using unchanged N25 grading source. All32 coding/all8 retention remain reported,including paired gains/losses versus original and both same-factor controls,all8 family tables,leave-one-family-out sensitivity,caps/source/runtime errors and raw token changes. No source repair,best-reading,reroll or oracle in model inputs.",
+  "host_gate": "Actual random-Gemma FP32/BF16 fixtures for factor0/1/2 scope,identity teacher paths,global first-prefill cache,full matrix/exception restoration,EOS/fence/cap and counters. Verify actual pinned35MLP/15cache config. Import BOTH new runner and auditor,RuffF821/F823,isolated package/cells and exact inherited token/oracle hashes before source freeze/launch. Do not rerun closed N25 host/scorers.",
+  "resources": {
+    "platform_seconds": 5400,
+    "notebook_seconds": 5250,
+    "worker_seconds": 4950,
+    "max_paid_usd": 0,
+    "minimum_free_reserve_hours": 2,
+    "fresh_official_quota_required": true,
+    "one_active_private_job_only": true,
+    "deadline_UTC": "2026-10-31T18:22:58Z"
+  },
+  "publication": "Only reviewed methods,complete aggregates,generic helper and validated recipe/compact original source columns may be public. N21 already stores exact original/double columns;reference that bundle,do not duplicate bases. Raw inputs,oracles,replies,notebooks,reference tokens,activations and paper remain private.",
+  "next_decision": "If both primary screens fail,close this fixed sparse global hypothesis rather than extending dose/rank sweeps. A controlled contribution remains distinct from useful benefit. Any positive result requires a fresh answer-independent task cohort before a coding claim."
+}
