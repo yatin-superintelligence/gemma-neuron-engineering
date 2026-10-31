@@ -6,7 +6,7 @@ A no-training study of native neurons, small groups and direct model edits in Ge
 
 N24 finds a controlled comparator-score contribution: selected64 opposite-policy donors shift the logit margin by +1.574 on average, versus +0.025 and -0.051 for matched random groups. Same-policy donors average +0.022. All 578 trajectories and guards pass, with zero updates. Every nominated operator margin remains on the original side, so the prior program-level null remains unchanged. See the [complete result and limits](results/n24_finite_summary.json).
 
-N21 is complete: all 160 records pass audit. The selected edit matches the original at 12/24 coding functions; both random controls score 14/24. Ten capped source-format failures exceed the predeclared baseline limit, making the planned benefit interpretation unassessable. There is no selected coding gain.
+N25 now supplies an assessable runtime-edit null. The earlier N21 result remains preserved: all 160 records pass audit. The selected edit matches the original at 12/24 coding functions; both random controls score 14/24. Ten capped source-format failures exceed the predeclared baseline limit, making the planned benefit interpretation unassessable. There is no selected coding gain.
 
 ## Read the research
 
@@ -30,7 +30,7 @@ Clone this repository and open `docs/index.html` to view the HTML documents. Git
 
 Every tested condition and scientific null remains in the logbook. The [N19 grid](results/n19_current_decision_summary.json), [N20 grid](results/n20_summary.json), [B01 assessment](results/b01_chat_summary.json) and [B02 reversal grid](results/b02_reversal_summary.json) provide complete aggregates.
 
-## Fresh coding result
+## Complete coding evaluations
 
 N21 applies the same prescribed global outgoing-column factor of two to the existing selected64 group and each fixed random64 group. Original and same-scope identity are separate arms. The edit has no answer-derived trigger, fitted strength or new coordinate selection. All 24 coding functions remain in gains/losses, with eight family-level tables and eight retention inputs.
 
@@ -42,9 +42,9 @@ See the [complete N21 result](results/n21_utility_summary.json), [all five weigh
 
 The [finite-score study](methods/n24_finite_score_protocol.json) is complete. [Every group and operation](docs/figures/n24_summary.png), [all 24 runtime recipes](models/n24/recipe.json), the [metric helper](interpretability/decision_scores.py) and [plot source](scripts/plot_n24_summary.py) are preserved. This is a bounded score contribution on reused development, with no individual semantic meaning or coding gain. 
 
-The [next controller intent](methods/n25_runtime_controller_intent.json) considers a fixed runtime syntax trigger without a known comparator position or baseline answer. The fixed prefix controller now passes 58 host cases on random Gemma modules in FP32 and BF16, including exact identity, cache isolation, restoration and stopping checks. [Host results](results/n25_host_summary.json) preserve the zero-forward parser failure and repair. 
+The [runtime syntax controller](methods/n25_runtime_protocol.json) is complete and audited on a usable error-bearing baseline. All five conditions score **23/32 coding and 8/8 retention**, with **zero gains or losses**. All 200 records and mandatory guards pass. The 160 new token sequences equal the original responses, although every gain arm changes 54 immediate logit-vector hashes. The fixed utility criterion fails. See [all outcomes and diagnostics](results/n25_runtime_summary.json), the [complete figure](docs/figures/n25_summary.png) and [all five recipes](models/n25/recipe.json).
 
-The [two-stage coding protocol](methods/n25_runtime_protocol.json), dataset and prospective auditor are now frozen. The first private stage is active and generates forty unmodified responses only. Edited arms can run only if the fixed usability, error and retention gate passes. Its server source and private metadata are verified; no pretrained N25 outcome is reported yet.
+N25 uses only already-generated Python for its fixed trigger, with no baseline answers or hidden oracles in model inputs. The [original-only stage](results/n25_baseline_summary.json) passes every prospective usability requirement. The [host record](results/n25_host_summary.json) preserves the zero-forward parser failure and compatibility repair. Original grades, source failures and all dependent-family results remain fixed. The [example runner](examples/run_n25_policy.py) accepts your own prompt file; independent clean-package pretrained replay is not claimed.
 
 ## Reproduce an edit
 

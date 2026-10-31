@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-31T00:37:30.465854+00:00",
+  "status": "additional_path_prediction_after_A_before_B_output_access",
+  "source_sha256": "9ad395ecd438ed6dcccd7e8d84d91ed119d4163aa5d65759492bf5cee8b121b6",
+  "inactive_original_cases": 13,
+  "inactive_coding_cases": 9,
+  "inactive_JSON_retention_cases": 4,
+  "active_original_coding_errors": 4,
+  "maximum_possible_coding_gain_count_from_active_errors": 4,
+  "prediction": "With the same frozen deterministic decoder and source guards,cases with no baseline event follow the same tokens and encounter no event under every gain policy. All13inactive cases should remain token-exact.",
+  "mechanism": "The policy receives only generated prefix text and does not edit anything before its first event. Exact prefix equality therefore preserves gate decisions. Current late edits additionally have no historical path if emitted token andwhole current cache remain exact.",
+  "restriction": "This is a descriptive mechanistic prediction,not a new utility gate or exclusion rule. Keep all32coding cases and all8retention in primary results. Do not revise the active controller,gain,task,cap or primary threshold.",
+  "B_outputs_accessed": false,
+  "new_model_forwards": 0,
+  "new_generated_tokens": 0,
+  "optimizer_steps": 0
+}

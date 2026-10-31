@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T00:35:04.007029+00:00",
+  "status": "complete_grid_figure_plan_after_A_before_B_output_access",
+  "scope": "Complete final N25 development results only after frozen B audit passes. Baseline A is already known;no B output has been accessed.",
+  "panels": [
+    "A:all5fixed conditions,coding correct out of32 andretention out of8,with exact identity/carry status explicit.",
+    "B:all5conditions xall8family scores,out of4 percell,with no family omitted.",
+    "C:selected gains andlosses versusbase andeachmatched random control,all32cases;fixed primary gate status annotated without relabeling partial gains as success."
+  ],
+  "caption_requirements": [
+    "All200records,160newB+40carried originals. Aoriginal40weregenerated once.",
+    "Eight dependent hand-authored families,not32independent algorithms;development,notconfirmation.",
+    "No accuracy/modelcapability/semantic-role claim unless supported by complete audited results;no noveltyclaim.",
+    "Every condition and allgains/losses retained;identity exact guarded,andretention separate."
+  ],
+  "source": "scripts/plot_n25_summary.py",
+  "B_outputs_accessed": false,
+  "optimizer_steps": 0
+}

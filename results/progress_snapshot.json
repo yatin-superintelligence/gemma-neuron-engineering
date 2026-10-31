@@ -1,18 +1,12 @@
 {
-  "generated_utc": "2026-10-31T00:11:53.715558+00:00",
+  "generated_utc": "2026-10-31T00:58:27.945467+00:00",
   "question_records": 39,
-  "recorded_terminal_runs": 55,
-  "active_runs": [
-    {
-      "run": "n25_phase_A_v1",
-      "launched_utc": "2026-10-31T00:08:25.850698+00:00",
-      "status": "Private original-only job launched;40 new responses, no neuron edit before the host baseline gate."
-    }
-  ],
-  "ledger_events": 312,
-  "question_register_source_sha256": "6845e4a71a8a63b7accdd07f2aa144689c40ba238ab0200648dab19ecd2ef070",
-  "event_ledger_source_sha256": "a04dcc1e41fb86b6fb7ff9880da9f4c9ca3adbff8f8011d10d47d0e32a614478",
-  "compute_ledger_source_sha256": "0f3a0bd5201f2dc36a48fe52e0d128d6b4ef11deed5af32f23bf7b60ecade30f",
+  "recorded_terminal_runs": 57,
+  "active_runs": [],
+  "ledger_events": 324,
+  "question_register_source_sha256": "df2bdd6e48319ed58461c6783b9e8f6904ffc41a0bcd481e67563f03911e93b7",
+  "event_ledger_source_sha256": "2abfe99bfaa6607a15bf9101c22f30f023dcd096336e1e24d8d9fdd6ff9246f7",
+  "compute_ledger_source_sha256": "c271d21a3dc45c230e61ffeffa4d2897933e7ced61470e10611a4122554c8464",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0

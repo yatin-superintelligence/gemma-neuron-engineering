@@ -1,0 +1,364 @@
+{
+  "receipt": {
+    "utc": "2026-10-31T00:41:34.587824+00:00",
+    "status": "complete_host_audited",
+    "phase": "B",
+    "all_records_and_mandatory_guards_pass": true,
+    "records": 200,
+    "worker": {
+      "status": "complete",
+      "phase": "B",
+      "new_records": 160,
+      "carried_records": 40,
+      "actual_forward_calls": 10484,
+      "input_token_exposures": 44279,
+      "new_generated_tokens": 10068,
+      "actual_backward_calls": 0,
+      "actual_optimizer_steps": 0,
+      "all_original_parameter_versions_unchanged": true,
+      "all_gradient_flags_unchanged": true,
+      "all_parameter_gradients_none": true,
+      "all_hooks_restored": true,
+      "hidden_oracles_or_grader_on_GPU": false,
+      "seconds": 886.118979984,
+      "environment": {
+        "torch": "2.11.0+cu128",
+        "transformers": "5.8.0",
+        "GPU": "Tesla T4",
+        "dtype": "torch.bfloat16",
+        "unique_parameters": 4628569344
+      }
+    },
+    "notebook_seconds": 930.134644987,
+    "optimizer_steps": 0,
+    "host_recomputes_pretrained_logits_activations_or_cache_values": false
+  },
+  "descriptive": {
+    "conditions": [
+      {
+        "condition": "base",
+        "coding_correct": 23,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 3,
+          "circular_window": 1,
+          "capped_signed_step": 3,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "caps": 4,
+        "cases_with_events": 27,
+        "total_events": 54,
+        "status_counts": {
+          "passed": 31,
+          "wrong_answer": 5,
+          "source_error": 4
+        }
+      },
+      {
+        "condition": "identity_selected64_gain1",
+        "coding_correct": 23,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 3,
+          "circular_window": 1,
+          "capped_signed_step": 3,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "caps": 4,
+        "cases_with_events": 27,
+        "total_events": 54,
+        "status_counts": {
+          "passed": 31,
+          "wrong_answer": 5,
+          "source_error": 4
+        }
+      },
+      {
+        "condition": "selected64_gain2",
+        "coding_correct": 23,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 3,
+          "circular_window": 1,
+          "capped_signed_step": 3,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "caps": 4,
+        "cases_with_events": 27,
+        "total_events": 54,
+        "status_counts": {
+          "passed": 31,
+          "wrong_answer": 5,
+          "source_error": 4
+        }
+      },
+      {
+        "condition": "random34201_64_gain2",
+        "coding_correct": 23,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 3,
+          "circular_window": 1,
+          "capped_signed_step": 3,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "caps": 4,
+        "cases_with_events": 27,
+        "total_events": 54,
+        "status_counts": {
+          "passed": 31,
+          "wrong_answer": 5,
+          "source_error": 4
+        }
+      },
+      {
+        "condition": "random34202_64_gain2",
+        "coding_correct": 23,
+        "coding_total": 32,
+        "retention_correct": 8,
+        "retention_total": 8,
+        "family_correct": {
+          "boundary_filter": 4,
+          "interval_overlap": 3,
+          "clamp_unordered": 3,
+          "circular_window": 1,
+          "capped_signed_step": 3,
+          "adjacent_filter": 4,
+          "closest_bound": 4,
+          "triangle_validity": 1
+        },
+        "caps": 4,
+        "cases_with_events": 27,
+        "total_events": 54,
+        "status_counts": {
+          "passed": 31,
+          "wrong_answer": 5,
+          "source_error": 4
+        }
+      }
+    ],
+    "contrasts": {
+      "base": {
+        "net": 0,
+        "family_nets": {
+          "boundary_filter": 0,
+          "interval_overlap": 0,
+          "clamp_unordered": 0,
+          "circular_window": 0,
+          "capped_signed_step": 0,
+          "adjacent_filter": 0,
+          "closest_bound": 0,
+          "triangle_validity": 0
+        },
+        "leave_one_family_out_net_range": [
+          0,
+          0
+        ],
+        "prospective_net_and_family_gate": false,
+        "gain_count": 0,
+        "loss_count": 0
+      },
+      "random34201_64_gain2": {
+        "net": 0,
+        "family_nets": {
+          "boundary_filter": 0,
+          "interval_overlap": 0,
+          "clamp_unordered": 0,
+          "circular_window": 0,
+          "capped_signed_step": 0,
+          "adjacent_filter": 0,
+          "closest_bound": 0,
+          "triangle_validity": 0
+        },
+        "leave_one_family_out_net_range": [
+          0,
+          0
+        ],
+        "prospective_net_and_family_gate": false,
+        "gain_count": 0,
+        "loss_count": 0
+      },
+      "random34202_64_gain2": {
+        "net": 0,
+        "family_nets": {
+          "boundary_filter": 0,
+          "interval_overlap": 0,
+          "clamp_unordered": 0,
+          "circular_window": 0,
+          "capped_signed_step": 0,
+          "adjacent_filter": 0,
+          "closest_bound": 0,
+          "triangle_validity": 0
+        },
+        "leave_one_family_out_net_range": [
+          0,
+          0
+        ],
+        "prospective_net_and_family_gate": false,
+        "gain_count": 0,
+        "loss_count": 0
+      }
+    },
+    "selected_retention_preserved": true,
+    "selected_all_claimed_gains_pass_stress": true,
+    "development_signal_gate_passed": false,
+    "scope": "New dependent-family development panel,not fresh confirmation or semantic neuron meaning."
+  },
+  "mechanical": {
+    "utc": "2026-10-31T00:47:47.420585+00:00",
+    "status": "post_audit_all_condition_mechanical_diagnostics",
+    "conditions": {
+      "identity_selected64_gain1": {
+        "cases": 40,
+        "exact_token_sequences_vs_original": 40,
+        "exact_text_vs_original": 40,
+        "events": 54,
+        "edited_current_logit_hash_changes": 0,
+        "whole_current_cache_exact_events": 54,
+        "inactive_cases": 13,
+        "inactive_token_sequences_exact": 13,
+        "observed_scope_layers": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "all_step_logit_vectors": 2517,
+        "changed_step_logit_hashes": 0,
+        "unedited_step_logit_hashes_exact": 2517,
+        "all_changed_steps_are_exact_edit_steps": true
+      },
+      "selected64_gain2": {
+        "cases": 40,
+        "exact_token_sequences_vs_original": 40,
+        "exact_text_vs_original": 40,
+        "events": 54,
+        "edited_current_logit_hash_changes": 54,
+        "whole_current_cache_exact_events": 54,
+        "inactive_cases": 13,
+        "inactive_token_sequences_exact": 13,
+        "observed_scope_layers": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "all_step_logit_vectors": 2517,
+        "changed_step_logit_hashes": 54,
+        "unedited_step_logit_hashes_exact": 2463,
+        "all_changed_steps_are_exact_edit_steps": true
+      },
+      "random34201_64_gain2": {
+        "cases": 40,
+        "exact_token_sequences_vs_original": 40,
+        "exact_text_vs_original": 40,
+        "events": 54,
+        "edited_current_logit_hash_changes": 54,
+        "whole_current_cache_exact_events": 54,
+        "inactive_cases": 13,
+        "inactive_token_sequences_exact": 13,
+        "observed_scope_layers": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "all_step_logit_vectors": 2517,
+        "changed_step_logit_hashes": 54,
+        "unedited_step_logit_hashes_exact": 2463,
+        "all_changed_steps_are_exact_edit_steps": true
+      },
+      "random34202_64_gain2": {
+        "cases": 40,
+        "exact_token_sequences_vs_original": 40,
+        "exact_text_vs_original": 40,
+        "events": 54,
+        "edited_current_logit_hash_changes": 54,
+        "whole_current_cache_exact_events": 54,
+        "inactive_cases": 13,
+        "inactive_token_sequences_exact": 13,
+        "observed_scope_layers": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "all_step_logit_vectors": 2517,
+        "changed_step_logit_hashes": 54,
+        "unedited_step_logit_hashes_exact": 2463,
+        "all_changed_steps_are_exact_edit_steps": true
+      }
+    },
+    "prior_inactive_path_prediction_passes": true,
+    "all_primary_grades_and_contrasts_unchanged": true,
+    "new_model_forwards": 0,
+    "new_generated_tokens": 0,
+    "optimizer_steps": 0,
+    "scope": "Hash changes establish a numerical intervention witness,not useful coding or semantic meaning. No logit magnitude or new native activation array is reconstructed."
+  },
+  "baseline": {
+    "source_valid": 28,
+    "coding_correct": 23,
+    "source_valid_wrong": 5,
+    "wrong_families": 3,
+    "coding_with_events": 23,
+    "retention_correct": 8,
+    "noncomparison_with_events": 4,
+    "all_prospective_baseline_requirements_pass": true,
+    "decision": "stage_B_eligible"
+  },
+  "all_fixed_conditions_and_cases_retained": true,
+  "raw_tasks_answers_predictions_native_values_private": true
+}

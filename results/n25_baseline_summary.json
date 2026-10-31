@@ -1,0 +1,246 @@
+{
+  "utc": "2026-10-31T00:33:06.403799+00:00",
+  "status": "phase_A_complete_private_host_audited_closed",
+  "receipt": {
+    "utc": "2026-10-31T00:17:40.530524+00:00",
+    "status": "complete_host_audited",
+    "phase": "A",
+    "all_records_and_mandatory_guards_pass": true,
+    "records": 40,
+    "worker": {
+      "status": "complete",
+      "phase": "A",
+      "new_records": 40,
+      "carried_records": 0,
+      "actual_forward_calls": 2571,
+      "input_token_exposures": 6326,
+      "new_generated_tokens": 2517,
+      "actual_backward_calls": 0,
+      "actual_optimizer_steps": 0,
+      "all_original_parameter_versions_unchanged": true,
+      "all_gradient_flags_unchanged": true,
+      "all_parameter_gradients_none": true,
+      "all_hooks_restored": true,
+      "hidden_oracles_or_grader_on_GPU": false,
+      "seconds": 266.192816258,
+      "environment": {
+        "torch": "2.11.0+cu128",
+        "transformers": "5.8.0",
+        "GPU": "Tesla T4",
+        "dtype": "torch.bfloat16",
+        "unique_parameters": 4628569344
+      }
+    },
+    "notebook_seconds": 315.85205197899995,
+    "optimizer_steps": 0,
+    "host_recomputes_pretrained_logits_activations_or_cache_values": false
+  },
+  "baseline_gate": {
+    "source_valid": 28,
+    "coding_correct": 23,
+    "source_valid_wrong": 5,
+    "wrong_families": 3,
+    "coding_with_events": 23,
+    "retention_correct": 8,
+    "noncomparison_with_events": 4,
+    "all_prospective_baseline_requirements_pass": true,
+    "decision": "stage_B_eligible"
+  },
+  "all_families_and_retention": {
+    "boundary_filter": {
+      "cases": 4,
+      "correct": 4,
+      "source_valid": 4,
+      "caps": 0,
+      "cases_with_events": 4,
+      "events": 4,
+      "grade_statuses": {
+        "passed": 4
+      }
+    },
+    "interval_overlap": {
+      "cases": 4,
+      "correct": 3,
+      "source_valid": 4,
+      "caps": 0,
+      "cases_with_events": 0,
+      "events": 0,
+      "grade_statuses": {
+        "passed": 3,
+        "wrong_answer": 1
+      }
+    },
+    "clamp_unordered": {
+      "cases": 4,
+      "correct": 3,
+      "source_valid": 4,
+      "caps": 0,
+      "cases_with_events": 4,
+      "events": 13,
+      "grade_statuses": {
+        "passed": 3,
+        "wrong_answer": 1
+      }
+    },
+    "circular_window": {
+      "cases": 4,
+      "correct": 1,
+      "source_valid": 1,
+      "caps": 3,
+      "cases_with_events": 0,
+      "events": 0,
+      "grade_statuses": {
+        "source_error": 3,
+        "passed": 1
+      }
+    },
+    "capped_signed_step": {
+      "cases": 4,
+      "correct": 3,
+      "source_valid": 3,
+      "caps": 0,
+      "cases_with_events": 3,
+      "events": 12,
+      "grade_statuses": {
+        "source_error": 1,
+        "passed": 3
+      }
+    },
+    "adjacent_filter": {
+      "cases": 4,
+      "correct": 4,
+      "source_valid": 4,
+      "caps": 0,
+      "cases_with_events": 4,
+      "events": 4,
+      "grade_statuses": {
+        "passed": 4
+      }
+    },
+    "closest_bound": {
+      "cases": 4,
+      "correct": 4,
+      "source_valid": 4,
+      "caps": 0,
+      "cases_with_events": 4,
+      "events": 10,
+      "grade_statuses": {
+        "passed": 4
+      }
+    },
+    "triangle_validity": {
+      "cases": 4,
+      "correct": 1,
+      "source_valid": 4,
+      "caps": 1,
+      "cases_with_events": 4,
+      "events": 7,
+      "grade_statuses": {
+        "passed": 1,
+        "wrong_answer": 3
+      }
+    },
+    "noncomparison": {
+      "cases": 4,
+      "correct": 4,
+      "source_valid": 4,
+      "caps": 0,
+      "cases_with_events": 4,
+      "events": 4,
+      "grade_statuses": {
+        "passed": 4
+      }
+    },
+    "json": {
+      "cases": 4,
+      "correct": 4,
+      "source_valid": 4,
+      "caps": 0,
+      "cases_with_events": 0,
+      "events": 0,
+      "grade_statuses": {
+        "passed": 4
+      }
+    }
+  },
+  "trigger_posthoc": {
+    "utc": "2026-10-31T00:27:53.501741+00:00",
+    "status": "descriptive_posthoc_complete",
+    "cases": 40,
+    "events": 54,
+    "categories": {
+      "comparison_lexeme": 19,
+      "whitespace_or_special": 24,
+      "other": 11
+    },
+    "cohorts": {
+      "coding_correct": {
+        "cases": 23,
+        "cases_with_events": 19,
+        "events": 42,
+        "categories": {
+          "comparison_lexeme": 16,
+          "whitespace_or_special": 21,
+          "other": 5
+        }
+      },
+      "coding_source_valid_error": {
+        "cases": 5,
+        "cases_with_events": 4,
+        "events": 8,
+        "categories": {
+          "whitespace_or_special": 3,
+          "comparison_lexeme": 3,
+          "other": 2
+        }
+      },
+      "coding_source_failure": {
+        "cases": 4,
+        "cases_with_events": 0,
+        "events": 0,
+        "categories": {}
+      },
+      "retention_noncomparison": {
+        "cases": 4,
+        "cases_with_events": 4,
+        "events": 4,
+        "categories": {
+          "other": 4
+        }
+      },
+      "retention_json": {
+        "cases": 4,
+        "cases_with_events": 0,
+        "events": 0,
+        "categories": {}
+      }
+    },
+    "source_sha256": "9ad395ecd438ed6dcccd7e8d84d91ed119d4163aa5d65759492bf5cee8b121b6",
+    "all_original_grades_unchanged": true,
+    "new_model_forwards": 0,
+    "optimizer_steps": 0,
+    "B_outputs_accessed": false,
+    "scope": "Observed one-token lexical extensions only. Not semantic roles,independent events,correctness prediction or a new controller."
+  },
+  "trigger_subtypes_posthoc": {
+    "utc": "2026-10-31T00:30:38.415222+00:00",
+    "status": "additional_descriptive_refinement_after_original_trigger_summary",
+    "parent_summary_sha256": "8416d036e33e822ca44d57f8337bcdc7262964857148205ace2ff740ebffb0fd",
+    "combined_parent_bucket": 24,
+    "subtypes": {
+      "literal_whitespace": 19,
+      "skipped_EOS": 5
+    },
+    "scope": "Retains the original five-category summary unchanged. These subtype counts are posthoc and use only saved A tokens;Boutputs remain unread.",
+    "path_prediction": "For a late native edit with exact unchanged current cache and unchanged emitted greedy token,the next cached forward has no changed historical state from that edit. Later influence would require emitted-token feedback or another edit. This is a conditional architecture prediction,not quantitative mediation or a new N25result.",
+    "controller_limit": "The frozen gate can act before whitespace or EOS rather than the comparator. Canonical-prefix deduplication does not fire again for a whitespace-only extension. This does not justify changing the active N25controller or thresholds.",
+    "new_model_forwards": 0,
+    "new_generated_tokens": 0,
+    "optimizer_steps": 0,
+    "B_outputs_accessed": false
+  },
+  "all40original_grades_unchanged": true,
+  "raw_tasks_answers_predictions_contexts_oracles_private": true,
+  "B_outputs_accessed": false,
+  "scope": "Usable error-bearing original baseline only,not a coding gain or edited outcome."
+}

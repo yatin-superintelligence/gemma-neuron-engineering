@@ -258,3 +258,9 @@ The loader references the pinned BF16 parent, verifies all original columns and 
 [All 24 N24 recipes](n24/recipe.json) retain the six fixed native groups and four existing current-token operations. All 578 measured trajectories and mandatory guards passed; the edited current-state hashes reproduce the original N20 witnesses. The study changes activation values at one cached decision and introduces no new tensor blob or permanent parameter edit. Reconstruct the pinned original model and supply your own actual unmodified donor states. Raw study donors and tasks remain private.
 
 The selected group has a controlled comparator-score contribution, with no established semantic neuron meaning or coding improvement. An independent clean-package pretrained replay was not performed. The existing N21 column bundle remains the exact stored-weight artifact for those fixed coordinates.
+
+## N25 runtime prefix policies
+
+[All five policies](n25/recipe.json) preserve the exact parent, three fixed coordinate groups, gain, syntax gate, tokenizer and stopping rules. The [generation helper](../interpretability/prefix_decode.py) uses only text already generated in the current response. Each intervention has an isolated native shadow and whole-current-cache check. The [example runner](../examples/run_n25_policy.py) accepts a caller-supplied prompt file. Run it from this repository with `python -m examples.run_n25_policy --prompt-file your_prompt.txt`.
+
+All 200 final records and mandatory guards pass. Every condition scores 23/32 coding and 8/8 retention; all 160 new token sequences equal the original responses. Each gain arm changes 54 immediate logit-vector hashes, while all unedited step hashes remain exact. The fixed utility criterion fails. The bundle stores the runtime policy and needs no new tensor blob. An independent clean-package pretrained replay has not been performed.

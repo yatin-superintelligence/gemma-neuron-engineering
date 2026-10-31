@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-31T00:20:12.980177+00:00",
+  "status": "exact_parent_supplement_and_unchanged_B_source_verified",
+  "phase": "B",
+  "original_analysis_plan_sha256": "af349f371e71f58cb72035694b36ead43a4bd26bc9e522663959d89942fd3c10",
+  "protocol_sha256": "b7fafc71a463c0cfd237a45c5bea51af87b602de872438c12bdd931e7f950b34",
+  "auditor_sha256": "c99947b487786d2d74be437d8561e547c98ba53854216c3e2522a60dcfca032d",
+  "parent_sha256": {
+    "result_receipt.json": "7a4d82fe0bdd4a595ffb44039b007b559470cb531ce06ce2911c17b60f76c7dc",
+    "baseline_gate.json": "60113c7f05ab17dd8305196da40b30ed0d74e57077e1268941b727f99365e13d",
+    "original_records.jsonl": "9ad395ecd438ed6dcccd7e8d84d91ed119d4163aa5d65759492bf5cee8b121b6",
+    "grades.json": "d98085e82ca0074d3dd8d86598096df576914df754d07f7335ef5c853da71cd7",
+    "final_privacy_receipt.json": "2517f986d35bba6f8247cc943f51d5d1063b64b6c07a816434bfb28481ca3863"
+  },
+  "notebook_B_sha256": "33c51d8ac0cfe810234a02ace1afbf18df2dbbdde6670728ed77c18a320276d0",
+  "build_B_sha256": "8f620b3c2261fd631b3336dcef4c7c7f9acac14af62c554c71091e2480cd5c11",
+  "notebook_metadata_sha256": "d71e50e222c06ca37793b8ada0c4975507f9e6639b70389dfb334b3f23e79134",
+  "source_changes_from_frozen_A": 0,
+  "exact_parent_carries": 40,
+  "new_outputs": 160,
+  "Ruff_and_isolated_package_import": "pass",
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

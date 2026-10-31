@@ -342,13 +342,19 @@
       "outcome": "All 578 measurement trajectories audited. Selected64 opposite margin +1.57358 versus matched +0.02502/-0.05078; same-policy +0.02194. All current hashes reproduce N20. Zero new completions or program regrading; prior program null unchanged.",
       "duration_scope": "Worker/notebook seconds, not charged quota.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "n25_phase_A_v1",
-      "launched_utc": "2026-10-31T00:08:25.850698+00:00",
-      "status": "Private original-only job launched;40 new responses, no neuron edit before the host baseline gate."
+      "recorded_script_seconds": 266.192816258,
+      "outcome": "All40originals audited;fixed baseline gate passes:23/32coding,8/8retention,28source-valid,5source-validerrors across3families. No neuron edits.",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "n25_phase_B_v1",
+      "recorded_script_seconds": 886.118979984,
+      "outcome": "All200audited,160new/40exact carried. All5conditions23/32coding,8/8retention;zero gains/losses;fixed utility primary fails. Every new token sequence equalsoriginal.54immediate logit hashes change ineachgain arm without cache/history persistence.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }
