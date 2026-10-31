@@ -2682,6 +2682,104 @@
       "event": "direct_relation_four_donor_cell_question_recorded_intent_only_after_N27_planned_stop",
       "experiment": "N28",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 360,
+      "utc": "2026-10-31T03:03:40.297896+00:00",
+      "event": "four_cell_direct_relation_protocol_frozen_before_implementation",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 361,
+      "utc": "2026-10-31T03:15:07.720099+00:00",
+      "event": "actual18random_Gemma_current_site_past_and_first_cache_path_guards_pass",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 362,
+      "utc": "2026-10-31T03:16:55.823610+00:00",
+      "event": "all24token_oracle_checks_pass23000checks92mutants",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 363,
+      "utc": "2026-10-31T03:27:26.532138+00:00",
+      "event": "actual12runner_donor_mapping_and_scope_cases_pass",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 364,
+      "utc": "2026-10-31T03:27:32.842000+00:00",
+      "event": "prospective21cache_scope_path_refusals_and3endpoint_fixtures_pass",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 365,
+      "utc": "2026-10-31T03:35:17.517098+00:00",
+      "event": "both_stage_sources_and_A_notebook_frozen_before_outputs",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 366,
+      "utc": "2026-10-31T03:44:24.501682+00:00",
+      "event": "title_derived_kernel_identity_resolved_without_new_push_or_scientific_change_before_output_access",
+      "experiment": "N28 stage A",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 367,
+      "utc": "2026-10-31T03:49:47.973184+00:00",
+      "event": "stage_A_complete_all24_originals_and_mandatory_guards_pass_no_edits",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 368,
+      "utc": "2026-10-31T03:49:47.973184+00:00",
+      "event": "stage_B_exact_A_parent_lineage_supplement_frozen",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 369,
+      "utc": "2026-10-31T03:49:47.973184+00:00",
+      "event": "stage_B_isolated_sources_imports_Ruff_and_payload_checks_pass",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 370,
+      "utc": "2026-10-31T03:49:47.973184+00:00",
+      "event": "stage_B_metadata_id_aligned_to_existing_fixed_title_before_push",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 371,
+      "utc": "2026-10-31T03:51:07.908618+00:00",
+      "event": "stage_B_private_launch_and_source_verified_after_complete_original_gate",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 372,
+      "utc": "2026-10-31T03:51:07.908618+00:00",
+      "event": "all_condition_figure_and_interpretation_branches_recorded_before_B_output_access",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 373,
+      "utc": "2026-10-31T03:52:03.457328+00:00",
+      "event": "public_export_missing_launch_timestamp_repaired_before_public_push",
+      "experiment": "N28 documentation",
+      "optimizer_steps": 0
     }
   ]
 }

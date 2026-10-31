@@ -1,0 +1,70 @@
+{
+  "host": {
+    "utc": "2026-10-31T03:15:07.720099+00:00",
+    "status": "passed",
+    "cases": 18,
+    "malformed_cache_refusals": 10,
+    "calls": 62,
+    "input_token_exposures": 200,
+    "random_model_tokens": 20,
+    "pretrained_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 12.331756208001025
+  },
+  "independent_oracles": {
+    "utc": "2026-10-31T03:16:55.823610+00:00",
+    "status": "passed",
+    "rows": 24,
+    "independent_oracle_checks": 23000,
+    "mutant_refusals": 92,
+    "correct_fixture_stress_probes": 5124,
+    "every_single_failure_stops_gate": true,
+    "new_model_forwards": 0,
+    "optimizer_steps": 0,
+    "seconds": 0.1341562919988064
+  },
+  "actual_runner_scope_guards": {
+    "utc": "2026-10-31T03:27:26.532138+00:00",
+    "status": "passed",
+    "cases": 12,
+    "calls": 28,
+    "input_token_exposures": 142,
+    "pretrained_forwards": 0,
+    "new_generated_tokens": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 0.5686546670003736
+  },
+  "synthetic_auditor_helpers": {
+    "utc": "2026-10-31T03:27:32.842000+00:00",
+    "status": "synthetic_helpers_pass",
+    "cache_corruptions_refused": 12,
+    "scope_corruptions_refused": 7,
+    "forbidden_path_changes_refused": 2,
+    "valid_later_current_cache_change_accepted": true,
+    "endpoint_failure_fixtures": 3,
+    "both_counter_formulas_independently_match": true,
+    "whole_GPU_auditor_golden_replay_claimed": false,
+    "new_model_forwards": 0,
+    "optimizer_steps": 0,
+    "seconds": 0.011035415998776443
+  },
+  "preflight": {
+    "utc": "2026-10-31T03:34:00.037131+00:00",
+    "status": "passed",
+    "phase": "A",
+    "all_cells_compile": true,
+    "all_package_hashes_exact": true,
+    "isolated_GPU_runner_import": true,
+    "isolated_BOTH_runner_auditor_import": true,
+    "ruff_F821_F823": "pass",
+    "no_hidden_grader_or_oracle_on_GPU": true,
+    "source_template_and_counter_manifest_agree": true,
+    "packaged_sources": 22,
+    "packaged_inputs": 7,
+    "new_model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "new_pretrained_outcomes_reported": false
+}

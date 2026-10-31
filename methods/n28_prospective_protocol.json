@@ -1,0 +1,181 @@
+{
+  "utc": "2026-10-31T03:03:40.297896+00:00",
+  "experiment": "N28",
+  "question_id": "Q42",
+  "version": 1,
+  "status": "prospective_protocol_before_task_runner_auditor_implementation",
+  "question": "Does full current-site donor transfer follow an explicit comparison relation across operand order, or copy the donor operator?",
+  "parents_sha256": {
+    "research/experiments/n28/intent.json": "da8ec49ccbd1240bfce8ea3321f6d4b6006e0c01bdc8e9c7459455d8b12454c7",
+    "runs/n27/phase_A/version1/result_receipt.json": "4848a1c7d49b3508f355e936338d64adb35b30a8ea9246bb4e52fe2c116c8621",
+    "runs/n27/phase_A/version1/interpretation.json": "2652dadb8f71cd8b53b3c16833e4cf52358d1eede9511c1002d62d5b856e0dd3",
+    "runs/n22/version1/result_receipt.json": "a874e833e09d6ab286eb3af6fe65261732f564ed7634c5ea86208b73b86ad63d",
+    "runs/n24/version1/interpretation.json": "c432804c8ee9536e275b83865667c2dcde263d16fa000d368df212285f9211e0",
+    "research/experiments/n26/literature_next_question.json": "2a63a67533c2accd940eb5af0ed9e1067a744c267924d1c18cd7850a2efb3be3"
+  },
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "original_text_only_unquantized_BF16",
+  "unique_parameters": 4628569344,
+  "native_cache_slots": 15,
+  "design": {
+    "new_development_only": true,
+    "role_cases": 16,
+    "retention_cases": 8,
+    "factors": {
+      "family": [
+        "filter",
+        "predicate"
+      ],
+      "wording": [
+        0,
+        1
+      ],
+      "direction": [
+        1,
+        -1
+      ],
+      "recipient_operand_order": [
+        0,
+        1
+      ]
+    },
+    "instructions": "Use direct strict greater/lower integer relations without arbitrary mode names or label mapping. Two fixed natural-language phrasings per family. Construct all inputs once before outputs; never select wording from model completions.",
+    "interface": "Mechanical assistant function prefix supplies only syntax and the first comparison operand. The comparator and second operand remain free generation. Assemble prefix plus raw suffix for strict single-comparison source/order and independent executable checks. Filtering preserves order, duplicates and new-list identity; equality is excluded. Predicate returns Boolean with equality false.",
+    "retention": "Two noncomparison function tasks (signed sum and integer negation) and two JSON tag-string tasks, each with two fixed wordings, giving eight inputs. Every donor arm acts on all eight. Code has one pure bounded arithmetic return; no calls, imports, mutation or outside prose. JSON is a bare string.",
+    "not_N27_repair": "All N27 inputs and grades stay closed. These new direct-language tasks remove arbitrary label binding and use a different site/context. They are not confirmation, model improvement or an isolated position-effect test."
+  },
+  "site": {
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "signal": "actual unmodified post-gating down_proj inputs",
+    "recipient_position": "last input token after mechanical assistant prefill, or last chat-template token for JSON",
+    "donor_position": "each donor own last input token; absolute indices can differ intentionally",
+    "assignments": "One prefill-only swap at the recipient current position. All cached one-token calls skip the patch. No attention/KV hooks, parameters, gradients, vectors or new branches.",
+    "native_shapes": "Layers0..14 width6144;layers15..34 width12288;one transient batch-one source vector per layer. Save hashes only."
+  },
+  "conditions": [
+    "base",
+    "identity",
+    "opposite_same_order",
+    "same_same_order",
+    "opposite_reversed_order",
+    "same_reversed_order",
+    "rescue"
+  ],
+  "donors": {
+    "role": "Every foreign donor uses the other fixed wording of the same family. Opposite/same relation and same/reversed written order define the four cells. No source is chosen by its output.",
+    "retention": "All four foreign arms use the other fixed wording of the same retention task. These are identical actual donors and dependent repeat checks, not four independent directional tests. Generate every planned arm and require identical foreign first-logit/cache hashes and tokens for each retention row.",
+    "identity": "Actual recipient states at all35 layers;exact original first logits,complete cache and full generated token sequence required.",
+    "rescue": "Two ordered contexts:opposite_same_order actual donor,then actual recipient states at all35 layers. Exact first logits,complete cache and full generation required."
+  },
+  "generation": {
+    "seed": 2841,
+    "do_sample": false,
+    "max_new_tokens": 32,
+    "stops": "EOS or first generated newline;otherwise cap. Preserve every raw token including stop tokens. No repair,rerolls or best-reading score.",
+    "no_hidden_answers_on_GPU": true,
+    "reference_tokens": "Exact Stage A original tokens appear only in Stage B teacher-forced lineage guards and raw carried references. Never seed free generation."
+  },
+  "stage_A": {
+    "records": 24,
+    "new_generations": 24,
+    "native_captures": 24,
+    "restorations": 2,
+    "gate": "All sixteen role programs and all eight retention cases correct under every frozen source,order,type,value and input-preservation requirement. No partial-cell eligibility.",
+    "failure": "Close after twenty-four originals before every edit. Keep failures,do not rewrite wording or caps. Stop further comparison-interface attempts in this sprint.",
+    "calls": "24 native capture calls+2 restoration calls+sum(T_new)=26+sum(T_new).",
+    "input_exposures": "2*S24+S2+sum(T_new-1),derived from the manifests."
+  },
+  "stage_B": {
+    "requires": "Frozen Stage A audit and all-case adequacy gate pass;fresh quota,terminal jobs and source/lineage/privacy checks.",
+    "records": 168,
+    "exact_parent_carries": 24,
+    "new_generations": 144,
+    "native_recaptures": 24,
+    "native_h_replays": 840,
+    "self_first_measurements": 24,
+    "rescue_first_measurements": 24,
+    "restorations": 14,
+    "new_first_measurements": 144,
+    "sentinels": "Six fixed rows:filter(wording0,direction+1,order0),filter(wording1,direction-1,order1),predicate(wording0,direction-1,order1),predicate(wording1,direction+1,order0),sum wording0,JSON task0 wording0.",
+    "cached_self": "Fresh native/self pairs hold both caches live and require exact logits,complete cache and nonaliasing at prefill and first min(2,T_original) teacher tokens.",
+    "parent_replay": "Before new generation,replay all24original first-logit/full-cache/past-cache witnesses and all840native h hashes. Never regenerate original completions. Carry original grades without a closed-scorer rerun.",
+    "new_records": "Every new record has a separate first-logit/cache measurement and free greedy continuation under the same fixed assignment. First emitted token must equal measured argmax. All seven conditions and all sixteen role cases remain in correctness gains/losses and the joint grid.",
+    "calls": "24native+24self+24rescue+12sentinel prefills+2*sum(K_sentinel)cached+14restorations+144new measurements+sum(T_new)=242+2*sum(K_sentinel)+sum(T_new).",
+    "input_exposures": "15*S24+2*S_sentinel+2*sum(K_sentinel)+7*S2+sum(T_new-1). Independently derive each term from row/condition manifests. Do not rely only on the written simplification."
+  },
+  "prospective_path_guards": {
+    "past_KV": "Every fixed-input current-position MLP assignment must preserve all earlier cache positions byte-exact in every one of the fifteen native cache entries. Save compact hashes of keys/values excluding the current position. No numerical tolerance.",
+    "first_producer": "The whole first native cache entry must remain byte-exact under all MLP assignments:its K/V is produced before the first edited MLP. Validate against actual pinned paths in the host fixture before GPU.",
+    "current_KV": "Other current-position cache entries may change under foreign donors. Never impose whole-current-cache equality on foreign states. Self/rescue and restorations require whole-cache equality.",
+    "scope": "These are architecture path guards,not mediation fractions,semantic meaning or new capability. Different emitted tokens can change later caches."
+  },
+  "primary": {
+    "unit": "Eight paired cells:family x wording x requested direction,each containing both recipient orders. Not eight independent algorithms.",
+    "opposite_pair": "Both recipient orders must implement the opposite requested relation under BOTH donor-order arms. Require at least six of the eight complete pairs,spanning both families,wordings and directions.",
+    "same_relation": "Each of same_same_order and same_reversed_order preserves at least14of16role programs.",
+    "retention": "All8retention correct in every foreign arm,with identical repeat foreign hashes/tokens as prescribed. Identity/rescue exact on all24inputs.",
+    "copying_diagnostic": "On valid single-comparison programs,record the actual operator and whether it equals the actual unmodified donor operator,for every cell. Invalid source is a failure,never inferred copying. Cross-order cells distinguish predictions;semantic failure alone does not establish literal copying. No OR score or best donor arm.",
+    "outcome_scope": "Conditional full-site control on a new completion interface. No individual neuron meaning,native necessity,formal causal abstraction,whole-program coding benefit or novelty.",
+    "next": "Only an adequate controlled result can support a separately frozen native-group necessity/rescue/specificity follow-up. No new rank,dose or constructed neurons within N28."
+  },
+  "host_gates": [
+    "Actual random-Gemma35-layer current-position source/self/foreign/ordered-rescue/cached/restoration paths in FP32/BF16,with fifteen populated native caches.",
+    "Exact past-KV and first-cache-entry guards for foreign assignments;reject malformed/truncated/nonfinite cache witnesses. No tolerance amendments.",
+    "All24tokenizations and two-way operand/order source checks;independent exhaustive executable references plus256stress probes for correct or changed programs,seed2842. Explicit new-list checks before serialization.",
+    "Import BOTH runner and auditor in isolation,compile packaged cells,RuffF821/F823 before GPU. Verify the validated research interpreter before collection;only prepend the isolated official Kaggle CLI path inside that running process.",
+    "Prospective guard/counter/endpoint fixtures before launch. No claim of independent host recomputation of pretrained tensors or logits."
+  ],
+  "source_freeze": "Freeze both-stage inference,auditor,builder sources and all common inputs before Stage A output access. The only dynamic B inputs are exact Stage A raw records/native witnesses plus the immutable audited parent gate/grades. Hash them in a dated supplement before B,verify source payload identical. Preserve every actual defect with a dated amendment;never silently replace frozen sources.",
+  "caps_seconds": {
+    "A_platform": 1200,
+    "A_notebook": 1100,
+    "A_worker": 900,
+    "B_platform": 2400,
+    "B_notebook": 2300,
+    "B_worker": 2000
+  },
+  "resource_policy": "Use scripts/kaggle_access.py for all authenticated CLI. Fresh explicit free quota and actual jobs before each launch,one private free job only,conservative two-device cap reservation and at least two hours reserve. Cap plus audit/checkpoint must fit31October18:22:58UTC. No money.",
+  "storage_policy": "Caches/tmp on Kaggle. Raw compact predictions,hashes,aggregate grades and scope receipts only. Full donor states ephemeral;no activation dumps or repeated base outputs. Raw tasks,oracles,prefixes,replies/notebooks/paper private. Public only reviewed methods,aggregate results and generic validated edits.",
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "training_allowed": false,
+  "new_model_outputs_accessed": false,
+  "GPU_launch_authorized_by_protocol_alone": false
+}

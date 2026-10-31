@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-31T03:44:24.501682+00:00",
+  "status": "administrative_kernel_identity_amendment_before_output_access",
+  "question_id": "Q42",
+  "cause": "Kaggle derives a new notebook slug from the title. The declared ID used direct while the title used Policy. Exactly one job was created at the policy URL returned in the original push stdout. Initial verification used the wrong declared slug and failed before output retrieval or grading.",
+  "original_collector": "scripts/collect_n28_outputs.py",
+  "original_collector_sha256": "eb232caf4ce796215ddd04ba1e608c6a6a53dcd136ab886b3df1c137c2ad6163",
+  "resolved_collector": "scripts/collect_n28_outputs_v2.py",
+  "resolved_collector_sha256": "b3752dc20eeb4e5c80694ad635f9b1401e33a4e31df2d88aeeaa3472d38b568d",
+  "collector_only_change": "The literal kernel-slug component direct becomes policy. Every source/privacy/manifest/lineage/counter/auditor check is byte-identical under the inverse literal substitution.",
+  "no_scientific_source_or_auditor_change": true,
+  "notebook_A_sha256": "00d777e2976b73fba4215a0662a9074bb64b506990eb4a5e91c1e1ad7f87b686",
+  "stage_B_transport": "After the frozen builder,align metadata ID to the already fixed Policy title. Preserve both metadata editions and hashes before launch. No notebook cell,input,cap,seed,condition or grader changes.",
+  "new_model_forwards": 0,
+  "new_generations": 0,
+  "optimizer_steps": 0
+}

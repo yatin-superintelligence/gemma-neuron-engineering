@@ -65,7 +65,7 @@ A [generic host-only checker probe](results/return_identity_host_summary.json), 
 
 The [contextual-binding study](results/n27_baseline_summary.json) stops before every edit. All forty records and mandatory guards pass: 21/32 coding, 8/8 retention and no complete counterbalanced block. Every role source satisfies the required operand order, but eleven compute the wrong relation. The [prospective protocol](methods/n27_prospective_protocol.json) and [host preparation](results/n27_preparation.json) remain preserved. An audit interpreter import failure occurred before grading; the unchanged frozen auditor passes under the validated research Python. No prompts, caps or grades change.
 
-The [next direct-relation question](methods/n28_intent.json) is intent only. It would remove arbitrary label binding and cross donor relation with donor operand order at the current site. Task adequacy still comes before edits; this does not repair or rerun N27.
+The [direct-relation baseline](results/n28_baseline_summary.json) passes all 16 coding and 8 retention cases. The one active private donor stage crosses donor relation with donor operand order at the current site to distinguish relation transfer from copying a comparison symbol. All twenty-four original outputs are carried exactly; the stage generates 144 new responses under all seven conditions. No donor-stage conclusion exists yet; this is a separate development assay and does not repair or rerun N27.
 
 ## Reproduce an edit
 

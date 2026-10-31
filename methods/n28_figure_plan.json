@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-31T03:51:07.908618+00:00",
+  "status": "prospective_before_stage_B_output_access",
+  "question_id": "Q42",
+  "source_protocol_sha256": "814d5be599db1cba654cf30bb5287210d034f286ce114b733a9b5651346f1a3b",
+  "grid": "All sixteen role cells by all seven conditions. Keep recipient operand order,wording,direction and family visible. Mark original-correct,opposite-correct and invalid/other as distinct outcomes.",
+  "aggregates": "Every condition original-correct and opposite-correct counts,all8retention,gains/losses,caps;each foreign operator-copy count and source-valid denominator.",
+  "primary": "Eight paired cells evaluated jointly under BOTH opposite donor orders,not an OR or best arm. Show all pairs and fixed6/8threshold. Both same-relation preservation thresholds and retention screen reported separately.",
+  "dependence": "Two families and fixed wordings,not sixteen independent algorithms. The four foreign retention donors are identical repeated checks.",
+  "interpretation_branches": [
+    "Passing all primary parts supports conditional full-site relation transfer on this interface,not individual meaning,native necessity,formal abstraction or coding gain.",
+    "If cross-order transfer fails,semantic failure alone does not establish literal copying. Evaluate actual operator-copy diagnostics on valid programs in every foreign cell.",
+    "A failed retention or same-relation screen remains a primary failure even if some opposite outputs transfer.",
+    "Any mandatory guard failure prevents behavioral interpretation;preserve all partial outputs and exact source failure."
+  ],
+  "no_outcome_selection_or_new_forward": true,
+  "optimizer_steps": 0
+}
