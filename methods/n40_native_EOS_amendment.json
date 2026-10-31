@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-31T19:27:01.151189+00:00",
+  "experiment": "N40",
+  "question_id": "Q54",
+  "status": "direct_human_inference_policy_amendment_before_output_access",
+  "authority": "U23 direct human instruction overrides earlier assistant cap proposal.",
+  "current_run_unchanged": true,
+  "outputs_accessed": false,
+  "original_protocol": "research/experiments/n40/protocol.json",
+  "source_freeze": "runs/n40/analysis_source_freeze_v2.json",
+  "decision": "At terminal preserve and audit this frozen execution once. Identify every new record whose final token is not native EOS and stopped at the old cap; retain all completed responses exactly. Do not select a condition, gain or task by correctness.",
+  "conditional_followup": "If there are any non-EOS cutoff records, freeze a separate continuation protocol/source/auditor before suffix generation. Replay exact own-history IDs/full-logit/cache witnesses under the same physical edit or prompt-only condition; then continue freely to native EOS with no new arbitrary token ceiling. Checkpoint and label actual context/memory/wall-time/resource interruptions. No closed response regeneration or grader rewrite.",
+  "current_primary_reporting": "Original cap-endpoint assessment remains a dated original result, not the final unconstrained-termination utility claim. If no ceiling binds, state that without inferring general adequacy. Any interrupted reply cannot support a completed-ability-failure claim.",
+  "new_forward_calls": 0,
+  "optimizer_steps": 0
+}

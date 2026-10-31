@@ -1,0 +1,60 @@
+{
+  "random_model_checks": {
+    "utc": "2026-10-31T19:38:59.187659+00:00",
+    "status": "passed",
+    "outcomes": [
+      {
+        "dtype": "torch.float32",
+        "native_EOS_pass": true,
+        "context_interrupt_incomplete": true,
+        "generation_default_does_not_truncate": true,
+        "exact_interruption_resume": true,
+        "corrupt_references_refused": [
+          "choice",
+          "logit",
+          "cache",
+          "first_cache"
+        ],
+        "OOM_is_incomplete": true,
+        "unexpected_error_propagated": true,
+        "all_state_guards_pass": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "native_EOS_pass": true,
+        "context_interrupt_incomplete": true,
+        "generation_default_does_not_truncate": true,
+        "exact_interruption_resume": true,
+        "corrupt_references_refused": [
+          "choice",
+          "logit",
+          "cache",
+          "first_cache"
+        ],
+        "OOM_is_incomplete": true,
+        "unexpected_error_propagated": true,
+        "all_state_guards_pass": true
+      }
+    ],
+    "counters": [
+      {
+        "calls": 41,
+        "input_token_exposures": 63
+      },
+      {
+        "calls": 41,
+        "input_token_exposures": 63
+      }
+    ],
+    "pretrained_forward_calls": 0,
+    "new_text_tokens": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 1.1900989999994636
+  },
+  "scope": "Software checks only; no pretrained generation, hardware throughput or coding outcome.",
+  "preserved_host_failure": "The first new host fixture calls a nonexistent Counter.close method during cleanup after FP32 checks. Original source and failure remain. Version 2 changes only cleanup API calls and versioned receipt/source paths.",
+  "host_source_sha256": "6daa81d60e8a72e3e00cc9973a9e21b52b10ac0709e4a3ce692640500859e7b8",
+  "engine_source_sha256": "9dc0d62f60e8073f7a82d891cb7e9b08e2d96b6c145a2b1c8cbd2454f50c730d",
+  "public_engine_release": "Pending independent import-path review; no runnable public engine claim."
+}

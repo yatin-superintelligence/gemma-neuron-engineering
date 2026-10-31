@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-31T19:48:53.241874+00:00",
+  "status": "passed_host_audited_closed",
+  "random_forward_calls": 16,
+  "random_input_exposures": 32,
+  "pretrained_forward_calls": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "two_worker_overlap_seconds": 1.836146039,
+  "all_eight_FP32_logit_and_raw_cache_comparisons_exact": true,
+  "two_actual_GPU_notebooks_simultaneously_running": true,
+  "notebook_seconds": 62.84379246100002,
+  "per_device_total_memory_bytes": [
+    15636037632,
+    15636037632
+  ],
+  "per_device_peak_allocated_bytes": [
+    34549760,
+    34549760
+  ],
+  "pretrained_throughput_or_full_model_capacity_measured": false,
+  "host_recomputes_GPU_tensors": false,
+  "devices": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "scope": "Two-device random-model runtime and two concurrent private notebook sessions; no pretrained throughput, coding or neuron-role outcome."
+}

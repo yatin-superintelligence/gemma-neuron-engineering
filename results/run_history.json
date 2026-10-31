@@ -455,6 +455,12 @@
       "outcome": "Whole-parameter finite validation OOM before Counter registration. Zero forwards, edits and predictions by source-order proof. Existing chunked validator reused in a versioned repair; conditions unchanged.",
       "duration_scope": "Worker elapsed time before any forward; not charged GPU quota.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "U24H_two_GPU_random_runtime",
+      "recorded_script_seconds": 62.84379246100002,
+      "outcome": "Two distinct T4 devices and concurrent independent workers pass; all eight full-logit/raw-cache pairs exact. Two notebook jobs were concurrently RUNNING. Random models only, no pretrained throughput claim.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [

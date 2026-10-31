@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-31T19:41:09.445589+00:00",
+  "authority": "Direct human U24",
+  "official_hardware": "NvidiaTeslaT4 corresponds to two T4 GPUs, each nominal 16 GB. VRAM allocations remain per device.",
+  "sources": [
+    {
+      "url": "https://github.com/Kaggle/kaggle-cli/issues/1196",
+      "scope": "Kaggle maintainer response confirming backend shape and two devices, September 2026."
+    },
+    {
+      "url": "https://www.kaggle.com/product-announcements/735239",
+      "scope": "Kaggle staff announcement, two T4 devices with 16 GB each."
+    },
+    {
+      "url": "https://www.kaggle.com/general/105509",
+      "scope": "Historical staff policy: one interactive and two commit sessions. Not proof of this account current limit."
+    }
+  ],
+  "current_code": "load_n02_base defaults cuda:0; N40 uses that default. GPU1 is unused by the worker. No utilization trace for the current VM was retrieved.",
+  "fresh_resource_receipt": "runs/compute/hardware_review_U24/actual_quota_and_status.json",
+  "next": "Use two independent full-model inference replicas for future frozen independent cases or edit conditions after full-checkpoint memory/shared-CPU/lineage checks. Keep native EOS, actual resource interruptions, original deadline and private evidence.",
+  "not_claimed": [
+    "A single contiguous 32 GB GPU",
+    "Twofold measured pretrained throughput",
+    "Full-checkpoint parallel feasibility already tested",
+    "More than two concurrent notebook sessions established"
+  ],
+  "no_active_N40_source_changes": true,
+  "optimizer_steps": 0,
+  "actual_probe_result": "Private probe complete and host audited: two distinct Tesla T4 UUIDs, each 15636037632 available memory bytes; two workers overlap 1.836146039 seconds; all eight FP32-logit/raw-cache comparisons across replicas exact. Sixteen random forwards, 32 input exposures, zero pretrained forwards/backwards/optimizer steps. Notebook 62.843792461 seconds, not charged quota. Both probe and N40 externally RUNNING simultaneously.",
+  "receipt": "runs/compute/hardware_review_U24/result_receipt.json"
+}

@@ -3985,6 +3985,41 @@
       "event": "one_private_version2_launch_existing_chunked_validator_only_science_unchanged",
       "experiment": "N40",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 545,
+      "utc": "2026-10-31T19:27:01.151189+00:00",
+      "event": "direct_human_U23_native_EOS_supersedes_arbitrary_response_token_ceiling_before_outputs",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 546,
+      "utc": "2026-10-31T19:41:09.445589+00:00",
+      "event": "direct_human_U24_two_GPU_and_concurrency_probe_protocol_frozen_before_implementation",
+      "experiment": "U24H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 547,
+      "utc": "2026-10-31T19:45:25.654327+00:00",
+      "event": "native_EOS_random_host_cleanup_failure_preserved_and_minimal_v2_pass",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 548,
+      "utc": "2026-10-31T19:45:25.654327+00:00",
+      "event": "U24H_private_source_exact_and_two_actual_jobs_running",
+      "experiment": "U24H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 549,
+      "utc": "2026-10-31T19:50:24.419571+00:00",
+      "event": "actual_two_T4_and_two_concurrent_GPU_notebooks_verified_random_runtime_closed",
+      "experiment": "U24H",
+      "optimizer_steps": 0
     }
   ]
 }
