@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-31T22:16:17.502517+00:00",
+  "before_launch_and_all_B_outputs": true,
+  "analysis_plan_sha256": "44c62805cd09bf1fe266c2486d93be966aa7e34a413db13649c0b305b20fbd8c",
+  "auditor_sha256": "b296688536b3064ba26fc8a2275be876ea92e7e2ab9d889a12d9287c97e0686e",
+  "notebook_sha256": "4baabf129f5b6c03fe498647096cb558adea9040c56a883b90868823d1bbfa67",
+  "protocol_sha256": "3f2d202e6a519b10c92407aa63daba639ae0b864fc472183350e66e6b1e22c6e",
+  "count_amendment_sha256": "5fde420239dac40f14bff2fa0c8f12e69d22631f94202b66b50aed72c8f4caba",
+  "optimizer_steps": 0,
+  "actual_frozen_source_data_parent_files": 161,
+  "scope": "Private execution assets and raw parents stay private. No fresh edited outcome yet."
+}

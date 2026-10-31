@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-31T21:52:09.472950+00:00",
+  "status": "prospective_count_and_exact_lineage_amendment_before_B_execution_and_all_N41_output_access",
+  "parent_protocol_sha256": "3f2d202e6a519b10c92407aa63daba639ae0b864fc472183350e66e6b1e22c6e",
+  "defect": "The frozen protocol leaves prompt-only retention prompts unchanged but proposed384new responses. Regenerating32original retention replies would duplicate completed native responses.",
+  "authority": "Direct human no-regeneration intent and exact parent-carry policy.",
+  "repair": "Carry32unchanged prompt-only retention predictions and grades exactly from A,with explicit hashes. Keep96original carries and generate352new replies,for480all-condition records.",
+  "original_proposed_B_counts": {
+    "original_carries": 96,
+    "new_responses": 384,
+    "total_records": 480
+  },
+  "corrected_B_counts": {
+    "original_carries": 96,
+    "additional_prompt_only_retention_reuses": 32,
+    "new_responses": 352,
+    "total_records": 480
+  },
+  "new_counts_per_owner": {
+    "original_cases": 48,
+    "new_responses": 176,
+    "additional_retention_reuses": 16
+  },
+  "unchanged": [
+    "all96cases",
+    "all5conditions",
+    "every prompt and fixed instruction",
+    "selected32/randomA32/randomB32",
+    "factor0",
+    "all success and baseline clauses",
+    "all8teacher panels and14restorations perGPU",
+    "nativeEOS and resource boundaries",
+    "all A assets/protocol/78hash freeze"
+  ],
+  "counter_change": "Measurement terms unchanged;new-tail terms sum only the352actually generated replies. Exact reused replies add0calls/tokens. Derive from fixed manifests,not a hand-summed constant.",
+  "no_B_model_execution_or_outputs": true,
+  "no_A_outputs_accessed": true,
+  "optimizer_steps": 0
+}

@@ -473,12 +473,19 @@
       "recorded_script_seconds": 222.610457413,
       "outcome": "Both full original BF16replicas fit concurrently;all288native decision/logit/cache comparisons and96first caches exact,all source/state guards pass. No new responses,edits or grades.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N41A_v1_fresh_original_native_EOS_two_GPU",
+      "recorded_script_seconds": 1655.267534857,
+      "outcome": "All96native-EOS baseline responses and guards pass;coding55/64,all64source-valid,retention17/32;fixed baseline prerequisite passes,no edit gain measured.",
+      "duration_scope": "Notebook elapsed seconds,not charged GPU quota;two worker durations separately recorded",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N41A_v1_original_native_EOS_two_GPU",
-      "launched_utc": "2026-10-31T21:23:34.961312+00:00",
+      "run": "N41B_v1_fixed_fresh_edits_native_EOS_two_GPU",
+      "launched_utc": "2026-10-31T22:22:06.877832+00:00",
       "status": "RUNNING"
     }
   ]

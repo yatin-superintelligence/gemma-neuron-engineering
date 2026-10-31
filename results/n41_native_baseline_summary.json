@@ -1,0 +1,103 @@
+{
+  "execution": {
+    "utc": "2026-10-31T21:55:07.335221+00:00",
+    "status": "complete_host_audited_baseline_gate_pass",
+    "records": 96,
+    "baseline_clauses": {
+      "coding_correct_at_least32": true,
+      "coding_source_valid_at_least56": true,
+      "executable_wrong_at_least4": true,
+      "wrong_spans_at_least2families": true,
+      "retention_correct_at_least12": true,
+      "retention_each_family_at_least4": true
+    },
+    "eligible_for_fixed_phase_B": true,
+    "all_source_identity_cache_state_counter_guards_pass": true,
+    "actual_model_forward_calls": 21193,
+    "actual_input_token_exposures": 31868,
+    "new_generated_tokens": 21181,
+    "generation_overlap_seconds": 1299.755204573,
+    "notebook_seconds": 1655.267534857,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "parameter_assignments": 0,
+    "arbitrary_response_token_ceiling": null,
+    "all_native_EOS": true,
+    "host_recomputes_full_checkpoint_weights_or_logits": false
+  },
+  "all_families": {
+    "families": {
+      "ceil_ratio": {
+        "total": 8,
+        "correct": 4,
+        "source_valid": 8
+      },
+      "stable_unique": {
+        "total": 8,
+        "correct": 8,
+        "source_valid": 8
+      },
+      "run_lengths": {
+        "total": 8,
+        "correct": 8,
+        "source_valid": 8
+      },
+      "union_length": {
+        "total": 8,
+        "correct": 5,
+        "source_valid": 8
+      },
+      "parenthesis_depth": {
+        "total": 8,
+        "correct": 8,
+        "source_valid": 8
+      },
+      "rotate_right": {
+        "total": 8,
+        "correct": 8,
+        "source_valid": 8
+      },
+      "first_prefix": {
+        "total": 8,
+        "correct": 8,
+        "source_valid": 8
+      },
+      "long_tokens": {
+        "total": 8,
+        "correct": 6,
+        "source_valid": 8
+      },
+      "arithmetic": {
+        "total": 16,
+        "correct": 7,
+        "source_valid": 16
+      },
+      "json": {
+        "total": 16,
+        "correct": 10,
+        "source_valid": 12
+      }
+    },
+    "coding_correct": 55,
+    "coding_source_valid": 64,
+    "retention_correct": 17,
+    "all_statuses": {
+      "passed": 72,
+      "wrong_answer": 20,
+      "format_error": 4
+    }
+  },
+  "termination": {
+    "utc": "2026-10-31T21:58:34.054892+00:00",
+    "records": 96,
+    "all_native_EOS": true,
+    "maximum_generated_tokens": 1962,
+    "response_token_ceiling": null,
+    "scientific_output_bytes": 6680645,
+    "actual_generation_overlap_seconds": 1299.755204573,
+    "no_inference_rerun": true,
+    "no_editing_gain_measured_in_A": true,
+    "optimizer_steps": 0
+  },
+  "scope": "Fresh unmodified baseline only. No editing gain or broad knowledge measure."
+}

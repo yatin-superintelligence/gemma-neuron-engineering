@@ -1,0 +1,134 @@
+{
+  "fixed_columns_and_native_EOS": {
+    "utc": "2026-10-31T22:01:52.274574+00:00",
+    "status": "passed_closed",
+    "outcomes": [
+      {
+        "dtype": "torch.float32",
+        "input_length": 1,
+        "cache_entries": 15,
+        "native_EOS_matches_direct_physical_first_decision": true,
+        "late_fixed_input_cache_and_exact_restoration": true
+      },
+      {
+        "dtype": "torch.float32",
+        "input_length": 20,
+        "cache_entries": 15,
+        "native_EOS_matches_direct_physical_first_decision": true,
+        "late_fixed_input_cache_and_exact_restoration": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "input_length": 1,
+        "cache_entries": 15,
+        "native_EOS_matches_direct_physical_first_decision": true,
+        "late_fixed_input_cache_and_exact_restoration": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "input_length": 20,
+        "cache_entries": 15,
+        "native_EOS_matches_direct_physical_first_decision": true,
+        "late_fixed_input_cache_and_exact_restoration": true
+      }
+    ],
+    "compact_column_refusals": [
+      "torch.float32:original_value",
+      "torch.float32:signed_zero_hash",
+      "torch.bfloat16:original_value",
+      "torch.bfloat16:signed_zero_hash"
+    ],
+    "random_model_forwards": 16,
+    "random_input_exposures": 168,
+    "pretrained_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 0.5266566250065807
+  },
+  "new_physical_witness_guard": {
+    "utc": "2026-10-31T21:43:42.219556+00:00",
+    "status": "passed_closed",
+    "actual_saved_witness_positive": 1,
+    "refusals": [
+      "source_columns",
+      "edited_columns",
+      "outside_hash",
+      "channel_scope",
+      "version_before",
+      "factor",
+      "final_config",
+      "untargeted_version"
+    ],
+    "model_loads": 0,
+    "model_forwards": 0,
+    "scorer_calls": 0,
+    "model_outputs_or_behaviors_read": 0,
+    "no_N40_grade_or_auditor_rerun": true,
+    "optimizer_steps": 0
+  },
+  "all_case_assessment": {
+    "utc": "2026-10-31T21:33:55.643374+00:00",
+    "status": "passed_closed",
+    "synthetic_checks": [
+      "literal_positive_four_gains_two_families",
+      "three_gains_fail",
+      "coding_loss_fails",
+      "retention_loss_fails",
+      "randomA_within_one_fails",
+      "randomB_within_one_fails",
+      "incomplete_is_unassessable",
+      "missing_original_refused",
+      "instruction_tie_reported"
+    ],
+    "records_each_fixture": 480,
+    "pretrained_model_calls": 0,
+    "actual_model_outputs_read": 0,
+    "optimizer_steps": 0
+  },
+  "source_package_and_audit_preflight": {
+    "utc": "2026-10-31T22:10:26.946128+00:00",
+    "status": "passed_closed",
+    "packaged_sources": 28,
+    "inputs": 14,
+    "audit_sources": 36,
+    "all_package_source_data_hashes_exact": true,
+    "isolated_both_runner_auditor_imports": true,
+    "chunked_validator_import_identity": true,
+    "Ruff_F821_F823": true,
+    "notebook_cells_compile": true,
+    "synthetic_measurement_reader_positive": 1,
+    "synthetic_measurement_corruption_refusals": [
+      "counter",
+      "exposures",
+      "cache_slots",
+      "cache_hash",
+      "step",
+      "argmax",
+      "dtype",
+      "native_logits",
+      "physical_logits",
+      "panel_order"
+    ],
+    "new_response_keys": 352,
+    "exact_retention_reuses": 32,
+    "all_condition_records": 480,
+    "hidden_oracles_absent_from_generation_package": true,
+    "new_pretrained_forwards": 0,
+    "new_model_forwards_from_this_preflight": 0,
+    "new_scorer_calls": 0,
+    "optimizer_steps": 0,
+    "synthetic_markers": [
+      "interpretability/__init__.py",
+      "research/__init__.py",
+      "research/experiments/__init__.py",
+      "research/experiments/hardware_U24P/__init__.py",
+      "research/experiments/n19/__init__.py",
+      "research/experiments/n21/__init__.py",
+      "research/experiments/n35/__init__.py",
+      "research/experiments/n37/__init__.py",
+      "research/experiments/n40/__init__.py",
+      "research/experiments/n41/__init__.py"
+    ]
+  },
+  "scope": "Software and random-module preparation only. Actual B counters and results have not been accessed."
+}

@@ -880,21 +880,21 @@
     {
       "id": "Q55",
       "experiment": "N41: conditional fresh coding accuracy",
-      "status": "phase_A_private_RUNNING_source_frozen_no_outputs_accessed",
+      "status": "phase_A_audited_pass_phase_B_private_RUNNING_no_B_outputs_accessed",
       "question": "Does the exact fixed native deletion improve complete-function coding on fresh balanced cases compared with original, both randoms and a simple instruction?",
       "question_provenance": "Original human coding goal and the two one-family N40 development repairs. Separate accuracy confirmation from the failed output-reduction primary.",
       "parents": [
         "Q54",
         "Q53"
       ],
-      "method": "Frozen fresh accuracy design: 32 new semantic function contracts, each with two prompt bindings, across the same eight broad related families; 64 coding prompts and 32 retention cases. Native baseline prerequisite first, then all four edited/instruction conditions only if it passes. The selected and both random groups, factor zero, all-case criteria, native EOS and two-device ownership remain fixed. Safe standard-library imports are allowed. Hidden oracles stay outside generation assets.",
-      "result": "All 32 semantic contracts and 96 fresh prompts are fixed before any model output. Independent references agree on all 15489 edge/stress inputs and 64 literal checks. New grading checks pass 13 synthetic code cases and 34 retention cases after preserving a flawed mutation fixture and correcting only that synthetic candidate. All 192 original/instruction tokenizations match the native default thinking render. The new baseline record/counter/gate paths pass four random Gemma forwards and 24 malformed-witness refusals. The 78-file phase A source/auditor freeze and isolated package/import checks pass. The private original baseline is RUNNING under disjoint two-GPU ownership; actual server source and privacy are exact. No output or active GPU counter has been accessed. All 61 known own project jobs were terminal before launch; fresh official quota was 25.65 GPU hours, not a future balance guarantee.",
+      "method": "Frozen fresh accuracy screen: 32 new semantic contracts, each with two bindings, yield 64 coding prompts across eight related dependent families, plus 32 retention prompts. The unmodified baseline is generated once on two isolated GPUs and graded once against independent hidden oracles. Its predeclared gate passes. B applies the exact selected 32 channels and both fixed random groups under global physical column zeroing, plus the fixed instruction control. A prospective dated amendment reuses 32 unchanged instruction-control retention replies. All 480 condition records remain: 96 original carries, 32 additional exact reuses and 352 new replies. Native EOS has no arbitrary response-token ceiling.",
+      "result": "Phase A is complete, private, host audited and closed. All 96 responses end at native EOS. All 64 coding sources are valid; 55/64 coding and 17/32 retention replies are correct. Nine executable coding errors span three families. Every baseline prerequisite and all source, identity/cache, state and counter guards pass. Actual work is 21,193 forwards, 31,868 input exposures and 21,181 new tokens, with zero backwards, assignments or optimizer updates. Notebook time is 1,655.268 seconds, not charged quota. Both full models generate concurrently with 1,299.755 seconds of overlap, without a measured speed multiplier. The B retention-reuse amendment froze before B execution and A output access; original counts and source are preserved. New fixed-column/native-EOS integration passes 16 random forwards and 168 exposures, with four corrupt-column refusals. The physical guard rejects eight corruptions; the measurement reader rejects ten. Isolated imports, package/cells and Ruff pass. All 161 actual B source/data/parent hashes are frozen. B is running privately with exact server source/privacy, no datasets and no output access. No fresh edited result exists yet.",
       "interpretation": "The N40 repairs are a development lead, with one shared random-control repair and no semantic role. A fresh test can fail or stop; it cannot erase N40 or justify selecting only prior errors. Eight families remain dependent.",
-      "next_question": "At terminal verify all 78 frozen hashes and collect once with scripts.collect_n41_outputs_A, then run the frozen auditor once. Only a passing complete baseline prerequisite permits the fixed edited comparison. While running, prepare phase B execution without altering scientific conditions or reading partial outputs.",
+      "next_question": "At actual B terminal, verify all 161 frozen hashes, then collect_n41_outputs_B once and invoke the frozen auditor once. Preserve 96 original grades and 32 identical retention reuses; grade only 352 new replies. Keep all 480 records, all gains/losses, every family and all primary clauses. No new dose, coordinate, wording or completed-reply rerun.",
       "direction_decision": "Pursue the fixed accuracy lead through fresh confirmation, without new parameter fitting, strength search, neuron construction or a transplant-prerequisite bypass."
     }
   ],
-  "active_question_id": "Q54",
-  "next_question_id": "Q54",
-  "utc": "2026-10-31T21:24:39.622711+00:00"
+  "active_question_id": "Q55",
+  "next_question_id": "Q55",
+  "utc": "2026-10-31T22:27:50.212610+00:00"
 }

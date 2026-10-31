@@ -4139,6 +4139,83 @@
       "event": "pre_release_visual_review_catches_stale_Q55_prose_and_tool_title_overlap_repair_reporting_only",
       "experiment": "N41A",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 567,
+      "utc": "2026-10-31T21:52:57.339216+00:00",
+      "event": "B_all480_record_assessor_passes9prospective_synthetic_guards",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 568,
+      "utc": "2026-10-31T21:52:57.339216+00:00",
+      "event": "new_B_physical_guard_passes_saved_scope_witness_and8corruption_refusals_no_closed_scorer_rerun",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 569,
+      "utc": "2026-10-31T21:52:57.339216+00:00",
+      "event": "B_exact_retention_reuse_amendment_preserves480records_and_avoids32duplicate_native_generations_before_outputs",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 570,
+      "utc": "2026-10-31T21:58:34.054892+00:00",
+      "event": "fresh_original_all96_and_all_guards_audited_once_baseline_gate_pass55of64coding17of32retention_all_native_EOS",
+      "experiment": "N41A",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 571,
+      "utc": "2026-10-31T22:25:49.312812+00:00",
+      "event": "new_B_native_EOS_under_physical_columns_passes16random_forwards168exposures4column_refusals",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 572,
+      "utc": "2026-10-31T22:25:49.312812+00:00",
+      "event": "B_isolated_both_imports_package_Ruff_and10synthetic_witness_refusals_pass_no_new_pretrained_calls",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 573,
+      "utc": "2026-10-31T22:25:49.312812+00:00",
+      "event": "all161B_sources_and_Aparents_frozen_before_launch_outputs",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 574,
+      "utc": "2026-10-31T22:25:49.312812+00:00",
+      "event": "fixed_fresh_comparison_launched_private_source_exact_native_EOS_two_GPU_no_outputs_read",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 575,
+      "utc": "2026-10-31T22:41:23.182248+00:00",
+      "event": "reporting_key_failure_preserved_repaired_before_state_save_no_science_change",
+      "experiment": "PAPER",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 576,
+      "utc": "2026-10-31T22:41:23.182248+00:00",
+      "event": "private_paper_integrates_completed_N40_and_fresh_baseline_no_B_outcomes_all5latestpages_checked",
+      "experiment": "PAPER",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 577,
+      "utc": "2026-10-31T22:43:53.860131+00:00",
+      "event": "review_repairs_stale_question_ids_and_missing_public_run_summary_fields_no_science_change",
+      "experiment": "N41",
+      "optimizer_steps": 0
     }
   ]
 }
