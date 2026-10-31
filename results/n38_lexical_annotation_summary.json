@@ -1,0 +1,1650 @@
+{
+  "utc": "2026-10-31T16:02:02.242254+00:00",
+  "models": {
+    "recipient": {
+      "all": {
+        "full": {
+          "cases": 48,
+          "token_counts": {
+            "comment": 3488,
+            "keyword": 265,
+            "mixed_python": 12,
+            "name": 1080,
+            "number": 95,
+            "operator": 728,
+            "outside_python_region": 128,
+            "python_whitespace_or_unparsed": 1231,
+            "retention_content": 53,
+            "special": 48,
+            "string": 502
+          },
+          "case_balanced_fractions": {
+            "comment": 0.13508537010483074,
+            "keyword": 0.04230891506218224,
+            "mixed_python": 0.0017768994569680547,
+            "name": 0.14788317886624705,
+            "number": 0.012463924216088858,
+            "operator": 0.10561433814155179,
+            "outside_python_region": 0.02261915724345701,
+            "python_whitespace_or_unparsed": 0.13844129861380983,
+            "retention_content": 0.25381944444444443,
+            "special": 0.08516867819975314,
+            "string": 0.05481879565066688
+          }
+        },
+        "sampled_predicted": {
+          "cases": 48,
+          "token_counts": {
+            "comment": 202,
+            "keyword": 69,
+            "name": 232,
+            "number": 16,
+            "operator": 145,
+            "outside_python_region": 43,
+            "python_whitespace_or_unparsed": 202,
+            "retention_content": 53,
+            "special": 48,
+            "string": 83
+          },
+          "case_balanced_fractions": {
+            "comment": 0.13151041666666666,
+            "keyword": 0.044921875,
+            "name": 0.15104166666666666,
+            "number": 0.010416666666666666,
+            "operator": 0.09440104166666667,
+            "outside_python_region": 0.027994791666666668,
+            "python_whitespace_or_unparsed": 0.13151041666666666,
+            "retention_content": 0.25381944444444443,
+            "special": 0.10034722222222221,
+            "string": 0.054036458333333336
+          }
+        },
+        "sampled_processed": {
+          "cases": 48,
+          "token_counts": {
+            "comment": 203,
+            "keyword": 47,
+            "mixed_python": 2,
+            "name": 223,
+            "number": 15,
+            "operator": 180,
+            "outside_python_region": 55,
+            "prompt_last": 48,
+            "python_whitespace_or_unparsed": 189,
+            "retention_content": 53,
+            "string": 78
+          },
+          "case_balanced_fractions": {
+            "comment": 0.13216145833333334,
+            "keyword": 0.030598958333333332,
+            "mixed_python": 0.0013020833333333333,
+            "name": 0.14518229166666666,
+            "number": 0.009765625,
+            "operator": 0.1171875,
+            "outside_python_region": 0.035807291666666664,
+            "prompt_last": 0.10034722222222221,
+            "python_whitespace_or_unparsed": 0.123046875,
+            "retention_content": 0.25381944444444443,
+            "string": 0.05078125
+          }
+        }
+      },
+      "role:coding": {
+        "full": {
+          "cases": 32,
+          "token_counts": {
+            "comment": 3488,
+            "keyword": 265,
+            "mixed_python": 12,
+            "name": 1080,
+            "number": 95,
+            "operator": 728,
+            "outside_python_region": 128,
+            "python_whitespace_or_unparsed": 1231,
+            "special": 32,
+            "string": 502
+          },
+          "case_balanced_fractions": {
+            "comment": 0.2026280551572461,
+            "keyword": 0.06346337259327336,
+            "mixed_python": 0.002665349185452082,
+            "name": 0.22182476829937056,
+            "number": 0.018695886324133288,
+            "operator": 0.15842150721232767,
+            "outside_python_region": 0.033928735865185515,
+            "python_whitespace_or_unparsed": 0.20766194792071474,
+            "special": 0.008482183966296379,
+            "string": 0.08222819347600031
+          }
+        },
+        "sampled_predicted": {
+          "cases": 32,
+          "token_counts": {
+            "comment": 202,
+            "keyword": 69,
+            "name": 232,
+            "number": 16,
+            "operator": 145,
+            "outside_python_region": 43,
+            "python_whitespace_or_unparsed": 202,
+            "special": 32,
+            "string": 83
+          },
+          "case_balanced_fractions": {
+            "comment": 0.197265625,
+            "keyword": 0.0673828125,
+            "name": 0.2265625,
+            "number": 0.015625,
+            "operator": 0.1416015625,
+            "outside_python_region": 0.0419921875,
+            "python_whitespace_or_unparsed": 0.197265625,
+            "special": 0.03125,
+            "string": 0.0810546875
+          }
+        },
+        "sampled_processed": {
+          "cases": 32,
+          "token_counts": {
+            "comment": 203,
+            "keyword": 47,
+            "mixed_python": 2,
+            "name": 223,
+            "number": 15,
+            "operator": 180,
+            "outside_python_region": 55,
+            "prompt_last": 32,
+            "python_whitespace_or_unparsed": 189,
+            "string": 78
+          },
+          "case_balanced_fractions": {
+            "comment": 0.1982421875,
+            "keyword": 0.0458984375,
+            "mixed_python": 0.001953125,
+            "name": 0.2177734375,
+            "number": 0.0146484375,
+            "operator": 0.17578125,
+            "outside_python_region": 0.0537109375,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.1845703125,
+            "string": 0.076171875
+          }
+        }
+      },
+      "role:retention": {
+        "full": {
+          "cases": 16,
+          "token_counts": {
+            "retention_content": 53,
+            "special": 16
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7614583333333333,
+            "special": 0.23854166666666668
+          }
+        },
+        "sampled_predicted": {
+          "cases": 16,
+          "token_counts": {
+            "retention_content": 53,
+            "special": 16
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7614583333333333,
+            "special": 0.23854166666666668
+          }
+        },
+        "sampled_processed": {
+          "cases": 16,
+          "token_counts": {
+            "prompt_last": 16,
+            "retention_content": 53
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.23854166666666668,
+            "retention_content": 0.7614583333333333
+          }
+        }
+      },
+      "family:arithmetic": {
+        "full": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 26,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7583333333333333,
+            "special": 0.24166666666666667
+          }
+        },
+        "sampled_predicted": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 26,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7583333333333333,
+            "special": 0.24166666666666667
+          }
+        },
+        "sampled_processed": {
+          "cases": 8,
+          "token_counts": {
+            "prompt_last": 8,
+            "retention_content": 26
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.24166666666666667,
+            "retention_content": 0.7583333333333333
+          }
+        }
+      },
+      "family:ceil_ratio": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "comment": 2142,
+            "keyword": 42,
+            "mixed_python": 4,
+            "name": 96,
+            "number": 19,
+            "operator": 112,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 369,
+            "special": 4,
+            "string": 44
+          },
+          "case_balanced_fractions": {
+            "comment": 0.7378462346131971,
+            "keyword": 0.01609047453016764,
+            "mixed_python": 0.001065340909090909,
+            "name": 0.0373096150993571,
+            "number": 0.007412264533575797,
+            "operator": 0.04437429193850328,
+            "outside_python_region": 0.0067022722158191555,
+            "python_whitespace_or_unparsed": 0.12850770281723314,
+            "special": 0.0016755680539547889,
+            "string": 0.019016235289101145
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "comment": 93,
+            "name": 3,
+            "operator": 5,
+            "outside_python_region": 4,
+            "python_whitespace_or_unparsed": 17,
+            "special": 4,
+            "string": 2
+          },
+          "case_balanced_fractions": {
+            "comment": 0.7265625,
+            "name": 0.0234375,
+            "operator": 0.0390625,
+            "outside_python_region": 0.03125,
+            "python_whitespace_or_unparsed": 0.1328125,
+            "special": 0.03125,
+            "string": 0.015625
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "comment": 92,
+            "keyword": 2,
+            "name": 4,
+            "operator": 5,
+            "outside_python_region": 4,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 15,
+            "string": 2
+          },
+          "case_balanced_fractions": {
+            "comment": 0.71875,
+            "keyword": 0.015625,
+            "name": 0.03125,
+            "operator": 0.0390625,
+            "outside_python_region": 0.03125,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.1171875,
+            "string": 0.015625
+          }
+        }
+      },
+      "family:first_prefix": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 30,
+            "name": 100,
+            "number": 10,
+            "operator": 52,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 72,
+            "special": 4,
+            "string": 260
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.056067277853887675,
+            "name": 0.1887220668578909,
+            "number": 0.01868909261796256,
+            "operator": 0.09729722848228434,
+            "outside_python_region": 0.03005447734724548,
+            "python_whitespace_or_unparsed": 0.1348653251663412,
+            "special": 0.00751361933681137,
+            "string": 0.4667909123375765
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 7,
+            "name": 23,
+            "number": 4,
+            "operator": 15,
+            "outside_python_region": 4,
+            "python_whitespace_or_unparsed": 12,
+            "special": 4,
+            "string": 59
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0546875,
+            "name": 0.1796875,
+            "number": 0.03125,
+            "operator": 0.1171875,
+            "outside_python_region": 0.03125,
+            "python_whitespace_or_unparsed": 0.09375,
+            "special": 0.03125,
+            "string": 0.4609375
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 7,
+            "name": 28,
+            "operator": 8,
+            "outside_python_region": 6,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 18,
+            "string": 57
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0546875,
+            "name": 0.21875,
+            "operator": 0.0625,
+            "outside_python_region": 0.046875,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.140625,
+            "string": 0.4453125
+          }
+        }
+      },
+      "family:json": {
+        "full": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 27,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7645833333333334,
+            "special": 0.23541666666666666
+          }
+        },
+        "sampled_predicted": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 27,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7645833333333334,
+            "special": 0.23541666666666666
+          }
+        },
+        "sampled_processed": {
+          "cases": 8,
+          "token_counts": {
+            "prompt_last": 8,
+            "retention_content": 27
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.23541666666666666,
+            "retention_content": 0.7645833333333334
+          }
+        }
+      },
+      "family:long_tokens": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 20,
+            "name": 72,
+            "operator": 64,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 52,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.08771929824561403,
+            "name": 0.3157894736842105,
+            "operator": 0.2807017543859649,
+            "outside_python_region": 0.07017543859649122,
+            "python_whitespace_or_unparsed": 0.22807017543859648,
+            "special": 0.017543859649122806
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 16,
+            "name": 40,
+            "operator": 32,
+            "outside_python_region": 8,
+            "python_whitespace_or_unparsed": 28,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.125,
+            "name": 0.3125,
+            "operator": 0.25,
+            "outside_python_region": 0.0625,
+            "python_whitespace_or_unparsed": 0.21875,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 8,
+            "name": 36,
+            "operator": 44,
+            "outside_python_region": 12,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 24
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0625,
+            "name": 0.28125,
+            "operator": 0.34375,
+            "outside_python_region": 0.09375,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.1875
+          }
+        }
+      },
+      "family:parenthesis_depth": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 45,
+            "mixed_python": 8,
+            "name": 74,
+            "number": 24,
+            "operator": 69,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 130,
+            "special": 4,
+            "string": 56
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.11141598915989159,
+            "mixed_python": 0.020257452574525745,
+            "name": 0.16924119241192412,
+            "number": 0.06480352303523035,
+            "operator": 0.1641260162601626,
+            "outside_python_region": 0.04051490514905149,
+            "python_whitespace_or_unparsed": 0.3260840108401084,
+            "special": 0.010128726287262873,
+            "string": 0.09342818428184282
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 12,
+            "name": 24,
+            "number": 9,
+            "operator": 13,
+            "outside_python_region": 7,
+            "python_whitespace_or_unparsed": 46,
+            "special": 4,
+            "string": 13
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.09375,
+            "name": 0.1875,
+            "number": 0.0703125,
+            "operator": 0.1015625,
+            "outside_python_region": 0.0546875,
+            "python_whitespace_or_unparsed": 0.359375,
+            "special": 0.03125,
+            "string": 0.1015625
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 13,
+            "mixed_python": 2,
+            "name": 21,
+            "number": 5,
+            "operator": 28,
+            "outside_python_region": 7,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 39,
+            "string": 9
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.1015625,
+            "mixed_python": 0.015625,
+            "name": 0.1640625,
+            "number": 0.0390625,
+            "operator": 0.21875,
+            "outside_python_region": 0.0546875,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.3046875,
+            "string": 0.0703125
+          }
+        }
+      },
+      "family:rotate_right": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "comment": 961,
+            "keyword": 19,
+            "name": 132,
+            "number": 4,
+            "operator": 77,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 198,
+            "special": 4,
+            "string": 142
+          },
+          "case_balanced_fractions": {
+            "comment": 0.5881084769688071,
+            "keyword": 0.015182282747976603,
+            "name": 0.10371530009264368,
+            "number": 0.0030448889454125104,
+            "operator": 0.05978395781844255,
+            "outside_python_region": 0.012256155959362454,
+            "python_whitespace_or_unparsed": 0.1362546825780325,
+            "special": 0.0030640389898406134,
+            "string": 0.07859021589948202
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "comment": 74,
+            "keyword": 1,
+            "name": 15,
+            "operator": 5,
+            "outside_python_region": 4,
+            "python_whitespace_or_unparsed": 16,
+            "special": 4,
+            "string": 9
+          },
+          "case_balanced_fractions": {
+            "comment": 0.578125,
+            "keyword": 0.0078125,
+            "name": 0.1171875,
+            "operator": 0.0390625,
+            "outside_python_region": 0.03125,
+            "python_whitespace_or_unparsed": 0.125,
+            "special": 0.03125,
+            "string": 0.0703125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "comment": 76,
+            "keyword": 2,
+            "name": 10,
+            "operator": 10,
+            "outside_python_region": 4,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 12,
+            "string": 10
+          },
+          "case_balanced_fractions": {
+            "comment": 0.59375,
+            "keyword": 0.015625,
+            "name": 0.078125,
+            "operator": 0.078125,
+            "outside_python_region": 0.03125,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.09375,
+            "string": 0.078125
+          }
+        }
+      },
+      "family:run_lengths": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 32,
+            "name": 165,
+            "number": 20,
+            "operator": 119,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 144,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.06403688524590165,
+            "name": 0.3296618852459017,
+            "number": 0.04002305327868852,
+            "operator": 0.2380891393442623,
+            "outside_python_region": 0.032018442622950824,
+            "python_whitespace_or_unparsed": 0.2881659836065574,
+            "special": 0.008004610655737706
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 7,
+            "name": 41,
+            "number": 2,
+            "operator": 35,
+            "outside_python_region": 4,
+            "python_whitespace_or_unparsed": 35,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0546875,
+            "name": 0.3203125,
+            "number": 0.015625,
+            "operator": 0.2734375,
+            "outside_python_region": 0.03125,
+            "python_whitespace_or_unparsed": 0.2734375,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 6,
+            "name": 42,
+            "number": 8,
+            "operator": 29,
+            "outside_python_region": 6,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 33
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.046875,
+            "name": 0.328125,
+            "number": 0.0625,
+            "operator": 0.2265625,
+            "outside_python_region": 0.046875,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.2578125
+          }
+        }
+      },
+      "family:stable_unique": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 28,
+            "name": 78,
+            "operator": 56,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 60,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.1157103825136612,
+            "name": 0.3222677595628415,
+            "operator": 0.2314207650273224,
+            "outside_python_region": 0.06612021857923497,
+            "python_whitespace_or_unparsed": 0.24795081967213115,
+            "special": 0.016530054644808743
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 22,
+            "name": 44,
+            "operator": 18,
+            "outside_python_region": 8,
+            "python_whitespace_or_unparsed": 32,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.171875,
+            "name": 0.34375,
+            "operator": 0.140625,
+            "outside_python_region": 0.0625,
+            "python_whitespace_or_unparsed": 0.25,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 6,
+            "name": 36,
+            "operator": 40,
+            "outside_python_region": 12,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 30
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.046875,
+            "name": 0.28125,
+            "operator": 0.3125,
+            "outside_python_region": 0.09375,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.234375
+          }
+        }
+      },
+      "family:union_length": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "comment": 385,
+            "keyword": 49,
+            "name": 363,
+            "number": 18,
+            "operator": 179,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 206,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "comment": 0.2950697296759646,
+            "keyword": 0.041484390449086514,
+            "name": 0.30789085344019496,
+            "number": 0.015594268182196551,
+            "operator": 0.15157890444167904,
+            "outside_python_region": 0.013587976451328549,
+            "python_whitespace_or_unparsed": 0.1713968832467176,
+            "special": 0.0033969941128321373
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "comment": 35,
+            "keyword": 4,
+            "name": 42,
+            "number": 1,
+            "operator": 22,
+            "outside_python_region": 4,
+            "python_whitespace_or_unparsed": 16,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "comment": 0.2734375,
+            "keyword": 0.03125,
+            "name": 0.328125,
+            "number": 0.0078125,
+            "operator": 0.171875,
+            "outside_python_region": 0.03125,
+            "python_whitespace_or_unparsed": 0.125,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "comment": 35,
+            "keyword": 3,
+            "name": 46,
+            "number": 2,
+            "operator": 16,
+            "outside_python_region": 4,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 18
+          },
+          "case_balanced_fractions": {
+            "comment": 0.2734375,
+            "keyword": 0.0234375,
+            "name": 0.359375,
+            "number": 0.015625,
+            "operator": 0.125,
+            "outside_python_region": 0.03125,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.140625
+          }
+        }
+      }
+    },
+    "donor": {
+      "all": {
+        "full": {
+          "cases": 48,
+          "token_counts": {
+            "keyword": 251,
+            "mixed_python": 14,
+            "name": 915,
+            "number": 69,
+            "operator": 666,
+            "outside_python_region": 112,
+            "python_whitespace_or_unparsed": 685,
+            "retention_content": 60,
+            "special": 48,
+            "string": 17
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.06427575895539382,
+            "mixed_python": 0.0033712691902945623,
+            "name": 0.21264876162840582,
+            "number": 0.01602150319429974,
+            "operator": 0.16239607227903538,
+            "outside_python_region": 0.030986135191775493,
+            "python_whitespace_or_unparsed": 0.16354286854914546,
+            "retention_content": 0.25793650793650796,
+            "special": 0.08454362851053676,
+            "string": 0.004277494564605043
+          }
+        },
+        "sampled_predicted": {
+          "cases": 48,
+          "token_counts": {
+            "keyword": 108,
+            "mixed_python": 5,
+            "name": 348,
+            "number": 22,
+            "operator": 218,
+            "outside_python_region": 47,
+            "python_whitespace_or_unparsed": 236,
+            "retention_content": 60,
+            "special": 48,
+            "string": 8
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0703125,
+            "mixed_python": 0.0032552083333333335,
+            "name": 0.2265625,
+            "number": 0.014322916666666666,
+            "operator": 0.14192708333333334,
+            "outside_python_region": 0.030598958333333332,
+            "python_whitespace_or_unparsed": 0.15364583333333334,
+            "retention_content": 0.25793650793650796,
+            "special": 0.09623015873015872,
+            "string": 0.005208333333333333
+          }
+        },
+        "sampled_processed": {
+          "cases": 48,
+          "token_counts": {
+            "keyword": 85,
+            "mixed_python": 6,
+            "name": 293,
+            "number": 28,
+            "operator": 266,
+            "outside_python_region": 62,
+            "prompt_last": 48,
+            "python_whitespace_or_unparsed": 246,
+            "retention_content": 60,
+            "string": 6
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.055338541666666664,
+            "mixed_python": 0.00390625,
+            "name": 0.19075520833333334,
+            "number": 0.018229166666666668,
+            "operator": 0.17317708333333334,
+            "outside_python_region": 0.040364583333333336,
+            "prompt_last": 0.09623015873015872,
+            "python_whitespace_or_unparsed": 0.16015625,
+            "retention_content": 0.25793650793650796,
+            "string": 0.00390625
+          }
+        }
+      },
+      "role:coding": {
+        "full": {
+          "cases": 32,
+          "token_counts": {
+            "keyword": 251,
+            "mixed_python": 14,
+            "name": 915,
+            "number": 69,
+            "operator": 666,
+            "outside_python_region": 112,
+            "python_whitespace_or_unparsed": 685,
+            "special": 32,
+            "string": 17
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.09641363843309073,
+            "mixed_python": 0.005056903785441843,
+            "name": 0.3189731424426087,
+            "number": 0.024032254791449607,
+            "operator": 0.24359410841855308,
+            "outside_python_region": 0.04647920278766324,
+            "python_whitespace_or_unparsed": 0.2453143028237182,
+            "special": 0.013720204670567036,
+            "string": 0.0064162418469075645
+          }
+        },
+        "sampled_predicted": {
+          "cases": 32,
+          "token_counts": {
+            "keyword": 108,
+            "mixed_python": 5,
+            "name": 348,
+            "number": 22,
+            "operator": 218,
+            "outside_python_region": 47,
+            "python_whitespace_or_unparsed": 236,
+            "special": 32,
+            "string": 8
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.10546875,
+            "mixed_python": 0.0048828125,
+            "name": 0.33984375,
+            "number": 0.021484375,
+            "operator": 0.212890625,
+            "outside_python_region": 0.0458984375,
+            "python_whitespace_or_unparsed": 0.23046875,
+            "special": 0.03125,
+            "string": 0.0078125
+          }
+        },
+        "sampled_processed": {
+          "cases": 32,
+          "token_counts": {
+            "keyword": 85,
+            "mixed_python": 6,
+            "name": 293,
+            "number": 28,
+            "operator": 266,
+            "outside_python_region": 62,
+            "prompt_last": 32,
+            "python_whitespace_or_unparsed": 246,
+            "string": 6
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0830078125,
+            "mixed_python": 0.005859375,
+            "name": 0.2861328125,
+            "number": 0.02734375,
+            "operator": 0.259765625,
+            "outside_python_region": 0.060546875,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.240234375,
+            "string": 0.005859375
+          }
+        }
+      },
+      "role:retention": {
+        "full": {
+          "cases": 16,
+          "token_counts": {
+            "retention_content": 60,
+            "special": 16
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7738095238095238,
+            "special": 0.2261904761904762
+          }
+        },
+        "sampled_predicted": {
+          "cases": 16,
+          "token_counts": {
+            "retention_content": 60,
+            "special": 16
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7738095238095238,
+            "special": 0.2261904761904762
+          }
+        },
+        "sampled_processed": {
+          "cases": 16,
+          "token_counts": {
+            "prompt_last": 16,
+            "retention_content": 60
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.2261904761904762,
+            "retention_content": 0.7738095238095238
+          }
+        }
+      },
+      "family:arithmetic": {
+        "full": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 25,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7479166666666667,
+            "special": 0.2520833333333333
+          }
+        },
+        "sampled_predicted": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 25,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7479166666666667,
+            "special": 0.2520833333333333
+          }
+        },
+        "sampled_processed": {
+          "cases": 8,
+          "token_counts": {
+            "prompt_last": 8,
+            "retention_content": 25
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.2520833333333333,
+            "retention_content": 0.7479166666666667
+          }
+        }
+      },
+      "family:ceil_ratio": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 24,
+            "mixed_python": 4,
+            "name": 55,
+            "number": 12,
+            "operator": 56,
+            "outside_python_region": 4,
+            "python_whitespace_or_unparsed": 57,
+            "special": 4,
+            "string": 7
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.10837553922298253,
+            "mixed_python": 0.016430260047281323,
+            "name": 0.2540611854658873,
+            "number": 0.05089158684758545,
+            "operator": 0.2570043674212101,
+            "outside_python_region": 0.022222222222222223,
+            "python_whitespace_or_unparsed": 0.24358322974620147,
+            "special": 0.02012664448762251,
+            "string": 0.02730496453900709
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 17,
+            "mixed_python": 2,
+            "name": 32,
+            "number": 4,
+            "operator": 35,
+            "outside_python_region": 3,
+            "python_whitespace_or_unparsed": 27,
+            "special": 4,
+            "string": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.1328125,
+            "mixed_python": 0.015625,
+            "name": 0.25,
+            "number": 0.03125,
+            "operator": 0.2734375,
+            "outside_python_region": 0.0234375,
+            "python_whitespace_or_unparsed": 0.2109375,
+            "special": 0.03125,
+            "string": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 14,
+            "mixed_python": 3,
+            "name": 32,
+            "number": 9,
+            "operator": 31,
+            "outside_python_region": 3,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 29,
+            "string": 3
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.109375,
+            "mixed_python": 0.0234375,
+            "name": 0.25,
+            "number": 0.0703125,
+            "operator": 0.2421875,
+            "outside_python_region": 0.0234375,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.2265625,
+            "string": 0.0234375
+          }
+        }
+      },
+      "family:first_prefix": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 27,
+            "name": 99,
+            "number": 9,
+            "operator": 50,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 60,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.10112696047122277,
+            "name": 0.3752868261064982,
+            "number": 0.03370898682374092,
+            "operator": 0.18797518510633265,
+            "outside_python_region": 0.06075130698081518,
+            "python_whitespace_or_unparsed": 0.22596290776618644,
+            "special": 0.015187826745203794
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 10,
+            "name": 50,
+            "number": 4,
+            "operator": 23,
+            "outside_python_region": 8,
+            "python_whitespace_or_unparsed": 29,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.078125,
+            "name": 0.390625,
+            "number": 0.03125,
+            "operator": 0.1796875,
+            "outside_python_region": 0.0625,
+            "python_whitespace_or_unparsed": 0.2265625,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 16,
+            "name": 45,
+            "number": 4,
+            "operator": 23,
+            "outside_python_region": 9,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 27
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.125,
+            "name": 0.3515625,
+            "number": 0.03125,
+            "operator": 0.1796875,
+            "outside_python_region": 0.0703125,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.2109375
+          }
+        }
+      },
+      "family:json": {
+        "full": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 35,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.799702380952381,
+            "special": 0.20029761904761906
+          }
+        },
+        "sampled_predicted": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 35,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.799702380952381,
+            "special": 0.20029761904761906
+          }
+        },
+        "sampled_processed": {
+          "cases": 8,
+          "token_counts": {
+            "prompt_last": 8,
+            "retention_content": 35
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.20029761904761906,
+            "retention_content": 0.799702380952381
+          }
+        }
+      },
+      "family:long_tokens": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 20,
+            "name": 72,
+            "operator": 64,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 52,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.08771929824561403,
+            "name": 0.3157894736842105,
+            "operator": 0.2807017543859649,
+            "outside_python_region": 0.07017543859649122,
+            "python_whitespace_or_unparsed": 0.22807017543859648,
+            "special": 0.017543859649122806
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 16,
+            "name": 41,
+            "operator": 31,
+            "outside_python_region": 8,
+            "python_whitespace_or_unparsed": 28,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.125,
+            "name": 0.3203125,
+            "operator": 0.2421875,
+            "outside_python_region": 0.0625,
+            "python_whitespace_or_unparsed": 0.21875,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 8,
+            "name": 34,
+            "operator": 45,
+            "outside_python_region": 12,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 25
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0625,
+            "name": 0.265625,
+            "operator": 0.3515625,
+            "outside_python_region": 0.09375,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.1953125
+          }
+        }
+      },
+      "family:parenthesis_depth": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 48,
+            "mixed_python": 10,
+            "name": 112,
+            "number": 18,
+            "operator": 90,
+            "outside_python_region": 12,
+            "python_whitespace_or_unparsed": 115,
+            "special": 4,
+            "string": 10
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.11581183995453906,
+            "mixed_python": 0.024024970236253423,
+            "name": 0.2604245404300714,
+            "number": 0.04684002084444562,
+            "operator": 0.2111087965623364,
+            "outside_python_region": 0.03038357905614543,
+            "python_whitespace_or_unparsed": 0.27755324505877604,
+            "special": 0.009828037621179214,
+            "string": 0.024024970236253423
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 11,
+            "mixed_python": 3,
+            "name": 34,
+            "number": 5,
+            "operator": 25,
+            "outside_python_region": 4,
+            "python_whitespace_or_unparsed": 38,
+            "special": 4,
+            "string": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0859375,
+            "mixed_python": 0.0234375,
+            "name": 0.265625,
+            "number": 0.0390625,
+            "operator": 0.1953125,
+            "outside_python_region": 0.03125,
+            "python_whitespace_or_unparsed": 0.296875,
+            "special": 0.03125,
+            "string": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 14,
+            "mixed_python": 3,
+            "name": 30,
+            "number": 7,
+            "operator": 31,
+            "outside_python_region": 6,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 30,
+            "string": 3
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.109375,
+            "mixed_python": 0.0234375,
+            "name": 0.234375,
+            "number": 0.0546875,
+            "operator": 0.2421875,
+            "outside_python_region": 0.046875,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.234375,
+            "string": 0.0234375
+          }
+        }
+      },
+      "family:rotate_right": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 27,
+            "name": 74,
+            "number": 4,
+            "operator": 74,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 68,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.10163948492863745,
+            "name": 0.2803204747800038,
+            "number": 0.013577554836470312,
+            "operator": 0.27954504053682766,
+            "outside_python_region": 0.06191308159990629,
+            "python_whitespace_or_unparsed": 0.24752609291817787,
+            "special": 0.015478270399976573
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 9,
+            "name": 39,
+            "operator": 36,
+            "outside_python_region": 8,
+            "python_whitespace_or_unparsed": 32,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0703125,
+            "name": 0.3046875,
+            "operator": 0.28125,
+            "outside_python_region": 0.0625,
+            "python_whitespace_or_unparsed": 0.25,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 15,
+            "name": 33,
+            "number": 3,
+            "operator": 32,
+            "outside_python_region": 10,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 31
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.1171875,
+            "name": 0.2578125,
+            "number": 0.0234375,
+            "operator": 0.25,
+            "outside_python_region": 0.078125,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.2421875
+          }
+        }
+      },
+      "family:run_lengths": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 34,
+            "name": 160,
+            "number": 14,
+            "operator": 116,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 128,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.07361559731806391,
+            "name": 0.33295366258014,
+            "number": 0.02829598566045123,
+            "operator": 0.2507008423873146,
+            "outside_python_region": 0.03500923750795282,
+            "python_whitespace_or_unparsed": 0.2706723651690892,
+            "special": 0.008752309376988204
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 14,
+            "name": 41,
+            "number": 8,
+            "operator": 34,
+            "outside_python_region": 4,
+            "python_whitespace_or_unparsed": 23,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.109375,
+            "name": 0.3203125,
+            "number": 0.0625,
+            "operator": 0.265625,
+            "outside_python_region": 0.03125,
+            "python_whitespace_or_unparsed": 0.1796875,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 4,
+            "name": 48,
+            "number": 3,
+            "operator": 26,
+            "outside_python_region": 6,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 37
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.03125,
+            "name": 0.375,
+            "number": 0.0234375,
+            "operator": 0.203125,
+            "outside_python_region": 0.046875,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.2890625
+          }
+        }
+      },
+      "family:stable_unique": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 28,
+            "name": 78,
+            "operator": 56,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 60,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.1157103825136612,
+            "name": 0.3222677595628415,
+            "operator": 0.2314207650273224,
+            "outside_python_region": 0.06612021857923497,
+            "python_whitespace_or_unparsed": 0.24795081967213115,
+            "special": 0.016530054644808743
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 22,
+            "name": 46,
+            "operator": 16,
+            "outside_python_region": 8,
+            "python_whitespace_or_unparsed": 32,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.171875,
+            "name": 0.359375,
+            "operator": 0.125,
+            "outside_python_region": 0.0625,
+            "python_whitespace_or_unparsed": 0.25,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 6,
+            "name": 34,
+            "operator": 42,
+            "outside_python_region": 12,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 30
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.046875,
+            "name": 0.265625,
+            "operator": 0.328125,
+            "outside_python_region": 0.09375,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.234375
+          }
+        }
+      },
+      "family:union_length": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 43,
+            "name": 265,
+            "number": 12,
+            "operator": 160,
+            "outside_python_region": 16,
+            "python_whitespace_or_unparsed": 145,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0673100048100048,
+            "name": 0.41068121693121695,
+            "number": 0.01894390331890332,
+            "operator": 0.2502961159211159,
+            "outside_python_region": 0.025258537758537758,
+            "python_whitespace_or_unparsed": 0.22119558682058682,
+            "special": 0.0063146344396344395
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 9,
+            "name": 65,
+            "number": 1,
+            "operator": 18,
+            "outside_python_region": 4,
+            "python_whitespace_or_unparsed": 27,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0703125,
+            "name": 0.5078125,
+            "number": 0.0078125,
+            "operator": 0.140625,
+            "outside_python_region": 0.03125,
+            "python_whitespace_or_unparsed": 0.2109375,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "keyword": 8,
+            "name": 37,
+            "number": 2,
+            "operator": 36,
+            "outside_python_region": 4,
+            "prompt_last": 4,
+            "python_whitespace_or_unparsed": 37
+          },
+          "case_balanced_fractions": {
+            "keyword": 0.0625,
+            "name": 0.2890625,
+            "number": 0.015625,
+            "operator": 0.28125,
+            "outside_python_region": 0.03125,
+            "prompt_last": 0.03125,
+            "python_whitespace_or_unparsed": 0.2890625
+          }
+        }
+      }
+    }
+  },
+  "paired_divergence": {
+    "coding": {
+      "cases": 32,
+      "literal_token_identity": 4,
+      "first_difference_category_pairs": {
+        "('python_whitespace_or_unparsed', 'python_whitespace_or_unparsed')": 6,
+        "('python_whitespace_or_unparsed', 'operator')": 2,
+        "('keyword', 'name')": 1,
+        "('name', 'name')": 6,
+        "('outside_python_region', 'keyword')": 4,
+        "('string', 'keyword')": 3,
+        "('string', 'name')": 4,
+        "('python_whitespace_or_unparsed', 'keyword')": 1,
+        "('name', 'keyword')": 1
+      }
+    },
+    "retention": {
+      "cases": 16,
+      "literal_token_identity": 8,
+      "first_difference_category_pairs": {
+        "('retention_content', 'retention_content')": 7,
+        "('retention_content', 'special')": 1
+      }
+    }
+  },
+  "scope": "Syntax and literal divergence only. Comments and strings can be functional; this is not an executed-code classification, semantic feature map or edit-selection result. No grades change.",
+  "new_model_forwards": 0,
+  "optimizer_steps": 0,
+  "N38_outputs_accessed": false
+}

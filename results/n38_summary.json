@@ -1,0 +1,58 @@
+{
+  "experiment": "N38",
+  "question_id": "Q52",
+  "receipt": {
+    "utc": "2026-10-31T16:19:49.285369+00:00",
+    "status": "complete_private_host_audited_closed",
+    "records": 96,
+    "all_mandatory_guards_pass": true,
+    "actual_counter": {
+      "recipient": {
+        "calls": 7630,
+        "input_token_exposures": 12175
+      },
+      "donor": {
+        "calls": 2837,
+        "input_token_exposures": 7382
+      }
+    },
+    "measured_native_decisions": 10467,
+    "new_generated_tokens": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "parameter_assignments": 0,
+    "scientific_output_bytes": 29521849,
+    "worker_seconds": 1883.8467989750002,
+    "host_recomputed_checkpoint_activations_or_weights": false,
+    "closed_scorers_invoked": false,
+    "interpretation": "Read-only native observations, not semantic roles, causal effects or useful coding changes.",
+    "notebook_seconds": 1932.3856834080002
+  },
+  "scope": "Read-only native observation on all96reused-development trajectories;no new response or neuron edit.",
+  "models": {
+    "recipient": {
+      "cases": 48,
+      "timeline_positions": 1429,
+      "fixed_timeline_units": 471,
+      "all_channel_moment_units": 337920
+    },
+    "donor": {
+      "cases": 48,
+      "timeline_positions": 1436,
+      "fixed_timeline_units": 471,
+      "all_channel_moment_units": 337920
+    }
+  },
+  "total_saved_selected_values": 1349415,
+  "raw_timelines_and_moments_private": true,
+  "source_protocol_sha256": "9ac09d9c9cd4d82f323b17b609ec4ec8690aa503aae5a3cf0d151dccd7333236",
+  "auditor_sha256": "ede1e98cb5bbcd7de226ad77e6eab7aff822db5fb20ef6185f32edb3ca511111",
+  "limits": [
+    "At most8prompt and32decision samples per reply,not a complete per-token all-neuron map.",
+    "Raw projection magnitude precedes post-FFN normalization and is not a causal contribution.",
+    "Each checkpoint follows its own native token history;equal coordinates do not establish feature alignment.",
+    "Host checks saved schemas,lineage and selected arithmetic,not full pretrained activations or weights.",
+    "No semantic role,useful coding change,new capability,efficiency or novelty is established by observation."
+  ],
+  "next": "Q53conditional native comment-entry control. No group or GPU protocol selected yet."
+}

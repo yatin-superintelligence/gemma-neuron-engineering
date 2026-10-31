@@ -1,0 +1,1056 @@
+{
+  "utc": "2026-10-31T15:53:07.841436+00:00",
+  "models": {
+    "recipient": {
+      "all": {
+        "full": {
+          "cases": 48,
+          "token_counts": {
+            "outside_python_region": 128,
+            "python_region": 7401,
+            "retention_content": 53,
+            "special": 48
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.02261915724345701,
+            "python_region": 0.6383927201123454,
+            "retention_content": 0.25381944444444443,
+            "special": 0.08516867819975314
+          }
+        },
+        "sampled_predicted": {
+          "cases": 48,
+          "token_counts": {
+            "outside_python_region": 43,
+            "python_region": 949,
+            "retention_content": 53,
+            "special": 48
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.027994791666666668,
+            "python_region": 0.6178385416666666,
+            "retention_content": 0.25381944444444443,
+            "special": 0.10034722222222221
+          }
+        },
+        "sampled_processed": {
+          "cases": 48,
+          "token_counts": {
+            "outside_python_region": 55,
+            "prompt_last": 48,
+            "python_region": 937,
+            "retention_content": 53
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.035807291666666664,
+            "prompt_last": 0.10034722222222221,
+            "python_region": 0.6100260416666666,
+            "retention_content": 0.25381944444444443
+          }
+        }
+      },
+      "role:coding": {
+        "full": {
+          "cases": 32,
+          "token_counts": {
+            "outside_python_region": 128,
+            "python_region": 7401,
+            "special": 32
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.033928735865185515,
+            "python_region": 0.9575890801685181,
+            "special": 0.008482183966296379
+          }
+        },
+        "sampled_predicted": {
+          "cases": 32,
+          "token_counts": {
+            "outside_python_region": 43,
+            "python_region": 949,
+            "special": 32
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0419921875,
+            "python_region": 0.9267578125,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 32,
+          "token_counts": {
+            "outside_python_region": 55,
+            "prompt_last": 32,
+            "python_region": 937
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0537109375,
+            "prompt_last": 0.03125,
+            "python_region": 0.9150390625
+          }
+        }
+      },
+      "role:retention": {
+        "full": {
+          "cases": 16,
+          "token_counts": {
+            "retention_content": 53,
+            "special": 16
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7614583333333333,
+            "special": 0.23854166666666668
+          }
+        },
+        "sampled_predicted": {
+          "cases": 16,
+          "token_counts": {
+            "retention_content": 53,
+            "special": 16
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7614583333333333,
+            "special": 0.23854166666666668
+          }
+        },
+        "sampled_processed": {
+          "cases": 16,
+          "token_counts": {
+            "prompt_last": 16,
+            "retention_content": 53
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.23854166666666668,
+            "retention_content": 0.7614583333333333
+          }
+        }
+      },
+      "family:arithmetic": {
+        "full": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 26,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7583333333333333,
+            "special": 0.24166666666666667
+          }
+        },
+        "sampled_predicted": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 26,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7583333333333333,
+            "special": 0.24166666666666667
+          }
+        },
+        "sampled_processed": {
+          "cases": 8,
+          "token_counts": {
+            "prompt_last": 8,
+            "retention_content": 26
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.24166666666666667,
+            "retention_content": 0.7583333333333333
+          }
+        }
+      },
+      "family:ceil_ratio": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 2828,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0067022722158191555,
+            "python_region": 0.991622159730226,
+            "special": 0.0016755680539547889
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "python_region": 120,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "python_region": 0.9375,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "prompt_last": 4,
+            "python_region": 120
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "prompt_last": 0.03125,
+            "python_region": 0.9375
+          }
+        }
+      },
+      "family:first_prefix": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 524,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03005447734724548,
+            "python_region": 0.9624319033159432,
+            "special": 0.00751361933681137
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "python_region": 120,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "python_region": 0.9375,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 6,
+            "prompt_last": 4,
+            "python_region": 118
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.046875,
+            "prompt_last": 0.03125,
+            "python_region": 0.921875
+          }
+        }
+      },
+      "family:json": {
+        "full": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 27,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7645833333333334,
+            "special": 0.23541666666666666
+          }
+        },
+        "sampled_predicted": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 27,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7645833333333334,
+            "special": 0.23541666666666666
+          }
+        },
+        "sampled_processed": {
+          "cases": 8,
+          "token_counts": {
+            "prompt_last": 8,
+            "retention_content": 27
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.23541666666666666,
+            "retention_content": 0.7645833333333334
+          }
+        }
+      },
+      "family:long_tokens": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 208,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.07017543859649122,
+            "python_region": 0.9122807017543859,
+            "special": 0.017543859649122806
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 8,
+            "python_region": 116,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0625,
+            "python_region": 0.90625,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 12,
+            "prompt_last": 4,
+            "python_region": 112
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.09375,
+            "prompt_last": 0.03125,
+            "python_region": 0.875
+          }
+        }
+      },
+      "family:parenthesis_depth": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 406,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.04051490514905149,
+            "python_region": 0.9493563685636857,
+            "special": 0.010128726287262873
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 7,
+            "python_region": 117,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0546875,
+            "python_region": 0.9140625,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 7,
+            "prompt_last": 4,
+            "python_region": 117
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0546875,
+            "prompt_last": 0.03125,
+            "python_region": 0.9140625
+          }
+        }
+      },
+      "family:rotate_right": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 1533,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.012256155959362454,
+            "python_region": 0.984679805050797,
+            "special": 0.0030640389898406134
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "python_region": 120,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "python_region": 0.9375,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "prompt_last": 4,
+            "python_region": 120
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "prompt_last": 0.03125,
+            "python_region": 0.9375
+          }
+        }
+      },
+      "family:run_lengths": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 480,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.032018442622950824,
+            "python_region": 0.9599769467213115,
+            "special": 0.008004610655737706
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "python_region": 120,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "python_region": 0.9375,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 6,
+            "prompt_last": 4,
+            "python_region": 118
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.046875,
+            "prompt_last": 0.03125,
+            "python_region": 0.921875
+          }
+        }
+      },
+      "family:stable_unique": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 222,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.06612021857923497,
+            "python_region": 0.9173497267759563,
+            "special": 0.016530054644808743
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 8,
+            "python_region": 116,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0625,
+            "python_region": 0.90625,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 12,
+            "prompt_last": 4,
+            "python_region": 112
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.09375,
+            "prompt_last": 0.03125,
+            "python_region": 0.875
+          }
+        }
+      },
+      "family:union_length": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 1200,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.013587976451328549,
+            "python_region": 0.9830150294358393,
+            "special": 0.0033969941128321373
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "python_region": 120,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "python_region": 0.9375,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "prompt_last": 4,
+            "python_region": 120
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "prompt_last": 0.03125,
+            "python_region": 0.9375
+          }
+        }
+      }
+    },
+    "donor": {
+      "all": {
+        "full": {
+          "cases": 48,
+          "token_counts": {
+            "outside_python_region": 112,
+            "python_region": 2617,
+            "retention_content": 60,
+            "special": 48
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.030986135191775493,
+            "python_region": 0.6265337283611798,
+            "retention_content": 0.25793650793650796,
+            "special": 0.08454362851053676
+          }
+        },
+        "sampled_predicted": {
+          "cases": 48,
+          "token_counts": {
+            "outside_python_region": 47,
+            "python_region": 945,
+            "retention_content": 60,
+            "special": 48
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.030598958333333332,
+            "python_region": 0.615234375,
+            "retention_content": 0.25793650793650796,
+            "special": 0.09623015873015872
+          }
+        },
+        "sampled_processed": {
+          "cases": 48,
+          "token_counts": {
+            "outside_python_region": 62,
+            "prompt_last": 48,
+            "python_region": 930,
+            "retention_content": 60
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.040364583333333336,
+            "prompt_last": 0.09623015873015872,
+            "python_region": 0.60546875,
+            "retention_content": 0.25793650793650796
+          }
+        }
+      },
+      "role:coding": {
+        "full": {
+          "cases": 32,
+          "token_counts": {
+            "outside_python_region": 112,
+            "python_region": 2617,
+            "special": 32
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.04647920278766324,
+            "python_region": 0.9398005925417697,
+            "special": 0.013720204670567036
+          }
+        },
+        "sampled_predicted": {
+          "cases": 32,
+          "token_counts": {
+            "outside_python_region": 47,
+            "python_region": 945,
+            "special": 32
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0458984375,
+            "python_region": 0.9228515625,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 32,
+          "token_counts": {
+            "outside_python_region": 62,
+            "prompt_last": 32,
+            "python_region": 930
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.060546875,
+            "prompt_last": 0.03125,
+            "python_region": 0.908203125
+          }
+        }
+      },
+      "role:retention": {
+        "full": {
+          "cases": 16,
+          "token_counts": {
+            "retention_content": 60,
+            "special": 16
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7738095238095238,
+            "special": 0.2261904761904762
+          }
+        },
+        "sampled_predicted": {
+          "cases": 16,
+          "token_counts": {
+            "retention_content": 60,
+            "special": 16
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7738095238095238,
+            "special": 0.2261904761904762
+          }
+        },
+        "sampled_processed": {
+          "cases": 16,
+          "token_counts": {
+            "prompt_last": 16,
+            "retention_content": 60
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.2261904761904762,
+            "retention_content": 0.7738095238095238
+          }
+        }
+      },
+      "family:arithmetic": {
+        "full": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 25,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7479166666666667,
+            "special": 0.2520833333333333
+          }
+        },
+        "sampled_predicted": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 25,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.7479166666666667,
+            "special": 0.2520833333333333
+          }
+        },
+        "sampled_processed": {
+          "cases": 8,
+          "token_counts": {
+            "prompt_last": 8,
+            "retention_content": 25
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.2520833333333333,
+            "retention_content": 0.7479166666666667
+          }
+        }
+      },
+      "family:ceil_ratio": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "python_region": 215,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.022222222222222223,
+            "python_region": 0.9576511332901553,
+            "special": 0.02012664448762251
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 3,
+            "python_region": 121,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0234375,
+            "python_region": 0.9453125,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 3,
+            "prompt_last": 4,
+            "python_region": 121
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0234375,
+            "prompt_last": 0.03125,
+            "python_region": 0.9453125
+          }
+        }
+      },
+      "family:first_prefix": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 245,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.06075130698081518,
+            "python_region": 0.924060866273981,
+            "special": 0.015187826745203794
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 8,
+            "python_region": 116,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0625,
+            "python_region": 0.90625,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 9,
+            "prompt_last": 4,
+            "python_region": 115
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0703125,
+            "prompt_last": 0.03125,
+            "python_region": 0.8984375
+          }
+        }
+      },
+      "family:json": {
+        "full": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 35,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.799702380952381,
+            "special": 0.20029761904761906
+          }
+        },
+        "sampled_predicted": {
+          "cases": 8,
+          "token_counts": {
+            "retention_content": 35,
+            "special": 8
+          },
+          "case_balanced_fractions": {
+            "retention_content": 0.799702380952381,
+            "special": 0.20029761904761906
+          }
+        },
+        "sampled_processed": {
+          "cases": 8,
+          "token_counts": {
+            "prompt_last": 8,
+            "retention_content": 35
+          },
+          "case_balanced_fractions": {
+            "prompt_last": 0.20029761904761906,
+            "retention_content": 0.799702380952381
+          }
+        }
+      },
+      "family:long_tokens": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 208,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.07017543859649122,
+            "python_region": 0.9122807017543859,
+            "special": 0.017543859649122806
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 8,
+            "python_region": 116,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0625,
+            "python_region": 0.90625,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 12,
+            "prompt_last": 4,
+            "python_region": 112
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.09375,
+            "prompt_last": 0.03125,
+            "python_region": 0.875
+          }
+        }
+      },
+      "family:parenthesis_depth": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 12,
+            "python_region": 403,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03038357905614543,
+            "python_region": 0.9597883833226754,
+            "special": 0.009828037621179214
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "python_region": 120,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "python_region": 0.9375,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 6,
+            "prompt_last": 4,
+            "python_region": 118
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.046875,
+            "prompt_last": 0.03125,
+            "python_region": 0.921875
+          }
+        }
+      },
+      "family:rotate_right": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 247,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.06191308159990629,
+            "python_region": 0.9226086480001171,
+            "special": 0.015478270399976573
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 8,
+            "python_region": 116,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0625,
+            "python_region": 0.90625,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 10,
+            "prompt_last": 4,
+            "python_region": 114
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.078125,
+            "prompt_last": 0.03125,
+            "python_region": 0.890625
+          }
+        }
+      },
+      "family:run_lengths": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 452,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03500923750795282,
+            "python_region": 0.956238453115059,
+            "special": 0.008752309376988204
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "python_region": 120,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "python_region": 0.9375,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 6,
+            "prompt_last": 4,
+            "python_region": 118
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.046875,
+            "prompt_last": 0.03125,
+            "python_region": 0.921875
+          }
+        }
+      },
+      "family:stable_unique": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 222,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.06612021857923497,
+            "python_region": 0.9173497267759563,
+            "special": 0.016530054644808743
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 8,
+            "python_region": 116,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.0625,
+            "python_region": 0.90625,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 12,
+            "prompt_last": 4,
+            "python_region": 112
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.09375,
+            "prompt_last": 0.03125,
+            "python_region": 0.875
+          }
+        }
+      },
+      "family:union_length": {
+        "full": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 16,
+            "python_region": 625,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.025258537758537758,
+            "python_region": 0.9684268278018278,
+            "special": 0.0063146344396344395
+          }
+        },
+        "sampled_predicted": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "python_region": 120,
+            "special": 4
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "python_region": 0.9375,
+            "special": 0.03125
+          }
+        },
+        "sampled_processed": {
+          "cases": 4,
+          "token_counts": {
+            "outside_python_region": 4,
+            "prompt_last": 4,
+            "python_region": 120
+          },
+          "case_balanced_fractions": {
+            "outside_python_region": 0.03125,
+            "prompt_last": 0.03125,
+            "python_region": 0.9375
+          }
+        }
+      }
+    }
+  },
+  "scope": "Text-region coverage of closed replies, not activation effects or neuron meanings. Separate processed and predicted token categories. No grade changes or new inference.",
+  "model_forwards": 0,
+  "scorer_or_oracle_calls": 0,
+  "optimizer_steps": 0,
+  "N38_outputs_accessed": false
+}

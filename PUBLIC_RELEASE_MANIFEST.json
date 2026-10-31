@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-31T15:26:14.454469+00:00",
+  "generated_utc": "2026-10-31T17:14:59.808576+00:00",
   "project": "Digital Surgery",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,18 +21,18 @@
     },
     {
       "path": "README.md",
-      "sha256": "5f763026e487ef981bc504720380072020ddc8ff86e893176f79d13eace7e225",
-      "bytes": 7561
+      "sha256": "3f49e083ab87f38dbe1e59575ce63af53c57c93f5f9d4e20a608fb5bbbf2d16b",
+      "bytes": 8188
     },
     {
       "path": "docs/ACTIVATION_VIEWER.html",
-      "sha256": "df4192334c4eeec84cc76f405ff6b949cb1fc780151dbc8362ee222abc43aae9",
-      "bytes": 9661
+      "sha256": "c8d38809ef381614dfbb7802909e55443646099fa4d1b1fed889e507483db6c3",
+      "bytes": 9862
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "772db25f3d33c84f41ebe93464ded6fb9b58a05862f116c9b756b20b7a7c5f8c",
-      "bytes": 280892
+      "sha256": "d4502a67848d82f6187bcec945c5c26c32738ac89304e2a7184c4fb6013ca0b3",
+      "bytes": 284868
     },
     {
       "path": "docs/MODEL_REGISTRY.html",
@@ -41,13 +41,13 @@
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "c22c2f6c19e1bebf6730ed0a7d64507b6fc93910e8dce91cfc4a4984351698eb",
-      "bytes": 226934
+      "sha256": "bf9679bc89a86c686af55b3c2552d11ad0b99c58f91965823be562ff7d42c45f",
+      "bytes": 230667
     },
     {
       "path": "docs/SURGERY_ASSET_INDEX.json",
-      "sha256": "d1e0f096004be3a88fc505c2362c39e4ab80a59399d15cf6ce33f2ef493903ae",
-      "bytes": 16760
+      "sha256": "8e388ae95401dc068d281317bc185a1a9119632c5a1aad91df9cf770a155af78",
+      "bytes": 17843
     },
     {
       "path": "docs/SURGERY_PROCESS.html",
@@ -56,8 +56,8 @@
     },
     {
       "path": "docs/SURGERY_TOOLKIT.html",
-      "sha256": "25897cd6099a5eaeb8879eea7227f3693072645a53535f7e0b2c3a44959ba4e0",
-      "bytes": 84421
+      "sha256": "f52439b7aa56369d5b3fbcce60ced1645a701e97c2c0ffb26be2cdd57ef01050",
+      "bytes": 103859
     },
     {
       "path": "docs/current_work_window.json",
@@ -66,8 +66,8 @@
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "bbf57569da7253ade139987179da0228a33a271fe59f2af011e48224a4409d81",
-      "bytes": 117922
+      "sha256": "11bf6dfb9e2664534b1a4a591447601a607545e5e442ac8a2ac32f863b58f7e0",
+      "bytes": 119946
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -276,8 +276,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "dde5b16289fe2692655cfd8ef4a2877c2f829e3dfb5a6b268ee4b78c808f2e2e",
-      "bytes": 114625
+      "sha256": "68d8c6330d724a3be2cf46dcb9817497eceee870162c03446872631bb8108a32",
+      "bytes": 116865
     },
     {
       "path": "docs/storage_policy.json",
@@ -380,6 +380,11 @@
       "bytes": 4473
     },
     {
+      "path": "interpretability/native_cache_branch.py",
+      "sha256": "a11a55a52e908bc2f6f19ee00f20d00e1f66c6cf673a5c7969082d581b2ee6e7",
+      "bytes": 4122
+    },
+    {
       "path": "interpretability/native_capture.py",
       "sha256": "71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1",
       "bytes": 1209
@@ -418,6 +423,16 @@
       "path": "interpretability/python_prefix.py",
       "sha256": "6a8403b695f185cb78d335c8f770f32c3d9b53416a7c8b013edb35c31c5ebdcc",
       "bytes": 5349
+    },
+    {
+      "path": "interpretability/python_token_regions.py",
+      "sha256": "75f1d17aa2d7e8ce8e1cd52efa72f6720bf35c2e702e2e0c9fcb4c9c195e2462",
+      "bytes": 1886
+    },
+    {
+      "path": "interpretability/response_regions.py",
+      "sha256": "7a95eafd1a8ea167bcc68200fc59288b14b394ed4b68d93fbc7349a4cc5b80a7",
+      "bytes": 2118
     },
     {
       "path": "interpretability/scoped_channel.py",
@@ -1105,6 +1120,16 @@
       "bytes": 2253
     },
     {
+      "path": "methods/n39_native_comment_design.json",
+      "sha256": "76db70604ae79845efef5647cf8abfc5e74450b68d154eec0834c29fe2694061",
+      "bytes": 9943
+    },
+    {
+      "path": "methods/n39_native_comment_intent.json",
+      "sha256": "3da7e7e99c6552e4d5d8bbe3f5c99b20344cbf194e2e5686829f74b2f4f03fd4",
+      "bytes": 3659
+    },
+    {
       "path": "methods/strict_profile_matching.py",
       "sha256": "016d125388a341d8460990d9935b92adbfddf68ff8919d7e277ab37786967ba1",
       "bytes": 3905
@@ -1508,6 +1533,11 @@
       "path": "research/experiments/n37/continuation.py",
       "sha256": "1c0de11599105c3addf51cf4419a6894217dfb3cebb1f10898d0b0b15db75087",
       "bytes": 3470
+    },
+    {
+      "path": "research/experiments/n39/operations.py",
+      "sha256": "c1338c3d2299617b7db2e97514ac72cb4413bce162c15ba910c1fd2fd5dd1f54",
+      "bytes": 2558
     },
     {
       "path": "results/b01_chat_summary.json",
@@ -1945,14 +1975,39 @@
       "bytes": 4198
     },
     {
+      "path": "results/n38_context_coverage.json",
+      "sha256": "b584f322e8554aa67ba475eda4795864c00674eb0a9cb81208fd313237b65204",
+      "bytes": 1289
+    },
+    {
+      "path": "results/n38_lexical_annotation_summary.json",
+      "sha256": "ce8d71c24029756bc645debe68b61f146d7718e3775114f317b2177e8d90b605",
+      "bytes": 51550
+    },
+    {
+      "path": "results/n38_response_annotation_summary.json",
+      "sha256": "be5825b35792158c83852727590a15c5335bb7c2d3fb31af5c3db243b03f784c",
+      "bytes": 30580
+    },
+    {
       "path": "results/n38_software_preparation.json",
       "sha256": "bb70f1e287c63fd4715af52c99b82b920b7309c2cfbedab45eac45046ae1a8e1",
       "bytes": 3833
     },
     {
+      "path": "results/n38_summary.json",
+      "sha256": "548eb758e73e45e4d5a8038ba2e9699bfa5c89d41aa2c87aeea609b4bd1fcd5c",
+      "bytes": 2290
+    },
+    {
+      "path": "results/n39_software_preparation.json",
+      "sha256": "a6498f14d9fb4b9fd128a8b227eed64071d59aebab53730d78f55fdf09514272",
+      "bytes": 9471
+    },
+    {
       "path": "results/progress_snapshot.json",
-      "sha256": "04670076f0040392c7b21757f030b3865919fdbfbac21e97b229bd3a71855d9b",
-      "bytes": 789
+      "sha256": "4912106b76aa58bdec456d37e847c12fa96965966a42fdec65ccf89cf8bbcbb5",
+      "bytes": 753
     },
     {
       "path": "results/r01_reconstruction.json",
@@ -1966,13 +2021,18 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "6eef96d0111d434828fb874a10ae92275e8b4d38f5c6238dbfc1a29f5ce7e718",
-      "bytes": 24072
+      "sha256": "1377217fc61e0d69673ca87413f0e57206f7bce0038286d1cf076e4c96626254",
+      "bytes": 24352
     },
     {
       "path": "scripts/build_surgery_assets.py",
-      "sha256": "8d9abf308894fe25367d8ff47352105d39873d081ae93587a637ae2d38469e71",
-      "bytes": 21053
+      "sha256": "a36584c566fbdb3cb5da40211d89ad6f8f4bc7cfa5c55cd18830f52735dbc733",
+      "bytes": 21415
+    },
+    {
+      "path": "scripts/export_native_trace.py",
+      "sha256": "7c569e4e0f7edb31a067483c2592318f86719fddcef9cc838f312271f2009b12",
+      "bytes": 7249
     },
     {
       "path": "scripts/plot_n04_summary.py",

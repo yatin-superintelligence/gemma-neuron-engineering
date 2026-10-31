@@ -1,4 +1,87 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_capture</h2><p>Capture native gated MLP scalars at one prompt position without attention hooks.</p><p><a href="../interpretability/native_capture.py">Exact source file</a></p><p class="small">APIs: capture_native_mlp</p><p class="hash">SHA-256 71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Capture native gated MLP scalars at one prompt position without attention hooks.&quot;&quot;&quot;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_cache_branch</h2><p>Clone an actual native past for one current-token causal measurement.
+
+The clone is ephemeral. It is not a reusable past for a changed conversation.
+Only the pinned DynamicCache with initialized dense KV layers is accepted.</p><p><a href="../interpretability/native_cache_branch.py">Exact source file</a></p><p class="small">APIs: tensor_hash, _value, fingerprint, _storages, native_cache_branch</p><p class="hash">SHA-256 a11a55a52e908bc2f6f19ee00f20d00e1f66c6cf673a5c7969082d581b2ee6e7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Clone an actual native past for one current-token causal measurement.
+
+The clone is ephemeral. It is not a reusable past for a changed conversation.
+Only the pinned DynamicCache with initialized dense KV layers is accepted.
+&quot;&quot;&quot;
+
+import copy
+import hashlib
+import json
+from contextlib import contextmanager
+
+import torch
+from transformers.cache_utils import DynamicCache, DynamicLayer, DynamicSlidingWindowLayer
+
+
+def tensor_hash(value):
+    return hashlib.sha256(value.detach().contiguous().reshape(-1).view(torch.uint8).cpu().numpy().tobytes()).hexdigest()
+
+
+def _value(value):
+    if torch.is_tensor(value):
+        return {&#x27;shape&#x27;: list(value.shape), &#x27;dtype&#x27;: str(value.dtype), &#x27;device&#x27;: str(value.device), &#x27;sha256&#x27;: tensor_hash(value)}
+    if value is None or type(value) in (str, bool, int, float):
+        return value
+    if isinstance(value, (torch.dtype, torch.device)):
+        return str(value)
+    raise ValueError(&#x27;Unsupported mutable cache metadata&#x27;)
+
+
+def fingerprint(cache, entries, length, dtype):
+    &quot;&quot;&quot;Validate logical and physical layout and retain exact compact witnesses.&quot;&quot;&quot;
+    if type(cache) is not DynamicCache or cache.offloading or cache.layer_class_to_replicate is not None:
+        raise ValueError(&#x27;Initialized non-offloaded DynamicCache required&#x27;)
+    if type(entries) is not int or type(length) is not int or min(entries, length) &lt; 1 or len(cache.layers) != entries:
+        raise ValueError(&#x27;Exact initialized cache cardinality and length required&#x27;)
+    if set(cache.__dict__) != {&#x27;layers&#x27;, &#x27;layer_class_to_replicate&#x27;, &#x27;offloading&#x27;}:
+        raise ValueError(&#x27;Unexpected cache implementation state&#x27;)
+    rows = []
+    for index, layer in enumerate(cache.layers):
+        if type(layer) not in (DynamicLayer, DynamicSlidingWindowLayer) or not layer.is_initialized:
+            raise ValueError(&#x27;Actual initialized native layer required&#x27;)
+        if int(layer.get_seq_length()) != length:
+            raise ValueError(&#x27;Logical cache length differs from declared native past&#x27;)
+        k, v = layer.keys, layer.values
+        if not torch.is_tensor(k) or not torch.is_tensor(v) or k.shape != v.shape or k.ndim != 4 or k.shape[0] != 1:
+            raise ValueError(&#x27;Dense batch-one aligned key/value tensors required&#x27;)
+        physical = min(length, layer.sliding_window - 1) if type(layer) is DynamicSlidingWindowLayer else length
+        if k.shape[-2] != physical or min(k.shape) &lt; 1 or k.dtype != dtype or v.dtype != dtype or k.device != v.device:
+            raise ValueError(&#x27;Truncated, mismatched or wrong-dtype native cache&#x27;)
+        if not torch.isfinite(k).all() or not torch.isfinite(v).all():
+            raise ValueError(&#x27;Nonfinite native cache&#x27;)
+        rows.append({&#x27;layer&#x27;: index, &#x27;type&#x27;: type(layer).__name__, &#x27;attributes&#x27;: {key: _value(value) for key, value in sorted(layer.__dict__.items())}})
+    raw = json.dumps(rows, sort_keys=True, separators=(&#x27;,&#x27;, &#x27;:&#x27;))
+    return {&#x27;entries&#x27;: entries, &#x27;logical_length&#x27;: length, &#x27;layers&#x27;: rows, &#x27;sha256&#x27;: hashlib.sha256(raw.encode()).hexdigest()}
+
+
+def _storages(cache):
+    return {value.untyped_storage().data_ptr() for layer in cache.layers for value in layer.__dict__.values() if torch.is_tensor(value) and value.numel()}
+
+
+@contextmanager
+def native_cache_branch(cache, entries, length, dtype):
+    &quot;&quot;&quot;Yield a fresh nonaliasing native past and require one-token consumption.
+
+    The source must stay byte-exact, including sliding-window counters. A failed
+    probe still checks source immutability. Full raw pasts are never serialized.
+    &quot;&quot;&quot;
+    before = fingerprint(cache, entries, length, dtype)
+    branch = copy.deepcopy(cache)
+    if fingerprint(branch, entries, length, dtype) != before or _storages(cache) &amp; _storages(branch):
+        raise ValueError(&#x27;Cache copy is inexact or aliases native storage&#x27;)
+    success = False
+    try:
+        yield branch
+        success = True
+    finally:
+        if fingerprint(cache, entries, length, dtype) != before:
+            raise AssertionError(&#x27;Native source past changed during measurement&#x27;)
+        if success:
+            fingerprint(branch, entries, length + 1, dtype)
+</pre></details></article><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_capture</h2><p>Capture native gated MLP scalars at one prompt position without attention hooks.</p><p><a href="../interpretability/native_capture.py">Exact source file</a></p><p class="small">APIs: capture_native_mlp</p><p class="hash">SHA-256 71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Capture native gated MLP scalars at one prompt position without attention hooks.&quot;&quot;&quot;
 from contextlib import contextmanager
 
 
@@ -290,6 +373,220 @@ def select_adapter_modules(model,selected_names,mode=&#x27;keep&#x27;):
         yield
     finally:
         for name,module in modules.items():module.enable_adapters(not previous[name])
+</pre></details></article><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>response_regions</h2><p>Describe output text regions without grading or executing a program.</p><p><a href="../interpretability/response_regions.py">Exact source file</a></p><p class="small">APIs: python_regions, label_prefixes</p><p class="hash">SHA-256 7a95eafd1a8ea167bcc68200fc59288b14b394ed4b68d93fbc7349a4cc5b80a7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Describe output text regions without grading or executing a program.&quot;&quot;&quot;
+
+import ast
+import re
+
+
+def python_regions(text):
+    pattern = re.compile(r&#x27;```(?:python3?|py)?[ \t]*\r?\n(?P&lt;body&gt;.*?)```&#x27;, re.I | re.S)
+    regions = [list(m.span(&#x27;body&#x27;)) for m in pattern.finditer(text)]
+    if not regions:
+        try:
+            tree = ast.parse(text)
+        except (SyntaxError, ValueError):
+            tree = None
+        if tree and any(isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef)) for n in ast.walk(tree)):
+            regions = [[0, len(text)]]
+    return regions
+
+
+def label_prefixes(text, prefixes, token_ids, special_ids, coding=True):
+    &quot;&quot;&quot;Unstable Unicode prefix decoding remains explicitly unaligned.
+
+    Labels describe textual regions, not executed computation or neuron roles.
+    The caller supplies decoded native prefixes; no generation occurs here.
+    &quot;&quot;&quot;
+    if len(prefixes) != len(token_ids) or not prefixes or prefixes[-1] != text:
+        raise ValueError(&#x27;Complete exact native decoding is required&#x27;)
+    regions = python_regions(text) if coding else []
+    previous, previous_ok = &#x27;&#x27;, True
+    result = []
+    for index, (decoded, token) in enumerate(zip(prefixes, token_ids)):
+        current_ok = text.startswith(decoded)
+        start, end = len(previous), len(decoded)
+        aligned = previous_ok and current_ok and start &lt;= end
+        if token in special_ids:
+            label = &#x27;special&#x27;
+        elif not aligned:
+            label = &#x27;unaligned&#x27;
+        elif start == end:
+            label = &#x27;zero_width&#x27;
+        elif not coding:
+            label = &#x27;retention_content&#x27;
+        elif any(a &lt;= start and end &lt;= b for a, b in regions):
+            label = &#x27;python_region&#x27;
+        elif any(start &lt; b and end &gt; a for a, b in regions):
+            label = &#x27;boundary&#x27;
+        else:
+            label = &#x27;outside_python_region&#x27;
+        result.append({&#x27;generated_index&#x27;: index, &#x27;category&#x27;: label, &#x27;start&#x27;: start if aligned else None, &#x27;end&#x27;: end if aligned else None})
+        previous, previous_ok = decoded, current_ok
+    return {&#x27;python_regions&#x27;: regions, &#x27;tokens&#x27;: result}
+</pre></details></article><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>python_token_regions</h2><p>Label Python text syntax without execution, grading or model inference.</p><p><a href="../interpretability/python_token_regions.py">Exact source file</a></p><p class="small">APIs: lexical_regions, label_lexical</p><p class="hash">SHA-256 75f1d17aa2d7e8ce8e1cd52efa72f6720bf35c2e702e2e0c9fcb4c9c195e2462</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Label Python text syntax without execution, grading or model inference.&quot;&quot;&quot;
+
+import io
+import keyword
+import token
+import tokenize
+
+
+def lexical_regions(text, regions):
+    output, errors = [], []
+    for start, end in regions:
+        body = text[start:end]
+        lines = body.splitlines(keepends=True)
+        offsets = [0]
+        for line in lines:
+            offsets.append(offsets[-1] + len(line))
+        def absolute(position):
+            line, column = position
+            return start + offsets[min(line - 1, len(offsets) - 1)] + column
+        try:
+            for item in tokenize.generate_tokens(io.StringIO(body).readline):
+                kind = {
+                    token.COMMENT: &#x27;comment&#x27;, token.STRING: &#x27;string&#x27;,
+                    token.NUMBER: &#x27;number&#x27;, token.OP: &#x27;operator&#x27;,
+                    token.NAME: &#x27;keyword&#x27; if keyword.iskeyword(item.string) else &#x27;name&#x27;,
+                }.get(item.type)
+                if kind is not None:
+                    a, b = absolute(item.start), absolute(item.end)
+                    output.append({&#x27;start&#x27;: a, &#x27;end&#x27;: b, &#x27;category&#x27;: kind})
+        except (tokenize.TokenError, IndentationError, SyntaxError) as error:
+            errors.append({&#x27;region_start&#x27;: start, &#x27;type&#x27;: type(error).__name__})
+    return output, errors
+
+
+def label_lexical(text, annotation):
+    syntax, errors = lexical_regions(text, annotation[&#x27;python_regions&#x27;])
+    result = []
+    for item in annotation[&#x27;tokens&#x27;]:
+        category = item[&#x27;category&#x27;]
+        if category == &#x27;python_region&#x27;:
+            kinds = {s[&#x27;category&#x27;] for s in syntax if item[&#x27;start&#x27;] &lt; s[&#x27;end&#x27;] and item[&#x27;end&#x27;] &gt; s[&#x27;start&#x27;]}
+            category = next(iter(kinds)) if len(kinds) == 1 else &#x27;mixed_python&#x27; if kinds else &#x27;python_whitespace_or_unparsed&#x27;
+        result.append({**item, &#x27;category&#x27;: category})
+    return {&#x27;tokens&#x27;: result, &#x27;tokenization_errors&#x27;: errors}
+</pre></details></article><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>export_native_trace</h2><p>Convert one audited local observation into the offline viewer format.
+
+No checkpoint weights, inference service or upload are used. Token labels may
+come from an already-cached tokenizer; numeric labels work without one.</p><p><a href="../scripts/export_native_trace.py">Exact source file</a></p><p class="small">APIs: make_trace, main</p><p class="hash">SHA-256 7c569e4e0f7edb31a067483c2592318f86719fddcef9cc838f312271f2009b12</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Convert one audited local observation into the offline viewer format.
+
+No checkpoint weights, inference service or upload are used. Token labels may
+come from an already-cached tokenizer; numeric labels work without one.
+&quot;&quot;&quot;
+
+import argparse
+import hashlib
+import json
+from pathlib import Path
+
+import numpy as np
+
+N38_COORDINATE_SHA256 = &#x27;aa156bcebb717f86c444dbdf5a24f7941bf6b6f2dcbda725702c1328758e2084&#x27;
+
+
+def make_trace(record, values, coordinates, down_norms, provenance, token_label=None):
+    values = np.asarray(values)
+    norms = np.asarray(down_norms)
+    coordinates = [tuple(u) for u in coordinates]
+    positions = record[&#x27;positions&#x27;]
+    if not positions or not coordinates or coordinates != sorted(set(coordinates)):
+        raise ValueError(&#x27;Nonempty aligned positions and unique sorted units required&#x27;)
+    if values.shape != (len(positions), len(coordinates)) or values.size &gt; 2000000:
+        raise ValueError(&#x27;Selected values do not align with tokens and units&#x27;)
+    if norms.shape != (len(coordinates),) or not np.isfinite(values).all() or not np.isfinite(norms).all() or (norms &lt; 0).any():
+        raise ValueError(&#x27;Finite measurements and nonnegative column norms required&#x27;)
+    if not isinstance(provenance, str) or not provenance.strip():
+        raise ValueError(&#x27;Explicit evidence provenance required&#x27;)
+    label = token_label or (lambda token: &#x27;token &#x27; + str(token))
+    tokens = []
+    for position in positions:
+        processed, predicted = position[&#x27;processed_token_id&#x27;], position[&#x27;predicted_token_id&#x27;]
+        if type(processed) is not int or processed &lt; 0 or predicted is not None and (type(predicted) is not int or predicted &lt; 0):
+            raise ValueError(&#x27;Invalid token identity&#x27;)
+        if predicted is None and position[&#x27;decision&#x27;] is not None:
+            raise ValueError(&#x27;A measured decision requires its predicted token&#x27;)
+        processed_label = label(processed)
+        predicted_label = label(predicted) if predicted is not None else &#x27;no next-token measurement&#x27;
+        if not isinstance(processed_label, str) or not isinstance(predicted_label, str):
+            raise ValueError(&#x27;Token labels must be text&#x27;)
+        tokens.append({**position, &#x27;processed&#x27;: processed_label, &#x27;predicted&#x27;: predicted_label})
+    units = []
+    for i, (layer, channel) in enumerate(coordinates):
+        if type(layer) is not int or type(channel) is not int or min(layer, channel) &lt; 0:
+            raise ValueError(&#x27;Invalid native coordinate&#x27;)
+        units.append({&#x27;layer&#x27;: layer, &#x27;channel&#x27;: channel, &#x27;down_norm&#x27;: float(norms[i]), &#x27;values&#x27;: values[:, i].astype(float).tolist()})
+    return {&#x27;schema&#x27;: &#x27;digital-surgery-trace-v1&#x27;, &#x27;provenance&#x27;: provenance, &#x27;private&#x27;: True, &#x27;tokens&#x27;: tokens, &#x27;units&#x27;: units, &#x27;scope&#x27;: &#x27;Selected actual channel values. Column-weighted magnitude is before normalization and is not a causal contribution.&#x27;, &#x27;observed_decision_trace_sha256&#x27;: record.get(&#x27;observed_decision_trace_sha256&#x27;)}
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(&#x27;--observations&#x27;, type=Path, required=True)
+    parser.add_argument(&#x27;--moments&#x27;, type=Path, required=True)
+    parser.add_argument(&#x27;--design&#x27;, type=Path, required=True)
+    parser.add_argument(&#x27;--audit-receipt&#x27;, type=Path, required=True)
+    parser.add_argument(&#x27;--condition&#x27;, choices=[&#x27;recipient&#x27;, &#x27;donor&#x27;], required=True)
+    parser.add_argument(&#x27;--case-id&#x27;, required=True)
+    parser.add_argument(&#x27;--output&#x27;, type=Path, required=True)
+    parser.add_argument(&#x27;--tokenizer&#x27;, help=&#x27;Optional local tokenizer directory or cached model ID. Never downloaded.&#x27;)
+    args = parser.parse_args()
+    receipt = json.loads(args.audit_receipt.read_text())
+    if receipt.get(&#x27;status&#x27;) != &#x27;complete_private_host_audited_closed&#x27; or receipt.get(&#x27;all_mandatory_guards_pass&#x27;) is not True:
+        raise ValueError(&#x27;A completed passing observation audit is required&#x27;)
+    if args.output.exists():
+        raise FileExistsError(&#x27;Choose a new private trace destination&#x27;)
+    records = [json.loads(s) for s in args.observations.read_text().splitlines() if s]
+    matched = [r for r in records if r[&#x27;condition&#x27;] == args.condition and r[&#x27;id&#x27;] == args.case_id]
+    if len(matched) != 1:
+        raise ValueError(&#x27;Exactly one audited observation must match&#x27;)
+    record = matched[0]
+    output_hashes = json.loads((args.audit_receipt.parent / &#x27;output_hashes.json&#x27;).read_text())
+    if args.moments.resolve() != (args.observations.parent / (args.condition + &#x27;_moments.npz&#x27;)).resolve():
+        raise ValueError(&#x27;Column norms must belong to the same observed model&#x27;)
+    for path in [args.observations, args.moments]:
+        expected = output_hashes.get(&#x27;n38/bf16_text/&#x27; + path.name)
+        if expected is None or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+            raise ValueError(&#x27;Observation metadata or norms differ from audited outputs&#x27;)
+    name = record[&#x27;array_file&#x27;]
+    if Path(name).name != name:
+        raise ValueError(&#x27;Observation array must be a local basename&#x27;)
+    array = args.observations.parent / name
+    if hashlib.sha256(array.read_bytes()).hexdigest() != record[&#x27;array_sha256&#x27;]:
+        raise ValueError(&#x27;Observation array differs from the audited record&#x27;)
+    design = json.loads(args.design.read_text())
+    coordinates = design[&#x27;coordinates&#x27;][&#x27;ordered&#x27;]
+    if hashlib.sha256(json.dumps(coordinates, separators=(&#x27;,&#x27;, &#x27;:&#x27;)).encode()).hexdigest() != N38_COORDINATE_SHA256:
+        raise ValueError(&#x27;Coordinate labels differ from the frozen N38 measurements&#x27;)
+    widths = [6144] * 15 + [12288] * 20
+    starts = np.cumsum([0, *widths[:-1]])
+    indices = []
+    for layer, channel in coordinates:
+        if type(layer) is not int or type(channel) is not int or not 0 &lt;= layer &lt; len(widths) or not 0 &lt;= channel &lt; widths[layer]:
+            raise ValueError(&#x27;Coordinate outside the pinned Gemma E2B layout&#x27;)
+        indices.append(starts[layer] + channel)
+    with np.load(array, allow_pickle=False) as data:
+        values = data[&#x27;values&#x27;]
+    with np.load(args.moments, allow_pickle=False) as data:
+        all_norms = data[&#x27;down_norm&#x27;]
+    if all_norms.shape != (sum(widths),):
+        raise ValueError(&#x27;Wrong native column-norm layout&#x27;)
+    label = None
+    if args.tokenizer:
+        from transformers import AutoTokenizer
+        tokenizer = AutoTokenizer.from_pretrained(args.tokenizer, revision=&#x27;3e22461f65e89153144f8adb70e3b8c2cc9845a7&#x27;, local_files_only=True, trust_remote_code=False)
+        label = lambda token: tokenizer.convert_ids_to_tokens(token)
+    provenance = &#x27;Private audited N38 native observation: &#x27; + args.condition + &#x27;, case &#x27; + args.case_id + &#x27;. This is activity, not a semantic role.&#x27;
+    trace = make_trace(record, values, coordinates, all_norms[indices], provenance, label)
+    trace[&#x27;audit_receipt_sha256&#x27;] = hashlib.sha256(args.audit_receipt.read_bytes()).hexdigest()
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.write_text(json.dumps(trace, allow_nan=False) + &#x27;\n&#x27;)
+    print(json.dumps({&#x27;private_trace&#x27;: str(args.output.resolve()), &#x27;recorded_positions&#x27;: len(trace[&#x27;tokens&#x27;]), &#x27;units&#x27;: len(trace[&#x27;units&#x27;]), &#x27;bytes&#x27;: args.output.stat().st_size, &#x27;model_forwards&#x27;: 0, &#x27;uploads&#x27;: 0}))
+
+
+if __name__ == &#x27;__main__&#x27;:
+    main()
 </pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>selector_site</h2><p>Actual donor swaps at an MLP position or a shared attention read boundary.</p><p><a href="../interpretability/selector_site.py">Exact source file</a></p><p class="small">APIs: selector_site, capture_selector</p><p class="hash">SHA-256 5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Actual donor swaps at an MLP position or a shared attention read boundary.&quot;&quot;&quot;
 from contextlib import contextmanager
 import torch

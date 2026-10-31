@@ -831,7 +831,7 @@
     {
       "id": "Q52",
       "experiment": "N38: token-aligned native observation",
-      "status": "private_launched_source_verified_outputs_unseen",
+      "status": "complete_private_host_audited_closed",
       "question": "Which native MLP channels and layer updates are active at particular task and response tokens, and which observations predict a reproducible causal effect under direct edits?",
       "question_provenance": "Direct human U19 asks to see neuron activation during tasks and responses, under the new Digital Surgery direction.",
       "parents": [
@@ -840,13 +840,29 @@
         "Q48"
       ],
       "method": "Read-only measurement over all 96 native trajectories. Sample up to eight prompt and thirty-two decision positions, 471 fixed channels, all-layer update norms and streaming case-balanced moments. No new generation, training or scorer calls.",
-      "result": "The protocol and 56 source/data/parent hashes are frozen. Actual random Gemma fixtures in FP32 and BF16 pass exact channel values, raw and normalized layer norms, full logits/cache identity and 26 corruption refusals. They use 56 forwards and 88 input exposures, with zero pretrained forwards or updates. All 96 lineages, 48 tokenizations, isolated runner/auditor imports and compressed payload checks pass. Kaggle rejects the original notebook above its 1 MiB source limit before execution. A private exact-hash attachment reduces the notebook to 7562 bytes, with all scientific code unchanged. One private job is launched from checkpoint b8c7695, after a fresh observation of 27.54 free GPU hours. Server source and dataset privacy pass. No N38 outputs have been accessed.",
-      "interpretation": "Software feasibility and prospective native observations only. Neither activity magnitude nor a top list establishes a neuron meaning, causal effect or useful transplant.",
-      "next_question": "At terminal validate both source freezes, retrieve compact outputs once with the versioned collector and run the unchanged frozen auditor. A causal follow-up remains separate.",
+      "result": "All 96 native observations and every mandatory guard pass. Every one of 10467 native argmax, full-logit and whole-cache comparisons agrees with its recorded trajectory. The original has 1429 sampled timeline positions and the donor 1436, each with 471 fixed channels, layer statistics and case-balanced moments over all 337920 channels. Scientific outputs total 29,521,849 bytes. Actual work is 19557 input exposures, zero new tokens, backwards, parameter assignments or optimizer updates. Worker time is 1883.847 seconds and notebook time 1932.386 seconds, not charged quota. Closed scorers are not called. Separate host annotations cover all 10467 existing tokens without regrading.",
+      "interpretation": "Actual native observation is now feasible on this panel without changing outputs or model state. These sampled traces are not a complete per-token map, a semantic role, causal feature alignment or coding improvement. Raw arrays and timelines remain private. Comment and string frequencies differ across models and must be controlled before selecting a coding feature.",
+      "next_question": "Q53: test native comment entry with a separately frozen full-site gate, adequate matched contexts and strict random controls before interpreting a sparse group.",
       "direction_decision": "Broaden observation beyond one task score while keeping direct causal checks and useful coding as the goal."
+    },
+    {
+      "id": "Q53",
+      "experiment": "N39: native comment-entry control",
+      "status": "active_private_source_frozen",
+      "question": "Can a fixed native channel group control entry into Python comments while preserving executable correctness and retention?",
+      "question_provenance": "Development hypothesis from U19 native observation and the pre-activation text-context checks. It is not a reopened N36 transplant.",
+      "parents": [
+        "Q52",
+        "Q51"
+      ],
+      "method": "The frozen N39 protocol uses 42 contexts with the same task family and processed-token ID, divided into six strata. Actual native donors at layers 24 to 34 must pass a fixed bidirectional full-site gate before any 32-channel selection. Two random groups use strict magnitude matching. Native zeroing, gain 2, rescue, conditional cuts and sixteen retention cases remain separate. No trained vector or parameter update.",
+      "result": "Both actual random Gemma host panels pass in FP32 and BF16: 230 forwards and 254 input-token exposures, with zero pretrained calls or updates. Forty-two malformed cache or consumption cases are refused. All 48 input tokenizations and the fixed 54-token comment contrast pass. Source, data, auditor and notebook were frozen before launch. Two initial metadata/API preparation failures have zero model forwards and remain preserved. One private bounded job is launched with exact server source and private metadata. No N39 pretrained output has been accessed.",
+      "interpretation": "Reducing comment generation could be useful only with preserved executable correctness and retention. A rank or syntax-associated activation is not a role. Selection remains development; useful claims need a separate fresh confirmation.",
+      "next_question": "At terminal collect compact outputs once, verify private source/input lineage, and invoke the frozen auditor exactly once. Full-site failure is a planned stop, not permission to change layers or thresholds.",
+      "direction_decision": "Use matched current code contexts instead of another blind activity sweep. Keep the failed N36 prerequisite closed."
     }
   ],
-  "active_question_id": "Q52",
-  "next_question_id": "Q52",
-  "utc": "2026-10-31T15:15:01.751280+00:00"
+  "active_question_id": "Q53",
+  "next_question_id": "Q53",
+  "utc": "2026-10-31T17:11:29.183501+00:00"
 }

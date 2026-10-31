@@ -1,0 +1,318 @@
+{
+  "cache_host": {
+    "utc": "2026-10-31T16:55:18.647059+00:00",
+    "status": "passed_closed",
+    "cases": [
+      {
+        "dtype": "torch.float32",
+        "native_prefix_length": 1,
+        "native_logits_cache_and_late_self_exact": true,
+        "foreign_zero_gain_cache_exact": true,
+        "source_nonaliasing_and_unchanged": true
+      },
+      {
+        "dtype": "torch.float32",
+        "native_prefix_length": 6,
+        "native_logits_cache_and_late_self_exact": true,
+        "foreign_zero_gain_cache_exact": true,
+        "source_nonaliasing_and_unchanged": true
+      },
+      {
+        "dtype": "torch.float32",
+        "native_prefix_length": 20,
+        "native_logits_cache_and_late_self_exact": true,
+        "foreign_zero_gain_cache_exact": true,
+        "source_nonaliasing_and_unchanged": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "native_prefix_length": 1,
+        "native_logits_cache_and_late_self_exact": true,
+        "foreign_zero_gain_cache_exact": true,
+        "source_nonaliasing_and_unchanged": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "native_prefix_length": 6,
+        "native_logits_cache_and_late_self_exact": true,
+        "foreign_zero_gain_cache_exact": true,
+        "source_nonaliasing_and_unchanged": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "native_prefix_length": 20,
+        "native_logits_cache_and_late_self_exact": true,
+        "foreign_zero_gain_cache_exact": true,
+        "source_nonaliasing_and_unchanged": true
+      }
+    ],
+    "refusals": [
+      "torch.float32:1:slots",
+      "torch.float32:1:length",
+      "torch.float32:1:dtype",
+      "torch.float32:1:nonfinite",
+      "torch.float32:1:truncated",
+      "torch.float32:1:unused",
+      "torch.float32:1:twice",
+      "torch.float32:6:slots",
+      "torch.float32:6:length",
+      "torch.float32:6:dtype",
+      "torch.float32:6:nonfinite",
+      "torch.float32:6:truncated",
+      "torch.float32:6:unused",
+      "torch.float32:6:twice",
+      "torch.float32:20:slots",
+      "torch.float32:20:length",
+      "torch.float32:20:dtype",
+      "torch.float32:20:nonfinite",
+      "torch.float32:20:truncated",
+      "torch.float32:20:unused",
+      "torch.float32:20:twice",
+      "torch.bfloat16:1:slots",
+      "torch.bfloat16:1:length",
+      "torch.bfloat16:1:dtype",
+      "torch.bfloat16:1:nonfinite",
+      "torch.bfloat16:1:truncated",
+      "torch.bfloat16:1:unused",
+      "torch.bfloat16:1:twice",
+      "torch.bfloat16:6:slots",
+      "torch.bfloat16:6:length",
+      "torch.bfloat16:6:dtype",
+      "torch.bfloat16:6:nonfinite",
+      "torch.bfloat16:6:truncated",
+      "torch.bfloat16:6:unused",
+      "torch.bfloat16:6:twice",
+      "torch.bfloat16:20:slots",
+      "torch.bfloat16:20:length",
+      "torch.bfloat16:20:dtype",
+      "torch.bfloat16:20:nonfinite",
+      "torch.bfloat16:20:truncated",
+      "torch.bfloat16:20:unused",
+      "torch.bfloat16:20:twice"
+    ],
+    "actual_random_model_counter": {
+      "calls": 168,
+      "input_token_exposures": 168
+    },
+    "pretrained_forwards": 0,
+    "new_pretrained_tokens": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "host_wall_seconds": 2.189816124999197
+  },
+  "new_paths_host": {
+    "utc": "2026-10-31T17:02:39.547882+00:00",
+    "status": "passed_closed",
+    "actual_cases": [
+      {
+        "dtype": "torch.float32",
+        "group": "full",
+        "operation": "full_self",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "full",
+        "operation": "full_opposite",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "full",
+        "operation": "full_same",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "full",
+        "operation": "restore",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "selected32",
+        "operation": "self",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "selected32",
+        "operation": "opposite",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "selected32",
+        "operation": "same",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "selected32",
+        "operation": "zero",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "selected32",
+        "operation": "gain2",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "selected32",
+        "operation": "rescue",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "selected32",
+        "operation": "conditional_self",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "selected32",
+        "operation": "conditional_cut",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.float32",
+        "group": "selected32",
+        "operation": "restore",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "full",
+        "operation": "full_self",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "full",
+        "operation": "full_opposite",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "full",
+        "operation": "full_same",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "full",
+        "operation": "restore",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "selected32",
+        "operation": "self",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "selected32",
+        "operation": "opposite",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "selected32",
+        "operation": "same",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "selected32",
+        "operation": "zero",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "selected32",
+        "operation": "gain2",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "selected32",
+        "operation": "rescue",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "selected32",
+        "operation": "conditional_self",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "selected32",
+        "operation": "conditional_cut",
+        "cache_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "group": "selected32",
+        "operation": "restore",
+        "cache_exact": true
+      }
+    ],
+    "actual_random_model_counter": {
+      "calls": 62,
+      "input_token_exposures": 86
+    },
+    "both_runner_and_auditor_imported": true,
+    "gain1_generation_identity_exact": true,
+    "positive_and_empty_profile_matching_pass": true,
+    "pretrained_forwards": 0,
+    "backwards": 0,
+    "optimizer_steps": 0,
+    "host_wall_seconds": 1.77783749999071
+  },
+  "preflight": {
+    "utc": "2026-10-31T17:05:22.120285+00:00",
+    "status": "passed_closed",
+    "sources": 28,
+    "inputs": 11,
+    "all_source_data_and_payload_hashes_exact": true,
+    "notebook_cells_compile": true,
+    "isolated_runner_and_auditor_imports": true,
+    "Ruff_F821_F823": true,
+    "pretrained_model_forwards": 0,
+    "optimizer_steps": 0,
+    "no_server_creation_or_launch": true
+  },
+  "freeze": {
+    "utc": "2026-10-31T17:07:21.173760+00:00",
+    "analysis_plan_sha256": "0efef8366c45e72b789471836435c7b44f7f95e57f5aaa77865db15d06653d12",
+    "auditor_sha256": "afdecaf5b853a74bbb3c26a1cb15fbaceec079aa0271d01d18b23322d8f30d6e",
+    "protocol_sha256": "1823ebe6d635e3a24f893e4ca94e079cfc00a1cfbc3802047c880734ad6b8131",
+    "notebook_sha256": "6f637b2629c4a8b4c24e7a72b4c6ca2afd1a5a722fd241af83352c0fb08b1871",
+    "payload_sha256": "5b83a0de5dd808adfc585a83bddd07c2513df558d90922ada956b16b3633beb1",
+    "sources": 57,
+    "before_launch_and_model_outputs": true,
+    "optimizer_steps": 0
+  },
+  "preserved_host_failures": [
+    {
+      "utc": "2026-10-31T16:57:14.572964+00:00",
+      "error": "KeyError input_ids: existing tokenization metadata stores input_tokens and input_ids_sha256, not raw IDs.",
+      "new_model_forwards": 0,
+      "new_generated_tokens": 0,
+      "optimizer_steps": 0,
+      "repair": "Use stored input_tokens for counts and exact canonical input-ID hash for tokenization checks. Same contexts, native histories, prompts and thresholds."
+    },
+    {
+      "utc": "2026-10-31T16:57:36.052850+00:00",
+      "error": "Official tokenizer apply_chat_template returns BatchEncoding for this multimodal tokenizer. No raw-ID list was assumed by the established encode helper.",
+      "new_model_forwards": 0,
+      "optimizer_steps": 0,
+      "repair": "Use the exact existing encode(tokenizer,row,cpu) and metadata comparison. No change to inputs, contexts or scientific protocol."
+    }
+  ],
+  "scope": "Random-module and source/input validation only, not pretrained neuron-role or coding evidence."
+}

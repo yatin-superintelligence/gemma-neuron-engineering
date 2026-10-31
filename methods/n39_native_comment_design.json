@@ -1,0 +1,111 @@
+{
+  "experiment": "N39",
+  "question_id": "Q53",
+  "utc": "2026-10-31T16:53:56.968770+00:00",
+  "status": "prospective_protocol_before_implementation",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "measurement_backwards": 0,
+  "question": "Can a native late-channel group specifically control entry into a Python comment at matched actual current-token contexts?",
+  "parent_limits": "N38 native activity is observational. Original and donor follow different histories. This new study uses the original checkpoint only. It neither reopens N36 nor copies coder weights.",
+  "model": {
+    "id": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "representation": "text-only unquantized BF16"
+  },
+  "contexts": {
+    "source": "All six strict strata in the existing full closed-token metadata, sorted by (family,processed_token_id). Within each class and stratum use every eligible case, sorted by case ID; take its earliest eligible decision. A comment entry predicts a comment token after a non-comment token. Code predicts keyword/name/number/operator after a non-comment token. No correctness filtering.",
+    "expected_counts": {
+      "strata": 6,
+      "families": 3,
+      "entry": 20,
+      "code": 22,
+      "total": 42
+    },
+    "same_donor": "Next case in cyclic case-ID order within same stratum/class, never the recipient case.",
+    "opposite_donor": "First lexicographic other case within opposite class of the same stratum. Never the same case.",
+    "checks": "Actual processed token ID and task family exact within both donor assignments. Donor values come from its own unmodified native trajectory. Contexts are dependent and reused development. No expected program answers are prompts."
+  },
+  "position": "Actual cached decision j>0, immediately after processing generated token j-1. Retain processed and predicted labels separately. Never patch an earlier prompt anchor or future token.",
+  "native_replay": "Replay native trajectories only through their final selected decision, require all original argmax/full-FP32-logit/raw-cache hashes. Save full native h only ephemerally at the 42 contexts. No old completion is regenerated or graded.",
+  "cache_branch": "Deep-copy the actual DynamicCache immediately BEFORE the current token. Check 15 entries, dtype, finite values, exact tensor bytes, layer counter/layout metadata, no tensor storage aliases, and source immutability. Each probe consumes the one actual current token once. Whole post-current cache must equal native for all late edits. This does not reuse a native past after edited text diverges. Cached probes are measurement forwards, no emitted tokens.",
+  "site": {
+    "layers": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "width_per_layer": 12288,
+    "full_channels": 135168,
+    "reason": "Prescribed late producer-free site, unchanged from prior matched-group context. It does not represent a complete circuit."
+  },
+  "lexical_contrast": "Before edits, fix vocabulary tokens whose individual decoded text lstrip starts with #. Require every native entry argmax in the set and every native code argmax outside. If coverage fails, stop before edits without changing the contrast. Save full-vocabulary top token and comment probability mass, not only a hand-nominated binary token.",
+  "phase_A": {
+    "conditions": [
+      "native",
+      "full_self",
+      "full_opposite",
+      "full_same",
+      "restore"
+    ],
+    "requirements": "All42 native/full-self/restore first-logit and whole-cache hashes exact. Actual unmodified h swaps across all late channels. Other parameters, model state and hooks unchanged. No continuation generated.",
+    "gate": {
+      "opposite": "At least ceil(0.5*n) classification changes in EACH native class, with both directions present in each of the three families. Report all six strata.",
+      "same": "At least ceil(0.9*n) preserve native category in EACH class.",
+      "decision": "Stop before ranking, sparse edits or retention generations if any guard or this gate fails. Preserve all outcomes. No tolerance, layer, context or threshold change."
+    }
+  },
+  "phase_B_selection": {
+    "only_if": "All phase_A guards and complete gate pass.",
+    "score": "At each layer, F64 mean(entry h)-mean(code h) within each of six strata, divided by F64 pooled context RMS +1e-12. Score is the minimum across strata; positive only. Rank decreasing score then (layer,channel). This is forward selection, no fitted/applied vector or per-unit strength/sign.",
+    "groups": "First32 strictly matchable candidates, nested doses not tested. Two random32 groups use independent seeds3901/3902. Each control matches same layer, pooled RMS and opposite-donor delta RMS ratios[0.9,1.1], down-column norm ratio[0.8,1.25]. Each selected unit needs a pool of at least16 eligible unique control units, no selected-group overlap. Randoms not score filtered; record cross-random overlap. Do not relax bands.",
+    "matching_stop": "If fewer than32 qualify, stop before all sparse edits; preserve matching exclusions. No new ranking or smaller primary."
+  },
+  "phase_B_interventions": {
+    "groups": [
+      "selected32",
+      "randomA32",
+      "randomB32"
+    ],
+    "operations": [
+      "self",
+      "opposite",
+      "same",
+      "zero",
+      "gain2",
+      "rescue",
+      "conditional_self",
+      "conditional_cut",
+      "restore"
+    ],
+    "mechanism": "Actual native donor h at the one current token. Zero/gain2 uniformly prescribed. Rescue zeroes then reinstates actual native recipient values in the same scoped forward. Conditional cut applies full late opposite h then recipient values for group; conditional-self reapplies opposite group and must reproduce full-opposite logits exactly. No parameter assignments.",
+    "guards": "For each group/context exact self/rescue/restore native logits and whole cache. Conditional-self exact full-opposite logits/cache. Every other operation preserves native whole cache. Exact target-only scope, one hook hit per edited layer, no retained hook or mutable native state."
+  },
+  "primary": "Selected32 must exceed EACH random32 by at least4 contexts separately for opposite-class transfers, native-entry loss under clean zero, and full-opposite transfer loss under conditional cut. Each selected effect spans all three families. Same-policy preserves ceil(.9*n) in EACH class. All components conjunctive. Conditional cuts are engineered-context necessity, distinct from clean native entry loss. Gain2 is exploratory and cannot replace a failed primary. Report full probabilities, every condition, raw top tokens and all six strata.",
+  "retention": "If phase_A and matching pass, generate original sixteen retention prompts under each group global activation zero, once each, 48 new replies maximum. Original16 responses/grades carry exactly, no regenerated baseline. Greedy2048/EOS. All7 previously correct originals must remain correct for each group; report all16, every gain/loss and completion/cap. Current comment-site tests do not establish global coding utility. Hidden retention grades/oracles stay off inference assets.",
+  "utility_boundary": "This role study does not regenerate full coding programs or claim an accuracy gain. Any subsequent useful edit needs a separately frozen answer-independent complete-function test with ample output, every case, matched controls and fresh confirmation. Token reduction alone is not hardware speedup.",
+  "count_contract": "Derive source replay counts from manifest max j: for each distinct source case, max_j+1 calls and input n+max_j exposures. Each current-context probe is one call/one exposure. Phase_A has4 new current probes per context after native source capture (self,opposite,same,restore). Phase_B has9 probes per context per group, plus3 retention generations per16 inputs. Full native captures serve base references; no new base probes. Generated retention T contributes T calls,n+T-1 exposures. Derive every term from actual manifest, no hand-summed constant.",
+  "storage": "No full per-token all-channel dump or cache tensors in outputs. Exact context hashes, compact F32 score/RMS/delta/downnorm profiles for135168 candidates, group IDs/matching witnesses, per-condition logit/cache/target proofs, raw retention replies. All full h/cache ephemeral. Output<=64MiB.",
+  "host_prerequisites": "Actual random Gemma FP32/BF16 at native cache prefix lengths1,6,20 crossing sliding window16. Deep clone metadata, byte equality, source nonaliasing/immutability; native current vs fresh native current exact logits,h,cache; late full/group/self/foreign/zero/rescue/conditional/restoration paths; malformed/truncated/wrong-dtype/nonfinite caches refused. Both runner/auditor imports, RuffF821/F823, private input/token/oracle gates, packaged isolated imports, all source/data/auditor frozen before launch.",
+  "guards": "Original parameter versions/gradflags/p.gradNone, buffers/config/generationconfig/RNG unchanged; no backwards, optimizer or parameter assignments. Stop interpretation on any guard failure. Preserve partials and dated repair; never silently replace frozen hashes.",
+  "resources": {
+    "platform_seconds": 4200,
+    "notebook_seconds": 4000,
+    "worker_seconds": 3700,
+    "one_private_free_job": true,
+    "free_reserve_hours": 2,
+    "fresh_official_quota_required": true,
+    "deadline_utc": "2026-11-01T13:24:39Z"
+  },
+  "prior_limits": "Matched syntax activation and activation patching are existing methods. This bounded control would not be a general new interpretability algorithm, complete map or coding breakthrough.",
+  "protocol_sha256": "1823ebe6d635e3a24f893e4ca94e079cfc00a1cfbc3802047c880734ad6b8131",
+  "edition": "Frozen prospective methods. No N39 pretrained result is implied; actual contexts, prompts and native values remain private."
+}

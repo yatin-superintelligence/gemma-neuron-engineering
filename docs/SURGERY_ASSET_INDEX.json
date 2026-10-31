@@ -3,6 +3,18 @@
   "source_files": [
     {
       "category": "Observe",
+      "path": "interpretability/native_cache_branch.py",
+      "sha256": "a11a55a52e908bc2f6f19ee00f20d00e1f66c6cf673a5c7969082d581b2ee6e7",
+      "symbols": [
+        "tensor_hash",
+        "_value",
+        "fingerprint",
+        "_storages",
+        "native_cache_branch"
+      ]
+    },
+    {
+      "category": "Observe",
       "path": "interpretability/native_capture.py",
       "sha256": "71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1",
       "symbols": [
@@ -27,6 +39,33 @@
         "ActivationRecorder",
         "scale_mlp_channels",
         "select_adapter_modules"
+      ]
+    },
+    {
+      "category": "Observe",
+      "path": "interpretability/response_regions.py",
+      "sha256": "7a95eafd1a8ea167bcc68200fc59288b14b394ed4b68d93fbc7349a4cc5b80a7",
+      "symbols": [
+        "python_regions",
+        "label_prefixes"
+      ]
+    },
+    {
+      "category": "Observe",
+      "path": "interpretability/python_token_regions.py",
+      "sha256": "75f1d17aa2d7e8ce8e1cd52efa72f6720bf35c2e702e2e0c9fcb4c9c195e2462",
+      "symbols": [
+        "lexical_regions",
+        "label_lexical"
+      ]
+    },
+    {
+      "category": "Observe",
+      "path": "scripts/export_native_trace.py",
+      "sha256": "7c569e4e0f7edb31a067483c2592318f86719fddcef9cc838f312271f2009b12",
+      "symbols": [
+        "make_trace",
+        "main"
       ]
     },
     {

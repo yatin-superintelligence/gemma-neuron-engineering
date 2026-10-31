@@ -3788,6 +3788,70 @@
       "event": "exclude_archived_budget_comparison_from_current_goal_overview_original_records_unchanged",
       "experiment": "Reporting",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 517,
+      "utc": "2026-10-31T16:15:31.260263+00:00",
+      "event": "complete_pre_activation_text_region_annotations_all96cases_no_regrading",
+      "experiment": "N38",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 518,
+      "utc": "2026-10-31T16:15:31.260263+00:00",
+      "event": "complete_lexical_annotations_and_context_coverage_before_activity_access",
+      "experiment": "N38",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 519,
+      "utc": "2026-10-31T16:15:31.260263+00:00",
+      "event": "conditional_native_comment_control_intent_no_protocol_or_model_execution",
+      "experiment": "N39",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 520,
+      "utc": "2026-10-31T16:40:06.850823+00:00",
+      "event": "all96native_observations_and10467decision_guards_pass_closed",
+      "experiment": "N38",
+      "optimizer_steps": 0,
+      "runner_seconds": 1883.8467989750002
+    },
+    {
+      "sequence": 521,
+      "utc": "2026-10-31T17:08:40.298833+00:00",
+      "event": "prospective_protocol_frozen_before_implementation",
+      "experiment": "N39",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 522,
+      "utc": "2026-10-31T17:08:40.298833+00:00",
+      "event": "preserved_two_zero_model_metadata_API_preparation_failures",
+      "experiment": "N39",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 523,
+      "utc": "2026-10-31T17:08:40.298833+00:00",
+      "event": "actual_cache_and_new_policy_host_paths_pass_source_freeze",
+      "experiment": "N39",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 524,
+      "utc": "2026-10-31T17:11:29.183501+00:00",
+      "event": "one_private_free_native_comment_job_launched",
+      "experiment": "N39",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 525,
+      "utc": "2026-10-31T17:12:27.439742+00:00",
+      "event": "new_active_reservation_link_contract_caught_missing_question_repaired",
+      "experiment": "Reporting",
+      "optimizer_steps": 0
     }
   ]
 }

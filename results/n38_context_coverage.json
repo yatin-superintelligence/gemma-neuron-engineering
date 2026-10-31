@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-31T16:13:23.344585+00:00",
+  "posthoc_to_baseline_before_activity_access": true,
+  "source_sha256": "03d1ae0068d7ba9283a71c615577c2969fa5d3410245ac9a2416e7a9c7f42844",
+  "parent_sha256": "0cdda8c99dbec9553470898df4fc098e1f9fe5026c0680513620d6e7485b416f",
+  "coverage": {
+    "frozen_N38_samples": {
+      "entry_events": 10,
+      "same_family_same_processed_token_strata": 3,
+      "strata_with_two_cases_per_class": 2,
+      "entry_cases_in_strict_strata": 5,
+      "families_in_strict_strata": [
+        "rotate_right",
+        "union_length"
+      ]
+    },
+    "full_closed_token_metadata": {
+      "entry_events": 203,
+      "same_family_same_processed_token_strata": 10,
+      "strata_with_two_cases_per_class": 6,
+      "entry_cases_in_strict_strata": 12,
+      "families_in_strict_strata": [
+        "ceil_ratio",
+        "rotate_right",
+        "union_length"
+      ]
+    }
+  },
+  "interpretation": "Token-label eligibility only. The current sparse samples cannot justify a broad comment-entry neuron interpretation. Full-token metadata shows which additional read-only observations could be useful; no such observations or edits are launched.",
+  "new_model_forwards": 0,
+  "new_generated_tokens": 0,
+  "optimizer_steps": 0,
+  "N38_outputs_accessed": false
+}
