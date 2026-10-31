@@ -1,0 +1,325 @@
+{
+  "experiment": "N35",
+  "question_id": "Q49",
+  "models_edited": false,
+  "neuron_transplant_executed": false,
+  "records": 96,
+  "exact_recipient_carries_in_version3": 48,
+  "new_donor_records_in_version3": 48,
+  "all_eight_families": [
+    {
+      "family": "ceil_ratio",
+      "cases": 4,
+      "recipient": {
+        "cases": 4,
+        "correct": 0,
+        "caps": 4,
+        "source_valid": 0,
+        "statuses": {
+          "cap": 4
+        }
+      },
+      "donor": {
+        "cases": 4,
+        "correct": 0,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "wrong_answer": 4
+        }
+      },
+      "gains": 0,
+      "losses": 0
+    },
+    {
+      "family": "first_prefix",
+      "cases": 4,
+      "recipient": {
+        "cases": 4,
+        "correct": 4,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "passed": 4
+        }
+      },
+      "donor": {
+        "cases": 4,
+        "correct": 4,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "passed": 4
+        }
+      },
+      "gains": 0,
+      "losses": 0
+    },
+    {
+      "family": "long_tokens",
+      "cases": 4,
+      "recipient": {
+        "cases": 4,
+        "correct": 4,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "passed": 4
+        }
+      },
+      "donor": {
+        "cases": 4,
+        "correct": 4,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "passed": 4
+        }
+      },
+      "gains": 0,
+      "losses": 0
+    },
+    {
+      "family": "parenthesis_depth",
+      "cases": 4,
+      "recipient": {
+        "cases": 4,
+        "correct": 1,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "passed": 1,
+          "wrong_answer": 3
+        }
+      },
+      "donor": {
+        "cases": 4,
+        "correct": 3,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "passed": 3,
+          "wrong_answer": 1
+        }
+      },
+      "gains": 2,
+      "losses": 0
+    },
+    {
+      "family": "rotate_right",
+      "cases": 4,
+      "recipient": {
+        "cases": 4,
+        "correct": 1,
+        "caps": 3,
+        "source_valid": 1,
+        "statuses": {
+          "cap": 3,
+          "passed": 1
+        }
+      },
+      "donor": {
+        "cases": 4,
+        "correct": 4,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "passed": 4
+        }
+      },
+      "gains": 3,
+      "losses": 0
+    },
+    {
+      "family": "run_lengths",
+      "cases": 4,
+      "recipient": {
+        "cases": 4,
+        "correct": 4,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "passed": 4
+        }
+      },
+      "donor": {
+        "cases": 4,
+        "correct": 4,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "passed": 4
+        }
+      },
+      "gains": 0,
+      "losses": 0
+    },
+    {
+      "family": "stable_unique",
+      "cases": 4,
+      "recipient": {
+        "cases": 4,
+        "correct": 4,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "passed": 4
+        }
+      },
+      "donor": {
+        "cases": 4,
+        "correct": 4,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "passed": 4
+        }
+      },
+      "gains": 0,
+      "losses": 0
+    },
+    {
+      "family": "union_length",
+      "cases": 4,
+      "recipient": {
+        "cases": 4,
+        "correct": 1,
+        "caps": 3,
+        "source_valid": 1,
+        "statuses": {
+          "cap": 3,
+          "passed": 1
+        }
+      },
+      "donor": {
+        "cases": 4,
+        "correct": 0,
+        "caps": 0,
+        "source_valid": 4,
+        "statuses": {
+          "wrong_answer": 4
+        }
+      },
+      "gains": 0,
+      "losses": 1
+    }
+  ],
+  "totals": {
+    "coding": {
+      "recipient": {
+        "cases": 32,
+        "correct": 19,
+        "caps": 10,
+        "source_valid": 22,
+        "statuses": {
+          "cap": 10,
+          "passed": 19,
+          "wrong_answer": 3
+        }
+      },
+      "donor": {
+        "cases": 32,
+        "correct": 23,
+        "caps": 0,
+        "source_valid": 32,
+        "statuses": {
+          "passed": 23,
+          "wrong_answer": 9
+        }
+      },
+      "gains": 5,
+      "losses": 1
+    },
+    "retention": {
+      "recipient": {
+        "cases": 16,
+        "correct": 7,
+        "caps": 0,
+        "source_valid": 12,
+        "statuses": {
+          "format_error": 4,
+          "passed": 7,
+          "wrong_answer": 5
+        }
+      },
+      "donor": {
+        "cases": 16,
+        "correct": 11,
+        "caps": 0,
+        "source_valid": 16,
+        "statuses": {
+          "passed": 11,
+          "wrong_answer": 5
+        }
+      },
+      "gains": 5,
+      "losses": 1
+    }
+  },
+  "scores": {
+    "recipient": {
+      "coding": 19,
+      "retention": 7
+    },
+    "donor": {
+      "coding": 23,
+      "retention": 11
+    }
+  },
+  "adequacy_clauses": {
+    "coding_at_least_16": true,
+    "coding_at_least_4_errors": true,
+    "retention_at_least_12": false
+  },
+  "quality_clauses": {
+    "net_gain_at_least_4": true,
+    "gain_families_at_least_2": true,
+    "new_retention_losses_at_most_1": true,
+    "retention_score_within_1": true
+  },
+  "adequacy_passed": false,
+  "donor_quality_passed": true,
+  "N36_prerequisite_passed": false,
+  "actual_counters": {
+    "recipient": {
+      "calls": 5058,
+      "input_token_exposures": 9603
+    },
+    "donor": {
+      "calls": 2837,
+      "input_token_exposures": 7382
+    }
+  },
+  "generated_tokens_all96": 7895,
+  "new_version3_donor_tokens": 2837,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "parameter_assignments": 0,
+  "execution_attempts": [
+    {
+      "status": "closed_pre_inference_memory_validation_failure",
+      "worker_seconds": 81.43286318100002,
+      "notebook_seconds": 127.70517030099998,
+      "version": 1
+    },
+    {
+      "status": "closed_partial_recipient_panel_preserved_donor_metadata_serialization_failure",
+      "worker_seconds": 824.027067842,
+      "notebook_seconds": 874.42955929,
+      "version": 2
+    },
+    {
+      "status": "complete_private_host_audited_closed",
+      "worker_seconds": 426.83894597200003,
+      "notebook_seconds": 477.99013443200005,
+      "version": 3
+    }
+  ],
+  "source_hashes": {
+    "runs/n35/version3/result_receipt.json": "fd0f7a9c8c932f5a3129d37f301157c8501e1001e524359fd6f571fe33d8aace",
+    "runs/n35/version3/audited/graded_records.jsonl": "88d167f838289886eebc7e6b81bc1f349a3127930b96d4acae833904db566796",
+    "research/experiments/n35/rows.json": "bdce827bad8b579e460a64c13b15f56bf7ead32aedd9c6f013f61897fc0732ff",
+    "research/experiments/n35/protocol.json": "9b3d9ac24bf49fd790e07790e0f6c97ba1307627c7f1ba4bd623eb1374dfaace"
+  },
+  "interpretation": "Two unmodified checkpoints under the fixed recipient interface. Eight algorithms have dependent wording/name variants. This is development donor selection, not a recipient coding improvement, neuron meaning, agent benchmark or fresh confirmation. Prior source training is not training performed in this study. All caps and failures remain included."
+}

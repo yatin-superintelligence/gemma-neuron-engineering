@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-31T11:59:27.228210+00:00",
+  "status": "reporting_design_and_code_fixed_before_any_behavioral_grading_or_donor_output_access",
+  "sources": {
+    "research/experiments/n35/figure_plan.json": "0c6058750ebe37814540b76770f7dc49a3ad975f727cf0aa569ec1559ff00eaf",
+    "scripts/aggregate_n35.py": "e0098a9c780313c3528c445d099f4507ea16275b93d0ce72d87f7308b0b14bb7",
+    "scripts/plot_n35_summary.py": "7d33cdeecb462d5d25ba8c2d52cc5edc38f8e84cbfd36ab5118deabee1169949"
+  },
+  "no_model_or_grade_changes": true,
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

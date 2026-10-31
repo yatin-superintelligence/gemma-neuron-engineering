@@ -3572,6 +3572,48 @@
       "event": "one_private_donor_only_continuation_launched_no_original_regeneration",
       "experiment": "N35",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 487,
+      "utc": "2026-10-31T11:59:27.228210+00:00",
+      "event": "complete_all_family_reporting_and_no_regrade_aggregation_fixed_before_assessment",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 488,
+      "utc": "2026-10-31T12:02:08.169460+00:00",
+      "event": "exact_private_notebooks_added_to_local_history_without_source_change",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 489,
+      "utc": "2026-10-31T12:09:47.703298+00:00",
+      "event": "all96records_audited_donor_quality_passes_original_retention_adequacy_fails",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 490,
+      "utc": "2026-10-31T12:09:47.703298+00:00",
+      "event": "unexecuted_parent_prerequisite_failed_no_graft_or_reselection",
+      "experiment": "N36",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 491,
+      "utc": "2026-10-31T12:09:47.703298+00:00",
+      "event": "complete_eight_family_figure_and_interpretation_reviewed",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 492,
+      "utc": "2026-10-31T12:15:01.202503+00:00",
+      "event": "closed_grade_cap_and_format_diagnostics_without_regrading",
+      "experiment": "N35",
+      "optimizer_steps": 0
     }
   ]
 }

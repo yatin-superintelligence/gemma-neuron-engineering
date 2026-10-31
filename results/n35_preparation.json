@@ -58,6 +58,6 @@
     "model_forwards": 0,
     "optimizer_steps": 0
   },
-  "pretrained_quality_outcomes_exist": false,
+  "pretrained_result_reported_separately": "n35_summary.json",
   "interpretation": "Host software and structural compatibility only. The private paired unmodified-model comparison is separate from any recipient improvement or neuron transplant."
 }

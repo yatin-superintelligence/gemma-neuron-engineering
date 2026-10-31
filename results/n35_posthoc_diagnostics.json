@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-31T12:15:01.202503+00:00",
+  "status": "posthoc_classification_of_closed_grades_no_regrading",
+  "coding_gains_total": 5,
+  "coding_gains_from_original_caps": 3,
+  "coding_gains_from_source_valid_wrong_programs": 2,
+  "retention": {
+    "recipient": {
+      "arithmetic": {
+        "correct": 3,
+        "cases": 8,
+        "format_failures": 0
+      },
+      "json": {
+        "correct": 4,
+        "cases": 8,
+        "format_failures": 4
+      }
+    },
+    "donor": {
+      "arithmetic": {
+        "correct": 3,
+        "cases": 8,
+        "format_failures": 0
+      },
+      "json": {
+        "correct": 8,
+        "cases": 8,
+        "format_failures": 0
+      }
+    }
+  },
+  "interpretation": "Three of five coding gains remove original caps;two replace source-valid wrong programs. Arithmetic accuracy stays3/8inboth,with one pairedgain/loss. Four JSON format failures account for the retention score difference. No cap or unquoted/fenced response is regraded;all criteria and N36stop remain unchanged.",
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-31T12:09:47.703298+00:00",
+  "experiment": "N36",
+  "question_id": "Q50",
+  "status": "unexecuted_prerequisite_failed",
+  "parent_result": "runs/n35/version3/result_receipt.json",
+  "reason": "Original retention7/16 fails the fixed minimum12/16. All four donor-quality clauses pass, but every prerequisite clause was required.",
+  "source_groups_selected": false,
+  "calibration_model_forwards": 0,
+  "new_parameters_constructed": 0,
+  "model_forwards": 0,
+  "optimizer_steps": 0,
+  "thresholds_or_tasks_changed": false,
+  "interpretation": "No transplanted model exists, so no transplant benefit or failure is measured. The conditional source/architecture design remains preserved,not executed."
+}

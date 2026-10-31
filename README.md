@@ -10,11 +10,13 @@ N25 supplies an assessable runtime-edit null. The earlier N21 result remains pre
 
 ## Donor quality before transplantation
 
-The latest proposal tests whether copying a connected group of already-trained neurons can improve coding without training. A pinned full coder checkpoint matches the recipient's dense MLP shapes and tokenizer bytes. Its coding quality is unverified, and its model card contains an architecture inconsistency.
+The latest proposal tests whether connected neurons copied from an already-trained coding model can improve Gemma without training. N35 compares one structurally compatible donor against the pinned original on the same complete-function interface. All 96 responses and mandatory audit guards pass.
 
-N35 has frozen a paired quality study with 32 complete-function and 16 retention inputs per model. All 268 host task/oracle checks pass. The first private attempt stopped before inference because a full embedding validation mask exhausted GPU memory. Its zero-output failure is preserved. Version 2 completes all 48 original responses, then stops before any donor response on a metadata serialization error. The original panel is preserved and ungraded. Version 3 fixes that JSON boundary and runs only the missing donor half. Tasks and criteria are unchanged; no completed response is regenerated. No transplant has run. The conditional N36 design retains silent additions, native amplification, two random donor controls and incoming/outgoing hybrids. Full transformer-layer insertion remains unvalidated. See the [fixed N35 protocol](methods/n35_prospective_protocol.json), [host gates](results/n35_preparation.json) and [conditional transplant intent](methods/n36_conditional_intent.json).
+The donor scores **23/32 coding versus 19/32 for the original**, with five gains and one loss across two families. Original coding has ten caps; the donor has none. Retention is 11/16 versus 7/16. Original retention fails the fixed 12/16 adequacy minimum, so **the conditional neuron transplant remains unexecuted**. These are two unmodified checkpoints, not an improved recipient or a confirmed neuron role. See the [complete outcomes](results/n35_summary.json) and [all-family figure](docs/figures/n35_summary.png).
 
-Connected-neuron copying is established prior work, including [ARM](https://arxiv.org/abs/2601.07309). Matching shapes or copying weights does not establish a coding benefit in this Gemma study.
+Both engineering stops remain recorded: an embedding validation mask exhausted memory before inference; a later metadata serialization error stopped the donor half after all original responses had completed. Only missing donor responses resumed. Every original output and criterion stayed fixed. The [protocol](methods/n35_prospective_protocol.json), amendments and [conditional transplant design](methods/n36_conditional_intent.json) preserve that lineage.
+
+Connected-neuron copying is established prior work, including [ARM](https://arxiv.org/abs/2601.07309). This study has not validated full transformer-layer insertion or a coding benefit from transplantation. The unchanged N34 anatomical-copying protocol is next.
 
 ## Read the research
 

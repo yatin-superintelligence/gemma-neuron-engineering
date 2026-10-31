@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-31T11:55:31.554963+00:00",
+  "question_id": "Q49",
+  "status_at_freeze": "before_any_behavioral_grading_or_donor_output_access",
+  "panels": [
+    "All eight algorithm families, four dependent cases each: recipient/donor correctness and paired gains/losses.",
+    "All32coding and16retention totals, caps and source validity.",
+    "Every original adequacy and donor-quality clause, with an explicit pass/fail conjunction."
+  ],
+  "scope": "Two unmodified models,not a recipient edit or neuron-transplant result. No best-family selection,p-value from dependent variants or changed grade. Preserve both engineering stops and48original carries/48newdonor lineage.",
+  "input": "Only a reviewed complete aggregate derived from all96already-audited grades. No scorer rerun or new model forward.",
+  "raw_tasks_outputs_private": true,
+  "optimizer_steps": 0
+}

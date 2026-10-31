@@ -761,7 +761,7 @@
     {
       "id": "Q48",
       "experiment": "N34: anatomical localization of donor comparator copying",
-      "status": "scientific_protocol_frozen_queued_after_latest_human_transplant_steering",
+      "status": "scientific_protocol_frozen_next_implementation_pending",
       "question": "Which native MLP blocks control the observed donor comparator-token copying, and does zeroing those sites disrupt original correct conditional programs?",
       "question_provenance": "N28 has a usable closed conditional panel and an observed full-site copying failure. Its semantic criterion remains failed. N32 and N33 stop before edits on separate baseline gates. This proposal studies where the copying occurs, using the complete older panel rather than selecting passing new cases.",
       "parents": [
@@ -772,13 +772,13 @@
       "method": "Seven fixed contiguous five-layer MLP blocks cover all 35 native layers. Each receives all four original donor relation/order policies, native zeroing and ordered recipient rescue. All 24 N28 cases remain. The 49-condition grid contains 1176 records: 168 exact parent carries, 840 actual edited tails and 168 guarded rescues. The original 32-token, newline and EOS contract stays fixed. Native token-only teacher lineage is measurement, never an edited prompt or continuation cache. All parent logits, 840 native h hashes, self/rescue and restoration paths must pass. No new task wording, score rank, fitted strength, gradient or weight update.",
       "result": "A read-only review confirms that the N28 parent patched all 35 MLP layers at a predefined last input position. Each of its four foreign policies matches all 16 donor first tokens and all 16 complete donor suffixes. The two token-changing policies change all 16 first choices; the other two preserve them. Invalid cross-order assembled programs remain failures. This reads saved outputs without any new forward, generation, grading or optimizer update. The scientific protocol is now frozen before any intervention implementation. It requires both token-changing donor policies to copy at least 12/16 donor first tokens each, both token-preserving policies to retain at least 14/16 native first tokens each, same-order program preservation, clean-zero losses with changed first choices in at least four cases spanning both families, and all retention cases correct. Every clause is required. The earliest qualifying fixed block is only a development choice. Runner, auditor, host gates and execution freeze remain pending. No N34 model run exists.",
       "interpretation": "Literal comparator copying is a narrower endpoint than semantic transfer. Localizing that failure could identify a conditional native site, but cannot establish individual meanings, semantic invariance, a complete circuit, formal synergy, novelty or coding improvement. Whole blocks are anatomical coverage probes, not activity-matched controls. All cases remain reused dependent development.",
-      "next_question": "Protocol remains unchanged and unlaunched. The latest direct human transplant proposal takes priority for metadata feasibility and quality-design work. Return here if that proposal fails its gates and time permits.",
+      "next_question": "N35 closes and N36 stays unexecuted after its failed prerequisite. Implement this unchanged frozen block-copying design with its own host/auditor/source freeze before any launch.",
       "direction_decision": "Broaden from another baseline redesign to the mechanism of an already observed copying failure. Do not revive a failed semantic or utility prerequisite."
     },
     {
       "id": "Q49",
       "experiment": "N35: donor neuron transplantation feasibility",
-      "status": "private_version3_donor_only_active_outputs_unseen",
+      "status": "complete_private_host_audited_adequacy_failed_closed",
       "question": "Does the structurally compatible full donor show a coding advantage under the recipient interface before a separately gated neuron transplant?",
       "question_provenance": "The human asks whether a constructed neuron group or layers borrowed from another model could improve coding. Earlier silent additions and physical edits establish limited engineering gates, while no useful coding gain exists. This new proposal tests pre-existing donor knowledge through direct copying, with zero training.",
       "parents": [
@@ -788,15 +788,15 @@
         "Q48"
       ],
       "method": "A protocol frozen before task implementation fixes 32 complete Python functions across eight algorithm families and 16 arithmetic/JSON retention questions. Both unmodified text-only BF16 models receive identical recipient-tokenizer inputs and manual full-vocabulary greedy decoding. Independent host-only executable oracles, all outputs and gains/losses remain fixed. No parameter assignment, backward or optimizer update.",
-      "result": "Version 1 stops before inference at a full-mask memory check. Version 2 repairs that check and completes all 48 original-model responses, with exact native state and 5058 forward calls, 9603 input exposures and 5058 generated tokens. It then stops before any donor response because actual Transformers loading-info sets are not JSON serializable. The complete original panel is preserved without grading. Version 3 changes only metadata serialization and runs only the missing donor half. All inference, data, oracle and criterion sources stay fixed; every per-record auditor function is AST-identical. An actual tiny checkpoint loading-info/JSON fixture passes with zero model forwards. Both isolated imports and the new execution freeze pass. No donor-quality assessment exists. The donor-only continuation is now private and active, with exact server source verified. All 48 original records stay on the host and are not uploaded as prompts. Fresh official free quota is 28.16 hours at this launch, not a current balance.",
+      "result": "All 96 records and mandatory source/state/cache/argmax/counter guards pass. Original coding is 19/32 and donor coding is 23/32, with five gains and one loss across two families. Original coding has ten caps; donor coding has none. Retention is 7/16 original and 11/16 donor. All donor-quality clauses pass, but original retention fails the fixed 12/16 minimum, so the N36 prerequisite fails. All grades remain final. The unique assay uses 7895 forwards, 16985 input exposures and 7895 generated tokens, with zero backwards, optimizer updates or parameter assignments. Forty-eight original responses are carried exactly after the preserved metadata stop; none is regenerated.",
       "interpretation": "Structural compatibility does not establish shared feature meanings or useful coding transfer. Copying an already-trained donor is a permitted direct-edit hypothesis, not training performed here. Whole transformer insertion remains unvalidated and is more involved than adding an MLP branch.",
-      "next_question": "At terminal status, retrieve compact outputs once, verify exact server source, input manifest and privacy, then run the frozen auditor once on all 96 records. N36 remains conditional on every adequacy and donor-quality clause. Do not change the donor, tasks, thresholds, doses or grades after outcomes.",
-      "direction_decision": "Follow the latest direct human construction proposal. Keep the earlier N34 scientific protocol unchanged and queued. Preserve every earlier null and failed utility prerequisite."
+      "next_question": "N36 remains unexecuted under its failed prerequisite. Keep all strengths, tasks, criteria and source-design records unchanged. Return to the already frozen N34 copying-localization question, Q48, for implementation.",
+      "direction_decision": "The donor has a bounded descriptive coding advantage, but the full prespecified prerequisite fails. Do not replace that conjunction with attractive clauses or select a new retention cohort. Continue the queued native-site question."
     },
     {
       "id": "Q50",
       "experiment": "N36: conditional connected-neuron transplant",
-      "status": "conditional_source_selection_design_frozen_prerequisite_pending",
+      "status": "unexecuted_prerequisite_failed",
       "question": "Can a fixed already-trained donor group improve recipient coding through direct copying without fitting?",
       "question_provenance": "Latest human neuron-transplant proposal U15. N35 must first establish a usable original and stronger donor under the same interface.",
       "parents": [
@@ -804,14 +804,14 @@
         "Q10",
         "Q13"
       ],
-      "method": "A pre-output intent fixes final native MLP 34, 128 connected neurons and branch strength 1. Twelve arms retain original/donor parents, silent branch, native addition/amplification, two random donor groups, incoming/outgoing hybrids, group replacement and whole-final-MLP replacement. Source-only selection and strict matching must freeze before execution. No learned bridge or training. A separate pre-output design fixes four neutral recipient-prefill contexts, seven source/activity magnitude metrics, inclusive control/target bands from 0.8 to 1.25, minimum pool of 16 and disjoint sequential draws using seeds 4951 and 4952. Every coordinate and gain remains unselected until the prerequisite passes and actual source measurements exist. This design is not an execution-ready protocol.",
-      "result": "Intent only. No group selection, added parameters, pretrained forward or model outcome exists. A read-only pinned-source review confirms placement before the existing post-feedforward norm. A 128-neuron connected branch would copy 589824 BF16 parameters, or 1179648 bytes. No branch or pretrained model has been built. A bounded primary-source review confirms that ARM already copies connected gated neurons, and Beyond Learning copies compatible linear modules including Gemma2. No direct-copying novelty or Gemma4 benefit is inferred.",
+      "method": "A pre-output intent fixes final native MLP 34, 128 connected neurons and branch strength 1. Twelve arms retain original/donor parents, silent branch, native addition/amplification, two random donor groups, incoming/outgoing hybrids, group replacement and whole-final-MLP replacement. Source-only selection and strict matching must freeze before execution. No learned bridge or training. A separate pre-output design fixes four neutral recipient-prefill contexts, seven source/activity magnitude metrics, inclusive control/target bands from 0.8 to 1.25, minimum pool of 16 and disjoint sequential draws using seeds 4951 and 4952. Coordinates remain unselected. Branch strength 1 is already fixed; no source measurement or construction occurs unless the prerequisite passes. This design is not an execution-ready protocol.",
+      "result": "Original retention is 7/16 against the prospectively required 12/16. No source calibration, group selection, copied parameters, graft forward or transplant output occurs. All conditional designs and priors remain preserved. A comparison of unmodified checkpoints does not test a transplanted recipient.",
       "interpretation": "A compatible branch does not establish useful knowledge transfer. Coarse final-MLP replacement is a secondary control and not full transformer insertion. Reused development results would still require fresh confirmation.",
-      "next_question": "Only after N35 passes every fixed adequacy and donor-quality clause, freeze exact source selection, controls, implementation, auditor and resources. Otherwise leave N36 unexecuted.",
-      "direction_decision": "Test useful donor quality before adding donor weights. Keep N34 unchanged and queued."
+      "next_question": "Leave this conditional experiment unexecuted. Do not lower thresholds, change retention tasks or select a different donor from the closed outcomes.",
+      "direction_decision": "Leave the conditional transplant unexecuted after its failed prerequisite. Resume the unchanged N34 anatomical copying question."
     }
   ],
-  "active_question_id": "Q49",
-  "next_question_id": "Q49",
-  "utc": "2026-10-31T11:37:02.873177+00:00"
+  "active_question_id": "Q48",
+  "next_question_id": "Q48",
+  "utc": "2026-10-31T12:09:47.703298+00:00"
 }

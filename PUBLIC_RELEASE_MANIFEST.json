@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-10-31T11:54:31.578781+00:00",
+  "generated_utc": "2026-10-31T12:20:52.006228+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "327b9d6513b463189fe7ab88d1c223013bada11a964788da0ee0c875f6356a6c",
-      "bytes": 950
+      "sha256": "d3aa459b50bc6937d91030b25bf8d16d9c375f7128bfff2a9cfd8b5ac5036aa8",
+      "bytes": 981
     },
     {
       "path": "LICENSE",
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "d005a4db7637fb05a34cef114a344129927fccb281579fc7361f90e221027bba",
-      "bytes": 20855
+      "sha256": "f945e0c499686b301f698efa87855d39c0c6c94f2067478bb88b6cabbd00a9d0",
+      "bytes": 20893
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "dc301feab7d0b6da8f9b4c817c62b4066c3544614918409794b9583ae40fbe2f",
-      "bytes": 276408
+      "sha256": "53c1cc471173f0599da2d37a211a327a1cd18d4b223b2a11de281c789aea045d",
+      "bytes": 275701
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "429ce4e32c854bfec37075a414efa3802bd6ca0b388c650d948c0d0cbf8cad0e",
-      "bytes": 218366
+      "sha256": "1161eeb89dbc72930d3a201017a1317c0bc15c3d892e34b395a9670e4fae0ac1",
+      "bytes": 219050
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "d41d3ed263989784e0f16623334bfd08af552c3d3a21899cdf7731020d920a03",
-      "bytes": 110959
+      "sha256": "3a3190ea48944fa85ce8350621902a801bea4abbff61d1b87cf91a5840e5502e",
+      "bytes": 112304
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -220,6 +220,16 @@
       "bytes": 147408
     },
     {
+      "path": "docs/figures/n35_summary.png",
+      "sha256": "ce33536d6c5fc06baf036a7a4340ba7711cac7a380f20bdd243eba32c0e10a66",
+      "bytes": 155137
+    },
+    {
+      "path": "docs/figures/n35_summary.svg",
+      "sha256": "4dfb94ab57a3b513e3fc5077587aa91c00c88858635be4f4b33350b76f713031",
+      "bytes": 123807
+    },
+    {
       "path": "docs/index.html",
       "sha256": "ca72c3c5068ea9c4b510b1ff4cf1638974eaed911e1e4fe1ccafaa23d6b4df2e",
       "bytes": 12427
@@ -236,8 +246,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "cc22e7c9204f2ed475159647bd9c00a7558a597f0ff9f1db447eb96dc5925070",
-      "bytes": 111533
+      "sha256": "a8f2a8350478676f51a52e77347b955315b0946735ac0706fd5e7def3f201e0d",
+      "bytes": 110873
     },
     {
       "path": "evaluation/__init__.py",
@@ -950,6 +960,11 @@
       "bytes": 570
     },
     {
+      "path": "methods/n35_figure_plan.json",
+      "sha256": "0c6058750ebe37814540b76770f7dc49a3ad975f727cf0aa569ec1559ff00eaf",
+      "bytes": 875
+    },
+    {
       "path": "methods/n35_freeze_scope_v3.json",
       "sha256": "75a1d9307c02402f340ebbb4c396e4820bab49773c82fde8c13290ec75731d12",
       "bytes": 813
@@ -978,6 +993,11 @@
       "path": "methods/n35_protocol_freeze.json",
       "sha256": "f58e844e4661d6a12a11563f3b57a09eb936a421c09ccfa0c678c65fd1723b97",
       "bytes": 340
+    },
+    {
+      "path": "methods/n35_reporting_source_freeze.json",
+      "sha256": "f5f59b16b8d0f4a83db096e917902df79e260944cc2cda7a5475be0fe20fd38e",
+      "bytes": 571
     },
     {
       "path": "methods/n35_serialization_resume_amendment_v3.json",
@@ -1725,9 +1745,14 @@
       "bytes": 3775
     },
     {
+      "path": "results/n35_posthoc_diagnostics.json",
+      "sha256": "950fff073af07a1650f04e954a3fcb0c1445986a37f736b3b1fe7c8db277dd8b",
+      "bytes": 1084
+    },
+    {
       "path": "results/n35_preparation.json",
-      "sha256": "082ecd8f42840c0c4dd9275825871adda96d44ffa8881f39fdbc4d52c3d88cf5",
-      "bytes": 2156
+      "sha256": "0b80c4c46fc369f994f47326d84dd7f65dde5ae46a52b6d96cd5ea2ba5d97155",
+      "bytes": 2173
     },
     {
       "path": "results/n35_preparation_v2.json",
@@ -1740,6 +1765,11 @@
       "bytes": 384
     },
     {
+      "path": "results/n35_result_receipt.json",
+      "sha256": "fd0f7a9c8c932f5a3129d37f301157c8501e1001e524359fd6f571fe33d8aace",
+      "bytes": 963
+    },
+    {
       "path": "results/n35_serialization_host_v3.json",
       "sha256": "fb09af5cb485b8e8f8728880fd55d1816bfc3a74147e6543e2d026116aac7294",
       "bytes": 581
@@ -1748,6 +1778,11 @@
       "path": "results/n35_source_feasibility.json",
       "sha256": "0dfd7cdfdc7507ef7c9fca13d8d848636b3d7a45da360e9740cd32ef89122418",
       "bytes": 1024
+    },
+    {
+      "path": "results/n35_summary.json",
+      "sha256": "da6e075acb13b60e15da7424ee4fd426bd7c12d24957e0ecd1a53ff1a73b9fe0",
+      "bytes": 7222
     },
     {
       "path": "results/n35_version1_startup_failure.json",
@@ -1765,9 +1800,14 @@
       "bytes": 1258
     },
     {
+      "path": "results/n36_prerequisite_stop.json",
+      "sha256": "afbf4facd9698e907ae6649731465a33ebf81345a1582f3469f008f97636e989",
+      "bytes": 719
+    },
+    {
       "path": "results/progress_snapshot.json",
-      "sha256": "12d2e840dafb9408ae44c9f6d6a9f099f2ee48cd60d671427f1663e7168ed4b8",
-      "bytes": 763
+      "sha256": "980afbd94cb8a57e3e6ac25a8bd591765605aad24775b6d51a47d1dd55514fa4",
+      "bytes": 601
     },
     {
       "path": "results/r01_reconstruction.json",
@@ -1781,8 +1821,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "af0128d6c8d21dcd0e7eb4f5dbe21b505b5471cfaf6272491a3a4544dd594ebe",
-      "bytes": 23334
+      "sha256": "7258ea66e8e7173680ec7d6ef0c62bef68b6ff30b37b50bd03d667d61aa79d02",
+      "bytes": 23330
     },
     {
       "path": "scripts/plot_n04_summary.py",
@@ -1873,6 +1913,11 @@
       "path": "scripts/plot_n33_summary.py",
       "sha256": "29e15fa5b03a36ac4ef661eabe3c13a027e1b8f3968eb7da70b5577ab34d36f9",
       "bytes": 3575
+    },
+    {
+      "path": "scripts/plot_n35_summary.py",
+      "sha256": "7d33cdeecb462d5d25ba8c2d52cc5edc38f8e84cbfd36ab5118deabee1169949",
+      "bytes": 3821
     },
     {
       "path": "tests/__init__.py",

@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-31T12:05:16.991820+00:00",
+  "status": "complete_private_host_audited_closed",
+  "records_audited": 96,
+  "mandatory_guards_passed": true,
+  "actual_counters": {
+    "recipient": {
+      "calls": 5058,
+      "input_token_exposures": 9603
+    },
+    "donor": {
+      "calls": 2837,
+      "input_token_exposures": 7382
+    }
+  },
+  "generated_tokens": 7895,
+  "worker_seconds": 426.83894597200003,
+  "parent_worker_seconds": 824.027067842,
+  "exact_carried_recipient_records": 48,
+  "new_donor_records": 48,
+  "new_generated_tokens": 2837,
+  "parent_outputs_never_uploaded_as_prompts": true,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "parameter_assignments": 0,
+  "N36_prerequisite_passed": false,
+  "host_recomputed_checkpoint_logits_or_weights": false,
+  "evidence_scope": "GPU argmax/state/cache/source witnesses plus host redecoding, counter validation and independent executable grading.",
+  "notebook_seconds": 477.99013443200005
+}
