@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-31T09:43:35.151063+00:00",
+  "status": "frozen_before_any_pretrained_output_access_after_execution_source_freeze",
+  "experiment": "N33",
+  "scope": "Only complete audited aggregate outcomes; raw prompts,scaffolds,tails and answers stay private.",
+  "phase_A": "Show all32role and8retention outcomes,all8dependent four-case blocks,first-token/cap failures,actual counters and the planned stop if any. No passing subcohort selection.",
+  "phase_B": "Show all6conditions,full-site transfer and preservation,retentionN/A versus identity,all six magnitude-adequacy ratios and every failed gate. Never treatN/A as passed.",
+  "phase_C": "Show all24conditions,selected and both controls,all15primary components and both12component finite conjunctions. Keep the separate executable-binding gate,all gains/losses and record classes(new/carry/guarded/N/A). Guarded futures are not observed generations.",
+  "uncertainty": "Dependent variants do not become independent algorithms. No unadjusted per-row significance headline or winner selection.",
+  "no_pretrained_outputs_accessed": true,
+  "optimizer_steps": 0
+}

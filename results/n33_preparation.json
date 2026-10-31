@@ -5,7 +5,6 @@
     "correct_fixtures": 72,
     "refusals": 139,
     "independent_reference_comparisons": 11291,
-    "data_sha256": "9858afd797c3fba926c2b6cec6873cdd176194c4b0c31c2e37c06090919d8356",
     "model_forwards": 0,
     "optimizer_steps": 0,
     "seconds": 10.355433750002703
@@ -118,6 +117,6 @@
     "optimizer_steps": 0,
     "seconds": 1.2741019160021096
   },
-  "pretrained_outcomes_exist": false,
-  "execution_freeze_pending": true
+  "execution_freeze_pending": false,
+  "pretrained_result_reported_separately": "n33_summary.json"
 }

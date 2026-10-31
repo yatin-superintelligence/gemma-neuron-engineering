@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-31T10:12:43.728408+00:00",
+  "status": "scientific_protocol_frozen_before_intervention_implementation",
+  "protocol_sha256": "9b316ae391702ee0e4dea0dae3cb6d451c8ab0e850c2e9dac663d02c913a0215",
+  "intent_sha256": "7df12f332c8e0a0e5df16230dd3b9a15d3ae6989fad2a66b7b1b9d9270bcb778",
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-31T10:06:18.778422+00:00",
+  "status": "before_scientific_protocol_and_implementation",
+  "considered": [
+    {
+      "option": "Select the sixteen passing N33 filters",
+      "decision": "Reject. N33 stops before B and all grades stay final."
+    },
+    {
+      "option": "Change the N33 scaffold, retention or cap",
+      "decision": "Reject. No wording or grade repair of that failed assay."
+    },
+    {
+      "option": "Repeat N30 in another precision or launch N31 anyway",
+      "decision": "Reject for this sprint. It would shift focus to numerics or bypass a failed utility prerequisite."
+    },
+    {
+      "option": "Localize the observed N28 copying failure on its entire closed panel",
+      "decision": "Use a distinct lexical-control endpoint and fixed anatomical blocks. Preserve the failed semantic criterion and all invalid outputs. This can narrow a native site before any later channel partition, but cannot establish semantics or utility."
+    }
+  ],
+  "source_review": "runs/n34/source_review.json",
+  "new_dataset_or_model_run": false,
+  "optimizer_steps": 0
+}

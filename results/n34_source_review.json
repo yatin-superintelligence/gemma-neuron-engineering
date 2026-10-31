@@ -1,0 +1,85 @@
+{
+  "utc": "2026-10-31T10:04:06.662028+00:00",
+  "status": "closed_saved_witness_source_review_complete",
+  "actual_parent_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "correction": "N28 patched all 35 native MLPs, not a late-only block. A late-only description in informal planning is unsupported and is not used.",
+  "position": "Last input token after the fixed mechanical assistant prefix, before any generated answer; no response-derived decision trigger.",
+  "generation": "Pinned full-vocabulary greedy model.generate, max_new_tokens=32 and stop_strings=[newline], with native EOS. A future study must preserve this contract and audit neutral defaults.",
+  "closed_original_case_counts": {
+    "role": 16,
+    "retention": 8
+  },
+  "first_token_and_suffix_checks": [
+    {
+      "condition": "opposite_same_order",
+      "cases": 16,
+      "donor_first_token_matches": 16,
+      "recipient_first_token_changes": 16,
+      "exact_donor_suffixes": 16
+    },
+    {
+      "condition": "same_same_order",
+      "cases": 16,
+      "donor_first_token_matches": 16,
+      "recipient_first_token_changes": 0,
+      "exact_donor_suffixes": 16
+    },
+    {
+      "condition": "opposite_reversed_order",
+      "cases": 16,
+      "donor_first_token_matches": 16,
+      "recipient_first_token_changes": 0,
+      "exact_donor_suffixes": 16
+    },
+    {
+      "condition": "same_reversed_order",
+      "cases": 16,
+      "donor_first_token_matches": 16,
+      "recipient_first_token_changes": 16,
+      "exact_donor_suffixes": 16
+    }
+  ],
+  "semantic_primary_remains_failed": true,
+  "interpretation": "Saved full-site outputs demonstrate literal donor-token and suffix copying in this conditional interface. They do not demonstrate semantic invariance or useful coding improvement. Invalid cross-order assembled programs remain failures.",
+  "next_review": "A distinct anatomical localization of the observed copying failure may reuse the entire closed panel with exact lineage, not a passing N33 subcohort. It cannot revive N28 semantic claims or the failed N30/N31 utility prerequisite.",
+  "no_grading_or_model_rerun": true,
+  "model_forwards": 0,
+  "optimizer_steps": 0,
+  "seconds": 0.020012499997392297
+}

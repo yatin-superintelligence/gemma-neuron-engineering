@@ -402,6 +402,12 @@
       "recorded_script_seconds": 190.32046659599996,
       "outcome": "All40records and mandatory guards pass. Planned baseline stop: role19/32,retention8/8,no caps. Predicate14/16;filter5/16. Ten source failures and three executable wrong answers. Only2/8complete blocks and10/16valid common-prefix pairs. No neuron intervention or B/C phase executes.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "n33_A_v1",
+      "recorded_script_seconds": 128.4106988110001,
+      "outcome": "All40audited. Planned baseline stop: role28/32,predicate12/16,filter16/16,retention3/8,one cap,required first operators28/32. No edits or later phases.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": []

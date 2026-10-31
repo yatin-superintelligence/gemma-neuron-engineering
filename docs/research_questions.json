@@ -744,7 +744,7 @@
     {
       "id": "Q47",
       "experiment": "N33: predefined scaffolded comparison position",
-      "status": "data_and_deterministic_model_host_gates_passed_execution_pending",
+      "status": "closed_planned_original_only_baseline_stop",
       "question": "At a predefined incomplete-code input position, does the fixed group follow the requested relation or the donor comparator token?",
       "question_provenance": "N24 supplies bounded group-score evidence on reused generated prefixes. N28 exposes literal donor-suffix copying. N32 fails its complete-function source and prefix gate before edits. A new scaffolded format asks a narrower question at an input position fixed before any answer. Its format is selected after that feedback, so this is development design rather than fresh confirmation.",
       "parents": [
@@ -753,13 +753,30 @@
         "Q46"
       ],
       "method": "Keep the same selected 64 channels and both fixed controls. New comparison/filter tasks cross relation and operand order with dependent wordings/names. Supply unfinished syntax ending before the comparator, never the comparator answer. Whole-vocabulary greedy tails receive independent executable assembled-program grades. Original-only and full-site gates precede sparse tests. New-input native/donor-change RMS adequacy uses strict fixed bands, without rematching or applied scaling. Preserve all fifteen primary components, both finite-pattern conjunctions and a separate executable-binding gate. A same-token and byte-exact-cache continuation may be represented only as a guarded reference under deterministic parameter, buffer, configuration and hook checks.",
-      "result": "The scientific protocol was frozen before implementation. New tasks and the partial-assistant encoder now pass 211 host fixture outcomes: 72 correct fixtures and 139 refusals. Two independent oracle implementations agree on 11291 comparisons. All forty direct/shared encoder tensors and metadata agree, all thirty-two operator pairs are single-token continuations, and the last input token is shared within each nuisance-name variant across operand orders. Every input hash is disjoint from N32. The new private data hash is 9858afd797c3fba926c2b6cec6873cdd176194c4b0c31c2e37c06090919d8356. This host process takes 10.35543375 seconds, with zero model forwards or optimizer updates. The separate random-weight Gemma continuation panel now passes twelve policy cases in FP32 and BF16. Its 48 actual forwards, 88 input-token exposures and 44 random tokens verify exact self/rescue behavior, independent later-token witnesses for guarded references, late-cache preservation, EOS/cap accounting and eight corruption refusals. Runtime is 1.274101916 CPU seconds, with zero pretrained forwards, backwards or optimizer updates. Runner, auditor and execution freeze remain pending. No N33 pretrained outcome exists.",
-      "interpretation": "An input position can be answer-independent within this scaffolded interface while the task remains conditional completion. This does not establish unrestricted coding, individual neuron meaning, a complete circuit, formal abstraction or novelty. Earlier activity matching does not prove matching on the new inputs.",
-      "next_question": "Implement prospective host fixtures, new tasks and hidden independent oracles, exact partial-assistant encoding, deterministic state/continuation checks and phased runner/auditor accounting. Freeze every phase source, data and auditor before originals. No GPU launch is authorized by the scientific protocol alone.",
-      "direction_decision": "Use a separately frozen development assay to reduce construction confounds. Keep N32 closed, do not select its passing blocks, and do not alter old grades or conditions."
+      "result": "N33 closes at its planned original-only gate. All 40 records and every audit guard pass, but role correctness is 28/32: predicate 12/16 and filter 16/16. Retention is 3/8, with one output at the 48-token cap. All 32 role sources are valid. Four predicate cases request the larger relation with reversed operands and emit the opposite comparator. Five retention programs are wrong. Required operator-only first tokens pass 28/32. All supplied scaffolds and token alternatives pass. The inherited common-prefix schema boolean is false because of the four first-token failures, not unequal scaffolds. Four of eight complete role blocks qualify, and none is selected. B and C are never built, and no neuron edit runs. All grades stay final. Actual work is 344 forwards, 4512 input exposures and 344 new conditional tokens, with zero backwards or optimizer updates. Worker time is 128.410698811 seconds and notebook time is 199.621957749 seconds. These are not charged quota. The frozen 81 source hashes, host failures, targeted unfinished-case repairs and exact private server source remain preserved.",
+      "interpretation": "The supplied-scaffold interface fails its frozen baseline and first-token gate before neuron interventions. No group-score replication, semantic-versus-token classification, native necessity or coding benefit was tested. Passing filters are not selected as a new cohort. Familiar concepts and wording variants remain dependent.",
+      "next_question": "Keep N33 closed without prompt, scaffold, cap or grade repair. Review the earlier N28 full-site donor-copy result for a distinct mechanism question using all of its existing cases.",
+      "direction_decision": "Stop this assay as frozen. A later proposal must state a separate scientific endpoint and preserve the failed semantic and utility prerequisites of prior studies."
+    },
+    {
+      "id": "Q48",
+      "experiment": "N34: anatomical localization of donor comparator copying",
+      "status": "scientific_protocol_frozen_before_intervention_implementation",
+      "question": "Which native MLP blocks control the observed donor comparator-token copying, and does zeroing those sites disrupt original correct conditional programs?",
+      "question_provenance": "N28 has a usable closed conditional panel and an observed full-site copying failure. Its semantic criterion remains failed. N32 and N33 stop before edits on separate baseline gates. This proposal studies where the copying occurs, using the complete older panel rather than selecting passing new cases.",
+      "parents": [
+        "Q42",
+        "Q38",
+        "Q47"
+      ],
+      "method": "Seven fixed contiguous five-layer MLP blocks cover all 35 native layers. Each receives all four original donor relation/order policies, native zeroing and ordered recipient rescue. All 24 N28 cases remain. The 49-condition grid contains 1176 records: 168 exact parent carries, 840 actual edited tails and 168 guarded rescues. The original 32-token, newline and EOS contract stays fixed. Native token-only teacher lineage is measurement, never an edited prompt or continuation cache. All parent logits, 840 native h hashes, self/rescue and restoration paths must pass. No new task wording, score rank, fitted strength, gradient or weight update.",
+      "result": "A read-only review confirms that the N28 parent patched all 35 MLP layers at a predefined last input position. Each of its four foreign policies matches all 16 donor first tokens and all 16 complete donor suffixes. The two token-changing policies change all 16 first choices; the other two preserve them. Invalid cross-order assembled programs remain failures. This reads saved outputs without any new forward, generation, grading or optimizer update. The scientific protocol is now frozen before any intervention implementation. It requires both token-changing donor policies to copy at least 12/16 donor first tokens each, both token-preserving policies to retain at least 14/16 native first tokens each, same-order program preservation, clean-zero losses with changed first choices in at least four cases spanning both families, and all retention cases correct. Every clause is required. The earliest qualifying fixed block is only a development choice. Runner, auditor, host gates and execution freeze remain pending. No N34 model run exists.",
+      "interpretation": "Literal comparator copying is a narrower endpoint than semantic transfer. Localizing that failure could identify a conditional native site, but cannot establish individual meanings, semantic invariance, a complete circuit, formal synergy, novelty or coding improvement. Whole blocks are anatomical coverage probes, not activity-matched controls. All cases remain reused dependent development.",
+      "next_question": "Implement and validate the frozen block, stop-string, teacher-lineage separation, scope, state and counter paths. Import both runner and auditor, freeze every source and parent hash, and check fresh free resources before one private bounded job. No new model run is authorized by the scientific protocol alone.",
+      "direction_decision": "Broaden from another baseline redesign to the mechanism of an already observed copying failure. Do not revive a failed semantic or utility prerequisite."
     }
   ],
-  "active_question_id": "Q47",
-  "next_question_id": "Q47",
-  "utc": "2026-10-31T08:54:42.981468+00:00"
+  "active_question_id": "Q48",
+  "next_question_id": "Q48",
+  "utc": "2026-10-31T10:08:15.587278+00:00"
 }

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T10:06:18.778422+00:00",
+  "question_id": "Q48",
+  "experiment": "N34",
+  "status": "intent_before_runner_or_auditor_implementation",
+  "question": "Which fixed anatomical MLP blocks control the observed donor comparator-token copying, and does zeroing those sites disrupt the original correct conditional programs?",
+  "parents": [
+    "Q42",
+    "Q38",
+    "Q47"
+  ],
+  "why": "N28 has a usable balanced conditional interface and an observed full-site copying failure. N32 and N33 stop before edits on separate baseline gates. More prompt redesign would not localize a native causal site. This proposal reuses all 24 N28 cases and closed grades for a different, explicitly lexical endpoint.",
+  "scope_change": "N28 semantic transfer remains failed. This proposal does not lower that semantic gate, revive its semantic follow-up, advance the failed N30 unit rank, or authorize N31 utility. It studies the copying failure itself. No passing N33 subcohort is reused.",
+  "universe": "Seven fixed contiguous five-layer native MLP blocks covering all 35 layers, with no score ranking or coordinate fitting. Actual N28 parent intervened on all 35 layers, not a late-only block.",
+  "controls": "All four original donor relations/orders, native zeroing and exact recipient rescue for every block; all eight retention cases in every policy. Keep complete original outcomes and invalid cross-order sources.",
+  "lineage": "Carry all 168 closed N28 records exactly. All original first logits, native captures and current parent witnesses must replay. Native token-only teacher lineage is measurement and never supplies a free generation prompt or edited continuation cache. No original completion is regenerated.",
+  "limitations": "Reused dependent development; supplied syntax; no individual neuron meaning, semantic invariance, complete circuit, formal synergy, coding benefit or novelty. Whole blocks are anatomical coverage probes, not activity-matched random groups.",
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

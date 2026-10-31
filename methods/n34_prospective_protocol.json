@@ -1,0 +1,232 @@
+{
+  "utc": "2026-10-31T10:12:43.728408+00:00",
+  "experiment": "N34",
+  "question_id": "Q48",
+  "version": 1,
+  "status_at_freeze": "before_new_intervention_helper_runner_or_auditor_implementation",
+  "question": "Which fixed five-layer MLP blocks control observed donor comparator-token copying, and are those sites required for original correct conditional programs under native zeroing?",
+  "intent_sha256": "7df12f332c8e0a0e5df16230dd3b9a15d3ae6989fad2a66b7b1b9d9270bcb778",
+  "parents_sha256": {
+    "research/experiments/n28/protocol.json": "814d5be599db1cba654cf30bb5287210d034f286ce114b733a9b5651346f1a3b",
+    "research/experiments/n28/rows.json": "98c6454055a9a49631ed6de78be4383851ef62b54e374d75824f69aeb6ff37e7",
+    "research/experiments/n28/runner.py": "38678d53cbdaca29d105a78d5e3b2bd2e398443ed75cee711cb32f0a7e55770d",
+    "research/experiments/n28/tasks.py": "ad9f928f044c84e775fc3ad7550d76c827ce2d741ec3091f3de497307d4c3801",
+    "research/experiments/n28/grading.py": "c209500394e02ac28a7cf52f80f5b1cc0e00ddb5eeaae11c6196af1c58a09320",
+    "runs/n28/phase_A/version1/result_receipt.json": "bf5d30858c408ec62789c20163f6a06992ce618be228862c4086a6439411cac7",
+    "runs/n28/phase_B/version1/result_receipt.json": "acad12b1fac0e65989c7e0bd650d5c079ac0b2b0e5c3468adc4cf512e7ab6735",
+    "runs/n28/phase_B/version1/graded_records.jsonl": "2b55709351eb98ee3d0088f1f887ee80113eddc371e8fca103165b51a02ca66b",
+    "outputs/n28_a_v1/n28a/bf16_text/predictions.jsonl": "b2328bd870e29e8e3568b5b6afc117ed39cc5a0ff8dca3d906c94614f8f440b5",
+    "outputs/n28_b_v1/n28b/bf16_text/predictions.jsonl": "7a8cb8999878b60de3b1fe6e865288b5b9584a4711f42fb84805301cc880a490",
+    "outputs/n28_a_v1/n28a/bf16_text/native.jsonl": "0047b00e2038521296784084f055496b70581e934a418b0364dee15dc0a9e9b0",
+    "runs/n33/phase_A/version1/result_receipt.json": "eae737e90e8f303e784d17dd1e44c69a6e9ca1898ed80850ce8ef660f3fcfc3a",
+    "runs/n34/source_review.json": "77bcaf19ae9a909207889a44b3c9f0b9022f4bb858af7df703f0119582d9cd1d"
+  },
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only unquantized BF16, 4628569344 unique parameters",
+  "model_seed": 4801,
+  "host_seed": 4802,
+  "oracle_stress_seed": 2842,
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "scope_change": "N28 semantic transfer remains failed. This distinct proposal localizes its observed lexical copying failure. It does not lower the old semantic gate, revive a semantic claim, advance the failed N30 unit rank or authorize N31 utility. N32/N33 remain closed; none of their passing subsets or prompts is reused.",
+  "data": {
+    "cases": 24,
+    "role": 16,
+    "retention": 8,
+    "source": "Exact complete N28 panel, tokenization, supplied assistant prefixes, donor maps and closed grades. No new task wording or data selection.",
+    "dependence": "Two families, two wordings, two requested relations and two operand orders. Eight dependent paired cells, not sixteen independent algorithms. Retention includes both arithmetic and JSON.",
+    "interface": "Conditional completion after supplied partial source; last input position fixed before any answer. Not unrestricted whole-function writing or a response-derived trigger."
+  },
+  "blocks": [
+    {
+      "id": 0,
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "native_channels": 30720
+    },
+    {
+      "id": 1,
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "native_channels": 30720
+    },
+    {
+      "id": 2,
+      "layers": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "native_channels": 30720
+    },
+    {
+      "id": 3,
+      "layers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "native_channels": 61440
+    },
+    {
+      "id": 4,
+      "layers": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "native_channels": 61440
+    },
+    {
+      "id": 5,
+      "layers": [
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "native_channels": 61440
+    },
+    {
+      "id": 6,
+      "layers": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "native_channels": 61440
+    }
+  ],
+  "operations": [
+    "opposite_same_order",
+    "same_same_order",
+    "opposite_reversed_order",
+    "same_reversed_order",
+    "zero",
+    "rescue"
+  ],
+  "parent_conditions": [
+    "base",
+    "identity",
+    "opposite_same_order",
+    "same_same_order",
+    "opposite_reversed_order",
+    "same_reversed_order",
+    "rescue"
+  ],
+  "assignments": "Actual unmodified native post-gating down_proj inputs at the last input token. Apply all channels in exactly one declared block during one prefill forward only. Foreign policies use each original donor own last input state. Zero is direct activation zeroing. Rescue installs opposite_same_order then recipient states in the same block. No weights, attention/KV hooks, fitted vectors, strengths, gradients, new branches or parameter updates.",
+  "coverage_limits": "These seven anatomical blocks differ in channel count because the shared tail is double width. They are coverage probes, not magnitude- or activity-matched random groups. A site effect is not an individual neuron meaning or semantic specificity.",
+  "records": {
+    "conditions": 49,
+    "total": 1176,
+    "exact_parent_carries": 168,
+    "new_actual_tails": 840,
+    "guarded_native_rescues": 168,
+    "nonapplicable_cells": 0,
+    "rationale": "All four foreign policies are defined on retention by the original other-wording donor maps. Every foreign retention cell runs; do not treat it as N/A or deduplicate it."
+  },
+  "decoding": {
+    "max_new_tokens": 32,
+    "stop_strings": [
+      "\n"
+    ],
+    "EOS": "Pinned original native EOS set",
+    "policy": "Full-vocabulary greedy argmax with neutral resolved library defaults. Preserve the original N28 generation contract. Use the pinned StopStringCriteria for the manual continuation, not an approximate newline decoder. No sampling, rerolls, answer restriction or best reading.",
+    "all_candidate_tails_actual": "All 840 foreign and zero tails are actually generated even if their first token matches native. Do not use a same-choice shortcut. Only exact native rescues may inherit a guarded original continuation."
+  },
+  "lineage": {
+    "originals": "Carry all 168 closed N28 records and grades exactly. Never regenerate original completions or rerun a closed scorer.",
+    "native_capture": "Capture all 24 fresh native prefills, replay all first legacy logits/cache/past-cache witnesses and all 840 native h hashes. Add raw-byte cache witnesses for the new path checks.",
+    "teacher_measurements": "At each native source, after hooks exit, replay the saved original token IDs only as teacher-lineage measurements. Verify every actual full-vocabulary argmax and exact EOS/newline/cap termination. Count zero newly emitted tokens. This establishes the original trajectory under the new strict deterministic regime. If any comparison fails, stop before edits without changing tolerance or regenerating a baseline.",
+    "answer_separation": "Only native token IDs, hash references and witnesses enter a separate lineage-only file. Raw parent text, grades and executable oracles stay on the host. Teacher caches are discarded. Every edited generation starts from the exact original input IDs with a fresh cache, and cannot access lineage tokens or a teacher cache. Validate this in host fixtures and static payload review.",
+    "parent_currents": 144,
+    "parent_current_contract": "Replay the six non-base parent current policies on all 24 cases against the closed first witnesses, with no parent tail regeneration.",
+    "self_measurements": 168,
+    "rescue_measurements": 168,
+    "restorations": 294,
+    "restoration_sentinels": [
+      "n28_filter_s0_d1_o0",
+      "n28_filter_s1_d-1_o1",
+      "n28_predicate_s0_d-1_o1",
+      "n28_predicate_s1_d1_o0",
+      "n28_ret_sum_s0",
+      "n28_ret_json0_s0"
+    ],
+    "restoration_contract": "All six fixed sentinels after each of the 49 conditions, including parent carry conditions. Exact native whole logits/cache required."
+  },
+  "path_guards": {
+    "all_blocks": "Every current MLP edit preserves all past-token K/V values in all 15 native cache entries and the whole first cache entry. Save compact raw-byte hashes; no tolerance.",
+    "blocks_3_to_6": "All layers are after producer14, so the whole current cache must remain byte-exact native. This is a prospective architecture path guard, not a mediation fraction.",
+    "early_blocks": "Other current-token cache entries may change. Do not require or infer numerical changes in every possible path.",
+    "future": "Different emitted tokens may change later caches. An unchanged fixed-input cache does not prevent emitted-token feedback."
+  },
+  "determinism": "Set CUBLAS_WORKSPACE_CONFIG=:4096:8 before torch/CUDA import; deterministic algorithms on, cudnn benchmark off/deterministic on, TF32 off and CPU threads1. Snapshot all native parameter versions/gradflags/empty gradients, module training flags, buffer byte hashes, model/generation/device-map configuration and RNG hashes. Unsupported operations or parent mismatches fail before interpretation; no silent fallback or tolerance amendment.",
+  "primary_per_block": {
+    "token_change_policies": [
+      "opposite_same_order",
+      "same_reversed_order"
+    ],
+    "token_change_rule": "For EACH policy, the actual first full-vocabulary greedy token equals its original donor first token in at least12/16 role cases, spanning both families, wordings, requested directions and operand orders. These donor tokens differ from the recipient native first token.",
+    "token_preserve_policies": [
+      "same_same_order",
+      "opposite_reversed_order"
+    ],
+    "token_preserve_rule": "For EACH policy, at least14/16 role first tokens equal the recipient native first token. This is token preservation, not successful semantic or source preservation.",
+    "same_order_program_control": "same_same_order retains at least14/16 original correct assembled programs.",
+    "clean_zero_rule": "At least4/16 original role programs lose correctness AND have a changed first chosen token under block zeroing, spanning both families. This is contextual site necessity under zeroing, not individual semantic meaning.",
+    "retention": "All8 retention cases correct in every one of the four foreign policies, zero and guarded rescue.",
+    "selection": "Every clause is required. Report every block and failure. If multiple qualify, choose the earliest block ID only for a separately frozen development decomposition, never the highest score. If none qualifies, stop this pilot without expanding the universe, pairing blocks or lowering thresholds."
+  },
+  "secondary": "Report every original coding gain/loss, exact donor first-token and full-suffix agreement, source validity, opposite-program correctness, first tokens outside the two comparator IDs, caps, retention and raw logit metrics. Invalid assembled sources stay incorrect even if a first-token copying endpoint passes. Do not call lexical copying semantic transfer. No accuracy gain is possible from the all-correct original role panel.",
+  "grading": "Carry closed parent grades unchanged. Grade only new edited tails with the existing N28 strict source/execution and new-list contract, independent exhaustive references and its fixed 256-probe stress grid seed2842 for correct or changed outputs. This is reused development validation, not fresh confirmation. No correct-answer flag or scorer in generation assets.",
+  "counters": "Derive all events from record and trajectory manifests. Native source plus teacher path costs G forwards and n+G-1 input exposures, for saved original lengthG. Every parent-current, self, rescue and restoration measurement costs1 forward/n exposures. Each actual new tail ofT tokens costsT forwards/n+T-1 exposures, including current exactly once. Count teacher/reference argmax calculations separately from newly emitted tokens. No copied hand-summed constant.",
+  "host_gates": [
+    "Actual tiny Gemma35-layer/shared20 configurations with all seven block shapes, self/foreign/zero/ordered-rescue, fresh caches and exact restoration in FP32/BF16. Derive flat coordinates from actual MLP widths if any are used.",
+    "Validate past-cache, first-cache and late-whole-cache invariants; reject truncated/nonfinite/wrong-layout caches and wrong edit scope.",
+    "Validate exact pinned newline/EOS/cap stopping and full-vocabulary first-choice generation; original-token lineage must never enter a fresh edited generation context.",
+    "Import BOTH runner and auditor, run RuffF821/F823 and isolated package/cell checks before GPU. Exercise counter and strict-conjunction fixtures before outputs.",
+    "Freeze source, data, original token-only lineage, graders, exact payload, auditor and every endpoint before launch or new outputs."
+  ],
+  "resources": {
+    "platform_seconds": 3600,
+    "notebook_seconds": 3500,
+    "worker_seconds": 3200,
+    "minimum_free_reserve_hours": 2,
+    "conservative_two_device_reservation_hours": 2,
+    "fresh_official_quota_and_actual_jobs_before_launch": true,
+    "one_private_free_job": true,
+    "must_fit_deadline_UTC": "2026-10-31T18:22:58+00:00"
+  },
+  "failure_and_storage": "Preserve every failure, original source and partial outcome. No completed panel rerun, baseline regeneration or hidden grade change. Caches under/tmp on Kaggle; compact raw tails, hashes, aggregates and validated recipes only. No activation dumps, repeated bases or paid resources.",
+  "publication": "Reviewed generic helpers, complete aggregates, anatomical policy recipes and source hashes only. Raw tasks, prefixes, token lineage, replies, notebooks, activations and unpublished paper private. No submission or independent clean-package replay claim.",
+  "claims_excluded": [
+    "Individual neuron meanings",
+    "Semantic invariance",
+    "Complete circuit or formal synergy",
+    "Novelty from known intervention methods",
+    "Unrestricted coding or useful original-model improvement"
+  ],
+  "GPU_launch_authorized_by_protocol_alone": false,
+  "new_model_outputs_accessed": false
+}

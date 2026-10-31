@@ -3284,6 +3284,97 @@
       "event": "deterministic_random_Gemma_current_continuation_and_refusal_gates_pass",
       "experiment": "N33",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 446,
+      "utc": "2026-10-31T09:43:35.151063+00:00",
+      "event": "n33_audit_synthetic_then_constructor_failure",
+      "experiment": "N33",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 447,
+      "utc": "2026-10-31T09:43:35.151063+00:00",
+      "event": "n33_audit_coordinate_fixture_failure",
+      "experiment": "N33",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 448,
+      "utc": "2026-10-31T09:43:35.151063+00:00",
+      "event": "n33_actual_runner_reader_unfinished_resume",
+      "experiment": "N33",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 449,
+      "utc": "2026-10-31T09:43:35.151063+00:00",
+      "event": "n33_synthetic_three_phase_transport",
+      "experiment": "N33",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 450,
+      "utc": "2026-10-31T09:43:35.151063+00:00",
+      "event": "all81execution_source_data_parent_hashes_frozen_before_outputs",
+      "experiment": "N33",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 451,
+      "utc": "2026-10-31T09:44:21.114882+00:00",
+      "event": "source_frozen_original_only_phase_private_launched_server_exact_outputs_unseen",
+      "experiment": "N33_A_v1",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 452,
+      "utc": "2026-10-31T09:47:11.267241+00:00",
+      "event": "local_log_link_guard_catches_missing_reservation_question_repaired_before_publication",
+      "experiment": "N33_documentation",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 453,
+      "utc": "2026-10-31T10:03:27.818881+00:00",
+      "event": "all40conditional_originals_audited_planned_baseline_stop_no_edits",
+      "experiment": "N33_A_v1",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 454,
+      "utc": "2026-10-31T10:03:27.818881+00:00",
+      "event": "inherited_schema_label_clarified_without_grade_or_gate_change",
+      "experiment": "N33_A_v1",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 455,
+      "utc": "2026-10-31T10:03:27.818881+00:00",
+      "event": "complete_all40_case_and_all8_block_figure_reviewed",
+      "experiment": "N33_A_v1",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 456,
+      "utc": "2026-10-31T10:08:15.587278+00:00",
+      "event": "closed_N28_saved_witness_source_review_no_rerun",
+      "experiment": "N34",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 457,
+      "utc": "2026-10-31T10:08:15.587278+00:00",
+      "event": "distinct_anatomical_copying_intent_preserves_failed_semantic_and_utility_gates",
+      "experiment": "N34",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 458,
+      "utc": "2026-10-31T10:15:01.257750+00:00",
+      "event": "scientific_anatomical_copying_protocol_frozen_before_intervention_implementation",
+      "experiment": "N34",
+      "optimizer_steps": 0
     }
   ]
 }

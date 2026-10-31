@@ -1,0 +1,172 @@
+{
+  "utc": "2026-10-31T09:53:28.798850+00:00",
+  "status": "closed_planned_original_only_baseline_stop",
+  "phase_A": {
+    "utc": "2026-10-31T09:49:21.453504+00:00",
+    "phase": "A",
+    "status": "complete_private_host_audited",
+    "all_records_and_mandatory_guards_pass": true,
+    "records": 40,
+    "record_kinds": {
+      "new": 40
+    },
+    "trajectories": 40,
+    "actual_model_forward_calls": 344,
+    "actual_input_token_exposures": 4512,
+    "new_generated_tokens": 344,
+    "baseline_gate_passed": false,
+    "full_site_gate_passed": null,
+    "primary_fresh_group_score_replication_passed": null,
+    "worker_seconds": 128.4106988110001,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "host_recomputes_full_checkpoint_weights_logits_or_vector_statistics": false,
+    "closed_parent_scorers_rerun": false,
+    "notebook_seconds": 199.62195774900005
+  },
+  "baseline_gate": {
+    "role_correct": 28,
+    "role_total": 32,
+    "retention_correct": 3,
+    "retention_total": 8,
+    "caps": 1,
+    "all_common_prefix_pairs_valid": false,
+    "passed": false,
+    "scope": "Forty new conditional tails, not freely constructed whole programs."
+  },
+  "family_outcomes": [
+    {
+      "family": "predicate",
+      "cases": 16,
+      "correct": 12,
+      "statuses": {
+        "wrong_answer": 4,
+        "passed": 12
+      }
+    },
+    {
+      "family": "filter",
+      "cases": 16,
+      "correct": 16,
+      "statuses": {
+        "passed": 16
+      }
+    },
+    {
+      "family": "retention",
+      "cases": 8,
+      "correct": 3,
+      "statuses": {
+        "passed": 3,
+        "wrong_answer": 5
+      }
+    }
+  ],
+  "all8blocks": [
+    {
+      "family": "predicate",
+      "style": 0,
+      "name_index": 0,
+      "cases": 4,
+      "correct": 3,
+      "statuses": {
+        "passed": 3,
+        "wrong_answer": 1
+      }
+    },
+    {
+      "family": "predicate",
+      "style": 0,
+      "name_index": 1,
+      "cases": 4,
+      "correct": 3,
+      "statuses": {
+        "wrong_answer": 1,
+        "passed": 3
+      }
+    },
+    {
+      "family": "predicate",
+      "style": 1,
+      "name_index": 0,
+      "cases": 4,
+      "correct": 3,
+      "statuses": {
+        "passed": 3,
+        "wrong_answer": 1
+      }
+    },
+    {
+      "family": "predicate",
+      "style": 1,
+      "name_index": 1,
+      "cases": 4,
+      "correct": 3,
+      "statuses": {
+        "passed": 3,
+        "wrong_answer": 1
+      }
+    },
+    {
+      "family": "filter",
+      "style": 0,
+      "name_index": 0,
+      "cases": 4,
+      "correct": 4,
+      "statuses": {
+        "passed": 4
+      }
+    },
+    {
+      "family": "filter",
+      "style": 0,
+      "name_index": 1,
+      "cases": 4,
+      "correct": 4,
+      "statuses": {
+        "passed": 4
+      }
+    },
+    {
+      "family": "filter",
+      "style": 1,
+      "name_index": 0,
+      "cases": 4,
+      "correct": 4,
+      "statuses": {
+        "passed": 4
+      }
+    },
+    {
+      "family": "filter",
+      "style": 1,
+      "name_index": 1,
+      "cases": 4,
+      "correct": 4,
+      "statuses": {
+        "passed": 4
+      }
+    }
+  ],
+  "complete_blocks": 4,
+  "first_token_operator_valid": 28,
+  "first_token_operator_total": 32,
+  "all_fixed_scaffolds_and_operator_options_passed": true,
+  "gate_label_clarification": {
+    "utc": "2026-10-31T09:53:28.798850+00:00",
+    "scope": "Posthoc label clarification,not regrading or a new model measurement",
+    "original_gate_field": "all_common_prefix_pairs_valid=false",
+    "meaning_in_N33": "Inherited schema field receives the conjunction of fixed input-scaffold checks and first-emitted-token checks. All fixed scaffolds and operator options passed. Four native first tokens use the wrong comparator,so the conjunction is false. It is not evidence of mismatched supplied scaffolds.",
+    "first_token_operator_valid": 28,
+    "total_role": 32,
+    "all_fixed_input_scaffolds_and_operator_options_passed": true,
+    "original_grade_or_gate_changed": false,
+    "model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "interventions": 0,
+  "later_phases": "B and C never built or launched. No original is regenerated,selected or regraded.",
+  "interpretation": "This supplied-scaffold development assay fails its frozen original-only task and first-token gate. It does not test a group effect,semantic-vs-token pattern,native necessity or coding benefit.",
+  "all_cases_retained": true,
+  "optimizer_steps": 0
+}
