@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "study": "N30",
+  "status": "actual_checkpoint_interventions_host_audited",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "original_text_only_unquantized_BF16",
+  "coordinates": {
+    "target": {
+      "flat": 328903,
+      "layer": 34,
+      "channel": 3271,
+      "ratios": {
+        "RMS": 1.0,
+        "delta_RMS": 1.0,
+        "down_norm": 1.0
+      }
+    },
+    "random_A": {
+      "flat": 334802,
+      "layer": 34,
+      "channel": 9170,
+      "ratios": {
+        "RMS": 0.9799904968023915,
+        "delta_RMS": 0.9130538225937549,
+        "down_norm": 1.0640086347836695
+      }
+    },
+    "random_B": {
+      "flat": 329691,
+      "layer": 34,
+      "channel": 4059,
+      "ratios": {
+        "RMS": 1.0649540261397248,
+        "delta_RMS": 0.9371640192273533,
+        "down_norm": 0.9207892244888639
+      }
+    }
+  },
+  "conditions": [
+    "base",
+    "full_opposite",
+    "full_samepolicy",
+    "full_self",
+    "target_opposite",
+    "target_samepolicy",
+    "target_zero",
+    "target_rescue",
+    "target_conditional_cut",
+    "random_A_opposite",
+    "random_A_samepolicy",
+    "random_A_zero",
+    "random_A_rescue",
+    "random_A_conditional_cut",
+    "random_B_opposite",
+    "random_B_samepolicy",
+    "random_B_zero",
+    "random_B_rescue",
+    "random_B_conditional_cut"
+  ],
+  "site": "Exactly one native post-gating down_proj scalar at L34 during the one current cached-token forward. No edit during prompt/prefix preparation or subsequent continuation. No attention/KV hook, weights, learned vector, branch, gradients or fitted strength.",
+  "operations": {
+    "opposite": "Assign the actual unmodified opposite-donor scalar for the same common prefix length.",
+    "samepolicy": "Assign the actual unmodified same-rule donor scalar. Preserve the original same-token versus lexical-control labels.",
+    "zero": "Multiply only the one actual native scalar by prescribed zero.",
+    "rescue": "Within the declared scalar hook, write zero then the actual recipient value. Its entire current logits/cache must be exact native. These are guarded baseline references, not newly generated successes.",
+    "conditional_cut": "Apply actual all-35-layer opposite states first, then assign the one actual recipient scalar at L34. This tests necessity in the engineered donor background, not native necessity or a free-running complement."
+  },
+  "generation": "Unchanged N19 greedy combined-program cap64 and pinned resolved EOS/default configuration. Prefix tokens are exact original shared prefixes for the declared decision only; they never include the divergent answer token. Free tails start from the actual edited current logits. No rerolls, answer lookup, posthoc cap/wording repair or hidden oracle in inference inputs.",
+  "reconstruction": "Use the published current-unit helper and caller-owned recipient/donor contexts. Capture actual post-gating values; preserve the declared order for conditional assignments and remove hooks before continuation. The response-derived decision position is a measurement trigger, not a deployable answer-independent policy.",
+  "source_sha256": {
+    "research/experiments/n30/runner.py": "0d05ca9d66591d7286db2ed37a2d6d16608c15951fbba9535ca71a005d884119",
+    "research/experiments/n30/protocol.json": "61ed21b9ea5601220384835ccf52a41fe260612b7b2dcf9047cd6c9167dce01d",
+    "research/experiments/n19/trajectory.py": "83cf4a826204553013ae169ca11ec613c6faf05450201dffc4d685fca92a95a1",
+    "research/experiments/n20/operations.py": "bba77a771150cbe4ffbbeac24a5d4c3cddb74681b5cbcfd5d6fb91d9f1496fd0"
+  },
+  "audited_receipt_sha256": "b9a5c4c38bb15cb3feeb083d497fe90c5003f24f6b8eaa96e5e96f0712c7c4d6",
+  "new_tensor_blobs": 0,
+  "no_parameters_changed": true,
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "all_fixed_conditions_retained": true,
+  "validation": "Original private GPU execution and unchanged frozen host audit pass. Independent clean-package pretrained replay is not performed.",
+  "result": "All 399 records and mandatory guards pass. The predefined finite-bias primary fails one of 27 components: the conditional-cut effect in discovery mapping 0, label 0 ties control B at 0.015625. The other 26 components pass, without replacing the conjunction. Target mean effects across all 13 cases are 0.0558894231 for opposite donors, 0.0348557692 for zeroing and 0.0291466346 for conditional cuts; both controls are smaller in these aggregates. All three units show 0/13 opposite-program transfers, zero clean ablation losses and zero conditional-transfer losses. All three new zero-arm retention sets pass 8/8, with no caps or coding gains. N31 remains unexecuted because its prospectively fixed prerequisite fails.",
+  "private_assets": "Raw tasks, donor values, replies, notebooks and paper stay private.",
+  "condition_specification": {
+    "parents": [
+      "base",
+      "full_opposite",
+      "full_samepolicy",
+      "full_self"
+    ],
+    "unit_operations": [
+      "opposite",
+      "samepolicy",
+      "zero",
+      "rescue",
+      "conditional_cut"
+    ],
+    "order": "Four parents first, then target/random_A/random_B, each in the listed operation order."
+  }
+}

@@ -7,5 +7,5 @@
     "witness"
   ],
   "function_bodies_sha256": "11f6ef997af224230ac1da45ae53aa6e346b4da3ef6e2e3246991593ec0ce9d8",
-  "scope": "Function-only projection with public imports. No task text, raw states or model execution. Actual host fixtures exercise the identical function bodies; no pretrained result yet."
+  "scope": "Function-only projection with public imports. No task text or raw states. Actual host fixtures exercise the identical function bodies. Original private pretrained execution is recorded separately; independent package replay is not claimed."
 }

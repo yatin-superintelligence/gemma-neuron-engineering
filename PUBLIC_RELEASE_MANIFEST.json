@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-10-31T05:49:55.979392+00:00",
+  "generated_utc": "2026-10-31T06:20:46.152432+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "d9ebcfcadf043a6772269aad8dd7d87cd61267832d1dbbdef4f6182d33580fcd",
-      "bytes": 857
+      "sha256": "8d1270fae656fbacc41232f14da2803cd3eab44bf18aa577c5ac86d8df3d5c34",
+      "bytes": 888
     },
     {
       "path": "LICENSE",
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "edd90b89075765fd4fa167ff604138e56a2ca1558d3b1cadbf210c8717803dce",
-      "bytes": 16720
+      "sha256": "104449a0843b3a8ae51b9c50a7abeb57072dae5d22612ffaf54359bddf2a5550",
+      "bytes": 17247
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "577eb9dce69d2c07e48a59faa47e654387b1c0bb14b33d30556feb72ed1d10e8",
-      "bytes": 257171
+      "sha256": "b77247433105de41c9e21ac71e908ffedfb79f9fae7934b5caaac06fae4dbfe6",
+      "bytes": 259229
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "6bba037070c5a628d8fbac31650cdbd16d313f990e469c488622df7d70293e17",
-      "bytes": 185436
+      "sha256": "088281565f71043a64a55a75ef5389d82f16961a518b981231f90d1eefe27ac9",
+      "bytes": 189279
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "9a84dc1c19be85fbef9ea9d8bd596a855ddaf53fb519c81def3c3a4dcbf570aa",
-      "bytes": 92509
+      "sha256": "c33321e0469fce0e7d6d934ac672f7fd18025b12f78b0f37c862602d5f807ff0",
+      "bytes": 94717
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -190,6 +190,16 @@
       "bytes": 85201
     },
     {
+      "path": "docs/figures/n30_summary.png",
+      "sha256": "95d5a8bba38b6c8ef81c147dd1d56eacc7ba7689b70fca8b032e596d5d0c8228",
+      "bytes": 408757
+    },
+    {
+      "path": "docs/figures/n30_summary.svg",
+      "sha256": "b3653e016cca5c737af7890329d723f4afdece2c88a448183bdd8309fa86c8b1",
+      "bytes": 342585
+    },
+    {
       "path": "docs/index.html",
       "sha256": "ca72c3c5068ea9c4b510b1ff4cf1638974eaed911e1e4fe1ccafaa23d6b4df2e",
       "bytes": 12427
@@ -206,8 +216,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "d8f680d9a61a543cc85176ec15a9e20034be3d3c0eff7d489d04fc398f05aa43",
-      "bytes": 94225
+      "sha256": "ec987c60994702480f803bdf588ba832d3216ad1f234304ad9ae674ce96b35c6",
+      "bytes": 95333
     },
     {
       "path": "evaluation/__init__.py",
@@ -755,9 +765,24 @@
       "bytes": 544
     },
     {
+      "path": "methods/n30_field_interpretation.json",
+      "sha256": "dcd091fbc06c385d060f185f644641fe3f76b847379821dac394bdde55a4198f",
+      "bytes": 945
+    },
+    {
+      "path": "methods/n30_figure_plan.json",
+      "sha256": "2d1515a16dbfec6c531a6177d76178b0001c76aceedcdf8691a89154123ea790",
+      "bytes": 1062
+    },
+    {
       "path": "methods/n30_intent.json",
       "sha256": "1204ba8d413931cfa2d9bdad090b88d3eb0899c116a7d73af7a3cf49f0035068",
       "bytes": 5404
+    },
+    {
+      "path": "methods/n30_interpretation.json",
+      "sha256": "449a5f8882d567d2887f8d55eebd210bda5f21062585e1ef30fd9e7e00781479",
+      "bytes": 2246
     },
     {
       "path": "methods/n30_literature_context.json",
@@ -771,8 +796,18 @@
     },
     {
       "path": "methods/n30_unit_source.json",
-      "sha256": "7e0b715fa49f3a5fa24f4cada568058a26f32b7b31c574cb5fa124599c33a4a6",
-      "bytes": 500
+      "sha256": "cff09dcf0283a5c97424a5809f02ff9da83339c7c06b90c73467d10230887a46",
+      "bytes": 562
+    },
+    {
+      "path": "methods/n31_conditional_intent.json",
+      "sha256": "04a47f49829328dc93a5490d7e3125dc69523420a1157e3c4f3d52eac84c34e1",
+      "bytes": 5782
+    },
+    {
+      "path": "methods/n31_host_task_protocol.json",
+      "sha256": "6463ec7feb4c04f21b17de632d7fd6a609bbff6fd58fe54609c33f352cf812d5",
+      "bytes": 1303
     },
     {
       "path": "methods/strict_profile_matching.py",
@@ -998,6 +1033,11 @@
       "path": "models/n29/recipe.json",
       "sha256": "c77d060374a460eacc8a58d341cd7d25b1551a7afb08cd31940bc33b6303bfb8",
       "bytes": 3439
+    },
+    {
+      "path": "models/n30/recipe.json",
+      "sha256": "4ff1bfc9b7c50e8267afcb1b70ffce64dacb1181ce3afe42efade16545faef71",
+      "bytes": 5253
     },
     {
       "path": "pyproject.toml",
@@ -1381,12 +1421,22 @@
     },
     {
       "path": "results/n30_preparation.json",
-      "sha256": "6bd59fc8d5027482d159836e33b55700d2ecaaefff2b17558c3e9dccacac94f6",
-      "bytes": 7085
+      "sha256": "bb54bc9e608bd0d5c20d4f8e41ee2bd9234ac67eb870b30255b1992f14137748",
+      "bytes": 7097
+    },
+    {
+      "path": "results/n30_summary.json",
+      "sha256": "c59d11e7f767d63b143bdd868d2956a106d900a861cbc564f84825d8d52e63e2",
+      "bytes": 76381
+    },
+    {
+      "path": "results/n31_prerequisite_stop.json",
+      "sha256": "c9cc0023e534eb567a9c46801219800cd3f59db1212b31d006cded441f6e2b41",
+      "bytes": 506
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "7fb9a2233724c006624caee45fe363ffd3c9d19bb3847845f5852d1c047de9be",
+      "sha256": "b521a4d429787237285864b44520461ba4ee148fc952e57d33a7a4d991a4ba9d",
       "bytes": 601
     },
     {
@@ -1401,8 +1451,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "40e3dad4bb951ebcf94c651bf73f6c9c02ffede9a2b45dd10b1a2c18c89499e0",
-      "bytes": 20964
+      "sha256": "c036cba986fa90d87fcbb6a077999f2d26e26efe13cab903ec9714eb9e4155c6",
+      "bytes": 21818
     },
     {
       "path": "scripts/plot_n04_summary.py",
@@ -1478,6 +1528,11 @@
       "path": "scripts/plot_n28_summary.py",
       "sha256": "a47f43c7bc28099018f713e2aa2c60a434ff3c69979fcc8dd4cb0dd1d4de34fa",
       "bytes": 7261
+    },
+    {
+      "path": "scripts/plot_n30_summary.py",
+      "sha256": "37177d142985b359f5514749b9af8dc19c6f6b08b9c9b954c933f60850c55503",
+      "bytes": 6350
     },
     {
       "path": "tests/__init__.py",

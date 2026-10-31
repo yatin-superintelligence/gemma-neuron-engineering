@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-31T06:08:45.977446+00:00",
+  "status": "prospective_host_data_contract_before_task_builder_or_oracle_implementation",
+  "intent_sha256": "04a47f49829328dc93a5490d7e3125dc69523420a1157e3c4f3d52eac84c34e1",
+  "seed": 4531,
+  "families": [
+    "stable_distance_filter",
+    "adjacent_delta_count",
+    "extreme_tie_index",
+    "signed_quotient_round",
+    "interval_components",
+    "interior_extrema",
+    "insertion_index",
+    "threshold_runs"
+  ],
+  "scope": "Prepare declarative task metadata,two fixed wordings/modes/nuisance variants and independent hidden oracles without any model call. No fresh data validity or result claim yet.",
+  "oracles": "Use explicit mathematical references and a second independently coded implementation per family. Test equality/adjacency,negative divisor sign,empty/singleton lists,ties,duplicates,interval transitive components and before-serialization object identity. Stress adversarial wrong implementations on these properties.",
+  "baseline_model_gate": "No baseline execution until a separate complete GPU protocol and data/source/auditor hashes are frozen and the N30 gate passes. No subsequent baseline-informed task rewrite.",
+  "primary_and_caps_pending_separate_GPU_protocol": true,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

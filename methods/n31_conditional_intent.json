@@ -1,0 +1,106 @@
+{
+  "utc": "2026-10-31T06:08:45.977446+00:00",
+  "experiment": "N31",
+  "question_id": "Q45",
+  "status": "conditional_intent_only_before_N30_output_access",
+  "question": "If the fixed unit passes its finite-bias criterion,do prescribed permanent column edits help fresh complete coding under strict matched controls?",
+  "parent_protocol_sha256": "61ed21b9ea5601220384835ccf52a41fe260612b7b2dcf9047cd6c9167dce01d",
+  "parent_source_freeze_sha256": "76de7815f6acedea9e555ae4964edeeb8faf720852b846fdcd5d759b4ff69770",
+  "gate": "No N31 model job before N30 is terminal and all mandatory guards pass. Launch utility only if the frozen N30 finite-bias primary passes;otherwise leave this intent unexecuted. No next-ranked coordinate or dose selection.",
+  "fixed_coordinates": {
+    "target": {
+      "flat": 328903,
+      "layer": 34,
+      "channel": 3271,
+      "ratios": {
+        "RMS": 1.0,
+        "delta_RMS": 1.0,
+        "down_norm": 1.0
+      }
+    },
+    "random_A": {
+      "flat": 334802,
+      "layer": 34,
+      "channel": 9170,
+      "ratios": {
+        "RMS": 0.9799904968023915,
+        "delta_RMS": 0.9130538225937549,
+        "down_norm": 1.0640086347836695
+      }
+    },
+    "random_B": {
+      "flat": 329691,
+      "layer": 34,
+      "channel": 4059,
+      "ratios": {
+        "RMS": 1.0649540261397248,
+        "delta_RMS": 0.9371640192273533,
+        "down_norm": 0.9207892244888639
+      }
+    }
+  },
+  "strengths_frozen_before_parent_outputs": [
+    0,
+    2
+  ],
+  "planned_conditions": [
+    "original",
+    "same_scope_identity",
+    "target0",
+    "target2",
+    "random_A0",
+    "random_A2",
+    "random_B0",
+    "random_B2"
+  ],
+  "edit": "Prescribed direct assignments to one original BF16 down_proj column at native L34,throughout prefill/decoding. No optimizer,trained addition,fitted gain/vector or answer-derived trigger. Save exact small source columns,hashes and all recipes after validation;never duplicate bases.",
+  "data": "Planned64new complete Python function inputs in8dependent families plus16retention inputs. Eight variants per family cross modes,wordings and nuisance identifiers under a separately frozen dataset protocol. No dataset or new model response exists yet. These are new prospective inputs on familiar coding concepts,not64independent unseen algorithms.",
+  "families": [
+    {
+      "id": "stable_distance_filter",
+      "contract": "Return a fresh list retaining values at strictly smaller/larger absolute distance from an integer center than a nonnegative radius;exclude equality,preserve order/duplicates."
+    },
+    {
+      "id": "adjacent_delta_count",
+      "contract": "Count adjacent signed differences strictly above/below an integer gap;empty and singleton inputs return zero."
+    },
+    {
+      "id": "extreme_tie_index",
+      "contract": "Return maximum/minimum index under fixed earliest/latest tie preference;input nonempty."
+    },
+    {
+      "id": "signed_quotient_round",
+      "contract": "Return exact floor/ceiling of a/b for integers and nonzero signed divisor;no float conversion."
+    },
+    {
+      "id": "interval_components",
+      "contract": "Merge positive-length intervals using strict-overlap versus overlap-or-touching;return sorted tuple pairs in a fresh outer list without input mutation."
+    },
+    {
+      "id": "interior_extrema",
+      "contract": "Return fresh indices of strict interior peaks/valleys;neighbors/equality/endpoints handled exactly."
+    },
+    {
+      "id": "insertion_index",
+      "contract": "Return first sorted-list index whose value is>=or>threshold,or len when absent. No complexity claim."
+    },
+    {
+      "id": "threshold_runs",
+      "contract": "Run-length encode the Boolean >=or<=threshold classification as immutable(label,count) pairs in a fresh outer list."
+    }
+  ],
+  "dataset_seed": 4531,
+  "hidden_oracles": "Independent host oracles with equality/adjacency,negative values,empty inputs,duplicates,order,exact types,input preservation and fresh returned-list identity before serialization. No oracle,expected program or hidden test in model inputs. Old C01 and synthetic finals stay sealed.",
+  "baseline_plan": "Freeze exact tasks,oracles,greedy128token/EOS decoding and adequacy gates before baseline outcomes. An unusable or all-correct baseline causes a planned stop before edits,without wording/cap/grade changes or a repaired confirmation rerun. Keep every original case in gains/losses.",
+  "planned_record_count": 640,
+  "planned_baseline_generations": 80,
+  "planned_new_intervention_generations": 560,
+  "primary_plan": "Both0and2are fixed planned comparisons,with separate target-minus-original and target-minus-both-same-strength-control contrasts. Freeze minimum effect/family/retention requirements and any multiplicity handling prospectively. Report every strength/control and all regressions,no best-dose headline.",
+  "architecture_gates": "Before benefit inference,validate actual stored-column versus activation-equivalent fixed0/2 paths,exact identity/restoration,all allowed target version increments,all other parameters/flags unchanged,p.gradNone and predicted first-prefill cache equality. Edited emitted tokens may change later caches. No numerical tolerance amendment.",
+  "precision": "Initial plan is original pinned text-only BF16. No FP32 equivalence,BF16 accelerator efficiency,NF4-generalization or clean-package replay claim. Any additional representation requires its own protocol.",
+  "publication": "Only reviewed aggregate results,generic utilities and validated compact no-training tensors/recipes may be public. Raw tasks,answers,oracles,predictions,notebooks and paper stay private.",
+  "GPU_protocol_frozen": false,
+  "GPU_launched": false,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

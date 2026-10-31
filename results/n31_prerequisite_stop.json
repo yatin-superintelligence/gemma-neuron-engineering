@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-31T06:13:58.573172+00:00",
+  "status": "conditional_intent_unexecuted_prerequisite_failed",
+  "intent_sha256": "04a47f49829328dc93a5490d7e3125dc69523420a1157e3c4f3d52eac84c34e1",
+  "parent_receipt_sha256": "b9a5c4c38bb15cb3feeb083d497fe90c5003f24f6b8eaa96e5e96f0712c7c4d6",
+  "reason": "N30 predefined finite-bias conjunction fails. Original pre-output intent remains unchanged. No dataset, baseline, edit or model run is executed.",
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

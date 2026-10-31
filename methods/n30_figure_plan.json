@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-31T06:02:49.607347+00:00",
+  "status": "figure_plan_before_any_N30_output_access",
+  "protocol_sha256": "61ed21b9ea5601220384835ccf52a41fe260612b7b2dcf9047cd6c9167dce01d",
+  "panels": [
+    "All three fixed units and all four finite-score operations,with all13/discovery8/other5 summaries and the same-rule specificity boundary. No winning group or cohort.",
+    "All27primary conjunction components,including every failed/tied component.",
+    "All19conditions: original/opposite program correctness,gains/losses,caps and explicit new/reference/N/A retention classification.",
+    "All399record kinds,390trajectory guards,actual counters/zero updates and time. No inferred charged quota."
+  ],
+  "public_privacy": "Only reviewed aggregate values and generic cohort labels. No task text,raw model replies,token IDs,per-prompt activations or full logits.",
+  "nulls": "Render the full display even if every program is unchanged or the primary fails.",
+  "new_model_outputs_accessed": false,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

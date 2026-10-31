@@ -384,6 +384,12 @@
       "recorded_script_seconds": 323.698999016,
       "outcome": "All120records/guards pass;primary0/8pairs. Both foreign arms change numerical witnesses but every emitted sequence stays original. No gain.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "n30_v1",
+      "recorded_script_seconds": 533.9625684169999,
+      "outcome": "All 399 records and mandatory guards pass. The predefined finite-bias primary fails one of 27 components: the conditional-cut effect in discovery mapping 0, label 0 ties control B at 0.015625. The other 26 components pass, without replacing the conjunction. Target mean effects across all 13 cases are 0.0558894231 for opposite donors, 0.0348557692 for zeroing and 0.0291466346 for conditional cuts; both controls are smaller in these aggregates. All three units show 0/13 opposite-program transfers, zero clean ablation losses and zero conditional-transfer losses. All three new zero-arm retention sets pass 8/8, with no caps or coding gains. N31 remains unexecuted because its prospectively fixed prerequisite fails.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": []

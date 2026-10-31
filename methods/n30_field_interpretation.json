@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-31T06:08:45.977446+00:00",
+  "status": "source_to_claim_clarification_before_any_model_output_access",
+  "auditor_sha256": "537cc4a6795d232dbff4ff623047b0a2c4d6433408b8e3a5ba91f46d6fdce172",
+  "saved_field": "clean_role_losses",
+  "definition": "The frozen auditor computes the number of programs wrong for the original request in each condition. Only the native *_zero arms are clean ablation losses. Opposite/cut losses must not be called native necessity.",
+  "conditional_functional_loss": "Report13minus opposite_correct for each conditional-cut arm,against the exact full-opposite parent. This is engineered-background transfer loss,not original-model improvement.",
+  "all_other_metrics": "Keep the complete finite conjunction and all program/cap/reference/N/A outcomes. No field label changes the frozen primary or graders.",
+  "source_or_protocol_changed": false,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-31T06:13:58.573172+00:00",
+  "status": "complete_private_host_audited_closed",
+  "summary": "All 399 records and mandatory guards pass. The predefined finite-bias primary fails one of 27 components: the conditional-cut effect in discovery mapping 0, label 0 ties control B at 0.015625. The other 26 components pass, without replacing the conjunction. Target mean effects across all 13 cases are 0.0558894231 for opposite donors, 0.0348557692 for zeroing and 0.0291466346 for conditional cuts; both controls are smaller in these aggregates. All three units show 0/13 opposite-program transfers, zero clean ablation losses and zero conditional-transfer losses. All three new zero-arm retention sets pass 8/8, with no caps or coding gains. N31 remains unexecuted because its prospectively fixed prerequisite fails.",
+  "primary_components": 27,
+  "passed_components": 26,
+  "failed_components": [
+    {
+      "operation": "conditional_cut",
+      "cohort": "discovery_mapping0_label0",
+      "target_mean": 0.015625,
+      "control_means": {
+        "random_A": 0.0,
+        "random_B": 0.015625
+      },
+      "passed": false
+    }
+  ],
+  "primary_unchanged": true,
+  "scope": "A small measured native-unit score contribution on reused development. The complete specificity criterion fails. No individual semantic role, native program necessity, coding gain or novelty is established.",
+  "field_interpretation": "The frozen clean_role_losses field counts original-request errors in every arm. Only zero arms are native ablation losses. Conditional transfer loss is13 minus opposite_correct, not original-request loss.",
+  "reference_scope": "399 records are not 399 new generations. Retention for donor arms is non-applicable. Exact carries and guarded rescues are references; only three zero arms have new retention generations.",
+  "next_decision": "Do not advance down the unit rank, lower the criterion, rerun this panel or launch conditional N31. Review a separate mechanistic question before any new GPU protocol.",
+  "host_limit": "Host audits saved witnesses, raw tokens, executable grades and provenance. It does not independently recompute the full checkpoint, logits or vector statistics.",
+  "optimizer_steps": 0
+}
