@@ -2780,6 +2780,69 @@
       "event": "public_export_missing_launch_timestamp_repaired_before_public_push",
       "experiment": "N28 documentation",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 374,
+      "utc": "2026-10-31T03:55:44.879038+00:00",
+      "event": "source_to_claim_review_of_cross_order_invalid_source_and_operator_copy_limits",
+      "experiment": "N28 methods review",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 375,
+      "utc": "2026-10-31T03:55:44.879038+00:00",
+      "event": "bounded_primary_code_neuron_and_syntax_prior_review_before_B_outputs",
+      "experiment": "N28 methods review",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 376,
+      "utc": "2026-10-31T04:06:09.035416+00:00",
+      "event": "conditional_pre_code_site_review_recorded_before_B_outputs",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 377,
+      "utc": "2026-10-31T04:06:09.035416+00:00",
+      "event": "stage_B_all168_records_and_guards_pass_primary0of8_closed",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 378,
+      "utc": "2026-10-31T04:06:09.035416+00:00",
+      "event": "raw_suffix_equality_all64_foreign_role_texts_posthoc_no_regrading",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 379,
+      "utc": "2026-10-31T04:06:09.035416+00:00",
+      "event": "all7_actual_checkpoint_inference_recipes_saved_without_new_weights",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 380,
+      "utc": "2026-10-31T04:12:04.974626+00:00",
+      "event": "complete_all7condition_figure_visually_reviewed_and_numeric_grid_checked",
+      "experiment": "N28",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 381,
+      "utc": "2026-10-31T04:12:04.974626+00:00",
+      "event": "before_code_instruction_site_intent_after_N28_closed",
+      "experiment": "N29",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 382,
+      "utc": "2026-10-31T04:12:04.974626+00:00",
+      "event": "protocol_frozen_before_host_runner_auditor_implementation",
+      "experiment": "N29",
+      "optimizer_steps": 0
     }
   ]
 }

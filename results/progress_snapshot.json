@@ -1,18 +1,12 @@
 {
-  "generated_utc": "2026-10-31T03:52:05.594672+00:00",
-  "question_records": 42,
-  "recorded_terminal_runs": 60,
-  "active_runs": [
-    {
-      "run": "n28_phase_B_v1",
-      "launched_utc": "2026-10-31T03:50:07.296881+00:00",
-      "status": "One private Stage B job running. A is complete:16/16 role,8/8 retention. All seven conditions fixed;144new responses plus24exact carries."
-    }
-  ],
-  "ledger_events": 373,
-  "question_register_source_sha256": "6a0bc47b5dc7fd978303e159af93ddaed1ec29249c975ff031397d8fa499f4ea",
-  "event_ledger_source_sha256": "69fa080627b5ac65f1f40b49308504acb61cd112166c9e22a9f0cb572a469f67",
-  "compute_ledger_source_sha256": "e8e5786cd8933d73031a43ef871a081fd3ccad784c6567f8bdf8929dc50d4a97",
+  "generated_utc": "2026-10-31T04:15:45.416801+00:00",
+  "question_records": 43,
+  "recorded_terminal_runs": 61,
+  "active_runs": [],
+  "ledger_events": 382,
+  "question_register_source_sha256": "a779031e3823b686b7e5e7c28cdc6500f942e1bb548809aa4817dbc780c6d38a",
+  "event_ledger_source_sha256": "8dff3d822b16826d4584cf41431f4af7d8190fe9a08a87372a6ddc054f139d2c",
+  "compute_ledger_source_sha256": "1374aa67a10ae278e154ccab11c1ccc98a528015081342ba57bbece63757cc18",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0

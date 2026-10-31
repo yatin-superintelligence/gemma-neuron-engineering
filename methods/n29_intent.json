@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-31T04:10:24.613835+00:00",
+  "experiment": "N29",
+  "question_id": "Q43",
+  "status": "intent_before_implementation",
+  "question": "Can a native instruction state before the code prefix transfer the requested relation across later written operand order?",
+  "parents_sha256": {
+    "research/experiments/n28/next_site_review.json": "36221f64bd62fe28f12a9f14a119cf1d7bfe49d6ce77ed455d9594b93d5af4fb",
+    "research/experiments/n28/protocol.json": "814d5be599db1cba654cf30bb5287210d034f286ce114b733a9b5651346f1a3b",
+    "research/experiments/n28/tasks.py": "ad9f928f044c84e775fc3ad7550d76c827ce2d741ec3091f3de497307d4c3801",
+    "runs/n28/phase_A/version1/result_receipt.json": "bf5d30858c408ec62789c20163f6a06992ce618be228862c4086a6439411cac7",
+    "runs/n28/phase_A/version1/baseline_gate.json": "37d9df2165b96cf45e951090d103f9da669e69b2c9a6e1e9adeb58c34f509ae8",
+    "runs/n28/phase_B/version1/result_receipt.json": "acad12b1fac0e65989c7e0bd650d5c079ac0b2b0e5c3468adc4cf512e7ab6735",
+    "runs/n28/phase_B/version1/interpretation.json": "6cc3c46ceced09c047b90922663d4a05ada6d8ec0b3c5dedcd3cf1d1f2549bf2",
+    "runs/n28/phase_B/version1/raw_suffix_posthoc.json": "d7fd0681453226da00807ec75b7f521ffc8934337246e62952426073a7a907ec",
+    "research/experiments/n26/literature_next_question.json": "2a63a67533c2accd940eb5af0ed9e1067a744c267924d1c18cd7850a2efb3be3"
+  },
+  "motivation": "N28 passes every original case and mandatory guard but fails its cross-order semantic criterion. All64foreign role suffixes are exact donor continuations, including32invalid cross-order programs. The pre-output next-site review proposed testing a source before any assistant code operand is available.",
+  "scope": "Reuse the exact24N28 inputs, prefixes, original completions and graders. This is a new site intervention, not a task repair, fresh confirmation or original-model coding gain.",
+  "candidate": "Actual native MLP0..13 post-gating inputs at the final user-content token, before chat/model markers and the assistant code prefix. Both later recipient orders share this causal prefix. Donor-order variants are duplicate source states and are not independent arms.",
+  "method": "Full-site actual opposite/same-relation paraphrase donors, exact identity, ordered rescue, actual paired retention donors, native lineage replay and prospective past-cache/scope guards. No new sparse ranking, fitted vector, strength, weights, gradients or construction.",
+  "limits": "Conditional donor sufficiency only. No individual meaning, native necessity, complete circuit, formal abstraction, useful coding benefit or novel general method.",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "new_model_forwards": 0,
+  "GPU_launched": false
+}

@@ -1,0 +1,188 @@
+{
+  "utc": "2026-10-31T04:06:09.035416+00:00",
+  "status": "closed_primary_failed",
+  "question_id": "Q42",
+  "conclusion": "The all-layer last-input donor site does not pass relation transfer across written operand order. No complete pair qualifies.",
+  "all_conditions": [
+    {
+      "condition": "base",
+      "coding_correct": 16,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 0,
+      "at_cap": 0
+    },
+    {
+      "condition": "identity",
+      "coding_correct": 16,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 0,
+      "at_cap": 0
+    },
+    {
+      "condition": "opposite_same_order",
+      "coding_correct": 0,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 16,
+      "at_cap": 0
+    },
+    {
+      "condition": "same_same_order",
+      "coding_correct": 16,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 0,
+      "at_cap": 0
+    },
+    {
+      "condition": "opposite_reversed_order",
+      "coding_correct": 0,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 16,
+      "at_cap": 0
+    },
+    {
+      "condition": "same_reversed_order",
+      "coding_correct": 0,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 16,
+      "at_cap": 0
+    },
+    {
+      "condition": "rescue",
+      "coding_correct": 16,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 0,
+      "at_cap": 0
+    }
+  ],
+  "primary": {
+    "all8joint_cells": [
+      {
+        "family": "filter",
+        "style": 0,
+        "direction": 1,
+        "both_orders_both_donor_orders_transfer": false
+      },
+      {
+        "family": "filter",
+        "style": 0,
+        "direction": -1,
+        "both_orders_both_donor_orders_transfer": false
+      },
+      {
+        "family": "filter",
+        "style": 1,
+        "direction": 1,
+        "both_orders_both_donor_orders_transfer": false
+      },
+      {
+        "family": "filter",
+        "style": 1,
+        "direction": -1,
+        "both_orders_both_donor_orders_transfer": false
+      },
+      {
+        "family": "predicate",
+        "style": 0,
+        "direction": 1,
+        "both_orders_both_donor_orders_transfer": false
+      },
+      {
+        "family": "predicate",
+        "style": 0,
+        "direction": -1,
+        "both_orders_both_donor_orders_transfer": false
+      },
+      {
+        "family": "predicate",
+        "style": 1,
+        "direction": 1,
+        "both_orders_both_donor_orders_transfer": false
+      },
+      {
+        "family": "predicate",
+        "style": 1,
+        "direction": -1,
+        "both_orders_both_donor_orders_transfer": false
+      }
+    ],
+    "successful_complete_pairs": 0,
+    "coverage": {
+      "family": [],
+      "style": [],
+      "direction": []
+    },
+    "same_relation_correct": {
+      "same_same_order": 16,
+      "same_reversed_order": 0
+    },
+    "retention_correct": {
+      "base": 8,
+      "identity": 8,
+      "opposite_same_order": 8,
+      "same_same_order": 8,
+      "opposite_reversed_order": 8,
+      "same_reversed_order": 8,
+      "rescue": 8
+    },
+    "primary_passed": false
+  },
+  "operator_diagnostic": {
+    "opposite_same_order": {
+      "role_cases": 16,
+      "valid_single_comparison": 16,
+      "copies_actual_donor_operator": 16
+    },
+    "same_same_order": {
+      "role_cases": 16,
+      "valid_single_comparison": 16,
+      "copies_actual_donor_operator": 16
+    },
+    "opposite_reversed_order": {
+      "role_cases": 16,
+      "valid_single_comparison": 0,
+      "copies_actual_donor_operator": 0
+    },
+    "same_reversed_order": {
+      "role_cases": 16,
+      "valid_single_comparison": 0,
+      "copies_actual_donor_operator": 0
+    }
+  },
+  "raw_suffix_posthoc_summary": {
+    "opposite_same_order": {
+      "role_cases": 16,
+      "raw_text_equal_to_actual_donor": 16,
+      "raw_token_array_equal_to_actual_donor": 16
+    },
+    "same_same_order": {
+      "role_cases": 16,
+      "raw_text_equal_to_actual_donor": 16,
+      "raw_token_array_equal_to_actual_donor": 16
+    },
+    "opposite_reversed_order": {
+      "role_cases": 16,
+      "raw_text_equal_to_actual_donor": 16,
+      "raw_token_array_equal_to_actual_donor": 16
+    },
+    "same_reversed_order": {
+      "role_cases": 16,
+      "raw_text_equal_to_actual_donor": 16,
+      "raw_token_array_equal_to_actual_donor": 16
+    }
+  },
+  "limits": [
+    "Same-order opposite donors transfer all16programs,and same-rule donors preserve all16. Reversed-order donor programs all fail the source/operand contract,so both cross-order arms have zero valid operator-copy examples.",
+    "Every foreign role suffix is text-exact to its actual unmodified donor suffix. This includes invalid cross-order completions;it does not repair their grades or establish a valid abstract semantic mapping.",
+    "All8retention cases pass in every condition. Identical paired donors are dependent repeated checks. Identity,rescue,source,cache,scope,counter and restoration guards pass.",
+    "The test is conditional completion on two families with dependent wordings and directions. It establishes no individual neuron meaning,native necessity,formal abstraction,new capability,original-model coding gain or general-method novelty."
+  ],
+  "next": "Do not perform sparse semantic ranking from this failed full-site primary. The pre-output next-site review proposes a separate whole-site control before the assistant code prefix on the same adequate inputs. Any follow-up needs its own prospective freeze and unchanged exact original carries.",
+  "optimizer_steps": 0
+}

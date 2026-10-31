@@ -1,0 +1,132 @@
+{
+  "utc": "2026-10-31T04:10:24.613835+00:00",
+  "experiment": "N29",
+  "question_id": "Q43",
+  "version": 1,
+  "status": "prospective_protocol_before_runner_auditor_or_host_implementation",
+  "question": "Can a native instruction state before the code prefix transfer the requested relation across later written operand order?",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "original_text_only_unquantized_BF16",
+  "unique_parameters": 4628569344,
+  "native_cache_entries": 15,
+  "parents_sha256": {
+    "research/experiments/n28/next_site_review.json": "36221f64bd62fe28f12a9f14a119cf1d7bfe49d6ce77ed455d9594b93d5af4fb",
+    "research/experiments/n28/protocol.json": "814d5be599db1cba654cf30bb5287210d034f286ce114b733a9b5651346f1a3b",
+    "research/experiments/n28/tasks.py": "ad9f928f044c84e775fc3ad7550d76c827ce2d741ec3091f3de497307d4c3801",
+    "runs/n28/phase_A/version1/result_receipt.json": "bf5d30858c408ec62789c20163f6a06992ce618be228862c4086a6439411cac7",
+    "runs/n28/phase_A/version1/baseline_gate.json": "37d9df2165b96cf45e951090d103f9da669e69b2c9a6e1e9adeb58c34f509ae8",
+    "runs/n28/phase_B/version1/result_receipt.json": "acad12b1fac0e65989c7e0bd650d5c079ac0b2b0e5c3468adc4cf512e7ab6735",
+    "runs/n28/phase_B/version1/interpretation.json": "6cc3c46ceced09c047b90922663d4a05ada6d8ec0b3c5dedcd3cf1d1f2549bf2",
+    "runs/n28/phase_B/version1/raw_suffix_posthoc.json": "d7fd0681453226da00807ec75b7f521ffc8934337246e62952426073a7a907ec",
+    "research/experiments/n26/literature_next_question.json": "2a63a67533c2accd940eb5af0ed9e1067a744c267924d1c18cd7850a2efb3be3",
+    "research/experiments/n29/intent.json": "948266e9053aa5f410e5e59e23fd7cf6c0e955748711e75bc9f73d8931acbef5"
+  },
+  "data": {
+    "rows": "Exact24N28 rows:16role cases crossing2families,2wordings,2directions,2later recipient operand orders;8retention cases in4paired tasks.",
+    "originals": "Carry exactly24N28A raw originals and frozen original/opposite grades. Never regenerate original completions or rerun the closed A scorer. All24baseline outputs are correct.",
+    "unchanged": "Every user prompt,assistant prefix,grader,oracle,model seed2841,greedy32token cap,EOS/newline stopping rule and source/order/type/value/input-preservation requirement stays byte-exact.",
+    "not_confirmation": "Reused development and a new site intervention. It does not isolate one factor against every earlier study or show useful coding improvement.",
+    "hidden_answers": "No oracle,stress input,host grader or expected answer in the GPU payload. Raw original tokens are lineage/reference data only and never seed a new free generation."
+  },
+  "site": {
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "native_width": 6144,
+    "signal": "Actual unmodified post-gating down_proj inputs,86016native scalars across14layers.",
+    "position": "The last tokenizer token ending within the user payload, before all model-generation chat markers and the mechanical assistant code prefix.",
+    "position_algorithm": "Apply the unchanged N28 chat template and assistant prefix. Require exactly one exact user-payload substring. Use the fast tokenizer offset mapping to identify the final nonempty token wholly inside that payload and ending at its last character. Its token index is the edit/capture position. Require0<p<last input position and no following assistant code character within that token.",
+    "common_prefix": "For each of8role family/wording/direction pairs,require exact input-token prefix through p,identical p,and equal full token count across later operand orders. On the actual checkpoint all14source h hashes must be byte-exact across the pair. Stop before edits if any source/prefix guard fails;no tolerance amendment.",
+    "scope": "One full-prefill assignment at p per target layer. Other positions at each hook stay byte-exact to that hook input. Cached one-token calls skip the patch. No attention/KV hook,weight,learned vector,branch or gradient.",
+    "why_early_layers": "MLP0..13 precede the final producer14. Later past-position MLP14+ cannot internally influence later fixed-input logits in this pinned shared-KV architecture. No redundant late-past or layer-grid sweep."
+  },
+  "conditions": [
+    "base",
+    "identity",
+    "opposite",
+    "same",
+    "rescue"
+  ],
+  "donors": {
+    "role": "Actual other-wording same-family donor with opposite or same requested relation. Use donor order0 canonically. Its earlier state must equal its order1 counterpart under the common-prefix guard,so no duplicate donor-order arms are generated.",
+    "retention": "Actual other-wording donor for the same retention task in BOTH opposite/same arms. These are identical repeated donors,not independent directional tests. Require the two foreign first witnesses and generated token sequences exact for each retention row.",
+    "identity": "Actual recipient native states at p,all14layers. Exact original first logits,whole cache and complete generated sequence required.",
+    "rescue": "Two ordered full-site contexts:actual opposite donor at p,then actual recipient states at p. Exact original first logits,whole cache and complete generation required.",
+    "source_capture": "Capture all24native sources in one full forward per row before any edit. Replay original full-logit/current-cache/last-past witnesses from N28A and save14h hashes per row,336total. Full h vectors stay ephemeral."
+  },
+  "prospective_path_guards": {
+    "earlier_tokens": "Under every fixed-input edit,all K/V positions strictly before p stay byte-exact in all15populated native cache entries. Save compact prefix witnesses through p-1.",
+    "entry0": "The ENTIRE first native cache entry remains exact because its K/V precedes the first edited MLP.",
+    "suffix": "K/V at p and later positions in other entries may change under foreign states. Never impose whole-cache equality on foreign donors. Self,rescue and restoration require exact whole-cache equality.",
+    "numerics": "No numerical tolerance or cache-layout amendment within this pilot. A mandatory guard failure stops behavioral interpretation and is preserved.",
+    "scope_limit": "These architecture paths do not quantify mediation or establish semantic meaning. Different emitted text can affect later caches."
+  },
+  "counts": {
+    "records": 120,
+    "conditions": 5,
+    "exact_parent_carries": 24,
+    "new_generations": 96,
+    "native_recaptures": 24,
+    "native_h_hashes": 336,
+    "common_prefix_role_pairs": 8,
+    "pair_h_equalities": 112,
+    "self_first_measurements": 24,
+    "rescue_first_measurements": 24,
+    "new_first_measurements": 96,
+    "cached_self_sentinels": 6,
+    "restorations": 10,
+    "generated_identity_rescue_checks": 48
+  },
+  "sentinels": "Same six fixed N28sentinels and same two restoration rows. Cached pairs hold native/self caches live and require exact prefill and first min(2,T_original) teacher-token logits/full caches plus nonaliasing. Reference tokens remain measurements only.",
+  "counter_contract": {
+    "components": "24native+24self+24rescue+12sentinel prefills+2sum(K_sentinel)+10restorations+96new first measurements+sum(T_new). Derive every component independently from manifests.",
+    "calls": "190+2sum(K_sentinel)+sum(T_new)",
+    "input_exposures": "11*S24+2*Ssentinel+2sum(K_sentinel)+5*S2+sum(T_new-1)",
+    "generation": "Each new generation has T forwards and n+T-1input exposures. Its distinct first measurement has one forward and n exposures. Preserve actual root counters;do not infer charged quota."
+  },
+  "primary": {
+    "unit": "Eight complete pairs:family x wording x requested direction,each with both later recipient operand orders. Not8independent algorithms.",
+    "opposite": "At least6of8complete pairs must implement the opposite requested relation under BOTH later recipient orders,spanning both families,wordings and directions.",
+    "same": "At least14of16originally correct role programs remain correct under same-relation paraphrase donors.",
+    "retention": "All8retention correct under both foreign arms. Identity/rescue exact on all24.",
+    "all_outcomes": "Report all5conditions,every16role cell,all8retention,caps and original-request coding gains/losses. No OR,best cell,new strength or partial cohort. Invalid source remains failed.",
+    "limits": "A pass supports conditional instruction-state transfer before code spelling. It is not individual meaning,native necessity,formal abstraction,new capability,original-model improvement or general-method novelty."
+  },
+  "host_gates": [
+    "Validate all24native token positions and exact before-code common prefixes using the pinned tokenizer. All existing independent N28source/oracle checks stay frozen;do not rerun closed model grades.",
+    "Actual random-Gemma35layer/shared-tail20 paths in FP32/BF16. Source/recipient p may differ in absolute index. Test exact common-prefix states,self,foreign,nested rescue,cached skipping,nonaliasing,EOS/cap counters and exception restoration.",
+    "Validate all15native cache entries,prefix-before-p and entire entry0invariants. Refuse malformed,truncated,nonfinite caches and impossible positions.",
+    "Import BOTH runner/auditor in isolation,compile every notebook cell and run RuffF821/F823 before GPU. Independently derive counter terms and complete-pair endpoint fixtures."
+  ],
+  "audit": "Freeze every source,shared task/data,parent grade/hash,runner,auditor,notebook and payload manifest before launch or output access. Verify final server source/private metadata,input manifest and exact original lineage. Retrieve once. Frozen host auditor redecodes/regrades only96new records,carrying all24old grades without rerun;stress correct/changed outputs256probes(seed2943). Check336native h/112pair equalities,all parent/self/rescue/cache/scope/counter/version/restoration guards. Host does not recompute pretrained tensors/logits.",
+  "stopping": "Any mandatory guard failure stops interpretation and preserves partials. If the semantic primary fails,close this before-code site hypothesis without moving the anchor/layers,dose,wording or threshold. Do not continue another anchor search on this panel in this sprint. A different mechanism requires a separate intent. A pass is prerequisite to a separately frozen sparse necessity/rescue/specificity study,not permission to call a unit semantic.",
+  "resources": {
+    "platform_cap_seconds": 1800,
+    "notebook_cap_seconds": 1700,
+    "worker_cap_seconds": 1500,
+    "one_private_free_job": true,
+    "fresh_explicit_quota_and_terminal_jobs": true,
+    "minimum_reserve_hours": 2,
+    "fixed_deadline_utc": "2026-10-31T18:22:58Z"
+  },
+  "storage": "Kaggle caches/tmp. Save compact native/cache/scope hashes,raw predictions,aggregates and recipes only. No activation dumps,new base copies or private raw assets in the public projection.",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "new_model_outputs_accessed": false,
+  "GPU_launch_authorized_by_protocol_alone": false
+}

@@ -664,7 +664,7 @@
     {
       "id": "Q42",
       "experiment": "N28: direct relation versus donor-operator transfer",
-      "status": "stage_A_passed_stage_B_running_private",
+      "status": "complete_private_host_audited_closed_primary_failed",
       "question": "Does full current-site donor transfer follow an explicit comparison relation across operand order, or copy the donor operator?",
       "question_provenance": "N27 fails its complete counterbalance before edits despite every source/order check passing. N22 has current-site donor control on aligned inherited programs; N24 has bounded sparse comparator-score effects. Those effects remain tied to operator spelling. The next question removes arbitrary label binding and explicitly crosses donor order with relation.",
       "parents": [
@@ -673,13 +673,28 @@
         "Q41"
       ],
       "method": "The frozen two-stage protocol uses sixteen direct-relation completions crossing two families, two wordings, two directions and both recipient operand orders, plus eight retention cases. All sixteen role cases and all eight retention cases must pass before edits. At all thirty-five native MLPs on the last input token, four actual donor policies cross relation and written donor order under a paired alternative wording. Identity, ordered rescue and actual same-task retention donors remain fixed. Stage B would carry twenty-four originals and generate 144 new responses, giving 168 records. Six of eight complete recipient-order pairs must transfer under both opposite-donor orders; both same-relation arms must preserve at least 14/16 and all retention must pass. No fitting, ranking, gradients or weight edits.",
-      "result": "Stage A is complete and host-audited: all sixteen role programs and all eight retention cases pass, with no caps. All 840 native channel-state hashes, twenty-four complete cache witnesses and both restorations are saved. Actual 114 forwards, 4302 input-token exposures, 88 new tokens and zero backwards or optimizer updates. Worker duration is 139.40705 seconds; notebook duration is 192.71942 seconds, not charged quota. The frozen gate permits Stage B. A title/ID mismatch created the expected notebook at its title-derived Policy URL; the one existing private job and exact source were verified. A transport-only collector amendment targets that URL, with the original preserved. No model panel was regenerated. Stage B is the one active private job. Fresh official quota reports 29.05 hours before the conservative two-device forty-minute reservation and two-hour reserve. All fifty recent account jobs were terminal. Its payload carries the exact A lineage and unchanged twenty-two inference sources. The declared ID is aligned to the fixed title before this push. Server metadata is private and notebook source JSON is exact. No B outputs have been read.",
-      "interpretation": "The relation and literal-operator hypotheses make different predictions in the cross-order cells. A failure of semantic transfer alone does not prove literal copying. This is conditional completion and a broad full-site test, not original-model improvement, individual meaning, native necessity or a novel general method. Different site/context from N27 does not isolate position.",
-      "next_question": "At terminal status, retrieve once through the preserved transport-only collector edition and run the unchanged frozen auditor. Report every donor-order cell, all seven conditions, complete-pair primary and literal-operator diagnostic before the next scientific decision.",
-      "direction_decision": "Test the remaining semantic-versus-spelling ambiguity before new sparse localization. Do not loosen N27 or choose its strongest block. Fresh useful coding confirmation stays separate."
+      "result": "Stage A passes all sixteen role programs and eight retention cases. Stage B audits all 168 records: 144 new responses and twenty-four exact original carries. Zero complete cross-order pairs qualify, against the frozen six-of-eight requirement. Same-order opposite donors transfer 16/16 programs and same-relation donors preserve 16/16. Both reversed-order arms have zero source-valid role programs; all eight retention cases pass in every condition. All 840 native hashes, twenty-four live parent logits/caches, twenty-four self and twenty-four rescue measures, six live cached-self sentinels, forty-eight exact identity/rescue generations and fourteen restorations pass. Stage B records 794 forwards, 33101 input-token exposures, 528 new tokens and zero backwards or optimizer updates. Worker duration is 465.76865 seconds and notebook duration 519.28416 seconds, not charged quota. All sixty-four foreign role suffixes match their actual donor token sequences in saved-output posthoc comparison. Invalid cross-order programs retain failed grades. The original kernel alias and metadata correction remain preserved.",
+      "interpretation": "The all-layer last-input donor site does not pass relation transfer across written operand order. No complete pair qualifies. Raw suffix equality is a lexical observation,not a repaired semantic score. Same-order donor control does not establish order-invariant relation information. Both retention-donor repeats and family variants are dependent. No individual meaning,native necessity or coding improvement is established.",
+      "next_question": "Do not perform sparse semantic ranking from this failed full-site primary. The pre-output next-site review proposes a separate whole-site control before the assistant code prefix on the same adequate inputs. Any follow-up needs its own prospective freeze and unchanged exact original carries.",
+      "direction_decision": "Close this current-site semantic hypothesis. Do not select a stronger dose,new rank or surviving cell. A pre-code instruction-state control is a distinct question and must be frozen before implementation."
+    },
+    {
+      "id": "Q43",
+      "experiment": "N29: instruction state before code spelling",
+      "status": "protocol_frozen_before_implementation_not_launched",
+      "question": "Can a native instruction state before the code prefix transfer the requested relation across later written operand order?",
+      "question_provenance": "The next-site review was recorded before N28 donor output access. N28 now closes with zero qualifying cross-order pairs and all sixty-four foreign suffixes token-exact to their actual donors. A source before the assistant code prefix cannot already see its first operand. Keep the adequate inputs and distinguish conditional instruction control from literal continuation transfer.",
+      "parents": [
+        "Q42"
+      ],
+      "method": "Reuse all twenty-four N28 inputs, prefixes, original outputs and graders. At the last user-content token before model markers and code, patch actual native MLP layers 0 through 13 from opposite or same-relation other-wording donors. Exact common-prefix source equality across later recipient orders is mandatory. Five conditions give 120 records: twenty-four exact carries and 96 new responses. There are no duplicate donor-order arms, new rankings, strengths, weights, gradients or fitting.",
+      "result": "The prospective protocol is frozen before runner, auditor or host implementation. No new model forward, source capture, output or launch exists. Planned guards include 336 native hashes, 112 across-order equalities, twenty-four self and twenty-four rescue measures, six live cached pairs, forty-eight identity/rescue generations and ten restorations.",
+      "interpretation": "An adequate result would support conditional instruction-state transfer before code spelling. Whole-site sufficiency is not individual neuron meaning, native necessity, formal abstraction, new capability or original-model coding improvement. Reused development and paired retention donors remain dependent.",
+      "next_question": "Implement the fixed token-location, path, runner and prospective-audit helpers. Validate actual random Gemma paths with 35 layers and 15 cache entries, all token positions, isolated imports, lint, independent counters and endpoint guards. Freeze source and exact parent lineage before any free private GPU launch.",
+      "direction_decision": "Test the before-code control proposed before outputs were accessed. If it fails, close this site hypothesis without shifting anchors, layers or criteria on the same panel."
     }
   ],
-  "active_question_id": "Q42",
-  "next_question_id": "Q42",
-  "utc": "2026-10-31T03:36:56.600822+00:00"
+  "active_question_id": "Q43",
+  "next_question_id": "Q43",
+  "utc": "2026-10-31T04:12:04.974626+00:00"
 }

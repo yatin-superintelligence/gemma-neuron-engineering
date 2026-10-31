@@ -270,3 +270,10 @@ All 200 final records and mandatory guards pass. Every condition scores 23/32 co
 [All eight recipes](n26/recipe.json) retain the three fixed groups, factors zero/one/two, exact source and edited projection hashes, and record provenance. They reference the existing [N21 column bundle](n21/native_columns.safetensors); no new tensor or full base copy is needed. The [example runner](../examples/run_n26_policy.py) accepts your own prompt file and verifies the original and edited matrix hashes before generation. Run `python -m examples.run_n26_policy --prompt-file your_prompt.txt` from the repository root.
 
 All 320 study records and mandatory guards pass. Original coding is 23/32. Suppression gives selected 25, random A 25 and random B 24; selected and random A gain the same two cases. Amplification gives selected 22, random A 23 and random B 22. Every condition retains 8/8. Both primary screens fail. This package reproduces the assignments; it does not establish a specific neuron role, confirmed coding gain or independent clean-package pretrained replay. The frozen checker leaves returned-list identity untested, and all original grades remain preserved.
+
+
+N28 saves all seven audited native-state inference policies in `n28/recipe.json`.
+They patch actual caller-supplied native states at the last input position, with
+source, cache, identity, rescue and restoration witnesses. No parameters change
+and no new weight blob is needed. The semantic cross-order primary fails.
+Independent clean-package pretrained replay is not claimed.

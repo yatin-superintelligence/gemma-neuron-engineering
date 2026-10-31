@@ -372,13 +372,13 @@
       "recorded_script_seconds": 139.40704591500003,
       "outcome": "All24 originals and every guard pass:16/16 coding,8/8 retention,no caps. No edits in Stage A. The frozen all-case adequacy gate permits Stage B. Kernel title/ID alias resolved on the one existing private job,without another push or model regeneration.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "n28_phase_B_v1",
-      "launched_utc": "2026-10-31T03:50:07.296881+00:00",
-      "status": "One private Stage B job running. A is complete:16/16 role,8/8 retention. All seven conditions fixed;144new responses plus24exact carries."
+      "recorded_script_seconds": 465.768649394,
+      "outcome": "All168records/guards pass:144new,24exactcarry. Primary0/8completepairs. Same-order opposite16/16transfer,same16/16preservation. Both reversed-order role arms0/16source-valid. All8retention,allidentity/rescue/cache/restorations pass. No semantic role or coding gain.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }
