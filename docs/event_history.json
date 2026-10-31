@@ -3116,6 +3116,62 @@
       "event": "fresh_magnitude_transparency_plan_frozen_without_rematching_or_applied_scaling",
       "experiment": "N32",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 422,
+      "utc": "2026-10-31T08:01:51.678484+00:00",
+      "event": "read_only_magnitude_observer_twelve_random_model_cases_pass",
+      "experiment": "N32",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 423,
+      "utc": "2026-10-31T08:01:51.678484+00:00",
+      "event": "actual_core_reader_fixture_dtype_failure_preserved",
+      "experiment": "N32",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 424,
+      "utc": "2026-10-31T08:01:51.678484+00:00",
+      "event": "sixteen_unfinished_core_cases_pass_without_repeating_four_completed_cases",
+      "experiment": "N32",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 425,
+      "utc": "2026-10-31T08:01:51.678484+00:00",
+      "event": "actual_auditor_receipts_and_complete_primary_endpoints_pass",
+      "experiment": "N32",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 426,
+      "utc": "2026-10-31T08:01:51.678484+00:00",
+      "event": "pre_payload_retention_mapping_failure_preserved_and_defaulted_to_no_donors",
+      "experiment": "N32",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 427,
+      "utc": "2026-10-31T08:01:51.678484+00:00",
+      "event": "all_three_synthetic_transport_lineages_pass_no_parent_answers_shipped",
+      "experiment": "N32",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 428,
+      "utc": "2026-10-31T08:01:51.678484+00:00",
+      "event": "manual_host_protocol_timestamp_error_preserved_with_chronology_witnesses",
+      "experiment": "N32",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 429,
+      "utc": "2026-10-31T08:01:51.678484+00:00",
+      "event": "all_phase_algorithms_data_and_auditor_frozen_before_originals",
+      "experiment": "N32",
+      "optimizer_steps": 0
     }
   ]
 }
