@@ -1,4 +1,6 @@
-# Saved neuron edits
+# Digital Surgery model artifacts
+
+The [model registry](../docs/MODEL_REGISTRY.html) lists every released bundle and exact tensor file, with hashes, representation and reconstruction limits. The [editing toolkit](../docs/SURGERY_TOOLKIT.html) embeds the actual reviewed source. Runtime policies and permanent weight patches are labelled separately.
 
 These bundles preserve the tested neuron modifications as a pinned base, exact small tensors and deterministic recipes. Base checkpoints are downloaded from their original publisher only when an explicit reconstruction command is run. No training is performed.
 

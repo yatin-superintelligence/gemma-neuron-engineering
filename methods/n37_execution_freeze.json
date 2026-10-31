@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-31T13:46:47.180861+00:00",
+  "status": "source_data_auditor_frozen_before_launch_and_new_outputs",
+  "analysis_plan_sha256": "a4c6c21798054cf3e89bb13a18121f4ed10b697c8e8011f2e9bc247340ed92e0",
+  "auditor_sha256": "d50a77d08c22ba20013b5a5e8f091617912ea55adf160b530e266551569a0564",
+  "protocol_sha256": "e73b82d7eab8995c3d5590948683114e80f9c625f7ab5a2ed9c1cb6fd2453fde",
+  "source_data_parent_hashes": 60,
+  "notebook_sha256": "da7252b7bde410d4ab2e2a4dbe42fe899c8f401fddeea5aa4f0e5a0cbc071b5e",
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

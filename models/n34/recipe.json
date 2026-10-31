@@ -1,0 +1,835 @@
+{
+  "schema_version": 1,
+  "title": "Digital Surgery: N34 native block policies",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Unquantized text-only BF16",
+  "kind": "runtime_activation_policy_bundle",
+  "optimizer_steps": 0,
+  "parameter_assignments": 0,
+  "policies": [
+    {
+      "name": "base",
+      "layers": [],
+      "operation": "none",
+      "record_kind": "closed_parent_carry_with_native_teacher_replay"
+    },
+    {
+      "name": "identity",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "operation": "self",
+      "record_kind": "closed_parent_carry_with_live_current_replay"
+    },
+    {
+      "name": "opposite_same_order",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "operation": "opposite_same_order",
+      "record_kind": "closed_parent_carry_with_live_current_replay"
+    },
+    {
+      "name": "same_same_order",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "operation": "same_same_order",
+      "record_kind": "closed_parent_carry_with_live_current_replay"
+    },
+    {
+      "name": "opposite_reversed_order",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "operation": "opposite_reversed_order",
+      "record_kind": "closed_parent_carry_with_live_current_replay"
+    },
+    {
+      "name": "same_reversed_order",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "operation": "same_reversed_order",
+      "record_kind": "closed_parent_carry_with_live_current_replay"
+    },
+    {
+      "name": "rescue",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "operation": "rescue",
+      "record_kind": "closed_parent_carry_with_live_current_replay"
+    },
+    {
+      "name": "block0_opposite_same_order",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "native_channel_count": 30720,
+      "operation": "opposite_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block0_same_same_order",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "native_channel_count": 30720,
+      "operation": "same_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block0_opposite_reversed_order",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "native_channel_count": 30720,
+      "operation": "opposite_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block0_same_reversed_order",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "native_channel_count": 30720,
+      "operation": "same_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block0_zero",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "native_channel_count": 30720,
+      "operation": "zero",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block0_rescue",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "native_channel_count": 30720,
+      "operation": "rescue",
+      "record_kind": "guarded_native_reference"
+    },
+    {
+      "name": "block1_opposite_same_order",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "native_channel_count": 30720,
+      "operation": "opposite_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block1_same_same_order",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "native_channel_count": 30720,
+      "operation": "same_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block1_opposite_reversed_order",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "native_channel_count": 30720,
+      "operation": "opposite_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block1_same_reversed_order",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "native_channel_count": 30720,
+      "operation": "same_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block1_zero",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "native_channel_count": 30720,
+      "operation": "zero",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block1_rescue",
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "native_channel_count": 30720,
+      "operation": "rescue",
+      "record_kind": "guarded_native_reference"
+    },
+    {
+      "name": "block2_opposite_same_order",
+      "layers": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "native_channel_count": 30720,
+      "operation": "opposite_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block2_same_same_order",
+      "layers": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "native_channel_count": 30720,
+      "operation": "same_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block2_opposite_reversed_order",
+      "layers": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "native_channel_count": 30720,
+      "operation": "opposite_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block2_same_reversed_order",
+      "layers": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "native_channel_count": 30720,
+      "operation": "same_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block2_zero",
+      "layers": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "native_channel_count": 30720,
+      "operation": "zero",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block2_rescue",
+      "layers": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "native_channel_count": 30720,
+      "operation": "rescue",
+      "record_kind": "guarded_native_reference"
+    },
+    {
+      "name": "block3_opposite_same_order",
+      "layers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "native_channel_count": 61440,
+      "operation": "opposite_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block3_same_same_order",
+      "layers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "native_channel_count": 61440,
+      "operation": "same_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block3_opposite_reversed_order",
+      "layers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "native_channel_count": 61440,
+      "operation": "opposite_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block3_same_reversed_order",
+      "layers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "native_channel_count": 61440,
+      "operation": "same_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block3_zero",
+      "layers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "native_channel_count": 61440,
+      "operation": "zero",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block3_rescue",
+      "layers": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "native_channel_count": 61440,
+      "operation": "rescue",
+      "record_kind": "guarded_native_reference"
+    },
+    {
+      "name": "block4_opposite_same_order",
+      "layers": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "native_channel_count": 61440,
+      "operation": "opposite_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block4_same_same_order",
+      "layers": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "native_channel_count": 61440,
+      "operation": "same_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block4_opposite_reversed_order",
+      "layers": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "native_channel_count": 61440,
+      "operation": "opposite_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block4_same_reversed_order",
+      "layers": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "native_channel_count": 61440,
+      "operation": "same_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block4_zero",
+      "layers": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "native_channel_count": 61440,
+      "operation": "zero",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block4_rescue",
+      "layers": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "native_channel_count": 61440,
+      "operation": "rescue",
+      "record_kind": "guarded_native_reference"
+    },
+    {
+      "name": "block5_opposite_same_order",
+      "layers": [
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "native_channel_count": 61440,
+      "operation": "opposite_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block5_same_same_order",
+      "layers": [
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "native_channel_count": 61440,
+      "operation": "same_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block5_opposite_reversed_order",
+      "layers": [
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "native_channel_count": 61440,
+      "operation": "opposite_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block5_same_reversed_order",
+      "layers": [
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "native_channel_count": 61440,
+      "operation": "same_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block5_zero",
+      "layers": [
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "native_channel_count": 61440,
+      "operation": "zero",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block5_rescue",
+      "layers": [
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "native_channel_count": 61440,
+      "operation": "rescue",
+      "record_kind": "guarded_native_reference"
+    },
+    {
+      "name": "block6_opposite_same_order",
+      "layers": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "native_channel_count": 61440,
+      "operation": "opposite_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block6_same_same_order",
+      "layers": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "native_channel_count": 61440,
+      "operation": "same_same_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block6_opposite_reversed_order",
+      "layers": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "native_channel_count": 61440,
+      "operation": "opposite_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block6_same_reversed_order",
+      "layers": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "native_channel_count": 61440,
+      "operation": "same_reversed_order",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block6_zero",
+      "layers": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "native_channel_count": 61440,
+      "operation": "zero",
+      "record_kind": "actual_new_tail"
+    },
+    {
+      "name": "block6_rescue",
+      "layers": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "native_channel_count": 61440,
+      "operation": "rescue",
+      "record_kind": "guarded_native_reference"
+    }
+  ],
+  "semantics": "Actual post-gating down_proj inputs at the predefined last input position, one prefill only. Foreign values are unmodified actual donor states. Zero is prescribed zero; rescue is ordered opposite donor then actual recipient in two nested contexts. Remove hooks before cached continuation.",
+  "private_contexts": "Caller supplies recipient and donor contexts. Raw study prompts, values and replies are not distributed.",
+  "code": {
+    "helper": "research/experiments/n34/inference.py",
+    "helper_sha256": "f6ee7d922227d071641b99244febfe643033ff21ddf865464e713ad3d79151e8"
+  },
+  "validation": {
+    "all1176records_and_frozen_guards_pass": true,
+    "new_tails": 840,
+    "carried_records": 168,
+    "guarded_references": 168,
+    "native_h_hashes": 840,
+    "identity_self_measurements": 168,
+    "rescue_measurements": 168,
+    "restorations": 294,
+    "independent_clean_package_pretrained_replay": false,
+    "all_blocks_failed_full_primary": true
+  },
+  "limits": "This package is an inference policy over unchanged pinned weights, not a trained model or successful new coding capability. It does not duplicate a full base model."
+}

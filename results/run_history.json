@@ -423,12 +423,18 @@
       "run": "N35_v3_donor_only_resume_and_combined_assessment",
       "recorded_script_seconds": 426.83894597200003,
       "optimizer_steps": 0
+    },
+    {
+      "run": "N34_v1_native_block_localization",
+      "recorded_script_seconds": 855.723118438,
+      "outcome": "No block passes the full primary; late copying blocks lose retention under zeroing. All1176records and guards pass.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N34_v1_native_block_localization",
-      "launched_utc": "2026-10-31T12:59:23.223014+00:00",
+      "run": "N37_v1_native_continuation",
+      "launched_utc": "2026-10-31T13:51:42.764868+00:00",
       "status": "private_launched_source_verified_outputs_unseen"
     }
   ]

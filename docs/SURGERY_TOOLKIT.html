@@ -1,0 +1,1240 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_capture</h2><p>Capture native gated MLP scalars at one prompt position without attention hooks.</p><p><a href="../interpretability/native_capture.py">Exact source file</a></p><p class="small">APIs: capture_native_mlp</p><p class="hash">SHA-256 71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Capture native gated MLP scalars at one prompt position without attention hooks.&quot;&quot;&quot;
+from contextlib import contextmanager
+
+
+@contextmanager
+def capture_native_mlp(model,position,layers):
+    &quot;&quot;&quot;Keep only selected native positions in transient host memory.
+
+    No weights, gradients, attention states or cached values are changed.
+    Callers choose whether to retain compact hashes rather than the values.
+    &quot;&quot;&quot;
+    native=model.model.language_model.layers;indices=list(layers)
+    if position&lt;0 or not indices or len(set(indices))!=len(indices):raise ValueError(&#x27;Invalid capture scope&#x27;)
+    if any(not isinstance(i,int)or not 0&lt;=i&lt;len(native)for i in indices):raise ValueError(&#x27;Invalid layer&#x27;)
+    handles=[];states={&#x27;MLP&#x27;:{}}
+    try:
+        for index in indices:
+            def hook(module,args,index=index):
+                value=args[0]
+                if value.ndim!=3 or value.shape[1]&lt;=position:raise ValueError(&#x27;Capture requires prompt prefill&#x27;)
+                states[&#x27;MLP&#x27;][index]=value[:,position].detach().cpu().clone()
+            handles.append(native[index].mlp.down_proj.register_forward_pre_hook(hook))
+        yield states
+    finally:
+        for handle in handles:handle.remove()
+</pre></details></article><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>probe</h2><p>PyTorch MLP-channel measurement and reversible interventions.
+
+Use ordinary eager Transformers/PEFT execution. Some optimized kernels bypass
+module hooks; finish() fails if any expected hook was not observed.</p><p><a href="../interpretability/probe.py">Exact source file</a></p><p class="small">APIs: mlp_modules, ActivationRecorder, scale_mlp_channels, select_adapter_modules</p><p class="hash">SHA-256 cc29483c000cdbe0165d8d00a3cc9421c51d17088328d9d0d2996caef5e066f9</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;PyTorch MLP-channel measurement and reversible interventions.
+
+Use ordinary eager Transformers/PEFT execution. Some optimized kernels bypass
+module hooks; finish() fails if any expected hook was not observed.
+&quot;&quot;&quot;
+from contextlib import contextmanager
+import re
+
+import torch
+
+
+def mlp_modules(model):
+    candidates={name:module for name,module in model.named_modules()
+                if name.endswith(&#x27;.mlp.down_proj&#x27;)}
+    # Multimodal Gemma also has vision MLPs with the same projection names.
+    # Prefer the explicitly named text decoder; text-only models need no prefix.
+    text={name:module for name,module in candidates.items()
+          if re.search(r&#x27;(^|\.)language_model\.layers\.\d+\.mlp\.down_proj$&#x27;,name)}
+    return text if text else candidates
+
+
+class ActivationRecorder:
+    def __init__(self,model):
+        self.modules=mlp_modules(model)
+        if not self.modules:raise ValueError(&#x27;No MLP down projections found&#x27;)
+        self.handles=[];self.stats={};self.mask=None
+
+    def set_mask(self,attention_mask):
+        self.mask=attention_mask
+
+    def _hook(self,name):
+        def capture(module,args):
+            values=args[0].detach().float()
+            if values.ndim!=3:raise ValueError(&#x27;Require [batch, tokens, channels] eager activations&#x27;)
+            if self.mask is None or tuple(self.mask.shape)!=tuple(values.shape[:2]):
+                raise ValueError(&#x27;Provide a matching token mask; free-generation traces are not aligned probes&#x27;)
+            selected=values[self.mask.to(device=values.device,dtype=torch.bool)]
+            if not len(selected):raise ValueError(&#x27;Probe contains no unmasked tokens&#x27;)
+            count=selected.shape[0]
+            if name not in self.stats:
+                self.stats[name]={&#x27;count&#x27;:0,&#x27;sum&#x27;:torch.zeros(values.shape[-1],device=values.device),
+                    &#x27;sum_abs&#x27;:torch.zeros(values.shape[-1],device=values.device),
+                    &#x27;sum_sq&#x27;:torch.zeros(values.shape[-1],device=values.device)}
+            item=self.stats[name];item[&#x27;count&#x27;]+=count
+            item[&#x27;sum&#x27;]+=selected.sum(dim=0)
+            item[&#x27;sum_abs&#x27;]+=selected.abs().sum(dim=0)
+            item[&#x27;sum_sq&#x27;]+=(selected*selected).sum(dim=0)
+        return capture
+
+    def __enter__(self):
+        self.handles=[module.register_forward_pre_hook(self._hook(name)) for name,module in self.modules.items()]
+        return self
+
+    def finish(self):
+        missing=set(self.modules)-set(self.stats)
+        if missing:raise RuntimeError(&#x27;Unobserved hooks; optimized execution may bypass instrumentation: &#x27;+str(sorted(missing)))
+        result={}
+        for name,item in self.stats.items():
+            if any(not torch.isfinite(item[key]).all().item() for key in (&#x27;sum&#x27;,&#x27;sum_abs&#x27;,&#x27;sum_sq&#x27;)):
+                raise RuntimeError(&#x27;Nonfinite activation statistics at &#x27;+name)
+            n=item[&#x27;count&#x27;];mean=item[&#x27;sum&#x27;]/n
+            result[name]={&#x27;token_count&#x27;:n,&#x27;mean&#x27;:mean.cpu(),
+                &#x27;mean_abs&#x27;:(item[&#x27;sum_abs&#x27;]/n).cpu(),
+                &#x27;rms&#x27;:(item[&#x27;sum_sq&#x27;]/n).sqrt().cpu(),
+                &#x27;variance&#x27;:(item[&#x27;sum_sq&#x27;]/n-mean*mean).clamp_min(0).cpu()}
+        return result
+
+    def __exit__(self,*args):
+        for handle in self.handles:handle.remove()
+        self.handles=[]
+
+
+@contextmanager
+def scale_mlp_channels(model,layer,channels,scale):
+    &quot;&quot;&quot;Multiply post-gating MLP channels before down_proj, then restore hooks.
+
+    This does not prune dense matrix multiplies and makes no speed guarantee.
+    It affects all token positions during the context&#x27;s lifetime.
+    &quot;&quot;&quot;
+    if not 0&lt;=scale&lt;=2:raise ValueError(&#x27;Initial intervention range is [0,2]&#x27;)
+    targets=[(name,module) for name,module in mlp_modules(model).items()
+             if re.search(rf&#x27;layers\.{int(layer)}\.mlp\.down_proj$&#x27;,name)]
+    if len(targets)!=1:raise ValueError(&#x27;Layer must identify exactly one MLP&#x27;)
+    indices=sorted(set(int(j) for j in channels))
+    if not indices or min(indices)&lt;0:raise ValueError(&#x27;Nonempty nonnegative channel IDs required&#x27;)
+    def alter(module,args):
+        source=args[0]
+        if max(indices)&gt;=source.shape[-1]:raise ValueError(&#x27;Channel ID outside layer width&#x27;)
+        changed=source.clone();changed[...,indices]*=scale
+        return (changed,*args[1:])
+    handle=targets[0][1].register_forward_pre_hook(alter)
+    try:yield
+    finally:handle.remove()
+
+
+@contextmanager
+def select_adapter_modules(model,selected_names,mode=&#x27;keep&#x27;):
+    &quot;&quot;&quot;Keep or drop selected LoRA modules while leaving base weights intact.&quot;&quot;&quot;
+    if mode not in (&#x27;keep&#x27;,&#x27;drop&#x27;):raise ValueError(&#x27;mode must be keep or drop&#x27;)
+    modules={name:module for name,module in model.named_modules()
+             if hasattr(module,&#x27;lora_A&#x27;) and callable(getattr(module,&#x27;enable_adapters&#x27;,None))}
+    chosen=set(selected_names)
+    if not modules or not chosen or chosen-set(modules):
+        raise ValueError(&#x27;Select existing, nonempty LoRA module names&#x27;)
+    previous={name:bool(module.disable_adapters) for name,module in modules.items()}
+    try:
+        for name,module in modules.items():
+            enabled=(name in chosen) if mode==&#x27;keep&#x27; else (name not in chosen)
+            module.enable_adapters(enabled and not previous[name])
+        yield
+    finally:
+        for name,module in modules.items():module.enable_adapters(not previous[name])
+</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>selector_site</h2><p>Actual donor swaps at an MLP position or a shared attention read boundary.</p><p><a href="../interpretability/selector_site.py">Exact source file</a></p><p class="small">APIs: selector_site, capture_selector</p><p class="hash">SHA-256 5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Actual donor swaps at an MLP position or a shared attention read boundary.&quot;&quot;&quot;
+from contextlib import contextmanager
+import torch
+
+
+@contextmanager
+def selector_site(model,position,donor,kind,mlp_layers=range(14),producer=14):
+    &quot;&quot;&quot;Clone shared K/V for later readers, leaving native producer output/cache intact.
+
+    Native MLP swaps apply only during prefill. Shared K/V swaps reapply on each
+    cached step because the native producer rebuilds the shared tuple each time.
+    Donors must come from the same absolute position in an unmodified run.
+    &quot;&quot;&quot;
+    if kind not in [&#x27;K&#x27;,&#x27;V&#x27;,&#x27;KV&#x27;,&#x27;MLP&#x27;,&#x27;both&#x27;]or position&lt;1:raise ValueError(&#x27;Invalid site&#x27;)
+    if any(p.requires_grad or p.grad is not None for p in model.parameters()):raise ValueError(&#x27;Freeze parameters&#x27;)
+    layers=model.model.language_model.layers;handles=[]
+    versions={n:p._version for n,p in model.named_parameters()}
+    receipt={&#x27;kind&#x27;:kind,&#x27;position&#x27;:position,&#x27;MLP_prefill_hits&#x27;:0,&#x27;MLP_decode_skips&#x27;:0,&#x27;KV_calls&#x27;:0,
+        &#x27;native_cache_values_unchanged&#x27;:True,&#x27;optimizer_steps&#x27;:0}
+    try:
+        if kind in [&#x27;MLP&#x27;,&#x27;both&#x27;]:
+            for index in mlp_layers:
+                def hook(module,args,index=index):
+                    x=args[0]
+                    if x.shape[1]&lt;=position:receipt[&#x27;MLP_decode_skips&#x27;]+=1;return None
+                    changed=x.clone();value=donor[&#x27;MLP&#x27;][index].to(device=x.device,dtype=x.dtype)
+                    assert value.shape==x[:,position].shape
+                    changed[:,position]=value;receipt[&#x27;MLP_prefill_hits&#x27;]+=1
+                    return (changed,*args[1:])
+                handles.append(layers[index].mlp.down_proj.register_forward_pre_hook(hook))
+        if kind in [&#x27;K&#x27;,&#x27;V&#x27;,&#x27;KV&#x27;,&#x27;both&#x27;]:
+            attention=layers[producer].self_attn
+            if attention.is_kv_shared_layer or not attention.store_full_length_kv or attention.layer_type!=&#x27;full_attention&#x27;:
+                raise ValueError(&#x27;Expected native full-attention producer&#x27;)
+            def kv_hook(module,args,kwargs,output):
+                states=kwargs[&#x27;shared_kv_states&#x27;];key,value=states[&#x27;full_attention&#x27;]
+                before=(key.clone(),value.clone())
+                assert key.shape[-2]&gt;position and value.shape[-2]&gt;position
+                k=key;v=value
+                if kind in [&#x27;K&#x27;,&#x27;KV&#x27;,&#x27;both&#x27;]:
+                    k=key.clone();d=donor[&#x27;K&#x27;].to(device=k.device,dtype=k.dtype)
+                    assert d.shape==k[:,:,position:position+1].shape;k[:,:,position:position+1]=d
+                if kind in [&#x27;V&#x27;,&#x27;KV&#x27;,&#x27;both&#x27;]:
+                    v=value.clone();d=donor[&#x27;V&#x27;].to(device=v.device,dtype=v.dtype)
+                    assert d.shape==v[:,:,position:position+1].shape;v[:,:,position:position+1]=d
+                states[&#x27;full_attention&#x27;]=(k,v)
+                assert torch.equal(before[0],key)and torch.equal(before[1],value)
+                assert (k is key or k.data_ptr()!=key.data_ptr())and(v is value or v.data_ptr()!=value.data_ptr())
+                receipt[&#x27;KV_calls&#x27;]+=1
+            handles.append(attention.register_forward_hook(kv_hook,with_kwargs=True))
+        yield receipt
+    finally:
+        for handle in handles:handle.remove()
+        assert versions=={n:p._version for n,p in model.named_parameters()}
+        assert all(not p.requires_grad and p.grad is None for p in model.parameters())
+        receipt[&#x27;native_parameter_versions_unchanged&#x27;]=True
+
+
+@contextmanager
+def capture_selector(model,position,mlp_layers=range(14),producer=14):
+    &quot;&quot;&quot;Capture one position in transient CPU memory. Callers save only hashes.&quot;&quot;&quot;
+    layers=model.model.language_model.layers;handles=[];donor={&#x27;MLP&#x27;:{}}
+    try:
+        for index in mlp_layers:
+            def mlp(module,args,index=index):donor[&#x27;MLP&#x27;][index]=args[0][:,position].detach().cpu().clone()
+            handles.append(layers[index].mlp.down_proj.register_forward_pre_hook(mlp))
+        def kv(module,args,kwargs,output):
+            key,value=kwargs[&#x27;shared_kv_states&#x27;][&#x27;full_attention&#x27;]
+            donor[&#x27;K&#x27;]=key[:,:,position:position+1].detach().cpu().clone()
+            donor[&#x27;V&#x27;]=value[:,:,position:position+1].detach().cpu().clone()
+            donor[&#x27;producer_output&#x27;]=output[0].detach().cpu().clone()
+        handles.append(layers[producer].self_attn.register_forward_hook(kv,with_kwargs=True))
+        yield donor
+    finally:
+        for h in handles:h.remove()
+</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>mlp_composition</h2><p>Compose disjoint native MLP donor assignments without changing weights.</p><p><a href="../interpretability/mlp_composition.py">Exact source file</a></p><p class="small">APIs: compose_mlp_donors</p><p class="hash">SHA-256 769e1477149fd11b19950c19d8452fd4b691a6a71908abfb5361bc2f63820ae2</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Compose disjoint native MLP donor assignments without changing weights.&quot;&quot;&quot;
+from contextlib import contextmanager,ExitStack
+from interpretability.selector_site import selector_site
+
+
+@contextmanager
+def compose_mlp_donors(model,position,assignments):
+    &quot;&quot;&quot;Each assignment supplies native layer indices and actual captured states.&quot;&quot;&quot;
+    seen=set()
+    for assignment in assignments:
+        layers=list(assignment[&#x27;layers&#x27;])
+        if not layers or len(layers)!=len(set(layers))or seen.intersection(layers):
+            raise ValueError(&#x27;Nonempty disjoint native layer sets are required&#x27;)
+        if any(not isinstance(i,int)or not 0&lt;=i&lt;len(model.model.language_model.layers)for i in layers):
+            raise ValueError(&#x27;Invalid native layer index&#x27;)
+        seen.update(layers)
+    receipts=[]
+    with ExitStack()as stack:
+        for assignment in assignments:
+            receipt=stack.enter_context(selector_site(model,position,assignment[&#x27;donor&#x27;],&#x27;MLP&#x27;,mlp_layers=assignment[&#x27;layers&#x27;]))
+            receipts.append({&#x27;layers&#x27;:list(assignment[&#x27;layers&#x27;]),&#x27;receipt&#x27;:receipt})
+        yield {&#x27;parts&#x27;:receipts,&#x27;optimizer_steps&#x27;:0}
+</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>inference</h2><p>Native block patches and isolated teacher/free paths for the frozen N34 study.</p><p><a href="../research/experiments/n34/inference.py">Exact source file</a></p><p class="small">APIs: state, assert_state, encode, witness, path_guard, fresh, raw_cache, assignment, check_scope, stopping, stop_reason, current_trace, free_tail, native_source_teacher, resolved_contract</p><p class="hash">SHA-256 f6ee7d922227d071641b99244febfe643033ff21ddf865464e713ad3d79151e8</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Native block patches and isolated teacher/free paths for the frozen N34 study.&quot;&quot;&quot;
+
+from contextlib import ExitStack, contextmanager
+
+import torch
+from transformers import StopStringCriteria
+from transformers.cache_utils import DynamicCache
+
+from interpretability.cache_proofs import check_cache
+from interpretability.mlp_composition import compose_mlp_donors
+from interpretability.native_capture import capture_native_mlp
+from research.experiments.n19.generation_contract import resolve_generation_contract
+from research.experiments.n19.trajectory import cache_witness
+from research.experiments.n28.measure import snapshot as legacy_snapshot
+from research.experiments.n35.core import snapshot, stable, tensor_sha
+
+FOREIGN = [
+    &quot;opposite_same_order&quot;,
+    &quot;same_same_order&quot;,
+    &quot;opposite_reversed_order&quot;,
+    &quot;same_reversed_order&quot;,
+]
+
+
+def state(model):
+    return {
+        **snapshot(model),
+        &quot;device_map_sha256&quot;: stable(getattr(model, &quot;hf_device_map&quot;, None)),
+    }
+
+
+def assert_state(model, before):
+    assert state(model) == before, &quot;Native state changed outside an activation scope&quot;
+
+
+def encode(tokenizer, row, device):
+    text = (
+        tokenizer.apply_chat_template(
+            [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: row[&quot;prompt&quot;]}],
+            tokenize=False,
+            add_generation_prompt=True,
+            enable_thinking=False,
+        )
+        + row[&quot;assistant_prefix&quot;]
+    )
+    value = tokenizer(text, add_special_tokens=False, return_tensors=&quot;pt&quot;)
+    ids = value[&quot;input_ids&quot;][0].tolist()
+    assert 1 &lt; len(ids) &lt; 512
+    return value.to(device), {
+        &quot;position&quot;: len(ids) - 1,
+        &quot;input_tokens&quot;: len(ids),
+        &quot;last_token&quot;: ids[-1],
+        &quot;template_sha256&quot;: stable(text),
+        &quot;input_ids_sha256&quot;: stable(ids),
+    }
+
+
+def witness(output, slots=15):
+    # The legacy path checks every actual cache tensor for shape and finiteness.
+    legacy = legacy_snapshot(output, slots)
+    raw = cache_witness(output.past_key_values)
+    dtype = str(output.past_key_values.layers[0].keys.dtype)
+    check_cache(raw, slots, dtype)
+    past = []
+    for i, layer in enumerate(output.past_key_values.layers):
+        row = {&quot;layer&quot;: i}
+        for name in [&quot;keys&quot;, &quot;values&quot;]:
+            value = getattr(layer, name)[:, :, :-1]
+            assert value.shape[-2] &gt; 0
+            row[name] = {
+                &quot;shape&quot;: list(value.shape),
+                &quot;dtype&quot;: str(value.dtype),
+                &quot;sha256&quot;: tensor_sha(value),
+            }
+        past.append(row)
+    return {
+        &quot;legacy&quot;: legacy,
+        &quot;raw_cache&quot;: raw,
+        &quot;raw_past_cache&quot;: {&quot;layers&quot;: past, &quot;sha256&quot;: stable(past)},
+    }
+
+
+def path_guard(actual, native, layers):
+    assert actual[&quot;raw_past_cache&quot;] == native[&quot;raw_past_cache&quot;]
+    assert actual[&quot;raw_cache&quot;][&quot;layers&quot;][0] == native[&quot;raw_cache&quot;][&quot;layers&quot;][0]
+    if min(layers) &gt;= 15:
+        assert actual[&quot;raw_cache&quot;] == native[&quot;raw_cache&quot;]
+
+
+def fresh(model, encoded):
+    cache = DynamicCache(config=model.config.text_config)
+    with torch.no_grad():
+        return model(**encoded, past_key_values=cache, use_cache=True, logits_to_keep=1)
+
+
+def raw_cache(cache, dtype, slots=15):
+    assert isinstance(cache, DynamicCache) and len(cache.layers) == slots
+    for layer in cache.layers:
+        for name in [&quot;keys&quot;, &quot;values&quot;]:
+            value = getattr(layer, name, None)
+            assert torch.is_tensor(value) and value.ndim == 4 and value.shape[0] == 1
+            assert all(size &gt; 0 for size in value.shape) and str(value.dtype) == dtype
+            assert torch.isfinite(value).all()
+    result = cache_witness(cache)
+    check_cache(result, slots, dtype)
+    return result
+
+
+@contextmanager
+def assignment(model, position, layers, operation, row, sources):
+    if (
+        len(layers) != len(set(layers))
+        or not layers
+        or any(type(i) is not int or not 0 &lt;= i &lt; 35 for i in layers)
+    ):
+        raise ValueError(&quot;Exact nonempty native layer scope required&quot;)
+    if operation == &quot;self&quot;:
+        names = [row[&quot;id&quot;]]
+    elif operation in FOREIGN:
+        names = [row[operation]]
+    elif operation == &quot;rescue&quot;:
+        names = [row[&quot;opposite_same_order&quot;], row[&quot;id&quot;]]
+    elif operation == &quot;zero&quot;:
+        names = [&quot;zero&quot;]
+    else:
+        raise ValueError(&quot;Undeclared activation operation&quot;)
+    proofs = []
+    with ExitStack() as stack:
+        for name in names:
+            donor = (
+                {
+                    &quot;MLP&quot;: {
+                        i: torch.zeros_like(sources[row[&quot;id&quot;]][&quot;MLP&quot;][i])
+                        for i in layers
+                    }
+                }
+                if name == &quot;zero&quot;
+                else sources[name]
+            )
+            if any(i not in donor[&quot;MLP&quot;] for i in layers):
+                raise ValueError(&quot;Incomplete actual donor scope&quot;)
+            # Overlapping ordered assignments use separate nested contexts.
+            proof = stack.enter_context(
+                compose_mlp_donors(
+                    model, position, [{&quot;layers&quot;: layers, &quot;donor&quot;: donor}]
+                )
+            )
+            proofs.append(proof)
+        yield {
+            &quot;operation&quot;: operation,
+            &quot;layers&quot;: list(layers),
+            &quot;sources&quot;: names,
+            &quot;contexts&quot;: proofs,
+            &quot;direct_KV_writes&quot;: False,
+            &quot;optimizer_steps&quot;: 0,
+        }
+
+
+def check_scope(proof):
+    expected_contexts = 2 if proof[&quot;operation&quot;] == &quot;rescue&quot; else 1
+    assert len(proof[&quot;contexts&quot;]) == expected_contexts
+    for context in proof[&quot;contexts&quot;]:
+        assert context[&quot;optimizer_steps&quot;] == 0 and len(context[&quot;parts&quot;]) == 1
+        part = context[&quot;parts&quot;][0]
+        assert part[&quot;layers&quot;] == proof[&quot;layers&quot;]
+        receipt = part[&quot;receipt&quot;]
+        assert receipt[&quot;kind&quot;] == &quot;MLP&quot; and receipt[&quot;MLP_prefill_hits&quot;] == len(
+            proof[&quot;layers&quot;]
+        )
+        assert (
+            receipt[&quot;MLP_decode_skips&quot;]
+            == receipt[&quot;KV_calls&quot;]
+            == receipt[&quot;optimizer_steps&quot;]
+            == 0
+        )
+        assert receipt[&quot;native_parameter_versions_unchanged&quot;]
+    # Legacy KV receipt flags mean no direct KV assignment, not no downstream effect.
+
+
+def stopping(tokenizer, cap=32):
+    assert cap &gt; 0
+    return StopStringCriteria(tokenizer, stop_strings=[&quot;\n&quot;])
+
+
+def stop_reason(history, token, count, criterion, eos, cap):
+    if token in eos:
+        return &quot;eos&quot;
+    if criterion is not None and bool(criterion(history, None)[0]):
+        return &quot;newline&quot;
+    return &quot;cap&quot; if count == cap else None
+
+
+def current_trace(output, step):
+    logits = output.logits[0, -1].detach()
+    assert torch.isfinite(logits).all()
+    return {
+        &quot;step&quot;: step,
+        &quot;argmax&quot;: int(logits.argmax()),
+        &quot;full_logits_sha256&quot;: tensor_sha(logits.float()),
+        &quot;raw_cache_sha256&quot;: raw_cache(output.past_key_values, str(output.logits.dtype))[
+            &quot;sha256&quot;
+        ],
+    }
+
+
+def free_tail(model, tokenizer, encoded, output, criterion, eos, cap=32):
+    &quot;&quot;&quot;Receives only the fresh edited state. No teacher token or teacher cache argument.&quot;&quot;&quot;
+    history = encoded[&quot;input_ids&quot;].clone()
+    ids, trace = [], []
+    reason = None
+    while len(ids) &lt; cap:
+        item = current_trace(output, len(ids))
+        token = item[&quot;argmax&quot;]
+        ids.append(token)
+        trace.append(item)
+        new = torch.tensor([[token]], dtype=torch.long, device=history.device)
+        history = torch.cat([history, new], dim=1)
+        reason = stop_reason(history, token, len(ids), criterion, eos, cap)
+        if reason:
+            break
+        with torch.no_grad():
+            output = model(
+                input_ids=new,
+                past_key_values=output.past_key_values,
+                use_cache=True,
+                logits_to_keep=1,
+            )
+    assert reason and 0 &lt; len(ids) &lt;= cap
+    return {
+        &quot;generated_ids&quot;: ids,
+        &quot;text&quot;: tokenizer.decode(ids, skip_special_tokens=True),
+        &quot;at_cap&quot;: len(ids) == cap,
+        &quot;termination&quot;: reason,
+        &quot;generated_tokens&quot;: len(ids),
+        &quot;trace&quot;: trace,
+    }
+
+
+def native_source_teacher(model, encoded, reference_ids, criterion, eos, cap=32):
+    &quot;&quot;&quot;Teacher tokens are checked and consumed only inside this discarded native cache.&quot;&quot;&quot;
+    assert 0 &lt; len(reference_ids) &lt;= cap
+    position = encoded[&quot;input_ids&quot;].shape[1] - 1
+    with capture_native_mlp(model, position, list(range(35))) as source:
+        output = fresh(model, encoded)
+    first = witness(output)
+    logits = output.logits[0, -1].detach().float().cpu()
+    history = encoded[&quot;input_ids&quot;].clone()
+    steps = []
+    for i, expected in enumerate(reference_ids):
+        item = current_trace(output, i)
+        assert item[&quot;argmax&quot;] == expected, (
+            &quot;Original teacher choice changed before any edit&quot;
+        )
+        steps.append(item)
+        new = torch.tensor([[expected]], dtype=torch.long, device=history.device)
+        history = torch.cat([history, new], dim=1)
+        reason = stop_reason(history, expected, i + 1, criterion, eos, cap)
+        assert bool(reason) == (i == len(reference_ids) - 1), (
+            &quot;Original termination changed&quot;
+        )
+        if reason:
+            break
+        with torch.no_grad():
+            output = model(
+                input_ids=new,
+                past_key_values=output.past_key_values,
+                use_cache=True,
+                logits_to_keep=1,
+            )
+    assert len(source[&quot;MLP&quot;]) == 35
+    assert all(torch.isfinite(value).all() for value in source[&quot;MLP&quot;].values())
+    return (
+        source,
+        first,
+        logits,
+        {&quot;reference_steps&quot;: steps, &quot;termination&quot;: reason, &quot;new_generated_tokens&quot;: 0},
+    )
+
+
+def resolved_contract(model):
+    contract = resolve_generation_contract(model)
+    config, leftover = model._prepare_generation_config(
+        None, do_sample=False, use_cache=True, max_new_tokens=32
+    )
+    actual = config.to_dict()
+    assert not leftover and actual[&quot;max_new_tokens&quot;] == 32
+    assert {k: v for k, v in actual.items() if k != &quot;max_new_tokens&quot;} == {
+        k: v for k, v in contract.items() if k != &quot;max_new_tokens&quot;
+    }
+    return {**actual, &quot;stop_strings&quot;: [&quot;\n&quot;], &quot;manual_full_vocabulary&quot;: True}
+</pre></details></article><article class="card tool" data-category="Edit weights"><span class="tag">Edit weights</span><h2>stored_neuron_gain</h2><p>Prescribed dense native-column assignments, with exact restoration.</p><p><a href="../interpretability/stored_neuron_gain.py">Exact source file</a></p><p class="small">APIs: tensor_sha, stored_neuron_gain</p><p class="hash">SHA-256 6169b400b3f2a2a8d54010413e07324925ebb7ef2c4541f26eda3bbb73aa8f88</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Prescribed dense native-column assignments, with exact restoration.&quot;&quot;&quot;
+from contextlib import contextmanager
+import hashlib
+import torch
+
+
+def tensor_sha(value):
+    return hashlib.sha256(value.detach().contiguous().cpu().view(torch.uint8).numpy().tobytes()).hexdigest()
+
+
+@contextmanager
+def stored_neuron_gain(model,layer,channel,factor):
+    &quot;&quot;&quot;Assign only one outgoing column. No optimizer, fitting or gradient update.
+
+    Parameter version increments are expected for the approved assignment and
+    restoration. They are distinguished from all other unchanged parameters.
+    Packed quantized tensors are refused.
+    &quot;&quot;&quot;
+    if factor not in [0,1,2,&#x27;zero_then_original&#x27;]:raise ValueError(&#x27;Only prescribed factors are supported&#x27;)
+    if any(p.requires_grad or p.grad is not None for p in model.parameters()):raise ValueError(&#x27;Freeze parameters first&#x27;)
+    layers=model.model.language_model.layers
+    if not isinstance(layer,int)or not 0&lt;=layer&lt;len(layers):raise ValueError(&#x27;Invalid native layer&#x27;)
+    weight=layers[layer].mlp.down_proj.weight
+    if weight.ndim!=2 or not weight.is_floating_point()or hasattr(weight,&#x27;quant_state&#x27;):raise ValueError(&#x27;A dense floating matrix is required&#x27;)
+    if not isinstance(channel,int)or not 0&lt;=channel&lt;weight.shape[1]:raise ValueError(&#x27;Invalid native coordinate&#x27;)
+    others={n:p._version for n,p in model.named_parameters()if p is not weight}
+    version=weight._version;original=weight.detach().clone();column=original[:,channel].clone()
+    expected=column if factor==&#x27;zero_then_original&#x27;else column*factor
+    assert torch.isfinite(expected).all()
+    receipt={&#x27;layer&#x27;:layer,&#x27;channel&#x27;:channel,&#x27;factor&#x27;:factor,&#x27;optimizer_steps&#x27;:0,
+        &#x27;source_column_sha256&#x27;:tensor_sha(column),&#x27;expected_column_sha256&#x27;:tensor_sha(expected),
+        &#x27;source_matrix_sha256&#x27;:tensor_sha(original),&#x27;target_parameter_version_before&#x27;:version}
+    try:
+        with torch.no_grad():
+            if factor==&#x27;zero_then_original&#x27;:weight[:,channel].zero_();weight[:,channel].copy_(column)
+            else:weight[:,channel].copy_(expected)
+        assert torch.equal(weight[:,channel],expected)
+        assert torch.equal(weight[:,:channel],original[:,:channel])and torch.equal(weight[:,channel+1:],original[:,channel+1:])
+        receipt.update(edited_column_sha256=tensor_sha(weight[:,channel]),edited_matrix_sha256=tensor_sha(weight),
+            other_columns_exact=True,target_parameter_version_during=weight._version)
+        yield receipt
+    finally:
+        with torch.no_grad():weight[:,channel].copy_(column)
+        assert torch.equal(weight,original)
+        assert others=={n:p._version for n,p in model.named_parameters()if p is not weight}
+        assert all(not p.requires_grad and p.grad is None for p in model.parameters())
+        receipt.update(original_matrix_restored_exact=True,restored_matrix_sha256=tensor_sha(weight),
+            all_other_parameter_versions_unchanged=True,all_parameter_gradients_none=True,
+            target_parameter_version_after=weight._version)
+</pre></details></article><article class="card tool" data-category="Edit weights"><span class="tag">Edit weights</span><h2>stored_group_gain</h2><p>Prescribed dense outgoing-column gains across native layers, without fitting.</p><p><a href="../interpretability/stored_group_gain.py">Exact source file</a></p><p class="small">APIs: tensor_sha, outside_sha, stored_group_gain</p><p class="hash">SHA-256 56dbb4971d934f0540b36a257157d8e8feee56d6c14fb2a471f707aa548a5ddc</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Prescribed dense outgoing-column gains across native layers, without fitting.&quot;&quot;&quot;
+from collections import defaultdict
+from contextlib import contextmanager
+import hashlib
+import torch
+
+
+def tensor_sha(value):
+    value=value.detach().contiguous().cpu()
+    return hashlib.sha256(value.view(torch.uint8).numpy().tobytes()).hexdigest()
+
+
+def outside_sha(weight,channels):
+    value=weight.detach().cpu().clone();value[:,channels]=0
+    return tensor_sha(value)
+
+
+@contextmanager
+def stored_group_gain(model,coordinates,factor):
+    &quot;&quot;&quot;Assign a fixed factor1 or2, preserving exact columns for restoration.
+
+    Coordinates are explicit native (layer,channel) pairs or dictionaries.
+    No activity/gradient measurement selects the factor inside this operation.
+    Packed matrices, duplicate coordinates and unfrozen parameters are refused.
+    Only compact original/edited columns need be saved by a caller.
+    &quot;&quot;&quot;
+    if type(factor)is not int or factor not in(1,2):raise ValueError(&#x27;Prescribed factor1 or2 required&#x27;)
+    if any(p.requires_grad or p.grad is not None for p in model.parameters()):raise ValueError(&#x27;Freeze all parameters first&#x27;)
+    layers=model.model.language_model.layers
+    grouped=defaultdict(list);seen=set()
+    for c in coordinates:
+        layer,channel=(c[&#x27;layer&#x27;],c[&#x27;channel&#x27;])if isinstance(c,dict)else c
+        if type(layer)is not int or type(channel)is not int or not 0&lt;=layer&lt;len(layers):raise ValueError(&#x27;Invalid native coordinate&#x27;)
+        if(layer,channel)in seen:raise ValueError(&#x27;Duplicate coordinate&#x27;)
+        seen.add((layer,channel));w=layers[layer].mlp.down_proj.weight
+        if w.ndim!=2 or not w.is_floating_point()or hasattr(w,&#x27;quant_state&#x27;):raise ValueError(&#x27;Dense floating matrix required&#x27;)
+        if not 0&lt;=channel&lt;w.shape[1]:raise ValueError(&#x27;Invalid native channel&#x27;)
+        grouped[layer].append(channel)
+    if not seen:raise ValueError(&#x27;Nonempty group required&#x27;)
+    versions={n:p._version for n,p in model.named_parameters()}
+    flags={n:p.requires_grad for n,p in model.named_parameters()}
+    target_ids={id(layers[i].mlp.down_proj.weight)for i in grouped}
+    if len(target_ids)!=len(grouped):raise ValueError(&#x27;Shared down matrices are unsupported&#x27;)
+    target_names={n for n,p in model.named_parameters()if id(p)in target_ids}
+    receipt={&#x27;factor&#x27;:factor,&#x27;coordinates&#x27;:len(seen),&#x27;optimizer_steps&#x27;:0,&#x27;layers&#x27;:[],&#x27;global_scope&#x27;:True}
+    saved=[]
+    try:
+        for layer in sorted(grouped):
+            channels=sorted(grouped[layer]);w=layers[layer].mlp.down_proj.weight
+            original=w[:,channels].detach().clone();expected=original*factor
+            if not torch.isfinite(expected).all():raise ValueError(&#x27;Nonfinite prescribed columns&#x27;)
+            full_before=tensor_sha(w);outside=outside_sha(w,channels);version=w._version
+            item={&#x27;layer&#x27;:layer,&#x27;channels&#x27;:channels,&#x27;dtype&#x27;:str(w.dtype),&#x27;source_columns_sha256&#x27;:tensor_sha(original),&#x27;expected_columns_sha256&#x27;:tensor_sha(expected),&#x27;source_matrix_sha256&#x27;:full_before,&#x27;outside_columns_sha256&#x27;:outside,&#x27;parameter_version_before&#x27;:version}
+            saved.append((w,channels,original,version,item))
+            with torch.no_grad():w[:,channels]=expected
+            assert w._version==version+1 and tensor_sha(w[:,channels])==tensor_sha(expected)
+            assert outside_sha(w,channels)==outside
+            item.update(edited_columns_exact=True,other_columns_exact=True,edited_matrix_sha256=tensor_sha(w));receipt[&#x27;layers&#x27;].append(item)
+        yield receipt
+    finally:
+        for w,channels,original,version,item in reversed(saved):
+            with torch.no_grad():w[:,channels]=original
+            assert w._version==version+2 and tensor_sha(w)==item[&#x27;source_matrix_sha256&#x27;]
+            item.update(original_matrix_restored_exact=True,declared_version_increments=2)
+        for n,p in model.named_parameters():assert p._version==versions[n]+(2 if n in target_names and any(id(p)==id(s[0])for s in saved)else 0)
+        assert flags=={n:p.requires_grad for n,p in model.named_parameters()}
+        assert all(not p.requires_grad and p.grad is None for p in model.parameters())
+        receipt.update(all_other_parameter_versions_unchanged=True,all_parameter_gradients_none=True,all_original_matrices_restored=True)
+</pre></details></article><article class="card tool" data-category="Edit weights"><span class="tag">Edit weights</span><h2>gated_mlp_surgery</h2><p>Local gated-MLP edits and reversible channel steering.
+
+Dense structural edits return a new module and leave the source untouched.
+Packed 4-bit weights are explicitly unsupported here. Quantized model work must
+dequantize the selected layer deliberately, or use a documented sparse branch.
+Exact-arithmetic invariants do not imply bitwise floating-point equivalence.</p><p><a href="../interpretability/gated_mlp_surgery.py">Exact source file</a></p><p class="small">APIs: DenseGatedMLP, _weights, _indices, delete_channels, duplicate_channels, add_channels, edit_output_vectors, steer_channels</p><p class="hash">SHA-256 0d32d462c9ccbe13c77f3f432e2fdd8ff7f4fd943540f9efbdb02db29cbd9ecd</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Local gated-MLP edits and reversible channel steering.
+
+Dense structural edits return a new module and leave the source untouched.
+Packed 4-bit weights are explicitly unsupported here. Quantized model work must
+dequantize the selected layer deliberately, or use a documented sparse branch.
+Exact-arithmetic invariants do not imply bitwise floating-point equivalence.
+&quot;&quot;&quot;
+from contextlib import contextmanager
+import torch
+from torch import nn
+
+
+class DenseGatedMLP(nn.Module):
+    def __init__(self, gate, up, down, activation):
+        super().__init__()
+        width, hidden = gate.shape
+        if up.shape != gate.shape or down.shape != (hidden, width):
+            raise ValueError(&#x27;Aligned gate/up rows and down columns required&#x27;)
+        self.hidden_size, self.intermediate_size = hidden, width
+        self.gate_proj = nn.Linear(hidden, width, bias=False, device=gate.device, dtype=gate.dtype)
+        self.up_proj = nn.Linear(hidden, width, bias=False, device=gate.device, dtype=gate.dtype)
+        self.down_proj = nn.Linear(width, hidden, bias=False, device=gate.device, dtype=gate.dtype)
+        with torch.no_grad():
+            self.gate_proj.weight.copy_(gate)
+            self.up_proj.weight.copy_(up)
+            self.down_proj.weight.copy_(down)
+        self.act_fn = activation
+        self.requires_grad_(False)
+
+    def forward(self, x):
+        return self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+
+
+def _weights(mlp):
+    projections = [getattr(mlp, name, None) for name in [&#x27;gate_proj&#x27;, &#x27;up_proj&#x27;, &#x27;down_proj&#x27;]]
+    if any(not isinstance(p, nn.Linear) or p.bias is not None for p in projections):
+        raise ValueError(&#x27;Plain bias-free dense projections required; unpack quantized/adapter weights explicitly&#x27;)
+    weights = [p.weight.detach() for p in projections]
+    if any(not w.is_floating_point() or not torch.isfinite(w).all() for w in weights):
+        raise ValueError(&#x27;Finite unpacked floating-point matrices required&#x27;)
+    gate, up, down = weights
+    if gate.ndim != 2 or up.shape != gate.shape or down.shape != (gate.shape[1], gate.shape[0]):
+        raise ValueError(&#x27;Inconsistent gated-MLP shapes&#x27;)
+    if len({(w.dtype, w.device) for w in weights}) != 1:
+        raise ValueError(&#x27;Shared dtype and device required&#x27;)
+    if not callable(getattr(mlp, &#x27;act_fn&#x27;, None)):
+        raise ValueError(&#x27;Explicit gated activation required&#x27;)
+    return gate, up, down
+
+
+def _indices(values, width, duplicates=False):
+    values = list(values)
+    if not values or any(isinstance(x, bool) or not isinstance(x, int) or not 0 &lt;= x &lt; width for x in values):
+        raise ValueError(&#x27;Nonempty valid integer channel indices required&#x27;)
+    if not duplicates and len(set(values)) != len(values):
+        raise ValueError(&#x27;Duplicate channels are ambiguous for this operation&#x27;)
+    return values
+
+
+def delete_channels(mlp, channels):
+    &quot;&quot;&quot;Physically remove linked gate/up rows and down columns in a dense copy.&quot;&quot;&quot;
+    gate, up, down = _weights(mlp)
+    deleted = set(_indices(channels, gate.shape[0]))
+    keep = [i for i in range(gate.shape[0]) if i not in deleted]
+    if not keep:
+        raise ValueError(&#x27;Retain at least one channel&#x27;)
+    return DenseGatedMLP(gate[keep], up[keep], down[:, keep], mlp.act_fn)
+
+
+def duplicate_channels(mlp, channels, preserve_function=True):
+    &quot;&quot;&quot;Copy input vectors; optionally split outgoing weights among all replicas.
+
+    preserve_function=False is an amplification control, not new knowledge.
+    &quot;&quot;&quot;
+    gate, up, down = _weights(mlp)
+    extra = _indices(channels, gate.shape[0], duplicates=True)
+    mapping = torch.tensor(list(range(gate.shape[0])) + extra, device=gate.device)
+    new_down = down[:, mapping].clone()
+    if preserve_function:
+        multiplicity = torch.bincount(mapping, minlength=gate.shape[0])
+        new_down /= multiplicity[mapping].to(dtype=down.dtype).unsqueeze(0)
+    return DenseGatedMLP(gate[mapping], up[mapping], new_down, mlp.act_fn)
+
+
+def add_channels(mlp, gate_rows, up_rows, down_columns):
+    &quot;&quot;&quot;Add genuinely specified new input/output vectors to a dense layer copy.&quot;&quot;&quot;
+    gate, up, down = _weights(mlp)
+    if (gate_rows.ndim != 2 or gate_rows.shape[0] == 0 or gate_rows.shape[1] != gate.shape[1]
+            or up_rows.shape != gate_rows.shape or down_columns.shape != (gate.shape[1], gate_rows.shape[0])):
+        raise ValueError(&#x27;New gate/up rows and output columns must have matching dimensions&#x27;)
+    added = [gate_rows, up_rows, down_columns]
+    if any(not w.is_floating_point() or not torch.isfinite(w).all() for w in added):
+        raise ValueError(&#x27;Finite new floating-point vectors required&#x27;)
+    gate_rows, up_rows, down_columns = [w.to(device=gate.device, dtype=gate.dtype) for w in added]
+    return DenseGatedMLP(torch.cat([gate, gate_rows]), torch.cat([up, up_rows]),
+                         torch.cat([down, down_columns], dim=1), mlp.act_fn)
+
+
+def edit_output_vectors(mlp, channels, deltas):
+    &quot;&quot;&quot;Alter only selected columns that write channel contributions to the stream.&quot;&quot;&quot;
+    gate, up, down = _weights(mlp)
+    channels = _indices(channels, gate.shape[0])
+    if deltas.shape != (down.shape[0], len(channels)) or not deltas.is_floating_point() or not torch.isfinite(deltas).all():
+        raise ValueError(&#x27;Finite output-vector deltas with exact shape required&#x27;)
+    changed = down.clone()
+    changed[:, channels] += deltas.to(device=down.device, dtype=down.dtype)
+    return DenseGatedMLP(gate, up, changed, mlp.act_fn)
+
+
+@contextmanager
+def steer_channels(mlp, channels, gain=1.0, offset=0.0, token_scope=&#x27;all&#x27;):
+    &quot;&quot;&quot;Reversible h_j &lt;- gain*h_j + offset before down projection.
+
+    Works through module hooks without editing packed weights. Caller must check
+    that the hook ran; optimized/fused execution may bypass module hooks.
+    &quot;&quot;&quot;
+    if token_scope not in [&#x27;all&#x27;, &#x27;last&#x27;]:
+        raise ValueError(&#x27;Choose all or last token in each forward call&#x27;)
+    projection = getattr(mlp, &#x27;down_proj&#x27;, None)
+    if projection is None or not hasattr(projection, &#x27;in_features&#x27;):
+        raise ValueError(&#x27;An explicit down projection is required&#x27;)
+    channels = _indices(channels, projection.in_features)
+    gain = torch.as_tensor(gain, dtype=torch.float64).reshape(-1)
+    offset = torch.as_tensor(offset, dtype=torch.float64).reshape(-1)
+    if any(v.numel() not in [1, len(channels)] or not torch.isfinite(v).all() for v in [gain, offset]):
+        raise ValueError(&#x27;Finite scalar or per-channel gain/offset required&#x27;)
+    identity = bool(torch.all(gain == 1) and torch.all(offset == 0))
+    receipt = {&#x27;calls&#x27;: 0, &#x27;channels&#x27;: channels, &#x27;token_scope&#x27;: token_scope, &#x27;identity&#x27;: identity}
+    def hook(module, arguments):
+        receipt[&#x27;calls&#x27;] += 1
+        if identity:
+            return None
+        source = arguments[0]
+        if source.ndim != 3:
+            raise ValueError(&#x27;Expected batch/token/channel activations&#x27;)
+        changed = source.clone()
+        g, b = [v.to(device=source.device, dtype=source.dtype) for v in [gain, offset]]
+        if token_scope == &#x27;all&#x27;:
+            changed[..., channels] = source[..., channels] * g + b
+        else:
+            changed[:, -1, channels] = source[:, -1, channels] * g + b
+        return (changed, *arguments[1:])
+    handle = projection.register_forward_pre_hook(hook)
+    try:
+        yield receipt
+    finally:
+        handle.remove()
+</pre></details></article><article class="card tool" data-category="Edit weights"><span class="tag">Edit weights</span><h2>expansion</h2><p>Explicit new gated neurons and a normalized residual MLP insertion.
+
+Uses a small separate dense branch; never resizes packed quantized matrices.
+Zero outgoing vectors preserve the original function at initialization. A
+residual MLP insertion is not a new transformer/attention decoder layer.</p><p><a href="../interpretability/expansion.py">Exact source file</a></p><p class="small">APIs: NewGatedNeurons, insert_branch</p><p class="hash">SHA-256 117d233e829d784750867f8b1d6c1218c550a9b8888491da977d4afc609c0168</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Explicit new gated neurons and a normalized residual MLP insertion.
+
+Uses a small separate dense branch; never resizes packed quantized matrices.
+Zero outgoing vectors preserve the original function at initialization. A
+residual MLP insertion is not a new transformer/attention decoder layer.
+&quot;&quot;&quot;
+from contextlib import contextmanager
+import math
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+
+class NewGatedNeurons(nn.Module):
+    def __init__(self, hidden_size, width, *, seed=196, normalize=False, device=None):
+        super().__init__()
+        if not isinstance(hidden_size,int) or not isinstance(width,int) or min(hidden_size,width)&lt;1:
+            raise ValueError(&#x27;Positive integer dimensions required&#x27;)
+        self.hidden_size,self.width,self.normalize=hidden_size,width,bool(normalize)
+        # Isolated generator avoids changing global random state.
+        generator=torch.Generator(device=&#x27;cpu&#x27;).manual_seed(seed)
+        self.gate=nn.Parameter(torch.randn(width,hidden_size,generator=generator)/math.sqrt(hidden_size))
+        self.up=nn.Parameter(torch.randn(width,hidden_size,generator=generator)/math.sqrt(hidden_size))
+        self.down=nn.Parameter(torch.zeros(hidden_size,width))
+        self.to(device=device,dtype=torch.float32)
+
+    def forward(self,x):
+        if x.shape[-1]!=self.hidden_size:raise ValueError(&#x27;Residual dimension mismatch&#x27;)
+        z=x.to(dtype=self.gate.dtype)
+        if self.normalize:z=z*torch.rsqrt(z.square().mean(dim=-1,keepdim=True)+1e-6)
+        return F.linear(F.gelu(F.linear(z,self.gate),approximate=&#x27;tanh&#x27;)*F.linear(z,self.up),self.down).to(dtype=x.dtype)
+
+
+@contextmanager
+def insert_branch(module,branch,placement):
+    &quot;&quot;&quot;Restore hook even on failure; output tensor-only interface is deliberate.
+
+    parallel: base_mlp(x)+new_neurons(x), computational width expansion.
+    residual: decoder_output+new_MLP(decoder_output), new nonlinear block.
+    The caller saves branch config/weights separately from the frozen base.
+    &quot;&quot;&quot;
+    if placement not in [&#x27;parallel&#x27;,&#x27;residual&#x27;]:raise ValueError(&#x27;Unknown placement&#x27;)
+    receipt={&#x27;placement&#x27;:placement,&#x27;calls&#x27;:0,&#x27;new_parameters&#x27;:sum(p.numel()for p in branch.parameters())}
+    def hook(current,args,output):
+        if not isinstance(output,torch.Tensor):raise ValueError(&#x27;Expected a tensor module output&#x27;)
+        x=args[0] if placement==&#x27;parallel&#x27; else output
+        delta=branch(x)
+        if delta.shape!=output.shape or delta.device!=output.device or delta.dtype!=output.dtype:
+            raise ValueError(&#x27;Explicitly matching residual shape,device,dtype required&#x27;)
+        if not torch.isfinite(delta).all():raise ValueError(&#x27;Nonfinite new branch output&#x27;)
+        receipt[&#x27;calls&#x27;]+=1
+        return output+delta
+    handle=module.register_forward_hook(hook)
+    try:yield receipt
+    finally:handle.remove()
+</pre></details></article><article class="card tool" data-category="Edit connections"><span class="tag">Edit connections</span><h2>memory_connection</h2><p>A fixed copied-projection memory connection. No training or fitted vectors.
+
+This is a prototype for short causal contexts in the Gemma 4 implementation.
+It adds a memory route, not a complete transformer layer. Construct the parent
+with its original configuration before changing cache allocation metadata.</p><p><a href="../interpretability/memory_connection.py">Exact source file</a></p><p class="small">APIs: tensor_hash, CopiedMemoryProjection, memory_connection</p><p class="hash">SHA-256 e12c2ab21bab699cda71869a107403816d0e895a0e925039fb9a7417f12e3d5b</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;A fixed copied-projection memory connection. No training or fitted vectors.
+
+This is a prototype for short causal contexts in the Gemma 4 implementation.
+It adds a memory route, not a complete transformer layer. Construct the parent
+with its original configuration before changing cache allocation metadata.
+&quot;&quot;&quot;
+from contextlib import contextmanager
+import copy
+import hashlib
+import math
+import torch
+from torch import nn
+from transformers import PreTrainedConfig
+from transformers.cache_utils import DynamicCache
+from transformers.models.gemma4.modeling_gemma4 import apply_rotary_pos_emb
+
+
+def tensor_hash(value):
+    return hashlib.sha256(value.detach().contiguous().view(torch.uint8).cpu().numpy().tobytes()).hexdigest()
+
+
+class CopiedMemoryProjection(nn.Module):
+    def __init__(self, source, target_index):
+        super().__init__()
+        for name in [&#x27;k_proj&#x27;, &#x27;v_proj&#x27;]:
+            module = getattr(source, name, None)
+            if module is not None and (not isinstance(module, nn.Linear) or not module.weight.is_floating_point()
+                                       or getattr(module.weight, &#x27;quant_state&#x27;, None) is not None):
+                raise ValueError(&#x27;Unpacked floating-point source projections required&#x27;)
+        self.k_proj = copy.deepcopy(source.k_proj)
+        self.v_proj = copy.deepcopy(source.v_proj)
+        self.k_norm = copy.deepcopy(source.k_norm)
+        self.v_norm = copy.deepcopy(source.v_norm)
+        self.head_dim = source.head_dim
+        self.target_index = target_index
+        self.requires_grad_(False)
+
+    def forward(self, hidden, position_embeddings, cache):
+        shape = (*hidden.shape[:-1], -1, self.head_dim)
+        keys = self.k_proj(hidden).view(shape)
+        values = self.v_proj(hidden).view(shape) if self.v_proj is not None else keys
+        keys = self.k_norm(keys)
+        keys = apply_rotary_pos_emb(keys, *position_embeddings, unsqueeze_dim=2).transpose(1, 2)
+        values = self.v_norm(values).transpose(1, 2)
+        if cache is not None:
+            if not hasattr(cache, &#x27;layers&#x27;) or len(cache.layers) &lt;= self.target_index:
+                raise ValueError(&#x27;Start a fresh sequence with the expanded cache allocation&#x27;)
+            keys, values = cache.update(keys, values, self.target_index)
+        return keys, values
+
+
+@contextmanager
+def memory_connection(model, source_index=14, target_index=24, strength=.25, mode=&#x27;value_history&#x27;):
+    &quot;&quot;&quot;Temporarily add copied K/V projections and a fixed native-memory read.
+
+    Each sequence must start with a fresh cache. Do not reuse a cache across
+    different policies or after leaving this context. Only causal full-attention
+    source/target pairs are supported by this prototype.
+    &quot;&quot;&quot;
+    modes = {&#x27;kv&#x27;, &#x27;key_only&#x27;, &#x27;value_history&#x27;, &#x27;value_current&#x27;, &#x27;value_permuted&#x27;}
+    if mode not in modes or not math.isfinite(strength) or not 0 &lt;= strength &lt;= 1:
+        raise ValueError(&#x27;Choose a declared mode and a fixed strength between zero and one&#x27;)
+    decoder = model.model.language_model
+    layers = decoder.layers
+    if not 0 &lt;= source_index &lt; target_index &lt; len(layers):
+        raise ValueError(&#x27;Ordered valid source and target layers required&#x27;)
+    source, target = layers[source_index].self_attn, layers[target_index].self_attn
+    if (source.is_kv_shared_layer or not target.is_kv_shared_layer or
+        source.layer_type != &#x27;full_attention&#x27; or target.layer_type != &#x27;full_attention&#x27; or
+        source.head_dim != target.head_dim):
+        raise ValueError(&#x27;Require an original full-attention producer and a compatible shared reader&#x27;)
+    if any(p.requires_grad or p.grad is not None for p in model.parameters()):
+        raise ValueError(&#x27;The parent model must be frozen with no parameter gradients&#x27;)
+    name = &#x27;_neuron_memory_connection&#x27;
+    if hasattr(model, name):
+        raise ValueError(&#x27;A memory connection is already installed&#x27;)
+    widths = [layer.mlp.down_proj.in_features for layer in layers]
+    flags = [(layer.self_attn.is_kv_shared_layer, layer.self_attn.store_full_length_kv) for layer in layers]
+    original = {key: parameter._version for key, parameter in model.named_parameters()}
+    configs = {id(config): config for config in [model.config.text_config, decoder.config]}
+    shared_counts = {key: config.num_kv_shared_layers for key, config in configs.items()}
+    branch = CopiedMemoryProjection(source, target_index).eval()
+    copies = {}
+    for key, parameter in branch.named_parameters():
+        expected = source.get_parameter(key)
+        assert torch.equal(parameter, expected)
+        copies[key] = tensor_hash(parameter)
+    receipt = {&#x27;source&#x27;:source_index,&#x27;target&#x27;:target_index,&#x27;mode&#x27;:mode,&#x27;strength&#x27;:strength,&#x27;calls&#x27;:0,
+        &#x27;projection_calls&#x27;:0,&#x27;copied_parameter_hashes&#x27;:copies,
+        &#x27;added_parameters&#x27;:sum(p.numel() for p in branch.parameters()),&#x27;optimizer_steps&#x27;:0,
+        &#x27;MLP_widths_changed&#x27;:False,&#x27;fixed_input_path_scope&#x27;:True}
+    def hook(module, arguments, kwargs):
+        receipt[&#x27;calls&#x27;] += 1
+        if strength == 0:
+            return None
+        hidden = kwargs.get(&#x27;hidden_states&#x27;, arguments[0] if arguments else None)
+        positions = kwargs.get(&#x27;position_embeddings&#x27;)
+        shared = kwargs.get(&#x27;shared_kv_states&#x27;)
+        cache = kwargs.get(&#x27;past_key_values&#x27;)
+        if hidden is None or positions is None or shared is None:
+            raise ValueError(&#x27;Expected explicit Gemma hidden states, positions and shared KV&#x27;)
+        old_keys, old_values = shared[target.layer_type]
+        new_keys, new_values = branch(hidden, positions, cache)
+        if new_keys.shape != old_keys.shape or new_values.shape != old_values.shape:
+            raise ValueError(&#x27;Copied memory and native shared memory shapes differ&#x27;)
+        if not torch.isfinite(new_keys).all() or not torch.isfinite(new_values).all():
+            raise ValueError(&#x27;Nonfinite copied memory&#x27;)
+        receipt[&#x27;projection_calls&#x27;] += 1
+        def blend(old, new):
+            return new if strength == 1 else torch.lerp(old, new, strength)
+        keys, values = old_keys, old_values
+        if mode in [&#x27;kv&#x27;, &#x27;key_only&#x27;]:
+            keys = blend(old_keys, new_keys)
+        if mode in [&#x27;kv&#x27;, &#x27;value_history&#x27;]:
+            values = blend(old_values, new_values)
+        elif mode == &#x27;value_permuted&#x27;:
+            values = blend(old_values, new_values.roll(shifts=1, dims=-1))
+        elif mode == &#x27;value_current&#x27;:
+            values = old_values.clone()
+            values[:, :, -1:] = blend(old_values[:, :, -1:], new_values[:, :, -1:])
+        shared[target.layer_type] = (keys, values)
+        return None
+    handle = None
+    cache_handle = None
+    cache_config = PreTrainedConfig(num_hidden_layers=len(layers),
+        layer_types=list(decoder.config.layer_types),sliding_window=decoder.config.sliding_window)
+    receipt[&#x27;cache_expansions&#x27;] = 0
+    def provision_cache(module, arguments, kwargs):
+        if not kwargs.get(&#x27;use_cache&#x27;, True):
+            return None
+        cache = kwargs.get(&#x27;past_key_values&#x27;)
+        if cache is None:
+            cache = DynamicCache(config=cache_config)
+            cache.layers = cache.layers[:target_index+1]
+            kwargs = dict(kwargs)
+            kwargs[&#x27;past_key_values&#x27;] = cache
+            receipt[&#x27;cache_expansions&#x27;] += 1
+            return arguments, kwargs
+        if not isinstance(cache, DynamicCache):
+            raise ValueError(&#x27;This prototype requires a DynamicCache&#x27;)
+        if len(cache.layers) &lt;= target_index:
+            if cache.get_seq_length() != 0:
+                raise ValueError(&#x27;Cannot add historical memory to an already populated native cache&#x27;)
+            fresh = DynamicCache(config=cache_config)
+            cache.layers.extend(fresh.layers[len(cache.layers):target_index+1])
+            receipt[&#x27;cache_expansions&#x27;] += 1
+        if strength and cache.get_seq_length() != cache.get_seq_length(target_index):
+            raise ValueError(&#x27;Start a fresh sequence for each connection policy&#x27;)
+        return None
+    try:
+        # Cache-only metadata avoids both a zero-count slicing corner case and
+        # accidental reconstruction of the parent&#x27;s double-wide MLP shapes.
+        model.add_module(name, branch)
+        cache_handle = model.register_forward_pre_hook(provision_cache,with_kwargs=True)
+        handle = target.register_forward_pre_hook(hook, with_kwargs=True)
+        assert widths == [layer.mlp.down_proj.in_features for layer in layers]
+        yield receipt
+    finally:
+        if handle is not None:
+            handle.remove()
+        if cache_handle is not None:
+            cache_handle.remove()
+        if hasattr(model, name):
+            delattr(model, name)
+        for key, config in configs.items():
+            config.num_kv_shared_layers = shared_counts[key]
+        assert widths == [layer.mlp.down_proj.in_features for layer in layers]
+        assert flags == [(layer.self_attn.is_kv_shared_layer, layer.self_attn.store_full_length_kv) for layer in layers]
+        assert original == {key:p._version for key,p in model.named_parameters()}
+        receipt[&#x27;restored_configuration_and_original_parameter_versions&#x27;] = True
+</pre></details></article><article class="card tool" data-category="Reconstruct"><span class="tag">Reconstruct</span><h2>model_edits</h2><p>Lossless neuron-edit bundles. No training and no full-checkpoint duplication.</p><p><a href="../reproduce/model_edits.py">Exact source file</a></p><p class="small">APIs: file_sha256, tensor_sha256, inspect_bundle, dense_target, apply_physical_edit, projection_hashes, load_n02_base, reconstruct_n02, load_n01_base, apply_n01_branch, apply_n01_gain, main</p><p class="hash">SHA-256 57e938e6b3fe4df603edfa427274cdb82920ed75d28e6c35a58799116df1ffdc</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Lossless neuron-edit bundles. No training and no full-checkpoint duplication.&quot;&quot;&quot;
+from contextlib import contextmanager, ExitStack
+from pathlib import Path
+import argparse
+import hashlib
+import json
+import torch
+from safetensors.torch import load_file
+from interpretability.gated_mlp_surgery import (
+    DenseGatedMLP, delete_channels, duplicate_channels, add_channels,
+    edit_output_vectors, steer_channels,
+)
+from interpretability.expansion import NewGatedNeurons, insert_branch
+
+
+def file_sha256(path):
+    digest = hashlib.sha256()
+    with Path(path).open(&#x27;rb&#x27;) as stream:
+        for block in iter(lambda: stream.read(8 * 1024 * 1024), b&#x27;&#x27;):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def tensor_sha256(tensor):
+    raw = tensor.detach().contiguous().view(torch.uint8).cpu().numpy().tobytes()
+    return hashlib.sha256(raw).hexdigest()
+
+
+def inspect_bundle(folder):
+    folder = Path(folder)
+    manifest = json.loads((folder / &#x27;bundle.json&#x27;).read_text())
+    if manifest[&#x27;schema_version&#x27;] != 1 or manifest[&#x27;optimizer_steps&#x27;] != 0:
+        raise ValueError(&#x27;Unsupported bundle or nonzero training steps&#x27;)
+    for name, digest in manifest[&#x27;files&#x27;].items():
+        path = (folder / name).resolve()
+        if not path.is_relative_to(folder.resolve()) or file_sha256(path) != digest:
+            raise ValueError(&#x27;Bundle file/hash mismatch: &#x27; + name)
+    return manifest
+
+
+def dense_target(mlp):
+    weights = []
+    for name in [&#x27;gate_proj&#x27;, &#x27;up_proj&#x27;, &#x27;down_proj&#x27;]:
+        projection = getattr(mlp, name)
+        if getattr(projection.weight, &#x27;quant_state&#x27;, None) is not None:
+            from bitsandbytes.functional import dequantize_4bit
+            weight = dequantize_4bit(projection.weight.data, projection.weight.quant_state)
+        else:
+            weight = projection.weight.detach()
+        weights.append(weight.to(dtype=torch.bfloat16))
+    return DenseGatedMLP(*weights, mlp.act_fn).eval().requires_grad_(False)
+
+
+def apply_physical_edit(dense, edit, target, partner, basis):
+    &quot;&quot;&quot;Return modified stored weights, using the released exact vectors where needed.&quot;&quot;&quot;
+    reference = {&#x27;gate_target&#x27;: dense.gate_proj.weight[target],
+                 &#x27;up_partner&#x27;: dense.up_proj.weight[partner],
+                 &#x27;down_target&#x27;: dense.down_proj.weight[:, target]}
+    for name, expected in reference.items():
+        if not torch.equal(basis[name].to(expected.device, expected.dtype), expected):
+            raise ValueError(&#x27;Basis does not match the pinned dense target: &#x27; + name)
+    if edit == &#x27;dense_delete&#x27;:
+        return delete_channels(dense, [target])
+    if edit == &#x27;dense_scale2&#x27;:
+        return edit_output_vectors(dense, [target], basis[&#x27;down_target&#x27;].unsqueeze(1))
+    if edit in [&#x27;dense_clone_unsplit&#x27;, &#x27;dense_clone_split&#x27;]:
+        return duplicate_channels(dense, [target], preserve_function=edit == &#x27;dense_clone_split&#x27;)
+    if edit in [&#x27;dense_new_zero&#x27;, &#x27;dense_recombined&#x27;]:
+        down = basis[&#x27;down_target&#x27;].unsqueeze(1)
+        down = torch.zeros_like(down) if edit == &#x27;dense_new_zero&#x27; else down / 2
+        return add_channels(dense, basis[&#x27;gate_target&#x27;].unsqueeze(0),
+                            basis[&#x27;up_partner&#x27;].unsqueeze(0), down)
+    raise ValueError(&#x27;Unknown physical edit: &#x27; + edit)
+
+
+def projection_hashes(mlp):
+    return {name: tensor_sha256(getattr(mlp, name).weight)
+            for name in [&#x27;gate_proj&#x27;, &#x27;up_proj&#x27;, &#x27;down_proj&#x27;]}
+
+
+def load_n02_base(folder, device=&#x27;cuda:0&#x27;, verify_source=True):
+    &quot;&quot;&quot;Load the exact text-only parent configuration and declared representation.&quot;&quot;&quot;
+    import transformers
+    from huggingface_hub import hf_hub_download
+    folder = Path(folder)
+    manifest = inspect_bundle(folder)
+    if manifest[&#x27;kind&#x27;] != &#x27;n02_physical_edits&#x27;:
+        raise ValueError(&#x27;Expected an N02 physical-edit bundle&#x27;)
+    if transformers.__version__ != &#x27;5.8.0&#x27;:
+        raise ValueError(&#x27;The validated loader uses transformers==5.8.0&#x27;)
+    parent, revision = manifest[&#x27;base&#x27;][&#x27;checkpoint&#x27;], manifest[&#x27;base&#x27;][&#x27;revision&#x27;]
+    if verify_source:
+        path = hf_hub_download(parent, filename=&#x27;model.safetensors&#x27;, revision=revision)
+        if file_sha256(path) != manifest[&#x27;base&#x27;][&#x27;payload_sha256&#x27;]:
+            raise ValueError(&#x27;Base checkpoint payload mismatch&#x27;)
+    config = transformers.AutoConfig.from_pretrained(parent, revision=revision, trust_remote_code=False)
+    config.vision_config = None
+    config.audio_config = None
+    kwargs = {}
+    if manifest[&#x27;representation&#x27;] == &#x27;nf4_text_same_source&#x27;:
+        kwargs[&#x27;quantization_config&#x27;] = transformers.BitsAndBytesConfig.from_dict(
+            json.loads((folder / &#x27;quantization_config.json&#x27;).read_text()))
+    model, info = transformers.Gemma4ForConditionalGeneration.from_pretrained(
+        parent, revision=revision, config=config, trust_remote_code=False,
+        dtype=torch.bfloat16, device_map={&#x27;&#x27;: device}, attn_implementation=&#x27;eager&#x27;,
+        output_loading_info=True, low_cpu_mem_usage=True, **kwargs)
+    if info.get(&#x27;missing_keys&#x27;) or info.get(&#x27;mismatched_keys&#x27;) or info.get(&#x27;error_msgs&#x27;):
+        raise ValueError(&#x27;Required checkpoint tensors did not load&#x27;)
+    model.eval().requires_grad_(False)
+    if model.lm_head.weight is not model.model.language_model.embed_tokens.weight:
+        raise ValueError(&#x27;Expected tied input/output embeddings&#x27;)
+    if model.model.vision_tower is not None or model.model.audio_tower is not None:
+        raise ValueError(&#x27;Expected text-only modules&#x27;)
+    target = model.model.language_model.layers[manifest[&#x27;layer&#x27;]].mlp
+    if projection_hashes(target) != manifest[&#x27;original_projection_hashes&#x27;]:
+        raise ValueError(&#x27;Original target-layer weight bytes differ&#x27;)
+    return model, manifest
+
+
+def reconstruct_n02(folder, edit, device=&#x27;cuda:0&#x27;, verify_source=True):
+    &quot;&quot;&quot;The returned model keeps the physical edit applied. Rebuild using the bundle.&quot;&quot;&quot;
+    folder = Path(folder)
+    model, manifest = load_n02_base(folder, device=device, verify_source=verify_source)
+    if edit not in manifest[&#x27;edits&#x27;]:
+        raise ValueError(&#x27;Edit is not declared in this bundle&#x27;)
+    layer = model.model.language_model.layers[manifest[&#x27;layer&#x27;]]
+    dense = dense_target(layer.mlp)
+    basis = load_file(str(folder / &#x27;basis.safetensors&#x27;))
+    edited = apply_physical_edit(dense, edit, manifest[&#x27;target&#x27;], manifest[&#x27;partner&#x27;], basis)
+    actual = projection_hashes(edited)
+    expected = manifest[&#x27;expected_edited_projection_hashes&#x27;].get(edit)
+    if expected is not None and actual != expected:
+        raise ValueError(&#x27;Reconstructed edit weight bytes differ from the recorded model&#x27;)
+    layer.mlp = edited
+    return model, {&#x27;bundle&#x27;: str(folder), &#x27;edit&#x27;: edit, &#x27;projection_hashes&#x27;: actual,
+                   &#x27;expected_hashes_available&#x27;: expected is not None,
+                   &#x27;base_revision&#x27;: manifest[&#x27;base&#x27;][&#x27;revision&#x27;], &#x27;optimizer_steps&#x27;: 0}
+
+
+def load_n01_base(folder, device=&#x27;cuda:0&#x27;):
+    import transformers
+    manifest = inspect_bundle(folder)
+    if manifest[&#x27;kind&#x27;] != &#x27;n01_branches_and_gain_policies&#x27;:
+        raise ValueError(&#x27;Expected an N01 branch/policy bundle&#x27;)
+    if transformers.__version__ != &#x27;5.8.0&#x27;:
+        raise ValueError(&#x27;The validated loader uses transformers==5.8.0&#x27;)
+    parent, revision = manifest[&#x27;base&#x27;][&#x27;checkpoint&#x27;], manifest[&#x27;base&#x27;][&#x27;revision&#x27;]
+    config = transformers.AutoConfig.from_pretrained(parent, revision=revision, trust_remote_code=False)
+    quant = transformers.BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type=&#x27;nf4&#x27;,
+             bnb_4bit_use_double_quant=True, bnb_4bit_compute_dtype=torch.bfloat16)
+    model = getattr(transformers, config.architectures[0]).from_pretrained(
+        parent, revision=revision, trust_remote_code=False, device_map={&#x27;&#x27;: device},
+        dtype=torch.bfloat16, quantization_config=quant, attn_implementation=&#x27;eager&#x27;, low_cpu_mem_usage=True)
+    # Match the frozen N01 vector conversion; embedding tables keep their load dtype.
+    for parameter in model.parameters():
+        parameter.requires_grad_(False)
+        if parameter.__class__.__name__ != &#x27;Params4bit&#x27; and parameter.is_floating_point() and parameter.ndim == 1:
+            parameter.data = parameter.data.float()
+    model.gradient_checkpointing_disable()
+    return model.eval(), manifest
+
+
+@contextmanager
+def apply_n01_branch(model, folder, branch_name):
+    folder = Path(folder)
+    manifest = inspect_bundle(folder)
+    config = manifest[&#x27;branches&#x27;][branch_name]
+    device = next(model.parameters()).device
+    branch = NewGatedNeurons(config[&#x27;hidden_size&#x27;], config[&#x27;width&#x27;], seed=config[&#x27;seed&#x27;],
+                            normalize=config[&#x27;normalize&#x27;], device=device).eval().requires_grad_(False)
+    branch.load_state_dict(load_file(str(folder / config[&#x27;file&#x27;]), device=str(device)))
+    with insert_branch(model.get_submodule(config[&#x27;target_module&#x27;]), branch, config[&#x27;placement&#x27;]) as receipt:
+        yield receipt
+
+
+@contextmanager
+def apply_n01_gain(model, folder, group_name, gain):
+    manifest = inspect_bundle(folder)
+    if group_name not in manifest[&#x27;steering_groups&#x27;] or gain not in manifest[&#x27;allowed_gains_by_group&#x27;][group_name]:
+        raise ValueError(&#x27;Undeclared group or gain&#x27;)
+    groups = {}
+    for coordinate in manifest[&#x27;steering_groups&#x27;][group_name]:
+        groups.setdefault(coordinate[&#x27;layer&#x27;], []).append(coordinate[&#x27;channel&#x27;])
+    with ExitStack() as stack:
+        audits = [stack.enter_context(steer_channels(model.get_submodule(
+                  f&#x27;model.language_model.layers.{layer}.mlp&#x27;), channels, gain=gain, token_scope=&#x27;last&#x27;))
+                  for layer, channels in groups.items()]
+        yield audits
+
+
+def main():
+    parser = argparse.ArgumentParser(description=&#x27;Inspect or reconstruct a saved neuron-edit bundle.&#x27;)
+    parser.add_argument(&#x27;--bundle&#x27;, type=Path, required=True)
+    parser.add_argument(&#x27;--edit&#x27;)
+    parser.add_argument(&#x27;--device&#x27;, default=&#x27;cuda:0&#x27;)
+    parser.add_argument(&#x27;--rebuild&#x27;, action=&#x27;store_true&#x27;, help=&#x27;Download/load the pinned base and reconstruct on the chosen device.&#x27;)
+    args = parser.parse_args()
+    manifest = inspect_bundle(args.bundle)
+    if not args.rebuild:
+        print(json.dumps({&#x27;bundle_valid&#x27;: True, &#x27;kind&#x27;: manifest[&#x27;kind&#x27;], &#x27;base&#x27;: manifest[&#x27;base&#x27;],
+                          &#x27;optimizer_steps&#x27;: 0, &#x27;base_weights_downloaded&#x27;: False}, indent=2))
+        return
+    if not args.edit:
+        parser.error(&#x27;--edit is required with --rebuild&#x27;)
+    model, receipt = reconstruct_n02(args.bundle, args.edit, device=args.device)
+    print(json.dumps(receipt, indent=2))
+
+
+if __name__ == &#x27;__main__&#x27;:
+    main()
+</pre></details></article></div></main><footer>Offline HTML. No external scripts, uploads or inference API. <a href="../scripts/build_surgery_assets.py">Asset builder source</a> · <a href="../PUBLIC_RELEASE_MANIFEST.json">Release hashes</a></footer><script>const q=document.getElementById('query'),c=document.getElementById('category');function filter(){let n=0;for(const e of document.querySelectorAll('.tool')){e.hidden=!(e.textContent.toLowerCase().includes(q.value.toLowerCase())&&(c.value==='All'||e.dataset.category===c.value));if(!e.hidden)n++}document.getElementById('count').textContent=n+' source files shown'}q.oninput=c.onchange=filter;filter();</script></body></html>

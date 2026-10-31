@@ -1,0 +1,541 @@
+{
+  "project": "Digital Surgery",
+  "source_files": [
+    {
+      "category": "Observe",
+      "path": "interpretability/native_capture.py",
+      "sha256": "71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1",
+      "symbols": [
+        "capture_native_mlp"
+      ]
+    },
+    {
+      "category": "Observe",
+      "path": "interpretability/probe.py",
+      "sha256": "cc29483c000cdbe0165d8d00a3cc9421c51d17088328d9d0d2996caef5e066f9",
+      "symbols": [
+        "mlp_modules",
+        "ActivationRecorder",
+        "scale_mlp_channels",
+        "select_adapter_modules"
+      ]
+    },
+    {
+      "category": "Patch activations",
+      "path": "interpretability/selector_site.py",
+      "sha256": "5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60",
+      "symbols": [
+        "selector_site",
+        "capture_selector"
+      ]
+    },
+    {
+      "category": "Patch activations",
+      "path": "interpretability/mlp_composition.py",
+      "sha256": "769e1477149fd11b19950c19d8452fd4b691a6a71908abfb5361bc2f63820ae2",
+      "symbols": [
+        "compose_mlp_donors"
+      ]
+    },
+    {
+      "category": "Patch activations",
+      "path": "research/experiments/n34/inference.py",
+      "sha256": "f6ee7d922227d071641b99244febfe643033ff21ddf865464e713ad3d79151e8",
+      "symbols": [
+        "state",
+        "assert_state",
+        "encode",
+        "witness",
+        "path_guard",
+        "fresh",
+        "raw_cache",
+        "assignment",
+        "check_scope",
+        "stopping",
+        "stop_reason",
+        "current_trace",
+        "free_tail",
+        "native_source_teacher",
+        "resolved_contract"
+      ]
+    },
+    {
+      "category": "Edit weights",
+      "path": "interpretability/stored_neuron_gain.py",
+      "sha256": "6169b400b3f2a2a8d54010413e07324925ebb7ef2c4541f26eda3bbb73aa8f88",
+      "symbols": [
+        "tensor_sha",
+        "stored_neuron_gain"
+      ]
+    },
+    {
+      "category": "Edit weights",
+      "path": "interpretability/stored_group_gain.py",
+      "sha256": "56dbb4971d934f0540b36a257157d8e8feee56d6c14fb2a471f707aa548a5ddc",
+      "symbols": [
+        "tensor_sha",
+        "outside_sha",
+        "stored_group_gain"
+      ]
+    },
+    {
+      "category": "Edit weights",
+      "path": "interpretability/gated_mlp_surgery.py",
+      "sha256": "0d32d462c9ccbe13c77f3f432e2fdd8ff7f4fd943540f9efbdb02db29cbd9ecd",
+      "symbols": [
+        "DenseGatedMLP",
+        "_weights",
+        "_indices",
+        "delete_channels",
+        "duplicate_channels",
+        "add_channels",
+        "edit_output_vectors",
+        "steer_channels"
+      ]
+    },
+    {
+      "category": "Edit weights",
+      "path": "interpretability/expansion.py",
+      "sha256": "117d233e829d784750867f8b1d6c1218c550a9b8888491da977d4afc609c0168",
+      "symbols": [
+        "NewGatedNeurons",
+        "insert_branch"
+      ]
+    },
+    {
+      "category": "Edit connections",
+      "path": "interpretability/memory_connection.py",
+      "sha256": "e12c2ab21bab699cda71869a107403816d0e895a0e925039fb9a7417f12e3d5b",
+      "symbols": [
+        "tensor_hash",
+        "CopiedMemoryProjection",
+        "memory_connection"
+      ]
+    },
+    {
+      "category": "Reconstruct",
+      "path": "reproduce/model_edits.py",
+      "sha256": "57e938e6b3fe4df603edfa427274cdb82920ed75d28e6c35a58799116df1ffdc",
+      "symbols": [
+        "file_sha256",
+        "tensor_sha256",
+        "inspect_bundle",
+        "dense_target",
+        "apply_physical_edit",
+        "projection_hashes",
+        "load_n02_base",
+        "reconstruct_n02",
+        "load_n01_base",
+        "apply_n01_branch",
+        "apply_n01_gain",
+        "main"
+      ]
+    }
+  ],
+  "bundles": [
+    {
+      "path": "models/b01/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only unquantized BF16, no historical adapters",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 8
+      },
+      "sha256": "17353cc30c7d15a89425df28b70ea14214c6a419b6dce191241abb2385bca4d1"
+    },
+    {
+      "path": "models/b02/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only unquantized BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 4
+      },
+      "sha256": "20d95bd38a6a5a9970aec2587386d42e60a454d8c2bdd370bc0aecfd2c519b21"
+    },
+    {
+      "path": "models/n01/bundle.json",
+      "base": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+      "revision": "0ae102ac289cc3f17500a607ad817849778b8ba7",
+      "representation": "See recipe",
+      "kind": "n01_branches_and_gain_policies",
+      "counts": {},
+      "sha256": "fb6a1d6e451938da3678f971e28b6bfb07bec0873fe2f073bff1406e160ed75a"
+    },
+    {
+      "path": "models/n02/bf16_text/bundle.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "bf16_text",
+      "kind": "n02_physical_edits",
+      "counts": {
+        "edits": 6
+      },
+      "sha256": "4d1184c9fbc17630f4e52eaef33990355ff9b44cb090906d5569051e1bfab159"
+    },
+    {
+      "path": "models/n02/nf4_text_same_source/bundle.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "nf4_text_same_source",
+      "kind": "n02_physical_edits",
+      "counts": {
+        "edits": 6
+      },
+      "sha256": "cc5afe2f57d4c718d36ef0188919249b5c0c37c95bdd6fdd13e5abad3f241582"
+    },
+    {
+      "path": "models/n04/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "See recipe",
+      "kind": "Edit recipe",
+      "counts": {
+        "policies": 9
+      },
+      "sha256": "042f7072f594f116a07f7cfd4ed3a8ca57035061dafb1cdce56c9d07054952df"
+    },
+    {
+      "path": "models/n05/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "See recipe",
+      "kind": "native_activation_policy_recipe",
+      "counts": {
+        "policies": 13
+      },
+      "sha256": "9d4d181a7fa3ad07b92c485e887dcdc19e109b844c122c5fa6d4841204e1e71c"
+    },
+    {
+      "path": "models/n06/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "See recipe",
+      "kind": "native_full_site_activation_policy",
+      "counts": {
+        "policies": 10
+      },
+      "sha256": "62722a545c706c5dc06ef0edda7b7ff2aa8ecdc74505979c3e8e035edd57ea89"
+    },
+    {
+      "path": "models/n07/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "See recipe",
+      "kind": "native_MLP_layer_donor_policies",
+      "counts": {
+        "policies": 30
+      },
+      "sha256": "3d65c75c717e8c33f5a4ce863362eebadbc256c0096d2d640fa4a26c01fab81a"
+    },
+    {
+      "path": "models/n08/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "See recipe",
+      "kind": "conditional_native_MLP_block_donor_policies",
+      "counts": {
+        "policies": 33
+      },
+      "sha256": "476a4f02c6be01c7ff59458d2839696ce829eaf5757ab5477475d2b81ef8dc26"
+    },
+    {
+      "path": "models/n11/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "text-only unquantized BF16",
+      "kind": "Edit recipe",
+      "counts": {},
+      "sha256": "d80603db364fe35b8b924e75fce14b836459d6517920584114f8aae98ffcf67d"
+    },
+    {
+      "path": "models/n13/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Text-only unquantized BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 16
+      },
+      "sha256": "d1177457c9440e45a287042b062dce4d89055707a50e8fbd1dc9fe6eae5aaae6"
+    },
+    {
+      "path": "models/n14/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only, unquantized BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 10
+      },
+      "sha256": "ac875e793b75a69f5988206914c90e25c5b0ace9919b541c4f6f84e0e3e59915"
+    },
+    {
+      "path": "models/n15/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only, unquantized BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 23
+      },
+      "sha256": "1511adb4ad97d698b07c3262ee4544b351c6d5661e2a0083fd060eefd6d72e05"
+    },
+    {
+      "path": "models/n16/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only, unquantized BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 47
+      },
+      "sha256": "63430253f2ca35aabe454584f38a7803de9e63eb892711836c43f451ee2985b4"
+    },
+    {
+      "path": "models/n17/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only unquantized BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 48
+      },
+      "sha256": "e1083959d20f2c7c1572aaa01476c1c743606d874945ecf9aa46ddfd535f4dea"
+    },
+    {
+      "path": "models/n18/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only unquantized BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 4
+      },
+      "sha256": "c8ca4deb6ec49dc7b286deff7dbdc1354736815471c6305d86196deb8a04e2f4"
+    },
+    {
+      "path": "models/n19/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only unquantized BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 19
+      },
+      "sha256": "b5eff40356f2346f65f9f5ad56003016f450ef8f3c579652f204437b0d86abb6"
+    },
+    {
+      "path": "models/n20/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "text-only unquantized BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 40
+      },
+      "sha256": "5fefe67bd2f0a65e47162463a254a37267b9718bb55bbdb99cd717421c0281ea"
+    },
+    {
+      "path": "models/n21/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only unquantized BF16",
+      "kind": "native_column_patch",
+      "counts": {
+        "conditions": 5
+      },
+      "sha256": "0f2ee5896e5cd62514903551a02c2260714b413b825df5c49fbd43cd91c70ff2"
+    },
+    {
+      "path": "models/n22/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only unquantized BF16",
+      "kind": "native_stage_donor_policies",
+      "counts": {
+        "policies": 13
+      },
+      "sha256": "31f5e9b9d109a915ff817b734f63029b6f172792c23f6445d8f6d374d92fd299"
+    },
+    {
+      "path": "models/n24/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "original text-only unquantized BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 24
+      },
+      "sha256": "44e57d89c36ca89cf4dd3674e6bfa856b7d3e93c303317d9965cf2bdb1185b03"
+    },
+    {
+      "path": "models/n25/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "See recipe",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 5
+      },
+      "sha256": "46e3b37a7377d457cd3f0cb8baa30b908297d52e586de68d80c92d7ef260e2a0"
+    },
+    {
+      "path": "models/n26/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only unquantized BF16,4628569344 unique parameters,35 MLPs and15 native cache slots. No historical adapters or prior edits.",
+      "kind": "global_native_column_policies",
+      "counts": {
+        "conditions": 8
+      },
+      "sha256": "f3133a7a1bbc42c34d7e1fd115ed3f422fee42c6ad496bb493b00731651b0a86"
+    },
+    {
+      "path": "models/n28/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "original_text_only_unquantized_BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "policies": 7,
+        "conditions": 7
+      },
+      "sha256": "07d06dc80304853dddb1bfa3da74ff5261e928390a8e52e248ff4837d92bbf1f"
+    },
+    {
+      "path": "models/n29/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "original_text_only_unquantized_BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "policies": 5,
+        "conditions": 5
+      },
+      "sha256": "c77d060374a460eacc8a58d341cd7d25b1551a7afb08cd31940bc33b6303bfb8"
+    },
+    {
+      "path": "models/n30/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "original_text_only_unquantized_BF16",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 19
+      },
+      "sha256": "4ff1bfc9b7c50e8267afcb1b70ffce64dacb1181ce3afe42efade16545faef71"
+    },
+    {
+      "path": "models/n34/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Unquantized text-only BF16",
+      "kind": "runtime_activation_policy_bundle",
+      "counts": {
+        "policies": 49
+      },
+      "sha256": "cbda2f50a19d96f14e3b9b53b9afecc92df600150af9e5cadea7a6fe6a0385a2"
+    }
+  ],
+  "tensor_assets": [
+    {
+      "path": "models/n01/added8_zero.safetensors",
+      "bytes": 148088,
+      "tensor_count": 3,
+      "dtypes": [
+        "F32"
+      ],
+      "shapes": [
+        [
+          8,
+          1536
+        ],
+        [
+          1536,
+          8
+        ]
+      ],
+      "sha256": "6ac2423e16aa7d7cfcda6562b7ac442c7567ed7e39eb3ecd34416fe0d62f3f3c"
+    },
+    {
+      "path": "models/n01/new_MLP64_zero.safetensors",
+      "bytes": 1180288,
+      "tensor_count": 3,
+      "dtypes": [
+        "F32"
+      ],
+      "shapes": [
+        [
+          64,
+          1536
+        ],
+        [
+          1536,
+          64
+        ]
+      ],
+      "sha256": "0230dc629abffcc8fdb014216e6be25889ebfa389927c0c9944473efb147b4bb"
+    },
+    {
+      "path": "models/n02/bf16_text/basis.safetensors",
+      "bytes": 9832,
+      "tensor_count": 3,
+      "dtypes": [
+        "BF16"
+      ],
+      "shapes": [
+        [
+          1536
+        ]
+      ],
+      "sha256": "810b648cfecf6408f21093d09b9b6dff679d99f1299165f44ab0ae1bf203aa9c"
+    },
+    {
+      "path": "models/n02/nf4_text_same_source/basis.safetensors",
+      "bytes": 9832,
+      "tensor_count": 3,
+      "dtypes": [
+        "BF16"
+      ],
+      "shapes": [
+        [
+          1536
+        ]
+      ],
+      "sha256": "28e249bfdf2ec2037db84753f84145bba4e4a7c1908af039180460c79070710e"
+    },
+    {
+      "path": "models/n13/down_columns.safetensors",
+      "bytes": 9608,
+      "tensor_count": 3,
+      "dtypes": [
+        "BF16"
+      ],
+      "shapes": [
+        [
+          1536
+        ]
+      ],
+      "sha256": "80217ca82e910a2d247192af7b3cd0084fac627bfe468e696e50a19a2692c9a1"
+    },
+    {
+      "path": "models/n21/native_columns.safetensors",
+      "bytes": 1186512,
+      "tensor_count": 376,
+      "dtypes": [
+        "BF16"
+      ],
+      "shapes": [
+        [
+          1536
+        ]
+      ],
+      "sha256": "3d6d4257a6894897b64e988db4ff5139b809450fbe2d252854ee72feac232a5d"
+    }
+  ],
+  "activation_viewer_default_data": "synthetic_only",
+  "training_allowed": false
+}

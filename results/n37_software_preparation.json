@@ -1,0 +1,48 @@
+{
+  "host_fixture": {
+    "utc": "2026-10-31T13:23:32.906495+00:00",
+    "status": "passed_closed",
+    "cap_and_EOS_cases": 2,
+    "corruptions_refused": [
+      "token",
+      "logit_hash",
+      "cache",
+      "already_ended",
+      "prefix_proof",
+      "new_suffix_count",
+      "counter"
+    ],
+    "both_actual_runner_auditor_imported": true,
+    "JSON_boundary_checked": true,
+    "construction_seed": 4802,
+    "measurement_seed": 5102,
+    "actual_random_model_forward_calls": 25,
+    "input_token_exposures": 49,
+    "random_generated_tokens": 16,
+    "pretrained_model_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 0.45082545799959917
+  },
+  "transport": {
+    "utc": "2026-10-31T13:46:43.659513+00:00",
+    "status": "passed",
+    "actual_notebook_compressed_payload_roundtrip": true,
+    "all_source_and_data_hashes_exact": true,
+    "packaged_sources": 18,
+    "inputs": 9,
+    "all10actual_tokenizations_exact": true,
+    "both_isolated_runner_auditor_imports": true,
+    "Ruff_F821_F823": "All checks passed!",
+    "prior_host_sources_unchanged": true,
+    "hidden_grader_excluded": true,
+    "new_pretrained_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "scope": "Native continuation software only. No pretrained outcome is implied.",
+  "preserved_prelaunch_failure": {
+    "kind": "Compressed package was altered by transport name substitution;actual checksum check caught it before any GPU job.",
+    "model_forwards": 0,
+    "repair": "Preserve the compressed payload and manifest; substitute only transport code. Exact source/data roundtrip now passes."
+  }
+}

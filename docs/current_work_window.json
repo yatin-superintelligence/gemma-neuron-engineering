@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-31T13:33:00.421559+00:00",
+  "authority": "Direct human message: the project should be called Digital Surgery, pursue different observations and actual work, and a new one-day window is granted.",
+  "interpretation": "24 hours from the first clock reading after this instruction, 2026-10-31T13:24:39Z. This explicit human extension supersedes the earlier deadline; it is not an automatic reset.",
+  "previous_deadline_utc": "2026-10-31T18:22:58Z",
+  "new_deadline_utc": "2026-11-01T13:24:39Z",
+  "new_deadline_local": "2026-11-01 18:54:39 Asia/Calcutta",
+  "study_title": "Digital Surgery",
+  "historical_title": "Gemma Neuron Engineering: Interpretability and Control",
+  "repository_URL_unchanged": "https://github.com/yatin-superintelligence/gemma-neuron-engineering",
+  "no_training_no_spending_private_raw_assets_unchanged": true
+}

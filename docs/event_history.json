@@ -3657,6 +3657,85 @@
       "experiment": "N34",
       "optimizer_steps": 0,
       "privacy_server_verified": true
+    },
+    {
+      "sequence": 499,
+      "utc": "2026-10-31T13:19:57.933725+00:00",
+      "event": "human_reporting_focus_changed_headline_claims_removed_original_records_preserved",
+      "experiment": "U17",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 500,
+      "utc": "2026-10-31T13:33:00.421559+00:00",
+      "event": "human_renamed_project_and_granted_new_one_day_window",
+      "experiment": "Digital Surgery",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 501,
+      "utc": "2026-10-31T13:33:00.421559+00:00",
+      "event": "continuation_protocol_frozen_then_random_model_reader_gates_passed",
+      "experiment": "N37",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 502,
+      "utc": "2026-10-31T13:33:00.421559+00:00",
+      "event": "human_token_aligned_observation_intent_recorded_no_model_run",
+      "experiment": "N38",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 503,
+      "utc": "2026-10-31T13:48:32.998770+00:00",
+      "event": "all1176records_and_guards_pass_complete_primary_failed_closed",
+      "experiment": "N34",
+      "optimizer_steps": 0,
+      "runner_seconds": 855.723118438,
+      "predictions": 1176
+    },
+    {
+      "sequence": 504,
+      "utc": "2026-10-31T14:02:14.255034+00:00",
+      "event": "actual_compressed_transport_checksum_failure_caught_before_GPU_and_preserved",
+      "experiment": "N37",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 505,
+      "utc": "2026-10-31T14:02:14.255034+00:00",
+      "event": "one_private_job_launched_exact_source_verified_without_resubmission",
+      "experiment": "N37",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 506,
+      "utc": "2026-10-31T14:02:14.255034+00:00",
+      "event": "title_normalized_handle_resolved_destination_only_collector_amendment",
+      "experiment": "N37",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 507,
+      "utc": "2026-10-31T14:02:14.255034+00:00",
+      "event": "human_requested_shareable_tools_model_artifacts_and_compact_storage",
+      "experiment": "Digital Surgery",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 508,
+      "utc": "2026-10-31T14:25:43.578060+00:00",
+      "event": "four_offline_tools_pass_browser_functional_checks",
+      "experiment": "Digital Surgery",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 509,
+      "utc": "2026-10-31T14:25:43.578060+00:00",
+      "event": "completed_raw_files_losslessly_archived_after_hash_roundtrip",
+      "experiment": "N34",
+      "optimizer_steps": 0
     }
   ]
 }

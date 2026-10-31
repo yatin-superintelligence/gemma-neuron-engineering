@@ -1,101 +1,45 @@
-# Gemma Neuron Engineering: Interpretability and Control
+# Digital Surgery
 
-A no-training study of native neurons, small groups and direct model edits in Gemma 4 E2B. We test whether a proposed function survives controlled interventions and whether a fixed edit helps executable coding.
+A no-training study of native neurons, small groups and direct model edits in Gemma 4 E2B. We test proposed functions through causal interventions, then evaluate fixed edits on executable Python and retention tasks.
 
-**The tested physical edits are reproducible. Individual neuron meanings and a confirmed coding improvement remain unestablished.**
+**Physical editing and reconstruction work on the tested model. No neuron edit has established a useful coding improvement or an individual neuron meaning.**
 
-N24 finds a controlled comparator-score contribution: selected64 opposite-policy donors shift the logit margin by +1.574 on average, versus +0.025 and -0.051 for matched random groups. Same-policy donors average +0.022. All 578 trajectories and guards pass, with zero updates. Every nominated operator margin remains on the original side, so the prior program-level null remains unchanged. See the [complete result and limits](results/n24_finite_summary.json).
+## Findings
 
-N25 supplies an assessable runtime-edit null. The earlier N21 result remains preserved: all 160 records pass audit. The selected edit matches the original at 12/24 coding functions; both random controls score 14/24. Ten capped source-format failures exceed the predeclared baseline limit, making the planned benefit interpretation unassessable. There is no selected coding gain.
+| Intervention | Observed result | Scope |
+| --- | --- | --- |
+| Zero or double a native neuron's outgoing weight column | In N13, the original and every tested condition score 16/32 coding and 8/8 retention. No output reaches its limit and no correctness changes. | One fixed neuron, L9 C4632, on dependent development cases. This is a bounded negative result. |
+| Patch, zero or double native groups of 16 and 64 neurons | N20 retains selected groups and two magnitude-matched random controls. All groups have zero opposite-program transfer, clean-zero loss and conditional-transfer loss. | Full-site controls work, but the sparse role criterion fails. No coding improvement follows. |
+| Swap whole native MLP states at a conditional decision | N19 switches 13/13 programs to the opposite donor choice while same-rule donors preserve 13/13. Separate relation/order controls expose literal comparator copying. | Conditional sufficiency on controlled inputs, not unrestricted coding or an abstract skill. |
+| Delete, clone, recombine or add native neurons | N02 audits 460 engineering measurements in pinned BF16 and same-source NF4. R01 reconstructs all six edits in each representation through the public loader. | One selected layer and a fixed panel. BF16 split cloning has a bounded nonzero logit difference. No speed or coding benefit was tested. |
 
-## Donor quality before transplantation
+Small-group interventions also change comparator scores without changing the chosen token. The [N24 result](results/n24_finite_summary.json) reports every matched control and operation. Score movement alone does not establish a function or useful behavior.
 
-The latest proposal tests whether connected neurons copied from an already-trained coding model can improve Gemma without training. N35 compares one structurally compatible donor against the pinned original on the same complete-function interface. All 96 responses and mandatory audit guards pass.
+The [Research Logbook](docs/RESEARCH_LOG.html) retains all experiments, negative results, failures, amendments and decision rules. The [question register](docs/research_questions.json) connects each proposal to its evidence. These are controlled custom panels, not a comprehensive coding-agent benchmark.
 
-The donor scores **23/32 coding versus 19/32 for the original**, with five gains and one loss across two families. Original coding has ten caps; the donor has none. Retention is 11/16 versus 7/16. Original retention fails the fixed 12/16 adequacy minimum, so **the conditional neuron transplant remains unexecuted**. These are two unmodified checkpoints, not an improved recipient or a confirmed neuron role. See the [complete outcomes](results/n35_summary.json) and [all-family figure](docs/figures/n35_summary.png).
+## Current work
 
-Both engineering stops remain recorded: an embedding validation mask exhausted memory before inference; a later metadata serialization error stopped the donor half after all original responses had completed. Only missing donor responses resumed. Every original output and criterion stayed fixed. The [protocol](methods/n35_prospective_protocol.json), amendments and [conditional transplant design](methods/n36_conditional_intent.json) preserve that lineage.
+The completed [N34 block study](results/n34_summary.json) audits all 1176 records. Two late blocks pass the copying and coding-loss components, but zeroing them also damages retention. No block passes the full selective-role criterion. All 49 [runtime policies](models/n34/recipe.json) remain available.
 
-Connected-neuron copying is established prior work, including [ARM](https://arxiv.org/abs/2601.07309). This study has not validated full transformer-layer insertion or a coding benefit from transplantation. N34 is running privately: seven fixed native blocks, all donor controls and zeroing, with completed random-model host gates and a frozen prospective auditor. It studies comparator copying. No N34 outputs have been accessed. The [source helper](research/experiments/n34/inference.py) and [random-model fixture](research/experiments/n34/model_host.py) are available; this source release is not a pretrained result.
+The next native-continuation job is private, source-frozen and in progress. It uses adequate output room, keeps every case and distinguishes unfinished output from a completed wrong program. No result is interpreted before audit. Token-aligned observation is being prepared to connect native channel activity with particular task and response tokens.
 
-## Inference budgets
+## Offline surgery workbench
 
-New complete-function assays use a shared 2048-token output budget unless a prospective task-specific bound is justified. Truncations are reported separately from completed wrong programs. The closed donor comparison used 256 tokens and truncated ten original coding outputs; three of its five donor gains remove those truncations. Its scores remain budget-qualified results. No transplant has been tested.
+- [Editing and observation toolkit](docs/SURGERY_TOOLKIT.html): actual APIs, full source and hashes.
+- [Saved model registry](docs/MODEL_REGISTRY.html): exact patch tensors, pinned parents and reconstruction code.
+- [Activation viewer](docs/ACTIVATION_VIEWER.html): inspect a local compact trace, with a clearly labelled synthetic example.
+- [Surgery process](docs/SURGERY_PROCESS.html): a repeatable observation, intervention, evaluation and release workflow.
 
-## Read the research
+Open these HTML files from a clone. They work offline and do not upload a trace. Rebuild them from the repository root with `python scripts/build_surgery_assets.py --root .`.
 
-- [Goal & Intent](docs/GOAL_AND_INTENT.html): scientific objectives, mechanisms, controls and decision rules.
-- [Research Logbook](docs/RESEARCH_LOG.html): sequential experiments, failures, amendments, results and next decisions.
-- [Question register](docs/research_questions.json): the evidence behind each research question.
+## Read the project
+
+- [Goal & Intent](docs/GOAL_AND_INTENT.html): objectives, mechanisms and scientific controls.
+- [Research Logbook](docs/RESEARCH_LOG.html): sequential experiment and decision history.
 - [Saved edits](models/README.md): compact tensors, recipes and reconstruction limits.
 - [Model identity](docs/model_identity.json) and [release inventory](PUBLIC_RELEASE_MANIFEST.json).
 
 Clone this repository and open `docs/index.html` to view the HTML documents. GitHub's file viewer displays their source.
-
-## What the evidence supports
-
-| Finding | Evidence | Boundary |
-| --- | --- | --- |
-| Physical channel edits work on the tested model | N02 audits 460 measurements across the pinned unquantized BF16 and same-source NF4 representations. Deletion agrees with zeroing; doubled outgoing weights agree with activation gain two. R01 reconstructs six edits per representation using the published loader. | One selected layer and a fixed development panel. BF16 split cloning has bounded nonzero logit differences. No speed or coding benefit was tested. |
-| Whole native sites can change conditional coding behavior | N14 transfers 14/16 programs with layers 5 to 9. N16 tests all 31 subsets and selects layers 5, 6 and 9 under a fixed smallest-site rule. At the later N19 comparator decision, all-layer opposite donors transfer 13/13 programs and same-rule donors preserve 13/13. | Reused development inputs, actual donor states and wording dependence. These are conditional sufficiency results, not individual meanings, native necessity or improved coding. N18 and N19 also differ in layers and eligible cases, so their contrast does not isolate position. |
-| Small-group hypotheses have not passed their role screens | N11 fails its predefined rescue and coverage criterion. N13's rare-unit correlation produces no correctness change. N17's selected 96 channels and matched groups produce no transfer or necessity effect. N20 audits all 840 records; selected64, both random64 controls and all nested16 groups have zero transfer, clean-zero loss and conditional-transfer loss. | Full-site controls still work. Sparse nulls do not imply that neurons have no function. No winning dose or subgroup replaces a failed primary test. |
-| Conversational wording can change without a clear trait shift | B01 audits 192 records and rates 160 chat responses before unblinding. Fixed edits preserve its bounded uncertainty, false-premise, remembered-name and coding checks. | Exploratory agent ratings, frequent token caps and random controls that are not activity matched. No validated personality change. |
-| Channel reversal does not reverse knowledge | B02 retains all 64 generations and 128 separately derived answer readings. Original and coordinated channel reversal score 4/4 coding with normal input and raw reading; all other model/input/reading cells score 0/4. | Coordinated reversal is a known ideal symmetry and is not bit-identical in this run. Reversed text does not recover incoherent outputs. No semantic inversion or new capability. |
-
-Every tested condition and scientific null remains in the logbook. The [N19 grid](results/n19_current_decision_summary.json), [N20 grid](results/n20_summary.json), [B01 assessment](results/b01_chat_summary.json) and [B02 reversal grid](results/b02_reversal_summary.json) provide complete aggregates.
-
-## Complete coding evaluations
-
-N21 applies the same prescribed global outgoing-column factor of two to the existing selected64 group and each fixed random64 group. Original and same-scope identity are separate arms. The edit has no answer-derived trigger, fitted strength or new coordinate selection. All 24 coding functions remain in gains/losses, with eight family-level tables and eight retention inputs.
-
-The private GPU package contains inference code and prompt records. Hidden oracles, stress inputs and host grading code are excluded. Host gates cover paired executable oracles, strict output parsing, bounded isolated execution, exact identity and restoration, first-prefill cache preservation and native generation counters. All actual-checkpoint identity, cache, restoration and declared parameter guards pass with zero optimizer updates. The selected edit has zero coding gains or losses against the original. Every arm scores 6/8 under the frozen retention checks. Source-format failures coincide with capped unclosed code fences; no outputs are repaired or regraded. Random-arm gains remain controls, not selected winners.
-
-Retention scores follow the frozen checks. One rotation probe checks returned values without testing fresh-list identity; this limit is recorded before output access.
-
-See the [complete N21 result](results/n21_utility_summary.json), [all five weight recipes](models/n21/recipe.json) and [prospective protocol](methods/n21_prospective_protocol.json). The [completed stage/site control](results/n22_stage_site_summary.json) separates stage from coverage on the same inherited cohort. Both missing cells transfer 0/13; only the inherited all-35-layer current-decision cell transfers 13/13. Same-rule preservation is 13/13 throughout. All 273 records and mandatory guards pass. The [N23 original-only task gate](results/n23_task_gate_summary.json) stopped before any neuron edit. Full role requirements pass 16/32, no complete counterbalance block qualifies, and retention passes 5/8. Diagnostic denotation passes 28/32 but does not replace the required operand-order checks. All 40 records and mandatory guards pass audit; no prompts, caps or grades were changed. The [prospective protocol](methods/n23_baseline_protocol.json) remains preserved.
-
-The [finite-score study](methods/n24_finite_score_protocol.json) is complete. [Every group and operation](docs/figures/n24_summary.png), [all 24 runtime recipes](models/n24/recipe.json), the [metric helper](interpretability/decision_scores.py) and [plot source](scripts/plot_n24_summary.py) are preserved. This is a bounded score contribution on reused development, with no individual semantic meaning or coding gain. 
-
-The [runtime syntax controller](methods/n25_runtime_protocol.json) is complete and audited on a usable error-bearing baseline. All five conditions score **23/32 coding and 8/8 retention**, with **zero gains or losses**. All 200 records and mandatory guards pass. The 160 new token sequences equal the original responses, although every gain arm changes 54 immediate logit-vector hashes. The fixed utility criterion fails. See [all outcomes and diagnostics](results/n25_runtime_summary.json), the [complete figure](docs/figures/n25_summary.png) and [all five recipes](models/n25/recipe.json).
-
-N25 uses only already-generated Python for its fixed trigger, with no baseline answers or hidden oracles in model inputs. The [original-only stage](results/n25_baseline_summary.json) passes every prospective usability requirement. The [host record](results/n25_host_summary.json) preserves the zero-forward parser failure and compatibility repair. Original grades, source failures and all dependent-family results remain fixed. The [example runner](examples/run_n25_policy.py) accepts your own prompt file; independent clean-package pretrained replay is not claimed.
-
-The [global suppression study](results/n26_global_summary.json) is complete. All 320 records and mandatory guards pass. Its two primary screens fail: selected suppression matches random A on the same two gained cases, and no group loses an originally correct case under suppression. All retention checks stay correct. These are reused development cases, and the four variants in each family are dependent.
-
-| Policy | Coding /32 | Gains / losses vs original | Retention /8 |
-| --- | ---: | ---: | ---: |
-| Original carry | 23 | 0 / 0 | 8 |
-| Guarded identity reference | 23 | 0 / 0 | 8 |
-| Selected 64, factor 0 | 25 | 2 / 0 | 8 |
-| Random A64, factor 0 | 25 | 2 / 0 | 8 |
-| Random B64, factor 0 | 24 | 1 / 0 | 8 |
-| Selected 64, factor 2 | 22 | 0 / 1 | 8 |
-| Random A64, factor 2 | 23 | 1 / 1 | 8 |
-| Random B64, factor 2 | 22 | 0 / 1 | 8 |
-
-See the [complete grid](docs/figures/n26_summary.png), [all eight recipes](models/n26/recipe.json) and [caller-prompt example](examples/run_n26_policy.py). The fixed global hypothesis is closed. No winning dose replaces the failed primary. The source, cache, identity, restoration and declared weight-version checks pass with zero optimizer updates. Existing exact N21 columns support these recipes without new tensor blobs or base duplication. Independent clean-package pretrained replay is not claimed.
-
-A [generic host-only checker probe](results/return_identity_host_summary.json), completed before N26 output access, finds an [untested return-list identity property](methods/n26_return_identity_limit.json). The frozen scores check values, types and input preservation. They do not guarantee a newly allocated returned list. All original grades and cases remain unchanged; future confirmation must check the full contract. A [future-only macOS checker](evaluation/contract_execution_v2.py) now enforces fresh top-level result identity before serialization. Its [thirteen fixed host cases](results/future_return_contract_host.json) pass, including aliases of nested inputs and input mutation. It is not applied to N25 or N26.
-
-The [contextual-binding study](results/n27_baseline_summary.json) stops before every edit. All forty records and mandatory guards pass: 21/32 coding, 8/8 retention and no complete counterbalanced block. Every role source satisfies the required operand order, but eleven compute the wrong relation. The [prospective protocol](methods/n27_prospective_protocol.json) and [host preparation](results/n27_preparation.json) remain preserved. An audit interpreter import failure occurred before grading; the unchanged frozen auditor passes under the validated research Python. No prompts, caps or grades change.
-
-The [direct-relation study](results/n28_summary.json) is complete. Its original baseline passes 16/16 coding and 8/8 retention, but the donor-stage primary fails: **0/8 complete cross-order pairs**. Same-order opposite donors transfer 16/16 programs and same-relation donors preserve 16/16. Both reversed-order role arms have zero source-valid programs. All 168 records and mandatory guards pass, with retention 8/8 throughout and no caps. Saved-output comparison finds that all 64 foreign role continuations are token-exact to their actual donor suffixes. Invalid programs keep failed grades; this observation does not establish abstract relation control.
-
-See the [complete grid](docs/figures/n28_summary.png), [all seven inference recipes](models/n28/recipe.json), [prospective protocol](methods/n28_prospective_protocol.json) and [interpretation limits](methods/n28_interpretation.json). No new weight tensors or full bases are stored. The [instruction-state control](results/n29_summary.json) is also complete. All 120 records and mandatory guards pass. Opposite donors transfer 0/16 programs and 0/8 complete operand-order pairs; every condition retains 16/16 original correctness and 8/8 retention. Both foreign arms change all 24 first-logit and whole-cache witnesses, but every response remains token-exact to its original. The [five recipes](models/n29/recipe.json), [prospective protocol](methods/n29_prospective_protocol.json) and [interpretation limits](methods/n29_interpretation.json) preserve the complete null. This closes the panel anchor search. N29 remains closed.
-
-The [fixed native-unit study](methods/n30_prospective_protocol.json) is complete. All **399 records and mandatory guards pass**, but its finite-bias conjunction fails **one of 27 components**: a conditional-cut cell ties control B. The other 26 components pass; they do not replace the failed primary. The target has a small measured score effect, while all three units produce zero opposite-program transfers, zero clean ablation losses and zero conditional-transfer losses. All new zero-arm retention checks pass 8/8. No coding gain or individual semantic role is established.
-
-The target remains L34 C3271, with strict controls C9170 and C4059. The original duplicate control draw and separately frozen distinct draw are preserved. See the [complete results](results/n30_summary.json), [all nineteen recipes](models/n30/recipe.json), [full figure](docs/figures/n30_summary.png), [source freeze](methods/n30_execution_freeze.json), [preparation record](results/n30_preparation.json) and [current-unit helper](interpretability/final_unit.py). No new weight blobs are needed for these runtime edits. Independent clean-package pretrained replay is not claimed.
-
-A [conditional fresh coding intent](methods/n31_conditional_intent.json) fixed both permanent column factors, zero and two, before N30 outputs. Its parent prerequisite fails, so it remains unexecuted. There is no N31 dataset or model result.
-
-The [fresh group study](methods/n32_prospective_protocol.json) stopped at its original-only baseline gate. All 40 outputs and audit guards pass, but only 19/32 role programs satisfy the frozen contract: predicate 14/16 and filter 5/16. Retention is 8/8, with no caps. Ten sources violate names or operand order; three source-valid programs are wrong. Only two of eight blocks qualify, and none is selected. B and C never run. See the [complete outcomes](results/n32_summary.json) and [all-block figure](docs/figures/n32_summary.png). All grades remain fixed; no neuron intervention or group effect was tested.
-
-The first N32 attempt stopped before inference because its tokenization metadata used the wrong schema. The preserved failure has zero forwards or predictions. A [versioned supplement](methods/n32_startup_metadata_repair_v2.json) verifies all 40 unchanged input tensors and supplies the complete metadata expected by the same inference code. Both source freezes and the path-only auditor amendment remain traceable.
-
-The [scaffolded development study](methods/n33_prospective_protocol.json) also stops before edits. All 40 outputs and audit guards pass, but role correctness is 28/32 (predicate 12/16, filter 16/16), retention 3/8 and one output reaches the 48-token cap. Four predicate errors occur under reversed operands; required operator-only first tokens pass 28/32. No passing subcohort is selected, and B/C never run. See the [complete result](results/n33_summary.json) and [all-block figure](docs/figures/n33_summary.png). This is a supplied-scaffold baseline failure, not a group-effect null. Earlier host failures and repairs remain in the sequential log. N33 is closed.
-
-The queued [anatomical copying study](methods/n34_intent.json) now has a protocol frozen before implementation, with no model run yet. It fixes seven MLP blocks on the complete older N28 panel to localize the observed donor-token copying. N28 semantic transfer remains failed. This separate mechanism question cannot establish semantic invariance or revive a failed coding-utility prerequisite.
 
 ## Reproduce an edit
 

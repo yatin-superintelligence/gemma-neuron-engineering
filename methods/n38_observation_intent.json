@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-31T13:33:00.421559+00:00",
+  "experiment": "N38",
+  "question_id": "Q52",
+  "status": "intent_only_no_protocol_or_model_run",
+  "human_idea": "U19",
+  "question": "Which native MLP channels and layer updates are active at particular task and response tokens, and which observations predict a reproducible causal effect under direct edits?",
+  "parent_evidence": "Existing post-gating capture and archived native profiles cover all 337920 MLP channels. They contain aggregate RMS and influence scores rather than a complete response timeline. Large activity alone has not established a semantic role or coding gain.",
+  "planned_observations": [
+    "Read-only down_proj-input hooks measure actual post-gating channel values at fixed prompt positions and native cached response steps.",
+    "Keep signs, layer RMS/quantiles, compact top-magnitude channels, existing fixed candidates and raw output-column-norm summaries. Do not store full activation dumps.",
+    "Align activity with actual token IDs, source spans, predicted probabilities and independently recorded code behavior; include errors rather than only successful answers.",
+    "First validate that the observer preserves logits, emitted choices, cache, model state and hooks exactly on an actual random Gemma fixture.",
+    "Use the adequate-output baseline and unchanged donor records as possible own-trajectory lineage after that study closes. No closed completion or scorer is rerun. A new protocol must fix all cases and boundaries before model measurement.",
+    "Any neuron or transplant candidate requires a separately frozen zeroing, donor/self, rescue and matched-control test. Separate development selection from fresh utility confirmation."
+  ],
+  "not_permitted": [
+    "Training, fitted strengths, vectors, alignments or a learned bridge",
+    "Semantic labels inferred from high activation alone",
+    "Cherry-picked tasks, response tokens or dramatic examples",
+    "A complete neuron map or novel general-method claim"
+  ],
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "GPU_launched": false,
+  "next": "Freeze the smallest informative observation protocol after the current source and baseline studies close; do not duplicate the active job."
+}

@@ -761,7 +761,7 @@
     {
       "id": "Q48",
       "experiment": "N34: anatomical localization of donor comparator copying",
-      "status": "private_launched_source_verified_outputs_unseen",
+      "status": "complete_private_host_audited_closed",
       "question": "Which native MLP blocks control the observed donor comparator-token copying, and does zeroing those sites disrupt original correct conditional programs?",
       "question_provenance": "N28 has a usable closed conditional panel and an observed full-site copying failure. Its semantic criterion remains failed. N32 and N33 stop before edits on separate baseline gates. This proposal studies where the copying occurs, using the complete older panel rather than selecting passing new cases.",
       "parents": [
@@ -770,9 +770,9 @@
         "Q47"
       ],
       "method": "Seven fixed contiguous five-layer MLP blocks cover all 35 native layers. Each receives all four original donor relation/order policies, native zeroing and ordered recipient rescue. All 24 N28 cases remain. The 49-condition grid contains 1176 records: 168 exact parent carries, 840 actual edited tails and 168 guarded rescues. The original 32-token, newline and EOS contract stays fixed. Native token-only teacher lineage is measurement, never an edited prompt or continuation cache. All parent logits, 840 native h hashes, self/rescue and restoration paths must pass. No new task wording, score rank, fitted strength, gradient or weight update.",
-      "result": "A read-only review confirms that the N28 parent patched all 35 MLP layers at a predefined last input position. Every foreign policy matches all sixteen donor first tokens and complete suffixes; invalid cross-order programs remain failures. No closed output is regraded. All 168 parent continuations finish below the 32-token limit. Three separate host stages now pass: 56 block paths in FP32/BF16, teacher-isolation and manifest checks, and four actual receipt-reader cases with sixteen corruption refusals. Together they use 245 random-model forwards, 762 input-token exposures and 63 random tokens, with zero pretrained forwards, backwards or optimizer updates. The runner, prospective auditor, 1176-record and 1638-trajectory manifests, both isolated imports, exact token metadata, lint and private notebook pass. All 89 source, data and parent hashes are frozen before new pretrained outputs. The one private job is launched from checkpoint 04f6d4c after an official observation of 28.03 free GPU hours and terminal status of the ten most recent project sessions. Server metadata is private and its source JSON is exact. No N34 output has been accessed.",
-      "interpretation": "Literal comparator copying is a narrower endpoint than semantic transfer. Localizing that failure could identify a conditional native site, but cannot establish individual meanings, semantic invariance, a complete circuit, formal synergy, novelty or coding improvement. Whole blocks are anatomical coverage probes, not activity-matched controls. All cases remain reused dependent development.",
-      "next_question": "At terminal status, retrieve compact outputs once, verify final source and privacy, then run the frozen auditor. Report every fixed block and every failed clause. Keep any follow-up output-budget extension separate from the closed N35 assay.",
+      "result": "All 1176 records and mandatory guards pass: 840 actual new tails, 168 exact parent carries and 168 guarded rescues. No new tail reaches its output limit. No block passes the complete primary criterion. Blocks 20 to 24 and 25 to 29 pass both copying and token-preservation controls and the coding zero-loss criterion, but zeroing retains only 1/8 and 4/8 retention cases. Early blocks are strongly operand-order dependent. All 840 native h hashes, 144 live parent currents, 168 self checks, 168 rescue checks and 294 restorations pass. Actual work is 3988 forwards, 139984 input exposures, 3126 new tokens and zero backwards or optimizer updates. Worker time is 855.723 seconds and notebook time 907.505 seconds, not charged quota.",
+      "interpretation": "The complete primary fails. Large native blocks can affect conditional copying and correct code, but the late blocks also support other tested behavior. This does not identify a selective coding module, an individual neuron role or useful improvement. Reused dependent cases and coarse ablation limit specificity.",
+      "next_question": "Close this fixed block screen without expanding its universe or lowering thresholds. Continue adequate-output native inference, then token-aligned observation before choosing new surgery.",
       "direction_decision": "Broaden from another baseline redesign to the mechanism of an already observed copying failure. Do not revive a failed semantic or utility prerequisite."
     },
     {
@@ -809,6 +809,39 @@
       "interpretation": "A compatible branch does not establish useful knowledge transfer. Coarse final-MLP replacement is a secondary control and not full transformer insertion. Reused development results would still require fresh confirmation.",
       "next_question": "Leave this conditional experiment unexecuted. Do not lower thresholds, change retention tasks or select a different donor from the closed outcomes.",
       "direction_decision": "Leave the conditional transplant unexecuted after its failed prerequisite. Resume the unchanged N34 anatomical copying question."
+    },
+    {
+      "id": "Q51",
+      "experiment": "N37: adequate-output native continuation",
+      "status": "private_launched_source_verified_outputs_unseen",
+      "question": "What does the unmodified model produce when every interrupted response is allowed to finish under an adequate shared output budget?",
+      "question_provenance": "Direct human U16. Treat avoidable inference limits as implementation issues rather than evidence of model inability.",
+      "parents": [
+        "Q49",
+        "Q48"
+      ],
+      "method": "A separate prospective continuation retains all finished replies and all cases. Every interrupted own-history trajectory must replay its exact recorded token choices, logits and cache before free continuation to EOS or the shared 2048-token bound. The hidden executable oracles stay unchanged on the host. No weight edit, training, reroll or new task wording.",
+      "result": "The native continuation helper and prospective reader pass actual random-model EOS, limit, replay and JSON checks, with seven corruption refusals. All 60 source/data/parent files and the exact notebook freeze before new outputs. The actual compressed transport roundtrip and every source/data hash pass. One private job is launched from local checkpoint 5927620, after a fresh official observation of 27.77 free GPU hours and terminal status of the preceding project jobs. Kaggle derives its actual URL from the new title; the intended-handle pull failure is preserved and resolved through the authenticated own inventory without resubmission. Source JSON is exact and metadata is private. A separate collector amendment changes only that handle; the scientific code and auditor remain unchanged. No new model outputs have been read.",
+      "interpretation": "This establishes a usable output-budget comparison, not a neuron-edit benefit or fresh confirmation. Historical records remain archived.",
+      "next_question": "At terminal status, verify final source/privacy and retrieve compact outputs once with scripts.collect_n37_outputs_v2. Run the unchanged frozen auditor once; preserve any failure. Prepare the read-only observation protocol and tools meanwhile.",
+      "direction_decision": "Resolve an inference bottleneck before claiming useful surgery. Reuse finished responses and warm-model execution where valid."
+    },
+    {
+      "id": "Q52",
+      "experiment": "N38: token-aligned native observation",
+      "status": "intent_only",
+      "question": "Which native MLP channels and layer updates are active at particular task and response tokens, and which observations predict a reproducible causal effect under direct edits?",
+      "question_provenance": "Direct human U19 asks to see neuron activation during tasks and responses, under the new Digital Surgery direction.",
+      "parents": [
+        "Q51",
+        "Q34",
+        "Q48"
+      ],
+      "method": "Plan a read-only native activation timeline with compact per-token channel and layer statistics, actual token probabilities and code outcomes. Validate exact observation identity before use; freeze data and prospective causal follow-up separately.",
+      "result": "No new protocol, pretrained observation or model outcome exists. Archived native profiles provide aggregate activity over all 337920 channels, not a complete token timeline.",
+      "interpretation": "Activity identifies candidates, not semantic roles or proof that a transplanted group will help. Normalization, output connections and downstream paths must be considered.",
+      "next_question": "Freeze the smallest useful observation panel after the preceding baseline and active run close.",
+      "direction_decision": "Broaden observation beyond one task score while keeping direct causal checks and useful coding as the goal."
     }
   ],
   "active_question_id": "Q48",
