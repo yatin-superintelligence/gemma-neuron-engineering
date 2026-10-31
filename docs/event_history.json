@@ -2304,6 +2304,55 @@
       "event": "host_controller_feasibility_complete_closed",
       "experiment": "N25H",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 306,
+      "utc": "2026-10-31T00:07:28.677052+00:00",
+      "event": "two_stage_coding_protocol_frozen_before_task_implementation",
+      "experiment": "N25",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 307,
+      "utc": "2026-10-31T00:07:28.677052+00:00",
+      "event": "independent_task_token_and_oracle_gates_complete",
+      "experiment": "N25",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 308,
+      "utc": "2026-10-31T00:07:28.677052+00:00",
+      "event": "prospective_auditor_archived_and_corrupt_witness_checks_complete",
+      "experiment": "N25",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 309,
+      "utc": "2026-10-31T00:07:28.677052+00:00",
+      "event": "both_stage_source_data_and_analysis_freeze_complete",
+      "experiment": "N25",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 310,
+      "utc": "2026-10-31T00:07:28.677052+00:00",
+      "event": "fresh_quota_resolved_by_new_official_CLI",
+      "experiment": "N25",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 311,
+      "utc": "2026-10-31T00:09:28.438060+00:00",
+      "event": "private_original_only_job_launched_source_and_privacy_verified",
+      "experiment": "N25A",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 312,
+      "utc": "2026-10-31T00:10:19.453113+00:00",
+      "event": "active_reservation_export_timestamp_metadata_repaired",
+      "experiment": "Publication operations",
+      "optimizer_steps": 0
     }
   ]
 }

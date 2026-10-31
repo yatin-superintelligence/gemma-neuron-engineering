@@ -1,0 +1,67 @@
+{
+  "task_gates": {
+    "utc": "2026-10-30T23:56:35.410629+00:00",
+    "status": "all40token_and_oracle_gates_pass",
+    "new_task_prompts": 40,
+    "coding_cases": 32,
+    "retention_cases": 8,
+    "source_sha256": {
+      "research/experiments/n25/protocol.json": "b7fafc71a463c0cfd237a45c5bea51af87b602de872438c12bdd931e7f950b34",
+      "research/experiments/n25/tasks.py": "0fa6a41ae8b60ef0fd07c3ca547d4927a5b1028b3b8a80c8e0b2691d04bfb275",
+      "research/experiments/n25/prompts.jsonl": "7ff4f50e33e119ec12fb5481db0fc3aafe6cc90bb18a638910eefb5a06b06294",
+      "research/experiments/n25/task_metadata.json": "d531395d3fb4635cdf45dd8fa12aaff07344da8643b42eaa775db7c359824656",
+      "research/experiments/n25/json_oracles.json": "2639e3b380cbd6a6e55efc12e1e2374f08a2626f618426278a00d7ccfe3f5d6a",
+      "research/experiments/n25/oracles.py": "da508668dd8e86bab1bc30ce43c29dc9bbbf93de1fbfdc9ec58a63a44548e725",
+      "research/experiments/n25/grading.py": "8038ce5db27d33efc036e03b388dd7a662636cbd5b4a73c2e3d51d9c64687148",
+      "research/experiments/n25/oracle_fixtures.py": "ccdb9e20ac6aa4553d0524719409d3e21b4e51c588fb804ddcb05b92932eb524",
+      "research/experiments/n25/task_host.py": "bd1bde9b560d5b62a17c68650e1cb554eaf9fd6cd2f2f38bf69490481d913d4b",
+      "research/experiments/n21/execution.py": "fa21ed6e7a66c25c0679eeaee16df62dcd06011adcddb6f1dd92b8c769820f47",
+      "research/experiments/n21/generation.py": "1d79579ab601efb408b26830ee1ad232154bcbb4b9bada080216b69613a8681a"
+    },
+    "pretrained_model_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 12.75622016700072,
+    "failure": null,
+    "checked_fixture_rows": 76
+  },
+  "auditor_fixture": {
+    "utc": "2026-10-31T00:00:37.486392+00:00",
+    "status": "archived_witness_and_corruption_checks_pass",
+    "actual_archived_records_checked": 5,
+    "corrupted_records_rejected": 25,
+    "source_sha256": {
+      "research/experiments/n25/audit.py": "c99947b487786d2d74be437d8561e547c98ba53854216c3e2522a60dcfca032d",
+      "research/experiments/n25/audit_host.py": "92d57ca617e67632fd3820f7e1024eed79c9d43fd23e926af22c663705b5ef69",
+      "runs/n25/host/result_cases.json": "adce77655b5e9b24dd23f489268a73e7c508f2b9165e38e38c45f271ae122098",
+      "research/experiments/n25/host_protocol.json": "064ae9cfa783bdc17c51c344409f2f66ddbfde8e2194f27ab6b5d9071539e8e6"
+    },
+    "new_tiny_or_pretrained_forwards": 0,
+    "optimizer_steps": 0,
+    "scope": "New auditor validation on existing host evidence;not a rerun of N25H or pretrained inference."
+  },
+  "packaged_preflight": {
+    "utc": "2026-10-31T00:02:40.190224+00:00",
+    "status": "passed",
+    "all_actual_packaged_source_and_data_hashes_exact": true,
+    "code_cells_compile": true,
+    "isolated_inference_import": true,
+    "isolated_runner_and_auditor_import": true,
+    "ruff_F821_F823": "pass",
+    "GPU_hidden_grader_or_oracles": false,
+    "packaged_sources": 20,
+    "packaged_data_files": 8,
+    "counter_bounds": {
+      "A_max_new_tokens": 4864,
+      "A_max_calls": 5024,
+      "A_max_exposures": 8779,
+      "B_max_new_tokens": 19456,
+      "B_max_calls": 20296,
+      "B_max_exposures": 54091
+    },
+    "new_model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "raw_tasks_oracles_and_reference_programs_private": true,
+  "pretrained_model_forwards": 0
+}

@@ -1,0 +1,114 @@
+{
+  "utc": "2026-10-30T23:52:53.095387+00:00",
+  "experiment": "N25",
+  "question_id": "Q39",
+  "status": "prospective_two_stage_development_protocol_before_task_and_runner_implementation",
+  "question": "Does the fixed answer-independent Python-prefix gain controller improve complete executable coding relative to original and both matched controls?",
+  "parents": [
+    "runs/n24/version1/result_receipt.json",
+    "runs/n25/host/result.json",
+    "runs/n21/version1/result_receipt.json"
+  ],
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original text-only unquantized BF16,4628569344 unique parameters,35MLPs/15native cache slots. No prior edited branches or trained adapters.",
+  "seed": 3925,
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "fixed_groups": "Exact selected64,random34201_64,random34202_64 from the already frozen N20 selection. No new ranking,coordinates,strengths or fitted gate.",
+  "controller": {
+    "source": "interpretability/python_prefix.py",
+    "source_sha256": "6a8403b695f185cb78d335c8f770f32c3d9b53416a7c8b013edb35c31c5ebdcc",
+    "decoder": "interpretability/prefix_decode.py",
+    "decoder_sha256": "4b7f12bcab65de95b2f7a63dcdfbc4ee4fd2d4731cade70e56c23e3ea71c8a44",
+    "event_cap": 4,
+    "maximum_prefix_characters": 16384,
+    "gain": 2,
+    "syntax": "Only already-generated Python,not task IDs,reference programs,baseline answers,correct operators,oracles or future tokens. Trailing declared parameter or simple for-target after return/if. A candidate may continue into an identifier or noncomparison.",
+    "cache_guard": "Every trigger uses an exact nonaliasing native same-prefix shadow. Edited whole current cache must equal native shadow. The shadow never changes live history."
+  },
+  "conditions": [
+    "base",
+    "identity_selected64_gain1",
+    "selected64_gain2",
+    "random34201_64_gain2",
+    "random34202_64_gain2"
+  ],
+  "data": {
+    "coding_cases": 32,
+    "families": {
+      "boundary_filter": 4,
+      "interval_overlap": 4,
+      "clamp_unordered": 4,
+      "circular_window": 4,
+      "capped_signed_step": 4,
+      "adjacent_filter": 4,
+      "closest_bound": 4,
+      "triangle_validity": 4
+    },
+    "retention_cases": 8,
+    "retention": "Four simple trigger-positive noncomparison complete functions and four strict JSON requests. All are new private development cases.",
+    "dependence": "Eight hand-authored algorithm families;four policy/name/wording variants within each family are dependent and are not four independent algorithms.",
+    "requirements": "Complete functions with fixed signatures,integer/list inputs and independent hidden executable oracles. No old prompts,completion carries,C01/final data or benchmark answer lookup. Cases/oracles/source hashes freeze before model outcomes. Host-only references and expected outputs never enter generation assets."
+  },
+  "generation": {
+    "coding_cap": 128,
+    "json_cap": 64,
+    "strategy": "Greedy manual cached decoding,no sampling/rerolls or teacher prefixes. Pinned template enable_thinking=False. First EOS,first standalone closing Python fence,or cap. No output repair or stripping except the frozen source parser.",
+    "prompt_format": "Request complete concise function source only;parser accepts plain Python or one complete Python fence,without outside prose. No supplied function body or return-line continuation."
+  },
+  "stage_A": {
+    "conditions": [
+      "base"
+    ],
+    "records": 40,
+    "other_arms_before_gate": 0,
+    "baseline_gate_all_required": [
+      "At least28of32coding outputs parse/compile under the strict source contract.",
+      "Between8and28of32coding cases are fully correct.",
+      "At least4source-valid but wrong coding cases spanning at least2families.",
+      "At least16of32coding cases have one or more actual runtime prefix events.",
+      "All8retention cases correct,and all4noncomparison function cases have an actual prefix event."
+    ],
+    "failure_branch": "Stop and close as an unassessable baseline before any edited generation. Preserve all40outputs/grades. No wording/cap/oracle/threshold change or regenerated baseline. Any later design is a new development proposal,not confirmation."
+  },
+  "stage_B": {
+    "only_if": "StageA complete/privacy/source/mandatory guards and fixed host baseline gate pass. All sources for both stages and the prospective auditor freeze before StageA outputs.",
+    "new_outputs": 160,
+    "exact_parent_carries": 40,
+    "total_records": 200,
+    "identity": "All40identity generated token IDs,decoded text,all step logit hashes,stop reason and prefix event boundaries must exactly reproduce StageA. Identity grades can carry only after these exact comparisons.",
+    "parent_replay": "Forty live original first-prefill logit hashes replay before new outputs. Never regenerate original completions.",
+    "restoration": "After each of four new conditions,original first-prefill logits replay on all40prompts,160measurements total. No completed original generation reruns.",
+    "stop_on_guard_failure": true,
+    "late_cache": "Each trigger must preserve whole current native cache. Later emitted-token feedback may change later caches.",
+    "counters": "Perresponse n,T,F:root calls T+F,input exposures n+T-1+F. StageB adds40parent and160restoration prefill measurements,200calls and5*sum(all40prompt lengths) exposures. Derive every term from manifests,with an independent outer meter. Carried originals do not count as new outputs."
+  },
+  "grading": {
+    "host_only": true,
+    "strict": "Unmodified primary source extraction,expected signature/type and independent deterministic executable probes. Preserve all input lists. Strict JSON including duplicate/nonfinite rejection. No best-reading,syntax repair or diagnostic regrading. All32coding cases remain in gains/losses.",
+    "stress": "Every claimed gain and changed executable program receives256additional deterministic probes seeded392501+case index. Correct and deliberately wrong host functions must validate oracle discrimination before launch.",
+    "baseline_execution": "Grade StageA once. StageB carries exact original grades;do not rerun the StageA scorer. Identity can carry after exact token/text/hash parity. Grade each new edited output under frozen sources."
+  },
+  "primary_development_signal": {
+    "selected_minus_base_net_at_least": 3,
+    "selected_minus_each_random_net_at_least": 2,
+    "positive_family_nets_against_each_comparator_at_least": 2,
+    "retention": "Selected must preserve all8originally correct retention outcomes. Report each random control retention too.",
+    "stress": "Every claimed selected gain passes independent stress.",
+    "scope": "Candidate development signal only,not formal statistical confirmation. Report all gains/losses,per-family nets,status/cap/trigger counts and leave-one-family-out sensitivity. A smaller score shift or changed string does not replace the fixed utility gate."
+  },
+  "versions_and_hooks": "All original parameter versions/gradflags unchanged,p.gradNone,and hook inventory restored after every response and condition. No weights assigned in this study.",
+  "time_caps_seconds": {
+    "stage_A_platform": 2400,
+    "stage_A_notebook": 2250,
+    "stage_A_worker": 2000,
+    "stage_B_platform": 4500,
+    "stage_B_notebook": 4350,
+    "stage_B_worker": 4100
+  },
+  "launch_gate": "One private free job at a time. StageB only after StageA terminal/audited gate. Fresh permitted signed-in quota before each launch,conservative headroom supports two-device cap plus2hreserve. Cap plus audit/checkpoint fits31October18:22:58UTC.",
+  "failure_policy": "Preserve partial outputs,failed guards,original source and dated repairs. No silent source/hash replacement,guard weakening,completed-panel regeneration or outcome-based selection.",
+  "interpretation": "A fixed native-channel gain may reinforce an erroneous comparator. N24 is not a correctness signal. No semantic neuron meaning,coding benefit,new capability,efficiency or novelty is assumed. Fresh confirmation remains separate."
+}

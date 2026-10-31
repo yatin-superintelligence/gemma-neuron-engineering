@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-31T00:03:09.059568+00:00",
+  "status": "both_stages_and_audit_frozen_before_original_outputs",
+  "protocol_sha256": "b7fafc71a463c0cfd237a45c5bea51af87b602de872438c12bdd931e7f950b34",
+  "auditor_sha256": "c99947b487786d2d74be437d8561e547c98ba53854216c3e2522a60dcfca032d",
+  "analysis_plan_sha256": "af349f371e71f58cb72035694b36ead43a4bd26bc9e522663959d89942fd3c10",
+  "notebook_A_sha256": "dcc94ba8191ff3af16c84db07ab193d1f115d73eb43f51d7e6ec2c1168b12075",
+  "source_count": 63,
+  "optimizer_steps": 0
+}
