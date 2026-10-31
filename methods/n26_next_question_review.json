@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-31T01:33:16.879933+00:00",
+  "status": "conditional_next_question_review_before_N26_output_access",
+  "question_id": "Q40",
+  "N26_outputs_accessed": false,
+  "parents_sha256": {
+    "runs/n23/version1/result_receipt.json": "6a830cce3f3059de0841508078188606ac3f7f48b0a5edf9d48d5c4962773899",
+    "runs/n23/version1/requirement_posthoc.json": "67b568d57023688366a688ec7694aeb5aff5335ae372cf86b1f484d0377795fc",
+    "runs/n22/version1/result_receipt.json": "a874e833e09d6ab286eb3af6fe65261732f564ed7634c5ea86208b73b86ad63d",
+    "runs/n24/version1/interpretation.json": "c432804c8ee9536e275b83865667c2dcde263d16fa000d368df212285f9211e0",
+    "runs/n25/phase_B/version1/mechanical_diagnostics.json": "0b9d69ce5e53361eb31fc9f16db42d3287505289cb6be433232ffe20ada84e4e"
+  },
+  "current_contract": "N26 remains fixed and first. No second model job,source change or outcome interpretation until terminal audit. Factor2 cannot replace factor0. If both primary screens fail,close this fixed sparse global hypothesis;do not add gains or ranks.",
+  "source_to_claim_checks": [
+    {
+      "finding": "N24 selected donors and zeroing shift comparator margins more than matched controls.",
+      "limit": "The contrast between two operator tokens is perfectly tied to the current written operand order in that assay. It is not a correctness detector or an abstract comparison meaning."
+    },
+    {
+      "finding": "N25 changes immediate logits but no token or current cache.",
+      "limit": "For its one-step activation edits,unchanged tokens and cache leave no changed historical state. This does not predict null global weight effects:stored edits remain present on later forwards."
+    },
+    {
+      "finding": "N26 may show clean losses or gains.",
+      "limit": "The two endpoints are distinct. A loss excess would show a bounded group contribution,not individual meanings. A gain would be development evidence requiring fresh confirmation. Earlier matching does not match activity at every new global position."
+    },
+    {
+      "finding": "N23 fails required reversed operand order despite diagnostic denotation success.",
+      "limit": "Dropping that requirement or regrading the old panel is prohibited. Any different task interface is a new development assay,not a repaired or confirmed result."
+    }
+  ],
+  "candidate_question": "Does controlled full-site donor transfer follow an intended comparison relation or the donor next-operator spelling when operand order is crossed?",
+  "candidate_design_not_a_protocol": [
+    "Consider a new private controlled-completion assay with a mechanically supplied function/return prefix. Written operand order is fixed by that prefix rather than requested from free generation. No comparator answer is supplied. Hidden executable oracles grade completed source and requested relation. This evaluates conditional completion,not whole-program improvement.",
+    "Cross recipient/donor relation and written operand order. For same relation/reversed order,donor spelling differs from the recipient semantic answer. For opposite relation/reversed order,donor spelling agrees with the recipient original while semantic transfer requires changing it. Keep all four cells,full-vocabulary alternatives and actual greedy executable continuations.",
+    "Freeze new prompts,oracle sources,complete-cell eligibility,baseline gate,all interventions and a prospective auditor before new outputs. A baseline stop cannot justify wording repair or partial-cell selection. Keep every original failure and original grade.",
+    "First test one predeclared whole-site positive control at the decision,with same-rule/opposite-rule and operand-order controls,self/rescue/restoration and retention. Do not add a layer grid,sparse ranking,alignment or constructed neurons before that gate.",
+    "At an earlier policy anchor,the later operand order cannot affect the prefix state. Cross-order donor duplicates there are not independent semantic controls. A recipient-order generalization test at such an anchor is a different question and must be named separately. Do not merge the two stages into a convenient semantic claim."
+  ],
+  "why_this_is_preferred_to_more_gain_search": "It directly addresses the remaining semantic-versus-token ambiguity before new sparse localization. It cannot be counted as a new capability or useful coding edit. Do not select a task wording,coordinate or strength from N26 outcomes.",
+  "readiness": "Intent review only. No new task dataset,final counts,thresholds,runner,auditor or GPU protocol exists. A separate prospective freeze and fresh resource review would be required after N26 closes.",
+  "new_model_forwards": 0,
+  "new_generated_tokens": 0,
+  "optimizer_steps": 0
+}

@@ -48,6 +48,8 @@ N25 uses only already-generated Python for its fixed trigger, with no baseline a
 
 The [global suppression follow-up](methods/n26_global_protocol.json) is now the one active private job. It keeps the exact N25 cases, grades and three fixed groups. Suppression is primary; amplification is secondary. All 53 random-Gemma host paths, isolated package checks and the prospective audit's 62 corruption refusals pass. [Preparation and preserved repairs](results/n26_preparation.json) describe software feasibility, with no pretrained N26 outcome. All sources are frozen before launch. No original completion is regenerated.
 
+A [generic host-only checker probe](results/return_identity_host_summary.json), completed before N26 output access, finds an [untested return-list identity property](methods/n26_return_identity_limit.json). The frozen scores check values, types and input preservation. They do not guarantee a newly allocated returned list. All original grades and cases remain unchanged; future confirmation must check the full contract.
+
 ## Reproduce an edit
 
 The common parent is `google/gemma-4-E2B-it` at revision `3e22461f65e89153144f8adb70e3b8c2cc9845a7`. The primary text-only representation is unquantized BF16. It retains decoder, token/per-layer embeddings and tied output head while excluding media modules. BF16 is distinct from FP32; no native BF16 acceleration on T4 is claimed.

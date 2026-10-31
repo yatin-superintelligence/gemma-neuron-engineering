@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-31T01:36:31.401235+00:00",
+  "status": "additional_interpretation_limit_before_N26_output_access",
+  "question_id": "Q40",
+  "evidence": "runs/return_identity_host/result.json",
+  "evidence_sha256": "00b72e63d22ba24636f0be1fe8c07c9b666f59d1e2545bf0360f59a2fa64255a",
+  "finding": "Two N25 coding families request a new list. The frozen checker verifies returned values/types and input preservation but not returned-object identity. A generic alias-return fixture passes value checks;fresh-copy also passes;input mutation is refused. No study task,response or closed scorer was rerun.",
+  "restriction": "Keep all32coding/all8retention and every original/new grade. Report outcomes under the frozen checks. A primary screen pass cannot establish complete-contract improvement without checking this omitted property in a separately frozen fresh confirmation. No semantic role or confirmed useful gain follows.",
+  "protocol_auditor_tasks_caps_or_conditions_changed": false,
+  "N26_outputs_accessed": false,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

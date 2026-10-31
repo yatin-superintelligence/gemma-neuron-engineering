@@ -1,0 +1,15 @@
+{
+  "status": "prospective_complete_grid_plan_before_N26_output_access",
+  "question_id": "Q40",
+  "panels": [
+    "All eight original/identity/suppression/amplification conditions: complete32coding and8retention counts.",
+    "Primary suppression: clean losses among the23originally correct coding cases for selected and both controls.",
+    "Every selected paired gain/loss contrast against original and both same-factor controls,with suppression and secondary amplification separately labelled.",
+    "All eight conditions by all eight dependent coding families,correct out of4."
+  ],
+  "reference_treatment": "Original40are exact carried generations;identity40are guarded measurement references,not new completions. Only six edited arms generate240newresponses. Mark both reference kinds.",
+  "limits": "Whole original cohort retained,not only original errors. No winner selection,unplanned dose,confidence interval or independence claim. Amplification cannot replace a failed primary. Clean group losses do not establish semantic meaning. All outcomes remain reported.",
+  "N26_outputs_accessed": false,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

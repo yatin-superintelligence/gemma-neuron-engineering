@@ -1,0 +1,44 @@
+{
+  "utc": "2026-10-31T01:35:33.335775+00:00",
+  "status": "grader_return_identity_limit_confirmed",
+  "cases": [
+    {
+      "case": "return_input_alias",
+      "frozen_executor_grade": {
+        "correct": true,
+        "status": "passed",
+        "cases_completed": 1
+      },
+      "returned_object_is_input": true,
+      "input_preserved": true
+    },
+    {
+      "case": "return_fresh_list",
+      "frozen_executor_grade": {
+        "correct": true,
+        "status": "passed",
+        "cases_completed": 1
+      },
+      "returned_object_is_input": false,
+      "input_preserved": true
+    },
+    {
+      "case": "mutate_input_negative_control",
+      "frozen_executor_grade": {
+        "correct": false,
+        "status": "input_mutation",
+        "cases_completed": 0,
+        "wrong_case": 0
+      },
+      "returned_object_is_input": true,
+      "input_preserved": false
+    }
+  ],
+  "seconds": 0.24288575000173296,
+  "new_model_forwards": 0,
+  "new_generated_tokens": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "closed_study_scorers_or_outputs_rerun": false,
+  "interpretation": "The frozen checker enforces returned values/types and input preservation,but not new returned-list identity. Preserve all existing grades. A future complete-contract confirmation needs an independently frozen alias check."
+}
