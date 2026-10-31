@@ -23,6 +23,158 @@ def capture_native_mlp(model,position,layers):
         yield states
     finally:
         for handle in handles:handle.remove()
+</pre></details></article><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_timeline</h2><p>Read native MLP activity without changing its forward tensors or parameters.</p><p><a href="../interpretability/native_timeline.py">Exact source file</a></p><p class="small">APIs: spaced_positions, NativeActivity</p><p class="hash">SHA-256 0467e43d372da6bb0f4dbe007866be072a2f0a8128090913d81b81c292711b4d</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Read native MLP activity without changing its forward tensors or parameters.&quot;&quot;&quot;
+
+import torch
+
+
+def spaced_positions(length, maximum):
+    &quot;&quot;&quot;Choose deterministic integer endpoints without response-dependent selection.&quot;&quot;&quot;
+    if not isinstance(length, int) or not isinstance(maximum, int):
+        raise ValueError(&#x27;Integer lengths required&#x27;)
+    if min(length, maximum) &lt; 1:
+        raise ValueError(&#x27;Positive lengths required&#x27;)
+    count = min(length, maximum)
+    return [0] if count == 1 else [i * (length - 1) // (count - 1) for i in range(count)]
+
+
+class NativeActivity:
+    &quot;&quot;&quot;Measure post-gating channels and both sides of post-MLP normalization.
+
+    This observer retains selected token slices and streaming moments. It never
+    returns a replacement forward value. Call ``begin`` before each model call
+    and ``finish`` afterward. Moments cover only the last processed position of
+    each call, avoiding extra weight for long prompt prefills.
+    &quot;&quot;&quot;
+
+    def __init__(self, model, coordinates):
+        self.layers = list(model.model.language_model.layers)
+        self.coordinates = [tuple(x) for x in coordinates]
+        if not self.coordinates or self.coordinates != sorted(set(self.coordinates)):
+            raise ValueError(&#x27;Coordinates must be nonempty, unique and sorted&#x27;)
+        self.widths = [layer.mlp.down_proj.in_features for layer in self.layers]
+        for layer, channel in self.coordinates:
+            if type(layer) is not int or type(channel) is not int:
+                raise ValueError(&#x27;Integer coordinates required&#x27;)
+            if not 0 &lt;= layer &lt; len(self.layers) or not 0 &lt;= channel &lt; self.widths[layer]:
+                raise ValueError(&#x27;Coordinate outside native MLP&#x27;)
+        self.indices = {
+            layer: [channel for li, channel in self.coordinates if li == layer]
+            for layer in range(len(self.layers))
+        }
+        with torch.no_grad():
+            self.down_norms = [layer.mlp.down_proj.weight.detach().float().norm(dim=0) for layer in self.layers]
+        if not all(torch.isfinite(x).all() for x in self.down_norms):
+            raise ValueError(&#x27;Nonfinite native output columns&#x27;)
+        self.handles = []
+        self.active = None
+        self.reset_moments()
+
+    def reset_moments(self):
+        if self.active is not None:
+            raise ValueError(&#x27;Cannot reset an unfinished forward&#x27;)
+        self.steps = 0
+        self.sums = [torch.zeros((3, w), dtype=torch.float64, device=n.device) for w, n in zip(self.widths, self.down_norms)]
+
+    def begin(self, sequence_length, positions, toplist=False):
+        if not self.handles or self.active is not None:
+            raise ValueError(&#x27;Observer is closed or a forward is unfinished&#x27;)
+        if type(sequence_length) is not int or sequence_length &lt; 1:
+            raise ValueError(&#x27;Positive native sequence length required&#x27;)
+        positions = list(positions)
+        if positions != sorted(set(positions)) or any(type(i) is not int or not 0 &lt;= i &lt; sequence_length for i in positions):
+            raise ValueError(&#x27;Invalid sampled positions&#x27;)
+        self.active = {&#x27;length&#x27;: sequence_length, &#x27;positions&#x27;: positions, &#x27;toplist&#x27;: bool(toplist), &#x27;h&#x27;: {}, &#x27;raw&#x27;: {}, &#x27;norm&#x27;: {}, &#x27;tops&#x27;: {}}
+
+    def _check(self, value, layer, key, width):
+        frame = self.active
+        if frame is None or layer in frame[key]:
+            raise ValueError(&#x27;Missing begin or repeated native module call&#x27;)
+        if value.ndim != 3 or tuple(value.shape) != (1, frame[&#x27;length&#x27;], width):
+            raise ValueError(&#x27;Unexpected native tensor shape&#x27;)
+        if not torch.isfinite(value).all():
+            raise ValueError(&#x27;Nonfinite observed tensor&#x27;)
+        return frame
+
+    @torch.no_grad()
+    def _input(self, layer, module, args):
+        value = args[0].detach()
+        frame = self._check(value, layer, &#x27;h&#x27;, self.widths[layer])
+        current = value[0, -1].double()
+        self.sums[layer][0].add_(current)
+        self.sums[layer][1].add_(current.abs())
+        self.sums[layer][2].add_(current.square())
+        sample = value[0, frame[&#x27;positions&#x27;]].float()
+        picked = sample[:, self.indices[layer]]
+        stats = torch.stack((sample.mean(-1), sample.square().mean(-1).sqrt(), sample.abs().amax(-1)), dim=-1)
+        frame[&#x27;h&#x27;][layer] = (picked.cpu(), stats.cpu())
+        if frame[&#x27;toplist&#x27;]:
+            magnitudes = current.float().abs() * self.down_norms[layer]
+            order = torch.argsort(magnitudes, descending=True, stable=True)[:min(8, self.widths[layer])]
+            frame[&#x27;tops&#x27;][layer] = {
+                &#x27;channels&#x27;: order.cpu().tolist(),
+                &#x27;activation&#x27;: current[order].float().cpu().tolist(),
+                &#x27;raw_projection_magnitude&#x27;: magnitudes[order].cpu().tolist(),
+            }
+
+    @torch.no_grad()
+    def _output(self, layer, key, module, args, output):
+        value = output.detach()
+        width = self.layers[layer].mlp.down_proj.out_features
+        frame = self._check(value, layer, key, width)
+        frame[key][layer] = value[0, frame[&#x27;positions&#x27;]].float().norm(dim=-1).cpu()
+
+    def finish(self):
+        frame = self.active
+        if frame is None:
+            raise ValueError(&#x27;No forward is active&#x27;)
+        expected = set(range(len(self.layers)))
+        if any(set(frame[key]) != expected for key in [&#x27;h&#x27;, &#x27;raw&#x27;, &#x27;norm&#x27;]):
+            raise ValueError(&#x27;Incomplete native module coverage&#x27;)
+        if frame[&#x27;toplist&#x27;] and set(frame[&#x27;tops&#x27;]) != expected:
+            raise ValueError(&#x27;Incomplete native toplist coverage&#x27;)
+        units = torch.cat([frame[&#x27;h&#x27;][i][0] for i in range(len(self.layers))], dim=1)
+        stats = torch.stack([
+            torch.cat((frame[&#x27;h&#x27;][i][1], frame[&#x27;raw&#x27;][i][:, None], frame[&#x27;norm&#x27;][i][:, None]), dim=-1)
+            for i in range(len(self.layers))
+        ], dim=1)
+        self.active = None
+        self.steps += 1
+        return {&#x27;values&#x27;: units.numpy(), &#x27;layer_stats&#x27;: stats.numpy(), &#x27;tops&#x27;: frame[&#x27;tops&#x27;]}
+
+    def moments(self):
+        if self.active is not None or self.steps &lt; 1:
+            raise ValueError(&#x27;No complete trajectory moments&#x27;)
+        return torch.cat(self.sums, dim=1) / self.steps
+
+    def __enter__(self):
+        if self.handles:
+            raise ValueError(&#x27;Observer already installed&#x27;)
+        try:
+            for i, layer in enumerate(self.layers):
+                def pre(module, args, i=i):
+                    self._input(i, module, args)
+                def raw(module, args, output, i=i):
+                    self._output(i, &#x27;raw&#x27;, module, args, output)
+                def norm(module, args, output, i=i):
+                    self._output(i, &#x27;norm&#x27;, module, args, output)
+                self.handles.append(layer.mlp.down_proj.register_forward_pre_hook(pre))
+                self.handles.append(layer.mlp.down_proj.register_forward_hook(raw))
+                self.handles.append(layer.post_feedforward_layernorm.register_forward_hook(norm))
+        except BaseException:
+            self.__exit__(None, None, None)
+            raise
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        unfinished = self.active is not None
+        for handle in self.handles:
+            handle.remove()
+        self.handles = []
+        self.active = None
+        if unfinished and exc_type is None:
+            raise ValueError(&#x27;Observer exited before a forward finished&#x27;)
+
 </pre></details></article><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>probe</h2><p>PyTorch MLP-channel measurement and reversible interventions.
 
 Use ordinary eager Transformers/PEFT execution. Some optimized kernels bypass

@@ -791,7 +791,8 @@
       "result": "All 96 records and mandatory source/state/cache/argmax/counter guards pass. Original coding is 19/32 and donor coding is 23/32, with five gains and one loss across two families. Original coding has ten caps; donor coding has none. Retention is 7/16 original and 11/16 donor. All donor-quality clauses pass, but original retention fails the fixed 12/16 minimum, so the N36 prerequisite fails. All grades remain final. The unique assay uses 7895 forwards, 16985 input exposures and 7895 generated tokens, with zero backwards, optimizer updates or parameter assignments. Forty-eight original responses are carried exactly after the preserved metadata stop; none is regenerated.",
       "interpretation": "Structural compatibility does not establish shared feature meanings or useful coding transfer. Copying an already-trained donor is a permitted direct-edit hypothesis, not training performed here. Whole transformer insertion remains unvalidated and is more involved than adding an MLP branch.",
       "next_question": "N36 remains unexecuted under its failed prerequisite. Keep all strengths, tasks, criteria and source-design records unchanged. Return to the already frozen N34 copying-localization question, Q48, for implementation.",
-      "direction_decision": "The donor has a bounded descriptive coding advantage, but the full prespecified prerequisite fails. Do not replace that conjunction with attractive clauses or select a new retention cohort. Continue the queued native-site question."
+      "direction_decision": "The donor has a bounded descriptive coding advantage, but the full prespecified prerequisite fails. Do not replace that conjunction with attractive clauses or select a new retention cohort. Continue the queued native-site question.",
+      "headline_eligible": false
     },
     {
       "id": "Q50",
@@ -808,12 +809,13 @@
       "result": "Original retention is 7/16 against the prospectively required 12/16. No source calibration, group selection, copied parameters, graft forward or transplant output occurs. All conditional designs and priors remain preserved. A comparison of unmodified checkpoints does not test a transplanted recipient.",
       "interpretation": "A compatible branch does not establish useful knowledge transfer. Coarse final-MLP replacement is a secondary control and not full transformer insertion. Reused development results would still require fresh confirmation.",
       "next_question": "Leave this conditional experiment unexecuted. Do not lower thresholds, change retention tasks or select a different donor from the closed outcomes.",
-      "direction_decision": "Leave the conditional transplant unexecuted after its failed prerequisite. Resume the unchanged N34 anatomical copying question."
+      "direction_decision": "Leave the conditional transplant unexecuted after its failed prerequisite. Resume the unchanged N34 anatomical copying question.",
+      "headline_eligible": false
     },
     {
       "id": "Q51",
       "experiment": "N37: adequate-output native continuation",
-      "status": "private_launched_source_verified_outputs_unseen",
+      "status": "complete_private_host_audited_closed",
       "question": "What does the unmodified model produce when every interrupted response is allowed to finish under an adequate shared output budget?",
       "question_provenance": "Direct human U16. Treat avoidable inference limits as implementation issues rather than evidence of model inability.",
       "parents": [
@@ -821,15 +823,15 @@
         "Q48"
       ],
       "method": "A separate prospective continuation retains all finished replies and all cases. Every interrupted own-history trajectory must replay its exact recorded token choices, logits and cache before free continuation to EOS or the shared 2048-token bound. The hidden executable oracles stay unchanged on the host. No weight edit, training, reroll or new task wording.",
-      "result": "The native continuation helper and prospective reader pass actual random-model EOS, limit, replay and JSON checks, with seven corruption refusals. All 60 source/data/parent files and the exact notebook freeze before new outputs. The actual compressed transport roundtrip and every source/data hash pass. One private job is launched from local checkpoint 5927620, after a fresh official observation of 27.77 free GPU hours and terminal status of the preceding project jobs. Kaggle derives its actual URL from the new title; the intended-handle pull failure is preserved and resolved through the authenticated own inventory without resubmission. Source JSON is exact and metadata is private. A separate collector amendment changes only that handle; the scientific code and auditor remain unchanged. No new model outputs have been read.",
-      "interpretation": "This establishes a usable output-budget comparison, not a neuron-edit benefit or fresh confirmation. Historical records remain archived.",
-      "next_question": "At terminal status, verify final source/privacy and retrieve compact outputs once with scripts.collect_n37_outputs_v2. Run the unchanged frozen auditor once; preserve any failure. Prepare the read-only observation protocol and tools meanwhile.",
+      "result": "All 96 records and every guard pass. Ten native continuations finish, while 86 finished records and grades carry exactly. The unmodified original scores 24/32 coding and 7/16 retention; the donor scores 23/32 and 11/16. The donor gains two and loses three across all 32 coding cases. Actual work is 5132 forwards, 6299 input exposures and 2572 new suffix tokens, with zero backwards, assignments or optimizer updates. Worker time is 739.075 seconds and notebook time 818.370 seconds, not charged quota.",
+      "interpretation": "Adequate-output baseline on eight dependent coding families. No useful neuron-edit gain or transplant is established. All historical grades and prerequisite stops remain closed.",
+      "next_question": "Q52: freeze compact token-aligned observation over every audited trajectory, then test causal candidates prospectively.",
       "direction_decision": "Resolve an inference bottleneck before claiming useful surgery. Reuse finished responses and warm-model execution where valid."
     },
     {
       "id": "Q52",
       "experiment": "N38: token-aligned native observation",
-      "status": "intent_only",
+      "status": "private_launched_source_verified_outputs_unseen",
       "question": "Which native MLP channels and layer updates are active at particular task and response tokens, and which observations predict a reproducible causal effect under direct edits?",
       "question_provenance": "Direct human U19 asks to see neuron activation during tasks and responses, under the new Digital Surgery direction.",
       "parents": [
@@ -837,14 +839,14 @@
         "Q34",
         "Q48"
       ],
-      "method": "Plan a read-only native activation timeline with compact per-token channel and layer statistics, actual token probabilities and code outcomes. Validate exact observation identity before use; freeze data and prospective causal follow-up separately.",
-      "result": "No new protocol, pretrained observation or model outcome exists. Archived native profiles provide aggregate activity over all 337920 channels, not a complete token timeline.",
-      "interpretation": "Activity identifies candidates, not semantic roles or proof that a transplanted group will help. Normalization, output connections and downstream paths must be considered.",
-      "next_question": "Freeze the smallest useful observation panel after the preceding baseline and active run close.",
+      "method": "Read-only measurement over all 96 native trajectories. Sample up to eight prompt and thirty-two decision positions, 471 fixed channels, all-layer update norms and streaming case-balanced moments. No new generation, training or scorer calls.",
+      "result": "The protocol and 56 source/data/parent hashes are frozen. Actual random Gemma fixtures in FP32 and BF16 pass exact channel values, raw and normalized layer norms, full logits/cache identity and 26 corruption refusals. They use 56 forwards and 88 input exposures, with zero pretrained forwards or updates. All 96 lineages, 48 tokenizations, isolated runner/auditor imports and compressed payload checks pass. Kaggle rejects the original notebook above its 1 MiB source limit before execution. A private exact-hash attachment reduces the notebook to 7562 bytes, with all scientific code unchanged. One private job is launched from checkpoint b8c7695, after a fresh observation of 27.54 free GPU hours. Server source and dataset privacy pass. No N38 outputs have been accessed.",
+      "interpretation": "Software feasibility and prospective native observations only. Neither activity magnitude nor a top list establishes a neuron meaning, causal effect or useful transplant.",
+      "next_question": "At terminal validate both source freezes, retrieve compact outputs once with the versioned collector and run the unchanged frozen auditor. A causal follow-up remains separate.",
       "direction_decision": "Broaden observation beyond one task score while keeping direct causal checks and useful coding as the goal."
     }
   ],
-  "active_question_id": "Q48",
-  "next_question_id": "Q48",
-  "utc": "2026-10-31T12:09:47.703298+00:00"
+  "active_question_id": "Q52",
+  "next_question_id": "Q52",
+  "utc": "2026-10-31T15:15:01.751280+00:00"
 }

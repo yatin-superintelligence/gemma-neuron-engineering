@@ -1,0 +1,158 @@
+{
+  "experiment": "N37",
+  "question_id": "Q51",
+  "status": "complete_private_host_audited_closed",
+  "scope": "Adequate-output unmodified-model baseline on reused development. No neuron edit or transplant.",
+  "models": {
+    "recipient": {
+      "coding_correct": 24,
+      "coding_cases": 32,
+      "retention_correct": 7,
+      "retention_cases": 16,
+      "logical_2048_budget": true,
+      "new_model_responses": 10
+    },
+    "donor": {
+      "coding_correct": 23,
+      "coding_cases": 32,
+      "retention_correct": 11,
+      "retention_cases": 16,
+      "logical_2048_budget": true,
+      "new_model_responses": 0
+    }
+  },
+  "families": [
+    {
+      "condition": "recipient",
+      "family": "ceil_ratio",
+      "correct": 1,
+      "cases": 4
+    },
+    {
+      "condition": "recipient",
+      "family": "first_prefix",
+      "correct": 4,
+      "cases": 4
+    },
+    {
+      "condition": "recipient",
+      "family": "long_tokens",
+      "correct": 4,
+      "cases": 4
+    },
+    {
+      "condition": "recipient",
+      "family": "parenthesis_depth",
+      "correct": 1,
+      "cases": 4
+    },
+    {
+      "condition": "recipient",
+      "family": "rotate_right",
+      "correct": 4,
+      "cases": 4
+    },
+    {
+      "condition": "recipient",
+      "family": "run_lengths",
+      "correct": 4,
+      "cases": 4
+    },
+    {
+      "condition": "recipient",
+      "family": "stable_unique",
+      "correct": 4,
+      "cases": 4
+    },
+    {
+      "condition": "recipient",
+      "family": "union_length",
+      "correct": 2,
+      "cases": 4
+    },
+    {
+      "condition": "donor",
+      "family": "ceil_ratio",
+      "correct": 0,
+      "cases": 4
+    },
+    {
+      "condition": "donor",
+      "family": "first_prefix",
+      "correct": 4,
+      "cases": 4
+    },
+    {
+      "condition": "donor",
+      "family": "long_tokens",
+      "correct": 4,
+      "cases": 4
+    },
+    {
+      "condition": "donor",
+      "family": "parenthesis_depth",
+      "correct": 3,
+      "cases": 4
+    },
+    {
+      "condition": "donor",
+      "family": "rotate_right",
+      "correct": 4,
+      "cases": 4
+    },
+    {
+      "condition": "donor",
+      "family": "run_lengths",
+      "correct": 4,
+      "cases": 4
+    },
+    {
+      "condition": "donor",
+      "family": "stable_unique",
+      "correct": 4,
+      "cases": 4
+    },
+    {
+      "condition": "donor",
+      "family": "union_length",
+      "correct": 0,
+      "cases": 4
+    }
+  ],
+  "paired_donor_vs_original": {
+    "gains": 2,
+    "losses": 3
+  },
+  "all_extended_replies_finished": true,
+  "remaining_unfinished": 0,
+  "receipt": {
+    "utc": "2026-10-31T14:42:30.293728+00:00",
+    "status": "complete_private_host_audited_closed",
+    "records": 96,
+    "new_extended_records": 10,
+    "exact_finished_parent_carries": 86,
+    "all_mandatory_guards_pass": true,
+    "actual_counter": {
+      "calls": 5132,
+      "input_token_exposures": 6299
+    },
+    "replayed_parent_choices": 2560,
+    "new_generated_tokens": 2572,
+    "worker_seconds": 739.075493132,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "parameter_assignments": 0,
+    "closed_N35_grades_changed": false,
+    "N36_original_stop_unchanged": true,
+    "host_recomputed_checkpoint_logits_or_weights": false,
+    "notebook_seconds": 818.369617583
+  },
+  "source_hashes": {
+    "research/experiments/n37/protocol.json": "e73b82d7eab8995c3d5590948683114e80f9c625f7ab5a2ed9c1cb6fd2453fde",
+    "research/experiments/n37/analysis_plan.json": "a4c6c21798054cf3e89bb13a18121f4ed10b697c8e8011f2e9bc247340ed92e0",
+    "runs/n37/version1/result_receipt.json": "88113dbcc60aff07ebab8a02d9850c49f4ddba313e3a6b267a54658e6139eedf",
+    "runs/n37/version1/descriptive_results.json": "06f09385516ee2de4c06b8d1cba69c22181a54a0993e6d8d1dec653ce9e1aec7"
+  },
+  "interpretation": "The original scores 24/32 coding and 7/16 retention; the compatible donor scores 23/32 and 11/16. Neither result establishes a coding improvement from surgery. Eight coding families contain dependent wording/name variants. All cases remain.",
+  "next": "Read-only token-aligned observation, then a separately frozen causal intervention. Original closed prerequisites remain unchanged."
+}

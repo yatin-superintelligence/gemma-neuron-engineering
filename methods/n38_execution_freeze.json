@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T15:00:51.921141+00:00",
+  "status": "source_data_auditor_frozen_before_launch_and_outputs",
+  "analysis_plan_sha256": "34e2a1d1e5a767b4befe6a246282c6250fd2c4625f392a67d9d2c7ece4b71d59",
+  "auditor_sha256": "ede1e98cb5bbcd7de226ad77e6eab7aff822db5fb20ef6185f32edb3ca511111",
+  "protocol_sha256": "9ac09d9c9cd4d82f323b17b609ec4ec8690aa503aae5a3cf0d151dccd7333236",
+  "source_data_parent_hashes": 56,
+  "notebook_sha256": "31b595658bba9e38f468c840472000608c94ca6817bef8328643b855333f2536",
+  "pretrained_model_forwards": 0,
+  "optimizer_steps": 0,
+  "original_inline_notebook_rejected": true,
+  "active_transport": {
+    "versioned_notebook_sha256": "23813774d998e76e9a3f77accf3054feb510d4193c1b733672cc925e5e620411",
+    "payload_sha256": "114d3990a7c02353c6886c1a505b643658393fa92fa20a4f1bd4f627f31d1113",
+    "payload_bytes": 1955828,
+    "new_notebook_bytes": 7562,
+    "source22_and_data10_hashes_exact": true,
+    "worker_helper_auditor_protocol_and_original56hashes_unchanged": true
+  }
+}

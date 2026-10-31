@@ -14,7 +14,7 @@ def page(title, body, script=''):
 
 
 SOURCES = {
-    'Observe': ['interpretability/native_capture.py', 'interpretability/probe.py'],
+    'Observe': ['interpretability/native_capture.py', 'interpretability/native_timeline.py', 'interpretability/probe.py'],
     'Patch activations': ['interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
     'Edit weights': ['interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
     'Edit connections': ['interpretability/memory_connection.py'],

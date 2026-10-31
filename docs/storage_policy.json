@@ -1,0 +1,11 @@
+{
+  "authority": "Direct human U21: avoid local storage bloat and use GitHub by completed experiment ID.",
+  "public_release": "Reviewed source, complete aggregates, figures, compact exact edits, pinned-base recipes and reconstruction utilities under each experiment ID. Verify the full remote tree before local cleanup.",
+  "model_storage": "Use immutable public parent references plus exact patches or deterministic copy recipes. No repeated full base checkpoints or paid LFS.",
+  "private_evidence": "Raw tasks, answers, replies, activation traces, notebooks and paper stay private. Retain verified lossless local archives and the existing private Kaggle records. The public GitHub repository is not a raw-data backup.",
+  "active_lineage": "Keep every file required by active frozen hash contracts. Compress or move a referenced file only after closure, with exact original/archive hashes and a documented restore path. Never rerun a closed scorer to recover a receipt.",
+  "cleanup": "Remove generated Python caches, temporary rendered pages and verified redundant downloads after provenance is retained. Do not delete unique scientific evidence.",
+  "current_observation_budget": "N38 scientific outputs are prospectively bounded to 64 MiB. Full activation tensors and full model weights are never saved as experiment output.",
+  "verified_reclamation_bytes": 60719127,
+  "no_training": true
+}

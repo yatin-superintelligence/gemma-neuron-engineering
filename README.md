@@ -21,7 +21,7 @@ The [Research Logbook](docs/RESEARCH_LOG.html) retains all experiments, negative
 
 The completed [N34 block study](results/n34_summary.json) audits all 1176 records. Two late blocks pass the copying and coding-loss components, but zeroing them also damages retention. No block passes the full selective-role criterion. All 49 [runtime policies](models/n34/recipe.json) remain available.
 
-The next native-continuation job is private, source-frozen and in progress. It uses adequate output room, keeps every case and distinguishes unfinished output from a completed wrong program. No result is interpreted before audit. Token-aligned observation is being prepared to connect native channel activity with particular task and response tokens.
+The [adequate-output baseline](results/n37_summary.json) is complete and audited. The unmodified original scores 24/32 coding and 7/16 retention; the compatible donor scores 23/32 and 11/16. Every extended reply finishes. All 96 outcomes remain, with no model edits or training. The private [N38 observation panel](methods/n38_observation_design.json) is active: all 96 native trajectories, including incorrect answers, with 471 fixed timeline coordinates and streaming summaries. Every decision must replay exact native logits and cache. No new response is generated and no neuron edit is made.
 
 ## Offline surgery workbench
 
@@ -55,7 +55,7 @@ tests/              Software fixtures without a checkpoint download
 docs/               Goal & Intent, logbook, figures and question register
 ```
 
-Follow [the model bundle instructions](models/README.md) for the validated loader and exact edit names. Base checkpoints are referenced by immutable revision rather than duplicated. Donor-based recipes require caller-supplied contexts; private donor states are excluded. R01 verifies the N02 reconstruction path. Other recipes state their replay limits explicitly. Full transformer-layer insertion remains unvalidated.
+Follow [the model bundle instructions](models/README.md) for the validated loader and exact edit names. Base checkpoints are referenced by immutable revision rather than duplicated. Completed studies are stored by experiment ID; local raw evidence uses verified lossless archives, and generated caches are removed. See the [storage policy](docs/storage_policy.json). Donor-based recipes require caller-supplied contexts; private donor states are excluded. R01 verifies the N02 reconstruction path. Other recipes state their replay limits explicitly. Full transformer-layer insertion remains unvalidated.
 
 The [stored group gain helper](interpretability/stored_group_gain.py) assigns only declared dense outgoing columns and restores the original matrices on exit, including exceptions. Its fixed factor is not fitted to outcomes. Random-module fixtures are separate from pretrained behavioral evidence.
 

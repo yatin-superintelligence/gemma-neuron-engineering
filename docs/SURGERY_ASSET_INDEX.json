@@ -11,6 +11,15 @@
     },
     {
       "category": "Observe",
+      "path": "interpretability/native_timeline.py",
+      "sha256": "0467e43d372da6bb0f4dbe007866be072a2f0a8128090913d81b81c292711b4d",
+      "symbols": [
+        "spaced_positions",
+        "NativeActivity"
+      ]
+    },
+    {
+      "category": "Observe",
       "path": "interpretability/probe.py",
       "sha256": "cc29483c000cdbe0165d8d00a3cc9421c51d17088328d9d0d2996caef5e066f9",
       "symbols": [

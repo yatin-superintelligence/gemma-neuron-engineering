@@ -3736,6 +3736,58 @@
       "event": "completed_raw_files_losslessly_archived_after_hash_roundtrip",
       "experiment": "N34",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 510,
+      "utc": "2026-10-31T14:45:13.811323+00:00",
+      "event": "all96records_and_guards_pass_adequate_output_native_baseline_closed",
+      "experiment": "N37",
+      "optimizer_steps": 0,
+      "runner_seconds": 739.075493132,
+      "predictions": 96
+    },
+    {
+      "sequence": 511,
+      "utc": "2026-10-31T14:49:19.716467+00:00",
+      "event": "compact_read_only_trajectory_protocol_frozen_before_implementation",
+      "experiment": "N38",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 512,
+      "utc": "2026-10-31T15:02:53.913304+00:00",
+      "event": "native_observer_host_identity_values_cache_guards_and56source_hashes_pass_before_launch",
+      "experiment": "N38",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 513,
+      "utc": "2026-10-31T15:12:18.790579+00:00",
+      "event": "upload_rejected_source_size_limit_before_model_execution_preserved",
+      "experiment": "N38",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 514,
+      "utc": "2026-10-31T15:12:18.790579+00:00",
+      "event": "private_attachment_transport_v2_exact_roundtrip_and_frozen_science_pass",
+      "experiment": "N38",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 515,
+      "utc": "2026-10-31T15:15:01.751280+00:00",
+      "event": "one_private_read_only_observation_job_launched_server_and_dataset_source_verified",
+      "experiment": "N38",
+      "optimizer_steps": 0,
+      "privacy_server_verified": true
+    },
+    {
+      "sequence": 516,
+      "utc": "2026-10-31T15:16:40.133227+00:00",
+      "event": "exclude_archived_budget_comparison_from_current_goal_overview_original_records_unchanged",
+      "experiment": "Reporting",
+      "optimizer_steps": 0
     }
   ]
 }

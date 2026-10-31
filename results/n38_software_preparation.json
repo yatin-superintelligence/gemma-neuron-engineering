@@ -1,0 +1,103 @@
+{
+  "host_fixture": {
+    "utc": "2026-10-31T14:56:36.521312+00:00",
+    "status": "passed_closed",
+    "cases": [
+      {
+        "dtype": "torch.float32",
+        "baseline_and_observed_decisions": 13,
+        "selected_values_exact": true,
+        "raw_and_normalized_layer_norms_exact": true,
+        "independent_moments_agree": true,
+        "all_logit_and_cache_hashes_exact": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "baseline_and_observed_decisions": 13,
+        "selected_values_exact": true,
+        "raw_and_normalized_layer_norms_exact": true,
+        "independent_moments_agree": true,
+        "all_logit_and_cache_hashes_exact": true
+      }
+    ],
+    "corruptions_refused": [
+      "torch.float32:values",
+      "torch.float32:positions",
+      "torch.float32:trace",
+      "torch.float32:moments",
+      "torch.float32:probability",
+      "torch.float32:lineage_logit",
+      "torch.float32:lineage_cache",
+      "torch.float32:lineage_token",
+      "torch.float32:scope_positions",
+      "torch.float32:scope_missing",
+      "torch.float32:scope_shape",
+      "torch.float32:scope_finite",
+      "torch.float32:scope_duplicate",
+      "torch.bfloat16:values",
+      "torch.bfloat16:positions",
+      "torch.bfloat16:trace",
+      "torch.bfloat16:moments",
+      "torch.bfloat16:probability",
+      "torch.bfloat16:lineage_logit",
+      "torch.bfloat16:lineage_cache",
+      "torch.bfloat16:lineage_token",
+      "torch.bfloat16:scope_positions",
+      "torch.bfloat16:scope_missing",
+      "torch.bfloat16:scope_shape",
+      "torch.bfloat16:scope_finite",
+      "torch.bfloat16:scope_duplicate"
+    ],
+    "actual_random_model_counter": {
+      "calls": 56,
+      "input_token_exposures": 88
+    },
+    "both_runner_and_auditor_imported": true,
+    "pretrained_model_forwards": 0,
+    "new_pretrained_tokens": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 1.1257067500118865
+  },
+  "transport": {
+    "utc": "2026-10-31T15:00:48.362644+00:00",
+    "status": "passed",
+    "actual_compressed_payload_roundtrip": true,
+    "packaged_sources": 22,
+    "inputs": 10,
+    "all96lineages_exact": true,
+    "all48actual_tokenizations_exact": true,
+    "counter_manifests": {
+      "recipient": {
+        "calls": 7630,
+        "input_token_exposures": 12175,
+        "cases": 48
+      },
+      "donor": {
+        "calls": 2837,
+        "input_token_exposures": 7382,
+        "cases": 48
+      }
+    },
+    "both_isolated_runner_auditor_imports": true,
+    "Ruff_F821_F823": "All checks passed!",
+    "host_validate_case_AST_unchanged": true,
+    "hidden_grader_excluded": true,
+    "lineage_sha256": "51cba0ef9e40391957a35bb78fa259187bbbf94c0d4521019b8afe638577f764",
+    "new_pretrained_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "auditor_extension": {
+    "utc": "2026-10-31T14:58:26.496104+00:00",
+    "scope": "Before any N38 pretrained output, add exact source-proof comparison and independent host checks for saved fixed-group and family summaries. Scientific conditions and native observer unchanged.",
+    "old_auditor_sha256": "309b5e38490c3d1025ab9a36172867b68b15e78196c1c330c9c04fb7450f50b1",
+    "new_auditor_sha256": "ede1e98cb5bbcd7de226ad77e6eab7aff822db5fb20ef6185f32edb3ca511111",
+    "model_host_validate_case_AST_unchanged": true,
+    "new_arithmetic_fixture_passed": true,
+    "pretrained_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "upload_failure": "A notebook above the official 1 MiB source limit was rejected before execution. One no-run diagnostic confirmed the reason. The unchanged payload moved to a private attachment, with exact source/data roundtrip.",
+  "scientific_source_and_auditor_unchanged_by_transport": true,
+  "scope": "Read-only software gates and private launch preparation, not pretrained neuron-role or coding evidence."
+}
