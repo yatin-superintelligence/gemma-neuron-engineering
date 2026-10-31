@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-31T11:36:27.744477+00:00",
+  "status": "bounded_primary_source_review_before_N35_quality_output_access",
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2601.07309v1",
+      "reviewed": "Abstract and sections3.1-3.3, equations6-8 and Algorithm1; not a full appendix replication.",
+      "method": "ARM forms merged backbones, selects using role-conditioned activation overlap, then replaces donor-salient neurons while protecting other benchmark-salient sets. For gated MLPs, the same index links gate/up rows and down columns. Its experts share a base architecture and tokenizer.",
+      "implication": "Connected-neuron hard transplantation without gradient updates is existing work. No novelty claim for this operation; activity saliency alone is not our individual-neuron causal meaning criterion."
+    },
+    {
+      "url": "https://arxiv.org/html/2602.16189v1",
+      "reviewed": "Abstract, sections3.1-3.3 and selected experiment/setup paragraphs4.1-4.2.2, including tables4-5.",
+      "method": "Beyond Learning copies compatible leaf linear modules selected by source/target activation discrepancy. It studies Phi-generation and Gemma2 base/instruction pairs, with no optimization after copying. Reported best configurations depend on module count and decoding budget.",
+      "implication": "Whole-linear replacement and Gemma transplantation already have direct priors. Best-setting tables do not authorize a winning module/dose search in our frozen assay. This is not evidence for Gemma4 coding gains or our fixed128-neuron addition."
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.13596v1",
+      "reviewed": "Primary abstract and submission metadata only.",
+      "method": "Activation-Prune-Merge describes task-conditioned donor pruning and small-coefficient injection across model scales.",
+      "implication": "Cross-scale no-gradient fusion is prior work. No full-method/appendix replication, coefficient sweep or new strength is imported."
+    },
+    {
+      "url": "https://arxiv.org/abs/2106.07682",
+      "reviewed": "Primary abstract only.",
+      "method": "Model stitching connects frozen source/target blocks through a trainable intervening layer.",
+      "implication": "A learned or fitted bridge remains prohibited here, even if the source and target blocks stay frozen."
+    }
+  ],
+  "frozen_design_change": "None. FinalMLP34,width128,strength1,three groups and all primary/secondary contrasts stay as fixed. N35 quality gates remain first.",
+  "external_private_assets_sent": false,
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

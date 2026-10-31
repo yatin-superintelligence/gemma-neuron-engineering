@@ -778,7 +778,7 @@
     {
       "id": "Q49",
       "experiment": "N35: donor neuron transplantation feasibility",
-      "status": "private_version2_active_outputs_unseen",
+      "status": "private_version3_donor_only_active_outputs_unseen",
       "question": "Does the structurally compatible full donor show a coding advantage under the recipient interface before a separately gated neuron transplant?",
       "question_provenance": "The human asks whether a constructed neuron group or layers borrowed from another model could improve coding. Earlier silent additions and physical edits establish limited engineering gates, while no useful coding gain exists. This new proposal tests pre-existing donor knowledge through direct copying, with zero training.",
       "parents": [
@@ -788,7 +788,7 @@
         "Q48"
       ],
       "method": "A protocol frozen before task implementation fixes 32 complete Python functions across eight algorithm families and 16 arithmetic/JSON retention questions. Both unmodified text-only BF16 models receive identical recipient-tokenizer inputs and manual full-vocabulary greedy decoding. Independent host-only executable oracles, all outputs and gains/losses remain fixed. No parameter assignment, backward or optimizer update.",
-      "result": "Metadata, task/oracle and actual random-Gemma host gates pass. Version 1 stops before inference because a full embedding finite-value mask exhausts GPU memory. It has zero forwards, answers, edits, backwards or updates; worker 81.432863181 seconds and notebook 127.705170301 seconds. All source and failure receipts remain preserved. Version 2 replaces only this mask with exhaustive slices of at most 1048576 elements. Eight positive and 18 nonfinite host cases pass with exact input hashes. Runner and auditor scientific code are byte-identical under inverse path substitutions; all tasks, model revisions, decoding and criteria remain fixed. Version 2 imports/cells/lint and its new source freeze pass. No donor-quality outcome exists. Version 2 is now the one private active job, with exact server source and fresh official quota verified before launch. No quality output has been accessed.",
+      "result": "Version 1 stops before inference at a full-mask memory check. Version 2 repairs that check and completes all 48 original-model responses, with exact native state and 5058 forward calls, 9603 input exposures and 5058 generated tokens. It then stops before any donor response because actual Transformers loading-info sets are not JSON serializable. The complete original panel is preserved without grading. Version 3 changes only metadata serialization and runs only the missing donor half. All inference, data, oracle and criterion sources stay fixed; every per-record auditor function is AST-identical. An actual tiny checkpoint loading-info/JSON fixture passes with zero model forwards. Both isolated imports and the new execution freeze pass. No donor-quality assessment exists. The donor-only continuation is now private and active, with exact server source verified. All 48 original records stay on the host and are not uploaded as prompts. Fresh official free quota is 28.16 hours at this launch, not a current balance.",
       "interpretation": "Structural compatibility does not establish shared feature meanings or useful coding transfer. Copying an already-trained donor is a permitted direct-edit hypothesis, not training performed here. Whole transformer insertion remains unvalidated and is more involved than adding an MLP branch.",
       "next_question": "At terminal status, retrieve compact outputs once, verify exact server source, input manifest and privacy, then run the frozen auditor once on all 96 records. N36 remains conditional on every adequacy and donor-quality clause. Do not change the donor, tasks, thresholds, doses or grades after outcomes.",
       "direction_decision": "Follow the latest direct human construction proposal. Keep the earlier N34 scientific protocol unchanged and queued. Preserve every earlier null and failed utility prerequisite."
@@ -796,7 +796,7 @@
     {
       "id": "Q50",
       "experiment": "N36: conditional connected-neuron transplant",
-      "status": "conditional_intent_not_implemented",
+      "status": "conditional_source_selection_design_frozen_prerequisite_pending",
       "question": "Can a fixed already-trained donor group improve recipient coding through direct copying without fitting?",
       "question_provenance": "Latest human neuron-transplant proposal U15. N35 must first establish a usable original and stronger donor under the same interface.",
       "parents": [
@@ -804,8 +804,8 @@
         "Q10",
         "Q13"
       ],
-      "method": "A pre-output intent fixes final native MLP34, 128 connected neurons and branch strength 1. Twelve arms retain original/donor parents, silent branch, native addition/amplification, two random donor groups, incoming/outgoing hybrids, group replacement and whole-final-MLP replacement. Source-only selection and strict matching must freeze before execution. No learned bridge or training.",
-      "result": "Intent only. No group selection, added parameters, pretrained forward or model outcome exists. A read-only pinned-source review confirms placement before the existing post-feedforward norm. A 128-neuron connected branch would copy 589824 BF16 parameters, or 1179648 bytes. No branch or pretrained model has been built.",
+      "method": "A pre-output intent fixes final native MLP 34, 128 connected neurons and branch strength 1. Twelve arms retain original/donor parents, silent branch, native addition/amplification, two random donor groups, incoming/outgoing hybrids, group replacement and whole-final-MLP replacement. Source-only selection and strict matching must freeze before execution. No learned bridge or training. A separate pre-output design fixes four neutral recipient-prefill contexts, seven source/activity magnitude metrics, inclusive control/target bands from 0.8 to 1.25, minimum pool of 16 and disjoint sequential draws using seeds 4951 and 4952. Every coordinate and gain remains unselected until the prerequisite passes and actual source measurements exist. This design is not an execution-ready protocol.",
+      "result": "Intent only. No group selection, added parameters, pretrained forward or model outcome exists. A read-only pinned-source review confirms placement before the existing post-feedforward norm. A 128-neuron connected branch would copy 589824 BF16 parameters, or 1179648 bytes. No branch or pretrained model has been built. A bounded primary-source review confirms that ARM already copies connected gated neurons, and Beyond Learning copies compatible linear modules including Gemma2. No direct-copying novelty or Gemma4 benefit is inferred.",
       "interpretation": "A compatible branch does not establish useful knowledge transfer. Coarse final-MLP replacement is a secondary control and not full transformer insertion. Reused development results would still require fresh confirmation.",
       "next_question": "Only after N35 passes every fixed adequacy and donor-quality clause, freeze exact source selection, controls, implementation, auditor and resources. Otherwise leave N36 unexecuted.",
       "direction_decision": "Test useful donor quality before adding donor weights. Keep N34 unchanged and queued."
@@ -813,5 +813,5 @@
   ],
   "active_question_id": "Q49",
   "next_question_id": "Q49",
-  "utc": "2026-10-31T11:17:57.375544+00:00"
+  "utc": "2026-10-31T11:37:02.873177+00:00"
 }

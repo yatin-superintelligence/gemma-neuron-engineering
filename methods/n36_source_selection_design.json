@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-31T11:34:17.346432+00:00",
+  "experiment": "N36",
+  "question_id": "Q50",
+  "status": "conditional_source_selection_design_before_N35_quality_output_access_not_GPU_protocol",
+  "prerequisite": "Every N35 baseline adequacy and donor-quality clause plus engineering guards must pass. Otherwise no source selection or transplant execution.",
+  "fixed_site": 34,
+  "fixed_width": 128,
+  "fixed_branch_strength": 1,
+  "group_seeds": [
+    4951,
+    4952
+  ],
+  "source_revisions": {
+    "recipient": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "donor": "4631872892d56dab6c079b2c57a54ca633297819"
+  },
+  "calibration_interface": "Pinned recipient tokenizer, thinking disabled. Four native recipient prefills only, no answer generation. Capture the actual pre-normalized MLP34 input after its existing pre-feedforward norm, transiently across all nonpadding input positions. Apply existing native and donor gate/up rows to those identical host inputs in BF16 with the existing native activation. Compute read-only coefficient RMS in F64 from the resulting BF16 coefficients. No donor-generated context, coding grade or future answer enters selection.",
+  "ranking": "For each channel and each projection G,U,D, compute exact-source BF16 weight delta in F64. Let r_p=norm(delta_p)/norm(native_p), using the row for G/U and matching column for D. Require all three native denominators positive finite. Rank by sqrt((r_G^2+r_U^2+r_D^2)/3), descending then channel index ascending. This score is read-only selection, never an applied coefficient or learned vector. Exclude score0/nonfinite channels.",
+  "matching_metrics": [
+    "native coefficient RMS on the four fixed host-input prefills",
+    "donor-on-host coefficient RMS on those exact same inputs",
+    "native combined incoming RMS: sqrt((sum(G^2)+sum(U^2))/(2*hidden))",
+    "donor combined incoming RMS under the same formula",
+    "native outgoing-column L2 norm",
+    "donor outgoing-column L2 norm",
+    "source-change ranking score above"
+  ],
+  "matching_band_each_metric": [
+    0.8,
+    1.25
+  ],
+  "matching_rule": "All seven control/target ratios must be in the inclusive band, with finite positive denominators. Pools are not filtered by a semantic/activity sign or coding output. No relaxation, vector scaling, strength fit or rematching after failure. This is source and neutral-activity matching, not proof of semantic specificity.",
+  "allocation": "Visit ranked source candidates in order. Skip any already selected or previously reserved random coordinate. For each candidate, build its strict sorted matching pool excluding itself and every previously selected or reserved coordinate. Require at least16 pool members before drawing. Draw A with random.Random(4951), then B with random.Random(4952) from the remaining pool without A. Reserve both. Accept the candidate as selected. Stop after128 accepted; if the ranked list exhausts, preserve a planned source-matching failure without construction. Thus all three128-channel groups are disjoint and draws occur without replacement. These reservations are part of the prospective eligibility rule.",
+  "matching_pool_minimum": 16,
+  "moments_storage": "Save compact scalar profiles, IDs, exclusion counts, exact seeds/draws and source hashes. Full host hidden inputs and coefficients are ephemeral. No activation dumps or fitted/applied contrast vectors.",
+  "connection_controls": "Preserve all12 predeclared arms. Native connected-group addition and native outgoing gain2 separately test duplication/amplification. Hybrids exchange only incoming or outgoing weights; whole final-MLP replacement remains a secondary coarse control. Different floating accumulation may distinguish addition and amplification; do not amend identity tolerances after outcomes.",
+  "boundary": "This fixes the source-selection design before N35 quality output access. It is not an execution protocol or a claim that groups were selected, any branch exists or donor quality passed. Exact code, lineage/counters, scope guards, auditor and host validation must freeze in a separate conditional execution protocol.",
+  "model_forwards": 0,
+  "new_parameters_constructed": 0,
+  "optimizer_steps": 0,
+  "N35_quality_outputs_accessed": false,
+  "calibration_prompt_count": 4,
+  "calibration_prompts_private": true
+}

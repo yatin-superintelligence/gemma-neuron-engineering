@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-31T11:46:00.752304+00:00",
+  "status": "closed_partial_recipient_panel_preserved_donor_metadata_serialization_failure",
+  "completed_recipient_records": 48,
+  "completed_donor_records": 0,
+  "actual_model_forwards": 5058,
+  "input_token_exposures": 9603,
+  "generated_tokens": 5058,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "parameter_assignments": 0,
+  "worker_seconds": 824.027067842,
+  "notebook_seconds": 874.42955929,
+  "behavioral_grades_accessed": false,
+  "recipient_state_and_counter_witnesses_complete": true,
+  "no_completed_panel_regenerated": true,
+  "resume_amendment": "research/experiments/n35/serialization_resume_amendment_v3.json"
+}

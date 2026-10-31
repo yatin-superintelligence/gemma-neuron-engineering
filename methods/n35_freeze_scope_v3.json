@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-31T11:49:53.023936+00:00",
+  "receipt": "runs/n35/analysis_source_freeze_v3.json",
+  "clarification": "The inherited status label before pretrained outputs refers to the new donor-only continuation. Forty-eight recipient outputs already exist and are byte-hashed protected parent records from the original version2 pre-output freeze. The version3 metadata/transport repair is frozen after reading only failure/count metadata, before grading recipient behavior or generating donor answers. The original task, inference, grade and criterion sources are unchanged. All96 final records are48 exact carries plus48 new donor generations, not96 new generations in version3.",
+  "original_label_preserved": true,
+  "scientific_criteria_changed": false,
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-31T11:34:17.346432+00:00",
+  "status": "conditional_source_design_frozen_before_N35_quality_outputs",
+  "file": "research/experiments/n36/source_selection_design.json",
+  "sha256": "36c8eef72cd16eccab7e0160921c01bdd445ecb0784d83fb9618f0d5b2086929",
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

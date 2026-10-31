@@ -3508,6 +3508,70 @@
       "event": "source_hash_label_corrected_no_new_forward",
       "experiment": "N36",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 478,
+      "utc": "2026-10-31T11:34:17.346432+00:00",
+      "event": "source_only_matching_and_neutral_calibration_design_frozen_before_quality_outputs",
+      "experiment": "N36",
+      "status": "conditional_source_design_frozen_before_N35_quality_outputs",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 479,
+      "utc": "2026-10-31T11:36:27.744477+00:00",
+      "event": "exact_neuron_and_module_transplant_primary_priors_reviewed",
+      "experiment": "N36",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 480,
+      "utc": "2026-10-31T11:41:21.930648+00:00",
+      "event": "conditional_registered_branch_lineage_and_resource_design_review",
+      "experiment": "N36",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 481,
+      "utc": "2026-10-31T11:48:48.826202+00:00",
+      "event": "recipient48complete_donor_metadata_failure_preserved",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 482,
+      "utc": "2026-10-31T11:48:48.826202+00:00",
+      "event": "donor_only_resume_metadata_repair_prospectively_fixed",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 483,
+      "utc": "2026-10-31T11:48:48.826202+00:00",
+      "event": "actual_loading_info_JSON_and_inverse_scientific_checks_pass",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 484,
+      "utc": "2026-10-31T11:48:48.826202+00:00",
+      "event": "version3_donor_only_sources_and96record_auditor_frozen",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 485,
+      "utc": "2026-10-31T11:52:01.107949+00:00",
+      "event": "version3_freeze_scope_refers_to_new_donor_only_outputs",
+      "experiment": "N35",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 486,
+      "utc": "2026-10-31T11:52:01.107949+00:00",
+      "event": "one_private_donor_only_continuation_launched_no_original_regeneration",
+      "experiment": "N35",
+      "optimizer_steps": 0
     }
   ]
 }

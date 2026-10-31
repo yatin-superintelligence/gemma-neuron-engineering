@@ -413,12 +413,17 @@
       "run": "N35_v1_memory_validation_failure",
       "recorded_script_seconds": 81.43286318100002,
       "optimizer_steps": 0
+    },
+    {
+      "run": "N35_v2_recipient_complete_donor_metadata_stop",
+      "recorded_script_seconds": 824.027067842,
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N35_v2_paired_donor_quality",
-      "launched_utc": "2026-10-31T11:27:07.463548+00:00",
+      "run": "N35_v3_donor_only_resume",
+      "launched_utc": "2026-10-31T11:50:16.301809+00:00",
       "status": "private_active_outputs_unseen"
     }
   ]

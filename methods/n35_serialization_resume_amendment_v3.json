@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-31T11:46:00.752304+00:00",
+  "experiment": "N35",
+  "version": 3,
+  "question_id": "Q49",
+  "status": "resume_plan_before_any_behavioral_grading_or_donor_output",
+  "cause": "Version2 completed48recipient responses and exact state/counters, then loading-info sets failed JSON serialization before any donor forward or response.",
+  "repair": "Convert loading-info sets to sorted lists recursively for a JSON witness. No tensor, model, inference, task, cap, seed, grade or criterion changes.",
+  "carry": "Keep all48recipient records byte-exact on host. Do not upload their text/tokens or regenerate them. New private run executes only48donor responses on the same inputs. First full96-record assessment uses both exact source panels.",
+  "recipient_forward_calls": 5058,
+  "recipient_input_exposures": 9603,
+  "recipient_generated_tokens": 5058,
+  "donor_model_forwards": 0,
+  "optimizer_steps": 0,
+  "quality_grades_accessed": false,
+  "resources": "Same2700/2600/2300second caps, fresh official quota and >=2hour reserve. One private job only.",
+  "protected_parent_file_hash_count": 5
+}

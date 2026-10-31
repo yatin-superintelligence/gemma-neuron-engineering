@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T11:47:09.190426+00:00",
+  "status": "passed",
+  "actual_transformers_loading_info_types": {
+    "missing_keys": "set",
+    "unexpected_keys": "set",
+    "mismatched_keys": "set",
+    "error_msgs": "list"
+  },
+  "actual_tiny_checkpoint_state_bytes_exact": true,
+  "JSON_roundtrip_exact": true,
+  "synthetic_nonempty_nested_sets_exact": true,
+  "unsupported_object_refused": true,
+  "parent_files_exact": 5,
+  "parent_response_text_read_or_graded": false,
+  "model_forwards": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "seconds": 0.0866617089995998
+}
