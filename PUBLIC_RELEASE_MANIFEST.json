@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-31T04:54:49.834984+00:00",
+  "generated_utc": "2026-10-31T05:13:00.308478+00:00",
   "project": "Gemma Neuron Engineering: Interpretability and Control",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,23 +21,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "a601d172d70a3cdb13344b9d92a18d826d937de1dc04cbb295bed78f827ab8cd",
-      "bytes": 15605
+      "sha256": "4f4103fd9ea25c8febccceabc6d9a6118dd45d37280b92b81671273ccb46c8ad",
+      "bytes": 16217
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "12a3b3517d3039be8dd30105c233ee5edc7355587888a835a87d1d89fc97fd64",
-      "bytes": 251120
+      "sha256": "0c4f1bcd01571d81014625b8bedbe89e776c091ba361c8584af6b1da882a1ea5",
+      "bytes": 254103
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "e54d558422d8729d48ada38e0a9c9d873c89d1a037a95157da6e18632f2f0a46",
-      "bytes": 180694
+      "sha256": "e67238600cf8cf6911a3aeec35b97688ae215752b50a4efb5c3c5ae557cc2052",
+      "bytes": 183232
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "e6927113f484aafa1ea88e3e24744afb6adc78cc3c20cbb952ac43d85bbac33c",
-      "bytes": 89198
+      "sha256": "af709891017ca01219d7374905773bffd3b840dee995d2c539881fdc58ec8ed8",
+      "bytes": 90725
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -206,8 +206,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "7e3e9aec73b87fea4b297f6c6c0f9246e3a59cfb8e53c1d564eaacb22d09f074",
-      "bytes": 91574
+      "sha256": "922ddc1b0b0defd2eb970282355855e1accb8b6ac5ca72bac19a6a236e11ec76",
+      "bytes": 93217
     },
     {
       "path": "evaluation/__init__.py",
@@ -730,9 +730,24 @@
       "bytes": 2747
     },
     {
+      "path": "methods/n29_interpretation.json",
+      "sha256": "6d4ec42a033ad31fa09e26f21ff833bd1146e0325a5c3bca5e69433efe4947a1",
+      "bytes": 3552
+    },
+    {
       "path": "methods/n29_prospective_protocol.json",
       "sha256": "4907f07cdc83a46db483dcdd8ed1c7db6443dbb280d3812bcdfae7ea124a263a",
       "bytes": 11180
+    },
+    {
+      "path": "methods/n30_intent.json",
+      "sha256": "1204ba8d413931cfa2d9bdad090b88d3eb0899c116a7d73af7a3cf49f0035068",
+      "bytes": 5404
+    },
+    {
+      "path": "methods/n30_literature_context.json",
+      "sha256": "ce13e721adfe09d5da4ac91c8f546864acc2202f1d927fb20accf7ca5e8e8401",
+      "bytes": 1758
     },
     {
       "path": "methods/strict_profile_matching.py",
@@ -741,8 +756,8 @@
     },
     {
       "path": "models/README.md",
-      "sha256": "b71895ac1662277590f148f1407a190488ac01645bfd219856be20f9b14975c9",
-      "bytes": 26780
+      "sha256": "35fce650b6ca7f5b45ebe0b0ff99bd08f25de83d3f5c73d42e9f5732cfaf584c",
+      "bytes": 27267
     },
     {
       "path": "models/b01/recipe.json",
@@ -953,6 +968,11 @@
       "path": "models/n28/recipe.json",
       "sha256": "07d06dc80304853dddb1bfa3da74ff5261e928390a8e52e248ff4837d92bbf1f",
       "bytes": 4478
+    },
+    {
+      "path": "models/n29/recipe.json",
+      "sha256": "c77d060374a460eacc8a58d341cd7d25b1551a7afb08cd31940bc33b6303bfb8",
+      "bytes": 3439
     },
     {
       "path": "pyproject.toml",
@@ -1330,9 +1350,14 @@
       "bytes": 1919
     },
     {
+      "path": "results/n29_summary.json",
+      "sha256": "512837ea16d3c9c3a4e427a2a33bd06e71d2b5b929dbb98807a134d6a9736f47",
+      "bytes": 19280
+    },
+    {
       "path": "results/progress_snapshot.json",
-      "sha256": "3568fec768cd488b0332863e3eaf07fc5f5672f55ad337283b635c2ee00c8667",
-      "bytes": 842
+      "sha256": "6324d800f50bb0e0a59fe7f80eb680619654ffe8f6224a665005b4e6281dd82e",
+      "bytes": 601
     },
     {
       "path": "results/r01_reconstruction.json",
@@ -1346,8 +1371,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "c3e5e91547ddcc8c81925db511e672f17f4152f134af255fe5a160880e6e2634",
-      "bytes": 20934
+      "sha256": "40e3dad4bb951ebcf94c651bf73f6c9c02ffede9a2b45dd10b1a2c18c89499e0",
+      "bytes": 20964
     },
     {
       "path": "scripts/plot_n04_summary.py",

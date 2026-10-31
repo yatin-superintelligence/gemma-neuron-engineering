@@ -1,0 +1,124 @@
+{
+  "utc": "2026-10-31T05:04:55.747613+00:00",
+  "status": "closed_primary_failed",
+  "question_id": "Q43",
+  "conclusion": "The before-code full native MLP site fails the prospective relation-transfer criterion on this unchanged development panel.",
+  "all_conditions": [
+    {
+      "condition": "base",
+      "coding_correct": 16,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 0,
+      "at_cap": 0
+    },
+    {
+      "condition": "identity",
+      "coding_correct": 16,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 0,
+      "at_cap": 0
+    },
+    {
+      "condition": "opposite",
+      "coding_correct": 16,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 0,
+      "at_cap": 0
+    },
+    {
+      "condition": "same",
+      "coding_correct": 16,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 0,
+      "at_cap": 0
+    },
+    {
+      "condition": "rescue",
+      "coding_correct": 16,
+      "retention_correct": 8,
+      "coding_gains": 0,
+      "coding_losses": 0,
+      "at_cap": 0
+    }
+  ],
+  "primary": {
+    "all8joint_cells": [
+      {
+        "family": "filter",
+        "style": 0,
+        "direction": 1,
+        "both_recipient_orders_transfer": false
+      },
+      {
+        "family": "filter",
+        "style": 0,
+        "direction": -1,
+        "both_recipient_orders_transfer": false
+      },
+      {
+        "family": "filter",
+        "style": 1,
+        "direction": 1,
+        "both_recipient_orders_transfer": false
+      },
+      {
+        "family": "filter",
+        "style": 1,
+        "direction": -1,
+        "both_recipient_orders_transfer": false
+      },
+      {
+        "family": "predicate",
+        "style": 0,
+        "direction": 1,
+        "both_recipient_orders_transfer": false
+      },
+      {
+        "family": "predicate",
+        "style": 0,
+        "direction": -1,
+        "both_recipient_orders_transfer": false
+      },
+      {
+        "family": "predicate",
+        "style": 1,
+        "direction": 1,
+        "both_recipient_orders_transfer": false
+      },
+      {
+        "family": "predicate",
+        "style": 1,
+        "direction": -1,
+        "both_recipient_orders_transfer": false
+      }
+    ],
+    "successful_complete_pairs": 0,
+    "coverage": {
+      "family": [],
+      "style": [],
+      "direction": []
+    },
+    "same_relation_correct": 16,
+    "retention_correct": {
+      "base": 8,
+      "identity": 8,
+      "opposite": 8,
+      "same": 8,
+      "rescue": 8
+    },
+    "primary_passed": false
+  },
+  "mechanical_effect": "Both foreign arms change all24 first-logit and whole-cache witnesses,while every new generated token sequence remains exact to its original. This is a functional null despite an executed numerical intervention.",
+  "limits": [
+    "Reused development inputs and dependent wordings/directions are not fresh confirmation or independent algorithms.",
+    "Whole-site intervention does not establish individual meaning,native necessity,formal abstraction,new capability,coding improvement or novelty.",
+    "Saved GPU witnesses are audited;the host does not independently recompute checkpoint weights/logits.",
+    "Paired retention foreign donors are identical repeated contexts,not independent directional evidence."
+  ],
+  "next": "Close this panel anchor search. Do not change position,layers,wording,thresholds,dose or regenerate originals. A different mechanism requires a separate intent and protocol.",
+  "optimizer_steps": 0
+}

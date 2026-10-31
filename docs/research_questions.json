@@ -681,17 +681,33 @@
     {
       "id": "Q43",
       "experiment": "N29: instruction state before code spelling",
-      "status": "running_private_source_verified",
+      "status": "complete_private_host_audited_closed_primary_failed",
       "question": "Can a native instruction state before the code prefix transfer the requested relation across later written operand order?",
       "question_provenance": "The next-site review was recorded before N28 donor output access. N28 now closes with zero qualifying cross-order pairs and all sixty-four foreign suffixes token-exact to their actual donors. A source before the assistant code prefix cannot already see its first operand. Keep the adequate inputs and distinguish conditional instruction control from literal continuation transfer.",
       "parents": [
         "Q42"
       ],
       "method": "Reuse all twenty-four N28 inputs, prefixes, original outputs and graders. At the last user-content token before model markers and code, patch actual native MLP layers 0 through 13 from opposite or same-relation other-wording donors. Exact common-prefix source equality across later recipient orders is mandatory. Five conditions give 120 records: twenty-four exact carries and 96 new responses. There are no duplicate donor-order arms, new rankings, strengths, weights, gradients or fitting.",
-      "result": "All twenty-four random Gemma path cases pass in FP32 and BF16: 66 forwards, 258 input-token exposures, twenty random tokens and zero pretrained forwards or updates. All twenty-four token positions and eight common input prefixes pass. Sixteen additional actual-runner mapping/scope cases pass, with 22 forwards and 136 exposures. Synthetic audit fixtures refuse eighteen corrupted cache schemas, eight scope/donor faults and two forbidden paths, reject four failed endpoints, and pass the exact six-pair/fourteen-preserved boundary. Independent counter formulas match. Fresh stress fixtures pass 9220 probes at seed 2943. Both isolated modules import, all notebook cells compile and Ruff passes. All seventy actual source and parent hashes, the auditor, private notebook and payload are frozen before outputs. The one private GPU job is running after fresh official quota of 28.9 hours and all fifty-one recent account jobs terminal. The conservative two-device reservation is one hour with at least two hours reserve. Exact server source JSON and private metadata are verified. No pretrained result has been accessed.",
-      "interpretation": "An adequate result would support conditional instruction-state transfer before code spelling. Whole-site sufficiency is not individual neuron meaning, native necessity, formal abstraction, new capability or original-model coding improvement. Reused development and paired retention donors remain dependent.",
-      "next_question": "At terminal status, retrieve all compact outputs once, verify final source/private metadata, input manifest and frozen parent/source hashes, then run the unchanged prospective auditor. Preserve any guard failure before interpreting. No duplicate job or completed original generation.",
-      "direction_decision": "Test the before-code control proposed before outputs were accessed. If it fails, close this site hypothesis without shifting anchors, layers or criteria on the same panel."
+      "result": "All 120 records and mandatory guards pass: 96 new and 24 exact carries. Opposite donors transfer 0/16 programs and 0/8 complete pairs. Every condition retains 16/16 original correctness and 8/8 retention, with no caps, gains or losses. Both foreign arms change all 24 first-logit and whole-cache hashes; every generated token sequence remains identical to its original. All 336 native hashes, 112 across-order equalities, 24 parent replays, 24 self and 24 rescue first checks, six paired cached sentinels, 48 exact identity/rescue generations and ten restorations pass. Actual counts are 566 forwards, 24497 input-token exposures, 352 new tokens and zero backwards or updates. Worker duration is 323.699 seconds; notebook duration is 366.937 seconds, not charged quota.",
+      "interpretation": "The before-code full native MLP site fails the prospective relation-transfer criterion on this unchanged development panel. Both foreign arms change all24 first-logit and whole-cache witnesses, while every new generated token sequence remains exact to its original. This is a functional null despite an executed numerical intervention.",
+      "next_question": "Close this panel anchor search. Do not change position, layers, wording, thresholds, dose or regenerate originals. A different mechanism requires a separate intent and protocol.",
+      "direction_decision": "Close the before-code site and this panel anchor search. Broaden only through a separately justified mechanism, without sparse semantic ranking from this failed full-site gate."
+    },
+    {
+      "id": "Q44",
+      "experiment": "N30: one fixed native unit and finite output bias",
+      "status": "intent_only_not_launched",
+      "question": "Does the first previously fixed native channel have a specific finite comparator-score contribution, and can direct ablation/rescue distinguish it from matched controls?",
+      "question_provenance": "N24 finite group effects are positive; N26 utility and N28/N29 semantic controls are negative. The first original N20 unit is fixed before individual finite outcomes, and a duplicate matched-control draw is identified before protocol implementation.",
+      "parents": [
+        "Q38",
+        "Q43"
+      ],
+      "method": "Use the unchanged thirteen N19/N24 role cases and eight retention references, with exact native/current lineage guards. Compare actual opposite/same donors, native zeroing, conditional cut and native rescue for the target and both distinct matched controls. Record compact full-vocabulary metrics and executable continuation outcomes. Never infer a new program result from a score alone.",
+      "result": "No protocol, runner, GPU launch or new model outputs. The fixed target is L34 C3271. Both original first-position random draws collide at L34 C9170, so they count as one unique control. A distinct strict control must be frozen prospectively; no relaxed matching or outcome-based redraw.",
+      "interpretation": "This proposed unit-level test concerns finite output bias. It does not reopen the closed semantic anchor search or establish coding gain.",
+      "next_question": "Freeze the smallest decisive protocol, exact distinct controls, all endpoints and counter manifest before implementation. Validate actual tiny-Gemma current/self/rescue/cache paths and import both runner/auditor with Ruff. Fresh quota and terminal-job checks remain mandatory before any launch.",
+      "direction_decision": "Deepen the controlled finite-score lead at a fixed native unit. Keep future fresh confirmation and answer-independent utility separate."
     }
   ],
   "active_question_id": "Q43",

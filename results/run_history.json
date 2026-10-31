@@ -378,13 +378,13 @@
       "recorded_script_seconds": 465.768649394,
       "outcome": "All168records/guards pass:144new,24exactcarry. Primary0/8completepairs. Same-order opposite16/16transfer,same16/16preservation. Both reversed-order role arms0/16source-valid. All8retention,allidentity/rescue/cache/restorations pass. No semantic role or coding gain.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "n29_v1",
-      "launched_utc": "2026-10-31T04:46:57.413859+00:00",
-      "status": "One private N29 instruction-state job running. All120records/fiveconditions fixed;24exact original carries and96new responses."
+      "recorded_script_seconds": 323.698999016,
+      "outcome": "All120records/guards pass;primary0/8pairs. Both foreign arms change numerical witnesses but every emitted sequence stays original. No gain.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

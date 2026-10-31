@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-31T05:10:51.382168+00:00",
+  "status": "bounded_primary_methods_review_before_N30_protocol_or_model_outputs",
+  "sources": [
+    {
+      "url": "https://aclanthology.org/2022.emnlp-main.3.pdf",
+      "title": "Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space",
+      "read_scope": "Section 3 and selected Section 6.1 paragraphs, plus abstract; not a full-paper or appendix replication.",
+      "summary": "Individual FFN output columns and their input-dependent coefficients already have vocabulary-level interpretations and intervention precedents. The paper also uses selected coefficient assignments for generation control.",
+      "consequence": "Native-column output bias and steering are prior work. Gemma post-feedforward and final RMS normalization require actual finite interventions; a raw column projection is not the full model effect. Do not transfer reported GPT2 utility or manually selected coefficients."
+    },
+    {
+      "url": "https://arxiv.org/html/2403.00745v1",
+      "title": "AtP*: An efficient and scalable method for localizing LLM behaviour to components",
+      "read_scope": "Abstract and Section 5.1, especially node choice, effect-versus-rank and importance caveats.",
+      "summary": "Neuron attribution ranks require direct verification. Mean effects can hide prompt-specific contributions; activation-patching importance and direct effects answer different questions.",
+      "consequence": "Measure the fixed unit and all matched controls directly, preserve every case and distinguish finite score bias from program necessity or semantic meaning. Do not fit an alignment, vector or gain."
+    }
+  ],
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

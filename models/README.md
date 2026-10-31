@@ -277,3 +277,6 @@ They patch actual caller-supplied native states at the last input position, with
 source, cache, identity, rescue and restoration witnesses. No parameters change
 and no new weight blob is needed. The semantic cross-order primary fails.
 Independent clean-package pretrained replay is not claimed.
+
+
+N29 saves all five audited before-code native-state policies in `n29/recipe.json`. The recipe declares the tokenizer-offset position rule, actual-donor provenance and the fourteen native layers. All 120 records and mandatory guards pass, but the relation-transfer primary fails. Every response remains token-exact to its original despite numerical changes under foreign donors. No parameters or new weight tensors are added; independent clean-package pretrained replay is not claimed.

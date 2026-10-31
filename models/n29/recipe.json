@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "study": "N29",
+  "status": "actual_checkpoint_interventions_host_audited",
+  "parent": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "original_text_only_unquantized_BF16",
+  "layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "native_width_per_layer": 6144,
+  "total_native_channels": 86016,
+  "signal": "Actual unmodified post-gating down_proj input at the final user-payload token.",
+  "position_algorithm": "Apply the unchanged N28 chat template and assistant prefix. Require exactly one exact user-payload substring. Use the fast tokenizer offset mapping to identify the final nonempty token wholly inside that payload and ending at its last character. Its token index is the edit/capture position. Require0<p<last input position and no following assistant code character within that token.",
+  "conditions": [
+    "base",
+    "identity",
+    "opposite",
+    "same",
+    "rescue"
+  ],
+  "policies": {
+    "base": "Unmodified original,carried exactly.",
+    "identity": "Actual recipient states at the declared14layers and user-content position.",
+    "opposite": "Actual other-wording donor with opposite relation;canonical later donor order0.",
+    "same": "Actual other-wording donor with same relation;canonical later donor order0.",
+    "rescue": "Ordered opposite donor assignment followed by actual recipient states at the same site."
+  },
+  "reconstruction": "Use caller-owned contexts,pinned tokenizer offsets and published capture_native_mlp/compose_mlp_donors primitives. Require exact shared causal prefixes across later-code variants. Full-prefill assignments only;cached one-token forwards skip edits. No fitted or averaged vector.",
+  "retention": "Both foreign policies use the identical paired same-task paraphrase donor;dependent repeats.",
+  "source_sha256": {
+    "interpretability/native_capture.py": "71abde50f78a1ba321039174daa84757c38fcb753bcd3b7134c76054dc112fc1",
+    "interpretability/mlp_composition.py": "769e1477149fd11b19950c19d8452fd4b691a6a71908abfb5361bc2f63820ae2",
+    "interpretability/selector_site.py": "5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60",
+    "research/experiments/n29/runner.py": "f774345988a600fc29a46554ef80e0a8218701320556929c56b4fa827f15bf44",
+    "research/experiments/n29/positions.py": "c6ac1093010eef0039f6ad9a857447934c7c516820b2f07654cdcc68c4a75998",
+    "research/experiments/n29/protocol.json": "4907f07cdc83a46db483dcdd8ed1c7db6443dbb280d3812bcdfae7ea124a263a"
+  },
+  "audited_receipt_sha256": "bb34e81562ea0ef33f94995b67eefc1fc06cb02abd72cb309037e9b73ef6a260",
+  "generation": {
+    "seed": 2841,
+    "do_sample": false,
+    "max_new_tokens": 32,
+    "stop": "EOS or first generated newline;otherwise cap. Preserve raw stop tokens. No rerolls or answer-dependent trigger."
+  },
+  "new_tensor_blobs": 0,
+  "all_fixed_conditions_retained": true,
+  "no_parameters_changed": true,
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "validation": "Original private GPU execution and frozen host audit pass. Independent clean-package pretrained replay is not performed.",
+  "result": "Primary fails0/8pairs;all5conditions retain16/16original correctness and8/8retention. No coding gain or individual meaning.",
+  "private_assets": "Tasks,donor contexts,raw values,replies and notebooks excluded."
+}

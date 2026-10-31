@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-31T05:10:51.382168+00:00",
+  "experiment": "N30",
+  "question_id": "Q44",
+  "status": "intent_only_before_GPU_protocol_implementation_or_outputs",
+  "question": "Does the first previously fixed native channel have a specific finite comparator-score contribution, and can direct ablation/rescue distinguish it from matched controls?",
+  "parent_sources_sha256": {
+    "runs/n20/selection/result.json": "fcbb5cf85dd794b9be4f9c21008ac348ed291e5f187a1c6c06b9dc974af0f395",
+    "research/experiments/n24/protocol.json": "4daf3c60815d091c3f6b79fe8c36bbe0607021084f811a254d7f3b1307fac0e4",
+    "runs/n24/version1/result_receipt.json": "272d21c363c6cd812f697f71ea412860d7a396688d535f46a748656282096f76",
+    "runs/n24/version1/public_aggregate.json": "b76e24ffff6c91beacfca03b714fbc8a5a8c9126a009b64fe234677ac5efea78",
+    "research/experiments/n24/interpretation_limits.json": "8cc4287c238096ef85ad43a18baa3b49331026d092b45d52bc4d1be370db49d9",
+    "runs/n26/version1/interpretation.json": "70ff2d487813c4505530890aa27dcccb8ab7034d80e8f9a8dcbaeeb5881b47f7",
+    "runs/n28/phase_B/version1/interpretation.json": "6cc3c46ceced09c047b90922663d4a05ada6d8ec0b3c5dedcd3cf1d1f2549bf2",
+    "runs/n29/version1/result_receipt.json": "bb34e81562ea0ef33f94995b67eefc1fc06cb02abd72cb309037e9b73ef6a260",
+    "runs/n29/version1/interpretation.json": "6d4ec42a033ad31fa09e26f21ff833bd1146e0325a5c3bca5e69433efe4947a1"
+  },
+  "parent_evidence": "N24 establishes finite selected-group score effects without program changes. N26 has no selection-specific utility gain. N28 and N29 close the semantic anchor search. No individual finite effect for the first N20 selected unit has been measured in this study.",
+  "fixed_target": {
+    "layer": 34,
+    "channel": 3271,
+    "flat": 328903,
+    "selection_source": "First element of the original frozen N20 selected64 list, not chosen from new single-unit outcomes. The old activity-gradient score is a hypothesis."
+  },
+  "control_collision": {
+    "original_random_A": {
+      "layer": 34,
+      "channel": 9170
+    },
+    "original_random_B": {
+      "layer": 34,
+      "channel": 9170
+    },
+    "same_unit": true,
+    "interpretation": "The two original first-position draws are the same physical coordinate. They are one unique control, not two independent controls.",
+    "proposed_resolution": "Before any single-unit outputs, retain the original control and prescribe one distinct draw from the exact original strict eligible pool. Verify the archived pool hash and all original matching bounds. No relaxed matching, score filtering or redrawing after outcomes. A separate protocol must freeze the seed and exact second coordinate."
+  },
+  "mechanism": "A single actual post-gating native scalar at the cached current decision, in the final decoder MLP. This differs from the closed before-code donor-site hypothesis; it is not another anchor search on the N28 panel.",
+  "planned_assay": "Use the unchanged thirteen N19/N24 role cases and eight retention references, with exact native/current lineage guards. Compare actual opposite/same donors, native zeroing, conditional cut and native rescue for the target and both distinct matched controls. Record compact full-vocabulary metrics and executable continuation outcomes. Never infer a new program result from a score alone.",
+  "planned_estimands": "The later prospective protocol must fix all per-case margin effects, both matched differences, same-policy specificity, native-zero and conditional-cut effects, and separate eight-discovery/five-other-development summaries. No best unit, strongest dose, OR criterion or fitted coefficient. Report all executable losses/alternative programs and retention separately.",
+  "scope_limits": [
+    "All role originals are correct; this assay cannot establish an accuracy gain.",
+    "The cached decision is response-derived and reused development, not a deployable answer-independent trigger or fresh confirmation.",
+    "A finite output bias can be lexical. Neither the original gradient rank nor a successful one-unit intervention establishes an abstract relation concept.",
+    "The final-layer location removes later decoder compensation but does not remove post-feedforward/final normalization or guarantee additivity.",
+    "A conditional cut is necessity within an engineered donor background, not clean native necessity."
+  ],
+  "rejected_alternatives": [
+    "No additional position/layer search on the closed N28/N29 panel.",
+    "No new global neuron ranking or larger group chosen after sparse nulls.",
+    "No constructed branch or new neuron without a validated function or equivalent-gain controls.",
+    "No fitted steering vector, strength search, learned bridge, optimizer or training."
+  ],
+  "next": "Freeze the smallest decisive protocol, exact distinct controls, all endpoints and counter manifest before implementation. Validate actual tiny-Gemma current/self/rescue/cache paths and import both runner/auditor with Ruff. Fresh quota and terminal-job checks remain mandatory before any launch.",
+  "stopping": "A failed fixed-unit test does not authorize advancing down the rank list in this sprint. A local bias result requires new prospective fresh confirmation before semantic or utility claims.",
+  "GPU_launch_authorized_by_intent_alone": false,
+  "new_model_forwards": 0,
+  "training_allowed": false,
+  "optimizer_steps": 0
+}

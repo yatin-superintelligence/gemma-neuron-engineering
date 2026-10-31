@@ -2885,6 +2885,55 @@
       "event": "private_launch_source_and_metadata_verified_after_fresh_quota_and51terminal_jobs",
       "experiment": "N29",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 389,
+      "utc": "2026-10-31T05:04:55.747613+00:00",
+      "event": "terminal_private_source_manifest_and_all120guards_pass",
+      "experiment": "N29",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 390,
+      "utc": "2026-10-31T05:04:55.747613+00:00",
+      "event": "all_five_conditions_primary_failed_and_no_gain_closed",
+      "experiment": "N29",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 391,
+      "utc": "2026-10-31T05:04:55.747613+00:00",
+      "event": "posthoc_saved_witness_effects_without_new_forwards_or_regrading",
+      "experiment": "N29",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 392,
+      "utc": "2026-10-31T05:04:55.747613+00:00",
+      "event": "all_five_exact_runtime_recipes_saved",
+      "experiment": "N29",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 393,
+      "utc": "2026-10-31T05:05:15.297221+00:00",
+      "event": "completed_N27_N28_N29_evidence_integrated_both_word_limits_and_all6page_visual_QA_pass",
+      "experiment": "private_paper",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 394,
+      "utc": "2026-10-31T05:10:51.382168+00:00",
+      "event": "fixed_native_unit_branch_and_original_control_collision_recorded",
+      "experiment": "N30",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 395,
+      "utc": "2026-10-31T05:10:51.382168+00:00",
+      "event": "bounded_closest_priors_and_no_new_method_claim_reviewed",
+      "experiment": "N30",
+      "optimizer_steps": 0
     }
   ]
 }

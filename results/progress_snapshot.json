@@ -1,18 +1,12 @@
 {
-  "generated_utc": "2026-10-31T04:54:49.834984+00:00",
-  "question_records": 43,
-  "recorded_terminal_runs": 61,
-  "active_runs": [
-    {
-      "run": "n29_v1",
-      "launched_utc": "2026-10-31T04:46:57.413859+00:00",
-      "status": "One private N29 instruction-state job running. All120records/fiveconditions fixed;24exact original carries and96new responses."
-    }
-  ],
-  "ledger_events": 388,
-  "question_register_source_sha256": "795f497fd849fe3a25d1b36bf16f570b98243ba2d07291317f9aba001c632540",
-  "event_ledger_source_sha256": "c430638884d1d4ef8a46d3bb1dddd261bde43125cb6be67e30c06dc124a702f5",
-  "compute_ledger_source_sha256": "711b5e2448f8feb75f8f3860163356499b5f07363eb92e23f3f64070d966f026",
+  "generated_utc": "2026-10-31T05:13:00.308478+00:00",
+  "question_records": 44,
+  "recorded_terminal_runs": 62,
+  "active_runs": [],
+  "ledger_events": 395,
+  "question_register_source_sha256": "54f02337c6fc1b6146b3a16f896f0cc3cf00dc01e1ac9f7a5450dbbd645867bb",
+  "event_ledger_source_sha256": "bae95301f42321aace79370eec9a8fb403d9d2e3bd8b31ccb29457faf6c8dce3",
+  "compute_ledger_source_sha256": "c921dc4768577f94880e0a17e8b78ed21c2966dbde43dd83e1c2b3c7fdb2aaff",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0
