@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-31T22:54:14.211125+00:00",
+  "status": "post_launch_pre_B_output_supplement_not_original_primary",
+  "question": "Do all fixed group edits preserve the whole native cache for every decision whose consumed input history remains identical, including the first differing next-token prediction?",
+  "scope": "All288same-prompt original-versus-group comparisons across three fixed zero groups and all96cases. Instruction changes prompts and is excluded explicitly;its32exact retention reuses are not new generations. No outcome or error selection.",
+  "prediction": "Only columns in layers24through34 change, after lastKVproducer14. For identical prompts and identical emitted histories before a decision, the whole post-current cache should be byte-exact. Logits and the next emitted token may differ. After the first differing emitted token is consumed, this cache equality is not required.",
+  "measurement": "Compare saved generated IDs and per-decision full-logit/cache hashes only. Include every shared-input decision through the first divergent prediction. No model, gradients, tokenizer or scorer call. Report first token/logit divergence and all cache mismatches. No quantitative mediation, semantic meaning, speedup or utility claim.",
+  "failure": "Preserve any contradiction and stop interpretation of this supplemental path claim. Do not alter or rerun the frozen B primary/auditor. Never weaken the equality or replace saved baseline.",
+  "new_model_calls": 0,
+  "optimizer_steps": 0,
+  "B_outputs_accessed": 0,
+  "protocol_sha256": "04f214d0e8b85532b79455aa081a9dd61b1b83e522e6727ad6b25048635fc036",
+  "source_freeze_utc": "2026-10-31T22:55:45.439415+00:00",
+  "helper_source_sha256": "3eaefbe160f21fbd586d050f93f6cd9cf59fcfa89e21bd0f39ab643eb53a4cb6",
+  "actual_B_path_result": "Not accessed. This is a separate post-launch, pre-output prediction, not the original primary."
+}

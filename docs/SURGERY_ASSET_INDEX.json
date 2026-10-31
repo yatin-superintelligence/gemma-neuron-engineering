@@ -196,6 +196,14 @@
       ]
     },
     {
+      "category": "Evaluate",
+      "path": "evaluation/common_history_trace.py",
+      "sha256": "3eaefbe160f21fbd586d050f93f6cd9cf59fcfa89e21bd0f39ab643eb53a4cb6",
+      "symbols": [
+        "compare_shared_input_history"
+      ]
+    },
+    {
       "category": "Generate and resume",
       "path": "interpretability/native_eos_generation.py",
       "sha256": "9dc0d62f60e8073f7a82d891cb7e9b08e2d96b6c145a2b1c8cbd2454f50c730d",

@@ -33,6 +33,8 @@ The [N41 fresh-accuracy intent](methods/n41_conditional_fresh_intent.json) keeps
 
 ## Offline surgery workbench
 
+The [saved-history comparison helper](evaluation/common_history_trace.py) compares whole-cache hashes while consumed inputs match. It includes the first differing next-token prediction and excludes decisions after that differing token is consumed. Its literal software guards pass; the prospective N41 path claim and fresh edited outcomes remain unmeasured.
+
 - [Editing and observation toolkit](docs/SURGERY_TOOLKIT.html): actual APIs, full source and hashes.
 - [Saved model registry](docs/MODEL_REGISTRY.html): exact patch tensors, pinned parents and reconstruction code.
 - [Activation viewer](docs/ACTIVATION_VIEWER.html): inspect a local compact trace, with a clearly labelled synthetic example.

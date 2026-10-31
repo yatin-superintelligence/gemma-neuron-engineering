@@ -1,0 +1,34 @@
+{
+  "common_history_helper": {
+    "utc": "2026-10-31T22:55:45.439415+00:00",
+    "status": "passed_closed",
+    "literal_path_checks": 5,
+    "refusals": [
+      "different_prompt",
+      "missing_input_hash",
+      "missing_EOS",
+      "incomplete",
+      "misaligned_argmax",
+      "noncontiguous_step",
+      "invalid_hash",
+      "early_EOS",
+      "negative_ID"
+    ],
+    "model_calls": 0,
+    "scorer_calls": 0,
+    "B_outputs_accessed": 0,
+    "optimizer_steps": 0,
+    "scope": "Saved-hash path arithmetic only,not pretrained verification or a scientific result"
+  },
+  "all_condition_aggregation": {
+    "synthetic_refusals": 10,
+    "scope": "Independent synthetic data only. No real B output or score has been read."
+  },
+  "figure_layout": {
+    "plot_source_sha256": "1a10f756691c542ba650205ce466de0003d913bf1ce1ac5bcfdf0334ab7852a9",
+    "visual_QA": "passed_all6synthetic_panels_table_legend_footer_no_overlap",
+    "preserved_failure": "The first synthetic preview overlaps completion text and the grading legend. A layout-only repair moves these elements; aggregation guards are not rerun."
+  },
+  "actual_N41B_outcomes": false,
+  "new_pretrained_or_scorer_calls": 0
+}

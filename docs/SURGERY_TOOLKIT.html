@@ -1858,6 +1858,59 @@ def assess_n40_intent(summary):
             &#x27;prompt_comparison_clauses&#x27;: prompt_checks,
             &#x27;simple_prompt_matches_or_improves_these_measures&#x27;: all(prompt_checks.values()),
             &#x27;scope&#x27;: &#x27;Conditional intent criteria on supplied development labels. No automatic claim of accuracy gain, necessity, speedup or confirmed utility.&#x27;}
+</pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>common_history_trace</h2><p>Compare saved cache paths only while consumed token histories match.</p><p><a href="../evaluation/common_history_trace.py">Exact source file</a></p><p class="small">APIs: compare_shared_input_history</p><p class="hash">SHA-256 3eaefbe160f21fbd586d050f93f6cd9cf59fcfa89e21bd0f39ab643eb53a4cb6</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Compare saved cache paths only while consumed token histories match.&quot;&quot;&quot;
+
+import re
+
+
+def compare_shared_input_history(native, edited, *, eos=frozenset({1, 106, 50})):
+    &quot;&quot;&quot;Include the first differing prediction: its consumed inputs still match.
+
+    A later decision consumes the differing emitted token and is outside this
+    comparison. Different prompts are refused rather than treated as a cache
+    failure. Callers must separately establish checkpoint/edit provenance.
+    &quot;&quot;&quot;
+    if native[&#x27;input_metadata&#x27;] != edited[&#x27;input_metadata&#x27;]:
+        raise ValueError(&#x27;Exact input metadata equality required&#x27;)
+    metadata = native[&#x27;input_metadata&#x27;]
+    if type(metadata.get(&#x27;input_tokens&#x27;)) is not int or metadata[&#x27;input_tokens&#x27;] &lt; 1:
+        raise ValueError(&#x27;Positive measured input length required&#x27;)
+    if any(not re.fullmatch(r&#x27;[a-f0-9]{64}&#x27;, metadata.get(field, &#x27;&#x27;))
+           for field in [&#x27;input_ids_sha256&#x27;, &#x27;template_text_sha256&#x27;]):
+        raise ValueError(&#x27;Exact token and rendered-template input hashes required&#x27;)
+    for record in [native, edited]:
+        ids, trace = record[&#x27;generated_ids&#x27;], record[&#x27;decision_trace&#x27;]
+        if not record[&#x27;complete&#x27;] or record[&#x27;termination&#x27;] != &#x27;eos&#x27; or not ids:
+            raise ValueError(&#x27;Complete native-EOS records required&#x27;)
+        if ids[-1] not in eos or any(i in eos for i in ids[:-1]):
+            raise ValueError(&#x27;Exactly one terminal native EOS required&#x27;)
+        if any(type(i) is not int or i &lt; 0 for i in ids):
+            raise ValueError(&#x27;Nonnegative integer token IDs required&#x27;)
+        if len(ids) != len(trace) or ids != [r[&#x27;argmax&#x27;] for r in trace]:
+            raise ValueError(&#x27;Generated IDs and decisions must align&#x27;)
+        if [r[&#x27;step&#x27;] for r in trace] != list(range(len(ids))):
+            raise ValueError(&#x27;Contiguous decision steps required&#x27;)
+        if any(not re.fullmatch(r&#x27;[a-f0-9]{64}&#x27;, r[field])
+               for r in trace for field in [&#x27;cache_sha256&#x27;, &#x27;full_logits_sha256&#x27;]):
+            raise ValueError(&#x27;Exact cache and full-logit hashes required&#x27;)
+    left, right = native[&#x27;generated_ids&#x27;], edited[&#x27;generated_ids&#x27;]
+    prefix = 0
+    while prefix &lt; min(len(left), len(right)) and left[prefix] == right[prefix]:
+        prefix += 1
+    if prefix == min(len(left), len(right)) and len(left) != len(right):
+        raise ValueError(&#x27;Complete EOS sequence cannot extend an identical complete sequence&#x27;)
+    divergent = None if left == right else prefix
+    steps = len(left) if divergent is None else divergent + 1
+    a, b = native[&#x27;decision_trace&#x27;], edited[&#x27;decision_trace&#x27;]
+    mismatches = [i for i in range(steps) if a[i][&#x27;cache_sha256&#x27;] != b[i][&#x27;cache_sha256&#x27;]]
+    logit_differences = [i for i in range(steps) if a[i][&#x27;full_logits_sha256&#x27;] != b[i][&#x27;full_logits_sha256&#x27;]]
+    return {&#x27;same_consumed_input_decisions&#x27;: steps, &#x27;shared_emitted_token_prefix&#x27;: prefix,
+            &#x27;first_different_predicted_token_decision&#x27;: divergent,
+            &#x27;first_different_full_logit_decision&#x27;: logit_differences[0] if logit_differences else None,
+            &#x27;identical_complete_emitted_tokens&#x27;: left == right,
+            &#x27;all_shared_input_caches_exact&#x27;: not mismatches,
+            &#x27;cache_mismatch_decisions&#x27;: mismatches,
+            &#x27;decisions_after_divergent_token_consumption_excluded&#x27;: True}
 </pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>native_eos_generation</h2><p>Greedy native-EOS generation with streamed evidence and resumable history.
 
 There is no response-token ceiling. The caller supplies actual resource checks;

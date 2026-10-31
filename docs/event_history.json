@@ -4216,6 +4216,41 @@
       "event": "review_repairs_stale_question_ids_and_missing_public_run_summary_fields_no_science_change",
       "experiment": "N41",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 578,
+      "utc": "2026-10-31T22:56:40.502720+00:00",
+      "event": "saved_baseline_source_review_identifies9logic_errors_no_regrading_no_B_outputs",
+      "experiment": "N41_HOST",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 579,
+      "utc": "2026-10-31T22:56:40.502720+00:00",
+      "event": "all_condition_figure_projection_passes10synthetic_refusals_layout_overlap_preserved_and_repaired",
+      "experiment": "N41_HOST",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 580,
+      "utc": "2026-10-31T22:56:40.502720+00:00",
+      "event": "post_launch_pre_output_common_history_cache_supplement_frozen5path_checks9refusals_pass",
+      "experiment": "N41_HOST",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 581,
+      "utc": "2026-10-31T23:03:29.533112+00:00",
+      "event": "canonical_receipt_pointer_replaces_stale_public_heads_and_next_science_metadata",
+      "experiment": "GOVERNANCE",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 582,
+      "utc": "2026-10-31T23:03:29.533112+00:00",
+      "event": "reviewed_generic_common_history_helper_and_fixed_figure_source_prepared_for_public_projection_no_B_outputs",
+      "experiment": "N41_HOST",
+      "optimizer_steps": 0
     }
   ]
 }
