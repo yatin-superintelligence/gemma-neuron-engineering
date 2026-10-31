@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-31T08:38:00.122853+00:00",
+  "scope": "Bounded primary-source review for intent design; no full appendix replication.",
+  "sources": [
+    {
+      "url": "https://papers.nips.cc/paper_files/paper/2023/file/efbba7719cc5172d175240f24be11280-Paper-Conference.pdf",
+      "title": "How does GPT-2 compute greater-than?: Interpreting mathematical abilities in a pre-trained language model",
+      "authors": "Michael Hanna,Ollie Liu,Alexandre Variengien",
+      "year": 2023,
+      "reviewed": "Abstract,introduction,Section2 task/tokenization/baseline definitions,and the opening of Section3 on causal circuits. Pages1-3,not the full28pages.",
+      "supported": "Prior work already studies comparison computations and late-MLP probability contributions,using a defined completion assay and baseline/tokenization checks.",
+      "limit": "This is GPT-2 year-span prediction,not Gemma code or evidence that the fixed64group has a semantic role. No first comparison-circuit claim."
+    },
+    {
+      "url": "https://arxiv.org/html/2602.22424v1",
+      "title": "Causality != Invariance: Function and Concept Vectors in LLMs",
+      "reviewed": "Abstract,introduction and selected methods through activation-patching setup in Section2.1.3.",
+      "supported": "Their causal function-vector effects and representational invariance need not align; input format matters.",
+      "limit": "N33 does not extract or fit their vectors,select attention heads with RSA,or replicate their full task/model study. A conditional coding effect is not automatically abstract concept encoding."
+    },
+    {
+      "url": "https://aclanthology.org/2022.emnlp-main.3/",
+      "title": "Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space",
+      "reviewed": "Previously checked primary abstract and bibliography,as preserved in N19 literature_paper_context.json. No new full-paper review.",
+      "supported": "FFN vocabulary-space contribution and prediction control are known prior work.",
+      "limit": "No novelty from measuring operator-logit changes or intervening on native coefficients."
+    }
+  ],
+  "method_constraints": "No fitted vector,strength,alignment,RSA-derived intervention or optimizer. Actual donor values and fixed native coordinates only.",
+  "optimizer_steps": 0
+}

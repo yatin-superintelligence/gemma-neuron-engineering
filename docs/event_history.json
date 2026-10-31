@@ -3228,6 +3228,62 @@
       "event": "unchanged_inference_relaunched_with_verified_full_metadata_single_private_job",
       "experiment": "N32_A_v2",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 438,
+      "utc": "2026-10-31T08:22:22.472954+00:00",
+      "event": "private_N30_failure_and_N31_stop_integrated_all_six_latest_pages_verified",
+      "experiment": "paper_neuron_study",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 439,
+      "utc": "2026-10-31T08:35:47.382358+00:00",
+      "event": "all40originals_audited_planned_baseline_stop_no_interventions",
+      "experiment": "N32_A_v2",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 440,
+      "utc": "2026-10-31T08:35:47.382358+00:00",
+      "event": "saved_output_8block_and_source_failure_description_no_regrading",
+      "experiment": "N32_A_v2",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 441,
+      "utc": "2026-10-31T08:35:47.382358+00:00",
+      "event": "full_original_only_figure_reviewed_no_selected_subcohort",
+      "experiment": "N32_A_v2",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 442,
+      "utc": "2026-10-31T08:54:42.981468+00:00",
+      "event": "separate_scaffolded_development_intent_records_format_selection_and_prior_limits",
+      "experiment": "N33",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 443,
+      "utc": "2026-10-31T08:54:42.981468+00:00",
+      "event": "scientific_protocol_frozen_before_task_or_oracle_implementation",
+      "experiment": "N33",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 444,
+      "utc": "2026-10-31T09:10:53.323321+00:00",
+      "event": "all211host_fixture_outcomes_and_actual_partial_encoder_gates_pass",
+      "experiment": "N33",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 445,
+      "utc": "2026-10-31T09:27:18.547341+00:00",
+      "event": "deterministic_random_Gemma_current_continuation_and_refusal_gates_pass",
+      "experiment": "N33",
+      "optimizer_steps": 0
     }
   ]
 }

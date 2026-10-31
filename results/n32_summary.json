@@ -1,0 +1,288 @@
+{
+  "utc": "2026-10-31T08:31:39.690559+00:00",
+  "status": "closed_planned_original_only_baseline_stop",
+  "phase_A": {
+    "utc": "2026-10-31T08:22:50.122652+00:00",
+    "phase": "A",
+    "status": "complete_private_host_audited",
+    "all_records_and_mandatory_guards_pass": true,
+    "records": 40,
+    "record_kinds": {
+      "new": 40
+    },
+    "trajectories": 40,
+    "actual_model_forward_calls": 1065,
+    "actual_input_token_exposures": 5104,
+    "new_generated_tokens": 1065,
+    "baseline_gate_passed": false,
+    "full_site_gate_passed": null,
+    "primary_fresh_group_score_replication_passed": null,
+    "worker_seconds": 190.32046659599996,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "host_recomputes_full_checkpoint_weights_logits_or_vector_statistics": false,
+    "closed_parent_scorers_rerun": false,
+    "notebook_seconds": 244.78245184899993
+  },
+  "baseline_gate": {
+    "role_correct": 19,
+    "role_total": 32,
+    "retention_correct": 8,
+    "retention_total": 8,
+    "caps": 0,
+    "all_common_prefix_pairs_valid": false,
+    "passed": false
+  },
+  "family_outcomes": [
+    {
+      "family": "predicate",
+      "cases": 16,
+      "correct": 14,
+      "statuses": {
+        "passed": 14,
+        "wrong_answer": 2
+      }
+    },
+    {
+      "family": "filter",
+      "cases": 16,
+      "correct": 5,
+      "statuses": {
+        "source_contract_error": 10,
+        "passed": 5,
+        "wrong_answer": 1
+      }
+    },
+    {
+      "family": "retention",
+      "cases": 8,
+      "correct": 8,
+      "statuses": {
+        "passed": 8
+      }
+    }
+  ],
+  "complete_blocks": 2,
+  "declared_blocks": 8,
+  "source_failure_reasons": {
+    "Declared list and loop names required": 6,
+    "Requested operand order required": 4
+  },
+  "valid_prefix_pairs": 10,
+  "interventions": 0,
+  "later_phases": "B and C never built or launched; no wording, cap or grade repair is permitted.",
+  "interpretation": "The complete-function counterbalance is not usable under its frozen source and prefix contracts. No N32 group effect, semantic-vs-token pattern or utility result was tested. The null and failed criteria of earlier studies remain unchanged.",
+  "native_neurons_have_no_function_claim": false,
+  "next_decision": "Reconsider the assay separately before new discovery or utility. Any new conditional-completion format is development design informed by this failure, not fresh confirmation and not a repair of these grades.",
+  "optimizer_steps": 0,
+  "all8blocks": [
+    {
+      "family": "predicate",
+      "style": 0,
+      "name_index": 0,
+      "cases": 4,
+      "correct": 3,
+      "statuses": {
+        "passed": 3,
+        "wrong_answer": 1
+      },
+      "relation_pairs": [
+        {
+          "order": 0,
+          "both_source_positions_valid": true,
+          "prefixes_equal": true
+        },
+        {
+          "order": 1,
+          "both_source_positions_valid": true,
+          "prefixes_equal": true
+        }
+      ],
+      "complete_baseline_block": false
+    },
+    {
+      "family": "predicate",
+      "style": 0,
+      "name_index": 1,
+      "cases": 4,
+      "correct": 3,
+      "statuses": {
+        "passed": 3,
+        "wrong_answer": 1
+      },
+      "relation_pairs": [
+        {
+          "order": 0,
+          "both_source_positions_valid": true,
+          "prefixes_equal": true
+        },
+        {
+          "order": 1,
+          "both_source_positions_valid": true,
+          "prefixes_equal": true
+        }
+      ],
+      "complete_baseline_block": false
+    },
+    {
+      "family": "predicate",
+      "style": 1,
+      "name_index": 0,
+      "cases": 4,
+      "correct": 4,
+      "statuses": {
+        "passed": 4
+      },
+      "relation_pairs": [
+        {
+          "order": 0,
+          "both_source_positions_valid": true,
+          "prefixes_equal": true
+        },
+        {
+          "order": 1,
+          "both_source_positions_valid": true,
+          "prefixes_equal": true
+        }
+      ],
+      "complete_baseline_block": true
+    },
+    {
+      "family": "predicate",
+      "style": 1,
+      "name_index": 1,
+      "cases": 4,
+      "correct": 4,
+      "statuses": {
+        "passed": 4
+      },
+      "relation_pairs": [
+        {
+          "order": 0,
+          "both_source_positions_valid": true,
+          "prefixes_equal": true
+        },
+        {
+          "order": 1,
+          "both_source_positions_valid": true,
+          "prefixes_equal": true
+        }
+      ],
+      "complete_baseline_block": true
+    },
+    {
+      "family": "filter",
+      "style": 0,
+      "name_index": 0,
+      "cases": 4,
+      "correct": 0,
+      "statuses": {
+        "source_contract_error": 4
+      },
+      "relation_pairs": [
+        {
+          "order": 0,
+          "both_source_positions_valid": false,
+          "prefixes_equal": false
+        },
+        {
+          "order": 1,
+          "both_source_positions_valid": false,
+          "prefixes_equal": false
+        }
+      ],
+      "complete_baseline_block": false
+    },
+    {
+      "family": "filter",
+      "style": 0,
+      "name_index": 1,
+      "cases": 4,
+      "correct": 3,
+      "statuses": {
+        "passed": 3,
+        "source_contract_error": 1
+      },
+      "relation_pairs": [
+        {
+          "order": 0,
+          "both_source_positions_valid": true,
+          "prefixes_equal": true
+        },
+        {
+          "order": 1,
+          "both_source_positions_valid": false,
+          "prefixes_equal": false
+        }
+      ],
+      "complete_baseline_block": false
+    },
+    {
+      "family": "filter",
+      "style": 1,
+      "name_index": 0,
+      "cases": 4,
+      "correct": 0,
+      "statuses": {
+        "source_contract_error": 4
+      },
+      "relation_pairs": [
+        {
+          "order": 0,
+          "both_source_positions_valid": false,
+          "prefixes_equal": false
+        },
+        {
+          "order": 1,
+          "both_source_positions_valid": false,
+          "prefixes_equal": false
+        }
+      ],
+      "complete_baseline_block": false
+    },
+    {
+      "family": "filter",
+      "style": 1,
+      "name_index": 1,
+      "cases": 4,
+      "correct": 2,
+      "statuses": {
+        "passed": 2,
+        "wrong_answer": 1,
+        "source_contract_error": 1
+      },
+      "relation_pairs": [
+        {
+          "order": 0,
+          "both_source_positions_valid": true,
+          "prefixes_equal": true
+        },
+        {
+          "order": 1,
+          "both_source_positions_valid": false,
+          "prefixes_equal": false
+        }
+      ],
+      "complete_baseline_block": false
+    }
+  ],
+  "startup_failure": {
+    "utc": "2026-10-31T08:10:58.686399+00:00",
+    "status": "private_pre_inference_engineering_failure_closed",
+    "phase": "A",
+    "version": 1,
+    "result": "Frozen expected tokenization records contain input_tokens only. The unchanged runner encoder returns id,input_tokens,template_text_sha256,input_ids_sha256. Full-dictionary equality therefore stops before any forward.",
+    "actual_model_forward_calls": 0,
+    "actual_input_token_exposures": 0,
+    "records": 0,
+    "new_generated_tokens": 0,
+    "worker_seconds": 87.33032311400007,
+    "notebook_seconds": 141.03469788899997,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "auditor_invoked": false,
+    "no_behavioral_outputs_exist": true,
+    "no_completed_panel_rerun": true,
+    "preserved_notebook_sha256": "f362465c13387d321e7feabb23a47d6688e6f333dc999838aec533c12b4fdab5"
+  }
+}

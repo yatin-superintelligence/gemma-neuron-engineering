@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-31T08:38:00.122853+00:00",
+  "question_id": "Q47",
+  "experiment": "N33",
+  "status": "intent_only_before_protocol_data_or_implementation",
+  "question": "At a predefined incomplete-code input position, does the fixed64group follow the requested relation or the donor comparator token under reversed operand order?",
+  "parents": [
+    "Q38",
+    "Q42",
+    "Q46"
+  ],
+  "why": "N24 shows a controlled finite group-score contribution on reused generated prefixes. N28 exposes literal donor-suffix copying. N32 closes before edits because full-function construction violates its source and prefix gates. Its two complete blocks are not selected or reused. A separate scaffolded interface can ask a narrower current-token question with an input-position trigger fixed before any answer.",
+  "format_selection": "This format is chosen after N32 feedback. It is development design, not fresh confirmation, a repaired N32 score, or unrestricted function construction.",
+  "proposed_data": "New private names and wordings, both predicate and stable-filter families, both mathematical relations and both source operand orders, with nuisance-name replication and new retention. The input supplies a function scaffold ending at its first comparison operand. It contains neither comparator nor remaining answer tail. Every case and failure is retained.",
+  "fixed_groups": [
+    "selected64",
+    "random34201_64",
+    "random34202_64"
+  ],
+  "group_source": "runs/n20/selection/result.json",
+  "group_source_sha256": "fcbb5cf85dd794b9be4f9c21008ac348ed291e5f187a1c6c06b9dc974af0f395",
+  "edits": "Same prescribed actual native donor swaps,zero and recipient rescue at the last input position of one prefill forward. No new coordinate,rank,gain,vector,weight or gradient. Original source/core helpers remain separate and frozen.",
+  "required_controls": "Full-vocabulary original continuations and independently executable assembled-program oracles; exact identity/rescue/restoration; all4semantic/order donor policies; actual whole-site positive control; native late-cache invariant and native parameter guards; new-input activity/donor-change magnitude adequacy without applied normalization or rematching.",
+  "phases": "Freeze all phase algorithms,auditors,data,counts and gates before originals. An original-only gate precedes full-site controls; sparse interpretation requires their success. Final prospective protocol must specify every gate and conditional stop,including magnitude adequacy, before data or source implementation.",
+  "claims_excluded": [
+    "No individual neuron meaning,complete circuit,formal abstraction or novelty",
+    "No original-model coding improvement or new capability",
+    "No fresh confirmation from this feedback-selected format",
+    "No claim that the old profile matching proves new-input magnitude matching",
+    "No hardcoded comparison answer or teacher-forced divergent token"
+  ],
+  "model_seed": 4701,
+  "data_seed": 4702,
+  "host_seed": 4703,
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "model_forwards": 0,
+  "dataset_exists": false,
+  "protocol_exists": false,
+  "GPU_launch_authorized": false
+}

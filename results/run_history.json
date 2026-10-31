@@ -396,13 +396,13 @@
       "recorded_script_seconds": 87.33032311400007,
       "outcome": "Frozen expected tokenization records contain input_tokens only. The unchanged runner encoder returns id,input_tokens,template_text_sha256,input_ids_sha256. Full-dictionary equality therefore stops before any forward.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "n32_A_v2",
-      "launched_utc": "2026-10-31T08:16:46.028893+00:00",
-      "status": "private_running_no_outputs_read"
+      "recorded_script_seconds": 190.32046659599996,
+      "outcome": "All40records and mandatory guards pass. Planned baseline stop: role19/32,retention8/8,no caps. Predicate14/16;filter5/16. Ten source failures and three executable wrong answers. Only2/8complete blocks and10/16valid common-prefix pairs. No neuron intervention or B/C phase executes.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

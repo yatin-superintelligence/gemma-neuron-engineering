@@ -1,5 +1,5 @@
 {
-  "status": "n32_phase_a_version2_private_running_no_outputs_read",
+  "status": "closed_planned_original_only_baseline_stop",
   "prospective_protocol_sha256": "760b7db01753c7430f398c406762325170c3876793a6f53e20badfe45cc842bf",
   "original_host_failure_preserved": true,
   "failure_scope": "All125planned oracle/source/execution outcomes complete,then a default tokenizer-cache lookup fails. A tokenizer-only continuation uses the established pinned local cache,without repeating the completed panel.",
@@ -48,6 +48,6 @@
   "all40unchanged_input_tensors_and_actual_runner_metadata_checked": true,
   "pretrained_model_forwards": 0,
   "optimizer_steps": 0,
-  "pending": "At terminal status use scripts.collect_n32_outputs_v2 --phase A once. Verify the versioned frozen source/private manifest and audit all forty originals once. No completed panel is regenerated; baseline/source/position/cap failure closes N32 before B.",
-  "host_measurement_scope": "All zero pretrained-forward counts in this preparation record refer to host fixtures, not a running private phase. No pretrained outcome is reported here."
+  "pending": "No further N32 execution. Complete audited baseline and stop are in n32_summary.json.",
+  "host_measurement_scope": "All zero pretrained-forward counts in this preparation record refer to host fixtures. The complete pretrained original-only result is reported separately in n32_summary.json."
 }

@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-31T08:38:00.122853+00:00",
+  "status": "before_new_protocol_or_dataset",
+  "considered": [
+    {
+      "option": "Reuse only the two passing N32 blocks",
+      "decision": "Rejected. It would select from a closed failed baseline and bypass its stopping rule."
+    },
+    {
+      "option": "Change N32 wording,caps,source contracts or grades and rerun",
+      "decision": "Rejected. All40outputs and grades remain final; B/C stay unbuilt."
+    },
+    {
+      "option": "Continue N30 unit ranks,choose another dose or run N31 anyway",
+      "decision": "Rejected. The individual-unit conjunction failed and its utility prerequisite remains unmet."
+    },
+    {
+      "option": "Construct a separate incomplete-code development interface",
+      "decision": "Proposed for a narrower fixed-input-position causal question. Supplies syntax and the requested first operand,not the comparator answer. This reduces construction confounds but does not demonstrate unrestricted coding or abstract semantics."
+    }
+  ],
+  "new_positive_evidence": "None from N32. The only positive parent is the bounded N24 group score contribution; its program-level and utility nulls remain intact.",
+  "next_decisive_checks": "Baseline feasibility without answer restriction; relation/order orthogonality; actual full-site and self controls; new-input magnitude adequacy; allfixed sparse groups without re-selection. Freeze prospective rules first.",
+  "no_model_run": true,
+  "optimizer_steps": 0
+}

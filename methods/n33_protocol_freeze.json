@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-31T08:47:10.571091+00:00",
+  "status": "scientific_protocol_frozen_before_task_or_code_implementation",
+  "protocol_sha256": "ac03b4a44f0ecf7159bafd871bf278cab69f47348b78ae696ee12cd2a61a6a08",
+  "intent_sha256": "1b8695749c0de596d295020c1e0a834d7aa99d4819082a7f15c7919db58a3508",
+  "data_exists": false,
+  "runner_exists": false,
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

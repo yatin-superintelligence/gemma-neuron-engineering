@@ -1,0 +1,123 @@
+{
+  "task_gate": {
+    "status": "passed",
+    "fixture_outcomes": 211,
+    "correct_fixtures": 72,
+    "refusals": 139,
+    "independent_reference_comparisons": 11291,
+    "data_sha256": "9858afd797c3fba926c2b6cec6873cdd176194c4b0c31c2e37c06090919d8356",
+    "model_forwards": 0,
+    "optimizer_steps": 0,
+    "seconds": 10.355433750002703
+  },
+  "random_model_gate": {
+    "utc": "2026-10-31T09:23:12.502433+00:00",
+    "status": "passed",
+    "cases": [
+      {
+        "dtype": "torch.float32",
+        "policy": "whole_self",
+        "record_kind": "new",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      },
+      {
+        "dtype": "torch.float32",
+        "policy": "whole_foreign",
+        "record_kind": "new",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      },
+      {
+        "dtype": "torch.float32",
+        "policy": "group_self",
+        "record_kind": "guarded_same_choice_reference",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      },
+      {
+        "dtype": "torch.float32",
+        "policy": "group_foreign",
+        "record_kind": "new",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      },
+      {
+        "dtype": "torch.float32",
+        "policy": "zero",
+        "record_kind": "new",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      },
+      {
+        "dtype": "torch.float32",
+        "policy": "rescue",
+        "record_kind": "guarded_exact_native_reference",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "policy": "whole_self",
+        "record_kind": "new",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "policy": "whole_foreign",
+        "record_kind": "new",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "policy": "group_self",
+        "record_kind": "guarded_same_choice_reference",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "policy": "group_foreign",
+        "record_kind": "new",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "policy": "zero",
+        "record_kind": "new",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "policy": "rescue",
+        "record_kind": "guarded_exact_native_reference",
+        "random_tokens_including_independent_future_probe": 3,
+        "strict_state_and_current_scope_pass": true
+      }
+    ],
+    "refusals": [
+      "torch.float32:changed_token_not_reused",
+      "torch.float32:truncated_cache",
+      "torch.float32:buffer_change",
+      "torch.float32:generation_configuration_change",
+      "torch.bfloat16:changed_token_not_reused",
+      "torch.bfloat16:truncated_cache",
+      "torch.bfloat16:buffer_change",
+      "torch.bfloat16:generation_configuration_change"
+    ],
+    "all_actual_call_lengths_match_independent_enumeration": true,
+    "actual_random_model_forward_calls": 48,
+    "actual_input_token_exposures": 88,
+    "random_generated_tokens": 44,
+    "pretrained_model_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 1.2741019160021096
+  },
+  "pretrained_outcomes_exist": false,
+  "execution_freeze_pending": true
+}
