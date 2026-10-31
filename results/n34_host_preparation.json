@@ -1,0 +1,193 @@
+{
+  "block_paths": {
+    "utc": "2026-10-31T12:36:35.474538+00:00",
+    "status": "passed",
+    "block_path_cases": 56,
+    "paired_cached_self_blocks": 14,
+    "restoration_blocks": 14,
+    "scope_and_cache_refusals": [
+      "torch.float32:empty_scope",
+      "torch.float32:duplicate_scope",
+      "torch.float32:out_of_range",
+      "torch.float32:missing_donor",
+      "torch.float32:truncated",
+      "torch.float32:nonfinite",
+      "torch.float32:uninitialized",
+      "torch.bfloat16:empty_scope",
+      "torch.bfloat16:duplicate_scope",
+      "torch.bfloat16:out_of_range",
+      "torch.bfloat16:missing_donor",
+      "torch.bfloat16:truncated",
+      "torch.bfloat16:nonfinite",
+      "torch.bfloat16:uninitialized"
+    ],
+    "pinned_newline_cases": [
+      {
+        "text_sha256": "712e6e470afca07b6e53e5bf808d1894e89649da12702a9d238ac10e00be4314",
+        "first_stop_token": 2
+      },
+      {
+        "text_sha256": "b6a98d9ce9a2d9149288fa3df42d377c3e42737afdcdaf714e33c0a100b51060",
+        "first_stop_token": 2
+      },
+      {
+        "text_sha256": "8563417866d85c50b527b88c89c14217e71c3d06235287e9c70efb744d49041f",
+        "first_stop_token": 2
+      }
+    ],
+    "old_prompt_newline_not_new_stop": true,
+    "all_receipts_JSON_roundtrip": true,
+    "actual_random_model_forward_calls": 182,
+    "actual_input_token_exposures": 626,
+    "random_generated_tokens": 14,
+    "pretrained_model_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 5.744797708000988
+  },
+  "teacher_and_design": {
+    "utc": "2026-10-31T12:49:12.252219+00:00",
+    "status": "passed_closed",
+    "teacher_isolation_cases": [
+      {
+        "dtype": "torch.float32",
+        "calls": 5,
+        "input_token_exposures": 21,
+        "wrong_token_refused": true,
+        "wrong_termination_refused": true,
+        "teacher_free_cache_nonalias_and_isolation": true,
+        "random_tokens": 1
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "calls": 5,
+        "input_token_exposures": 21,
+        "wrong_token_refused": true,
+        "wrong_termination_refused": true,
+        "teacher_free_cache_nonalias_and_isolation": true,
+        "random_tokens": 1
+      }
+    ],
+    "record_manifest": 1176,
+    "trajectory_manifest": 1638,
+    "independent_counter_fixture": {
+      "calls": 3382,
+      "input_token_exposures": 139378
+    },
+    "strict_conjunction_failed_cases": [
+      "opposite_same_order_copy_and_coverage",
+      "same_reversed_order_copy_and_coverage",
+      "same_same_order_native_choice",
+      "opposite_reversed_order_native_choice",
+      "same_order_program_control",
+      "zero_loss_with_changed_choice_both_families",
+      "all_retention_under_every_operation"
+    ],
+    "missing_duplicate_record_refusals": 2,
+    "actual_random_model_forward_calls": 10,
+    "actual_input_token_exposures": 42,
+    "random_generated_tokens": 2,
+    "pretrained_model_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 0.4010505420010304
+  },
+  "actual_receipt_readers": {
+    "utc": "2026-10-31T12:55:27.132345+00:00",
+    "status": "passed_closed",
+    "cases": [
+      {
+        "layers": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "operation": "opposite_same_order",
+        "tokens": 8,
+        "counter": {
+          "calls": 8,
+          "input_token_exposures": 12
+        },
+        "JSON_reader_checks": true,
+        "corruptions_refused": 4
+      },
+      {
+        "layers": [
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "operation": "self",
+        "tokens": 13,
+        "counter": {
+          "calls": 13,
+          "input_token_exposures": 17
+        },
+        "JSON_reader_checks": true,
+        "corruptions_refused": 4
+      },
+      {
+        "layers": [
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "operation": "zero",
+        "tokens": 13,
+        "counter": {
+          "calls": 13,
+          "input_token_exposures": 17
+        },
+        "JSON_reader_checks": true,
+        "corruptions_refused": 4
+      },
+      {
+        "layers": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "operation": "rescue",
+        "tokens": 13,
+        "counter": {
+          "calls": 13,
+          "input_token_exposures": 17
+        },
+        "JSON_reader_checks": true,
+        "corruptions_refused": 4
+      }
+    ],
+    "both_actual_runner_auditor_imported": true,
+    "actual_random_model_forward_calls": 53,
+    "actual_input_token_exposures": 94,
+    "random_generated_tokens": 47,
+    "pretrained_model_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "seconds": 0.7923230410087854
+  },
+  "isolated_transport": {
+    "utc": "2026-10-31T12:56:44.299486+00:00",
+    "status": "passed",
+    "packaged_sources": 33,
+    "input_files": 11,
+    "both_isolated_runner_auditor_imports": true,
+    "Ruff_F821_F823": "All checks passed!",
+    "notebook_cells_compiled": 4,
+    "all_closed_host_source_hashes_exact": true,
+    "old_24_tokenizations_exact": true,
+    "no_hidden_grader_in_GPU_payload": true,
+    "native_lineage_separate_from_free_generation": true,
+    "new_pretrained_model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "scope": "Random-model software and path checks only. Pretrained outcomes are reported separately after the frozen audit."
+}

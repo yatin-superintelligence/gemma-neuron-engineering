@@ -16,7 +16,11 @@ The donor scores **23/32 coding versus 19/32 for the original**, with five gains
 
 Both engineering stops remain recorded: an embedding validation mask exhausted memory before inference; a later metadata serialization error stopped the donor half after all original responses had completed. Only missing donor responses resumed. Every original output and criterion stayed fixed. The [protocol](methods/n35_prospective_protocol.json), amendments and [conditional transplant design](methods/n36_conditional_intent.json) preserve that lineage.
 
-Connected-neuron copying is established prior work, including [ARM](https://arxiv.org/abs/2601.07309). This study has not validated full transformer-layer insertion or a coding benefit from transplantation. The unchanged N34 anatomical-copying protocol is next.
+Connected-neuron copying is established prior work, including [ARM](https://arxiv.org/abs/2601.07309). This study has not validated full transformer-layer insertion or a coding benefit from transplantation. N34 is running privately: seven fixed native blocks, all donor controls and zeroing, with completed random-model host gates and a frozen prospective auditor. It studies comparator copying. No N34 outputs have been accessed. The [source helper](research/experiments/n34/inference.py) and [random-model fixture](research/experiments/n34/model_host.py) are available; this source release is not a pretrained result.
+
+## Inference budgets
+
+New complete-function assays use a shared 2048-token output budget unless a prospective task-specific bound is justified. Truncations are reported separately from completed wrong programs. The closed donor comparison used 256 tokens and truncated ten original coding outputs; three of its five donor gains remove those truncations. Its scores remain budget-qualified results. No transplant has been tested.
 
 ## Read the research
 

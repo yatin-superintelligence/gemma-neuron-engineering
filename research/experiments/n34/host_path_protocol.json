@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-31T12:27:31.969645+00:00",
+  "experiment": "N34H",
+  "question_id": "Q48",
+  "status_at_freeze": "before_new_path_helper_or_host_implementation",
+  "scientific_protocol_sha256": "9b316ae391702ee0e4dea0dae3cb6d451c8ab0e850c2e9dac663d02c913a0215",
+  "question": "Do actual Gemma block patches, ordered rescue, raw/legacy cache proofs and exact stop/counter paths implement the fixed N34 contract?",
+  "model": "Random-weight actual Gemma4,35MLPs/shared20/native15cache entries,using pinned parent layer schedule. Hidden16,MLP24/48,heads2,head8,per-layer input4. Model initialization seed4802. FP32/BF16,no pretrained weights.",
+  "path_cases": "Capture two unmodified inputs at own last positions. For all seven5-layer blocks,exercise self,foreign,zero and ordered foreign-then-recipient rescue. Fresh caches each. Verify all past KV and first cache entry;whole current cache exact for late blocks15..34. Exact self/rescue/restoration logits/cache and native parameter/buffer/config/RNG/hook state. No assumption foreign/zero must change every possible path.",
+  "decode_and_lineage": "Actual random Gemma free cap/EOS traces and independent root counters. Use the pinned real tokenizer/StopStringCriteria on explicit newline/overhang/EOS/cap unit sequences. Teacher-only saved tokens must match actual native argmax and stopping and cannot become a new free input or cache. Refuse corrupt teacher tokens/termination,missing donor layers,wrong scopes and malformed/truncated/nonfinite cache.",
+  "metadata_boundary": "Serialize every real path receipt and state witness to JSON. BOTH runner/auditor imports and RuffF821/F823 before GPU. No old generation/oracle panel rerun. Source hashes and partial outcomes saved prospectively.",
+  "model_forwards_at_freeze": 0,
+  "optimizer_steps": 0,
+  "backward_calls": 0
+}

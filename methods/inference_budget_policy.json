@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-31T12:46:58.392549+00:00",
+  "authority": "Direct human instructions in this chat: allow adequate output tokens and context; prioritize sensible research and explain actual findings.",
+  "idea_id": "U16",
+  "status": "prospective_inference_budget_policy",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "whole_function_default_max_new_tokens": 2048,
+  "whole_function_rule": "For new complete-function coding assays, use a shared 2048-token budget across original, donor and edited conditions unless a task-specific prospective reason requires another bound. Verify input plus output budget against the actual pinned model context configuration and available memory. Stop at native EOS. Record actual tokens and termination. Do not mistake the output-token budget for the model context limit.",
+  "truncation_reporting": "Report budget-truncated, completed-wrong, syntax/execution failure and correct outcomes separately. Keep all cases in every paired denominator. A truncated output is not evidence that the model cannot solve the task with more output room. Do not reroll or select a best answer.",
+  "existing_runs": "Preserve completed raw records, original grades and frozen budget-qualified results. A larger-budget continuation must be a separately labelled prospective follow-up with exact lineage and all capped original conditions eligible. It cannot silently replace a failed original prerequisite.",
+  "context_rule": "Read the pinned model configuration. Raise a runner-imposed context/output bound within supported limits when useful. Do not claim that changing a number increases the trained model context capability.",
+  "n35_observation": {
+    "original_coding_cap": 256,
+    "donor_coding_cap": 256,
+    "original_truncated_coding_cases": 10,
+    "donor_truncated_coding_cases": 0,
+    "donor_gains_from_original_truncations": 3,
+    "total_donor_gains": 5,
+    "new_model_forwards": 0,
+    "closed_grades_unchanged": true
+  },
+  "n34_decision": "Keep the existing 32-token/newline interface for the frozen conditional line-completion localization study. All 168 closed parent outputs finish before that limit, so no observed parent truncation is being treated as inability. A cap in a new edited tail remains visible. This interface is distinct from complete-function coding.",
+  "next": "Finish the already frozen N34 causal localization. A separate cap-extension follow-up can assess the N35 truncated originals if time and resources permit; no model outcome for that follow-up exists."
+}

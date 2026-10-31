@@ -425,5 +425,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N34_v1_native_block_localization",
+      "launched_utc": "2026-10-31T12:59:23.223014+00:00",
+      "status": "private_launched_source_verified_outputs_unseen"
+    }
+  ]
 }

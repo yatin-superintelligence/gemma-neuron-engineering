@@ -3614,6 +3614,49 @@
       "event": "closed_grade_cap_and_format_diagnostics_without_regrading",
       "experiment": "N35",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 493,
+      "utc": "2026-10-31T12:46:58.392549+00:00",
+      "event": "random_model_block_path_panel_passed_before_GPU",
+      "experiment": "N34",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 494,
+      "utc": "2026-10-31T12:46:58.392549+00:00",
+      "event": "human_inference_budget_instruction_recorded_prospective2048_no_regrading",
+      "experiment": "U16",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 495,
+      "utc": "2026-10-31T12:58:49.693926+00:00",
+      "event": "unfinished_teacher_isolation_and_conjunction_gates_passed",
+      "experiment": "N34",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 496,
+      "utc": "2026-10-31T12:58:49.693926+00:00",
+      "event": "actual_runner_auditor_receipt_integration_passed",
+      "experiment": "N34",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 497,
+      "utc": "2026-10-31T12:58:49.693926+00:00",
+      "event": "source_data_auditor_and_private_notebook_frozen_before_GPU",
+      "experiment": "N34",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 498,
+      "utc": "2026-10-31T13:00:43.159362+00:00",
+      "event": "one_private_bounded_job_launched_exact_server_source_verified",
+      "experiment": "N34",
+      "optimizer_steps": 0,
+      "privacy_server_verified": true
     }
   ]
 }
