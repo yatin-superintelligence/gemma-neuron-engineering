@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "loaded_local_modules": {
+    "interpretability": "interpretability/__init__.py",
+    "research": "research/__init__.py",
+    "research.experiments": "research/experiments/__init__.py",
+    "research.experiments.n37": "research/experiments/n37/__init__.py",
+    "interpretability.cache_proofs": "interpretability/cache_proofs.py",
+    "research.experiments.n19": "research/experiments/n19/__init__.py",
+    "research.experiments.n19.trajectory": "research/experiments/n19/trajectory.py",
+    "research.experiments.n35": "research/experiments/n35/__init__.py",
+    "research.experiments.n21": "research/experiments/n21/__init__.py",
+    "research.experiments.n21.generation": "research/experiments/n21/generation.py",
+    "research.experiments.n35.core": "research/experiments/n35/core.py",
+    "research.experiments.n37.continuation": "research/experiments/n37/continuation.py",
+    "interpretability.native_eos_generation": "interpretability/native_eos_generation.py"
+  },
+  "calls": {
+    "model_forwards": 0,
+    "pretrained_model_loads": 0,
+    "tokenizer_loads": 0
+  },
+  "signature": "(model, tokenizer, encoded, eos, *, resource_guard, on_decision, reference=None)",
+  "utc": "2026-10-31T20:02:15.135048+00:00",
+  "public_private_source_bytes_exact": true,
+  "helper_matches_closed_host_source": true,
+  "explicit_synthetic_markers": [
+    "interpretability/__init__.py",
+    "research/__init__.py",
+    "research/experiments/__init__.py",
+    "research/experiments/n19/__init__.py",
+    "research/experiments/n21/__init__.py",
+    "research/experiments/n35/__init__.py",
+    "research/experiments/n37/__init__.py"
+  ],
+  "source_files": 6,
+  "existing_host_fixture_rerun": false,
+  "new_pretrained_forwards": 0,
+  "new_model_forwards": 0,
+  "optimizer_steps": 0
+}

@@ -194,6 +194,14 @@
         "summarize",
         "assess_n40_intent"
       ]
+    },
+    {
+      "category": "Generate and resume",
+      "path": "interpretability/native_eos_generation.py",
+      "sha256": "9dc0d62f60e8073f7a82d891cb7e9b08e2d96b6c145a2b1c8cbd2454f50c730d",
+      "symbols": [
+        "generate_native_eos"
+      ]
     }
   ],
   "bundles": [
@@ -511,6 +519,17 @@
       "kind": "Edit recipe",
       "counts": {},
       "sha256": "3289084c9b229c545e07b53593628fc58f769aea3be391b30c4c0ca1cfac00fb"
+    },
+    {
+      "path": "models/n40/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only unquantized BF16",
+      "kind": "fixed_native_global_outgoing_column_zero",
+      "counts": {
+        "conditions": 5
+      },
+      "sha256": "70e639f54ddefca4064d996ebe2ed12eab65807c96532c0e6e88af5bb1ca8773"
     }
   ],
   "tensor_assets": [
@@ -607,6 +626,45 @@
         ]
       ],
       "sha256": "3d6d4257a6894897b64e988db4ff5139b809450fbe2d252854ee72feac232a5d"
+    },
+    {
+      "path": "models/n40/native_columns.safetensors",
+      "bytes": 585192,
+      "tensor_count": 18,
+      "dtypes": [
+        "BF16"
+      ],
+      "shapes": [
+        [
+          1536,
+          3
+        ],
+        [
+          1536,
+          5
+        ],
+        [
+          1536,
+          6
+        ],
+        [
+          1536,
+          9
+        ],
+        [
+          1536,
+          12
+        ],
+        [
+          1536,
+          21
+        ],
+        [
+          1536,
+          27
+        ]
+      ],
+      "sha256": "6dafd945af7981808b7ef2b60b03bda7ad5cc54f0106ab685c41da76e10bcd69"
     }
   ],
   "activation_viewer_default_data": "synthetic_only",

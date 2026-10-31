@@ -461,13 +461,25 @@
       "recorded_script_seconds": 62.84379246100002,
       "outcome": "Two distinct T4 devices and concurrent independent workers pass; all eight full-logit/raw-cache pairs exact. Two notebook jobs were concurrently RUNNING. Random models only, no pretrained throughput claim.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N40_v2_global_column_utility",
+      "recorded_script_seconds": 3634.6981330149997,
+      "outcome": "All240records and guards pass;all192new replies EOS. Coding original24/32,selected26,randomA25,randomB24,prompt22. Selected2gains/0losses within one family;one also appears in both randoms. Output-reduction primary fails.",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "U24P_full_BF16_parallel_readiness",
+      "recorded_script_seconds": 222.610457413,
+      "outcome": "Both full original BF16replicas fit concurrently;all288native decision/logit/cache comparisons and96first caches exact,all source/state guards pass. No new responses,edits or grades.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N40_v2_global_column_utility",
-      "launched_utc": "2026-10-31T19:04:29.160232+00:00",
-      "status": "active_private"
+      "run": "N41A_v1_original_native_EOS_two_GPU",
+      "launched_utc": "2026-10-31T21:23:34.961312+00:00",
+      "status": "RUNNING"
     }
   ]
 }

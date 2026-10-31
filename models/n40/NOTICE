@@ -1,0 +1,6 @@
+N40 native column-deletion recipes for Digital Surgery.
+Base: google/gemma-4-E2B-it, revision 3e22461f65e89153144f8adb70e3b8c2cc9845a7.
+Original and prescribed factor-zero BF16 native columns only. Zero optimizer updates.
+Three fixed deletion variants, the original and an instruction control are recorded.
+The output-reduction primary failed. Two one-family development coding repairs are unconfirmed.
+The base checkpoint is referenced, not duplicated. Tasks, replies, activations and oracle answers are excluded.

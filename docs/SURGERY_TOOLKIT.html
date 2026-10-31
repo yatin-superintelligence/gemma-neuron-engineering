@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option><option>Evaluate</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_cache_branch</h2><p>Clone an actual native past for one current-token causal measurement.
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2;overflow-wrap:anywhere}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option><option>Evaluate</option><option>Generate and resume</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_cache_branch</h2><p>Clone an actual native past for one current-token causal measurement.
 
 The clone is ephemeral. It is not a reusable past for a changed conversation.
 Only the pinned DynamicCache with initialized dense KV layers is accepted.</p><p><a href="../interpretability/native_cache_branch.py">Exact source file</a></p><p class="small">APIs: tensor_hash, _value, fingerprint, _storages, native_cache_branch</p><p class="hash">SHA-256 a11a55a52e908bc2f6f19ee00f20d00e1f66c6cf673a5c7969082d581b2ee6e7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Clone an actual native past for one current-token causal measurement.
@@ -1858,4 +1858,128 @@ def assess_n40_intent(summary):
             &#x27;prompt_comparison_clauses&#x27;: prompt_checks,
             &#x27;simple_prompt_matches_or_improves_these_measures&#x27;: all(prompt_checks.values()),
             &#x27;scope&#x27;: &#x27;Conditional intent criteria on supplied development labels. No automatic claim of accuracy gain, necessity, speedup or confirmed utility.&#x27;}
+</pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>native_eos_generation</h2><p>Greedy native-EOS generation with streamed evidence and resumable history.
+
+There is no response-token ceiling. The caller supplies actual resource checks;
+the model&#x27;s configured context is a separate boundary, not a completion signal.
+An interrupted record remains incomplete. Pretrained use requires a prospective
+protocol binding the prompt, model, edit and any saved native reference history.</p><p><a href="../interpretability/native_eos_generation.py">Exact source file</a></p><p class="small">APIs: generate_native_eos</p><p class="hash">SHA-256 9dc0d62f60e8073f7a82d891cb7e9b08e2d96b6c145a2b1c8cbd2454f50c730d</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Greedy native-EOS generation with streamed evidence and resumable history.
+
+There is no response-token ceiling. The caller supplies actual resource checks;
+the model&#x27;s configured context is a separate boundary, not a completion signal.
+An interrupted record remains incomplete. Pretrained use requires a prospective
+protocol binding the prompt, model, edit and any saved native reference history.
+&quot;&quot;&quot;
+
+import copy
+
+import torch
+from transformers.cache_utils import DynamicCache
+
+from research.experiments.n37.continuation import decision
+
+RESOURCE_REASONS = {&#x27;wall_time_interrupt&#x27;, &#x27;memory_reservation_interrupt&#x27;,
+                    &#x27;output_storage_interrupt&#x27;, &#x27;external_interrupt&#x27;}
+
+
+def generate_native_eos(model, tokenizer, encoded, eos, *, resource_guard,
+                        on_decision, reference=None):
+    &quot;&quot;&quot;Continue to native EOS, recording actual resource/context interruptions.
+
+    ``resource_guard`` returns None or a JSON-compatible resource witness with
+    ``reason`` and ``evidence``. It must measure resources, not impose a disguised
+    token limit. ``on_decision`` persists every new token and its exact hashes.
+    A reference is unfinished own-history evidence, never a donor or an answer.
+    Every reference choice/logit/cache must replay exactly before a new suffix.
+    &quot;&quot;&quot;
+    config = model.config.text_config
+    maximum = config.max_position_embeddings
+    if type(maximum) is not int or maximum &lt; 1:
+        raise ValueError(&#x27;Actual configured context boundary required&#x27;)
+    if not callable(resource_guard) or not callable(on_decision):
+        raise ValueError(&#x27;Resource and streaming callbacks required&#x27;)
+    if not eos or any(type(i) is not int or not 0 &lt;= i &lt; config.vocab_size for i in eos):
+        raise ValueError(&#x27;Explicit valid native EOS IDs required&#x27;)
+    if any(p.requires_grad or p.grad is not None for p in model.parameters()):
+        raise ValueError(&#x27;Freeze model parameters before inference&#x27;)
+    if any(module.training for module in model.modules()):
+        raise ValueError(&#x27;Evaluation mode required&#x27;)
+    versions = {n: p._version for n, p in model.named_parameters()}
+    n = int(encoded[&#x27;input_ids&#x27;].numel())
+    if encoded[&#x27;input_ids&#x27;].ndim != 2 or encoded[&#x27;input_ids&#x27;].shape[0] != 1 or n &lt; 1:
+        raise ValueError(&#x27;One nonempty encoded native prompt required&#x27;)
+    prefix = [] if reference is None else list(reference[&#x27;generated_ids&#x27;])
+    old_trace = [] if reference is None else copy.deepcopy(reference[&#x27;decision_trace&#x27;])
+    if reference is not None:
+        if not prefix or len(prefix) != len(old_trace) or any(i in eos for i in prefix):
+            raise ValueError(&#x27;Only unfinished non-EOS own histories can resume&#x27;)
+        if prefix != [r[&#x27;argmax&#x27;] for r in old_trace]:
+            raise ValueError(&#x27;Reference token choices and trace disagree&#x27;)
+    ids, trace, replay = list(prefix), list(old_trace), []
+    first = None if reference is None else copy.deepcopy(reference[&#x27;first_cache&#x27;])
+    layers = config.num_hidden_layers - config.num_kv_shared_layers
+    dtype = str(next(model.parameters()).dtype)
+    cache = DynamicCache(config=config)
+    attempted = exposures = completed = emitted = 0
+    step = 0
+    interruption = None
+    termination = &#x27;interrupted&#x27;
+    try:
+        with torch.no_grad():
+            while True:
+                interruption = resource_guard()
+                if interruption is not None:
+                    if not isinstance(interruption, dict) or interruption.get(&#x27;reason&#x27;) not in RESOURCE_REASONS or &#x27;evidence&#x27; not in interruption:
+                        raise ValueError(&#x27;Explicit actual-resource interruption witness required&#x27;)
+                    break
+                if n + step &gt; maximum:
+                    interruption = {&#x27;reason&#x27;: &#x27;context_exhausted&#x27;,
+                                    &#x27;evidence&#x27;: {&#x27;configured_context&#x27;: maximum,
+                                                 &#x27;next_required_input_length&#x27;: n + step}}
+                    break
+                args = encoded if step == 0 else {&#x27;input_ids&#x27;: torch.tensor(
+                    [[prefix[step - 1] if step &lt; len(prefix) else ids[-1]]],
+                    device=encoded[&#x27;input_ids&#x27;].device)}
+                attempted += 1
+                exposures += n if step == 0 else 1
+                try:
+                    output = model(**args, past_key_values=cache, use_cache=True, logits_to_keep=1)
+                    item, witness = decision(output, step, layers, dtype)
+                except torch.OutOfMemoryError as error:
+                    interruption = {&#x27;reason&#x27;: &#x27;memory_exhausted&#x27;, &#x27;evidence&#x27;: {
+                        &#x27;exception_type&#x27;: type(error).__name__, &#x27;during_forward_or_witness&#x27;: True}}
+                    break
+                completed += 1
+                cache = output.past_key_values
+                if step == 0:
+                    if reference is not None:
+                        assert witness == reference[&#x27;first_cache&#x27;], &#x27;Native reference first cache changed&#x27;
+                    first = witness
+                if step &lt; len(prefix):
+                    assert item == old_trace[step], &#x27;Native own-history choice/logit/cache changed&#x27;
+                    replay.append(item)
+                else:
+                    assert len(replay) == len(prefix)
+                    ids.append(item[&#x27;argmax&#x27;])
+                    trace.append(item)
+                    emitted += 1
+                    on_decision(copy.deepcopy(item))
+                    if item[&#x27;argmax&#x27;] in eos:
+                        termination = &#x27;eos&#x27;
+                        interruption = None
+                        break
+                step += 1
+    finally:
+        assert versions == {n: p._version for n, p in model.named_parameters()}
+        assert all(not p.requires_grad and p.grad is None for p in model.parameters())
+    return {&#x27;generated_ids&#x27;: ids, &#x27;text&#x27;: tokenizer.decode(ids, skip_special_tokens=True),
+            &#x27;generated_tokens&#x27;: len(ids), &#x27;new_generated_tokens&#x27;: emitted,
+            &#x27;decision_trace&#x27;: trace, &#x27;first_cache&#x27;: first, &#x27;replayed_trace&#x27;: replay,
+            &#x27;reference_tokens_replayed_exact&#x27;: len(replay), &#x27;reference_tokens_required&#x27;: len(prefix),
+            &#x27;prefix_exact&#x27;: len(replay) == len(prefix), &#x27;termination&#x27;: termination,
+            &#x27;complete&#x27;: termination == &#x27;eos&#x27;, &#x27;interruption&#x27;: interruption,
+            &#x27;input_tokens&#x27;: n, &#x27;attempted_forward_calls&#x27;: attempted,
+            &#x27;completed_forward_calls&#x27;: completed, &#x27;input_token_exposures&#x27;: exposures,
+            &#x27;new_response_token_ceiling&#x27;: None, &#x27;configured_context&#x27;: maximum,
+            &#x27;optimizer_steps&#x27;: 0, &#x27;backward_calls&#x27;: 0, &#x27;parameter_assignments&#x27;: 0}
 </pre></details></article></div></main><footer>Offline HTML. No external scripts, uploads or inference API. <a href="../scripts/build_surgery_assets.py">Asset builder source</a> · <a href="../PUBLIC_RELEASE_MANIFEST.json">Release hashes</a></footer><script>const q=document.getElementById('query'),c=document.getElementById('category');function filter(){let n=0;for(const e of document.querySelectorAll('.tool')){e.hidden=!(e.textContent.toLowerCase().includes(q.value.toLowerCase())&&(c.value==='All'||e.dataset.category===c.value));if(!e.hidden)n++}document.getElementById('count').textContent=n+' source files shown'}q.oninput=c.onchange=filter;filter();</script></body></html>

@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-31T20:08:07.562625+00:00",
+  "id": "U24P",
+  "question_id": "Q54",
+  "authority": "Direct human U24 requests use of both GPUs and parallel experiments; U24H established random-model/device and concurrent-session feasibility. This is the prospective full-checkpoint memory/lineage prerequisite for the next two-device inference run.",
+  "scope": "Two independent identical pinned original text-only BF16 checkpoints, each on one T4 inside one private notebook. No donor model, trained adapter, neuron edit, new free generation, grading, task selection or utility outcome. N40 remains unchanged.",
+  "parents": {
+    "runs/compute/hardware_review_U24/result_receipt.json": "fa50f4d7f12023aef73b25cd08e2e786419bc4777a9da997fcf2924254a96c30",
+    "runs/n37/version1/result_receipt.json": "88113dbcc60aff07ebab8a02d9850c49f4ddba313e3a6b267a54658e6139eedf",
+    "research/experiments/n40/human_EOS_amendment.json": "890a4ddb73708e86dd1f89250598c7d16dddc4967514ae32bb986d7367ec36c0"
+  },
+  "model": "google/gemma-4-E2B-it@3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "Original unquantized text BF16,4628569344unique parameters,35MLPs,15KVentries;retain token/per-layer embeddings/tied output head,exclude media. No BF16 hardware-acceleration claim.",
+  "data": "All48original N37 prompts and existing first3native decisions from frozen N40 input package. Includes all32coding/eight dependent families and16retention,without correctness selection. Reference native tokens are measurement-only,not user inputs or generated new answers. No complete response is regenerated or regraded.",
+  "source_integrity": "Existing exact n02loader with source payload SHA and layer projection checks; import n35.loader_v2.validate_text explicitly for bounded finite validation,never old whole-parameter torch.isfinite temporary. Parent config/generation/buffers exact.",
+  "orchestration": "Parent pre-downloads no model itself;two isolated subprocesses with CUDA_VISIBLE_DEVICES0/1 share one pinned HF cache in /tmp. Start worker1 only after worker0has loaded and validated. Keep both full models resident;release shared start gate only after both ready. Then both replay all48first-prefix trajectories independently. No full base duplication or local checkpoint downloads.",
+  "gate": [
+    "Actual2T4inventory/distinctUUIDs,eachworkeronevisibledevice.",
+    "Both full checkpoints loaded concurrently with observed per-device CUDA allocated/reserved/peak/free bytes and shared host MemAvailable/process RSS.",
+    "Every prompt tokenization metadata exact and every144native argmax/full-FP32-logit/whole-raw-cache witness perdevice exact to unchanged parent. All48native first-cache witnesses exact.",
+    "Actual15cacheentries inexisting decision validator. No shared cross-process caches. No native past reused after changed history;no changed histories exist.",
+    "Native parameter versions/gradflags/empty grads,buffers,hooks,RNG/config unchanged after loading and replay. All outputs inference-only,no backwards/optimizer/edit assignments.",
+    "Two actual replay intervals overlap and every saved native trace equal across devices.",
+    "Actual counter formulas derive from frozen row/reference/tokenization manifests;no hand-summed replacement constant."
+  ],
+  "counters": {
+    "per_device_forward_calls": 144,
+    "per_device_input_exposures": 4689,
+    "total_forward_calls": 288,
+    "total_input_exposures": 9378,
+    "new_generated_tokens": 0,
+    "optimizer_steps": 0,
+    "backward_calls": 0,
+    "parameter_assignments_after_loading": 0
+  },
+  "measurement_arity_not_response_limit": "The existing first3positions are fixed native lineage measurements;no response generation or response-token ceiling is used. New response execution must use native EOS under U23.",
+  "output": "Compact hashes/counters/source/state and memory witnesses only,<=2MiB scientific output. No full logits,activation arrays,full model tensors or repeated complete base responses.",
+  "resource": {
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1500,
+    "conservative_two_device_reservation_GPU_hours": 1,
+    "reserve_GPU_hours": 2,
+    "fresh_quota_and_actual_own_inventory_before_launch": true,
+    "original_deadline_utc": "2026-11-01T13:24:39Z"
+  },
+  "failure": "Stop on any source/native/state/device guard failure,preserve partials. No tolerance change,reference replacement,regenerated completion or retry within this protocol. N40terminal collection/audit takes priority before this launch if it becomes terminal.",
+  "interpretation": "A pass supports full-model parallel feasibility for these fixed short native prefixes,not long-context capacity,pretrained free-generation throughput,efficiency,coding gain or neuron meaning. Model and case-level future workloads still require their own frozen manifests.",
+  "no_training": true
+}

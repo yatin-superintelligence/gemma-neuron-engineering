@@ -1,0 +1,1423 @@
+{
+  "utc": "2026-10-31T20:20:54.895799+00:00",
+  "status": "complete_private_host_audited_closed",
+  "records": 240,
+  "new_responses": 192,
+  "exact_original_carries": 48,
+  "all_mandatory_guards_pass": true,
+  "baseline": {
+    "coding": {
+      "cases": 32,
+      "original_correct": 24,
+      "correct": 24,
+      "gains": 0,
+      "losses": 0,
+      "caps": 0,
+      "generated_tokens": 7561,
+      "unknown_comment_tokens": 108,
+      "mean_token_ratio": 1.0,
+      "mean_token_ratio_exact": {
+        "numerator": 1,
+        "denominator": 1
+      },
+      "mean_comment_reduction_lower": -0.02811190108434122,
+      "mean_comment_reduction_lower_exact": {
+        "numerator": -1153158847873372504266380347423,
+        "denominator": 41020308246449417871581171896320
+      },
+      "mean_comment_reduction_upper": 0.02811190108434122,
+      "mean_comment_reduction_upper_exact": {
+        "numerator": 1153158847873372504266380347423,
+        "denominator": 41020308246449417871581171896320
+      }
+    },
+    "retention": {
+      "cases": 16,
+      "original_correct": 7,
+      "correct": 7,
+      "gains": 0,
+      "losses": 0,
+      "caps": 0,
+      "generated_tokens": 69,
+      "unknown_comment_tokens": 0,
+      "mean_token_ratio": 1.0,
+      "mean_token_ratio_exact": {
+        "numerator": 1,
+        "denominator": 1
+      },
+      "mean_comment_reduction_lower": 0.0,
+      "mean_comment_reduction_lower_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "mean_comment_reduction_upper": 0.0,
+      "mean_comment_reduction_upper_exact": {
+        "numerator": 0,
+        "denominator": 1
+      }
+    }
+  },
+  "conditions": {
+    "selected_zero": {
+      "coding": {
+        "cases": 32,
+        "original_correct": 24,
+        "correct": 26,
+        "gains": 2,
+        "losses": 0,
+        "caps": 0,
+        "generated_tokens": 7615,
+        "unknown_comment_tokens": 108,
+        "mean_token_ratio": 1.0271703085983293,
+        "mean_token_ratio_exact": {
+          "numerator": 369563927756512345301,
+          "denominator": 359788366800455104512
+        },
+        "mean_comment_reduction_lower": -0.0182401515170805,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": -42032219435647257362775154922216914597,
+          "denominator": 2304378853228676021248431013834728345600
+        },
+        "mean_comment_reduction_upper": 0.03824447539945209,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 881766378954298641972772653550505817347,
+          "denominator": 23056045866612444659405844345867680947200
+        }
+      },
+      "retention": {
+        "cases": 16,
+        "original_correct": 7,
+        "correct": 7,
+        "gains": 0,
+        "losses": 0,
+        "caps": 0,
+        "generated_tokens": 69,
+        "unknown_comment_tokens": 0,
+        "mean_token_ratio": 1.0,
+        "mean_token_ratio_exact": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "mean_comment_reduction_lower": 0.0,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "mean_comment_reduction_upper": 0.0,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 0,
+          "denominator": 1
+        }
+      },
+      "original_correct_coding": {
+        "cases": 24,
+        "original_correct": 24,
+        "correct": 24,
+        "gains": 0,
+        "losses": 0,
+        "caps": 0,
+        "generated_tokens": 4248,
+        "unknown_comment_tokens": 74,
+        "mean_token_ratio": 0.9908820783534648,
+        "mean_token_ratio_exact": {
+          "numerator": 32452413095227,
+          "denominator": 32751034461288
+        },
+        "mean_comment_reduction_lower": -0.01398642564414612,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": -65619381655360132802628883777,
+          "denominator": 4691647696480942883238769328640
+        },
+        "mean_comment_reduction_upper": 0.044103599511337015,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 57232790717031288976326800603,
+          "denominator": 1297689788388345903874553218560
+        }
+      },
+      "families": {
+        "coding:ceil_ratio": {
+          "cases": 4,
+          "original_correct": 1,
+          "correct": 3,
+          "gains": 2,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 3237,
+          "unknown_comment_tokens": 16,
+          "mean_token_ratio": 1.420689092371746,
+          "mean_token_ratio_exact": {
+            "numerator": 7119923455,
+            "denominator": 5011598592
+          },
+          "mean_comment_reduction_lower": -0.00643866930492784,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -6189444622950581,
+            "denominator": 961292517106521600
+          },
+          "mean_comment_reduction_upper": 0.004818549197804361,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 906228372341,
+            "denominator": 188070793747200
+          }
+        },
+        "coding:first_prefix": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 544,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.02254085801043411,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -1230553,
+            "denominator": 54592110
+          },
+          "mean_comment_reduction_upper": 0.02254085801043411,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 1230553,
+            "denominator": 54592110
+          }
+        },
+        "coding:long_tokens": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 228,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.05263157894736842,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -1,
+            "denominator": 19
+          },
+          "mean_comment_reduction_upper": 0.05263157894736842,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 1,
+            "denominator": 19
+          }
+        },
+        "coding:parenthesis_depth": {
+          "cases": 4,
+          "original_correct": 1,
+          "correct": 1,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 426,
+          "unknown_comment_tokens": 20,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.05064363143631436,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -299,
+            "denominator": 5904
+          },
+          "mean_comment_reduction_upper": 0.05064363143631436,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 299,
+            "denominator": 5904
+          }
+        },
+        "coding:rotate_right": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 1214,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 0.7937915320344845,
+          "mean_token_ratio_exact": {
+            "numerator": 4064648815,
+            "denominator": 5120549478
+          },
+          "mean_comment_reduction_lower": 0.07188552573246908,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 42573403723216859,
+            "denominator": 592238886610624110
+          },
+          "mean_comment_reduction_upper": 0.09330786044204274,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 4703024968528927,
+            "denominator": 50403309498776520
+          }
+        },
+        "coding:run_lengths": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 500,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.024013831967213115,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -375,
+            "denominator": 15616
+          },
+          "mean_comment_reduction_upper": 0.024013831967213115,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 375,
+            "denominator": 15616
+          }
+        },
+        "coding:stable_unique": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 242,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.04959016393442623,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -121,
+            "denominator": 2440
+          },
+          "mean_comment_reduction_upper": 0.04959016393442623,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 121,
+            "denominator": 2440
+          }
+        },
+        "coding:union_length": {
+          "cases": 4,
+          "original_correct": 2,
+          "correct": 2,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 1224,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0028818443804035,
+          "mean_token_ratio_exact": {
+            "numerator": 348,
+            "denominator": 347
+          },
+          "mean_comment_reduction_lower": -0.011948004268429005,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -11272895141,
+            "denominator": 943496075808
+          },
+          "mean_comment_reduction_upper": 0.008409329260013362,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 7934169157,
+            "denominator": 943496075808
+          }
+        },
+        "retention:arithmetic": {
+          "cases": 8,
+          "original_correct": 3,
+          "correct": 3,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 34,
+          "unknown_comment_tokens": 0,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": 0.0,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 0,
+            "denominator": 1
+          },
+          "mean_comment_reduction_upper": 0.0,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        },
+        "retention:json": {
+          "cases": 8,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 35,
+          "unknown_comment_tokens": 0,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": 0.0,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 0,
+            "denominator": 1
+          },
+          "mean_comment_reduction_upper": 0.0,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      }
+    },
+    "randomA_zero": {
+      "coding": {
+        "cases": 32,
+        "original_correct": 24,
+        "correct": 25,
+        "gains": 1,
+        "losses": 0,
+        "caps": 0,
+        "generated_tokens": 7541,
+        "unknown_comment_tokens": 109,
+        "mean_token_ratio": 1.016428294603362,
+        "mean_token_ratio_exact": {
+          "numerator": 22910604942057101,
+          "denominator": 22540306152139776
+        },
+        "mean_comment_reduction_lower": -0.029422750877917844,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": -21342144799772088064682597356887881805101,
+          "denominator": 725361978841674043888291405509158913331200
+        },
+        "mean_comment_reduction_upper": 0.027032652347629773,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 75417146923906763525154304559384254297,
+          "denominator": 2789853764775669399570351559650611205120
+        }
+      },
+      "retention": {
+        "cases": 16,
+        "original_correct": 7,
+        "correct": 7,
+        "gains": 0,
+        "losses": 0,
+        "caps": 0,
+        "generated_tokens": 69,
+        "unknown_comment_tokens": 0,
+        "mean_token_ratio": 1.0,
+        "mean_token_ratio_exact": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "mean_comment_reduction_lower": 0.0,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "mean_comment_reduction_upper": 0.0,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 0,
+          "denominator": 1
+        }
+      },
+      "original_correct_coding": {
+        "cases": 24,
+        "original_correct": 24,
+        "correct": 24,
+        "gains": 0,
+        "losses": 0,
+        "caps": 0,
+        "generated_tokens": 4516,
+        "unknown_comment_tokens": 75,
+        "mean_token_ratio": 1.017417737448134,
+        "mean_token_ratio_exact": {
+          "numerator": 965840097991,
+          "denominator": 949305346704
+        },
+        "mean_comment_reduction_lower": -0.030824685036986276,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": -3014304801561428890034615839,
+          "denominator": 97788665089183893258669580800
+        },
+        "mean_comment_reduction_upper": 0.02715090808571658,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 2246581664174991584626807151,
+          "denominator": 82744255075463294295797337600
+        }
+      },
+      "families": {
+        "coding:ceil_ratio": {
+          "cases": 4,
+          "original_correct": 1,
+          "correct": 2,
+          "gains": 1,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 3017,
+          "unknown_comment_tokens": 16,
+          "mean_token_ratio": 1.2337679621568542,
+          "mean_token_ratio_exact": {
+            "numerator": 3091574891,
+            "denominator": 2505799296
+          },
+          "mean_comment_reduction_lower": -0.006128047613642192,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -437569962721997,
+            "denominator": 71404465224435200
+          },
+          "mean_comment_reduction_upper": 0.0054511947189233015,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 3020706769593,
+            "denominator": 554136648083200
+          }
+        },
+        "coding:first_prefix": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 544,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.02254085801043411,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -1230553,
+            "denominator": 54592110
+          },
+          "mean_comment_reduction_upper": 0.02254085801043411,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 1230553,
+            "denominator": 54592110
+          }
+        },
+        "coding:long_tokens": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 228,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.05263157894736842,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -1,
+            "denominator": 19
+          },
+          "mean_comment_reduction_upper": 0.05263157894736842,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 1,
+            "denominator": 19
+          }
+        },
+        "coding:parenthesis_depth": {
+          "cases": 4,
+          "original_correct": 1,
+          "correct": 1,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 426,
+          "unknown_comment_tokens": 21,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.0521680216802168,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -77,
+            "denominator": 1476
+          },
+          "mean_comment_reduction_upper": 0.05064363143631436,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 299,
+            "denominator": 5904
+          }
+        },
+        "coding:rotate_right": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 1368,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 0.9014462734579205,
+          "mean_token_ratio_exact": {
+            "numerator": 2027185,
+            "denominator": 2248814
+          },
+          "mean_comment_reduction_lower": -0.02103227544529837,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -237622235080801,
+            "denominator": 11297980368259200
+          },
+          "mean_comment_reduction_upper": -0.001758481779596964,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": -4966823155957,
+            "denominator": 2824495092064800
+          }
+        },
+        "coding:run_lengths": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 500,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.024013831967213115,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -375,
+            "denominator": 15616
+          },
+          "mean_comment_reduction_upper": 0.024013831967213115,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 375,
+            "denominator": 15616
+          }
+        },
+        "coding:stable_unique": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 242,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.04959016393442623,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -121,
+            "denominator": 2440
+          },
+          "mean_comment_reduction_upper": 0.04959016393442623,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 121,
+            "denominator": 2440
+          }
+        },
+        "coding:union_length": {
+          "cases": 4,
+          "original_correct": 2,
+          "correct": 2,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 1216,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 0.9962121212121212,
+          "mean_token_ratio_exact": {
+            "numerator": 263,
+            "denominator": 264
+          },
+          "mean_comment_reduction_lower": -0.007277229424743499,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -762893045,
+            "denominator": 104832897312
+          },
+          "mean_comment_reduction_upper": 0.01314844154595562,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 215373316,
+            "denominator": 16380140205
+          }
+        },
+        "retention:arithmetic": {
+          "cases": 8,
+          "original_correct": 3,
+          "correct": 3,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 34,
+          "unknown_comment_tokens": 0,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": 0.0,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 0,
+            "denominator": 1
+          },
+          "mean_comment_reduction_upper": 0.0,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        },
+        "retention:json": {
+          "cases": 8,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 35,
+          "unknown_comment_tokens": 0,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": 0.0,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 0,
+            "denominator": 1
+          },
+          "mean_comment_reduction_upper": 0.0,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      }
+    },
+    "randomB_zero": {
+      "coding": {
+        "cases": 32,
+        "original_correct": 24,
+        "correct": 24,
+        "gains": 1,
+        "losses": 1,
+        "caps": 0,
+        "generated_tokens": 7425,
+        "unknown_comment_tokens": 108,
+        "mean_token_ratio": 1.020096162056845,
+        "mean_token_ratio_exact": {
+          "numerator": 117521207853296383,
+          "denominator": 115206009222047744
+        },
+        "mean_comment_reduction_lower": -0.030920607881962745,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": -298071247244924880164899827330929599200497,
+          "denominator": 9639889629039344022395739805243096456089600
+        },
+        "mean_comment_reduction_upper": 0.02521882948429246,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 126354850728764289781343424924767252797,
+          "denominator": 5010337645030844086484272248047347430400
+        }
+      },
+      "retention": {
+        "cases": 16,
+        "original_correct": 7,
+        "correct": 7,
+        "gains": 0,
+        "losses": 0,
+        "caps": 0,
+        "generated_tokens": 69,
+        "unknown_comment_tokens": 0,
+        "mean_token_ratio": 1.0,
+        "mean_token_ratio_exact": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "mean_comment_reduction_lower": 0.0,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "mean_comment_reduction_upper": 0.0,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 0,
+          "denominator": 1
+        }
+      },
+      "original_correct_coding": {
+        "cases": 24,
+        "original_correct": 24,
+        "correct": 23,
+        "gains": 0,
+        "losses": 1,
+        "caps": 0,
+        "generated_tokens": 4530,
+        "unknown_comment_tokens": 74,
+        "mean_token_ratio": 1.041356296662659,
+        "mean_token_ratio_exact": {
+          "numerator": 1894749775471,
+          "denominator": 1819501914516
+        },
+        "mean_comment_reduction_lower": -0.034512670936339106,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": -14044230713429211793068671812427,
+          "denominator": 406929696613012695506893457794560
+        },
+        "mean_comment_reduction_upper": 0.022914610773992834,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 717279662328167366468948401903,
+          "denominator": 31302284354847130423607189061120
+        }
+      },
+      "families": {
+        "coding:ceil_ratio": {
+          "cases": 4,
+          "original_correct": 1,
+          "correct": 1,
+          "gains": 1,
+          "losses": 1,
+          "caps": 0,
+          "generated_tokens": 2642,
+          "unknown_comment_tokens": 16,
+          "mean_token_ratio": 1.0045639742649206,
+          "mean_token_ratio_exact": {
+            "numerator": 559385711,
+            "denominator": 556844288
+          },
+          "mean_comment_reduction_lower": 0.007133359141692981,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 1730332791103339,
+            "denominator": 242569139830617600
+          },
+          "mean_comment_reduction_upper": 0.019733529124625938,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 8436904363,
+            "denominator": 427541587200
+          }
+        },
+        "coding:first_prefix": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 544,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.02254085801043411,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -1230553,
+            "denominator": 54592110
+          },
+          "mean_comment_reduction_upper": 0.02254085801043411,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 1230553,
+            "denominator": 54592110
+          }
+        },
+        "coding:long_tokens": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 228,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.05263157894736842,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -1,
+            "denominator": 19
+          },
+          "mean_comment_reduction_upper": 0.05263157894736842,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 1,
+            "denominator": 19
+          }
+        },
+        "coding:parenthesis_depth": {
+          "cases": 4,
+          "original_correct": 1,
+          "correct": 1,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 426,
+          "unknown_comment_tokens": 20,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.05064363143631436,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -299,
+            "denominator": 5904
+          },
+          "mean_comment_reduction_upper": 0.05064363143631436,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 299,
+            "denominator": 5904
+          }
+        },
+        "coding:rotate_right": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 1627,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.1599932009777174,
+          "mean_token_ratio_exact": {
+            "numerator": 7919736773,
+            "denominator": 6827399304
+          },
+          "mean_comment_reduction_lower": -0.04780092847689522,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -138188465647537577,
+            "denominator": 2890915930939114584
+          },
+          "mean_comment_reduction_upper": -0.03055139909199813,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": -88321526347536197,
+            "denominator": 2890915930939114584
+          }
+        },
+        "coding:run_lengths": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 500,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.024013831967213115,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -375,
+            "denominator": 15616
+          },
+          "mean_comment_reduction_upper": 0.024013831967213115,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 375,
+            "denominator": 15616
+          }
+        },
+        "coding:stable_unique": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 242,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.04959016393442623,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -121,
+            "denominator": 2440
+          },
+          "mean_comment_reduction_upper": 0.04959016393442623,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 121,
+            "denominator": 2440
+          }
+        },
+        "coding:union_length": {
+          "cases": 4,
+          "original_correct": 2,
+          "correct": 2,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 1216,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 0.9962121212121212,
+          "mean_token_ratio_exact": {
+            "numerator": 263,
+            "denominator": 264
+          },
+          "mean_comment_reduction_lower": -0.007277229424743499,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -762893045,
+            "denominator": 104832897312
+          },
+          "mean_comment_reduction_upper": 0.01314844154595562,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 215373316,
+            "denominator": 16380140205
+          }
+        },
+        "retention:arithmetic": {
+          "cases": 8,
+          "original_correct": 3,
+          "correct": 3,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 34,
+          "unknown_comment_tokens": 0,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": 0.0,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 0,
+            "denominator": 1
+          },
+          "mean_comment_reduction_upper": 0.0,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        },
+        "retention:json": {
+          "cases": 8,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 35,
+          "unknown_comment_tokens": 0,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": 0.0,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 0,
+            "denominator": 1
+          },
+          "mean_comment_reduction_upper": 0.0,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      }
+    },
+    "prompt_only": {
+      "coding": {
+        "cases": 32,
+        "original_correct": 24,
+        "correct": 22,
+        "gains": 0,
+        "losses": 2,
+        "caps": 0,
+        "generated_tokens": 3298,
+        "unknown_comment_tokens": 108,
+        "mean_token_ratio": 0.6929843386847457,
+        "mean_token_ratio_exact": {
+          "numerator": 4488383870970027228011156113519,
+          "denominator": 6476890775755171242881237667840
+        },
+        "mean_comment_reduction_lower": 0.13847748828385506,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": 1008255114104580883166207574021551,
+          "denominator": 7281003768914634995785839802896384
+        },
+        "mean_comment_reduction_upper": 0.20878445272870674,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 2141100651999449559060410071477,
+          "denominator": 10255077061612354467895292974080
+        }
+      },
+      "retention": {
+        "cases": 16,
+        "original_correct": 7,
+        "correct": 7,
+        "gains": 0,
+        "losses": 0,
+        "caps": 0,
+        "generated_tokens": 69,
+        "unknown_comment_tokens": 0,
+        "mean_token_ratio": 1.0,
+        "mean_token_ratio_exact": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "mean_comment_reduction_lower": 0.0,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "mean_comment_reduction_upper": 0.0,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 0,
+          "denominator": 1
+        }
+      },
+      "original_correct_coding": {
+        "cases": 24,
+        "original_correct": 24,
+        "correct": 22,
+        "gains": 0,
+        "losses": 2,
+        "caps": 0,
+        "generated_tokens": 2452,
+        "unknown_comment_tokens": 74,
+        "mean_token_ratio": 0.7408942930420499,
+        "mean_token_ratio_exact": {
+          "numerator": 4684377511199023200493,
+          "denominator": 6322598993124054463680
+        },
+        "mean_comment_reduction_lower": 0.07703850188937465,
+        "mean_comment_reduction_lower_exact": {
+          "numerator": 1144145830175051177979361,
+          "denominator": 14851610585808325195426560
+        },
+        "mean_comment_reduction_upper": 0.14520382335268783,
+        "mean_comment_reduction_upper_exact": {
+          "numerator": 325607247452141677904933,
+          "denominator": 2242415109561331316451840
+        }
+      },
+      "families": {
+        "coding:ceil_ratio": {
+          "cases": 4,
+          "original_correct": 1,
+          "correct": 0,
+          "gains": 0,
+          "losses": 1,
+          "caps": 0,
+          "generated_tokens": 235,
+          "unknown_comment_tokens": 16,
+          "mean_token_ratio": 0.09103037346770809,
+          "mean_token_ratio_exact": {
+            "numerator": 9216317,
+            "denominator": 101244416
+          },
+          "mean_comment_reduction_lower": 0.6703108261810495,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 85849513591,
+            "denominator": 128074186240
+          },
+          "mean_comment_reduction_upper": 0.7439382796841523,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 2755595,
+            "denominator": 3704064
+          }
+        },
+        "coding:first_prefix": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 257,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 0.48442319473149753,
+          "mean_token_ratio_exact": {
+            "numerator": 79337053,
+            "denominator": 163776330
+          },
+          "mean_comment_reduction_lower": -0.04674110469448584,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -8029,
+            "denominator": 171776
+          },
+          "mean_comment_reduction_upper": 0.02254085801043411,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 1230553,
+            "denominator": 54592110
+          }
+        },
+        "coding:long_tokens": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 228,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.05263157894736842,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -1,
+            "denominator": 19
+          },
+          "mean_comment_reduction_upper": 0.05263157894736842,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 1,
+            "denominator": 19
+          }
+        },
+        "coding:parenthesis_depth": {
+          "cases": 4,
+          "original_correct": 1,
+          "correct": 1,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 374,
+          "unknown_comment_tokens": 20,
+          "mean_token_ratio": 0.9232384823848239,
+          "mean_token_ratio_exact": {
+            "numerator": 13627,
+            "denominator": 14760
+          },
+          "mean_comment_reduction_lower": -0.05408006627518823,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -4439,
+            "denominator": 82082
+          },
+          "mean_comment_reduction_upper": 0.05064363143631436,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 299,
+            "denominator": 5904
+          }
+        },
+        "coding:rotate_right": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 691,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 0.38786096736940856,
+          "mean_token_ratio_exact": {
+            "numerator": 993030637,
+            "denominator": 2560274739
+          },
+          "mean_comment_reduction_lower": 0.38496359171128297,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 678420779262869,
+            "denominator": 1762298549447436
+          },
+          "mean_comment_reduction_upper": 0.4216565658352844,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 1843882765103,
+            "denominator": 4372949254212
+          }
+        },
+        "coding:run_lengths": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 504,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0081967213114753,
+          "mean_token_ratio_exact": {
+            "numerator": 123,
+            "denominator": 122
+          },
+          "mean_comment_reduction_lower": -0.02381867193598751,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -7811,
+            "denominator": 327936
+          },
+          "mean_comment_reduction_upper": 0.024013831967213115,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 375,
+            "denominator": 15616
+          }
+        },
+        "coding:stable_unique": {
+          "cases": 4,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 242,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": -0.04959016393442623,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": -121,
+            "denominator": 2440
+          },
+          "mean_comment_reduction_upper": 0.04959016393442623,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 121,
+            "denominator": 2440
+          }
+        },
+        "coding:union_length": {
+          "cases": 4,
+          "original_correct": 2,
+          "correct": 1,
+          "gains": 0,
+          "losses": 1,
+          "caps": 0,
+          "generated_tokens": 767,
+          "unknown_comment_tokens": 12,
+          "mean_token_ratio": 0.6491249702130526,
+          "mean_token_ratio_exact": {
+            "numerator": 1744862855,
+            "denominator": 2688023008
+          },
+          "mean_comment_reduction_lower": 0.2794070741659642,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 14070827082409411,
+            "denominator": 50359594954462464
+          },
+          "mean_comment_reduction_upper": 0.30526071201446103,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 615410863,
+            "denominator": 2016017256
+          }
+        },
+        "retention:arithmetic": {
+          "cases": 8,
+          "original_correct": 3,
+          "correct": 3,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 34,
+          "unknown_comment_tokens": 0,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": 0.0,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 0,
+            "denominator": 1
+          },
+          "mean_comment_reduction_upper": 0.0,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        },
+        "retention:json": {
+          "cases": 8,
+          "original_correct": 4,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "caps": 0,
+          "generated_tokens": 35,
+          "unknown_comment_tokens": 0,
+          "mean_token_ratio": 1.0,
+          "mean_token_ratio_exact": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "mean_comment_reduction_lower": 0.0,
+          "mean_comment_reduction_lower_exact": {
+            "numerator": 0,
+            "denominator": 1
+          },
+          "mean_comment_reduction_upper": 0.0,
+          "mean_comment_reduction_upper_exact": {
+            "numerator": 0,
+            "denominator": 1
+          }
+        }
+      }
+    }
+  },
+  "assessment": {
+    "primary_clauses": {
+      "preserve_original_correct_coding": true,
+      "preserve_original_correct_retention": true,
+      "no_new_caps": true,
+      "all32_comment_reduction_at_least_point10": false,
+      "all32_token_ratio_at_most_point90": false,
+      "correct24_comment_reduction_at_least_point05": false,
+      "correct24_token_ratio_at_most_point90": false,
+      "benefit_at_least_two_families": false,
+      "coding_ratio_advantage_over_randomA_zero": false,
+      "original_correct_coding_ratio_advantage_over_randomA_zero": false,
+      "coding_ratio_advantage_over_randomB_zero": false,
+      "original_correct_coding_ratio_advantage_over_randomB_zero": true
+    },
+    "primary_passed": false,
+    "beneficial_coding_families": 1,
+    "prompt_comparison_clauses": {
+      "coding_correct_not_lower": false,
+      "coding_baseline_losses_not_higher": false,
+      "coding_caps_not_higher": true,
+      "retention_correct_not_lower": true,
+      "retention_baseline_losses_not_higher": true,
+      "retention_caps_not_higher": true,
+      "coding_token_ratio_not_higher": true,
+      "coding_conservative_comment_reduction_not_lower": true,
+      "original_correct_coding_token_ratio_not_higher": true,
+      "original_correct_coding_conservative_comment_reduction_not_lower": true
+    },
+    "simple_prompt_matches_or_improves_these_measures": false,
+    "scope": "Conditional intent criteria on supplied development labels. No automatic claim of accuracy gain, necessity, speedup or confirmed utility."
+  },
+  "actual_counter": {
+    "calls": 27321,
+    "input_token_exposures": 83833
+  },
+  "new_generated_tokens": 26155,
+  "parameter_assignments": 126,
+  "optimizer_steps": 0,
+  "backward_calls": 0,
+  "worker_seconds": 3634.6981330149997,
+  "notebook_seconds": 3687.7290320089996,
+  "all_new_responses_native_EOS": true,
+  "U23_continuation_required": false,
+  "scope": "Reused development programs,eight dependent families. N40output-reduction primary fails. Two selected coding gains occur within one family;one also appears under each random. No confirmed useful coding gain,semantic neuron role,independent pretrained package replay or hardware speedup."
+}

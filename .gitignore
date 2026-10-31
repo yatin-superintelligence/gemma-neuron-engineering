@@ -15,6 +15,7 @@ credentials/
 !/models/n01/new_MLP64_zero.safetensors
 !/models/n02/bf16_text/basis.safetensors
 !/models/n02/nf4_text_same_source/basis.safetensors
+!/models/n40/native_columns.safetensors
 !/models/n13/down_columns.safetensors
 !/models/n21/native_columns.safetensors
 !/docs/figures/n21_summary.png
@@ -37,3 +38,4 @@ credentials/
 !/docs/figures/n32_summary.png
 !/docs/figures/n33_summary.png
 !/docs/figures/n35_summary.png
+!/docs/figures/n40_summary.png

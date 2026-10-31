@@ -1,0 +1,56 @@
+{
+  "utc": "2026-10-31T20:04:23.084289+00:00",
+  "experiment": "N40",
+  "question_id": "Q54",
+  "status": "frozen_before_any_N40_version2_output_access",
+  "scope": "All-condition aggregate display only after mandatory source/privacy/manifest/host audit. This plan adds no inference, grade, threshold or condition.",
+  "condition_order": [
+    "original_exact_N37_carry",
+    "selected_zero",
+    "randomA_zero",
+    "randomB_zero",
+    "prompt_only"
+  ],
+  "denominators": {
+    "all_coding": 32,
+    "original_correct_coding": 24,
+    "retention": 16,
+    "original_correct_retention": 7,
+    "dependent_coding_families": 8
+  },
+  "panels": [
+    {
+      "id": "A",
+      "content": "Complete-function correctness out of32 and retention out of16 for all5conditions, with paired gains/losses and carried baseline labels. Weak7of16baseline remains visible."
+    },
+    {
+      "id": "B",
+      "content": "Per-response mean new/original generated-token ratios for all32 and predefined originally-correct24. Show original1reference and prospective0.90threshold, never pooled-token ratios."
+    },
+    {
+      "id": "C",
+      "content": "Conservative comment-fraction reduction bounds on both subsets, including unknown/unparsed spans. Show0.10all32/0.05correct24thresholds; malformed replies do not earn comment-removal credit."
+    },
+    {
+      "id": "D",
+      "content": "Every primary clause separately for selected group against EACHrandom; add the simple prompt comparison. A conjunctive failure remains failed, no winning component or dose."
+    },
+    {
+      "id": "E",
+      "content": "All8family aggregates in frozen order, plus completion/EOS/resource-interruption counts and every coding gain/loss. Family cases remain dependent."
+    }
+  ],
+  "termination_policy": "The original frozen endpoint and any separately frozen native-EOS continuation are different treatments. Never overwrite old grades or merge cap endpoints into a claim of completed utility. Every non-EOS cutoff is unfinished. If no ceiling binds, label that panel-specific fact.",
+  "prohibited": [
+    "No model outputs or per-case prompts/replies/answers published",
+    "No hidden best-reading/OR metric",
+    "No accuracy or efficiency claim from shortening wrong programs",
+    "No independent-sample confidence interval over dependent cases",
+    "No inferred hardware speed from token counts",
+    "No plotting from partial or failed engineering guards",
+    "No rerun of any closed grader or completed reply"
+  ],
+  "rendering": "Standard plotting tools; exact aggregate/source/PNG hashes and reviewed binary allowlist before public release. No actual figure exists yet.",
+  "optimizer_steps": 0,
+  "new_model_forwards": 0
+}

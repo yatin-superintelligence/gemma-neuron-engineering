@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-31T21:01:46.119657+00:00",
+  "protocol_sha256": "3f2d202e6a519b10c92407aa63daba639ae0b864fc472183350e66e6b1e22c6e",
+  "contract_sha256": "6bef53d50a79ab282a6c574e868c95b9ac9224fa4ce358e271b25e5e85475092",
+  "before_implementation_and_fresh_outputs": true,
+  "optimizer_steps": 0
+}

@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-31T20:18:13.444801+00:00",
+  "authority": "Apply the prospective U23amendment after the one frozen N40audit",
+  "source_sha256": "26588efc8ee878f3e4e9c988368547d9aded21cfe019393862afe645d12fb482",
+  "all_192_new_responses_native_EOS": true,
+  "conditions": {
+    "prompt_only": {
+      "responses": 48,
+      "EOS": 48,
+      "unfinished_cutoffs": 0,
+      "maximum_tokens": 427
+    },
+    "randomA_zero": {
+      "responses": 48,
+      "EOS": 48,
+      "unfinished_cutoffs": 0,
+      "maximum_tokens": 974
+    },
+    "randomB_zero": {
+      "responses": 48,
+      "EOS": 48,
+      "unfinished_cutoffs": 0,
+      "maximum_tokens": 925
+    },
+    "selected_zero": {
+      "responses": 48,
+      "EOS": 48,
+      "unfinished_cutoffs": 0,
+      "maximum_tokens": 925
+    }
+  },
+  "continuation_required": false,
+  "interpretation": "No response ceiling binds this panel. This does not justify a general ceiling;new protocols continue to native EOS without an arbitrary per-response limit. No reply is rerun or regraded.",
+  "new_model_forwards": 0,
+  "new_scorer_calls": 0,
+  "optimizer_steps": 0
+}

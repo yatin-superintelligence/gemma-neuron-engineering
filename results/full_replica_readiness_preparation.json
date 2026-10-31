@@ -1,0 +1,40 @@
+{
+  "status": "closed_prelaunch_host_preparation",
+  "scope": "Host preparation only; actual pretrained measurements are reported separately in the readiness summary.",
+  "host_schema": {
+    "utc": "2026-10-31T20:12:42.259821+00:00",
+    "scope": "Synthetic saved-witness schema and native-count fixture only,no model/tokenizer/scorer calls",
+    "valid_full_witness_passed": true,
+    "malformed_witnesses_refused": [
+      "counter",
+      "state",
+      "physical",
+      "greedy",
+      "cache",
+      "metadata",
+      "weights",
+      "memory",
+      "new_tokens",
+      "records"
+    ],
+    "chunk_validator_import_identity_passed": true,
+    "runner_and_auditor_imported": true,
+    "new_model_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "packaging": {
+    "utc": "2026-10-31T20:13:41.118256+00:00",
+    "both_isolated_imports_passed": true,
+    "chunk_validator_identity": true,
+    "all_packaged_sources_and_data_exact": true,
+    "joined_cells_Ruff_F821_F823": true,
+    "source_files": 22,
+    "input_files": 8,
+    "frozen_sources_and_parents": 28,
+    "notebook_bytes": 231396,
+    "new_pretrained_forwards": 0,
+    "optimizer_steps": 0
+  },
+  "preserved_prelaunch_failure": "The launcher initially required404text for an unused handle. The CLI returned a generic wrong-slug/permission message. No push occurred. Exact own-list search and terminal own inventory were then checked before normal creation of the new private notebook.",
+  "no_new_free_responses_or_grading": true
+}

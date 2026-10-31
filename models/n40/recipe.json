@@ -1,0 +1,780 @@
+{
+  "schema_version": 1,
+  "experiment": "N40",
+  "question_id": "Q54",
+  "kind": "fixed_native_global_outgoing_column_zero",
+  "representation": "Original text-only unquantized BF16",
+  "base": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "representation": "text-only unquantized BF16"
+  },
+  "conditions": [
+    "original_exact_N37_carry",
+    "selected_zero",
+    "randomA_zero",
+    "randomB_zero",
+    "prompt_only"
+  ],
+  "groups": {
+    "selected32": [
+      {
+        "layer": 24,
+        "channel": 7755
+      },
+      {
+        "layer": 34,
+        "channel": 4622
+      },
+      {
+        "layer": 29,
+        "channel": 10816
+      },
+      {
+        "layer": 25,
+        "channel": 5137
+      },
+      {
+        "layer": 30,
+        "channel": 11953
+      },
+      {
+        "layer": 25,
+        "channel": 2847
+      },
+      {
+        "layer": 26,
+        "channel": 3721
+      },
+      {
+        "layer": 24,
+        "channel": 2409
+      },
+      {
+        "layer": 24,
+        "channel": 4549
+      },
+      {
+        "layer": 30,
+        "channel": 10891
+      },
+      {
+        "layer": 33,
+        "channel": 1120
+      },
+      {
+        "layer": 24,
+        "channel": 9445
+      },
+      {
+        "layer": 24,
+        "channel": 1289
+      },
+      {
+        "layer": 34,
+        "channel": 1747
+      },
+      {
+        "layer": 33,
+        "channel": 9815
+      },
+      {
+        "layer": 29,
+        "channel": 11087
+      },
+      {
+        "layer": 27,
+        "channel": 11018
+      },
+      {
+        "layer": 32,
+        "channel": 1337
+      },
+      {
+        "layer": 24,
+        "channel": 10159
+      },
+      {
+        "layer": 30,
+        "channel": 9221
+      },
+      {
+        "layer": 34,
+        "channel": 6975
+      },
+      {
+        "layer": 29,
+        "channel": 3510
+      },
+      {
+        "layer": 24,
+        "channel": 6749
+      },
+      {
+        "layer": 29,
+        "channel": 7609
+      },
+      {
+        "layer": 29,
+        "channel": 7390
+      },
+      {
+        "layer": 29,
+        "channel": 9196
+      },
+      {
+        "layer": 24,
+        "channel": 1922
+      },
+      {
+        "layer": 32,
+        "channel": 377
+      },
+      {
+        "layer": 30,
+        "channel": 9497
+      },
+      {
+        "layer": 24,
+        "channel": 1747
+      },
+      {
+        "layer": 29,
+        "channel": 11487
+      },
+      {
+        "layer": 26,
+        "channel": 785
+      }
+    ],
+    "randomA32": [
+      {
+        "layer": 24,
+        "channel": 10930
+      },
+      {
+        "layer": 34,
+        "channel": 2187
+      },
+      {
+        "layer": 29,
+        "channel": 12015
+      },
+      {
+        "layer": 25,
+        "channel": 9212
+      },
+      {
+        "layer": 30,
+        "channel": 7273
+      },
+      {
+        "layer": 25,
+        "channel": 217
+      },
+      {
+        "layer": 26,
+        "channel": 7161
+      },
+      {
+        "layer": 24,
+        "channel": 9266
+      },
+      {
+        "layer": 24,
+        "channel": 11109
+      },
+      {
+        "layer": 30,
+        "channel": 277
+      },
+      {
+        "layer": 33,
+        "channel": 2810
+      },
+      {
+        "layer": 24,
+        "channel": 7458
+      },
+      {
+        "layer": 24,
+        "channel": 6042
+      },
+      {
+        "layer": 34,
+        "channel": 2324
+      },
+      {
+        "layer": 33,
+        "channel": 9167
+      },
+      {
+        "layer": 29,
+        "channel": 1106
+      },
+      {
+        "layer": 27,
+        "channel": 10185
+      },
+      {
+        "layer": 32,
+        "channel": 497
+      },
+      {
+        "layer": 24,
+        "channel": 11337
+      },
+      {
+        "layer": 30,
+        "channel": 12278
+      },
+      {
+        "layer": 34,
+        "channel": 9281
+      },
+      {
+        "layer": 29,
+        "channel": 11598
+      },
+      {
+        "layer": 24,
+        "channel": 5953
+      },
+      {
+        "layer": 29,
+        "channel": 9293
+      },
+      {
+        "layer": 29,
+        "channel": 10555
+      },
+      {
+        "layer": 29,
+        "channel": 7193
+      },
+      {
+        "layer": 24,
+        "channel": 8170
+      },
+      {
+        "layer": 32,
+        "channel": 544
+      },
+      {
+        "layer": 30,
+        "channel": 6840
+      },
+      {
+        "layer": 24,
+        "channel": 2537
+      },
+      {
+        "layer": 29,
+        "channel": 3131
+      },
+      {
+        "layer": 26,
+        "channel": 9407
+      }
+    ],
+    "randomB32": [
+      {
+        "layer": 24,
+        "channel": 6932
+      },
+      {
+        "layer": 34,
+        "channel": 8760
+      },
+      {
+        "layer": 29,
+        "channel": 10498
+      },
+      {
+        "layer": 25,
+        "channel": 5890
+      },
+      {
+        "layer": 30,
+        "channel": 5872
+      },
+      {
+        "layer": 25,
+        "channel": 217
+      },
+      {
+        "layer": 26,
+        "channel": 453
+      },
+      {
+        "layer": 24,
+        "channel": 7830
+      },
+      {
+        "layer": 24,
+        "channel": 9369
+      },
+      {
+        "layer": 30,
+        "channel": 6353
+      },
+      {
+        "layer": 33,
+        "channel": 6981
+      },
+      {
+        "layer": 24,
+        "channel": 2907
+      },
+      {
+        "layer": 24,
+        "channel": 8636
+      },
+      {
+        "layer": 34,
+        "channel": 10843
+      },
+      {
+        "layer": 33,
+        "channel": 2720
+      },
+      {
+        "layer": 29,
+        "channel": 7153
+      },
+      {
+        "layer": 27,
+        "channel": 416
+      },
+      {
+        "layer": 32,
+        "channel": 11537
+      },
+      {
+        "layer": 24,
+        "channel": 1664
+      },
+      {
+        "layer": 30,
+        "channel": 8823
+      },
+      {
+        "layer": 34,
+        "channel": 9318
+      },
+      {
+        "layer": 29,
+        "channel": 2346
+      },
+      {
+        "layer": 24,
+        "channel": 7000
+      },
+      {
+        "layer": 29,
+        "channel": 9421
+      },
+      {
+        "layer": 29,
+        "channel": 7758
+      },
+      {
+        "layer": 29,
+        "channel": 944
+      },
+      {
+        "layer": 24,
+        "channel": 3551
+      },
+      {
+        "layer": 32,
+        "channel": 6428
+      },
+      {
+        "layer": 30,
+        "channel": 10574
+      },
+      {
+        "layer": 24,
+        "channel": 7664
+      },
+      {
+        "layer": 29,
+        "channel": 5349
+      },
+      {
+        "layer": 26,
+        "channel": 2835
+      }
+    ]
+  },
+  "factor": 0,
+  "scope": "Declared native down_projcolumns at every input and generated position;no other parameter or module changed. Original and prompt-only are not model edits. Control wording remains private and must be caller supplied.",
+  "union_columns": {
+    "layers": [
+      {
+        "layer": 24,
+        "channels": [
+          1289,
+          1664,
+          1747,
+          1922,
+          2409,
+          2537,
+          2907,
+          3551,
+          4549,
+          5953,
+          6042,
+          6749,
+          6932,
+          7000,
+          7458,
+          7664,
+          7755,
+          7830,
+          8170,
+          8636,
+          9266,
+          9369,
+          9445,
+          10159,
+          10930,
+          11109,
+          11337
+        ],
+        "shape": [
+          1536,
+          27
+        ],
+        "dtype": "torch.bfloat16",
+        "original_sha256": "dc49fb32b6ca2237382380092224da7bf7b1378f626c7d3afd2bf598a7279ed9",
+        "factor0_sha256": "9e23d1556413cf80d53fa391c12ef3be0fa083ce169f0c63aaddcfce5773bf92"
+      },
+      {
+        "layer": 25,
+        "channels": [
+          217,
+          2847,
+          5137,
+          5890,
+          9212
+        ],
+        "shape": [
+          1536,
+          5
+        ],
+        "dtype": "torch.bfloat16",
+        "original_sha256": "5b72eb3e2038474bb31c4b29e983c00b8134e8d89b379ab35b943f10b47eff0c",
+        "factor0_sha256": "030a8fd70517ec86601adf0b7e20e5b684288c11ccf8534cd2d2f5318bbca9a8"
+      },
+      {
+        "layer": 26,
+        "channels": [
+          453,
+          785,
+          2835,
+          3721,
+          7161,
+          9407
+        ],
+        "shape": [
+          1536,
+          6
+        ],
+        "dtype": "torch.bfloat16",
+        "original_sha256": "968ddd4ab4935a9260917844192205bb7b6b43d0262f2a71b0cd8bf93018cbb4",
+        "factor0_sha256": "1843b20f8775f5fcdc8cee3395bd99391a995229bde263ab6aa82225dd77b72c"
+      },
+      {
+        "layer": 27,
+        "channels": [
+          416,
+          10185,
+          11018
+        ],
+        "shape": [
+          1536,
+          3
+        ],
+        "dtype": "torch.bfloat16",
+        "original_sha256": "57286108588b3ed391f69ff49c8be148b6952adaf1a294394033c66b7b67b999",
+        "factor0_sha256": "73493ea74e1a86b43175e243170702354a72c53c0cc6fedbd270d4d689636176"
+      },
+      {
+        "layer": 29,
+        "channels": [
+          944,
+          1106,
+          2346,
+          3131,
+          3510,
+          5349,
+          7153,
+          7193,
+          7390,
+          7609,
+          7758,
+          9196,
+          9293,
+          9421,
+          10498,
+          10555,
+          10816,
+          11087,
+          11487,
+          11598,
+          12015
+        ],
+        "shape": [
+          1536,
+          21
+        ],
+        "dtype": "torch.bfloat16",
+        "original_sha256": "8dd991c850c65af8bababf146cbde5d79f18db7f14d5826bf7575a1a3421d87a",
+        "factor0_sha256": "0ab9d28fbf4535378972a94f93771e88b1f90ff7e2b9f7b73bea2ffeded5e146"
+      },
+      {
+        "layer": 30,
+        "channels": [
+          277,
+          5872,
+          6353,
+          6840,
+          7273,
+          8823,
+          9221,
+          9497,
+          10574,
+          10891,
+          11953,
+          12278
+        ],
+        "shape": [
+          1536,
+          12
+        ],
+        "dtype": "torch.bfloat16",
+        "original_sha256": "b169f0f53ac14d2b20c287030260431df4529653a261172036ae080b214e3604",
+        "factor0_sha256": "9b1b73896842d4dfd9ff59c4608479c320dbc89b31ace9f4329cbaa9cf798e37"
+      },
+      {
+        "layer": 32,
+        "channels": [
+          377,
+          497,
+          544,
+          1337,
+          6428,
+          11537
+        ],
+        "shape": [
+          1536,
+          6
+        ],
+        "dtype": "torch.bfloat16",
+        "original_sha256": "2bae78e0b113ef96aeeafa12887bac7ae5cba301001080c141a6b181f6051e52",
+        "factor0_sha256": "34b7551ec5aa253cbe00f142eee78b52c56dc064253d2aeca3c59f30a3689556"
+      },
+      {
+        "layer": 33,
+        "channels": [
+          1120,
+          2720,
+          2810,
+          6981,
+          9167,
+          9815
+        ],
+        "shape": [
+          1536,
+          6
+        ],
+        "dtype": "torch.bfloat16",
+        "original_sha256": "24f5096acede1dc577bb53554c94a269ddc0e2e794020eacf619fd13ea76b492",
+        "factor0_sha256": "bf1c92de2114741a55b9af615ede962db3c4b144bad35a95b44a6cb25d063b3e"
+      },
+      {
+        "layer": 34,
+        "channels": [
+          1747,
+          2187,
+          2324,
+          4622,
+          6975,
+          8760,
+          9281,
+          9318,
+          10843
+        ],
+        "shape": [
+          1536,
+          9
+        ],
+        "dtype": "torch.bfloat16",
+        "original_sha256": "8db2f3d276c797d26ffedcdcc4d31097596c6c87d5c8e17684c1a4cf6b55b096",
+        "factor0_sha256": "cc37338df0eed04a2776d51d4cb4501ef6d99029884a398f5e49eab751348ca7"
+      }
+    ],
+    "unique_coordinates": 95,
+    "file_sha256": "6dafd945af7981808b7ef2b60b03bda7ad5cc54f0106ab685c41da76e10bcd69"
+  },
+  "files": {
+    "native_columns.safetensors": "6dafd945af7981808b7ef2b60b03bda7ad5cc54f0106ab685c41da76e10bcd69",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE": "c061994fe0da47d08dbfab7ca4ea666829bad337b18d233ed4e3f1bf9d10d4a1"
+  },
+  "tensor_allowlist": {
+    "L24.factor0": {
+      "shape": [
+        1536,
+        27
+      ],
+      "dtype": "BF16"
+    },
+    "L24.original": {
+      "shape": [
+        1536,
+        27
+      ],
+      "dtype": "BF16"
+    },
+    "L25.factor0": {
+      "shape": [
+        1536,
+        5
+      ],
+      "dtype": "BF16"
+    },
+    "L25.original": {
+      "shape": [
+        1536,
+        5
+      ],
+      "dtype": "BF16"
+    },
+    "L26.factor0": {
+      "shape": [
+        1536,
+        6
+      ],
+      "dtype": "BF16"
+    },
+    "L26.original": {
+      "shape": [
+        1536,
+        6
+      ],
+      "dtype": "BF16"
+    },
+    "L27.factor0": {
+      "shape": [
+        1536,
+        3
+      ],
+      "dtype": "BF16"
+    },
+    "L27.original": {
+      "shape": [
+        1536,
+        3
+      ],
+      "dtype": "BF16"
+    },
+    "L29.factor0": {
+      "shape": [
+        1536,
+        21
+      ],
+      "dtype": "BF16"
+    },
+    "L29.original": {
+      "shape": [
+        1536,
+        21
+      ],
+      "dtype": "BF16"
+    },
+    "L30.factor0": {
+      "shape": [
+        1536,
+        12
+      ],
+      "dtype": "BF16"
+    },
+    "L30.original": {
+      "shape": [
+        1536,
+        12
+      ],
+      "dtype": "BF16"
+    },
+    "L32.factor0": {
+      "shape": [
+        1536,
+        6
+      ],
+      "dtype": "BF16"
+    },
+    "L32.original": {
+      "shape": [
+        1536,
+        6
+      ],
+      "dtype": "BF16"
+    },
+    "L33.factor0": {
+      "shape": [
+        1536,
+        6
+      ],
+      "dtype": "BF16"
+    },
+    "L33.original": {
+      "shape": [
+        1536,
+        6
+      ],
+      "dtype": "BF16"
+    },
+    "L34.factor0": {
+      "shape": [
+        1536,
+        9
+      ],
+      "dtype": "BF16"
+    },
+    "L34.original": {
+      "shape": [
+        1536,
+        9
+      ],
+      "dtype": "BF16"
+    }
+  },
+  "metadata": {
+    "experiment": "N40",
+    "optimizer_steps": "0",
+    "factor": "0"
+  },
+  "source_code": {
+    "interpretability/prescribed_columns.py": "8db8b7a1a819e3cf20114a48bf1957b8d0119a013988af4d3ace14ed8e2afa87",
+    "research/experiments/n40/core.py": "ff360d6b8757d993a6fb042e2b3df27fc68257bf0278b03a2484f2b25653b615"
+  },
+  "validation": {
+    "all_240_records_and_mandatory_guards_pass": true,
+    "physical_vs_activation_zero_all_cases_exact": true,
+    "identity_and_all14restorations_exact": true,
+    "all_original_columns_restored": true,
+    "all192new_responses_native_EOS": true,
+    "optimizer_steps": 0,
+    "backward_calls": 0,
+    "manual_assignments": 126,
+    "independent_clean_package_pretrained_replay": false,
+    "host_recomputes_full_checkpoint_weights": false
+  },
+  "result": "Output-reduction primary fails. Selected coding26/32vsoriginal24/32,randomA25/32,randomB24/32,prompt22/32. Selected2gains/0losses are one-family development evidence,with one shared random-control repair. No confirmed useful gain or semantic role.",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "utc": "2026-10-31T20:29:57.403329+00:00"
+}

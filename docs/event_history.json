@@ -4020,6 +4020,125 @@
       "event": "actual_two_T4_and_two_concurrent_GPU_notebooks_verified_random_runtime_closed",
       "experiment": "U24H",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 550,
+      "utc": "2026-10-31T20:04:23.085420+00:00",
+      "event": "native_EOS_public_import_closure_passed_without_inference_or_closed_fixture_replay",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 551,
+      "utc": "2026-10-31T20:04:23.085443+00:00",
+      "event": "all_condition_utility_figure_plan_frozen_before_version2_outputs",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 552,
+      "utc": "2026-10-31T20:20:54.895799+00:00",
+      "event": "version2_complete_host_audited_closed_primary_failed_two_same_family_development_repairs_all192EOS",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 553,
+      "utc": "2026-10-31T20:32:36.366941+00:00",
+      "event": "full_original_BF16_parallel_prerequisite_private_source_verified_running",
+      "experiment": "U24P",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 554,
+      "utc": "2026-10-31T20:32:36.366941+00:00",
+      "event": "N41_fresh_balanced_accuracy_confirmation_intent_only_same_fixed_edits",
+      "experiment": "N41",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 555,
+      "utc": "2026-10-31T20:32:36.366941+00:00",
+      "event": "N40_all_condition_figure_and_exact_compact_deletion_bundle_reviewed",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 556,
+      "utc": "2026-10-31T20:40:00.106425+00:00",
+      "event": "both_full_original_BF16_replicas_pass_concurrent_memory_and_all_native_prefix_lineages_closed",
+      "experiment": "U24P",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 557,
+      "utc": "2026-10-31T20:52:39.788641+00:00",
+      "event": "closed_raw_JSONL_losslessly_archived_after_exact_byte_verification_storage_guard_failure_preserved",
+      "experiment": "N40",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 558,
+      "utc": "2026-10-31T21:03:00.802588+00:00",
+      "event": "fresh_accuracy_scientific_design_and32new_semantic_contracts_frozen_before_implementation_outputs",
+      "experiment": "N41",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 559,
+      "utc": "2026-10-31T21:15:46.802884+00:00",
+      "event": "fresh_hidden_oracles_all15489cross_checks_and64literal_checks_pass_before_model_outputs",
+      "experiment": "N41",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 560,
+      "utc": "2026-10-31T21:15:46.803230+00:00",
+      "event": "fresh_grader_synthetic_mutation_fixture_fails_before_any_model_output_preserved",
+      "experiment": "N41",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 561,
+      "utc": "2026-10-31T21:20:13.892212+00:00",
+      "event": "fresh_grader_v2_passes13synthetic_sources_and34retention_checks_after_fixture_only_repair",
+      "experiment": "N41",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 562,
+      "utc": "2026-10-31T21:20:13.892212+00:00",
+      "event": "fresh96prompts_and192tokenizations_frozen_native_thinking_default_parity_no_outputs",
+      "experiment": "N41",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 563,
+      "utc": "2026-10-31T21:20:13.892212+00:00",
+      "event": "new_N41A_integration_record_counter_and_baseline_gates_pass4random_forwards24corruption_refusals",
+      "experiment": "N41",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 564,
+      "utc": "2026-10-31T21:24:39.622711+00:00",
+      "event": "private_fresh_original_baseline_launched_two_disjoint_full_replicas_native_EOS_source_and_privacy_exact",
+      "experiment": "N41A",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 565,
+      "utc": "2026-10-31T21:25:27.070058+00:00",
+      "event": "reporting_reservation_schema_failure_preserved_and_metadata_fields_repaired_science_unchanged",
+      "experiment": "N41A",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 566,
+      "utc": "2026-10-31T21:27:36.054991+00:00",
+      "event": "pre_release_visual_review_catches_stale_Q55_prose_and_tool_title_overlap_repair_reporting_only",
+      "experiment": "N41A",
+      "optimizer_steps": 0
     }
   ]
 }

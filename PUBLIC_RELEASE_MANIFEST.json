@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-10-31T19:54:29.366295+00:00",
+  "generated_utc": "2026-10-31T21:27:49.852214+00:00",
   "project": "Digital Surgery",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "d3aa459b50bc6937d91030b25bf8d16d9c375f7128bfff2a9cfd8b5ac5036aa8",
-      "bytes": 981
+      "sha256": "9c3392656cbdc01c6b9ae8b14dcbb13b832f1bf089cc6584c3cb43c91b816f4a",
+      "bytes": 1052
     },
     {
       "path": "LICENSE",
@@ -21,43 +21,43 @@
     },
     {
       "path": "README.md",
-      "sha256": "dabfdeafb37ff69de2d4eee9d6072ec40908f4ef0d83d3252d8942b0535971b0",
-      "bytes": 10492
+      "sha256": "c860f391eee1b80e05ae1b04e3498d2e869513d8f155edc74552ae0b53b3b77c",
+      "bytes": 11455
     },
     {
       "path": "docs/ACTIVATION_VIEWER.html",
-      "sha256": "c8d38809ef381614dfbb7802909e55443646099fa4d1b1fed889e507483db6c3",
-      "bytes": 9862
+      "sha256": "813482b2737ebc95956f2a4d48c7dc30e50085d613a9ec7d0b92db89a3455040",
+      "bytes": 9885
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "3de78130a92666697a0019d8723ce6c7a548da08868a5625b470c7a156ca7c9d",
-      "bytes": 293600
+      "sha256": "4e4ee05494e41111696b5838b6f22f3678ff6d458dcb77ca6f03a625585a3009",
+      "bytes": 298090
     },
     {
       "path": "docs/MODEL_REGISTRY.html",
-      "sha256": "175b702c72789c0992f00d7f2ca4553c6d15d167eb1fa60b68defe4daee9f8bb",
-      "bytes": 16958
+      "sha256": "7fc37f8308e4e54d0b9361cc51ba773f936a0f4926e9323144642a2a416be999",
+      "bytes": 17714
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "ea4313c7690bf922b4b2faf0eb7fa0165086f8edaf002b8489058fb2ba07e266",
-      "bytes": 240052
+      "sha256": "660f6fb91667b5529536224a2cee1a5c83533e6567042604b504a88efe36044d",
+      "bytes": 245798
     },
     {
       "path": "docs/SURGERY_ASSET_INDEX.json",
-      "sha256": "7ec75ac105d1a4845e6d4e39a0f0c03503468281dd1aceb56d810a46c8655c36",
-      "bytes": 18563
+      "sha256": "85f4051f016c3428d3cd6d83473b04afcdf53313cd5a63cb4c84bbb2d5d09c9f",
+      "bytes": 19840
     },
     {
       "path": "docs/SURGERY_PROCESS.html",
-      "sha256": "9dee939d48b7978630ddb93eb7ca6cdbfbb8a74480098122f807f9dd78efde82",
-      "bytes": 5131
+      "sha256": "869f38fcc3fe332459d304203dd60de673d4e868a8afc578ab860a354ca4c5bf",
+      "bytes": 5154
     },
     {
       "path": "docs/SURGERY_TOOLKIT.html",
-      "sha256": "53319c391b8bee52a9ad548346262f48ad515dee4cbd25143560ed022f57ab43",
-      "bytes": 117414
+      "sha256": "52f1ae3314649a0e79546153ca6529f676a3606058714612f4695078f9b9b3be",
+      "bytes": 125686
     },
     {
       "path": "docs/current_work_window.json",
@@ -66,8 +66,8 @@
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "cefa298063949fcfd115b5fa253e76e350be59ba1488c1ecec2b29e1e08bd863",
-      "bytes": 125488
+      "sha256": "ed6b8ed99f18e8f34b495ee584a961e18062c8fba50bc5397cee9e980272911e",
+      "bytes": 129643
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -260,6 +260,11 @@
       "bytes": 123807
     },
     {
+      "path": "docs/figures/n40_summary.png",
+      "sha256": "14cd29df8a240f06fc15f03ecc682a12530bff6328d188c8a50e65fa14520366",
+      "bytes": 336004
+    },
+    {
       "path": "docs/index.html",
       "sha256": "abfbbee12de2581ea978750dcb781bd65dd702609d25ad45c54d2c86fb6d0cd7",
       "bytes": 12407
@@ -276,8 +281,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "34b9207ecf35204ea4dff593932df3044e08df687ecdbb765ae238710cb60e05",
-      "bytes": 121636
+      "sha256": "96f127332962486e4d23b789c9b88f3e8b83a5a043ae04b566b27a58bbbef337",
+      "bytes": 123511
     },
     {
       "path": "docs/storage_policy.json",
@@ -400,6 +405,11 @@
       "bytes": 1209
     },
     {
+      "path": "interpretability/native_eos_generation.py",
+      "sha256": "9dc0d62f60e8073f7a82d891cb7e9b08e2d96b6c145a2b1c8cbd2454f50c730d",
+      "bytes": 6649
+    },
+    {
       "path": "interpretability/native_group_policy.py",
       "sha256": "843049e628acd235d1fa04097b0a20106114f86a6daaab568bec3764cdd68334",
       "bytes": 1985
@@ -468,6 +478,11 @@
       "path": "methods/compute_parallelism.json",
       "sha256": "37be1bafaa9ae7399ec722b4313e05b83e6aca0449ca00c2ec6b5d31bfe9a066",
       "bytes": 2076
+    },
+    {
+      "path": "methods/full_replica_readiness_design.json",
+      "sha256": "46d3b3e8e287fb174819713a106a99f0473a2ec79506e552f419b6e11d32622d",
+      "bytes": 4898
     },
     {
       "path": "methods/inference_budget_policy.json",
@@ -1150,6 +1165,11 @@
       "bytes": 3659
     },
     {
+      "path": "methods/n40_all_condition_figure_plan.json",
+      "sha256": "3e05340c7d8fe9652d1db3e662baccacc6c8a7ae084c7efaa70c4fe39378a683",
+      "bytes": 2716
+    },
+    {
       "path": "methods/n40_conditional_utility_intent.json",
       "sha256": "bdcbcfdbfd29eb18ed689831a3f24282027e16bb784241ab0cfdaf612cbf2ea0",
       "bytes": 2712
@@ -1173,6 +1193,21 @@
       "path": "methods/n40_startup_amendment_v2.json",
       "sha256": "13bc4c4224fec491b64b86606b97119158c1f1e381694353b5254ab2b6ce286b",
       "bytes": 1660
+    },
+    {
+      "path": "methods/n41_conditional_fresh_intent.json",
+      "sha256": "26e7b6903e919a942f9c3770abafbd7534e3cda9a30f085c095b3a68f661339f",
+      "bytes": 4076
+    },
+    {
+      "path": "methods/n41_prospective_accuracy_design.json",
+      "sha256": "3f2d202e6a519b10c92407aa63daba639ae0b864fc472183350e66e6b1e22c6e",
+      "bytes": 7750
+    },
+    {
+      "path": "methods/n41_protocol_freeze.json",
+      "sha256": "1cdde86bfe1c10587659398c5dd0f0f749c036c772290baa2fc97015b9546922",
+      "bytes": 301
     },
     {
       "path": "methods/strict_profile_matching.py",
@@ -1415,6 +1450,26 @@
       "bytes": 11154
     },
     {
+      "path": "models/n40/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "models/n40/NOTICE",
+      "sha256": "c061994fe0da47d08dbfab7ca4ea666829bad337b18d233ed4e3f1bf9d10d4a1",
+      "bytes": 515
+    },
+    {
+      "path": "models/n40/native_columns.safetensors",
+      "sha256": "6dafd945af7981808b7ef2b60b03bda7ad5cc54f0106ab685c41da76e10bcd69",
+      "bytes": 585192
+    },
+    {
+      "path": "models/n40/recipe.json",
+      "sha256": "70e639f54ddefca4064d996ebe2ed12eab65807c96532c0e6e88af5bb1ca8773",
+      "bytes": 14937
+    },
+    {
       "path": "pyproject.toml",
       "sha256": "8049b9258a14cc244d684291cc2ad8b08dcc8acc849df8dea040f62394c049b5",
       "bytes": 621
@@ -1590,6 +1645,11 @@
       "bytes": 2558
     },
     {
+      "path": "research/experiments/n40/core.py",
+      "sha256": "ff360d6b8757d993a6fb042e2b3df27fc68257bf0278b03a2484f2b25653b615",
+      "bytes": 3966
+    },
+    {
       "path": "results/b01_chat_summary.json",
       "sha256": "5746c2228529abda7860351b5d3f2dbf54dd538e0d1fb3f5c182892af43481a7",
       "bytes": 9863
@@ -1598,6 +1658,16 @@
       "path": "results/b02_reversal_summary.json",
       "sha256": "b073d29e7cb9a0f31a0a53c87249fd6b54dfc6c97bc8ceb86fa2c1a8ac62b83e",
       "bytes": 8420
+    },
+    {
+      "path": "results/full_replica_readiness_preparation.json",
+      "sha256": "e26debf38b9f77960cab08863e7813bc44c995af8c17d82bd2224a73a4c2508c",
+      "bytes": 1496
+    },
+    {
+      "path": "results/full_replica_readiness_summary.json",
+      "sha256": "65beb99f51ba7f828fbbd6fa967c8d7ac403fdf206b1a0948a47439a71daccbd",
+      "bytes": 2450
     },
     {
       "path": "results/future_return_contract_host.json",
@@ -2090,9 +2160,24 @@
       "bytes": 807
     },
     {
+      "path": "results/n40_summary.json",
+      "sha256": "28d52c48be10a3018a2d94743a656de71716a224778346ec1f873852aed1c503",
+      "bytes": 45983
+    },
+    {
+      "path": "results/n40_termination.json",
+      "sha256": "eeff4502f27176b01df87667461693f4373e16416b5309cdc503003116cbdcb4",
+      "bytes": 1116
+    },
+    {
+      "path": "results/native_EOS_public_import_review.json",
+      "sha256": "672c8d6fe3613bc455f005103b771f8af0a98f33ce01219059095ce3c0251985",
+      "bytes": 1798
+    },
+    {
       "path": "results/native_EOS_software_preparation.json",
-      "sha256": "084e6e470b6cc019b91f12e32e280c20c8039bfa93e42d56c1712f8a31d7656f",
-      "bytes": 2041
+      "sha256": "22cf36701408e8e4162604637e26098bcda45f65bd4d976eef3c0d5da5636f8b",
+      "bytes": 2078
     },
     {
       "path": "results/parallel_hardware_summary.json",
@@ -2101,7 +2186,7 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "ad7ec34caf95600347b615b2f05e1f0707286af4887c92680dcd6851e104fdad",
+      "sha256": "859352987ab44e98fe7ae88fcb4102cc7b06ea069424c4d41dfc979211f2e81e",
       "bytes": 752
     },
     {
@@ -2116,13 +2201,13 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "d4998b624c8fa4e02c62ca106a16fa30ea73b55ae29654400e1191a13f5ad859",
-      "bytes": 25624
+      "sha256": "42a4f0dc2aabf6c83974b92b607718bcfbcceb6d810f07f14637678f470fd759",
+      "bytes": 26345
     },
     {
       "path": "scripts/build_surgery_assets.py",
-      "sha256": "f75826015b5632dd9d65fd79fff5a7db0f7e31ce062d65e0f9e240851c011657",
-      "bytes": 21476
+      "sha256": "fd9cc8d56260fc1124c96ca8ee96509fd1a29042696af8e325c36312f819ad69",
+      "bytes": 21573
     },
     {
       "path": "scripts/export_native_trace.py",
@@ -2223,6 +2308,11 @@
       "path": "scripts/plot_n35_summary.py",
       "sha256": "7d33cdeecb462d5d25ba8c2d52cc5edc38f8e84cbfd36ab5118deabee1169949",
       "bytes": 3821
+    },
+    {
+      "path": "scripts/plot_n40_summary.py",
+      "sha256": "e898737117c2fecb0bfb1c6c112eb1d5cf5fb7553469b793de0ed6c277c8d815",
+      "bytes": 7271
     },
     {
       "path": "tests/__init__.py",

@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-31T20:25:06.915156+00:00",
+  "question_id": "Q55",
+  "experiment": "N41",
+  "status": "conditional_fresh_confirmation_intent_only_no_dataset_runner_or_model_outputs",
+  "question": "Does the exact fixed native selected32global column-zero edit improve complete-function correctness on fresh balanced tasks,relative to original,both matched random32deletions,and the fixed instruction control?",
+  "parents": [
+    "Q54",
+    "Q53"
+  ],
+  "motivation": "N40output-reduction primary fails. Its selected-zero condition has two development gains/no losses,within one family;one gain occurs under both randoms. This exploratory accuracy lead is not a confirmed utility effect or a neuron meaning. The original failed primary remains failed.",
+  "prerequisite": "U24Pfull-original-BF16 two-replica source/native-prefix/memory guards must close and pass,or preserve failure before choosing a safe execution layout. N40is closed/audited. Never rerun old completions/graders or N31/N36failed transplant prerequisites.",
+  "edits": "Exactly existing N39/N40selected32,randomA32,randomB32. Prescribed physical down-column factor0globally at all positions. No new dose,coordinates,ranking,alignment,learned bridge,training or donor checkpoint. Original and same fixed simple instruction control included.",
+  "fresh_data_intent": {
+    "coding": 64,
+    "coding_families": 8,
+    "coding_prompts_per_dependent_family": 8,
+    "retention": 32,
+    "retention_families": [
+      "arithmetic",
+      "JSON"
+    ],
+    "total_native_cases": 96,
+    "conditions": 5,
+    "maximum_distinct_response_records": 480,
+    "all_cases_in_denominators": true,
+    "task_source": "New complete-function specifications and hidden independent executable oracles,balanced across every original eight coding families. Never narrow to the N40winning family or formerly wrong cases. No old C01/finals or hardcoded answers.",
+    "fresh_confirmation": "No model output from this new cohort may influence wording,oracle,condition,dose or coordinate selection. Freeze complete tasks/oracles/source/counts before baseline. All96native baselines are new because the cohort is new;no old completion is regenerated."
+  },
+  "native_baseline_prerequisite_intent": "Before edited replies,require at least32of64native coding cases correct,at least4coding errors spanning at least2families,and at least12of32retention cases correct. Otherwise preserve all native results and planned-stop the cohort,no wording revision and rerun. Report absolute retention even if weak.",
+  "primary_accuracy_intent": [
+    "Every originally-correct fresh coding and retention case preserved.",
+    "Selected edit adds at least4correct programs on all64fresh coding cases,with gains spanning at least2dependent families.",
+    "Selected edit scores at least2more correct programs than EACHfixed random32condition.",
+    "Every condition/case and all gains/losses reported,including simple instruction. No selected-only or originally-wrong-only headline.",
+    "Any genuine resource/context interruption remains incomplete and prevents a complete-panel utility claim;never resample or call it completed inability."
+  ],
+  "interpretation": "Prospective bounded within-assay confirmation of a development lead,not novelty,individual semantic meaning,new general coding capability,hardware speedup or a repaired N40primary. Eight task families remain dependent.",
+  "inference": "Native EOS with no arbitrary per-response token ceiling. Two isolated full replicas on fixed device/case ownership after U24Ppasses. Actual context/memory/free-compute/wall-time/deadline interruption checkpoints are explicit. Fresh caches for free generation;hidden oracle answers never enter model inputs.",
+  "before_execution": "A separate complete GPU protocol,auditor,oracles,source/counter manifests,physical scope/identity/restoration/native gates and fresh free quota must be frozen and validated. This intent is not a launched or launch-ready experiment.",
+  "fixed_deadline_utc": "2026-11-01T13:24:39Z",
+  "optimizer_steps": 0
+}

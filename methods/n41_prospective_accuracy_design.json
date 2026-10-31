@@ -1,0 +1,92 @@
+{
+  "utc": "2026-10-31T21:01:46.119657+00:00",
+  "experiment": "N41",
+  "question_id": "Q55",
+  "status": "scientific_protocol_frozen_before_implementation_and_all_fresh_outputs",
+  "authority": "Direct human coding and U23/U24inference-resource intent,with the conditional Q55intent retained.",
+  "parents": {
+    "research/experiments/n41/intent.json": "26e7b6903e919a942f9c3770abafbd7534e3cda9a30f085c095b3a68f661339f",
+    "runs/n40/version2/result_receipt.json": "39b8b90755de7056114970e5d0f5aa1d10fc4789a6a4266635c8eb43872d79a9",
+    "runs/n40/version2/gain_overlap_posthoc.json": "82565517930602b169393d4b9d264a8679622a00138fa4f6cf9695d7198d8952",
+    "releases/edit_bundles/n40/recipe.json": "70e639f54ddefca4064d996ebe2ed12eab65807c96532c0e6e88af5bb1ca8773",
+    "runs/compute/hardware_U24P/result_receipt.json": "65beb99f51ba7f828fbbd6fa967c8d7ac403fdf206b1a0948a47439a71daccbd"
+  },
+  "fresh_contract_sha256": "6bef53d50a79ab282a6c574e868c95b9ac9224fa4ce358e271b25e5e85475092",
+  "cohort": {
+    "coding": 64,
+    "semantic_contracts": 32,
+    "wordings_per_contract": 2,
+    "dependent_families": 8,
+    "retention": 32,
+    "retention_family_counts": {
+      "arithmetic": 16,
+      "json": 16
+    },
+    "total_native_cases": 96,
+    "task_seed": 4101,
+    "oracle_stress_seed": 4102,
+    "model_seed": 4103,
+    "independent_algorithms_not_claimed": true,
+    "freshness": "No old N35/N37prompt or function contract is regenerated. New semantic variants remain related within the old eight broad families. No C01/final asset is accessed. All cases remain,with no selection by baseline error."
+  },
+  "model": "google/gemma-4-E2B-it@3e22461f65e89153144f8adb70e3b8c2cc9845a7,text-only original BF16",
+  "decoding": "Greedy native EOS,no arbitrary response-token maximum,no sampling rerolls. Native pinned chat-template thinking defaultFalse is used without mode search. Actual context,memory,global free-job wall time and storage interruptions remain incomplete.",
+  "execution": "Two isolated original full replicas,one per T4,owned rows by frozen row-index modulo2. Sequential model loading,shared pinned /tmpcache,then a common start gate. Every generated response starts with a fresh native cache. No model sharding,trained weights,adapters,donor checkpoint or learned bridge.",
+  "conditions": [
+    "original",
+    "selected_zero",
+    "randomA_zero",
+    "randomB_zero",
+    "prompt_only"
+  ],
+  "edits": "Exact fixed selected32/randomA32/randomB32from N40bundle,physical down-column factor0at all positions. No new dose,coordinates,ranking or fitted coefficient. Prompt-only uses the same fixed N40instruction appendix on the new coding prompts;retention prompts unchanged.",
+  "phase_A": {
+    "purpose": "Fresh unmodified native baseline,96new responses only. No edits or hidden oracles in generation assets.",
+    "identity_gate": "On each GPU,before new replies,replay the existing first3native decisions of the fixed first coding and first retention parent sentinel with exact argmax/full-FP32-logit/whole-cache witnesses. Parent config,generation config,buffers and pinned source exact. Do not regenerate old complete replies.",
+    "baseline_gate": [
+      "All96responses complete at native EOS and all execution/source/state guards pass;otherwise unassessable resource/engineering stop,not ability failure.",
+      "At least32of64coding cases correct and at least56source-valid complete coding outputs.",
+      "At least4executable completed-wrong coding cases,spanning at least2dependent families.",
+      "At least12of32retention cases correct,including at least4in each retention family."
+    ],
+    "failure": "If a baseline gate fails,preserve all results and planned-stop this cohort before any edited reply. No prompt/oracle rewrite and rerun under this question."
+  },
+  "phase_B": {
+    "prerequisite": "PhaseAclosed/audited and all baseline gates pass. Every scientific condition,task,oracle and primary clause already frozen before PhaseA.",
+    "records": {
+      "native_exact_carries": 96,
+      "new_edited_or_instruction_responses": 384,
+      "total": 480
+    },
+    "engineering_gate": "On each GPU use all owned cases: native firstK=min(3,native response length),union physical factor1identity,each group all-position activation0and physical0teacher panels,for8panels total. Exact native/self/physical-vs-activation logits/cache mandatory. Before any new edited free reply,match saved original columns to the N40bundle. All14sentinel restorations per GPU and declared version/assignment counters mandatory. Teacher reference tokens never enter free generation prompts or caches.",
+    "counter_rule": "A counts the manifest-derived old-sentinel native measurements plus sum(T)free forwards,with exposures sum(native sentinel n+K-1)+sum(new prompt n+T-1). B per GPU counts8*sum(owned K)+14+sum(newT),with exposures8*sum(owned n+K-1)+7*sum(two owned sentinel prompt lengths)+sum(condition n+T-1). No hand-summed replacement constants;derive every actual total from frozen manifests and saved traces."
+  },
+  "grading": "Host-only once for each new complete response. Python3.12complete-function exact signature plus safe standard-library imports are allowed;no extra module execution. Preserve inputs and require fresh list returns where specified. Exact recursive types/values,independent reference checks on bounded exhaustive/edge inputs plus256fixed fresh stress probes per coding prompt. Separate source,wrong-answer,input-mutation,runtime and resource statuses. Hidden answers,oracles and executable reference programs never enter generation assets.",
+  "oracle_preflight": "Implement two independent formulations or exhaustive/brute secondary checks for every semantic contract;cross-check all bounded exhaustive and fixed stress domains BEFORE model outputs. Include deterministic positive/malformed/alias/mutation/type fixtures of the host evaluator. Import BOTH runner and auditor,isolated package roundtrip,RuffF821/F823,cache cardinality15and tokenization gates before GPU. Reuse existing unchanged native computational primitives without rerunning closed panels.",
+  "primary": [
+    "Preserve every originally-correct fresh coding and retention response.",
+    "Selected deletion adds at least4correct programs on all64coding cases,with gains in at least2dependent families.",
+    "Selected deletion scores at least2more correct programs than EACHfixed random deletion.",
+    "All480records,all5conditions and all gains/losses/interruption/source statuses retained. If the instruction is as good or better,report that.",
+    "All actual engineering/source/state/identity/cache/restoration/counter guards pass;all responses complete. Incompleteness makes full-panel benefit unassessable,never a completed inability claim."
+  ],
+  "interpretation": "A preregistered bounded fresh accuracy screen within related task families,not formal independent-sample statistical significance,neuron semantic meaning,new general coding capability,hardware speedup or a repaired N40output-reduction primary. The N40lead is development selection.",
+  "resources": {
+    "free_only": true,
+    "fresh_quota_reserve_hours": 2,
+    "phase_A_platform_seconds": 3600,
+    "phase_A_notebook_seconds": 3500,
+    "phase_A_worker_seconds": 3300,
+    "phase_A_generation_resource_guard_seconds_from_notebook_start": 3200,
+    "phase_B_platform_seconds": 7200,
+    "phase_B_notebook_seconds": 7000,
+    "phase_B_worker_seconds": 6700,
+    "phase_B_generation_resource_guard_seconds_from_notebook_start": 6600,
+    "output_bytes_per_job": 67108864,
+    "fixed_deadline_utc": "2026-11-01T13:24:39Z",
+    "one_job_per_phase_no_duplicate": true
+  },
+  "no_training": true,
+  "optimizer_steps": 0,
+  "backward_calls": 0
+}
