@@ -1,0 +1,102 @@
+{
+  "experiment": "N55",
+  "question": "Q70",
+  "registered_utc": "2026-11-01T18:16:25.940640+00:00",
+  "title": "Persistent signed numerator policies with native RMS on complete original programs",
+  "hypothesis": "Does editing only the final-MLP numerator while retaining its current own-history native reciprocal RMS preserve all originally correct programs and produce a selective coding gain?",
+  "motivation": "N49 separates numerator from shared RMS scaling on answer decisions. N52 shows activation sign is not local support sign; N54 confirms native sign is a coordinate choice. N55 tests complete-response utility in the fixed native basis rather than selecting a sign from those effects. N47 standard postmask-RMS generation was resource-incomplete and remains censored; this is a different intervention, not recovery or continuation.",
+  "prior": "Native RMS factor separation, contextual binding and sign-ablation are established controls. No new method, individual meaning or fresh-confirmation claim.",
+  "cohort": {
+    "source": "ALL original N41A cases unchanged",
+    "cases": 96,
+    "coding": 64,
+    "retention": 32,
+    "families": 10,
+    "original_complete_responses_and_grades": "96 exact host-only carries; no native response regeneration/rescoring",
+    "new_edited_response_records": 384,
+    "all_condition_records": 480,
+    "development_reuse": true
+  },
+  "conditions": [
+    "original",
+    "remove_negative",
+    "random_negative_count",
+    "remove_positive",
+    "random_positive_count"
+  ],
+  "intervention": {
+    "site": "native final dense MLP34, h=act(gate(x))*up(x), current last position only",
+    "mask": "UNCHANGED signed_native_mask.indices; strict h<0/h>0; zeros neither; literal assignment0; fixed random.Random4501/4502 permutation prefixes matching native sign cardinality, not energy",
+    "norm": "Actual current own-history unmodified down_proj(h) yields native q=(mean(raw.float()**2)+eps)**(-.5). Use edited raw numerator with native q and unchanged direct gamma, exact FP32 operation order then cast BF16 using unchanged native_rms_factor_v2.compose. Native raw norm output must reconstruct byte-exact before replacement.",
+    "implementation": "Observe native h and raw, one extra F.linear down projection on masked CURRENT h with unchanged weight/bias; replace only current postFFN RMS output. No extra gate/up/fullFFN; no parameter assignments.",
+    "selection": "All four arms retained; no sign/site/rank/dose/task selected from effects; development-derived native-RMS mechanism explicit."
+  },
+  "generation": {
+    "native_eos": [
+      1,
+      106,
+      50
+    ],
+    "arbitrary_response_token_ceiling": null,
+    "own_history": "Every new token from actual full-vocabulary argmax of persistent intervention on actual previously emitted history. All edited decisions fresh; zero completed-cell carries, forced future tokens or reconvergence.",
+    "gpu_inputs": "Exact prompts/tokenization/bundle/config witness and own frozen FIRST native logits/argmax/whole-cache measurement only. Original future programs/IDs, grades, memo228, host oracles/secrets excluded.",
+    "order": "index modulo2 case ownership, all4conditions percase, fixed rotated order offset=(row_index//2)%4",
+    "sourceguards": 96,
+    "native_restorations": 384,
+    "cache_observation": "Full cache at first edited decision, response terminal and every native source/restoration. No whole-cache hashes at every fresh token; no independent per-token byte authentication claimed. FinalMLP34 follows lastKVproducer14.",
+    "stream": "One actual compact decision/mask/factor JSONL perresponse, flushed/fsynced pertoken; record binds trace SHA, actual IDs and text. Hooks removed and actual native first-logit/fullcache plus state snapshot restored before every durable prepare/commit.",
+    "interruption": "Actual configured context, memory, storage or walltime interruption censors WHOLEpanel, no grading/effects, no completed reroll or automatic continuation."
+  },
+  "measurements": {
+    "per_fresh_step": [
+      "fullFP32logitsSHA",
+      "full-vocabulary argmax",
+      "raw logit dtype",
+      "step",
+      "actual consumed preceding token and total input length",
+      "hSHA",
+      "maskSHA/count/strictsigncounts",
+      "native raw/q/output and replacement SHA",
+      "noncurrent norm positions exact"
+    ],
+    "accounting": "Actual attempted full forwards/input exposures/fresh choices/activation assignments/extra down projections/sourceguards/restorations separately. Complete totals T+480 fullforwards;9*sum(promptlengths)+T-384 exposures;T extra down projections and activation assignments;T fresh choices;0 cell carries. Original whole-response carry tokens separate,0N55newchoices.",
+    "witness_scope": "Actual state/hook/version/RNG/config/buffer/grad observations, not allbaseparameterbyte authentication or clean pretrained package replay."
+  },
+  "primary": {
+    "independent_policies": [
+      "remove_negative",
+      "remove_positive"
+    ],
+    "conjunctive_clauses": [
+      "preserve EVERYoriginal-correct coding case",
+      "preserve EVERYoriginal-correct retention case",
+      "gain at least4 coding cases",
+      "gains span at least2 coding families",
+      "beat matchedrandom by at least2 correct coding cases"
+    ],
+    "report": "All arms/families/statuses/gains/losses; no pvalues/posthocwinner/meaning/mediation/speed/freshconfirmation claim."
+  },
+  "grading": {
+    "gate": "Whole384 response panel COMPLETE nativeEOS and all frozen structural/source/state guards PASS BEFORE any new grade",
+    "grader": "UNCHANGED research/experiments/n41/grading.py, only new unique same-case complete texts",
+    "memo": "228 exact same-case N41A/B textSHA grades carry, conflicts refuse; original96 alwayscarry; identicalnewcandidates reuse firstnewgrade",
+    "host_tokenizer": "May load ONCE only on completeaudit to verify decoded text matches actualIDs; zero hostmodelreplay",
+    "host_oracles": "Stay HOST ONLY, never GPU closure"
+  },
+  "resources": {
+    "private": true,
+    "platform_seconds": 7200,
+    "notebook_seconds": 7000,
+    "worker_seconds": 6700,
+    "global_notebook_seconds": 6600,
+    "expired_historical_deadline_guard": "NOT applied to new U26 count authorization; historical receipt untouched",
+    "scientific_raw_output_max_bytes": 134217728,
+    "devices": "two distinct T4; full BF16 replica each; sequential load/sharedcache/barrier; no extra scientific GPU while active",
+    "reservation_GPU_hours": 4,
+    "separate_reserve_GPU_hours": 2,
+    "prelaunch": "fresh officialquota>=6 and owninventory recognizing gemma-private AND digital-surgery, allolderjobs terminal"
+  },
+  "host_gates": "NEW random FP32/BF16 independent persistent numerator references, all4arms, nativeEOS/context interruption, same-own-history cache/source/restoration/state/parameter bytes+versions/grad and counters. NEW literal auditor provenance/refusals and exact blocked package import. No closed old fixtures rerun.",
+  "zero_training": "No optimizer, backward, weight/activation-gradient updates, fitted vector/bridge/sign/gain/alignment. Prescribed mask0 and nativefactor copying only.",
+  "failure_policy": "Preserve first failure/incomplete and all sources/raw; no weakened scientific guard, completed edited cell retry or grade repeat."
+}

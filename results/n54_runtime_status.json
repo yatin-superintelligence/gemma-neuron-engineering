@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-01T18:03:29.014519+00:00",
+  "status": "complete_host_audited_closed",
+  "source_checkpoint": "f5b088a871186b37fe4e4130a3b488605652a21f",
+  "private_GPU_notebook": true,
+  "single_READY_private_dataset": true,
+  "server_JSON_exact": true,
+  "scope": "Complete frozen engineering audit; all numerical primary failures retained. Raw contexts, choices, tensors and labels remain private. No useful coding gain or individual meaning established."
+}

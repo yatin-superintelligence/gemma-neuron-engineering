@@ -1,0 +1,1574 @@
+{
+  "actual_counters": {
+    "MLP_activation_assignments": 0,
+    "backward_calls": 0,
+    "cache_clone_constructions": 384,
+    "calls": 456,
+    "edited_suffix_decisions": 144,
+    "identity_suffix_guards": 48,
+    "input_token_exposures": 16092,
+    "manual_parameter_assignments": 0,
+    "native_monolithic_guards": 48,
+    "native_prefix_source_forwards": 24,
+    "native_restoration_forwards": 144,
+    "native_segmented_source_forwards": 48,
+    "new_emitted_tokens": 0,
+    "optimizer_steps": 0,
+    "prefix_KV_tensor_assignments": 1824
+  },
+  "all_conditions": {
+    "all15_counterfactual_prefix_KV": {
+      "answer_orders": {
+        "coding_0": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 3.9375,
+            "mean": 0.0,
+            "min": -3.9375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 3.9375,
+            "mean": 1.4443359375,
+            "min": 0.0625
+          },
+          "contexts": 16,
+          "correct": 7,
+          "counterfactual_donor_native_letter_copied": 16,
+          "gains": 0,
+          "losses": 2,
+          "native_recipient_choice_preserved": 14,
+          "valid_A_B": 16
+        },
+        "coding_1": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 4.9375,
+            "mean": 0.0,
+            "min": -4.9375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 4.9375,
+            "mean": 1.6640625,
+            "min": 0.1875
+          },
+          "contexts": 16,
+          "correct": 8,
+          "counterfactual_donor_native_letter_copied": 16,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 16,
+          "valid_A_B": 16
+        },
+        "retention_0": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 52.9375,
+            "mean": 0.0,
+            "min": -52.9375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 8,
+            "max": 52.9375,
+            "mean": 34.013671875,
+            "min": 6.21875
+          },
+          "contexts": 8,
+          "correct": 1,
+          "counterfactual_donor_native_letter_copied": 8,
+          "gains": 0,
+          "losses": 6,
+          "native_recipient_choice_preserved": 2,
+          "valid_A_B": 8
+        },
+        "retention_1": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 47.046875,
+            "mean": 0.0,
+            "min": -47.046875
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 8,
+            "max": 47.046875,
+            "mean": 25.61376953125,
+            "min": 3.0
+          },
+          "contexts": 8,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 8,
+          "gains": 0,
+          "losses": 4,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 8
+        }
+      },
+      "families": {
+        "arithmetic_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 6.21875,
+            "mean": 0.0,
+            "min": -6.21875
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 6.21875,
+            "mean": 4.609375,
+            "min": 3.0
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "closure_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.34375,
+            "mean": 0.0,
+            "min": -0.34375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.34375,
+            "mean": 0.203125,
+            "min": 0.0625
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "closure_state_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.6875,
+            "mean": 0.0,
+            "min": -0.6875
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.6875,
+            "mean": 0.4375,
+            "min": 0.1875
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "generator_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 1.25,
+            "mean": 0.0,
+            "min": -1.25
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 1.25,
+            "mean": 0.6875,
+            "min": 0.125
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "larger_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 52.9375,
+            "mean": 0.0,
+            "min": -52.9375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 52.9375,
+            "mean": 49.9921875,
+            "min": 47.046875
+          },
+          "contexts": 4,
+          "correct": 0,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 4,
+          "native_recipient_choice_preserved": 0,
+          "valid_A_B": 4
+        },
+        "nested_alias_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 1.6875,
+            "mean": 0.0,
+            "min": -1.6875
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 1.6875,
+            "mean": 1.375,
+            "min": 1.0625
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "pairs_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 29.2109375,
+            "mean": 0.0,
+            "min": -29.2109375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 29.2109375,
+            "mean": 18.1220703125,
+            "min": 7.033203125
+          },
+          "contexts": 4,
+          "correct": 1,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 2,
+          "native_recipient_choice_preserved": 2,
+          "valid_A_B": 4
+        },
+        "setdefault_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 1.03125,
+            "mean": 0.0,
+            "min": -1.03125
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 1.03125,
+            "mean": 0.87890625,
+            "min": 0.7265625
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "short_circuit_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 4.9375,
+            "mean": 0.0,
+            "min": -4.9375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 4.9375,
+            "mean": 4.4375,
+            "min": 3.9375
+          },
+          "contexts": 4,
+          "correct": 1,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 2,
+          "native_recipient_choice_preserved": 2,
+          "valid_A_B": 4
+        },
+        "slice_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 2.8125,
+            "mean": 0.0,
+            "min": -2.8125
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 2.8125,
+            "mean": 2.546875,
+            "min": 2.28125
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "stable_sort_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 2.046875,
+            "mean": 0.0,
+            "min": -2.046875
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 2.046875,
+            "mean": 1.8671875,
+            "min": 1.6875
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "word_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 47.6875,
+            "mean": 0.0,
+            "min": -47.6875
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 47.6875,
+            "mean": 46.53125,
+            "min": 45.375
+          },
+          "contexts": 4,
+          "correct": 0,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 4,
+          "native_recipient_choice_preserved": 0,
+          "valid_A_B": 4
+        }
+      },
+      "roles": {
+        "coding": {
+          "A_minus_B_delta": {
+            "count": 32,
+            "max": 4.9375,
+            "mean": 0.0,
+            "min": -4.9375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 32,
+            "max": 4.9375,
+            "mean": 1.55419921875,
+            "min": 0.0625
+          },
+          "contexts": 32,
+          "correct": 15,
+          "counterfactual_donor_native_letter_copied": 32,
+          "gains": 0,
+          "losses": 2,
+          "native_recipient_choice_preserved": 30,
+          "valid_A_B": 32
+        },
+        "retention": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 52.9375,
+            "mean": 0.0,
+            "min": -52.9375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 52.9375,
+            "mean": 29.813720703125,
+            "min": 3.0
+          },
+          "contexts": 16,
+          "correct": 3,
+          "counterfactual_donor_native_letter_copied": 16,
+          "gains": 0,
+          "losses": 10,
+          "native_recipient_choice_preserved": 6,
+          "valid_A_B": 16
+        }
+      }
+    },
+    "last_shared_pair13_14_counterfactual_KV": {
+      "answer_orders": {
+        "coding_0": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 1.125,
+            "mean": -0.038330078125,
+            "min": -1.25
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 1.25,
+            "mean": 0.438232421875,
+            "min": 0.046875
+          },
+          "contexts": 16,
+          "correct": 9,
+          "counterfactual_donor_native_letter_copied": 14,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 16,
+          "valid_A_B": 16
+        },
+        "coding_1": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 1.125,
+            "mean": 0.04296875,
+            "min": -0.6953125
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 1.125,
+            "mean": 0.4267578125,
+            "min": 0.0
+          },
+          "contexts": 16,
+          "correct": 8,
+          "counterfactual_donor_native_letter_copied": 16,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 16,
+          "valid_A_B": 16
+        },
+        "retention_0": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 3.31640625,
+            "mean": 0.24560546875,
+            "min": -1.5625
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 8,
+            "max": 3.31640625,
+            "mean": 1.01904296875,
+            "min": 0.0
+          },
+          "contexts": 8,
+          "correct": 7,
+          "counterfactual_donor_native_letter_copied": 2,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 8,
+          "valid_A_B": 8
+        },
+        "retention_1": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 26.796875,
+            "mean": 3.109619140625,
+            "min": -4.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 8,
+            "max": 26.796875,
+            "mean": 4.679931640625,
+            "min": 0.125
+          },
+          "contexts": 8,
+          "correct": 5,
+          "counterfactual_donor_native_letter_copied": 5,
+          "gains": 0,
+          "losses": 1,
+          "native_recipient_choice_preserved": 7,
+          "valid_A_B": 8
+        }
+      },
+      "families": {
+        "arithmetic_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.5,
+            "mean": 0.1015625,
+            "min": -0.15625
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.5,
+            "mean": 0.2421875,
+            "min": 0.125
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "closure_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.75,
+            "mean": -0.015625,
+            "min": -0.6875
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.75,
+            "mean": 0.453125,
+            "min": 0.125
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "closure_state_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.15625,
+            "mean": -0.0625,
+            "min": -0.65625
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.65625,
+            "mean": 0.265625,
+            "min": 0.125
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "generator_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.125,
+            "mean": -0.046875,
+            "min": -0.1875
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.1875,
+            "mean": 0.140625,
+            "min": 0.0625
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "larger_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 26.796875,
+            "mean": 5.57421875,
+            "min": -4.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 26.796875,
+            "mean": 8.26171875,
+            "min": 0.875
+          },
+          "contexts": 4,
+          "correct": 3,
+          "counterfactual_donor_native_letter_copied": 1,
+          "gains": 0,
+          "losses": 1,
+          "native_recipient_choice_preserved": 3,
+          "valid_A_B": 4
+        },
+        "nested_alias_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.375,
+            "mean": -0.015625,
+            "min": -0.625
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.625,
+            "mean": 0.359375,
+            "min": 0.125
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "pairs_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 3.31640625,
+            "mean": 0.90966796875,
+            "min": -2.15625
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 3.31640625,
+            "mean": 1.98779296875,
+            "min": 0.3671875
+          },
+          "contexts": 4,
+          "correct": 3,
+          "counterfactual_donor_native_letter_copied": 2,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "setdefault_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.6015625,
+            "mean": -0.0234375,
+            "min": -0.6953125
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.6953125,
+            "mean": 0.38671875,
+            "min": 0.125
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "short_circuit_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 1.125,
+            "mean": 0.140625,
+            "min": -1.25
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 1.25,
+            "mean": 0.984375,
+            "min": 0.4375
+          },
+          "contexts": 4,
+          "correct": 3,
+          "counterfactual_donor_native_letter_copied": 2,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "slice_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.84375,
+            "mean": 0.0,
+            "min": -0.90625
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.90625,
+            "mean": 0.765625,
+            "min": 0.625
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "stable_sort_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.24609375,
+            "mean": 0.0419921875,
+            "min": -0.125
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.24609375,
+            "mean": 0.1044921875,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "word_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 1.8125,
+            "mean": 0.125,
+            "min": -1.5625
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 1.8125,
+            "mean": 0.90625,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 4,
+          "counterfactual_donor_native_letter_copied": 0,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        }
+      },
+      "roles": {
+        "coding": {
+          "A_minus_B_delta": {
+            "count": 32,
+            "max": 1.125,
+            "mean": 0.0023193359375,
+            "min": -1.25
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 32,
+            "max": 1.25,
+            "mean": 0.4324951171875,
+            "min": 0.0
+          },
+          "contexts": 32,
+          "correct": 17,
+          "counterfactual_donor_native_letter_copied": 30,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 32,
+          "valid_A_B": 32
+        },
+        "retention": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 26.796875,
+            "mean": 1.6776123046875,
+            "min": -4.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 26.796875,
+            "mean": 2.8494873046875,
+            "min": 0.0
+          },
+          "contexts": 16,
+          "correct": 12,
+          "counterfactual_donor_native_letter_copied": 7,
+          "gains": 0,
+          "losses": 1,
+          "native_recipient_choice_preserved": 15,
+          "valid_A_B": 16
+        }
+      }
+    },
+    "original_segmented_native": {
+      "answer_orders": {
+        "coding_0": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 16,
+          "correct": 9,
+          "counterfactual_donor_native_letter_copied": 14,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 16,
+          "valid_A_B": 16
+        },
+        "coding_1": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 16,
+          "correct": 8,
+          "counterfactual_donor_native_letter_copied": 16,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 16,
+          "valid_A_B": 16
+        },
+        "retention_0": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 8,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 8,
+          "correct": 7,
+          "counterfactual_donor_native_letter_copied": 2,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 8,
+          "valid_A_B": 8
+        },
+        "retention_1": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 8,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 8,
+          "correct": 6,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 8,
+          "valid_A_B": 8
+        }
+      },
+      "families": {
+        "arithmetic_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "closure_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "closure_state_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "generator_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "larger_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 4,
+          "counterfactual_donor_native_letter_copied": 0,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "nested_alias_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "pairs_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 3,
+          "counterfactual_donor_native_letter_copied": 2,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "setdefault_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "short_circuit_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 3,
+          "counterfactual_donor_native_letter_copied": 2,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "slice_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "stable_sort_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "word_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 4,
+          "counterfactual_donor_native_letter_copied": 0,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        }
+      },
+      "roles": {
+        "coding": {
+          "A_minus_B_delta": {
+            "count": 32,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 32,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 32,
+          "correct": 17,
+          "counterfactual_donor_native_letter_copied": 30,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 32,
+          "valid_A_B": 32
+        },
+        "retention": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 16,
+          "correct": 13,
+          "counterfactual_donor_native_letter_copied": 6,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 16,
+          "valid_A_B": 16
+        }
+      }
+    },
+    "preceding_pair8_9_counterfactual_KV": {
+      "answer_orders": {
+        "coding_0": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 2.1875,
+            "mean": 0.1142578125,
+            "min": -1.484375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 2.1875,
+            "mean": 0.537109375,
+            "min": 0.0625
+          },
+          "contexts": 16,
+          "correct": 9,
+          "counterfactual_donor_native_letter_copied": 14,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 16,
+          "valid_A_B": 16
+        },
+        "coding_1": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 1.1875,
+            "mean": -0.1339111328125,
+            "min": -1.5
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 1.5,
+            "mean": 0.5731201171875,
+            "min": 0.015625
+          },
+          "contexts": 16,
+          "correct": 8,
+          "counterfactual_donor_native_letter_copied": 16,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 16,
+          "valid_A_B": 16
+        },
+        "retention_0": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 21.88916015625,
+            "mean": -1.18463134765625,
+            "min": -37.3125
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 8,
+            "max": 37.3125,
+            "mean": 13.95379638671875,
+            "min": 0.0
+          },
+          "contexts": 8,
+          "correct": 5,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 2,
+          "native_recipient_choice_preserved": 6,
+          "valid_A_B": 8
+        },
+        "retention_1": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 21.3671875,
+            "mean": 0.274658203125,
+            "min": -22.375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 8,
+            "max": 22.375,
+            "mean": 9.458251953125,
+            "min": 1.375
+          },
+          "contexts": 8,
+          "correct": 5,
+          "counterfactual_donor_native_letter_copied": 5,
+          "gains": 0,
+          "losses": 1,
+          "native_recipient_choice_preserved": 7,
+          "valid_A_B": 8
+        }
+      },
+      "families": {
+        "arithmetic_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 3.125,
+            "mean": 0.8125,
+            "min": -1.375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 3.125,
+            "mean": 1.5,
+            "min": 0.0
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "closure_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.15625,
+            "mean": -0.1171875,
+            "min": -0.46875
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.46875,
+            "mean": 0.2734375,
+            "min": 0.15625
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "closure_state_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.25,
+            "mean": 0.0234375,
+            "min": -0.25
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.25,
+            "mean": 0.1953125,
+            "min": 0.09375
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "generator_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.5,
+            "mean": -0.0625,
+            "min": -0.625
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.625,
+            "mean": 0.40625,
+            "min": 0.1875
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "larger_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 21.3671875,
+            "mean": -3.423828125,
+            "min": -37.3125
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 37.3125,
+            "mean": 20.357421875,
+            "min": 10.25
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 2,
+          "gains": 0,
+          "losses": 2,
+          "native_recipient_choice_preserved": 2,
+          "valid_A_B": 4
+        },
+        "nested_alias_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.1875,
+            "mean": -0.25,
+            "min": -0.8125
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.8125,
+            "mean": 0.34375,
+            "min": 0.125
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "pairs_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 21.88916015625,
+            "mean": 4.0179443359375,
+            "min": -5.4287109375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 21.88916015625,
+            "mean": 8.0994873046875,
+            "min": 2.345703125
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 3,
+          "gains": 0,
+          "losses": 1,
+          "native_recipient_choice_preserved": 3,
+          "valid_A_B": 4
+        },
+        "setdefault_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 0.453125,
+            "mean": -0.04541015625,
+            "min": -0.8671875
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 0.8671875,
+            "mean": 0.38818359375,
+            "min": 0.015625
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "short_circuit_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 2.1875,
+            "mean": 0.1875,
+            "min": -1.5
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 2.1875,
+            "mean": 0.96875,
+            "min": 0.0625
+          },
+          "contexts": 4,
+          "correct": 3,
+          "counterfactual_donor_native_letter_copied": 2,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "slice_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 1.1875,
+            "mean": 0.15625,
+            "min": -1.125
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 1.1875,
+            "mean": 0.78125,
+            "min": 0.125
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "stable_sort_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 1.1640625,
+            "mean": 0.029296875,
+            "min": -1.484375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 1.484375,
+            "mean": 1.083984375,
+            "min": 0.625
+          },
+          "contexts": 4,
+          "correct": 2,
+          "counterfactual_donor_native_letter_copied": 4,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        },
+        "word_memory": {
+          "A_minus_B_delta": {
+            "count": 4,
+            "max": 13.71875,
+            "mean": -3.2265625,
+            "min": -22.375
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 4,
+            "max": 22.375,
+            "mean": 16.8671875,
+            "min": 13.5625
+          },
+          "contexts": 4,
+          "correct": 4,
+          "counterfactual_donor_native_letter_copied": 0,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 4,
+          "valid_A_B": 4
+        }
+      },
+      "roles": {
+        "coding": {
+          "A_minus_B_delta": {
+            "count": 32,
+            "max": 2.1875,
+            "mean": -0.00982666015625,
+            "min": -1.5
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 32,
+            "max": 2.1875,
+            "mean": 0.55511474609375,
+            "min": 0.015625
+          },
+          "contexts": 32,
+          "correct": 17,
+          "counterfactual_donor_native_letter_copied": 30,
+          "gains": 0,
+          "losses": 0,
+          "native_recipient_choice_preserved": 32,
+          "valid_A_B": 32
+        },
+        "retention": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 21.88916015625,
+            "mean": -0.454986572265625,
+            "min": -37.3125
+          },
+          "absolute_A_minus_B_delta": {
+            "count": 16,
+            "max": 37.3125,
+            "mean": 11.706024169921875,
+            "min": 0.0
+          },
+          "contexts": 16,
+          "correct": 10,
+          "counterfactual_donor_native_letter_copied": 9,
+          "gains": 0,
+          "losses": 3,
+          "native_recipient_choice_preserved": 13,
+          "valid_A_B": 16
+        }
+      }
+    }
+  },
+  "contexts": 48,
+  "experiment": "N53",
+  "monolithic_segmented_full_cache_hash_matches_descriptive": 36,
+  "monolithic_segmented_full_logits_hash_matches_descriptive": 36,
+  "new_intervention_records": 144,
+  "new_literal_label_comparisons": 192,
+  "new_prefixes": 24,
+  "scope": "Allfixedprogram-prefixcacheconditions/nativecounterfactualdonors beforevisibleoptions;formalconditionalcachecontrolnotindividualmeaning,mediation,speed,freshconfirmationorusefulfullprogramgain. Monolithic/segmentedargmaxmatchesgated,fullnumericalequivalenceNOTclaimed. No hiddenlabelsororaclesGPUuploaded.",
+  "status": "complete_host_audited"
+}

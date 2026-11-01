@@ -1849,6 +1849,60 @@ def reuse_final_ffn(model, mode):
         for handle in handles:
             handle.remove()
         frame.clear()
+</pre></details></article><article class="card tool" data-category="Edit weights"><span class="tag">Edit weights</span><h2>assay</h2><p>Paired prescribed up/down sign gauge with original Parameter restoration. The prescribed uniform paired up/down sign gauge passes every tested context. It makes direct Parameter-reference assignments and restores original objects and bytes. Known native coordinate symmetry, not individual meaning or useful coding improvement.</p><p><a href="../research/experiments/n54/assay.py">Exact source file</a></p><p class="small">APIs: UniformSignGauge, run, one_case</p><p class="hash">SHA-256 d620bb4e46aec4369737df05891f11f37b30baff9f4f6b39ef932508426b2d52</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Paired prescribed up/down sign gauge with original Parameter restoration.&quot;&quot;&quot;
+from contextlib import contextmanager
+import torch
+from transformers.cache_utils import DynamicCache
+from research.experiments.n35.core import tensor_sha
+from research.experiments.n49.assay import site,observe
+from research.experiments.n37.continuation import decision
+from research.experiments.n48.assay import choice_metrics
+
+class UniformSignGauge:
+    def __init__(self,model,count=lambda name:None):
+        block,_=site(model);self.block=block;self.count=count;self.original={k:getattr(block.mlp,k).weight for k in [&#x27;up_proj&#x27;,&#x27;down_proj&#x27;]};self.hashes={k:tensor_sha(p) for k,p in self.original.items()};self.versions={k:p._version for k,p in self.original.items()};self.negative={}
+        for k,p in self.original.items():
+            if p.requires_grad or p.grad is not None:raise ValueError(&#x27;Frozen native original parameters required&#x27;)
+            count(&#x27;negative_weight_tensor_negations&#x27;);value=p.detach().neg();count(&#x27;negative_weight_Parameter_constructions&#x27;);self.negative[k]=torch.nn.Parameter(value,requires_grad=False)
+        self.negative_hashes={k:tensor_sha(p) for k,p in self.negative.items()};self.gate_hash=tensor_sha(block.mlp.gate_proj.weight)
+        if any(self.negative[k].untyped_storage().data_ptr()==p.untyped_storage().data_ptr() for k,p in self.original.items()):raise ValueError(&#x27;Native and prescribed negative weights alias&#x27;)
+    def witness(self):
+        return {&#x27;original_parameter_sha256&#x27;:self.hashes,&#x27;original_parameter_versions&#x27;:self.versions,&#x27;negative_parameter_sha256&#x27;:self.negative_hashes,&#x27;negative_parameter_versions&#x27;:{k:p._version for k,p in self.negative.items()},&#x27;gate_parameter_sha256&#x27;:self.gate_hash,&#x27;all_parameter_grad_buffers_absent&#x27;:all(p.grad is None and not p.requires_grad for p in [*self.original.values(),*self.negative.values()]),&#x27;negative_parameter_storage_nonaliasing&#x27;:True}
+    def native_ok(self):
+        return all(getattr(self.block.mlp,k).weight is p and tensor_sha(p)==self.hashes[k] and p._version==self.versions[k] and not p.requires_grad and p.grad is None for k,p in self.original.items()) and tensor_sha(self.block.mlp.gate_proj.weight)==self.gate_hash
+    @contextmanager
+    def installed(self):
+        if not self.native_ok():raise ValueError(&#x27;Actual native parameter references/bytes/versions changed&#x27;)
+        try:
+            for k,p in self.negative.items():
+                if tensor_sha(p)!=self.negative_hashes[k] or p.requires_grad or p.grad is not None:raise ValueError(&#x27;Prescribed negative source mutated&#x27;)
+                self.count(&#x27;manual_parameter_assignments&#x27;);getattr(self.block.mlp,k).weight=p
+            if tensor_sha(self.block.mlp.gate_proj.weight)!=self.gate_hash:raise ValueError(&#x27;Gate parameter changed&#x27;)
+            yield
+        finally:
+            for k,p in self.original.items():self.count(&#x27;manual_parameter_assignments&#x27;);getattr(self.block.mlp,k).weight=p
+            if not self.native_ok():raise ValueError(&#x27;Actual original parameter references/bytes/versions not restored&#x27;)
+
+def run(model,encoded,answers):
+    slots=model.config.text_config.num_hidden_layers-model.config.text_config.num_kv_shared_layers
+    with torch.no_grad(),observe(model) as captured:
+        output=model(**encoded,past_key_values=DynamicCache(config=model.config.text_config),use_cache=True,logits_to_keep=1);d,cache=decision(output,0,slots,str(next(model.parameters()).dtype));metrics=choice_metrics(output.logits[0,-1],answers);logits=output.logits[0,-1].detach().float().cpu()
+    if not torch.isfinite(captured[&#x27;h&#x27;]).all():raise ValueError(&#x27;Finite observed actual h required&#x27;)
+    return {&#x27;decision&#x27;:d,&#x27;activation&#x27;:captured[&#x27;activation&#x27;],&#x27;metrics&#x27;:metrics},cache,captured[&#x27;h&#x27;],logits
+
+def one_case(model,encoded,answers,parent,gauge,count=lambda name:None):
+    caught=None;gauged=None
+    try:
+        with gauge.installed():
+            count(&#x27;gauged_forwards&#x27;);gauged,gcache,h,glogits=run(model,encoded,answers);count(&#x27;auxiliary_measured_h_negations&#x27;);back=h.detach().neg();observed={&#x27;gauged_full_h_sha256&#x27;:tensor_sha(h),&#x27;negative_back_full_h_sha256&#x27;:tensor_sha(back),&#x27;negative_back_current_h_sha256&#x27;:tensor_sha(back[0,-1]),&#x27;actual_gauged_parameter_witness&#x27;:gauge.witness()}
+    except BaseException as error:caught=error
+    finally:
+        count(&#x27;native_restoration_forwards&#x27;);restored,cache,native_h,nlogits=run(model,encoded,answers)
+        if restored!=parent[&#x27;original&#x27;] or cache!=parent[&#x27;native_first_full_cache&#x27;] or tensor_sha(native_h)!=parent[&#x27;native_full_h_sha256&#x27;] or not gauge.native_ok():raise ValueError(&#x27;Actual native full restoration failed&#x27;)
+    if caught is not None:raise caught
+    primary={&#x27;full_FP32_logits_hash_unchanged&#x27;:gauged[&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;]==parent[&#x27;original&#x27;][&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;],&#x27;full_KV_cache_unchanged&#x27;:gcache==cache,&#x27;full_h_sign_reversal_exact&#x27;:observed[&#x27;negative_back_full_h_sha256&#x27;]==parent[&#x27;native_full_h_sha256&#x27;],&#x27;current_h_sign_reversal_exact&#x27;:observed[&#x27;negative_back_current_h_sha256&#x27;]==parent[&#x27;original&#x27;][&#x27;activation&#x27;][&#x27;native_h_sha256&#x27;]}
+    diff=(glogits-nlogits).abs()
+    return {&#x27;parent_binding&#x27;:parent[&#x27;binding&#x27;],&#x27;carried_native&#x27;:parent[&#x27;original&#x27;],&#x27;gauged&#x27;:gauged,&#x27;gauged_cache&#x27;:gcache,&#x27;restored_native&#x27;:restored,&#x27;native_cache&#x27;:cache,&#x27;observed&#x27;:observed,&#x27;primary_components&#x27;:primary,&#x27;joint_primary_pass&#x27;:all(primary.values()),&#x27;full_FP32_logit_delta&#x27;:{&#x27;max_absolute&#x27;:float(diff.max()),&#x27;mean_absolute&#x27;:float(diff.mean()),&#x27;nonzero_logits&#x27;:int(torch.count_nonzero(diff))},&#x27;actual_original_parameter_references_restored&#x27;:gauge.native_ok(),&#x27;parameter_source_witness&#x27;:gauge.witness(),&#x27;new_candidate_grades&#x27;:0,&#x27;new_emitted_tokens&#x27;:0,&#x27;backward_calls&#x27;:0,&#x27;optimizer_steps&#x27;:0,&#x27;activation_value_assignments&#x27;:0}
 </pre></details></article><article class="card tool" data-category="Edit weights"><span class="tag">Edit weights</span><h2>stored_neuron_gain</h2><p>Prescribed dense native-column assignments, with exact restoration.</p><p><a href="../interpretability/stored_neuron_gain.py">Exact source file</a></p><p class="small">APIs: tensor_sha, stored_neuron_gain</p><p class="hash">SHA-256 6169b400b3f2a2a8d54010413e07324925ebb7ef2c4541f26eda3bbb73aa8f88</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Prescribed dense native-column assignments, with exact restoration.&quot;&quot;&quot;
 from contextlib import contextmanager
 import hashlib
@@ -2177,6 +2231,82 @@ def insert_branch(module,branch,placement):
     handle=module.register_forward_hook(hook)
     try:yield receipt
     finally:handle.remove()
+</pre></details></article><article class="card tool" data-category="Edit connections"><span class="tag">Edit connections</span><h2>assay</h2><p>Exact native prefix-cache copies; no weights, gradients or learned alignment. Complete prefix-memory audit passes. Both fixed partial producer-pair swaps preserve every coding choice; whole-prefix copying reproduces the donor but yields no coding gains. Monolithic and segmented full-logit/cache equivalence is not established.</p><p><a href="../research/experiments/n53/assay.py">Exact source file</a></p><p class="small">APIs: sites, forward, capture, branch_run, native_case, edited_case</p><p class="hash">SHA-256 3eb6d8562e08087338a24c958c913bb9241b0cd707897dd50fec56a5174adff8</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Exact native prefix-cache copies; no weights, gradients or learned alignment.&quot;&quot;&quot;
+import copy
+import torch
+from transformers.cache_utils import DynamicCache
+from interpretability.native_cache_branch import fingerprint,_storages
+from research.experiments.n37.continuation import decision
+from research.experiments.n48.assay import choice_metrics
+
+MODES=(&#x27;all15_counterfactual_prefix_KV&#x27;,&#x27;last_shared_pair13_14_counterfactual_KV&#x27;,&#x27;preceding_pair8_9_counterfactual_KV&#x27;)
+
+def sites(model):
+    c=model.config.text_config;entries=c.num_hidden_layers-c.num_kv_shared_layers
+    if entries!=15:
+        raise ValueError(&#x27;Pinned native 15-entry sliding/full architecture required&#x27;)
+    if not (c.layer_types[8]==c.layer_types[13]==&#x27;sliding_attention&#x27; and c.layer_types[9]==c.layer_types[14]==&#x27;full_attention&#x27;):
+        raise ValueError(&#x27;Exact architectural shared/preceding producer pairs required&#x27;)
+    if any(p.requires_grad or p.grad is not None for p in model.parameters()):raise ValueError(&#x27;Frozen native parameters required&#x27;)
+    return {&#x27;all15_counterfactual_prefix_KV&#x27;:list(range(15)),&#x27;last_shared_pair13_14_counterfactual_KV&#x27;:[13,14],&#x27;preceding_pair8_9_counterfactual_KV&#x27;:[8,9]}
+
+
+def forward(model,ids,answers,cache=None):
+    c=model.config.text_config;entries=c.num_hidden_layers-c.num_kv_shared_layers
+    if cache is None:cache=DynamicCache(config=c)
+    with torch.no_grad():value=model(input_ids=ids,past_key_values=cache,use_cache=True,logits_to_keep=1)
+    d,w=decision(value,0,entries,str(next(model.parameters()).dtype))
+    return {&#x27;decision&#x27;:d,&#x27;metrics&#x27;:choice_metrics(value.logits[0,-1],answers),&#x27;cache&#x27;:w},value.past_key_values
+
+
+def capture(model,ids,answers,count):
+    sites(model);count(&#x27;native_prefix_source_forwards&#x27;);record,cache=forward(model,ids,answers)
+    witness=fingerprint(cache,15,ids.numel(),next(model.parameters()).dtype)
+    return {&#x27;record&#x27;:record,&#x27;prefix_fingerprint&#x27;:witness,&#x27;prefix_tokens&#x27;:ids.numel()},cache
+
+
+def branch_run(model,ids,answers,recipient,donor,mode,length,count):
+    mapping=sites(model);dtype=next(model.parameters()).dtype
+    before=fingerprint(recipient,15,length,dtype);other=fingerprint(donor,15,length,dtype);count(&#x27;cache_clone_constructions&#x27;);branch=copy.deepcopy(recipient)
+    if fingerprint(branch,15,length,dtype)!=before or _storages(branch)&amp;(_storages(recipient)|_storages(donor)):
+        raise ValueError(&#x27;Actual native nonaliasing cache clone required&#x27;)
+    indices=[] if mode==&#x27;identity&#x27; else mapping[mode]
+    try:
+        for i in indices:
+            for name in [&#x27;keys&#x27;,&#x27;values&#x27;]:
+                a,b=getattr(branch.layers[i],name),getattr(donor.layers[i],name)
+                if a.shape!=b.shape or a.dtype!=b.dtype or a.device!=b.device:raise ValueError(&#x27;Aligned native source shapes required,no fitted alignment&#x27;)
+                setattr(branch.layers[i],name,b.detach().clone());count(&#x27;prefix_KV_tensor_assignments&#x27;)
+        edited=fingerprint(branch,15,length,dtype)
+        if any(edited[&#x27;layers&#x27;][i]!=(other if i in indices else before)[&#x27;layers&#x27;][i] for i in range(15)):
+            raise ValueError(&#x27;Selected donor and nonselected recipient cache bytes differ&#x27;)
+        if _storages(branch)&amp;(_storages(recipient)|_storages(donor)):raise ValueError(&#x27;Edited branch aliases native sources&#x27;)
+        record,cache=forward(model,ids,answers,branch)
+        fingerprint(cache,15,length+ids.numel(),dtype)
+        return record,{&#x27;mode&#x27;:mode,&#x27;selected_entries&#x27;:indices,&#x27;K_V_tensor_assignments&#x27;:2*len(indices),&#x27;recipient_prefix_sha256&#x27;:before[&#x27;sha256&#x27;],&#x27;donor_prefix_sha256&#x27;:other[&#x27;sha256&#x27;],&#x27;edited_prefix_sha256&#x27;:edited[&#x27;sha256&#x27;],&#x27;selected_donor_nonselected_recipient_exact&#x27;:True,&#x27;source_nonaliasing&#x27;:True,&#x27;prefix_tokens&#x27;:length,&#x27;suffix_tokens&#x27;:ids.numel()}
+    finally:
+        if fingerprint(recipient,15,length,dtype)!=before or fingerprint(donor,15,length,dtype)!=other:raise ValueError(&#x27;Native source cache mutated&#x27;)
+
+
+def native_case(model,full,suffix,answers,cache,length,count):
+    count(&#x27;native_monolithic_guards&#x27;);full_record,_=forward(model,full,answers)
+    count(&#x27;native_segmented_source_forwards&#x27;);record,w=branch_run(model,suffix,answers,cache,cache,&#x27;identity&#x27;,length,count)
+    if full_record[&#x27;decision&#x27;][&#x27;argmax&#x27;]!=record[&#x27;decision&#x27;][&#x27;argmax&#x27;] or full_record[&#x27;metrics&#x27;][&#x27;choice&#x27;]!=record[&#x27;metrics&#x27;][&#x27;choice&#x27;]:
+        raise ValueError(&#x27;Every native segmented/monolithic full-vocabulary choice must match&#x27;)
+    return {&#x27;original&#x27;:record,&#x27;monolithic&#x27;:full_record,&#x27;native_branch&#x27;:w,&#x27;full_logits_hash_equal_descriptive&#x27;:full_record[&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;]==record[&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;],&#x27;full_cache_hash_equal_descriptive&#x27;:full_record[&#x27;decision&#x27;][&#x27;cache_sha256&#x27;]==record[&#x27;decision&#x27;][&#x27;cache_sha256&#x27;]}
+
+
+def edited_case(model,suffix,answers,recipient,donor,length,own_native,donor_native,count):
+    count(&#x27;identity_suffix_guards&#x27;);identity,identity_w=branch_run(model,suffix,answers,recipient,recipient,&#x27;identity&#x27;,length,count)
+    if identity!=own_native[&#x27;original&#x27;]:raise ValueError(&#x27;Identity cached suffix differs from actual native source&#x27;)
+    records={};restores={}
+    for mode in MODES:
+        count(&#x27;edited_suffix_decisions&#x27;);record,w=branch_run(model,suffix,answers,recipient,donor,mode,length,count)
+        if mode==MODES[0] and record!=donor_native[&#x27;original&#x27;]:raise ValueError(&#x27;Whole-prefix control differs from actual donor native source&#x27;)
+        records[mode]={&#x27;record&#x27;:record,&#x27;cache_edit&#x27;:w};count(&#x27;native_restoration_forwards&#x27;);restored,restore_w=branch_run(model,suffix,answers,recipient,recipient,&#x27;identity&#x27;,length,count)
+        if restored!=own_native[&#x27;original&#x27;]:raise ValueError(&#x27;Actual native cached restoration differs&#x27;)
+        restores[mode]={&#x27;record&#x27;:restored,&#x27;cache_branch&#x27;:restore_w}
+    return {&#x27;carried_native&#x27;:own_native,&#x27;identity&#x27;:{&#x27;record&#x27;:identity,&#x27;cache_branch&#x27;:identity_w},&#x27;edits&#x27;:records,&#x27;restorations&#x27;:restores,&#x27;all15_positive_control_exact&#x27;:True,&#x27;parameter_assignments&#x27;:0,&#x27;MLP_activation_assignments&#x27;:0,&#x27;backward_calls&#x27;:0,&#x27;optimizer_steps&#x27;:0,&#x27;new_emitted_tokens&#x27;:0}
 </pre></details></article><article class="card tool" data-category="Edit connections"><span class="tag">Edit connections</span><h2>memory_connection</h2><p>A fixed copied-projection memory connection. No training or fitted vectors.
 
 This is a prototype for short causal contexts in the Gemma 4 implementation.
@@ -3333,6 +3463,86 @@ def compare(original, changed, original_grade, changed_grade):
         &#x27;control_delta&#x27;: {key: changed[&#x27;control_nodes&#x27;][key] - original[&#x27;control_nodes&#x27;][key]
                           for key in CONTROL_NODES},
     }
+</pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>generation</h2><p>Own-history native-EOS generation with prescribed numerator-only masks. All four numerator-only native-RMS policies pass new random references and boundary checks. The private pretrained panel is active; no utility outcome is available. Full caches are observed at response boundaries, not independently authenticated at every fresh token. Callers must provide actual resource and durable trace callbacks.</p><p><a href="../research/experiments/n55/generation.py">Exact source file</a></p><p class="small">APIs: cache_record, numerator_policy, generate</p><p class="hash">SHA-256 126c0cd50a086f84d0940be4cdfb37f4b9714051eea29c9a425acdd610610fcf</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Own-history native-EOS generation with prescribed numerator-only masks.&quot;&quot;&quot;
+from contextlib import contextmanager
+import hashlib
+import torch
+from transformers.cache_utils import DynamicCache
+from torch.nn import functional as F
+from interpretability.native_rms_factor_v2 import compose
+from interpretability.signed_native_mask import indices
+from interpretability.cache_proofs import check_cache
+from research.experiments.n19.trajectory import cache_witness
+from research.experiments.n35.core import tensor_sha
+from research.experiments.n49.assay import site
+
+EDITS=(&#x27;remove_negative&#x27;,&#x27;random_negative_count&#x27;,&#x27;remove_positive&#x27;,&#x27;random_positive_count&#x27;)
+
+
+def cache_record(model,cache):
+    value=cache_witness(cache)
+    check_cache(value,model.config.text_config.num_hidden_layers-model.config.text_config.num_kv_shared_layers,str(next(model.parameters()).dtype))
+    if any(v[&#x27;keys&#x27;] is None for v in value[&#x27;layers&#x27;]):raise ValueError(&#x27;All actual native KV producers required&#x27;)
+    return value
+
+
+@contextmanager
+def numerator_policy(model,mode,count):
+    if mode not in EDITS:raise ValueError(&#x27;Fixed numerator policy required&#x27;)
+    block,norm=site(model);pending={};frames=[]
+    def capture(module,args):
+        if pending or args[0].requires_grad:raise ValueError(&#x27;One aligned native h required&#x27;)
+        h=args[0][:,-1:,:].detach();selected=indices(h[0,0],mode);edited=h.clone();edited[0,0,selected]=0
+        count(&#x27;extra_down_projection_evaluations&#x27;)
+        raw=F.linear(edited,block.mlp.down_proj.weight,block.mlp.down_proj.bias)
+        pending.update(edited_raw=raw,mask={&#x27;native_h_sha256&#x27;:tensor_sha(h),&#x27;mask_sha256&#x27;:hashlib.sha256(str(selected).encode()).hexdigest(),&#x27;negative_count&#x27;:int((h&lt;0).sum()),&#x27;positive_count&#x27;:int((h&gt;0).sum()),&#x27;width&#x27;:h.numel(),&#x27;mask_count&#x27;:len(selected)})
+    def replace(module,args,output):
+        if not pending:raise ValueError(&#x27;Missing aligned native h&#x27;)
+        native=args[0][:,-1:,:].detach();q=(native.float().pow(2).mean(-1,keepdim=True)+module.eps).pow(-.5)
+        if tensor_sha(compose(module,native,q))!=tensor_sha(output[:,-1:,:]):raise ValueError(&#x27;Native RMS reconstruction failed&#x27;)
+        replacement=compose(module,pending[&#x27;edited_raw&#x27;],q);result=output.clone();count(&#x27;activation_assignments&#x27;);result[:,-1:,:].copy_(replacement)
+        other=tensor_sha(result[:,:-1])==tensor_sha(output[:,:-1])
+        if not other:raise ValueError(&#x27;Noncurrent norm output changed&#x27;)
+        frames.append({**pending[&#x27;mask&#x27;],&#x27;native_raw_sha256&#x27;:tensor_sha(native),&#x27;native_reciprocal_sha256&#x27;:tensor_sha(q),&#x27;native_norm_output_sha256&#x27;:tensor_sha(output[:,-1:,:]),&#x27;replacement_sha256&#x27;:tensor_sha(replacement),&#x27;other_positions_byte_exact&#x27;:True});pending.clear()
+        return result
+    handles=[block.mlp.down_proj.register_forward_pre_hook(capture),norm.register_forward_hook(replace)]
+    try:yield frames
+    finally:
+        for handle in reversed(handles):handle.remove()
+        if pending:raise ValueError(&#x27;Unfinished native RMS operation&#x27;)
+
+
+def generate(model,tokenizer,encoded,eos,mode,*,resource_guard,on_decision,count):
+    if mode not in EDITS or any(p.requires_grad or p.grad is not None for p in model.parameters()) or any(m.training for m in model.modules()):raise ValueError(&#x27;Fixed frozen inference policy required&#x27;)
+    c=model.config.text_config;n=int(encoded[&#x27;input_ids&#x27;].numel());maximum=c.max_position_embeddings
+    if encoded[&#x27;input_ids&#x27;].shape!=(1,n) or n&lt;1 or type(maximum)is not int or not eos or any(type(t)is not int or not 0&lt;=t&lt;c.vocab_size for t in eos):raise ValueError(&#x27;Exact single prompt/native boundaries required&#x27;)
+    versions={k:p._version for k,p in model.named_parameters()};cache=DynamicCache(config=c);ids=[];first=last=None;attempts=exposures=0;interruption=None;termination=&#x27;interrupted&#x27;
+    try:
+        with torch.no_grad(),numerator_policy(model,mode,count)as frames:
+            while True:
+                interruption=resource_guard()
+                if interruption is not None:
+                    if not isinstance(interruption,dict)or &#x27;reason&#x27;not in interruption or &#x27;evidence&#x27;not in interruption:raise ValueError(&#x27;Actual resource evidence required&#x27;)
+                    break
+                step=len(ids)
+                if n+step&gt;maximum:interruption={&#x27;reason&#x27;:&#x27;context_exhausted&#x27;,&#x27;evidence&#x27;:{&#x27;configured_context&#x27;:maximum,&#x27;next_required_input_length&#x27;:n+step}};break
+                args=encoded if step==0 else{&#x27;input_ids&#x27;:torch.tensor([[ids[-1]]],device=encoded[&#x27;input_ids&#x27;].device)}
+                attempts+=1;exposures+=n if step==0 else 1
+                try:
+                    output=model(**args,past_key_values=cache,use_cache=True,logits_to_keep=1);cache=output.past_key_values
+                    logits=output.logits[0,-1].detach()
+                    if not torch.isfinite(logits).all()or str(logits.dtype)!=str(next(model.parameters()).dtype):raise ValueError(&#x27;Finite native raw logits required&#x27;)
+                    if len(frames)!=1:raise ValueError(&#x27;One actual current numerator assignment perforward required&#x27;)
+                    token=int(logits.argmax());event={&#x27;step&#x27;:step,&#x27;argmax&#x27;:token,&#x27;full_logits_sha256&#x27;:tensor_sha(logits.float()),&#x27;raw_logits_dtype&#x27;:str(logits.dtype),&#x27;consumed_previous_token&#x27;:None if step==0 else ids[-1],&#x27;consumed_input_length&#x27;:n+step,&#x27;mask&#x27;:frames.pop()}
+                    if step==0:first=cache_record(model,cache)
+                except torch.OutOfMemoryError:
+                    interruption={&#x27;reason&#x27;:&#x27;memory_exhausted&#x27;,&#x27;evidence&#x27;:{&#x27;during_forward_or_witness&#x27;:True}};break
+                ids.append(token);count(&#x27;fresh_choices&#x27;);on_decision(event)
+                if token in eos:termination=&#x27;eos&#x27;;interruption=None;break
+            if ids:last=cache_record(model,cache)
+    finally:
+        if versions!={k:p._version for k,p in model.named_parameters()}or any(p.requires_grad or p.grad is not None for p in model.parameters()):raise ValueError(&#x27;Frozen parameter state changed&#x27;)
+    return {&#x27;generated_ids&#x27;:ids,&#x27;text&#x27;:tokenizer.decode(ids,skip_special_tokens=True),&#x27;generated_tokens&#x27;:len(ids),&#x27;fresh_choices&#x27;:len(ids),&#x27;old_cell_carries&#x27;:0,&#x27;first_cache&#x27;:first,&#x27;terminal_cache&#x27;:last,&#x27;complete&#x27;:termination==&#x27;eos&#x27;,&#x27;termination&#x27;:termination,&#x27;interruption&#x27;:interruption,&#x27;new_response_token_ceiling&#x27;:None,&#x27;configured_context&#x27;:maximum,&#x27;input_tokens&#x27;:n,&#x27;attempted_forward_calls&#x27;:attempts,&#x27;input_token_exposures&#x27;:exposures,&#x27;per_token_whole_cache_authenticated&#x27;:False}
 </pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>generation</h2><p>Native-EOS persistent policies with exact, conditional completed-cell carries. New carry, fresh-decision, native-EOS and context-interruption checks pass on random models. The N47 pretrained panel ended resource incomplete; all finite effects are censored and no utility result is available. Callers must bind trusted completed-cell provenance and actual resource checks. Carries require the entire consumed history to match.</p><p><a href="../research/experiments/n47/generation.py">Exact source file</a></p><p class="small">APIs: eligible, generate</p><p class="hash">SHA-256 aead27ad4bb3452549091fbe0d9a789ba5611e1fccb21d07a07ad78445d75fd3</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Native-EOS persistent policies with exact, conditional completed-cell carries.&quot;&quot;&quot;
 import copy
 import torch

@@ -1,0 +1,25 @@
+{
+  "actual_counters": {
+    "MLP_activation_assignments": 0,
+    "backward_calls": 0,
+    "cache_clone_constructions": 384,
+    "calls": 456,
+    "edited_suffix_decisions": 144,
+    "identity_suffix_guards": 48,
+    "input_token_exposures": 16092,
+    "manual_parameter_assignments": 0,
+    "native_monolithic_guards": 48,
+    "native_prefix_source_forwards": 24,
+    "native_restoration_forwards": 144,
+    "native_segmented_source_forwards": 48,
+    "new_emitted_tokens": 0,
+    "optimizer_steps": 0,
+    "prefix_KV_tensor_assignments": 1824
+  },
+  "all48_complete_all15_positive_controls_exact": true,
+  "new_literal_label_comparisons": 192,
+  "old_scorer_model_tokenizer_executor_calls": 0,
+  "public_aggregate_sha256": "aa6aa30fde7f467e6a4f4169641ef8fd49213494bef8ad61d264bb421c35e7d2",
+  "status": "complete_pass_all_frozen_guards",
+  "utc": "2026-11-01T17:31:51.431512+00:00"
+}

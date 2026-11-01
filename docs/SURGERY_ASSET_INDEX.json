@@ -201,6 +201,16 @@
     },
     {
       "category": "Edit weights",
+      "path": "research/experiments/n54/assay.py",
+      "sha256": "d620bb4e46aec4369737df05891f11f37b30baff9f4f6b39ef932508426b2d52",
+      "symbols": [
+        "UniformSignGauge",
+        "run",
+        "one_case"
+      ]
+    },
+    {
+      "category": "Edit weights",
       "path": "interpretability/stored_neuron_gain.py",
       "sha256": "6169b400b3f2a2a8d54010413e07324925ebb7ef2c4541f26eda3bbb73aa8f88",
       "symbols": [
@@ -240,6 +250,19 @@
       "symbols": [
         "NewGatedNeurons",
         "insert_branch"
+      ]
+    },
+    {
+      "category": "Edit connections",
+      "path": "research/experiments/n53/assay.py",
+      "sha256": "3eb6d8562e08087338a24c958c913bb9241b0cd707897dd50fec56a5174adff8",
+      "symbols": [
+        "sites",
+        "forward",
+        "capture",
+        "branch_run",
+        "native_case",
+        "edited_case"
       ]
     },
     {
@@ -369,6 +392,16 @@
         "observe",
         "saved_outcome",
         "compare"
+      ]
+    },
+    {
+      "category": "Generate and resume",
+      "path": "research/experiments/n55/generation.py",
+      "sha256": "126c0cd50a086f84d0940be4cdfb37f4b9714051eea29c9a425acdd610610fcf",
+      "symbols": [
+        "cache_record",
+        "numerator_policy",
+        "generate"
       ]
     },
     {

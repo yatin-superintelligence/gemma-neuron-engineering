@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-01T17:22:47.084908+00:00",
+  "before_launch_and_any_N53_pretrained_outputs": true,
+  "actual_files": 1499,
+  "analysis_plan_sha256": "d7f34e63eafd3350a91df6ae1682b59ac76c8775d92cde1b88cda67d1afa7764",
+  "protocol_sha256": "5169aa175ce4a38870a9aadd20e7d60a8e9adcc6cee8fdeb86f071a1388218f0",
+  "auditor_sha256": "e1b95ba708caa205d68f9fc8c0ecb2da7eaab0dc62331a2454e8cc6299a38424",
+  "active_auditor": "research/experiments/n53/audit_v2.py",
+  "active_collector": "scripts.collect_n53_outputs_v2",
+  "notebook_sha256": "75d7d2164b3724c02afb3e2964526cf9b0de0adceba62edf58d642673a982cfa",
+  "payload_sha256": "efb969e38db1c50f872096dfd837503b2e5f66833c6f8945f9c055c42bb3256c",
+  "optimizer_steps": 0
+}

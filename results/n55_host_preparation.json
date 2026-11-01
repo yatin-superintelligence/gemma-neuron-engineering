@@ -1,0 +1,14 @@
+{
+  "scope": "NEW random-model and literal checks only; no pretrained outcome.",
+  "trajectory_random_forwards": 74,
+  "trajectory_exposures": 126,
+  "independent_reference_choices": 24,
+  "literal_head_zero_initializations": 2,
+  "separate_NEW_native_restoration_forwards": 6,
+  "separate_restoration_exposures": 27,
+  "literal_positive_records": 1,
+  "targeted_refusals": 33,
+  "old_fixtures_repeated": 0,
+  "pretrained_host_model_calls": 0,
+  "optimizer_steps": 0
+}

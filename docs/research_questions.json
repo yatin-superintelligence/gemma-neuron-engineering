@@ -1124,9 +1124,87 @@
         "result": "New FP32/BF16 random contexts pass four VJP comparisons including two independent references, ten forwards including refusals, and absent parameter gradients/unchanged values and versions. One new literal auditor case and 28 targeted refusals pass. All 1,340 sources and inherited files frozen; no pretrained N52 measurements yet. Version 1 exact private server source and single ready private dataset verified. Runtime effects unknown.",
         "direction_decision": "One private version1 active;five launch allowances remain. Atterminalvalidate1340sources,then singlecollector andoriginalfrozenauditonlyifwholepanelcomplete. No partial effects."
       }
+    },
+    {
+      "id": "Q68",
+      "experiment": "N53: program-prefix KV memory",
+      "status": "complete_host_audited_closed",
+      "question": "Can the shared KV producer pair transmit a counterfactual program input before answer options appear?",
+      "question_provenance": "N51 residual swaps broadly copy answer letters; N52 activation sign mixes local support and suppression. This tests stored prefix memory at an architectural sharing boundary, with a preceding matched-type pair and whole-prefix substitution control. It does not repeat the closed current-MLP binding studies.",
+      "parents": [
+        "Q66",
+        "Q67"
+      ],
+      "method": "All 48 new contexts: eight coding and four retention families, two fixed input variants and two answer orders. Native actual equal-length prefix caches are captured before visible options. Three interventions copy all 15 KV entries, the last shared producer pair 13/14, or the preceding same-type pair 8/9. Expected work: 456 forwards,16,092 input exposures,384 cache clones and1,824 K/V tensor assignments. No parameter,MLP,gradient or optimizer update.",
+      "result": "All 48 contexts, 24 prefixes and 144 new KV interventions pass the single frozen auditor v2. Actual work is 456 forwards, 16,092 exposures, 384 cache clones and 1,824 K/V tensor assignments, with zero MLP or parameter assignments, backward calls, optimizer steps or emitted tokens. Native coding is 17/32 and retention 13/16. Both partial pairs preserve all 32 coding choices, with zero gains or losses. Every whole-prefix copy exactly matches donor full FP32 logits and cache.",
+      "interpretation": "Whole-prefix coding scores 15/32 with zero gains and two losses. Counterfactual donor and recipient choices already agree in 30/32 cases, so broad semantic choice transfer is not shown. Retention scores are whole-prefix 3/16, last shared pair 12/16 and preceding pair 10/16, versus native 13/16; every change is a loss. Monolithic and segmented native argmax match in all 48 contexts, while their full-logit and cache hashes match in 36/48. Numerical equivalence was not claimed. No individual meaning, mediation or useful coding gain is established.",
+      "next_question": "Can a prescribed paired sign flip of the native MLP up and down projections reverse h signs while preserving tested outputs?",
+      "direction_decision": "Close N53. Register N54 from the complete N52 evidence: a native coordinate gauge with a fixed uniform sign flip. Select no signs or strengths from gradients and rerun no old masks. Six experiments are closed and four launch allowances remain.",
+      "historical_prelaunch_result": "New FP32/BF16 random native caches pass 12 independent all-entry/partial-pair copies,52 forwards and392 exposures. Two new prefix,two native and two recipient literal cases pass 31 targeted refusals. All1,499 scientific and inherited files are frozen. The exact 33-source/nine-input payload imports with zero model/tokenizer/fixture construction. No pretrained N53 result yet.",
+      "historical_verified_active_snapshot": {
+        "status": "private_version1_active_no_outputs_accessed",
+        "result": "New FP32/BF16 random native caches pass 12 independent all-entry/partial-pair copies,52 forwards and392 exposures. Two new prefix,two native and two recipient literal cases pass 31 targeted refusals. All1,499 scientific and inherited files are frozen. The exact 33-source/nine-input payload imports with zero model/tokenizer/fixture construction. No pretrained N53 result yet. Version 1 exact private server source and single ready private dataset verified. No output or live counter accessed.",
+        "direction_decision": "One private version1 active. Six launches,five complete,four allowances remain. At terminal validate1499sources andallparents,then singlecollector_v2 and frozenauditor_v2 only afterwholepanelcomplete. No partialeffects."
+      }
+    },
+    {
+      "id": "Q69",
+      "experiment": "N54: native sign-coordinate gauge",
+      "status": "complete_host_audited_closed_joint_primary_pass",
+      "question": "Can a prescribed paired up/down weight sign flip reverse native activation signs while preserving tested outputs?",
+      "question_provenance": "N52 finds both supporting and suppressing contributions in each h-sign group. N53 partial prefix-cache pairs change no coding choice. This tests a native gated-MLP algebraic symmetry,not another utility mask,site,dose or case sweep.",
+      "parents": [
+        "Q67",
+        "Q68"
+      ],
+      "method": "Retain all 24 N48 contexts. Keep gate weights unchanged and apply a fixed uniform negative identity to native final-MLP up and down matrices. Restore original Parameter objects, bytes and versions after every case. Expected work is 48 forwards, 4,540 exposures, 96 direct parameter-reference assignments, four negative weight Parameter constructions and 24 auxiliary measured h negations. No optimizer, backward or gradient computation, activation-value assignment or new grading is used. No old masked cell is rerun.",
+      "result": "All 24 contexts pass every frozen engineering guard and the joint numerical primary. Full FP32 logits and whole KV caches remain byte-identical while full and current h reverse sign exactly. Actual work is 48 forwards, 4,540 exposures, 96 direct parameter-reference assignments, four negative weight Parameter constructions and 24 auxiliary h negations. All original objects, bytes and versions are restored. No optimizer, backward, emitted token or new grade is used.",
+      "interpretation": "Strict negative and positive unit counts swap without changing any tested output. This verifies the prescribed native up/down coordinate gauge on this panel. It establishes no arbitrary MLP rotation, new method, individual meaning or coding gain. No old masked cell is rerun or relabelled as a newly measured gauged mask.",
+      "next_question": "Does the native-RMS numerator mechanism support complete program utility under persistent free generation, with both matched random controls?",
+      "direction_decision": "Close N54. Register N55 with all 96 N41 original replies and grades carried exactly, and all four native-RMS numerator policies. Native EOS only; whole-panel audit before new unique candidate grading. Reused development and mechanism selection are explicit. Seven experiments are closed and three allowances remain.",
+      "historical_prelaunch_result": "The first independent reference harness refused its own method override through a native-only observer;originalfailure/source frozen. New seed5415 contexts use an independent observer and pass two FP32/BF16 gauge references,eight forwards and384exposures. A new literal case and a valid numerical primary failure are both accepted;28 targeted refusals pass. All1,746scientific/parentfiles frozen. Exact35source/nine-input package imports with zero model/tokenizer/fixture construction. No pretrained N54 result yet.",
+      "historical_verified_active_snapshot": {
+        "status": "private_version1_active_no_outputs_accessed",
+        "result": "The first reference harness refused an overridden method through its native-only observer; its original failure and sources are preserved. New seed 5415 contexts use an independent observer and pass two FP32/BF16 gauge references, eight forwards and 384 exposures. The new auditor accepts both a complete literal case and a valid numerical primary failure, and passes 28 targeted refusals. All 1,746 scientific and parent files are frozen. The exact 35-source, nine-input payload imports with no model, tokenizer or fixture construction. Private version 1 source and dataset are verified; no output or live counter has been accessed.",
+        "direction_decision": "One private version 1 is active. Seven experiments have launched, six are complete and three allowances remain. At terminal status, validate every frozen source and parent, then collect once and invoke the original frozen auditor only for a complete panel. A finite numerical primary failure remains a result."
+      }
+    },
+    {
+      "id": "Q70",
+      "experiment": "N55: persistent native-RMS program utility",
+      "status": "private_version1_active_no_outputs_accessed",
+      "question": "Can persistent signed numerator removal with native RMS improve complete coding responses while preserving every originally correct coding and retention case?",
+      "question_provenance": "N49 separated finite numerator and scale effects. N52 and N54 caution that activation sign is neither local support nor basis-invariant meaning. This tests full-response utility of a fixed native-basis policy, with all controls and cases retained.",
+      "parents": [
+        "Q64",
+        "Q67",
+        "Q69"
+      ],
+      "method": "Carry all 96 original N41A replies and grades exactly. Generate 384 new native-EOS responses under all four signed/cardinality-random numerator policies. At every actual own-history decision preserve the native reciprocal RMS and direct gamma. Only the current edited numerator replaces the final FFN norm output. No arbitrary response-token ceiling or parameter/gradient updates.",
+      "result": "No pretrained N55 output exists. New FP32/BF16 independent trajectories pass 74 forwards and 126 exposures, followed by separate new restoration contexts with six forwards and 27 exposures. The literal record auditor passes one positive and 33 refusals. The byte-exact package imports with zero model, tokenizer or fixture construction. All 1,909 actual source and parent files are frozen. Private version 1 source and its single ready private input dataset are verified. No output, partial or live counter has been accessed.",
+      "interpretation": "Prospective reused-development utility test, not fresh confirmation or individual meaning. N47 remains incomplete and censored; its standard postmask-RMS policy is not rerun or recovered. All finite effects remain pending complete frozen audit.",
+      "next_question": "Choose the ninth distinct experiment from complete available evidence without waiting on partial effects.",
+      "direction_decision": "Eight experiments have launched, seven are complete and two allowances remain. Keep one scientific GPU job active. At terminal status validate all 1,909 files, collect exactly once and dispatch the original frozen auditor only for the complete panel.",
+      "historical_prelaunch_result": "No pretrained N55 output exists. New FP32/BF16 independent trajectories pass 74 forwards and 126 exposures, followed by separate new restoration contexts with six forwards and 27 exposures. The literal record auditor passes one positive and 33 refusals. The byte-exact package imports with zero model, tokenizer or fixture construction. All 1,909 actual source and parent files are frozen."
+    },
+    {
+      "id": "Q71",
+      "experiment": "N56: native copied full-block composition",
+      "status": "new_random_host_validated_not_launched_N55_active",
+      "question": "Does a native copied attention, FFN and per-layer-input block provide a useful extra computation beyond an FFN-only copy?",
+      "question_provenance": "N51 found broad residual answer-state copying and no per-layer-only argmax change. N54 verified a known sign-coordinate symmetry. This moves to a distinct construction question with copied native computation, rather than another sign mask, site or dose.",
+      "parents": [
+        "Q66",
+        "Q69"
+      ],
+      "method": "Keep all 24 N48 contexts. Prepare separate full, FFN-only and silent native final-block copies. Zero only prescribed copied output norm weights; the silent copy also sets its layer-scalar buffer to one. Invoke the copied block on the actual native final output with the same per-layer input, positions, mask and shared KV, assigning only the current output. The base model remains intact.",
+      "result": "No pretrained N56 result exists. Two new FP32 and BF16 random contexts pass six independent explicit full-block references, with 22 full model forwards and 858 input exposures. Silent input/output, logits and caches match exactly. Native parameters, source copies, state and restoration pass. No old fixture is repeated.",
+      "interpretation": "This validates the new random-model execution path only. The construction is a known copied/silent depth-control idea, not a new method, semantic neuron role, complete-program improvement or resized transformer architecture. The copied block reads existing shared KV and reuses the original per-layer input.",
+      "next_question": "Complete the prospective source and provenance gates, then execute only after the active N55 job is terminal and closed.",
+      "direction_decision": "N56 is host preparation only while N55 runs. Eight experiments have launched under U26 and two launch allowances remain. U27 separately permits continued evidence-led research until 4:00:50 PM IST on 2 November."
     }
   ],
-  "active_question_id": "Q62",
-  "next_question_id": null,
-  "utc": "2026-11-01T11:15:22.425817+00:00"
+  "active_question_id": "Q70",
+  "next_question_id": "Q71",
+  "utc": "2026-11-01T18:41:06.616913+00:00"
 }

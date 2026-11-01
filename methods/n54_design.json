@@ -1,0 +1,43 @@
+{
+  "utc": "2026-11-01T17:36:23.913551+00:00",
+  "experiment": "N54",
+  "question": "Q69",
+  "title": "Native gated-MLP sign-coordinate gauge",
+  "motivation": "N52eachnativeh-sign mixeslocal supportandsuppression;N53prefixmemorypartialpairschange nocodingchoice. Testwhethernativeh signcanreverse undera prescribed algebraic function symmetry,notanotherutilitymask/site/dose/casesweep.",
+  "cohort": "ALL24N48contexts/16coding8retention/all12families/bothanswerorders carryexact. Reuseddevelopment,no newcases orcorrectnessfilter. No oldmaskcell reexecution oroldscorer.",
+  "mechanism": "Native finalMLP34 only: gate_proj unchanged,install W_up_new=-W_up_original andW_down_new=-W_down_original. Sinceh=act(gate(x))*up(x),thischangescoordinateh to-h andpairedlinearreadoutcancelssign algebraically. PrescribednegativeidentityonALLchannels,nofit/perchannelchoice/gradient/reordering/bridge. NativeFPprecision maybreakbitexactness;measureit.",
+  "parameter_policy": "Keeporiginalparameterobjects/bytes/versions immutable. Perworker create2detachednegativeweightnn.Parameter objects requires_gradFalseONCE. ForEACHcase install2newparameterreferences,run1gaugedforward,restore2actualoriginalparameterreferences,runfreshnativefullrestoration. 96manualparameterreference assignments expected/4negativeweightParameterconstructions across2workers. Countsnotzero parameteredits;zerooptimizer/backwards/gradientupdates. No.data/versioncounterbypass.",
+  "measurements": "Captureactualnativeh atdowninput withoutchangingit. Oneauxiliarynegationofdetachedmeasuredfullh percase checksnegative-backhashagainstN49actualfullnativeh andN48currenth,notanactivationfedintomodel. NewgaugedfullFP32logits/argmax/fullcache/ABmetrics comparedtoN48carry andactualfreshnative restoration. Nativeprojectionnegativebytehashes/installidentities/sourceversions/checksobserved;parameterrestorationbytehashes/versions/references/state/hooks/RNG/config/buffers/grad beforedurablecommit.",
+  "primary": "AFTERALL24complete:conjunctive ALL24fullFP32logitshashunchanged,fullKVcacheunchanged,andfull/currenthnegative-backhash exactnativeparent. Output/hnegationmismatch isMEASUREDPRIMARYFAIL,NOTanengineeringguardthatabortshidesnegativeeffects. Retainall24 finitegaugeoutcomes/changedargmax/ABmargin/maxabsFP32logitdelta. Nonfiniteoractualrestoration/source/parameter/statefailure CENSORSwholepanel.",
+  "interpretation": "Ifpasses,coordinate signreversesunder tested functionpreservinggauge;thisisnativegated-MLPalgebra/basisdependence,notarbitraryMLProtation,neuronsemanticmeaning/newmethod/mediation/usefulcodinggain/freshconfirmation. OriginalfiniteN48maskresults remainnativebasis-only. DoNOTexecuteorclaimnewgaugedmaskoutputs;donot relabeloldcellsasnewmeasurements.",
+  "carries": "Original24N48decisions/grades/prompttokensandN49fullhwitnesscarrywithparentenvelope/auditSHA. No newcandidategrades;nohostmodel/tokenizer/scorer/executor;nohistoricaltrainedadapter. Allnewmodelcallsaregaugedmeasurements/nativeguardrestorations.",
+  "expected_work": {
+    "gauged_forwards": 24,
+    "native_restoration_forwards": 24,
+    "full_forwards": 48,
+    "input_exposures": 4540,
+    "manual_parameter_reference_assignments": 96,
+    "negative_weight_Parameter_constructions": 4,
+    "auxiliary_measured_h_negations": 24,
+    "activation_value_assignments": 0,
+    "backwards": 0,
+    "optimizer_steps": 0,
+    "new_emitted_tokens": 0,
+    "new_candidate_grades": 0
+  },
+  "host_validation": "NEWseed5414FP32/BF16randomnativeGemmamodelcontexts;independentexplicitMLPmethod computingnativeup/downnegweights reference. Fullbytes/versions/originalreferences restored,negativehhashes compared,finite logitdeltas/primarypassfailure literalfixtures. No oldfixtures/gates.",
+  "acceptance": "Singlelaunch/collector/frozenaudit;ALL24guarded finitegaugedrecords BEFOREprimaryaggregation. No numericalguardweakening/reroll/completedcellreexecution. Primaryfalse recordedasfailure,actualengineering/resourceincompleteCENSORED.",
+  "resources": {
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1600,
+    "notebook_start_global_seconds": 1500,
+    "reservation_GPU_hours": 1,
+    "reserve_GPU_hours": 2,
+    "raw_bytes_limit": 33554432,
+    "hardware": "2DISTINCTT4/nativeBF16replicas,indexmod2contexts/sequentialload/barrier"
+  },
+  "training_allowed": false,
+  "gradient_based_sign_strength_or_mask_selection": false,
+  "prior": "Knownbasis/gaugesymmetries andimplementationinvariance,notnovelmethod. DerivationfrompinnednativeGemma4MLP1054-1072,notReLU/tanhoddnessassumption;gateunchangedandlinearuplegnegated. N52Ancona/Sundararajanpriorscarrybycitationwithoutrepeatingclosedread/gates. E04historicalLoRArefactorizationisclosed,noadapterloaded."
+}

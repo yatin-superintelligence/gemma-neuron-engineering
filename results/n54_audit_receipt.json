@@ -1,0 +1,24 @@
+{
+  "actual_counters": {
+    "activation_value_assignments": 0,
+    "auxiliary_measured_h_negations": 24,
+    "backward_calls": 0,
+    "calls": 48,
+    "gauged_forwards": 24,
+    "input_token_exposures": 4540,
+    "manual_parameter_assignments": 96,
+    "native_restoration_forwards": 24,
+    "negative_weight_Parameter_constructions": 4,
+    "negative_weight_tensor_negations": 4,
+    "new_candidate_grades": 0,
+    "new_emitted_tokens": 0,
+    "optimizer_steps": 0
+  },
+  "all24_complete_engineering_guarded": true,
+  "joint_primary_all24_pass": true,
+  "new_candidate_grades": 0,
+  "old_scorer_model_tokenizer_executor_calls": 0,
+  "public_aggregate_sha256": "b383ec17b89b6da9183d48a77d9557bdfdd39808665dfd6490a7baa35c630350",
+  "status": "complete_pass_all_frozen_engineering_guards",
+  "utc": "2026-11-01T18:03:29.014519+00:00"
+}

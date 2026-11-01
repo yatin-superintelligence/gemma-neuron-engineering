@@ -1,0 +1,881 @@
+{
+  "utc": "2026-11-01T18:10:44.645742+00:00",
+  "experiment": "N54",
+  "status": "complete_host_audited_closed_joint_primary_pass",
+  "aggregate_sha256": "b383ec17b89b6da9183d48a77d9557bdfdd39808665dfd6490a7baa35c630350",
+  "joint_primary_all24_pass": true,
+  "all_groups": {
+    "answer_orders": {
+      "coding_0": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 8,
+        "gauged_negative_units": {
+          "count": 8,
+          "max": 6178,
+          "mean": 6136.375,
+          "min": 6087
+        },
+        "gauged_positive_units": {
+          "count": 8,
+          "max": 6201,
+          "mean": 6151.625,
+          "min": 6110
+        },
+        "joint_primary_pass_contexts": 8,
+        "max_absolute_FP32_logit_delta": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 8,
+        "native_negative_units": {
+          "count": 8,
+          "max": 6201,
+          "mean": 6151.625,
+          "min": 6110
+        },
+        "native_positive_units": {
+          "count": 8,
+          "max": 6178,
+          "mean": 6136.375,
+          "min": 6087
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 8,
+          "full_FP32_logits_hash_unchanged": 8,
+          "full_KV_cache_unchanged": 8,
+          "full_h_sign_reversal_exact": 8
+        }
+      },
+      "coding_1": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 8,
+        "gauged_negative_units": {
+          "count": 8,
+          "max": 6226,
+          "mean": 6162.125,
+          "min": 6104
+        },
+        "gauged_positive_units": {
+          "count": 8,
+          "max": 6184,
+          "mean": 6125.875,
+          "min": 6062
+        },
+        "joint_primary_pass_contexts": 8,
+        "max_absolute_FP32_logit_delta": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 8,
+        "native_negative_units": {
+          "count": 8,
+          "max": 6184,
+          "mean": 6125.875,
+          "min": 6062
+        },
+        "native_positive_units": {
+          "count": 8,
+          "max": 6226,
+          "mean": 6162.125,
+          "min": 6104
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 8,
+          "full_FP32_logits_hash_unchanged": 8,
+          "full_KV_cache_unchanged": 8,
+          "full_h_sign_reversal_exact": 8
+        }
+      },
+      "retention_0": {
+        "A_minus_B_delta": {
+          "count": 4,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 4,
+        "gauged_negative_units": {
+          "count": 4,
+          "max": 6172,
+          "mean": 6140.25,
+          "min": 6114
+        },
+        "gauged_positive_units": {
+          "count": 4,
+          "max": 6174,
+          "mean": 6147.25,
+          "min": 6115
+        },
+        "joint_primary_pass_contexts": 4,
+        "max_absolute_FP32_logit_delta": {
+          "count": 4,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 4,
+        "native_negative_units": {
+          "count": 4,
+          "max": 6174,
+          "mean": 6147.25,
+          "min": 6115
+        },
+        "native_positive_units": {
+          "count": 4,
+          "max": 6172,
+          "mean": 6140.25,
+          "min": 6114
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 4,
+          "full_FP32_logits_hash_unchanged": 4,
+          "full_KV_cache_unchanged": 4,
+          "full_h_sign_reversal_exact": 4
+        }
+      },
+      "retention_1": {
+        "A_minus_B_delta": {
+          "count": 4,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 4,
+        "gauged_negative_units": {
+          "count": 4,
+          "max": 6207,
+          "mean": 6158.5,
+          "min": 6130
+        },
+        "gauged_positive_units": {
+          "count": 4,
+          "max": 6158,
+          "mean": 6129.25,
+          "min": 6080
+        },
+        "joint_primary_pass_contexts": 4,
+        "max_absolute_FP32_logit_delta": {
+          "count": 4,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 4,
+        "native_negative_units": {
+          "count": 4,
+          "max": 6158,
+          "mean": 6129.25,
+          "min": 6080
+        },
+        "native_positive_units": {
+          "count": 4,
+          "max": 6207,
+          "mean": 6158.5,
+          "min": 6130
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 4,
+          "full_FP32_logits_hash_unchanged": 4,
+          "full_KV_cache_unchanged": 4,
+          "full_h_sign_reversal_exact": 4
+        }
+      }
+    },
+    "families": {
+      "assigned_binding": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6207,
+          "mean": 6160.5,
+          "min": 6114
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6174,
+          "mean": 6127.0,
+          "min": 6080
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6174,
+          "mean": 6127.0,
+          "min": 6080
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6207,
+          "mean": 6160.5,
+          "min": 6114
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      },
+      "dict_update_order": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6111,
+          "mean": 6103.5,
+          "min": 6096
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6192,
+          "mean": 6184.5,
+          "min": 6177
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6192,
+          "mean": 6184.5,
+          "min": 6177
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6111,
+          "mean": 6103.5,
+          "min": 6096
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      },
+      "extended_slice": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6161,
+          "mean": 6140.0,
+          "min": 6119
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6169,
+          "mean": 6148.0,
+          "min": 6127
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6169,
+          "mean": 6148.0,
+          "min": 6127
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6161,
+          "mean": 6140.0,
+          "min": 6119
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      },
+      "floor_modulo": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6197,
+          "mean": 6178.0,
+          "min": 6159
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6129,
+          "mean": 6110.0,
+          "min": 6091
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6129,
+          "mean": 6110.0,
+          "min": 6091
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6197,
+          "mean": 6178.0,
+          "min": 6159
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      },
+      "last_assignment": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6157,
+          "mean": 6142.0,
+          "min": 6127
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6161,
+          "mean": 6146.0,
+          "min": 6131
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6161,
+          "mean": 6146.0,
+          "min": 6131
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6157,
+          "mean": 6142.0,
+          "min": 6127
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      },
+      "late_closure": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6157,
+          "mean": 6156.0,
+          "min": 6155
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6133,
+          "mean": 6132.0,
+          "min": 6131
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6133,
+          "mean": 6132.0,
+          "min": 6131
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6157,
+          "mean": 6156.0,
+          "min": 6155
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      },
+      "literal_copy": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6148,
+          "mean": 6139.0,
+          "min": 6130
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6158,
+          "mean": 6148.5,
+          "min": 6139
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6158,
+          "mean": 6148.5,
+          "min": 6139
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6148,
+          "mean": 6139.0,
+          "min": 6130
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      },
+      "loop_else": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6158,
+          "mean": 6122.5,
+          "min": 6087
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6201,
+          "mean": 6165.5,
+          "min": 6130
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6201,
+          "mean": 6165.5,
+          "min": 6130
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6158,
+          "mean": 6122.5,
+          "min": 6087
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      },
+      "negation": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6172,
+          "mean": 6156.0,
+          "min": 6140
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6148,
+          "mean": 6131.5,
+          "min": 6115
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6148,
+          "mean": 6131.5,
+          "min": 6115
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6172,
+          "mean": 6156.0,
+          "min": 6140
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      },
+      "nested_alias": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6178,
+          "mean": 6141.0,
+          "min": 6104
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6184,
+          "mean": 6147.0,
+          "min": 6110
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6184,
+          "mean": 6147.0,
+          "min": 6110
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6178,
+          "mean": 6141.0,
+          "min": 6104
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      },
+      "shared_iterator": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6226,
+          "mean": 6192.5,
+          "min": 6159
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6129,
+          "mean": 6095.5,
+          "min": 6062
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6129,
+          "mean": 6095.5,
+          "min": 6062
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6226,
+          "mean": 6192.5,
+          "min": 6159
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      },
+      "short_circuit": {
+        "A_minus_B_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 2,
+        "gauged_negative_units": {
+          "count": 2,
+          "max": 6183,
+          "mean": 6160.5,
+          "min": 6138
+        },
+        "gauged_positive_units": {
+          "count": 2,
+          "max": 6150,
+          "mean": 6127.5,
+          "min": 6105
+        },
+        "joint_primary_pass_contexts": 2,
+        "max_absolute_FP32_logit_delta": {
+          "count": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 2,
+        "native_negative_units": {
+          "count": 2,
+          "max": 6150,
+          "mean": 6127.5,
+          "min": 6105
+        },
+        "native_positive_units": {
+          "count": 2,
+          "max": 6183,
+          "mean": 6160.5,
+          "min": 6138
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 2,
+          "full_FP32_logits_hash_unchanged": 2,
+          "full_KV_cache_unchanged": 2,
+          "full_h_sign_reversal_exact": 2
+        }
+      }
+    },
+    "roles": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 16,
+        "gauged_negative_units": {
+          "count": 16,
+          "max": 6226,
+          "mean": 6149.25,
+          "min": 6087
+        },
+        "gauged_positive_units": {
+          "count": 16,
+          "max": 6201,
+          "mean": 6138.75,
+          "min": 6062
+        },
+        "joint_primary_pass_contexts": 16,
+        "max_absolute_FP32_logit_delta": {
+          "count": 16,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 16,
+        "native_negative_units": {
+          "count": 16,
+          "max": 6201,
+          "mean": 6138.75,
+          "min": 6062
+        },
+        "native_positive_units": {
+          "count": 16,
+          "max": 6226,
+          "mean": 6149.25,
+          "min": 6087
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 16,
+          "full_FP32_logits_hash_unchanged": 16,
+          "full_KV_cache_unchanged": 16,
+          "full_h_sign_reversal_exact": 16
+        }
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 8,
+        "gauged_negative_units": {
+          "count": 8,
+          "max": 6207,
+          "mean": 6149.375,
+          "min": 6114
+        },
+        "gauged_positive_units": {
+          "count": 8,
+          "max": 6174,
+          "mean": 6138.25,
+          "min": 6080
+        },
+        "joint_primary_pass_contexts": 8,
+        "max_absolute_FP32_logit_delta": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "native_argmax_preserved": 8,
+        "native_negative_units": {
+          "count": 8,
+          "max": 6174,
+          "mean": 6138.25,
+          "min": 6080
+        },
+        "native_positive_units": {
+          "count": 8,
+          "max": 6207,
+          "mean": 6149.375,
+          "min": 6114
+        },
+        "primary_component_pass_contexts": {
+          "current_h_sign_reversal_exact": 8,
+          "full_FP32_logits_hash_unchanged": 8,
+          "full_KV_cache_unchanged": 8,
+          "full_h_sign_reversal_exact": 8
+        }
+      }
+    }
+  },
+  "actual_counters": {
+    "activation_value_assignments": 0,
+    "auxiliary_measured_h_negations": 24,
+    "backward_calls": 0,
+    "calls": 48,
+    "gauged_forwards": 24,
+    "input_token_exposures": 4540,
+    "manual_parameter_assignments": 96,
+    "native_restoration_forwards": 24,
+    "negative_weight_Parameter_constructions": 4,
+    "negative_weight_tensor_negations": 4,
+    "new_candidate_grades": 0,
+    "new_emitted_tokens": 0,
+    "optimizer_steps": 0
+  },
+  "notebook_seconds": 258.720709242,
+  "duration_is_charged_GPU_quota": false,
+  "conclusion": "All24contexts preservefullFP32logitsandwholeKVcachebitexact whilefull/currenthnegative-backhashesmatchnativeexactly. Strictnegativeandpositiveunitcounts swap. EveryoriginalParameterobject/bytehash/version isrestored;manualreferenceassignments96,notzero parameteredits.",
+  "limits": "Knownuniformnativegated-MLPcoordinategauge,notarbitraryrotation,newmethod,neuronmeaning,mediation,freshconfirmationorusefulcodinggain. No oldsignmaskcellwasexecutedandno newgaugedmaskoutcomeisclaimed. No backward/gradient/optimizerupdates. State/sourcewitnessnotindependentcallerorallbaseparameterbyteauthentication.",
+  "next_direction": "TestfullnativeEOSprogramutilityoftheN49native-RMS numeratorpolicywithALL96originalN41cases/gradescarriedandall4matchedsign/cardinalitypolicies. DifferentmechanismfromN47standardpostmaskRMS;noN47recovery/closedcellretry. Nativebasisfixedanddevelopmentreuseexplicit."
+}

@@ -1,0 +1,23 @@
+{
+  "utc": "2026-11-01T17:22:18.552406+00:00",
+  "before_launch_and_any_N53_pretrained_measurement": true,
+  "scope": "Accounting-only report name correction. Four condition records percase do not imply four unique candidate texts;these are192literal model-choice/host-label comparisons,no candidateexecutor/oldscorer calls. Duplicatechoicesacrossconditions remainliteralreferences;do notclaim192uniquegradedcandidates.",
+  "originals_preserved_uninvoked_scientifically": [
+    "research/experiments/n53/audit.py",
+    "scripts/collect_n53_outputs.py"
+  ],
+  "active_auditor": "research/experiments/n53/audit_v2.py",
+  "active_collector": "scripts.collect_n53_outputs_v2",
+  "auditor_exact_inverse_two_field_literal_substitutions": true,
+  "collector_exact_inverse_path_and_module_substitutions": true,
+  "all_numeric_analysis_guards_cohorts_conditions_counter_acceptance_unchanged": true,
+  "executable_new_fixtures": 0,
+  "model_tokenizer_scorer_executor_or_old_fixture_calls": 0,
+  "validation": "Static inverse source comparison only;no oldhostgate repeated.",
+  "sources": {
+    "research/experiments/n53/audit.py": "d44913f741a335f4d925315296c8fa995adade0f87609875bdad912e20230a8b",
+    "research/experiments/n53/audit_v2.py": "e1b95ba708caa205d68f9fc8c0ecb2da7eaab0dc62331a2454e8cc6299a38424",
+    "scripts/collect_n53_outputs.py": "a06b84b4ce10e36da35cb298e81374b98c156d484523b394c4c0851637b24e05",
+    "scripts/collect_n53_outputs_v2.py": "a0739e12d18d6c81d9b81080477528a77f09a2857e61ab7e3117bd0efb545d3a"
+  }
+}

@@ -549,7 +549,25 @@
       "recorded_script_seconds": 195.19104318799998,
       "outcome": "COMPLETE_frozen_audit_PASS_24read_onlyVJPs_48nativevalueforwards_0valueupdates",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N53",
+      "recorded_script_seconds": 250.991307656,
+      "outcome": "COMPLETE_frozen_audit_v2_PASS_all48prefix_memory_0codinggains_bothpartialpairsallcodingchoicespreserved",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "N54",
+      "recorded_script_seconds": 258.720709242,
+      "outcome": "COMPLETE_frozen_engineering_audit_PASS_jointprimaryall24PASS_updownsigngauge_exactoutputs_cache_hnegation",
+      "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N55",
+      "launched_utc": "2026-11-01T18:27:15.810296+00:00",
+      "status": "private_version1_active"
+    }
+  ]
 }

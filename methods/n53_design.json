@@ -1,0 +1,38 @@
+{
+  "utc": "2026-11-01T17:10:49.849601+00:00",
+  "experiment": "N53",
+  "question": "Q68",
+  "title": "Program-prefix cache memory and shared-KV producer sufficiency",
+  "motivation": "N51lastblockresidualswaps broadlycopyanswerletters,whileN50htransplants preservepairedchoices andN52hsignmixeslocalsupport/suppression. Test memory captured BEFORE visible answer choices,notanotherfinal-site/mask/strength/wordingsweep.",
+  "cohort": "NEW48fixedcontexts:8codingfamilies and4retentionfamilies,each2counterfactualinputvariants and2answerorders.24uniqueprefixes. All retained,no correctness-filtering. Development science,not freshconfirmation. OriginalN48-N52records are parents ofthequestiononly,no old case/cell/scorer reexecution.",
+  "construction": "Eachfamilyusesoneprescribedtemplatewithtwoliteralinputvariants andtwofixedcandidateanswers,orderscounterbalanced. Host-only trusted Python executes16newprogramsonce toderivevisiblecandidatevalues/hiddenlabels;retentionliteralreferenceshostonly. Alltemplatesfixedbeforemodelmeasurements. Newhosttokenizationchecksonecanonicalprogram/task-prefixcut beforeoptiontext,pairprefixequal-length/suffixIDsexact. Anyfailurestops;no wording/case resampling. No oracle/modelsolution hidden targetuploaded. Visiblealternativesareordinarytaskinput.",
+  "cache_boundary": "Nativeprefixcache containsprogram/task only,endingatsemanticboundarybeforeansweroptions. Hosttokenizerdefinesnearestnative tokenboundary at/afterprogramend;mustdecodewithoutvisibleoptionlabels,allpairedsuffixIDsidentical,andpairedprefixlengthsexact. No learnedalignment,padding,newvectorsorpositionrewrites. Eachnativeactualprefixgeneratedonce pervariant,sharedacrossbothanswerorders.",
+  "site": "Actual15KVproducers0..14frompinnedmodel. Lastsharedcacheproducerpair13(sliding)/14(full)versusprecedingmatchedtypepair8(sliding)/9(full). Exactnativeconfig/layer_types/shape/headwidth bindingcheckedbeforelaunch andworker. Pairschosenfromarchitecture,never effect ranking. Counts/typesmatched,not claimenergy/contentmatched. NoMLP/attentionweightediting.",
+  "conditions": [
+    "original_segmented_native",
+    "all15_counterfactual_prefix_KV",
+    "last_shared_pair13_14_counterfactual_KV",
+    "preceding_pair8_9_counterfactual_KV"
+  ],
+  "controls": "Whole-prefixall15copy ispositiveinput-substitutioncontrol. Identityclone isnativeguard/reference,noadditionalgrade. Partialpairdonorcopyusesactualnativecounterfactualprefixsamefamily/sameanswerorder;twoanswerordersretainliteral-vscontentdistinction. No sourceanswer token exists inprefix. Everydonor/suffix/reference/conditionreports.",
+  "procedure": "24nativeprefixforwards,48monolithicnativeguards,48originalcachedsuffixdecisions,48identityclonesuffixguards,144neweditedsuffixdecisions and144nativeclonesuffixrestorations.456totalmodelcalls;exposuresderivedexactlyaftertokenization. Prefixsourcecachesimmutableandnonaliasing,allnonselectedKVbytesunchanged;selectedK/Vexactdonorbytes. Cachemetadata/length/positionspreserved. No persistedrawKVarrays,hashesonly. AfterEVERYediteddecision freshnativebranchsuffixrestoration/full-logits/argmax/fullcache plusmodelstate/hook/version/config/RNG/buffer/gradobservationsBEFOREdurablecommit.",
+  "baseline_precision": "Unmodified segmented-prefix/suffix executiondefinesnativebaseline. ForALL48 requiremonolithicfull-input full-vocabulary argmaxandA/Bchoiceequalto segmented. RecordfullFP32logit/cachehash equalitydescriptively,NOT numericalequivalence claim/gate: differentnativebatch/cacheexecutionmayrounddifferently. Identityclones/restorationsmustEXACTmatchsegmented fullFP32logits/argmax/wholecache. No tolerancebackoff afteroutputs.",
+  "primary": "ALL48conditions/roles/families/bothbindings:counterfactualdonornativelettercopycounts,recipientchoicepreservation,correctness/gains/losses carriedfromnewfirstgradesonce,andfiniteAminusBmargincontrasts. Reportjointpairandmatchedprecedingpair/all15controlwithoutwinningselection,pvalues/thresholds/semanticneuronmeaning/mediation/speed/freshconfirmation/usefulfullprogramgain.",
+  "positive_control_guard": "All15KVdonorcopy mustEXACTmatchdonor segmented-native fullFP32logits/argmax/wholecache,ascommon suffix IDs andprefixlengthare identical. Entirepanelcensoredifanyguardfails. Partialpaireffectsneverinterpretedalone.",
+  "accounting": "Countall456actualforwardattempts/exposures,24sourceprefixes,48fullpromptguards,48identityclones,144editeddecisions,144restores,allcachecloneconstructionsandactualK/Vtensorassignments. Expected38K/Vassignmentspercontext=1824,0MLPactivationassignments/parameters/backwards/optimizer/emittedtokens. Directcacheassignmentispermittedactivationediting,nottraining.",
+  "host_validation": "NEWFP32/BF16randomprefix/suffixpairs,independentactualcachecopyreference forbotharchitecturalpairs/allentries;sourceimmutability/nonaliasing/selecteddonor/nonselectedrecipientchecks,identity/restorationexact. Newliteralhostaudit/schema/counter/provenancerefusals. No oldfixtures/gates.",
+  "acceptance": "Singlelaunch/collector/frozenauditonlyafterwhole48panelcomplete;allguardsincludingfullpositivecontrolbeforeANYnewgrading. Firstfailure/resourceincompletepreserved,censorednotnull,nocompletedreroll/continuation/guardweakening.",
+  "resources": {
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1600,
+    "notebook_start_global_seconds": 1500,
+    "reservation_GPU_hours": 1,
+    "reserve_GPU_hours": 2,
+    "raw_bytes_limit": 33554432,
+    "hardware": "2distinctT4/fullBF16replicas;familyblockindexmod2ownership/sequentialload/barrier"
+  },
+  "training_allowed": false,
+  "gradients_used_for_selection_or_updates": false,
+  "prior_boundary": "N19/N20/N22/N28testedcurrentorlastinputMLPstatesandlabel/operatorbinding,no prefixKVintervention. N41cacheproofsarematchinghistorywitnesses,notsemanticmemorytransfer. Nativecachebranchpriorisengineeringnotnewmethodnovelty. Exactprimarypapers/relevantpinnedarchitecture reviewedbeforeimplementation."
+}

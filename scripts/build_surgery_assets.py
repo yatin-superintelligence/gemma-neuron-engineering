@@ -17,11 +17,11 @@ SOURCES = {
     'Observe': ['research/experiments/n52/assay.py', 'interpretability/native_cache_branch.py', 'interpretability/native_capture.py', 'interpretability/native_timeline.py', 'interpretability/probe.py', 'interpretability/response_regions.py', 'interpretability/python_token_regions.py', 'scripts/export_native_trace.py'],
     'Patch activations': ['research/experiments/n51/assay.py', 'research/experiments/n50/assay.py', 'research/experiments/n48/assay.py', 'research/experiments/n49/assay.py', 'interpretability/signed_native_mask.py', 'interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
     'Reuse computation': ['interpretability/native_ffn_reuse_v2.py'],
-    'Edit weights': ['interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
-    'Edit connections': ['interpretability/memory_connection.py'],
+    'Edit weights': ['research/experiments/n54/assay.py', 'interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
+    'Edit connections': ['research/experiments/n53/assay.py', 'interpretability/memory_connection.py'],
     'Reconstruct': ['reproduce/model_edits.py'],
     'Evaluate': ['evaluation/native_sensitivity.py', 'evaluation/native_component_reporting.py', 'evaluation/answer_decisions.py', 'evaluation/signed_positions_reporting.py', 'evaluation/signed_mask_reporting.py', 'evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
-    'Generate and resume': ['research/experiments/n47/generation.py', 'interpretability/native_eos_generation.py'],
+    'Generate and resume': ['research/experiments/n55/generation.py', 'research/experiments/n47/generation.py', 'interpretability/native_eos_generation.py'],
     'Record evidence': ['evaluation/durable_zip.py', 'interpretability/durable_measurement_journal_v2.py'],
 }
 
@@ -36,6 +36,12 @@ def toolkit(dest):
             digest = hashlib.sha256(source.encode()).hexdigest()
             title = ast.get_docstring(tree) or name
             guide = ''
+            if name == 'research/experiments/n55/generation.py':
+                title += ' All four numerator-only native-RMS policies pass new random references and boundary checks. The private pretrained panel is active; no utility outcome is available. Full caches are observed at response boundaries, not independently authenticated at every fresh token. Callers must provide actual resource and durable trace callbacks.'
+            if name == 'research/experiments/n53/assay.py':
+                title += ' Complete prefix-memory audit passes. Both fixed partial producer-pair swaps preserve every coding choice; whole-prefix copying reproduces the donor but yields no coding gains. Monolithic and segmented full-logit/cache equivalence is not established.'
+            if name == 'research/experiments/n54/assay.py':
+                title += ' The prescribed uniform paired up/down sign gauge passes every tested context. It makes direct Parameter-reference assignments and restores original objects and bytes. Known native coordinate symmetry, not individual meaning or useful coding improvement.'
             if name == 'interpretability/native_ffn_reuse_v2.py':
                 title += ' Current version 2 fixes the saved residual alias. Random-model paths pass; the N44 pretrained panel is resource incomplete and all effects are censored. No useful coding gain is established.'
             if name == 'interpretability/signed_native_mask.py':
