@@ -15,7 +15,8 @@ def page(title, body, script=''):
 
 SOURCES = {
     'Observe': ['interpretability/native_cache_branch.py', 'interpretability/native_capture.py', 'interpretability/native_timeline.py', 'interpretability/probe.py', 'interpretability/response_regions.py', 'interpretability/python_token_regions.py', 'scripts/export_native_trace.py'],
-    'Patch activations': ['interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
+    'Patch activations': ['interpretability/signed_native_mask.py', 'interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
+    'Reuse computation': ['interpretability/native_ffn_reuse_v2.py'],
     'Edit weights': ['interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
     'Edit connections': ['interpretability/memory_connection.py'],
     'Reconstruct': ['reproduce/model_edits.py'],
@@ -35,6 +36,10 @@ def toolkit(dest):
             digest = hashlib.sha256(source.encode()).hexdigest()
             title = ast.get_docstring(tree) or name
             guide = ''
+            if name == 'interpretability/native_ffn_reuse_v2.py':
+                title += ' Current version 2 fixes the saved residual alias. Random-model paths pass; the N44 pretrained panel is resource incomplete and all effects are censored. No useful coding gain is established.'
+            if name == 'interpretability/signed_native_mask.py':
+                title += ' Random-model paths pass. Pretrained evidence is reported separately for N45. Random controls match cardinality only, not magnitude or energy.'
             if name == 'interpretability/durable_measurement_journal_v2.py':
                 title += ' Current T01 version 2. Host-only literal validation; no pretrained integration or retroactive N43 certification. See the durable journal guide for lifecycle, recovery limits and the preserved version 1 final-type defect.'
                 guide = '<p><a href="MEASUREMENT_JOURNAL.html">Journal lifecycle and evidence limits</a></p>'

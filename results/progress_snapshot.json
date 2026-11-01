@@ -1,12 +1,18 @@
 {
-  "generated_utc": "2026-11-01T03:55:53.083256+00:00",
-  "question_records": 58,
-  "recorded_terminal_runs": 80,
-  "active_runs": [],
-  "ledger_events": 613,
-  "question_register_source_sha256": "def894073c3a694e7fe63c4af0cb519fc36e73c3a39d246a8f1d9a2b7853a63f",
-  "event_ledger_source_sha256": "7231fe757ae3fc6e96f3769d8ef764269bfb72993d516122447e8dcf223db0ee",
-  "compute_ledger_source_sha256": "3a407603f30b574024519febd6b164751f5ea51dec4f711bed5fc1ecbb813c3a",
+  "generated_utc": "2026-11-01T09:09:07.100999+00:00",
+  "question_records": 60,
+  "recorded_terminal_runs": 81,
+  "active_runs": [
+    {
+      "run": "N45_v1_signed_native_MLP_two_GPU",
+      "launched_utc": "2026-11-01T08:58:34.126703+00:00",
+      "status": "RUNNING_PRIVATE"
+    }
+  ],
+  "ledger_events": 631,
+  "question_register_source_sha256": "a51bd2432736c2a9a465ec35fcdd2764ec964af8e0e8976d3522391980abe67e",
+  "event_ledger_source_sha256": "8a19ceaab87dcfca37566c658fd083ea6a7fafa781d02e6806fbc6401acf139e",
+  "compute_ledger_source_sha256": "fdf0528a2ba350265ede960b7c54a017f063dd0812ff081632ad7a3e3b9f8675",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0

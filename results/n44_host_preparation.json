@@ -1,0 +1,17 @@
+{
+  "scope": "Closed new random-model and literal preparation;not completed pretrained evidence.",
+  "first_failure": "Replacing the gate argument alone left the decoder saved residual unchanged. Original helper remains historical;version2 assigns the declared activation update to both aliases.",
+  "current_helper": "interpretability/native_ffn_reuse_v2.py",
+  "random_new_paths_v2": 15,
+  "exact_passed_v1_identity_carries": 3,
+  "insertion_refusals_v2": 17,
+  "random_new_forwards_v2": 61,
+  "random_new_exposures_v2": 421,
+  "combined_random_forwards": 16,
+  "combined_exposures": 96,
+  "literal_fixture_EOS_tokens": 6,
+  "literal_fixture_head_initialization_assignments": 6,
+  "optimizer_steps": 0,
+  "no_closed_fixture_rerun": true,
+  "current_helper_sha256": "62637a2ed427152c3f4b96ceedbebd2aa788f3157838e3adcd175722f4ac74a1"
+}

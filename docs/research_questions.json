@@ -940,9 +940,52 @@
       "interpretation": "A host-only evidence-storage tool. It does not authenticate a caller, hash a full checkpoint, validate native histories, recover N43 or establish model improvement. An intent without prepared evidence stays uncertain. A recovered process may commit an existing prepared digest but cannot supply fresh observations as the lost process. SQLite/storage assumptions and lack of physical power-loss testing remain explicit.",
       "next_question": "Review the private manuscript coverage of completed N42 source description and censored N43 measurement, with the tool confined to host-only evidence infrastructure. Any substantive PDF edit follows the PDF skill, both word limits and all-page visual review.",
       "direction_decision": "Close the new host gates. Publish the reviewed current v2 helper, historical v1 defect and exact source/test provenance. Do not rerun closed N43/T01 fixtures or claim pretrained journal integration. No new GPU reservation."
+    },
+    {
+      "id": "Q59",
+      "experiment": "N44: single native final-FFN reuse",
+      "status": "resource_incomplete_closed_all_partial_effects_censored",
+      "question": "Can one serial recomputation of the final native FFN improve fresh executable coding relative to original and an equal-extra-compute parallel repeat?",
+      "question_provenance": "Direct U25 instructs continued new science. N41 closes sparse deletion as a fresh utility lead; full-site control does not establish sparse function. Test a different prescribed native computation with no new layer/dose search and no N43 partial-effect selection.",
+      "parents": [
+        "Q55",
+        "Q53",
+        "Q57",
+        "Q58"
+      ],
+      "method": "Frozen before implementation: F(x)=native post-RMS(MLP(native pre-RMS(x))); y=x+F(x). At final site34,compare original y,parallel y+F(x),serial y+F(y),before the existing per-layer-input branch runs once. Native parameters are tied;attention is not repeated. Sixteen fresh semantic contracts across eight dependent families,two bindings each,plus sixteen retention inputs yield144new native-EOS responses across all three conditions. No arbitrary response ceiling,trained vector,weight update or full-transformer insertion.",
+      "result": "Resource incomplete,closed. Both workers reached notebookSTART+6600seconds;6604.60351542notebookseconds is not charged quota. Self-reported59110forwardattempts,76878inputexposures,52208activationassignments,52259extraFFNevaluations,58861newtokens,zero parameter/backward/optimizer updates.49committed rows of144planned include interrupted rows and are not a completed scientific panel. Collection ran once;no auditor or grading ran. All finite partial effects remain censored. Each actual terminal metadata snapshot exists and matches initial;terminal counters match worker reports. This observation is not a full scientific audit or full-parameter-byte check.",
+      "interpretation": "A new bounded architectural screen. No useful gain,individual meaning,new general method or speed claim is established. Existing inference-time layer reuse and trained looped/depth-grown work are direct priors. N41 remains failed,N43 remains censored.",
+      "next_question": "Q60/N45 tests signed post-gating contributions with matched-cardinality controls on bounded original-history decisions. No N44partial effects or incomplete-case selection enter its design.",
+      "direction_decision": "Preserve the original incomplete N44panel and every criterion;do not rerun completed replies,grade partials or render an actual result figure.",
+      "result_receipt": "runs/n44/version1/termination_summary.json",
+      "historical_preoutput_result": "One private version1 job is RUNNING. All81actual scientific source/input/notebook/payload/host files froze before launch,from checkpoint e9eff833c71166e3abf625e82c6c6e746d8235a4. Exact server notebook JSON,private metadata and the single ready private dataset/downloaded payload hash match. No output,partial or live counter has been accessed. Independent new answer references agree on9251probe inputs;16literal contracts and12refusals pass. The first insertion test catches a missing update to the decoder saved residual. Its original source/failure remain preserved. Minimal v2 explicit activation assignment corrects both the residual and gate input;15new FP32/BF16 path cases and17refusals pass,carrying the3already-passed FP32 identity paths without repeating them. New storage4checks/11refusals and audit4checks/14refusals pass. Two new combined random-model cases pass16forwards/96exposures/6literal fixture EOS tokens,with6declared literal head initialization assignments and zero optimizer updates. Isolated package import performs zero model/tokenizer/forward calls. Fresh official quota is21.82freeGPUhours before launch;all64known project jobs were terminal. These are preparation results,not pretrained outcomes."
+    },
+    {
+      "id": "Q60",
+      "utc": "2026-11-01T08:45:41.087159+00:00",
+      "question": "Do negative versus positive native final-MLP post-gating contributions differ from matched-cardinality random removal on fixed original native histories?",
+      "motivation": "Signed activity alone is not meaning;N41sparse utility failed and N44freegeneration was resource-incomplete. Test a distinct bounded causal operation without new generation.",
+      "experiment": "N45: signed native final-MLP contributions",
+      "status": "private_version1_running_no_outputs_accessed",
+      "protocol": "research/experiments/n45/protocol.json",
+      "decision_rule": "Only the complete all96case/all5condition panel may be interpreted;no useful gain or individual meaning claim.",
+      "optimizer_steps": 0,
+      "parents": [
+        "Q52",
+        "Q55",
+        "Q57",
+        "Q59"
+      ],
+      "question_provenance": "Direct continued-science steering. N38records signed activity,N41closes sparse deletion utility and N44is resource incomplete. Test a distinct bounded causal sign partition with no partial-effect selection.",
+      "method": "At final site34,current native down-projection input only,compare original,negative zero,positive zero and two fixed-permutation masks matched to each sign count. Retain all96N41original cases and firstmin(3,T)decisions:281points,2810forwards,106120input exposures,1405activationassignments,zero newtokens or parameter/optimizer updates. Native source logits/raw cache,identity,each edit-restoration,state and durable lineage must all pass.",
+      "result": "One private version1 job is RUNNING from checkpoint 8435e8115e31e1816a2c2f056b0b626a98406868. All329actual source/input/notebook/payload and inherited files freeze before launch. New36independent numerical paths/11refusals,three auditor positives/16refusals and a distinct actual-counter integration pass. Exact server notebook/private dataset/downloaded payload match. Fresh quota19.99freeGPUh and all65ownprojectjobs terminal before launch. No N45output accessed.",
+      "interpretation": "Development layer-local post-gating signed-contribution measurement. Random controls match cardinality,not magnitude or energy. No gate-preactivation,syntax-specific role,individual meaning,utility,mediation or speed inference. Direct negative-preactivation prior is explicit.",
+      "next_question": "Complete all96case/all5condition audit before mechanism interpretation. Then choose a distinct evidence-motivated next experiment within the unchanged work window.",
+      "direction_decision": "Execute the single frozen bounded measurement;no active-source mutation,duplicate launch,partial retrieval or closed gate rerun."
     }
   ],
-  "active_question_id": "Q58",
-  "next_question_id": "Q58",
-  "utc": "2026-11-01T03:36:15.901812+00:00"
+  "active_question_id": "Q60",
+  "next_question_id": null,
+  "utc": "2026-11-01T08:56:33.279151+00:00"
 }

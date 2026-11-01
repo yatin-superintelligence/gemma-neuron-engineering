@@ -1,0 +1,20 @@
+{
+  "experiment": "N44",
+  "scope": "Prospective fresh 144-response screen,now resource incomplete and censored.",
+  "site": 34,
+  "conditions": {
+    "original": "y=x+F(x)",
+    "parallel_repeat": "y+F(x)",
+    "serial_repeat": "y+F(y)"
+  },
+  "F": "Native pre-FFN RMS,MLP,post-FFN RMS;one tied repeat before existing per-layer-input branch runs once.",
+  "attention_repeated": false,
+  "full_transformer_inserted": false,
+  "coding_cases": 32,
+  "retention_cases": 16,
+  "primary": "Serial preserves every original-correct coding/retention case,gains at least four coding across two families,and beats parallel by at least two.",
+  "protocol_sha256": "076731e8db4da7d488c981879df55f280a5a64d77adad07d8686bb1a074ef105",
+  "frozen_actual_files": 81,
+  "training_allowed": false,
+  "raw_tasks_replies_notebook_private": true
+}

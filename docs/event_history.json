@@ -4469,6 +4469,132 @@
       "event": "U20_four_assets_covered_process_links_current_journal_native_EOS_and_incomplete_stops_no_new_backend",
       "experiment": "U20 process documentation",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 614,
+      "utc": "2026-11-01T05:01:25.986783+00:00",
+      "event": "U25_direct_continued_science_N44_single_native_FFN_serial_vs_parallel_fresh_protocol_frozen_before_implementation",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 615,
+      "utc": "2026-11-01T05:06:48.890388+00:00",
+      "event": "N44_new_reference9251_literal16_refusal12_pass",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 616,
+      "utc": "2026-11-01T05:08:23.817049+00:00",
+      "event": "N44_new_host_insertion_saved_residual_alias_failure_preserved",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 617,
+      "utc": "2026-11-01T05:09:27.989653+00:00",
+      "event": "N44_minimal_v2_residual_assignment_15newpaths17refusals_3exact_identity_carries_pass",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 618,
+      "utc": "2026-11-01T05:13:08.267747+00:00",
+      "event": "N44_new_actual_generation_envelope4checks11refusals_pass",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 619,
+      "utc": "2026-11-01T05:17:13.470975+00:00",
+      "event": "N44_new_audit4literal_checks14refusals_pass",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 620,
+      "utc": "2026-11-01T05:18:40.714499+00:00",
+      "event": "N44_new_combined_random_FP32_BF16_16forwards96exposures6literalEOS_tokens_pass",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 621,
+      "utc": "2026-11-01T05:20:09.992076+00:00",
+      "event": "N44_all48fresh_tokenizations_private_answers_excluded",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 622,
+      "utc": "2026-11-01T05:24:45.643854+00:00",
+      "event": "N44_all81actual_scientific_sources_inputs_notebook_payload_frozen_before_launch",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 623,
+      "utc": "2026-11-01T05:30:16.698596+00:00",
+      "event": "N44_private_version1_single_twoGPU_nativeEOS_job_launched",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 624,
+      "utc": "2026-11-01T05:30:42.745991+00:00",
+      "event": "N44_server_source_JSON_private_notebook_dataset_payload_exact_RUNNING_no_outputs_accessed",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 625,
+      "utc": "2026-11-01T08:56:33.279151+00:00",
+      "event": "N44_terminal_resource_incomplete_collected_once_no_audit_or_grading_all_partial_effects_censored",
+      "experiment": "N44",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 626,
+      "utc": "2026-11-01T08:56:33.279151+00:00",
+      "event": "N45_signed_postgate_mask_protocol_frozen_before_implementation",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 627,
+      "utc": "2026-11-01T08:56:33.279151+00:00",
+      "event": "N45_new36numerical_paths_11refusals_pass_closed",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 628,
+      "utc": "2026-11-01T08:56:33.279151+00:00",
+      "event": "N45_new3auditpositives_16refusals_pass_closed",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 629,
+      "utc": "2026-11-01T08:56:33.279151+00:00",
+      "event": "N45_distinct_actual_counter_integration_pass_closed",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 630,
+      "utc": "2026-11-01T09:04:34.298700+00:00",
+      "event": "N45_all329source_input_and_parent_hashes_frozen_before_launch",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 631,
+      "utc": "2026-11-01T09:04:34.298700+00:00",
+      "event": "N45_single_private_version1_launched_exact_server_source_privacy_dataset_verified_RUNNING",
+      "experiment": "N45",
+      "optimizer_steps": 0
     }
   ]
 }

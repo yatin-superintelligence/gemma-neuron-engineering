@@ -1,0 +1,52 @@
+{
+  "utc": "2026-11-01T08:43:49.585427+00:00",
+  "experiment": "N44",
+  "status": "resource_incomplete_closed",
+  "platform_status": "COMPLETE",
+  "stop_reason": "Both workers reached notebookSTART+6600seconds;not fixed research deadline.",
+  "notebook_seconds": 6604.60351542,
+  "duration_scope": "not charged GPU quota",
+  "reported_counters": {
+    "activation_assignments": 52208,
+    "backward_calls": 0,
+    "calls": 59110,
+    "extra_FFN_evaluations": 52259,
+    "input_token_exposures": 76878,
+    "manual_parameter_assignments": 0,
+    "new_generated_tokens": 58861,
+    "optimizer_steps": 0
+  },
+  "self_reported_committed_rows": 49,
+  "expected_responses": 144,
+  "counters_and_partial_measurements_not_frozen_scientifically_audited": true,
+  "actual_terminal_metadata_witness_review": [
+    {
+      "owner": 0,
+      "actual_initial_final_metadata_exact": true,
+      "metadata_scope": "parameter versions/shapes/dtypes/gradflags,buffers/config/RNG/hooks;not full parameter byte hashing",
+      "terminal_actual_counters_match_worker_report": true,
+      "committed_rows": 20,
+      "uncertain_intent": null,
+      "initial_sha256": "1e95f5a9f99d7cb5217a865ae8b5d249c81807581bf4f984530f247a3ba43cf2",
+      "final_sha256": "1e95f5a9f99d7cb5217a865ae8b5d249c81807581bf4f984530f247a3ba43cf2"
+    },
+    {
+      "owner": 1,
+      "actual_initial_final_metadata_exact": true,
+      "metadata_scope": "parameter versions/shapes/dtypes/gradflags,buffers/config/RNG/hooks;not full parameter byte hashing",
+      "terminal_actual_counters_match_worker_report": true,
+      "committed_rows": 29,
+      "uncertain_intent": null,
+      "initial_sha256": "1e95f5a9f99d7cb5217a865ae8b5d249c81807581bf4f984530f247a3ba43cf2",
+      "final_sha256": "1e95f5a9f99d7cb5217a865ae8b5d249c81807581bf4f984530f247a3ba43cf2"
+    }
+  ],
+  "auditor_invoked": false,
+  "collector_invocations": 1,
+  "new_grading_calls": 0,
+  "public_aggregate_created": false,
+  "actual_figure_created": false,
+  "all_partial_finite_effects_censored": true,
+  "interpretation": "No utility,mechanism,null,neuron-meaning or improvement result. No original-v1 continuation or reroll planned.",
+  "raw_outputs_remain_private": true
+}

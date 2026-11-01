@@ -1,0 +1,52 @@
+{
+  "experiment": "N45",
+  "question_id": "Q60",
+  "title": "Signed native final-MLP contributions versus matched-cardinality deletion",
+  "hypothesis": "Negative and positive native post-gating channel contributions can affect current native decisions differently from matched-cardinality randomly removed channels. A difference alone does not identify semantic function or useful improvement.",
+  "recipient": "google/gemma-4-E2B-it@3e22461f65e89153144f8adb70e3b8c2cc9845a7 textBF16",
+  "site": 34,
+  "all_cases": 96,
+  "coding": 64,
+  "retention": 32,
+  "cases_source": "Exact all96N41A cases,all8codingfamilies/two bindings and arithmetic/JSONretention. Development local measurement,not fresh confirmation. No case selected from outcomes.",
+  "positions": "For EVERY original native response,zero-based first min(3,T) decisions. Saved IDs are teacher measurements only. No new response or free generation.",
+  "sampled_decisions": 281,
+  "conditions": [
+    "original",
+    "remove_negative",
+    "random_negative_count",
+    "remove_positive",
+    "random_positive_count"
+  ],
+  "masks": "At native down_proj input h,current last position only: negative h<0,positive h>0. Strict signed zeros neither. Remove means assign literal0 to those actual coordinates. For each case and step,random.Random(4501) and random.Random(4502) fixed permutations of all channels;prefix n_negative or n_positive respectively. Same two permutations reused for every case/step,not fitted. Both random sets exactcardinality but NOT magnitude or energy matched. Native sign values recomputed under identical original teacher inputs,prepatchhash exact baseline.",
+  "control_panels": "For each case,baseline prefixK;identity clone-current prefixK;four mask prefixK,each immediately followed by native restoration prefixK. Fresh DynamicCache for every prefixpanel,original consumed IDs same. Original firstK fullFP32logits/argmax/rawcache hashes must exactly match saved N41native references. All edited rawK/V caches exact original sameinput;allother current/prefill positions exact;zero parameter assignments/gradients/optimizer;fullscopedstate before/after every case and observed terminal.",
+  "expected_counts": {
+    "full_model_forwards": 2810,
+    "input_token_exposures": 106120,
+    "activation_assignments": 1405,
+    "extra_FFN_evaluations": 0,
+    "new_generated_tokens": 0,
+    "manual_parameter_assignments": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0
+  },
+  "metrics": "All5conditions/all96cases/all10families/allroles/allfirstKpoints: fullFP32logit/rawcache/nativeh/mask/editedh hashes,actualmaskcardinality and removedh squared energy (FP64),argmax nativewinner vsfixed bestother margin,nativewinner probability,relativefullvocabFP64L2/maxabs. Equal-case means after within-case pointmeans. No pvalues,winningmask/site selection,mediationfractions,individualmeaning,syntaxproof,generalcodinggain orspeed claim.",
+  "completeness": "All96cases,all5conditions,and all281actual frozen firstK points plus every declared identity,restoration,state,lineage and counter witness are required. Interrupted or guard-failed panels are censored.",
+  "resources": {
+    "two_disjoint_GPU_owners": "case indexmod2;fullreplicaeachGPU,sequentialloading/commonbarrier",
+    "platform_seconds": 2400,
+    "notebook_seconds": 2200,
+    "worker_seconds": 2100,
+    "global_guard_notebook_start_plus_seconds": 2000,
+    "reserved_GPU_hours": 2,
+    "free_reserve_GPU_hours": 2,
+    "fixed_deadline_utc": "2026-11-01T13:24:39Z",
+    "deadline_guard_seconds": 120,
+    "output_bytes_max": 67108864,
+    "fresh_official_quota_and_own_inventory_required": true
+  },
+  "no_training": true,
+  "witness_scope": "Host checks recorded hashes and metadata. It does not independently recompute the native activations,sign values,full logits or full pretrained parameter bytes.",
+  "edition": "Reviewed prospective design. Native teacher IDs,prompts,worker,notebook and raw measurements remain private.",
+  "protocol_sha256": "4d8fcd625a9524d8e237b6188aa275c4eb9d31c819fad88e226170d21616879b"
+}

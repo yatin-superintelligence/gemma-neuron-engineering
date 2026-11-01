@@ -494,7 +494,19 @@
       "outcome": "Frozen 6600-second boundary interrupted both workers. Partial panel censored; no audit, mechanism result or real figure.",
       "duration_scope": "Notebook wall time, not charged GPU quota or a speed comparison.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N44_v1_native_final_FFN_reuse_two_GPU",
+      "recorded_script_seconds": 6604.60351542,
+      "duration_scope": "Notebook wall time,not charged quota. All partial finite effects censored.",
+      "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N45_v1_signed_native_MLP_two_GPU",
+      "launched_utc": "2026-11-01T08:58:34.126703+00:00",
+      "status": "RUNNING_PRIVATE"
+    }
+  ]
 }

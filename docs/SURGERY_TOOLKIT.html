@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2;overflow-wrap:anywhere}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option><option>Evaluate</option><option>Generate and resume</option><option>Record evidence</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_cache_branch</h2><p>Clone an actual native past for one current-token causal measurement.
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2;overflow-wrap:anywhere}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Reuse computation</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option><option>Evaluate</option><option>Generate and resume</option><option>Record evidence</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_cache_branch</h2><p>Clone an actual native past for one current-token causal measurement.
 
 The clone is ephemeral. It is not a reusable past for a changed conversation.
 Only the pinned DynamicCache with initialized dense KV layers is accepted.</p><p><a href="../interpretability/native_cache_branch.py">Exact source file</a></p><p class="small">APIs: tensor_hash, _value, fingerprint, _storages, native_cache_branch</p><p class="hash">SHA-256 a11a55a52e908bc2f6f19ee00f20d00e1f66c6cf673a5c7969082d581b2ee6e7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Clone an actual native past for one current-token causal measurement.
@@ -587,6 +587,94 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>signed_native_mask</h2><p>Fixed sign masks at the current final native MLP down-projection input.
+
+The sign is that of the post-gating product, not the gate pre-activation.
+Random controls match cardinality only. No parameter or fitted scale is used. Random-model paths pass. Pretrained evidence is reported separately for N45. Random controls match cardinality only, not magnitude or energy.</p><p><a href="../interpretability/signed_native_mask.py">Exact source file</a></p><p class="small">APIs: indices, transform, signed_mask</p><p class="hash">SHA-256 9b57f9f5485d211ccf88d7840b4572a2505ca19ab2b6538019d3f04e2e96e056</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Fixed sign masks at the current final native MLP down-projection input.
+
+The sign is that of the post-gating product, not the gate pre-activation.
+Random controls match cardinality only. No parameter or fitted scale is used.
+&quot;&quot;&quot;
+from contextlib import contextmanager
+import hashlib
+import inspect
+import random
+
+import torch
+from transformers.models.gemma4.modeling_gemma4 import Gemma4TextDecoderLayer, Gemma4TextMLP
+from research.experiments.n35.core import tensor_sha
+
+MODES = (&#x27;original&#x27;, &#x27;identity&#x27;, &#x27;remove_negative&#x27;, &#x27;random_negative_count&#x27;, &#x27;remove_positive&#x27;, &#x27;random_positive_count&#x27;)
+MODULE_SHA = &#x27;64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933&#x27;
+MLP_FORWARD = Gemma4TextMLP.forward
+
+
+def indices(value, mode):
+    if mode not in MODES or value.ndim != 1 or value.dtype not in (torch.float32, torch.bfloat16) or value.requires_grad or not torch.isfinite(value).all():
+        raise ValueError(&#x27;Finite native one-dimensional inference state and fixed mode required&#x27;)
+    if mode in (&#x27;original&#x27;, &#x27;identity&#x27;):
+        return []
+    negative = &#x27;negative&#x27; in mode
+    sign = torch.nonzero(value &lt; 0 if negative else value &gt; 0).flatten().tolist()
+    if mode.startswith(&#x27;remove_&#x27;):
+        return sign
+    permutation = list(range(value.numel()))
+    random.Random(4501 if negative else 4502).shuffle(permutation)
+    return sorted(permutation[:len(sign)])
+
+
+def transform(value, mode):
+    if value.ndim != 3 or value.shape[0] != 1:
+        raise ValueError(&#x27;Batch-one native activation required&#x27;)
+    current = value[0, -1]
+    selected = indices(current, mode)
+    patched = value.clone()
+    if mode not in (&#x27;original&#x27;, &#x27;identity&#x27;):
+        patched[0, -1, selected] = 0
+    if tensor_sha(patched[:, :-1]) != tensor_sha(value[:, :-1]):
+        raise ValueError(&#x27;Another sequence position changed&#x27;)
+    energy = current.double().square()
+    removed = float(energy[selected].sum())
+    total = float(energy.sum())
+    return patched, {&#x27;native_h_sha256&#x27;: tensor_sha(current), &#x27;edited_h_sha256&#x27;: tensor_sha(patched[0, -1]),
+                     &#x27;indices&#x27;: selected, &#x27;mask_sha256&#x27;: hashlib.sha256(str(selected).encode()).hexdigest(),
+                     &#x27;negative_count&#x27;: int((current &lt; 0).sum()), &#x27;positive_count&#x27;: int((current &gt; 0).sum()),
+                     &#x27;width&#x27;: current.numel(), &#x27;removed_h_energy&#x27;: removed, &#x27;total_h_energy&#x27;: total,
+                     &#x27;removed_h_energy_fraction&#x27;: removed / total if total else None,
+                     &#x27;other_positions_byte_exact&#x27;: True}
+
+
+@contextmanager
+def signed_mask(model, mode):
+    if mode not in MODES:
+        raise ValueError(&#x27;Fixed mask mode required&#x27;)
+    source = inspect.getsourcefile(Gemma4TextDecoderLayer)
+    if hashlib.sha256(open(source, &#x27;rb&#x27;).read()).hexdigest() != MODULE_SHA:
+        raise ValueError(&#x27;Pinned Gemma4 implementation required&#x27;)
+    blocks = model.model.language_model.layers
+    block = blocks[-1]
+    if type(block) is not Gemma4TextDecoderLayer or block.layer_idx != len(blocks)-1 or type(block.mlp) is not Gemma4TextMLP or block.enable_moe_block:
+        raise ValueError(&#x27;Final dense native MLP required&#x27;)
+    if type(block.mlp).forward is not MLP_FORWARD or &#x27;forward&#x27; in block.mlp.__dict__:
+        raise ValueError(&#x27;Native MLP callable required&#x27;)
+    module = block.mlp.down_proj
+    if module._forward_pre_hooks or module._forward_hooks or any(p.grad is not None for p in model.parameters()):
+        raise ValueError(&#x27;Clean hook site and absent parameter gradients required&#x27;)
+    receipt = {&#x27;mode&#x27;: mode, &#x27;site&#x27;: len(blocks)-1, &#x27;activation_assignments&#x27;: 0, &#x27;frames&#x27;: []}
+    def hook(module, args):
+        if type(block.mlp).forward is not MLP_FORWARD or &#x27;forward&#x27; in block.mlp.__dict__:
+            raise ValueError(&#x27;Native MLP callable changed&#x27;)
+        patched, witness = transform(args[0], mode)
+        receipt[&#x27;frames&#x27;].append(witness)
+        if mode == &#x27;original&#x27;:
+            return None
+        receipt[&#x27;activation_assignments&#x27;] += 1
+        return (patched, *args[1:])
+    handle = module.register_forward_pre_hook(hook)
+    try:
+        yield receipt
+    finally:
+        handle.remove()
 </pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>native_rms_factor_v2</h2><p>Exact native-state controls for one current-position Gemma 4 RMSNorm.</p><p><a href="../interpretability/native_rms_factor_v2.py">Exact source file</a></p><p class="small">APIs: verify_class_source, tensor_sha, check_norm, check_binding, NativeNormState, compose, capture_states, validate_source, norm_cell</p><p class="hash">SHA-256 8347f754831c63e0ee653791afcbc39d50037e1103026ab8d66a6d6fd11cf8b3</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Exact native-state controls for one current-position Gemma 4 RMSNorm.&quot;&quot;&quot;
 
 from contextlib import contextmanager
@@ -1180,6 +1268,132 @@ def resolved_contract(model):
         k: v for k, v in contract.items() if k != &quot;max_new_tokens&quot;
     }
     return {**actual, &quot;stop_strings&quot;: [&quot;\n&quot;], &quot;manual_full_vocabulary&quot;: True}
+</pre></details></article><article class="card tool" data-category="Reuse computation"><span class="tag">Reuse computation</span><h2>native_ffn_reuse_v2</h2><p>One fixed extra native FFN computation before the final per-layer-input branch.
+
+Tied pretrained modules are reused. No parameter is assigned or trained.
+This is an FFN residual insertion, not a full transformer-layer insertion. Current version 2 fixes the saved residual alias. Random-model paths pass; the N44 pretrained panel is resource incomplete and all effects are censored. No useful coding gain is established.</p><p><a href="../interpretability/native_ffn_reuse_v2.py">Exact source file</a></p><p class="small">APIs: _bytes_equal, reuse_final_ffn</p><p class="hash">SHA-256 62637a2ed427152c3f4b96ceedbebd2aa788f3157838e3adcd175722f4ac74a1</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;One fixed extra native FFN computation before the final per-layer-input branch.
+
+Tied pretrained modules are reused. No parameter is assigned or trained.
+This is an FFN residual insertion, not a full transformer-layer insertion.
+&quot;&quot;&quot;
+from contextlib import contextmanager
+import hashlib
+import inspect
+
+import torch
+from transformers.models.gemma4.modeling_gemma4 import (
+    Gemma4RMSNorm, Gemma4TextDecoderLayer, Gemma4TextMLP,
+)
+
+MODULE_SHA = &#x27;64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933&#x27;
+_NATIVE_FORWARDS = {Gemma4RMSNorm: Gemma4RMSNorm.forward, Gemma4TextMLP: Gemma4TextMLP.forward}
+_NATIVE_RMS_INNER = Gemma4RMSNorm._norm
+
+
+def _bytes_equal(a, b):
+    return (a.shape == b.shape and a.dtype == b.dtype and a.device == b.device
+            and torch.equal(a.contiguous().reshape(-1).view(torch.uint8),
+                            b.contiguous().reshape(-1).view(torch.uint8)))
+
+
+@contextmanager
+def reuse_final_ffn(model, mode):
+    &quot;&quot;&quot;Install identity, parallel_repeat or serial_repeat; remove every own hook.&quot;&quot;&quot;
+    if mode not in (&#x27;identity&#x27;, &#x27;parallel_repeat&#x27;, &#x27;serial_repeat&#x27;):
+        raise ValueError(&#x27;Unknown fixed FFN reuse condition&#x27;)
+    source = inspect.getsourcefile(Gemma4TextDecoderLayer)
+    with open(source, &#x27;rb&#x27;) as stream:
+        if hashlib.sha256(stream.read()).hexdigest() != MODULE_SHA:
+            raise ValueError(&#x27;Pinned Gemma4 implementation required&#x27;)
+    blocks = list(model.model.language_model.layers)
+    block = blocks[-1]
+    if (type(block) is not Gemma4TextDecoderLayer or block.layer_idx != len(blocks) - 1
+            or block.enable_moe_block or not block.hidden_size_per_layer_input
+            or type(block.mlp) is not Gemma4TextMLP
+            or type(block.pre_feedforward_layernorm) is not Gemma4RMSNorm
+            or type(block.post_feedforward_layernorm) is not Gemma4RMSNorm):
+        raise ValueError(&#x27;Final dense native FFN with per-layer input required&#x27;)
+    modules = [block.pre_feedforward_layernorm, block.mlp, block.post_feedforward_layernorm]
+    if any(m._forward_hooks or m._forward_pre_hooks for m in modules + [block.per_layer_input_gate]):
+        raise ValueError(&#x27;Unscoped hooks on the native FFN site&#x27;)
+    original = [(m, _NATIVE_FORWARDS[type(m)], m.__dict__.get(&#x27;forward&#x27;)) for m in modules]
+    if any(type(m).forward is not fn for m, fn, _ in original) or Gemma4RMSNorm._norm is not _NATIVE_RMS_INNER:
+        raise ValueError(&#x27;Pinned native class callables required&#x27;)
+    if any(custom is not None for _, _, custom in original):
+        raise ValueError(&#x27;Native callable identities required&#x27;)
+    if any(p.grad is not None for p in model.parameters()):
+        raise ValueError(&#x27;Parameter gradients must be absent&#x27;)
+    frame = {}; handles = []; busy = False
+    receipt = {&#x27;mode&#x27;: mode, &#x27;site&#x27;: len(blocks) - 1, &#x27;extra_FFN_evaluations&#x27;: 0,
+               &#x27;activation_assignments&#x27;: 0, &#x27;native_frames&#x27;: 0,
+               &#x27;parameter_assignments&#x27;: 0, &#x27;optimizer_steps&#x27;: 0}
+
+    def native_input(module, args):
+        if busy:
+            return
+        if frame:
+            raise ValueError(&#x27;Previous native FFN frame unfinished&#x27;)
+        x = args[0]
+        if (x.ndim != 3 or x.shape[0] != 1 or x.shape[-1] != block.hidden_size
+                or x.dtype not in (torch.float32, torch.bfloat16) or x.requires_grad):
+            raise ValueError(&#x27;Native batch-one FP32/BF16 inference required&#x27;)
+        frame[&#x27;x&#x27;] = x.detach().clone()
+
+    def native_output(module, args, output):
+        if busy:
+            return
+        if set(frame) != {&#x27;x&#x27;}:
+            raise ValueError(&#x27;Unexpected native FFN call order&#x27;)
+        frame[&#x27;delta&#x27;] = output.detach().clone()
+
+    def insert(module, args):
+        nonlocal busy
+        if busy or set(frame) != {&#x27;x&#x27;, &#x27;delta&#x27;}:
+            raise ValueError(&#x27;Missing native FFN frame or reentrant insertion&#x27;)
+        if Gemma4RMSNorm._norm is not _NATIVE_RMS_INNER:
+            raise ValueError(&#x27;Native RMS callable changed&#x27;)
+        for m, forward, custom in original:
+            if type(m).forward is not forward or m.__dict__.get(&#x27;forward&#x27;) is not custom:
+                raise ValueError(&#x27;Native FFN callable changed&#x27;)
+        y = args[0]
+        x, delta = frame[&#x27;x&#x27;], frame[&#x27;delta&#x27;]
+        if not _bytes_equal(y, x + delta):
+            raise ValueError(&#x27;Insertion is not immediately after native FFN residual&#x27;)
+        if not torch.isfinite(y).all():
+            raise ValueError(&#x27;Nonfinite native residual&#x27;)
+        busy = True
+        try:
+            value = y if mode == &#x27;serial_repeat&#x27; else x
+            extra = block.post_feedforward_layernorm(block.mlp(block.pre_feedforward_layernorm(value)))
+            receipt[&#x27;extra_FFN_evaluations&#x27;] += 1
+            if not torch.isfinite(extra).all():
+                raise ValueError(&#x27;Nonfinite extra native FFN output&#x27;)
+            if mode != &#x27;serial_repeat&#x27; and not _bytes_equal(extra, delta):
+                raise ValueError(&#x27;Parallel native FFN recomputation differs&#x27;)
+            # The decoder saved this tensor as its PLE residual before the hook.
+            # Assigning the declared update in-place keeps BOTH residual and gate input aligned.
+            if mode != &#x27;identity&#x27;:
+                y.copy_(y + extra)
+            result = y
+            receipt[&#x27;native_frames&#x27;] += 1
+            if mode != &#x27;identity&#x27;:
+                receipt[&#x27;activation_assignments&#x27;] += 1
+            frame.clear()
+            return (result,)
+        finally:
+            busy = False
+
+    try:
+        handles.append(block.pre_feedforward_layernorm.register_forward_pre_hook(native_input))
+        handles.append(block.post_feedforward_layernorm.register_forward_hook(native_output))
+        handles.append(block.per_layer_input_gate.register_forward_pre_hook(insert))
+        yield receipt
+        if frame or busy:
+            raise ValueError(&#x27;Unfinished FFN insertion at scope exit&#x27;)
+    finally:
+        for handle in handles:
+            handle.remove()
+        frame.clear()
 </pre></details></article><article class="card tool" data-category="Edit weights"><span class="tag">Edit weights</span><h2>stored_neuron_gain</h2><p>Prescribed dense native-column assignments, with exact restoration.</p><p><a href="../interpretability/stored_neuron_gain.py">Exact source file</a></p><p class="small">APIs: tensor_sha, stored_neuron_gain</p><p class="hash">SHA-256 6169b400b3f2a2a8d54010413e07324925ebb7ef2c4541f26eda3bbb73aa8f88</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Prescribed dense native-column assignments, with exact restoration.&quot;&quot;&quot;
 from contextlib import contextmanager
 import hashlib

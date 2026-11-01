@@ -70,6 +70,16 @@
     },
     {
       "category": "Patch activations",
+      "path": "interpretability/signed_native_mask.py",
+      "sha256": "9b57f9f5485d211ccf88d7840b4572a2505ca19ab2b6538019d3f04e2e96e056",
+      "symbols": [
+        "indices",
+        "transform",
+        "signed_mask"
+      ]
+    },
+    {
+      "category": "Patch activations",
       "path": "interpretability/native_rms_factor_v2.py",
       "sha256": "8347f754831c63e0ee653791afcbc39d50037e1103026ab8d66a6d6fd11cf8b3",
       "symbols": [
@@ -121,6 +131,15 @@
         "free_tail",
         "native_source_teacher",
         "resolved_contract"
+      ]
+    },
+    {
+      "category": "Reuse computation",
+      "path": "interpretability/native_ffn_reuse_v2.py",
+      "sha256": "62637a2ed427152c3f4b96ceedbebd2aa788f3157838e3adcd175722f4ac74a1",
+      "symbols": [
+        "_bytes_equal",
+        "reuse_final_ffn"
       ]
     },
     {

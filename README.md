@@ -19,6 +19,8 @@ The [Research Logbook](docs/RESEARCH_LOG.html) retains all experiments, negative
 
 ## Current work
 
+The [N44 FFN-reuse screen](results/n44_resource_interruption.json) ended at its fixed resource boundary with an incomplete panel. All partial effects are censored. Its observed final state metadata is preserved; no utility grading or scientific audit ran. The new [N45 signed-contribution measurement](methods/n45_signed_contribution_design.json) is running privately on all 96 original cases and 281 fixed native decisions. It compares negative and positive post-gating channel removals with matched-cardinality random controls and generates no new responses. No N45 outcome has been accessed.
+
 The completed [N34 block study](results/n34_summary.json) audits all 1176 records. Two late blocks pass the copying and coding-loss components, but zeroing them also damages retention. No block passes the full selective-role criterion. All 49 [runtime policies](models/n34/recipe.json) remain available.
 
 The [adequate-output baseline](results/n37_summary.json) is complete and audited. The unmodified original scores 24/32 coding and 7/16 retention; the compatible donor scores 23/32 and 11/16. Every extended reply finishes. All 96 outcomes remain, with no model edits or training. The [N38 observation panel](results/n38_summary.json) is complete: all 96 native trajectories and all 10,467 decision replays pass, including exact full-logit and whole-cache hashes. It records 471 fixed timeline coordinates and case-balanced moments over all 337,920 native channels. No new response or neuron edit is made. Actual traces remain private; the public viewer starts with a synthetic example.

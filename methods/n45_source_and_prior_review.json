@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-01T08:45:41.087159+00:00",
+  "reviewed_before_implementation": true,
+  "primary_source": "https://arxiv.org/html/2509.24198",
+  "read": "Abstract,Introduction,Sections2 and3 and AppendixA.4 headings/summary. Negative pre-activation differentiation and matched controls are direct prior art.",
+  "distinction": "N45intervenes on signed post-gating product h=act(gate(x))*up(x),not gate pre-activation or Wasserstein-selected neurons. All final-layer native channels,one fixed site,cardinality-matched random controls,original firstthree decisions,all96existing N41A cases. No new general-method or syntax-specific novelty claim.",
+  "local_motivation": "N38observes signed post-gating values without semantic meaning;N41closes sparse32zero utility lead;N43is censored and provides no finite-effects evidence;N44newfree-generation panel was resource-incomplete despite observed final restoration metadata. This bounded measurement tests a distinct signed-contribution mechanism and does not select or continue N44cases.",
+  "frozen_Gemma_module_sha256": "64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933",
+  "model_calls": 0
+}
