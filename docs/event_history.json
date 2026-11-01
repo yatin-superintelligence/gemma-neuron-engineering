@@ -4462,6 +4462,13 @@
       "event": "private_manuscript_N42_posthoc_and_N43_censored_status_6pages_2563judged_2904allwords_13refs_visual_pass",
       "experiment": "Private manuscript",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 613,
+      "utc": "2026-11-01T03:55:50.326255+00:00",
+      "event": "U20_four_assets_covered_process_links_current_journal_native_EOS_and_incomplete_stops_no_new_backend",
+      "experiment": "U20 process documentation",
+      "optimizer_steps": 0
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-01T03:50:00.551256+00:00",
+  "generated_utc": "2026-11-01T03:55:53.083256+00:00",
   "project": "Digital Surgery",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,8 +21,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "778ffd3f1bb2ea907749c78e867c60db2dbc65dc90f2ec32f95f529e42089265",
-      "bytes": 17318
+      "sha256": "2b65a9af95255829b115b97b5ad0dc0b09262b93361e3e80b9cb8c11775780fc",
+      "bytes": 17468
     },
     {
       "path": "docs/ACTIVATION_VIEWER.html",
@@ -31,8 +31,8 @@
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "d4f290563548b943ff4dafd6465755a5c0bd90328ae3c291a2c1bdc95569d0a3",
-      "bytes": 333330
+      "sha256": "6f9a89d3398eb9a4b1af937c4b1ce195c6e5369f21f1e83b01e4a237ae932027",
+      "bytes": 335289
     },
     {
       "path": "docs/MEASUREMENT_JOURNAL.html",
@@ -46,8 +46,8 @@
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "2afcb4c94f856cff4823affddb57ee873d2609730432156c98691fac010cacd6",
-      "bytes": 264173
+      "sha256": "4988d7f7ced06e3fd4e0d91aab6283cae54fdc96275132762a9254e07862a5cb",
+      "bytes": 264378
     },
     {
       "path": "docs/SURGERY_ASSET_INDEX.json",
@@ -56,8 +56,8 @@
     },
     {
       "path": "docs/SURGERY_PROCESS.html",
-      "sha256": "869f38fcc3fe332459d304203dd60de673d4e868a8afc578ab860a354ca4c5bf",
-      "bytes": 5154
+      "sha256": "96d2700838d0fd64c719b004381c154275ba34668867b403fe669c96aea3af3b",
+      "bytes": 6162
     },
     {
       "path": "docs/SURGERY_TOOLKIT.html",
@@ -71,8 +71,8 @@
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "3bcd211062c35c0b3a51c0a0b46e9a7b50cd16040807f185baa9fd168929ae73",
-      "bytes": 140643
+      "sha256": "2f80761f7b2acc7f5b22dc723c22e7d7083f798c85738c34c7369b347d6a25a2",
+      "bytes": 140923
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -2406,7 +2406,7 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "c9610e32dab846de3deeeee75ca5e4b5ed84ce4320b7aa50544e8bddaa52b016",
+      "sha256": "6ec7a7c5ec6c817023cdbde2553901ae6e9ca42048621ca3c63cc28463fc8756",
       "bytes": 601
     },
     {
@@ -2431,8 +2431,8 @@
     },
     {
       "path": "scripts/build_surgery_assets.py",
-      "sha256": "9553bfb0e8893ce171f043a7d55d9a780ed55b0d8d1abc10ef41278a77e80d40",
-      "bytes": 22324
+      "sha256": "091e1936fe214e0b6e060d090350c12e5261b861a39656f6b0603ef42ec25b5b",
+      "bytes": 23347
     },
     {
       "path": "scripts/export_native_trace.py",

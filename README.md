@@ -69,7 +69,7 @@ The [saved-history comparison helper](evaluation/common_history_trace.py) compar
 - [Editing and observation toolkit](docs/SURGERY_TOOLKIT.html): actual APIs, full source and hashes.
 - [Saved model registry](docs/MODEL_REGISTRY.html): exact patch tensors, pinned parents and reconstruction code.
 - [Activation viewer](docs/ACTIVATION_VIEWER.html): inspect a local compact trace, with a clearly labelled synthetic example.
-- [Surgery process](docs/SURGERY_PROCESS.html): a repeatable observation, intervention, evaluation and release workflow.
+- [Surgery process](docs/SURGERY_PROCESS.html): observation, native-EOS completion, interventions, durable witness preparation, interruption handling and reviewed release. The [current journal guide](docs/MEASUREMENT_JOURNAL.html) explains its host-only evidence limits.
 
 Open these HTML files from a clone. They work offline and do not upload a trace. Rebuild them from the repository root with `python scripts/build_surgery_assets.py --root .`.
 
