@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T16:15:26.448362+00:00",
+  "experiment": "N51",
+  "scope": "Reporting-only preparation AFTERlaunch and BEFOREanyN51output/partial/livecounteraccess. Notaprimaryoranalysischange.",
+  "whole_panel_required": "OriginalfrozenN51auditcompletePASSall24/144newcells,all1163scienceandparenthashes/planpointer exact. No figure/effectreport ifincomplete.",
+  "source_freeze_sha256": "4ed3f56a2ab399dec285107c903388821e9b85d18f2fe60cf652a1e6f69f0be7",
+  "panels": [
+    "coding meanabsoluteR/P/joint marginchange all2donors",
+    "retention meanabsoluteR/P/joint all2donors",
+    "coding signedR/P/joint all2donors",
+    "retention signedR/P/joint all2donors",
+    "codingcorrect all6newconditions withcarriednative reference",
+    "retentioncorrect all6newconditions withcarriednative reference"
+  ],
+  "retained_scope": "Bothdonors/all3cells/allroles/all12families/allorders inunchangedactualaggregate. No pvalues/CI/posthocwinner/meaning/mediation/freshconfirmation/fullprogramgain. P recordednative,notrecomputedunderhybridR;Frecipientfixed.",
+  "provenance": "Separate4sourcefreeze beforeoutputaccess. Atactualrender verify every1163source+plan/protocol/audit and everyactualrawfileSHA,24source/24recipientenvelopebindings/144cells andfixedXORparentlineage. BindobservedinputSHAs separately,never overwritepreoutputfreeze.",
+  "software_validation": "One new literalcompletepanel andtargetedprovenance/completegridrefusals,0model/tokenizer/scorer/executor/oldfixturecalls. One syntheticlayoutpreviewview/hash/delete. ActualfigureonlyafterwholePASS,renderonce/viewall6.",
+  "no_training": true
+}

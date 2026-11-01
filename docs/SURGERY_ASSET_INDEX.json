@@ -3,6 +3,15 @@
   "source_files": [
     {
       "category": "Observe",
+      "path": "research/experiments/n52/assay.py",
+      "sha256": "6c5699c6e9c311b88186926c3bc908698e0a34897b35b197bdb98c20aab581a0",
+      "symbols": [
+        "native_leaf",
+        "one_case"
+      ]
+    },
+    {
+      "category": "Observe",
       "path": "interpretability/native_cache_branch.py",
       "sha256": "a11a55a52e908bc2f6f19ee00f20d00e1f66c6cf673a5c7969082d581b2ee6e7",
       "symbols": [
@@ -66,6 +75,20 @@
       "symbols": [
         "make_trace",
         "main"
+      ]
+    },
+    {
+      "category": "Patch activations",
+      "path": "research/experiments/n51/assay.py",
+      "sha256": "9f131b9b1a227a95a77972a41a2b24a200746c590b084b4c465f971bd6921789",
+      "symbols": [
+        "combine",
+        "observe",
+        "native_forward",
+        "capture",
+        "public_capture",
+        "patch",
+        "one_case"
       ]
     },
     {
@@ -246,6 +269,27 @@
         "apply_n01_branch",
         "apply_n01_gain",
         "main"
+      ]
+    },
+    {
+      "category": "Evaluate",
+      "path": "evaluation/native_sensitivity.py",
+      "sha256": "47f436edc654ee9925c4721b76fa28afb513641963ed1961850028e5e5030e04",
+      "symbols": [
+        "sha_tensor",
+        "require",
+        "analyze"
+      ]
+    },
+    {
+      "category": "Evaluate",
+      "path": "evaluation/native_component_reporting.py",
+      "sha256": "684cf0956fe3c803d800317aa02aa32c56061c211ca1852f2389ea64d6835ab5",
+      "symbols": [
+        "require",
+        "integer",
+        "validate",
+        "plot"
       ]
     },
     {

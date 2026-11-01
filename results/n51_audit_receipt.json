@@ -1,0 +1,23 @@
+{
+  "actual_counters": {
+    "activation_assignments": 144,
+    "backward_calls": 0,
+    "calls": 312,
+    "extra_FFN_evaluations": 0,
+    "extra_down_projection_evaluations": 0,
+    "hybrid_component_constructions": 144,
+    "input_token_exposures": 29510,
+    "manual_parameter_assignments": 0,
+    "native_component_reconstruction_checks": 312,
+    "native_restoration_forwards": 144,
+    "native_sourceguards": 24,
+    "new_emitted_tokens": 0,
+    "optimizer_steps": 0
+  },
+  "all24_contexts_144new_factor_cells": true,
+  "closed_scorer_model_tokenizer_executor_calls": 0,
+  "new_literal_label_comparisons": 144,
+  "public_aggregate_sha256": "bda1d3566dbd4e60d11500645fa55785a576dd421ff9add9f02fd8e74e8deed2",
+  "status": "complete_pass_all_frozen_guards",
+  "utc": "2026-11-01T16:20:45.302494+00:00"
+}

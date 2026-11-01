@@ -4847,6 +4847,48 @@
       "event": "COMPLETE_frozen_audit_PASS_all24contexts_72donors_pairedchoice_transfer_null",
       "experiment": "N50",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 668,
+      "utc": "2026-11-01T16:06:30.944484+00:00",
+      "event": "NEW_native_R_P_factorial_protocol_host_gates_package_sourcefreeze_complete_prelaunch",
+      "experiment": "N51",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 669,
+      "utc": "2026-11-01T16:09:21.445304+00:00",
+      "event": "ONE_PRIVATE_VERSION1_launched_exactserverJSON_privateGPU_singleREADYdataset",
+      "experiment": "N51",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 670,
+      "utc": "2026-11-01T16:29:21.289770+00:00",
+      "event": "COMPLETE_frozen_audit_PASS_native_residual_answerletter_control_not_semantic_gain",
+      "experiment": "N51",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 671,
+      "utc": "2026-11-01T16:53:03.756762+00:00",
+      "event": "NEW_read_only_native_VJP_host_audit_package1340sourcefreeze_ready_prelaunch",
+      "experiment": "N52",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 672,
+      "utc": "2026-11-01T16:54:34.952374+00:00",
+      "event": "ONE_PRIVATE_VERSION1_launched_exactserverJSON_privateGPU_singleREADYdataset",
+      "experiment": "N52",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 673,
+      "utc": "2026-11-01T17:01:54.924707+00:00",
+      "event": "COMPLETE_frozen_audit_PASS_readonlyVJP_sign_not_local_support_0valueupdates",
+      "experiment": "N52",
+      "optimizer_steps": 0
     }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-01T16:29:21.289770+00:00",
+  "figure_path": "docs/figures/n51/n51_summary.png",
+  "figure_sha256": "9f5ca6d7670bc5102e1b5875f90123b5df77e92a4c57fd746dd77a2ab2e8bc5d",
+  "actual_render_invocations": 1,
+  "all6panels_viewed": true,
+  "aggregate_sha256": "bda1d3566dbd4e60d11500645fa55785a576dd421ff9add9f02fd8e74e8deed2",
+  "new_model_tokenizer_scorer_calls": 0,
+  "visual_QA": "PASSall6readable/legendsoutsideaxes/nooverlap/clipping/captionandallbarschecked",
+  "sources": {
+    "runs/n51/reporting/source_freeze.json": "df579a6208d22b1200545b18ba5bacb25bb7addf5a7ff6fa48da574ad2f1508f",
+    "runs/n51/reporting/actual_input_binding.json": "c178eb32a1b6cf079d70337b30f34dbf5aefd45b22643ea648eb9144959350dd",
+    "scripts/report_n51.py": "c18975fad29e707f8dccf8eb798bf4ede65fc029d740858d76ced2dbfdcea5d2",
+    "evaluation/native_component_reporting.py": "684cf0956fe3c803d800317aa02aa32c56061c211ca1852f2389ea64d6835ab5"
+  }
+}

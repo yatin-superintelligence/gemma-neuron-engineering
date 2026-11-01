@@ -1,0 +1,54 @@
+{
+  "utc": "2026-11-01T15:52:15.064791+00:00",
+  "experiment": "N51",
+  "question": "Q66",
+  "title": "Native residual and per-layer input contribution controls with recipient FFN retained",
+  "motivation": "N50pairedwhole-htransplants preserveall24recipientchoices. Native FFNalone may not controlchoice becauseother additivebranches persist. This tests two actual bypasscontributions inonefinitefactorial,notblindsite/dose/task sweep.",
+  "cohort": "ALL24N48contexts/16coding8retention/all12families/bothanswerorders,REUSEDDEVELOPMENT.",
+  "native_components": "AtfinaldenseMLPblock34: R is actual residual before pre_feedforward_layernorm; F is actual post_feedforward_layernorm output; P is actual post_per_layer_input_norm output. Nativeblockcurrentoutput=((R+F)+P)*native layer_scalar,exactdtype/operatororder. Fulltransformer notinserted/claimed.",
+  "donors": {
+    "paired_order_swap": "row_indexXOR1",
+    "unrelated_same_order": "row_indexXOR2"
+  },
+  "selection": "Allfixed donors independentofhiddenlabels/argmax/activationeffects;nativeunmodifiedactualvectors only. Own4rowdonorgraphs remainowner(row_index//4)%2,12contextsperreplica.",
+  "cells": {
+    "00": "N48originalnative full-decisioncarry,notnewgrade",
+    "10": "NEW ((Rdonor+Frecipient)+Precipient)*native_scalar",
+    "01": "NEW ((Rrecipient+Frecipient)+Pdonor)*native_scalar",
+    "11": "NEW ((Rdonor+Frecipient)+Pdonor)*native_scalar"
+  },
+  "causal_scope": "Native-factor recombination atfinalblockoutput,currentlastposition. P is recordedactualnativebranch,NOTrecomputedafterhybridR. FixedrecipientF inallcells. This cut doesnot claim a self-consistent new internal PLE history or mediation. Nativeinternalforward remainsunmodified;onlyoutputcurrentvector directlyassigned.",
+  "carries_and_sources": "Native00exactN48carrywithparentenvelope/auditSHA. No N48edited/N49cross/N50donor fullforwardreruns. One NEWnativeguard/context obtains previouslyunsaved R/P vectors,checksfullFP32logits/argmax/fullcache/h againstN48 and FhashagainstN49auditednativeF. Actualnative R/F/P sum/scalar mustreconstructnativeblockoutputbyteexact.",
+  "execution": "Durable24sourceguardchainbefore144newfactorcells. Eachnewcellfollowedactualnativefullrestoration. Allotherpositions/currentnativeinternalR/F/P/blockoutput/cache exact. Fixedrotated donor/cellorder retainsallconditions. Stateversions/hooks/config/RNG/buffers/grad beforedurablecommit andactualterminalmetadata.",
+  "expected_work": {
+    "contexts": 24,
+    "native_sourceguard_forwards": 24,
+    "donor_conditions": 2,
+    "new_factor_cells": 144,
+    "native_restoration_forwards": 144,
+    "full_forwards": 312,
+    "input_exposures": 29510,
+    "block_output_assignments": 144,
+    "extra_FFN_or_down_projection_evaluations": 0,
+    "emitted_tokens": 0,
+    "parameter_assignments": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0
+  },
+  "primary": "Everydonor/role:meanabsolute correct-minus-foil marginchange fromnative00 for10R,01P,11joint,andfiniteinteraction(m11-m10-m01+m00). Also signedchanges/ranges andallchoicechanges. Descriptive,no threshold/pvalues/armselection. Allroles/families/ordersretained.",
+  "secondary": "New144literalcorrectnesscomparisonsmemoizedonceafterwholePASS,full-vocabulary canonicalA/Bonly. NativeN48wholeaggregate/failedprimarycarriedexact,no closedscorer/percaseoldgrade reconstruction. Reportrecipientchoicepreservation/donorletter/complementcounts withsameprogramswapcontent-vs-letterlimit;unrelatedcomplementonlylettercontrol.",
+  "no_training": "No fittedvectors/bridges/scales/signs/alignments/optimizer/parameterupdates. Prescribed directassignmentofnativeactualstates/nativeadditions/scalaronly. Hiddenletters/traces neverGPUuploaded.",
+  "acceptance": "Singlelaunch/collector/frozenaudit;whole24/144plusbothdurablechains/source/cache/restoration/state/counters beforeanyfiniteeffect. Firstfailurepreserved/incompletecensored/no reroll/guardweakening/automaticcontinuation. Metadatawitnessnotindependentparameterbyteauthentication or cleanpackage replay.",
+  "host_validation": "Newrandomseed5111/FP32BF16 donorgraphs andindependent explicit native-addition references,00nativecomponentreconstruction. Newsource/lineage/counterrefusals,noneofoldfixtures.",
+  "resources": {
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1600,
+    "notebook_start_global_seconds": 1500,
+    "reservation_GPU_hours": 1,
+    "reserve_GPU_hours": 2,
+    "raw_bytes_limit": 33554432,
+    "hardware": "TwoDISTINCTT4/fullBF16replicaeach,disjointdonorgraphs/sequentialload/commonbarrier"
+  },
+  "claim_boundary": "Localnativecomponentfinitecontrasts,notindividualmeaning/abstractskill/freshconfirmation/fullprogramimprovement/mediation/speed. Knownresidualstream/componentpatching/contextualbindingpriors retained."
+}

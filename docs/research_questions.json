@@ -1078,6 +1078,52 @@
         "result": "New FP32/BF16 donor graphs pass 88 random forwards, 2,948 input exposures and 24 independent reference matches. New literal audit: four source positives, one recipient positive and 22 targeted refusals. Package has 35 sources and nine inputs. Version 1 is verified private and running; no output, partial or live counter has been accessed. Actual runtime measurements remain unknown.",
         "direction_decision": "One private version 1 is running after fresh quota/inventory and private dataset checks. Preserve all frozen sources. At terminal, collect once and invoke the frozen auditor only for a complete whole panel."
       }
+    },
+    {
+      "id": "Q66",
+      "experiment": "N51: native residual and per-layer input contributions",
+      "status": "complete_host_audited_closed",
+      "question": "Do native residual or per-layer input contributions carry recipient answer identity when the recipient FFN contribution is held fixed?",
+      "question_provenance": "N50 paired final-MLP h donors change no recipient argmax. This tests two actual additive bypass components in one finite factorial, without selecting a sign, gain or task.",
+      "parents": [
+        "Q65",
+        "Q64"
+      ],
+      "method": "All 24 N48 contexts. Same-item opposite-order and fixed unrelated same-order donors. Recombine native residual R and per-layer branch P with unchanged recipient F, using the exact native sum and scalar order. Three new cells per donor: R-only, P-only and joint. New work: 144 decisions, 312 forwards, 29,510 exposures and 144 output assignments. Native 00 carries exactly.",
+      "result": "All 24 contexts and 144 new factor cells pass the frozen audit. Actual work: 312 forwards, 29,510 exposures, 144 block-output assignments, 144 hybrid constructions and 312 native-output reconstruction checks. Zero emitted tokens or updates. Paired residual-only and joint swaps copy the donor letter in all 16 coding and eight retention cases. Per-layer-only swaps preserve every recipient choice.",
+      "interpretation": "Unrelated residual/joint donors also copy 15/16 coding and 8/8 retention letters. Paired residual/joint scores are 8/16 coding and 0/8 retention; unrelated scores are 7/16 and 0/8. Both per-layer-only arms retain original 8/16 and 8/8. This is answer-state control in a recorded native component cut, not task-specific reasoning, individual neuron meaning or useful coding gain.",
+      "next_question": "Measure the local native A-minus-B derivative with respect to final-MLP h and compare activation sign with gradient-times-activation support. Carry all earlier finite interventions; never use gradients as an update.",
+      "direction_decision": "Close N51. Register a distinct measurement-only derivative study with zero optimizer/weight/activation-value updates and no new mask, sign or strength selection.",
+      "historical_prelaunch_result": "New FP32/BF16 graphs pass 160 random forwards, 6,080 exposures, 48 independent factor comparisons and eight native-output reconstructions. New literal audit passes four source positives, one full recipient positive and 29 refusals. Package has 35 sources and nine inputs; isolated imports construct no model/tokenizer. No pretrained N51 output yet.",
+      "historical_verified_active_snapshot": {
+        "status": "private_version1_active_no_outputs_accessed",
+        "result": "New FP32/BF16 graphs pass 160 random forwards, 6,080 exposures, 48 independent factor comparisons and eight native-output reconstructions. New literal audit passes four source positives, one full recipient positive and 29 refusals. Package has 35 sources and nine inputs; isolated imports construct no model/tokenizer. Version 1 is verified private and active. No outputs, partials or live counters have been accessed; actual runtime counts remain unknown.",
+        "direction_decision": "One private version 1 is active after fresh quota/inventory and private dataset checks. Preserve all 1,163 frozen scientific and inherited files. At terminal collect once; only a complete panel invokes the original frozen auditor."
+      }
+    },
+    {
+      "id": "Q67",
+      "experiment": "N52: read-only local final-MLP sensitivity",
+      "status": "complete_host_audited_closed",
+      "question": "Does activation sign track local support for the native model chosen answer?",
+      "question_provenance": "N48 sign removal fails selective utility; N49 finds scale confounding; N50 whole-h swap preserves choices; N51 residual carries donor answer letter. A distinct derivative measurement, not another edit sweep.",
+      "parents": [
+        "Q63",
+        "Q64",
+        "Q65",
+        "Q66"
+      ],
+      "method": "All 24 reused N48 contexts and original four fixed masks. One native visible A-minus-B VJP per context, followed by native restoration. Leaf tensor substitution changes requires_grad metadata only. 48 forwards, 4,540 exposures and 24 measurement backward-engine requests expected; zero activation-value/weight/optimizer updates or emitted tokens. No old finite cell rerun.",
+      "result": "All 24 read-only VJPs and 48 native-value forwards pass the single frozen audit. Actual work: 4,540 exposures, 24 same-value leaf substitutions, 24 measurement backward-engine requests and 24 native restorations. Zero activation-value/parameter updates, emitted tokens or new grades. Both negative and positive h groups contain supporting and suppressing units in every context.",
+      "interpretation": "Activation sign alone does not identify local support for the model chosen answer. Coding known finite-effect directions agree in 16/16 negative,16/16 random-negative,16/16 positive and15/16 random-positive cases; retention is7/8,8/8,6/8,8/8. Magnitudes differ. These known effects are post-result references,not fresh predictions; formal BF16 local derivatives do not establish individual meaning or useful coding gain.",
+      "next_question": "Which distinct causal test can separate task content from answer-state copying without repeating the earlier contextual-binding studies?",
+      "direction_decision": "Close N52. Five experiments complete and five allowances remain. Read prior contextual-binding/cache studies before a distinct sixth question; never fit or apply gradient masks/signs/strengths.",
+      "historical_prelaunch_result": "New FP32/BF16 random contexts pass four VJP comparisons including two independent references, ten forwards including refusals, and absent parameter gradients/unchanged values and versions. One new literal auditor case and 28 targeted refusals pass. All 1,340 sources and inherited files frozen; no pretrained N52 measurements yet.",
+      "historical_verified_active_snapshot": {
+        "status": "private_version1_active_no_outputs_accessed",
+        "result": "New FP32/BF16 random contexts pass four VJP comparisons including two independent references, ten forwards including refusals, and absent parameter gradients/unchanged values and versions. One new literal auditor case and 28 targeted refusals pass. All 1,340 sources and inherited files frozen; no pretrained N52 measurements yet. Version 1 exact private server source and single ready private dataset verified. Runtime effects unknown.",
+        "direction_decision": "One private version1 active;five launch allowances remain. Atterminalvalidate1340sources,then singlecollector andoriginalfrozenauditonlyifwholepanelcomplete. No partial effects."
+      }
     }
   ],
   "active_question_id": "Q62",

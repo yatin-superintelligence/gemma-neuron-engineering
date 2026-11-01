@@ -1,4 +1,72 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2;overflow-wrap:anywhere}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Reuse computation</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option><option>Evaluate</option><option>Generate and resume</option><option>Record evidence</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_cache_branch</h2><p>Clone an actual native past for one current-token causal measurement.
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2;overflow-wrap:anywhere}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Reuse computation</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option><option>Evaluate</option><option>Generate and resume</option><option>Record evidence</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>assay</h2><p>Read-only native final-h VJP; no gradient is ever applied as an update.</p><p><a href="../research/experiments/n52/assay.py">Exact source file</a></p><p class="small">APIs: native_leaf, one_case</p><p class="hash">SHA-256 6c5699c6e9c311b88186926c3bc908698e0a34897b35b197bdb98c20aab581a0</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Read-only native final-h VJP; no gradient is ever applied as an update.&quot;&quot;&quot;
+from contextlib import contextmanager
+import torch
+from transformers.cache_utils import DynamicCache
+from interpretability.signed_native_mask import transform
+from research.experiments.n35.core import tensor_sha
+from research.experiments.n37.continuation import decision
+from research.experiments.n48.assay import choice_metrics
+from research.experiments.n49.assay import site,source_forward
+
+
+@contextmanager
+def native_leaf(model,count):
+    block,norm=site(model);saved={}
+    if any(p.requires_grad or p.grad is not None for p in model.parameters()):
+        raise ValueError(&#x27;Frozen parameters and absent parameter gradients required&#x27;)
+    def hook(module,args):
+        source=args[0]
+        if saved or source.requires_grad:raise ValueError(&#x27;One actual unmodified upstream native h required&#x27;)
+        _,activation=transform(source,&#x27;original&#x27;)
+        before=tensor_sha(source);leaf=source.detach().requires_grad_(True)
+        if tensor_sha(leaf)!=before:raise ValueError(&#x27;Autograd leaf changed activation values&#x27;)
+        count(&#x27;same_value_input_leaf_substitutions&#x27;);count(&#x27;activation_assignments&#x27;)
+        saved.update(leaf=leaf,activation=activation,full_h_sha256=before,version_before=leaf._version)
+        return (leaf,*args[1:])
+    handle=block.mlp.down_proj.register_forward_pre_hook(hook)
+    try:
+        yield saved
+        if set(saved)!={&#x27;leaf&#x27;,&#x27;activation&#x27;,&#x27;full_h_sha256&#x27;,&#x27;version_before&#x27;}:raise ValueError(&#x27;Missing native measurement leaf&#x27;)
+    finally:handle.remove()
+
+
+def one_case(model,encoded,answer_ids,parent,count=lambda name:None):
+    slots=model.config.text_config.num_hidden_layers-model.config.text_config.num_kv_shared_layers
+    with torch.enable_grad(),native_leaf(model,count) as captured:
+        output=model(**encoded,past_key_values=DynamicCache(config=model.config.text_config),use_cache=True,logits_to_keep=1)
+        d,cache=decision(output,0,slots,str(next(model.parameters()).dtype));metrics=choice_metrics(output.logits[0,-1],answer_ids)
+        native={&#x27;decision&#x27;:d,&#x27;activation&#x27;:captured[&#x27;activation&#x27;],&#x27;metrics&#x27;:metrics}
+        if native!=parent[&#x27;original&#x27;] or cache!=parent[&#x27;native_first_full_cache&#x27;] or captured[&#x27;full_h_sha256&#x27;]!=parent[&#x27;native_full_h_sha256&#x27;]:
+            raise ValueError(&#x27;Gradient forward native values/cache/h differ from frozen source&#x27;)
+        leaf=captured[&#x27;leaf&#x27;];target=output.logits[0,-1,answer_ids[&#x27;A&#x27;]].float()-output.logits[0,-1,answer_ids[&#x27;B&#x27;]].float()
+        if not target.requires_grad or float(target.detach())!=metrics[&#x27;A_minus_B_margin&#x27;]:
+            raise ValueError(&#x27;Native A-minus-B measurement target required&#x27;)
+        count(&#x27;autograd_grad_API_attempts&#x27;);count(&#x27;measurement_backward_engine_requests&#x27;)
+        gradient,=torch.autograd.grad(target,leaf,create_graph=False,retain_graph=False,allow_unused=False)
+        count(&#x27;autograd_grad_API_returns&#x27;)
+        if (gradient.shape!=leaf.shape or gradient.dtype!=leaf.dtype or gradient.requires_grad
+                or not torch.isfinite(gradient).all() or torch.count_nonzero(gradient[:,:-1,:]).item()!=0):
+            raise ValueError(&#x27;Finite native-dtype current-only local VJP required&#x27;)
+        if (leaf.grad is not None or tensor_sha(leaf)!=captured[&#x27;full_h_sha256&#x27;] or leaf._version!=captured[&#x27;version_before&#x27;]
+                or any(p.requires_grad or p.grad is not None for p in model.parameters())):
+            raise ValueError(&#x27;Read-only measurement changed values/versions or accumulated parameter gradients&#x27;)
+        native_h=leaf[0,-1].detach().clone();current_gradient=gradient[0,-1].detach().clone()
+        observation={&#x27;target&#x27;:&#x27;native_A_minus_B_logits&#x27;,&#x27;target_value&#x27;:float(target.detach()),
+            &#x27;native_h_sha256&#x27;:tensor_sha(native_h),&#x27;gradient_sha256&#x27;:tensor_sha(current_gradient),
+            &#x27;full_h_sha256_before&#x27;:captured[&#x27;full_h_sha256&#x27;],&#x27;full_h_sha256_after&#x27;:tensor_sha(leaf),
+            &#x27;full_gradient_sha256&#x27;:tensor_sha(gradient),&#x27;full_shape&#x27;:list(leaf.shape),&#x27;gradient_dtype&#x27;:str(gradient.dtype),
+            &#x27;leaf_version_before&#x27;:captured[&#x27;version_before&#x27;],&#x27;leaf_version_after&#x27;:leaf._version,
+            &#x27;leaf_requires_grad&#x27;:leaf.requires_grad,&#x27;gradient_requires_grad&#x27;:gradient.requires_grad,
+            &#x27;leaf_grad_buffer_absent&#x27;:leaf.grad is None,&#x27;all_parameter_grad_buffers_absent&#x27;:all(p.grad is None for p in model.parameters()),
+            &#x27;noncurrent_gradient_all_zero&#x27;:True,&#x27;activation_values_unchanged&#x27;:True}
+    count(&#x27;native_restoration_forwards&#x27;);restored,restored_cache,restored_state=source_forward(model,encoded,answer_ids)
+    if restored!=parent[&#x27;original&#x27;] or restored_cache!=cache or tensor_sha(restored_state[&#x27;h&#x27;])!=parent[&#x27;native_full_h_sha256&#x27;]:
+        raise ValueError(&#x27;Actual native full restoration failed&#x27;)
+    return {&#x27;parent_binding&#x27;:parent[&#x27;binding&#x27;],&#x27;native_value_guard&#x27;:native,&#x27;restored_native&#x27;:restored,
+            &#x27;native_first_full_cache&#x27;:cache,&#x27;gradient_observation&#x27;:observation,&#x27;answer_token_ids&#x27;:answer_ids,
+            &#x27;input_tokens&#x27;:int(encoded[&#x27;input_ids&#x27;].numel()),&#x27;new_emitted_tokens&#x27;:0,&#x27;parameter_assignments&#x27;:0,
+            &#x27;gradient_value_updates&#x27;:0,&#x27;optimizer_steps&#x27;:0,&#x27;Tensor_backward_method_calls&#x27;:0},native_h,current_gradient
+</pre></details></article><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_cache_branch</h2><p>Clone an actual native past for one current-token causal measurement.
 
 The clone is ephemeral. It is not a reusable past for a changed conversation.
 Only the pinned DynamicCache with initialized dense KV layers is accepted.</p><p><a href="../interpretability/native_cache_branch.py">Exact source file</a></p><p class="small">APIs: tensor_hash, _value, fingerprint, _storages, native_cache_branch</p><p class="hash">SHA-256 a11a55a52e908bc2f6f19ee00f20d00e1f66c6cf673a5c7969082d581b2ee6e7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Clone an actual native past for one current-token causal measurement.
@@ -587,6 +655,133 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>assay</h2><p>Native R/P contribution cuts with the recipient FFN vector held fixed.</p><p><a href="../research/experiments/n51/assay.py">Exact source file</a></p><p class="small">APIs: combine, observe, native_forward, capture, public_capture, patch, one_case</p><p class="hash">SHA-256 9f131b9b1a227a95a77972a41a2b24a200746c590b084b4c465f971bd6921789</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Native R/P contribution cuts with the recipient FFN vector held fixed.&quot;&quot;&quot;
+from contextlib import contextmanager
+import torch
+from transformers.cache_utils import DynamicCache
+from interpretability.signed_native_mask import signed_mask
+from research.experiments.n35.core import tensor_sha
+from research.experiments.n37.continuation import decision
+from research.experiments.n48.assay import choice_metrics
+from research.experiments.n49.assay import site
+
+DONORS=(&#x27;paired_order_swap&#x27;,&#x27;unrelated_same_order&#x27;)
+XORS=dict(zip(DONORS,[1,2]))
+CELLS=(&#x27;10&#x27;,&#x27;01&#x27;,&#x27;11&#x27;)
+
+
+def combine(block,r,f,p):
+    if any(x.requires_grad or x.shape!=f.shape or x.dtype!=f.dtype or x.device!=f.device for x in [r,f,p]):
+        raise ValueError(&#x27;Aligned detached actual native components required&#x27;)
+    if f.ndim!=3 or f.shape[:2]!=(1,1) or not all(torch.isfinite(x).all() for x in [r,f,p]):
+        raise ValueError(&#x27;Finite single-current native components required&#x27;)
+    value=(r+f)+p
+    value*=block.layer_scalar
+    return value
+
+
+@contextmanager
+def observe(model,count):
+    block,norm=site(model)
+    if not block.hidden_size_per_layer_input or block.post_per_layer_input_norm._forward_hooks or block.pre_feedforward_layernorm._forward_pre_hooks or block._forward_hooks:
+        raise ValueError(&#x27;Native per-layer input path and clean observation sites required&#x27;)
+    saved={};handles=[]
+    def residual(module,args):
+        if &#x27;R&#x27; in saved:raise ValueError(&#x27;Duplicate native residual capture&#x27;)
+        saved[&#x27;R&#x27;]=args[0][:,-1:,:].detach().clone()
+    def observed(name):
+        def hook(module,args,output):
+            if name in saved:raise ValueError(&#x27;Duplicate native component capture&#x27;)
+            saved[name]=output[:,-1:,:].detach().clone()
+        return hook
+    def final(module,args,output):
+        if set(saved)!={&#x27;R&#x27;,&#x27;F&#x27;,&#x27;P&#x27;}:raise ValueError(&#x27;Missing aligned native additive component&#x27;)
+        count(&#x27;native_component_reconstruction_checks&#x27;)
+        rebuilt=combine(module,saved[&#x27;R&#x27;],saved[&#x27;F&#x27;],saved[&#x27;P&#x27;])
+        if tensor_sha(rebuilt)!=tensor_sha(output[:,-1:,:]):raise ValueError(&#x27;Native R+F+P/scalar operator order differs&#x27;)
+        saved[&#x27;output&#x27;]=output[:,-1:,:].detach().clone();saved[&#x27;shape&#x27;]=list(output.shape)
+    try:
+        handles.append(block.pre_feedforward_layernorm.register_forward_pre_hook(residual))
+        handles.append(norm.register_forward_hook(observed(&#x27;F&#x27;)))
+        handles.append(block.post_per_layer_input_norm.register_forward_hook(observed(&#x27;P&#x27;)))
+        handles.append(block.register_forward_hook(final))
+        yield saved
+        if set(saved)!={&#x27;R&#x27;,&#x27;F&#x27;,&#x27;P&#x27;,&#x27;output&#x27;,&#x27;shape&#x27;}:raise ValueError(&#x27;Incomplete native component observation&#x27;)
+    finally:
+        for h in reversed(handles):h.remove()
+
+
+def native_forward(model,encoded,answer_ids,count=lambda name:None):
+    slots=model.config.text_config.num_hidden_layers-model.config.text_config.num_kv_shared_layers
+    with torch.no_grad(),observe(model,count) as actual,signed_mask(model,&#x27;original&#x27;) as h:
+        out=model(**encoded,past_key_values=DynamicCache(config=model.config.text_config),use_cache=True,logits_to_keep=1)
+        d,cache=decision(out,0,slots,str(next(model.parameters()).dtype));metrics=choice_metrics(out.logits[0,-1],answer_ids)
+    if len(h[&#x27;frames&#x27;])!=1 or h[&#x27;activation_assignments&#x27;]!=0:raise ValueError(&#x27;Exactly one unmodified native h witness required&#x27;)
+    record={&#x27;decision&#x27;:d,&#x27;activation&#x27;:h[&#x27;frames&#x27;][0],&#x27;metrics&#x27;:metrics}
+    return {&#x27;record&#x27;:record,&#x27;cache&#x27;:cache,&#x27;vectors&#x27;:{k:actual[k] for k in [&#x27;R&#x27;,&#x27;F&#x27;,&#x27;P&#x27;,&#x27;output&#x27;]},
+            &#x27;component_sha256&#x27;:{k:tensor_sha(actual[k]) for k in [&#x27;R&#x27;,&#x27;F&#x27;,&#x27;P&#x27;,&#x27;output&#x27;]},&#x27;shape&#x27;:actual[&#x27;shape&#x27;],
+            &#x27;native_scalar_sha256&#x27;:tensor_sha(model.model.language_model.layers[-1].layer_scalar)}
+
+
+def capture(model,encoded,answer_ids,parent,count=lambda name:None):
+    actual=native_forward(model,encoded,answer_ids,count)
+    if (actual[&#x27;record&#x27;]!=parent[&#x27;original&#x27;] or actual[&#x27;cache&#x27;]!=parent[&#x27;native_first_full_cache&#x27;]
+            or actual[&#x27;component_sha256&#x27;][&#x27;F&#x27;]!=parent[&#x27;native_F_sha256&#x27;]):
+        raise ValueError(&#x27;Frozen N48 native decision/cache/h or N49 native F source differs&#x27;)
+    actual[&#x27;parent_binding&#x27;]=parent[&#x27;binding&#x27;];return actual
+
+
+def public_capture(source):return {k:v for k,v in source.items() if k!=&#x27;vectors&#x27;}
+
+
+@contextmanager
+def patch(model,own,donor,donor_id,cell,current,count):
+    if cell not in CELLS:raise ValueError(&#x27;Only the three new native-factor cells are eligible&#x27;)
+    block=model.model.language_model.layers[-1]
+    for source in [own,donor]:
+        if any(tensor_sha(source[&#x27;vectors&#x27;][k])!=source[&#x27;component_sha256&#x27;][k] for k in [&#x27;R&#x27;,&#x27;F&#x27;,&#x27;P&#x27;,&#x27;output&#x27;]):
+            raise ValueError(&#x27;Actual native source bytes changed&#x27;)
+    r=(donor if cell[0]==&#x27;1&#x27; else own);p=(donor if cell[1]==&#x27;1&#x27; else own)
+    count(&#x27;hybrid_component_constructions&#x27;);replacement=combine(block,r[&#x27;vectors&#x27;][&#x27;R&#x27;],own[&#x27;vectors&#x27;][&#x27;F&#x27;],p[&#x27;vectors&#x27;][&#x27;P&#x27;])
+    receipt={&#x27;calls&#x27;:0,&#x27;activation_assignments&#x27;:0,&#x27;donor_id&#x27;:donor_id,&#x27;cell&#x27;:cell,
+        &#x27;R_sha256&#x27;:r[&#x27;component_sha256&#x27;][&#x27;R&#x27;],&#x27;F_sha256&#x27;:own[&#x27;component_sha256&#x27;][&#x27;F&#x27;],&#x27;P_sha256&#x27;:p[&#x27;component_sha256&#x27;][&#x27;P&#x27;],
+        &#x27;replacement_sha256&#x27;:tensor_sha(replacement),&#x27;all_native_internal_components_exact&#x27;:False,&#x27;other_positions_byte_exact&#x27;:False}
+    def replace(module,args,output):
+        if (receipt[&#x27;calls&#x27;] or list(output.shape)!=own[&#x27;shape&#x27;] or tensor_sha(output[:,-1:,:])!=own[&#x27;component_sha256&#x27;][&#x27;output&#x27;]
+                or set(current)!={&#x27;R&#x27;,&#x27;F&#x27;,&#x27;P&#x27;,&#x27;output&#x27;,&#x27;shape&#x27;}
+                or any(tensor_sha(current[k])!=own[&#x27;component_sha256&#x27;][k] for k in [&#x27;R&#x27;,&#x27;F&#x27;,&#x27;P&#x27;,&#x27;output&#x27;])
+                or tensor_sha(module.layer_scalar)!=own[&#x27;native_scalar_sha256&#x27;]):
+            raise ValueError(&#x27;Native recipient internal components/output/scalar differ&#x27;)
+        result=output.clone();count(&#x27;activation_assignments&#x27;);result[:,-1:,:].copy_(replacement)
+        if tensor_sha(result[:,:-1])!=tensor_sha(output[:,:-1]):raise ValueError(&#x27;Noncurrent block output changed&#x27;)
+        receipt.update(calls=1,activation_assignments=1,all_native_internal_components_exact=True,other_positions_byte_exact=True)
+        return result
+    handle=block.register_forward_hook(replace)
+    try:
+        yield receipt
+        if receipt[&#x27;calls&#x27;]!=1:raise ValueError(&#x27;Exactly one factor output replacement required&#x27;)
+    finally:handle.remove()
+
+
+def one_case(model,encoded,answer_ids,row,sources,by_index,parents,count=lambda name:None):
+    own=sources[row[&#x27;id&#x27;]];slots=model.config.text_config.num_hidden_layers-model.config.text_config.num_kv_shared_layers
+    work=[(d,c) for d in DONORS for c in CELLS];offset=row[&#x27;row_index&#x27;]%len(work);work=work[offset:]+work[:offset]
+    cells={d:{} for d in DONORS};restorations={d:{} for d in DONORS}
+    for donor_kind,cell in work:
+        donor_row=by_index[row[&#x27;row_index&#x27;]^XORS[donor_kind]];donor=sources[donor_row[&#x27;id&#x27;]]
+        with torch.no_grad(),observe(model,count) as current,signed_mask(model,&#x27;original&#x27;) as h:
+            with patch(model,own,donor,donor_row[&#x27;id&#x27;],cell,current,count) as receipt:
+                out=model(**encoded,past_key_values=DynamicCache(config=model.config.text_config),use_cache=True,logits_to_keep=1)
+                d,cache=decision(out,0,slots,str(next(model.parameters()).dtype));metrics=choice_metrics(out.logits[0,-1],answer_ids)
+        if cache!=own[&#x27;cache&#x27;] or h[&#x27;frames&#x27;]!=[own[&#x27;record&#x27;][&#x27;activation&#x27;]]:raise ValueError(&#x27;Native h or upstream whole cache changed&#x27;)
+        cells[donor_kind][cell]={&#x27;decision&#x27;:d,&#x27;metrics&#x27;:metrics,&#x27;activation&#x27;:receipt,&#x27;donor_binding&#x27;:donor[&#x27;parent_binding&#x27;]}
+        count(&#x27;native_restoration_forwards&#x27;);restored=capture(model,encoded,answer_ids,parents[row[&#x27;id&#x27;]],count)
+        if public_capture(restored)!=public_capture(own):raise ValueError(&#x27;Actual complete native R/F/P restoration differs&#x27;)
+        restorations[donor_kind][cell]=public_capture(restored)
+    return {&#x27;parent_binding&#x27;:parents[row[&#x27;id&#x27;]][&#x27;binding&#x27;],&#x27;carried_native&#x27;:parents[row[&#x27;id&#x27;]][&#x27;original&#x27;],
+            &#x27;native_source&#x27;:public_capture(own),&#x27;cells&#x27;:cells,&#x27;restorations&#x27;:restorations,
+            &#x27;order&#x27;:[list(v) for v in work],&#x27;answer_token_ids&#x27;:answer_ids,&#x27;input_tokens&#x27;:int(encoded[&#x27;input_ids&#x27;].numel()),
+            &#x27;new_emitted_tokens&#x27;:0,&#x27;parameter_assignments&#x27;:0,&#x27;backward_calls&#x27;:0,&#x27;optimizer_steps&#x27;:0}
 </pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>assay</h2><p>Native full-h donor transplants with fixed answer-order binding controls.</p><p><a href="../research/experiments/n50/assay.py">Exact source file</a></p><p class="small">APIs: capture, public_capture, transplant, one_case</p><p class="hash">SHA-256 a4816559915fbb602314bc86bdf8f1b880b3399f4254bdd237eaaece5e56b26e</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Native full-h donor transplants with fixed answer-order binding controls.&quot;&quot;&quot;
 from contextlib import contextmanager
 import torch
@@ -2366,6 +2561,119 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>native_sensitivity</h2><p>Local gradient-times-activation summaries; these measurements are not updates.</p><p><a href="../evaluation/native_sensitivity.py">Exact source file</a></p><p class="small">APIs: sha_tensor, require, analyze</p><p class="hash">SHA-256 47f436edc654ee9925c4721b76fa28afb513641963ed1961850028e5e5030e04</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Local gradient-times-activation summaries; these measurements are not updates.&quot;&quot;&quot;
+import hashlib
+import math
+import random
+import torch
+
+EDITS=(&#x27;remove_negative&#x27;,&#x27;random_negative_count&#x27;,&#x27;remove_positive&#x27;,&#x27;random_positive_count&#x27;)
+
+
+def sha_tensor(x):return hashlib.sha256(x.detach().contiguous().reshape(-1).view(torch.uint8).cpu().numpy().tobytes()).hexdigest()
+def require(ok,message):
+    if not ok:raise ValueError(message)
+
+
+def analyze(h,g,native_choice,native_margin,edits):
+    require(h.ndim==g.ndim==1 and h.shape==g.shape and h.numel()&gt;0 and h.dtype==g.dtype and h.dtype in [torch.float32,torch.bfloat16],&#x27;Aligned dense native h/VJP vectors required&#x27;)
+    require(not h.requires_grad and not g.requires_grad and torch.isfinite(h).all().item() and torch.isfinite(g).all().item(),&#x27;Finite detached observations required&#x27;)
+    require(native_choice in [&#x27;A&#x27;,&#x27;B&#x27;] and type(native_margin) in [int,float] and math.isfinite(native_margin),&#x27;Actual canonical native choice/margin required&#x27;)
+    require(set(edits)==set(EDITS),&#x27;All four unchanged completed finite masks required&#x27;)
+    h64,g64=h.double(),g.double();raw=h64*g64;support=raw*(1 if native_choice==&#x27;A&#x27; else -1)
+    total_positive=float(support[support&gt;0].sum());total_negative=-float(support[support&lt;0].sum());total_abs=float(support.abs().sum())
+    sign_masks={&#x27;negative&#x27;:h&lt;0,&#x27;positive&#x27;:h&gt;0,&#x27;zero&#x27;:h==0};groups={}
+    for name,mask in sign_masks.items():
+        values=support[mask];positive=float(values[values&gt;0].sum());negative=-float(values[values&lt;0].sum());absolute=float(values.abs().sum())
+        groups[name]={&#x27;unit_count&#x27;:int(mask.sum()),&#x27;support_units&#x27;:int((values&gt;0).sum()),&#x27;suppression_units&#x27;:int((values&lt;0).sum()),&#x27;zero_contribution_units&#x27;:int((values==0).sum()),&#x27;support_mass&#x27;:positive,&#x27;suppression_mass&#x27;:negative,&#x27;net&#x27;:float(values.sum()),&#x27;absolute_mass&#x27;:absolute,&#x27;positive_support_fraction&#x27;:positive/total_positive if total_positive else None,&#x27;suppression_fraction&#x27;:negative/total_negative if total_negative else None,&#x27;absolute_mass_fraction&#x27;:absolute/total_abs if total_abs else None}
+    finite={};width=h.numel()
+    for mode in EDITS:
+        old=edits[mode];a=old[&#x27;activation&#x27;];indices=a[&#x27;indices&#x27;];negative=&#x27;negative&#x27; in mode;eligible=torch.nonzero(h&lt;0 if negative else h&gt;0).flatten().tolist()
+        if mode.startswith(&#x27;random_&#x27;):
+            permutation=list(range(width));random.Random(4501 if negative else 4502).shuffle(permutation);eligible=sorted(permutation[:len(eligible)])
+        require(indices==eligible and all(type(i) is int for i in indices),&#x27;Exact frozen native-sign or random-cardinality indices required&#x27;)
+        require(a[&#x27;native_h_sha256&#x27;]==sha_tensor(h),&#x27;Completed mask has different native h source&#x27;)
+        observed=old[&#x27;metrics&#x27;][&#x27;A_minus_B_margin&#x27;]-native_margin;require(type(observed) in [int,float] and math.isfinite(observed),&#x27;Finite carried output contrast required&#x27;)
+        predicted=-float(raw[indices].sum());error=predicted-observed
+        sign=lambda v:1 if v&gt;0 else -1 if v&lt;0 else 0
+        finite[mode]={&#x27;selected_units&#x27;:len(indices),&#x27;first_order_A_minus_B_delta&#x27;:predicted,&#x27;carried_finite_A_minus_B_delta&#x27;:observed,&#x27;signed_error&#x27;:error,&#x27;absolute_error&#x27;:abs(error),&#x27;predicted_sign&#x27;:sign(predicted),&#x27;observed_sign&#x27;:sign(observed),&#x27;sign_agrees&#x27;:sign(predicted)==sign(observed)}
+    return {&#x27;native_choice&#x27;:native_choice,&#x27;width&#x27;:width,&#x27;native_h_sha256&#x27;:sha_tensor(h),&#x27;gradient_sha256&#x27;:sha_tensor(g),&#x27;native_winner_support_groups&#x27;:groups,&#x27;total_support_mass&#x27;:total_positive,&#x27;total_suppression_mass&#x27;:total_negative,&#x27;total_absolute_mass&#x27;:total_abs,&#x27;net_native_winner_h_times_gradient&#x27;:float(support.sum()),&#x27;all_four_carried_finite_comparisons&#x27;:finite,&#x27;no_completeness_or_semantic_claim&#x27;:True}
+</pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>native_component_reporting</h2><p>Complete saved native-component aggregates; no scorer or model imports.</p><p><a href="../evaluation/native_component_reporting.py">Exact source file</a></p><p class="small">APIs: require, integer, validate, plot</p><p class="hash">SHA-256 684cf0956fe3c803d800317aa02aa32c56061c211ca1852f2389ea64d6835ab5</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Complete saved native-component aggregates; no scorer or model imports.&quot;&quot;&quot;
+import math
+
+DONORS=(&#x27;paired_order_swap&#x27;,&#x27;unrelated_same_order&#x27;)
+CELLS=(&#x27;10&#x27;,&#x27;01&#x27;,&#x27;11&#x27;)
+EFFECTS=(&#x27;R&#x27;,&#x27;P&#x27;,&#x27;joint&#x27;,&#x27;interaction&#x27;)
+COUNTERS={&#x27;calls&#x27;:312,&#x27;input_token_exposures&#x27;:29510,&#x27;activation_assignments&#x27;:144,&#x27;native_sourceguards&#x27;:24,&#x27;native_restoration_forwards&#x27;:144,&#x27;hybrid_component_constructions&#x27;:144,&#x27;native_component_reconstruction_checks&#x27;:312,&#x27;extra_FFN_evaluations&#x27;:0,&#x27;extra_down_projection_evaluations&#x27;:0,&#x27;new_emitted_tokens&#x27;:0,&#x27;manual_parameter_assignments&#x27;:0,&#x27;backward_calls&#x27;:0,&#x27;optimizer_steps&#x27;:0}
+
+
+def require(test,message):
+    if not test:raise ValueError(message)
+
+
+def integer(value,wanted=None):
+    require(type(value) is int and value&gt;=0 and (wanted is None or value==wanted),&#x27;Strict actual integer count required&#x27;)
+
+
+def validate(data):
+    require(data[&#x27;experiment&#x27;]==&#x27;N51&#x27; and data[&#x27;status&#x27;]==&#x27;complete_host_audited&#x27;,&#x27;Only complete audited N51 allowed&#x27;)
+    for key,wanted in [(&#x27;contexts&#x27;,24),(&#x27;new_factor_records&#x27;,144),(&#x27;native_condition_carries&#x27;,24),(&#x27;new_literal_label_comparisons&#x27;,144),(&#x27;closed_scorer_calls&#x27;,0)]:integer(data[key],wanted)
+    require(set(data[&#x27;actual_counters&#x27;])==set(COUNTERS),&#x27;Complete actual counter map required&#x27;)
+    for key,wanted in COUNTERS.items():integer(data[&#x27;actual_counters&#x27;][key],wanted)
+    require(set(data[&#x27;all_donors&#x27;])==set(DONORS),&#x27;Both fixed donor conditions required&#x27;)
+    for donor,group in data[&#x27;all_donors&#x27;].items():
+        require(set(group)=={&#x27;roles&#x27;,&#x27;families&#x27;,&#x27;answer_orders&#x27;} and set(group[&#x27;roles&#x27;])=={&#x27;coding&#x27;,&#x27;retention&#x27;},&#x27;Complete roles and supplementary groups required&#x27;)
+        require(len(group[&#x27;families&#x27;])==12 and set(group[&#x27;answer_orders&#x27;])=={&#x27;coding_0&#x27;,&#x27;coding_1&#x27;,&#x27;retention_0&#x27;,&#x27;retention_1&#x27;},&#x27;All families and answer orders required&#x27;)
+        selectors=[(group[&#x27;roles&#x27;][&#x27;coding&#x27;],16),(group[&#x27;roles&#x27;][&#x27;retention&#x27;],8)]+[(v,2) for v in group[&#x27;families&#x27;].values()]+[(v,8 if k.startswith(&#x27;coding&#x27;) else 4) for k,v in group[&#x27;answer_orders&#x27;].items()]
+        for row,n in selectors:
+            require(set(row)=={&#x27;signed_effects&#x27;,&#x27;absolute_effects&#x27;,&#x27;new_cell_scores&#x27;},&#x27;All effect and correctness summaries required&#x27;)
+            for kind in [&#x27;signed_effects&#x27;,&#x27;absolute_effects&#x27;]:
+                require(set(row[kind])==set(EFFECTS),&#x27;Every finite component contrast required&#x27;)
+                for stat in row[kind].values():
+                    require(set(stat)=={&#x27;count&#x27;,&#x27;mean&#x27;,&#x27;min&#x27;,&#x27;max&#x27;},&#x27;Exact descriptive statistic fields required&#x27;);integer(stat[&#x27;count&#x27;],n)
+                    require(all(type(stat[k]) in [int,float] and math.isfinite(stat[k]) for k in [&#x27;mean&#x27;,&#x27;min&#x27;,&#x27;max&#x27;]),&#x27;Finite descriptive values required&#x27;)
+                    require(stat[&#x27;min&#x27;]&lt;=stat[&#x27;mean&#x27;]&lt;=stat[&#x27;max&#x27;],&#x27;Mean outside actual descriptive range&#x27;)
+                    if kind==&#x27;absolute_effects&#x27;:require(stat[&#x27;min&#x27;]&gt;=0,&#x27;Absolute effects cannot be negative&#x27;)
+            require(set(row[&#x27;new_cell_scores&#x27;])==set(CELLS),&#x27;Every new cell score required&#x27;)
+            for score in row[&#x27;new_cell_scores&#x27;].values():
+                require(set(score)=={&#x27;cases&#x27;,&#x27;correct&#x27;,&#x27;valid_options&#x27;,&#x27;matches_carried_recipient_choice&#x27;,&#x27;copies_native_donor_letter&#x27;,&#x27;complements_native_donor_letter&#x27;,&#x27;noncanonical_native_donor&#x27;},&#x27;Exact new-cell score fields required&#x27;)
+                for k,v in score.items():integer(v);require(v&lt;=n,&#x27;Score count exceeds panel size&#x27;)
+                integer(score[&#x27;cases&#x27;],n);integer(score[&#x27;noncanonical_native_donor&#x27;],0)
+                require(score[&#x27;correct&#x27;]&lt;=score[&#x27;valid_options&#x27;] and score[&#x27;copies_native_donor_letter&#x27;]+score[&#x27;complements_native_donor_letter&#x27;]==score[&#x27;valid_options&#x27;],&#x27;Full-vocabulary validity/letter counts differ&#x27;)
+    original=data[&#x27;carried_N48_aggregate&#x27;][&#x27;conditions&#x27;][&#x27;original&#x27;]
+    integer(original[&#x27;coding_cases&#x27;],16);integer(original[&#x27;retention_cases&#x27;],8)
+    integer(original[&#x27;coding_correct&#x27;],8);integer(original[&#x27;retention_correct&#x27;],8)
+    return data
+
+
+def plot(data,path,*,synthetic=False):
+    validate(data)
+    import matplotlib
+    matplotlib.use(&#x27;Agg&#x27;)
+    import matplotlib.pyplot as plt
+    import numpy as np
+    colors=[&#x27;#087e77&#x27;,&#x27;#bd7538&#x27;];names=[&#x27;Paired order swap&#x27;,&#x27;Unrelated same order&#x27;];keys=[&#x27;R&#x27;,&#x27;P&#x27;,&#x27;joint&#x27;];labels=[&#x27;Residual R&#x27;,&#x27;Per-layer P&#x27;,&#x27;Joint R + P&#x27;];x=np.arange(3)
+    fig,axes=plt.subplots(3,2,figsize=(17,15));fig.subplots_adjust(left=.09,right=.98,bottom=.10,top=.93,hspace=.47,wspace=.23)
+    fig.suptitle((&#x27;SYNTHETIC SOFTWARE LAYOUT | &#x27; if synthetic else &#x27;&#x27;)+&#x27;N51 native contribution cuts; recipient FFN fixed&#x27;,fontsize=18,fontweight=&#x27;bold&#x27;)
+    for row,kind in [(0,&#x27;absolute_effects&#x27;),(1,&#x27;signed_effects&#x27;)]:
+        for col,role in enumerate([&#x27;coding&#x27;,&#x27;retention&#x27;]):
+            ax=axes[row,col]
+            for index,donor in enumerate(DONORS):
+                values=[data[&#x27;all_donors&#x27;][donor][&#x27;roles&#x27;][role][kind][key][&#x27;mean&#x27;] for key in keys]
+                ax.bar(x+(index-.5)*.34,values,width=.34,color=colors[index],label=names[index])
+            ax.set_xticks(x,labels);ax.axhline(0,color=&#x27;#a8b5bb&#x27;,linewidth=1);ax.spines[[&#x27;top&#x27;,&#x27;right&#x27;]].set_visible(False)
+            ax.set_title(chr(65+row*2+col)+&#x27;. &#x27;+role.capitalize()+(&#x27; | absolute margin change&#x27; if row==0 else &#x27; | signed margin change&#x27;),loc=&#x27;left&#x27;,fontweight=&#x27;bold&#x27;)
+            ax.set_ylabel(&#x27;Case mean, correct-minus-foil logits&#x27;);ax.legend(frameon=False,fontsize=9,loc=&#x27;upper center&#x27;,bbox_to_anchor=(.5,-.14),ncol=2)
+    for col,role in enumerate([&#x27;coding&#x27;,&#x27;retention&#x27;]):
+        ax=axes[2,col];n=16 if role==&#x27;coding&#x27; else 8
+        for index,donor in enumerate(DONORS):
+            values=[data[&#x27;all_donors&#x27;][donor][&#x27;roles&#x27;][role][&#x27;new_cell_scores&#x27;][cell][&#x27;correct&#x27;] for cell in CELLS]
+            bars=ax.bar(x+(index-.5)*.34,values,width=.34,color=colors[index],label=names[index])
+            for bar,value in zip(bars,values):ax.text(bar.get_x()+bar.get_width()/2,value+.12,str(value),ha=&#x27;center&#x27;,fontsize=10)
+        baseline=data[&#x27;carried_N48_aggregate&#x27;][&#x27;conditions&#x27;][&#x27;original&#x27;][role+&#x27;_correct&#x27;];ax.axhline(baseline,color=&#x27;#29495d&#x27;,linestyle=&#x27;--&#x27;,label=&#x27;Carried native reference&#x27;)
+        ax.set_ylim(0,n+1.4);ax.set_xticks(x,labels);ax.set_ylabel(&#x27;Correct first answers / &#x27;+str(n));ax.set_title(chr(69+col)+&#x27;. &#x27;+role.capitalize()+&#x27; | all six new conditions&#x27;,loc=&#x27;left&#x27;,fontweight=&#x27;bold&#x27;);ax.legend(frameon=False,fontsize=9,loc=&#x27;upper center&#x27;,bbox_to_anchor=(.5,-.14),ncol=3)
+    fig.text(.09,.025,&#x27;All 24 reused development contexts and both fixed donors retained. Recorded native P is not recomputed under hybrid R; F stays native to the recipient.\nComplete family/order contrasts and descriptive ranges remain in JSON. First full-vocabulary decisions, not full-program utility, meaning, mediation or fresh confirmation.&#x27;,fontsize=10.5)
+    fig.savefig(path,dpi=150);plt.close(fig)
 </pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>answer_decisions</h2><p>Strict all-condition first-answer scoring; no model or candidate executor.</p><p><a href="../evaluation/answer_decisions.py">Exact source file</a></p><p class="small">APIs: assess</p><p class="hash">SHA-256 c6ddb71b9b66fd8ef13067e695f9ef180c458e8f4f6d21cfecfc9aec872bb003</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Strict all-condition first-answer scoring; no model or candidate executor.&quot;&quot;&quot;
 from collections import Counter
 import math

@@ -1,0 +1,25 @@
+{
+  "actual_counters": {
+    "Tensor_backward_method_calls": 0,
+    "activation_assignments": 24,
+    "autograd_grad_API_attempts": 24,
+    "autograd_grad_API_returns": 24,
+    "calls": 48,
+    "extra_FFN_evaluations": 0,
+    "extra_down_projection_evaluations": 0,
+    "gradient_value_updates": 0,
+    "input_token_exposures": 4540,
+    "manual_parameter_assignments": 0,
+    "measurement_backward_engine_requests": 24,
+    "native_restoration_forwards": 24,
+    "new_emitted_tokens": 0,
+    "optimizer_steps": 0,
+    "same_value_input_leaf_substitutions": 24
+  },
+  "all24_read_only_VJPs_48native_value_forwards": true,
+  "closed_scorer_model_tokenizer_executor_calls": 0,
+  "new_candidate_grades": 0,
+  "public_aggregate_sha256": "78aa8764ec10ef9481710577b2509b9706726ee43e8c7251b0f9db23e51702c8",
+  "status": "complete_pass_all_frozen_guards",
+  "utc": "2026-11-01T16:59:26.790416+00:00"
+}

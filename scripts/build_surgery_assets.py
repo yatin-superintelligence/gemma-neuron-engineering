@@ -14,13 +14,13 @@ def page(title, body, script=''):
 
 
 SOURCES = {
-    'Observe': ['interpretability/native_cache_branch.py', 'interpretability/native_capture.py', 'interpretability/native_timeline.py', 'interpretability/probe.py', 'interpretability/response_regions.py', 'interpretability/python_token_regions.py', 'scripts/export_native_trace.py'],
-    'Patch activations': ['research/experiments/n50/assay.py', 'research/experiments/n48/assay.py', 'research/experiments/n49/assay.py', 'interpretability/signed_native_mask.py', 'interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
+    'Observe': ['research/experiments/n52/assay.py', 'interpretability/native_cache_branch.py', 'interpretability/native_capture.py', 'interpretability/native_timeline.py', 'interpretability/probe.py', 'interpretability/response_regions.py', 'interpretability/python_token_regions.py', 'scripts/export_native_trace.py'],
+    'Patch activations': ['research/experiments/n51/assay.py', 'research/experiments/n50/assay.py', 'research/experiments/n48/assay.py', 'research/experiments/n49/assay.py', 'interpretability/signed_native_mask.py', 'interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
     'Reuse computation': ['interpretability/native_ffn_reuse_v2.py'],
     'Edit weights': ['interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
     'Edit connections': ['interpretability/memory_connection.py'],
     'Reconstruct': ['reproduce/model_edits.py'],
-    'Evaluate': ['evaluation/answer_decisions.py', 'evaluation/signed_positions_reporting.py', 'evaluation/signed_mask_reporting.py', 'evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
+    'Evaluate': ['evaluation/native_sensitivity.py', 'evaluation/native_component_reporting.py', 'evaluation/answer_decisions.py', 'evaluation/signed_positions_reporting.py', 'evaluation/signed_mask_reporting.py', 'evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
     'Generate and resume': ['research/experiments/n47/generation.py', 'interpretability/native_eos_generation.py'],
     'Record evidence': ['evaluation/durable_zip.py', 'interpretability/durable_measurement_journal_v2.py'],
 }

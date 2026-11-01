@@ -538,6 +538,17 @@
       "run": "N50_version1",
       "recorded_script_seconds": 225.10287829,
       "outcome": "Complete frozen auditPASS all24contexts/72native donor decisions. Paired donor preserves24/24choices;eachunrelatedcontrolchanges1codingchoice.168forwards15890exposures72hassignments,0tokens/params/updates. Notusefulcodinggain."
+    },
+    {
+      "run": "N51_version1",
+      "recorded_script_seconds": 245.959489713,
+      "outcome": "Complete frozen auditPASSall24/144nativeR/Pfactorcuts. PairedR/jointcopydonorletterall24;P-onlypreservesall24.312forwards29510exp144assign,0tokens/params/updates. Notabstractskill or codinggain."
+    },
+    {
+      "run": "N52",
+      "recorded_script_seconds": 195.19104318799998,
+      "outcome": "COMPLETE_frozen_audit_PASS_24read_onlyVJPs_48nativevalueforwards_0valueupdates",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": []

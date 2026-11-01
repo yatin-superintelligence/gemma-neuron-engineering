@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-01T16:59:26.790416+00:00",
+  "status": "complete_host_audited_closed",
+  "source_checkpoint": "3af16847ad29e2047973b6b6a78ab28e7ca5bb9e",
+  "private_GPU_notebook": true,
+  "single_READY_private_dataset": true,
+  "server_JSON_exact": true,
+  "outcome": "All24read-onlyVJPs/48nativevalueforwards PASS;bothh-signgroups mixsupportandsuppression,notmeaningorutilitygain",
+  "actual_measurement_backward_engine_requests": 24,
+  "parameter_or_activation_value_updates": 0,
+  "optimizer_steps": 0
+}

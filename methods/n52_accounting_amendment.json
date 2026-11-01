@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-01T16:40:18.502484+00:00",
+  "registered_before_package_launch_or_N52_pretrained_measurements": true,
+  "scope": "Accounting-only removal of an ambiguous copied backward_calls:0 counter label. Native measurement explicitly makes24autograd.grad/backward-engine requests;Tensor.backwardmethodcalls andgradientvalueupdatesremain0.",
+  "preserved_original_worker": "research/experiments/n52/worker.py",
+  "active_worker": "research/experiments/n52/worker_v2.py",
+  "one_literal_removal_inverse_exact": true,
+  "original_sha256": "3cfdef6bf7ccfcd9557ca5a3d92ce0a8876679ceb8210f7bfba427b5d929bafb",
+  "active_sha256": "dcbd42a1aa1ad5c3f2cd6d5bf23e8f64fd929c8c7d50594d77f2dc5593923b05",
+  "numerical_engine_assay_or_acceptance_changed": false,
+  "new_model_scorer_or_old_fixture_calls": 0,
+  "original_worker_scientific_main_invocations": 0
+}

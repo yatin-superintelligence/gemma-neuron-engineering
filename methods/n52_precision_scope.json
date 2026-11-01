@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-01T16:49:27.560029+00:00",
+  "before_package_launch_and_pretrained_measurements": true,
+  "precision_scope": "Formal automatic-differentiation rules evaluated through native BF16 compute. This is not a derivative of the discrete rounding step function, an FP32-model derivative, integrated gradients or a completeness claim.",
+  "read_only": "Leaf Tensor requires_grad metadata permits measurement. All weight/activation VALUES and parameter grad buffers remain unchanged. Count 24 measurement backward-engine requests, not zero backwards.",
+  "raw_scope": "Only current h and gradient uint16 BF16 vectors saved. Auditor independently checks these raw hashes, shapes and finite values. Noncurrent zero-value assertion and full-gradient digest remain worker observations; no independent authentication of unsaved signed-zero bytes or parameter bytes.",
+  "pre_gate_audit_adjustment": "Removed reconstruction of unsaved noncurrent positive-zero bytes before the auditor freeze. Native protocol/engine/host freeze unchanged; first draft preserved at runs/n52/pre_gate_audit_source.py. No scientific outputs or old fixtures accessed."
+}
