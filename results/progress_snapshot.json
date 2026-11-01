@@ -1,18 +1,12 @@
 {
-  "generated_utc": "2026-11-01T01:39:57.017846+00:00",
+  "generated_utc": "2026-11-01T03:14:05.513594+00:00",
   "question_records": 57,
-  "recorded_terminal_runs": 79,
-  "active_runs": [
-    {
-      "run": "N43_v1_native_RMS_factorial_two_GPU",
-      "launched_utc": "2026-11-01T01:09:33.578579+00:00",
-      "status": "RUNNING"
-    }
-  ],
-  "ledger_events": 604,
-  "question_register_source_sha256": "39f479b4193d937f17bf9a15b76ba067a7de324344731dd2e8922eaf9531b684",
-  "event_ledger_source_sha256": "09f4b4f503e86673352a9f6ecac674c7267ee0661cd2993ae8d96afc6505d201",
-  "compute_ledger_source_sha256": "8881a772d56bad26d3f2bd00e46498462d7d856fc46a0da14ff009eb9d03978f",
+  "recorded_terminal_runs": 80,
+  "active_runs": [],
+  "ledger_events": 606,
+  "question_register_source_sha256": "0cf125cf6de66a51599b53fe820a1d3ee1c86c8b98d1a4dd32707cc73d24291d",
+  "event_ledger_source_sha256": "a691c236edace97100a34401120f407c4bffb9058b8d37814b1d49fc97630eca",
+  "compute_ledger_source_sha256": "637c511d5a048365ef27dcca34bcf8b614387469d3ad96daebfd63c74465b6ab",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0

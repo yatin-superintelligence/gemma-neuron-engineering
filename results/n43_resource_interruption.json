@@ -1,0 +1,38 @@
+{
+  "utc": "2026-11-01T03:10:13.457819+00:00",
+  "status": "resource_incomplete_closed",
+  "platform_status": "KernelWorkerStatus.COMPLETE",
+  "stop_reason": "Both workers reached the frozen notebook-start plus 6600-second resource boundary. This was not the fixed research-window deadline.",
+  "notebook_seconds": 6604.751648142,
+  "duration_scope": "Notebook wall time, not charged GPU quota or a speed comparison.",
+  "reported_counters": {
+    "scope": "Worker-reported counters at resource stop; not a complete-panel audit.",
+    "forward_attempt_calls": 47439,
+    "input_token_exposures": 55863,
+    "manual_parameter_assignments": 10044,
+    "activation_assignments": null,
+    "final_native_restorations_verified": null,
+    "new_generated_tokens": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0
+  },
+  "self_reported_completed_group_site_rows": 5020,
+  "expected_complete_group_site_rows": 7587,
+  "self_reported_completed_sampled_decisions": 185,
+  "expected_sampled_decisions": 281,
+  "source_validation": {
+    "execution_files": 220,
+    "inherited_B_files": 161,
+    "inherited_A_files": 78,
+    "all_hashes_exact_before_output_access": true,
+    "protocol_plan_auditor_notebook_payload_exact": true,
+    "server_source_JSON_exact": true,
+    "notebook_and_dataset_private": true
+  },
+  "auditor_invoked": false,
+  "scientific_aggregate_created": false,
+  "scientific_figure_created": false,
+  "interpretation": "The panel is incomplete. All saved finite effects remain censored; no mechanistic conclusion, scientific null, utility result or explanation of N41 regressions is available. Native replay and final state/restoration scope have not passed a full-panel audit.",
+  "no_completed_panel_rerun": true,
+  "raw_outputs_remain_private": true
+}

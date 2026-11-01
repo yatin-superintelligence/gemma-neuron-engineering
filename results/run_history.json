@@ -487,13 +487,14 @@
       "outcome": "All480records/352new/128exactcarries and every guard pass;coding55/51/53/53/48,selected0gains4losses;fresh primary fails.All352new nativeEOS,max2134.No useful coding gain.",
       "duration_scope": "Notebook elapsed seconds,not charged GPU quota;two worker times4937.718233032/5301.842425511seconds are separately recorded.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "N43_v1_native_RMS_factorial_two_GPU",
-      "launched_utc": "2026-11-01T01:09:33.578579+00:00",
-      "status": "RUNNING"
+      "recorded_script_seconds": 6604.751648142,
+      "outcome": "Frozen 6600-second boundary interrupted both workers. Partial panel censored; no audit, mechanism result or real figure.",
+      "duration_scope": "Notebook wall time, not charged GPU quota or a speed comparison.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-01T01:39:57.017846+00:00",
+  "generated_utc": "2026-11-01T03:14:05.513594+00:00",
   "project": "Digital Surgery",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,8 +21,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "c59b1f68b56c1ed5de4901b6348da4fef06e981b4a4e65fef12a2d6f51030e77",
-      "bytes": 16239
+      "sha256": "38952cb3b6372628dd11f98a52ec7d2aa7c7fbb248042a610e0f3fc473c12610",
+      "bytes": 16177
     },
     {
       "path": "docs/ACTIVATION_VIEWER.html",
@@ -31,8 +31,8 @@
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "95010b467a2c0b5967ca417630514e3fd52b335025659ea9c5557c0e002d2418",
-      "bytes": 324755
+      "sha256": "7054baa2468e20d706932403114831af17fffa2335e014aa992c15a1c04fbd32",
+      "bytes": 326404
     },
     {
       "path": "docs/MODEL_REGISTRY.html",
@@ -41,8 +41,8 @@
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "2c9c7da757160aeb2e336726a8ff0168d9adec01f65b70c8169935dcfd1e4dd5",
-      "bytes": 259887
+      "sha256": "29589ae1325ba29d768e366878e664f12f7c8f851b8552073a0ac7aba68a6bb3",
+      "bytes": 259908
     },
     {
       "path": "docs/SURGERY_ASSET_INDEX.json",
@@ -66,8 +66,8 @@
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "37f0b7963e61f074290f573c9a70e48cb3eaa48edc016ef61a35820c92061461",
-      "bytes": 138777
+      "sha256": "4125bc0efdf64063e94c6b3d6446afac77ea19a867737c48f6ed0e97bffb54a8",
+      "bytes": 139247
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -286,8 +286,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "9321d5eb175a8500e0926f7e5787cbf78483cdafab0aad5f25e0231cb54c3a60",
-      "bytes": 130169
+      "sha256": "a45246d439e21301ab94d522cd475210c360e59f1b6d2f827498993d442c2a40",
+      "bytes": 129846
     },
     {
       "path": "docs/storage_policy.json",
@@ -2340,9 +2340,14 @@
       "bytes": 2039
     },
     {
+      "path": "results/n43_resource_interruption.json",
+      "sha256": "d3a1af00d177645f2fa6a58df7f7b6210c512f69303ec5c944966dab8b41fde1",
+      "bytes": 1769
+    },
+    {
       "path": "results/n43_runtime_status.json",
-      "sha256": "e76965954862c88d125502d9d73841a681a085cd200fafee3182666a7a04ddba",
-      "bytes": 449
+      "sha256": "40760239dff683ffaec562c6fdbe872e694ebe2ba14aea85d70576cf28425e3c",
+      "bytes": 1007
     },
     {
       "path": "results/native_EOS_public_import_review.json",
@@ -2361,8 +2366,8 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "3b6c30e75273d75e25044fb87422a78371167c3a4f779fb552f11b918ab3d5d9",
-      "bytes": 752
+      "sha256": "f458dd30bf8d0e15192e190e9c69cdce0f4e1bfb744ff7814cc8caa612c7cef4",
+      "bytes": 601
     },
     {
       "path": "results/r01_reconstruction.json",
@@ -2376,8 +2381,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "91959f17ec00fa8de5d31ca8b1a4864f73de82a02a1ed2778fb29a9c9c0402d7",
-      "bytes": 27273
+      "sha256": "7081f4295fe320885d6ff8a5b64fedc7c9e7e66f32f033044ab20b723af48e17",
+      "bytes": 27496
     },
     {
       "path": "scripts/build_surgery_assets.py",

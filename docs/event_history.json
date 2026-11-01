@@ -4406,6 +4406,20 @@
       "event": "preoutput_static_source_to_claim_map_13bounded_claims_frozen_no_model_scorer_or_fixture",
       "experiment": "N43",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 605,
+      "utc": "2026-11-01T03:10:13.457819+00:00",
+      "event": "terminal_source_parent_hashes_exact_before_single_collection",
+      "experiment": "N43",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 606,
+      "utc": "2026-11-01T03:10:13.457819+00:00",
+      "event": "private_terminal_collection_once_resource_interruption_preserved_no_audit_or_scientific_result",
+      "experiment": "N43",
+      "optimizer_steps": 0
     }
   ]
 }

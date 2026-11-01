@@ -1,13 +1,26 @@
 {
-  "status": "RUNNING",
+  "status": "resource_incomplete_closed",
   "launched_utc": "2026-11-01T01:09:33.578579+00:00",
   "actual_server_version": 1,
   "source_checkpoint": "0498bad2ab8d0b6f77d3d4996089f758eca67a8d",
   "server_source_JSON_exact": true,
   "private_notebook_and_dataset": true,
-  "partial_outputs_accessed": false,
-  "actual_model_counters": null,
-  "scientific_outcome": "Pending complete terminal audit",
+  "live_partial_outputs_accessed": false,
+  "actual_model_counters": {
+    "scope": "Worker-reported counters at resource stop; not a complete-panel audit.",
+    "forward_attempt_calls": 47439,
+    "input_token_exposures": 55863,
+    "manual_parameter_assignments": 10044,
+    "activation_assignments": null,
+    "final_native_restorations_verified": null,
+    "new_generated_tokens": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0
+  },
+  "scientific_outcome": "Resource incomplete; all finite effects censored. No mechanism or utility result.",
   "no_new_responses_in_design": true,
-  "training_allowed": false
+  "training_allowed": false,
+  "terminal_outputs_collected_once": true,
+  "auditor_invoked": false,
+  "actual_scientific_figure_created": false
 }
