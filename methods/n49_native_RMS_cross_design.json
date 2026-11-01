@@ -1,0 +1,55 @@
+{
+  "utc": "2026-11-01T15:05:35.270283+00:00",
+  "experiment": "N49",
+  "question": "Q64",
+  "title": "Native RMS numerator versus shared-scale controls on all N48 answer contexts",
+  "motivation": "Complete N48 signed-negative and matched-random both10/16,all retention8/8,bothprimariesFAIL. Sign/energy/RMS confounding unresolved. This measures missing native-factorcrosses,not a sign/site/dose/task sweep or N43 recovery.",
+  "cohort": "ALL24 N48 contexts,16coding8retention,12swapped-orderpairs,all12families;REUSEDDEVELOPMENT,not freshconfirmation. No task replacement.",
+  "groups": [
+    "remove_negative",
+    "random_negative_count",
+    "remove_positive",
+    "random_positive_count"
+  ],
+  "site": "FinaldenseMLP34 post_feedforward_layernorm before residual/PLE. h=act(gate(x))*up(x). Fixednative signed masks exactly N48.",
+  "cells": {
+    "00": "N48 original carry;native numerator v0/native reciprocal RMS q0",
+    "11": "N48 edited carry;edited numerator v1/edited reciprocal RMS q1",
+    "01": "NEW native numerator v0/edited reciprocal RMS q1",
+    "10": "NEW edited numerator v1/native reciprocal RMS q0"
+  },
+  "closed_cell_policy": "Neverexecute N48edited fullforwards again. All00/11decision/activation/metricrecords copied exact withparentenvelope/audit/freezeSHA. Nativeguard forward once/context captures fullh/v0/currentnorm and must match N48native fullFP32logits/argmax/fullcache/h EXACT. This is sourceguard/capture for newcells,not newlyscored00.",
+  "construction": "For each4groups apply unchangedtransform(fullh,mode),compare entirewitness to N48editedactivation. Run native down_proj once onfull shaped editedh,96extra down-projection-only evaluations inall. Construct q1=pow(mean(v1.float()**2)+eps,-0.5),q0 from actualv0. Directgamma nativeoporder;no1+gamma/fittedgain. No extra FFN.",
+  "new_measurements": "Eachgroup:01fullforward then nativefullrestoration;10fullforward then nativefullrestoration. All fresh emptycaches. Only norm currentlastposition replacement;allotherpositions byteexact;native h,rawv0,normout/cache exact. Cellorder rotatedby(row_index+group_index)%2,all8crossesretained.",
+  "expected_work": {
+    "contexts": 24,
+    "new_cross_decisions": 192,
+    "full_forwards": 408,
+    "native_sourceguards": 24,
+    "native_restoration_forwards": 192,
+    "extra_down_projection_evaluations": 96,
+    "full_shaped_h_constructions": 96,
+    "current_norm_output_assignments": 192,
+    "new_emitted_tokens": 0,
+    "manual_parameter_assignments": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0
+  },
+  "primary": "For EACH ofall4groups andEACHrole report case mean absolute numerator margin change |m10-m00|,sharedscalechange |m01-m00|,andtheirdifference;direction descriptive,not a utilitysuccesscriterion. Margins are correctminusfoil. Also signedmean raw effect,scaleeffect,total(m11-m00),interaction(m11-m10-m01+m00). Allfixedcells kept;no pvalues/threshold/armwinnerselection. Pairing explicit;not individualmeaning/mediation/fullprogramgain.",
+  "secondary": "Allnewcell full-vocabulary canonical A/B correctness/validity/gains/losses/family/ordercounts. Carry old N48aggregate/grading exactly,no N48assess/scorer rerun. New192literal-labelcomparisons onlyafter completeguardsPASS. Denominatorq0/q1,energy/maskindices andallchoicecontrasts reported descriptively. No oracles/hiddenletters/traces GPUuploaded.",
+  "guards": "Full408forwards/all24/all4groups/bothcrosses,actualcounterdeltas,allnative-restoration/fullcache/h/raw/norm guards. Stateversions/hooks/config/RNG/buffers/grad beforeeverydurablecommit;actualinitial/finalterminalmetadata. N48wholeauditPASS/pointer/90science+2transport/allrawhashes verified. Not fullparameterbyteauthentication/independentpackagepretrainedreplay.",
+  "host_validation": "NewFP32/BF16randommodels seed4909/newprefill29/31. Independent explicit reference forbothcrosses/all4groups and00/11on NEW RANDOMfixtureonly;no oldfixtures. Newtargeted lineage/refusal literals. No pretrained hostmodel/tokenizer/oldscorer calls.",
+  "acceptance": "Singleprivate scientificlaunch. Singlecollector andfrozenauditonce. Anyincomplete/failure preserved/allfiniteeffectscensored,no reroll/continuation/weakening. Resourceboundary not null.",
+  "resources": {
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1600,
+    "notebook_start_global_seconds": 1500,
+    "reservation_GPU_hours": 1,
+    "reserve_GPU_hours": 2,
+    "raw_bytes_limit": 33554432,
+    "hardware": "TwoDISTINCTT4/fullBF16replica each,indexmod2contexts,sequentialload/commonbarrier"
+  },
+  "training_allowed": false,
+  "priors": "Known finite factorial/nativeRMS/circuitbasis/contextualbinding/patchingcontrols;N43methodprecedent acknowledged,closed censored N43effects unused."
+}

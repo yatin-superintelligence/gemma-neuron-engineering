@@ -514,13 +514,31 @@
       "outcome": "All96cases/all5conditions/281targets pass frozen audit;all21181source decisions exact,215fresh/66exactcarries. Latercodingchoicechanges do not establish utility.",
       "duration_scope": "Notebook wall time,not charged GPU quota.",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "N47_v1_persistent_signed_native_EOS_two_GPU",
-      "launched_utc": "2026-11-01T11:17:51.475706+00:00",
-      "status": "RUNNING_PRIVATE"
+      "recorded_script_seconds": 6605.299660979,
+      "outcome": "32of384committed edited response records including interrupted records. No frozen audit or new grading;all finite effects censored.",
+      "duration_scope": "Notebook wall time,not charged GPU quota.",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "N48_v1_fresh_answer_decisions_two_GPU",
+      "recorded_script_seconds": 266.63668591600003,
+      "outcome": "Original8/16,negative10/16,randomnegative10/16,positive8/16,randompositive9/16;allretention8/8. BothsignedprimariesFAIL.",
+      "duration_scope": "Notebook wall time,not charged GPUquota.",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "N49_version1",
+      "recorded_script_seconds": 233.454545732,
+      "outcome": "Complete frozen auditPASS all24/192newcrosses;408forwards38590exposures96extra downprojection192normassignments,0emittedtokens/updates. NativeRMSfinitecontrasts,not utilityconfirmation."
+    },
+    {
+      "run": "N50_version1",
+      "recorded_script_seconds": 225.10287829,
+      "outcome": "Complete frozen auditPASS all24contexts/72native donor decisions. Paired donor preserves24/24choices;eachunrelatedcontrolchanges1codingchoice.168forwards15890exposures72hassignments,0tokens/params/updates. Notusefulcodinggain."
     }
-  ]
+  ],
+  "active_runs": []
 }

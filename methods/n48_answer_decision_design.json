@@ -1,0 +1,50 @@
+{
+  "experiment": "N48",
+  "question_id": "Q63",
+  "title": "Fresh counterbalanced code-comprehension answer-decision accuracy under fixed signed masks",
+  "registered_utc": "2026-11-01T13:56:50.223351+00:00",
+  "status": "registered_before_implementation_or_new_model_measurements",
+  "question": "Do unchanged final-MLP sign masks improve native answer-token accuracy beyond their random cardinality controls on a fresh fully counterbalanced short code-comprehension panel?",
+  "motivation": "N45sampled saturated opening code-fence choices;N46complete later choices change but not correctness;N47resource-incomplete full generations yield no utility result. Use no N47partial effects. New short answer contexts remove that prefix confound while retaining a bounded single-decision measurement.",
+  "recipient": "google/gemma-4-E2B-it@3e22461f65e89153144f8adb70e3b8c2cc9845a7,textBF16,Transformers5.8.0native module64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933",
+  "cohort": "24NEWcontexts:8host-authored Python3comprehension programs in8distinct declared families,each2answer-orderbindings=16coding;4noncodingretentionitems each2orderbindings=8retention. Entirecohort/allorders frozen before pretrained outputs. No answer/difficulty selection.",
+  "conditions": [
+    "original",
+    "remove_negative",
+    "random_negative_count",
+    "remove_positive",
+    "random_positive_count"
+  ],
+  "scope": "First native full-vocabulary answer decision after an ordinary chat prompt. Measure argmax/logits;emit0tokens,0autoregressive generation,0generate calls. This is answer-token accuracy,NOTfull-program generation or useful coding gain. No arbitrary response cap is used.",
+  "intervention": "Unchanged interpretability.signed_native_mask atnativefinalMLP34 currentlastposition;h=act(gate(x))*up(x),notgatepreactivation. Literal0h<0orh>0;strictsignedzerosneither. FixedRandom4501/4502permutation prefixes exactnative signcount. Randomcontrolsnotenergy/magnitude matched. No strength/sign/rank/sitefit,parametersurgery,backwardoroptimizer.",
+  "answer_policy": "Prompt asks exactlyAorB. Both candidate values are visible benchmark options. Only canonical single-token A/B full-vocabulary argmax counts as valid. Any whitespace/punctuation/explanation/other token is incorrect;no restrictedA/Bargmax,no later-token trim/no forced decoding. Hidden correct letters/manual traces neveruploaded.",
+  "label_policy": "Expected outputs/foils and manual traces are host-authored literal fixtures,not generated model solutions. Independent host checks validate each trace/answer swap;no hiddenanswer lookup and no executableoracle output is supplied to model.",
+  "guards": "Percontext nativebaseline,identity,all4edits and4native restorations on independentfreshemptycache=10forwards. ExactfullFP32logithash/cachehash/nativeprepatchh inidentity/restorations,allotherpositionsbyteexact,allbranchrawcachehashesequal(nativefinalMLPafterlastKVproducer14). Source/prompt/tokenization/parameter-version/config/RNG/hook/buffer/grad witnesses. Actualrestorationandcounters beforedurableprepare+commit;actualinitial/finalmetadata.",
+  "expected_work": {
+    "contexts": 24,
+    "forwards": 240,
+    "activation_assignments": 120,
+    "parameter_assignments": 0,
+    "new_emitted_tokens": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "input_exposures": "10*sum(actualfrozenprompttokenlengths),boundafterhosttokenization;no guessedactualcounts"
+  },
+  "primary": "For each signedpolicy independently,baseline valid-options>=14/16coding and>=7/8retention andbaseline correct>=8/16coding,>=6/8retention. PreserveEVERYbaseline-correctcodingandretentioncase. Gain>=2codingcases. Improve both-order correctness for>=2programs spanning>=2families,with0pairedprogramlosses. Beat its matchedrandom by>=2correctcodingcases. Allclauses required,all5arms/allcases/all8families/statuses retained. Original ceiling leaves primaryfailed/unmet,not a reason to replace tasks.",
+  "secondary": "Full-vocabulary validoption/correctcounts,allfamily/orderpairedgains/losses,correctminusfoilmargin/choiceprobabilities/removedenergy andsigncount,allnativeother-tokencounts. Case-pair dependence explicit,no pvalues/winningarm/speed/individualmeaningclaim.",
+  "privacy": "Prompts/tokenIDs/hiddenlabels/rawlogitswitnesses/notebook/rawoutputsPRIVATE. Reviewedallconditionaggregates+generictools may be public only after complete frozen audit.",
+  "acceptance": "All24contexts/all10forwards andexactsource/cache/state/counter/terminalguardsmustpass beforeanyscoring/effectinterpretation. Wholepanel interruptioncensored;no completedcellrerun or weakened guard. Actualmetadata witnessesnotfullpretrainedbyteauthenticity/cleanpackageindependentreplay.",
+  "resources": {
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1600,
+    "notebook_start_global_seconds": 1500,
+    "reservation_GPU_hours": 1,
+    "reserve_GPU_hours": 2,
+    "raw_bytes_limit": 33554432,
+    "hardware": "Two DISTINCT fullBF16T4replicas,indexmod2disjointcontexts,sequentialloading/commonbarrier;notcontiguous32GB/noBF16accelerationclaim"
+  },
+  "no_training": true,
+  "optimizer_steps": 0,
+  "priors": "Signedpostgating ablation relates to direct negative-preactivation prior2509.24198 but is a different quantity. Native coordinatebasis,RMSsharedscale,energyconfounding/circuit/contextualbindingpriors retained;no first-discoveryclaim."
+}

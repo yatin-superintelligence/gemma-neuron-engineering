@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-01T15:18:36.818385+00:00",
+  "scope": "Post-result reporting only,registered after complete frozen N48audit;not prospective primary or new science.",
+  "input": "Complete original120conditionrecordaggregate+auditedreceipt,notrawtasks/labels.",
+  "panels": [
+    "coding all5",
+    "retention all5",
+    "coding all4gainslosses",
+    "all12families/all5",
+    "correctminusfoilmargin bothroles",
+    "bothprimaryfailures andscope"
+  ],
+  "no_rescoring_or_new_model_calls": true,
+  "render_once_then_view_all6": true,
+  "all_primary_clauses_kept_in_JSON": true
+}

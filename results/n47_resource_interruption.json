@@ -1,0 +1,36 @@
+{
+  "utc": "2026-11-01T13:15:01.523787+00:00",
+  "status": "resource_incomplete_closed",
+  "platform_status": "COMPLETE means notebook handled resource interruption,not complete science",
+  "notebook_seconds": 6605.299660979,
+  "duration_is_charged_GPU_quota": false,
+  "committed_response_records_including_interrupted": 32,
+  "planned_edited_response_records": 384,
+  "reported_actual_counters_UNAUDITED": {
+    "activation_assignments": 56232,
+    "backward_calls": 0,
+    "calls": 56360,
+    "carried_generated_tokens": 96,
+    "carry_native_source_guard_forwards": 96,
+    "extra_FFN_evaluations": 0,
+    "input_token_exposures": 65104,
+    "manual_parameter_assignments": 0,
+    "new_generated_tokens": 56232,
+    "optimizer_steps": 0,
+    "restoration_forwards": 32
+  },
+  "native_EOS_completion_of_whole_panel": false,
+  "worker_initial_final_metadata_observed_equal": [
+    true,
+    true
+  ],
+  "metadata_comparison_is_frozen_audit_or_full_parameter_byte_authentication": false,
+  "collector_invocations": 1,
+  "auditor_invocations": 0,
+  "grading_calls": 0,
+  "scientific_aggregate_or_figure_exists": false,
+  "all_finite_effects_CENSORED": true,
+  "raw_output_files": 60,
+  "no_completed_cell_reexecution": true,
+  "exact_per_response_interruption_reasons": "Not read;no partial response or finite-effect contents inspected."
+}

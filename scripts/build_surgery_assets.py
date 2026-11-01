@@ -15,12 +15,12 @@ def page(title, body, script=''):
 
 SOURCES = {
     'Observe': ['interpretability/native_cache_branch.py', 'interpretability/native_capture.py', 'interpretability/native_timeline.py', 'interpretability/probe.py', 'interpretability/response_regions.py', 'interpretability/python_token_regions.py', 'scripts/export_native_trace.py'],
-    'Patch activations': ['interpretability/signed_native_mask.py', 'interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
+    'Patch activations': ['research/experiments/n50/assay.py', 'research/experiments/n48/assay.py', 'research/experiments/n49/assay.py', 'interpretability/signed_native_mask.py', 'interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
     'Reuse computation': ['interpretability/native_ffn_reuse_v2.py'],
     'Edit weights': ['interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
     'Edit connections': ['interpretability/memory_connection.py'],
     'Reconstruct': ['reproduce/model_edits.py'],
-    'Evaluate': ['evaluation/signed_positions_reporting.py', 'evaluation/signed_mask_reporting.py', 'evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
+    'Evaluate': ['evaluation/answer_decisions.py', 'evaluation/signed_positions_reporting.py', 'evaluation/signed_mask_reporting.py', 'evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
     'Generate and resume': ['research/experiments/n47/generation.py', 'interpretability/native_eos_generation.py'],
     'Record evidence': ['evaluation/durable_zip.py', 'interpretability/durable_measurement_journal_v2.py'],
 }
@@ -41,7 +41,7 @@ def toolkit(dest):
             if name == 'interpretability/signed_native_mask.py':
                 title += ' Random-model paths pass. Pretrained evidence is reported separately for N45. Random controls match cardinality only, not magnitude or energy.'
             if name == 'research/experiments/n47/generation.py':
-                title += ' New carry, fresh-decision, native-EOS and context-interruption checks pass on random models. The N47 pretrained panel is running; no utility outcome is available. Callers must bind trusted completed-cell provenance and actual resource checks. Carries require the entire consumed history to match.'
+                title += ' New carry, fresh-decision, native-EOS and context-interruption checks pass on random models. The N47 pretrained panel ended resource incomplete; all finite effects are censored and no utility result is available. Callers must bind trusted completed-cell provenance and actual resource checks. Carries require the entire consumed history to match.'
             if name == 'interpretability/durable_measurement_journal_v2.py':
                 title += ' Current T01 version 2. Host-only literal validation; no pretrained integration or retroactive N43 certification. See the durable journal guide for lifecycle, recovery limits and the preserved version 1 final-type defect.'
                 guide = '<p><a href="MEASUREMENT_JOURNAL.html">Journal lifecycle and evidence limits</a></p>'

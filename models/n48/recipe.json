@@ -1,0 +1,36 @@
+{
+  "experiment": "N48",
+  "status": "complete_host_audited_primary_failed",
+  "base": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "payload_sha256": "2db5482b20d746879bb3ef79b5203e9075a2e2b98f54ec7c2f281c1477ddc550"
+  },
+  "site": 34,
+  "scope": "Currentlastposition nativepostgatingh;first full-vocabulary answer decision only,not persistent generation or fullprogram utility.",
+  "conditions": {
+    "original": "No assignment",
+    "remove_negative": "Literal0forh<0",
+    "random_negative_count": "Random4501permutationprefix exactnative negativecount",
+    "remove_positive": "Literal0forh>0",
+    "random_positive_count": "Random4502permutationprefix exactnative positivecount"
+  },
+  "strict_zeros_in_neither_sign": true,
+  "random_match": "Cardinality,notenergy/magnitude",
+  "implementation": "interpretability/signed_native_mask.py",
+  "implementation_sha256": "9b57f9f5485d211ccf88d7840b4572a2505ca19ab2b6538019d3f04e2e96e056",
+  "assay": "research/experiments/n48/assay.py",
+  "assay_sha256": "da55c350122a858b3166fbc2b42201a00c63c8319f90d88b340186e031dd27b7",
+  "new_tensor_bytes": 0,
+  "optimizer_steps": 0,
+  "independent_clean_package_pretrained_replay": false,
+  "hiddenlabels_and_rawcontexts_private": true,
+  "coding_correct": {
+    "original": 8,
+    "remove_negative": 10,
+    "random_negative_count": 10,
+    "remove_positive": 8,
+    "random_positive_count": 9
+  },
+  "both_signed_primaries_failed": true
+}

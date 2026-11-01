@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-01T15:11:30.548883+00:00",
+  "before_N49_pretrained_launch_or_outputs": true,
+  "scope": "Secondaryreportingonly,no primary/numerical/acceptance change",
+  "reason": "N48publicaggregate retains allcondition grades but not percase boolean gradingmemo. Do not call N48scorer or regrade oldchoices to recreate thatmemo.",
+  "new_cell_grades": "Exactly192newliteral-labelcomparisons,eachcachedonce;role/family summaries reusememo. Allnewcell correctness/validity/family/order counts retained.",
+  "old_reference": "ByteexactN48aggregate carried aswhole. Old rawchoices/margins carried forchoicechanges/factorcontrasts. No newpercase N48gain/lossclassification;notinvented. Newcorrectness grades donot establish usefulfullprogramgain.",
+  "old_primary_unchanged": "BothN48signedprimaryfailuresremainverbatim.",
+  "answer_orders": "Both answer-order records remain retained privately with exact row binding. Published family/role score aggregates do not expose private cases or reconstruct old percase grades."
+}

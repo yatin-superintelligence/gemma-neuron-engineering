@@ -1,0 +1,21 @@
+{
+  "actual_counters": {
+    "activation_assignments": 72,
+    "backward_calls": 0,
+    "calls": 168,
+    "extra_FFN_evaluations": 0,
+    "extra_down_projection_evaluations": 0,
+    "input_token_exposures": 15890,
+    "manual_parameter_assignments": 0,
+    "native_restoration_forwards": 72,
+    "native_sourceguards": 24,
+    "new_emitted_tokens": 0,
+    "optimizer_steps": 0
+  },
+  "all24_contexts_72newdonors": true,
+  "closed_scorer_model_tokenizer_executor_calls": 0,
+  "new_literal_label_comparisons": 72,
+  "public_aggregate_sha256": "23ad3f363554e1069332c56162e00f54b162dd03477dbe0a3e9d5ea73920030b",
+  "status": "complete_pass_all_frozen_guards",
+  "utc": "2026-11-01T15:45:31.011232+00:00"
+}

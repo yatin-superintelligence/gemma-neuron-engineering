@@ -1,0 +1,8 @@
+{
+  "scope": "Original collector failed at a wrong local notebook path before output download. Prospective transport-only continuation used the path already pinned by the original source freeze;received server source was reused.",
+  "original_collector_invocations": 1,
+  "continuation_invocations": 1,
+  "original_frozen_auditor_invocations": 1,
+  "scientific_guard_changes": 0,
+  "scientific_cell_reexecutions": 0
+}

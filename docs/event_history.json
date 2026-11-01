@@ -4763,6 +4763,90 @@
       "event": "N47_resource_metadata_erratum_3claimed_boundarychecks_were_not_executed_original671preserved",
       "experiment": "N47",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 656,
+      "utc": "2026-11-01T12:06:20.299531+00:00",
+      "event": "N47_reporting_only_secondary_accounting_and_allcondition_figure_preparation_COMPLETE_beforeoutputs",
+      "experiment": "N47",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 657,
+      "utc": "2026-11-01T13:15:01.523787+00:00",
+      "event": "N47_terminal_RESOURCE_INCOMPLETE_single_collection_all_finite_effects_CENSORED_no_audit_grade_or_figure",
+      "experiment": "N47",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 658,
+      "utc": "2026-11-01T13:25:32.453968+00:00",
+      "event": "Fixed_extended_research_window_ENDED_goal_NOT_achieved_automation_deleted_raw_private_preserved",
+      "experiment": "Scope",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 659,
+      "utc": "2026-11-01T14:23:45.278134+00:00",
+      "event": "Human_U26_ten_NEWexperiments_authorized_N48fresh_answer_decisions_registered_hostgates_PASS_no_pretrained_yet",
+      "experiment": "N48",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 660,
+      "utc": "2026-11-01T14:37:29.479203+00:00",
+      "event": "N48_version1_PRIVATE_LAUNCHED_sourceJSON_dataset_exact_1of10allowance_consumed",
+      "experiment": "N48",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 661,
+      "utc": "2026-11-01T14:58:58.924198+00:00",
+      "event": "N48_COMPLETE_frozen_audit_PASS_both_signed_primaries_FAIL_all_controls_retained",
+      "experiment": "N48",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 662,
+      "utc": "2026-11-01T15:14:37.983048+00:00",
+      "event": "NEW_RMS_cross_protocol_host_gates_package_and878_source_freeze_complete_before_launch",
+      "experiment": "N49",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 663,
+      "utc": "2026-11-01T15:16:13.281759+00:00",
+      "event": "ONE_PRIVATE_VERSION1_LAUNCHED_and_server_JSON_GPU_dataset_exact",
+      "experiment": "N49",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 664,
+      "utc": "2026-11-01T15:24:07.579015+00:00",
+      "event": "COMPLETE_frozen_audit_PASS_all192newcrosses_all24contexts_no_closedcell_reruns",
+      "experiment": "N49",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 665,
+      "utc": "2026-11-01T15:35:15.651081+00:00",
+      "event": "NEW_native_donor_binding_protocol_host_gates_package_sourcefreeze_complete_prelaunch",
+      "experiment": "N50",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 666,
+      "utc": "2026-11-01T15:38:11.760678+00:00",
+      "event": "ONE_PRIVATE_VERSION1_launched_exactserverJSON_privateGPU_singleREADYdataset",
+      "experiment": "N50",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 667,
+      "utc": "2026-11-01T15:49:43.287692+00:00",
+      "event": "COMPLETE_frozen_audit_PASS_all24contexts_72donors_pairedchoice_transfer_null",
+      "experiment": "N50",
+      "optimizer_steps": 0
     }
   ]
 }

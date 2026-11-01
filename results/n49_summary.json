@@ -1,0 +1,4515 @@
+{
+  "actual_counters": {
+    "activation_assignments": 192,
+    "backward_calls": 0,
+    "calls": 408,
+    "extra_FFN_evaluations": 0,
+    "extra_down_projection_evaluations": 96,
+    "full_shaped_h_constructions": 96,
+    "input_token_exposures": 38590,
+    "manual_parameter_assignments": 0,
+    "native_restoration_forwards": 192,
+    "native_sourceguards": 24,
+    "new_emitted_tokens": 0,
+    "optimizer_steps": 0
+  },
+  "all_groups": {
+    "random_negative_count": {
+      "families": {
+        "assigned_binding": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 9.3125,
+              "mean": 6.953125,
+              "min": 4.59375
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -5.640625,
+              "mean": -7.7578125,
+              "min": -9.875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 19.1875,
+              "mean": 14.7109375,
+              "min": 10.234375
+            },
+            "interaction": {
+              "count": 2,
+              "max": 16.9375,
+              "mean": 8.3984375,
+              "min": -0.140625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 9.3125,
+              "mean": 6.953125,
+              "min": 4.59375
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -10.234375,
+              "mean": -14.7109375,
+              "min": -19.1875
+            },
+            "total": {
+              "count": 2,
+              "max": 7.0625,
+              "mean": 0.640625,
+              "min": -5.78125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "dict_update_order": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 3.8125,
+              "mean": 3.40625,
+              "min": 3.0
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 3.265625,
+              "mean": 3.1171875,
+              "min": 2.96875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.546875,
+              "mean": 0.2890625,
+              "min": 0.03125
+            },
+            "interaction": {
+              "count": 2,
+              "max": 2.21875,
+              "mean": 0.3828125,
+              "min": -1.453125
+            },
+            "numerator": {
+              "count": 2,
+              "max": 3.0,
+              "mean": -0.40625,
+              "min": -3.8125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -0.03125,
+              "mean": -0.2890625,
+              "min": -0.546875
+            },
+            "total": {
+              "count": 2,
+              "max": 5.1875,
+              "mean": -0.3125,
+              "min": -5.8125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "extended_slice": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 4.84375,
+              "mean": 4.6875,
+              "min": 4.53125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 3.5625,
+              "mean": 3.4658203125,
+              "min": 3.369140625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 1.28125,
+              "mean": 1.2216796875,
+              "min": 1.162109375
+            },
+            "interaction": {
+              "count": 2,
+              "max": 3.3515625,
+              "mean": 1.5380859375,
+              "min": -0.275390625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 4.84375,
+              "mean": 0.15625,
+              "min": -4.53125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -1.162109375,
+              "mean": -1.2216796875,
+              "min": -1.28125
+            },
+            "total": {
+              "count": 2,
+              "max": 6.9140625,
+              "mean": 0.47265625,
+              "min": -5.96875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "floor_modulo": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 3.59375,
+              "mean": 3.546875,
+              "min": 3.5
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 3.2421875,
+              "mean": 3.001953125,
+              "min": 2.76171875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.73828125,
+              "mean": 0.544921875,
+              "min": 0.3515625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 1.92578125,
+              "mean": 0.318359375,
+              "min": -1.2890625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 3.59375,
+              "mean": 0.046875,
+              "min": -3.5
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.3515625,
+              "mean": -0.193359375,
+              "min": -0.73828125
+            },
+            "total": {
+              "count": 2,
+              "max": 2.65625,
+              "mean": 0.171875,
+              "min": -2.3125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "last_assignment": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 7.90625,
+              "mean": 7.203125,
+              "min": 6.5
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -2.96875,
+              "mean": -3.84375,
+              "min": -4.71875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 12.625,
+              "mean": 11.046875,
+              "min": 9.46875
+            },
+            "interaction": {
+              "count": 2,
+              "max": 11.59375,
+              "mean": 7.375,
+              "min": 3.15625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 7.90625,
+              "mean": 7.203125,
+              "min": 6.5
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -9.46875,
+              "mean": -11.046875,
+              "min": -12.625
+            },
+            "total": {
+              "count": 2,
+              "max": 6.875,
+              "mean": 3.53125,
+              "min": 0.1875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "late_closure": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 2.15625,
+              "mean": 2.140625,
+              "min": 2.125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 0.03125,
+              "mean": -0.307373046875,
+              "min": -0.64599609375
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 2.80224609375,
+              "mean": 2.447998046875,
+              "min": 2.09375
+            },
+            "interaction": {
+              "count": 2,
+              "max": 0.71875,
+              "mean": -0.197998046875,
+              "min": -1.11474609375
+            },
+            "numerator": {
+              "count": 2,
+              "max": 2.15625,
+              "mean": 0.015625,
+              "min": -2.125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 2.80224609375,
+              "mean": 0.354248046875,
+              "min": -2.09375
+            },
+            "total": {
+              "count": 2,
+              "max": 3.84375,
+              "mean": 0.171875,
+              "min": -3.5
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "literal_copy": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 9.4375,
+              "mean": 5.875,
+              "min": 2.3125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -13.6875,
+              "mean": -14.59375,
+              "min": -15.5
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 23.125,
+              "mean": 20.46875,
+              "min": 17.8125
+            },
+            "interaction": {
+              "count": 2,
+              "max": 17.3125,
+              "mean": 11.62890625,
+              "min": 5.9453125
+            },
+            "numerator": {
+              "count": 2,
+              "max": 9.4375,
+              "mean": 3.5625,
+              "min": -2.3125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -17.8125,
+              "mean": -20.46875,
+              "min": -23.125
+            },
+            "total": {
+              "count": 2,
+              "max": 3.625,
+              "mean": -5.27734375,
+              "min": -14.1796875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "loop_else": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 4.6875,
+              "mean": 3.40625,
+              "min": 2.125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 4.609375,
+              "mean": 3.1171875,
+              "min": 1.625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.5,
+              "mean": 0.2890625,
+              "min": 0.078125
+            },
+            "interaction": {
+              "count": 2,
+              "max": 5.1875,
+              "mean": 2.1171875,
+              "min": -0.953125
+            },
+            "numerator": {
+              "count": 2,
+              "max": 2.125,
+              "mean": -1.28125,
+              "min": -4.6875
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.078125,
+              "mean": -0.2109375,
+              "min": -0.5
+            },
+            "total": {
+              "count": 2,
+              "max": 6.8125,
+              "mean": 0.625,
+              "min": -5.5625
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "negation": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 9.46484375,
+              "mean": 5.466796875,
+              "min": 1.46875
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -0.8369140625,
+              "mean": -2.37158203125,
+              "min": -3.90625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 10.3017578125,
+              "mean": 7.83837890625,
+              "min": 5.375
+            },
+            "interaction": {
+              "count": 2,
+              "max": 13.1767578125,
+              "mean": 7.68212890625,
+              "min": 2.1875
+            },
+            "numerator": {
+              "count": 2,
+              "max": 9.46484375,
+              "mean": 3.998046875,
+              "min": -1.46875
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -5.375,
+              "mean": -7.83837890625,
+              "min": -10.3017578125
+            },
+            "total": {
+              "count": 2,
+              "max": 12.33984375,
+              "mean": 3.841796875,
+              "min": -4.65625
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "nested_alias": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 4.6875,
+              "mean": 4.3125,
+              "min": 3.9375
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 4.1875,
+              "mean": 3.9375,
+              "min": 3.6875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.5,
+              "mean": 0.375,
+              "min": 0.25
+            },
+            "interaction": {
+              "count": 2,
+              "max": 3.3125,
+              "mean": -0.765625,
+              "min": -4.84375
+            },
+            "numerator": {
+              "count": 2,
+              "max": 3.9375,
+              "mean": -0.375,
+              "min": -4.6875
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.5,
+              "mean": 0.375,
+              "min": 0.25
+            },
+            "total": {
+              "count": 2,
+              "max": 7.5,
+              "mean": -0.765625,
+              "min": -9.03125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 0,
+                "B": 2,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "shared_iterator": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 4.0,
+              "mean": 3.65625,
+              "min": 3.3125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 3.8125,
+              "mean": 2.5625,
+              "min": 1.3125
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 2.0,
+              "mean": 1.09375,
+              "min": 0.1875
+            },
+            "interaction": {
+              "count": 2,
+              "max": 0.4375,
+              "mean": -1.09375,
+              "min": -2.625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 3.3125,
+              "mean": -0.34375,
+              "min": -4.0
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 2.0,
+              "mean": 1.09375,
+              "min": 0.1875
+            },
+            "total": {
+              "count": 2,
+              "max": 5.75,
+              "mean": -0.34375,
+              "min": -6.4375
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "short_circuit": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 4.625,
+              "mean": 4.5625,
+              "min": 4.5
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 3.9375,
+              "mean": 2.421875,
+              "min": 0.90625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 3.59375,
+              "mean": 2.140625,
+              "min": 0.6875
+            },
+            "interaction": {
+              "count": 2,
+              "max": 3.0,
+              "mean": -2.5625,
+              "min": -8.125
+            },
+            "numerator": {
+              "count": 2,
+              "max": 4.625,
+              "mean": 0.0625,
+              "min": -4.5
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 3.59375,
+              "mean": 1.453125,
+              "min": -0.6875
+            },
+            "total": {
+              "count": 2,
+              "max": 6.9375,
+              "mean": -1.046875,
+              "min": -9.03125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 0,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 0,
+              "valid_options": 2
+            }
+          }
+        }
+      },
+      "roles": {
+        "coding": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 16,
+              "max": 4.84375,
+              "mean": 3.71484375,
+              "min": 2.125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 16,
+              "max": 4.609375,
+              "mean": 2.664581298828125,
+              "min": -0.64599609375
+            },
+            "absolute_shared_scale": {
+              "count": 16,
+              "max": 3.59375,
+              "mean": 1.050262451171875,
+              "min": 0.03125
+            },
+            "interaction": {
+              "count": 16,
+              "max": 5.1875,
+              "mean": -0.032928466796875,
+              "min": -8.125
+            },
+            "numerator": {
+              "count": 16,
+              "max": 4.84375,
+              "mean": -0.265625,
+              "min": -4.6875
+            },
+            "shared_scale": {
+              "count": 16,
+              "max": 3.59375,
+              "mean": 0.170135498046875,
+              "min": -2.09375
+            },
+            "total": {
+              "count": 16,
+              "max": 7.5,
+              "mean": -0.12841796875,
+              "min": -9.03125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 16,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 13,
+                "B": 3,
+                "other": 0
+              },
+              "correct": 9,
+              "valid_options": 16
+            },
+            "10": {
+              "cases": 16,
+              "choice_changes_from_carried_native": 2,
+              "choices": {
+                "A": 10,
+                "B": 6,
+                "other": 0
+              },
+              "correct": 10,
+              "valid_options": 16
+            }
+          }
+        },
+        "retention": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 8,
+              "max": 9.46484375,
+              "mean": 6.37451171875,
+              "min": 1.46875
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 8,
+              "max": -0.8369140625,
+              "mean": -7.1417236328125,
+              "min": -15.5
+            },
+            "absolute_shared_scale": {
+              "count": 8,
+              "max": 23.125,
+              "mean": 13.5162353515625,
+              "min": 5.375
+            },
+            "interaction": {
+              "count": 8,
+              "max": 17.3125,
+              "mean": 8.7711181640625,
+              "min": -0.140625
+            },
+            "numerator": {
+              "count": 8,
+              "max": 9.46484375,
+              "mean": 5.42919921875,
+              "min": -2.3125
+            },
+            "shared_scale": {
+              "count": 8,
+              "max": -5.375,
+              "mean": -13.5162353515625,
+              "min": -23.125
+            },
+            "total": {
+              "count": 8,
+              "max": 12.33984375,
+              "mean": 0.68408203125,
+              "min": -14.1796875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 8,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 4,
+                "B": 4,
+                "other": 0
+              },
+              "correct": 8,
+              "valid_options": 8
+            },
+            "10": {
+              "cases": 8,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 4,
+                "B": 4,
+                "other": 0
+              },
+              "correct": 8,
+              "valid_options": 8
+            }
+          }
+        }
+      }
+    },
+    "random_positive_count": {
+      "families": {
+        "assigned_binding": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 10.859375,
+              "mean": 6.7314453125,
+              "min": 2.603515625
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 0.80859375,
+              "mean": -1.2314453125,
+              "min": -3.271484375
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 10.05078125,
+              "mean": 7.962890625,
+              "min": 5.875
+            },
+            "interaction": {
+              "count": 2,
+              "max": 4.50390625,
+              "mean": 3.2724609375,
+              "min": 2.041015625
+            },
+            "numerator": {
+              "count": 2,
+              "max": -2.603515625,
+              "mean": -6.7314453125,
+              "min": -10.859375
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -5.875,
+              "mean": -7.962890625,
+              "min": -10.05078125
+            },
+            "total": {
+              "count": 2,
+              "max": -6.4375,
+              "mean": -11.421875,
+              "min": -16.40625
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "dict_update_order": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 0.8125,
+              "mean": 0.46875,
+              "min": 0.125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 0.5,
+              "mean": 0.296875,
+              "min": 0.09375
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.3125,
+              "mean": 0.171875,
+              "min": 0.03125
+            },
+            "interaction": {
+              "count": 2,
+              "max": 1.0625,
+              "mean": 0.296875,
+              "min": -0.46875
+            },
+            "numerator": {
+              "count": 2,
+              "max": 0.125,
+              "mean": -0.34375,
+              "min": -0.8125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -0.03125,
+              "mean": -0.171875,
+              "min": -0.3125
+            },
+            "total": {
+              "count": 2,
+              "max": -0.0625,
+              "mean": -0.21875,
+              "min": -0.375
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "extended_slice": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 0.90625,
+              "mean": 0.875,
+              "min": 0.84375
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 0.359375,
+              "mean": 0.22607421875,
+              "min": 0.0927734375
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.8134765625,
+              "mean": 0.64892578125,
+              "min": 0.484375
+            },
+            "interaction": {
+              "count": 2,
+              "max": 0.921875,
+              "mean": 0.52392578125,
+              "min": 0.1259765625
+            },
+            "numerator": {
+              "count": 2,
+              "max": -0.84375,
+              "mean": -0.875,
+              "min": -0.90625
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -0.484375,
+              "mean": -0.64892578125,
+              "min": -0.8134765625
+            },
+            "total": {
+              "count": 2,
+              "max": -0.40625,
+              "mean": -1.0,
+              "min": -1.59375
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "floor_modulo": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 1.09375,
+              "mean": 1.078125,
+              "min": 1.0625
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 1.0048828125,
+              "mean": 0.92431640625,
+              "min": 0.84375
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.21875,
+              "mean": 0.15380859375,
+              "min": 0.0888671875
+            },
+            "interaction": {
+              "count": 2,
+              "max": 1.4375,
+              "mean": 0.06494140625,
+              "min": -1.3076171875
+            },
+            "numerator": {
+              "count": 2,
+              "max": 1.09375,
+              "mean": 0.015625,
+              "min": -1.0625
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.0888671875,
+              "mean": -0.06494140625,
+              "min": -0.21875
+            },
+            "total": {
+              "count": 2,
+              "max": 0.15625,
+              "mean": 0.015625,
+              "min": -0.125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "last_assignment": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 7.203125,
+              "mean": 4.890625,
+              "min": 2.578125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -0.0625,
+              "mean": -1.5234375,
+              "min": -2.984375
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 7.265625,
+              "mean": 6.4140625,
+              "min": 5.5625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 2.37890625,
+              "mean": 2.228515625,
+              "min": 2.078125
+            },
+            "numerator": {
+              "count": 2,
+              "max": -2.578125,
+              "mean": -4.890625,
+              "min": -7.203125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -5.5625,
+              "mean": -6.4140625,
+              "min": -7.265625
+            },
+            "total": {
+              "count": 2,
+              "max": -6.0625,
+              "mean": -9.076171875,
+              "min": -12.08984375
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "late_closure": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 0.90625,
+              "mean": 0.828125,
+              "min": 0.75
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -0.625,
+              "mean": -0.6875,
+              "min": -0.75
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 1.65625,
+              "mean": 1.515625,
+              "min": 1.375
+            },
+            "interaction": {
+              "count": 2,
+              "max": 0.65625,
+              "mean": -0.1875,
+              "min": -1.03125
+            },
+            "numerator": {
+              "count": 2,
+              "max": 0.75,
+              "mean": -0.078125,
+              "min": -0.90625
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 1.65625,
+              "mean": 0.140625,
+              "min": -1.375
+            },
+            "total": {
+              "count": 2,
+              "max": 0.03125,
+              "mean": -0.125,
+              "min": -0.28125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "literal_copy": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 13.03125,
+              "mean": 12.3046875,
+              "min": 11.578125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 3.234375,
+              "mean": 0.578125,
+              "min": -2.078125
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 13.65625,
+              "mean": 11.7265625,
+              "min": 9.796875
+            },
+            "interaction": {
+              "count": 2,
+              "max": 7.265625,
+              "mean": 6.671875,
+              "min": 6.078125
+            },
+            "numerator": {
+              "count": 2,
+              "max": -11.578125,
+              "mean": -12.3046875,
+              "min": -13.03125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -9.796875,
+              "mean": -11.7265625,
+              "min": -13.65625
+            },
+            "total": {
+              "count": 2,
+              "max": -16.75,
+              "mean": -17.359375,
+              "min": -17.96875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "loop_else": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 0.6875,
+              "mean": 0.65625,
+              "min": 0.625
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 0.5,
+              "mean": 0.40625,
+              "min": 0.3125
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.375,
+              "mean": 0.25,
+              "min": 0.125
+            },
+            "interaction": {
+              "count": 2,
+              "max": 0.625,
+              "mean": 0.1875,
+              "min": -0.25
+            },
+            "numerator": {
+              "count": 2,
+              "max": -0.625,
+              "mean": -0.65625,
+              "min": -0.6875
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.375,
+              "mean": 0.125,
+              "min": -0.125
+            },
+            "total": {
+              "count": 2,
+              "max": 0.3125,
+              "mean": -0.34375,
+              "min": -1.0
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "negation": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 1.28515625,
+              "mean": 1.251953125,
+              "min": 1.21875
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -0.921875,
+              "mean": -2.2578125,
+              "min": -3.59375
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 4.87890625,
+              "mean": 3.509765625,
+              "min": 2.140625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 0.734375,
+              "mean": 0.603515625,
+              "min": 0.47265625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 1.21875,
+              "mean": -0.033203125,
+              "min": -1.28515625
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -2.140625,
+              "mean": -3.509765625,
+              "min": -4.87890625
+            },
+            "total": {
+              "count": 2,
+              "max": -0.1875,
+              "mean": -2.939453125,
+              "min": -5.69140625
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "nested_alias": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 1.0625,
+              "mean": 0.6875,
+              "min": 0.3125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 0.6953125,
+              "mean": 0.47265625,
+              "min": 0.25
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.3671875,
+              "mean": 0.21484375,
+              "min": 0.0625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 0.5703125,
+              "mean": -0.10546875,
+              "min": -0.78125
+            },
+            "numerator": {
+              "count": 2,
+              "max": 1.0625,
+              "mean": 0.375,
+              "min": -0.3125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.3671875,
+              "mean": 0.21484375,
+              "min": 0.0625
+            },
+            "total": {
+              "count": 2,
+              "max": 2.0,
+              "mean": 0.484375,
+              "min": -1.03125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 0,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "shared_iterator": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 0.75,
+              "mean": 0.625,
+              "min": 0.5
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 0.5625,
+              "mean": -0.21875,
+              "min": -1.0
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 1.5,
+              "mean": 0.84375,
+              "min": 0.1875
+            },
+            "interaction": {
+              "count": 2,
+              "max": 0.1875,
+              "mean": -0.3125,
+              "min": -0.8125
+            },
+            "numerator": {
+              "count": 2,
+              "max": 0.5,
+              "mean": -0.125,
+              "min": -0.75
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 1.5,
+              "mean": 0.84375,
+              "min": 0.1875
+            },
+            "total": {
+              "count": 2,
+              "max": 1.1875,
+              "mean": 0.40625,
+              "min": -0.375
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "short_circuit": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 0.8125,
+              "mean": 0.78125,
+              "min": 0.75
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 0.3125,
+              "mean": -0.484375,
+              "min": -1.28125
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 2.09375,
+              "mean": 1.265625,
+              "min": 0.4375
+            },
+            "interaction": {
+              "count": 2,
+              "max": -0.5,
+              "mean": -0.578125,
+              "min": -0.65625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 0.8125,
+              "mean": 0.78125,
+              "min": 0.75
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 2.09375,
+              "mean": 0.828125,
+              "min": -0.4375
+            },
+            "total": {
+              "count": 2,
+              "max": 2.25,
+              "mean": 1.03125,
+              "min": -0.1875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 0,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 0,
+              "valid_options": 2
+            }
+          }
+        }
+      },
+      "roles": {
+        "coding": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 16,
+              "max": 1.09375,
+              "mean": 0.75,
+              "min": 0.125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 16,
+              "max": 1.0048828125,
+              "mean": 0.116943359375,
+              "min": -1.28125
+            },
+            "absolute_shared_scale": {
+              "count": 16,
+              "max": 2.09375,
+              "mean": 0.633056640625,
+              "min": 0.03125
+            },
+            "interaction": {
+              "count": 16,
+              "max": 1.4375,
+              "mean": -0.0137939453125,
+              "min": -1.3076171875
+            },
+            "numerator": {
+              "count": 16,
+              "max": 1.09375,
+              "mean": -0.11328125,
+              "min": -1.0625
+            },
+            "shared_scale": {
+              "count": 16,
+              "max": 2.09375,
+              "mean": 0.1583251953125,
+              "min": -1.375
+            },
+            "total": {
+              "count": 16,
+              "max": 2.25,
+              "mean": 0.03125,
+              "min": -1.59375
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 16,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 12,
+                "B": 4,
+                "other": 0
+              },
+              "correct": 8,
+              "valid_options": 16
+            },
+            "10": {
+              "cases": 16,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 13,
+                "B": 3,
+                "other": 0
+              },
+              "correct": 9,
+              "valid_options": 16
+            }
+          }
+        },
+        "retention": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 8,
+              "max": 13.03125,
+              "mean": 6.294677734375,
+              "min": 1.21875
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 8,
+              "max": 3.234375,
+              "mean": -1.108642578125,
+              "min": -3.59375
+            },
+            "absolute_shared_scale": {
+              "count": 8,
+              "max": 13.65625,
+              "mean": 7.4033203125,
+              "min": 2.140625
+            },
+            "interaction": {
+              "count": 8,
+              "max": 7.265625,
+              "mean": 3.194091796875,
+              "min": 0.47265625
+            },
+            "numerator": {
+              "count": 8,
+              "max": 1.21875,
+              "mean": -5.989990234375,
+              "min": -13.03125
+            },
+            "shared_scale": {
+              "count": 8,
+              "max": -2.140625,
+              "mean": -7.4033203125,
+              "min": -13.65625
+            },
+            "total": {
+              "count": 8,
+              "max": -0.1875,
+              "mean": -10.19921875,
+              "min": -17.96875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 8,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 4,
+                "B": 4,
+                "other": 0
+              },
+              "correct": 8,
+              "valid_options": 8
+            },
+            "10": {
+              "cases": 8,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 4,
+                "B": 4,
+                "other": 0
+              },
+              "correct": 8,
+              "valid_options": 8
+            }
+          }
+        }
+      }
+    },
+    "remove_negative": {
+      "families": {
+        "assigned_binding": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 9.8125,
+              "mean": 7.5625,
+              "min": 5.3125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -1.84375,
+              "mean": -2.4765625,
+              "min": -3.109375
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 12.921875,
+              "mean": 10.0390625,
+              "min": 7.15625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 11.796875,
+              "mean": 6.6484375,
+              "min": 1.5
+            },
+            "numerator": {
+              "count": 2,
+              "max": 9.8125,
+              "mean": 7.5625,
+              "min": 5.3125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -7.15625,
+              "mean": -10.0390625,
+              "min": -12.921875
+            },
+            "total": {
+              "count": 2,
+              "max": 8.6875,
+              "mean": 4.171875,
+              "min": -0.34375
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "dict_update_order": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 3.6875,
+              "mean": 3.34375,
+              "min": 3.0
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 3.0625,
+              "mean": 3.015625,
+              "min": 2.96875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.625,
+              "mean": 0.328125,
+              "min": 0.03125
+            },
+            "interaction": {
+              "count": 2,
+              "max": 1.8125,
+              "mean": 0.125,
+              "min": -1.5625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 3.0,
+              "mean": -0.34375,
+              "min": -3.6875
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -0.03125,
+              "mean": -0.328125,
+              "min": -0.625
+            },
+            "total": {
+              "count": 2,
+              "max": 4.78125,
+              "mean": -0.546875,
+              "min": -5.875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "extended_slice": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 4.71875,
+              "mean": 4.4375,
+              "min": 4.15625
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 3.421875,
+              "mean": 3.337890625,
+              "min": 3.25390625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 1.296875,
+              "mean": 1.099609375,
+              "min": 0.90234375
+            },
+            "interaction": {
+              "count": 2,
+              "max": 2.703125,
+              "mean": 0.802734375,
+              "min": -1.09765625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 4.71875,
+              "mean": 0.28125,
+              "min": -4.15625
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -0.90234375,
+              "mean": -1.099609375,
+              "min": -1.296875
+            },
+            "total": {
+              "count": 2,
+              "max": 6.125,
+              "mean": -0.015625,
+              "min": -6.15625
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "floor_modulo": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 4.21875,
+              "mean": 4.171875,
+              "min": 4.125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 4.0546875,
+              "mean": 3.88671875,
+              "min": 3.71875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.40625,
+              "mean": 0.28515625,
+              "min": 0.1640625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 0.2734375,
+              "mean": 0.15234375,
+              "min": 0.03125
+            },
+            "numerator": {
+              "count": 2,
+              "max": 4.21875,
+              "mean": 0.046875,
+              "min": -4.125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.1640625,
+              "mean": -0.12109375,
+              "min": -0.40625
+            },
+            "total": {
+              "count": 2,
+              "max": 4.65625,
+              "mean": 0.078125,
+              "min": -4.5
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "last_assignment": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 8.1875,
+              "mean": 6.5,
+              "min": 4.8125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -0.90625,
+              "mean": -1.3125,
+              "min": -1.71875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 9.09375,
+              "mean": 7.8125,
+              "min": 6.53125
+            },
+            "interaction": {
+              "count": 2,
+              "max": 11.78125,
+              "mean": 7.125,
+              "min": 2.46875
+            },
+            "numerator": {
+              "count": 2,
+              "max": 8.1875,
+              "mean": 6.5,
+              "min": 4.8125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -6.53125,
+              "mean": -7.8125,
+              "min": -9.09375
+            },
+            "total": {
+              "count": 2,
+              "max": 10.875,
+              "mean": 5.8125,
+              "min": 0.75
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "late_closure": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 3.125,
+              "mean": 2.953125,
+              "min": 2.78125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 1.203125,
+              "mean": 0.8515625,
+              "min": 0.5
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 2.28125,
+              "mean": 2.1015625,
+              "min": 1.921875
+            },
+            "interaction": {
+              "count": 2,
+              "max": -0.09375,
+              "mean": -0.2734375,
+              "min": -0.453125
+            },
+            "numerator": {
+              "count": 2,
+              "max": 2.78125,
+              "mean": -0.171875,
+              "min": -3.125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 2.28125,
+              "mean": 0.1796875,
+              "min": -1.921875
+            },
+            "total": {
+              "count": 2,
+              "max": 4.96875,
+              "mean": -0.265625,
+              "min": -5.5
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "literal_copy": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 10.0625,
+              "mean": 6.6875,
+              "min": 3.3125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -6.25,
+              "mean": -6.7578125,
+              "min": -7.265625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 16.3125,
+              "mean": 13.4453125,
+              "min": 10.578125
+            },
+            "interaction": {
+              "count": 2,
+              "max": 14.375,
+              "mean": 9.8828125,
+              "min": 5.390625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 10.0625,
+              "mean": 3.375,
+              "min": -3.3125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -10.578125,
+              "mean": -13.4453125,
+              "min": -16.3125
+            },
+            "total": {
+              "count": 2,
+              "max": 8.125,
+              "mean": -0.1875,
+              "min": -8.5
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "loop_else": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 4.6875,
+              "mean": 3.53125,
+              "min": 2.375
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 4.46875,
+              "mean": 3.1875,
+              "min": 1.90625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.46875,
+              "mean": 0.34375,
+              "min": 0.21875
+            },
+            "interaction": {
+              "count": 2,
+              "max": 4.78125,
+              "mean": 1.53125,
+              "min": -1.71875
+            },
+            "numerator": {
+              "count": 2,
+              "max": 2.375,
+              "mean": -1.15625,
+              "min": -4.6875
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.21875,
+              "mean": -0.125,
+              "min": -0.46875
+            },
+            "total": {
+              "count": 2,
+              "max": 6.6875,
+              "mean": 0.25,
+              "min": -6.1875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "negation": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 10.376953125,
+              "mean": 5.4541015625,
+              "min": 0.53125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 1.732421875,
+              "mean": -0.5400390625,
+              "min": -2.8125
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 8.64453125,
+              "mean": 5.994140625,
+              "min": 3.34375
+            },
+            "interaction": {
+              "count": 2,
+              "max": 9.388671875,
+              "mean": 5.0224609375,
+              "min": 0.65625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 10.376953125,
+              "mean": 4.9228515625,
+              "min": -0.53125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -3.34375,
+              "mean": -5.994140625,
+              "min": -8.64453125
+            },
+            "total": {
+              "count": 2,
+              "max": 11.12109375,
+              "mean": 3.951171875,
+              "min": -3.21875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "nested_alias": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 4.625,
+              "mean": 4.34375,
+              "min": 4.0625
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 4.1484375,
+              "mean": 4.02099609375,
+              "min": 3.8935546875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.4765625,
+              "mean": 0.32275390625,
+              "min": 0.1689453125
+            },
+            "interaction": {
+              "count": 2,
+              "max": 2.5185546875,
+              "mean": -0.74462890625,
+              "min": -4.0078125
+            },
+            "numerator": {
+              "count": 2,
+              "max": 4.0625,
+              "mean": -0.28125,
+              "min": -4.625
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.4765625,
+              "mean": 0.32275390625,
+              "min": 0.1689453125
+            },
+            "total": {
+              "count": 2,
+              "max": 6.75,
+              "mean": -0.703125,
+              "min": -8.15625
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 0,
+                "B": 2,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "shared_iterator": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 4.0,
+              "mean": 3.53125,
+              "min": 3.0625
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 3.90625,
+              "mean": 2.4375,
+              "min": 0.96875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 2.09375,
+              "mean": 1.09375,
+              "min": 0.09375
+            },
+            "interaction": {
+              "count": 2,
+              "max": 0.90625,
+              "mean": -0.96875,
+              "min": -2.84375
+            },
+            "numerator": {
+              "count": 2,
+              "max": 3.0625,
+              "mean": -0.46875,
+              "min": -4.0
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 2.09375,
+              "mean": 1.09375,
+              "min": 0.09375
+            },
+            "total": {
+              "count": 2,
+              "max": 6.0625,
+              "mean": -0.34375,
+              "min": -6.75
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "short_circuit": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 5.25,
+              "mean": 5.09375,
+              "min": 4.9375
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 4.578125,
+              "mean": 3.0078125,
+              "min": 1.4375
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 3.5,
+              "mean": 2.0859375,
+              "min": 0.671875
+            },
+            "interaction": {
+              "count": 2,
+              "max": 3.359375,
+              "mean": -2.3359375,
+              "min": -8.03125
+            },
+            "numerator": {
+              "count": 2,
+              "max": 5.25,
+              "mean": 0.15625,
+              "min": -4.9375
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 3.5,
+              "mean": 1.4140625,
+              "min": -0.671875
+            },
+            "total": {
+              "count": 2,
+              "max": 7.9375,
+              "mean": -0.765625,
+              "min": -9.46875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 0,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 0,
+                "B": 2,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        }
+      },
+      "roles": {
+        "coding": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 16,
+              "max": 5.25,
+              "mean": 3.92578125,
+              "min": 2.375
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 16,
+              "max": 4.578125,
+              "mean": 2.96820068359375,
+              "min": 0.5
+            },
+            "absolute_shared_scale": {
+              "count": 16,
+              "max": 3.5,
+              "mean": 0.95758056640625,
+              "min": 0.03125
+            },
+            "interaction": {
+              "count": 16,
+              "max": 4.78125,
+              "mean": -0.21392822265625,
+              "min": -8.03125
+            },
+            "numerator": {
+              "count": 16,
+              "max": 5.25,
+              "mean": -0.2421875,
+              "min": -4.9375
+            },
+            "shared_scale": {
+              "count": 16,
+              "max": 3.5,
+              "mean": 0.16705322265625,
+              "min": -1.921875
+            },
+            "total": {
+              "count": 16,
+              "max": 7.9375,
+              "mean": -0.2890625,
+              "min": -9.46875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 16,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 13,
+                "B": 3,
+                "other": 0
+              },
+              "correct": 9,
+              "valid_options": 16
+            },
+            "10": {
+              "cases": 16,
+              "choice_changes_from_carried_native": 3,
+              "choices": {
+                "A": 9,
+                "B": 7,
+                "other": 0
+              },
+              "correct": 11,
+              "valid_options": 16
+            }
+          }
+        },
+        "retention": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 8,
+              "max": 10.376953125,
+              "mean": 6.551025390625,
+              "min": 0.53125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 8,
+              "max": 1.732421875,
+              "mean": -2.771728515625,
+              "min": -7.265625
+            },
+            "absolute_shared_scale": {
+              "count": 8,
+              "max": 16.3125,
+              "mean": 9.32275390625,
+              "min": 3.34375
+            },
+            "interaction": {
+              "count": 8,
+              "max": 14.375,
+              "mean": 7.169677734375,
+              "min": 0.65625
+            },
+            "numerator": {
+              "count": 8,
+              "max": 10.376953125,
+              "mean": 5.590087890625,
+              "min": -3.3125
+            },
+            "shared_scale": {
+              "count": 8,
+              "max": -3.34375,
+              "mean": -9.32275390625,
+              "min": -16.3125
+            },
+            "total": {
+              "count": 8,
+              "max": 11.12109375,
+              "mean": 3.43701171875,
+              "min": -8.5
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 8,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 4,
+                "B": 4,
+                "other": 0
+              },
+              "correct": 8,
+              "valid_options": 8
+            },
+            "10": {
+              "cases": 8,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 4,
+                "B": 4,
+                "other": 0
+              },
+              "correct": 8,
+              "valid_options": 8
+            }
+          }
+        }
+      }
+    },
+    "remove_positive": {
+      "families": {
+        "assigned_binding": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 8.59375,
+              "mean": 6.1875,
+              "min": 3.78125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -10.09375,
+              "mean": -11.875,
+              "min": -13.65625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 22.25,
+              "mean": 18.0625,
+              "min": 13.875
+            },
+            "interaction": {
+              "count": 2,
+              "max": 15.8642578125,
+              "mean": 15.43212890625,
+              "min": 15.0
+            },
+            "numerator": {
+              "count": 2,
+              "max": -3.78125,
+              "mean": -6.1875,
+              "min": -8.59375
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -13.875,
+              "mean": -18.0625,
+              "min": -22.25
+            },
+            "total": {
+              "count": 2,
+              "max": -2.65625,
+              "mean": -8.81787109375,
+              "min": -14.9794921875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "dict_update_order": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 0.625,
+              "mean": 0.53125,
+              "min": 0.4375
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 0.5859375,
+              "mean": 0.15625,
+              "min": -0.2734375
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.7109375,
+              "mean": 0.375,
+              "min": 0.0390625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 5.0234375,
+              "mean": 0.9609375,
+              "min": -3.1015625
+            },
+            "numerator": {
+              "count": 2,
+              "max": -0.4375,
+              "mean": -0.53125,
+              "min": -0.625
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.0390625,
+              "mean": -0.3359375,
+              "min": -0.7109375
+            },
+            "total": {
+              "count": 2,
+              "max": 3.875,
+              "mean": 0.09375,
+              "min": -3.6875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "extended_slice": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 2.78125,
+              "mean": 1.78125,
+              "min": 0.78125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 1.265625,
+              "mean": 0.3984375,
+              "min": -0.46875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 1.515625,
+              "mean": 1.3828125,
+              "min": 1.25
+            },
+            "interaction": {
+              "count": 2,
+              "max": 6.5,
+              "mean": 2.6328125,
+              "min": -1.234375
+            },
+            "numerator": {
+              "count": 2,
+              "max": -0.78125,
+              "mean": -1.78125,
+              "min": -2.78125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -1.25,
+              "mean": -1.3828125,
+              "min": -1.515625
+            },
+            "total": {
+              "count": 2,
+              "max": 4.46875,
+              "mean": -0.53125,
+              "min": -5.53125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "floor_modulo": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 1.75,
+              "mean": 1.734375,
+              "min": 1.71875
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 1.140625,
+              "mean": 0.96484375,
+              "min": 0.7890625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.9609375,
+              "mean": 0.76953125,
+              "min": 0.578125
+            },
+            "interaction": {
+              "count": 2,
+              "max": 5.8984375,
+              "mean": 0.12890625,
+              "min": -5.640625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 1.71875,
+              "mean": -0.015625,
+              "min": -1.75
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.578125,
+              "mean": -0.19140625,
+              "min": -0.9609375
+            },
+            "total": {
+              "count": 2,
+              "max": 3.1875,
+              "mean": -0.078125,
+              "min": -3.34375
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "last_assignment": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 5.75,
+              "mean": 4.296875,
+              "min": 2.84375
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -8.43359375,
+              "mean": -8.560546875,
+              "min": -8.6875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 14.4375,
+              "mean": 12.857421875,
+              "min": 11.27734375
+            },
+            "interaction": {
+              "count": 2,
+              "max": 11.23828125,
+              "mean": 8.837890625,
+              "min": 6.4375
+            },
+            "numerator": {
+              "count": 2,
+              "max": -2.84375,
+              "mean": -4.296875,
+              "min": -5.75
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -11.27734375,
+              "mean": -12.857421875,
+              "min": -14.4375
+            },
+            "total": {
+              "count": 2,
+              "max": -2.8828125,
+              "mean": -8.31640625,
+              "min": -13.75
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "late_closure": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 1.25,
+              "mean": 0.859375,
+              "min": 0.46875
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -1.3203125,
+              "mean": -2.1015625,
+              "min": -2.8828125
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 3.3515625,
+              "mean": 2.9609375,
+              "min": 2.5703125
+            },
+            "interaction": {
+              "count": 2,
+              "max": 6.0078125,
+              "mean": -0.765625,
+              "min": -7.5390625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 1.25,
+              "mean": 0.390625,
+              "min": -0.46875
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 3.3515625,
+              "mean": 0.390625,
+              "min": -2.5703125
+            },
+            "total": {
+              "count": 2,
+              "max": 4.6875,
+              "mean": 0.015625,
+              "min": -4.65625
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "literal_copy": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 14.6875,
+              "mean": 11.71875,
+              "min": 8.75
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -10.8125,
+              "mean": -13.90625,
+              "min": -17.0
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 25.75,
+              "mean": 25.625,
+              "min": 25.5
+            },
+            "interaction": {
+              "count": 2,
+              "max": 40.15625,
+              "mean": 28.4375,
+              "min": 16.71875
+            },
+            "numerator": {
+              "count": 2,
+              "max": -8.75,
+              "mean": -11.71875,
+              "min": -14.6875
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -25.5,
+              "mean": -25.625,
+              "min": -25.75
+            },
+            "total": {
+              "count": 2,
+              "max": -0.03125,
+              "mean": -8.90625,
+              "min": -17.78125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "loop_else": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 2.75,
+              "mean": 1.71875,
+              "min": 0.6875
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 2.21875,
+              "mean": 1.421875,
+              "min": 0.625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.53125,
+              "mean": 0.296875,
+              "min": 0.0625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 5.625,
+              "mean": 1.453125,
+              "min": -2.71875
+            },
+            "numerator": {
+              "count": 2,
+              "max": -0.6875,
+              "mean": -1.71875,
+              "min": -2.75
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.0625,
+              "mean": -0.234375,
+              "min": -0.53125
+            },
+            "total": {
+              "count": 2,
+              "max": 5.0,
+              "mean": -0.5,
+              "min": -6.0
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "negation": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 2.94140625,
+              "mean": 1.767578125,
+              "min": 0.59375
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -5.53125,
+              "mean": -6.0751953125,
+              "min": -6.619140625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 8.47265625,
+              "mean": 7.8427734375,
+              "min": 7.212890625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 11.337890625,
+              "mean": 6.9677734375,
+              "min": 2.59765625
+            },
+            "numerator": {
+              "count": 2,
+              "max": -0.59375,
+              "mean": -1.767578125,
+              "min": -2.94140625
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": -7.212890625,
+              "mean": -7.8427734375,
+              "min": -8.47265625
+            },
+            "total": {
+              "count": 2,
+              "max": 3.53125,
+              "mean": -2.642578125,
+              "min": -8.81640625
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 2,
+              "valid_options": 2
+            }
+          }
+        },
+        "nested_alias": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 2.4375,
+              "mean": 1.6875,
+              "min": 0.9375
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 1.84375,
+              "mean": 1.216796875,
+              "min": 0.58984375
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 0.59375,
+              "mean": 0.470703125,
+              "min": 0.34765625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 3.84375,
+              "mean": -0.408203125,
+              "min": -4.66015625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 2.4375,
+              "mean": 0.75,
+              "min": -0.9375
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 0.59375,
+              "mean": 0.470703125,
+              "min": 0.34765625
+            },
+            "total": {
+              "count": 2,
+              "max": 6.875,
+              "mean": 0.8125,
+              "min": -5.25
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "shared_iterator": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 0.5,
+              "mean": 0.40625,
+              "min": 0.3125
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": 0.34375,
+              "mean": -0.9375,
+              "min": -2.21875
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 2.53125,
+              "mean": 1.34375,
+              "min": 0.15625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 3.90625,
+              "mean": -1.25,
+              "min": -6.40625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 0.5,
+              "mean": 0.09375,
+              "min": -0.3125
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 2.53125,
+              "mean": 1.34375,
+              "min": 0.15625
+            },
+            "total": {
+              "count": 2,
+              "max": 4.5625,
+              "mean": 0.1875,
+              "min": -4.1875
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 2,
+                "B": 0,
+                "other": 0
+              },
+              "correct": 1,
+              "valid_options": 2
+            }
+          }
+        },
+        "short_circuit": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 2,
+              "max": 3.4375,
+              "mean": 1.84375,
+              "min": 0.25
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 2,
+              "max": -0.0546875,
+              "mean": -0.23046875,
+              "min": -0.40625
+            },
+            "absolute_shared_scale": {
+              "count": 2,
+              "max": 3.4921875,
+              "mean": 2.07421875,
+              "min": 0.65625
+            },
+            "interaction": {
+              "count": 2,
+              "max": 0.8203125,
+              "mean": -1.91796875,
+              "min": -4.65625
+            },
+            "numerator": {
+              "count": 2,
+              "max": 3.4375,
+              "mean": 1.59375,
+              "min": -0.25
+            },
+            "shared_scale": {
+              "count": 2,
+              "max": 3.4921875,
+              "mean": 1.41796875,
+              "min": -0.65625
+            },
+            "total": {
+              "count": 2,
+              "max": 7.75,
+              "mean": 1.09375,
+              "min": -5.5625
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 0,
+              "valid_options": 2
+            },
+            "10": {
+              "cases": 2,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 1,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 0,
+              "valid_options": 2
+            }
+          }
+        }
+      },
+      "roles": {
+        "coding": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 16,
+              "max": 3.4375,
+              "mean": 1.3203125,
+              "min": 0.25
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 16,
+              "max": 2.21875,
+              "mean": 0.111083984375,
+              "min": -2.8828125
+            },
+            "absolute_shared_scale": {
+              "count": 16,
+              "max": 3.4921875,
+              "mean": 1.209228515625,
+              "min": 0.0390625
+            },
+            "interaction": {
+              "count": 16,
+              "max": 6.5,
+              "mean": 0.104248046875,
+              "min": -7.5390625
+            },
+            "numerator": {
+              "count": 16,
+              "max": 3.4375,
+              "mean": -0.15234375,
+              "min": -2.78125
+            },
+            "shared_scale": {
+              "count": 16,
+              "max": 3.4921875,
+              "mean": 0.184814453125,
+              "min": -2.5703125
+            },
+            "total": {
+              "count": 16,
+              "max": 7.75,
+              "mean": 0.13671875,
+              "min": -6.0
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 16,
+              "choice_changes_from_carried_native": 1,
+              "choices": {
+                "A": 13,
+                "B": 3,
+                "other": 0
+              },
+              "correct": 9,
+              "valid_options": 16
+            },
+            "10": {
+              "cases": 16,
+              "choice_changes_from_carried_native": 3,
+              "choices": {
+                "A": 15,
+                "B": 1,
+                "other": 0
+              },
+              "correct": 7,
+              "valid_options": 16
+            }
+          }
+        },
+        "retention": {
+          "effects": {
+            "absolute_numerator": {
+              "count": 8,
+              "max": 14.6875,
+              "mean": 5.99267578125,
+              "min": 0.59375
+            },
+            "absolute_numerator_minus_absolute_scale": {
+              "count": 8,
+              "max": -5.53125,
+              "mean": -10.104248046875,
+              "min": -17.0
+            },
+            "absolute_shared_scale": {
+              "count": 8,
+              "max": 25.75,
+              "mean": 16.096923828125,
+              "min": 7.212890625
+            },
+            "interaction": {
+              "count": 8,
+              "max": 40.15625,
+              "mean": 14.9188232421875,
+              "min": 2.59765625
+            },
+            "numerator": {
+              "count": 8,
+              "max": -0.59375,
+              "mean": -5.99267578125,
+              "min": -14.6875
+            },
+            "shared_scale": {
+              "count": 8,
+              "max": -7.212890625,
+              "mean": -16.096923828125,
+              "min": -25.75
+            },
+            "total": {
+              "count": 8,
+              "max": 3.53125,
+              "mean": -7.1707763671875,
+              "min": -17.78125
+            }
+          },
+          "new_cell_scores": {
+            "01": {
+              "cases": 8,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 4,
+                "B": 4,
+                "other": 0
+              },
+              "correct": 8,
+              "valid_options": 8
+            },
+            "10": {
+              "cases": 8,
+              "choice_changes_from_carried_native": 0,
+              "choices": {
+                "A": 4,
+                "B": 4,
+                "other": 0
+              },
+              "correct": 8,
+              "valid_options": 8
+            }
+          }
+        }
+      }
+    }
+  },
+  "carried_N48_aggregate": {
+    "actual_counters": {
+      "activation_assignments": 120,
+      "backward_calls": 0,
+      "calls": 240,
+      "extra_FFN_evaluations": 0,
+      "input_token_exposures": 22700,
+      "manual_parameter_assignments": 0,
+      "new_emitted_tokens": 0,
+      "optimizer_steps": 0
+    },
+    "baseline_eligibility": {
+      "original_coding_correct_at_least8": true,
+      "original_coding_valid_options_at_least14": true,
+      "original_retention_correct_at_least6": true,
+      "original_retention_valid_options_at_least7": true
+    },
+    "condition_records": 120,
+    "conditions": {
+      "original": {
+        "choices": {
+          "A": 16,
+          "B": 8
+        },
+        "coding_cases": 16,
+        "coding_correct": 8,
+        "coding_correct_margin_case_mean": 0.26953125,
+        "coding_gain_origin": {
+          "invalid_original_choice": 0,
+          "valid_but_wrong_original_choice": 0
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "coding_valid_options": 16,
+        "families": {
+          "assigned_binding": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "dict_update_order": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "extended_slice": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "floor_modulo": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "last_assignment": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "late_closure": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "literal_copy": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "loop_else": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "negation": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "nested_alias": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 0,
+            "role": "coding"
+          },
+          "shared_iterator": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "short_circuit": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 0,
+            "role": "coding"
+          }
+        },
+        "retention_cases": 8,
+        "retention_correct": 8,
+        "retention_correct_margin_case_mean": 24.46923828125,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "retention_valid_options": 8
+      },
+      "random_negative_count": {
+        "choices": {
+          "A": 12,
+          "B": 12
+        },
+        "coding_cases": 16,
+        "coding_correct": 10,
+        "coding_correct_margin_case_mean": 0.14111328125,
+        "coding_gain_origin": {
+          "invalid_original_choice": 0,
+          "valid_but_wrong_original_choice": 3
+        },
+        "coding_gains": 3,
+        "coding_losses": 1,
+        "coding_valid_options": 16,
+        "families": {
+          "assigned_binding": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "dict_update_order": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "extended_slice": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "floor_modulo": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "last_assignment": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "late_closure": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "literal_copy": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "loop_else": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "negation": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "nested_alias": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "shared_iterator": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 0,
+            "role": "coding"
+          },
+          "short_circuit": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          }
+        },
+        "retention_cases": 8,
+        "retention_correct": 8,
+        "retention_correct_margin_case_mean": 25.1533203125,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "retention_valid_options": 8
+      },
+      "random_positive_count": {
+        "choices": {
+          "A": 17,
+          "B": 7
+        },
+        "coding_cases": 16,
+        "coding_correct": 9,
+        "coding_correct_margin_case_mean": 0.30078125,
+        "coding_gain_origin": {
+          "invalid_original_choice": 0,
+          "valid_but_wrong_original_choice": 1
+        },
+        "coding_gains": 1,
+        "coding_losses": 0,
+        "coding_valid_options": 16,
+        "families": {
+          "assigned_binding": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "dict_update_order": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "extended_slice": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "floor_modulo": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "last_assignment": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "late_closure": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "literal_copy": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "loop_else": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "negation": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "nested_alias": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "shared_iterator": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "short_circuit": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 0,
+            "role": "coding"
+          }
+        },
+        "retention_cases": 8,
+        "retention_correct": 8,
+        "retention_correct_margin_case_mean": 14.27001953125,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "retention_valid_options": 8
+      },
+      "remove_negative": {
+        "choices": {
+          "A": 12,
+          "B": 12
+        },
+        "coding_cases": 16,
+        "coding_correct": 10,
+        "coding_correct_margin_case_mean": -0.01953125,
+        "coding_gain_origin": {
+          "invalid_original_choice": 0,
+          "valid_but_wrong_original_choice": 3
+        },
+        "coding_gains": 3,
+        "coding_losses": 1,
+        "coding_valid_options": 16,
+        "families": {
+          "assigned_binding": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "dict_update_order": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "extended_slice": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "floor_modulo": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "last_assignment": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "late_closure": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "literal_copy": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "loop_else": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "negation": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "nested_alias": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "shared_iterator": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 0,
+            "role": "coding"
+          },
+          "short_circuit": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          }
+        },
+        "retention_cases": 8,
+        "retention_correct": 8,
+        "retention_correct_margin_case_mean": 27.90625,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "retention_valid_options": 8
+      },
+      "remove_positive": {
+        "choices": {
+          "A": 20,
+          "B": 4
+        },
+        "coding_cases": 16,
+        "coding_correct": 8,
+        "coding_correct_margin_case_mean": 0.40625,
+        "coding_gain_origin": {
+          "invalid_original_choice": 0,
+          "valid_but_wrong_original_choice": 2
+        },
+        "coding_gains": 2,
+        "coding_losses": 2,
+        "coding_valid_options": 16,
+        "families": {
+          "assigned_binding": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "dict_update_order": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "extended_slice": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "floor_modulo": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "last_assignment": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "late_closure": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "literal_copy": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "loop_else": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "negation": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "nested_alias": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "shared_iterator": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "short_circuit": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          }
+        },
+        "retention_cases": 8,
+        "retention_correct": 8,
+        "retention_correct_margin_case_mean": 17.2984619140625,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "retention_valid_options": 8
+      }
+    },
+    "contexts": 24,
+    "experiment": "N48",
+    "new_literal_label_comparisons": 120,
+    "new_model_or_candidate_executor_calls_on_host": 0,
+    "scope": "Fresh host-authored development answer-decision panel;not full-program coding improvement or independent benchmark confirmation.",
+    "signed_policy_primary": {
+      "remove_negative": {
+        "clauses": {
+          "beats_matched_random_by_at_least2": false,
+          "both_order_program_gains_at_least2": false,
+          "coding_gains_at_least2": true,
+          "gain_families_at_least2": false,
+          "original_coding_correct_at_least8": true,
+          "original_coding_valid_options_at_least14": true,
+          "original_retention_correct_at_least6": true,
+          "original_retention_valid_options_at_least7": true,
+          "preserve_all_original_correct_coding": false,
+          "preserve_all_original_correct_retention": true,
+          "zero_both_order_program_losses": true
+        },
+        "gain_families": [
+          "dict_update_order"
+        ],
+        "passed": false
+      },
+      "remove_positive": {
+        "clauses": {
+          "beats_matched_random_by_at_least2": false,
+          "both_order_program_gains_at_least2": false,
+          "coding_gains_at_least2": true,
+          "gain_families_at_least2": false,
+          "original_coding_correct_at_least8": true,
+          "original_coding_valid_options_at_least14": true,
+          "original_retention_correct_at_least6": true,
+          "original_retention_valid_options_at_least7": true,
+          "preserve_all_original_correct_coding": false,
+          "preserve_all_original_correct_retention": true,
+          "zero_both_order_program_losses": false
+        },
+        "gain_families": [],
+        "passed": false
+      }
+    },
+    "status": "complete_host_audited"
+  },
+  "carried_diagonal_records": 192,
+  "closed_scorer_calls": 0,
+  "contexts": 24,
+  "experiment": "N49",
+  "new_cross_records": 192,
+  "new_literal_label_comparisons": 192,
+  "scope": "Reused development local finite factor controls;not fresh confirmation,full-program gain,individual meaning,mediation or speed.",
+  "status": "complete_host_audited"
+}

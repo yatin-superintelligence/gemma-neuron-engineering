@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-01T15:45:31.011232+00:00",
+  "status": "complete_host_audited_closed",
+  "source_checkpoint": "7b18ce1941828877e16313d104f13b9addc5a983",
+  "private_GPU_notebook": true,
+  "single_READY_private_dataset": true,
+  "server_JSON_exact": true,
+  "outcome": "All24contexts/72donors PASS;paired donor preserves every recipient choice,no paired argmax transfer or useful coding gain",
+  "optimizer_steps": 0
+}

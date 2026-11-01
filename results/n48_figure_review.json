@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-01T15:19:23.081691+00:00",
+  "figure_path": "docs/figures/n48/n48_summary.png",
+  "figure_sha256": "c9943cb5585f6336904bc9fea19ef99b9a35fa5db95e1f7f01bb015a7978e8f5",
+  "aggregate_sha256": "b7041fb6f1820ee369c7c7131bf1913a60655817ffa2ba17c4afba1fa6fce3a1",
+  "actual_render_invocations": 1,
+  "all6panels_viewed": true,
+  "new_model_tokenizer_scorer_calls": 0,
+  "all_conditions_roles_families_retained": true,
+  "visual_QA": "PASS:labels/legends/numbers/familymatrix/caption all readable;no overlap or clipping",
+  "sources": {
+    "scripts/plot_n48_summary.py": "ea7330767d04a7ffdc1124773e932473ca5bbcf0c0df9d505f75e8d5e50ef64d",
+    "runs/n48/reporting/source_freeze.json": "173e08d900e3f4c810f97faaae2bbc8d1d03af9a59d59594882f3148aaf9ad61",
+    "runs/n48/reporting/actual_input_binding.json": "52fe9d258102ab7e15ea841519e3afc48817abb88a0c4cce105406e15e7b8448"
+  }
+}

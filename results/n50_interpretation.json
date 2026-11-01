@@ -1,0 +1,97 @@
+{
+  "utc": "2026-11-01T15:49:43.287692+00:00",
+  "status": "complete_host_audited_closed",
+  "aggregate_sha256": "23ad3f363554e1069332c56162e00f54b162dd03477dbe0a3e9d5ea73920030b",
+  "all24_contexts_all72newdonors_PASS": true,
+  "actual_counters": {
+    "activation_assignments": 72,
+    "backward_calls": 0,
+    "calls": 168,
+    "extra_FFN_evaluations": 0,
+    "extra_down_projection_evaluations": 0,
+    "input_token_exposures": 15890,
+    "manual_parameter_assignments": 0,
+    "native_restoration_forwards": 72,
+    "native_sourceguards": 24,
+    "new_emitted_tokens": 0,
+    "optimizer_steps": 0
+  },
+  "notebook_seconds": 225.10287829,
+  "duration_is_charged_GPU_quota": false,
+  "all_condition_role_counts": {
+    "paired_order_swap": {
+      "coding": {
+        "cases": 16,
+        "complements_native_donor_letter": 8,
+        "copies_native_donor_letter": 8,
+        "matches_carried_recipient_choice": 16,
+        "new_correct": 8,
+        "noncanonical_native_donor": 0,
+        "noncanonical_new_choice": 0,
+        "valid_options": 16
+      },
+      "retention": {
+        "cases": 8,
+        "complements_native_donor_letter": 8,
+        "copies_native_donor_letter": 0,
+        "matches_carried_recipient_choice": 8,
+        "new_correct": 8,
+        "noncanonical_native_donor": 0,
+        "noncanonical_new_choice": 0,
+        "valid_options": 8
+      }
+    },
+    "unrelated_opposite_order": {
+      "coding": {
+        "cases": 16,
+        "complements_native_donor_letter": 7,
+        "copies_native_donor_letter": 9,
+        "matches_carried_recipient_choice": 15,
+        "new_correct": 9,
+        "noncanonical_native_donor": 0,
+        "noncanonical_new_choice": 0,
+        "valid_options": 16
+      },
+      "retention": {
+        "cases": 8,
+        "complements_native_donor_letter": 0,
+        "copies_native_donor_letter": 8,
+        "matches_carried_recipient_choice": 8,
+        "new_correct": 8,
+        "noncanonical_native_donor": 0,
+        "noncanonical_new_choice": 0,
+        "valid_options": 8
+      }
+    },
+    "unrelated_same_order": {
+      "coding": {
+        "cases": 16,
+        "complements_native_donor_letter": 5,
+        "copies_native_donor_letter": 11,
+        "matches_carried_recipient_choice": 15,
+        "new_correct": 9,
+        "noncanonical_native_donor": 0,
+        "noncanonical_new_choice": 0,
+        "valid_options": 16
+      },
+      "retention": {
+        "cases": 8,
+        "complements_native_donor_letter": 8,
+        "copies_native_donor_letter": 0,
+        "matches_carried_recipient_choice": 8,
+        "new_correct": 8,
+        "noncanonical_native_donor": 0,
+        "noncanonical_new_choice": 0,
+        "valid_options": 8
+      }
+    }
+  },
+  "finding": "Same-item opposite-answer-order h transplants preserve all24recipient choices,withcoding8/16andretention8/8. Eachunrelateddonorcontrol changes1/16codingchoices andscores9/16;allretention8/8. Paireddonor causes noargmaxtransfer;complementmatches8/16codingand8/8retentionreflectpreservedrecipientchoices,notcausallyinducedcontenttransfer.",
+  "limits": "WholefinalMLPh sufficiencytest onreuseddevelopmentpanel. No individualneuronmeaning,abstractskill,freshconfirmation,usefulfullprogramgain,mediationorspeed. Othernativebranches/residual/PLEremain.",
+  "collector_invocations": 1,
+  "frozen_auditor_invocations": 1,
+  "new_literal_label_comparisons": 72,
+  "closed_scorer_calls": 0,
+  "old_complete_edited_cell_full_forward_reruns": 0,
+  "training_updates": 0
+}

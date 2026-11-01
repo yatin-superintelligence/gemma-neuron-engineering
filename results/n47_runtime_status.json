@@ -1,14 +1,27 @@
 {
-  "status": "KernelWorkerStatus.RUNNING",
-  "status_checked_utc": "2026-11-01T11:19:25.181906+00:00",
+  "status": "resource_incomplete_closed",
+  "platform_status": "KernelWorkerStatus.COMPLETE",
+  "status_checked_utc": "2026-11-01T13:11:09.105563+00:00",
   "source_checkpoint": "0c4c76dae7af064ccaacf582665681c7c003f3f7",
   "private_notebook_and_dataset": true,
   "server_source_JSON_exact": true,
   "only_one_new_job_verified": true,
   "platform_normalized_identity_pinned_separately": true,
-  "outputs_accessed": false,
-  "actual_runtime_counters": null,
-  "scientific_outcome": "Pending complete terminal frozen audit and unique-candidate grading",
+  "outputs_accessed": true,
+  "reported_runtime_counters_UNAUDITED": {
+    "activation_assignments": 56232,
+    "backward_calls": 0,
+    "calls": 56360,
+    "carried_generated_tokens": 96,
+    "carry_native_source_guard_forwards": 96,
+    "extra_FFN_evaluations": 0,
+    "input_token_exposures": 65104,
+    "manual_parameter_assignments": 0,
+    "new_generated_tokens": 56232,
+    "optimizer_steps": 0,
+    "restoration_forwards": 32
+  },
+  "scientific_outcome": "Resource incomplete;all finite effects censored,no scientific audit or grading,no utility result.",
   "new_native_EOS_response_records_planned": 384,
   "optimizer_steps_allowed": 0
 }

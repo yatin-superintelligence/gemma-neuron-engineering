@@ -70,6 +70,40 @@
     },
     {
       "category": "Patch activations",
+      "path": "research/experiments/n50/assay.py",
+      "sha256": "a4816559915fbb602314bc86bdf8f1b880b3399f4254bdd237eaaece5e56b26e",
+      "symbols": [
+        "capture",
+        "public_capture",
+        "transplant",
+        "one_case"
+      ]
+    },
+    {
+      "category": "Patch activations",
+      "path": "research/experiments/n48/assay.py",
+      "sha256": "da55c350122a858b3166fbc2b42201a00c63c8319f90d88b340186e031dd27b7",
+      "symbols": [
+        "choice_metrics",
+        "one_case"
+      ]
+    },
+    {
+      "category": "Patch activations",
+      "path": "research/experiments/n49/assay.py",
+      "sha256": "fabe1c5e4a0b8acce71ffd2d87cefd8629794797d9af392824e0a8055bef494b",
+      "symbols": [
+        "site",
+        "reciprocal",
+        "state_witness",
+        "observe",
+        "source_forward",
+        "cross",
+        "one_case"
+      ]
+    },
+    {
+      "category": "Patch activations",
       "path": "interpretability/signed_native_mask.py",
       "sha256": "9b57f9f5485d211ccf88d7840b4572a2505ca19ab2b6538019d3f04e2e96e056",
       "symbols": [
@@ -212,6 +246,14 @@
         "apply_n01_branch",
         "apply_n01_gain",
         "main"
+      ]
+    },
+    {
+      "category": "Evaluate",
+      "path": "evaluation/answer_decisions.py",
+      "sha256": "c6ddb71b9b66fd8ef13067e695f9ef180c458e8f4f6d21cfecfc9aec872bb003",
+      "symbols": [
+        "assess"
       ]
     },
     {
@@ -694,6 +736,17 @@
         "conditions": 5
       },
       "sha256": "53d38a2ccce477cb787d5fbe132dfae5d469933c0e6b15904357683ae8f6a6e8"
+    },
+    {
+      "path": "models/n48/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "See recipe",
+      "kind": "Edit recipe",
+      "counts": {
+        "conditions": 5
+      },
+      "sha256": "dca88793de935bbefe920ad344a3db5af58d098ba9feb4d7a913be8e7c7ad534"
     }
   ],
   "tensor_assets": [

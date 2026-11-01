@@ -1006,7 +1006,7 @@
     {
       "id": "Q62",
       "experiment": "N47: persistent signed final-MLP utility",
-      "status": "private_version1_running_no_outputs_accessed",
+      "status": "resource_incomplete_closed_all_effects_censored",
       "question": "Do the unchanged final-MLP sign-removal policies improve complete own-history coding responses relative to their matched-cardinality random controls?",
       "question_provenance": "Direct continued-science U25 and complete N46current-choice effects,which do not measure correctness. All signs/controls/cohorts retained.",
       "parents": [
@@ -1015,10 +1015,69 @@
         "Q55"
       ],
       "method": "All96original cases/all5conditions;96original prediction/gradecarries and384edited native-EOS response records. Carry every eligible already measured cell under exact wholeconsumedhistory;allother choices new. Actual state/restoration/counters and one frozen complete audit.",
-      "result": "Prelaunch671actualsourcefiles frozen. New38randomforwards54exposures24toyreferences6newfixturechoices;hostenvironmentfailure preserved before0modelcalls. New3auditpositives15refusals plus1newstrictpositive2refusals. Package30sources10inputs,isolatedimport0model/tokenizer. One private version1 job RUNNING from checkpoint0c4c76d. Kaggle normalized its title to actualslug digital-surgery-private-n47-signed-positions;server notebookJSON/private metadata/single ready private dataset match. Original671files unchanged;separate two-file transport identity amendment changes only collector slug. No duplicate push or scientificsourcechange.",
-      "interpretation": "Reused development utility,not fresh confirmation. Cardinality controls are not energy matched;no individual meaning or speed claim.",
-      "next_question": "Complete one private all-condition panel and original frozen audit;retain every failure.",
-      "direction_decision": "Test every unchanged sign/removal/randompolicy through nativeEOS without effect-selecting signs,cases,rank,strength or layer."
+      "result": "N47 version 1 ended resource incomplete after 6,605.299660979 notebook seconds. Unaudited worker totals: 56,360 forward attempts, 65,104 input exposures, 56,232 fresh choices, 96 carried decisions, 56,232 activation assignments and 32 restoration forwards. Parameter assignments, backward calls and optimizer updates are zero. Only 32 of 384 edited response records were committed, including interrupted records. One collector ran; the scientific auditor, grader and reporter were not invoked. Every finite effect remains censored. Actual initial and final metadata compares equal; this is not full audit or parameter-byte authentication.",
+      "interpretation": "No scientific null,policy benefit/harm,coding gain or breakthrough can be inferred from this incomplete panel. No finite partial effects inspected or selected. Notebook seconds are not charged quota.",
+      "next_question": "No new GPU run within the remaining fixed window. Preserve all evidence and failed/incomplete criteria;checkpoint actual status at the deadline.",
+      "direction_decision": "Close N47 without reruns or relaxed acceptance. N45/N46 remain complete decision measurements;no confirmed useful coding gain.",
+      "historical_preoutput_preparation_and_launch_result": "Prelaunch671actualsourcefiles frozen. New38randomforwards54exposures24toyreferences6newfixturechoices;hostenvironmentfailure preserved before0modelcalls. New3auditpositives15refusals plus1newstrictpositive2refusals. Package30sources10inputs,isolatedimport0model/tokenizer. One private version1 job RUNNING from checkpoint0c4c76d. Kaggle normalized its title to actualslug digital-surgery-private-n47-signed-positions;server notebookJSON/private metadata/single ready private dataset match. Original671files unchanged;separate two-file transport identity amendment changes only collector slug. No duplicate push or scientificsourcechange. Before any output access,reporting-only supplement passes one new literal panel,seven accounting assertions and sixteen targeted refusals. Two synthetic layouts are viewed;first legend overlap is preserved,final layout passes. Original/cell/fresh token accounting stays separate. No model,tokenizer,executor,scorer,oldfixture or scientificoutput calls. Separate four-file reporting freeze leaves scientific671plus2 exact.",
+      "historical_unspaced_terminal_result_before_HTML_fix": "N47version1 ends resource incomplete after6605.299660979notebookseconds. Worker-reported totals56360forwardattempts/65104inputexposures/56232freshchoices/96decisioncarries/56232activationassignments/32restorationforwards,0parameters/backwards/optimizer.32of384editedresponse records committed,including interrupted records. One collector,0auditor/grade/reportercalls;all finite effects CENSORED. Actual initial/final metadata compares equal,not full audit or parameter-byte authentication."
+    },
+    {
+      "id": "Q63",
+      "experiment": "N48: fresh answer-decision accuracy",
+      "status": "complete_host_audited_closed_primary_failed",
+      "question": "Do unchanged final-MLP signed masks improve native answer-token accuracy beyond random controls on fresh counterbalanced code comprehension?",
+      "question_provenance": "Direct U26 ten-new-experiment budget. N46current-choice effects do not measure accuracy;N47incomplete generations supply no utility result or partial-effect selection.",
+      "parents": [
+        "Q61",
+        "Q62",
+        "Q60"
+      ],
+      "method": "24freshcontexts:8codingprograms plus4retentionitems,each2answerorders. All5fixedconditions,currentlastnativeMLP34,240forwards/22700exposures/120activationassignments,0emittedtokens/optimizer. Full-vocabularyargmax with strictcanonicalA/B validity;not restricted decoding or full response generation.",
+      "result": "All 24 contexts, five conditions and 240 forwards pass the frozen audit. Actual work: 22,700 input exposures and 120 activation assignments, with zero emitted tokens, parameter assignments, backwards or optimizer updates. Coding answer accuracy: original 8/16; negative removal 10/16; matched random-negative 10/16; positive removal 8/16; random-positive 9/16. Every condition retains 8/8 retention. Negative and random-negative each have three gains and one loss; positive has two gains and two losses. Both signed primary criteria fail.",
+      "interpretation": "The negative count gain is matched by random removal and includes a regression. Only one program becomes correct in both answer orders under negative removal. This small answer-decision panel establishes no selective signed-policy advantage, useful full-program coding gain, individual neuron meaning or breakthrough.",
+      "next_question": "Separate the native RMS shared-scale contribution from the edited FFN numerator on every N48 condition/context,carrying completed N48cells without rerunning them.",
+      "direction_decision": "Close N48 without regrading or reruns. Next distinct question is a bounded normalization decomposition with all four groups and both cross-cells,not a sign/dose/site sweep.",
+      "historical_preoutput_preparation_result": "New FP32/BF16prefill contexts32randomforwards672exposures,1literalprimarypositive4refusals. New caseauditor1positive14refusals,0model/tokenizer/executor/scorer. Hostlabelsmanualprivate;1hosttokenizerload freezes24newprompts. Firstpackagerefusalbeforepayloadpreserved;v2packagingsnapshotbinds30actualsources/8inputs,isolatedworkerimport0model/tokenizer. No pretrainedmeasurements yet."
+    },
+    {
+      "id": "Q64",
+      "experiment": "N49: native RMS cross controls",
+      "status": "complete_host_audited_closed",
+      "question": "How much of each fixed removal effect comes from the edited FFN numerator versus the native RMS shared scale?",
+      "question_provenance": "Complete N48 result has no signed-specific gain and leaves sign/energy/RMS confounding. New cross-cells on all24 contexts;not N43 recovery or a dose/site/task sweep.",
+      "parents": [
+        "Q63",
+        "Q61"
+      ],
+      "method": "Carry N48 original00 and edited11 exactly. Measure only192missing01/10crosses. Actualnative h sourceguard plus96full-shape editedh down-projections;408fullforwards include192native restorations. All4groups/all24contexts,0emittedtokens/updates.",
+      "result": "All 24 contexts and 192 new cross decisions pass the frozen audit. Actual work: 408 full forwards, 38,590 input exposures, 96 extra down-projection evaluations, 192 norm-output assignments, 24 native source guards and 192 native restorations. Zero emitted tokens, parameter assignments or optimizer updates. All old N48 diagonal records carry exactly.",
+      "interpretation": "Mean absolute numerator margin changes exceed shared-scale changes for coding in all four groups; retention reverses this ordering. All retention crosses remain 8/8. Negative numerator-only scores 11/16 coding versus its random 10/16. These local reused-development contrasts establish no individual meaning, mediation or useful full-program gain.",
+      "next_question": "Test whether native final-MLP donor states track program content or literal answer labels under fixed answer-order swaps, with unrelated-donor controls and no fitted vector.",
+      "direction_decision": "Close the finite RMS decomposition. N50 will test unmodified native contextual binding, not select a sign or gain from these development effects.",
+      "historical_prelaunch_result": "NewFP32/BF16randomcontexts pass62fullforwards/1860exposures and16independent cross references. New literal caseaudit1positive20refusals. Package33sources9inputs/1883311bytes/import0models0tokenizers. All878scientific/input/parent sources frozen. No N49pretrained output yet."
+    },
+    {
+      "id": "Q65",
+      "experiment": "N50: native donor answer-order binding",
+      "status": "complete_host_audited_closed",
+      "question": "Does a native final-MLP donor state follow selected answer content or the literal answer label under a fixed option-order swap?",
+      "question_provenance": "N49 separates vector and RMS contributions without identifying what native states represent. This new contextual-binding test uses unmodified native states and no sign/gain selection.",
+      "parents": [
+        "Q64",
+        "Q63"
+      ],
+      "method": "All 24 N48 contexts. Three fixed donors per recipient: same program with swapped answer order, an unrelated program with the same order, and that unrelated program with opposite order. Row-index XOR 1/2/3 fixes donors independently of labels. Native and identity decisions carry from N48. New work: 72 donor decisions, 168 forwards, 15,890 exposures and 72 h assignments.",
+      "result": "All 24 contexts, 72 donor decisions and both durable source/recipient chains pass the frozen audit. Actual work is 168 forwards, 15,890 exposures, 72 h assignments, 24 source guards and 72 restorations, with zero emitted tokens or updates. Same-item opposite-order donors preserve every recipient choice: coding 8/16, retention 8/8. Each unrelated donor control changes one coding choice and scores 9/16; both retain 8/8 retention.",
+      "interpretation": "The paired whole-h donor induces no argmax transfer. Its complement-letter matches arise from preserved recipient choices, not a demonstrated causal transfer of selected content. The residual and per-layer input branch remain possible sources of recipient choice. No individual meaning, abstract skill or useful full-program improvement is established.",
+      "next_question": "Separate native residual and per-layer input contributions while retaining the recipient FFN vector, using fixed donor contexts and finite factorial controls.",
+      "direction_decision": "Close N50 without reruns. Test the two native bypass contributions in N51; do not select a sign, gain, site or task from partial effects.",
+      "historical_prelaunch_result": "New FP32/BF16 donor graphs pass 88 random forwards, 2,948 input exposures and 24 independent reference matches. New literal audit: four source positives, one recipient positive and 22 targeted refusals. Package has 35 sources and nine inputs. No pretrained N50 measurement yet.",
+      "historical_verified_active_snapshot": {
+        "status": "private_version1_active_no_outputs_accessed",
+        "result": "New FP32/BF16 donor graphs pass 88 random forwards, 2,948 input exposures and 24 independent reference matches. New literal audit: four source positives, one recipient positive and 22 targeted refusals. Package has 35 sources and nine inputs. Version 1 is verified private and running; no output, partial or live counter has been accessed. Actual runtime measurements remain unknown.",
+        "direction_decision": "One private version 1 is running after fresh quota/inventory and private dataset checks. Preserve all frozen sources. At terminal, collect once and invoke the frozen auditor only for a complete whole panel."
+      }
     }
   ],
   "active_question_id": "Q62",

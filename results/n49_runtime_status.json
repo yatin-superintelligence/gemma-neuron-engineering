@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-01T15:21:37.951987+00:00",
+  "status": "complete_host_audited_closed",
+  "source_checkpoint": "f25f190483f973fe11190df387e61d08d6600ab6",
+  "private_GPU_notebook": true,
+  "single_READY_private_dataset": true,
+  "server_JSON_exact": true,
+  "outcome": "All24contexts/all192newcrosses PASS;finite local contrasts on reused development evidence,not useful coding improvement",
+  "optimizer_steps": 0
+}

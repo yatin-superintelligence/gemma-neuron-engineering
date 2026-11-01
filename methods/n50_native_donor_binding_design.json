@@ -1,0 +1,48 @@
+{
+  "utc": "2026-11-01T15:26:34.341893+00:00",
+  "experiment": "N50",
+  "question": "Q65",
+  "title": "Native final-MLP donor binding under answer-order swaps",
+  "motivation": "N49 separates numerator and RMS contributions but identifies no representational content. Test unmodified native fullh donors for contextual answer-label binding. No sign/gain chosen from N49 effects,no mask/dose/site/task sweep,no N43 recovery.",
+  "cohort": "All24 N48contexts,16coding8retention,12swappedorderpairs. Reuseddevelopment. All8coding+4retentionfamilies retained.",
+  "site": "NativefinalMLP34 postgating h at down-projectioninput,currentlastposition only. Full12288nativechannels,notpreactivation orfulltransformer.",
+  "donors": {
+    "paired_order_swap": "row_index XOR1: sameprogram/item with reversed visibleanswerorder",
+    "unrelated_same_order": "row_index XOR2: fixedadjacentprogram/item,sameanswerorder",
+    "unrelated_opposite_order": "row_index XOR3: samefixedunrelatedprogram/item,oppositeanswerorder"
+  },
+  "donor_selection": "FixedallrowindexXORgraph,NOTbycorrectness/argmax/hiddenlabel/activation. Originalnativeh only,nohistoricaltrainedadapter/fittedvector/learnedalignment. Each4rowblock assignedowner(blockindexmod2),alldonorslocalwithoutduplicatecapture.",
+  "carries": "EveryoriginalandidentityrecordfromN48byteexactwithparentenvelope/audit/freezeSHA. NO oldidentity/masked/RMS-crosscellfullforwardreexecution. One nativeguardcapture percontext is neededforNEWactualdonors;fullFP32logit/argmax/fullcache/nativeh exactagainstN48. Oldrecordsarenotnewlygraded.",
+  "execution": "CaptureeachownednativecontextONCE beforedonorpanel;durablesourceguardstore withactualstate/counters. Keep actualcurrentnativeh tensors onlyinprocess. Eachrecipient3newdonors,fixedconditionorder rotatedrow_indexmod3,eachfollowedbyactualnative fullrestoration. Check donor actualh hash matchesnamedsource,upstreamnativeh/cache/allotherpositions exact,restorationfull logit/cache/state beforedurablecommit.",
+  "expected_work": {
+    "contexts": 24,
+    "native_sourceguard_forwards": 24,
+    "new_donor_decisions": 72,
+    "native_restoration_forwards": 72,
+    "full_forwards": 168,
+    "input_exposures": 15890,
+    "activation_assignments": 72,
+    "extra_FFN_or_down_projection_evaluations": 0,
+    "emitted_tokens": 0,
+    "parameter_assignments": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0
+  },
+  "primary": "All3donorconditions andbothroles report rates/counts of matching carriednative recipientchoice,carried donorletter,andcomplement ofcarried donorletter. For paired-orderdonor only,complement means donor-selected candidatevalue underrecipient answerorder. Donorother-token cases reported separately. For unrelateddonors,complement is onlyalettercontrol,NOTsharedsemanticvalue. Descriptiveallconditionrates,no pvalues/threshold/armwinnerselection.",
+  "secondary": "New72literalcorrectnesscomparisonsmemoizedonceafterwholeauditPASS;allroles/families/orders retained. OldN48wholeaggregate/failedprimariescarriedexact;no closedscorer/percaseoldgrade reconstruction. Allfull-vocabularynoncanonicalfirstchoiceswrong;no restricteddecoding/trim.",
+  "claim_boundary": "Nativefullstatesufficiency/currentanswerbinding,notindividualneuronmeaning,abstractprogramskill,fullprogramutility,freshconfirmation,mediationorspeed. Knownfull-state/circuit/contextualbinding/functionvectorpriors;no methodnoveltyclaim.",
+  "privacy": "Hiddenlabels/manualtraces/rawcases/options/tokenIDs/donorstates/notebook/rawoutputsprivate. GPUclosurehasownfrozennativemeasurements,nevercorrectletters/oracleanswers.",
+  "acceptance": "All24/72newdecisions,actualinitial/final/fullcache/state/counters/durablesourceandrecipientchains. Singlelaunch/singlecollector/singlefrozenaudit. Incompletewholepanelcensored,firstfailurepreserved,no oldcellrerun/guardweakening/automaticcontinuation. Metadatawitnessnotfullparameterbyteauthentication/independentcleanpackagereplay.",
+  "host_validation": "Newrandomseed5010,FP32andBF16nativeGemma/new4context donorgraphs,independentexplicit h-donorforwardreference. Newlineage/refusal literals,noneofoldfixtures.",
+  "resources": {
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1600,
+    "notebook_start_global_seconds": 1500,
+    "reservation_GPU_hours": 1,
+    "reserve_GPU_hours": 2,
+    "raw_bytes_limit": 33554432,
+    "hardware": "2distinctT4/fullBF16replica each,disjoint4rowdonorgraphs,sequentialload/commonbarrier"
+  },
+  "training_allowed": false
+}

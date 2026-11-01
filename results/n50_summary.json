@@ -1,0 +1,1134 @@
+{
+  "actual_counters": {
+    "activation_assignments": 72,
+    "backward_calls": 0,
+    "calls": 168,
+    "extra_FFN_evaluations": 0,
+    "extra_down_projection_evaluations": 0,
+    "input_token_exposures": 15890,
+    "manual_parameter_assignments": 0,
+    "native_restoration_forwards": 72,
+    "native_sourceguards": 24,
+    "new_emitted_tokens": 0,
+    "optimizer_steps": 0
+  },
+  "all_conditions": {
+    "paired_order_swap": {
+      "answer_orders": {
+        "coding_0": {
+          "cases": 8,
+          "complements_native_donor_letter": 4,
+          "copies_native_donor_letter": 4,
+          "matches_carried_recipient_choice": 8,
+          "new_correct": 5,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 8
+        },
+        "coding_1": {
+          "cases": 8,
+          "complements_native_donor_letter": 4,
+          "copies_native_donor_letter": 4,
+          "matches_carried_recipient_choice": 8,
+          "new_correct": 3,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 8
+        },
+        "retention_0": {
+          "cases": 4,
+          "complements_native_donor_letter": 4,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 4,
+          "new_correct": 4,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 4
+        },
+        "retention_1": {
+          "cases": 4,
+          "complements_native_donor_letter": 4,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 4,
+          "new_correct": 4,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 4
+        }
+      },
+      "families": {
+        "assigned_binding": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "dict_update_order": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "extended_slice": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "floor_modulo": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "last_assignment": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "late_closure": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "literal_copy": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "loop_else": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "negation": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "nested_alias": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 0,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "shared_iterator": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "short_circuit": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 0,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        }
+      },
+      "roles": {
+        "coding": {
+          "cases": 16,
+          "complements_native_donor_letter": 8,
+          "copies_native_donor_letter": 8,
+          "matches_carried_recipient_choice": 16,
+          "new_correct": 8,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 16
+        },
+        "retention": {
+          "cases": 8,
+          "complements_native_donor_letter": 8,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 8,
+          "new_correct": 8,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 8
+        }
+      }
+    },
+    "unrelated_opposite_order": {
+      "answer_orders": {
+        "coding_0": {
+          "cases": 8,
+          "complements_native_donor_letter": 3,
+          "copies_native_donor_letter": 5,
+          "matches_carried_recipient_choice": 7,
+          "new_correct": 6,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 8
+        },
+        "coding_1": {
+          "cases": 8,
+          "complements_native_donor_letter": 4,
+          "copies_native_donor_letter": 4,
+          "matches_carried_recipient_choice": 8,
+          "new_correct": 3,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 8
+        },
+        "retention_0": {
+          "cases": 4,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 4,
+          "matches_carried_recipient_choice": 4,
+          "new_correct": 4,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 4
+        },
+        "retention_1": {
+          "cases": 4,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 4,
+          "matches_carried_recipient_choice": 4,
+          "new_correct": 4,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 4
+        }
+      },
+      "families": {
+        "assigned_binding": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "dict_update_order": {
+          "cases": 2,
+          "complements_native_donor_letter": 1,
+          "copies_native_donor_letter": 1,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "extended_slice": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "floor_modulo": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "last_assignment": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "late_closure": {
+          "cases": 2,
+          "complements_native_donor_letter": 1,
+          "copies_native_donor_letter": 1,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "literal_copy": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "loop_else": {
+          "cases": 2,
+          "complements_native_donor_letter": 1,
+          "copies_native_donor_letter": 1,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "negation": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "nested_alias": {
+          "cases": 2,
+          "complements_native_donor_letter": 1,
+          "copies_native_donor_letter": 1,
+          "matches_carried_recipient_choice": 1,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "shared_iterator": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "short_circuit": {
+          "cases": 2,
+          "complements_native_donor_letter": 1,
+          "copies_native_donor_letter": 1,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 0,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        }
+      },
+      "roles": {
+        "coding": {
+          "cases": 16,
+          "complements_native_donor_letter": 7,
+          "copies_native_donor_letter": 9,
+          "matches_carried_recipient_choice": 15,
+          "new_correct": 9,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 16
+        },
+        "retention": {
+          "cases": 8,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 8,
+          "matches_carried_recipient_choice": 8,
+          "new_correct": 8,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 8
+        }
+      }
+    },
+    "unrelated_same_order": {
+      "answer_orders": {
+        "coding_0": {
+          "cases": 8,
+          "complements_native_donor_letter": 3,
+          "copies_native_donor_letter": 5,
+          "matches_carried_recipient_choice": 7,
+          "new_correct": 6,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 8
+        },
+        "coding_1": {
+          "cases": 8,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 6,
+          "matches_carried_recipient_choice": 8,
+          "new_correct": 3,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 8
+        },
+        "retention_0": {
+          "cases": 4,
+          "complements_native_donor_letter": 4,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 4,
+          "new_correct": 4,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 4
+        },
+        "retention_1": {
+          "cases": 4,
+          "complements_native_donor_letter": 4,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 4,
+          "new_correct": 4,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 4
+        }
+      },
+      "families": {
+        "assigned_binding": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "dict_update_order": {
+          "cases": 2,
+          "complements_native_donor_letter": 1,
+          "copies_native_donor_letter": 1,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "extended_slice": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "floor_modulo": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "last_assignment": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "late_closure": {
+          "cases": 2,
+          "complements_native_donor_letter": 1,
+          "copies_native_donor_letter": 1,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "literal_copy": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "loop_else": {
+          "cases": 2,
+          "complements_native_donor_letter": 1,
+          "copies_native_donor_letter": 1,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "negation": {
+          "cases": 2,
+          "complements_native_donor_letter": 2,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 2,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "nested_alias": {
+          "cases": 2,
+          "complements_native_donor_letter": 1,
+          "copies_native_donor_letter": 1,
+          "matches_carried_recipient_choice": 1,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "shared_iterator": {
+          "cases": 2,
+          "complements_native_donor_letter": 0,
+          "copies_native_donor_letter": 2,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 1,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        },
+        "short_circuit": {
+          "cases": 2,
+          "complements_native_donor_letter": 1,
+          "copies_native_donor_letter": 1,
+          "matches_carried_recipient_choice": 2,
+          "new_correct": 0,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 2
+        }
+      },
+      "roles": {
+        "coding": {
+          "cases": 16,
+          "complements_native_donor_letter": 5,
+          "copies_native_donor_letter": 11,
+          "matches_carried_recipient_choice": 15,
+          "new_correct": 9,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 16
+        },
+        "retention": {
+          "cases": 8,
+          "complements_native_donor_letter": 8,
+          "copies_native_donor_letter": 0,
+          "matches_carried_recipient_choice": 8,
+          "new_correct": 8,
+          "noncanonical_native_donor": 0,
+          "noncanonical_new_choice": 0,
+          "valid_options": 8
+        }
+      }
+    }
+  },
+  "carried_N48_aggregate": {
+    "actual_counters": {
+      "activation_assignments": 120,
+      "backward_calls": 0,
+      "calls": 240,
+      "extra_FFN_evaluations": 0,
+      "input_token_exposures": 22700,
+      "manual_parameter_assignments": 0,
+      "new_emitted_tokens": 0,
+      "optimizer_steps": 0
+    },
+    "baseline_eligibility": {
+      "original_coding_correct_at_least8": true,
+      "original_coding_valid_options_at_least14": true,
+      "original_retention_correct_at_least6": true,
+      "original_retention_valid_options_at_least7": true
+    },
+    "condition_records": 120,
+    "conditions": {
+      "original": {
+        "choices": {
+          "A": 16,
+          "B": 8
+        },
+        "coding_cases": 16,
+        "coding_correct": 8,
+        "coding_correct_margin_case_mean": 0.26953125,
+        "coding_gain_origin": {
+          "invalid_original_choice": 0,
+          "valid_but_wrong_original_choice": 0
+        },
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "coding_valid_options": 16,
+        "families": {
+          "assigned_binding": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "dict_update_order": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "extended_slice": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "floor_modulo": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "last_assignment": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "late_closure": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "literal_copy": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "loop_else": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "negation": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "nested_alias": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 0,
+            "role": "coding"
+          },
+          "shared_iterator": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "short_circuit": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 0,
+            "role": "coding"
+          }
+        },
+        "retention_cases": 8,
+        "retention_correct": 8,
+        "retention_correct_margin_case_mean": 24.46923828125,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "retention_valid_options": 8
+      },
+      "random_negative_count": {
+        "choices": {
+          "A": 12,
+          "B": 12
+        },
+        "coding_cases": 16,
+        "coding_correct": 10,
+        "coding_correct_margin_case_mean": 0.14111328125,
+        "coding_gain_origin": {
+          "invalid_original_choice": 0,
+          "valid_but_wrong_original_choice": 3
+        },
+        "coding_gains": 3,
+        "coding_losses": 1,
+        "coding_valid_options": 16,
+        "families": {
+          "assigned_binding": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "dict_update_order": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "extended_slice": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "floor_modulo": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "last_assignment": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "late_closure": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "literal_copy": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "loop_else": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "negation": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "nested_alias": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "shared_iterator": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 0,
+            "role": "coding"
+          },
+          "short_circuit": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          }
+        },
+        "retention_cases": 8,
+        "retention_correct": 8,
+        "retention_correct_margin_case_mean": 25.1533203125,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "retention_valid_options": 8
+      },
+      "random_positive_count": {
+        "choices": {
+          "A": 17,
+          "B": 7
+        },
+        "coding_cases": 16,
+        "coding_correct": 9,
+        "coding_correct_margin_case_mean": 0.30078125,
+        "coding_gain_origin": {
+          "invalid_original_choice": 0,
+          "valid_but_wrong_original_choice": 1
+        },
+        "coding_gains": 1,
+        "coding_losses": 0,
+        "coding_valid_options": 16,
+        "families": {
+          "assigned_binding": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "dict_update_order": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "extended_slice": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "floor_modulo": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "last_assignment": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "late_closure": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "literal_copy": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "loop_else": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "negation": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "nested_alias": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "shared_iterator": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "short_circuit": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 0,
+            "role": "coding"
+          }
+        },
+        "retention_cases": 8,
+        "retention_correct": 8,
+        "retention_correct_margin_case_mean": 14.27001953125,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "retention_valid_options": 8
+      },
+      "remove_negative": {
+        "choices": {
+          "A": 12,
+          "B": 12
+        },
+        "coding_cases": 16,
+        "coding_correct": 10,
+        "coding_correct_margin_case_mean": -0.01953125,
+        "coding_gain_origin": {
+          "invalid_original_choice": 0,
+          "valid_but_wrong_original_choice": 3
+        },
+        "coding_gains": 3,
+        "coding_losses": 1,
+        "coding_valid_options": 16,
+        "families": {
+          "assigned_binding": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "dict_update_order": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "extended_slice": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "floor_modulo": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "last_assignment": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "late_closure": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "literal_copy": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "loop_else": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "coding"
+          },
+          "negation": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "nested_alias": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "shared_iterator": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 0,
+            "role": "coding"
+          },
+          "short_circuit": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          }
+        },
+        "retention_cases": 8,
+        "retention_correct": 8,
+        "retention_correct_margin_case_mean": 27.90625,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "retention_valid_options": 8
+      },
+      "remove_positive": {
+        "choices": {
+          "A": 20,
+          "B": 4
+        },
+        "coding_cases": 16,
+        "coding_correct": 8,
+        "coding_correct_margin_case_mean": 0.40625,
+        "coding_gain_origin": {
+          "invalid_original_choice": 0,
+          "valid_but_wrong_original_choice": 2
+        },
+        "coding_gains": 2,
+        "coding_losses": 2,
+        "coding_valid_options": 16,
+        "families": {
+          "assigned_binding": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "dict_update_order": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "extended_slice": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "floor_modulo": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "last_assignment": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "late_closure": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "literal_copy": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "loop_else": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "negation": {
+            "both_orders_correct": true,
+            "cases": 2,
+            "correct": 2,
+            "role": "retention"
+          },
+          "nested_alias": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "shared_iterator": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          },
+          "short_circuit": {
+            "both_orders_correct": false,
+            "cases": 2,
+            "correct": 1,
+            "role": "coding"
+          }
+        },
+        "retention_cases": 8,
+        "retention_correct": 8,
+        "retention_correct_margin_case_mean": 17.2984619140625,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "retention_valid_options": 8
+      }
+    },
+    "contexts": 24,
+    "experiment": "N48",
+    "new_literal_label_comparisons": 120,
+    "new_model_or_candidate_executor_calls_on_host": 0,
+    "scope": "Fresh host-authored development answer-decision panel;not full-program coding improvement or independent benchmark confirmation.",
+    "signed_policy_primary": {
+      "remove_negative": {
+        "clauses": {
+          "beats_matched_random_by_at_least2": false,
+          "both_order_program_gains_at_least2": false,
+          "coding_gains_at_least2": true,
+          "gain_families_at_least2": false,
+          "original_coding_correct_at_least8": true,
+          "original_coding_valid_options_at_least14": true,
+          "original_retention_correct_at_least6": true,
+          "original_retention_valid_options_at_least7": true,
+          "preserve_all_original_correct_coding": false,
+          "preserve_all_original_correct_retention": true,
+          "zero_both_order_program_losses": true
+        },
+        "gain_families": [
+          "dict_update_order"
+        ],
+        "passed": false
+      },
+      "remove_positive": {
+        "clauses": {
+          "beats_matched_random_by_at_least2": false,
+          "both_order_program_gains_at_least2": false,
+          "coding_gains_at_least2": true,
+          "gain_families_at_least2": false,
+          "original_coding_correct_at_least8": true,
+          "original_coding_valid_options_at_least14": true,
+          "original_retention_correct_at_least6": true,
+          "original_retention_valid_options_at_least7": true,
+          "preserve_all_original_correct_coding": false,
+          "preserve_all_original_correct_retention": true,
+          "zero_both_order_program_losses": false
+        },
+        "gain_families": [],
+        "passed": false
+      }
+    },
+    "status": "complete_host_audited"
+  },
+  "closed_scorer_calls": 0,
+  "contexts": 24,
+  "experiment": "N50",
+  "native_and_identity_carries": 48,
+  "new_donor_records": 72,
+  "new_literal_label_comparisons": 72,
+  "scope": "Reused development native whole-h sufficiency/answer-label binding. Complement of donorletter denotes selected-option content only for sameprogram order-swap,not unrelated donors. No individual neuron meaning,abstractskill,freshconfirmation,fullprogramutility,mediation or speed.",
+  "status": "complete_host_audited"
+}

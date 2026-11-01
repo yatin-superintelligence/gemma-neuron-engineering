@@ -587,6 +587,266 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>assay</h2><p>Native full-h donor transplants with fixed answer-order binding controls.</p><p><a href="../research/experiments/n50/assay.py">Exact source file</a></p><p class="small">APIs: capture, public_capture, transplant, one_case</p><p class="hash">SHA-256 a4816559915fbb602314bc86bdf8f1b880b3399f4254bdd237eaaece5e56b26e</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Native full-h donor transplants with fixed answer-order binding controls.&quot;&quot;&quot;
+from contextlib import contextmanager
+import torch
+from transformers.cache_utils import DynamicCache
+from research.experiments.n35.core import tensor_sha
+from research.experiments.n37.continuation import decision
+from research.experiments.n48.assay import choice_metrics
+from research.experiments.n49.assay import source_forward, site
+
+CONDITIONS=(&#x27;paired_order_swap&#x27;,&#x27;unrelated_same_order&#x27;,&#x27;unrelated_opposite_order&#x27;)
+XORS=dict(zip(CONDITIONS,[1,2,3]))
+
+
+def capture(model, encoded, answer_ids, parent):
+    record,cache,actual=source_forward(model,encoded,answer_ids)
+    if record!=parent[&#x27;original&#x27;] or cache!=parent[&#x27;native_first_full_cache&#x27;]:
+        raise ValueError(&#x27;Native donor capture differs from frozen N48 source&#x27;)
+    current=actual[&#x27;h&#x27;][:, -1:, :].detach().clone()
+    return {&#x27;record&#x27;:record,&#x27;cache&#x27;:cache,&#x27;full_h_sha256&#x27;:tensor_sha(actual[&#x27;h&#x27;]),
+            &#x27;current_h&#x27;:current,&#x27;current_h_sha256&#x27;:tensor_sha(current),&#x27;parent_binding&#x27;:parent[&#x27;binding&#x27;]}
+
+
+def public_capture(source):
+    return {k:v for k,v in source.items() if k!=&#x27;current_h&#x27;}
+
+
+@contextmanager
+def transplant(model, recipient, donor, donor_id, assigned):
+    block,norm=site(model)
+    if (donor[&#x27;current_h&#x27;].requires_grad or donor[&#x27;current_h&#x27;].ndim!=3
+            or donor[&#x27;current_h&#x27;].shape[:2]!=(1,1) or tensor_sha(donor[&#x27;current_h&#x27;])!=donor[&#x27;current_h_sha256&#x27;]):
+        raise ValueError(&#x27;Intact actual detached native donor required&#x27;)
+    receipt={&#x27;calls&#x27;:0,&#x27;activation_assignments&#x27;:0,&#x27;donor_id&#x27;:donor_id,&#x27;donor_h_sha256&#x27;:donor[&#x27;current_h_sha256&#x27;],
+             &#x27;native_h_exact&#x27;:False,&#x27;other_positions_byte_exact&#x27;:False,&#x27;assigned_h_sha256&#x27;:None}
+    def patch(module,args):
+        value=args[0]
+        if (receipt[&#x27;calls&#x27;] or value.requires_grad or tensor_sha(value)!=recipient[&#x27;full_h_sha256&#x27;]
+                or value.dtype!=donor[&#x27;current_h&#x27;].dtype or value.device!=donor[&#x27;current_h&#x27;].device
+                or value.shape[-1]!=donor[&#x27;current_h&#x27;].shape[-1]):
+            raise ValueError(&#x27;Native recipient/donor scope mismatch&#x27;)
+        receipt[&#x27;native_h_exact&#x27;]=True;result=value.clone();assigned()
+        result[:, -1:, :].copy_(donor[&#x27;current_h&#x27;])
+        if tensor_sha(result[:, :-1])!=tensor_sha(value[:, :-1]):raise ValueError(&#x27;Noncurrent h changed&#x27;)
+        receipt.update(calls=1,activation_assignments=1,other_positions_byte_exact=True,assigned_h_sha256=tensor_sha(result[:, -1:, :]))
+        return (result,*args[1:])
+    handle=block.mlp.down_proj.register_forward_pre_hook(patch)
+    try:
+        yield receipt
+        if receipt[&#x27;calls&#x27;]!=1:raise ValueError(&#x27;Exactly one donor use required&#x27;)
+    finally:handle.remove()
+
+
+def one_case(model,encoded,answer_ids,row,sources,rows_by_index,parents,count=lambda name:None):
+    own=sources[row[&#x27;id&#x27;]];slots=model.config.text_config.num_hidden_layers-model.config.text_config.num_kv_shared_layers
+    order=list(CONDITIONS);offset=row[&#x27;row_index&#x27;]%3;order=order[offset:]+order[:offset]
+    cells={};restorations={}
+    for condition in order:
+        donor_row=rows_by_index[row[&#x27;row_index&#x27;]^XORS[condition]];donor=sources[donor_row[&#x27;id&#x27;]]
+        with torch.no_grad(),transplant(model,own,donor,donor_row[&#x27;id&#x27;],lambda:count(&#x27;activation_assignments&#x27;)) as patch:
+            output=model(**encoded,past_key_values=DynamicCache(config=model.config.text_config),use_cache=True,logits_to_keep=1)
+            d,cache=decision(output,0,slots,str(next(model.parameters()).dtype));metrics=choice_metrics(output.logits[0,-1],answer_ids)
+        if cache!=own[&#x27;cache&#x27;]:raise ValueError(&#x27;Final-h donor changed upstream whole cache&#x27;)
+        cells[condition]={&#x27;decision&#x27;:d,&#x27;metrics&#x27;:metrics,&#x27;activation&#x27;:patch,&#x27;donor_binding&#x27;:donor[&#x27;parent_binding&#x27;]}
+        count(&#x27;native_restoration_forwards&#x27;);restored=capture(model,encoded,answer_ids,parents[row[&#x27;id&#x27;]])
+        if public_capture(restored)!=public_capture(own):raise ValueError(&#x27;Actual complete native restoration failed&#x27;)
+        restorations[condition]=public_capture(restored)
+    return {&#x27;parent_binding&#x27;:parents[row[&#x27;id&#x27;]][&#x27;binding&#x27;],&#x27;carried_original&#x27;:parents[row[&#x27;id&#x27;]][&#x27;original&#x27;],
+            &#x27;carried_identity&#x27;:parents[row[&#x27;id&#x27;]][&#x27;identity&#x27;],&#x27;native_source&#x27;:public_capture(own),
+            &#x27;cells&#x27;:cells,&#x27;restorations&#x27;:restorations,&#x27;order&#x27;:order,&#x27;answer_token_ids&#x27;:answer_ids,
+            &#x27;input_tokens&#x27;:int(encoded[&#x27;input_ids&#x27;].numel()),&#x27;new_emitted_tokens&#x27;:0,&#x27;parameter_assignments&#x27;:0,&#x27;backward_calls&#x27;:0,&#x27;optimizer_steps&#x27;:0}
+</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>assay</h2><p>One fresh answer decision per policy; no response generation or labels.</p><p><a href="../research/experiments/n48/assay.py">Exact source file</a></p><p class="small">APIs: choice_metrics, one_case</p><p class="hash">SHA-256 da55c350122a858b3166fbc2b42201a00c63c8319f90d88b340186e031dd27b7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;One fresh answer decision per policy; no response generation or labels.&quot;&quot;&quot;
+import torch
+from transformers.cache_utils import DynamicCache
+from interpretability.signed_native_mask import signed_mask
+from research.experiments.n35.core import tensor_sha
+from research.experiments.n37.continuation import decision
+
+EDITS = (&#x27;remove_negative&#x27;, &#x27;random_negative_count&#x27;, &#x27;remove_positive&#x27;, &#x27;random_positive_count&#x27;)
+CONDITIONS = (&#x27;original&#x27;, *EDITS)
+
+
+def choice_metrics(logits, answer_ids):
+    if set(answer_ids) != {&#x27;A&#x27;, &#x27;B&#x27;} or any(type(v) is not int or not 0 &lt;= v &lt; logits.numel() for v in answer_ids.values()) or answer_ids[&#x27;A&#x27;] == answer_ids[&#x27;B&#x27;]:
+        raise ValueError(&#x27;Two distinct canonical answer token IDs required&#x27;)
+    x = logits.detach().float()
+    if x.ndim != 1 or not torch.isfinite(x).all(): raise ValueError(&#x27;Finite full-vocabulary vector required&#x27;)
+    token = int(x.argmax()); probabilities = x.softmax(-1)
+    return {&#x27;argmax&#x27;: token, &#x27;choice&#x27;: next((k for k, v in answer_ids.items() if v == token), &#x27;other&#x27;),
+        &#x27;answer_logits&#x27;: {k: float(x[v]) for k, v in answer_ids.items()},
+        &#x27;answer_probabilities&#x27;: {k: float(probabilities[v]) for k, v in answer_ids.items()},
+        &#x27;A_minus_B_margin&#x27;: float(x[answer_ids[&#x27;A&#x27;]]-x[answer_ids[&#x27;B&#x27;]])}
+
+
+def one_case(model, encoded, answer_ids, on_assignment=lambda: None):
+    slots = model.config.text_config.num_hidden_layers-model.config.text_config.num_kv_shared_layers
+    dtype = str(next(model.parameters()).dtype)
+    def forward(mode):
+        with torch.no_grad(), signed_mask(model, mode) as scope:
+            if mode != &#x27;original&#x27;: on_assignment()
+            output = model(**encoded, past_key_values=DynamicCache(config=model.config.text_config), use_cache=True, logits_to_keep=1)
+            item, cache = decision(output, 0, slots, dtype)
+            logits = output.logits[0, -1].detach().float().clone()
+        assert len(scope[&#x27;frames&#x27;]) == 1 and scope[&#x27;activation_assignments&#x27;] == int(mode != &#x27;original&#x27;)
+        return {&#x27;decision&#x27;: item, &#x27;activation&#x27;: scope[&#x27;frames&#x27;][0], &#x27;metrics&#x27;: choice_metrics(logits, answer_ids)}, cache
+    original, cache = forward(&#x27;original&#x27;); identity, identity_cache = forward(&#x27;identity&#x27;)
+    assert original[&#x27;decision&#x27;] == identity[&#x27;decision&#x27;] and identity_cache == cache
+    assert original[&#x27;activation&#x27;][&#x27;native_h_sha256&#x27;] == identity[&#x27;activation&#x27;][&#x27;edited_h_sha256&#x27;]
+    edits, restorations = {}, {}
+    for mode in EDITS:
+        value, other_cache = forward(mode)
+        assert other_cache == cache and value[&#x27;decision&#x27;][&#x27;cache_sha256&#x27;] == original[&#x27;decision&#x27;][&#x27;cache_sha256&#x27;]
+        assert value[&#x27;activation&#x27;][&#x27;native_h_sha256&#x27;] == original[&#x27;activation&#x27;][&#x27;native_h_sha256&#x27;]
+        assert value[&#x27;activation&#x27;][&#x27;other_positions_byte_exact&#x27;] is True
+        restored, restored_cache = forward(&#x27;original&#x27;)
+        assert restored == original and restored_cache == cache
+        edits[mode], restorations[mode] = value, restored
+    return {&#x27;original&#x27;: original, &#x27;identity&#x27;: identity, &#x27;edits&#x27;: edits,
+        &#x27;restorations&#x27;: restorations, &#x27;native_first_full_cache&#x27;: cache,
+        &#x27;answer_token_ids&#x27;: answer_ids, &#x27;input_tokens&#x27;: int(encoded[&#x27;input_ids&#x27;].numel()),
+        &#x27;new_emitted_tokens&#x27;: 0, &#x27;parameter_assignments&#x27;: 0, &#x27;backward_calls&#x27;: 0, &#x27;optimizer_steps&#x27;: 0}
+</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>assay</h2><p>Only the missing RMS crosses; old complete diagonal decisions are carried.</p><p><a href="../research/experiments/n49/assay.py">Exact source file</a></p><p class="small">APIs: site, reciprocal, state_witness, observe, source_forward, cross, one_case</p><p class="hash">SHA-256 fabe1c5e4a0b8acce71ffd2d87cefd8629794797d9af392824e0a8055bef494b</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Only the missing RMS crosses; old complete diagonal decisions are carried.&quot;&quot;&quot;
+from contextlib import contextmanager
+import hashlib
+import inspect
+import torch
+from transformers.cache_utils import DynamicCache
+from transformers.models.gemma4.modeling_gemma4 import Gemma4TextDecoderLayer, Gemma4TextMLP
+from interpretability.native_rms_factor_v2 import check_norm, compose
+from interpretability.signed_native_mask import transform, MODULE_SHA, MLP_FORWARD
+from research.experiments.n35.core import tensor_sha
+from research.experiments.n37.continuation import decision
+from research.experiments.n48.assay import choice_metrics, EDITS
+
+
+def site(model):
+    block = model.model.language_model.layers[-1]
+    if (type(block) is not Gemma4TextDecoderLayer or type(block.mlp) is not Gemma4TextMLP
+            or block.layer_idx != len(model.model.language_model.layers)-1 or block.enable_moe_block
+            or type(block.mlp).forward is not MLP_FORWARD or &#x27;forward&#x27; in block.mlp.__dict__):
+        raise ValueError(&#x27;Unmodified final dense native branch required&#x27;)
+    if hashlib.sha256(open(inspect.getsourcefile(Gemma4TextDecoderLayer), &#x27;rb&#x27;).read()).hexdigest() != MODULE_SHA:
+        raise ValueError(&#x27;Pinned transformer source required&#x27;)
+    norm = block.post_feedforward_layernorm
+    check_norm(norm)
+    if any(m._forward_hooks or m._forward_pre_hooks for m in [block.mlp.down_proj, norm]):
+        raise ValueError(&#x27;Clean capture and replacement sites required&#x27;)
+    return block, norm
+
+
+def reciprocal(norm, raw):
+    if raw.requires_grad or raw.ndim != 3 or raw.shape[:2] != (1, 1):
+        raise ValueError(&#x27;Detached single current native branch required&#x27;)
+    return torch.pow(raw.float().pow(2).mean(-1, keepdim=True)+norm.eps, -0.5)
+
+
+def state_witness(raw, q, output):
+    return {&#x27;raw_sha256&#x27;: tensor_sha(raw), &#x27;reciprocal_sha256&#x27;: tensor_sha(q),
+            &#x27;reciprocal&#x27;: float(q.item()), &#x27;output_sha256&#x27;: tensor_sha(output)}
+
+
+@contextmanager
+def observe(model):
+    block, norm = site(model); saved = {}; handles = []
+    def h_observed(module, args):
+        if saved or args[0].requires_grad:
+            raise ValueError(&#x27;Exactly one detached capture required&#x27;)
+        saved[&#x27;h&#x27;] = args[0].detach().clone()
+        _, saved[&#x27;activation&#x27;] = transform(args[0], &#x27;original&#x27;)
+    def norm_observed(module, args, output):
+        if &#x27;h&#x27; not in saved or &#x27;raw&#x27; in saved: raise ValueError(&#x27;Aligned single capture required&#x27;)
+        raw = args[0][:, -1:, :].detach().clone(); q = reciprocal(module, raw)
+        if tensor_sha(compose(module, raw, q)) != tensor_sha(output[:, -1:, :]):
+            raise ValueError(&#x27;Native direct-gamma operator order failed&#x27;)
+        saved.update(raw=raw, q=q, shape=list(args[0].shape), norm_output=output[:, -1:, :].detach().clone())
+    try:
+        handles.append(block.mlp.down_proj.register_forward_pre_hook(h_observed))
+        handles.append(norm.register_forward_hook(norm_observed))
+        yield saved
+        if set(saved) != {&#x27;h&#x27;, &#x27;activation&#x27;, &#x27;raw&#x27;, &#x27;q&#x27;, &#x27;shape&#x27;, &#x27;norm_output&#x27;}:
+            raise ValueError(&#x27;Incomplete actual source capture&#x27;)
+    finally:
+        for h in reversed(handles): h.remove()
+
+
+def source_forward(model, encoded, answer_ids):
+    slots = model.config.text_config.num_hidden_layers-model.config.text_config.num_kv_shared_layers
+    with torch.no_grad(), observe(model) as captured:
+        output = model(**encoded, past_key_values=DynamicCache(config=model.config.text_config), use_cache=True, logits_to_keep=1)
+        d, cache = decision(output, 0, slots, str(next(model.parameters()).dtype))
+        metrics = choice_metrics(output.logits[0, -1], answer_ids)
+    record = {&#x27;decision&#x27;: d, &#x27;activation&#x27;: captured[&#x27;activation&#x27;], &#x27;metrics&#x27;: metrics}
+    return record, cache, captured
+
+
+@contextmanager
+def cross(model, captured, raw, q, count):
+    block, norm = site(model)
+    replacement = compose(norm, raw, q)
+    witness = {&#x27;calls&#x27;: 0, &#x27;activation_assignments&#x27;: 0, &#x27;native_h_exact&#x27;: False, &#x27;other_positions_byte_exact&#x27;: False,
+               &#x27;replacement_sha256&#x27;: tensor_sha(replacement), &#x27;raw_sha256&#x27;: tensor_sha(raw), &#x27;reciprocal_sha256&#x27;: tensor_sha(q)}
+    def guard_h(module, args):
+        if tensor_sha(args[0]) != tensor_sha(captured[&#x27;h&#x27;]): raise ValueError(&#x27;Full native h changed&#x27;)
+        witness[&#x27;native_h_exact&#x27;] = True
+    def replace(module, args, output):
+        if (witness[&#x27;calls&#x27;] or not witness[&#x27;native_h_exact&#x27;] or list(args[0].shape) != captured[&#x27;shape&#x27;]
+                or tensor_sha(args[0][:, -1:, :]) != tensor_sha(captured[&#x27;raw&#x27;])
+                or tensor_sha(output[:, -1:, :]) != tensor_sha(captured[&#x27;norm_output&#x27;])):
+            raise ValueError(&#x27;Cross recipient differs from actual native source&#x27;)
+        value = output.clone(); count(&#x27;activation_assignments&#x27;)
+        value[:, -1:, :].copy_(replacement)
+        if tensor_sha(value[:, :-1]) != tensor_sha(output[:, :-1]):
+            raise ValueError(&#x27;Noncurrent RMS output changed&#x27;)
+        witness.update(calls=1, activation_assignments=1, other_positions_byte_exact=True)
+        return value
+    handles = [block.mlp.down_proj.register_forward_pre_hook(guard_h), norm.register_forward_hook(replace)]
+    try:
+        yield witness
+        if witness[&#x27;calls&#x27;] != 1: raise ValueError(&#x27;Missing actual cross call&#x27;)
+    finally:
+        for h in reversed(handles): h.remove()
+
+
+def one_case(model, encoded, answer_ids, parent, row_index, count=lambda name: None):
+    count(&#x27;native_sourceguards&#x27;); original, cache, captured = source_forward(model, encoded, answer_ids)
+    if original != parent[&#x27;original&#x27;] or cache != parent[&#x27;native_first_full_cache&#x27;]:
+        raise ValueError(&#x27;N48 source decision/activation/full cache mismatch&#x27;)
+    block, norm = site(model)
+    slots = model.config.text_config.num_hidden_layers-model.config.text_config.num_kv_shared_layers
+    groups = {}
+    for index, mode in enumerate(EDITS):
+        count(&#x27;full_shaped_h_constructions&#x27;); edited_h, activation = transform(captured[&#x27;h&#x27;], mode)
+        if activation != parent[&#x27;edits&#x27;][mode][&#x27;activation&#x27;]:
+            raise ValueError(&#x27;Exact completed N48 activation and mask lineage required&#x27;)
+        count(&#x27;extra_down_projection_evaluations&#x27;)
+        with torch.no_grad(): raw = block.mlp.down_proj(edited_h)[:, -1:, :].detach().clone()
+        q = reciprocal(norm, raw); edited_output = compose(norm, raw, q)
+        cells, restorations = {}, {}
+        order = [&#x27;01&#x27;, &#x27;10&#x27;] if (row_index+index) % 2 == 0 else [&#x27;10&#x27;, &#x27;01&#x27;]
+        for key in order:
+            v, stat = (captured[&#x27;raw&#x27;], q) if key == &#x27;01&#x27; else (raw, captured[&#x27;q&#x27;])
+            with torch.no_grad(), cross(model, captured, v, stat, count) as receipt:
+                output = model(**encoded, past_key_values=DynamicCache(config=model.config.text_config), use_cache=True, logits_to_keep=1)
+                d, actual_cache = decision(output, 0, slots, str(next(model.parameters()).dtype))
+                metrics = choice_metrics(output.logits[0, -1], answer_ids)
+            if actual_cache != cache: raise ValueError(&#x27;Cross changed upstream KV cache&#x27;)
+            cells[key] = {&#x27;decision&#x27;: d, &#x27;metrics&#x27;: metrics, &#x27;replacement&#x27;: receipt}
+            count(&#x27;native_restoration_forwards&#x27;); restored, restored_cache, restored_state = source_forward(model, encoded, answer_ids)
+            if (restored != original or restored_cache != cache
+                    or tensor_sha(restored_state[&#x27;h&#x27;]) != tensor_sha(captured[&#x27;h&#x27;])
+                    or state_witness(restored_state[&#x27;raw&#x27;], restored_state[&#x27;q&#x27;], restored_state[&#x27;norm_output&#x27;]) != state_witness(captured[&#x27;raw&#x27;], captured[&#x27;q&#x27;], captured[&#x27;norm_output&#x27;])):
+                raise ValueError(&#x27;Actual complete native restoration failed&#x27;)
+            restorations[key] = restored
+        groups[mode] = {&#x27;activation&#x27;: activation, &#x27;edited_source&#x27;: state_witness(raw, q, edited_output),
+                        &#x27;cells&#x27;: cells, &#x27;order&#x27;: order, &#x27;restorations&#x27;: restorations,
+                        &#x27;carried_00&#x27;: parent[&#x27;original&#x27;], &#x27;carried_11&#x27;: parent[&#x27;edits&#x27;][mode]}
+    return {&#x27;parent_binding&#x27;: parent[&#x27;binding&#x27;], &#x27;original_source_guard&#x27;: original,
+            &#x27;native_first_full_cache&#x27;: cache, &#x27;native_source&#x27;: state_witness(captured[&#x27;raw&#x27;], captured[&#x27;q&#x27;], captured[&#x27;norm_output&#x27;]),
+            &#x27;full_h_sha256&#x27;: tensor_sha(captured[&#x27;h&#x27;]), &#x27;groups&#x27;: groups,
+            &#x27;answer_token_ids&#x27;: answer_ids, &#x27;input_tokens&#x27;: int(encoded[&#x27;input_ids&#x27;].numel()),
+            &#x27;new_emitted_tokens&#x27;: 0, &#x27;parameter_assignments&#x27;: 0, &#x27;backward_calls&#x27;: 0, &#x27;optimizer_steps&#x27;: 0}
 </pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>signed_native_mask</h2><p>Fixed sign masks at the current final native MLP down-projection input.
 
 The sign is that of the post-gating product, not the gate pre-activation.
@@ -2106,6 +2366,86 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>answer_decisions</h2><p>Strict all-condition first-answer scoring; no model or candidate executor.</p><p><a href="../evaluation/answer_decisions.py">Exact source file</a></p><p class="small">APIs: assess</p><p class="hash">SHA-256 c6ddb71b9b66fd8ef13067e695f9ef180c458e8f4f6d21cfecfc9aec872bb003</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Strict all-condition first-answer scoring; no model or candidate executor.&quot;&quot;&quot;
+from collections import Counter
+import math
+
+CONDITIONS = (&#x27;original&#x27;, &#x27;remove_negative&#x27;, &#x27;random_negative_count&#x27;, &#x27;remove_positive&#x27;, &#x27;random_positive_count&#x27;)
+
+
+def assess(rows, records, secrets, answer_ids):
+    ids = {r[&#x27;id&#x27;] for r in rows}
+    if len(rows) != 24 or len(ids) != 24 or set(secrets) != ids:
+        raise ValueError(&#x27;Exact 24 fresh contexts and labels required&#x27;)
+    if Counter(r[&#x27;role&#x27;] for r in rows) != {&#x27;coding&#x27;: 16, &#x27;retention&#x27;: 8}:
+        raise ValueError(&#x27;Exact role denominators required&#x27;)
+    if set(records) != {(c, i) for c in CONDITIONS for i in ids}:
+        raise ValueError(&#x27;All five complete conditions required&#x27;)
+    if set(answer_ids) != {&#x27;A&#x27;, &#x27;B&#x27;} or any(type(v) is not int or v &lt; 0 for v in answer_ids.values()) or len(set(answer_ids.values())) != 2:
+        raise ValueError(&#x27;Strict canonical A/B IDs required&#x27;)
+    pairs = {}
+    for r in rows:
+        pairs.setdefault(r[&#x27;pair_id&#x27;], []).append(r)
+        if secrets[r[&#x27;id&#x27;]][&#x27;correct_letter&#x27;] not in [&#x27;A&#x27;, &#x27;B&#x27;]:
+            raise ValueError(&#x27;Exact hidden literal letter required&#x27;)
+    if len(pairs) != 12 or any(len(v) != 2 or {r[&#x27;binding&#x27;] for r in v} != {0, 1} or len({r[&#x27;role&#x27;] for r in v}) != 1 or len({r[&#x27;family&#x27;] for r in v}) != 1 or {secrets[r[&#x27;id&#x27;]][&#x27;correct_letter&#x27;] for r in v} != {&#x27;A&#x27;, &#x27;B&#x27;} for v in pairs.values()):
+        raise ValueError(&#x27;All twelve exact answer-order pairs required&#x27;)
+    correct, valid, margins = {}, {}, {}
+    for c in CONDITIONS:
+        for row in rows:
+            m = records[c, row[&#x27;id&#x27;]][&#x27;metrics&#x27;]; token = m[&#x27;argmax&#x27;]
+            if type(token) is not int or token &lt; 0:
+                raise ValueError(&#x27;Strict full-vocabulary argmax required&#x27;)
+            choice = next((k for k, v in answer_ids.items() if v == token), &#x27;other&#x27;)
+            if m[&#x27;choice&#x27;] != choice:
+                raise ValueError(&#x27;No restricted option choice or alias allowed&#x27;)
+            if set(m[&#x27;answer_logits&#x27;]) != {&#x27;A&#x27;, &#x27;B&#x27;} or set(m[&#x27;answer_probabilities&#x27;]) != {&#x27;A&#x27;, &#x27;B&#x27;}:
+                raise ValueError(&#x27;Both native option scores required&#x27;)
+            if any(type(v) not in [int, float] or not math.isfinite(v) for v in m[&#x27;answer_logits&#x27;].values()) or any(type(v) not in [int, float] or not math.isfinite(v) or not 0 &lt;= v &lt;= 1 for v in m[&#x27;answer_probabilities&#x27;].values()):
+                raise ValueError(&#x27;Finite actual option scores required&#x27;)
+            if abs(m[&#x27;A_minus_B_margin&#x27;]-(m[&#x27;answer_logits&#x27;][&#x27;A&#x27;]-m[&#x27;answer_logits&#x27;][&#x27;B&#x27;])) &gt; 1e-6:
+                raise ValueError(&#x27;Actual option margin differs&#x27;)
+            gold = secrets[row[&#x27;id&#x27;]][&#x27;correct_letter&#x27;]
+            correct[c, row[&#x27;id&#x27;]] = choice == gold
+            valid[c, row[&#x27;id&#x27;]] = choice != &#x27;other&#x27;
+            margins[c, row[&#x27;id&#x27;]] = m[&#x27;A_minus_B_margin&#x27;]*(1 if gold == &#x27;A&#x27; else -1)
+    summary = {&#x27;conditions&#x27;: {}, &#x27;signed_policy_primary&#x27;: {}, &#x27;scope&#x27;: &#x27;Fresh host-authored development answer-decision panel;not full-program coding improvement or independent benchmark confirmation.&#x27;}
+    for c in CONDITIONS:
+        group = {&#x27;choices&#x27;: dict(Counter(records[c, r[&#x27;id&#x27;]][&#x27;metrics&#x27;][&#x27;choice&#x27;] for r in rows)), &#x27;families&#x27;: {}}
+        for role in [&#x27;coding&#x27;, &#x27;retention&#x27;]:
+            subset = [r for r in rows if r[&#x27;role&#x27;] == role]
+            group[role+&#x27;_cases&#x27;] = len(subset)
+            group[role+&#x27;_correct&#x27;] = sum(correct[c, r[&#x27;id&#x27;]] for r in subset)
+            group[role+&#x27;_valid_options&#x27;] = sum(valid[c, r[&#x27;id&#x27;]] for r in subset)
+            group[role+&#x27;_gains&#x27;] = sum(not correct[&#x27;original&#x27;, r[&#x27;id&#x27;]] and correct[c, r[&#x27;id&#x27;]] for r in subset)
+            group[role+&#x27;_losses&#x27;] = sum(correct[&#x27;original&#x27;, r[&#x27;id&#x27;]] and not correct[c, r[&#x27;id&#x27;]] for r in subset)
+            group[role+&#x27;_correct_margin_case_mean&#x27;] = sum(margins[c, r[&#x27;id&#x27;]] for r in subset)/len(subset)
+        for f in sorted({r[&#x27;family&#x27;] for r in rows}):
+            subset = [r for r in rows if r[&#x27;family&#x27;] == f]
+            group[&#x27;families&#x27;][f] = {&#x27;role&#x27;: subset[0][&#x27;role&#x27;], &#x27;cases&#x27;: len(subset),
+                &#x27;correct&#x27;: sum(correct[c, r[&#x27;id&#x27;]] for r in subset),
+                &#x27;both_orders_correct&#x27;: all(correct[c, r[&#x27;id&#x27;]] for r in subset)}
+        summary[&#x27;conditions&#x27;][c] = group
+    original = summary[&#x27;conditions&#x27;][&#x27;original&#x27;]
+    eligibility = {&#x27;original_coding_valid_options_at_least14&#x27;: original[&#x27;coding_valid_options&#x27;] &gt;= 14,
+        &#x27;original_retention_valid_options_at_least7&#x27;: original[&#x27;retention_valid_options&#x27;] &gt;= 7,
+        &#x27;original_coding_correct_at_least8&#x27;: original[&#x27;coding_correct&#x27;] &gt;= 8,
+        &#x27;original_retention_correct_at_least6&#x27;: original[&#x27;retention_correct&#x27;] &gt;= 6}
+    summary[&#x27;baseline_eligibility&#x27;] = eligibility
+    for sign in [&#x27;negative&#x27;, &#x27;positive&#x27;]:
+        c = &#x27;remove_&#x27;+sign; g = summary[&#x27;conditions&#x27;][c]
+        old = {p: all(correct[&#x27;original&#x27;, r[&#x27;id&#x27;]] for r in rs) for p, rs in pairs.items() if rs[0][&#x27;role&#x27;] == &#x27;coding&#x27;}
+        new = {p: all(correct[c, r[&#x27;id&#x27;]] for r in pairs[p]) for p in old}
+        gain_families = sorted({pairs[p][0][&#x27;family&#x27;] for p in old if not old[p] and new[p]})
+        clauses = {**eligibility, &#x27;preserve_all_original_correct_coding&#x27;: g[&#x27;coding_losses&#x27;] == 0,
+            &#x27;preserve_all_original_correct_retention&#x27;: g[&#x27;retention_losses&#x27;] == 0,
+            &#x27;coding_gains_at_least2&#x27;: g[&#x27;coding_gains&#x27;] &gt;= 2,
+            &#x27;both_order_program_gains_at_least2&#x27;: sum(not old[p] and new[p] for p in old) &gt;= 2,
+            &#x27;gain_families_at_least2&#x27;: len(gain_families) &gt;= 2,
+            &#x27;zero_both_order_program_losses&#x27;: not any(old[p] and not new[p] for p in old),
+            &#x27;beats_matched_random_by_at_least2&#x27;: g[&#x27;coding_correct&#x27;] &gt;= summary[&#x27;conditions&#x27;][&#x27;random_&#x27;+sign+&#x27;_count&#x27;][&#x27;coding_correct&#x27;]+2}
+        summary[&#x27;signed_policy_primary&#x27;][c] = {&#x27;clauses&#x27;: clauses, &#x27;passed&#x27;: all(clauses.values()), &#x27;gain_families&#x27;: gain_families}
+    return summary
 </pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>signed_positions_reporting</h2><p>Validate the fixed complete N46 reporting projection without model imports.</p><p><a href="../evaluation/signed_positions_reporting.py">Exact source file</a></p><p class="small">APIs: validate</p><p class="hash">SHA-256 db7eaf5c3fadc0e67366c3a7dd75de79111b898b2207ff0d692967c0608ed0cc</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Validate the fixed complete N46 reporting projection without model imports.&quot;&quot;&quot;
 import hashlib
 import json
@@ -2685,7 +3025,7 @@ def compare(original, changed, original_grade, changed_grade):
         &#x27;control_delta&#x27;: {key: changed[&#x27;control_nodes&#x27;][key] - original[&#x27;control_nodes&#x27;][key]
                           for key in CONTROL_NODES},
     }
-</pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>generation</h2><p>Native-EOS persistent policies with exact, conditional completed-cell carries. New carry, fresh-decision, native-EOS and context-interruption checks pass on random models. The N47 pretrained panel is running; no utility outcome is available. Callers must bind trusted completed-cell provenance and actual resource checks. Carries require the entire consumed history to match.</p><p><a href="../research/experiments/n47/generation.py">Exact source file</a></p><p class="small">APIs: eligible, generate</p><p class="hash">SHA-256 aead27ad4bb3452549091fbe0d9a789ba5611e1fccb21d07a07ad78445d75fd3</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Native-EOS persistent policies with exact, conditional completed-cell carries.&quot;&quot;&quot;
+</pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>generation</h2><p>Native-EOS persistent policies with exact, conditional completed-cell carries. New carry, fresh-decision, native-EOS and context-interruption checks pass on random models. The N47 pretrained panel ended resource incomplete; all finite effects are censored and no utility result is available. Callers must bind trusted completed-cell provenance and actual resource checks. Carries require the entire consumed history to match.</p><p><a href="../research/experiments/n47/generation.py">Exact source file</a></p><p class="small">APIs: eligible, generate</p><p class="hash">SHA-256 aead27ad4bb3452549091fbe0d9a789ba5611e1fccb21d07a07ad78445d75fd3</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Native-EOS persistent policies with exact, conditional completed-cell carries.&quot;&quot;&quot;
 import copy
 import torch
 from transformers.cache_utils import DynamicCache
