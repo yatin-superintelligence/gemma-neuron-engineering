@@ -1,0 +1,15 @@
+{
+  "scope": "Reviewed public reporting import closure,not the original scientific freeze.",
+  "sources": {
+    "evaluation/signed_positions_reporting.py": "db7eaf5c3fadc0e67366c3a7dd75de79111b898b2207ff0d692967c0608ed0cc",
+    "evaluation/signed_mask_reporting.py": "68902817578a8a2fdfd2d7a84ebc07720820f4f7392b5df3d2c5d723b97baf81",
+    "scripts/plot_n46_summary.py": "8b15e14d17f966c40f60171a8311329336bffe41f96fff1eb57ac0c1a84b5cdc"
+  },
+  "input_sha256": {
+    "aggregate": "efd2eb486057b73a2b4aa944271ba2933ab0fc7ea2b95b77c77e8cd9f56f600b",
+    "audit_receipt": "ab51531a16b66e1be065757fb93b1d18ae9c653a15fafc9ac161923e9847ef6b",
+    "reporting_plan": "1f1eb153a65df559e0c169d8768ca278f16a3bb70c0f7d4c3a8c53e7166e44e4"
+  },
+  "private_preoutput_reporting_freeze_sha256": "cf8b593713f84a9a9c79f3dd7315818bda6404bea330f1e143097c4bad3cecbd",
+  "no_independent_public_figure_rerender": true
+}

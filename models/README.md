@@ -287,3 +287,8 @@ N29 saves all five audited before-code native-state policies in `n29/recipe.json
 ## N45 signed native activation policies
 
 The [N45 recipe](n45/recipe.json) stores all five runtime conditions over the pinned original BF16 model and adds zero tensor bytes or parameters. Use the exact linked `signed_native_mask.py` context around a declared forward. The original prefix study is complete and audited, but every coding sample is the opening code fence. This validates scoped execution and recorded prefix effects; it establishes no coding gain or individual neuron meaning. Full-generation and independent clean-package replay remain unvalidated.
+
+
+## N46 fixed-quartile signed policies
+
+The [N46 recipe](n46/recipe.json) records all five unchanged runtime policies and their complete audited quartile-position validation. It adds zero tensor bytes. All 96 cases and 281 targets remain; 66 completed earlier points carry exactly. Later coding choices change under every intervention, with no correctness test in this measurement. Full-generation utility is a separate pending N47 study. No independent clean-package pretrained replay is claimed.

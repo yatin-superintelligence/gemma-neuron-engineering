@@ -1,12 +1,25 @@
 {
-  "status": "KernelWorkerStatus.RUNNING",
-  "status_checked_utc": "2026-11-01T09:58:41.525978+00:00",
+  "status": "complete_host_audited_closed",
   "source_checkpoint": "b84ac31dc8c44410a009bd6e094d8753b0a57c98",
   "private_notebook_and_dataset": true,
   "server_source_JSON_exact": true,
-  "outputs_accessed": false,
-  "actual_runtime_counters": null,
-  "scientific_outcome": "Pending complete terminal frozen audit",
-  "new_response_generation_planned": false,
+  "outputs_accessed": true,
+  "actual_runtime_counters": {
+    "activation_assignments": 1075,
+    "backward_calls": 0,
+    "calls": 23116,
+    "extra_FFN_evaluations": 0,
+    "input_token_exposures": 33447,
+    "manual_parameter_assignments": 0,
+    "new_generated_tokens": 0,
+    "optimizer_steps": 0
+  },
+  "collector_invocations": 1,
+  "frozen_audit_invocations": 1,
+  "scientific_cells_rerun": 0,
+  "scientific_outcome": "Later coding choices change under all4edits. This is not a correctness or useful-gain test.",
+  "notebook_seconds": 2150.745632972,
+  "duration_scope": "Notebook wall time,not charged GPU quota.",
+  "new_response_generation": false,
   "optimizer_steps": 0
 }

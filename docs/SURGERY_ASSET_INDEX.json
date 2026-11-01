@@ -216,6 +216,14 @@
     },
     {
       "category": "Evaluate",
+      "path": "evaluation/signed_positions_reporting.py",
+      "sha256": "db7eaf5c3fadc0e67366c3a7dd75de79111b898b2207ff0d692967c0608ed0cc",
+      "symbols": [
+        "validate"
+      ]
+    },
+    {
+      "category": "Evaluate",
       "path": "evaluation/signed_mask_reporting.py",
       "sha256": "68902817578a8a2fdfd2d7a84ebc07720820f4f7392b5df3d2c5d723b97baf81",
       "symbols": [
@@ -275,6 +283,15 @@
         "observe",
         "saved_outcome",
         "compare"
+      ]
+    },
+    {
+      "category": "Generate and resume",
+      "path": "research/experiments/n47/generation.py",
+      "sha256": "aead27ad4bb3452549091fbe0d9a789ba5611e1fccb21d07a07ad78445d75fd3",
+      "symbols": [
+        "eligible",
+        "generate"
       ]
     },
     {
@@ -666,6 +683,17 @@
         "conditions": 5
       },
       "sha256": "8d5f4d5e6cd7d78951750884ca97bdee20a8d4d289ce8c82e5eeca1b6e70e36a"
+    },
+    {
+      "path": "models/n46/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "BF16 text,original native weights",
+      "kind": "runtime_activation_policy",
+      "counts": {
+        "conditions": 5
+      },
+      "sha256": "53d38a2ccce477cb787d5fbe132dfae5d469933c0e6b15904357683ae8f6a6e8"
     }
   ],
   "tensor_assets": [

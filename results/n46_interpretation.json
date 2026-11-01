@@ -1,0 +1,32 @@
+{
+  "utc": "2026-11-01T10:48:51.662669+00:00",
+  "status": "complete_host_audited_closed",
+  "all96_cases_all5conditions_all281points": true,
+  "all21181_native_decisions_exact": true,
+  "fresh_points": 215,
+  "exact_carried_points": 66,
+  "coding_case_mean_choice_change_fractions": {
+    "original": 0.0,
+    "random_negative_count": 0.06770833333333333,
+    "random_positive_count": 0.041666666666666664,
+    "remove_negative": 0.046875,
+    "remove_positive": 0.08854166666666666
+  },
+  "retention_case_mean_choice_change_fractions": {
+    "original": 0.0,
+    "random_negative_count": 0.03125,
+    "random_positive_count": 0.010416666666666666,
+    "remove_negative": 0.0,
+    "remove_positive": 0.0625
+  },
+  "coding_case_mean_native_winner_probability": {
+    "original": 0.9574757345641652,
+    "random_negative_count": 0.9247739364918601,
+    "random_positive_count": 0.929563733051206,
+    "remove_negative": 0.9350264996755868,
+    "remove_positive": 0.8882450734300468
+  },
+  "scope": "Same96development original teacher histories,not fresh confirmation or free generation. Length quartiles are not guaranteed function-body milestones. All roles/families/conditions remain complete in frozen aggregate. Cardinality controls do not match energy;RMS shared scaling and native basis remain confounds.",
+  "interpretation": "Unlike the saturated early code-fence sample,the fixed later coding sample contains choice changes under all4edits. Negative and positive removal do not show a uniform family ordering or a useful-coding result. Native-winner probability is not correctness. No individual meaning,syntax-specific role,mediation or speed claim.",
+  "next": "Test full native-EOS persistent use of all4UNCHANGED sign/removal/random policies across ALL96original development cases. Carry original responses/grades and all exactly matching already measured decision cells;never rerun completed cells or gradeoldoutputs. No fittedsign/strength or effect-selectedcase."
+}

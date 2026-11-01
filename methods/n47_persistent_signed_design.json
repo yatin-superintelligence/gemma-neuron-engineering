@@ -1,0 +1,59 @@
+{
+  "experiment": "N47",
+  "question_id": "Q62",
+  "title": "Persistent signed final-MLP policies during complete native-EOS responses",
+  "motivation": "Completed N46fixed quartiles produce coding choice changes under all4policies,while teacher native-winner scores do not measure correctness. Test full own-history responses under ALLunchanged policies,without choosing a sign,case,rank,strength or site from effects.",
+  "recipient": "google/gemma-4-E2B-it@3e22461f65e89153144f8adb70e3b8c2cc9845a7 textBF16",
+  "cohort": {
+    "cases": 96,
+    "coding": 64,
+    "retention": 32,
+    "source": "ALLoriginalN41A cases,families,bindings,prompts and hidden host contracts unchanged",
+    "scope": "REUSED DEVELOPMENT utility,not fresh confirmation"
+  },
+  "conditions": [
+    "original",
+    "remove_negative",
+    "random_negative_count",
+    "remove_positive",
+    "random_positive_count"
+  ],
+  "original_carry": "All96original native-EOS predictions,decision/cachewitnesses and frozen grades carried byteexact. Never regenerate or rescore original.",
+  "operation": "Unchanged signed_native_mask at native finalMLP site34,currentlastposition,every NEWdecision. Literal0native post-gating h<0or h>0;strictsignedzerosneither;fixed random.Random4501/4502permutation prefixes matching actualnative signcount at that exact own-history decision. No energy/magnitude match,parameter update or fittedstrength/sign.",
+  "completed_cell_carry": "Union allN45prefix and N46quartile completed points. At every eligible point with ENTIREownconsumedgeneratedprefix identical to originalnativeprefix,perform ONLYunmodifiednative source/cache guard,then use exact previously measured edited decision and parentSHA;doNOTexecute its edited cell again. Same-input caches are already proven identical because site34followslastKVproducer14. After first differing emittedtoken is CONSUMED,oldnativehistory no longer matches and carries cease permanently;no reconvergence restart. Overlaps coalesce byteexact. Allother decisions are new free-generation policy calls on ownhistory. A carryisoldmodelmeasurement,notoracleanswer.",
+  "native_EOS": "New responses end only at nativeEOS1/106/50. NOresponse-token ceiling. Actual configuredcontext,memory,freecompute,storage and fixeddeadline interruptions remain censored/incomplete. No completed rerolls or automatic continuation.",
+  "guards": [
+    "frozen parent/source/input/tokenization exact",
+    "carry choice/logit/cache/step/source/audit hashes and entireownhistory exact",
+    "new signed-mask currentlastposition only,otherpositions byteexact,counts/digest recorded without fullactivationdump",
+    "native first-decision fullFP32logit/rawcache restoration after EVERYnew response",
+    "actualinitial/restored/terminalmetadata and zero parameter/gradient/optimizer state",
+    "durable intent BEFOREresponse,observedstate/counters BEFOREprepare/commit,alltokenwitnesses preserved"
+  ],
+  "accounting": "Eachnewresponse counts actualforwardattempts/exposures,newfreechoices,carriedchoices,sourceguardforwards,restorationforwards and activationassignments separately. Response length=newfreechoices+carriedchoices. No unknown runtime totals asserted in advance. Original96predictions are carries,notnewmodelcalls.",
+  "expected_records": {
+    "all_condition_predictions": 480,
+    "original_prediction_grade_carries": 96,
+    "new_edited_response_records": 384,
+    "potential_saved_point_union": 496,
+    "potential_edited_cell_sources": 1984
+  },
+  "grading": "Only after COMPLETEall384newresponses/allguards. Reuse unchanged N41host grader on NEW384outputs ONLY;original96grades carriedexact,neverrerunoldsource/scorer. Hosthiddenoracles/secrets neveruploaded or shown to model. Allformat/executablefailures retained.",
+  "primary": "Report every arm. For EACHsigned-removal policy independently,development utility lead requires preserve EVERYoriginal-correct coding case and EVERYoriginal-correct retention case,gain>=4coding cases spanning>=2families,and exceed its same-count random control by>=2correctcoding. Allclausesconjunctive,no pvalues or posthocwinningpolicy. Randomcontroloutcomes fullyretained. Completion/auditfailure invalidateswholepanel,not scientificnull.",
+  "secondary": "Allcondition coding/strictretention counts,gains/losses/preserved cases and all8codingfamilies,sourcevalidity/failuretypes,EOSlengths/nativeconsumedhistorycommonprefix/carrycounts. No individualmeaning,syntaxrole,mediation,hardware speed orfreshconfirmation claim.",
+  "no_training": true,
+  "optimizer_steps": 0,
+  "resources": {
+    "platform_seconds": 7200,
+    "notebook_seconds": 7000,
+    "worker_seconds": 6700,
+    "global_notebook_start_guard_seconds": 6600,
+    "fixed_deadline_guard_seconds": 120,
+    "reserved_GPU_hours": 4,
+    "free_reserve_GPU_hours": 2
+  },
+  "fixed_deadline_utc": "2026-11-01T13:24:39Z",
+  "budget_risk": "N41B352newresponses took5445notebookseconds;N47has384newresponses and different policies,so completion is uncertain. No speedextrapolation guarantee;realdeadline/resourceinterruptions staycensored.",
+  "grading_amendment": "n47_grading_carry_amendment.json",
+  "scope": "Prospective reused-development utility. No N47outcome has been accessed. All4policies retained;no fitted sign,rank,dose or case selection. Completion is uncertain."
+}

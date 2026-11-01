@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-01T11:09:59.791408+00:00",
+  "before_launch_and_all_N47_outputs": true,
+  "static_finding": "Version1validates an allowed record condition but does not bind it to the outer expected condition. Pythonbool/int equality also admits a boolean decisionargmax whenidsareints. No real N47output or firstauditfailureexists.",
+  "minimal_fix": "Version2requires expected_condition and strictdecisionargmaxtype. Outerloop supplies its actualfixedcondition. No grading,cohort,endpoint,numericaloperation or otherguard change.",
+  "original_auditor_and15refusal_gate_preserved": true,
+  "inverse4substitutions_exact": true,
+  "new_model_scorer_calls": 0
+}

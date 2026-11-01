@@ -507,12 +507,19 @@
       "outcome": "All96cases/all5conditions/281points pass frozen audit. All192coding samples are the opening Python code fence;no coding choices change under any edit. No utility or individual meaning. First networktimeout and server-log allowlist refusal preserved;no scientific rerun.",
       "duration_scope": "Notebook wall time,not charged GPU quota. Complete frozen scientific audit passed once.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N46_v1_quartile_signed_native_MLP_two_GPU",
+      "recorded_script_seconds": 2150.745632972,
+      "outcome": "All96cases/all5conditions/281targets pass frozen audit;all21181source decisions exact,215fresh/66exactcarries. Latercodingchoicechanges do not establish utility.",
+      "duration_scope": "Notebook wall time,not charged GPU quota.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N46_v1_quartile_signed_native_MLP_two_GPU",
-      "launched_utc": "2026-11-01T09:56:05.764369+00:00",
+      "run": "N47_v1_persistent_signed_native_EOS_two_GPU",
+      "launched_utc": "2026-11-01T11:17:51.475706+00:00",
       "status": "RUNNING_PRIVATE"
     }
   ]

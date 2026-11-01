@@ -20,8 +20,8 @@ SOURCES = {
     'Edit weights': ['interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
     'Edit connections': ['interpretability/memory_connection.py'],
     'Reconstruct': ['reproduce/model_edits.py'],
-    'Evaluate': ['evaluation/signed_mask_reporting.py', 'evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
-    'Generate and resume': ['interpretability/native_eos_generation.py'],
+    'Evaluate': ['evaluation/signed_positions_reporting.py', 'evaluation/signed_mask_reporting.py', 'evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
+    'Generate and resume': ['research/experiments/n47/generation.py', 'interpretability/native_eos_generation.py'],
     'Record evidence': ['evaluation/durable_zip.py', 'interpretability/durable_measurement_journal_v2.py'],
 }
 
@@ -40,6 +40,8 @@ def toolkit(dest):
                 title += ' Current version 2 fixes the saved residual alias. Random-model paths pass; the N44 pretrained panel is resource incomplete and all effects are censored. No useful coding gain is established.'
             if name == 'interpretability/signed_native_mask.py':
                 title += ' Random-model paths pass. Pretrained evidence is reported separately for N45. Random controls match cardinality only, not magnitude or energy.'
+            if name == 'research/experiments/n47/generation.py':
+                title += ' New carry, fresh-decision, native-EOS and context-interruption checks pass on random models. The N47 pretrained panel is running; no utility outcome is available. Callers must bind trusted completed-cell provenance and actual resource checks. Carries require the entire consumed history to match.'
             if name == 'interpretability/durable_measurement_journal_v2.py':
                 title += ' Current T01 version 2. Host-only literal validation; no pretrained integration or retroactive N43 certification. See the durable journal guide for lifecycle, recovery limits and the preserved version 1 final-type defect.'
                 guide = '<p><a href="MEASUREMENT_JOURNAL.html">Journal lifecycle and evidence limits</a></p>'

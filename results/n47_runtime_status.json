@@ -1,0 +1,14 @@
+{
+  "status": "KernelWorkerStatus.RUNNING",
+  "status_checked_utc": "2026-11-01T11:19:25.181906+00:00",
+  "source_checkpoint": "0c4c76dae7af064ccaacf582665681c7c003f3f7",
+  "private_notebook_and_dataset": true,
+  "server_source_JSON_exact": true,
+  "only_one_new_job_verified": true,
+  "platform_normalized_identity_pinned_separately": true,
+  "outputs_accessed": false,
+  "actual_runtime_counters": null,
+  "scientific_outcome": "Pending complete terminal frozen audit and unique-candidate grading",
+  "new_native_EOS_response_records_planned": 384,
+  "optimizer_steps_allowed": 0
+}

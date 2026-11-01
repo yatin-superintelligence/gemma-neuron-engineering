@@ -4693,6 +4693,76 @@
       "event": "N45_actual6panel_figure_rendered_once_allviewed_and_zero_tensor_runtime_recipe_recorded",
       "experiment": "N45",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 646,
+      "utc": "2026-11-01T10:25:51.299482+00:00",
+      "event": "N46_preoutput_reporting_1newpositive16provenance_refusals_pass_closed_no_scientific_outputs_accessed",
+      "experiment": "N46",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 647,
+      "utc": "2026-11-01T11:15:50.222329+00:00",
+      "event": "N46_terminal_complete_singlecollection_originalfrozenaudit_PASS_all96all5_215new66carries",
+      "experiment": "N46",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 648,
+      "utc": "2026-11-01T11:15:50.222329+00:00",
+      "event": "N46_actual6panel_figure_rendered_once_allviewed_no_utility_claim",
+      "experiment": "N46",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 649,
+      "utc": "2026-11-01T11:15:50.222329+00:00",
+      "event": "N47_all5condition_nativeEOS_developmentutility_protocol_registered_beforeimplementation",
+      "experiment": "N47",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 650,
+      "utc": "2026-11-01T11:15:50.222329+00:00",
+      "event": "N47_newcarry_generation_and_strictaudit_hostgates_PASS_firstenvironmentfailure_preserved",
+      "experiment": "N47",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 651,
+      "utc": "2026-11-01T11:15:50.222329+00:00",
+      "event": "N47_all671actualfiles_frozen_no_modeloutput_oracle_payload_excluded",
+      "experiment": "N47",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 652,
+      "utc": "2026-11-01T11:20:37.701423+00:00",
+      "event": "N47_single_private_version1_push_title_normalization_warning_preserved",
+      "experiment": "N47",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 653,
+      "utc": "2026-11-01T11:20:37.701423+00:00",
+      "event": "N47_actual_slug_serverJSON_private_dataset_exact_RUNNING_only_one_new_job",
+      "experiment": "N47",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 654,
+      "utc": "2026-11-01T11:20:37.701423+00:00",
+      "event": "N47_transport_only_single_slug_amendment_frozen_beforeoutputs_original671unchanged",
+      "experiment": "N47",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 655,
+      "utc": "2026-11-01T11:45:16.185443+00:00",
+      "event": "N47_resource_metadata_erratum_3claimed_boundarychecks_were_not_executed_original671preserved",
+      "experiment": "N47",
+      "optimizer_steps": 0
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "scope": "Closed new persistent carry-generation software checks,not pretrained results.",
+  "preserved_first_failure": "Required deterministic environment was absent;refusal before model construction or any forward. Original source preserved;version2sets the environment.",
+  "new_random_model_forwards": 38,
+  "input_exposures": 54,
+  "toy_reference_choices": 24,
+  "new_emitted_fixture_choices": 6,
+  "literal_head_zero_initializations": 2,
+  "new_audit_v1_positives": 3,
+  "new_audit_v1_refusals": 15,
+  "new_audit_v2_positives": 1,
+  "new_audit_v2_targeted_refusals": 2,
+  "old_numerical_and_audit_fixtures_rerun": false,
+  "package_sources": 30,
+  "package_inputs": 10,
+  "isolated_package_model_tokenizer_calls": 0,
+  "pretrained_calls": 0,
+  "optimizer_steps": 0
+}

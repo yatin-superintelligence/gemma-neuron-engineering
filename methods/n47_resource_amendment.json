@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-01T11:08:17.641853+00:00",
+  "before_launch_and_all_N47_pretrained_outputs": true,
+  "reason": "N41B352newresponses took5445notebookseconds. Allow the 384record persistent panel the existing four-GPU-hour reservation rather than an avoidably shorter5400second guard. Fresh officialquota19.24hours and all67ownjobs terminal;completion stilluncertain.",
+  "caps": {
+    "platform_seconds": 7200,
+    "notebook_seconds": 7000,
+    "worker_seconds": 6700,
+    "global_notebook_start_guard_seconds": 6600,
+    "fixed_deadline_guard_seconds": 120,
+    "reserved_GPU_hours": 4,
+    "free_reserve_GPU_hours": 2
+  },
+  "inverse_only2resource_literals_exact": true,
+  "engine_numerical_operation_cohort_acceptance_unchanged": true,
+  "new_model_or_fixture_calls": 0,
+  "fixed_deadline_utc": "2026-11-01T13:24:39Z"
+}

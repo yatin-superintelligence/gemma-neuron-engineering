@@ -988,7 +988,7 @@
     {
       "id": "Q61",
       "experiment": "N46: fixed quartile signed-contribution measurement",
-      "status": "private_version1_running_no_outputs_accessed",
+      "status": "complete_host_audited_closed",
       "question": "Does the fixed final-MLP sign-removal pattern persist at response-length quartiles beyond the shared initial code fence?",
       "question_provenance": "The complete N45 early coding sample is saturated and all192choices remain unchanged. Subsequent static annotation identifies the common code fence;the N46quartile protocol froze before that annotation. No case,site,dose,rank or sign is selected from effects.",
       "parents": [
@@ -997,13 +997,31 @@
         "Q57"
       ],
       "method": "Retain all96original N41cases. Replay every21181native decision with exact full-FP32-logit,argmax and raw-cache witnesses. At fixed quarter/half/three-quarter positions,carry66overlapping N45points exactly and measure215newpoints under all5unchanged conditions. Fresh nonalias cache branches,identity and native restoration for everynewedit,actualcase/terminalstate and durablecounters are mandatory. No new responses or grades.",
-      "result": "New FP32/BF16 cached-branch/carry checks pass128random-model forwards/512inputexposures with16explicitly counted toy reference argmax decisions and0pretrained calls. Lossless archive roundtrip and10refusals pass. New audit literals pass2positives/16refusals. A copied intent-context label is corrected only in worker_v2,with exact inverse substitution and no numerical change. All494actual scientific/input/inherited files freeze;37payloadsources/10inputs. No N46pretrained output exists or has been accessed. One private version1 job is now RUNNING from checkpoint b84ac31dc8c44410a009bd6e094d8753b0a57c98. Exact server notebook/private metadata/one private ready dataset and downloaded payload hash match. Fresh quota19.84freeGPUhours,all66ownprojectjobs terminal before launch. No N46outputs accessed.",
+      "result": "All96cases/all5conditions/281targets pass original frozen audit;all21181native source decisions exact.215freshpoints/66exactcarries. Actual23116forwards33447exposures1075activationassignments,0newtokens/parameterassignments/updates. Coding case-mean choice changes4.6875percent negative/6.7708randomnegative/8.8542positive/4.1667randompositive. Singlecollection/audit;actual6panelfigure once,allviewed.",
       "interpretation": "Development position dependence of post-gating contribution removals. Quartiles are not guaranteed semantic code-body milestones. Random controls match cardinality,not energy;native sign is basis dependent. No coding gain,individual meaning,syntax-specific role,mediation or speed claim.",
-      "next_question": "Execute one bounded private measurement after fresh quota and own-job inventory. Audit the entire panel once before interpreting or choosing a new direction.",
-      "direction_decision": "Use the existing sign masks and matched controls without a new dose/site sweep. Carry every completed overlap and record all source replay work. Package outputs losslessly for one-shot transport;preserve all prior failures and criteria."
+      "next_question": "Q62tests all four unchanged policies during complete native-EOS responses on all96reused development cases;carry originals and every eligible completed decision,grade only newunique candidates.",
+      "direction_decision": "Use the existing sign masks and matched controls without a new dose/site sweep. Carry every completed overlap and record all source replay work. Package outputs losslessly for one-shot transport;preserve all prior failures and criteria.",
+      "historical_preoutput_result": "New FP32/BF16 cached-branch/carry checks pass128random-model forwards/512inputexposures with16explicitly counted toy reference argmax decisions and0pretrained calls. Lossless archive roundtrip and10refusals pass. New audit literals pass2positives/16refusals. A copied intent-context label is corrected only in worker_v2,with exact inverse substitution and no numerical change. All494actual scientific/input/inherited files freeze;37payloadsources/10inputs. No N46pretrained output exists or has been accessed. One private version1 job is now RUNNING from checkpoint b84ac31dc8c44410a009bd6e094d8753b0a57c98. Exact server notebook/private metadata/one private ready dataset and downloaded payload hash match. Fresh quota19.84freeGPUhours,all66ownprojectjobs terminal before launch. No N46outputs accessed."
+    },
+    {
+      "id": "Q62",
+      "experiment": "N47: persistent signed final-MLP utility",
+      "status": "private_version1_running_no_outputs_accessed",
+      "question": "Do the unchanged final-MLP sign-removal policies improve complete own-history coding responses relative to their matched-cardinality random controls?",
+      "question_provenance": "Direct continued-science U25 and complete N46current-choice effects,which do not measure correctness. All signs/controls/cohorts retained.",
+      "parents": [
+        "Q61",
+        "Q60",
+        "Q55"
+      ],
+      "method": "All96original cases/all5conditions;96original prediction/gradecarries and384edited native-EOS response records. Carry every eligible already measured cell under exact wholeconsumedhistory;allother choices new. Actual state/restoration/counters and one frozen complete audit.",
+      "result": "Prelaunch671actualsourcefiles frozen. New38randomforwards54exposures24toyreferences6newfixturechoices;hostenvironmentfailure preserved before0modelcalls. New3auditpositives15refusals plus1newstrictpositive2refusals. Package30sources10inputs,isolatedimport0model/tokenizer. One private version1 job RUNNING from checkpoint0c4c76d. Kaggle normalized its title to actualslug digital-surgery-private-n47-signed-positions;server notebookJSON/private metadata/single ready private dataset match. Original671files unchanged;separate two-file transport identity amendment changes only collector slug. No duplicate push or scientificsourcechange.",
+      "interpretation": "Reused development utility,not fresh confirmation. Cardinality controls are not energy matched;no individual meaning or speed claim.",
+      "next_question": "Complete one private all-condition panel and original frozen audit;retain every failure.",
+      "direction_decision": "Test every unchanged sign/removal/randompolicy through nativeEOS without effect-selecting signs,cases,rank,strength or layer."
     }
   ],
-  "active_question_id": "Q61",
+  "active_question_id": "Q62",
   "next_question_id": null,
-  "utc": "2026-11-01T09:54:44.398024+00:00"
+  "utc": "2026-11-01T11:15:22.425817+00:00"
 }

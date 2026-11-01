@@ -1,0 +1,10 @@
+{
+  "reporting_only_not_original_primary": true,
+  "new_provenance_positives": 1,
+  "new_provenance_refusals": 16,
+  "unchanged_N45_numeric_null_and_zero_layout_gates_carried_without_rerun": true,
+  "new_synthetic_title_preview_viewed_hashed_deleted": 1,
+  "actual_figure_render_invocations": 1,
+  "all6_actual_panels_viewed": true,
+  "model_tokenizer_executor_scorer_calls": 0
+}

@@ -2106,6 +2106,65 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>signed_positions_reporting</h2><p>Validate the fixed complete N46 reporting projection without model imports.</p><p><a href="../evaluation/signed_positions_reporting.py">Exact source file</a></p><p class="small">APIs: validate</p><p class="hash">SHA-256 db7eaf5c3fadc0e67366c3a7dd75de79111b898b2207ff0d692967c0608ed0cc</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Validate the fixed complete N46 reporting projection without model imports.&quot;&quot;&quot;
+import hashlib
+import json
+import math
+
+CONDITIONS = (&#x27;original&#x27;, &#x27;remove_negative&#x27;, &#x27;random_negative_count&#x27;, &#x27;remove_positive&#x27;, &#x27;random_positive_count&#x27;)
+METRICS = {&#x27;argmax_changed&#x27;, &#x27;native_margin&#x27;, &#x27;native_winner_probability&#x27;, &#x27;delta_L2&#x27;, &#x27;delta_maxabs&#x27;, &#x27;mask_count&#x27;, &#x27;removed_h_energy_fraction&#x27;}
+COUNTERS = {&#x27;calls&#x27;: 23116, &#x27;input_token_exposures&#x27;: 33447, &#x27;activation_assignments&#x27;: 1075,
+            &#x27;extra_FFN_evaluations&#x27;: 0, &#x27;new_generated_tokens&#x27;: 0, &#x27;manual_parameter_assignments&#x27;: 0,
+            &#x27;backward_calls&#x27;: 0, &#x27;optimizer_steps&#x27;: 0}
+
+
+def validate(data, receipt, plan):
+    if (receipt.get(&#x27;status&#x27;) != &#x27;complete_pass_all_frozen_guards&#x27;
+            or receipt.get(&#x27;all96_cases_all5conditions&#x27;) is not True
+            or receipt.get(&#x27;public_aggregate_sha256&#x27;) != hashlib.sha256(data).hexdigest()):
+        raise ValueError(&#x27;Complete frozen audit and exact aggregate hash required&#x27;)
+    a = json.loads(data)
+    if (a.get(&#x27;experiment&#x27;) != &#x27;N46&#x27; or a.get(&#x27;status&#x27;) != &#x27;complete_host_audited&#x27;
+            or type(a.get(&#x27;cases&#x27;)) is not int or a[&#x27;cases&#x27;] != 96
+            or type(a.get(&#x27;sampled_decisions&#x27;)) is not int or a[&#x27;sampled_decisions&#x27;] != 281
+            or a[&#x27;conditions&#x27;] != list(CONDITIONS)
+            or set(a[&#x27;strata&#x27;]) != set(plan[&#x27;strata&#x27;])):
+        raise ValueError(&#x27;Every original condition, case and stratum required&#x27;)
+    for key, expected in [(&#x27;fresh_points&#x27;, 215), (&#x27;carried_points&#x27;, 66)]:
+        for witness in [a, receipt]:
+            if type(witness.get(key)) is not int or witness[key] != expected:
+                raise ValueError(&#x27;Exact new-versus-carried provenance required&#x27;)
+    if (type(a.get(&#x27;native_replay_decisions&#x27;)) is not int or a[&#x27;native_replay_decisions&#x27;] != 21181
+            or receipt.get(&#x27;all21181_native_source_decisions_exact&#x27;) is not True
+            or a.get(&#x27;N45_early_aggregate_sha256&#x27;) != plan[&#x27;N45_early_aggregate_sha256&#x27;]):
+        raise ValueError(&#x27;Complete native lineage and exact early-panel parent required&#x27;)
+    for counters in [a[&#x27;actual_counters&#x27;], receipt[&#x27;actual_counters&#x27;]]:
+        if set(counters) != set(COUNTERS) or any(type(counters[k]) is not int or counters[k] != v for k, v in COUNTERS.items()):
+            raise ValueError(&#x27;Exact actual work counts required&#x27;)
+    for name, expected in plan[&#x27;strata&#x27;].items():
+        group = a[&#x27;strata&#x27;][name]
+        if any(type(group[k]) is not int or group[k] != expected[k] for k in [&#x27;cases&#x27;, &#x27;sampled_decisions&#x27;]) or set(group[&#x27;conditions&#x27;]) != set(CONDITIONS):
+            raise ValueError(&#x27;Fixed cohort and all conditions required&#x27;)
+        for condition in CONDITIONS:
+            metrics = group[&#x27;conditions&#x27;][condition]
+            if set(metrics) != METRICS: raise ValueError(&#x27;Every frozen metric required&#x27;)
+            for key, value in metrics.items():
+                if set(value) != {&#x27;case_mean&#x27;, &#x27;defined_cases&#x27;, &#x27;undefined_cases&#x27;}: raise ValueError(&#x27;Exact mean and null provenance required&#x27;)
+                for field in [&#x27;defined_cases&#x27;, &#x27;undefined_cases&#x27;]:
+                    if type(value[field]) is not int or value[field] &lt; 0: raise ValueError(&#x27;Strict case counts required&#x27;)
+                if value[&#x27;defined_cases&#x27;]+value[&#x27;undefined_cases&#x27;] != group[&#x27;cases&#x27;]: raise ValueError(&#x27;Every case accounted for&#x27;)
+                mean = value[&#x27;case_mean&#x27;]
+                if value[&#x27;defined_cases&#x27;] == 0:
+                    if mean is not None: raise ValueError(&#x27;Undefined mean must stay null&#x27;)
+                elif type(mean) not in (float, int) or not math.isfinite(mean): raise ValueError(&#x27;Finite audited mean required&#x27;)
+                if key != &#x27;removed_h_energy_fraction&#x27; and value[&#x27;undefined_cases&#x27;]: raise ValueError(&#x27;Unexpected missing finite metric&#x27;)
+                if mean is not None:
+                    if key != &#x27;native_margin&#x27; and mean &lt; 0: raise ValueError(&#x27;Negative nonnegative metric&#x27;)
+                    if key in [&#x27;argmax_changed&#x27;, &#x27;native_winner_probability&#x27;, &#x27;removed_h_energy_fraction&#x27;] and mean &gt; 1: raise ValueError(&#x27;Fraction outside0..1&#x27;)
+                    if key == &#x27;mask_count&#x27; and mean &gt; 12288: raise ValueError(&#x27;Mask count exceeds native width&#x27;)
+                    if condition == &#x27;original&#x27; and key in [&#x27;argmax_changed&#x27;, &#x27;delta_L2&#x27;, &#x27;delta_maxabs&#x27;, &#x27;mask_count&#x27;, &#x27;removed_h_energy_fraction&#x27;] and mean != 0:
+                        raise ValueError(&#x27;Original cannot differ from itself&#x27;)
+    return a
 </pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>signed_mask_reporting</h2><p>Validate the fixed complete N45 reporting projection without model imports.</p><p><a href="../evaluation/signed_mask_reporting.py">Exact source file</a></p><p class="small">APIs: validate</p><p class="hash">SHA-256 68902817578a8a2fdfd2d7a84ebc07720820f4f7392b5df3d2c5d723b97baf81</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Validate the fixed complete N45 reporting projection without model imports.&quot;&quot;&quot;
 import hashlib
 import json
@@ -2626,6 +2685,112 @@ def compare(original, changed, original_grade, changed_grade):
         &#x27;control_delta&#x27;: {key: changed[&#x27;control_nodes&#x27;][key] - original[&#x27;control_nodes&#x27;][key]
                           for key in CONTROL_NODES},
     }
+</pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>generation</h2><p>Native-EOS persistent policies with exact, conditional completed-cell carries. New carry, fresh-decision, native-EOS and context-interruption checks pass on random models. The N47 pretrained panel is running; no utility outcome is available. Callers must bind trusted completed-cell provenance and actual resource checks. Carries require the entire consumed history to match.</p><p><a href="../research/experiments/n47/generation.py">Exact source file</a></p><p class="small">APIs: eligible, generate</p><p class="hash">SHA-256 aead27ad4bb3452549091fbe0d9a789ba5611e1fccb21d07a07ad78445d75fd3</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Native-EOS persistent policies with exact, conditional completed-cell carries.&quot;&quot;&quot;
+import copy
+import torch
+from transformers.cache_utils import DynamicCache
+from interpretability.signed_native_mask import signed_mask
+from research.experiments.n37.continuation import decision
+
+EDITS = (&#x27;remove_negative&#x27;, &#x27;random_negative_count&#x27;, &#x27;remove_positive&#x27;, &#x27;random_positive_count&#x27;)
+
+
+def eligible(ids, reference, points):
+    step = len(ids)
+    return str(step) in points and ids == reference[&#x27;generated_ids&#x27;][:step]
+
+
+def generate(model, tokenizer, encoded, eos, mode, reference, points, *, resource_guard, on_decision, on_scope, on_source_guard):
+    if mode not in EDITS or not callable(resource_guard) or not callable(on_decision) or not callable(on_scope) or not callable(on_source_guard):
+        raise ValueError(&#x27;Fixed policy and actual resource/stream callbacks required&#x27;)
+    if any(p.requires_grad or p.grad is not None for p in model.parameters()) or any(m.training for m in model.modules()):
+        raise ValueError(&#x27;Frozen evaluation model required&#x27;)
+    config = model.config.text_config
+    maximum = config.max_position_embeddings
+    if type(maximum) is not int or maximum &lt; 1 or not eos or any(type(v) is not int or not 0 &lt;= v &lt; config.vocab_size for v in eos):
+        raise ValueError(&#x27;Native context/EOS boundaries required&#x27;)
+    n = int(encoded[&#x27;input_ids&#x27;].numel())
+    if encoded[&#x27;input_ids&#x27;].ndim != 2 or encoded[&#x27;input_ids&#x27;].shape[0] != 1 or n &lt; 1:
+        raise ValueError(&#x27;One actual encoded prompt required&#x27;)
+    versions = {k: p._version for k, p in model.named_parameters()}
+    slots = config.num_hidden_layers-config.num_kv_shared_layers
+    dtype = str(next(model.parameters()).dtype)
+    cache = DynamicCache(config=config)
+    ids, trace = [], []
+    first = None
+    attempted = exposures = fresh = carried = assignments = source_attempts = 0
+    native_prefix = True
+    interruption = None
+    termination = &#x27;interrupted&#x27;
+    try:
+        with torch.no_grad():
+            while True:
+                interruption = resource_guard()
+                if interruption is not None:
+                    if interruption.get(&#x27;reason&#x27;) not in {&#x27;wall_time_interrupt&#x27;, &#x27;memory_reservation_interrupt&#x27;, &#x27;output_storage_interrupt&#x27;, &#x27;external_interrupt&#x27;} or &#x27;evidence&#x27; not in interruption:
+                        raise ValueError(&#x27;Observed actual resource witness required&#x27;)
+                    break
+                step = len(ids)
+                if n+step &gt; maximum:
+                    interruption = {&#x27;reason&#x27;: &#x27;context_exhausted&#x27;, &#x27;evidence&#x27;: {&#x27;configured_context&#x27;: maximum, &#x27;next_required_input_length&#x27;: n+step}}
+                    break
+                args = encoded if step == 0 else {&#x27;input_ids&#x27;: torch.tensor([[ids[-1]]], device=encoded[&#x27;input_ids&#x27;].device)}
+                carry = native_prefix and eligible(ids, reference, points)
+                scope = None
+                attempted += 1
+                exposures += n if step == 0 else 1
+                try:
+                    if carry:
+                        source_attempts += 1
+                        on_source_guard()
+                        output = model(**args, past_key_values=cache, use_cache=True, logits_to_keep=1)
+                        native, witness = decision(output, step, slots, dtype)
+                        if native != reference[&#x27;decision_trace&#x27;][step]: raise ValueError(&#x27;Carry native source history/logits/cache changed&#x27;)
+                        source = points[str(step)]
+                        item = copy.deepcopy(source[&#x27;edits&#x27;][mode][&#x27;decision&#x27;])
+                        if type(item[&#x27;step&#x27;]) is not int or item[&#x27;step&#x27;] != step or item[&#x27;cache_sha256&#x27;] != native[&#x27;cache_sha256&#x27;]:
+                            raise ValueError(&#x27;Exact completed decision and same-input cache required&#x27;)
+                        event = {&#x27;kind&#x27;: &#x27;carry&#x27;, &#x27;decision&#x27;: item, &#x27;source&#x27;: copy.deepcopy(source[&#x27;provenance&#x27;][mode])}
+                    else:
+                        try:
+                            with signed_mask(model, mode) as scope:
+                                output = model(**args, past_key_values=cache, use_cache=True, logits_to_keep=1)
+                                item, witness = decision(output, step, slots, dtype)
+                        finally:
+                            if scope is not None:
+                                assignments += scope[&#x27;activation_assignments&#x27;]
+                                on_scope(scope[&#x27;activation_assignments&#x27;])
+                        if len(scope[&#x27;frames&#x27;]) != 1 or scope[&#x27;activation_assignments&#x27;] != 1: raise ValueError(&#x27;One actual current-position mask per new call required&#x27;)
+                        frame = scope[&#x27;frames&#x27;][0]
+                        compact = {k: frame[k] for k in [&#x27;native_h_sha256&#x27;, &#x27;mask_sha256&#x27;, &#x27;negative_count&#x27;, &#x27;positive_count&#x27;, &#x27;width&#x27;, &#x27;other_positions_byte_exact&#x27;]}
+                        compact[&#x27;mask_count&#x27;] = len(frame[&#x27;indices&#x27;])
+                        event = {&#x27;kind&#x27;: &#x27;fresh&#x27;, &#x27;decision&#x27;: item, &#x27;mask&#x27;: compact}
+                    cache = output.past_key_values
+                    if step == 0:
+                        if witness != reference[&#x27;first_cache&#x27;]: raise ValueError(&#x27;Actual same-input first cache changed&#x27;)
+                        first = witness
+                    if native_prefix and step &lt; len(reference[&#x27;decision_trace&#x27;]) and item[&#x27;cache_sha256&#x27;] != reference[&#x27;decision_trace&#x27;][step][&#x27;cache_sha256&#x27;]:
+                        raise ValueError(&#x27;Same consumed history cache changed&#x27;)
+                except torch.OutOfMemoryError:
+                    interruption = {&#x27;reason&#x27;: &#x27;memory_exhausted&#x27;, &#x27;evidence&#x27;: {&#x27;during_forward_or_witness&#x27;: True}}
+                    break
+                ids.append(item[&#x27;argmax&#x27;]); trace.append(event)
+                if carry: carried += 1
+                else: fresh += 1
+                on_decision(copy.deepcopy(event))
+                native_prefix = native_prefix and step &lt; len(reference[&#x27;generated_ids&#x27;]) and item[&#x27;argmax&#x27;] == reference[&#x27;generated_ids&#x27;][step]
+                if item[&#x27;argmax&#x27;] in eos:
+                    termination = &#x27;eos&#x27;; interruption = None; break
+    finally:
+        if versions != {k: p._version for k, p in model.named_parameters()} or any(p.grad is not None or p.requires_grad for p in model.parameters()):
+            raise ValueError(&#x27;Parameter state changed during inference&#x27;)
+    return {&#x27;generated_ids&#x27;: ids, &#x27;text&#x27;: tokenizer.decode(ids, skip_special_tokens=True), &#x27;decision_trace&#x27;: trace,
+        &#x27;first_cache&#x27;: first, &#x27;generated_tokens&#x27;: len(ids), &#x27;new_generated_tokens&#x27;: fresh, &#x27;carried_generated_tokens&#x27;: carried,
+        &#x27;attempted_forward_calls&#x27;: attempted, &#x27;input_token_exposures&#x27;: exposures, &#x27;activation_assignments&#x27;: assignments,
+        &#x27;carry_native_source_guard_forwards&#x27;: source_attempts, &#x27;fresh_policy_forwards&#x27;: attempted-source_attempts,
+        &#x27;complete&#x27;: termination == &#x27;eos&#x27;, &#x27;termination&#x27;: termination, &#x27;interruption&#x27;: interruption,
+        &#x27;new_response_token_ceiling&#x27;: None, &#x27;configured_context&#x27;: maximum, &#x27;input_tokens&#x27;: n,
+        &#x27;optimizer_steps&#x27;: 0, &#x27;backward_calls&#x27;: 0, &#x27;parameter_assignments&#x27;: 0}
 </pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>native_eos_generation</h2><p>Greedy native-EOS generation with streamed evidence and resumable history.
 
 There is no response-token ceiling. The caller supplies actual resource checks;

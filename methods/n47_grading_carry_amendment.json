@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-01T10:56:38.288494+00:00",
+  "phase": "Before grading implementation or N47outputs. Generation implementation has begun,with0modelcalls.",
+  "amendment": "Carry every existing frozen N41grade when the same case and complete candidate text match exactly. Conflicting existing grades for identical same-case text refuse. Grade only a new unique complete candidate text once;reuse that new grade across identical same-case new conditions. Original96grades always carry. Allconditionrecords/endpoints unchanged,no grade reselection.",
+  "reason": "Avoid rescoring identical closed candidates while evaluating new persistent policies.",
+  "original_protocol_sha256": "4fe98f124b1ec628d31e71aa8aaddf214fa4baab585872ad323192b2dd8b01d1",
+  "model_or_scorer_calls": 0
+}
