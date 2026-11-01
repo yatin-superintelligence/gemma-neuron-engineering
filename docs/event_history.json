@@ -4455,6 +4455,13 @@
       "event": "T01_minimal_v2_final_guard_2positives10refusals_and_isolated_import_pass_closed",
       "experiment": "T01",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 612,
+      "utc": "2026-11-01T03:49:57.186720+00:00",
+      "event": "private_manuscript_N42_posthoc_and_N43_censored_status_6pages_2563judged_2904allwords_13refs_visual_pass",
+      "experiment": "Private manuscript",
+      "optimizer_steps": 0
     }
   ]
 }
