@@ -4420,6 +4420,13 @@
       "event": "private_terminal_collection_once_resource_interruption_preserved_no_audit_or_scientific_result",
       "experiment": "N43",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 607,
+      "utc": "2026-11-01T03:18:51.761878+00:00",
+      "event": "static_recovery_review_closed_missing_original_final_witnesses_no_new_launch_or_science",
+      "experiment": "N43",
+      "optimizer_steps": 0
     }
   ]
 }

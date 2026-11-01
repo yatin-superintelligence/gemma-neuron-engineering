@@ -1,0 +1,45 @@
+{
+  "utc": "2026-11-01T03:18:10.629618+00:00",
+  "status": "closed_original_v1_completion_not_recoverable_without_changing_frozen_acceptance",
+  "scope": "Static source and terminal-receipt feasibility only. No partial finite-effect aggregation, model execution, fixture or scientific auditor.",
+  "findings": [
+    {
+      "id": "R01",
+      "evidence": "worker.py saves final_state.json and parameter_version_deltas.json only after all owned cases, sampled points, total counters and activation/parameter counts pass. Its resource exception handler writes version increments and interruption counters, but no final snapshot.",
+      "implication": "Those original final snapshots do not exist in either worker output. The exception counters are not substitutes for the actual final parameter/buffer/hook/config/RNG snapshot."
+    },
+    {
+      "id": "R02",
+      "evidence": "audit.py requires a complete top-level result, complete worker flags, exact native full trajectories and fixed rows, all counters, parameter_version_deltas.json and check_final(initial, observed final, deltas).",
+      "implication": "The frozen auditor must remain uninvoked on v1. Manufacturing the final snapshot from initial state and version increments would substitute an expected state for an observed state."
+    },
+    {
+      "id": "R03",
+      "evidence": "VersionLedger.assert_restored is called within physical contexts and before emitting completed rows; emitted rows have per-context restoration and diagonal witnesses. one_point performs a final prior-cache check only after all 27 rows.",
+      "implication": "Per-row assertions remain preserved evidence. They do not supply the missing end-of-worker artifacts or the final prior-cache check for an interrupted sampled point. No row is deleted, reclassified as a valid complete panel or regenerated."
+    },
+    {
+      "id": "R04",
+      "evidence": "The source worker starts in a newly created output directory and has no resume/carry path. Native-history rebuilding and interrupted-context work would introduce distinct replay and intervention costs.",
+      "implication": "A fresh worker and merged counters cannot be presented as the original completed execution. Any future execution would require new prospective provenance and accounting, and cannot waive missing original witnesses or repeat completed measurement cells."
+    }
+  ],
+  "decision": "Leave original N43 v1 resource incomplete and all finite effects censored. No criterion-preserving method exists to promote the available v1 receipts to the original complete-panel audit. Do not launch a recovery run, fabricate snapshots, recalculate missing final state on a fresh replica, weaken the auditor, or rerun finished cells.",
+  "not_a_mechanistic_or_utility_result": true,
+  "original_N41_grades_and_failed_primary_unchanged": true,
+  "original_source_and_outputs_unchanged": true,
+  "next_useful_work": "Design a generic durable measurement-commit journal for future surgery tools: save actual completion/restoration witnesses before committing a measurement and preserve a resource-stop state. It must not retrofit or certify N43, change frozen sources, run a model, regenerate replies or select an effect. Any implementation gets new host-only positive/refusal checks specific to that new software; closed N43 fixtures stay closed.",
+  "calls": {
+    "model": 0,
+    "tokenizer": 0,
+    "executor": 0,
+    "scorer": 0,
+    "fixture": 0,
+    "backward": 0,
+    "optimizer": 0,
+    "frozen_auditor": 0,
+    "collector": 0
+  },
+  "missing_required_original_artifacts": 4,
+  "private_review_sha256": "b92b1b8e53c9e6a6fc6ef41cbeabf37b647a3985cbea9b063b68d8f3eda45c54"
+}

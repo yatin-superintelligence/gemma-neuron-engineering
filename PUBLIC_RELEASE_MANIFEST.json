@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-01T03:14:05.513594+00:00",
+  "generated_utc": "2026-11-01T03:19:38.207266+00:00",
   "project": "Digital Surgery",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,8 +21,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "38952cb3b6372628dd11f98a52ec7d2aa7c7fbb248042a610e0f3fc473c12610",
-      "bytes": 16177
+      "sha256": "78495bba45ba29a151d843f5a3105177332ac1c48cf554e786f74d1a7fdc7548",
+      "bytes": 16739
     },
     {
       "path": "docs/ACTIVATION_VIEWER.html",
@@ -31,8 +31,8 @@
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "7054baa2468e20d706932403114831af17fffa2335e014aa992c15a1c04fbd32",
-      "bytes": 326404
+      "sha256": "143cc5bb94d3df0f02b3f40bf2aa783e6c7dc7fbc43f11f25eb797463a4a3b69",
+      "bytes": 328984
     },
     {
       "path": "docs/MODEL_REGISTRY.html",
@@ -41,8 +41,8 @@
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "29589ae1325ba29d768e366878e664f12f7c8f851b8552073a0ac7aba68a6bb3",
-      "bytes": 259908
+      "sha256": "9fb5671bc8e012cf7436de11ed1dbe819c5af593e088d32a35e9be21745c983d",
+      "bytes": 260617
     },
     {
       "path": "docs/SURGERY_ASSET_INDEX.json",
@@ -66,8 +66,8 @@
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "4125bc0efdf64063e94c6b3d6446afac77ea19a867737c48f6ed0e97bffb54a8",
-      "bytes": 139247
+      "sha256": "cd948aae07b5e58d8fb6e91af9d322001ea1df37685de6a597c5e07633631009",
+      "bytes": 139492
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -286,8 +286,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "a45246d439e21301ab94d522cd475210c360e59f1b6d2f827498993d442c2a40",
-      "bytes": 129846
+      "sha256": "bb796e920c06b2cefb50aea6c4294bcc50745c2daf95050b6546dadf9237aab6",
+      "bytes": 130385
     },
     {
       "path": "docs/storage_policy.json",
@@ -2335,6 +2335,11 @@
       "bytes": 5924
     },
     {
+      "path": "results/n43_recovery_feasibility.json",
+      "sha256": "2af0f4acbd5330425397f0499147b8f2c6609dbafdd64d33ebda0c2b7e7bd4ca",
+      "bytes": 3685
+    },
+    {
       "path": "results/n43_reporting_preparation.json",
       "sha256": "da6af4301b0d31c7fb0d3390df13983465f68806d17dc12acf6b0dbe8435fffc",
       "bytes": 2039
@@ -2366,7 +2371,7 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "f458dd30bf8d0e15192e190e9c69cdce0f4e1bfb744ff7814cc8caa612c7cef4",
+      "sha256": "5e5b49a7bf726bc7c958b6a165ade8eea37941d45a034275f6afd483f857d33e",
       "bytes": 601
     },
     {
