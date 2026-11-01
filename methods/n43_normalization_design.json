@@ -1,0 +1,144 @@
+{
+  "utc": "2026-11-01T00:39:47.154820+00:00",
+  "experiment": "N43",
+  "question_id": "Q57",
+  "status": "scientific_protocol_frozen_before_implementation_or_N43_model_measurements",
+  "question": "How do removed raw-column and native normalization-state paths combine at fixed late sites under identical consumed inputs?",
+  "registration": "Development mechanism measurement after N41/N42 outcomes. No fresh utility result,coordinate search or replacement primary.",
+  "source_review_sha256": "7dccced8460a16bf2086131d294f0c55b838811d2262b26105815771000608b1",
+  "recipient": "google/gemma-4-E2B-it@3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "representation": "text-only BF16,exact original weights;no donor model or trained adapter",
+  "pinned_RMSNorm": {
+    "transformers": "5.8.0",
+    "module_sha256": "64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933",
+    "classes": {
+      "Gemma4RMSNorm": {
+        "start_line": 192,
+        "end_line": 210,
+        "source_sha256": "bda3d4e437499d1a7d69b65d0093cc56f1e69b85f8c9a2195150910a886d66d9"
+      },
+      "Gemma4TextMLP": {
+        "start_line": 1051,
+        "end_line": 1067,
+        "source_sha256": "ecf7ed49acce2a7085b00a1c1e42f06c3ec78e7e6554bef776d1697161c20cac"
+      },
+      "Gemma4TextDecoderLayer": {
+        "start_line": 1352,
+        "end_line": 1438,
+        "source_sha256": "8fc76fc6b72c8c24a9e7d54993cd742697fe9415342366b5ee143778a2708e20"
+      }
+    },
+    "operator_order": "raw.float(); mean_squared=raw.pow(2).mean(-1,keepdim=True)+eps; q=torch.pow(mean_squared,-0.5); (raw*q)*weight.float(); cast back to raw dtype. Direct gamma,not 1+gamma.",
+    "model_config": {
+      "hidden_size": 1536,
+      "layers": 35,
+      "last_KV_producer": 14,
+      "enable_moe_block": false,
+      "rms_norm_eps": 1e-06
+    },
+    "post_FFN_pre_residual_confirmed": true
+  },
+  "cohort": {
+    "cases": 96,
+    "coding": 64,
+    "retention": 32,
+    "all_families_and_bindings_retained": true,
+    "groups": [
+      "selected32",
+      "randomA32",
+      "randomB32"
+    ],
+    "layers": [
+      24,
+      25,
+      26,
+      27,
+      29,
+      30,
+      32,
+      33,
+      34
+    ],
+    "layer_local_groups": "Filter each unchanged 32-group by each listed layer. All groups have the same9/2/2/1/7/4/2/2/3 members by layer. Exactly one physical layer is edited at a time. This is distinct from N41 global all-position utility.",
+    "positions": "For each original native reply length T,sorted unique {min(T-1,T//4),min(T-1,T//2),min(T-1,3*T//4)}. Zero-based decision indices. Keep short retention replies;no replacement or effect-selected positions.",
+    "S_native_decisions": 21181,
+    "K_sampled_decisions": 281,
+    "sampled_current_input_exposures": 1067
+  },
+  "native_lineage": "Replay ALL21181saved original decisions exactly,including original argmax/full-FP32-logit/whole-raw-cache hashes and EOS. Saved original IDs are teacher measurement inputs only;zero free generation,zero new tokens,no reply regeneration/regrading. Each sampled decision branches from a byte-exact clone of its native pre-decision cache. Native cache stays unchanged by probes.",
+  "controls": [
+    "Capture native raw post-MLP input r0 and FP32 native RMS reciprocal q0 at all nine sites. Recompute q with the pinned native operations and require exact reconstruction of the actual native norm output. Gamma remains native and unchanged.",
+    "At every site,one self reconstruction r0/q0 reproduces native logits and cache exactly;reuse this identity across all three groups.",
+    "For each layer-local group,physical factor0 source captures r1/q1 under the identical native upstream input. Restore exact signed original columns and versions;one native decision after EACH physical context must reproduce native logits/cache.",
+    "With original weights restored,patch only the current-position post-FFN norm output using (r_a.float()*q_b)*gamma.float(),then native dtype cast. Retain all four cells00,10,01,11. Cell00 is exact native;cell11 must equal actual physical-zero full logits/cache. Off-diagonal10uses removed raw/native RMS;01uses native raw/removed RMS.",
+    "All four cells and actual physical source have byte-exact whole cache under the fixed consumed input. Other norm positions are byte-exact to their unpatched output. All hooks removed and only declared down-projection parameters increment versions;all other parameters,buffers,RNG/config/gradflags unchanged,p.gradNone."
+  ],
+  "no_fitting": "Only actual native or prescribed factor-zero raw states and exactly recomputed native reciprocal-RMS intermediates. No fitted scalar/strength/vector,alignment,bridge,coefficient search,new weights or outcome lookup. Hybrid activation replacements are counted separately from parameter assignments and optimizer updates.",
+  "metrics": {
+    "native_contrast": "Original native argmax a and best other native logit b;argmax returns first tied maximum,without relying on topk tie ordering. Both are measurement-only,never generation inputs.",
+    "per_cell": [
+      "full FP32 logit hash",
+      "whole-cache hash",
+      "argmax",
+      "native a-minus-b margin",
+      "native winner probability from FP32 softmax"
+    ],
+    "finite_effects": "Relative to00,report full-vocabulary FP64-accumulated L2 and max-absolute logit shifts for10,01,11;raw/normalization delta cosine is null if either has zero norm;report interaction vector11-10-01+00 norm and margin contrast. No additive mediation fraction or semantic attribution.",
+    "aggregates": "All groups,all nine sites,all coding/retention families and all four cells retained. Arithmetic average within sampled decisions per case,then equal-case means;dependent families/bindings are not independent trials. No p-values,winner selection,new threshold or useful-gain claim.",
+    "decision": "Exact diagonal/cache/scope/state/counter failures stop interpretation and remain engineering failures. Complete finite contrasts are descriptive mechanism measurements;neither source of a larger numerical shift establishes a useful role. Any later model intervention requires a new prospective question."
+  },
+  "execution": {
+    "replicas": 2,
+    "ownership": "original case owner=indexmod2,one full BF16model per distinctT4,sequential load/shared tmpcache,common start barrier",
+    "new_generated_tokens": 0,
+    "native_response_token_ceiling": null,
+    "platform_seconds": 7200,
+    "notebook_seconds": 7000,
+    "worker_seconds": 6700,
+    "global_resource_guard_seconds_from_notebook_start": 6600,
+    "output_bytes_max": 67108864,
+    "conservative_GPU_hour_reservation": 4,
+    "minimum_free_GPU_hour_reserve": 2,
+    "fixed_deadline_utc": "2026-11-01T13:24:39Z",
+    "checkpoint": "Append each completed site/group row and native progress. Actual interruption is incomplete/censored,no scientific null or completed-panel rerun. No partial host retrieval."
+  },
+  "expected_counters": {
+    "native_replay_calls": 21181,
+    "sampled_decisions": 281,
+    "forward_calls": 61645,
+    "input_token_exposures": "sum(native_prompt_length+T-1)+144*sampled_current_input_exposures",
+    "manual_parameter_assignments": 15174,
+    "physical_contexts_and_native_restorations": 7587,
+    "activation_assignments": 25290,
+    "optimizer_steps": 0,
+    "backward_calls": 0,
+    "per_owner": {
+      "0": {
+        "native_replay_calls": 9899,
+        "sampled_decisions": 140,
+        "sampled_current_input_exposures": 566,
+        "forward_calls": 30059,
+        "manual_parameter_assignments": 7560,
+        "physical_contexts_and_restorations": 3780,
+        "activation_assignments": 12600
+      },
+      "1": {
+        "native_replay_calls": 11282,
+        "sampled_decisions": 141,
+        "sampled_current_input_exposures": 501,
+        "forward_calls": 31586,
+        "manual_parameter_assignments": 7614,
+        "physical_contexts_and_restorations": 3807,
+        "activation_assignments": 12690
+      }
+    }
+  },
+  "host_prerequisite": {
+    "new_random_Gemma_checks": "Pinned35layer/sharedKV topology,FP32/BF16,all nine layer sites and all three fixed-size fixture groups. Prefill lengths1and6 plus a cached decision after20tokens crossing slidingwindow16. All four-cell diagonal/physical/cache/scope/state/counter and exception-cleanup gates. No pretrained load.",
+    "literal_RMS": "Nonuniform signed gamma,epsilon,zero/signed-zero and all four source combinations;refuse malformed dtype/shape/binding/source/packed storage or grad-enabled state.",
+    "metrics": "Independent literal finite-contrast cases before model output access.",
+    "closed_fixtures": "Do not rerun earlier N40/N41 fixtures or any closed new panel."
+  },
+  "optimizer_steps": 0,
+  "edition": "Prospective layer-local measurement. Parent tasks, native histories, notebook and raw factors remain private. Current runtime status is separate."
+}

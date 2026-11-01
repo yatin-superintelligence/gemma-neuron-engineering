@@ -15,11 +15,11 @@ def page(title, body, script=''):
 
 SOURCES = {
     'Observe': ['interpretability/native_cache_branch.py', 'interpretability/native_capture.py', 'interpretability/native_timeline.py', 'interpretability/probe.py', 'interpretability/response_regions.py', 'interpretability/python_token_regions.py', 'scripts/export_native_trace.py'],
-    'Patch activations': ['interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
+    'Patch activations': ['interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
     'Edit weights': ['interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
     'Edit connections': ['interpretability/memory_connection.py'],
     'Reconstruct': ['reproduce/model_edits.py'],
-    'Evaluate': ['evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
+    'Evaluate': ['evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
     'Generate and resume': ['interpretability/native_eos_generation.py'],
 }
 

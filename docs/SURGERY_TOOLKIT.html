@@ -587,6 +587,212 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>native_rms_factor_v2</h2><p>Exact native-state controls for one current-position Gemma 4 RMSNorm.</p><p><a href="../interpretability/native_rms_factor_v2.py">Exact source file</a></p><p class="small">APIs: verify_class_source, tensor_sha, check_norm, check_binding, NativeNormState, compose, capture_states, validate_source, norm_cell</p><p class="hash">SHA-256 8347f754831c63e0ee653791afcbc39d50037e1103026ab8d66a6d6fd11cf8b3</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Exact native-state controls for one current-position Gemma 4 RMSNorm.&quot;&quot;&quot;
+
+from contextlib import contextmanager
+from dataclasses import dataclass
+from functools import lru_cache
+import hashlib
+import inspect
+
+import torch
+from transformers.models.gemma4.modeling_gemma4 import Gemma4RMSNorm
+
+
+NATIVE_CLASS_SHA256 = &#x27;bda3d4e437499d1a7d69b65d0093cc56f1e69b85f8c9a2195150910a886d66d9&#x27;
+
+_NATIVE_FORWARD = Gemma4RMSNorm.forward
+_NATIVE_NORM = Gemma4RMSNorm._norm
+
+
+@lru_cache(maxsize=1)
+def verify_class_source():
+    if hashlib.sha256(inspect.getsource(Gemma4RMSNorm).rstrip().encode()).hexdigest() != NATIVE_CLASS_SHA256:
+        raise ValueError(&#x27;Pinned RMSNorm operator order changed&#x27;)
+    return True
+
+
+
+def tensor_sha(value):
+    raw = value.detach().contiguous().reshape(-1).view(torch.uint8).cpu().numpy().tobytes()
+    return hashlib.sha256(raw).hexdigest()
+
+
+def check_norm(norm):
+    if type(norm) is not Gemma4RMSNorm:
+        raise ValueError(&#x27;Exact pinned native Gemma4RMSNorm required&#x27;)
+    if (getattr(norm.forward, &#x27;__func__&#x27;, None) is not _NATIVE_FORWARD
+            or getattr(norm._norm, &#x27;__func__&#x27;, None) is not _NATIVE_NORM):
+        raise ValueError(&#x27;Native RMSNorm callable changed&#x27;)
+    verify_class_source()
+    if not norm.with_scale or not isinstance(norm.weight, torch.nn.Parameter):
+        raise ValueError(&#x27;Native multiplicative scale required&#x27;)
+    if norm.weight.requires_grad or norm.weight.grad is not None:
+        raise ValueError(&#x27;Measurement is forward-only&#x27;)
+    if norm.weight.ndim != 1 or norm.weight.dtype not in (torch.float32, torch.bfloat16):
+        raise ValueError(&#x27;Dense FP32/BF16 native scale required&#x27;)
+    if hasattr(norm.weight, &#x27;quant_state&#x27;) or not norm.weight.is_contiguous():
+        raise ValueError(&#x27;Packed or noncontiguous scale refused&#x27;)
+    if not isinstance(norm.eps, (int, float)) or not 0 &lt; norm.eps &lt; 1:
+        raise ValueError(&#x27;Positive native epsilon required&#x27;)
+
+
+def check_binding(binding):
+    if (not isinstance(binding, tuple) or len(binding) != 4
+            or not isinstance(binding[0], str) or not binding[0]
+            or type(binding[1]) is not int or binding[1] &lt; 0
+            or any(not isinstance(v, str) or len(v) != 64 for v in binding[2:])):
+        raise ValueError(&#x27;Explicit case/step/native-cache/input binding required&#x27;)
+
+
+@dataclass(frozen=True)
+class NativeNormState:
+    binding: tuple
+    layer: int
+    kind: str
+    input_shape: tuple
+    raw: torch.Tensor
+    reciprocal_RMS: torch.Tensor
+    raw_sha256: str
+    reciprocal_RMS_sha256: str
+    output_sha256: str
+    gamma_sha256: str
+    mlp_input_sha256: str
+    epsilon: float
+
+
+def compose(norm, raw, reciprocal):
+    &quot;&quot;&quot;Use recorded native factors, the unchanged gamma and native operation order.&quot;&quot;&quot;
+    check_norm(norm)
+    if raw.dtype not in (torch.float32, torch.bfloat16) or raw.requires_grad:
+        raise ValueError(&#x27;Detached FP32/BF16 raw native state required&#x27;)
+    if raw.ndim != 3 or raw.shape[:2] != (1, 1) or raw.shape[-1] != norm.weight.numel():
+        raise ValueError(&#x27;One explicit current-position branch required&#x27;)
+    if reciprocal.dtype != torch.float32 or reciprocal.shape != (1, 1, 1) or reciprocal.requires_grad:
+        raise ValueError(&#x27;Detached FP32 native reciprocal RMS required&#x27;)
+    if raw.device != norm.weight.device or reciprocal.device != raw.device:
+        raise ValueError(&#x27;Native factor devices must agree&#x27;)
+    if (not torch.isfinite(raw).all() or not torch.isfinite(reciprocal).all()
+            or not torch.all(reciprocal &gt; 0)):
+        raise ValueError(&#x27;Finite raw state and positive native reciprocal RMS required&#x27;)
+    with torch.no_grad():
+        return ((raw.float() * reciprocal) * norm.weight.float()).type_as(raw)
+
+
+@contextmanager
+def capture_states(model, layers, binding, kind):
+    &quot;&quot;&quot;Observe native operations; repeated RMS expression must reproduce output bytes.&quot;&quot;&quot;
+    check_binding(binding)
+    if kind not in (&#x27;native&#x27;, &#x27;physical_zero&#x27;) or len(set(layers)) != len(layers) or not layers:
+        raise ValueError(&#x27;Unique explicit sites and native source kind required&#x27;)
+    states, inputs, handles = {}, {}, []
+    successful = False
+    try:
+        for layer in layers:
+            if type(layer) is not int or not 24 &lt;= layer &lt;= 34:
+                raise ValueError(&#x27;Declared late native layer required&#x27;)
+            block = model.model.language_model.layers[layer]
+            norm = block.post_feedforward_layernorm
+            check_norm(norm)
+            if block.enable_moe_block:
+                raise ValueError(&#x27;Dense native branch only&#x27;)
+
+            def mlp_input(module, args, layer=layer):
+                if layer in inputs or not args or args[0].requires_grad:
+                    raise ValueError(&#x27;One detached native MLP input required&#x27;)
+                inputs[layer] = tensor_sha(args[0])
+
+            def observed(module, args, output, layer=layer):
+                if layer in states or layer not in inputs:
+                    raise ValueError(&#x27;One aligned norm output required&#x27;)
+                source = args[0]
+                if source.ndim != 3 or source.shape[0] != 1 or source.requires_grad:
+                    raise ValueError(&#x27;One detached batch with explicit position required&#x27;)
+                raw = source[:, -1:, :].detach().clone()
+                with torch.no_grad():
+                    reciprocal = torch.pow(raw.float().pow(2).mean(-1, keepdim=True) + module.eps, -0.5)
+                reconstructed = compose(module, raw, reciprocal)
+                actual = output[:, -1:, :]
+                if tensor_sha(reconstructed) != tensor_sha(actual):
+                    raise ValueError(&#x27;Native RMS expression does not reconstruct actual output exactly&#x27;)
+                states[layer] = NativeNormState(binding, layer, kind, tuple(source.shape), raw,
+                    reciprocal.detach().clone(), tensor_sha(raw), tensor_sha(reciprocal), tensor_sha(actual),
+                    tensor_sha(module.weight), inputs[layer], float(module.eps))
+
+            handles.append(block.mlp.register_forward_pre_hook(mlp_input))
+            handles.append(norm.register_forward_hook(observed))
+        yield states
+        successful = True
+    finally:
+        for handle in reversed(handles):
+            handle.remove()
+        if successful and set(states) != set(layers):
+            raise ValueError(&#x27;Missing or duplicated native source capture&#x27;)
+
+
+def validate_source(norm, state, binding, layer):
+    check_binding(binding)
+    check_norm(norm)
+    if not isinstance(state, NativeNormState) or state.binding != binding or state.layer != layer:
+        raise ValueError(&#x27;Native-state lineage mismatch&#x27;)
+    if state.epsilon != norm.eps or state.gamma_sha256 != tensor_sha(norm.weight):
+        raise ValueError(&#x27;Native normalization parameters changed&#x27;)
+    if tensor_sha(state.raw) != state.raw_sha256 or tensor_sha(state.reciprocal_RMS) != state.reciprocal_RMS_sha256:
+        raise ValueError(&#x27;Captured native factors changed&#x27;)
+    reconstructed = compose(norm, state.raw, state.reciprocal_RMS)
+    if tensor_sha(reconstructed) != state.output_sha256:
+        raise ValueError(&#x27;Source diagonal no longer reconstructs native output&#x27;)
+
+
+@contextmanager
+def norm_cell(model, layer, binding, native, removed, raw_bit, RMS_bit):
+    &quot;&quot;&quot;Patch one current output with a declared pair of native source factors.&quot;&quot;&quot;
+    if type(raw_bit) is not int or type(RMS_bit) is not int or raw_bit not in (0, 1) or RMS_bit not in (0, 1):
+        raise ValueError(&#x27;Exactly four prescribed native-state cells required&#x27;)
+    norm = model.model.language_model.layers[layer].post_feedforward_layernorm
+    validate_source(norm, native, binding, layer)
+    if native.kind != &#x27;native&#x27;:
+        raise ValueError(&#x27;Actual original native source required&#x27;)
+    if removed is None:
+        if raw_bit or RMS_bit:
+            raise ValueError(&#x27;Physical factor-zero source required&#x27;)
+        removed = native
+    else:
+        validate_source(norm, removed, binding, layer)
+        if removed.kind != &#x27;physical_zero&#x27; or removed.input_shape != native.input_shape:
+            raise ValueError(&#x27;Exact physical source scope required&#x27;)
+        if removed.mlp_input_sha256 != native.mlp_input_sha256:
+            raise ValueError(&#x27;Physical source has different upstream MLP input&#x27;)
+    sources = (native, removed)
+    replacement = compose(norm, sources[raw_bit].raw, sources[RMS_bit].reciprocal_RMS)
+    receipt = {&#x27;calls&#x27;: 0, &#x27;activation_assignments&#x27;: 0, &#x27;other_positions_exact&#x27;: True}
+
+    def patch(module, args, output):
+        source = args[0]
+        if (tuple(source.shape) != native.input_shape
+                or tensor_sha(source[:, -1:, :]) != native.raw_sha256
+                or tensor_sha(output[:, -1:, :]) != native.output_sha256):
+            raise ValueError(&#x27;Hybrid recipient differs from original native context&#x27;)
+        if receipt[&#x27;calls&#x27;]:
+            raise ValueError(&#x27;One current-position replacement per context required&#x27;)
+        result = output.clone()
+        with torch.no_grad():
+            result[:, -1:, :].copy_(replacement)
+        if tensor_sha(result[:, :-1, :]) != tensor_sha(output[:, :-1, :]):
+            raise ValueError(&#x27;Noncurrent norm positions changed&#x27;)
+        receipt[&#x27;calls&#x27;] += 1
+        receipt[&#x27;activation_assignments&#x27;] += 1
+        return result
+
+    handle = norm.register_forward_hook(patch)
+    successful = False
+    try:
+        yield receipt
+        successful = True
+    finally:
+        handle.remove()
+        if successful and receipt[&#x27;calls&#x27;] != 1:
+            raise ValueError(&#x27;Hybrid context was not used exactly once&#x27;)
 </pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>selector_site</h2><p>Actual donor swaps at an MLP position or a shared attention read boundary.</p><p><a href="../interpretability/selector_site.py">Exact source file</a></p><p class="small">APIs: selector_site, capture_selector</p><p class="hash">SHA-256 5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Actual donor swaps at an MLP position or a shared attention read boundary.&quot;&quot;&quot;
 from contextlib import contextmanager
 import torch
@@ -1686,6 +1892,37 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>native_factorial_metrics</h2><p>Finite native-state contrasts without fitted coefficients or causal fractions.</p><p><a href="../evaluation/native_factorial_metrics.py">Exact source file</a></p><p class="small">APIs: contrast, effects</p><p class="hash">SHA-256 7ed50b3f64785f228e662978b566188717c89b7399d0bd42e7b603a37b3f3b3d</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Finite native-state contrasts without fitted coefficients or causal fractions.&quot;&quot;&quot;
+
+import torch
+
+
+def contrast(logits, original, original_winner, original_other):
+    if logits.ndim != 1 or logits.shape != original.shape or not torch.isfinite(logits).all():
+        raise ValueError(&#x27;Aligned finite full-vocabulary logits required&#x27;)
+    if original_winner == original_other:
+        raise ValueError(&#x27;Distinct native contrast tokens required&#x27;)
+    value, base = logits.float(), original.float()
+    delta = value.double() - base.double()
+    return {&#x27;argmax&#x27;: int(value.argmax()),
+        &#x27;native_margin&#x27;: float(value[original_winner].double() - value[original_other].double()),
+        &#x27;native_winner_probability&#x27;: float(value.softmax(-1)[original_winner]),
+        &#x27;delta_L2&#x27;: float(delta.square().sum().sqrt()), &#x27;delta_max_abs&#x27;: float(delta.abs().max())}
+
+
+def effects(cells, winner, other):
+    if set(cells) != {&#x27;00&#x27;, &#x27;10&#x27;, &#x27;01&#x27;, &#x27;11&#x27;}:
+        raise ValueError(&#x27;All four prescribed native-state cells required&#x27;)
+    base = cells[&#x27;00&#x27;]
+    summary = {key: contrast(value, base, winner, other) for key, value in cells.items()}
+    raw = cells[&#x27;10&#x27;].double() - base.double()
+    norm = cells[&#x27;01&#x27;].double() - base.double()
+    joint = cells[&#x27;11&#x27;].double() - base.double()
+    raw_norm, norm_norm = raw.square().sum().sqrt(), norm.square().sum().sqrt()
+    interaction = joint - raw - norm
+    return {&#x27;cells&#x27;: summary, &#x27;interaction_L2&#x27;: float(interaction.square().sum().sqrt()),
+        &#x27;interaction_margin&#x27;: float(interaction[winner] - interaction[other]),
+        &#x27;raw_normalization_cosine&#x27;: None if not raw_norm or not norm_norm else float((raw * norm).sum() / (raw_norm * norm_norm))}
 </pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>paired_generation_metrics</h2><p>Account for every paired generation from caller-supplied labels and counts.
 
 No model, tokenizer, grader or data lookup is performed. Exact count arithmetic

@@ -1,0 +1,55 @@
+{
+  "utc": "2026-11-01T00:39:47.154820+00:00",
+  "status": "bounded_primary_source_and_pinned_code_review_before_N43_protocol_and_implementation",
+  "pinned_implementation": {
+    "transformers": "5.8.0",
+    "module_sha256": "64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933",
+    "classes": {
+      "Gemma4RMSNorm": {
+        "start_line": 192,
+        "end_line": 210,
+        "source_sha256": "bda3d4e437499d1a7d69b65d0093cc56f1e69b85f8c9a2195150910a886d66d9"
+      },
+      "Gemma4TextMLP": {
+        "start_line": 1051,
+        "end_line": 1067,
+        "source_sha256": "ecf7ed49acce2a7085b00a1c1e42f06c3ec78e7e6554bef776d1697161c20cac"
+      },
+      "Gemma4TextDecoderLayer": {
+        "start_line": 1352,
+        "end_line": 1438,
+        "source_sha256": "8fc76fc6b72c8c24a9e7d54993cd742697fe9415342366b5ee143778a2708e20"
+      }
+    },
+    "operator_order": "raw.float(); mean_squared=raw.pow(2).mean(-1,keepdim=True)+eps; q=torch.pow(mean_squared,-0.5); (raw*q)*weight.float(); cast back to raw dtype. Direct gamma,not 1+gamma.",
+    "model_config": {
+      "hidden_size": 1536,
+      "layers": 35,
+      "last_KV_producer": 14,
+      "enable_moe_block": false,
+      "rms_norm_eps": 1e-06
+    },
+    "post_FFN_pre_residual_confirmed": true
+  },
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/1910.07467",
+      "reviewed": "Sections3-4.1,especially equation4 and scaling identity.",
+      "implication": "RMS normalization and its shared rescaling property are established. Retain epsilon and native operator order;do not call this a new method."
+    },
+    {
+      "url": "https://aclanthology.org/2026.blackboxnlp-1.66.pdf",
+      "reviewed": "Abstract,Section3.1 corrected patch-site paragraph,and Section4.2 with Table4. Not a replication of the clinical study.",
+      "implication": "Gemma-family post-MLP normalization can absorb positive whole-vector scaling. This is a direct prior for site/normalization controls. Removing selected columns also changes direction;do not equate it to uniform scaling or copy their best factors."
+    },
+    {
+      "url": "https://transformer-circuits.pub/2025/attribution-graphs/methods.html",
+      "reviewed": "Introduction item4 and The Local Replacement Model paragraphs on frozen normalization and faithfulness.",
+      "implication": "Freezing actual normalization denominators is existing mechanistic practice. Their learned transcoders/error adjustments are not allowed or used. Matching source outputs does not establish identical mechanisms."
+    }
+  ],
+  "design_resolution": "Use one site at a time under exactly the same native input at that site. Joint all-layer source-state recombination could mix upstream paths and is not the local factorization. Keep every one of the nine layers present in all three fixed groups,without selecting a winning site.",
+  "scope": "A native-state control assay,not an explanation of N41 regressions,utility confirmation or individual meaning. No task text,answers or raw private states were sent to external sources.",
+  "model_forwards": 0,
+  "optimizer_steps": 0
+}

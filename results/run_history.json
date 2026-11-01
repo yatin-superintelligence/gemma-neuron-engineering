@@ -489,5 +489,11 @@
       "optimizer_steps": 0
     }
   ],
-  "active_runs": []
+  "active_runs": [
+    {
+      "run": "N43_v1_native_RMS_factorial_two_GPU",
+      "launched_utc": "2026-11-01T01:09:33.578579+00:00",
+      "status": "RUNNING"
+    }
+  ]
 }

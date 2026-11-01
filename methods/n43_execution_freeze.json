@@ -1,0 +1,14 @@
+{
+  "utc": "2026-11-01T01:08:22.534801+00:00",
+  "before_launch_and_all_N43_pretrained_outputs": true,
+  "analysis_plan_sha256": "773e8af9f27c525d6173a252adb046cce1101516f633b7c0b42c78067445a985",
+  "protocol_sha256": "add6eed82a37e289a173587e98573b7f04581e7917ce5b055672d7c8b3606b0f",
+  "auditor_sha256": "bcefbb7baa89e5c1660085c1dc7179550f3e847bdfecf8de43ccf024b69ff954",
+  "notebook_sha256": "1e7f6cb11ff2c9d2a322a6c14458aa99cb598e5efe0c2b3984f274ee5e31a612",
+  "payload_sha256": "218bced226a77f9cf0bf7909b303484677c113e1698cc8d3e492088e361d02c5",
+  "optimizer_steps": 0,
+  "actual_frozen_files": 220,
+  "inherited_N41_B_files": 161,
+  "inherited_N41_A_files": 78,
+  "raw_sources_and_parents_private": true
+}

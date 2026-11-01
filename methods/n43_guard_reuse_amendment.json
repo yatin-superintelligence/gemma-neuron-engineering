@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-01T00:50:16.158380+00:00",
+  "status": "engineering_guard_only_amendment_before_new_integration_gate_or_pretrained_execution",
+  "rationale": "Inspecting and parsing the entire pinned class source in every norm guard is unnecessary repeated CPU work. Source and actual runtime callables can be checked once and by identity without changing tensor operations.",
+  "repair": "Cache the pinned class-source hash verification once. Check both actual bound native forward and _norm function identities on every call. All weight/shape/dtype/epsilon/factor/scope/lineage guards remain. Assayv3 changes only the versioned helper import relative to scalar-cache repaired assayv2.",
+  "original_helper_sha256": "1aec04bafb2754b9d5094d13d6fd23676b954594bda11372c3ba3cd3acac4802",
+  "new_helper_sha256": "8347f754831c63e0ee653791afcbc39d50037e1103026ab8d66a6d6fd11cf8b3",
+  "original_helper_inverse_substitution_exact": true,
+  "closed_full_random_fixture": "runs/n43/host/version2/result.json",
+  "closed_full_random_fixture_not_rerun": true,
+  "new_gate": "Both dtypes,one cached20-token context,all four cells plus physical/native restoration and new callable-tamper refusals. No repeat of completed162site/group matrix or literal metrics.",
+  "scientific_protocol_sha256": "add6eed82a37e289a173587e98573b7f04581e7917ce5b055672d7c8b3606b0f",
+  "scientific_conditions_counter_metrics_or_scope_changed": false,
+  "pretrained_forwards": 0,
+  "optimizer_steps": 0
+}

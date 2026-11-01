@@ -912,7 +912,7 @@
     {
       "id": "Q57",
       "experiment": "N43: native normalization path control",
-      "status": "mechanistic_intent_only_no_protocol_or_execution",
+      "status": "private_GPU_v1_running_source_exact_all_host_gates_closed",
       "question": "Can the native post-feedforward normalization state distinguish the removed-column path from the shared normalization path under the fixed late edits?",
       "question_provenance": "N41 fresh utility failed. N42 shows actual source-structure changes with counts similar to matched randoms. Post-feedforward RMS normalization follows the edited raw branch, so changing columns can also change its shared denominator. This candidate mechanism is not established by those outcomes.",
       "parents": [
@@ -920,14 +920,14 @@
         "Q55",
         "Q53"
       ],
-      "method": "First inspect the pinned implementation and closest priors, then determine whether an exact native-state factorial control is feasible under the no-fitting constraint. Any model measurement needs a separate prospective scientific protocol and host identity/restoration gates.",
-      "result": "Intent only. No scientific protocol, implementation, fixture, pretrained forward, new response or result exists.",
-      "interpretation": "A shared-normalization explanation is a hypothesis. Exact native intermediate reuse would be a measurement control, not a fitted gain or new beneficial model. No individual meaning or coding improvement follows.",
-      "next_question": "Read the pinned normalization code and relevant prior methods; establish whether exact native-state controls are feasible before freezing a model protocol.",
-      "direction_decision": "Proceed only if exact FP32/BF16 identity and native-state provenance can be established. Otherwise preserve the failed prerequisite and do not launch. No N31/N36 transplant is involved or reopened."
+      "method": "The pinned native post-FFN RMS formula and direct normalization priors were reviewed. Frozen layer-local 2 by 2 raw/RMS controls retain all nine late sites, the selected group and both unchanged random groups, and all 96 N41A native histories. Every saved decision is replayed; quarter positions are fixed. Two full BF16 replicas own disjoint cases. There are no new replies or fitted factors.",
+      "result": "The protocol and 220 actual source, data and parent files froze before pretrained measurement. A scalar-cache byte-view host failure occurred before any random model forward and remains preserved. A minimal version 2 repair passes 162 random FP32/BF16 group/site cases: 872 forwards, 2,360 exposures, 24 literal checks and 27 refusals. A guard-only amendment passes 16 new random forwards and 54 exposures plus four callable refusals without repeating the closed 162-case matrix. The auditor schema passes four positive checks and 24 refusals. Package imports, cells, hashes, owner ordering and counter arithmetic pass. One private version 1 measurement job is RUNNING, with exact server JSON and private payload verified. No partial output, actual runtime counter or pretrained result has been accessed.",
+      "interpretation": "Exact native-state control is feasible on these random-host gates. The pretrained study measures development layer-local finite contrasts under established normalization controls. It does not test useful coding improvement or establish individual meaning or an explanation of N41 regressions.",
+      "next_question": "After useful host work, check actual terminal status, then validate every source hash and private manifest before the single frozen audit. Interpret only a complete guarded panel.",
+      "direction_decision": "Keep all fixed coordinates, groups, sites and cases. Preserve a failed diagonal, state, cache, restoration or resource guard and stop interpretation. N31 and N36 remain closed."
     }
   ],
   "active_question_id": "Q57",
   "next_question_id": "Q57",
-  "utc": "2026-11-01T00:25:33.822669+00:00"
+  "utc": "2026-11-01T01:10:38.005881+00:00"
 }

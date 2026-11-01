@@ -1,0 +1,13 @@
+{
+  "status": "RUNNING",
+  "launched_utc": "2026-11-01T01:09:33.578579+00:00",
+  "actual_server_version": 1,
+  "source_checkpoint": "0498bad2ab8d0b6f77d3d4996089f758eca67a8d",
+  "server_source_JSON_exact": true,
+  "private_notebook_and_dataset": true,
+  "partial_outputs_accessed": false,
+  "actual_model_counters": null,
+  "scientific_outcome": "Pending complete terminal audit",
+  "no_new_responses_in_design": true,
+  "training_allowed": false
+}

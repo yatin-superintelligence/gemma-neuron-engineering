@@ -70,6 +70,22 @@
     },
     {
       "category": "Patch activations",
+      "path": "interpretability/native_rms_factor_v2.py",
+      "sha256": "8347f754831c63e0ee653791afcbc39d50037e1103026ab8d66a6d6fd11cf8b3",
+      "symbols": [
+        "verify_class_source",
+        "tensor_sha",
+        "check_norm",
+        "check_binding",
+        "NativeNormState",
+        "compose",
+        "capture_states",
+        "validate_source",
+        "norm_cell"
+      ]
+    },
+    {
+      "category": "Patch activations",
       "path": "interpretability/selector_site.py",
       "sha256": "5320c213ab30e37ed291dc49f313e9f5405c330be5a3a0edf37bd40781601e60",
       "symbols": [
@@ -177,6 +193,15 @@
         "apply_n01_branch",
         "apply_n01_gain",
         "main"
+      ]
+    },
+    {
+      "category": "Evaluate",
+      "path": "evaluation/native_factorial_metrics.py",
+      "sha256": "7ed50b3f64785f228e662978b566188717c89b7399d0bd42e7b603a37b3f3b3d",
+      "symbols": [
+        "contrast",
+        "effects"
       ]
     },
     {
