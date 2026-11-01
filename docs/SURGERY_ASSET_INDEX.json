@@ -79,6 +79,20 @@
     },
     {
       "category": "Patch activations",
+      "path": "research/experiments/n58/assay.py",
+      "sha256": "f0ed96cb50336d3c49d87ade4247df801580bfc0509419cf2457424ada6761a9",
+      "symbols": [
+        "sites",
+        "tensor_record",
+        "observe_paths",
+        "zero_path",
+        "native",
+        "order",
+        "one_case"
+      ]
+    },
+    {
+      "category": "Patch activations",
       "path": "research/experiments/n51/assay.py",
       "sha256": "9f131b9b1a227a95a77972a41a2b24a200746c590b084b4c465f971bd6921789",
       "symbols": [

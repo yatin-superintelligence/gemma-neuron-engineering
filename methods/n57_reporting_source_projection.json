@@ -6,5 +6,5 @@
     "scripts/report_n57.py": "6a8580d8aa8d6aee5de735da183c47edfdc8f60f9ed446cba1118c0f768d297d"
   },
   "private_reporting_freeze_sha256": "6910d85ef6039ec0e46aefabb5a1a16abfd0a4e1acf2dd70091683463586c851",
-  "actual_figure_available": false
+  "actual_figure_available": true
 }

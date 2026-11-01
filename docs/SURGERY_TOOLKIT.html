@@ -655,6 +655,199 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>assay</h2><p>Literal full-context native branch deletion, with actual source restoration. New independent FP32 and BF16 explicit 35-layer references pass. Return literal zeros at every native PLE, attention or FFN addition norm across all layers and input positions. Normal component computations still execute; edited KV may change. The fixed PLE target cannot be replaced by a posthoc winning control. Native source, restoration and state guards remain required. Prospective pretrained study only; no outcomes accessed. No fitted mask, parameter update or useful coding gain.</p><p><a href="../research/experiments/n58/assay.py">Exact source file</a></p><p class="small">APIs: sites, tensor_record, observe_paths, zero_path, native, order, one_case</p><p class="hash">SHA-256 f0ed96cb50336d3c49d87ade4247df801580bfc0509419cf2457424ada6761a9</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Literal full-context native branch deletion, with actual source restoration.&quot;&quot;&quot;
+from contextlib import contextmanager
+import hashlib
+import inspect
+
+import torch
+from transformers.cache_utils import DynamicCache
+from transformers.models.gemma4.modeling_gemma4 import Gemma4TextDecoderLayer, Gemma4TextMLP
+
+from interpretability.signed_native_mask import MODULE_SHA, MLP_FORWARD
+from research.experiments.n35.core import tensor_sha, snapshot
+from research.experiments.n37.continuation import decision
+from research.experiments.n48.assay import choice_metrics
+
+CONDITIONS = (&#x27;remove_PLE_additions&#x27;, &#x27;remove_attention_additions&#x27;, &#x27;remove_FFN_additions&#x27;)
+NORM_PATHS = {&#x27;remove_PLE_additions&#x27;: &#x27;post_per_layer_input_norm&#x27;,
+              &#x27;remove_attention_additions&#x27;: &#x27;post_attention_layernorm&#x27;,
+              &#x27;remove_FFN_additions&#x27;: &#x27;post_feedforward_layernorm&#x27;}
+DECODER_FORWARD = Gemma4TextDecoderLayer.forward
+
+
+def sites(model):
+    config = model.config.text_config
+    blocks = model.model.language_model.layers
+    if (len(blocks) != 35 or config.num_hidden_layers != 35 or config.num_kv_shared_layers != 20
+            or not config.hidden_size_per_layer_input):
+        raise ValueError(&#x27;Native35-layer PLE/shared-KV architecture required&#x27;)
+    path = inspect.getsourcefile(Gemma4TextDecoderLayer)
+    with open(path, &#x27;rb&#x27;) as stream:
+        if hashlib.sha256(stream.read()).hexdigest() != MODULE_SHA:
+            raise ValueError(&#x27;Pinned native Transformer source required&#x27;)
+    selected = {condition: [] for condition in CONDITIONS}
+    for index, block in enumerate(blocks):
+        if (type(block) is not Gemma4TextDecoderLayer or type(block).forward is not DECODER_FORWARD
+                or &#x27;forward&#x27; in block.__dict__ or block.layer_idx != index or block.enable_moe_block
+                or type(block.mlp) is not Gemma4TextMLP or type(block.mlp).forward is not MLP_FORWARD
+                or &#x27;forward&#x27; in block.mlp.__dict__ or not block.hidden_size_per_layer_input):
+            raise ValueError(&#x27;Exact unmodified native decoder/MLP membership required&#x27;)
+        for condition, name in NORM_PATHS.items():
+            norm = getattr(block, name)
+            if (norm._forward_hooks or norm._forward_pre_hooks
+                    or norm.weight.shape != (config.hidden_size,)
+                    or norm.weight.requires_grad or norm.weight.grad is not None):
+                raise ValueError(&#x27;Clean native additive norm sites required&#x27;)
+            selected[condition].append(norm)
+    if len({id(norm) for group in selected.values() for norm in group}) != 105:
+        raise ValueError(&#x27;All105 actual native norm sites must be distinct&#x27;)
+    return selected
+
+
+def tensor_record(tensor):
+    if (not isinstance(tensor, torch.Tensor) or tensor.requires_grad or tensor.ndim != 3
+            or tensor.shape[0] != 1 or min(tensor.shape) &lt; 1 or not torch.isfinite(tensor).all()):
+        raise ValueError(&#x27;Actual finite detached full-context norm tensor required&#x27;)
+    return {&#x27;sha256&#x27;: tensor_sha(tensor), &#x27;shape&#x27;: list(tensor.shape),
+            &#x27;dtype&#x27;: str(tensor.dtype), &#x27;numel&#x27;: tensor.numel(),
+            &#x27;element_size&#x27;: tensor.element_size(),
+            &#x27;rms&#x27;: float(tensor.float().square().mean().sqrt()),
+            &#x27;nonzero&#x27;: int(torch.count_nonzero(tensor))}
+
+
+@contextmanager
+def observe_paths(model, count):
+    selected = sites(model)
+    observations = {condition: [] for condition in CONDITIONS}
+    handles = []
+    def observe(condition, index):
+        def callback(module, args, output):
+            count(&#x27;native_path_observations&#x27;)
+            records = observations[condition]
+            if index != len(records) or len(args) != 1:
+                raise ValueError(&#x27;Native path observations must visit every layer in order&#x27;)
+            records.append({&#x27;layer_index&#x27;: index, &#x27;norm_path&#x27;: NORM_PATHS[condition],
+                            &#x27;input_sha256&#x27;: tensor_sha(args[0]), &#x27;output&#x27;: tensor_record(output)})
+        return callback
+    try:
+        for condition in CONDITIONS:
+            for index, norm in enumerate(selected[condition]):
+                handles.append(norm.register_forward_hook(observe(condition, index)))
+        yield observations
+        if any(len(records) != 35 for records in observations.values()):
+            raise ValueError(&#x27;All105 actual native path observations required&#x27;)
+    finally:
+        for handle in reversed(handles):
+            handle.remove()
+
+
+@contextmanager
+def zero_path(model, condition, count):
+    if condition not in CONDITIONS:
+        raise ValueError(&#x27;Fixed branch-deletion condition required&#x27;)
+    selected = sites(model)[condition]
+    records, handles = [], []
+    def replace(index):
+        def callback(module, args, output):
+            count(&#x27;norm_zero_callbacks&#x27;)
+            if index != len(records) or len(args) != 1:
+                raise ValueError(&#x27;Exactly ordered35 full-context norm callbacks required&#x27;)
+            original = tensor_record(output)
+            if original[&#x27;shape&#x27;][2] != model.config.text_config.hidden_size:
+                raise ValueError(&#x27;Actual native residual width required&#x27;)
+            count(&#x27;literal_zero_tensor_attempts&#x27;)
+            zero = torch.zeros_like(output)
+            assigned = tensor_record(zero)
+            if (assigned[&#x27;shape&#x27;] != original[&#x27;shape&#x27;] or assigned[&#x27;dtype&#x27;] != original[&#x27;dtype&#x27;]
+                    or assigned[&#x27;nonzero&#x27;] != 0 or assigned[&#x27;rms&#x27;] != 0.0
+                    or zero.untyped_storage().data_ptr() == output.untyped_storage().data_ptr()):
+                raise ValueError(&#x27;New literal zero tensor with exact native shape/dtype required&#x27;)
+            records.append({&#x27;layer_index&#x27;: index, &#x27;norm_path&#x27;: NORM_PATHS[condition],
+                            &#x27;input_sha256&#x27;: tensor_sha(args[0]),
+                            &#x27;native_computed_output&#x27;: original, &#x27;assigned_output&#x27;: assigned})
+            count(&#x27;activation_tensor_assignments&#x27;)
+            count(&#x27;zero_assigned_elements&#x27;, zero.numel())
+            count(&#x27;zero_assigned_bytes&#x27;, zero.numel()*zero.element_size())
+            return zero
+        return callback
+    try:
+        for index, norm in enumerate(selected):
+            handles.append(norm.register_forward_hook(replace(index)))
+        yield records
+        if len(records) != 35:
+            raise ValueError(&#x27;All35 actual selected branch deletions required&#x27;)
+    finally:
+        for handle in reversed(handles):
+            handle.remove()
+
+
+def native(model, encoded, answers, parent, count, *, capture_paths=False):
+    sites(model)
+    captured = []
+    def capture_h(module, args):
+        if captured or len(args) != 1 or args[0].requires_grad:
+            raise ValueError(&#x27;Exactly one actual native full h observation required&#x27;)
+        captured.append(tensor_sha(args[0]))
+    handle = model.model.language_model.layers[-1].mlp.down_proj.register_forward_pre_hook(capture_h)
+    try:
+        with torch.no_grad():
+            if capture_paths:
+                with observe_paths(model, count) as paths:
+                    output = model(**encoded, past_key_values=DynamicCache(config=model.config.text_config),
+                                   use_cache=True, logits_to_keep=1)
+            else:
+                paths = None
+                output = model(**encoded, past_key_values=DynamicCache(config=model.config.text_config),
+                               use_cache=True, logits_to_keep=1)
+            current, cache = decision(output, 0, 15, str(next(model.parameters()).dtype))
+            metrics = choice_metrics(output.logits[0, -1], answers)
+        if len(captured) != 1:
+            raise ValueError(&#x27;Missing actual native h observation&#x27;)
+        if (current != parent[&#x27;original&#x27;][&#x27;decision&#x27;] or metrics != parent[&#x27;original&#x27;][&#x27;metrics&#x27;]
+                or cache != parent[&#x27;native_first_full_cache&#x27;]
+                or captured[0] != parent[&#x27;native_full_h_sha256&#x27;]):
+            raise ValueError(&#x27;Actual original fullFP32/choice/cache/h source changed&#x27;)
+        result = {&#x27;decision&#x27;: current, &#x27;metrics&#x27;: metrics, &#x27;cache&#x27;: cache, &#x27;full_h_sha256&#x27;: captured[0]}
+        return result, paths
+    finally:
+        handle.remove()
+
+
+def order(row_index):
+    k = (row_index//2) % 3
+    return list(CONDITIONS[k:]+CONDITIONS[:k])
+
+
+def one_case(model, encoded, answers, parent, row_index, count):
+    initial = snapshot(model)
+    count(&#x27;native_sourceguards&#x27;)
+    source, paths = native(model, encoded, answers, parent, count, capture_paths=True)
+    cells, restorations = {}, {}
+    for condition in order(row_index):
+        with torch.no_grad(), zero_path(model, condition, count) as observations:
+            output = model(**encoded, past_key_values=DynamicCache(config=model.config.text_config),
+                           use_cache=True, logits_to_keep=1)
+            current, cache = decision(output, 0, 15, str(next(model.parameters()).dtype))
+            metrics = choice_metrics(output.logits[0, -1], answers)
+        cells[condition] = {&#x27;decision&#x27;: current, &#x27;metrics&#x27;: metrics, &#x27;cache&#x27;: cache,
+                            &#x27;zero_path_observations&#x27;: observations,
+                            &#x27;full_FP32_equal_native&#x27;: current[&#x27;full_logits_sha256&#x27;] == source[&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;],
+                            &#x27;whole_KV_equal_native&#x27;: cache == source[&#x27;cache&#x27;]}
+        count(&#x27;native_restoration_forwards&#x27;)
+        restored, unused = native(model, encoded, answers, parent, count)
+        if restored != source or unused is not None:
+            raise ValueError(&#x27;Actual native first fullFP32/choice/cache/h restoration failed&#x27;)
+        actual_state = snapshot(model)
+        if actual_state != initial:
+            raise ValueError(&#x27;Actual native state/hook/version/RNG/config/buffer/grad restoration failed&#x27;)
+        restorations[condition] = {&#x27;native&#x27;: restored, &#x27;actual_state&#x27;: actual_state}
+    return {&#x27;parent_binding&#x27;: parent[&#x27;binding&#x27;], &#x27;carried_native&#x27;: parent[&#x27;original&#x27;],
+            &#x27;native_source&#x27;: source, &#x27;native_path_observations&#x27;: paths,
+            &#x27;cells&#x27;: cells, &#x27;native_restorations&#x27;: restorations, &#x27;condition_order&#x27;: order(row_index),
+            &#x27;scope&#x27;: &#x27;ALL35layers/ALLprefillpositions/literalzero returned additive outputs&#x27;,
+            &#x27;new_emitted_tokens&#x27;: 0, &#x27;base_parameter_assignments&#x27;: 0, &#x27;base_buffer_assignments&#x27;: 0,
+            &#x27;backward_calls&#x27;: 0, &#x27;optimizer_steps&#x27;: 0}
 </pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>assay</h2><p>Native R/P contribution cuts with the recipient FFN vector held fixed.</p><p><a href="../research/experiments/n51/assay.py">Exact source file</a></p><p class="small">APIs: combine, observe, native_forward, capture, public_capture, patch, one_case</p><p class="hash">SHA-256 9f131b9b1a227a95a77972a41a2b24a200746c590b084b4c465f971bd6921789</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Native R/P contribution cuts with the recipient FFN vector held fixed.&quot;&quot;&quot;
 from contextlib import contextmanager
 import torch
@@ -2336,7 +2529,7 @@ def insert_branch(module,branch,placement):
     handle=module.register_forward_hook(hook)
     try:yield receipt
     finally:handle.remove()
-</pre></details></article><article class="card tool" data-category="Edit connections"><span class="tag">Edit connections</span><h2>generation</h2><p>Own-history generation with a fixed native intermediate-state readout branch. New independent FP32 and BF16 native-head, support, own-history and restoration references pass. The fixed block14 state connects to the existing head through native final RMS with unit subtraction or addition. Native-head replay must be exact before every branch. The full-vocabulary policy is explicitly native-support constrained. No learned lens, bridge or strength, no exact DoLa reproduction and no pretrained utility claim. See the separate runtime status.</p><p><a href="../research/experiments/n57/generation.py">Exact source file</a></p><p class="small">APIs: cache_record, native_parts, observe_native_states, project, constrained_scores, readout, generate</p><p class="hash">SHA-256 3d7283d347d4d4d913c7d27460b3af4f394f4568f8aad28240e0151acb04cf58</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Own-history generation with a fixed native intermediate-state readout branch.&quot;&quot;&quot;
+</pre></details></article><article class="card tool" data-category="Edit connections"><span class="tag">Edit connections</span><h2>generation</h2><p>Own-history generation with a fixed native intermediate-state readout branch. The complete pretrained panel passes its frozen engineering audit but fails target utility: coding 55/64 native, 52/64 subtractive and 54/64 additive; retention 17/32, 15/32 and 17/32. The fixed block14 state connects to the existing head through native final RMS with unit subtraction or addition. Native-head replay is exact before each accepted branch, with native-support-constrained choices. No learned lens, bridge or strength, exact DoLa reproduction or useful coding gain. Addition remains the control. The original source is preserved unchanged.</p><p><a href="../research/experiments/n57/generation.py">Exact source file</a></p><p class="small">APIs: cache_record, native_parts, observe_native_states, project, constrained_scores, readout, generate</p><p class="hash">SHA-256 3d7283d347d4d4d913c7d27460b3af4f394f4568f8aad28240e0151acb04cf58</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Own-history generation with a fixed native intermediate-state readout branch.&quot;&quot;&quot;
 from contextlib import contextmanager
 import math
 

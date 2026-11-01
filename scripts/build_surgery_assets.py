@@ -15,7 +15,7 @@ def page(title, body, script=''):
 
 SOURCES = {
     'Observe': ['research/experiments/n52/assay.py', 'interpretability/native_cache_branch.py', 'interpretability/native_capture.py', 'interpretability/native_timeline.py', 'interpretability/probe.py', 'interpretability/response_regions.py', 'interpretability/python_token_regions.py', 'scripts/export_native_trace.py'],
-    'Patch activations': ['research/experiments/n51/assay.py', 'research/experiments/n50/assay.py', 'research/experiments/n48/assay.py', 'research/experiments/n49/assay.py', 'interpretability/signed_native_mask.py', 'interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
+    'Patch activations': ['research/experiments/n58/assay.py', 'research/experiments/n51/assay.py', 'research/experiments/n50/assay.py', 'research/experiments/n48/assay.py', 'research/experiments/n49/assay.py', 'interpretability/signed_native_mask.py', 'interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
     'Reuse computation': ['research/experiments/n56/assay.py', 'interpretability/native_ffn_reuse_v2.py'],
     'Edit weights': ['research/experiments/n54/assay.py', 'interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
     'Edit connections': ['research/experiments/n57/generation.py', 'research/experiments/n53/assay.py', 'interpretability/memory_connection.py'],
@@ -36,8 +36,10 @@ def toolkit(dest):
             digest = hashlib.sha256(source.encode()).hexdigest()
             title = ast.get_docstring(tree) or name
             guide = ''
+            if name == 'research/experiments/n58/assay.py':
+                title += ' New independent FP32 and BF16 explicit 35-layer references pass. Return literal zeros at every native PLE, attention or FFN addition norm across all layers and input positions. Normal component computations still execute; edited KV may change. The fixed PLE target cannot be replaced by a posthoc winning control. Native source, restoration and state guards remain required. Prospective pretrained study only; no outcomes accessed. No fitted mask, parameter update or useful coding gain.'
             if name == 'research/experiments/n57/generation.py':
-                title += ' New independent FP32 and BF16 native-head, support, own-history and restoration references pass. The fixed block14 state connects to the existing head through native final RMS with unit subtraction or addition. Native-head replay must be exact before every branch. The full-vocabulary policy is explicitly native-support constrained. No learned lens, bridge or strength, no exact DoLa reproduction and no pretrained utility claim. See the separate runtime status.'
+                title += ' The complete pretrained panel passes its frozen engineering audit but fails target utility: coding 55/64 native, 52/64 subtractive and 54/64 additive; retention 17/32, 15/32 and 17/32. The fixed block14 state connects to the existing head through native final RMS with unit subtraction or addition. Native-head replay is exact before each accepted branch, with native-support-constrained choices. No learned lens, bridge or strength, exact DoLa reproduction or useful coding gain. Addition remains the control. The original source is preserved unchanged.'
             if name == 'evaluation/native_readout_reporting.py':
                 title += ' Reporting only after a complete frozen N57 scientific audit. Preserve all conditions, roles, families, carry/fresh accounting and every fixed-target primary clause. Synthetic layouts test software behavior, not utility. All length ranges are descriptive. Raw evidence and actual binding remain private; no model, tokenizer or new scorer is called.'
             if name == 'research/experiments/n55/generation.py':

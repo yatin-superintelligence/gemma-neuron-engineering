@@ -1,0 +1,321 @@
+{
+  "utc": "2026-11-01T22:52:07.003521+00:00",
+  "status": "CLOSED_COMPLETE_AUDIT_PASS_TARGET_UTILITY_FAIL",
+  "aggregate_sha256": "9a88f6bb466cbc06d9b48a9b5af4eb879e963d4cb6fee48481dff068868d23c2",
+  "primary": {
+    "clauses": {
+      "beats_additive_control_by_at_least2": false,
+      "coding_gains_at_least4": true,
+      "gains_span_at_least2families": true,
+      "preserve_every_original_correct_coding": false,
+      "preserve_every_original_correct_retention": false
+    },
+    "control": "add_native_boundary",
+    "gain_families": [
+      "ceil_ratio",
+      "long_tokens",
+      "union_length"
+    ],
+    "passed": false,
+    "posthoc_additive_winner_allowed": false,
+    "target": "subtract_native_boundary"
+  },
+  "all_conditions": {
+    "add_native_boundary": {
+      "coding_correct": 54,
+      "coding_gains": 5,
+      "coding_losses": 6,
+      "coding_source_valid": 62,
+      "families": {
+        "arithmetic": {
+          "cases": 16,
+          "correct": 7,
+          "gains": 0,
+          "losses": 0,
+          "role": "retention"
+        },
+        "ceil_ratio": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 4,
+          "losses": 1,
+          "role": "coding"
+        },
+        "first_prefix": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "json": {
+          "cases": 16,
+          "correct": 10,
+          "gains": 0,
+          "losses": 0,
+          "role": "retention"
+        },
+        "long_tokens": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 1,
+          "losses": 0,
+          "role": "coding"
+        },
+        "parenthesis_depth": {
+          "cases": 8,
+          "correct": 5,
+          "gains": 0,
+          "losses": 3,
+          "role": "coding"
+        },
+        "rotate_right": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "run_lengths": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "stable_unique": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 0,
+          "losses": 1,
+          "role": "coding"
+        },
+        "union_length": {
+          "cases": 8,
+          "correct": 4,
+          "gains": 0,
+          "losses": 1,
+          "role": "coding"
+        }
+      },
+      "retention_correct": 17,
+      "retention_gains": 0,
+      "retention_losses": 0,
+      "statuses": {
+        "format_error": 5,
+        "input_mutation": 1,
+        "passed": 71,
+        "source_error": 2,
+        "wrong_answer": 17
+      }
+    },
+    "original": {
+      "coding_correct": 55,
+      "coding_gains": 0,
+      "coding_losses": 0,
+      "coding_source_valid": 64,
+      "families": {
+        "arithmetic": {
+          "cases": 16,
+          "correct": 7,
+          "gains": 0,
+          "losses": 0,
+          "role": "retention"
+        },
+        "ceil_ratio": {
+          "cases": 8,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "first_prefix": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "json": {
+          "cases": 16,
+          "correct": 10,
+          "gains": 0,
+          "losses": 0,
+          "role": "retention"
+        },
+        "long_tokens": {
+          "cases": 8,
+          "correct": 6,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "parenthesis_depth": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "rotate_right": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "run_lengths": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "stable_unique": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "union_length": {
+          "cases": 8,
+          "correct": 5,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        }
+      },
+      "retention_correct": 17,
+      "retention_gains": 0,
+      "retention_losses": 0,
+      "statuses": {
+        "format_error": 4,
+        "passed": 72,
+        "wrong_answer": 20
+      }
+    },
+    "subtract_native_boundary": {
+      "coding_correct": 52,
+      "coding_gains": 4,
+      "coding_losses": 7,
+      "coding_source_valid": 64,
+      "families": {
+        "arithmetic": {
+          "cases": 16,
+          "correct": 5,
+          "gains": 0,
+          "losses": 2,
+          "role": "retention"
+        },
+        "ceil_ratio": {
+          "cases": 8,
+          "correct": 3,
+          "gains": 1,
+          "losses": 2,
+          "role": "coding"
+        },
+        "first_prefix": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "json": {
+          "cases": 16,
+          "correct": 10,
+          "gains": 0,
+          "losses": 0,
+          "role": "retention"
+        },
+        "long_tokens": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 1,
+          "losses": 0,
+          "role": "coding"
+        },
+        "parenthesis_depth": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 0,
+          "losses": 1,
+          "role": "coding"
+        },
+        "rotate_right": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "run_lengths": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "stable_unique": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 0,
+          "losses": 1,
+          "role": "coding"
+        },
+        "union_length": {
+          "cases": 8,
+          "correct": 4,
+          "gains": 2,
+          "losses": 3,
+          "role": "coding"
+        }
+      },
+      "retention_correct": 15,
+      "retention_gains": 0,
+      "retention_losses": 2,
+      "statuses": {
+        "format_error": 4,
+        "passed": 67,
+        "runtime_error": 1,
+        "wrong_answer": 24
+      }
+    }
+  },
+  "conclusion": "The fixed subtractive native-boundary output connection fails preservation and control superiority. Four coding gains across three families coexist with seven coding losses and two retention losses. Native coding55/64 and retention17/32 become52/64 and15/32. Addition is the fixed control:54/64 coding with5gains6losses,17/32 retention. It is not promoted to a winning policy.",
+  "scope": "All96 original N41A prompts/all3conditions, reused development. No useful/general coding improvement, individual neuron meaning, mediation, speed, fresh confirmation or new-method claim. Each response must reach nativeEOS, no arbitrary response ceiling.",
+  "work": {
+    "backward_calls": 0,
+    "base_activation_hook_assignments": 0,
+    "base_buffer_assignments": 0,
+    "branch_input_constructions": 44951,
+    "calls": 45239,
+    "extra_FFN_evaluations": 0,
+    "extra_PLE_evaluations": 0,
+    "extra_attention_evaluations": 0,
+    "extra_native_final_RMS_evaluations": 44951,
+    "extra_native_head_evaluations": 89902,
+    "fresh_choices": 44951,
+    "input_token_exposures": 96894,
+    "manual_parameter_assignments": 0,
+    "native_restoration_forwards": 192,
+    "native_sourceguards": 96,
+    "old_cell_carries": 0,
+    "optimizer_steps": 0,
+    "policy_support_assignments": 44951
+  },
+  "grading": {
+    "new_unique_same_case_candidate_calls": 121,
+    "exact_grade_carries_among192newconditions": 71,
+    "original_response_and_grade_carries": 96,
+    "old_candidate_rescoring": 0,
+    "host_tokenizer_loads": 1,
+    "host_model_forwards": 0
+  },
+  "counts": "192edited response records are not192unique texts;44951fresh choices;0old-cell carries;21181original whole-response carried tokens contribute0N57new choices.",
+  "notebook_seconds": 3885.433109913,
+  "quota_scope": "Notebook seconds, not charged GPU hours or current balance.",
+  "state_witness_limit": "Recorded state/hook/version/RNG/config/buffer/grad/cache witnesses do not independently authenticate every base parameter byte, caller or clean pretrained replay.",
+  "next": "Close the tested utility claim without promoting addition or changing layer/alpha/coefficient. Defer the blind confirmation panel. Consider a distinct native pretrained-donor question only after read-only provenance/architecture/tokenizer/coordinate/resource prerequisites; no old failed transplant gate bypass and no automatic launch."
+}

@@ -1,19 +1,20 @@
 {
-  "generated_utc": "2026-11-01T21:50:05.728976+00:00",
-  "question_records": 72,
-  "recorded_terminal_runs": 93,
+  "generated_utc": "2026-11-01T23:49:06.955535+00:00",
+  "question_records": 73,
+  "recorded_terminal_runs": 94,
   "active_runs": [
     {
-      "run": "N57",
-      "launched_utc": "2026-11-01T21:23:06.278630+00:00",
+      "run": "N58",
+      "launched_utc": "2026-11-01T23:39:28.096486+00:00",
       "status": "private_version1_running"
     }
   ],
-  "ledger_events": 702,
-  "question_register_source_sha256": "afdf0142ee7b466042d37553df99bc08f57214c9d0d110c2c7ff3d66d488946b",
-  "event_ledger_source_sha256": "381a65ae3e8f31027f714d8c40ea0a560e0749edb56aa408d58988bd75ab2f90",
-  "compute_ledger_source_sha256": "f74a9e0e55cad15966429ab62c3f022edd09ca8dc6a4bc916ec15013441d024a",
+  "ledger_events": 714,
+  "question_register_source_sha256": "9e7b29971d7842f8ae29a957f3ebda30982d89de8a4845bc7bf38dbbd5ab080c",
+  "event_ledger_source_sha256": "56ff68f1e97b6fcfb51b291ed9b4506e4c260cef8efe6c9277fcb19d35ff6451",
+  "compute_ledger_source_sha256": "2f27c307413c9d65bd460821f0b535e26af958f5478bfc066fe7301ea094fc9a",
   "raw_experimental_assets_private": true,
+  "privacy_scope": "Current storage and intended release boundary, not a claim of historical all-private handling or absence of external copies. The N58 temporary public-input incident is disclosed separately.",
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0
 }

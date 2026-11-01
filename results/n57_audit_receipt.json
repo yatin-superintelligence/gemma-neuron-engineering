@@ -1,0 +1,32 @@
+{
+  "actual_counters": {
+    "backward_calls": 0,
+    "base_activation_hook_assignments": 0,
+    "base_buffer_assignments": 0,
+    "branch_input_constructions": 44951,
+    "calls": 45239,
+    "extra_FFN_evaluations": 0,
+    "extra_PLE_evaluations": 0,
+    "extra_attention_evaluations": 0,
+    "extra_native_final_RMS_evaluations": 44951,
+    "extra_native_head_evaluations": 89902,
+    "fresh_choices": 44951,
+    "input_token_exposures": 96894,
+    "manual_parameter_assignments": 0,
+    "native_restoration_forwards": 192,
+    "native_sourceguards": 96,
+    "old_cell_carries": 0,
+    "optimizer_steps": 0,
+    "policy_support_assignments": 44951
+  },
+  "all192_edited_records_native_EOS": true,
+  "all288_condition_records": true,
+  "closed_candidate_regrading_calls": 0,
+  "host_model_forward_calls": 0,
+  "host_tokenizer_loads": 1,
+  "new_unique_candidate_scoring_calls": 121,
+  "optimizer_steps": 0,
+  "public_aggregate_sha256": "9a88f6bb466cbc06d9b48a9b5af4eb879e963d4cb6fee48481dff068868d23c2",
+  "status": "complete_pass_all_frozen_guards",
+  "utc": "2026-11-01T22:45:04.516249+00:00"
+}

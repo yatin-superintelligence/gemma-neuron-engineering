@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-01T23:38:49.876188+00:00",
+  "before_launch_and_any_N58_pretrained_measurements": true,
+  "actual_files": 3668,
+  "parent_N57_source_freeze_sha256": "8248d6caeb1d42976bca351dd098956faf21a390bc0e79e748765eb7de097107",
+  "parent_N57_actual_files": 2966,
+  "parent_N57_closed_raw_files": 508,
+  "analysis_plan_sha256": "a47213906d6b2fc1cb61b8c962b3ee33f1d654f66d1d53085c1bd25d80abb9b7",
+  "protocol_sha256": "9c5dba720382aae1419cad26a2043ad6c91a6e6128be707c2cd15742f279bd37",
+  "auditor_sha256": "92e58622ba223200c30987e349284ed42c3c7b4df3ef032172c7786a0fbf5ae0",
+  "notebook_sha256": "dc9e39f45c3ff8754cbf799977b020ded2753693483f039dc9527434e08da530",
+  "payload_sha256": "0d0ed2f63ee7f03d6f10afe45e70ec082cb2e925cf34a7a543ed1afc75caea45",
+  "current_transport_metadata_sha256": "675f3b1698a9e2b369784fea93431c35124b160fa57d0a077cef9024a9024d77",
+  "scientific_notebook_and_payload_unchanged_after_transport_remediation": true
+}

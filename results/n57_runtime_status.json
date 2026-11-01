@@ -1,15 +1,16 @@
 {
-  "utc": "2026-11-01T21:45:51.211712+00:00",
-  "status": "yatinintelligence/digital-surgery-private-n57-native-readout has status \"KernelWorkerStatus.RUNNING\"",
+  "utc": "2026-11-01T22:45:04.516249+00:00",
+  "status": "complete_host_audited_closed_target_utility_FAIL",
   "source_checkpoint": "44c4cd47f9f3cb2f1745f4bb19bb7bac9ad433a4",
   "private_GPU_notebook": true,
   "single_READY_private_dataset": true,
   "server_JSON_exact": true,
-  "one_new_own_job_only": true,
-  "outcome": "Prospective pretrained utility only. No output, partial or live counter accessed; pending complete frozen whole-panel audit before new unique-candidate grading.",
-  "planned_new_edited_response_records": 192,
-  "original_complete_response_grade_carries": 96,
+  "edited_native_EOS_response_records": 192,
+  "original_response_grade_carries": 96,
   "all_condition_records": 288,
-  "arbitrary_response_token_ceiling": null,
-  "optimizer_steps": 0
+  "new_unique_same_case_grading_calls": 121,
+  "edited_exact_grade_carries": 71,
+  "host_tokenizer_loads": 1,
+  "host_model_forward_calls": 0,
+  "scope": "All conditions and failed target clauses retained. Reused development complete programs; no useful coding gain, posthoc additive winner or fresh confirmation."
 }

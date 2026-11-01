@@ -1,0 +1,77 @@
+{
+  "registered_utc": "2026-11-01T23:02:15.587933+00:00",
+  "experiment": "N58",
+  "question_id": "Q73",
+  "title": "Architecture-wide native branch deletion: fixed PLE target and attention/FFN controls",
+  "question": "Does deleting the native per-layer input addition path across all35layers preserve and improve bounded coding decisions, compared with deleting native attention or FFN additions?",
+  "motivation": "N51 native last-block P-only donor copying did not establish abstract skill; it did not test necessity of the native PLE path through the full computation. N57 fixed head-connection utility fails and is closed. The distinct question concerns native architecture-wide path necessity and a PLE-deletion utility lead, not another readout coefficient, selected layer, signed group or donor retry. All35native layers are fixed by component membership, not ranked from effects.",
+  "cohort": "ALL24N48contexts/16coding8retention/all12families/bothanswerorders, exact prompts/tokenization/bindings. Reused development answer-choice screen, not full programs or fresh confirmation.",
+  "conditions": [
+    "original",
+    "remove_PLE_additions",
+    "remove_attention_additions",
+    "remove_FFN_additions"
+  ],
+  "fixed_target": "remove_PLE_additions",
+  "comparators": "Both other branch deletions are fixed architecture component controls, not matched count/energy interventions and cannot become posthoc winners. Original24native choices and aggregate scores carry without original regeneration or old reclassification.",
+  "scope": {
+    "layers": "ALL35native decoder layers; no subset/dose/site search",
+    "positions": "ALLinput positions in each single prefill, not only the current last position",
+    "native_output_zero_hooks": {
+      "remove_PLE_additions": "post_per_layer_input_norm",
+      "remove_attention_additions": "post_attention_layernorm",
+      "remove_FFN_additions": "post_feedforward_layernorm"
+    },
+    "operation": "Observe actual selected norm output and return torch.zeros_like(output) in the same native dtype/device/shape. No in-place parameter/buffer mutation. All normal attention/FFN/PLE computation still executes. Each new root forward has exactly35selected-path callbacks and35returned zero tensors.",
+    "KV": "Edits before native KV producers may change edited caches; record actual edited full-cache hashes without asserting native cache equality for edited cells. Native source guards and fresh native restorations must match prior fullFP32/argmax/whole-cache references exactly. No cache carry between conditions.",
+    "generation": "One actual full-vocabulary argmax per new condition/context;0emitted continuation tokens. Canonical A/B only for host correctness; a finite out-of-format choice remains a reported incorrect outcome, not an audit refusal."
+  },
+  "original_score_carries": "Carry exact audited N50paired_order_swap original role/family/order correctcounts crosscheckedN48. Do not invent original per-case grade objects or reclassify old native choices. Classify only72NEW arm/context decisions once after whole audit. Binary conservation gains=new-correct withchoice differing fromold;losses=carried nativecorrect-newcorrect+gains. Report72literal comparisons, not72uniqueprogramgrades.",
+  "source_and_durable_state": "Each of24nativeguards checks exact old native first fullFP32/argmax/fullcache and obtains only previously unsaved all35path observations. Every one of72new edits is followed by actual native first/fullFP32/wholecache restoration and state/hook/version/RNG/config/buffer/grad observations before durable prepare/commit. Actual initial/final terminal metadata required. Witness is not independent allbaseparameter byte/caller authentication.",
+  "expected_work": {
+    "new_decisions": 72,
+    "original_choice_carries": 24,
+    "native_sourceguards": 24,
+    "native_restoration_forwards": 72,
+    "full_root_forwards": 168,
+    "input_token_exposures": 15890,
+    "activation_tensor_assignments": 2520,
+    "zero_assigned_BF16_elements_if_all_shapes_match": 366105600,
+    "extra_attention_FFN_PLE_evaluations": 0,
+    "emitted_tokens": 0,
+    "parameter_buffer_assignments": 0,
+    "backward_optimizer_calls": 0
+  },
+  "counter_scope": "S=sum24inputlengths=2270;168=24+72+72;exposures7*S. Zero tensor assignments35*72;elements3*35*S*1536. Require observed callback/attempt/numel counts, including failures, not formulas alone.",
+  "primary": {
+    "target": "remove_PLE_additions",
+    "all_conjunctive": [
+      "preserve EVERY original-correct coding case",
+      "preserve EVERY original-correct retention case",
+      "at least2coding gains",
+      "coding gains across at least2families",
+      "at least2more correct coding than remove_attention_additions",
+      "at least2more correct coding than remove_FFN_additions"
+    ],
+    "no_posthoc_winning_comparator": true
+  },
+  "secondary": "All4conditions/all12families/bothorders/roles/validA_B/statuses/source validity/choicechanges/gains/losses and full-FP32/cache contrasts. Descriptive necessity under fixed intervention only; branch deletions differ in algebra and influence, not count/energy matched. No pvalues or winner selection.",
+  "conditional_next": "Only if whole auditPASS and fixed PLE target passes ALLclauses, prioritize a new prospectively registered complete-program test of EXACT architecture-wide PLE-zero policy with all intended controls before any usefulness claim. IfFAIL, close this utility lead; do not promote attention/FFN, choose different subsets/scopes or force full-program continuation. Ifincomplete/refusal, wholeeffects censored/no grades/retry/recovery/weakening.",
+  "host_requirements": "New random seed5817 FP32/BF16 graphs, independent explicit native decoder references with each selected branch output replaced by literal zero; all35callback bindings, actual completefullFP32/cache reference matches, native restorations, full toy parameter bytes/versions/state. New literal audit positives/refusals/accounting/source/package checks; no old fixtures/import-gates rerun. Exact pinned Transformers5.8.0native source reviewed before implementation.",
+  "no_training": "No optimizer/SFT/LoRA/RL/fittedsigns/vectors/gains/bridges/alignments/gradientmask fitting. Literal activation zeros only. No hidden labels/oracles/model solutions/grades in GPU payload. No old donor, candidate, collector, auditor or fixture replay.",
+  "resources": {
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1600,
+    "global_notebook_seconds": 1500,
+    "deadline_utc": "2026-11-02T10:30:50+00:00",
+    "deadline_margin_seconds": 120,
+    "reservation_GPU_hours": 1,
+    "reserve_GPU_hours": 2,
+    "scientific_raw_bytes_max": 33554432,
+    "hardware": "Two distinct physicalT4/fullBF16replicas, indexmod2caseownership/all3policies fixed rotation, sequentialload/sharedtmpcache/commonbarrier. Fresh official quota/inventory/private exact server/dataset/payload gates BEFOREanylaunch."
+  },
+  "claim_boundary": "Known native component-ablation prior, not novel mechanism, individual neuron meaning, full-program/general coding gain, fresh confirmation, mediation, speed or serialized transformer insertion. The N57 independent panel stays deferred and unmeasured.",
+  "state": "REGISTERED_BEFORE_IMPLEMENTATION_UNLAUNCHED",
+  "edition": "Prospective registered design, with historical registration state retained. Dated current execution status is separate; no N58 outcomes accessed."
+}

@@ -1,0 +1,315 @@
+{
+  "actual_counters": {
+    "backward_calls": 0,
+    "base_activation_hook_assignments": 0,
+    "base_buffer_assignments": 0,
+    "branch_input_constructions": 44951,
+    "calls": 45239,
+    "extra_FFN_evaluations": 0,
+    "extra_PLE_evaluations": 0,
+    "extra_attention_evaluations": 0,
+    "extra_native_final_RMS_evaluations": 44951,
+    "extra_native_head_evaluations": 89902,
+    "fresh_choices": 44951,
+    "input_token_exposures": 96894,
+    "manual_parameter_assignments": 0,
+    "native_restoration_forwards": 192,
+    "native_sourceguards": 96,
+    "old_cell_carries": 0,
+    "optimizer_steps": 0,
+    "policy_support_assignments": 44951
+  },
+  "conditions": {
+    "add_native_boundary": {
+      "coding_correct": 54,
+      "coding_gains": 5,
+      "coding_losses": 6,
+      "coding_source_valid": 62,
+      "families": {
+        "arithmetic": {
+          "cases": 16,
+          "correct": 7,
+          "gains": 0,
+          "losses": 0,
+          "role": "retention"
+        },
+        "ceil_ratio": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 4,
+          "losses": 1,
+          "role": "coding"
+        },
+        "first_prefix": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "json": {
+          "cases": 16,
+          "correct": 10,
+          "gains": 0,
+          "losses": 0,
+          "role": "retention"
+        },
+        "long_tokens": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 1,
+          "losses": 0,
+          "role": "coding"
+        },
+        "parenthesis_depth": {
+          "cases": 8,
+          "correct": 5,
+          "gains": 0,
+          "losses": 3,
+          "role": "coding"
+        },
+        "rotate_right": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "run_lengths": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "stable_unique": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 0,
+          "losses": 1,
+          "role": "coding"
+        },
+        "union_length": {
+          "cases": 8,
+          "correct": 4,
+          "gains": 0,
+          "losses": 1,
+          "role": "coding"
+        }
+      },
+      "retention_correct": 17,
+      "retention_gains": 0,
+      "retention_losses": 0,
+      "statuses": {
+        "format_error": 5,
+        "input_mutation": 1,
+        "passed": 71,
+        "source_error": 2,
+        "wrong_answer": 17
+      }
+    },
+    "original": {
+      "coding_correct": 55,
+      "coding_gains": 0,
+      "coding_losses": 0,
+      "coding_source_valid": 64,
+      "families": {
+        "arithmetic": {
+          "cases": 16,
+          "correct": 7,
+          "gains": 0,
+          "losses": 0,
+          "role": "retention"
+        },
+        "ceil_ratio": {
+          "cases": 8,
+          "correct": 4,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "first_prefix": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "json": {
+          "cases": 16,
+          "correct": 10,
+          "gains": 0,
+          "losses": 0,
+          "role": "retention"
+        },
+        "long_tokens": {
+          "cases": 8,
+          "correct": 6,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "parenthesis_depth": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "rotate_right": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "run_lengths": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "stable_unique": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "union_length": {
+          "cases": 8,
+          "correct": 5,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        }
+      },
+      "retention_correct": 17,
+      "retention_gains": 0,
+      "retention_losses": 0,
+      "statuses": {
+        "format_error": 4,
+        "passed": 72,
+        "wrong_answer": 20
+      }
+    },
+    "subtract_native_boundary": {
+      "coding_correct": 52,
+      "coding_gains": 4,
+      "coding_losses": 7,
+      "coding_source_valid": 64,
+      "families": {
+        "arithmetic": {
+          "cases": 16,
+          "correct": 5,
+          "gains": 0,
+          "losses": 2,
+          "role": "retention"
+        },
+        "ceil_ratio": {
+          "cases": 8,
+          "correct": 3,
+          "gains": 1,
+          "losses": 2,
+          "role": "coding"
+        },
+        "first_prefix": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "json": {
+          "cases": 16,
+          "correct": 10,
+          "gains": 0,
+          "losses": 0,
+          "role": "retention"
+        },
+        "long_tokens": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 1,
+          "losses": 0,
+          "role": "coding"
+        },
+        "parenthesis_depth": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 0,
+          "losses": 1,
+          "role": "coding"
+        },
+        "rotate_right": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "run_lengths": {
+          "cases": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "role": "coding"
+        },
+        "stable_unique": {
+          "cases": 8,
+          "correct": 7,
+          "gains": 0,
+          "losses": 1,
+          "role": "coding"
+        },
+        "union_length": {
+          "cases": 8,
+          "correct": 4,
+          "gains": 2,
+          "losses": 3,
+          "role": "coding"
+        }
+      },
+      "retention_correct": 15,
+      "retention_gains": 0,
+      "retention_losses": 2,
+      "statuses": {
+        "format_error": 4,
+        "passed": 67,
+        "runtime_error": 1,
+        "wrong_answer": 24
+      }
+    }
+  },
+  "connection_primary": {
+    "clauses": {
+      "beats_additive_control_by_at_least2": false,
+      "coding_gains_at_least4": true,
+      "gains_span_at_least2families": true,
+      "preserve_every_original_correct_coding": false,
+      "preserve_every_original_correct_retention": false
+    },
+    "control": "add_native_boundary",
+    "gain_families": [
+      "ceil_ratio",
+      "long_tokens",
+      "union_length"
+    ],
+    "passed": false,
+    "posthoc_additive_winner_allowed": false,
+    "target": "subtract_native_boundary"
+  },
+  "edited_response_records": 192,
+  "exact_grade_carries_among192_newconditions": 71,
+  "experiment": "N57",
+  "fresh_choices": 44951,
+  "grading_calls_new_unique_candidates": 121,
+  "old_cell_carried_choices": 0,
+  "original_carry_new_N57_choices": 0,
+  "original_prediction_grade_carries": 96,
+  "original_whole_response_carried_tokens": 21181,
+  "records": 288,
+  "scope": "Reused development complete programs; no fresh confirmation, individual meaning or speed.",
+  "status": "complete_host_audited"
+}

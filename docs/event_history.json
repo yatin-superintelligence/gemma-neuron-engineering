@@ -5092,6 +5092,90 @@
       "event": "N57_separate_reporting_preparation_CLOSED_2newliteralpanels14assertions31refusals_2synthetic6panellayouts_viewed_TEMPdeleted_0outputaccess_2966plus4exact",
       "experiment": "N57",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 703,
+      "utc": "2026-11-01T22:31:58.310997+00:00",
+      "event": "N57_blind_conditional_independent_panel_preparation_CLOSED_32semantic64code32retention_newreferences_and_grader_0models_0launches",
+      "experiment": "N57",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 704,
+      "utc": "2026-11-01T22:52:07.003521+00:00",
+      "event": "N57 complete: single frozen audit PASS; subtraction utility primary FAIL",
+      "experiment": "N57",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 705,
+      "utc": "2026-11-01T22:52:07.003521+00:00",
+      "event": "N57 actual report rendered once; relative-path receipt failure preserved",
+      "experiment": "N57",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 706,
+      "utc": "2026-11-01T22:52:07.003521+00:00",
+      "event": "N57 existing six-panel figure viewed; separate receipt-only finalizer closes path serialization",
+      "experiment": "N57",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 707,
+      "utc": "2026-11-01T22:52:07.003521+00:00",
+      "event": "N57 conditional independent confirmation panel deferred after target failure",
+      "experiment": "N57",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 708,
+      "utc": "2026-11-01T23:03:21.621999+00:00",
+      "event": "Official native base donor metadata prerequisite stops at whole-tokenizer postprocessor difference; no model or launch",
+      "experiment": "U27_source_feasibility",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 709,
+      "utc": "2026-11-01T23:03:21.621999+00:00",
+      "event": "N58 distinct native branch-deletion protocol registered before implementation; fixed PLE target, attention and FFN controls",
+      "experiment": "N58",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 710,
+      "utc": "2026-11-01T23:38:11.886464+00:00",
+      "event": "N58 independent native branch-deletion host references, new audit refusals and exact package import complete without pretrained model calls",
+      "experiment": "N58",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 711,
+      "utc": "2026-11-01T23:38:11.886481+00:00",
+      "event": "N58 incorrect public upload flag detected before launch; accidental dataset deleted and private replacement verification required",
+      "experiment": "N58",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 712,
+      "utc": "2026-11-01T23:40:39.438464+00:00",
+      "event": "N58 final3668-file freeze and all inherited raw parents exact; fresh official quota14.27GPUh and all78prior jobs terminal",
+      "experiment": "N58",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 713,
+      "utc": "2026-11-01T23:40:39.438464+00:00",
+      "event": "N58 first additional U27 scientific launch: private version1 branch deletion, fixed PLE target and architecture controls",
+      "experiment": "N58",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 714,
+      "utc": "2026-11-01T23:40:39.438464+00:00",
+      "event": "N58 exact server notebook/private GPU/single READY private replacement payload verified; only one new own job and no partial outputs accessed",
+      "experiment": "N58",
+      "optimizer_steps": 0
     }
   ]
 }

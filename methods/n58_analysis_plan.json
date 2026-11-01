@@ -1,0 +1,42 @@
+{
+  "utc": "2026-11-01T23:18:49.987082+00:00",
+  "experiment": "N58",
+  "protocol_sha256": "9c5dba720382aae1419cad26a2043ad6c91a6e6128be707c2cd15742f279bd37",
+  "before_N58_implementation_and_model_measurements": true,
+  "native_reference_contract": "Carry exact parent original decision/metrics/full_hSHA/fullcache, not recomputed old activation summaries or original correctness. Source helper observes newly unsaved all105norm outputs (3native paths*35layers) without replacing them. Restoration compares actualdecision/metrics/full_hSHA/fullcache; initial path observations are not duplicated in restores.",
+  "edited_contract": "Only returned literal zero tensors at35selected path norms, allinputpositions. Record ordered layer0..34,input/output/zero hashes,shapes,dtypes,finite/RMS/nonzero/numel/bytes; never require edited caches to equal native. Source/cache/restoration/state/metadata failure censorswholepanel. FiniteinvalidA_B is reported incorrect.",
+  "auditor": "research/experiments/n58/audit.py, to be implemented/frozen beforelaunch",
+  "primary": "Exact six conjunctive PLE-target clauses in protocol. Neither attention nor FFN deletion can be a posthoc winner.",
+  "classifications": "Whole24/72complete structural/source/state/counter audit before exactly72new literalchoice-label comparisons; originalscorecarryfromN50paired/N48 only. No oldpercasegrade reconstruction, programscorer, tokenizer or hostmodel in scientificauditor.",
+  "conditions": [
+    "original",
+    "remove_PLE_additions",
+    "remove_attention_additions",
+    "remove_FFN_additions"
+  ],
+  "condition_rotation": "k=(row_index//2)%3, fixedtuple leftrotation; no selection",
+  "observed_counters": [
+    "calls",
+    "input_token_exposures",
+    "native_sourceguards",
+    "native_restoration_forwards",
+    "native_path_observations",
+    "norm_zero_callbacks",
+    "literal_zero_tensor_attempts",
+    "activation_tensor_assignments",
+    "zero_assigned_elements",
+    "zero_assigned_bytes"
+  ],
+  "expected_native_path_observations": 2520,
+  "zero_counters": [
+    "extra_attention_evaluations",
+    "extra_FFN_evaluations",
+    "extra_PLE_evaluations",
+    "base_parameter_assignments",
+    "base_buffer_assignments",
+    "backward_calls",
+    "optimizer_steps",
+    "new_emitted_tokens"
+  ],
+  "limits": "Fullcontext editsmaychangeKV; native restoration required. State witness not independent pretrainedparameterbyte/callerauthentication. Reusedanswer-choice development only; knownbranchablationprior. No newscorer/oldfixture repeat."
+}

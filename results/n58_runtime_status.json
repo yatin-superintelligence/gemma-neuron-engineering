@@ -1,0 +1,14 @@
+{
+  "utc": "2026-11-01T23:39:53.906268+00:00",
+  "status": "yatinintelligence/digital-surgery-private-n58-branch-deletion has status \"KernelWorkerStatus.RUNNING\"",
+  "source_checkpoint": "f930aefa184aa3b8520c44b1679c10acb59b2d06",
+  "server_notebook_JSON_exact": true,
+  "current_private_GPU_notebook": true,
+  "current_single_READY_private_replacement_dataset": true,
+  "one_new_own_job_only": true,
+  "outcome": "Prospective only; no outputs, partials or live counters accessed. Whole-panel frozen audit required before 72 new literal comparisons.",
+  "planned_contexts": 24,
+  "planned_new_decisions": 72,
+  "new_emitted_tokens": 0,
+  "optimizer_steps": 0
+}

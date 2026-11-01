@@ -1,0 +1,957 @@
+{
+  "experiment": "N57",
+  "status": "complete_audited_reporting_only",
+  "all_conditions": {
+    "original": {
+      "grades": {
+        "coding_correct": 55,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "coding_source_valid": 64,
+        "families": {
+          "arithmetic": {
+            "cases": 16,
+            "correct": 7,
+            "gains": 0,
+            "losses": 0,
+            "role": "retention"
+          },
+          "ceil_ratio": {
+            "cases": 8,
+            "correct": 4,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "first_prefix": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "json": {
+            "cases": 16,
+            "correct": 10,
+            "gains": 0,
+            "losses": 0,
+            "role": "retention"
+          },
+          "long_tokens": {
+            "cases": 8,
+            "correct": 6,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "parenthesis_depth": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "rotate_right": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "run_lengths": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "stable_unique": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "union_length": {
+            "cases": 8,
+            "correct": 5,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          }
+        },
+        "retention_correct": 17,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "statuses": {
+          "format_error": 4,
+          "passed": 72,
+          "wrong_answer": 20
+        }
+      },
+      "response_lengths": {
+        "coding": {
+          "responses": 64,
+          "tokens_including_EOS": 21054,
+          "min": 61,
+          "median": 221.0,
+          "max": 1962,
+          "ranges_are_not_confidence_intervals": true
+        },
+        "retention": {
+          "responses": 32,
+          "tokens_including_EOS": 127,
+          "min": 2,
+          "median": 4.0,
+          "max": 10,
+          "ranges_are_not_confidence_intervals": true
+        },
+        "families": {
+          "arithmetic": {
+            "responses": 16,
+            "tokens_including_EOS": 69,
+            "min": 3,
+            "median": 4.0,
+            "max": 6,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "ceil_ratio": {
+            "responses": 8,
+            "tokens_including_EOS": 7562,
+            "min": 348,
+            "median": 781.0,
+            "max": 1962,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "first_prefix": {
+            "responses": 8,
+            "tokens_including_EOS": 1078,
+            "min": 69,
+            "median": 138.0,
+            "max": 193,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "json": {
+            "responses": 16,
+            "tokens_including_EOS": 58,
+            "min": 2,
+            "median": 3.0,
+            "max": 10,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "long_tokens": {
+            "responses": 8,
+            "tokens_including_EOS": 971,
+            "min": 61,
+            "median": 111.5,
+            "max": 276,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "parenthesis_depth": {
+            "responses": 8,
+            "tokens_including_EOS": 2108,
+            "min": 124,
+            "median": 275.5,
+            "max": 462,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "rotate_right": {
+            "responses": 8,
+            "tokens_including_EOS": 2327,
+            "min": 235,
+            "median": 285.5,
+            "max": 392,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "run_lengths": {
+            "responses": 8,
+            "tokens_including_EOS": 1175,
+            "min": 75,
+            "median": 148.5,
+            "max": 215,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "stable_unique": {
+            "responses": 8,
+            "tokens_including_EOS": 1228,
+            "min": 82,
+            "median": 122.0,
+            "max": 259,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "union_length": {
+            "responses": 8,
+            "tokens_including_EOS": 4605,
+            "min": 287,
+            "median": 580.5,
+            "max": 1018,
+            "ranges_are_not_confidence_intervals": true
+          }
+        }
+      },
+      "response_records": 96,
+      "fresh_N57_choices": 0,
+      "original_whole_response_carried_tokens": 21181,
+      "old_cell_carried_choices": 0
+    },
+    "subtract_native_boundary": {
+      "grades": {
+        "coding_correct": 52,
+        "coding_gains": 4,
+        "coding_losses": 7,
+        "coding_source_valid": 64,
+        "families": {
+          "arithmetic": {
+            "cases": 16,
+            "correct": 5,
+            "gains": 0,
+            "losses": 2,
+            "role": "retention"
+          },
+          "ceil_ratio": {
+            "cases": 8,
+            "correct": 3,
+            "gains": 1,
+            "losses": 2,
+            "role": "coding"
+          },
+          "first_prefix": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "json": {
+            "cases": 16,
+            "correct": 10,
+            "gains": 0,
+            "losses": 0,
+            "role": "retention"
+          },
+          "long_tokens": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 1,
+            "losses": 0,
+            "role": "coding"
+          },
+          "parenthesis_depth": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 0,
+            "losses": 1,
+            "role": "coding"
+          },
+          "rotate_right": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "run_lengths": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "stable_unique": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 0,
+            "losses": 1,
+            "role": "coding"
+          },
+          "union_length": {
+            "cases": 8,
+            "correct": 4,
+            "gains": 2,
+            "losses": 3,
+            "role": "coding"
+          }
+        },
+        "retention_correct": 15,
+        "retention_gains": 0,
+        "retention_losses": 2,
+        "statuses": {
+          "format_error": 4,
+          "passed": 67,
+          "runtime_error": 1,
+          "wrong_answer": 24
+        }
+      },
+      "response_lengths": {
+        "coding": {
+          "responses": 64,
+          "tokens_including_EOS": 21441,
+          "min": 61,
+          "median": 189.0,
+          "max": 2902,
+          "ranges_are_not_confidence_intervals": true
+        },
+        "retention": {
+          "responses": 32,
+          "tokens_including_EOS": 127,
+          "min": 2,
+          "median": 4.0,
+          "max": 10,
+          "ranges_are_not_confidence_intervals": true
+        },
+        "families": {
+          "arithmetic": {
+            "responses": 16,
+            "tokens_including_EOS": 69,
+            "min": 3,
+            "median": 4.0,
+            "max": 6,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "ceil_ratio": {
+            "responses": 8,
+            "tokens_including_EOS": 8949,
+            "min": 434,
+            "median": 777.0,
+            "max": 2902,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "first_prefix": {
+            "responses": 8,
+            "tokens_including_EOS": 1004,
+            "min": 64,
+            "median": 117.5,
+            "max": 204,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "json": {
+            "responses": 16,
+            "tokens_including_EOS": 58,
+            "min": 2,
+            "median": 3.0,
+            "max": 10,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "long_tokens": {
+            "responses": 8,
+            "tokens_including_EOS": 953,
+            "min": 61,
+            "median": 122.0,
+            "max": 209,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "parenthesis_depth": {
+            "responses": 8,
+            "tokens_including_EOS": 2069,
+            "min": 102,
+            "median": 239.5,
+            "max": 468,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "rotate_right": {
+            "responses": 8,
+            "tokens_including_EOS": 1946,
+            "min": 181,
+            "median": 224.5,
+            "max": 370,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "run_lengths": {
+            "responses": 8,
+            "tokens_including_EOS": 1116,
+            "min": 75,
+            "median": 147.5,
+            "max": 185,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "stable_unique": {
+            "responses": 8,
+            "tokens_including_EOS": 1517,
+            "min": 82,
+            "median": 150.5,
+            "max": 435,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "union_length": {
+            "responses": 8,
+            "tokens_including_EOS": 3887,
+            "min": 277,
+            "median": 478.5,
+            "max": 884,
+            "ranges_are_not_confidence_intervals": true
+          }
+        }
+      },
+      "response_records": 96,
+      "fresh_N57_choices": 21568,
+      "original_whole_response_carried_tokens": 0,
+      "old_cell_carried_choices": 0
+    },
+    "add_native_boundary": {
+      "grades": {
+        "coding_correct": 54,
+        "coding_gains": 5,
+        "coding_losses": 6,
+        "coding_source_valid": 62,
+        "families": {
+          "arithmetic": {
+            "cases": 16,
+            "correct": 7,
+            "gains": 0,
+            "losses": 0,
+            "role": "retention"
+          },
+          "ceil_ratio": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 4,
+            "losses": 1,
+            "role": "coding"
+          },
+          "first_prefix": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "json": {
+            "cases": 16,
+            "correct": 10,
+            "gains": 0,
+            "losses": 0,
+            "role": "retention"
+          },
+          "long_tokens": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 1,
+            "losses": 0,
+            "role": "coding"
+          },
+          "parenthesis_depth": {
+            "cases": 8,
+            "correct": 5,
+            "gains": 0,
+            "losses": 3,
+            "role": "coding"
+          },
+          "rotate_right": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "run_lengths": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "stable_unique": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 0,
+            "losses": 1,
+            "role": "coding"
+          },
+          "union_length": {
+            "cases": 8,
+            "correct": 4,
+            "gains": 0,
+            "losses": 1,
+            "role": "coding"
+          }
+        },
+        "retention_correct": 17,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "statuses": {
+          "format_error": 5,
+          "input_mutation": 1,
+          "passed": 71,
+          "source_error": 2,
+          "wrong_answer": 17
+        }
+      },
+      "response_lengths": {
+        "coding": {
+          "responses": 64,
+          "tokens_including_EOS": 23256,
+          "min": 60,
+          "median": 229.5,
+          "max": 1719,
+          "ranges_are_not_confidence_intervals": true
+        },
+        "retention": {
+          "responses": 32,
+          "tokens_including_EOS": 127,
+          "min": 2,
+          "median": 4.0,
+          "max": 10,
+          "ranges_are_not_confidence_intervals": true
+        },
+        "families": {
+          "arithmetic": {
+            "responses": 16,
+            "tokens_including_EOS": 71,
+            "min": 4,
+            "median": 4.0,
+            "max": 6,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "ceil_ratio": {
+            "responses": 8,
+            "tokens_including_EOS": 7906,
+            "min": 384,
+            "median": 870.5,
+            "max": 1719,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "first_prefix": {
+            "responses": 8,
+            "tokens_including_EOS": 1191,
+            "min": 69,
+            "median": 161.5,
+            "max": 189,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "json": {
+            "responses": 16,
+            "tokens_including_EOS": 56,
+            "min": 2,
+            "median": 3.0,
+            "max": 10,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "long_tokens": {
+            "responses": 8,
+            "tokens_including_EOS": 1057,
+            "min": 61,
+            "median": 110.5,
+            "max": 306,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "parenthesis_depth": {
+            "responses": 8,
+            "tokens_including_EOS": 3138,
+            "min": 120,
+            "median": 314.0,
+            "max": 879,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "rotate_right": {
+            "responses": 8,
+            "tokens_including_EOS": 2744,
+            "min": 173,
+            "median": 356.0,
+            "max": 554,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "run_lengths": {
+            "responses": 8,
+            "tokens_including_EOS": 1465,
+            "min": 75,
+            "median": 198.0,
+            "max": 253,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "stable_unique": {
+            "responses": 8,
+            "tokens_including_EOS": 1251,
+            "min": 60,
+            "median": 119.5,
+            "max": 294,
+            "ranges_are_not_confidence_intervals": true
+          },
+          "union_length": {
+            "responses": 8,
+            "tokens_including_EOS": 4504,
+            "min": 279,
+            "median": 575.0,
+            "max": 693,
+            "ranges_are_not_confidence_intervals": true
+          }
+        }
+      },
+      "response_records": 96,
+      "fresh_N57_choices": 23383,
+      "original_whole_response_carried_tokens": 0,
+      "old_cell_carried_choices": 0
+    }
+  },
+  "families": [
+    "arithmetic",
+    "ceil_ratio",
+    "first_prefix",
+    "json",
+    "long_tokens",
+    "parenthesis_depth",
+    "rotate_right",
+    "run_lengths",
+    "stable_unique",
+    "union_length"
+  ],
+  "connection_primary": {
+    "clauses": {
+      "beats_additive_control_by_at_least2": false,
+      "coding_gains_at_least4": true,
+      "gains_span_at_least2families": true,
+      "preserve_every_original_correct_coding": false,
+      "preserve_every_original_correct_retention": false
+    },
+    "control": "add_native_boundary",
+    "gain_families": [
+      "ceil_ratio",
+      "long_tokens",
+      "union_length"
+    ],
+    "passed": false,
+    "posthoc_additive_winner_allowed": false,
+    "target": "subtract_native_boundary"
+  },
+  "frozen_aggregate": {
+    "actual_counters": {
+      "backward_calls": 0,
+      "base_activation_hook_assignments": 0,
+      "base_buffer_assignments": 0,
+      "branch_input_constructions": 44951,
+      "calls": 45239,
+      "extra_FFN_evaluations": 0,
+      "extra_PLE_evaluations": 0,
+      "extra_attention_evaluations": 0,
+      "extra_native_final_RMS_evaluations": 44951,
+      "extra_native_head_evaluations": 89902,
+      "fresh_choices": 44951,
+      "input_token_exposures": 96894,
+      "manual_parameter_assignments": 0,
+      "native_restoration_forwards": 192,
+      "native_sourceguards": 96,
+      "old_cell_carries": 0,
+      "optimizer_steps": 0,
+      "policy_support_assignments": 44951
+    },
+    "conditions": {
+      "add_native_boundary": {
+        "coding_correct": 54,
+        "coding_gains": 5,
+        "coding_losses": 6,
+        "coding_source_valid": 62,
+        "families": {
+          "arithmetic": {
+            "cases": 16,
+            "correct": 7,
+            "gains": 0,
+            "losses": 0,
+            "role": "retention"
+          },
+          "ceil_ratio": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 4,
+            "losses": 1,
+            "role": "coding"
+          },
+          "first_prefix": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "json": {
+            "cases": 16,
+            "correct": 10,
+            "gains": 0,
+            "losses": 0,
+            "role": "retention"
+          },
+          "long_tokens": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 1,
+            "losses": 0,
+            "role": "coding"
+          },
+          "parenthesis_depth": {
+            "cases": 8,
+            "correct": 5,
+            "gains": 0,
+            "losses": 3,
+            "role": "coding"
+          },
+          "rotate_right": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "run_lengths": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "stable_unique": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 0,
+            "losses": 1,
+            "role": "coding"
+          },
+          "union_length": {
+            "cases": 8,
+            "correct": 4,
+            "gains": 0,
+            "losses": 1,
+            "role": "coding"
+          }
+        },
+        "retention_correct": 17,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "statuses": {
+          "format_error": 5,
+          "input_mutation": 1,
+          "passed": 71,
+          "source_error": 2,
+          "wrong_answer": 17
+        }
+      },
+      "original": {
+        "coding_correct": 55,
+        "coding_gains": 0,
+        "coding_losses": 0,
+        "coding_source_valid": 64,
+        "families": {
+          "arithmetic": {
+            "cases": 16,
+            "correct": 7,
+            "gains": 0,
+            "losses": 0,
+            "role": "retention"
+          },
+          "ceil_ratio": {
+            "cases": 8,
+            "correct": 4,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "first_prefix": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "json": {
+            "cases": 16,
+            "correct": 10,
+            "gains": 0,
+            "losses": 0,
+            "role": "retention"
+          },
+          "long_tokens": {
+            "cases": 8,
+            "correct": 6,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "parenthesis_depth": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "rotate_right": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "run_lengths": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "stable_unique": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "union_length": {
+            "cases": 8,
+            "correct": 5,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          }
+        },
+        "retention_correct": 17,
+        "retention_gains": 0,
+        "retention_losses": 0,
+        "statuses": {
+          "format_error": 4,
+          "passed": 72,
+          "wrong_answer": 20
+        }
+      },
+      "subtract_native_boundary": {
+        "coding_correct": 52,
+        "coding_gains": 4,
+        "coding_losses": 7,
+        "coding_source_valid": 64,
+        "families": {
+          "arithmetic": {
+            "cases": 16,
+            "correct": 5,
+            "gains": 0,
+            "losses": 2,
+            "role": "retention"
+          },
+          "ceil_ratio": {
+            "cases": 8,
+            "correct": 3,
+            "gains": 1,
+            "losses": 2,
+            "role": "coding"
+          },
+          "first_prefix": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "json": {
+            "cases": 16,
+            "correct": 10,
+            "gains": 0,
+            "losses": 0,
+            "role": "retention"
+          },
+          "long_tokens": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 1,
+            "losses": 0,
+            "role": "coding"
+          },
+          "parenthesis_depth": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 0,
+            "losses": 1,
+            "role": "coding"
+          },
+          "rotate_right": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "run_lengths": {
+            "cases": 8,
+            "correct": 8,
+            "gains": 0,
+            "losses": 0,
+            "role": "coding"
+          },
+          "stable_unique": {
+            "cases": 8,
+            "correct": 7,
+            "gains": 0,
+            "losses": 1,
+            "role": "coding"
+          },
+          "union_length": {
+            "cases": 8,
+            "correct": 4,
+            "gains": 2,
+            "losses": 3,
+            "role": "coding"
+          }
+        },
+        "retention_correct": 15,
+        "retention_gains": 0,
+        "retention_losses": 2,
+        "statuses": {
+          "format_error": 4,
+          "passed": 67,
+          "runtime_error": 1,
+          "wrong_answer": 24
+        }
+      }
+    },
+    "connection_primary": {
+      "clauses": {
+        "beats_additive_control_by_at_least2": false,
+        "coding_gains_at_least4": true,
+        "gains_span_at_least2families": true,
+        "preserve_every_original_correct_coding": false,
+        "preserve_every_original_correct_retention": false
+      },
+      "control": "add_native_boundary",
+      "gain_families": [
+        "ceil_ratio",
+        "long_tokens",
+        "union_length"
+      ],
+      "passed": false,
+      "posthoc_additive_winner_allowed": false,
+      "target": "subtract_native_boundary"
+    },
+    "edited_response_records": 192,
+    "exact_grade_carries_among192_newconditions": 71,
+    "experiment": "N57",
+    "fresh_choices": 44951,
+    "grading_calls_new_unique_candidates": 121,
+    "old_cell_carried_choices": 0,
+    "original_carry_new_N57_choices": 0,
+    "original_prediction_grade_carries": 96,
+    "original_whole_response_carried_tokens": 21181,
+    "records": 288,
+    "scope": "Reused development complete programs; no fresh confirmation, individual meaning or speed.",
+    "status": "complete_host_audited"
+  },
+  "actual_counters": {
+    "backward_calls": 0,
+    "base_activation_hook_assignments": 0,
+    "base_buffer_assignments": 0,
+    "branch_input_constructions": 44951,
+    "calls": 45239,
+    "extra_FFN_evaluations": 0,
+    "extra_PLE_evaluations": 0,
+    "extra_attention_evaluations": 0,
+    "extra_native_final_RMS_evaluations": 44951,
+    "extra_native_head_evaluations": 89902,
+    "fresh_choices": 44951,
+    "input_token_exposures": 96894,
+    "manual_parameter_assignments": 0,
+    "native_restoration_forwards": 192,
+    "native_sourceguards": 96,
+    "old_cell_carries": 0,
+    "optimizer_steps": 0,
+    "policy_support_assignments": 44951
+  },
+  "all_condition_records": 288,
+  "original_prediction_grade_carries": 96,
+  "edited_response_records": 192,
+  "original_whole_response_carried_tokens": 21181,
+  "fresh_N57_choices": 44951,
+  "old_cell_carried_choices": 0,
+  "scope": "All96/all3 reused-development complete programs. No winner, pvalues, individual meaning, mediation, speed or fresh confirmation. Original whole-response carry tokens are zero N57 choices. Min/max ranges are descriptive, not confidence intervals."
+}

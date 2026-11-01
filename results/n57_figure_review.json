@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-01T22:46:33.991433+00:00",
+  "status": "EXISTING_ONCE_RENDERED_ACTUAL_FIGURE_RECEIPT_FINALIZED",
+  "figure_path": "docs/figures/n57/n57_summary.png",
+  "figure_sha256": "f29457b5da4dc119a6e9f0470ad514f4ab6a05cdd5e1d1f23a3513c8d9e6a2da",
+  "actual_original_render_invocations": 1,
+  "additional_render_invocations": 0,
+  "panels": 6,
+  "visual_review": "PASS_all6_existing_actual_panels_viewed",
+  "supplement_sha256": "eca0c259b2b1aa80b4fb41eb3f9d6348e50b48e85c25af7305b425c537014634",
+  "actual_input_binding_sha256": "1e75677dd7b8bef4e452649d37276cf174511500fbe2c7709bedcb578da49545",
+  "source_freeze_v2_sha256": "9bfc42ac8e83d7e7bbade6f8282d0684897ea9bcbdfa1921dbcfe273d0ac61aa",
+  "first_report_failure_sha256": "baf958246c2a9cb099879a824a4efa64f81bea6e42b3b6be5f9a74d462705190",
+  "original_frozen_reporter_invocations": 1,
+  "original_scientific_or_reporting_sources_changed": 0,
+  "model_tokenizer_scorer_executor_or_fixture_calls": 0,
+  "additional_binding_or_numeric_analysis_calls": 0
+}

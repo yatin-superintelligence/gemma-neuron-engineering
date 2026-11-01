@@ -1,0 +1,18 @@
+{
+  "registered_utc": "2026-11-01T22:46:33.804143+00:00",
+  "timing": "After original reporter first post-render path serialization failure, before separate finalizer implementation/execution. Scientific audit and actual bind/render already completed.",
+  "scope": "Receipt path serialization only. Preserve original reporter, helper, plan, source freeze and first failure. NEVER rebind/rerender/recompute aggregate or rescore. The actual three assets are immutable. New finalizer verifies these exact hashes and produces a separately named receipt with resolved relative path.",
+  "first_failure_sha256": "baf958246c2a9cb099879a824a4efa64f81bea6e42b3b6be5f9a74d462705190",
+  "original_reporting_freeze_sha256": "6910d85ef6039ec0e46aefabb5a1a16abfd0a4e1acf2dd70091683463586c851",
+  "original_science_freeze_sha256": "8248d6caeb1d42976bca351dd098956faf21a390bc0e79e748765eb7de097107",
+  "assets": {
+    "research/figures/n57/actual_input_binding.json": "1e75677dd7b8bef4e452649d37276cf174511500fbe2c7709bedcb578da49545",
+    "research/figures/n57/n57_all_condition_supplement.json": "eca0c259b2b1aa80b4fb41eb3f9d6348e50b48e85c25af7305b425c537014634",
+    "research/figures/n57/n57_summary.png": "f29457b5da4dc119a6e9f0470ad514f4ab6a05cdd5e1d1f23a3513c8d9e6a2da"
+  },
+  "audit_sha256": "7c013987b5206d080e14a1151fd75515e1510a2198eb8d47858e6de43180dca0",
+  "aggregate_sha256": "9a88f6bb466cbc06d9b48a9b5af4eb879e963d4cb6fee48481dff068868d23c2",
+  "new_models_tokenizers_graders_executors_fixtures": 0,
+  "extra_scientific_figure_renders": 0,
+  "visual_observation": "Existing full actual PNG viewed once: all6 panels, all3 arms,10families, full five-clause target/overallFAIL, carried/fresh accounting and descriptive ranges legible. No overlap or clipping."
+}
