@@ -20,9 +20,9 @@ SOURCES = {
     'Edit weights': ['interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
     'Edit connections': ['interpretability/memory_connection.py'],
     'Reconstruct': ['reproduce/model_edits.py'],
-    'Evaluate': ['evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
+    'Evaluate': ['evaluation/signed_mask_reporting.py', 'evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
     'Generate and resume': ['interpretability/native_eos_generation.py'],
-    'Record evidence': ['interpretability/durable_measurement_journal_v2.py'],
+    'Record evidence': ['evaluation/durable_zip.py', 'interpretability/durable_measurement_journal_v2.py'],
 }
 
 

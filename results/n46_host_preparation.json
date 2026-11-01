@@ -1,0 +1,18 @@
+{
+  "scope": "Closed new branch/carry,archive and recorded-witness checks;not pretrained results.",
+  "new_random_branch_carry_contexts": 2,
+  "random_model_forwards": 128,
+  "random_model_input_exposures": 512,
+  "toy_reference_argmax_decisions": 16,
+  "archive_roundtrip_positives": 1,
+  "archive_refusals": 10,
+  "new_audit_positives": 2,
+  "new_audit_refusals": 16,
+  "isolated_package_sources": 37,
+  "isolated_package_inputs": 10,
+  "package_model_tokenizer_calls": 0,
+  "pretrained_calls": 0,
+  "new_pretrained_generated_tokens": 0,
+  "optimizer_steps": 0,
+  "closed_N45_N43_T01_fixtures_rerun": false
+}

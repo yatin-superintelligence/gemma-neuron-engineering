@@ -967,7 +967,7 @@
       "question": "Do negative versus positive native final-MLP post-gating contributions differ from matched-cardinality random removal on fixed original native histories?",
       "motivation": "Signed activity alone is not meaning;N41sparse utility failed and N44freegeneration was resource-incomplete. Test a distinct bounded causal operation without new generation.",
       "experiment": "N45: signed native final-MLP contributions",
-      "status": "private_version1_running_no_outputs_accessed",
+      "status": "complete_host_audited_closed",
       "protocol": "research/experiments/n45/protocol.json",
       "decision_rule": "Only the complete all96case/all5condition panel may be interpreted;no useful gain or individual meaning claim.",
       "optimizer_steps": 0,
@@ -979,13 +979,31 @@
       ],
       "question_provenance": "Direct continued-science steering. N38records signed activity,N41closes sparse deletion utility and N44is resource incomplete. Test a distinct bounded causal sign partition with no partial-effect selection.",
       "method": "At final site34,current native down-projection input only,compare original,negative zero,positive zero and two fixed-permutation masks matched to each sign count. Retain all96N41original cases and firstmin(3,T)decisions:281points,2810forwards,106120input exposures,1405activationassignments,zero newtokens or parameter/optimizer updates. Native source logits/raw cache,identity,each edit-restoration,state and durable lineage must all pass.",
-      "result": "One private version1 job is RUNNING from checkpoint 8435e8115e31e1816a2c2f056b0b626a98406868. All329actual source/input/notebook/payload and inherited files freeze before launch. New36independent numerical paths/11refusals,three auditor positives/16refusals and a distinct actual-counter integration pass. Exact server notebook/private dataset/downloaded payload match. Fresh quota19.99freeGPUh and all65ownprojectjobs terminal before launch. No N45output accessed.",
+      "result": "All 96 cases, five conditions and 281 points pass the single frozen audit. All 192 early coding choices remain unchanged in every edited condition. Coding native-winner margins average 24.8429 original, 30.8877 negative removal, 15.6661 positive removal, 24.1271 random-negative-count and 17.7410 random-positive-count. The original winner probability averages 0.99999996 on these early coding positions. Removal energies differ, so sign-specific meaning is not established. All role and family values remain in the complete aggregate. Static vocabulary annotation finds that all 192 sampled coding decisions are the common opening Python code fence. This is a response-format prefix result, not a function-body measurement.",
       "interpretation": "Development layer-local post-gating signed-contribution measurement. Random controls match cardinality,not magnitude or energy. No gate-preactivation,syntax-specific role,individual meaning,utility,mediation or speed inference. Direct negative-preactivation prior is explicit.",
-      "next_question": "Complete all96case/all5condition audit before mechanism interpretation. Then choose a distinct evidence-motivated next experiment within the unchanged work window.",
-      "direction_decision": "Execute the single frozen bounded measurement;no active-source mutation,duplicate launch,partial retrieval or closed gate rerun."
+      "next_question": "Q61 will test the unchanged interventions at fixed response-length quartiles, carrying all overlapping N45 measurements exactly and using full native replay for source lineage. No arbitrary new-response ceiling or fresh generation is introduced.",
+      "direction_decision": "Execute the single frozen bounded measurement;no active-source mutation,duplicate launch,partial retrieval or closed gate rerun.",
+      "historical_preoutput_result": "One private version1 job is RUNNING from checkpoint 8435e8115e31e1816a2c2f056b0b626a98406868. All329actual source/input/notebook/payload and inherited files freeze before launch. New36independent numerical paths/11refusals,three auditor positives/16refusals and a distinct actual-counter integration pass. Exact server notebook/private dataset/downloaded payload match. Fresh quota19.99freeGPUh and all65ownprojectjobs terminal before launch. No N45output accessed."
+    },
+    {
+      "id": "Q61",
+      "experiment": "N46: fixed quartile signed-contribution measurement",
+      "status": "private_version1_running_no_outputs_accessed",
+      "question": "Does the fixed final-MLP sign-removal pattern persist at response-length quartiles beyond the shared initial code fence?",
+      "question_provenance": "The complete N45 early coding sample is saturated and all192choices remain unchanged. Subsequent static annotation identifies the common code fence;the N46quartile protocol froze before that annotation. No case,site,dose,rank or sign is selected from effects.",
+      "parents": [
+        "Q60",
+        "Q55",
+        "Q57"
+      ],
+      "method": "Retain all96original N41cases. Replay every21181native decision with exact full-FP32-logit,argmax and raw-cache witnesses. At fixed quarter/half/three-quarter positions,carry66overlapping N45points exactly and measure215newpoints under all5unchanged conditions. Fresh nonalias cache branches,identity and native restoration for everynewedit,actualcase/terminalstate and durablecounters are mandatory. No new responses or grades.",
+      "result": "New FP32/BF16 cached-branch/carry checks pass128random-model forwards/512inputexposures with16explicitly counted toy reference argmax decisions and0pretrained calls. Lossless archive roundtrip and10refusals pass. New audit literals pass2positives/16refusals. A copied intent-context label is corrected only in worker_v2,with exact inverse substitution and no numerical change. All494actual scientific/input/inherited files freeze;37payloadsources/10inputs. No N46pretrained output exists or has been accessed. One private version1 job is now RUNNING from checkpoint b84ac31dc8c44410a009bd6e094d8753b0a57c98. Exact server notebook/private metadata/one private ready dataset and downloaded payload hash match. Fresh quota19.84freeGPUhours,all66ownprojectjobs terminal before launch. No N46outputs accessed.",
+      "interpretation": "Development position dependence of post-gating contribution removals. Quartiles are not guaranteed semantic code-body milestones. Random controls match cardinality,not energy;native sign is basis dependent. No coding gain,individual meaning,syntax-specific role,mediation or speed claim.",
+      "next_question": "Execute one bounded private measurement after fresh quota and own-job inventory. Audit the entire panel once before interpreting or choosing a new direction.",
+      "direction_decision": "Use the existing sign masks and matched controls without a new dose/site sweep. Carry every completed overlap and record all source replay work. Package outputs losslessly for one-shot transport;preserve all prior failures and criteria."
     }
   ],
-  "active_question_id": "Q60",
+  "active_question_id": "Q61",
   "next_question_id": null,
-  "utc": "2026-11-01T08:56:33.279151+00:00"
+  "utc": "2026-11-01T09:54:44.398024+00:00"
 }

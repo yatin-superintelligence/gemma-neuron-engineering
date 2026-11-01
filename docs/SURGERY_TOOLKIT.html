@@ -2106,6 +2106,57 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>signed_mask_reporting</h2><p>Validate the fixed complete N45 reporting projection without model imports.</p><p><a href="../evaluation/signed_mask_reporting.py">Exact source file</a></p><p class="small">APIs: validate</p><p class="hash">SHA-256 68902817578a8a2fdfd2d7a84ebc07720820f4f7392b5df3d2c5d723b97baf81</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Validate the fixed complete N45 reporting projection without model imports.&quot;&quot;&quot;
+import hashlib
+import json
+import math
+
+CONDITIONS = (&#x27;original&#x27;, &#x27;remove_negative&#x27;, &#x27;random_negative_count&#x27;, &#x27;remove_positive&#x27;, &#x27;random_positive_count&#x27;)
+METRICS = {&#x27;argmax_changed&#x27;, &#x27;native_margin&#x27;, &#x27;native_winner_probability&#x27;, &#x27;delta_L2&#x27;, &#x27;delta_maxabs&#x27;, &#x27;mask_count&#x27;, &#x27;removed_h_energy_fraction&#x27;}
+COUNTERS = {&#x27;calls&#x27;: 2810, &#x27;input_token_exposures&#x27;: 106120, &#x27;activation_assignments&#x27;: 1405,
+            &#x27;extra_FFN_evaluations&#x27;: 0, &#x27;new_generated_tokens&#x27;: 0, &#x27;manual_parameter_assignments&#x27;: 0,
+            &#x27;backward_calls&#x27;: 0, &#x27;optimizer_steps&#x27;: 0}
+
+
+def validate(data, receipt, plan):
+    if (receipt.get(&#x27;status&#x27;) != &#x27;complete_pass_all_frozen_guards&#x27;
+            or receipt.get(&#x27;all96_cases_all5conditions&#x27;) is not True
+            or receipt.get(&#x27;public_aggregate_sha256&#x27;) != hashlib.sha256(data).hexdigest()):
+        raise ValueError(&#x27;Complete frozen audit and exact aggregate hash required&#x27;)
+    a = json.loads(data)
+    if (a.get(&#x27;experiment&#x27;) != &#x27;N45&#x27; or a.get(&#x27;status&#x27;) != &#x27;complete_host_audited&#x27;
+            or type(a.get(&#x27;cases&#x27;)) is not int or a[&#x27;cases&#x27;] != 96
+            or type(a.get(&#x27;sampled_decisions&#x27;)) is not int or a[&#x27;sampled_decisions&#x27;] != 281
+            or a[&#x27;conditions&#x27;] != list(CONDITIONS)
+            or set(a[&#x27;strata&#x27;]) != set(plan[&#x27;strata&#x27;])):
+        raise ValueError(&#x27;Every original condition, case and stratum required&#x27;)
+    for counters in [a[&#x27;actual_counters&#x27;], receipt[&#x27;actual_counters&#x27;]]:
+        if set(counters) != set(COUNTERS) or any(type(counters[k]) is not int or counters[k] != v for k, v in COUNTERS.items()):
+            raise ValueError(&#x27;Exact actual work counts required&#x27;)
+    for name, expected in plan[&#x27;strata&#x27;].items():
+        group = a[&#x27;strata&#x27;][name]
+        if any(type(group[k]) is not int or group[k] != expected[k] for k in [&#x27;cases&#x27;, &#x27;sampled_decisions&#x27;]) or set(group[&#x27;conditions&#x27;]) != set(CONDITIONS):
+            raise ValueError(&#x27;Fixed cohort and all conditions required&#x27;)
+        for condition in CONDITIONS:
+            metrics = group[&#x27;conditions&#x27;][condition]
+            if set(metrics) != METRICS: raise ValueError(&#x27;Every frozen metric required&#x27;)
+            for key, value in metrics.items():
+                if set(value) != {&#x27;case_mean&#x27;, &#x27;defined_cases&#x27;, &#x27;undefined_cases&#x27;}: raise ValueError(&#x27;Exact mean and null provenance required&#x27;)
+                for field in [&#x27;defined_cases&#x27;, &#x27;undefined_cases&#x27;]:
+                    if type(value[field]) is not int or value[field] &lt; 0: raise ValueError(&#x27;Strict case counts required&#x27;)
+                if value[&#x27;defined_cases&#x27;]+value[&#x27;undefined_cases&#x27;] != group[&#x27;cases&#x27;]: raise ValueError(&#x27;Every case accounted for&#x27;)
+                mean = value[&#x27;case_mean&#x27;]
+                if value[&#x27;defined_cases&#x27;] == 0:
+                    if mean is not None: raise ValueError(&#x27;Undefined mean must stay null&#x27;)
+                elif type(mean) not in (float, int) or not math.isfinite(mean): raise ValueError(&#x27;Finite audited mean required&#x27;)
+                if key != &#x27;removed_h_energy_fraction&#x27; and value[&#x27;undefined_cases&#x27;]: raise ValueError(&#x27;Unexpected missing finite metric&#x27;)
+                if mean is not None:
+                    if key != &#x27;native_margin&#x27; and mean &lt; 0: raise ValueError(&#x27;Negative nonnegative metric&#x27;)
+                    if key in [&#x27;argmax_changed&#x27;, &#x27;native_winner_probability&#x27;, &#x27;removed_h_energy_fraction&#x27;] and mean &gt; 1: raise ValueError(&#x27;Fraction outside0..1&#x27;)
+                    if key == &#x27;mask_count&#x27; and mean &gt; 12288: raise ValueError(&#x27;Mask count exceeds native width&#x27;)
+                    if condition == &#x27;original&#x27; and key in [&#x27;argmax_changed&#x27;, &#x27;delta_L2&#x27;, &#x27;delta_maxabs&#x27;, &#x27;mask_count&#x27;, &#x27;removed_h_energy_fraction&#x27;] and mean != 0:
+                        raise ValueError(&#x27;Original cannot differ from itself&#x27;)
+    return a
 </pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>normalization_figure_contract</h2><p>Validate a complete saved normalization aggregate without recomputing science.</p><p><a href="../evaluation/normalization_figure_contract.py">Exact source file</a></p><p class="small">APIs: require, mean, aggregate, validate</p><p class="hash">SHA-256 e9ca9b3053ccd49309e4cad35d41ccdd8dd453e60b3e19253a29fa804cae6af9</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Validate a complete saved normalization aggregate without recomputing science.&quot;&quot;&quot;
 
 from fractions import Fraction
@@ -2699,6 +2750,77 @@ def generate_native_eos(model, tokenizer, encoded, eos, *, resource_guard,
             &#x27;completed_forward_calls&#x27;: completed, &#x27;input_token_exposures&#x27;: exposures,
             &#x27;new_response_token_ceiling&#x27;: None, &#x27;configured_context&#x27;: maximum,
             &#x27;optimizer_steps&#x27;: 0, &#x27;backward_calls&#x27;: 0, &#x27;parameter_assignments&#x27;: 0}
+</pre></details></article><article class="card tool" data-category="Record evidence"><span class="tag">Record evidence</span><h2>durable_zip</h2><p>Lossless bounded private output transport with strict member provenance.</p><p><a href="../evaluation/durable_zip.py">Exact source file</a></p><p class="small">APIs: sha, safe_name, pack, verify, unpack</p><p class="hash">SHA-256 c70dd154e498c6bc2e29f5fe3bb9461c92724bd2bd214afc680985452f959156</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Lossless bounded private output transport with strict member provenance.&quot;&quot;&quot;
+import hashlib
+import json
+from pathlib import Path, PurePosixPath
+import stat
+import zipfile
+
+
+def sha(data): return hashlib.sha256(data).hexdigest()
+
+
+def safe_name(name):
+    path = PurePosixPath(name)
+    if not name or path.is_absolute() or &#x27;..&#x27; in path.parts or &#x27;\\&#x27; in name or &#x27;:&#x27; in name or str(path) != name:
+        raise ValueError(&#x27;Strict relative output member required&#x27;)
+
+
+def pack(source, archive, manifest_path, maximum=67108864):
+    source, archive, manifest_path = map(Path, (source, archive, manifest_path))
+    if archive.exists() or manifest_path.exists(): raise ValueError(&#x27;Never overwrite transport evidence&#x27;)
+    files = sorted(p for p in source.rglob(&#x27;*&#x27;) if p.is_file())
+    if not files or any(p.is_symlink() for p in source.rglob(&#x27;*&#x27;)): raise ValueError(&#x27;Actual regular output files required&#x27;)
+    records = {}
+    total = 0
+    with zipfile.ZipFile(archive, &#x27;x&#x27;, compression=zipfile.ZIP_DEFLATED, compresslevel=6) as stream:
+        for path in files:
+            name = path.relative_to(source).as_posix(); safe_name(name)
+            data = path.read_bytes(); total += len(data)
+            if total &gt; maximum: raise ValueError(&#x27;Raw output storage boundary exceeded&#x27;)
+            info = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED; info.external_attr = (stat.S_IFREG | 0o600) &lt;&lt; 16
+            stream.writestr(info, data)
+            records[name] = {&#x27;bytes&#x27;: len(data), &#x27;sha256&#x27;: sha(data)}
+    manifest = {&#x27;schema&#x27;: &#x27;digital-surgery-output-zip-v1&#x27;, &#x27;raw_bytes&#x27;: total,
+                &#x27;archive_sha256&#x27;: sha(archive.read_bytes()), &#x27;files&#x27;: records}
+    verify(archive, manifest, maximum)
+    with manifest_path.open(&#x27;x&#x27;) as stream: stream.write(json.dumps(manifest, indent=2)+&#x27;\n&#x27;)
+    return manifest
+
+
+def verify(archive, manifest, maximum=67108864):
+    if manifest.get(&#x27;schema&#x27;) != &#x27;digital-surgery-output-zip-v1&#x27; or sha(Path(archive).read_bytes()) != manifest[&#x27;archive_sha256&#x27;]:
+        raise ValueError(&#x27;Exact archive identity required&#x27;)
+    if type(manifest[&#x27;raw_bytes&#x27;]) is not int or not 0 &lt;= manifest[&#x27;raw_bytes&#x27;] &lt;= maximum: raise ValueError(&#x27;Raw storage boundary invalid&#x27;)
+    with zipfile.ZipFile(archive) as stream:
+        names = stream.namelist()
+        if len(names) != len(set(names)) or set(names) != set(manifest[&#x27;files&#x27;]): raise ValueError(&#x27;Exact unique member inventory required&#x27;)
+        total = 0
+        for info in stream.infolist():
+            safe_name(info.filename)
+            if info.is_dir() or stat.S_ISLNK(info.external_attr &gt;&gt; 16): raise ValueError(&#x27;Only regular file members accepted&#x27;)
+            record = manifest[&#x27;files&#x27;][info.filename]
+            if type(record[&#x27;bytes&#x27;]) is not int or record[&#x27;bytes&#x27;] &lt; 0 or info.file_size != record[&#x27;bytes&#x27;]: raise ValueError(&#x27;Strict actual member size required&#x27;)
+            total += info.file_size
+            if total &gt; maximum: raise ValueError(&#x27;Expanded output boundary exceeded&#x27;)
+            data = stream.read(info)
+            if len(data) != record[&#x27;bytes&#x27;] or sha(data) != record[&#x27;sha256&#x27;]: raise ValueError(&#x27;Member byte identity differs&#x27;)
+        if total != manifest[&#x27;raw_bytes&#x27;]: raise ValueError(&#x27;Expanded total differs&#x27;)
+
+
+def unpack(archive, manifest, destination, maximum=67108864):
+    destination = Path(destination)
+    if destination.exists(): raise ValueError(&#x27;Never overwrite received raw evidence&#x27;)
+    verify(archive, manifest, maximum)
+    destination.mkdir(parents=True)
+    with zipfile.ZipFile(archive) as stream:
+        for name in stream.namelist():
+            target = destination / name
+            if not target.resolve().is_relative_to(destination.resolve()): raise ValueError(&#x27;Output path escapes destination&#x27;)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            with target.open(&#x27;xb&#x27;) as output: output.write(stream.read(name))
 </pre></details></article><article class="card tool" data-category="Record evidence"><span class="tag">Record evidence</span><h2>durable_measurement_journal_v2</h2><p>Append-only observation receipts for future measurements, not model certification.
 
 Call begin BEFORE external work, prepare AFTER restoration, then commit. A durable

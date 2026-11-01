@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-01T09:33:27.709662+00:00",
+  "status": "dated_host_only_token_scope_clarification",
+  "finding": "The reference-building loops in the two new random-model fixtures make3and2autoregressive argmax decisions respectively. Their unqualified new_generated_tokens0 fields omit these five toy reference decisions. The actual pretrained N45 measurement generates exactly0newtokens,unchanged. Teacher replay decisions are not additional generated tokens.",
+  "corrected_accounting": {
+    "random_fixture_reference_argmax_decisions": 5,
+    "new_pretrained_generated_tokens": 0,
+    "optimizer_steps": 0
+  },
+  "all_closed_sources_receipts_and329freeze_unchanged": true,
+  "new_model_or_fixture_calls": 0
+}

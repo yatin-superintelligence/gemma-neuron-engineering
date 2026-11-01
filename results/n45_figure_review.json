@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-01T10:06:24.460331+00:00",
+  "status": "actual_complete_audited_figure_rendered_once",
+  "input_sha256": {
+    "aggregate": "a53458ef0786951305b74476f5373a91460a53d3d473e4eeb029a5ba610a10ae",
+    "audit_receipt": "48e7da88f6a99754d735d85bbd7063b2febe98e110b5cb4bebc190c7740abf59",
+    "reporting_plan": "2e9a4cd1831ddeafc6fcc1a8302794b4b55f1b922bcdfcff9eb42b07bfe3dba3"
+  },
+  "sources": {
+    "evaluation/signed_mask_reporting.py": "68902817578a8a2fdfd2d7a84ebc07720820f4f7392b5df3d2c5d723b97baf81",
+    "scripts/plot_n45_summary.py": "725e399bef43b0e62127e9af2f92fec9d1f6daf53e6741c4bf1d8ac8e7fdffaf"
+  },
+  "figure_sha256": "7b5d89aa517b9cd3d4dd6465f51cfe4f0b0f7c901a0f81bd0ff2652566f9974f",
+  "all_conditions_roles_families_retained": true,
+  "model_tokenizer_executor_scorer_calls": 0,
+  "visual_QA": "pass_all6panels_no_overlap_or_clipping",
+  "all6panels_viewed": true,
+  "actual_render_invocations": 1,
+  "public_aggregate_review_passed": true,
+  "figure_path": "docs/figures/n45/n45_summary.png"
+}

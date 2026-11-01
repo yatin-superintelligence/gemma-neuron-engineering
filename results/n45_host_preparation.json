@@ -9,7 +9,9 @@
   "integration_assay_forwards": 20,
   "integration_assay_exposures": 60,
   "integration_activation_assignments": 10,
-  "new_generated_tokens": 0,
+  "new_pretrained_generated_tokens": 0,
+  "random_fixture_reference_argmax_decisions": 5,
+  "accounting_clarification": "n45_host_accounting_scope_clarification.json",
   "optimizer_steps": 0,
   "closed_fixtures_rerun": false,
   "generic_helper_sha256": "9b57f9f5485d211ccf88d7840b4572a2505ca19ab2b6538019d3f04e2e96e056"

@@ -1,0 +1,11 @@
+{
+  "scope": "Reporting only,not an original scientific primary.",
+  "new_schema_positives": 2,
+  "new_refusals": 14,
+  "synthetic_layouts_viewed_then_hashed_and_deleted": 2,
+  "actual_render_invocations": 1,
+  "all6_actual_panels_viewed": true,
+  "all_conditions_roles_families_retained": true,
+  "model_tokenizer_executor_scorer_calls": 0,
+  "optimizer_steps": 0
+}

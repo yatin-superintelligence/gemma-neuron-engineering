@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-01T09:40:28.529749+00:00",
+  "scientific_operation_unchanged_from_N45": true,
+  "motivation_evidence": "N45frozen complete all-condition aggregate: coding firstK0choicechanges/all4edits,originalnativewinner probability0.9999999596. No N43/N44partialeffects used.",
+  "primary_prior": "https://arxiv.org/html/2509.24198",
+  "prior_scope": "Sign-specific neural ablation is prior work. N46uses post-gating product,not negative gatepreactivation or selectedsyntaxneurons. Native coordinate basis dependence and RMSsharedscale remain limits;no general-method novelty.",
+  "pinned_Gemma_module_sha256": "64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933",
+  "reused_closed_primitives": [
+    "signed_native_mask",
+    "native_cache_branch",
+    "N43clone_cache",
+    "N44RowStore"
+  ],
+  "active_functions_only": "N46neverinvokesN43one_point,N45auditorCLI,oldcontinuation.extend oranygrader/generate/backward/optimizer. Reused helpers operate only on new branch/carry contexts.",
+  "active_worker": "worker_v2.py",
+  "metadata_only_amendment_no_numerical_change": true,
+  "model_calls_in_review": 0
+}

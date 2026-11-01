@@ -216,6 +216,14 @@
     },
     {
       "category": "Evaluate",
+      "path": "evaluation/signed_mask_reporting.py",
+      "sha256": "68902817578a8a2fdfd2d7a84ebc07720820f4f7392b5df3d2c5d723b97baf81",
+      "symbols": [
+        "validate"
+      ]
+    },
+    {
+      "category": "Evaluate",
       "path": "evaluation/normalization_figure_contract.py",
       "sha256": "e9ca9b3053ccd49309e4cad35d41ccdd8dd453e60b3e19253a29fa804cae6af9",
       "symbols": [
@@ -275,6 +283,18 @@
       "sha256": "9dc0d62f60e8073f7a82d891cb7e9b08e2d96b6c145a2b1c8cbd2454f50c730d",
       "symbols": [
         "generate_native_eos"
+      ]
+    },
+    {
+      "category": "Record evidence",
+      "path": "evaluation/durable_zip.py",
+      "sha256": "c70dd154e498c6bc2e29f5fe3bb9461c92724bd2bd214afc680985452f959156",
+      "symbols": [
+        "sha",
+        "safe_name",
+        "pack",
+        "verify",
+        "unpack"
       ]
     },
     {
@@ -635,6 +655,17 @@
         "conditions": 5
       },
       "sha256": "c6f0228bcbd37506fd90cac8acf550202f36640fcab458995b77f7d632c1e0f3"
+    },
+    {
+      "path": "models/n45/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "BF16 text,original native weights",
+      "kind": "runtime_activation_policy",
+      "counts": {
+        "conditions": 5
+      },
+      "sha256": "8d5f4d5e6cd7d78951750884ca97bdee20a8d4d289ce8c82e5eeca1b6e70e36a"
     }
   ],
   "tensor_assets": [

@@ -1,0 +1,72 @@
+{
+  "utc": "2026-11-01T09:26:07.705459+00:00",
+  "experiment": "N45",
+  "registration_phase": "After terminal status and initial file-transfer failure,before finite measurement values are inspected or scientific audit dispatched. Reporting only,not original scientific primary.",
+  "panels": [
+    "argmax changed fraction:all5conditions,bothroles",
+    "full-vocabulary delta L2:all5conditions,bothroles",
+    "nativewinner probability:all5conditions,bothroles",
+    "nativewinner versus fixedother margin:all5conditions,bothroles",
+    "removed native h squared-energy fraction:all5conditions,bothroles,defined-case counts explicit",
+    "all10families byall5conditions full-logit delta L2 matrix"
+  ],
+  "strata": {
+    "all": {
+      "cases": 96,
+      "sampled_decisions": 281
+    },
+    "role:coding": {
+      "cases": 64,
+      "sampled_decisions": 192
+    },
+    "role:retention": {
+      "cases": 32,
+      "sampled_decisions": 89
+    },
+    "family:arithmetic": {
+      "cases": 16,
+      "sampled_decisions": 48
+    },
+    "family:ceil_ratio": {
+      "cases": 8,
+      "sampled_decisions": 24
+    },
+    "family:first_prefix": {
+      "cases": 8,
+      "sampled_decisions": 24
+    },
+    "family:json": {
+      "cases": 16,
+      "sampled_decisions": 41
+    },
+    "family:long_tokens": {
+      "cases": 8,
+      "sampled_decisions": 24
+    },
+    "family:parenthesis_depth": {
+      "cases": 8,
+      "sampled_decisions": 24
+    },
+    "family:rotate_right": {
+      "cases": 8,
+      "sampled_decisions": 24
+    },
+    "family:run_lengths": {
+      "cases": 8,
+      "sampled_decisions": 24
+    },
+    "family:stable_unique": {
+      "cases": 8,
+      "sampled_decisions": 24
+    },
+    "family:union_length": {
+      "cases": 8,
+      "sampled_decisions": 24
+    }
+  },
+  "policy": "Use exact audited equal-case means without new modelcalls,regrading,case selection or aggregation. Allother metrics/maskcounts/strata remain complete JSON. Mean metrics are descriptive,dependentfamilies/bindings,no pvalues or utility/individualmeaning/mediation/speed claim.",
+  "axes": "Linear and zero-inclusive. Probabilities/changedfractions/energy fixed0..1. Margin axis includes actual signedvalues andzero. Matrix shared0..max acrossallfamilies/conditions. Allzero matrix uses uncoloredzero table without inventedrange.",
+  "actual_render_requires": "Complete frozen N45auditPASS and exact aggregate hash. Refuse incomplete/failed audit,mismatched schema,source changes or output overwrite. Preserve source/input/output hashes and visually inspectactualfigureonce.",
+  "original329source_freeze_unchanged": true,
+  "model_tokenizer_executor_scorer_calls": 0
+}

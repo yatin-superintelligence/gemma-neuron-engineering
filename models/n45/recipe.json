@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "experiment": "N45",
+  "kind": "runtime_activation_policy",
+  "base": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7"
+  },
+  "representation": "BF16 text,original native weights",
+  "site": 34,
+  "conditions": [
+    "original",
+    "remove_negative",
+    "random_negative_count",
+    "remove_positive",
+    "random_positive_count"
+  ],
+  "target": "Only current last position at native finalMLP down_proj input h=act(gate(x))*up(x). All other positions unchanged.",
+  "rules": {
+    "original": "No activation replacement.",
+    "remove_negative": "Assign literal0where native h<0. Strict signedzeros excluded.",
+    "remove_positive": "Assign literal0where native h>0. Strict signedzeros excluded.",
+    "random_negative_count": "Fixed random.Random4501permutation of all12288channels,prefix length actualnegativecount,then assign0. Cardinalityonly.",
+    "random_positive_count": "Fixed random.Random4502permutation,prefix length actualpositivecount,then assign0. Cardinalityonly."
+  },
+  "implementation": "interpretability/signed_native_mask.py",
+  "implementation_sha256": "9b57f9f5485d211ccf88d7840b4572a2505ca19ab2b6538019d3f04e2e96e056",
+  "new_tensor_bytes": 0,
+  "new_unique_parameters": 0,
+  "parameter_assignments": 0,
+  "optimizer_steps": 0,
+  "training_allowed": false,
+  "usage": "Load the pinned original BF16model. Enter signed_mask(model,condition) around the declared forward. The context removes every own hook on exit. This recipe is a runtime policy,not a separate set of edited weights.",
+  "validation": {
+    "source_experiment_complete_frozen_host_audited": true,
+    "cases": 96,
+    "sampled_native_decisions": 281,
+    "all5conditions_and_guards_pass": true,
+    "all192coding_samples_are_the_opening_Python_code_fence": true,
+    "coding_choices_changed": 0,
+    "independent_clean_public_package_pretrained_replay": false,
+    "full_generation_or_coding_gain_validated": false,
+    "scope": "Original firstmin(3,T)teacher-history decisions only. Cardinalitycontrols are not energy/magnitude matched. No individual meaning,utility or speedclaim."
+  },
+  "audited_aggregate_sha256": "a53458ef0786951305b74476f5373a91460a53d3d473e4eeb029a5ba610a10ae",
+  "audit_receipt_sha256": "48e7da88f6a99754d735d85bbd7063b2febe98e110b5cb4bebc190c7740abf59"
+}

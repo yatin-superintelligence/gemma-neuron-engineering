@@ -1,0 +1,28 @@
+{
+  "utc": "2026-11-01T09:33:27.709662+00:00",
+  "status": "complete_host_audited_closed",
+  "all96_cases_all5conditions_all281points": true,
+  "all192_early_coding_argmax_choices_unchanged_in_every_edit": true,
+  "coding_equal_case_nativewinner_margin": {
+    "original": 24.84287675221761,
+    "random_negative_count": 24.127146402994793,
+    "random_positive_count": 17.740966796875,
+    "remove_negative": 30.887725830078125,
+    "remove_positive": 15.666135787963867
+  },
+  "coding_equal_case_removed_h_energy_fraction": {
+    "original": 0.0,
+    "random_negative_count": 0.4273106304272529,
+    "random_positive_count": 0.4809650650713507,
+    "remove_negative": 0.43850647629210077,
+    "remove_positive": 0.5614935237078992
+  },
+  "coding_nativewinner_probability": 0.9999999596426884,
+  "interpretation": "Early coding decisions are highly saturated in this fixed firstKsample. Removing positive and negative post-gating coordinates has different score effects,with no coding choice changes. Cardinality controls are not energy matched;native sign is basis dependent. No useful coding gain,individual meaning or sign-specific semantic role is established. Allretention/family/condition effects remain complete in frozen aggregate.",
+  "scope": "Original native firstmin(3,T)teacher decisions,not full-code generation or wholetrajectory improvement.",
+  "next": "Separately freeze same fixed sign interventions at response-length quartiles across all96original trajectories,carry every overlapping N45measurement byteexact,and replay original own-history to all fresh points. No case,rank,dose or sign selection.",
+  "new_grading_model_or_fixture_calls": 0,
+  "posthoc_prefix_context_annotation": "n45_prefix_context_annotation.json",
+  "coding_position_scope": "opening_Python_code_fence",
+  "coding_position_limitation": "N45coding sample is the shared response-format prefix,not substantive function-body computation. Scoreasymmetry there is not evidence of a coding function or improvement."
+}

@@ -4595,6 +4595,104 @@
       "event": "N45_single_private_version1_launched_exact_server_source_privacy_dataset_verified_RUNNING",
       "experiment": "N45",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 632,
+      "utc": "2026-11-01T09:25:00.968212+00:00",
+      "event": "N45_terminal_complete_first_collector_transport_timeout_preserved_no_audit",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 633,
+      "utc": "2026-11-01T09:25:00.968212+00:00",
+      "event": "N45_prospective_missing_file_only_pinned_version_transport_recovery_registered",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 634,
+      "utc": "2026-11-01T09:33:27.709662+00:00",
+      "event": "N45_missing_files_merged_without_redownload_all329sources_exact_single_frozen_audit_PASS",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 635,
+      "utc": "2026-11-01T09:33:27.709662+00:00",
+      "event": "N45_complete_all96_all5_all281_early_coding_choices_unchanged_score_asymmetry_bounded",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 636,
+      "utc": "2026-11-01T09:33:27.709662+00:00",
+      "event": "N45_host_reference_five_toy_argmax_decisions_scope_erratum_no_pretrained_tokens",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 637,
+      "utc": "2026-11-01T09:54:44.398024+00:00",
+      "event": "N45_posthoc_static_annotation_all192codingpoints_common_opening_code_fence",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 638,
+      "utc": "2026-11-01T09:54:44.398024+00:00",
+      "event": "N46_fixed_quartile_protocol_frozen_215new_66exactcarries_no_newtokens",
+      "experiment": "N46",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 639,
+      "utc": "2026-11-01T09:54:44.398024+00:00",
+      "event": "N46_new128randomforwards16toyreference_decisions_archive10refusals_pass_closed",
+      "experiment": "N46",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 640,
+      "utc": "2026-11-01T09:54:44.398024+00:00",
+      "event": "N46_new2auditorpositives16refusals_and_package_import_PASS",
+      "experiment": "N46",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 641,
+      "utc": "2026-11-01T09:54:44.398024+00:00",
+      "event": "N46_all494actual_scientific_and_parent_files_frozen_before_launch",
+      "experiment": "N46",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 642,
+      "utc": "2026-11-01T09:59:46.701105+00:00",
+      "event": "N46_single_private_version1_launched_all494hashes_exact_fresh19_84GPUh",
+      "experiment": "N46",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 643,
+      "utc": "2026-11-01T09:59:46.701105+00:00",
+      "event": "N46_server_source_JSON_private_dataset_payload_exact_RUNNING_no_outputs_accessed",
+      "experiment": "N46",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 644,
+      "utc": "2026-11-01T10:15:38.794613+00:00",
+      "event": "N45_all_condition_reporting_2positives14refusals_synthetic_layouts_PASS_closed",
+      "experiment": "N45",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 645,
+      "utc": "2026-11-01T10:15:38.794613+00:00",
+      "event": "N45_actual6panel_figure_rendered_once_allviewed_and_zero_tensor_runtime_recipe_recorded",
+      "experiment": "N45",
+      "optimizer_steps": 0
     }
   ]
 }

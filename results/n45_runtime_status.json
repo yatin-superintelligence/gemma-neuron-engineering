@@ -1,11 +1,12 @@
 {
-  "status": "KernelWorkerStatus.RUNNING",
-  "status_checked_utc": "2026-11-01T08:59:19.636171+00:00",
+  "status": "complete_host_audited_closed",
   "source_checkpoint": "8435e8115e31e1816a2c2f056b0b626a98406868",
   "private_notebook_and_dataset": true,
-  "server_source_JSON_exact": true,
-  "outputs_accessed": false,
-  "scientific_outcome": "Pending complete terminal frozen audit",
-  "new_response_generation_planned": false,
+  "outputs_accessed": true,
+  "scientific_outcome": "All96cases/all5conditions/all281points pass the original frozen audit. All192coding samples are the opening Python code fence;zero coding choice changes establish no coding improvement.",
+  "audit_invocations": 1,
+  "scientific_cells_rerun": 0,
+  "transport_recovery": "Original collector timed out. Only65missing files were retrieved;57existing files remained unchanged. A minimal finalizer repair admitted the official execution log and merged staged bytes without downloading them again. Original failures and329source freeze are preserved.",
+  "new_response_generation": false,
   "optimizer_steps": 0
 }

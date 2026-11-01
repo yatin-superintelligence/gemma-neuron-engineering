@@ -1,0 +1,12 @@
+{
+  "status": "KernelWorkerStatus.RUNNING",
+  "status_checked_utc": "2026-11-01T09:58:41.525978+00:00",
+  "source_checkpoint": "b84ac31dc8c44410a009bd6e094d8753b0a57c98",
+  "private_notebook_and_dataset": true,
+  "server_source_JSON_exact": true,
+  "outputs_accessed": false,
+  "actual_runtime_counters": null,
+  "scientific_outcome": "Pending complete terminal frozen audit",
+  "new_response_generation_planned": false,
+  "optimizer_steps": 0
+}

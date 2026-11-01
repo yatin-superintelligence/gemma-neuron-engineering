@@ -1,0 +1,7 @@
+{
+  "utc": "2026-11-01T09:40:28.528765+00:00",
+  "before_pretrained_execution": true,
+  "change": "The copied per-case intent context incorrectly says firstKonly although the implementation replays every originalnative decision. Version2changes only this metadata key to reference_full_native_trajectory. No numerical/runtime/control/acceptance change.",
+  "inverse_single_literal_substitution_exact": true,
+  "new_model_fixture_calls": 0
+}

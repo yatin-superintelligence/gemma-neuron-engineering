@@ -282,3 +282,8 @@ Independent clean-package pretrained replay is not claimed.
 
 
 N29 saves all five audited before-code native-state policies in `n29/recipe.json`. The recipe declares the tokenizer-offset position rule, actual-donor provenance and the fourteen native layers. All 120 records and mandatory guards pass, but the relation-transfer primary fails. Every response remains token-exact to its original despite numerical changes under foreign donors. No parameters or new weight tensors are added; independent clean-package pretrained replay is not claimed.
+
+
+## N45 signed native activation policies
+
+The [N45 recipe](n45/recipe.json) stores all five runtime conditions over the pinned original BF16 model and adds zero tensor bytes or parameters. Use the exact linked `signed_native_mask.py` context around a declared forward. The original prefix study is complete and audited, but every coding sample is the opening code fence. This validates scoped execution and recorded prefix effects; it establishes no coding gain or individual neuron meaning. Full-generation and independent clean-package replay remain unvalidated.

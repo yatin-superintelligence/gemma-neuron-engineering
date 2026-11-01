@@ -500,12 +500,19 @@
       "recorded_script_seconds": 6604.60351542,
       "duration_scope": "Notebook wall time,not charged quota. All partial finite effects censored.",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N45_v1_signed_native_MLP_two_GPU",
+      "recorded_script_seconds": 502.056300408,
+      "outcome": "All96cases/all5conditions/281points pass frozen audit. All192coding samples are the opening Python code fence;no coding choices change under any edit. No utility or individual meaning. First networktimeout and server-log allowlist refusal preserved;no scientific rerun.",
+      "duration_scope": "Notebook wall time,not charged GPU quota. Complete frozen scientific audit passed once.",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N45_v1_signed_native_MLP_two_GPU",
-      "launched_utc": "2026-11-01T08:58:34.126703+00:00",
+      "run": "N46_v1_quartile_signed_native_MLP_two_GPU",
+      "launched_utc": "2026-11-01T09:56:05.764369+00:00",
       "status": "RUNNING_PRIVATE"
     }
   ]

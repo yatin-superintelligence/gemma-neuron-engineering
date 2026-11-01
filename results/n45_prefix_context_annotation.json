@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-01T09:50:42.408190+00:00",
+  "status": "posthoc_static_native_prefix_annotation",
+  "all64coding_cases_common_three_token_prefix": true,
+  "coding_sampled_decisions": 192,
+  "classification": "opening_Python_code_fence",
+  "tokenizer_JSON_sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+  "model_tokenizer_executor_scorer_calls": 0,
+  "native_outputs_or_grades_changed": false,
+  "N46_quartile_protocol_already_frozen_before_this_annotation": true,
+  "limitation": "N45coding sample is the shared response-format prefix,not substantive function-body computation. Scoreasymmetry there is not evidence of a coding function or improvement.",
+  "private_annotation_sha256": "28fb83b6c7529f7cf34f9f0c0ac13a126926fea6c74349b778c5c5584b64b70e"
+}
