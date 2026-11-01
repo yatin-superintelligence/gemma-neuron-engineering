@@ -41,7 +41,18 @@ The [fresh N41 comparison](results/n41_summary.json) is complete, audited and cl
 
 All 480 comparison records remain: 352 new replies, 96 original carries and 32 exact instruction-control retention reuses. Across both phases there are 448 unique generations. [Every new reply reaches native EOS](results/n41_termination.json) without an arbitrary response-token ceiling; the longest is 2134 tokens. All identity, physical/activation equivalence, state, cache, restoration and counter guards pass. These are dependent families and bindings, with weak baseline retention, not broad coding or knowledge claims. The [all-condition figure](docs/figures/n41_summary.png), [interpretation](results/n41_interpretation.json) and [exact recipes](models/n41/recipe.json) retain every condition. The recipes share the existing compact N40 tensors and add no weight bytes.
 
-The next question, Q56, is a [host-only source-structure review](methods/n42_source_review_design.json), registered after these outcomes and before implementation. It will compare all 320 saved coding sources and 256 pairs against existing grades. It adds no model generation, scorer call, new rank or dose. It is posthoc description, not fresh confirmation.
+The [N42 source-structure review](results/n42_summary.json) is complete. It describes all 320 saved coding sources and 256 original/condition pairs without generating, executing or grading a program. The protocol froze after N41 outcomes, so these are posthoc descriptions rather than fresh confirmation.
+
+| Condition | Identical tokens | Changed tokens, same extracted source | Changed source, same AST | Changed AST |
+| --- | --- | --- | --- | --- |
+| Selected zero | 37 | 0 | 6 | 21 |
+| Random A zero | 36 | 0 | 4 | 24 |
+| Random B zero | 40 | 0 | 5 | 19 |
+| Instruction only | 5 | 0 | 5 | 54 |
+
+The four selected regressions involve changed syntax trees. Of its other structural changes, twelve remain correct and five remain wrong. AST difference does not prove a behavioral difference. These edits affect actual returned program structure as well as surface spelling, with similar structural-change counts under the matched randoms. Every saved grade and failed primary remains unchanged. The [generic source-comparison helper](evaluation/program_structure.py) preserves names, literals, docstrings and operators; its independent literal checks and malformed-input refusals pass.
+
+The next question, Q57, is [native normalization-path feasibility](methods/n43_native_normalization_intent.json). A column deletion changes the raw branch and can change its shared post-feedforward normalization denominator. The proposed review will inspect the pinned implementation and prior methods before deciding whether exact native-state controls can separate those paths. This is an intent, with no model protocol, fitted gain, new coordinate or GPU execution.
 
 ## Offline surgery workbench
 

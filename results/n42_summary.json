@@ -1,0 +1,1567 @@
+{
+  "utc": "2026-11-01T00:22:32.292997+00:00",
+  "experiment": "N42H",
+  "status": "complete_posthoc_source_description_closed",
+  "protocol_sha256": "c8969b4629ccb6e999985d60ac8fd723d7cbdbdbe15a12b6f02df2fd81075ed4",
+  "registration_scope": "After all N41 grades and cache-path outcomes;posthoc description,not fresh confirmation or a replacement primary.",
+  "source_records": 320,
+  "paired_comparisons": 256,
+  "all_conditions": [
+    "original",
+    "selected_zero",
+    "randomA_zero",
+    "randomB_zero",
+    "prompt_only"
+  ],
+  "all_families": [
+    "ceil_ratio",
+    "first_prefix",
+    "long_tokens",
+    "parenthesis_depth",
+    "rotate_right",
+    "run_lengths",
+    "stable_unique",
+    "union_length"
+  ],
+  "conditions": {
+    "selected_zero": {
+      "pairs": 64,
+      "categories_by_saved_outcome": {
+        "identical_emitted_tokens": {
+          "preserved_correct": 34,
+          "both_wrong": 3,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_tokens_same_extracted_source": {
+          "preserved_correct": 0,
+          "both_wrong": 0,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_source_same_AST": {
+          "preserved_correct": 5,
+          "both_wrong": 1,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_AST": {
+          "preserved_correct": 12,
+          "both_wrong": 5,
+          "gain": 0,
+          "loss": 4
+        }
+      },
+      "categories": {
+        "identical_emitted_tokens": 37,
+        "different_tokens_same_extracted_source": 0,
+        "different_source_same_AST": 6,
+        "different_AST": 21
+      },
+      "saved_outcomes": {
+        "loss": 4,
+        "preserved_correct": 51,
+        "both_wrong": 9
+      },
+      "operator_multiset_changes": 15,
+      "control_count_changes": 12,
+      "closed_same_input_cache_pairs": 64
+    },
+    "randomA_zero": {
+      "pairs": 64,
+      "categories_by_saved_outcome": {
+        "identical_emitted_tokens": {
+          "preserved_correct": 33,
+          "both_wrong": 3,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_tokens_same_extracted_source": {
+          "preserved_correct": 0,
+          "both_wrong": 0,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_source_same_AST": {
+          "preserved_correct": 4,
+          "both_wrong": 0,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_AST": {
+          "preserved_correct": 15,
+          "both_wrong": 5,
+          "gain": 1,
+          "loss": 3
+        }
+      },
+      "categories": {
+        "identical_emitted_tokens": 36,
+        "different_tokens_same_extracted_source": 0,
+        "different_source_same_AST": 4,
+        "different_AST": 24
+      },
+      "saved_outcomes": {
+        "loss": 3,
+        "preserved_correct": 52,
+        "both_wrong": 8,
+        "gain": 1
+      },
+      "operator_multiset_changes": 17,
+      "control_count_changes": 12,
+      "closed_same_input_cache_pairs": 64
+    },
+    "randomB_zero": {
+      "pairs": 64,
+      "categories_by_saved_outcome": {
+        "identical_emitted_tokens": {
+          "preserved_correct": 39,
+          "both_wrong": 1,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_tokens_same_extracted_source": {
+          "preserved_correct": 0,
+          "both_wrong": 0,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_source_same_AST": {
+          "preserved_correct": 4,
+          "both_wrong": 1,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_AST": {
+          "preserved_correct": 8,
+          "both_wrong": 5,
+          "gain": 2,
+          "loss": 4
+        }
+      },
+      "categories": {
+        "identical_emitted_tokens": 40,
+        "different_tokens_same_extracted_source": 0,
+        "different_source_same_AST": 5,
+        "different_AST": 19
+      },
+      "saved_outcomes": {
+        "loss": 4,
+        "gain": 2,
+        "both_wrong": 7,
+        "preserved_correct": 51
+      },
+      "operator_multiset_changes": 13,
+      "control_count_changes": 12,
+      "closed_same_input_cache_pairs": 64
+    },
+    "prompt_only": {
+      "pairs": 64,
+      "categories_by_saved_outcome": {
+        "identical_emitted_tokens": {
+          "preserved_correct": 5,
+          "both_wrong": 0,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_tokens_same_extracted_source": {
+          "preserved_correct": 0,
+          "both_wrong": 0,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_source_same_AST": {
+          "preserved_correct": 5,
+          "both_wrong": 0,
+          "gain": 0,
+          "loss": 0
+        },
+        "different_AST": {
+          "preserved_correct": 34,
+          "both_wrong": 5,
+          "gain": 4,
+          "loss": 11
+        }
+      },
+      "categories": {
+        "identical_emitted_tokens": 5,
+        "different_tokens_same_extracted_source": 0,
+        "different_source_same_AST": 5,
+        "different_AST": 54
+      },
+      "saved_outcomes": {
+        "loss": 11,
+        "preserved_correct": 44,
+        "both_wrong": 5,
+        "gain": 4
+      },
+      "operator_multiset_changes": 37,
+      "control_count_changes": 32,
+      "closed_same_input_cache_pairs": 0
+    }
+  },
+  "all_family_conditions": {
+    "selected_zero": {
+      "ceil_ratio": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 0,
+            "both_wrong": 1,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 3,
+            "gain": 0,
+            "loss": 1
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 1,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 6
+        },
+        "saved_outcomes": {
+          "loss": 1,
+          "preserved_correct": 3,
+          "both_wrong": 4
+        },
+        "operator_multiset_changes": 6,
+        "control_count_changes": 5,
+        "closed_same_input_cache_pairs": 8
+      },
+      "first_prefix": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 7,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 7,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 1
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 0,
+        "control_count_changes": 0,
+        "closed_same_input_cache_pairs": 8
+      },
+      "long_tokens": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 6,
+            "both_wrong": 2,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 8,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 0
+        },
+        "saved_outcomes": {
+          "preserved_correct": 6,
+          "both_wrong": 2
+        },
+        "operator_multiset_changes": 0,
+        "control_count_changes": 0,
+        "closed_same_input_cache_pairs": 8
+      },
+      "parenthesis_depth": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 4,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 1
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 4,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 3
+        },
+        "saved_outcomes": {
+          "preserved_correct": 7,
+          "loss": 1
+        },
+        "operator_multiset_changes": 2,
+        "control_count_changes": 2,
+        "closed_same_input_cache_pairs": 8
+      },
+      "rotate_right": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 4,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 4,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 2,
+          "different_AST": 2
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 2,
+        "control_count_changes": 1,
+        "closed_same_input_cache_pairs": 8
+      },
+      "run_lengths": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 8,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 8,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 0
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 0,
+        "control_count_changes": 0,
+        "closed_same_input_cache_pairs": 8
+      },
+      "stable_unique": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 5,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 5,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 2
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 0,
+        "control_count_changes": 1,
+        "closed_same_input_cache_pairs": 8
+      },
+      "union_length": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 1,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 3,
+            "both_wrong": 2,
+            "gain": 0,
+            "loss": 2
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 0,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 7
+        },
+        "saved_outcomes": {
+          "preserved_correct": 3,
+          "loss": 2,
+          "both_wrong": 3
+        },
+        "operator_multiset_changes": 5,
+        "control_count_changes": 3,
+        "closed_same_input_cache_pairs": 8
+      }
+    },
+    "randomA_zero": {
+      "ceil_ratio": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 3,
+            "both_wrong": 3,
+            "gain": 1,
+            "loss": 1
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 0,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 8
+        },
+        "saved_outcomes": {
+          "loss": 1,
+          "preserved_correct": 3,
+          "both_wrong": 3,
+          "gain": 1
+        },
+        "operator_multiset_changes": 8,
+        "control_count_changes": 7,
+        "closed_same_input_cache_pairs": 8
+      },
+      "first_prefix": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 7,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 7,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 1
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 0,
+        "control_count_changes": 0,
+        "closed_same_input_cache_pairs": 8
+      },
+      "long_tokens": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 5,
+            "both_wrong": 2,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 7,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 0
+        },
+        "saved_outcomes": {
+          "preserved_correct": 6,
+          "both_wrong": 2
+        },
+        "operator_multiset_changes": 0,
+        "control_count_changes": 0,
+        "closed_same_input_cache_pairs": 8
+      },
+      "parenthesis_depth": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 4,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 1
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 4,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 3
+        },
+        "saved_outcomes": {
+          "preserved_correct": 7,
+          "loss": 1
+        },
+        "operator_multiset_changes": 2,
+        "control_count_changes": 2,
+        "closed_same_input_cache_pairs": 8
+      },
+      "rotate_right": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 6,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 1,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 6
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 3,
+        "control_count_changes": 2,
+        "closed_same_input_cache_pairs": 8
+      },
+      "run_lengths": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 7,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 7,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 0
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 0,
+        "control_count_changes": 0,
+        "closed_same_input_cache_pairs": 8
+      },
+      "stable_unique": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 7,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 7,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 1
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 0,
+        "control_count_changes": 0,
+        "closed_same_input_cache_pairs": 8
+      },
+      "union_length": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 2,
+            "both_wrong": 1,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 2,
+            "gain": 0,
+            "loss": 1
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 3,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 5
+        },
+        "saved_outcomes": {
+          "preserved_correct": 4,
+          "loss": 1,
+          "both_wrong": 3
+        },
+        "operator_multiset_changes": 4,
+        "control_count_changes": 1,
+        "closed_same_input_cache_pairs": 8
+      }
+    },
+    "randomB_zero": {
+      "ceil_ratio": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 3,
+            "gain": 1,
+            "loss": 2
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 0,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 7
+        },
+        "saved_outcomes": {
+          "loss": 2,
+          "gain": 1,
+          "both_wrong": 3,
+          "preserved_correct": 2
+        },
+        "operator_multiset_changes": 7,
+        "control_count_changes": 5,
+        "closed_same_input_cache_pairs": 8
+      },
+      "first_prefix": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 8,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 8,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 0
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 0,
+        "control_count_changes": 0,
+        "closed_same_input_cache_pairs": 8
+      },
+      "long_tokens": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 6,
+            "both_wrong": 1,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 1,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 7,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 1
+        },
+        "saved_outcomes": {
+          "preserved_correct": 6,
+          "both_wrong": 1,
+          "gain": 1
+        },
+        "operator_multiset_changes": 1,
+        "control_count_changes": 1,
+        "closed_same_input_cache_pairs": 8
+      },
+      "parenthesis_depth": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 4,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 1
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 4,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 2,
+          "different_AST": 2
+        },
+        "saved_outcomes": {
+          "preserved_correct": 7,
+          "loss": 1
+        },
+        "operator_multiset_changes": 2,
+        "control_count_changes": 2,
+        "closed_same_input_cache_pairs": 8
+      },
+      "rotate_right": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 5,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 5,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 2
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 1,
+        "control_count_changes": 1,
+        "closed_same_input_cache_pairs": 8
+      },
+      "run_lengths": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 8,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 8,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 0
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 0,
+        "control_count_changes": 0,
+        "closed_same_input_cache_pairs": 8
+      },
+      "stable_unique": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 7,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 7,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 1
+        },
+        "saved_outcomes": {
+          "preserved_correct": 8
+        },
+        "operator_multiset_changes": 0,
+        "control_count_changes": 1,
+        "closed_same_input_cache_pairs": 8
+      },
+      "union_length": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 1,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 3,
+            "both_wrong": 2,
+            "gain": 0,
+            "loss": 1
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 1,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 6
+        },
+        "saved_outcomes": {
+          "preserved_correct": 4,
+          "loss": 1,
+          "both_wrong": 3
+        },
+        "operator_multiset_changes": 2,
+        "control_count_changes": 2,
+        "closed_same_input_cache_pairs": 8
+      }
+    },
+    "prompt_only": {
+      "ceil_ratio": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 3,
+            "gain": 1,
+            "loss": 2
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 0,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 8
+        },
+        "saved_outcomes": {
+          "loss": 2,
+          "preserved_correct": 2,
+          "both_wrong": 3,
+          "gain": 1
+        },
+        "operator_multiset_changes": 8,
+        "control_count_changes": 7,
+        "closed_same_input_cache_pairs": 0
+      },
+      "first_prefix": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 6,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 1
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 1,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 7
+        },
+        "saved_outcomes": {
+          "preserved_correct": 7,
+          "loss": 1
+        },
+        "operator_multiset_changes": 1,
+        "control_count_changes": 2,
+        "closed_same_input_cache_pairs": 0
+      },
+      "long_tokens": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 2,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 3,
+            "both_wrong": 1,
+            "gain": 1,
+            "loss": 0
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 2,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 1,
+          "different_AST": 5
+        },
+        "saved_outcomes": {
+          "preserved_correct": 6,
+          "gain": 1,
+          "both_wrong": 1
+        },
+        "operator_multiset_changes": 3,
+        "control_count_changes": 3,
+        "closed_same_input_cache_pairs": 0
+      },
+      "parenthesis_depth": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 4,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 2
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 0,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 2,
+          "different_AST": 6
+        },
+        "saved_outcomes": {
+          "preserved_correct": 6,
+          "loss": 2
+        },
+        "operator_multiset_changes": 5,
+        "control_count_changes": 4,
+        "closed_same_input_cache_pairs": 0
+      },
+      "rotate_right": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 6,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 2
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 0,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 8
+        },
+        "saved_outcomes": {
+          "preserved_correct": 6,
+          "loss": 2
+        },
+        "operator_multiset_changes": 8,
+        "control_count_changes": 7,
+        "closed_same_input_cache_pairs": 0
+      },
+      "run_lengths": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 2,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 4,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 1
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 1,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 2,
+          "different_AST": 5
+        },
+        "saved_outcomes": {
+          "preserved_correct": 7,
+          "loss": 1
+        },
+        "operator_multiset_changes": 3,
+        "control_count_changes": 2,
+        "closed_same_input_cache_pairs": 0
+      },
+      "stable_unique": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 1,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 6,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 1
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 1,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 7
+        },
+        "saved_outcomes": {
+          "preserved_correct": 7,
+          "loss": 1
+        },
+        "operator_multiset_changes": 3,
+        "control_count_changes": 2,
+        "closed_same_input_cache_pairs": 0
+      },
+      "union_length": {
+        "pairs": 8,
+        "categories_by_saved_outcome": {
+          "identical_emitted_tokens": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_tokens_same_extracted_source": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_source_same_AST": {
+            "preserved_correct": 0,
+            "both_wrong": 0,
+            "gain": 0,
+            "loss": 0
+          },
+          "different_AST": {
+            "preserved_correct": 3,
+            "both_wrong": 1,
+            "gain": 2,
+            "loss": 2
+          }
+        },
+        "categories": {
+          "identical_emitted_tokens": 0,
+          "different_tokens_same_extracted_source": 0,
+          "different_source_same_AST": 0,
+          "different_AST": 8
+        },
+        "saved_outcomes": {
+          "loss": 2,
+          "gain": 2,
+          "both_wrong": 1,
+          "preserved_correct": 3
+        },
+        "operator_multiset_changes": 6,
+        "control_count_changes": 5,
+        "closed_same_input_cache_pairs": 0
+      }
+    }
+  },
+  "model_forwards": 0,
+  "tokenizer_calls": 0,
+  "scorer_calls": 0,
+  "candidate_bytecode_compilation_or_execution": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "scope": "Descriptive program-structure and source-context evidence only. No native semantic role,causal attribution of a first differing token,novel capability,speedup or useful gain. No new dose,coordinate,rank or GPU study.",
+  "host_CPU_seconds": 0.335764
+}

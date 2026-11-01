@@ -896,7 +896,7 @@
     {
       "id": "Q56",
       "experiment": "N42H: all-case program-structure review",
-      "status": "host_only_posthoc_protocol_frozen_before_implementation",
+      "status": "complete_host_only_posthoc_source_description_closed",
       "question": "Which fixed edits change returned program structure, and how do those changes relate to the already frozen gains and losses?",
       "question_provenance": "The N41 fresh primary fails despite all-source-valid native-EOS replies. The human asked for different observations that help digital surgery; this review distinguishes source changes from measured program outcomes.",
       "parents": [
@@ -904,13 +904,30 @@
         "Q53"
       ],
       "method": "All 320 saved coding sources and all 256 original-versus-condition pairs, across every family. Pure extraction and AST parsing only; no model, tokenizer, executor, hidden oracle or scorer. Freeze literal checks and source before measuring.",
-      "result": "Protocol and all nine input-file hashes are frozen. No implementation or N42 measurements exist. N41 outcomes are already known, so this is posthoc description, not fresh confirmation.",
-      "interpretation": "AST identity is structural, not semantic equivalence. Changed output text, first-token divergence and correctness do not identify an individual neuron meaning. No new coordinate, dose or GPU study.",
-      "next_question": "Implement the bounded parser/comparison helper, validate independent literal cases and refusals, freeze source, then analyze all fixed saved inputs once.",
-      "direction_decision": "Use all-case source evidence to assess a specific mechanistic hypothesis before any further model intervention."
+      "result": "All 320 coding sources and 256 pairs pass the frozen single-use description. Counts in the fixed order (identical tokens; different tokens with the same extracted source; different source with the same AST; different AST) are selected 37/0/6/21, random A 36/0/4/24, random B 40/0/5/19 and instruction 5/0/5/54. The selected edit has 21 structural changes: twelve preserve correctness, five remain wrong and four regress. Operator multisets change in 15/17/13/37 pairs and control counts in 12/12/12/32. All 192 coding cache-pair results carry exactly from the closed supplement. Sixteen independent literal checks and nineteen malformed-input refusals pass before real source analysis. No model, tokenizer, scorer, executable-bytecode compilation or candidate execution is invoked.",
+      "interpretation": "The changes include actual returned program structure, not just surrounding prose or formatting. Similar counts under matched randoms do not establish a selected coding function. AST difference does not prove behavioral difference. Every N41 grade and failed primary stays unchanged.",
+      "next_question": "Q57: inspect whether exact native post-feedforward normalization states can separate removed-column and shared-denominator paths before another model intervention.",
+      "direction_decision": "Close the source description. Review a normalization-specific mechanism under actual native-state controls; do not choose another coordinate or strength from these results."
+    },
+    {
+      "id": "Q57",
+      "experiment": "N43: native normalization path control",
+      "status": "mechanistic_intent_only_no_protocol_or_execution",
+      "question": "Can the native post-feedforward normalization state distinguish the removed-column path from the shared normalization path under the fixed late edits?",
+      "question_provenance": "N41 fresh utility failed. N42 shows actual source-structure changes with counts similar to matched randoms. Post-feedforward RMS normalization follows the edited raw branch, so changing columns can also change its shared denominator. This candidate mechanism is not established by those outcomes.",
+      "parents": [
+        "Q56",
+        "Q55",
+        "Q53"
+      ],
+      "method": "First inspect the pinned implementation and closest priors, then determine whether an exact native-state factorial control is feasible under the no-fitting constraint. Any model measurement needs a separate prospective scientific protocol and host identity/restoration gates.",
+      "result": "Intent only. No scientific protocol, implementation, fixture, pretrained forward, new response or result exists.",
+      "interpretation": "A shared-normalization explanation is a hypothesis. Exact native intermediate reuse would be a measurement control, not a fitted gain or new beneficial model. No individual meaning or coding improvement follows.",
+      "next_question": "Read the pinned normalization code and relevant prior methods; establish whether exact native-state controls are feasible before freezing a model protocol.",
+      "direction_decision": "Proceed only if exact FP32/BF16 identity and native-state provenance can be established. Otherwise preserve the failed prerequisite and do not launch. No N31/N36 transplant is involved or reopened."
     }
   ],
-  "active_question_id": "Q56",
-  "next_question_id": "Q56",
-  "utc": "2026-11-01T00:08:48.240463+00:00"
+  "active_question_id": "Q57",
+  "next_question_id": "Q57",
+  "utc": "2026-11-01T00:25:33.822669+00:00"
 }

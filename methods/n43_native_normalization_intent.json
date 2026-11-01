@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-01T00:25:33.822669+00:00",
+  "experiment": "N43",
+  "question_id": "Q57",
+  "status": "mechanistic_intent_only_no_protocol_implementation_or_model_execution",
+  "question": "Can the native post-feedforward normalization state distinguish the removed-column path from the shared normalization path under the fixed late edits?",
+  "provenance": "N41 fresh utility failed. N42 shows actual source-structure changes with counts similar to matched randoms. Post-feedforward RMS normalization follows the edited raw branch, so changing columns can also change its shared denominator. This candidate mechanism is not established by those outcomes.",
+  "scope": "First inspect the pinned implementation and closest priors, then determine whether an exact native-state factorial control is feasible under the no-fitting constraint. Any model measurement needs a separate prospective scientific protocol and host identity/restoration gates.",
+  "candidate_controls": "Native branch/native normalization; removed branch/native normalization; native branch/removed normalization; removed branch/removed normalization, using only actual native intermediate states and prescribed algebra. Keep selected and both fixed random groups. No fitted scalar, winning dose, new coordinate or task selection. Native-state factorization is not a new beneficial model.",
+  "decision": "Proceed only if exact FP32/BF16 identity and native-state provenance can be established. Otherwise preserve the failed prerequisite and do not launch. No N31/N36 transplant is involved or reopened.",
+  "model_forwards": 0,
+  "scorer_calls": 0,
+  "optimizer_steps": 0,
+  "prior_review_pending": true,
+  "protocol_frozen": false
+}

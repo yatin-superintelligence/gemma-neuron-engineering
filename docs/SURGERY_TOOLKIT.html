@@ -1911,6 +1911,128 @@ def compare_shared_input_history(native, edited, *, eos=frozenset({1, 106, 50}))
             &#x27;all_shared_input_caches_exact&#x27;: not mismatches,
             &#x27;cache_mismatch_decisions&#x27;: mismatches,
             &#x27;decisions_after_divergent_token_consumption_excluded&#x27;: True}
+</pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>program_structure</h2><p>Describe saved Python sources without executing, compiling or grading them.</p><p><a href="../evaluation/program_structure.py">Exact source file</a></p><p class="small">APIs: digest, observe, saved_outcome, compare</p><p class="hash">SHA-256 b02bffcf863866358fe4283b5aa1191b3f9d011ff404ef31c3c157fdcbce31b6</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Describe saved Python sources without executing, compiling or grading them.&quot;&quot;&quot;
+
+import ast
+from collections import Counter
+import hashlib
+import json
+import re
+
+
+CATEGORIES = (
+    &#x27;identical_emitted_tokens&#x27;,
+    &#x27;different_tokens_same_extracted_source&#x27;,
+    &#x27;different_source_same_AST&#x27;,
+    &#x27;different_AST&#x27;,
+)
+OUTCOMES = (&#x27;preserved_correct&#x27;, &#x27;both_wrong&#x27;, &#x27;gain&#x27;, &#x27;loss&#x27;)
+CONTROL_NODES = (
+    &#x27;If&#x27;, &#x27;IfExp&#x27;, &#x27;For&#x27;, &#x27;AsyncFor&#x27;, &#x27;While&#x27;, &#x27;Try&#x27;, &#x27;TryStar&#x27;, &#x27;With&#x27;,
+    &#x27;AsyncWith&#x27;, &#x27;Match&#x27;, &#x27;Return&#x27;, &#x27;Break&#x27;, &#x27;Continue&#x27;, &#x27;Raise&#x27;, &#x27;Assert&#x27;,
+    &#x27;comprehension&#x27;,
+)
+
+
+def digest(text):
+    return hashlib.sha256(text.encode(&#x27;utf-8&#x27;)).hexdigest()
+
+
+def observe(record, function_name):
+    &quot;&quot;&quot;Parse one already audited reply. Outer stripping/fences match extraction.
+
+    Names, literals, docstrings, contexts and operators remain in the AST.
+    Only line/column attributes are excluded from its structural comparison.
+    This does not establish semantic equivalence or revalidate correctness.
+    &quot;&quot;&quot;
+    if not isinstance(function_name, str) or not function_name.isidentifier():
+        raise ValueError(&#x27;Explicit valid function name required&#x27;)
+    if record.get(&#x27;complete&#x27;) is not True or record.get(&#x27;termination&#x27;) != &#x27;eos&#x27;:
+        raise ValueError(&#x27;Only completed native-EOS replies may be described&#x27;)
+    tokens = record.get(&#x27;generated_ids&#x27;)
+    if (not isinstance(tokens, list) or not tokens
+            or any(type(token) is not int or token &lt; 0 for token in tokens)):
+        raise ValueError(&#x27;Nonempty integer generated-token sequence required&#x27;)
+    if type(record.get(&#x27;generated_tokens&#x27;)) is not int or record[&#x27;generated_tokens&#x27;] != len(tokens):
+        raise ValueError(&#x27;Saved token count mismatch&#x27;)
+    text = record.get(&#x27;text&#x27;)
+    if not isinstance(text, str) or len(text) &gt; 200_000:
+        raise ValueError(&#x27;Bounded saved text required&#x27;)
+    source = text.strip()
+    if source.startswith(&#x27;```&#x27;):
+        match = re.fullmatch(r&#x27;```(?:python|python3|py)?\s*\n([\s\S]*?)\n```&#x27;, source)
+        if not match:
+            raise ValueError(&#x27;One complete Python/plain fence without outside prose required&#x27;)
+        source = match[1]
+    tree = ast.parse(source)
+    functions = [node for node in tree.body if isinstance(node, ast.FunctionDef)]
+    if len(functions) != 1 or functions[0].name != function_name:
+        raise ValueError(&#x27;Exactly one complete expected function required&#x27;)
+    if any(not isinstance(node, (ast.Import, ast.ImportFrom, ast.FunctionDef))
+           and not (isinstance(node, ast.Expr) and isinstance(node.value, ast.Constant)
+                    and isinstance(node.value.value, str)) for node in tree.body):
+        raise ValueError(&#x27;Outside prose or nondefinition module statement refused&#x27;)
+    normalized = ast.dump(tree, annotate_fields=True, include_attributes=False)
+    operators = Counter()
+    controls = Counter()
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.operator, ast.unaryop, ast.boolop, ast.cmpop)):
+            operators[type(node).__name__] += 1
+        if type(node).__name__ in CONTROL_NODES:
+            controls[type(node).__name__] += 1
+    return {
+        &#x27;tokens&#x27;: tuple(tokens), &#x27;text&#x27;: text, &#x27;source&#x27;: source, &#x27;AST&#x27;: normalized,
+        &#x27;token_sha256&#x27;: digest(json.dumps(tokens, separators=(&#x27;,&#x27;, &#x27;:&#x27;))),
+        &#x27;source_sha256&#x27;: digest(source), &#x27;AST_sha256&#x27;: digest(normalized),
+        &#x27;operator_nodes&#x27;: dict(sorted(operators.items())),
+        &#x27;control_nodes&#x27;: {key: controls[key] for key in CONTROL_NODES},
+    }
+
+
+def saved_outcome(original, changed):
+    &quot;&quot;&quot;Label existing grades; never execute a candidate or call an oracle.&quot;&quot;&quot;
+    for grade in (original, changed):
+        if type(grade.get(&#x27;correct&#x27;)) is not bool or grade.get(&#x27;source_valid&#x27;) is not True:
+            raise ValueError(&#x27;Exact existing source-valid boolean grades required&#x27;)
+        if grade.get(&#x27;status&#x27;) != (&#x27;passed&#x27; if grade[&#x27;correct&#x27;] else &#x27;wrong_answer&#x27;):
+            raise ValueError(&#x27;Only complete saved executable coding outcomes accepted&#x27;)
+    return {
+        (True, True): &#x27;preserved_correct&#x27;, (False, False): &#x27;both_wrong&#x27;,
+        (False, True): &#x27;gain&#x27;, (True, False): &#x27;loss&#x27;,
+    }[original[&#x27;correct&#x27;], changed[&#x27;correct&#x27;]]
+
+
+def compare(original, changed, original_grade, changed_grade):
+    &quot;&quot;&quot;Partition one pair in the fixed protocol order, preserving all outcomes.&quot;&quot;&quot;
+    tokens_same = original[&#x27;tokens&#x27;] == changed[&#x27;tokens&#x27;]
+    source_same = original[&#x27;source&#x27;] == changed[&#x27;source&#x27;]
+    ast_same = original[&#x27;AST&#x27;] == changed[&#x27;AST&#x27;]
+    if tokens_same and original[&#x27;text&#x27;] != changed[&#x27;text&#x27;]:
+        raise ValueError(&#x27;Identical token IDs with conflicting decoded text&#x27;)
+    if tokens_same:
+        category = CATEGORIES[0]
+    elif source_same:
+        category = CATEGORIES[1]
+    elif ast_same:
+        category = CATEGORIES[2]
+    else:
+        category = CATEGORIES[3]
+    if (source_same and not ast_same) or (tokens_same and not source_same):
+        raise ValueError(&#x27;Contradictory observation lineage&#x27;)
+    outcome = saved_outcome(original_grade, changed_grade)
+    if ast_same and outcome in (&#x27;gain&#x27;, &#x27;loss&#x27;):
+        raise ValueError(&#x27;Identical AST with conflicting saved deterministic grades&#x27;)
+    return {
+        &#x27;category&#x27;: category, &#x27;saved_outcome&#x27;: outcome,
+        &#x27;emitted_tokens_identical&#x27;: tokens_same, &#x27;extracted_source_identical&#x27;: source_same,
+        &#x27;AST_identical&#x27;: ast_same,
+        &#x27;operator_multiset_identical&#x27;: original[&#x27;operator_nodes&#x27;] == changed[&#x27;operator_nodes&#x27;],
+        &#x27;control_counts_identical&#x27;: original[&#x27;control_nodes&#x27;] == changed[&#x27;control_nodes&#x27;],
+        &#x27;operator_delta&#x27;: {key: changed[&#x27;operator_nodes&#x27;].get(key, 0) - original[&#x27;operator_nodes&#x27;].get(key, 0)
+                           for key in sorted(original[&#x27;operator_nodes&#x27;].keys() | changed[&#x27;operator_nodes&#x27;].keys())},
+        &#x27;control_delta&#x27;: {key: changed[&#x27;control_nodes&#x27;][key] - original[&#x27;control_nodes&#x27;][key]
+                          for key in CONTROL_NODES},
+    }
 </pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>native_eos_generation</h2><p>Greedy native-EOS generation with streamed evidence and resumable history.
 
 There is no response-token ceiling. The caller supplies actual resource checks;

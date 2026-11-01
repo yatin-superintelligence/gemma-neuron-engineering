@@ -4300,6 +4300,27 @@
       "event": "private_paper_integrated_fresh_failed_primary_all5conditions_all6pages_visual_QA",
       "experiment": "N41",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 590,
+      "utc": "2026-11-01T00:25:33.822669+00:00",
+      "event": "new_independent_literal_AST_category_checks16_and19refusals_passed_before_source_freeze",
+      "experiment": "N42H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 591,
+      "utc": "2026-11-01T00:25:33.822669+00:00",
+      "event": "all320saved_sources_256pairs_described_once_all_conditions_and_families_preserved_no_model_or_scorer",
+      "experiment": "N42H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 592,
+      "utc": "2026-11-01T00:25:33.822669+00:00",
+      "event": "native_normalization_path_control_intent_registered_before_protocol_or_implementation",
+      "experiment": "N43",
+      "optimizer_steps": 0
     }
   ]
 }

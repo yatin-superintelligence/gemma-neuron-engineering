@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-01T00:22:31.857301+00:00",
+  "protocol_sha256": "c8969b4629ccb6e999985d60ac8fd723d7cbdbdbe15a12b6f02df2fd81075ed4",
+  "before_all_real_N42_source_measurements": true,
+  "actual_source_host_files": 7,
+  "input_files_verified": 9,
+  "generic_helper_sha256": "b02bffcf863866358fe4283b5aa1191b3f9d011ff404ef31c3c157fdcbce31b6",
+  "optimizer_steps": 0,
+  "private_analyzer_and_raw_sources_released": false
+}

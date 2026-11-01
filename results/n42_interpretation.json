@@ -1,0 +1,47 @@
+{
+  "utc": "2026-11-01T00:25:33.822669+00:00",
+  "status": "complete_posthoc_description_closed",
+  "all320sources_and256pairs_retained": true,
+  "categories_order": [
+    "identical_emitted_tokens",
+    "different_tokens_same_extracted_source",
+    "different_source_same_AST",
+    "different_AST"
+  ],
+  "counts": {
+    "selected_zero": [
+      37,
+      0,
+      6,
+      21
+    ],
+    "randomA_zero": [
+      36,
+      0,
+      4,
+      24
+    ],
+    "randomB_zero": [
+      40,
+      0,
+      5,
+      19
+    ],
+    "prompt_only": [
+      5,
+      0,
+      5,
+      54
+    ]
+  },
+  "selected_different_AST_saved_outcomes": {
+    "preserved_correct": 12,
+    "both_wrong": 5,
+    "gain": 0,
+    "loss": 4
+  },
+  "interpretation": "The tested deletions change actual returned source structure as well as surface spelling. Selected structural changes have a similar count to the two matched randoms. This is descriptive,not evidence of a selective coding function. AST difference does not prove semantic difference;all original grades remain unchanged.",
+  "next": "Q57intent:review whether exact native post-FFN normalization controls can separate the removed raw-column path from the shared-denominator path. No strength/coordinate search or GPU protocol yet.",
+  "no_regrading_or_new_model_calls": true,
+  "optimizer_steps": 0
+}
