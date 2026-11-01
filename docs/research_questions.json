@@ -1223,7 +1223,7 @@
     {
       "id": "Q72",
       "experiment": "N57: fixed native intermediate-state readout connection",
-      "status": "protocol_registered_before_implementation_no_launch",
+      "status": "private_version1_running_no_output_access",
       "question": "Can a fixed subtractive native-state connection to the output head improve complete programs while preserving all originally correct coding and retention cases and beating an additive control?",
       "question_provenance": "N56 active copied blocks fail the bounded answer format. DoLa and contrastive-decoding priors motivate a distinct readout connection. They establish no coding or Gemma4 benefit here. Block14 is fixed by the native last-KV-producer boundary, not an effect ranking.",
       "parents": [
@@ -1232,13 +1232,13 @@
         "Q67"
       ],
       "method": "Retain all 96 N41A cases and exact original whole-response grades. Generate 192 new native-EOS response records under subtractive and additive fixed native-state head branches. Normalize the actual same-forward block14 state through the native final RMS module and combine it with the actual mature head input using literal unit coefficients. Use the native head and exact softcap, a strict native-head replay guard and alpha0.1 native plausibility support. No layer, gain, vector, bridge or alignment is fitted.",
-      "result": "Protocol registered before implementation or any N57 measurement. No scientific launch or effect exists. New independent random-graph, literal audit and exact package gates remain required.",
+      "result": "The new FP32 and BF16 engineering checks pass: 70 random full forwards, 184 input exposures, 12 independent reference choices, 28 fixture-emitted choices and 14 native restorations. Two toy head-zero initializations, two audit record positives, 33 targeted refusals and eight summary assertions pass. The 29-source, nine-input package imports with model and tokenizer constructors blocked. N57 version 1 is running privately from 2,966 frozen files. The server notebook JSON, private GPU metadata, single ready dataset and downloaded payload hash match. Only one new own job appears and all 77 earlier project jobs retain terminal metadata. No output, partial or live counter has been accessed; no scientific effect is known. Separately registered reporting preparation is complete: two new literal panels, 14 assertions, 31 targeted refusals and two different-value synthetic layouts pass. All six panels in each layout were viewed; both previews and two inspection crops were hashed and deleted. The separate four-file reporting freeze leaves all 2,966 scientific and inherited files unchanged. No actual N57 aggregate or figure exists on the host.",
       "interpretation": "Reused-development complete-program utility test of a fixed output connection, not an exact DoLa reproduction, a novel method, individual neuron meaning or fresh confirmation. No repetition penalty or layer search is introduced.",
-      "next_question": "Implement and validate the new native head branch, then execute only after all prospective source, state, resource, privacy and package gates pass.",
-      "direction_decision": "The subtractive policy is the sole target; the additive branch remains an equal-compute control and cannot become a posthoc winner. Every original-correct coding and retention case must survive, with at least four coding gains across two families and at least two more correct programs than the additive control. One U26 allowance remains; U27 ends at 4:00:50 PM IST on 2 November."
+      "next_question": "Publish the reviewed prospective engine, reporting source, engineering preparation and actual running status while the single N57 job runs. At terminal, first validate all2966 scientific files plus four reporting files and every parent hash; use the single frozen collector and auditor only as authorized. Only complete audited PASS permits unique-candidate grading and the separately frozen actual reporter. Keep incomplete whole effects censored and follow the conditional continuation priorities.",
+      "direction_decision": "Subtraction remains the sole target; addition remains the equal-compute control and cannot become a posthoc winner. Preserve every originally correct coding and retention case, gain at least four coding cases across two families and beat the additive control by at least two correct programs. N57 is the tenth U26 launch; nine are closed. Further justified launches use the separate U27 ledger. The unchanged U27 deadline is 4:00:50 PM IST on 2 November."
     }
   ],
-  "active_question_id": "Q70",
-  "next_question_id": "Q71",
-  "utc": "2026-11-01T20:42:26.430125+00:00"
+  "active_question_id": "Q72",
+  "next_question_id": null,
+  "utc": "2026-11-01T21:49:32.335437+00:00"
 }

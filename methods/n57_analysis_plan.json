@@ -1,0 +1,15 @@
+{
+  "experiment": "N57",
+  "question": "Q72",
+  "timing": "Before private dataset upload, launch or any N57 pretrained measurement/output access",
+  "protocol": "research/experiments/n57/protocol.json",
+  "protocol_sha256": "30515f1ec1ea732983335a7952dc5873b463834647866e8539b922a84e0da13f",
+  "required_panel": "All96 original N41A cases, both fixed readout policies:192 new nativeEOS response records, plus96 original whole-response/grade carries. No finite effects if any required response is incomplete or any source/state/trace/counter guard refuses.",
+  "audit": "Exactly one scripts.collect_n57_outputs terminal collection after full inherited source/hash validation. Only complete root dispatches research.experiments.n57.audit exactly once. First refusal remains preserved; no weakening or rerun.",
+  "source_and_state": "Pinned private version1 server notebook JSON/dataset/payload, physical distinct T4 UUIDs, all frozen inputs/scientific sources/old raw parents, base/source validation, actual initial/final native state, complete durable ordered intents/prepared-envelope hashes/commit chains and actual counters. Source/restore full native FP32 logits/argmax/whole KV cache after every response before durable commit.",
+  "trace": "Every actual own-history token, policy coefficient and fixed boundary14, native-head exact replay, early/mature/normalized/mixed hashes, actual branch dtype/full FP32 hash, alpha0.1 support/count/hash/native-maximum inclusion/chosen eligibility, and constrained full-vocabulary argmax binding. Trace hashes attest caller observations, not independently authenticated unsaved vectors or every-token cache/parameter bytes.",
+  "grading": "Whole192 complete audited before any new candidate grade. One host tokenizer load for actual IDs/text only, no host model. Unchanged N41 grader, exact228 same-case old-text memo, original96 grades always carry, conflicting memo grades refuse, new identical same-case candidates reuse first grade. No N55 partial candidate use or closed candidate rescoring.",
+  "primary": "Subtract target only: preserve every original-correct coding and retention case, gain>=4 coding cases across>=2 families, exceed additive control by>=2 correct coding cases. All clauses conjunctive; additive cannot become a replacement winner.",
+  "report": "All3 conditions, all10 families, coding/retention counts/source validity/statuses/gains/losses, all primary clauses. Separately actual fresh choices, old-cell carries0, original whole-response carrytokens and response records. Full root attempts/exposures/extra native RMS/head/branch/support/sourceguard/restoration counts; actual notebook seconds not charged quota.",
+  "limits": "Reused development, not fresh confirmation; no pvalues, fitted sign/strength/site/task, winner selection, individual neuron meaning, mediation, speed, serialized architecture or generalizable coding improvement claim. This is a known native layer-contrast/readout connection prior, not exact DoLa or a new-method claim."
+}

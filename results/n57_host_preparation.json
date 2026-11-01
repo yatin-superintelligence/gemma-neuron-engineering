@@ -1,0 +1,26 @@
+{
+  "scope": "New random-model, literal and byte-exact package checks; no pretrained outcome.",
+  "host": {
+    "random_full_forwards": 70,
+    "input_exposures": 184,
+    "independent_reference_choices": 12,
+    "actual_fixture_emitted_choices": 28,
+    "actual_native_restoration_forwards": 14,
+    "literal_head_zero_initializations": 2,
+    "support_positive_literals": 3,
+    "support_refusals": 4
+  },
+  "new_audit_positive_records": 2,
+  "new_audit_targeted_refusals": 33,
+  "new_summary_layouts": 2,
+  "summary_assertions": 8,
+  "exact_package_sources": 29,
+  "exact_package_inputs": 9,
+  "payload_bytes": 283493,
+  "notebook_bytes": 10725,
+  "old_fixtures_or_import_gates_repeated": 0,
+  "pretrained_model_calls": 0,
+  "scorer_calls": 0,
+  "optimizer_steps": 0,
+  "all96_cases_and_both_policies_retained": true
+}

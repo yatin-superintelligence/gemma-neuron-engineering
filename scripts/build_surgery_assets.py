@@ -18,9 +18,9 @@ SOURCES = {
     'Patch activations': ['research/experiments/n51/assay.py', 'research/experiments/n50/assay.py', 'research/experiments/n48/assay.py', 'research/experiments/n49/assay.py', 'interpretability/signed_native_mask.py', 'interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
     'Reuse computation': ['research/experiments/n56/assay.py', 'interpretability/native_ffn_reuse_v2.py'],
     'Edit weights': ['research/experiments/n54/assay.py', 'interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
-    'Edit connections': ['research/experiments/n53/assay.py', 'interpretability/memory_connection.py'],
+    'Edit connections': ['research/experiments/n57/generation.py', 'research/experiments/n53/assay.py', 'interpretability/memory_connection.py'],
     'Reconstruct': ['reproduce/model_edits.py'],
-    'Evaluate': ['evaluation/native_sensitivity.py', 'evaluation/native_component_reporting.py', 'evaluation/answer_decisions.py', 'evaluation/signed_positions_reporting.py', 'evaluation/signed_mask_reporting.py', 'evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
+    'Evaluate': ['evaluation/native_readout_reporting.py', 'evaluation/native_sensitivity.py', 'evaluation/native_component_reporting.py', 'evaluation/answer_decisions.py', 'evaluation/signed_positions_reporting.py', 'evaluation/signed_mask_reporting.py', 'evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
     'Generate and resume': ['research/experiments/n55/generation.py', 'research/experiments/n47/generation.py', 'interpretability/native_eos_generation.py'],
     'Record evidence': ['evaluation/durable_zip.py', 'interpretability/durable_measurement_journal_v2.py'],
 }
@@ -36,6 +36,10 @@ def toolkit(dest):
             digest = hashlib.sha256(source.encode()).hexdigest()
             title = ast.get_docstring(tree) or name
             guide = ''
+            if name == 'research/experiments/n57/generation.py':
+                title += ' New independent FP32 and BF16 native-head, support, own-history and restoration references pass. The fixed block14 state connects to the existing head through native final RMS with unit subtraction or addition. Native-head replay must be exact before every branch. The full-vocabulary policy is explicitly native-support constrained. No learned lens, bridge or strength, no exact DoLa reproduction and no pretrained utility claim. See the separate runtime status.'
+            if name == 'evaluation/native_readout_reporting.py':
+                title += ' Reporting only after a complete frozen N57 scientific audit. Preserve all conditions, roles, families, carry/fresh accounting and every fixed-target primary clause. Synthetic layouts test software behavior, not utility. All length ranges are descriptive. Raw evidence and actual binding remain private; no model, tokenizer or new scorer is called.'
             if name == 'research/experiments/n55/generation.py':
                 title += ' Random references pass, but N55 stops at its unchanged native RMS reconstruction guard before the whole pretrained panel completes. Every finite effect is censored. No scientific audit, utility grade or actual figure is produced. Full caches are observed at response boundaries, not independently authenticated at every fresh token. The failed source is preserved without recovery or rerun.'
             if name == 'research/experiments/n56/assay.py':

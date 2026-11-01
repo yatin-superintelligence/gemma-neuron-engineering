@@ -2336,6 +2336,237 @@ def insert_branch(module,branch,placement):
     handle=module.register_forward_hook(hook)
     try:yield receipt
     finally:handle.remove()
+</pre></details></article><article class="card tool" data-category="Edit connections"><span class="tag">Edit connections</span><h2>generation</h2><p>Own-history generation with a fixed native intermediate-state readout branch. New independent FP32 and BF16 native-head, support, own-history and restoration references pass. The fixed block14 state connects to the existing head through native final RMS with unit subtraction or addition. Native-head replay must be exact before every branch. The full-vocabulary policy is explicitly native-support constrained. No learned lens, bridge or strength, no exact DoLa reproduction and no pretrained utility claim. See the separate runtime status.</p><p><a href="../research/experiments/n57/generation.py">Exact source file</a></p><p class="small">APIs: cache_record, native_parts, observe_native_states, project, constrained_scores, readout, generate</p><p class="hash">SHA-256 3d7283d347d4d4d913c7d27460b3af4f394f4568f8aad28240e0151acb04cf58</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Own-history generation with a fixed native intermediate-state readout branch.&quot;&quot;&quot;
+from contextlib import contextmanager
+import math
+
+import torch
+from transformers.cache_utils import DynamicCache
+
+from interpretability.cache_proofs import check_cache
+from research.experiments.n19.trajectory import cache_witness
+from research.experiments.n35.core import tensor_sha
+
+POLICIES = (&#x27;subtract_native_boundary&#x27;, &#x27;add_native_boundary&#x27;)
+ALPHA = 0.1
+
+
+def cache_record(model, cache):
+    value = cache_witness(cache)
+    config = model.config.text_config
+    check_cache(value, config.num_hidden_layers-config.num_kv_shared_layers,
+                str(next(model.parameters()).dtype))
+    if any(v[&#x27;keys&#x27;] is None for v in value[&#x27;layers&#x27;]):
+        raise ValueError(&#x27;All actual native KV producers required&#x27;)
+    return value
+
+
+def native_parts(model):
+    config = model.config.text_config
+    language = model.model.language_model
+    boundary = config.num_hidden_layers-config.num_kv_shared_layers-1
+    if (config.num_hidden_layers != 35 or config.num_kv_shared_layers != 20
+            or len(language.layers) != 35 or boundary != 14
+            or language.layers[boundary].self_attn.is_kv_shared_layer):
+        raise ValueError(&#x27;Pinned native last-KV-producer boundary14 required&#x27;)
+    return language, boundary
+
+
+@contextmanager
+def observe_native_states(model):
+    language, boundary = native_parts(model)
+    frames = {}
+
+    def earlier(module, args, output):
+        if (&#x27;early&#x27; in frames or output.requires_grad or output.ndim != 3
+                or output.shape[0] != 1 or output.shape[1] &lt; 1):
+            raise ValueError(&#x27;One actual native block14 output required&#x27;)
+        frames[&#x27;early&#x27;] = output[:, -1:, :].detach().clone()
+
+    def mature(module, args):
+        if (len(args) != 1 or &#x27;mature&#x27; in frames or args[0].requires_grad
+                or args[0].ndim != 3 or args[0].shape[:2] != (1, 1)):
+            raise ValueError(&#x27;One actual current native head input required&#x27;)
+        frames[&#x27;mature&#x27;] = args[0].detach().clone()
+
+    handles = [language.layers[boundary].register_forward_hook(earlier),
+               model.lm_head.register_forward_pre_hook(mature)]
+    try:
+        yield frames
+        if set(frames) != {&#x27;early&#x27;, &#x27;mature&#x27;}:
+            raise ValueError(&#x27;Missing aligned native source states&#x27;)
+    finally:
+        # Cleanup must preserve the original exception rather than replace it.
+        for handle in reversed(handles):
+            handle.remove()
+
+
+def project(model, hidden, count):
+    count(&#x27;extra_native_head_evaluations&#x27;)
+    logits = model.lm_head(hidden)
+    cap = model.config.get_text_config().final_logit_softcapping
+    if cap is not None:
+        if type(cap) not in (int, float) or not math.isfinite(cap) or cap &lt;= 0:
+            raise ValueError(&#x27;Actual finite positive native softcap required&#x27;)
+        logits = logits / cap
+        logits = torch.tanh(logits)
+        logits = logits * cap
+    return logits[0, -1]
+
+
+def constrained_scores(native, branch, count):
+    if (native.ndim != 1 or native.shape != branch.shape
+            or native.dtype != torch.float32 or branch.dtype != torch.float32
+            or not torch.isfinite(native).all() or not torch.isfinite(branch).all()):
+        raise ValueError(&#x27;Finite full-vocabulary FP32 native and branch logits required&#x27;)
+    threshold = native.max() + math.log(ALPHA)
+    eligible = native &gt;= threshold
+    native_choice = int(native.argmax())
+    if not bool(eligible[native_choice]) or not bool(eligible.any()):
+        raise ValueError(&#x27;Native maximum must remain in nonempty support&#x27;)
+    scores = branch.clone()
+    count(&#x27;policy_support_assignments&#x27;)
+    scores.masked_fill_(~eligible, -float(&#x27;inf&#x27;))
+    choice = int(scores.argmax())
+    if not bool(eligible[choice]) or not bool(torch.isfinite(scores[choice])):
+        raise ValueError(&#x27;Actual constrained full-vocabulary choice must be eligible&#x27;)
+    return scores, {
+        &#x27;alpha&#x27;: ALPHA, &#x27;threshold&#x27;: float(threshold),
+        &#x27;support_count&#x27;: int(eligible.sum()), &#x27;vocabulary_size&#x27;: native.numel(),
+        &#x27;support_sha256&#x27;: tensor_sha(eligible),
+        &#x27;native_argmax&#x27;: native_choice, &#x27;native_max_in_support&#x27;: True,
+        &#x27;chosen_in_support&#x27;: True, &#x27;chosen_native_logit&#x27;: float(native[choice]),
+        &#x27;chosen_branch_score&#x27;: float(scores[choice]),
+        &#x27;constrained_argmax&#x27;: choice,
+        &#x27;full_constrained_scores_sha256&#x27;: tensor_sha(scores),
+        &#x27;unrestricted_native_argmax_claimed&#x27;: False,
+    }
+
+
+def readout(model, frames, actual_native_logits, policy, count):
+    if policy not in POLICIES:
+        raise ValueError(&#x27;Fixed subtractive or additive native connection required&#x27;)
+    language, boundary = native_parts(model)
+    early, mature = frames[&#x27;early&#x27;], frames[&#x27;mature&#x27;]
+    dtype = next(model.parameters()).dtype
+    if (early.shape != mature.shape or mature.shape != (1, 1, model.config.text_config.hidden_size)
+            or early.dtype != dtype or mature.dtype != dtype
+            or not torch.isfinite(early).all() or not torch.isfinite(mature).all()):
+        raise ValueError(&#x27;Aligned finite native BF16/fixture FP32 states required&#x27;)
+    before = (tensor_sha(early), tensor_sha(mature))
+    replay = project(model, mature.clone(), count)
+    if (replay.dtype != actual_native_logits.dtype
+            or tensor_sha(replay.float()) != tensor_sha(actual_native_logits.float())):
+        raise ValueError(&#x27;Actual native head/softcap replay failed&#x27;)
+    count(&#x27;extra_native_final_RMS_evaluations&#x27;)
+    normalized = language.norm(early)
+    if normalized.dtype != dtype or not torch.isfinite(normalized).all():
+        raise ValueError(&#x27;Actual native final RMS output required&#x27;)
+    sign = -1 if policy == &#x27;subtract_native_boundary&#x27; else 1
+    count(&#x27;branch_input_constructions&#x27;)
+    mixed = (mature.float() + sign*normalized.float()).to(dtype)
+    branch = project(model, mixed, count)
+    if branch.dtype != dtype or not torch.isfinite(branch).all():
+        raise ValueError(&#x27;Finite actual native branch head output required&#x27;)
+    if before != (tensor_sha(early), tensor_sha(mature)):
+        raise ValueError(&#x27;Native captured sources changed&#x27;)
+    scores, support = constrained_scores(actual_native_logits.float(), branch.float(), count)
+    event = {
+        &#x27;source_layer_index&#x27;: boundary, &#x27;literal_coefficient&#x27;: sign,
+        &#x27;early_state_sha256&#x27;: before[0], &#x27;mature_state_sha256&#x27;: before[1],
+        &#x27;early_normalized_sha256&#x27;: tensor_sha(normalized),
+        &#x27;mixed_state_sha256&#x27;: tensor_sha(mixed), &#x27;state_dtype&#x27;: str(dtype),
+        &#x27;native_head_replay_full_FP32_sha256&#x27;: tensor_sha(replay.float()),
+        &#x27;actual_native_full_FP32_sha256&#x27;: tensor_sha(actual_native_logits.float()),
+        &#x27;native_head_replay_exact&#x27;: True, &#x27;source_inputs_unchanged&#x27;: True,
+        &#x27;branch_raw_logits_dtype&#x27;: str(branch.dtype),
+        &#x27;branch_full_FP32_sha256&#x27;: tensor_sha(branch.float()),
+        **support,
+    }
+    return scores, event
+
+
+def generate(model, tokenizer, encoded, eos, policy, *, resource_guard, on_decision, count):
+    if (policy not in POLICIES
+            or any(p.requires_grad or p.grad is not None for p in model.parameters())
+            or any(m.training for m in model.modules())):
+        raise ValueError(&#x27;Fixed frozen native inference policy required&#x27;)
+    native_parts(model)
+    config = model.config.text_config
+    n = int(encoded[&#x27;input_ids&#x27;].numel())
+    maximum = config.max_position_embeddings
+    if (encoded[&#x27;input_ids&#x27;].shape != (1, n) or n &lt; 1 or type(maximum) is not int
+            or not eos or any(type(t) is not int or not 0 &lt;= t &lt; config.vocab_size for t in eos)):
+        raise ValueError(&#x27;Exact single prompt and configured native boundaries required&#x27;)
+    versions = {k: p._version for k, p in model.named_parameters()}
+    cache = DynamicCache(config=config)
+    ids = []
+    first = last = None
+    attempts = exposures = 0
+    interruption = None
+    termination = &#x27;interrupted&#x27;
+    try:
+        with torch.no_grad():
+            while True:
+                interruption = resource_guard()
+                if interruption is not None:
+                    if (not isinstance(interruption, dict) or &#x27;reason&#x27; not in interruption
+                            or &#x27;evidence&#x27; not in interruption):
+                        raise ValueError(&#x27;Actual resource evidence required&#x27;)
+                    break
+                step = len(ids)
+                if n+step &gt; maximum:
+                    interruption = {&#x27;reason&#x27;: &#x27;context_exhausted&#x27;,
+                                    &#x27;evidence&#x27;: {&#x27;configured_context&#x27;: maximum,
+                                                 &#x27;next_required_input_length&#x27;: n+step}}
+                    break
+                args = encoded if step == 0 else {
+                    &#x27;input_ids&#x27;: torch.tensor([[ids[-1]]], device=encoded[&#x27;input_ids&#x27;].device)}
+                attempts += 1
+                exposures += n if step == 0 else 1
+                try:
+                    with observe_native_states(model) as frames:
+                        output = model(**args, past_key_values=cache, use_cache=True, logits_to_keep=1)
+                    cache = output.past_key_values
+                    native = output.logits[0, -1].detach()
+                    if native.dtype != next(model.parameters()).dtype or not torch.isfinite(native).all():
+                        raise ValueError(&#x27;Finite actual native raw logits required&#x27;)
+                    scores, witness = readout(model, frames, native, policy, count)
+                    token = int(scores.argmax())
+                    if step == 0:
+                        first = cache_record(model, cache)
+                    event = {&#x27;step&#x27;: step, &#x27;argmax&#x27;: token,
+                             &#x27;raw_logits_dtype&#x27;: str(native.dtype),
+                             &#x27;full_logits_sha256&#x27;: tensor_sha(scores),
+                             &#x27;consumed_previous_token&#x27;: None if step == 0 else ids[-1],
+                             &#x27;consumed_input_length&#x27;: n+step, &#x27;readout&#x27;: witness}
+                except torch.OutOfMemoryError:
+                    interruption = {&#x27;reason&#x27;: &#x27;memory_exhausted&#x27;,
+                                    &#x27;evidence&#x27;: {&#x27;during_native_forward_or_readout&#x27;: True}}
+                    break
+                ids.append(token)
+                count(&#x27;fresh_choices&#x27;)
+                on_decision(event)
+                if token in eos:
+                    termination = &#x27;eos&#x27;
+                    interruption = None
+                    break
+            if ids:
+                last = cache_record(model, cache)
+    finally:
+        if (versions != {k: p._version for k, p in model.named_parameters()}
+                or any(p.requires_grad or p.grad is not None for p in model.parameters())):
+            raise ValueError(&#x27;Frozen native parameter state changed&#x27;)
+    return {
+        &#x27;generated_ids&#x27;: ids, &#x27;text&#x27;: tokenizer.decode(ids, skip_special_tokens=True),
+        &#x27;generated_tokens&#x27;: len(ids), &#x27;fresh_choices&#x27;: len(ids), &#x27;old_cell_carries&#x27;: 0,
+        &#x27;first_cache&#x27;: first, &#x27;terminal_cache&#x27;: last, &#x27;complete&#x27;: termination == &#x27;eos&#x27;,
+        &#x27;termination&#x27;: termination, &#x27;interruption&#x27;: interruption,
+        &#x27;new_response_token_ceiling&#x27;: None, &#x27;configured_context&#x27;: maximum,
+        &#x27;input_tokens&#x27;: n, &#x27;attempted_forward_calls&#x27;: attempts,
+        &#x27;input_token_exposures&#x27;: exposures, &#x27;per_token_whole_cache_authenticated&#x27;: False,
+        &#x27;support_constrained_full_vocabulary_policy&#x27;: True,
+    }
 </pre></details></article><article class="card tool" data-category="Edit connections"><span class="tag">Edit connections</span><h2>assay</h2><p>Exact native prefix-cache copies; no weights, gradients or learned alignment. Complete prefix-memory audit passes. Both fixed partial producer-pair swaps preserve every coding choice; whole-prefix copying reproduces the donor but yields no coding gains. Monolithic and segmented full-logit/cache equivalence is not established.</p><p><a href="../research/experiments/n53/assay.py">Exact source file</a></p><p class="small">APIs: sites, forward, capture, branch_run, native_case, edited_case</p><p class="hash">SHA-256 3eb6d8562e08087338a24c958c913bb9241b0cd707897dd50fec56a5174adff8</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Exact native prefix-cache copies; no weights, gradients or learned alignment.&quot;&quot;&quot;
 import copy
 import torch
@@ -2796,6 +3027,225 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>native_readout_reporting</h2><p>Complete native-readout utility reporting without models or new grading. Reporting only after a complete frozen N57 scientific audit. Preserve all conditions, roles, families, carry/fresh accounting and every fixed-target primary clause. Synthetic layouts test software behavior, not utility. All length ranges are descriptive. Raw evidence and actual binding remain private; no model, tokenizer or new scorer is called.</p><p><a href="../evaluation/native_readout_reporting.py">Exact source file</a></p><p class="small">APIs: require, integer, expected_counters, length_summary, panel, render</p><p class="hash">SHA-256 f04ea23be00b7122b374de3f7db38fc1cc900ae75fef6d753062cf77322d5cb7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Complete native-readout utility reporting without models or new grading.&quot;&quot;&quot;
+import copy
+from statistics import median
+
+CONDITIONS = (&#x27;original&#x27;, &#x27;subtract_native_boundary&#x27;, &#x27;add_native_boundary&#x27;)
+CLAUSES = (&#x27;preserve_every_original_correct_coding&#x27;, &#x27;preserve_every_original_correct_retention&#x27;,
+           &#x27;coding_gains_at_least4&#x27;, &#x27;gains_span_at_least2families&#x27;,
+           &#x27;beats_additive_control_by_at_least2&#x27;)
+ZERO = (&#x27;old_cell_carries&#x27;, &#x27;extra_attention_evaluations&#x27;, &#x27;extra_FFN_evaluations&#x27;,
+        &#x27;extra_PLE_evaluations&#x27;, &#x27;manual_parameter_assignments&#x27;, &#x27;base_buffer_assignments&#x27;,
+        &#x27;base_activation_hook_assignments&#x27;, &#x27;backward_calls&#x27;, &#x27;optimizer_steps&#x27;)
+
+
+def require(ok, message):
+    if not ok:
+        raise ValueError(message)
+
+
+def integer(value, lower=0, upper=None):
+    return type(value) is int and value &gt;= lower and (upper is None or value &lt;= upper)
+
+
+def expected_counters(fresh, prompt_sum):
+    return {&#x27;calls&#x27;: fresh+288, &#x27;input_token_exposures&#x27;: 5*prompt_sum+fresh-192,
+            &#x27;fresh_choices&#x27;: fresh, &#x27;extra_native_head_evaluations&#x27;: 2*fresh,
+            &#x27;extra_native_final_RMS_evaluations&#x27;: fresh, &#x27;branch_input_constructions&#x27;: fresh,
+            &#x27;policy_support_assignments&#x27;: fresh, &#x27;native_sourceguards&#x27;: 96,
+            &#x27;native_restoration_forwards&#x27;: 192, **dict.fromkeys(ZERO, 0)}
+
+
+def length_summary(values):
+    return {&#x27;responses&#x27;: len(values), &#x27;tokens_including_EOS&#x27;: sum(values),
+            &#x27;min&#x27;: min(values), &#x27;median&#x27;: median(values), &#x27;max&#x27;: max(values),
+            &#x27;ranges_are_not_confidence_intervals&#x27;: True}
+
+
+def panel(aggregate, rows, lengths, input_lengths):
+    require(aggregate[&#x27;experiment&#x27;] == &#x27;N57&#x27; and aggregate[&#x27;status&#x27;] == &#x27;complete_host_audited&#x27;,
+            &#x27;Complete audited N57 aggregate required&#x27;)
+    for k, expected in [(&#x27;records&#x27;, 288), (&#x27;original_prediction_grade_carries&#x27;, 96),
+                        (&#x27;edited_response_records&#x27;, 192), (&#x27;original_carry_new_N57_choices&#x27;, 0),
+                        (&#x27;old_cell_carried_choices&#x27;, 0)]:
+        require(integer(aggregate[k]) and aggregate[k] == expected, &#x27;Exact response/carry accounting required&#x27;)
+    require(len(rows) == 96 and len({r[&#x27;id&#x27;] for r in rows}) == 96
+            and sum(r[&#x27;role&#x27;] == &#x27;coding&#x27; for r in rows) == 64
+            and sum(r[&#x27;role&#x27;] == &#x27;retention&#x27; for r in rows) == 32
+            and len({r[&#x27;family&#x27;] for r in rows}) == 10, &#x27;All original roles/families required&#x27;)
+    require(set(aggregate[&#x27;conditions&#x27;]) == set(CONDITIONS)
+            and set(lengths) == {(c, r[&#x27;id&#x27;]) for c in CONDITIONS for r in rows}
+            and set(input_lengths) == {r[&#x27;id&#x27;] for r in rows}, &#x27;All288 lengths and original prompts required&#x27;)
+    require(all(integer(v, 1) for v in [*lengths.values(), *input_lengths.values()]),
+            &#x27;Actual complete lengths including EOS required&#x27;)
+    original_tokens = sum(lengths[&#x27;original&#x27;, r[&#x27;id&#x27;]] for r in rows)
+    fresh = sum(v for (c, _), v in lengths.items() if c != &#x27;original&#x27;)
+    require(integer(aggregate[&#x27;fresh_choices&#x27;]) and aggregate[&#x27;fresh_choices&#x27;] == fresh
+            and integer(aggregate[&#x27;original_whole_response_carried_tokens&#x27;])
+            and aggregate[&#x27;original_whole_response_carried_tokens&#x27;] == original_tokens,
+            &#x27;Exact original carried tokens and fresh choices required&#x27;)
+    counters = aggregate[&#x27;actual_counters&#x27;]
+    expected = expected_counters(fresh, sum(input_lengths.values()))
+    require(set(counters) == set(expected)
+            and all(integer(counters[k]) and counters[k] == v for k, v in expected.items()),
+            &#x27;Exact actual root/RMS/head/support/restoration accounting required&#x27;)
+    require(integer(aggregate[&#x27;grading_calls_new_unique_candidates&#x27;], 0, 192)
+            and integer(aggregate[&#x27;exact_grade_carries_among192_newconditions&#x27;], 0, 192)
+            and aggregate[&#x27;grading_calls_new_unique_candidates&#x27;]
+            + aggregate[&#x27;exact_grade_carries_among192_newconditions&#x27;] == 192,
+            &#x27;Every edited record has one new or carried grade&#x27;)
+    original = aggregate[&#x27;conditions&#x27;][&#x27;original&#x27;]
+    require(original[&#x27;coding_correct&#x27;] == 55 and original[&#x27;retention_correct&#x27;] == 17,
+            &#x27;Exact frozen original score carries required&#x27;)
+    families = sorted({r[&#x27;family&#x27;] for r in rows})
+    groups = {}
+    for condition in CONDITIONS:
+        g = aggregate[&#x27;conditions&#x27;][condition]
+        require(set(g[&#x27;families&#x27;]) == set(families), &#x27;All10 families required&#x27;)
+        require(integer(g[&#x27;coding_source_valid&#x27;], 0, 64)
+                and g[&#x27;coding_source_valid&#x27;] &gt;= g[&#x27;coding_correct&#x27;], &#x27;Actual coding source-validity counts required&#x27;)
+        require(g[&#x27;statuses&#x27;] and all(isinstance(k, str) and k and integer(v) for k, v in g[&#x27;statuses&#x27;].items())
+                and sum(g[&#x27;statuses&#x27;].values()) == 96, &#x27;Every grade status required&#x27;)
+        for role, total in [(&#x27;coding&#x27;, 64), (&#x27;retention&#x27;, 32)]:
+            correct, gains, losses = (g[role+&#x27;_&#x27;+suffix] for suffix in [&#x27;correct&#x27;, &#x27;gains&#x27;, &#x27;losses&#x27;])
+            require(all(integer(v, 0, total) for v in [correct, gains, losses])
+                    and gains &lt;= total-original[role+&#x27;_correct&#x27;] and losses &lt;= original[role+&#x27;_correct&#x27;]
+                    and correct == original[role+&#x27;_correct&#x27;]+gains-losses, &#x27;Actual grade conservation required&#x27;)
+            ff = {r[&#x27;family&#x27;] for r in rows if r[&#x27;role&#x27;] == role}
+            for suffix in [&#x27;correct&#x27;, &#x27;gains&#x27;, &#x27;losses&#x27;]:
+                require(sum(g[&#x27;families&#x27;][f][suffix] for f in ff) == g[role+&#x27;_&#x27;+suffix],
+                        &#x27;All family grade and gain/loss totals must conserve&#x27;)
+        stats = {role: length_summary([lengths[condition, r[&#x27;id&#x27;]] for r in rows if r[&#x27;role&#x27;] == role])
+                 for role in [&#x27;coding&#x27;, &#x27;retention&#x27;]}
+        stats[&#x27;families&#x27;] = {}
+        for family in families:
+            subset = [r for r in rows if r[&#x27;family&#x27;] == family]
+            f, old = g[&#x27;families&#x27;][family], original[&#x27;families&#x27;][family]
+            require(len({r[&#x27;role&#x27;] for r in subset}) == 1 and f[&#x27;role&#x27;] == subset[0][&#x27;role&#x27;]
+                    and integer(f[&#x27;cases&#x27;], 1) and f[&#x27;cases&#x27;] == len(subset)
+                    and all(integer(f[k], 0, len(subset)) for k in [&#x27;correct&#x27;, &#x27;gains&#x27;, &#x27;losses&#x27;])
+                    and f[&#x27;gains&#x27;] &lt;= len(subset)-old[&#x27;correct&#x27;] and f[&#x27;losses&#x27;] &lt;= old[&#x27;correct&#x27;]
+                    and f[&#x27;correct&#x27;] == old[&#x27;correct&#x27;]+f[&#x27;gains&#x27;]-f[&#x27;losses&#x27;],
+                    &#x27;Exact family roles/denominators and conservation required&#x27;)
+            if condition == &#x27;original&#x27;:
+                require(f[&#x27;gains&#x27;] == f[&#x27;losses&#x27;] == 0, &#x27;Original grades carry without reclassification&#x27;)
+            stats[&#x27;families&#x27;][family] = length_summary([lengths[condition, r[&#x27;id&#x27;]] for r in subset])
+        groups[condition] = {&#x27;grades&#x27;: copy.deepcopy(g), &#x27;response_lengths&#x27;: stats, &#x27;response_records&#x27;: 96,
+                             &#x27;fresh_N57_choices&#x27;: 0 if condition == &#x27;original&#x27; else sum(lengths[condition, r[&#x27;id&#x27;]] for r in rows),
+                             &#x27;original_whole_response_carried_tokens&#x27;: original_tokens if condition == &#x27;original&#x27; else 0,
+                             &#x27;old_cell_carried_choices&#x27;: 0}
+    primary = aggregate[&#x27;connection_primary&#x27;]
+    target, control = (aggregate[&#x27;conditions&#x27;][c] for c in CONDITIONS[1:])
+    gain_families = sorted(f for f, v in target[&#x27;families&#x27;].items() if v[&#x27;role&#x27;] == &#x27;coding&#x27; and v[&#x27;gains&#x27;])
+    actual_clauses = dict(zip(CLAUSES, [target[&#x27;coding_losses&#x27;] == 0, target[&#x27;retention_losses&#x27;] == 0,
+                                      target[&#x27;coding_gains&#x27;] &gt;= 4, len(gain_families) &gt;= 2,
+                                      target[&#x27;coding_correct&#x27;] &gt;= control[&#x27;coding_correct&#x27;]+2]))
+    require(primary[&#x27;target&#x27;] == CONDITIONS[1] and primary[&#x27;control&#x27;] == CONDITIONS[2]
+            and primary[&#x27;posthoc_additive_winner_allowed&#x27;] is False
+            and primary[&#x27;gain_families&#x27;] == gain_families and set(primary[&#x27;clauses&#x27;]) == set(CLAUSES)
+            and all(type(primary[&#x27;clauses&#x27;][k]) is bool and primary[&#x27;clauses&#x27;][k] == v
+                    for k, v in actual_clauses.items())
+            and type(primary[&#x27;passed&#x27;]) is bool and primary[&#x27;passed&#x27;] == all(actual_clauses.values()),
+            &#x27;Every frozen fixed-target conjunctive primary clause must carry verbatim&#x27;)
+    return {&#x27;experiment&#x27;: &#x27;N57&#x27;, &#x27;status&#x27;: &#x27;complete_audited_reporting_only&#x27;,
+            &#x27;all_conditions&#x27;: groups, &#x27;families&#x27;: families, &#x27;connection_primary&#x27;: copy.deepcopy(primary),
+            &#x27;frozen_aggregate&#x27;: copy.deepcopy(aggregate), &#x27;actual_counters&#x27;: copy.deepcopy(counters),
+            &#x27;all_condition_records&#x27;: 288, &#x27;original_prediction_grade_carries&#x27;: 96,
+            &#x27;edited_response_records&#x27;: 192, &#x27;original_whole_response_carried_tokens&#x27;: original_tokens,
+            &#x27;fresh_N57_choices&#x27;: fresh, &#x27;old_cell_carried_choices&#x27;: 0,
+            &#x27;scope&#x27;: &#x27;All96/all3 reused-development complete programs. No winner, pvalues, individual meaning, mediation, speed or fresh confirmation. Original whole-response carry tokens are zero N57 choices. Min/max ranges are descriptive, not confidence intervals.&#x27;}
+
+
+def render(data, destination, *, synthetic=False):
+    import matplotlib
+    matplotlib.use(&#x27;Agg&#x27;)
+    import matplotlib.pyplot as plt
+    import numpy as np
+    require(not destination.exists(), &#x27;Never overwrite an actual figure or preview&#x27;)
+    labels = [&#x27;Native carry&#x27;, &#x27;Subtract target&#x27;, &#x27;Add control&#x27;]
+    colors = [&#x27;#78848c&#x27;, &#x27;#00766c&#x27;, &#x27;#bb6a28&#x27;]
+    groups = data[&#x27;all_conditions&#x27;]
+    fig, axes = plt.subplots(3, 2, figsize=(17, 16), layout=&#x27;constrained&#x27;)
+    fig.suptitle((&#x27;SYNTHETIC SOFTWARE LAYOUT / &#x27; if synthetic else &#x27;&#x27;)
+                 + &#x27;N57: fixed native-state output connection&#x27;, fontsize=18, fontweight=&#x27;bold&#x27;)
+    x = np.arange(3)
+    for ax, role, total, title in [(axes[0, 0], &#x27;coding&#x27;, 64, &#x27;A  Coding: correct / 64&#x27;),
+                                   (axes[0, 1], &#x27;retention&#x27;, 32, &#x27;B  Retention: correct / 32&#x27;)]:
+        values = [groups[c][&#x27;grades&#x27;][role+&#x27;_correct&#x27;] for c in CONDITIONS]
+        ax.bar(x, values, color=colors, width=.62)
+        for j, value in enumerate(values):
+            ax.text(j, value+total*.025, str(value), ha=&#x27;center&#x27;, fontsize=12, fontweight=&#x27;bold&#x27;)
+        ticks = [label+&#x27;\n+&#x27;+str(groups[c][&#x27;grades&#x27;][role+&#x27;_gains&#x27;])+&#x27; gains / &#x27;
+                 +str(groups[c][&#x27;grades&#x27;][role+&#x27;_losses&#x27;])+&#x27; losses&#x27; for label, c in zip(labels, CONDITIONS)]
+        ax.set_xticks(x, ticks, fontsize=9)
+        ax.set(title=title, ylim=(0, total*1.16), ylabel=&#x27;Complete correct cases&#x27;)
+    ax = axes[1, 0]
+    for j, c in enumerate(CONDITIONS[1:]):
+        g = groups[c][&#x27;grades&#x27;]
+        ax.bar(j, g[&#x27;coding_gains&#x27;], color=colors[j+1], width=.55)
+        ax.bar(j, -g[&#x27;coding_losses&#x27;], color=colors[j+1], width=.55, hatch=&#x27;xx&#x27;, alpha=.55)
+        ax.text(j, g[&#x27;coding_gains&#x27;]+.35, &#x27;+&#x27;+str(g[&#x27;coding_gains&#x27;]), ha=&#x27;center&#x27;, fontsize=11)
+        ax.text(j, -g[&#x27;coding_losses&#x27;]-.35, &#x27;-&#x27;+str(g[&#x27;coding_losses&#x27;]), ha=&#x27;center&#x27;, va=&#x27;top&#x27;, fontsize=11)
+    ax.axhline(0, color=&#x27;#30434e&#x27;, lw=.8)
+    ax.set_xticks([0, 1], labels[1:])
+    ax.set(title=&#x27;C  Every coding gain and loss&#x27;, ylabel=&#x27;Cases relative to carried native&#x27;)
+    ax.set_ylim(-max([groups[c][&#x27;grades&#x27;][&#x27;coding_losses&#x27;] for c in CONDITIONS[1:]]+[1])-1.5,
+                max([groups[c][&#x27;grades&#x27;][&#x27;coding_gains&#x27;] for c in CONDITIONS[1:]]+[1])+1.5)
+    ax = axes[1, 1]
+    for j, role in enumerate([&#x27;coding&#x27;, &#x27;retention&#x27;]):
+        stats = [groups[c][&#x27;response_lengths&#x27;][role] for c in CONDITIONS]
+        med = np.array([s[&#x27;median&#x27;] for s in stats])
+        low, high = np.array([s[&#x27;min&#x27;] for s in stats]), np.array([s[&#x27;max&#x27;] for s in stats])
+        ax.errorbar(x+(-.1 if j == 0 else .1), med, yerr=[med-low, high-med],
+                    fmt=&#x27;o&#x27;, capsize=4, color=&#x27;#00766c&#x27; if j == 0 else &#x27;#bb6a28&#x27;, label=role)
+    ax.set_yscale(&#x27;log&#x27;)
+    ax.set_xticks(x, labels, fontsize=9)
+    ax.set(title=&#x27;D  Length: median and min to max&#x27;, ylabel=&#x27;Tokens including EOS (log scale)&#x27;)
+    ax.legend(loc=&#x27;lower center&#x27;, bbox_to_anchor=(.5, 1.02), ncol=2, fontsize=9)
+    ax.set_title(&#x27;D  Length: median and min to max&#x27;, pad=38)
+    ax = axes[2, 0]
+    families = data[&#x27;families&#x27;]
+    fractions = np.array([[groups[c][&#x27;grades&#x27;][&#x27;families&#x27;][f][&#x27;correct&#x27;]
+                           / groups[c][&#x27;grades&#x27;][&#x27;families&#x27;][f][&#x27;cases&#x27;] for c in CONDITIONS] for f in families])
+    ax.imshow(fractions, vmin=0, vmax=1, cmap=&#x27;YlGnBu&#x27;, aspect=&#x27;auto&#x27;)
+    ax.set_xticks(x, labels, fontsize=9)
+    ax.set_yticks(np.arange(10), [(&#x27;Code: &#x27; if groups[&#x27;original&#x27;][&#x27;grades&#x27;][&#x27;families&#x27;][f][&#x27;role&#x27;] == &#x27;coding&#x27;
+                                 else &#x27;Retain: &#x27;)+f.replace(&#x27;_&#x27;, &#x27; &#x27;) for f in families], fontsize=8)
+    ax.set_title(&#x27;E  All families: correct / cases&#x27;)
+    for i, f in enumerate(families):
+        for j, c in enumerate(CONDITIONS):
+            v = groups[c][&#x27;grades&#x27;][&#x27;families&#x27;][f]
+            ax.text(j, i, str(v[&#x27;correct&#x27;])+&#x27;/&#x27;+str(v[&#x27;cases&#x27;]), ha=&#x27;center&#x27;, va=&#x27;center&#x27;, fontsize=9,
+                    color=&#x27;white&#x27; if fractions[i, j] &gt; .6 else &#x27;black&#x27;)
+    ax = axes[2, 1]
+    ax.set_axis_off()
+    names = [&#x27;Preserve every native-correct coding case&#x27;, &#x27;Preserve every native-correct retention case&#x27;,
+             &#x27;At least four coding gains&#x27;, &#x27;Coding gains span at least two families&#x27;,
+             &#x27;At least two correct programs above add control&#x27;]
+    primary = data[&#x27;connection_primary&#x27;]
+    ax.set_title(&#x27;F  Subtract target: all five clauses required&#x27;, pad=18)
+    for i, (key, name) in enumerate(zip(CLAUSES, names)):
+        yes = primary[&#x27;clauses&#x27;][key]
+        y = .91-i*.145
+        ax.text(.01, y, name, transform=ax.transAxes, fontsize=10, va=&#x27;center&#x27;)
+        ax.text(.99, y, &#x27;PASS&#x27; if yes else &#x27;FAIL&#x27;, transform=ax.transAxes, fontsize=11,
+                fontweight=&#x27;bold&#x27;, ha=&#x27;right&#x27;, va=&#x27;center&#x27;, color=&#x27;#006c56&#x27; if yes else &#x27;#a53932&#x27;)
+    ax.text(.01, .12, &#x27;Overall: &#x27;+(&#x27;PASS&#x27; if primary[&#x27;passed&#x27;] else &#x27;FAIL&#x27;), transform=ax.transAxes,
+            fontsize=13, fontweight=&#x27;bold&#x27;, color=&#x27;#006c56&#x27; if primary[&#x27;passed&#x27;] else &#x27;#a53932&#x27;)
+    ax.text(.01, .02, &#x27;Addition remains the fixed control.&#x27;, transform=ax.transAxes, fontsize=10)
+    counters = data[&#x27;actual_counters&#x27;]
+    fig.supxlabel(&#x27;All96 cases / all3 conditions; reused development. NativeEOS required; no arbitrary response ceiling.\n&#x27;
+                  &#x27;192 edited response records;96 original response/grade carries; &#x27;+str(data[&#x27;fresh_N57_choices&#x27;])
+                  +&#x27; fresh choices;0 old edited-cell carries; &#x27;+str(data[&#x27;original_whole_response_carried_tokens&#x27;])
+                  +&#x27; original carry tokens (0 N57 choices).\n&#x27;
+                  &#x27;Actual &#x27;+str(counters[&#x27;calls&#x27;])+&#x27; root forwards; &#x27;+str(counters[&#x27;input_token_exposures&#x27;])
+                  +&#x27; input exposures; &#x27;+str(counters[&#x27;extra_native_head_evaluations&#x27;])+&#x27; extra native heads; &#x27;
+                  +str(counters[&#x27;extra_native_final_RMS_evaluations&#x27;])+&#x27; extra native RMS evaluations.\n&#x27;
+                  &#x27;Ranges are descriptive, not CIs. No meaning, mediation, speed, fresh-confirmation or general coding-gain claim.&#x27;,
+                  fontsize=9)
+    fig.savefig(destination, dpi=150)
+    plt.close(fig)
 </pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>native_sensitivity</h2><p>Local gradient-times-activation summaries; these measurements are not updates.</p><p><a href="../evaluation/native_sensitivity.py">Exact source file</a></p><p class="small">APIs: sha_tensor, require, analyze</p><p class="hash">SHA-256 47f436edc654ee9925c4721b76fa28afb513641963ed1961850028e5e5030e04</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Local gradient-times-activation summaries; these measurements are not updates.&quot;&quot;&quot;
 import hashlib
 import math

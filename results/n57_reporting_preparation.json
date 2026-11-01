@@ -1,0 +1,18 @@
+{
+  "scope": "Separately frozen reporting only; synthetic numerical/layout checks are not N57 pretrained outcomes.",
+  "status": "COMPLETE_CLOSED",
+  "registered_plan_before_implementation_output_access": true,
+  "reporting_source_files": 4,
+  "original2966_files_unchanged": true,
+  "new_literal_panels": 2,
+  "new_panel_assertions": 14,
+  "new_literal_receipt_positive": 1,
+  "new_literal_file_provenance_positives": 2,
+  "targeted_refusals": 31,
+  "different_value_synthetic_layouts_viewed_all6_each": 2,
+  "TEMP_pngs_viewed_hashed_deleted": 4,
+  "model_tokenizer_scorer_executor_calls": 0,
+  "old_fixtures_or_import_gates_repeated": 0,
+  "actual_N57_outputs_partials_live_counters_accessed": false,
+  "actual_N57_aggregate_or_figure_created": false
+}

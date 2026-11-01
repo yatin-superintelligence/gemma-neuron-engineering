@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-01T21:20:32.394729+00:00",
+  "before_launch_and_any_N57_pretrained_measurements": true,
+  "actual_files": 2966,
+  "parent_N56_source_freeze_sha256": "bac6ea2d545517bc9d76a4eb333d6f7ee9b26e5b36154fab8298600459275c95",
+  "parent_N56_actual_files": 2810,
+  "parent_N56_closed_raw_files": 58,
+  "parent_N56_result_receipt_sha256": "ff9ee83e86ab07f443bbe7e6036e29048772167d996e31f4aea5f5fac484c03d",
+  "analysis_plan_sha256": "3be3daee8ddc3dff87ccd2e54bcf19483951fb29575f05656642cbeab680b0a0",
+  "protocol_sha256": "30515f1ec1ea732983335a7952dc5873b463834647866e8539b922a84e0da13f",
+  "auditor_sha256": "9125e2dd20c872caaa912ce7b845db2a2d1e669e0ca22513b7972bc59735b3eb",
+  "notebook_sha256": "0ac81535568e8413ac2e900bc703708e0b1a49c6007f27dbb705feb0d5dcb0fd",
+  "payload_sha256": "cd06875904bb461645beb43ea7e115a6ec935fd7a480b3bad083cf94cae23049",
+  "optimizer_steps": 0
+}

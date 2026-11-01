@@ -1,0 +1,22 @@
+{
+  "experiment": "N57",
+  "registered_utc": "2026-11-01T21:39:38.237563+00:00",
+  "timing": "After private launch, before reporting implementation or any N57 output/partial/live-counter access",
+  "scientific_protocol_unchanged": "research/experiments/n57/protocol.json",
+  "original_analysis_source_freeze_sha256": "8248d6caeb1d42976bca351dd098956faf21a390bc0e79e748765eb7de097107",
+  "scope": "Reporting only; no scientific guard, cohort, primary, grade, tokenizer, model or generation change. Separate source freeze, never replace any of2966 frozen sources.",
+  "gate": "Whole192 edited responses nativeEOS COMPLETE and original frozen scientific audit PASS before any actual reporting; otherwise refuse and censor whole effects.",
+  "provenance": "Bind all reporting source hashes and original2966 freeze/pointers/all inherited raw parents, exact aggregate/audit/pregrading flags and SHA, every actual raw hash, every192 observed envelope/trace binding and exact frozen N41A original rows/token-length carries. Create separate observed actual_input_binding.json after full audit, never overwrite preoutput source freeze.",
+  "contents": "All3 conditions, all10 families, every role/status/source-validity/gain/loss and all frozen target-primary clauses verbatim. Original96 whole-response carrytokens are0N57choices;192 edited response records need not be192 unique texts. All edited choices fresh,0oldcellcarries. No raw IDs/texts/tasks/tokens/trace vectors in supplementary public output.",
+  "figure_panels": [
+    "A Coding correct counts all3 conditions outof64",
+    "B Retention correct counts all3 conditions outof32",
+    "C Coding gains/losses relative to carried originals for both fixed policies",
+    "D Response token lengths by role and condition: median and min/max descriptive ranges on log axis, no confidence intervals",
+    "E All10 families correct counts for all3 conditions, explicit family denominators and roles",
+    "F Fixed subtractive-target primary: ALL5 verbatim clauses/statuses and overall conjunction, never additive winner selection"
+  ],
+  "supplement": "Complete frozen aggregate plus all-condition role/family descriptive response-length summaries and exact actual operation accounting. No extra scoring, outcome selection, pvalues, meaning, mediation, speed, fresh confirmation or generalizable coding-gain claim.",
+  "host_plan": "NEW literal complete all96/all3 panels with mixed primary statuses and separate valid allPASS case, exact counters/length/carry conservation; targeted provenance/primary/counter/incomplete refusals. Two different-value synthetic layout previews, view all6 panels each, hash then delete TEMP previews. No old fixture/import-gate/test repetition.",
+  "actual_render": "Only after complete audited PASS: python-B -m scripts.report_n57 --reporting-freeze runs/n57/reporting/source_freeze.json --destination research/figures/n57 once. Destination must not exist. Keep actual scientific PNG; view all6 latest actual panels and save QA receipt. Incomplete whole panels have no actual figure."
+}
