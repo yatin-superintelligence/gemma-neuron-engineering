@@ -1,0 +1,73 @@
+{
+  "utc": "2026-11-01T01:20:40.649234+00:00",
+  "experiment": "N43",
+  "status": "reporting_plan_registered_after_launch_before_all_N43_output_access",
+  "not_part_of_original_scientific_primary": true,
+  "scientific_protocol_sha256": "add6eed82a37e289a173587e98573b7f04581e7917ce5b055672d7c8b3606b0f",
+  "execution_freeze_sha256": "723e8217c3bd340de4d6213ecc6ee5cf639a21d4f67bb3fcb8aede95ac4121af",
+  "allowed_input": "Only the saved complete passing frozen-auditor public_aggregate.json and its result_receipt.json. No partials,raw factor records,checkpoint,model,tokenizer,executor,oracle or scorer.",
+  "groups": [
+    "selected32",
+    "randomA32",
+    "randomB32"
+  ],
+  "cells": [
+    "00",
+    "10",
+    "01",
+    "11"
+  ],
+  "sites": [
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    32,
+    33,
+    34
+  ],
+  "family_cases": {
+    "arithmetic": 16,
+    "ceil_ratio": 8,
+    "first_prefix": 8,
+    "json": 16,
+    "long_tokens": 8,
+    "parenthesis_depth": 8,
+    "rotate_right": 8,
+    "run_lengths": 8,
+    "stable_unique": 8,
+    "union_length": 8
+  },
+  "family_sampled_decisions": {
+    "arithmetic": 48,
+    "ceil_ratio": 24,
+    "first_prefix": 24,
+    "json": 41,
+    "long_tokens": 24,
+    "parenthesis_depth": 24,
+    "rotate_right": 24,
+    "run_lengths": 24,
+    "stable_unique": 24,
+    "union_length": 24
+  },
+  "overview_panels": [
+    "All four cells and all three groups:full-vocabulary logit-delta L2",
+    "All four cells and all three groups:native next-choice change rate",
+    "All four cells and all three groups:native winner versus fixed other-token margin change",
+    "All four cells and all three groups:native winner probability change",
+    "All four cells and all three groups:full-vocabulary maximum absolute logit change",
+    "All three groups:interaction L2,interaction margin,path cosine with defined-case counts and zero-path record counts"
+  ],
+  "strata_panels": "Six complete L2 heatmaps:rows10/01/11,columns all9sites and all10families. Each includes all3groups. The exact00zero control remains in the overview and complete JSON. Family labels show case denominators. No selected or strongest site/cell is highlighted.",
+  "all_other_metrics": "All saved per-role/site/family/cell metrics remain in the complete audited JSON. The fixed L2 strata display is chosen before any effect is read.",
+  "averaging": "Use frozen audited case_mean values verbatim. Do not repool cases,rerun aggregation or treat sampled positions/sites/families as independent trials. Exact binary-float mean fractions remain in JSON.",
+  "scale": "Linear axes include zero and every finite value;no outcome-selected clipping/log scale/sign choice. Shared nonnegative heatmap scale across every path/group/site/family matrix. If all are exactlyzero,show uniform zero and no color range. Cosine null is displayed as undefined,never zero.",
+  "layout": "Two static PNGs using matplotlib,14-inch width,legible complete labels,nonoverlapping legends/captions. Synthetic previews conspicuously labelled and deleted after view/hash receipt. Actual figures require complete passing audit and explicit source/aggregate hash receipt;no unchanged rerender.",
+  "scope": "Development layer-local finite contrasts,not coding utility,global N41 mediation,additive attribution,individual meaning or a new general normalization method. Known normalization controls are prior work.",
+  "N43_outputs_accessed": false,
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "optimizer_steps": 0
+}

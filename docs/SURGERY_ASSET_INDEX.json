@@ -197,6 +197,17 @@
     },
     {
       "category": "Evaluate",
+      "path": "evaluation/normalization_figure_contract.py",
+      "sha256": "e9ca9b3053ccd49309e4cad35d41ccdd8dd453e60b3e19253a29fa804cae6af9",
+      "symbols": [
+        "require",
+        "mean",
+        "aggregate",
+        "validate"
+      ]
+    },
+    {
+      "category": "Evaluate",
       "path": "evaluation/native_factorial_metrics.py",
       "sha256": "7ed50b3f64785f228e662978b566188717c89b7399d0bd42e7b603a37b3f3b3d",
       "symbols": [

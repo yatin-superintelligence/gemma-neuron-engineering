@@ -1892,6 +1892,97 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
+</pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>normalization_figure_contract</h2><p>Validate a complete saved normalization aggregate without recomputing science.</p><p><a href="../evaluation/normalization_figure_contract.py">Exact source file</a></p><p class="small">APIs: require, mean, aggregate, validate</p><p class="hash">SHA-256 e9ca9b3053ccd49309e4cad35d41ccdd8dd453e60b3e19253a29fa804cae6af9</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Validate a complete saved normalization aggregate without recomputing science.&quot;&quot;&quot;
+
+from fractions import Fraction
+import math
+
+GROUPS = [&#x27;selected32&#x27;, &#x27;randomA32&#x27;, &#x27;randomB32&#x27;]
+CELLS = [&#x27;00&#x27;, &#x27;10&#x27;, &#x27;01&#x27;, &#x27;11&#x27;]
+SITES = [24, 25, 26, 27, 29, 30, 32, 33, 34]
+FAMILY_CASES = {&#x27;arithmetic&#x27;: 16, &#x27;ceil_ratio&#x27;: 8, &#x27;first_prefix&#x27;: 8, &#x27;json&#x27;: 16,
+    &#x27;long_tokens&#x27;: 8, &#x27;parenthesis_depth&#x27;: 8, &#x27;rotate_right&#x27;: 8, &#x27;run_lengths&#x27;: 8,
+    &#x27;stable_unique&#x27;: 8, &#x27;union_length&#x27;: 8}
+FAMILY_POINTS = {name: (48 if name == &#x27;arithmetic&#x27; else 41 if name == &#x27;json&#x27; else 24)
+    for name in FAMILY_CASES}
+CELL_METRICS = [&#x27;choice_change_rate&#x27;, &#x27;native_margin_change&#x27;,
+    &#x27;native_winner_probability_change&#x27;, &#x27;logit_delta_L2&#x27;, &#x27;logit_delta_max_abs&#x27;]
+
+
+def require(value, message):
+    if not value:
+        raise ValueError(message)
+
+
+def mean(item, cases, *, partially_defined=False):
+    require(isinstance(item, dict), &#x27;Missing saved audited mean&#x27;)
+    value = item[&#x27;case_mean&#x27;]
+    count = item[&#x27;cases_with_defined_values&#x27;]
+    require(type(value) in (int, float) and math.isfinite(value), &#x27;Nonfinite mean&#x27;)
+    require(type(count) is int and 0 &lt; count &lt;= cases, &#x27;Invalid defined-case count&#x27;)
+    require(partially_defined or count == cases, &#x27;Missing cases from required mean&#x27;)
+    fraction = item[&#x27;exact_binary_float_mean&#x27;]
+    require(isinstance(fraction, list) and len(fraction) == 2
+        and all(type(v) is int for v in fraction) and fraction[1] &gt; 0, &#x27;Missing exact mean fraction&#x27;)
+    require(float(Fraction(*fraction)) == value, &#x27;Saved mean and exact fraction disagree&#x27;)
+    return value
+
+
+def aggregate(item, cases, records):
+    require(item[&#x27;cases&#x27;] == cases and item[&#x27;group_site_decision_records&#x27;] == records,
+        &#x27;Incomplete fixed cohort or sampled decisions&#x27;)
+    require(set(item[&#x27;cells&#x27;]) == set(CELLS), &#x27;Every cell, including native00, is required&#x27;)
+    for cell in CELLS:
+        require(set(item[&#x27;cells&#x27;][cell]) == set(CELL_METRICS), &#x27;Missing fixed cell metric&#x27;)
+        for metric, saved in item[&#x27;cells&#x27;][cell].items():
+            value = mean(saved, cases)
+            if metric == &#x27;choice_change_rate&#x27;:
+                require(0 &lt;= value &lt;= 1, &#x27;Invalid choice-change rate&#x27;)
+            elif metric == &#x27;native_winner_probability_change&#x27;:
+                require(-1 &lt;= value &lt;= 1, &#x27;Invalid probability change&#x27;)
+            elif metric.startswith(&#x27;logit_delta&#x27;):
+                require(value &gt;= 0, &#x27;Negative logit magnitude&#x27;)
+            if cell == &#x27;00&#x27;:
+                require(value == 0, &#x27;Native diagonal is not exact zero&#x27;)
+    require(mean(item[&#x27;interaction_L2&#x27;], cases) &gt;= 0, &#x27;Negative interaction magnitude&#x27;)
+    mean(item[&#x27;interaction_margin&#x27;], cases)
+    for key in [&#x27;zero_raw_path_records&#x27;, &#x27;zero_normalization_path_records&#x27;]:
+        require(type(item[key]) is int and 0 &lt;= item[key] &lt;= records, &#x27;Invalid zero-path count&#x27;)
+    cosine = item[&#x27;raw_normalization_cosine&#x27;]
+    if cosine is not None:
+        require(-1-1e-12 &lt;= mean(cosine, cases, partially_defined=True) &lt;= 1+1e-12,
+            &#x27;Invalid saved path cosine&#x27;)
+
+
+def validate(data):
+    &quot;&quot;&quot;Require the complete original audit; this is no replacement for that audit.&quot;&quot;&quot;
+    execution = data[&#x27;execution&#x27;]
+    require(execution[&#x27;status&#x27;] == &#x27;complete_host_audited_closed&#x27;
+        and execution[&#x27;all_exact_guards_pass&#x27;] is True, &#x27;No figure from incomplete or failed engineering&#x27;)
+    expected = {&#x27;cases&#x27;: 96, &#x27;sampled_decisions&#x27;: 281, &#x27;group_site_decision_records&#x27;: 7587,
+        &#x27;actual_model_forward_calls&#x27;: 61645, &#x27;actual_input_token_exposures&#x27;: 185160,
+        &#x27;manual_parameter_assignments&#x27;: 15174, &#x27;activation_assignments&#x27;: 25290,
+        &#x27;native_restorations&#x27;: 7587, &#x27;new_generated_tokens&#x27;: 0, &#x27;backward_calls&#x27;: 0, &#x27;optimizer_steps&#x27;: 0}
+    require(all(type(execution[k]) is int and execution[k] == v for k, v in expected.items()),
+        &#x27;Original complete manifest and counters required&#x27;)
+    require(data[&#x27;no_metric_or_cell_selected_out&#x27;] is True and data[&#x27;families_and_bindings_dependent&#x27;] is True,
+        &#x27;All-cell and dependency disclosures required&#x27;)
+    for scope in [&#x27;all_groups&#x27;, &#x27;all_group_sites&#x27;, &#x27;all_group_families&#x27;, &#x27;all_group_roles&#x27;]:
+        require(set(data[scope]) == set(GROUPS), &#x27;Selected and both random groups required&#x27;)
+    for group in GROUPS:
+        aggregate(data[&#x27;all_groups&#x27;][group], 96, 2529)
+        sites, families, roles = (data[name][group] for name in
+            [&#x27;all_group_sites&#x27;, &#x27;all_group_families&#x27;, &#x27;all_group_roles&#x27;])
+        require(set(sites) == {str(s) for s in SITES}, &#x27;All nine fixed sites required&#x27;)
+        require(set(families) == set(FAMILY_CASES), &#x27;All ten fixed families required&#x27;)
+        require(set(roles) == {&#x27;coding&#x27;, &#x27;retention&#x27;}, &#x27;Both coding and retention required&#x27;)
+        for site in sites.values():
+            aggregate(site, 96, 281)
+        for name, family in families.items():
+            aggregate(family, FAMILY_CASES[name], 9*FAMILY_POINTS[name])
+        aggregate(roles[&#x27;coding&#x27;], 64, 1728)
+        aggregate(roles[&#x27;retention&#x27;], 32, 801)
+    return data
 </pre></details></article><article class="card tool" data-category="Evaluate"><span class="tag">Evaluate</span><h2>native_factorial_metrics</h2><p>Finite native-state contrasts without fitted coefficients or causal fractions.</p><p><a href="../evaluation/native_factorial_metrics.py">Exact source file</a></p><p class="small">APIs: contrast, effects</p><p class="hash">SHA-256 7ed50b3f64785f228e662978b566188717c89b7399d0bd42e7b603a37b3f3b3d</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Finite native-state contrasts without fitted coefficients or causal fractions.&quot;&quot;&quot;
 
 import torch

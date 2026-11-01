@@ -4378,6 +4378,27 @@
       "experiment": "N43",
       "optimizer_steps": 0,
       "privacy_server_verified": true
+    },
+    {
+      "sequence": 601,
+      "utc": "2026-11-01T01:25:59.591553+00:00",
+      "event": "postlaunch_preoutput_all_condition_figure_plan_registered",
+      "experiment": "N43",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 602,
+      "utc": "2026-11-01T01:25:59.591553+00:00",
+      "event": "new_saved_aggregate_schema_guards_pass_initial_overview_layout_defect_preserved",
+      "experiment": "N43",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 603,
+      "utc": "2026-11-01T01:25:59.591553+00:00",
+      "event": "layout_only_v2_and_previously_unrendered_zero_strata_pass_closed_no_original_guard_rerun",
+      "experiment": "N43",
+      "optimizer_steps": 0
     }
   ]
 }

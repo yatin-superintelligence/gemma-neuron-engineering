@@ -1,0 +1,49 @@
+{
+  "status": "closed_host_only_before_all_N43_output_access",
+  "literal_and_layout_checks": [
+    "complete_literal_all_group_site_family_role_cell_grid",
+    "independent_zero_undefined_negative_and_positive_display_literals",
+    "both_complete_synthetic_2100_by1920_layouts_rendered"
+  ],
+  "malformed_or_overwrite_refusals": [
+    "resource_incomplete",
+    "failed_exact_guard",
+    "wrong_forward_count",
+    "new_response",
+    "missing_random",
+    "missing_native00",
+    "missing_site",
+    "missing_retention_family",
+    "missing_role",
+    "changed_family_denominator",
+    "missing_sampled_decision",
+    "nonfinite_metric",
+    "mean_fraction_disagrees",
+    "nonzero_native_control",
+    "empty_defined_cosine_count",
+    "missing_dependency_disclosure",
+    "completed_figure_overwrite"
+  ],
+  "first_layout_defect_preserved": {
+    "overview": "footer legend overlaps the lowest panel cell labels",
+    "strata_nonzero": "passed all6panels",
+    "no_scientific_output_access": true
+  },
+  "layout_only_repair": "Reserve more bottom space between overview tick labels and footer legend;place the previously untested all-zero strata note in the header gap. No metrics,groups,cells,denominators or validation changes.",
+  "inverse_layout_substitutions_exact": true,
+  "new_checks_only": [
+    "repaired_overview_layout_only",
+    "previously_untested_literal_all_zero_aggregate",
+    "previously_unrendered_all_zero_strata_no_color_range"
+  ],
+  "visual_QA": "Both new synthetic layouts viewed and passed;existing nonzero strata carried by exact unchanged-code proof",
+  "closed_schema_panel_and_nonzero_strata_not_rerun": true,
+  "all_four_synthetic_previews_viewed_hashed_deleted": true,
+  "plot_source_sha256": "3a42a5d845955a16f84f319cc863df9e4198c4b92a3b528da1a49810efe94752",
+  "contract_source_sha256": "e9ca9b3053ccd49309e4cad35d41ccdd8dd453e60b3e19253a29fa804cae6af9",
+  "actual_N43_outputs_accessed": false,
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "optimizer_steps": 0,
+  "actual_N43_figure_created": false
+}
