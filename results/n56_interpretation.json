@@ -1,0 +1,55 @@
+{
+  "utc": "2026-11-01T20:32:35.893264+00:00",
+  "status": "complete_host_audited_closed_bounded_utility_primary_failed",
+  "engineering": "All24complete,all3copiedconditions,allsource/cache/copy/restoration/counterguards pass. Silentcopyfullinput/output/fullFP32/wholeKVexactall24.",
+  "utility": "BothfullandFFNonlycopies produce0validA/Bchoices inbothroles. Eachcoding0/16,retention0/8,0gains,8codinglossesand8retentionlosses. Originalandsilentcoding8/16retention8/8. AllfivefullcopyutilityclausesFAIL.",
+  "scope": "Thisisfull-vocabularyanswer-formatfailureunderthenativecopied-blockintervention,notcomplete-programaccuracyorsemanticerrorclassification. No restrictedA/Brescoring,oracle-repair,posthocwinningarm,meaning,freshconfirmationorspeedclaim.",
+  "all_conditions_families_orders_retained_in_aggregate": true,
+  "joint_silent_primary_all24_pass": true,
+  "bounded_utility_primary_pass": false,
+  "known_prior": "Knownpretrainedcopy/silentNet2Net-styleexecutionconstruction;notnewmethod/config-resized36layerstack/newKVproducer/serializationvalidation.",
+  "actual_counters": {
+    "backward_calls": 0,
+    "base_buffer_assignments": 0,
+    "base_parameter_assignments": 0,
+    "calls": 168,
+    "cloned_block_constructions": 6,
+    "cloned_buffer_objects": 6,
+    "cloned_parameter_objects": 78,
+    "current_output_assignments": 72,
+    "extra_FFN_evaluations": 72,
+    "extra_PLE_evaluations": 72,
+    "extra_attention_evaluations": 72,
+    "extra_full_block_evaluations": 72,
+    "input_token_exposures": 15890,
+    "manual_clone_buffer_one_assignments": 2,
+    "manual_clone_parameter_zero_assignments": 10,
+    "native_restoration_forwards": 72,
+    "native_sourceguards": 24,
+    "new_emitted_tokens": 0,
+    "old_candidate_regrading_calls": 0,
+    "optimizer_steps": 0
+  },
+  "new_literal_choice_label_comparisons": 72,
+  "old_scorer_model_tokenizer_executor_calls": 0,
+  "copied_parameter_and_buffer_size_per_owner": {
+    "0": {
+      "clone_Parameter_bytes": 420003840,
+      "clone_Parameter_elements": 210001920,
+      "clone_buffer_bytes": 6
+    },
+    "1": {
+      "clone_Parameter_bytes": 420003840,
+      "clone_Parameter_elements": 210001920,
+      "clone_buffer_bytes": 6
+    }
+  },
+  "notebook_seconds": 444.240423184,
+  "duration_is_charged_GPU_quota": false,
+  "collector_invocations": 1,
+  "frozen_auditor_invocations": 1,
+  "actual_scientific_figure_renders": 0,
+  "public_aggregate_sha256": "4565196c8523abaf4db1ac9efebfc70fdd2df897886bc4bbd8f1bb26e42416d7",
+  "no_completed_cell_rerun": true,
+  "next_direction": "Do not retune copied-block strength/site/rank or take it directly into another full-generation sweep. Review a distinct native intermediate-layer readout connection with published contrastive-decoding priors and fixed native architecture boundary; no fitted lens/bridge/strength or task selection."
+}

@@ -1,0 +1,1111 @@
+{
+  "actual_counters": {
+    "backward_calls": 0,
+    "base_buffer_assignments": 0,
+    "base_parameter_assignments": 0,
+    "calls": 168,
+    "cloned_block_constructions": 6,
+    "cloned_buffer_objects": 6,
+    "cloned_parameter_objects": 78,
+    "current_output_assignments": 72,
+    "extra_FFN_evaluations": 72,
+    "extra_PLE_evaluations": 72,
+    "extra_attention_evaluations": 72,
+    "extra_full_block_evaluations": 72,
+    "input_token_exposures": 15890,
+    "manual_clone_buffer_one_assignments": 2,
+    "manual_clone_parameter_zero_assignments": 10,
+    "native_restoration_forwards": 72,
+    "native_sourceguards": 24,
+    "new_emitted_tokens": 0,
+    "old_candidate_regrading_calls": 0,
+    "optimizer_steps": 0
+  },
+  "all_conditions": {
+    "FFN_only_copied_block": {
+      "coding": {
+        "all": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 19.875,
+            "mean": 1.6437530517578125,
+            "min": -11.039794921875
+          },
+          "contexts": 16,
+          "correct": 0,
+          "gains": 0,
+          "losses": 8,
+          "native_choice_preserved": 0,
+          "valid_A_B": 0
+        },
+        "answer_orders": {
+          "0": {
+            "A_minus_B_delta": {
+              "count": 8,
+              "max": 17.84375,
+              "mean": 2.676666259765625,
+              "min": -11.039794921875
+            },
+            "contexts": 8,
+            "correct": 0,
+            "gains": 0,
+            "losses": 5,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "1": {
+            "A_minus_B_delta": {
+              "count": 8,
+              "max": 19.875,
+              "mean": 0.61083984375,
+              "min": -10.0625
+            },
+            "contexts": 8,
+            "correct": 0,
+            "gains": 0,
+            "losses": 3,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          }
+        },
+        "families": {
+          "dict_update_order": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 7.640625,
+              "mean": 5.142578125,
+              "min": 2.64453125
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 1,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "extended_slice": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 17.84375,
+              "mean": 6.7578125,
+              "min": -4.328125
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "floor_modulo": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": -10.0625,
+              "mean": -10.5511474609375,
+              "min": -11.039794921875
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 1,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "late_closure": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": -2.09375,
+              "mean": -5.6875,
+              "min": -9.28125
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 1,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "loop_else": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 12.359375,
+              "mean": 3.662109375,
+              "min": -5.03515625
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "nested_alias": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 8.71875,
+              "mean": 5.7578125,
+              "min": 2.796875
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "shared_iterator": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 3.28125,
+              "mean": -2.525390625,
+              "min": -8.33203125
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 1,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "short_circuit": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 19.875,
+              "mean": 10.59375,
+              "min": 1.3125
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          }
+        }
+      },
+      "retention": {
+        "all": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 39.9375,
+            "mean": 4.4248046875,
+            "min": -38.25
+          },
+          "contexts": 8,
+          "correct": 0,
+          "gains": 0,
+          "losses": 8,
+          "native_choice_preserved": 0,
+          "valid_A_B": 0
+        },
+        "answer_orders": {
+          "0": {
+            "A_minus_B_delta": {
+              "count": 4,
+              "max": 39.9375,
+              "mean": 6.1328125,
+              "min": -38.25
+            },
+            "contexts": 4,
+            "correct": 0,
+            "gains": 0,
+            "losses": 4,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "1": {
+            "A_minus_B_delta": {
+              "count": 4,
+              "max": 39.25,
+              "mean": 2.716796875,
+              "min": -30.515625
+            },
+            "contexts": 4,
+            "correct": 0,
+            "gains": 0,
+            "losses": 4,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          }
+        },
+        "families": {
+          "assigned_binding": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 39.9375,
+              "mean": 4.7109375,
+              "min": -30.515625
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "last_assignment": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 36.4375,
+              "mean": 3.095703125,
+              "min": -30.24609375
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "literal_copy": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 39.25,
+              "mean": 0.5,
+              "min": -38.25
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "negation": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 32.37890625,
+              "mean": 9.392578125,
+              "min": -13.59375
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          }
+        }
+      }
+    },
+    "full_copied_block": {
+      "coding": {
+        "all": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 12.50244140625,
+            "mean": 1.513580322265625,
+            "min": -6.2109375
+          },
+          "contexts": 16,
+          "correct": 0,
+          "gains": 0,
+          "losses": 8,
+          "native_choice_preserved": 0,
+          "valid_A_B": 0
+        },
+        "answer_orders": {
+          "0": {
+            "A_minus_B_delta": {
+              "count": 8,
+              "max": 9.30078125,
+              "mean": 2.18310546875,
+              "min": -6.1875
+            },
+            "contexts": 8,
+            "correct": 0,
+            "gains": 0,
+            "losses": 5,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "1": {
+            "A_minus_B_delta": {
+              "count": 8,
+              "max": 12.50244140625,
+              "mean": 0.84405517578125,
+              "min": -6.2109375
+            },
+            "contexts": 8,
+            "correct": 0,
+            "gains": 0,
+            "losses": 3,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          }
+        },
+        "families": {
+          "dict_update_order": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 1.53125,
+              "mean": 1.1796875,
+              "min": 0.828125
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 1,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "extended_slice": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 9.30078125,
+              "mean": 2.873046875,
+              "min": -3.5546875
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "floor_modulo": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": -4.4375,
+              "mean": -5.3125,
+              "min": -6.1875
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 1,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "late_closure": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 1.25,
+              "mean": -2.48046875,
+              "min": -6.2109375
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 1,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "loop_else": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 5.2421875,
+              "mean": 3.19140625,
+              "min": 1.140625
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "nested_alias": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 6.625,
+              "mean": 5.15625,
+              "min": 3.6875
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "shared_iterator": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 2.09375,
+              "mean": -0.921875,
+              "min": -3.9375
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 1,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "short_circuit": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 12.50244140625,
+              "mean": 8.423095703125,
+              "min": 4.34375
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          }
+        }
+      },
+      "retention": {
+        "all": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 22.40625,
+            "mean": -5.50732421875,
+            "min": -34.84375
+          },
+          "contexts": 8,
+          "correct": 0,
+          "gains": 0,
+          "losses": 8,
+          "native_choice_preserved": 0,
+          "valid_A_B": 0
+        },
+        "answer_orders": {
+          "0": {
+            "A_minus_B_delta": {
+              "count": 4,
+              "max": 15.0,
+              "mean": -7.142578125,
+              "min": -34.84375
+            },
+            "contexts": 4,
+            "correct": 0,
+            "gains": 0,
+            "losses": 4,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "1": {
+            "A_minus_B_delta": {
+              "count": 4,
+              "max": 22.40625,
+              "mean": -3.8720703125,
+              "min": -28.875
+            },
+            "contexts": 4,
+            "correct": 0,
+            "gains": 0,
+            "losses": 4,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          }
+        },
+        "families": {
+          "assigned_binding": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 15.0,
+              "mean": -6.9375,
+              "min": -28.875
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "last_assignment": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 7.0625,
+              "mean": -9.27734375,
+              "min": -25.6171875
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "literal_copy": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 22.40625,
+              "mean": -6.21875,
+              "min": -34.84375
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          },
+          "negation": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 16.59765625,
+              "mean": 0.404296875,
+              "min": -15.7890625
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 2,
+            "native_choice_preserved": 0,
+            "valid_A_B": 0
+          }
+        }
+      }
+    },
+    "original": {
+      "coding": {
+        "all": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 16,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "native_choice_preserved": 16,
+          "valid_A_B": 16
+        },
+        "answer_orders": {
+          "0": {
+            "A_minus_B_delta": {
+              "count": 8,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 8,
+            "correct": 5,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 8,
+            "valid_A_B": 8
+          },
+          "1": {
+            "A_minus_B_delta": {
+              "count": 8,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 8,
+            "correct": 3,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 8,
+            "valid_A_B": 8
+          }
+        },
+        "families": {
+          "dict_update_order": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 1,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "extended_slice": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "floor_modulo": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 1,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "late_closure": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 1,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "loop_else": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "nested_alias": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "shared_iterator": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 1,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "short_circuit": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          }
+        }
+      },
+      "retention": {
+        "all": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "native_choice_preserved": 8,
+          "valid_A_B": 8
+        },
+        "answer_orders": {
+          "0": {
+            "A_minus_B_delta": {
+              "count": 4,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 4,
+            "correct": 4,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 4,
+            "valid_A_B": 4
+          },
+          "1": {
+            "A_minus_B_delta": {
+              "count": 4,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 4,
+            "correct": 4,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 4,
+            "valid_A_B": 4
+          }
+        },
+        "families": {
+          "assigned_binding": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "last_assignment": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "literal_copy": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "negation": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          }
+        }
+      }
+    },
+    "silent_copied_block": {
+      "coding": {
+        "all": {
+          "A_minus_B_delta": {
+            "count": 16,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 16,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "native_choice_preserved": 16,
+          "valid_A_B": 16
+        },
+        "answer_orders": {
+          "0": {
+            "A_minus_B_delta": {
+              "count": 8,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 8,
+            "correct": 5,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 8,
+            "valid_A_B": 8
+          },
+          "1": {
+            "A_minus_B_delta": {
+              "count": 8,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 8,
+            "correct": 3,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 8,
+            "valid_A_B": 8
+          }
+        },
+        "families": {
+          "dict_update_order": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 1,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "extended_slice": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "floor_modulo": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 1,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "late_closure": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 1,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "loop_else": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "nested_alias": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "shared_iterator": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 1,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "short_circuit": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 0,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          }
+        }
+      },
+      "retention": {
+        "all": {
+          "A_minus_B_delta": {
+            "count": 8,
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0
+          },
+          "contexts": 8,
+          "correct": 8,
+          "gains": 0,
+          "losses": 0,
+          "native_choice_preserved": 8,
+          "valid_A_B": 8
+        },
+        "answer_orders": {
+          "0": {
+            "A_minus_B_delta": {
+              "count": 4,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 4,
+            "correct": 4,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 4,
+            "valid_A_B": 4
+          },
+          "1": {
+            "A_minus_B_delta": {
+              "count": 4,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 4,
+            "correct": 4,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 4,
+            "valid_A_B": 4
+          }
+        },
+        "families": {
+          "assigned_binding": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "last_assignment": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "literal_copy": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          },
+          "negation": {
+            "A_minus_B_delta": {
+              "count": 2,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0
+            },
+            "contexts": 2,
+            "correct": 2,
+            "gains": 0,
+            "losses": 0,
+            "native_choice_preserved": 2,
+            "valid_A_B": 2
+          }
+        }
+      }
+    }
+  },
+  "bounded_answer_utility_primary": {
+    "clauses": {
+      "beats_FFN_only_by_at_least2correct_coding": false,
+      "coding_gains_at_least2": false,
+      "gains_span_at_least2families": false,
+      "preserve_every_original_correct_coding": false,
+      "preserve_every_original_correct_retention": false
+    },
+    "gain_families": [],
+    "passed": false,
+    "scope": "Reused development bounded answer-token utility only,not complete-program gain/freshconfirmation."
+  },
+  "contexts": 24,
+  "experiment": "N56",
+  "joint_silent_primary_all24_pass": true,
+  "new_intervention_records": 72,
+  "new_literal_choice_label_comparisons": 72,
+  "original_condition_carries": 24,
+  "scope": "Native copied full attention+FFN+PLE execution composition only. Originalbaseunchanged/prescribedclonezerosandbufferone/nolearning. ExistingKVsharingandPLEinputreused,notvalidatedconfig-resized36layerstack/newKVproducer/serialization. Reuseddevelopmentanswerchoices,notcompleteprogramgain/meaning/mediation/speed/freshconfirmation. Silentfiniteprimaryfailuresretained.",
+  "silent_primary_pass_contexts": 24,
+  "status": "complete_host_audited"
+}

@@ -1,0 +1,7 @@
+{
+  "utc": "2026-11-01T20:42:26.430125+00:00",
+  "original_protocol_sha256": "30515f1ec1ea732983335a7952dc5873b463834647866e8539b922a84e0da13f",
+  "before_any_implementation_or_measurements": true,
+  "clarification": "The zero_training phrase gradient/value updates means optimizer- or gradient-driven value updates. The explicitly specified literal temporary branch input construction and separately counted toy head-zero initialization remain prescribed assignments authorized by U27. Actual pretrained base weights/buffers are never assigned. No operator, policy, primary or resource setting changes.",
+  "scientific_behavior_changed": false
+}

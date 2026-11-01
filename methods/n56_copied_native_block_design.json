@@ -1,0 +1,72 @@
+{
+  "experiment": "N56",
+  "question": "Q71",
+  "registered_utc": "2026-11-01T18:34:23.299596+00:00",
+  "title": "Native full-block composition with silent and FFN-only copied-block controls",
+  "motivation": "N51 residual cuts show broad answer-letter control and recipient P-only cuts preserve choices; N54 native coordinate symmetry preserves outputs without meaning. Instead of another mask/site/dose sweep, test adding actual native attention+FFN+per-layer-input compute from a pretrained copied final block, with explicit silent and FFN-only internal controls. Prior residual-MLP addition and incomplete N44 recurrence do not validate full native block composition.",
+  "prior": "Known Net2Net/function-preserving silent expansion and pretrained-copy priors; no firstmethodclaim, neuronmeaning or usefulcodinggain assumed.",
+  "cohort": {
+    "contexts": "ALL24N48 contexts unchanged,16coding8retention/all12families/bothanswerorders",
+    "native_original_predictions_grades": "24 EXACTHOSTcarries,0oldgrading/responses",
+    "conditions": [
+      "original",
+      "silent_copied_block",
+      "FFN_only_copied_block",
+      "full_copied_block"
+    ],
+    "new_choice_records": 72,
+    "all_condition_records": 96,
+    "development_reuse": true
+  },
+  "construction": {
+    "native_source": "Pinned original finalGemma4TextDecoderLayer34 includingattention/FFN/PLE,native RMS/directgamma/oporder andnative buffers. Three distinct detached deep copies prepared ONCEperworker, outsidebaseModule registration. No fitted bridge/sign/gain/alignment.",
+    "full_copied_block": "All actualsourceParameters/buffers copied unchanged.",
+    "FFN_only_copied_block": "ONLYcopied postattentiongamma andpostPLEgamma literal0;copiednativeFFNgamma/layer_scalar unchanged. AttentionandPLEstillcompute,normoutputzeroed.",
+    "silent_copied_block": "ONLYcopiedpostattention/postFFN/postPLEgamma literal0 andcopiedlayer_scalar BUFFERliteral1. Nativeoriginalbuffers/Parametersunmodified.",
+    "execution": "After actualnativefinalblock, feed its fulloutput CLONE to onecopiednativeblock with actualSAMEper_layer_input/sharedKV/position_embeddings/mask/position_ids/pastcachekwargs. Copy onlycurrentlast copiedoutput into originalfulloutput;otherpositions byteexact. Copiedattention isKVshared/read-only/noextraKVproducer. HashactualsharedKV/inputbeforeafter. No raw hiddenoracle/donoranswers.",
+    "scope": "Full attention+FFN+PLE execution composition at existingfinalsite; NOTvalidatedconfig-resized36layerstack,newcacheproducer,layerserialization/newPLEembedding orfulltransformerarchitecture insertion. NativeKVproducerremains14.",
+    "cloning_accounting": "Sixactualclonedblocks across2workers;count actualclonedParameter/bufferobjects/elements/bytes andnonaliasing. ManualcloneParameterzeroassignments10 total (5perworker),clonebufferassignments2,baseParameter/bufferassignments0. Cloning allocation/version effectsobserved,notoptimizerupdates."
+  },
+  "forward_plan": {
+    "native_source_guards": 24,
+    "new_full_model_condition_forwards": 72,
+    "native_restorations": 72,
+    "total_full_model_forwards": 168,
+    "input_exposures": 15890,
+    "extra_full_block_evaluations": 72,
+    "extra_attention_evaluations": 72,
+    "extra_FFN_evaluations": 72,
+    "extra_PLE_evaluations": 72,
+    "current_final_block_output_assignments": 72,
+    "order": "indexmod2caseownership/all3conditionspercase,fixedrotatedorderoffset=(row_index//2)%3",
+    "no_generation": "0emittedtokens;measure actual full-vocabularyargmaxatvisibleA/Banswercontext. No restricted-choiceargmax."
+  },
+  "guards": {
+    "before_launch": "NEWFP32/BF16smallrandomnativegraphs all3conditionsagainstindependentexplicit fullblockcomposition reference;silentidentity/sourcecache/noncurrentpositions/clonenonaliasing/sourceimmutability/baseparambytesversions/state/nativefullrestore andactualcounts. NEWliteralprovenancerefusals/exactGPUpackageblockedimport.",
+    "before_each_commit": "ActualoriginalfullFP32logits/argmax/wholecache/nativefirstsource/restoration,clonedsourceParameter/bufferhashes+versionsunchanged,baseversions/hook/config/RNG/buffer/gradsnapshotrestored. Outputfinite,sharedKVinputunmodified andcacheexact.",
+    "silent_numeric_failure": "Finite silentidentitymismatch is a VALIDCONTROLFAIL,retainedthroughfullpanelandacceptedbyauditor;notcensoredorsuppressed. Engineering/provenance/restoration/nonfinite/resourcefailurescensorWHOLEpanel.",
+    "witness_limits": "No allbaseparameterbytes/callerauthentication/independentpretrainedcleanpackage replay claimed."
+  },
+  "primary": {
+    "engineering": "ALL24silentcopiedblockfullinput/outputbyteidentity ANDfullFP32logits/wholeKVexact; source/base/clones/restorationguards separate. Report everyfailure evenifonecomponentfails.",
+    "bounded_answer_utility": "ForfullcopiedblockpreserveEVERYoriginalcorrectcoding+retentioncase,>=2codinggains across>=2families,and>=2morecorrectcodingthanFFNonlycontrol;ALLclausesconjunctive. Allconditions/families/orders/gains/losses/fullvocabvalidA/Breported. Ifsilentcontrolfails,utilityremainsdescriptivewithfailedcontrolnotconfirmed.",
+    "limits": "Small reuseddevelopmentanswerchoices,NOTcompleteprogramutility,individualmeaning,freshconfirmation,mediation,speedorbreakthrough. No pvalues/posthocwinnerselection."
+  },
+  "host_labels": "UNCHANGEDN48hostlabelsHOSTONLY,notGPU;new72literalchoicecomparisons afterWHOLEcompleteaudit,no oldscorer/grade rerun. Old24gradescarry.",
+  "resources": {
+    "one_scientific_GPU_at_time": "N55currentlyactive;N56hostpreparationONLYuntilN55terminalcollectionclosure",
+    "private": true,
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1600,
+    "global_notebook_seconds": 1500,
+    "U27_deadline_guard_epoch": 1793615450,
+    "deadline_reserve_seconds": 120,
+    "raw_max_bytes": 33554432,
+    "reservation_GPU_hours": 1,
+    "separate_reserve_GPU_hours": 2,
+    "prelaunch": "Freshofficialquota>=3,ownqueued/runninginventoryrecognizingBOTHgemma-private/digital-surgery;twoDISTINCTT4/fullBF16replicas/indexmod2/sequentialload/sharedcache/barrier. No extraGPUwhileactive."
+  },
+  "zero_training": "Prescribedpretrainedcloning/literalzeros/one only;no optimizer/backward/gradient/learnedalignment/sign/gain/vector. Baseoriginals unchanged.",
+  "failure_policy": "Preservefirstfailure/frozenrecord/raw;no completededitedcellrerun/closedfixtures/scorers/collector/auditorrepeats/guardweakening. No automaticcontinuation."
+}

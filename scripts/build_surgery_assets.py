@@ -16,7 +16,7 @@ def page(title, body, script=''):
 SOURCES = {
     'Observe': ['research/experiments/n52/assay.py', 'interpretability/native_cache_branch.py', 'interpretability/native_capture.py', 'interpretability/native_timeline.py', 'interpretability/probe.py', 'interpretability/response_regions.py', 'interpretability/python_token_regions.py', 'scripts/export_native_trace.py'],
     'Patch activations': ['research/experiments/n51/assay.py', 'research/experiments/n50/assay.py', 'research/experiments/n48/assay.py', 'research/experiments/n49/assay.py', 'interpretability/signed_native_mask.py', 'interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
-    'Reuse computation': ['interpretability/native_ffn_reuse_v2.py'],
+    'Reuse computation': ['research/experiments/n56/assay.py', 'interpretability/native_ffn_reuse_v2.py'],
     'Edit weights': ['research/experiments/n54/assay.py', 'interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
     'Edit connections': ['research/experiments/n53/assay.py', 'interpretability/memory_connection.py'],
     'Reconstruct': ['reproduce/model_edits.py'],
@@ -37,7 +37,9 @@ def toolkit(dest):
             title = ast.get_docstring(tree) or name
             guide = ''
             if name == 'research/experiments/n55/generation.py':
-                title += ' All four numerator-only native-RMS policies pass new random references and boundary checks. The private pretrained panel is active; no utility outcome is available. Full caches are observed at response boundaries, not independently authenticated at every fresh token. Callers must provide actual resource and durable trace callbacks.'
+                title += ' Random references pass, but N55 stops at its unchanged native RMS reconstruction guard before the whole pretrained panel completes. Every finite effect is censored. No scientific audit, utility grade or actual figure is produced. Full caches are observed at response boundaries, not independently authenticated at every fresh token. The failed source is preserved without recovery or rerun.'
+            if name == 'research/experiments/n56/assay.py':
+                title += ' All 24 contexts pass the frozen engineering audit and silent identity control. Both active full and FFN-only copies produce zero valid A/B choices and fail utility. Prescribed norm zeros and a scalar-buffer one affect copies only. Existing shared KV and per-layer input are reused. This validates scoped execution composition, not a resized or serialized transformer or useful coding gain.'
             if name == 'research/experiments/n53/assay.py':
                 title += ' Complete prefix-memory audit passes. Both fixed partial producer-pair swaps preserve every coding choice; whole-prefix copying reproduces the donor but yields no coding gains. Monolithic and segmented full-logit/cache equivalence is not established.'
             if name == 'research/experiments/n54/assay.py':

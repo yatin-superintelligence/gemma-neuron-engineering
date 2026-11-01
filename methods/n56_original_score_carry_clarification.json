@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-01T18:59:03.283772+00:00",
+  "before_N56_launch_outputs_or_literal_gate": true,
+  "observation": "N48persisted aggregate grades,notindividual correctnessflags. Do not invent saved percasegradeobjects or compareclosed nativechoices tohostlabels again.",
+  "exact_carry": "N50paired_order_swap preservesALL24originalnativechoices and its frozen aggregate contains native-identical correctnesscounts forroles/families/answerorders. Carry these exactgroupcounts,checkedagainstN48originalrole/familycounts.",
+  "new_work": "Classify ONLY72newcondition choices againsthostlabels,ONCEeach. Originalnativechoices allvalidA/B. Foranewcorrectchoice,gain iff itsletter differsfromtheoriginalnativeletter. Losses=carried_native_correct-new_correct+gains ineachgroup. This exactbinary accounting determines whetherEVERYoriginalcorrectcaseisretained,withoutregradingoldchoices.",
+  "edgecases": "Newinvalidotherchoices areincorrect;zero-gain assumptionneverused. Exactnonnegativegroup-loss conservationchecked. OriginalargmaxvalidA/B andhostcorrectlettervalidA/B required foralgebra.",
+  "primary_guard_cohort_counter_acceptance_changes": 0,
+  "model_tokenizer_scorer_executor_or_old_fixture_calls": 0,
+  "source_hashes": {
+    "runs/n48/version1/public_aggregate.json": "b7041fb6f1820ee369c7c7131bf1913a60655817ffa2ba17c4afba1fa6fce3a1",
+    "runs/n48/version1/result_receipt.json": "7da7d08cd2dbb1f93014c367b10b9646515478c646b56dad6e7093d74db566b3",
+    "runs/n50/version1/public_aggregate.json": "23ad3f363554e1069332c56162e00f54b162dd03477dbe0a3e9d5ea73920030b",
+    "runs/n50/version1/result_receipt.json": "8be5fb71ef8dafbc9a6aa077337d9cc48dd04009fcfe343fad1b09969e8cea31"
+  }
+}

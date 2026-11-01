@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-01T20:27:31.267840+00:00",
+  "status": "complete_host_audited_closed",
+  "source_checkpoint": "228d25de2dbc4519e19797b14eb3b9e9fd58c503",
+  "private_GPU_notebook": true,
+  "single_READY_private_dataset": true,
+  "server_JSON_exact": true,
+  "scope": "All native copied-block conditions and engineering guards audited. Finite silent-control failures and every utility clause retained. Reused answer-choice development only, not complete-program gain or fresh confirmation.",
+  "joint_silent_primary_all24_pass": true,
+  "bounded_answer_utility_primary_pass": false,
+  "new_literal_choice_label_comparisons": 72,
+  "old_scorer_model_tokenizer_executor_calls": 0
+}

@@ -1,0 +1,112 @@
+{
+  "experiment": "N57",
+  "question": "Q72",
+  "registered_utc": "2026-11-01T20:40:13.032159+00:00",
+  "title": "Fixed native intermediate-state readout connection on complete programs",
+  "hypothesis": "Can a fixed subtractive native-state connection to the existing output head preserve every originally correct coding and retention case and add coding gains beyond an equal-compute additive connection?",
+  "motivation": "N56 silent copies preserve all24 native outputs, while both active full and FFN-only copies produce zero valid A/B choices and fail every utility clause. Do not retune their strength/site or send that failed construction into another generation sweep. Test a distinct output connection using only actual same-history native states and a prescribed native-plausibility support. N55 remains engineering-incomplete and censored; no failed cell, reconstruction guard or candidate is recovered.",
+  "priors": {
+    "DoLa": "https://arxiv.org/abs/2309.03883v2",
+    "DoLa_method_text": "https://arxiv.org/pdf/2309.03883",
+    "contrastive_reasoning_abstract_only": "https://arxiv.org/abs/2309.09117",
+    "review_depth": "DoLa abstract and method sections2.2/2.3 plus setup3.1 read; alpha0.1 native-probability support and repetition-penalty1.2 are explicit prior settings. Contrastive-reasoning paper abstract only, no full-read claim. No prior coding or Gemma4 benefit assumed.",
+    "relation": "Known native logit-lens/layer-contrast and contrastive-decoding priors, not a new-method claim or an exact DoLa reproduction. Here subtraction/addition occurs in BF16 hidden readout space before the native head and its softcap, with one fixed architecture boundary. No validation bucket, JSD layer search, learned tuned lens, repetition penalty, fitted direction or strength."
+  },
+  "cohort": {
+    "source": "ALL96 originalN41A cases/prompts/tokenizations/bindings unchanged",
+    "coding": 64,
+    "retention": 32,
+    "families": 10,
+    "original_responses_and_grades": "96 exact HOST whole-response carries; original coding55/64 and retention17/32; no original regeneration/rescoring",
+    "new_edited_response_records": 192,
+    "all_condition_records": 288,
+    "conditions": [
+      "original",
+      "subtract_native_boundary",
+      "add_native_boundary"
+    ],
+    "development_reuse": true,
+    "no_case_wording_task_or_sign_selection_from_effects": true
+  },
+  "connection": {
+    "source_layer": "Zero-based native block14 output, computed by num_hidden_layers-num_kv_shared_layers-1: last actual KV-producing block before native shared-KV layers. Fixed by architecture, not ranked or selected from effects.",
+    "mature_state": "Actual current last-position input to the unchanged native LM head after final native normalization",
+    "early_state": "Actual same-forward block14 current output, passed through the unchanged native final RMS module directly; no hand-computed reciprocal, fitted lens, bridge or alignment",
+    "literal_wiring": "z_s=(mature.float()+s*early_normalized.float()).to(native BF16), s=-1 for subtract_native_boundary and +1 for add_native_boundary. Uniform literal coefficients; no optimization or magnitude/energy matching claim. Compute branch using the actual native LM head and exact pinned native final-logit softcap.",
+    "scope": "A runtime output-head branch/new fixed skip connection using actual native states and pretrained native modules. Base forward, weights, buffers, registered architecture and KV producers remain unchanged. Not full-transformer insertion or serialized expanded-model validation.",
+    "native_head_identity_guard": "At EVERY actual generated decision, one additional native-head replay from the actual unmodified mature input plus exact native softcap must reproduce actual model logits byte-exact before accepting the new branch. Failure censors the whole panel without changing the guard or replaying completed cells.",
+    "support": "Use actual native model full-vocabulary FP32 logits on current own history. Eligible iff native_logit >= native_max + log(0.1), inclusive. Alpha0.1 fixed from the DoLa APC prior, not fitted. Native argmax must remain eligible; nonempty support is mandatory. Branch score outside support is -infinity, and next token is full-vocabulary argmax of the explicitly support-constrained branch scores. This is not unrestricted native argmax or an A/B restriction.",
+    "filter_identity": "Filtering native logits by a support that includes their maximum cannot change native greedy argmax. No filter-only old-response regeneration is performed. This algebraic identity does not imply the branch is useful.",
+    "repetition_penalty": null,
+    "extra_compute": "Per fresh decision one actual native final-RMS evaluation on early state and two extra native-head evaluations: unmodified mature replay plus mixed branch. No extra attention/FFN/PLE evaluation, parameter assignment or gradient."
+  },
+  "generation": {
+    "native_eos": [
+      1,
+      106,
+      50
+    ],
+    "arbitrary_response_token_ceiling": null,
+    "own_history": "Every new token is actual constrained-policy argmax on actual previously emitted history. All new edited choices fresh; zero old-cell carries, forced future tokens or reconvergence. Original future programs/IDs/grades/memo228/oracles remain HOSTONLY.",
+    "gpu_inputs": "Exact original prompts/tokenization/config/bundle and own frozen FIRST native FP32/argmax/whole-cache guard references only. No hidden answers, oracles, old future programs or host grader in closure.",
+    "order": "indexmod2 case ownership, both policies per case, fixed rotated order (row_index//2)%2; two distinct T4 full BF16 replicas, sequential loading/shared model cache/barrier",
+    "per_response_restoration": "After every response: actual native first fullFP32/argmax/wholecache restoration and state/hook/version/RNG/config/buffer/grad observations BEFORE durable prepare/commit. Actual initial and terminal metadata.",
+    "cache_scope": "Native full caches observed at first and terminal response decisions and native source/restoration; no independent per-token whole-cache byte authentication claim. Extra RMS/head branches have no KV input or producer.",
+    "trace": "Actual compact decision events flushed/fsynced per token: actual consumed history index/token/length, native raw logit dtype/fullFP32 hash/argmax, early/mature/normalized/mixed state hashes, native-head replay hash/equality, branch raw logits hash/dtype, support threshold/count/hash and native-max inclusion, chosen token eligibility/score and full constrained argmax digest. Digests persist caller observations, not independently authenticated unsaved full vectors or caller identity.",
+    "failure": "Configured native context, actual memory/storage/free-compute/walltime/absolutedeadline interruptions censor WHOLEpanel. No completed rerolls, automatic continuation or partial candidate grading."
+  },
+  "accounting": {
+    "actual_observations_required": true,
+    "complete_totals_with_T_fresh_choices_and_S_sum96_prompt_lengths": {
+      "full_model_forwards": "T+288",
+      "input_token_exposures": "5*S+T-192",
+      "native_sourceguards": 96,
+      "native_restoration_forwards": 192,
+      "extra_native_final_RMS_evaluations": "T",
+      "extra_native_head_evaluations": "2*T",
+      "branch_input_constructions": "T",
+      "policy_support_assignments": "T",
+      "fresh_choices": "T",
+      "old_cell_carries": 0,
+      "extra_attention_FFN_PLE_evaluations": 0,
+      "base_parameter_buffer_or_activation_hook_assignments": 0,
+      "backward_or_optimizer_updates": 0
+    },
+    "original_carry_tokens": "Report original whole-response carried tokens separately; they are zero N57 new choices. 192 new response records do not mean192 unique texts or changes."
+  },
+  "primary": {
+    "target_policy": "subtract_native_boundary ONLY; addition is the fixed equal-compute control, never a posthoc replacement winner",
+    "all_conjunctive_clauses": [
+      "preserve EVERY original-correct coding case",
+      "preserve EVERY original-correct retention case",
+      "gain at least4 coding cases",
+      "gains span at least2 coding families",
+      "beat additive control by at least2 correct coding cases"
+    ],
+    "report": "Every arm/family/status/gain/loss and every clause. No pvalues, posthoc winner, neuron meaning, mediation, speed, fresh-confirmation or generalizable coding gain claim."
+  },
+  "grading": {
+    "gate": "Whole192 edited responses nativeEOS COMPLETE and all frozen source/structure/counter/state/trace guards PASS before ANY new grade",
+    "unchanged_grader": "research/experiments/n41/grading.py only new unique same-case complete textSHA",
+    "memo": "228 old exact same-case N41A/B text grades carry; conflicting grades refuse. Original96 always carry. Identical new candidates reuse first new grade. No N55 partial candidate inspection, scoring or recovery.",
+    "host_tokenizer": "At most ONCE on complete audit to check actual generated IDs/text; zero host model replay",
+    "hidden_oracles": "HOSTONLY, never GPU uploaded or supplied to model"
+  },
+  "resources": {
+    "private": true,
+    "platform_seconds": 10800,
+    "notebook_seconds": 10600,
+    "worker_seconds": 10400,
+    "global_notebook_seconds": 10200,
+    "U27_deadline_epoch": 1793615450,
+    "deadline_reserve_seconds": 120,
+    "scientific_raw_max_bytes": 268435456,
+    "reservation_GPU_hours": 6,
+    "separate_reserve_GPU_hours": 2,
+    "prelaunch": "Fresh official free quota >=8 and own inventory BOTHgemma-private/digital-surgery with all earlier project jobs terminal; one scientific GPU job at a time; job must fit remaining U27 walltime. Do not extend active caps after launch."
+  },
+  "host_gates": "NEW FP32/BF16 random same-history native graphs with independent explicit head-connection references, native-head/softcap identity, support/no-off-support winner/ties/nativeEOS and configured-context interruption, actual base parameter bytes+versions/state/cache/restoration/counters. Literal zero-head fixture initialization permitted and separately counted, never pretrained. NEW audit literal positives/targeted provenance refusals and byte-exact package import with model/tokenizer constructors blocked. No old fixture/gate repetition.",
+  "zero_training": "No optimizer/SFT/LoRA/RL/backward/gradient/value updates or fitted vectors/signs/strengths/bridges/alignments. Only actual native state copying and predetermined unit addition/subtraction plus actual native modules. No learned tuned lens.",
+  "witness_limits": "Actual state/version/hook/RNG/config/buffer/grad and source/copy/digest observations; not independent all-base-parameter-byte or caller authentication, per-token whole-cache authentication or clean pretrained-package replay.",
+  "failure_policy": "Preserve first failure, immutable sources, all raw evidence and every grade; no weakened guard, completed edited-cell rerun, closed candidate rescoring or automatic continuation."
+}

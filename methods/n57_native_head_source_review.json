@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-01T20:42:26.430125+00:00",
+  "before_implementation_and_measurements": true,
+  "pinned_module_sha256": "64ecac478c7d11b9a6993ea194bdf98ce867d0e6d361295d976140e0ded53933",
+  "source_inspected": "Gemma4ForConditionalGeneration current last-state head projection and final_logit_softcapping division/tanh/multiplication lines2555-2562; native text final RMS and block14 architectural last-KV-producer boundary.",
+  "implementation_contract": "Replay actual native lm_head on cloned mature current input, then exact native softcap operation order; compare full FP32 logits digest with actual model output before accepting any edited head branch. Early normalization calls actual native final RMS module directly, not manual reciprocal reconstruction.",
+  "model_tokenizer_scorer_calls": 0,
+  "no_pretrained_weight_load": true
+}

@@ -1172,7 +1172,7 @@
     {
       "id": "Q70",
       "experiment": "N55: persistent native-RMS program utility",
-      "status": "private_version1_active_no_outputs_accessed",
+      "status": "engineering_incomplete_closed_all_finite_effects_censored",
       "question": "Can persistent signed numerator removal with native RMS improve complete coding responses while preserving every originally correct coding and retention case?",
       "question_provenance": "N49 separated finite numerator and scale effects. N52 and N54 caution that activation sign is neither local support nor basis-invariant meaning. This tests full-response utility of a fixed native-basis policy, with all controls and cases retained.",
       "parents": [
@@ -1181,16 +1181,23 @@
         "Q69"
       ],
       "method": "Carry all 96 original N41A replies and grades exactly. Generate 384 new native-EOS responses under all four signed/cardinality-random numerator policies. At every actual own-history decision preserve the native reciprocal RMS and direct gamma. Only the current edited numerator replaces the final FFN norm output. No arbitrary response-token ceiling or parameter/gradient updates.",
-      "result": "No pretrained N55 output or effect has been accessed. New FP32/BF16 independent trajectories pass 74 forwards and 126 exposures, followed by separate new restoration contexts with six forwards and 27 exposures. The literal record auditor passes one positive and 33 refusals. The byte-exact package imports with zero model, tokenizer or fixture construction. All 1,909 actual source and parent files are frozen. Private version 1 source and its single ready private input dataset are verified. No output, partial or live counter has been accessed. The separate reporting preparation now passes two literal positives, eight assertions and 29 refusals. Two synthetic layouts have been viewed, and 18 reporting source and receipt files are frozen separately. No actual N55 figure or aggregate is created, and no scientific source or grade changes.",
-      "interpretation": "Prospective reused-development utility test, not fresh confirmation or individual meaning. N47 remains incomplete and censored; its standard postmask-RMS policy is not rerun or recovered. All finite effects remain pending complete frozen audit.",
-      "next_question": "Choose the ninth distinct experiment from complete available evidence without waiting on partial effects.",
-      "direction_decision": "Eight experiments have launched, seven are complete and two allowances remain. Keep one scientific GPU job active. At terminal status validate all 1,909 files, collect exactly once and dispatch the original frozen auditor only for the complete panel.",
-      "historical_prelaunch_result": "No pretrained N55 output exists. New FP32/BF16 independent trajectories pass 74 forwards and 126 exposures, followed by separate new restoration contexts with six forwards and 27 exposures. The literal record auditor passes one positive and 33 refusals. The byte-exact package imports with zero model, tokenizer or fixture construction. All 1,909 actual source and parent files are frozen."
+      "result": "N55 ends with a native RMS reconstruction guard failure in one worker. The single terminal collector preserves all 777 raw files. Worker metadata reports 332 committed response records of 384, 75,425 forward attempts, 161,552 input exposures and 75,008 fresh choices. These counters and state observations are unaudited. The scientific auditor, grader and actual renderer are not invoked.",
+      "interpretation": "The whole panel is incomplete. Every finite effect is censored; this is neither a utility null nor evidence of improvement. The original reconstruction guard, failure, 1,909 scientific files and 18 reporting files remain unchanged. No partial candidate is graded or recovered.",
+      "next_question": "Proceed with the independently registered N56 copied-block composition after complete terminal closure, final parent/source freeze and fresh resource/privacy gates.",
+      "direction_decision": "Eight experiments had launched and closed at the N55 boundary: seven complete studies and one engineering-incomplete censored study. The registered incomplete branch permits independent N56 after final source, resource and privacy gates. U27 continues until 4:00:50 PM IST on 2 November. No N55 retry or weakened guard.",
+      "historical_prelaunch_result": "No pretrained N55 output exists. New FP32/BF16 independent trajectories pass 74 forwards and 126 exposures, followed by separate new restoration contexts with six forwards and 27 exposures. The literal record auditor passes one positive and 33 refusals. The byte-exact package imports with zero model, tokenizer or fixture construction. All 1,909 actual source and parent files are frozen.",
+      "historical_preterminal_current_phase": {
+        "status": "private_version1_active_no_outputs_accessed",
+        "result": "No pretrained N55 output or effect has been accessed. New FP32/BF16 independent trajectories pass 74 forwards and 126 exposures, followed by separate new restoration contexts with six forwards and 27 exposures. The literal record auditor passes one positive and 33 refusals. The byte-exact package imports with zero model, tokenizer or fixture construction. All 1,909 actual source and parent files are frozen. Private version 1 source and its single ready private input dataset are verified. No output, partial or live counter has been accessed. The separate reporting preparation now passes two literal positives, eight assertions and 29 refusals. Two synthetic layouts have been viewed, and 18 reporting source and receipt files are frozen separately. No actual N55 figure or aggregate is created, and no scientific source or grade changes.",
+        "interpretation": "Prospective reused-development utility test, not fresh confirmation or individual meaning. N47 remains incomplete and censored; its standard postmask-RMS policy is not rerun or recovered. All finite effects remain pending complete frozen audit.",
+        "next_question": "Choose the ninth distinct experiment from complete available evidence without waiting on partial effects.",
+        "direction_decision": "Eight experiments have launched, seven are complete and two allowances remain. Keep one scientific GPU job active. At terminal status validate all 1,909 files, collect exactly once and dispatch the original frozen auditor only for the complete panel."
+      }
     },
     {
       "id": "Q71",
       "experiment": "N56: native copied full-block composition",
-      "status": "all_new_host_gates_closed_package_exact_not_launched_N55_active",
+      "status": "complete_host_audited_closed_silent_PASS_bounded_utility_FAIL",
       "question": "Does a native copied attention, FFN and per-layer-input block provide a useful extra computation beyond an FFN-only copy?",
       "question_provenance": "N51 found broad residual answer-state copying and no per-layer-only argmax change. N54 verified a known sign-coordinate symmetry. This moves to a distinct construction question with copied native computation, rather than another sign mask, site or dose.",
       "parents": [
@@ -1198,14 +1205,40 @@
         "Q69"
       ],
       "method": "Keep all 24 N48 contexts. Prepare separate full, FFN-only and silent native final-block copies. Zero only prescribed copied output norm weights; the silent copy also sets its layer-scalar buffer to one. Invoke the copied block on the actual native final output with the same per-layer input, positions, mask and shared KV, assigning only the current output. The base model remains intact.",
-      "result": "No pretrained N56 result exists. The new FP32 and BF16 numerical gate passes six independent full-block references, 22 model forwards and 858 exposures. The new literal auditor accepts one complete case, one finite silent-control failure and a copied-source pool, and passes 35 refusals plus two summary layouts. The exact 35-source, nine-input package imports without model or tokenizer construction. A separate new device-inventory parser passes one positive and five refusals. Old scores carry through exact aggregate counts and binary gain/loss conservation; no original choice is classified again.",
-      "interpretation": "This validates the new random-model execution path only. The construction is a known copied/silent depth-control idea, not a new method, semantic neuron role, complete-program improvement or resized transformer architecture. The copied block reads existing shared KV and reuses the original per-layer input.",
-      "next_question": "Complete the prospective source and provenance gates, then execute only after the active N55 job is terminal and closed.",
-      "direction_decision": "N56 is prepared and unlaunched. The final source freeze will include the closed N55 parents once available. A controlled N55 full-program gain takes priority for independent confirmation under all four fixed policies; otherwise this distinct copied-block direction may proceed after terminal closure and fresh resource gates. Eight U26 launches, seven closed and two allowances remain; U27 ends at 4:00:50 PM IST on 2 November.",
-      "historical_initial_host_preparation": "No pretrained N56 result exists. Two new FP32 and BF16 random contexts pass six independent explicit full-block references, with 22 full model forwards and 858 input exposures. Silent input/output, logits and caches match exactly. Native parameters, source copies, state and restoration pass. No old fixture is repeated."
+      "result": "All 24 contexts and three copied-block conditions pass the single frozen engineering audit. Silent copies preserve full input/output, full FP32 logits and whole KV caches in all 24 contexts. Both full and FFN-only active copies produce zero valid A/B choices: coding 0/16 and retention 0/8, each with zero gains, eight coding losses and eight retention losses. Original and silent scores are coding 8/16 and retention 8/8. All five full-copy utility clauses fail.",
+      "interpretation": "This is bounded answer-format failure under the copied-block policy, not complete-program accuracy or a semantic error classification. Native attention, FFN and PLE composition runs with exact silent and restoration controls; it is not validation of a resized or serialized transformer. No fitted parameter, optimizer or backward computation is used. No restricted A/B rescoring or useful coding gain is claimed.",
+      "next_question": "Test a distinct fixed native intermediate-state connection to the existing output head on complete programs, with an equal-compute additive control and a native-plausibility support. Do not retune the failed copied-block site or strength.",
+      "direction_decision": "Nine U26 experiments have launched and closed: eight complete studies and censored N55. One allowance remains. N57 is registered before implementation under the U27 window ending 4:00:50 PM IST on 2 November. All N56 arms, families, answer orders and failed clauses remain in the aggregate.",
+      "historical_initial_host_preparation": "No pretrained N56 result exists. Two new FP32 and BF16 random contexts pass six independent explicit full-block references, with 22 full model forwards and 858 input exposures. Silent input/output, logits and caches match exactly. Native parameters, source copies, state and restoration pass. No old fixture is repeated.",
+      "historical_preterminal_direction_decision": "N56 is prepared and unlaunched. The final source freeze will include the closed N55 parents once available. A controlled N55 full-program gain takes priority for independent confirmation under all four fixed policies; otherwise this distinct copied-block direction may proceed after terminal closure and fresh resource gates. Eight U26 launches, seven closed and two allowances remain; U27 ends at 4:00:50 PM IST on 2 November.",
+      "historical_prelaunch_status": "host_ready_N55_closed_final_prelaunch_gates",
+      "historical_active_current_phase": {
+        "status": "private_version1_active_no_outputs_accessed",
+        "result": "No pretrained N56 result or effect has been accessed. The new FP32 and BF16 numerical gate passes six independent full-block references, 22 model forwards and 858 exposures. The new literal auditor accepts one complete case, one finite silent-control failure and a copied-source pool, and passes 35 refusals plus two summary layouts. The exact 35-source, nine-input package imports without model or tokenizer construction. A separate new device-inventory parser passes one positive and five refusals. Old scores carry through exact aggregate counts and binary gain/loss conservation; no original choice is classified again.",
+        "interpretation": "This validates the new random-model execution path only. The construction is a known copied/silent depth-control idea, not a new method, semantic neuron role, complete-program improvement or resized transformer architecture. The copied block reads existing shared KV and reuses the original per-layer input.",
+        "next_question": "Wait for the N56 terminal boundary, validate all 2,810 immutable files and parents, collect exactly once and audit only the whole complete panel. Choose the next distinct question from complete evidence.",
+        "direction_decision": "N56 version 1 is private and running from checkpoint 228d25d. Its server notebook JSON, single ready private dataset and payload match. All 2,810 scientific and parent files are exact. Fresh official quota is 15.48 GPU hours, with one hour reserved and a separate two-hour reserve; all 76 earlier project jobs are terminal. Nine U26 experiments have launched, eight are closed and one allowance remains. No output, partial or live counter has been accessed. Terminal collection and the frozen auditor remain single-use, with audit only for the whole complete panel."
+      }
+    },
+    {
+      "id": "Q72",
+      "experiment": "N57: fixed native intermediate-state readout connection",
+      "status": "protocol_registered_before_implementation_no_launch",
+      "question": "Can a fixed subtractive native-state connection to the output head improve complete programs while preserving all originally correct coding and retention cases and beating an additive control?",
+      "question_provenance": "N56 active copied blocks fail the bounded answer format. DoLa and contrastive-decoding priors motivate a distinct readout connection. They establish no coding or Gemma4 benefit here. Block14 is fixed by the native last-KV-producer boundary, not an effect ranking.",
+      "parents": [
+        "Q71",
+        "Q70",
+        "Q67"
+      ],
+      "method": "Retain all 96 N41A cases and exact original whole-response grades. Generate 192 new native-EOS response records under subtractive and additive fixed native-state head branches. Normalize the actual same-forward block14 state through the native final RMS module and combine it with the actual mature head input using literal unit coefficients. Use the native head and exact softcap, a strict native-head replay guard and alpha0.1 native plausibility support. No layer, gain, vector, bridge or alignment is fitted.",
+      "result": "Protocol registered before implementation or any N57 measurement. No scientific launch or effect exists. New independent random-graph, literal audit and exact package gates remain required.",
+      "interpretation": "Reused-development complete-program utility test of a fixed output connection, not an exact DoLa reproduction, a novel method, individual neuron meaning or fresh confirmation. No repetition penalty or layer search is introduced.",
+      "next_question": "Implement and validate the new native head branch, then execute only after all prospective source, state, resource, privacy and package gates pass.",
+      "direction_decision": "The subtractive policy is the sole target; the additive branch remains an equal-compute control and cannot become a posthoc winner. Every original-correct coding and retention case must survive, with at least four coding gains across two families and at least two more correct programs than the additive control. One U26 allowance remains; U27 ends at 4:00:50 PM IST on 2 November."
     }
   ],
   "active_question_id": "Q70",
   "next_question_id": "Q71",
-  "utc": "2026-11-01T19:28:18.965489+00:00"
+  "utc": "2026-11-01T20:42:26.430125+00:00"
 }

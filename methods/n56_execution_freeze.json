@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-01T20:12:41.132753+00:00",
+  "before_launch_and_any_N56_pretrained_outputs": true,
+  "actual_files": 2810,
+  "parent_N55_source_freeze_sha256": "14d9db2f2fd63aaebeacc3beb22cb2f174765d74d4899f2888ae1ba67f07d64c",
+  "parent_N55_actual_files": 1909,
+  "parent_N55_reporting_freeze_sha256": "850ef06189431af0624fd46b30f4559a2a71ac4130f472bbc7d125540ba9fc4a",
+  "parent_N55_reporting_files": 18,
+  "parent_N55_closed_raw_files": 777,
+  "parent_N55_terminal_closure_sha256": "e6f2e2192b685375da01440367270dd9d1a40a1f816c2fd6b647a49dc7092dc2",
+  "analysis_plan_sha256": "ca9e091d05853e69544b20309b0827d3b7d8f8fba4a68acbda28acea8fdfa9d3",
+  "protocol_sha256": "af0da9d01497f9b35f291b05e919b94d519b133ef5d0e83207ae87a61fb4c52d",
+  "auditor_sha256": "ad8f3fef482dbef21d8aa80951bb9d50b89e787b1d933b67120eebcea062bf26",
+  "notebook_sha256": "218ee41cf37f63687d1e7bee5a6bcfdc6266c166366790cd048d7ad3b09617e3",
+  "payload_sha256": "c24579c8116af55b370f386170ae53b7e3afe6ecc6c51773e34adffaf62c193c",
+  "optimizer_steps": 0
+}

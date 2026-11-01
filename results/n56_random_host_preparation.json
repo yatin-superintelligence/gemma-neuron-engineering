@@ -1,0 +1,85 @@
+{
+  "backward_calls": 0,
+  "contexts": [
+    {
+      "actual_full_forward_counter": {
+        "calls": 8,
+        "input_token_exposures": 296
+      },
+      "actual_production_copy_and_intervention_counts": {
+        "cloned_block_constructions": 3,
+        "cloned_buffer_objects": 3,
+        "cloned_parameter_objects": 39,
+        "current_output_assignments": 3,
+        "extra_FFN_evaluations": 3,
+        "extra_PLE_evaluations": 3,
+        "extra_attention_evaluations": 3,
+        "extra_full_block_evaluations": 3,
+        "manual_clone_buffer_one_assignments": 1,
+        "manual_clone_parameter_zero_assignments": 5,
+        "native_restoration_forwards": 3,
+        "native_sourceguards": 1
+      },
+      "copies_native_nonaliasing_sources_unchanged": true,
+      "dtype": "torch.float32",
+      "independent_explicit_full_block_matches": [
+        "silent_copied_block",
+        "FFN_only_copied_block",
+        "full_copied_block"
+      ],
+      "independent_full_model_reference_counter": {
+        "calls": 3,
+        "input_token_exposures": 111
+      },
+      "length": 37,
+      "native_base_parameter_bytes_versions_state_restored": true,
+      "random_initializer_writes": "not instrumented",
+      "reference_cloning_and_literal_zero_writes": "Separate independent reference constructions,3blocks/5Parameterzeros/1bufferone;notaddedtoproductioncounter",
+      "silent_full_input_output_logits_cache_exact": true
+    },
+    {
+      "actual_full_forward_counter": {
+        "calls": 8,
+        "input_token_exposures": 328
+      },
+      "actual_production_copy_and_intervention_counts": {
+        "cloned_block_constructions": 3,
+        "cloned_buffer_objects": 3,
+        "cloned_parameter_objects": 39,
+        "current_output_assignments": 3,
+        "extra_FFN_evaluations": 3,
+        "extra_PLE_evaluations": 3,
+        "extra_attention_evaluations": 3,
+        "extra_full_block_evaluations": 3,
+        "manual_clone_buffer_one_assignments": 1,
+        "manual_clone_parameter_zero_assignments": 5,
+        "native_restoration_forwards": 3,
+        "native_sourceguards": 1
+      },
+      "copies_native_nonaliasing_sources_unchanged": true,
+      "dtype": "torch.bfloat16",
+      "independent_explicit_full_block_matches": [
+        "silent_copied_block",
+        "FFN_only_copied_block",
+        "full_copied_block"
+      ],
+      "independent_full_model_reference_counter": {
+        "calls": 3,
+        "input_token_exposures": 123
+      },
+      "length": 41,
+      "native_base_parameter_bytes_versions_state_restored": true,
+      "random_initializer_writes": "not instrumented",
+      "reference_cloning_and_literal_zero_writes": "Separate independent reference constructions,3blocks/5Parameterzeros/1bufferone;notaddedtoproductioncounter",
+      "silent_full_input_output_logits_cache_exact": true
+    }
+  ],
+  "independent_full_block_references": 6,
+  "input_exposures": 858,
+  "old_fixture_repeats": 0,
+  "optimizer_steps": 0,
+  "pretrained_calls": 0,
+  "random_full_forwards": 22,
+  "status": "PASS_CLOSED",
+  "utc": "2026-11-01T18:36:45.081837+00:00"
+}

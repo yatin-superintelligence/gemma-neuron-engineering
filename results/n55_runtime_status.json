@@ -1,13 +1,14 @@
 {
-  "utc": "2026-11-01T19:30:33.442278+00:00",
-  "status": "yatinintelligence/digital-surgery-private-n55-native-rms-generation has status \"KernelWorkerStatus.RUNNING\"",
+  "utc": "2026-11-01T20:10:30.131130+00:00",
+  "status": "engineering_incomplete_closed_all_finite_effects_censored",
   "source_checkpoint": "b61398f62f954e5798152c6ad2882ecedf916bc8",
   "private_GPU_notebook": true,
   "single_READY_private_dataset": true,
   "server_JSON_exact": true,
-  "outcome": "Prospective only; no output, partial or live counter accessed. Pending complete frozen whole-panel audit and only unique new-candidate grading.",
+  "outcome": "Whole panel engineering incomplete. Native RMS reconstruction guard failed. All finite effects censored; no scientific audit, grade or actual figure.",
   "planned_new_edited_response_records": 384,
+  "committed_response_records_self_reported_UNAUDITED": 332,
   "original_complete_response_grade_carries": 96,
   "arbitrary_response_token_ceiling": null,
-  "optimizer_steps": 0
+  "root_optimizer_steps_self_reported": 0
 }

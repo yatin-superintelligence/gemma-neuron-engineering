@@ -1723,6 +1723,111 @@ def resolved_contract(model):
         k: v for k, v in contract.items() if k != &quot;max_new_tokens&quot;
     }
     return {**actual, &quot;stop_strings&quot;: [&quot;\n&quot;], &quot;manual_full_vocabulary&quot;: True}
+</pre></details></article><article class="card tool" data-category="Reuse computation"><span class="tag">Reuse computation</span><h2>assay</h2><p>Actual pretrained block copies with silent and FFN-only internal controls. All 24 contexts pass the frozen engineering audit and silent identity control. Both active full and FFN-only copies produce zero valid A/B choices and fail utility. Prescribed norm zeros and a scalar-buffer one affect copies only. Existing shared KV and per-layer input are reused. This validates scoped execution composition, not a resized or serialized transformer or useful coding gain.</p><p><a href="../research/experiments/n56/assay.py">Exact source file</a></p><p class="small">APIs: module_state, shared_state, CopyPool, composed, native, order, one_case</p><p class="hash">SHA-256 2e9cd2ec69ce0474efdaabd3558285afd6f661be995be11cb647ffc60afd43d0</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Actual pretrained block copies with silent and FFN-only internal controls.&quot;&quot;&quot;
+from contextlib import contextmanager
+import copy
+import torch
+from transformers.cache_utils import DynamicCache
+from research.experiments.n35.core import tensor_sha,stable
+from research.experiments.n49.assay import site,source_forward
+from research.experiments.n37.continuation import decision
+from research.experiments.n48.assay import choice_metrics
+
+CONDITIONS=(&#x27;silent_copied_block&#x27;,&#x27;FFN_only_copied_block&#x27;,&#x27;full_copied_block&#x27;)
+
+
+def module_state(module):
+    return {&#x27;parameters&#x27;:{n:{&#x27;sha256&#x27;:tensor_sha(p),&#x27;version&#x27;:p._version,&#x27;shape&#x27;:list(p.shape),&#x27;dtype&#x27;:str(p.dtype),&#x27;requires_grad&#x27;:p.requires_grad,&#x27;grad_absent&#x27;:p.grad is None}for n,p in module.named_parameters()},&#x27;buffers&#x27;:{n:{&#x27;sha256&#x27;:tensor_sha(p),&#x27;version&#x27;:p._version,&#x27;shape&#x27;:list(p.shape),&#x27;dtype&#x27;:str(p.dtype)}for n,p in module.named_buffers()}}
+
+
+def shared_state(mapping):
+    if set(mapping)!={&#x27;sliding_attention&#x27;,&#x27;full_attention&#x27;}:raise ValueError(&#x27;Actual shared attention-type KV source required&#x27;)
+    return {k:[{&#x27;sha256&#x27;:tensor_sha(t),&#x27;shape&#x27;:list(t.shape),&#x27;dtype&#x27;:str(t.dtype)}for t in pair]for k,pair in mapping.items()}
+
+
+class CopyPool:
+    &quot;&quot;&quot;Copies remain outside the base model&#x27;s registered module tree.&quot;&quot;&quot;
+    def __init__(self,model,count=lambda name:None):
+        block,_=site(model)
+        if not block.hidden_size_per_layer_input or not block.self_attn.is_kv_shared_layer or block.self_attn.store_full_length_kv:raise ValueError(&#x27;Actual late shared-KV native attention+FFN+PLE block required&#x27;)
+        if any(m._forward_pre_hooks or m._forward_hooks for m in block.modules()):raise ValueError(&#x27;Clean native copied source required&#x27;)
+        self.block=block;self.count=count;self.source=module_state(block);self.base_ids={n:id(p)for n,p in model.named_parameters()};self.clones={};self.handles=[]
+        for condition in CONDITIONS:
+            count(&#x27;cloned_block_constructions&#x27;);clone=copy.deepcopy(block).eval().requires_grad_(False)
+            if module_state(clone)[&#x27;parameters&#x27;].keys()!=self.source[&#x27;parameters&#x27;].keys():raise ValueError(&#x27;Exact native clone structure required&#x27;)
+            native=dict(block.named_parameters());nativebuffers=dict(block.named_buffers())
+            for n,p in clone.named_parameters():
+                count(&#x27;cloned_parameter_objects&#x27;)
+                if tensor_sha(p)!=self.source[&#x27;parameters&#x27;][n][&#x27;sha256&#x27;]or p.untyped_storage().data_ptr()==native[n].untyped_storage().data_ptr():raise ValueError(&#x27;Byte-exact nonaliasing native Parameter copy required&#x27;)
+            for n,b in clone.named_buffers():
+                count(&#x27;cloned_buffer_objects&#x27;)
+                if tensor_sha(b)!=self.source[&#x27;buffers&#x27;][n][&#x27;sha256&#x27;]or b.untyped_storage().data_ptr()==nativebuffers[n].untyped_storage().data_ptr():raise ValueError(&#x27;Byte-exact nonaliasing native buffer copy required&#x27;)
+            norms=[]
+            if condition==&#x27;silent_copied_block&#x27;:norms=[clone.post_attention_layernorm,clone.post_feedforward_layernorm,clone.post_per_layer_input_norm]
+            elif condition==&#x27;FFN_only_copied_block&#x27;:norms=[clone.post_attention_layernorm,clone.post_per_layer_input_norm]
+            with torch.no_grad():
+                for norm in norms:count(&#x27;manual_clone_parameter_zero_assignments&#x27;);norm.weight.zero_()
+                if condition==&#x27;silent_copied_block&#x27;:count(&#x27;manual_clone_buffer_one_assignments&#x27;);clone.layer_scalar.fill_(1)
+            self.clones[condition]=clone
+            for module,name in [(clone,&#x27;extra_full_block_evaluations&#x27;),(clone.self_attn,&#x27;extra_attention_evaluations&#x27;),(clone.mlp,&#x27;extra_FFN_evaluations&#x27;),(clone.per_layer_projection,&#x27;extra_PLE_evaluations&#x27;)]:
+                self.handles.append(module.register_forward_pre_hook(lambda module,args,name=name:count(name)))
+        storages=[p.untyped_storage().data_ptr()for clone in self.clones.values()for p in clone.parameters()]
+        if len(storages)!=len(set(storages)):raise ValueError(&#x27;Different clone Parameters alias&#x27;)
+        self.prepared={k:module_state(v)for k,v in self.clones.items()};self.source_witness=self.witness()
+        if self.base_ids!={n:id(p)for n,p in model.named_parameters()}:raise ValueError(&#x27;Copy registered into native model&#x27;)
+    def witness(self):
+        return {&#x27;native_source&#x27;:module_state(self.block),&#x27;clones&#x27;:{k:module_state(v)for k,v in self.clones.items()},&#x27;clone_Parameter_elements&#x27;:sum(p.numel()for v in self.clones.values()for p in v.parameters()),&#x27;clone_Parameter_bytes&#x27;:sum(p.numel()*p.element_size()for v in self.clones.values()for p in v.parameters()),&#x27;clone_buffer_bytes&#x27;:sum(b.numel()*b.element_size()for v in self.clones.values()for b in v.buffers()),&#x27;all_clone_grad_absent&#x27;:all(not p.requires_grad and p.grad is None for v in self.clones.values()for p in v.parameters()),&#x27;source_and_clones_nonaliasing&#x27;:True}
+    def check(self,model):
+        if self.base_ids!={n:id(p)for n,p in model.named_parameters()}or self.witness()!=self.source_witness:raise ValueError(&#x27;Actual base references or cloned source bytes/versions changed&#x27;)
+        return True
+    def remove(self):
+        for handle in self.handles:handle.remove()
+
+
+@contextmanager
+def composed(model,pool,condition):
+    if condition not in CONDITIONS:raise ValueError(&#x27;Fixed copied-block condition required&#x27;)
+    if not pool.check(model):raise ValueError(&#x27;Intact actual copies required&#x27;)
+    seen={}
+    def hook(module,args,kwargs,output):
+        if seen or output.requires_grad or output.ndim!=3 or output.shape[0]!=1:raise ValueError(&#x27;Exactly one native final-block output required&#x27;)
+        if len(args)!=2 or &#x27;hidden_states&#x27;in kwargs or &#x27;per_layer_input&#x27;in kwargs:raise ValueError(&#x27;Pinned native positional hidden/PLE decoder invocation required&#x27;)
+        actual=dict(kwargs);actual[&#x27;per_layer_input&#x27;]=args[1];shared_before=shared_state(actual[&#x27;shared_kv_states&#x27;]);input_sha=tensor_sha(output);source_input=output.clone();copied=pool.clones[condition](hidden_states=source_input,**actual)
+        if not torch.isfinite(copied).all()or tensor_sha(output)!=input_sha or shared_state(actual[&#x27;shared_kv_states&#x27;])!=shared_before:raise ValueError(&#x27;Copied block changed native recipient or shared KV source&#x27;)
+        result=output.clone();pool.count(&#x27;current_output_assignments&#x27;);result[:,-1:,:].copy_(copied[:,-1:,:]);other=tensor_sha(result[:,:-1])==tensor_sha(output[:,:-1])
+        if not other:raise ValueError(&#x27;Noncurrent final-block output changed&#x27;)
+        seen.update(condition=condition,calls=1,native_full_block_output_sha256=input_sha,copied_full_input_sha256=input_sha,copied_full_output_sha256=tensor_sha(copied),assigned_current_output_sha256=tensor_sha(copied[:,-1:,:]),silent_full_input_output_byte_exact=tensor_sha(copied)==input_sha,other_positions_byte_exact=True,shared_KV_before_after_exact=True,actual_shared_KV=shared_before,source_pool_sha256=stable(pool.source_witness),clone_attention_KV_shared_read_only=True)
+        return result
+    handle=pool.block.register_forward_hook(hook,with_kwargs=True)
+    try:
+        yield seen
+        if seen.get(&#x27;calls&#x27;)!=1:raise ValueError(&#x27;Missing copied block operation&#x27;)
+    finally:handle.remove()
+
+
+def native(model,encoded,answers,parent):
+    record,cache,captured=source_forward(model,encoded,answers)
+    if record!=parent[&#x27;original&#x27;]or cache!=parent[&#x27;native_first_full_cache&#x27;]:raise ValueError(&#x27;Actual original N48 source changed&#x27;)
+    return {&#x27;record&#x27;:record,&#x27;cache&#x27;:cache,&#x27;full_h_sha256&#x27;:tensor_sha(captured[&#x27;h&#x27;])}
+
+
+def order(row_index):
+    k=(row_index//2)%3
+    return list(CONDITIONS[k:]+CONDITIONS[:k])
+
+
+def one_case(model,encoded,answers,parent,row_index,pool,count=lambda name:None):
+    count(&#x27;native_sourceguards&#x27;);source=native(model,encoded,answers,parent);cells={};restores={};slots=model.config.text_config.num_hidden_layers-model.config.text_config.num_kv_shared_layers
+    for condition in order(row_index):
+        with torch.no_grad(),composed(model,pool,condition)as witness:
+            output=model(**encoded,past_key_values=DynamicCache(config=model.config.text_config),use_cache=True,logits_to_keep=1);d,cache=decision(output,0,slots,str(next(model.parameters()).dtype));metrics=choice_metrics(output.logits[0,-1],answers)
+        if cache!=source[&#x27;cache&#x27;]:raise ValueError(&#x27;Extra late shared-KV block changed whole native cache&#x27;)
+        cells[condition]={&#x27;decision&#x27;:d,&#x27;metrics&#x27;:metrics,&#x27;composition&#x27;:witness,&#x27;silent_logits_exact&#x27;:d[&#x27;full_logits_sha256&#x27;]==source[&#x27;record&#x27;][&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;],&#x27;cache_exact&#x27;:True}
+        count(&#x27;native_restoration_forwards&#x27;);restored=native(model,encoded,answers,parent)
+        if restored!=source or not pool.check(model):raise ValueError(&#x27;Actual full native/copy restoration failed&#x27;)
+        restores[condition]=restored
+    silent=cells[&#x27;silent_copied_block&#x27;];primary={&#x27;full_input_output_byte_identity&#x27;:silent[&#x27;composition&#x27;][&#x27;silent_full_input_output_byte_exact&#x27;],&#x27;full_FP32_logits_unchanged&#x27;:silent[&#x27;silent_logits_exact&#x27;],&#x27;whole_KV_cache_unchanged&#x27;:silent[&#x27;cache_exact&#x27;]}
+    return {&#x27;parent_binding&#x27;:parent[&#x27;binding&#x27;],&#x27;carried_native&#x27;:parent[&#x27;original&#x27;],&#x27;native_source&#x27;:source,&#x27;cells&#x27;:cells,&#x27;native_restorations&#x27;:restores,&#x27;condition_order&#x27;:order(row_index),&#x27;silent_primary_components&#x27;:primary,&#x27;joint_silent_primary_pass&#x27;:all(primary.values()),&#x27;copy_pool_sha256&#x27;:stable(pool.source_witness),&#x27;new_emitted_tokens&#x27;:0,&#x27;base_parameter_assignments&#x27;:0,&#x27;base_buffer_assignments&#x27;:0,&#x27;backward_calls&#x27;:0,&#x27;optimizer_steps&#x27;:0}
 </pre></details></article><article class="card tool" data-category="Reuse computation"><span class="tag">Reuse computation</span><h2>native_ffn_reuse_v2</h2><p>One fixed extra native FFN computation before the final per-layer-input branch.
 
 Tied pretrained modules are reused. No parameter is assigned or trained.
@@ -3463,7 +3568,7 @@ def compare(original, changed, original_grade, changed_grade):
         &#x27;control_delta&#x27;: {key: changed[&#x27;control_nodes&#x27;][key] - original[&#x27;control_nodes&#x27;][key]
                           for key in CONTROL_NODES},
     }
-</pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>generation</h2><p>Own-history native-EOS generation with prescribed numerator-only masks. All four numerator-only native-RMS policies pass new random references and boundary checks. The private pretrained panel is active; no utility outcome is available. Full caches are observed at response boundaries, not independently authenticated at every fresh token. Callers must provide actual resource and durable trace callbacks.</p><p><a href="../research/experiments/n55/generation.py">Exact source file</a></p><p class="small">APIs: cache_record, numerator_policy, generate</p><p class="hash">SHA-256 126c0cd50a086f84d0940be4cdfb37f4b9714051eea29c9a425acdd610610fcf</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Own-history native-EOS generation with prescribed numerator-only masks.&quot;&quot;&quot;
+</pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>generation</h2><p>Own-history native-EOS generation with prescribed numerator-only masks. Random references pass, but N55 stops at its unchanged native RMS reconstruction guard before the whole pretrained panel completes. Every finite effect is censored. No scientific audit, utility grade or actual figure is produced. Full caches are observed at response boundaries, not independently authenticated at every fresh token. The failed source is preserved without recovery or rerun.</p><p><a href="../research/experiments/n55/generation.py">Exact source file</a></p><p class="small">APIs: cache_record, numerator_policy, generate</p><p class="hash">SHA-256 126c0cd50a086f84d0940be4cdfb37f4b9714051eea29c9a425acdd610610fcf</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Own-history native-EOS generation with prescribed numerator-only masks.&quot;&quot;&quot;
 from contextlib import contextmanager
 import hashlib
 import torch

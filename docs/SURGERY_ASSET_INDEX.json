@@ -192,6 +192,20 @@
     },
     {
       "category": "Reuse computation",
+      "path": "research/experiments/n56/assay.py",
+      "sha256": "2e9cd2ec69ce0474efdaabd3558285afd6f661be995be11cb647ffc60afd43d0",
+      "symbols": [
+        "module_state",
+        "shared_state",
+        "CopyPool",
+        "composed",
+        "native",
+        "order",
+        "one_case"
+      ]
+    },
+    {
+      "category": "Reuse computation",
       "path": "interpretability/native_ffn_reuse_v2.py",
       "sha256": "62637a2ed427152c3f4b96ceedbebd2aa788f3157838e3adcd175722f4ac74a1",
       "symbols": [

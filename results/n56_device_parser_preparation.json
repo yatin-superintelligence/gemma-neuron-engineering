@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-01T19:07:52.487635+00:00",
+  "status": "PASS_CLOSED",
+  "new_literal_positive": 1,
+  "targeted_refusals": [
+    "duplicate_UUID",
+    "wrong_physical_index",
+    "wrong_device",
+    "missing_row",
+    "invalid_memory"
+  ],
+  "model_tokenizer_executor_scorer_Kaggle_calls": 0,
+  "old_collector_or_fixture_repeats": 0,
+  "scientific_worker_payload_notebook_changes": 0
+}

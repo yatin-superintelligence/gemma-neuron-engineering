@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-01T19:33:28.227889+00:00",
+  "generated_utc": "2026-11-01T20:50:14.116941+00:00",
   "project": "Digital Surgery",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -21,8 +21,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "d9d3d3aa3bd6437ff42b479590dab62853e4724b871378f123f5bb184cf50adf",
-      "bytes": 24957
+      "sha256": "c9554a23e2153fd14586dc4f3076e3bafa927e510158b242c1887b18f353aa9f",
+      "bytes": 25875
     },
     {
       "path": "docs/ACTIVATION_VIEWER.html",
@@ -31,8 +31,8 @@
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "8e47e1f9651de5aadeeb2faf41cce9f01d3717e2847f04f70bbee8911b4a18d3",
-      "bytes": 400088
+      "sha256": "b8ceb2545070b804caf7467d70d181c292c2fd5b745fcfd23dc7740628adc3df",
+      "bytes": 405943
     },
     {
       "path": "docs/MEASUREMENT_JOURNAL.html",
@@ -46,13 +46,13 @@
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "d3257636ab6d11cd80a336a66be617ab7d373758e27285050c4b5737c1bce17c",
-      "bytes": 311307
+      "sha256": "296ea8adede3e9435c828b8fc7a0ec1191391bed2477580cb66ec0cddae8c04a",
+      "bytes": 314668
     },
     {
       "path": "docs/SURGERY_ASSET_INDEX.json",
-      "sha256": "0861cb0ff51b73772a4283b94098ee63b7f7ee6b562e34b8316ebc6c54c42e03",
-      "bytes": 28145
+      "sha256": "e6bf15fcf35042f562c19c0c2766f44e31b41ea8ab2ce2a22251895df4263edf",
+      "bytes": 28501
     },
     {
       "path": "docs/SURGERY_PROCESS.html",
@@ -61,8 +61,8 @@
     },
     {
       "path": "docs/SURGERY_TOOLKIT.html",
-      "sha256": "98b9e9e5a005b31daaa6c5a49ab7fd4021c9c459800964faa9a65c7f73540ffa",
-      "bytes": 299504
+      "sha256": "9acb15a57344832dbebbb93b49311b4cbe5fb68f3c6181f2b1fc9867e0e006b8",
+      "bytes": 311138
     },
     {
       "path": "docs/current_work_window.json",
@@ -71,8 +71,8 @@
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "83c58ebffc0de93206d89b0ebd75501667df24c02aefe9160a41c580727ea1f9",
-      "bytes": 159336
+      "sha256": "5079494f9c55cbb232d305590267100c3a5fbf813f70e54ab2c68270b08750f6",
+      "bytes": 161102
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -311,8 +311,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "029458e4f5de4c328c908a8ebac682ee62353f159ff02e1725f8cdf03a6a51d3",
-      "bytes": 176719
+      "sha256": "398e6baf2b494f45b89a8af18400cd15524d8fc573e55f149ad4dafbf6209267",
+      "bytes": 182903
     },
     {
       "path": "docs/storage_policy.json",
@@ -1590,6 +1590,36 @@
       "bytes": 7336
     },
     {
+      "path": "methods/n56_copied_native_block_design.json",
+      "sha256": "af89092b7699238515a57b5cca8006951311e335560e518dd8c376b1ed162f23",
+      "bytes": 6473
+    },
+    {
+      "path": "methods/n56_execution_freeze.json",
+      "sha256": "7e7bb0c272d214c07c85db8ea1947d9bfdc81678c67ae29ba152b242e3aed63b",
+      "bytes": 1030
+    },
+    {
+      "path": "methods/n56_original_score_carry_clarification.json",
+      "sha256": "a2ad34b0ad2f3c00cc3a2417e3c5b2a7688a59b72fed29acb3152bf2723115f7",
+      "bytes": 1691
+    },
+    {
+      "path": "methods/n57_native_head_source_review.json",
+      "sha256": "1b43cc95226089bc5a5bb41f04f1c9f9bde8327a91f7d029e60e57a061db57eb",
+      "bytes": 844
+    },
+    {
+      "path": "methods/n57_native_readout_connection_design.json",
+      "sha256": "bc79ec2da9acf69869d620b933a401027b2985a346fea124de1301e40f24eef5",
+      "bytes": 11009
+    },
+    {
+      "path": "methods/n57_zero_training_terminology.json",
+      "sha256": "fca0a388cf37b41c1402c5f9237b0d4a39623b934053b9ea02f4e2ec55efa691",
+      "bytes": 647
+    },
+    {
       "path": "methods/strict_profile_matching.py",
       "sha256": "016d125388a341d8460990d9935b92adbfddf68ff8919d7e277ab37786967ba1",
       "bytes": 3905
@@ -2153,6 +2183,11 @@
       "path": "research/experiments/n55/generation.py",
       "sha256": "126c0cd50a086f84d0940be4cdfb37f4b9714051eea29c9a425acdd610610fcf",
       "bytes": 6421
+    },
+    {
+      "path": "research/experiments/n56/assay.py",
+      "sha256": "2e9cd2ec69ce0474efdaabd3558285afd6f661be995be11cb647ffc60afd43d0",
+      "bytes": 9457
     },
     {
       "path": "results/b01_chat_summary.json",
@@ -3000,14 +3035,54 @@
       "bytes": 22694
     },
     {
+      "path": "results/n55_engineering_interruption.json",
+      "sha256": "9ab4d0ddbfec7f825e6e6570c49edd836e7c1387f9ea915f5d9e8cd40575b3de",
+      "bytes": 2526
+    },
+    {
       "path": "results/n55_host_preparation.json",
       "sha256": "deb32f9ccb58ba5797fe919bdc45e2ba4d608b02e1835831f864a7157b6a40c0",
       "bytes": 469
     },
     {
       "path": "results/n55_runtime_status.json",
-      "sha256": "ff8a0caae167c1e9f3c0622e28f1f19906bb01860b681ae4ca3733504d9aea84",
-      "bytes": 665
+      "sha256": "a5527c9609e884ba3a129438499f04b8b00269c2588c9027098e3d60ab3dca6e",
+      "bytes": 699
+    },
+    {
+      "path": "results/n56_audit_receipt.json",
+      "sha256": "db22c6f12faef011ed0ff3ffb74a7d1228f4515928ba55b69ce9b0edb7d8ddc4",
+      "bytes": 1164
+    },
+    {
+      "path": "results/n56_device_parser_preparation.json",
+      "sha256": "3d5dcb0a95d1f0c78bcea83bfe84cb455dc1bf2e33a7d60ce13ac02893972ed6",
+      "bytes": 389
+    },
+    {
+      "path": "results/n56_interpretation.json",
+      "sha256": "4ee93e1a0b5c82a307606f3298918f314921e9b3216433b571c575d64ee73772",
+      "bytes": 2851
+    },
+    {
+      "path": "results/n56_literal_host_preparation.json",
+      "sha256": "a8c3e4ab18794aef2b4bfff5521d358b3ed0a921de559e3f5d064aaf6c8e0c5a",
+      "bytes": 1222
+    },
+    {
+      "path": "results/n56_random_host_preparation.json",
+      "sha256": "bbbd29c3041aa9208b5c9c9a4f4d62beb1885e8c8e83dbab01ca7e7bbf38bed4",
+      "bytes": 3098
+    },
+    {
+      "path": "results/n56_runtime_status.json",
+      "sha256": "f7cbb68d5515f5f3afd626534b58cf03689230f7fcb5e8efb2ff9dbf94419870",
+      "bytes": 682
+    },
+    {
+      "path": "results/n56_summary.json",
+      "sha256": "06f88a9b2cd1259a025478f362a8ee0cc6b1dedc77146b254595420d0f9f0d23",
+      "bytes": 29272
     },
     {
       "path": "results/native_EOS_public_import_review.json",
@@ -3026,8 +3101,8 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "7094cdcf0b134620caddafc08602bc569f9ac7011dc6a43ee314419bc6c2a8fc",
-      "bytes": 736
+      "sha256": "752c8476e86681c8208902325a2cd78943f08b22579888c0f159d9a85b55b12b",
+      "bytes": 601
     },
     {
       "path": "results/r01_reconstruction.json",
@@ -3041,8 +3116,8 @@
     },
     {
       "path": "results/run_history.json",
-      "sha256": "ffb580b928759f72d9e954ab1698c03e6661d701c198d8bcc2599cdb15d00a93",
-      "bytes": 31153
+      "sha256": "2d8428b150d3ebff6e925d4d31fc051f480ba4104cd625683feec42f201b6401",
+      "bytes": 31401
     },
     {
       "path": "results/t01_journal_host_validation.json",
@@ -3051,8 +3126,8 @@
     },
     {
       "path": "scripts/build_surgery_assets.py",
-      "sha256": "61afc9ea566d0067b966593e179a3c6ab703925a96f75a7f51377dae16b5022f",
-      "bytes": 26095
+      "sha256": "2337e89a6f23c14dcc366e45bca691c2ded235552a8cb0a9307fe6ccfc806237",
+      "bytes": 26667
     },
     {
       "path": "scripts/export_native_trace.py",

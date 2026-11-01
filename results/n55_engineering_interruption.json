@@ -1,0 +1,64 @@
+{
+  "utc": "2026-11-01T20:10:30.131130+00:00",
+  "status": "engineering_incomplete_closed_all_finite_effects_censored",
+  "platform_status": "ERROR",
+  "notebook_seconds": 5068.260609614,
+  "duration_is_charged_GPU_quota": false,
+  "first_diagnostic": "worker1 Native RMS reconstruction failed; context-manager exit additionally reports Unfinished native RMS operation",
+  "original_reconstruction_guard_preserved": true,
+  "committed_response_record_count_self_reported_UNAUDITED": 332,
+  "planned_edited_response_records": 384,
+  "per_worker_record_counts_UNAUDITED": {
+    "0": 192,
+    "1": 140
+  },
+  "reported_actual_counter_totals_for_keys_present_in_both_workers_UNAUDITED": {
+    "activation_assignments": 75008,
+    "calls": 75425,
+    "extra_down_projection_evaluations": 75009,
+    "fresh_choices": 75008,
+    "input_token_exposures": 161552,
+    "native_restoration_forwards": 332,
+    "native_sourceguards": 84,
+    "old_cell_carries": 0
+  },
+  "keys_missing_from_worker1_actual_counter": [
+    "backward_calls",
+    "extra_FFN_evaluations",
+    "manual_parameter_assignments",
+    "optimizer_steps"
+  ],
+  "missing_zero_counters_not_invented": true,
+  "root_optimizer_steps_self_reported": 0,
+  "actual_terminal_state_observations_UNAUDITED": {
+    "0": {
+      "initial_exists": true,
+      "actual_terminal_exists": true,
+      "initial_sha256": "f5fa80fdffcfcfcfbcae9a7ba8c91a4f6f97d6f559feffcafa7edcb75a3a08f6",
+      "terminal_sha256": "f5fa80fdffcfcfcfbcae9a7ba8c91a4f6f97d6f559feffcafa7edcb75a3a08f6",
+      "observed_metadata_equal": true,
+      "not_frozen_scientific_audit_or_all_parameter_bytes": true
+    },
+    "1": {
+      "initial_exists": true,
+      "actual_terminal_exists": true,
+      "initial_sha256": "f5fa80fdffcfcfcfbcae9a7ba8c91a4f6f97d6f559feffcafa7edcb75a3a08f6",
+      "terminal_sha256": "f5fa80fdffcfcfcfbcae9a7ba8c91a4f6f97d6f559feffcafa7edcb75a3a08f6",
+      "observed_metadata_equal": true,
+      "not_frozen_scientific_audit_or_all_parameter_bytes": true
+    }
+  },
+  "raw_output_files": 777,
+  "collection_invocations": 1,
+  "scientific_auditor_invocations": 0,
+  "grading_calls": 0,
+  "host_model_or_tokenizer_replay_calls": 0,
+  "actual_report_render_calls": 0,
+  "scientific_aggregate_or_figure_exists": false,
+  "all_finite_effects_censored": true,
+  "partial_candidate_texts_or_traces_not_inspected_for_effects": true,
+  "no_completed_cell_rerun_or_continuation": true,
+  "immutable_scientific_files": 1909,
+  "immutable_reporting_files": 18,
+  "scientific_null": false
+}
