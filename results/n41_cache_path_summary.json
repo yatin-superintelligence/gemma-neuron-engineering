@@ -1,0 +1,32 @@
+{
+  "utc": "2026-11-01T00:06:54.505484+00:00",
+  "registration_scope": "After B launch, before all B output access; supplemental, not the original primary",
+  "status": "supplemental_cache_path_prediction_passed",
+  "all_comparisons": 288,
+  "whole_cache_comparisons_on_same_consumed_inputs": 29672,
+  "conditions": {
+    "selected_zero": {
+      "comparisons": 96,
+      "same_input_cache_comparisons": 9473,
+      "all_shared_input_caches_exact": true,
+      "identical_complete_token_sequences": 69
+    },
+    "randomA_zero": {
+      "comparisons": 96,
+      "same_input_cache_comparisons": 9583,
+      "all_shared_input_caches_exact": true,
+      "identical_complete_token_sequences": 67
+    },
+    "randomB_zero": {
+      "comparisons": 96,
+      "same_input_cache_comparisons": 10616,
+      "all_shared_input_caches_exact": true,
+      "identical_complete_token_sequences": 70
+    }
+  },
+  "same_input_range_includes_first_different_prediction": true,
+  "changed_consumed_history_excluded": true,
+  "new_model_or_scorer_calls": 0,
+  "optimizer_steps": 0,
+  "scope": "Saved raw-cache path validation under the fixed late edits. Not quantitative mediation, individual meaning, utility or a speedup."
+}

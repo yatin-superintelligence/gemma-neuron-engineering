@@ -538,6 +538,17 @@
         "conditions": 5
       },
       "sha256": "70e639f54ddefca4064d996ebe2ed12eab65807c96532c0e6e88af5bb1ca8773"
+    },
+    {
+      "path": "models/n41/recipe.json",
+      "base": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "representation": "Original text-only unquantized BF16",
+      "kind": "fixed_native_global_outgoing_column_zero_fresh_validation",
+      "counts": {
+        "conditions": 5
+      },
+      "sha256": "c6f0228bcbd37506fd90cac8acf550202f36640fcab458995b77f7d632c1e0f3"
     }
   ],
   "tensor_assets": [

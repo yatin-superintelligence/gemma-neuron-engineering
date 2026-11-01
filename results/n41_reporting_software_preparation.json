@@ -29,6 +29,6 @@
     "visual_QA": "passed_all6synthetic_panels_table_legend_footer_no_overlap",
     "preserved_failure": "The first synthetic preview overlaps completion text and the grading legend. A layout-only repair moves these elements; aggregation guards are not rerun."
   },
-  "actual_N41B_outcomes": false,
+  "scope": "These receipts describe software preparation before B output access, not the completed pretrained outcomes.",
   "new_pretrained_or_scorer_calls": 0
 }

@@ -1,0 +1,48 @@
+{
+  "utc": "2026-11-01T00:08:48.240463+00:00",
+  "experiment": "N42H",
+  "question_id": "Q56",
+  "status": "posthoc_scientific_source_comparison_protocol_frozen_before_implementation",
+  "question": "Which fixed edits change returned program structure, and how do those changes relate to the already frozen gains and losses?",
+  "registration_scope": "After all N41 grades and cache-path outcomes;posthoc description,not fresh confirmation or a replacement primary.",
+  "parents": [
+    "Q55",
+    "Q53"
+  ],
+  "data": {
+    "coding_cases": 64,
+    "conditions": [
+      "original",
+      "selected_zero",
+      "randomA_zero",
+      "randomB_zero",
+      "prompt_only"
+    ],
+    "complete_sources": 320,
+    "paired_comparisons": 256,
+    "families": 8,
+    "dependent_bindings_per_contract": 2,
+    "all_cases_retained": true,
+    "no_retention_regrading": true
+  },
+  "method": [
+    "Read exact saved coding replies and existing grades only. Never call a model,tokenizer,grader,executor or hidden oracle.",
+    "Use only pure source extraction and Python AST parsing. Keep every name,literal,docstring and operator;ignore AST line/column attributes only. No program compilation or execution.",
+    "Record exact generated-token identity,extracted-source byte identity,AST identity,operator-node multiset and control-node counts. Structural identity is not a proof of behavioral equivalence.",
+    "Partition each pair in fixed order:identical emitted tokens;different tokens but identical extracted source;different source but identical AST;different AST. Keep all256pairs and all8families.",
+    "Cross-tabulate each fixed class against already saved correctness:preserved-correct,both-wrong,gain,loss. No grade changes and no new outcome-selected subset.",
+    "Reuse the closed same-input cache comparison result for the192coding original/group pairs. Instruction changes prompts,so no same-input cache claim for its64coding pairs. Never rerun the closed path analyzer."
+  ],
+  "outputs": "Compact private hashes/counts/per-pair categories <=1MiB;public all-case aggregate counts only,no raw program/task IDs or text.",
+  "interpretation": "Descriptive program-structure and source-context evidence only. No native semantic role,causal attribution of a first differing token,novel capability,speedup or useful gain. No new dose,coordinate,rank or GPU study.",
+  "source_checks": "Before analyzing real sources,freeze implementation and pass new independent literal AST/category/refusal fixtures plus RuffF821/F823. Preserve any failure. Do not rerun N41 scorers or completed fixtures.",
+  "model_forwards": 0,
+  "scorer_calls": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "seed": null,
+  "time_limit_cpu_seconds": 120,
+  "failure_rule": "Preserve malformed/missing input or source-extraction failure without substituting a case or changing grades.",
+  "protocol_sha256": "c8969b4629ccb6e999985d60ac8fd723d7cbdbdbe15a12b6f02df2fd81075ed4",
+  "edition": "Posthoc host-only protocol frozen before implementation. No raw sources, case IDs or task data are released."
+}

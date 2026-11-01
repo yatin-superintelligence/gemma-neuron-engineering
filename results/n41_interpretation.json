@@ -1,0 +1,28 @@
+{
+  "utc": "2026-11-01T00:06:54.505484+00:00",
+  "status": "fresh_primary_failed_closed",
+  "question_id": "Q55",
+  "all_480_records_and_guards_pass": true,
+  "original_coding": 55,
+  "selected_coding": 51,
+  "randomA_coding": 53,
+  "randomB_coding": 53,
+  "instruction_coding": 48,
+  "selected_gains": 0,
+  "selected_losses": 4,
+  "all_source_valid_coding_per_condition": 64,
+  "all_coding_failures": "wrong_answer",
+  "primary_clauses": {
+    "all_originally_correct_coding_preserved": false,
+    "all_originally_correct_retention_preserved": true,
+    "at_least4additional_correct_coding": false,
+    "gains_span_at_least2families": false,
+    "at_least2more_than_randomA": false,
+    "at_least2more_than_randomB": false
+  },
+  "decision": "Close the fixed selected32 global-zero utility lead. Its earlier one-family development repairs do not establish a generalizable benefit. Do not select a replacement dose, coordinate or wording from this failed fresh panel.",
+  "next": "Bounded all-case source-structure review may explain observed changes; any new causal intervention needs its own prospective question and controls.",
+  "no_individual_meaning_or_useful_gain": true,
+  "no_task_regrade_or_completed_response_regeneration": true,
+  "optimizer_steps": 0
+}

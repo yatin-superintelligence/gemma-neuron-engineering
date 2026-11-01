@@ -1,0 +1,7 @@
+N41 fresh fixed-edit comparison for Digital Surgery.
+Base: google/gemma-4-E2B-it, revision 3e22461f65e89153144f8adb70e3b8c2cc9845a7.
+The exact N40 original and factor-zero BF16 native columns are shared, not duplicated.
+Three fixed deletion variants, the original and an instruction control are recorded.
+The fresh accuracy primary failed: selected51/64 versus original55/64, with zero repairs and four regressions.
+Zero optimizer updates. No useful coding gain or individual neuron meaning is established.
+The base checkpoint is referenced. Tasks, replies, activations and oracle answers are excluded.

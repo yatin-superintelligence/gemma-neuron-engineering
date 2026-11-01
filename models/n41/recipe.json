@@ -1,0 +1,440 @@
+{
+  "schema_version": 1,
+  "experiment": "N41",
+  "question_id": "Q55",
+  "kind": "fixed_native_global_outgoing_column_zero_fresh_validation",
+  "base": {
+    "checkpoint": "google/gemma-4-E2B-it",
+    "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+    "representation": "text-only unquantized BF16"
+  },
+  "representation": "Original text-only unquantized BF16",
+  "groups": {
+    "selected32": [
+      {
+        "layer": 24,
+        "channel": 7755
+      },
+      {
+        "layer": 34,
+        "channel": 4622
+      },
+      {
+        "layer": 29,
+        "channel": 10816
+      },
+      {
+        "layer": 25,
+        "channel": 5137
+      },
+      {
+        "layer": 30,
+        "channel": 11953
+      },
+      {
+        "layer": 25,
+        "channel": 2847
+      },
+      {
+        "layer": 26,
+        "channel": 3721
+      },
+      {
+        "layer": 24,
+        "channel": 2409
+      },
+      {
+        "layer": 24,
+        "channel": 4549
+      },
+      {
+        "layer": 30,
+        "channel": 10891
+      },
+      {
+        "layer": 33,
+        "channel": 1120
+      },
+      {
+        "layer": 24,
+        "channel": 9445
+      },
+      {
+        "layer": 24,
+        "channel": 1289
+      },
+      {
+        "layer": 34,
+        "channel": 1747
+      },
+      {
+        "layer": 33,
+        "channel": 9815
+      },
+      {
+        "layer": 29,
+        "channel": 11087
+      },
+      {
+        "layer": 27,
+        "channel": 11018
+      },
+      {
+        "layer": 32,
+        "channel": 1337
+      },
+      {
+        "layer": 24,
+        "channel": 10159
+      },
+      {
+        "layer": 30,
+        "channel": 9221
+      },
+      {
+        "layer": 34,
+        "channel": 6975
+      },
+      {
+        "layer": 29,
+        "channel": 3510
+      },
+      {
+        "layer": 24,
+        "channel": 6749
+      },
+      {
+        "layer": 29,
+        "channel": 7609
+      },
+      {
+        "layer": 29,
+        "channel": 7390
+      },
+      {
+        "layer": 29,
+        "channel": 9196
+      },
+      {
+        "layer": 24,
+        "channel": 1922
+      },
+      {
+        "layer": 32,
+        "channel": 377
+      },
+      {
+        "layer": 30,
+        "channel": 9497
+      },
+      {
+        "layer": 24,
+        "channel": 1747
+      },
+      {
+        "layer": 29,
+        "channel": 11487
+      },
+      {
+        "layer": 26,
+        "channel": 785
+      }
+    ],
+    "randomA32": [
+      {
+        "layer": 24,
+        "channel": 10930
+      },
+      {
+        "layer": 34,
+        "channel": 2187
+      },
+      {
+        "layer": 29,
+        "channel": 12015
+      },
+      {
+        "layer": 25,
+        "channel": 9212
+      },
+      {
+        "layer": 30,
+        "channel": 7273
+      },
+      {
+        "layer": 25,
+        "channel": 217
+      },
+      {
+        "layer": 26,
+        "channel": 7161
+      },
+      {
+        "layer": 24,
+        "channel": 9266
+      },
+      {
+        "layer": 24,
+        "channel": 11109
+      },
+      {
+        "layer": 30,
+        "channel": 277
+      },
+      {
+        "layer": 33,
+        "channel": 2810
+      },
+      {
+        "layer": 24,
+        "channel": 7458
+      },
+      {
+        "layer": 24,
+        "channel": 6042
+      },
+      {
+        "layer": 34,
+        "channel": 2324
+      },
+      {
+        "layer": 33,
+        "channel": 9167
+      },
+      {
+        "layer": 29,
+        "channel": 1106
+      },
+      {
+        "layer": 27,
+        "channel": 10185
+      },
+      {
+        "layer": 32,
+        "channel": 497
+      },
+      {
+        "layer": 24,
+        "channel": 11337
+      },
+      {
+        "layer": 30,
+        "channel": 12278
+      },
+      {
+        "layer": 34,
+        "channel": 9281
+      },
+      {
+        "layer": 29,
+        "channel": 11598
+      },
+      {
+        "layer": 24,
+        "channel": 5953
+      },
+      {
+        "layer": 29,
+        "channel": 9293
+      },
+      {
+        "layer": 29,
+        "channel": 10555
+      },
+      {
+        "layer": 29,
+        "channel": 7193
+      },
+      {
+        "layer": 24,
+        "channel": 8170
+      },
+      {
+        "layer": 32,
+        "channel": 544
+      },
+      {
+        "layer": 30,
+        "channel": 6840
+      },
+      {
+        "layer": 24,
+        "channel": 2537
+      },
+      {
+        "layer": 29,
+        "channel": 3131
+      },
+      {
+        "layer": 26,
+        "channel": 9407
+      }
+    ],
+    "randomB32": [
+      {
+        "layer": 24,
+        "channel": 6932
+      },
+      {
+        "layer": 34,
+        "channel": 8760
+      },
+      {
+        "layer": 29,
+        "channel": 10498
+      },
+      {
+        "layer": 25,
+        "channel": 5890
+      },
+      {
+        "layer": 30,
+        "channel": 5872
+      },
+      {
+        "layer": 25,
+        "channel": 217
+      },
+      {
+        "layer": 26,
+        "channel": 453
+      },
+      {
+        "layer": 24,
+        "channel": 7830
+      },
+      {
+        "layer": 24,
+        "channel": 9369
+      },
+      {
+        "layer": 30,
+        "channel": 6353
+      },
+      {
+        "layer": 33,
+        "channel": 6981
+      },
+      {
+        "layer": 24,
+        "channel": 2907
+      },
+      {
+        "layer": 24,
+        "channel": 8636
+      },
+      {
+        "layer": 34,
+        "channel": 10843
+      },
+      {
+        "layer": 33,
+        "channel": 2720
+      },
+      {
+        "layer": 29,
+        "channel": 7153
+      },
+      {
+        "layer": 27,
+        "channel": 416
+      },
+      {
+        "layer": 32,
+        "channel": 11537
+      },
+      {
+        "layer": 24,
+        "channel": 1664
+      },
+      {
+        "layer": 30,
+        "channel": 8823
+      },
+      {
+        "layer": 34,
+        "channel": 9318
+      },
+      {
+        "layer": 29,
+        "channel": 2346
+      },
+      {
+        "layer": 24,
+        "channel": 7000
+      },
+      {
+        "layer": 29,
+        "channel": 9421
+      },
+      {
+        "layer": 29,
+        "channel": 7758
+      },
+      {
+        "layer": 29,
+        "channel": 944
+      },
+      {
+        "layer": 24,
+        "channel": 3551
+      },
+      {
+        "layer": 32,
+        "channel": 6428
+      },
+      {
+        "layer": 30,
+        "channel": 10574
+      },
+      {
+        "layer": 24,
+        "channel": 7664
+      },
+      {
+        "layer": 29,
+        "channel": 5349
+      },
+      {
+        "layer": 26,
+        "channel": 2835
+      }
+    ]
+  },
+  "conditions": [
+    "original_exact_A_carry",
+    "selected_zero",
+    "randomA_zero",
+    "randomB_zero",
+    "prompt_only"
+  ],
+  "factor": 0,
+  "scope": "The same native outgoing columns are zeroed at all positions;prompt_only is a fixed instruction control,not a weight edit. Raw task/control wording remains private.",
+  "shared_tensor_bundle": {
+    "recipe": "../n40/recipe.json",
+    "recipe_sha256": "70e639f54ddefca4064d996ebe2ed12eab65807c96532c0e6e88af5bb1ca8773",
+    "file": "../n40/native_columns.safetensors",
+    "sha256": "6dafd945af7981808b7ef2b60b03bda7ad5cc54f0106ab685c41da76e10bcd69",
+    "bytes": 585192,
+    "new_tensor_bytes": 0
+  },
+  "source_code": {
+    "interpretability/prescribed_columns.py": "8db8b7a1a819e3cf20114a48bf1957b8d0119a013988af4d3ace14ed8e2afa87",
+    "research/experiments/n40/core.py": "ff360d6b8757d993a6fb042e2b3df27fc68257bf0278b03a2484f2b25653b615"
+  },
+  "validation": {
+    "all480records_and_mandatory_guards_pass": true,
+    "native_identity_and_physical_activation_equivalence": true,
+    "restorations": 28,
+    "all352new_replies_native_EOS": true,
+    "manual_assignments": 252,
+    "optimizer_steps": 0,
+    "backward_calls": 0,
+    "independent_clean_package_pretrained_replay": false,
+    "host_recomputes_full_checkpoint_weights_or_logits": false
+  },
+  "result": "Fresh accuracy primary fails. Original55/64,selected51/64,randomA53/64,randomB53/64,instruction48/64. Selected0gains/4losses;not a beneficial coding edit.",
+  "training_allowed": false,
+  "optimizer_steps": 0,
+  "utc": "2026-11-01T00:06:54.505484+00:00"
+}

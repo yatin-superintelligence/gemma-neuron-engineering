@@ -12,5 +12,5 @@
   "protocol_sha256": "04f214d0e8b85532b79455aa081a9dd61b1b83e522e6727ad6b25048635fc036",
   "source_freeze_utc": "2026-10-31T22:55:45.439415+00:00",
   "helper_source_sha256": "3eaefbe160f21fbd586d050f93f6cd9cf59fcfa89e21bd0f39ab643eb53a4cb6",
-  "actual_B_path_result": "Not accessed. This is a separate post-launch, pre-output prediction, not the original primary."
+  "actual_B_path_result": "Reported separately when available. This prediction was registered after launch and before outputs; it is not the original primary."
 }

@@ -4251,6 +4251,55 @@
       "event": "reviewed_generic_common_history_helper_and_fixed_figure_source_prepared_for_public_projection_no_B_outputs",
       "experiment": "N41_HOST",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 583,
+      "utc": "2026-11-01T00:08:48.240463+00:00",
+      "event": "terminal_sources_privacy_collection_and_frozen_audit_pass_once_all480_fresh_primary_failed",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 584,
+      "utc": "2026-11-01T00:08:48.240463+00:00",
+      "event": "all_new_native_EOS_max2134_and_two_worker_overlap_recorded",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 585,
+      "utc": "2026-11-01T00:08:48.240463+00:00",
+      "event": "supplemental_same_consumed_history_cache_prediction_passes29672checks_no_new_forwards",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 586,
+      "utc": "2026-11-01T00:08:48.240463+00:00",
+      "event": "all_fixed_recipes_reuse_validated_N40columns_no_new_tensor_bytes",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 587,
+      "utc": "2026-11-01T00:08:48.240463+00:00",
+      "event": "all_condition_figure_rendered_once_and_visually_reviewed_primary_failure_preserved",
+      "experiment": "N41B",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 588,
+      "utc": "2026-11-01T00:08:48.240463+00:00",
+      "event": "posthoc_all_case_source_review_protocol_and9inputs_frozen_before_implementation_no_model",
+      "experiment": "N42H",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 589,
+      "utc": "2026-11-01T00:14:20.443645+00:00",
+      "event": "private_paper_integrated_fresh_failed_primary_all5conditions_all6pages_visual_QA",
+      "experiment": "N41",
+      "optimizer_steps": 0
     }
   ]
 }

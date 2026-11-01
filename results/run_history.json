@@ -480,13 +480,14 @@
       "outcome": "All96native-EOS baseline responses and guards pass;coding55/64,all64source-valid,retention17/32;fixed baseline prerequisite passes,no edit gain measured.",
       "duration_scope": "Notebook elapsed seconds,not charged GPU quota;two worker durations separately recorded",
       "optimizer_steps": 0
-    }
-  ],
-  "active_runs": [
+    },
     {
       "run": "N41B_v1_fixed_fresh_edits_native_EOS_two_GPU",
-      "launched_utc": "2026-10-31T22:22:06.877832+00:00",
-      "status": "RUNNING"
+      "recorded_script_seconds": 5445.1429289,
+      "outcome": "All480records/352new/128exactcarries and every guard pass;coding55/51/53/53/48,selected0gains4losses;fresh primary fails.All352new nativeEOS,max2134.No useful coding gain.",
+      "duration_scope": "Notebook elapsed seconds,not charged GPU quota;two worker times4937.718233032/5301.842425511seconds are separately recorded.",
+      "optimizer_steps": 0
     }
-  ]
+  ],
+  "active_runs": []
 }

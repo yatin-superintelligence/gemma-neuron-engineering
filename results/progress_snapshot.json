@@ -1,18 +1,12 @@
 {
-  "generated_utc": "2026-10-31T23:07:10.428601+00:00",
-  "question_records": 55,
-  "recorded_terminal_runs": 78,
-  "active_runs": [
-    {
-      "run": "N41B_v1_fixed_fresh_edits_native_EOS_two_GPU",
-      "launched_utc": "2026-10-31T22:22:06.877832+00:00",
-      "status": "RUNNING"
-    }
-  ],
-  "ledger_events": 582,
-  "question_register_source_sha256": "0bda0a3ff83785e5aacb285c22fb098cee3d8153b3ca41ce283ee2ca1ad09600",
-  "event_ledger_source_sha256": "3b4e17d06ccf94c29faee7290174b3fddc1bc2116926033002b158cc3f986f5a",
-  "compute_ledger_source_sha256": "0540a6c1ac9ca324ce8a2e50e2531c5df2b4a7a471e5569c8007d5e3f47ee983",
+  "generated_utc": "2026-11-01T00:17:04.225985+00:00",
+  "question_records": 56,
+  "recorded_terminal_runs": 79,
+  "active_runs": [],
+  "ledger_events": 589,
+  "question_register_source_sha256": "47c56584d74a6461341e47467b37b24001dbd9d1a1c997f724d342f935c2b627",
+  "event_ledger_source_sha256": "79184ebdf97fed8a36bf2f2086bb8f5433658815e139b469757440414db4542c",
+  "compute_ledger_source_sha256": "0aa8632ede7cd5372c0c01381925e97360ee8ed8d876263555b679a677322fb5",
   "raw_experimental_assets_private": true,
   "validated_edit_bundles_public": true,
   "current_sprint_optimizer_updates_allowed": 0

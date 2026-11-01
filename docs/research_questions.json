@@ -880,7 +880,7 @@
     {
       "id": "Q55",
       "experiment": "N41: conditional fresh coding accuracy",
-      "status": "phase_A_audited_pass_phase_B_private_RUNNING_no_B_outputs_accessed",
+      "status": "complete_private_host_audited_fresh_primary_failed_closed",
       "question": "Does the exact fixed native deletion improve complete-function coding on fresh balanced cases compared with original, both randoms and a simple instruction?",
       "question_provenance": "Original human coding goal and the two one-family N40 development repairs. Separate accuracy confirmation from the failed output-reduction primary.",
       "parents": [
@@ -888,13 +888,29 @@
         "Q53"
       ],
       "method": "Frozen fresh accuracy screen: 32 new semantic contracts, each with two bindings, yield 64 coding prompts across eight related dependent families, plus 32 retention prompts. The unmodified baseline is generated once on two isolated GPUs and graded once against independent hidden oracles. Its predeclared gate passes. B applies the exact selected 32 channels and both fixed random groups under global physical column zeroing, plus the fixed instruction control. A prospective dated amendment reuses 32 unchanged instruction-control retention replies. All 480 condition records remain: 96 original carries, 32 additional exact reuses and 352 new replies. Native EOS has no arbitrary response-token ceiling.",
-      "result": "Phase A is complete, private, host audited and closed. All 96 responses end at native EOS. All 64 coding sources are valid; 55/64 coding and 17/32 retention replies are correct. Nine executable coding errors span three families. Every baseline prerequisite and all source, identity/cache, state and counter guards pass. Actual work is 21,193 forwards, 31,868 input exposures and 21,181 new tokens, with zero backwards, assignments or optimizer updates. Notebook time is 1,655.268 seconds, not charged quota. Both full models generate concurrently with 1,299.755 seconds of overlap, without a measured speed multiplier. The B retention-reuse amendment froze before B execution and A output access; original counts and source are preserved. New fixed-column/native-EOS integration passes 16 random forwards and 168 exposures, with four corrupt-column refusals. The physical guard rejects eight corruptions; the measurement reader rejects ten. Isolated imports, package/cells and Ruff pass. All 161 actual B source/data/parent hashes are frozen. B is running privately with exact server source/privacy, no datasets and no output access. No fresh edited result exists yet. A separate cache-path supplement was registered after launch and before any B output access. Its saved-history helper passes five literal path checks and nine malformed-record refusals, with zero model or scorer calls. It will compare all 288 same-prompt group/original records only after a passing frozen B audit. The all-condition figure preparation passes ten synthetic refusals; a preserved layout overlap is repaired. No actual B aggregate, figure or supplemental result exists yet.",
-      "interpretation": "The N40 repairs are a development lead, with one shared random-control repair and no semantic role. A fresh test can fail or stop; it cannot erase N40 or justify selecting only prior errors. Eight families remain dependent.",
-      "next_question": "At actual B terminal, verify all 161 frozen hashes, then collect_n41_outputs_B once and invoke the frozen auditor once. Preserve 96 original grades and 32 identical retention reuses; grade only 352 new replies. Keep all 480 records, all gains/losses, every family and all primary clauses. No new dose, coordinate, wording or completed-reply rerun.",
-      "direction_decision": "Pursue the fixed accuracy lead through fresh confirmation, without new parameter fitting, strength search, neuron construction or a transplant-prerequisite bypass."
+      "result": "All 480 comparison records and mandatory guards pass: 352 new replies, 96 original carries and 32 exact instruction-retention reuses. Coding is original 55/64, selected zero 51/64, random A 53/64, random B 53/64 and instruction 48/64. Selected has zero gains and four losses across three families. Random A has one gain/three losses, random B two gains/four losses, instruction four gains/eleven losses. Every condition has all 64 valid coding sources; every coding failure is an executed wrong answer. Retention is 17/32 original/selected/instruction and 16/32 each random, with one original-correct arithmetic loss per random. Every new reply reaches native EOS; longest 2,134 tokens. Actual work is 73,795 forwards, 199,396 input exposures, 71,519 new tokens, 252 declared assignments and zero backwards/optimizer updates. Notebook time is 5,445.143 seconds, not charged quota. Five of six accuracy clauses fail; retention preservation passes. All 28 restorations and state/scope/counter guards pass. The separate post-launch/pre-output path prediction passes all 29,672 whole-cache comparisons across 288 same-prompt records. Complete token sequences remain identical in 69/96 selected, 67/96 random A and 70/96 random B records. This is a fixed-input cache-path result, not a utility or speed claim.",
+      "interpretation": "The selected deletion does not generalize its earlier one-family development repairs: this fresh panel has zero repairs and four regressions. Neither truncation, invalid source nor failed engineering explains the result. The original N40 primary remains failed. Related families and two bindings remain dependent; no confirmed useful coding gain or individual neuron meaning.",
+      "next_question": "Q56: freeze an all-case host source-structure comparison before implementation. Describe which program changes accompany existing gains/losses without regrading, rerunning inference or choosing another dose/rank.",
+      "direction_decision": "Close the fixed global-zero utility lead. Examine all-case program changes before proposing another causal intervention. No strength search, coordinate reselection or transplant-prerequisite bypass."
+    },
+    {
+      "id": "Q56",
+      "experiment": "N42H: all-case program-structure review",
+      "status": "host_only_posthoc_protocol_frozen_before_implementation",
+      "question": "Which fixed edits change returned program structure, and how do those changes relate to the already frozen gains and losses?",
+      "question_provenance": "The N41 fresh primary fails despite all-source-valid native-EOS replies. The human asked for different observations that help digital surgery; this review distinguishes source changes from measured program outcomes.",
+      "parents": [
+        "Q55",
+        "Q53"
+      ],
+      "method": "All 320 saved coding sources and all 256 original-versus-condition pairs, across every family. Pure extraction and AST parsing only; no model, tokenizer, executor, hidden oracle or scorer. Freeze literal checks and source before measuring.",
+      "result": "Protocol and all nine input-file hashes are frozen. No implementation or N42 measurements exist. N41 outcomes are already known, so this is posthoc description, not fresh confirmation.",
+      "interpretation": "AST identity is structural, not semantic equivalence. Changed output text, first-token divergence and correctness do not identify an individual neuron meaning. No new coordinate, dose or GPU study.",
+      "next_question": "Implement the bounded parser/comparison helper, validate independent literal cases and refusals, freeze source, then analyze all fixed saved inputs once.",
+      "direction_decision": "Use all-case source evidence to assess a specific mechanistic hypothesis before any further model intervention."
     }
   ],
-  "active_question_id": "Q55",
-  "next_question_id": "Q55",
-  "utc": "2026-10-31T23:03:29.533112+00:00"
+  "active_question_id": "Q56",
+  "next_question_id": "Q56",
+  "utc": "2026-11-01T00:08:48.240463+00:00"
 }

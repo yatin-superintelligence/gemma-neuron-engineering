@@ -1,0 +1,20 @@
+{
+  "utc": "2026-11-01T00:06:54.505484+00:00",
+  "records": 352,
+  "all_native_EOS": true,
+  "response_token_ceiling": null,
+  "maximum_generated_tokens": 2134,
+  "native_response_exceeding_2048_count": 1,
+  "scientific_output_bytes": 25438986,
+  "actual_parallel_generation_overlap_seconds": 4570.710008276,
+  "worker_seconds": [
+    4937.718233032,
+    5301.842425511
+  ],
+  "peak_allocated_bytes_per_device": [
+    9333444608,
+    9333444608
+  ],
+  "no_inference_or_scorer_rerun": true,
+  "optimizer_steps": 0
+}

@@ -8,5 +8,5 @@
   "count_amendment_sha256": "5fde420239dac40f14bff2fa0c8f12e69d22631f94202b66b50aed72c8f4caba",
   "optimizer_steps": 0,
   "actual_frozen_source_data_parent_files": 161,
-  "scope": "Private execution assets and raw parents stay private. No fresh edited outcome yet."
+  "scope": "Private execution assets and raw parents stay private. Completed outcomes are reported separately when available."
 }
