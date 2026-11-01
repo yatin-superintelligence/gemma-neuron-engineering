@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-01T18:50:00.951879+00:00",
+  "generated_utc": "2026-11-01T19:33:28.227889+00:00",
   "project": "Digital Surgery",
   "edition": "Reviewed public projection; raw assets/private history excluded",
   "training_allowed": false,
@@ -31,8 +31,8 @@
     },
     {
       "path": "docs/GOAL_AND_INTENT.html",
-      "sha256": "aa8fa0f0499a3199ca6bcac51e75ed4adfb00bb4345d38f627f15523588a1805",
-      "bytes": 396949
+      "sha256": "8e47e1f9651de5aadeeb2faf41cce9f01d3717e2847f04f70bbee8911b4a18d3",
+      "bytes": 400088
     },
     {
       "path": "docs/MEASUREMENT_JOURNAL.html",
@@ -46,8 +46,8 @@
     },
     {
       "path": "docs/RESEARCH_LOG.html",
-      "sha256": "a3a0ee531d894fb425c633322ecc3093a65f6997d1cbedef73e83b1ae9a24784",
-      "bytes": 309576
+      "sha256": "d3257636ab6d11cd80a336a66be617ab7d373758e27285050c4b5737c1bce17c",
+      "bytes": 311307
     },
     {
       "path": "docs/SURGERY_ASSET_INDEX.json",
@@ -71,8 +71,8 @@
     },
     {
       "path": "docs/event_history.json",
-      "sha256": "529478b7072070cdcaabc8702c04bf54a4d8ee0e4e60602a902422aa52a84c99",
-      "bytes": 158077
+      "sha256": "83c58ebffc0de93206d89b0ebd75501667df24c02aefe9160a41c580727ea1f9",
+      "bytes": 159336
     },
     {
       "path": "docs/figures/n04_summary.png",
@@ -311,8 +311,8 @@
     },
     {
       "path": "docs/research_questions.json",
-      "sha256": "f37e20b4325298f69d1e012b195311ecea39d1d92640d9127f0587cfaa913d8f",
-      "bytes": 175520
+      "sha256": "029458e4f5de4c328c908a8ebac682ee62353f159ff02e1725f8cdf03a6a51d3",
+      "bytes": 176719
     },
     {
       "path": "docs/storage_policy.json",
@@ -3006,7 +3006,7 @@
     },
     {
       "path": "results/n55_runtime_status.json",
-      "sha256": "f60ea0b5db55f4eb30431899f3eac707117d3353a0a4e9c956e52502ee429865",
+      "sha256": "ff8a0caae167c1e9f3c0622e28f1f19906bb01860b681ae4ca3733504d9aea84",
       "bytes": 665
     },
     {
@@ -3026,7 +3026,7 @@
     },
     {
       "path": "results/progress_snapshot.json",
-      "sha256": "05a39c8c0daa9afe8780514f2d0da1f577861534609cc85a1fba2c5f3289c575",
+      "sha256": "7094cdcf0b134620caddafc08602bc569f9ac7011dc6a43ee314419bc6c2a8fc",
       "bytes": 736
     },
     {

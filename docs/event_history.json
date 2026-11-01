@@ -4980,6 +4980,41 @@
       "event": "NEW_random_FP32_BF16_fullblock_silent_FFNonly_6independentrefs_PASS22forwards858exp",
       "experiment": "N56",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 687,
+      "utc": "2026-11-01T18:54:59.679071+00:00",
+      "event": "Reviewed31path_public_projection_remote657blobs_exact_verified_f2e0576_N55prospective_only",
+      "experiment": "PUBLIC_N53_N54",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 688,
+      "utc": "2026-11-01T19:14:25.105039+00:00",
+      "event": "N56_NEW_host_numeric_record_copy_pool_summary_package_transport_gates_CLOSED_no_scientific_launch",
+      "experiment": "N56",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 689,
+      "utc": "2026-11-01T19:14:25.105039+00:00",
+      "event": "U27_complete_result_branch_priority_registered_before_N55_outputaccess",
+      "experiment": "N55",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 690,
+      "utc": "2026-11-01T19:14:25.105039+00:00",
+      "event": "N55_reporting_ONLY_plan_registered_beforeoutputaccess_original1909unchanged",
+      "experiment": "N55",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 691,
+      "utc": "2026-11-01T19:28:18.965489+00:00",
+      "event": "NEW_reporting_only_gates_CLOSED_2positive8assertions29refusals_2syntheticlayouts_viewed_18filefreeze_noactualoutputs",
+      "experiment": "N55_REPORTING",
+      "optimizer_steps": 0
     }
   ]
 }
