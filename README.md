@@ -56,6 +56,8 @@ The [N43 normalization measurement](methods/n43_normalization_design.json) is no
 
 A separate [all-condition figure plan](methods/n43_figure_plan.json) was registered after launch and before output access. The [saved-aggregate renderer](scripts/plot_n43_summary_v2.py) and [complete-grid validator](evaluation/normalization_figure_contract.py) pass synthetic software/layout checks. They require a complete passing audit, retain every group/cell/site/family and display undefined cosine separately from zero. The first legend overlap and layout-only repair are preserved. Synthetic previews were deleted after visual review and hashing. No actual N43 figure or result has been produced.
 
+The [pre-output evidence map](methods/n43_evidence_decision_map.json) states thirteen claim boundaries. It distinguishes numerical zero from byte identity, mean effect norms from a shared direction, and scoped restoration witnesses from independent full-checkpoint replay. It also confirms that preserved historical cap definitions are uninvoked by the active measurement worker. No audit rule or scientific threshold changes.
+
 ## Offline surgery workbench
 
 The [saved-history comparison helper](evaluation/common_history_trace.py) compares whole-cache hashes while consumed inputs match. It includes the first differing next-token prediction and excludes decisions after that differing token is consumed. Its literal software guards pass. The separately registered [N41 path prediction](results/n41_cache_path_summary.json) also passes: all 29,672 whole-cache comparisons across 288 original/group pairs are exact within this same-input range. This bounded consequence of the late edit site is not quantitative mediation, semantic meaning or a measured runtime speedup.

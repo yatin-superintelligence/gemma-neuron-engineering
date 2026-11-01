@@ -1,0 +1,95 @@
+{
+  "utc": "2026-11-01T01:37:30.828215+00:00",
+  "status": "postlaunch_preoutput_static_source_to_claim_review_closed",
+  "not_original_primary_or_new_model_study": true,
+  "all220_execution_sources_verified_exact": true,
+  "static_active_worker_and_assay_no_generation_backward_or_optimizer_step_calls": true,
+  "claims": [
+    {
+      "id": "N43C01",
+      "evidence": "Complete original frozen audit, every exact native/physical diagonal, cache, state, restoration and counter guard.",
+      "permitted": "The prescribed four native-state controls executed and reconstructed the tested native and local physical outputs under the fixed measurement inputs.",
+      "limit": "Engineering feasibility on these cases and sites; no general method novelty, useful program gain or full-transformer insertion."
+    },
+    {
+      "id": "N43C02",
+      "evidence": "Per-cell full-FP32-logit hash and native argmax, distinct from numeric L2 and maximum-absolute shifts.",
+      "permitted": "A zero reported L2 means zero numerical full-logit difference at the saved FP32 metric precision. Exact byte identity requires the appropriate full-logit hash equality.",
+      "limit": "Do not infer byte identity from zero norm alone: signed zeros can have equal numerical value and different bytes. An unchanged argmax alone is still weaker and does not imply unchanged logits."
+    },
+    {
+      "id": "N43C03",
+      "evidence": "Frozen effects() calculates a norm for each full-vocabulary difference vector, then the auditor takes case-balanced means.",
+      "permitted": "Report the mean of per-record finite-effect norms using the saved equal-case calculation.",
+      "limit": "This is not the norm of an averaged vector or a measure of coherent direction across cases. Vocabulary-wide L2 is not program correctness or latency."
+    },
+    {
+      "id": "N43C04",
+      "evidence": "Cosine is undefined when either per-record raw or normalization difference vector has zero norm; the auditor omits those undefined rows within cases.",
+      "permitted": "Report the saved cosine mean together with its defined-case denominator and zero-path record counts.",
+      "limit": "Undefined is not zero. Negative mean cosine is a vector relationship in output-logit coordinates, not an inhibitory semantic neuron or a fraction of mediation."
+    },
+    {
+      "id": "N43C05",
+      "evidence": "Interaction is delta11 minus delta10 minus delta01, with native arithmetic and BF16 output casting followed by downstream model computation.",
+      "permitted": "The finite factorial controls can be nonadditive; report their interaction without fitting coefficients.",
+      "limit": "Do not divide these effects into additive causal percentages or assign a unique biological or semantic pathway meaning."
+    },
+    {
+      "id": "N43C06",
+      "evidence": "One layer subset at a time, all 96 original native histories, fixed quarter positions and current-position normalization output replacement.",
+      "permitted": "Compare layer-local effects under identical consumed native inputs.",
+      "limit": "This is not the N41 global all-position deletion, an entire free-generation trajectory intervention, or an established explanation of its four selected coding regressions."
+    },
+    {
+      "id": "N43C07",
+      "evidence": "All three original fixed groups remain, with exactly matched per-layer member counts and original discovery matching.",
+      "permitted": "Describe selected and both random effects across every site, family, role and cell.",
+      "limit": "A larger or smaller selected effect does not itself identify a coding function. No effect-dependent site, group, strength, coordinate or task replacement is allowed."
+    },
+    {
+      "id": "N43C08",
+      "evidence": "The last KV-producing layer is 14; every edited site is 24 or later; probes branch from an independent exact native pre-decision cache.",
+      "permitted": "Report any complete same-input cache identity witness as a bounded consequence of these late intervention sites.",
+      "limit": "Do not infer equality after consumed histories diverge, faster inference, causal mediation strength or improved memory."
+    },
+    {
+      "id": "N43C09",
+      "evidence": "State snapshots cover parameter versions, shapes, dtypes and gradflags; buffers, configurations and RNG have hashes; physical contexts hash actual original/edited/restored matrices and other columns.",
+      "permitted": "State and restoration claims refer to this combination of version metadata, scoped tensor hashes, hooks, configuration, RNG and exact behavioral replay.",
+      "limit": "The host does not recompute all checkpoint weights, raw factors or full logits. It is not an independent post-run byte hash of every model parameter or an independent clean-package pretrained replay."
+    },
+    {
+      "id": "N43C10",
+      "evidence": "Worker loops over saved original IDs and calls decision() for witnesses; no active worker/assay call to extend, greedy, generate, backward or an optimizer step.",
+      "permitted": "N43 is measurement-only with zero new response generation by design. Legacy capped helper definitions remain preserved in imported historical modules but are uninvoked here.",
+      "limit": "A source search finding total_cap=2048 in an old helper is not evidence of an active N43 token ceiling. New free inference remains native-EOS under human U23; old recorded grades are not rewritten."
+    },
+    {
+      "id": "N43C11",
+      "evidence": "Parameter increments and activation replacements are counted separately from optimizer and backward calls.",
+      "permitted": "Manual fixed column assignments, exact restoration and declared native-factor activation assignments are explicit interventions.",
+      "limit": "Do not present zero optimizer updates as zero intervention or label actual native-factor reuse as learned or fitted."
+    },
+    {
+      "id": "N43C12",
+      "evidence": "Terminal failure/resource status, original source hashes, private manifest and single frozen collector/auditor.",
+      "permitted": "A failed exact guard is an engineering failure; actual wall-time, memory or storage interruption is incomplete/censored.",
+      "limit": "Neither is a completed scientific null. Preserve first failures; no weakening of the audit or rerun of completed cells."
+    },
+    {
+      "id": "N43C13",
+      "evidence": "N41 fresh primary is closed: original 55/64, selected 51/64 with zero gains and four losses; all new replies reach native EOS. N43 generates no programs and has no correctness endpoint.",
+      "permitted": "The fixed global selected-zero utility lead failed on that fresh panel. N43 may inform a later separately prospective mechanistic question.",
+      "limit": "No N43effect can retroactively rescue that primary, establish useful coding/personality/knowledge gain or justify a replacement strength/rank from the failed outcomes."
+    }
+  ],
+  "all_N43_outcomes_remain_pending": true,
+  "N43_outputs_accessed": false,
+  "model_tokenizer_executor_scorer_backward_optimizer_calls": 0,
+  "new_fixture_or_closed_fixture_reruns": 0,
+  "decision": "Original terminal guard and single-audit flow stays authoritative. This map limits wording; it adds no numerical threshold,analysis rerun,ranking,dose or scientific acceptance criterion.",
+  "reviewed_frozen_source_files": 10,
+  "private_map_sha256": "fac6d7b1ed806ad27dec66a42efe65c70ca4f1e445362f716dc06752f997375f",
+  "edition": "Reviewed public wording of a static source-to-claim map; private source paths omitted. No N43 outcome or original acceptance criterion is added."
+}

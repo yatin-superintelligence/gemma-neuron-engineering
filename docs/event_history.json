@@ -4399,6 +4399,13 @@
       "event": "layout_only_v2_and_previously_unrendered_zero_strata_pass_closed_no_original_guard_rerun",
       "experiment": "N43",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 604,
+      "utc": "2026-11-01T01:39:14.846118+00:00",
+      "event": "preoutput_static_source_to_claim_map_13bounded_claims_frozen_no_model_scorer_or_fixture",
+      "experiment": "N43",
+      "optimizer_steps": 0
     }
   ]
 }
