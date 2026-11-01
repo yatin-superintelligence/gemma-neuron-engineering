@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-01T03:25:49.911169+00:00",
+  "before_implementation_and_host_checks": true,
+  "contract_sha256": "558f34cf1204683bdba7c5f1f134cadbec9b0f323dd33e0c43f08ec0338496fb",
+  "reason": "Avoid duplicating a full model metadata snapshot for every measurement, consistent with direct human U21 storage limits.",
+  "change": "Persist the full actual baseline once. Each prepared record contains a digest computed from the actual snapshot callback, observed changed-parameter versions, observed counters and an exact restoration comparison against the baseline plus declared cumulative versions. Full actual terminal state is persisted once on complete or stop; unavailable capture remains null. This is a compact scoped witness, not independent full parameter-byte hashing.",
+  "unchanged": "No expected snapshot may be substituted as a caller observation. Actual callbacks must execute exactly once at capture. No N43 retrofit, model execution, fixture rerun or scientific claim.",
+  "max_event_bytes": 2097152,
+  "storage_protection": "No weights, activations or whole caches are accepted by the JSON-only API; numeric list contents are not identified as genuine tensors by this storage helper."
+}

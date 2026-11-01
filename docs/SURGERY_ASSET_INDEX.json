@@ -257,6 +257,26 @@
       "symbols": [
         "generate_native_eos"
       ]
+    },
+    {
+      "category": "Record evidence",
+      "path": "interpretability/durable_measurement_journal_v2.py",
+      "sha256": "ffa7b534af1b43aad4bf882367e6dc1d5aa28b9f12baa43788e2d23b4c3ba011",
+      "symbols": [
+        "JournalError",
+        "require",
+        "canonical",
+        "digest",
+        "_hash",
+        "_counters",
+        "_state",
+        "_expected",
+        "_observation",
+        "_contract",
+        "_connect",
+        "_scan",
+        "Journal"
+      ]
     }
   ],
   "bundles": [

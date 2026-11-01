@@ -925,9 +925,24 @@
       "interpretation": "The panel is incomplete. All saved finite effects remain censored; no mechanistic conclusion, scientific null, utility result or explanation of N41 regressions is available. Native replay and final state/restoration scope have not passed a full-panel audit. N41 fresh primary remains failed; the interruption cannot establish a beneficial or ineffective normalization mechanism.",
       "next_question": "For future surgery tools, design durable completion and interruption journals that persist actual restoration/state witnesses with each measurement. This engineering work must not retrofit N43 or repeat completed cells.",
       "direction_decision": "Close the original v1 execution as resource incomplete. Preserve all private outputs, source freezes and prior grades. Do not poll or recollect v1, invoke its auditor on a partial panel or render actual figures. No new coordinate, dose, task or utility claim follows from this interruption. Close the original-v1 recovery feasibility path: a fresh replica or an expected state constructed from initial metadata cannot stand in for the missing observed final snapshots. Preserve all finite effects as censored."
+    },
+    {
+      "id": "Q58",
+      "experiment": "T01: durable measurement journal, host-only engineering",
+      "status": "complete_host_only_v2_after_preserved_final_type_defect",
+      "question": "Can future surgery measurements persist actual completion and restoration witnesses before logical commit, while uncertain work remains incomplete?",
+      "question_provenance": "Direct human U20 practical-tool request and N43 missing-final-witness resource interruption. This is software engineering, not a new model mechanism or utility study.",
+      "parents": [
+        "Q57"
+      ],
+      "method": "Register an engineering contract before implementation. Use SQLite rollback transactions with FULL synchronous mode, hash-linked append-only events, caller-supplied actual state/counter callbacks, fixed IDs/guards/totals, intent/prepared/commit states and explicit incomplete closure. Keep full baseline and terminal metadata snapshots once; intermediate witnesses are compact actual-state hashes and observed versions.",
+      "result": "Version 1 passes eleven new synthetic host tests with forty-two refusal cases, including process loss, uncommitted SQLite rollback, locking, tamper and unavailable observations. A new final-type regression then shows its Python dictionary equality accepts boolean/integer equivalence in a malformed terminal. The failure and original source remain preserved. Version 2 changes only final state structure/counter type checks and canonical state identity; two new completion checks and ten targeted final refusals pass. The original eleven-test matrix is not repeated. Four byte-exact isolated helper/test imports pass without executing fixtures or loading torch/transformers. All model, tokenizer, executor, scorer, backward and optimizer calls are zero.",
+      "interpretation": "A host-only evidence-storage tool. It does not authenticate a caller, hash a full checkpoint, validate native histories, recover N43 or establish model improvement. An intent without prepared evidence stays uncertain. A recovered process may commit an existing prepared digest but cannot supply fresh observations as the lost process. SQLite/storage assumptions and lack of physical power-loss testing remain explicit.",
+      "next_question": "Review the private manuscript coverage of completed N42 source description and censored N43 measurement, with the tool confined to host-only evidence infrastructure. Any substantive PDF edit follows the PDF skill, both word limits and all-page visual review.",
+      "direction_decision": "Close the new host gates. Publish the reviewed current v2 helper, historical v1 defect and exact source/test provenance. Do not rerun closed N43/T01 fixtures or claim pretrained journal integration. No new GPU reservation."
     }
   ],
-  "active_question_id": "Q57",
-  "next_question_id": "Q57",
-  "utc": "2026-11-01T03:18:51.761878+00:00"
+  "active_question_id": "Q58",
+  "next_question_id": "Q58",
+  "utc": "2026-11-01T03:36:15.901812+00:00"
 }

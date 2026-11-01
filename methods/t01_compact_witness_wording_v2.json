@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-01T03:29:22.275911+00:00",
+  "before_first_host_checks": true,
+  "after_initial_implementation": true,
+  "original_amendment_sha256": "84689f92fc0c8b6feabddcace9ca9b505198275d19e34cc79146a1a1a21745a3",
+  "wording_correction": "No tensor object types are accepted. Callers must not serialize weights, activations or whole caches into JSON; the storage helper does not infer the origin of numeric lists.",
+  "reason": "JSON-only type checking cannot identify the origin of a numeric list. The original wording overstated this boundary. No storage algorithm or scientific evidence changes.",
+  "original_preserved": true
+}

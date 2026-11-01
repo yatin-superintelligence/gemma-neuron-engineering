@@ -21,6 +21,7 @@ SOURCES = {
     'Reconstruct': ['reproduce/model_edits.py'],
     'Evaluate': ['evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
     'Generate and resume': ['interpretability/native_eos_generation.py'],
+    'Record evidence': ['interpretability/durable_measurement_journal_v2.py'],
 }
 
 
@@ -33,7 +34,11 @@ def toolkit(dest):
             symbols = [n.name for n in tree.body if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef))]
             digest = hashlib.sha256(source.encode()).hexdigest()
             title = ast.get_docstring(tree) or name
-            cards.append(f'<article class="card tool" data-category="{escape(category)}"><span class="tag">{escape(category)}</span><h2>{escape(Path(name).stem)}</h2><p>{escape(title)}</p><p><a href="../{escape(name)}">Exact source file</a></p><p class="small">APIs: {escape(", ".join(symbols))}</p><p class="hash">SHA-256 {digest}</p><details><summary>Read the code</summary><pre>{escape(source)}</pre></details></article>')
+            guide = ''
+            if name == 'interpretability/durable_measurement_journal_v2.py':
+                title += ' Current T01 version 2. Host-only literal validation; no pretrained integration or retroactive N43 certification. See the durable journal guide for lifecycle, recovery limits and the preserved version 1 final-type defect.'
+                guide = '<p><a href="MEASUREMENT_JOURNAL.html">Journal lifecycle and evidence limits</a></p>'
+            cards.append(f'<article class="card tool" data-category="{escape(category)}"><span class="tag">{escape(category)}</span><h2>{escape(Path(name).stem)}</h2><p>{escape(title)}</p><p><a href="../{escape(name)}">Exact source file</a></p>{guide}<p class="small">APIs: {escape(", ".join(symbols))}</p><p class="hash">SHA-256 {digest}</p><details><summary>Read the code</summary><pre>{escape(source)}</pre></details></article>')
             index.append({'category': category, 'path': name, 'sha256': digest, 'symbols': symbols})
     body = '<section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option>' + ''.join(f'<option>{escape(k)}</option>' for k in SOURCES) + '</select></label><p id="count" class="small"></p></section><div class="grid">' + ''.join(cards) + '</div>'
     script = '''const q=document.getElementById('query'),c=document.getElementById('category');function filter(){let n=0;for(const e of document.querySelectorAll('.tool')){e.hidden=!(e.textContent.toLowerCase().includes(q.value.toLowerCase())&&(c.value==='All'||e.dataset.category===c.value));if(!e.hidden)n++}document.getElementById('count').textContent=n+' source files shown'}q.oninput=c.onchange=filter;filter();'''

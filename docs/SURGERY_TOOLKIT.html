@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2;overflow-wrap:anywhere}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option><option>Evaluate</option><option>Generate and resume</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_cache_branch</h2><p>Clone an actual native past for one current-token causal measurement.
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';style-src 'unsafe-inline';script-src 'unsafe-inline';img-src 'self' data:;connect-src 'none';base-uri 'none';form-action 'none'"><title>Editing and observation toolkit | Digital Surgery</title><style>*{box-sizing:border-box}body{margin:0;background:#f2f6f7;color:#172d40;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:24px}header{background:#102d40;color:white;max-width:none}header>div{max-width:1132px;margin:auto}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}h2{line-height:1.2;overflow-wrap:anywhere}nav{display:flex;gap:16px;flex-wrap:wrap}header a{color:#b5eee2}a{color:#006b63;overflow-wrap:anywhere}section,.card{background:white;border:1px solid #d3e0e3;border-radius:12px;padding:24px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.grid .card{margin:0}label{display:inline-block;margin:8px 18px 8px 0}input,select,button{font:inherit;padding:8px;border:1px solid #9fb8bf;border-radius:6px;max-width:100%}button{cursor:pointer;background:#e6f3ef;color:#00594e}pre{overflow:auto;max-height:540px;background:#102d40;color:#e6f5f4;padding:18px;border-radius:8px;font:13px/1.55 ui-monospace,monospace}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.scroll{overflow:auto}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:14px}td,th{padding:10px;border-bottom:1px solid #d4e0e4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf4f4}.small{font-size:13px;color:#526a77}.tag{display:inline-block;font-size:12px;padding:3px 9px;background:#e2f1eb;color:#00594f;border-radius:12px}.notice{border-left:4px solid #007267;background:#edf8f4;padding:14px}details{margin-top:14px}summary{cursor:pointer;font-weight:650}.hash{font-size:11px;word-break:break-all}canvas{display:block;background:white}footer{color:#526a77;font-size:13px}[hidden]{display:none!important}</style></head><body><header><div><p>Digital Surgery / research workbench</p><h1>Editing and observation toolkit</h1><nav><a href="SURGERY_TOOLKIT.html">Editing code</a><a href="MODEL_REGISTRY.html">Saved models</a><a href="ACTIVATION_VIEWER.html">Activation viewer</a><a href="SURGERY_PROCESS.html">Process</a><a href="RESEARCH_LOG.html">Research log</a></nav></div></header><main><section><h2>Use the tested implementation</h2><p>These are the actual reviewed source files used for observation, scoped activation patches, direct weight edits, structural operations and reconstruction. Each card links the file and embeds its exact contents. A successful software fixture is distinct from a behavioral benefit.</p><label>Find code <input id="query" type="search" placeholder="zero, clone, capture, restore"></label><label>Category <select id="category"><option>All</option><option>Observe</option><option>Patch activations</option><option>Edit weights</option><option>Edit connections</option><option>Reconstruct</option><option>Evaluate</option><option>Generate and resume</option><option>Record evidence</option></select></label><p id="count" class="small"></p></section><div class="grid"><article class="card tool" data-category="Observe"><span class="tag">Observe</span><h2>native_cache_branch</h2><p>Clone an actual native past for one current-token causal measurement.
 
 The clone is ephemeral. It is not a reusable past for a changed conversation.
 Only the pinned DynamicCache with initialized dense KV layers is accepted.</p><p><a href="../interpretability/native_cache_branch.py">Exact source file</a></p><p class="small">APIs: tensor_hash, _value, fingerprint, _storages, native_cache_branch</p><p class="hash">SHA-256 a11a55a52e908bc2f6f19ee00f20d00e1f66c6cf673a5c7969082d581b2ee6e7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Clone an actual native past for one current-token causal measurement.
@@ -2485,4 +2485,338 @@ def generate_native_eos(model, tokenizer, encoded, eos, *, resource_guard,
             &#x27;completed_forward_calls&#x27;: completed, &#x27;input_token_exposures&#x27;: exposures,
             &#x27;new_response_token_ceiling&#x27;: None, &#x27;configured_context&#x27;: maximum,
             &#x27;optimizer_steps&#x27;: 0, &#x27;backward_calls&#x27;: 0, &#x27;parameter_assignments&#x27;: 0}
+</pre></details></article><article class="card tool" data-category="Record evidence"><span class="tag">Record evidence</span><h2>durable_measurement_journal_v2</h2><p>Append-only observation receipts for future measurements, not model certification.
+
+Call begin BEFORE external work, prepare AFTER restoration, then commit. A durable
+prepared event can be committed after process loss without repeating external
+work. An intent alone remains uncertain. This module never loads or executes a
+model. Callers remain responsible for the origin and scope of their observations. Current T01 version 2. Host-only literal validation; no pretrained integration or retroactive N43 certification. See the durable journal guide for lifecycle, recovery limits and the preserved version 1 final-type defect.</p><p><a href="../interpretability/durable_measurement_journal_v2.py">Exact source file</a></p><p><a href="MEASUREMENT_JOURNAL.html">Journal lifecycle and evidence limits</a></p><p class="small">APIs: JournalError, require, canonical, digest, _hash, _counters, _state, _expected, _observation, _contract, _connect, _scan, Journal</p><p class="hash">SHA-256 ffa7b534af1b43aad4bf882367e6dc1d5aa28b9f12baa43788e2d23b4c3ba011</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Append-only observation receipts for future measurements, not model certification.
+
+Call begin BEFORE external work, prepare AFTER restoration, then commit. A durable
+prepared event can be committed after process loss without repeating external
+work. An intent alone remains uncertain. This module never loads or executes a
+model. Callers remain responsible for the origin and scope of their observations.
+&quot;&quot;&quot;
+
+import copy
+import hashlib
+import json
+import math
+import os
+from pathlib import Path
+import sqlite3
+import time
+from urllib.parse import quote
+import uuid
+
+
+COUNTERS = (&#x27;forward_calls&#x27;, &#x27;input_token_exposures&#x27;, &#x27;manual_parameter_assignments&#x27;,
+            &#x27;activation_assignments&#x27;, &#x27;new_generated_tokens&#x27;, &#x27;backward_calls&#x27;, &#x27;optimizer_steps&#x27;)
+ZERO = (&#x27;new_generated_tokens&#x27;, &#x27;backward_calls&#x27;, &#x27;optimizer_steps&#x27;)
+MAX_BYTES = 2 * 1024 * 1024
+
+
+class JournalError(ValueError):
+    pass
+
+
+def require(value, message):
+    if not value:
+        raise JournalError(message)
+
+
+def canonical(value):
+    def check(item):
+        if type(item) is dict:
+            require(all(type(k) is str for k in item), &#x27;JSON keys must be strings&#x27;)
+            for v in item.values():
+                check(v)
+        elif type(item) is list:
+            for v in item:
+                check(v)
+        else:
+            require(type(item) in (str, int, float, bool, type(None)), &#x27;JSON-only observation required&#x27;)
+            require(type(item) is not float or math.isfinite(item), &#x27;Nonfinite observation&#x27;)
+    check(value)
+    text = json.dumps(value, sort_keys=True, separators=(&#x27;,&#x27;, &#x27;:&#x27;), allow_nan=False)
+    require(len(text.encode()) &lt;= MAX_BYTES, &#x27;Observation exceeds bounded receipt size&#x27;)
+    return text
+
+
+def digest(value):
+    return hashlib.sha256(canonical(value).encode()).hexdigest()
+
+
+def _hash(value):
+    return type(value) is str and len(value) == 64 and all(c in &#x27;0123456789abcdef&#x27; for c in value)
+
+
+def _counters(value):
+    require(type(value) is dict and set(value) == set(COUNTERS), &#x27;Counter schema mismatch&#x27;)
+    require(all(type(v) is int and v &gt;= 0 for v in value.values()), &#x27;Nonnegative integer counters required&#x27;)
+    require(all(value[k] == 0 for k in ZERO), &#x27;Generation, backwards or optimizer updates are outside scope&#x27;)
+
+
+def _state(value):
+    require(type(value) is dict and type(value.get(&#x27;parameters&#x27;)) is dict
+            and bool(value[&#x27;parameters&#x27;]), &#x27;Parameter metadata snapshot required&#x27;)
+    for name, item in value[&#x27;parameters&#x27;].items():
+        require(type(name) is str and type(item) is dict and type(item.get(&#x27;version&#x27;)) is int
+                and item[&#x27;version&#x27;] &gt;= 0, &#x27;Invalid observed parameter version&#x27;)
+    canonical(value)
+
+
+def _expected(baseline, deltas):
+    result = copy.deepcopy(baseline)
+    for name, increment in deltas.items():
+        require(name in result[&#x27;parameters&#x27;] and type(increment) is int and increment &gt; 0,
+                &#x27;Unknown or nonpositive declared version increment&#x27;)
+        result[&#x27;parameters&#x27;][name][&#x27;version&#x27;] += increment
+    return result
+
+
+def _observation(state_reader, counter_reader):
+    result = {&#x27;state&#x27;: None, &#x27;counters&#x27;: None, &#x27;errors&#x27;: {}, &#x27;pid&#x27;: os.getpid(),
+              &#x27;time_ns&#x27;: time.time_ns(), &#x27;monotonic_ns&#x27;: time.monotonic_ns()}
+    for key, reader in [(&#x27;state&#x27;, state_reader), (&#x27;counters&#x27;, counter_reader)]:
+        try:
+            # Serialize immediately: later caller mutation cannot change the receipt.
+            result[key] = json.loads(canonical(reader()))
+        except Exception as error:
+            result[&#x27;errors&#x27;][key] = type(error).__name__
+    return result
+
+
+def _contract(value):
+    require(type(value) is dict and set(value) == {&#x27;protocol_sha256&#x27;, &#x27;source_sha256&#x27;,
+            &#x27;measurement_ids&#x27;, &#x27;required_guards&#x27;, &#x27;expected_counters&#x27;}, &#x27;Contract schema mismatch&#x27;)
+    require(_hash(value[&#x27;protocol_sha256&#x27;]) and _hash(value[&#x27;source_sha256&#x27;]), &#x27;Pinned source hashes required&#x27;)
+    for key in [&#x27;measurement_ids&#x27;, &#x27;required_guards&#x27;]:
+        items = value[key]
+        require(type(items) is list and bool(items) and all(type(x) is str and 0 &lt; len(x) &lt;= 160
+                for x in items) and len(set(items)) == len(items), &#x27;Ordered unique IDs/guards required&#x27;)
+    _counters(value[&#x27;expected_counters&#x27;])
+    canonical(value)
+
+
+def _connect(root):
+    path = (Path(root) / &#x27;journal.sqlite3&#x27;).resolve()
+    require(path.is_file() and not (Path(root) / &#x27;journal.sqlite3&#x27;).is_symlink(), &#x27;Existing owned journal required&#x27;)
+    con = sqlite3.connect(&#x27;file:&#x27; + quote(str(path), safe=&#x27;/&#x27;) + &#x27;?mode=rw&#x27;, uri=True,
+                          timeout=0, isolation_level=None)
+    con.execute(&#x27;PRAGMA synchronous=FULL&#x27;)
+    require(con.execute(&#x27;PRAGMA journal_mode&#x27;).fetchone()[0] == &#x27;delete&#x27;, &#x27;Rollback journal mode required&#x27;)
+    return con
+
+
+def _scan(con):
+    rows = con.execute(&#x27;SELECT body, digest FROM header&#x27;).fetchall()
+    require(len(rows) == 1, &#x27;One immutable header required&#x27;)
+    header = json.loads(rows[0][0])
+    require(digest(header) == rows[0][1], &#x27;Header digest mismatch&#x27;)
+    require(header[&#x27;schema&#x27;] == 1, &#x27;Unknown journal schema&#x27;)
+    _contract(header[&#x27;contract&#x27;])
+    base = header[&#x27;baseline&#x27;]
+    require(not base[&#x27;errors&#x27;], &#x27;Baseline observation unavailable&#x27;)
+    _state(base[&#x27;state&#x27;]); _counters(base[&#x27;counters&#x27;])
+    view = {&#x27;header&#x27;: header, &#x27;head&#x27;: rows[0][1], &#x27;events&#x27;: [], &#x27;committed_ids&#x27;: [],
+            &#x27;pending&#x27;: None, &#x27;terminal&#x27;: None, &#x27;deltas&#x27;: {}, &#x27;counters&#x27;: base[&#x27;counters&#x27;]}
+    for seq, body, saved_hash in con.execute(&#x27;SELECT seq, body, digest FROM events ORDER BY seq&#x27;):
+        event = json.loads(body)
+        require(seq == len(view[&#x27;events&#x27;]) + 1 and event[&#x27;seq&#x27;] == seq, &#x27;Missing or reordered event&#x27;)
+        require(event[&#x27;previous&#x27;] == view[&#x27;head&#x27;] and digest(event) == saved_hash, &#x27;Event digest chain mismatch&#x27;)
+        require(view[&#x27;terminal&#x27;] is None, &#x27;Event after terminal closure&#x27;)
+        kind, data = event[&#x27;kind&#x27;], event[&#x27;data&#x27;]
+        ids = header[&#x27;contract&#x27;][&#x27;measurement_ids&#x27;]
+        if kind == &#x27;intent&#x27;:
+            require(view[&#x27;pending&#x27;] is None and len(view[&#x27;committed_ids&#x27;]) &lt; len(ids)
+                    and data[&#x27;id&#x27;] == ids[len(view[&#x27;committed_ids&#x27;])], &#x27;Measurement order/duplicate mismatch&#x27;)
+            require(data[&#x27;before&#x27;][&#x27;state_sha256&#x27;] == digest(_expected(base[&#x27;state&#x27;], view[&#x27;deltas&#x27;]))
+                    and data[&#x27;before&#x27;][&#x27;counters&#x27;] == view[&#x27;counters&#x27;], &#x27;Intent observation mismatch&#x27;)
+            view[&#x27;pending&#x27;] = {&#x27;intent&#x27;: data, &#x27;prepared&#x27;: None, &#x27;prepared_digest&#x27;: None}
+        elif kind == &#x27;prepared&#x27;:
+            pending = view[&#x27;pending&#x27;]
+            require(pending is not None and pending[&#x27;prepared&#x27;] is None
+                    and data[&#x27;id&#x27;] == pending[&#x27;intent&#x27;][&#x27;id&#x27;], &#x27;Prepared measurement mismatch&#x27;)
+            checks = data[&#x27;checks&#x27;]
+            require(type(checks) is dict and set(checks) == set(header[&#x27;contract&#x27;][&#x27;required_guards&#x27;])
+                    and all(v is True for v in checks.values()), &#x27;Missing or failed guard&#x27;)
+            require(type(data[&#x27;version_deltas&#x27;]) is dict, &#x27;Declared version mapping required&#x27;)
+            new = dict(view[&#x27;deltas&#x27;])
+            for name, count in data[&#x27;version_deltas&#x27;].items():
+                require(type(count) is int and count &gt; 0, &#x27;Invalid version increment&#x27;)
+                new[name] = new.get(name, 0) + count
+            expected = _expected(base[&#x27;state&#x27;], new)
+            witness = data[&#x27;state_witness&#x27;]
+            require(witness[&#x27;actual_state_sha256&#x27;] == digest(expected)
+                    and witness[&#x27;changed_parameter_versions&#x27;] == {n: expected[&#x27;parameters&#x27;][n][&#x27;version&#x27;] for n in new},
+                    &#x27;Prepared observed state witness mismatch&#x27;)
+            counters = data[&#x27;counters&#x27;]; _counters(counters)
+            require(all(counters[k] &gt;= view[&#x27;counters&#x27;][k] for k in COUNTERS), &#x27;Counter decrease&#x27;)
+            require(all(counters[k] &lt;= header[&#x27;contract&#x27;][&#x27;expected_counters&#x27;][k] for k in COUNTERS),
+                    &#x27;Counters exceed fixed declared work&#x27;)
+            require(counters[&#x27;manual_parameter_assignments&#x27;] - base[&#x27;counters&#x27;][&#x27;manual_parameter_assignments&#x27;]
+                    == sum(new.values()), &#x27;Parameter assignment/version mismatch&#x27;)
+            pending.update(prepared=data, prepared_digest=saved_hash)
+        elif kind == &#x27;committed&#x27;:
+            pending = view[&#x27;pending&#x27;]
+            require(pending is not None and pending[&#x27;prepared&#x27;] is not None
+                    and data == {&#x27;id&#x27;: pending[&#x27;intent&#x27;][&#x27;id&#x27;], &#x27;prepared_digest&#x27;: pending[&#x27;prepared_digest&#x27;]},
+                    &#x27;Committed reference mismatch&#x27;)
+            prepared = pending[&#x27;prepared&#x27;]
+            for name, count in prepared[&#x27;version_deltas&#x27;].items():
+                view[&#x27;deltas&#x27;][name] = view[&#x27;deltas&#x27;].get(name, 0) + count
+            view[&#x27;counters&#x27;] = prepared[&#x27;counters&#x27;]
+            view[&#x27;committed_ids&#x27;].append(data[&#x27;id&#x27;]); view[&#x27;pending&#x27;] = None
+        elif kind in (&#x27;complete&#x27;, &#x27;incomplete&#x27;):
+            observation = data[&#x27;observation&#x27;]
+            if kind == &#x27;complete&#x27;:
+                require(view[&#x27;pending&#x27;] is None and view[&#x27;committed_ids&#x27;] == ids, &#x27;Incomplete fixed cohort&#x27;)
+                _state(observation[&#x27;state&#x27;]); _counters(observation[&#x27;counters&#x27;])
+                require(not observation[&#x27;errors&#x27;] and digest(observation[&#x27;state&#x27;]) == digest(_expected(base[&#x27;state&#x27;], view[&#x27;deltas&#x27;]))
+                        and observation[&#x27;counters&#x27;] == header[&#x27;contract&#x27;][&#x27;expected_counters&#x27;]
+                        == view[&#x27;counters&#x27;], &#x27;Final observed state/counters mismatch&#x27;)
+            view[&#x27;terminal&#x27;] = event
+        else:
+            raise JournalError(&#x27;Unknown event kind&#x27;)
+        view[&#x27;events&#x27;].append(event); view[&#x27;head&#x27;] = saved_hash
+    view[&#x27;status&#x27;] = (&#x27;complete&#x27; if view[&#x27;terminal&#x27;] and view[&#x27;terminal&#x27;][&#x27;kind&#x27;] == &#x27;complete&#x27; else
+                      &#x27;incomplete&#x27; if view[&#x27;terminal&#x27;] else &#x27;prepared&#x27; if view[&#x27;pending&#x27;] and
+                      view[&#x27;pending&#x27;][&#x27;prepared&#x27;] else &#x27;uncertain_intent&#x27; if view[&#x27;pending&#x27;] else &#x27;open&#x27;)
+    return view
+
+
+class Journal:
+    &quot;&quot;&quot;One creating process writes observations; recovery only commits saved evidence.&quot;&quot;&quot;
+    @classmethod
+    def create(cls, root, contract, state_reader, counter_reader):
+        contract = json.loads(canonical(contract)); _contract(contract)
+        root = Path(root)
+        require(not root.exists() and not root.is_symlink(), &#x27;Journal overwrite refused&#x27;)
+        baseline = _observation(state_reader, counter_reader)
+        require(not baseline[&#x27;errors&#x27;], &#x27;Actual baseline observation required&#x27;)
+        _state(baseline[&#x27;state&#x27;]); _counters(baseline[&#x27;counters&#x27;])
+        require(all(baseline[&#x27;counters&#x27;][k] &lt;= contract[&#x27;expected_counters&#x27;][k] for k in COUNTERS),
+                &#x27;Baseline exceeds declared final counters&#x27;)
+        root.mkdir(exist_ok=False)
+        con = sqlite3.connect(root / &#x27;journal.sqlite3&#x27;, timeout=0, isolation_level=None)
+        con.execute(&#x27;PRAGMA journal_mode=DELETE&#x27;); con.execute(&#x27;PRAGMA synchronous=FULL&#x27;)
+        obj = cls.__new__(cls); obj.con = con; obj.session = uuid.uuid4().hex; obj.pid = os.getpid()
+        header = {&#x27;schema&#x27;: 1, &#x27;contract&#x27;: contract, &#x27;baseline&#x27;: baseline,
+                  &#x27;creator_session&#x27;: obj.session, &#x27;creator_pid&#x27;: obj.pid}
+        try:
+            con.execute(&#x27;BEGIN IMMEDIATE&#x27;)
+            con.execute(&#x27;CREATE TABLE header (id INTEGER PRIMARY KEY CHECK(id=1), body TEXT NOT NULL, digest TEXT NOT NULL)&#x27;)
+            con.execute(&#x27;CREATE TABLE events (seq INTEGER PRIMARY KEY, body TEXT NOT NULL, digest TEXT NOT NULL UNIQUE)&#x27;)
+            for table in [&#x27;header&#x27;, &#x27;events&#x27;]:
+                for action in [&#x27;UPDATE&#x27;, &#x27;DELETE&#x27;]:
+                    con.execute(f&quot;CREATE TRIGGER no_{table}_{action} BEFORE {action} ON {table} BEGIN SELECT RAISE(ABORT,&#x27;Append only&#x27;); END&quot;)
+            con.execute(&#x27;INSERT INTO header VALUES (1, ?, ?)&#x27;, (canonical(header), digest(header)))
+            con.execute(&#x27;COMMIT&#x27;)
+        except BaseException:
+            if con.in_transaction: con.execute(&#x27;ROLLBACK&#x27;)
+            con.close(); raise
+        return obj
+
+    @classmethod
+    def recover(cls, root):
+        obj = cls.__new__(cls); obj.con = _connect(root); obj.session = None; obj.pid = os.getpid()
+        try: _scan(obj.con)
+        except BaseException: obj.con.close(); raise
+        return obj
+
+    def inspect(self):
+        return _scan(self.con)
+
+    def close(self):
+        self.con.close()
+
+    def _append(self, kind, maker):
+        try:
+            self.con.execute(&#x27;BEGIN IMMEDIATE&#x27;)
+            view = _scan(self.con)
+            require(view[&#x27;terminal&#x27;] is None, &#x27;Journal already terminal&#x27;)
+            data = maker(view)
+            event = {&#x27;seq&#x27;: len(view[&#x27;events&#x27;]) + 1, &#x27;previous&#x27;: view[&#x27;head&#x27;],
+                     &#x27;kind&#x27;: kind, &#x27;data&#x27;: data, &#x27;writer_pid&#x27;: os.getpid(), &#x27;time_ns&#x27;: time.time_ns()}
+            self.con.execute(&#x27;INSERT INTO events VALUES (?, ?, ?)&#x27;,
+                             (event[&#x27;seq&#x27;], canonical(event), digest(event)))
+            _scan(self.con)  # Validate the transaction before making it durable.
+            self.con.execute(&#x27;COMMIT&#x27;)
+            return digest(event)
+        except BaseException:
+            if self.con.in_transaction: self.con.execute(&#x27;ROLLBACK&#x27;)
+            raise
+
+    def _creator(self, view):
+        require(self.session == view[&#x27;header&#x27;][&#x27;creator_session&#x27;] and os.getpid() == self.pid
+                == view[&#x27;header&#x27;][&#x27;creator_pid&#x27;], &#x27;Original observation process required&#x27;)
+
+    def begin(self, measurement_id, context, state_reader, counter_reader):
+        context = json.loads(canonical(context))
+        require(type(context) is dict, &#x27;Context mapping required&#x27;)
+        def make(view):
+            self._creator(view)
+            require(view[&#x27;pending&#x27;] is None, &#x27;Pending work cannot be retried or skipped&#x27;)
+            ids = view[&#x27;header&#x27;][&#x27;contract&#x27;][&#x27;measurement_ids&#x27;]
+            require(len(view[&#x27;committed_ids&#x27;]) &lt; len(ids) and measurement_id == ids[len(view[&#x27;committed_ids&#x27;])],
+                    &#x27;Wrong, duplicate or reordered measurement ID&#x27;)
+            observed = _observation(state_reader, counter_reader)
+            require(not observed[&#x27;errors&#x27;], &#x27;Actual starting observation unavailable&#x27;)
+            _state(observed[&#x27;state&#x27;]); _counters(observed[&#x27;counters&#x27;])
+            return {&#x27;id&#x27;: measurement_id, &#x27;context&#x27;: context,
+                    &#x27;before&#x27;: {&#x27;state_sha256&#x27;: digest(observed[&#x27;state&#x27;]), &#x27;counters&#x27;: observed[&#x27;counters&#x27;],
+                               &#x27;capture_time_ns&#x27;: observed[&#x27;time_ns&#x27;]}}
+        return self._append(&#x27;intent&#x27;, make)
+
+    def prepare(self, result, checks, version_deltas, state_reader, counter_reader):
+        result, checks, version_deltas = [json.loads(canonical(v)) for v in [result, checks, version_deltas]]
+        require(type(result) is dict and type(checks) is dict and type(version_deltas) is dict,
+                &#x27;Result, guards and versions require mappings&#x27;)
+        def make(view):
+            self._creator(view)
+            require(view[&#x27;pending&#x27;] is not None and view[&#x27;pending&#x27;][&#x27;prepared&#x27;] is None, &#x27;One pending intent required&#x27;)
+            observed = _observation(state_reader, counter_reader)
+            require(not observed[&#x27;errors&#x27;], &#x27;Actual completion observation unavailable; stop as incomplete&#x27;)
+            _state(observed[&#x27;state&#x27;]); _counters(observed[&#x27;counters&#x27;])
+            new = dict(view[&#x27;deltas&#x27;])
+            for name, count in version_deltas.items():
+                require(type(count) is int and count &gt; 0, &#x27;Invalid declared version delta&#x27;)
+                new[name] = new.get(name, 0) + count
+            expected = _expected(view[&#x27;header&#x27;][&#x27;baseline&#x27;][&#x27;state&#x27;], new)
+            require(observed[&#x27;state&#x27;] == expected, &#x27;Observed state has not restored&#x27;)
+            return {&#x27;id&#x27;: view[&#x27;pending&#x27;][&#x27;intent&#x27;][&#x27;id&#x27;], &#x27;result&#x27;: result, &#x27;checks&#x27;: checks,
+                    &#x27;version_deltas&#x27;: version_deltas, &#x27;counters&#x27;: observed[&#x27;counters&#x27;],
+                    &#x27;state_witness&#x27;: {&#x27;actual_state_sha256&#x27;: digest(observed[&#x27;state&#x27;]),
+                        &#x27;changed_parameter_versions&#x27;: {n: observed[&#x27;state&#x27;][&#x27;parameters&#x27;][n][&#x27;version&#x27;] for n in new},
+                        &#x27;capture_time_ns&#x27;: observed[&#x27;time_ns&#x27;]}}
+        return self._append(&#x27;prepared&#x27;, make)
+
+    def commit(self):
+        def make(view):
+            pending = view[&#x27;pending&#x27;]
+            require(pending is not None and pending[&#x27;prepared&#x27;] is not None, &#x27;Durable prepared evidence required&#x27;)
+            return {&#x27;id&#x27;: pending[&#x27;intent&#x27;][&#x27;id&#x27;], &#x27;prepared_digest&#x27;: pending[&#x27;prepared_digest&#x27;]}
+        return self._append(&#x27;committed&#x27;, make)
+
+    def finish(self, state_reader, counter_reader):
+        def make(view):
+            self._creator(view)
+            return {&#x27;observation&#x27;: _observation(state_reader, counter_reader)}
+        return self._append(&#x27;complete&#x27;, make)
+
+    def stop(self, reason, state_reader=None, counter_reader=None):
+        require(type(reason) is str and 0 &lt; len(reason) &lt;= 500, &#x27;Bounded interruption reason required&#x27;)
+        def make(view):
+            if state_reader is None and counter_reader is None:
+                observation = {&#x27;state&#x27;: None, &#x27;counters&#x27;: None,
+                               &#x27;errors&#x27;: {&#x27;state&#x27;: &#x27;Unavailable&#x27;, &#x27;counters&#x27;: &#x27;Unavailable&#x27;},
+                               &#x27;pid&#x27;: None, &#x27;time_ns&#x27;: time.time_ns()}
+            else:
+                self._creator(view)
+                require(state_reader is not None and counter_reader is not None, &#x27;Both observation callbacks required&#x27;)
+                observation = _observation(state_reader, counter_reader)
+            return {&#x27;reason&#x27;: reason, &#x27;observation&#x27;: observation,
+                    &#x27;original_final_state_not_certified&#x27;: True}
+        return self._append(&#x27;incomplete&#x27;, make)
 </pre></details></article></div></main><footer>Offline HTML. No external scripts, uploads or inference API. <a href="../scripts/build_surgery_assets.py">Asset builder source</a> · <a href="../PUBLIC_RELEASE_MANIFEST.json">Release hashes</a></footer><script>const q=document.getElementById('query'),c=document.getElementById('category');function filter(){let n=0;for(const e of document.querySelectorAll('.tool')){e.hidden=!(e.textContent.toLowerCase().includes(q.value.toLowerCase())&&(c.value==='All'||e.dataset.category===c.value));if(!e.hidden)n++}document.getElementById('count').textContent=n+' source files shown'}q.oninput=c.onchange=filter;filter();</script></body></html>

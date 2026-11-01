@@ -4427,6 +4427,34 @@
       "event": "static_recovery_review_closed_missing_original_final_witnesses_no_new_launch_or_science",
       "experiment": "N43",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 608,
+      "utc": "2026-11-01T03:24:42.608145+00:00",
+      "event": "T01_engineering_contract_registered_before_implementation",
+      "experiment": "T01",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 609,
+      "utc": "2026-11-01T03:29:43.073619+00:00",
+      "event": "T01_original11literal_checks42refusals_pass",
+      "experiment": "T01",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 610,
+      "utc": "2026-11-01T03:30:43.853956+00:00",
+      "event": "T01_new_final_boolean_integer_type_regression_failure_preserved",
+      "experiment": "T01",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 611,
+      "utc": "2026-11-01T03:35:07.766691+00:00",
+      "event": "T01_minimal_v2_final_guard_2positives10refusals_and_isolated_import_pass_closed",
+      "experiment": "T01",
+      "optimizer_steps": 0
     }
   ]
 }

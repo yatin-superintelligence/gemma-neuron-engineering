@@ -1,0 +1,44 @@
+{
+  "utc": "2026-11-01T03:24:42.608145+00:00",
+  "tool": "T01",
+  "status": "engineering_contract_registered_before_implementation_or_new_host_checks",
+  "authority": "Direct human U20 practical surgery tools; latest heartbeat explicitly requests a new durable journal after actual N43 missing-final-witness failure.",
+  "scope": "Host-only generic completion/restoration and interruption journal, pure Python standard library. No model loading, tokenizer, executor, scorer, response generation, gradient or optimizer.",
+  "not_a_scientific_protocol_or_N43_repair": true,
+  "reason": "N43 resource interruption preserved row-level guards but neither original final state snapshot. A future journal must persist observed evidence before logical measurement commit, without substituting expected state or rerunning completed work.",
+  "storage": "SQLite transactions with FULL synchronous mode and rollback journal. Hash-linked append-only logical events. Filesystem/SQLite guarantees depend on platform and storage; no authentication, hostile-editor or universal power-loss guarantee.",
+  "states": [
+    "created baseline observed from callbacks",
+    "intent persisted before external work",
+    "prepared result/context/guards/observed state/counters durably bundled",
+    "committed reference to prepared digest",
+    "complete terminal with actual final observation and exact declared totals",
+    "incomplete terminal with actual available observation or explicit unavailable state"
+  ],
+  "rules": [
+    "Contract fixes ordered unique measurement IDs, source/protocol digests, named guards and final counters before use. Caller snapshot callbacks execute once per capture, never synthesized by the journal. Origin and scientific adequacy of caller observations are not authenticated by storage.",
+    "Restoration checks compare parameter version metadata against declared cumulative deltas and all other snapshot data exactly. This is scoped metadata plus supplied state hashes, not full checkpoint hashing or native-history validation.",
+    "Counters are observed, monotone and fixed-schema; manual assignments match declared version deltas. New tokens, backwards and optimizer updates remain zero for a complete measurement journal.",
+    "Begin before measurement persists ID/context and observed baseline. Prepare after operation persists result/context, all declared guards true, actual restored snapshot and counters atomically. Commit adds only a reference, without invoking observers or external work.",
+    "Duplicate, skipped, unknown or reordered IDs and missing/false guards fail closed. No completed record may be updated, deleted, regenerated or overwritten through the API.",
+    "Reopening after process loss permits inspection and committing an already durable prepared record without callbacks. An intent without a prepared witness is uncertain and cannot automatically retry, complete or start another measurement.",
+    "The creating writer alone captures further observations. Recovery never observes a fresh process as the old process. Lost-process closure explicitly records missing observation and remains incomplete.",
+    "Resource stop attempts actual state/counter capture even if state differs or callback fails; missing observations stay unavailable. It cannot turn a failed/partial journal into complete.",
+    "Complete terminal requires every fixed ID committed, no pending intent, actual observed final state restored and exact contract counters. Missing original final observation cannot be fabricated or supplied from a fresh writer.",
+    "No integration with immutable N43 worker/auditor/collector, no access to N43 factor/native-replay contents, no existing gate rerun or GPU job. Future model use needs a new prospective protocol and exact lineage/resource gates."
+  ],
+  "new_host_checks": [
+    "Literal two-measurement end-to-end commit/final state and exact counters",
+    "Caller-observation capture counts and by-value persistence",
+    "Prepared record survives creator process exit and commits without observer or measurement rerun",
+    "Intent-only process loss stays uncertain; no automatic retry or completion",
+    "SQLite uncommitted transaction disappears after child-process termination while prior durable intent remains",
+    "Independent second writer receives database lock refusal",
+    "Incomplete resource stop preserves observed mismatch and unavailable callback evidence",
+    "Hash-chain/content tamper and missing-event refusal",
+    "Wrong ID/order/duplicate/overwrite, bad hashes/JSON/nonfinite values/guards/counters/version deltas/state/final totals refuse",
+    "Logical append-only API/database triggers reject update/delete; no model dependencies imported"
+  ],
+  "result_policy": "Preserve first host failure and its source if any. Fix only new software with dated versioned provenance and targeted new checks; never alter N43 or repeat its closed fixtures. All literal host records are clearly synthetic and not model results.",
+  "publication": "Reviewed generic helper, new host checks, engineering contract and aggregate host receipt may be public. No private source paths, raw research data or model assets."
+}

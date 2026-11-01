@@ -1,0 +1,70 @@
+{
+  "scope": "Synthetic host-only storage and observation bookkeeping. No pretrained model integration or N43 recovery.",
+  "current_helper": "interpretability/durable_measurement_journal_v2.py",
+  "version1_historical_known_final_type_defect": true,
+  "original_gate": {
+    "utc": "2026-11-01T03:29:43.073619+00:00",
+    "status": "PASS",
+    "scope": "New T01 literal software gates only, no model or N43 fixture.",
+    "tests_run": 11,
+    "malformed_state_or_operation_refusals": 42,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 0.2155971669999417,
+    "python": "3.12.7",
+    "sqlite": "3.54.0",
+    "model_calls": 0,
+    "tokenizer_calls": 0,
+    "executor_calls": 0,
+    "scorer_calls": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "torch_or_transformers_imported": false,
+    "source_freeze_sha256": "ec79d1bbf80a9dfdd54d9a71733a5d8eb013f1a91bee688ad271b5d098948c88",
+    "execution_sha256": "2ef99913797c039532ec29638bb62376ca029568bb5cfe2c74b754670d974ce5"
+  },
+  "preserved_new_regression": {
+    "utc": "2026-11-01T03:30:43.853956+00:00",
+    "status": "NEW_FINAL_TYPE_REGRESSION_FAILURE_PRESERVED",
+    "old_source_sha256": "fdf33b229b0e0e82ca00e1f843a2590fcf8ddf4a7de4155ed457567afac0f80e",
+    "first11host_checks_42refusals_remain_passed_closed": true,
+    "defect": "Final check uses Python dict equality without strict counter validation/canonical state identity. bool versionTrue equals integer1; bool optimizerFalse equals integer0. A synthetic malformed terminal was accepted as complete.",
+    "actual_malformed_final_state": {
+      "parameters": {
+        "literal.weight": {
+          "version": true
+        }
+      },
+      "literal": "SYNTHETIC ONLY"
+    },
+    "actual_malformed_final_counters": {
+      "forward_calls": 0,
+      "input_token_exposures": 0,
+      "manual_parameter_assignments": 0,
+      "activation_assignments": 0,
+      "new_generated_tokens": 0,
+      "backward_calls": 0,
+      "optimizer_steps": false
+    },
+    "model_or_scorer_calls": 0,
+    "optimizer_steps": 0,
+    "no_N43_assets_accessed": true
+  },
+  "minimal_final_guard_gate": {
+    "utc": "2026-11-01T03:31:49.835464+00:00",
+    "status": "PASS",
+    "new_checks": 3,
+    "literal_final_completion_positives": 2,
+    "new_strict_final_refusals": 10,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 0.07933254100498743,
+    "original11cases42refusals_not_rerun": true,
+    "all_model_tokenizer_executor_scorer_backward_optimizer_calls": 0,
+    "torch_or_transformers_imported": false
+  },
+  "original11gate_and_all_N43fixtures_not_rerun": true,
+  "current_source_sha256": "ffa7b534af1b43aad4bf882367e6dc1d5aa28b9f12baa43788e2d23b4c3ba011",
+  "state_origin_authentication_or_full_checkpoint_validation": false,
+  "independent_pretrained_replay": false
+}

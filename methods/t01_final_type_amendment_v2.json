@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-01T03:30:43.854472+00:00",
+  "before_v2_implementation_or_checks": true,
+  "change": "Only final complete-event validation: validate observed state structure, validate strict integer counter schema, and compare canonical JSON state digests instead of Python dict equality.",
+  "original_source_and_first_host_receipts_preserved": true,
+  "new_gate": "Two literal final-completion positives and targeted final bool/float/malformed counters/state/unavailable snapshot refusals. Do not repeat original11matrix or any N43gate.",
+  "optimizer_steps": 0
+}
