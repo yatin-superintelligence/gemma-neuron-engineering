@@ -1,0 +1,86 @@
+{
+  "registered_utc": "2026-11-02T00:15:08.931469+00:00",
+  "experiment": "N59",
+  "question_id": "Q74",
+  "title": "Complete registered native-layer extension with copied PLE slot and new KV producer",
+  "question": "Can a copied complete native KV-producing layer be integrated into an actual36-layer graph with exact silent identity, and does its own new KV improve bounded coding decisions over the same copy sharing existing KV?",
+  "motivation": "N56 validated outside copied-block composition, not a complete registered architecture. N58 whole-network deletion destroys bounded answer format and closes that lead. The new uncertainty is whether a fully supplied native layer, PLE input and own KV producer can form a coherent extended graph. Source14 is fixed by the original last actual KV producer boundary, not by outcomes. Known copying/Net2Net-style prior, not novelty.",
+  "prerequisite_source_review": "runs/native_layer_extension_feasibility_U27/source_review.json",
+  "cohort": "ALL24N48contexts/16coding8retention/all12families/bothanswerorders/exactprompts/tokenization/bindings. Reused development answer-choice screen. Original24choices and exact N50paired_order_swap group scores crosscheckedN48 carry HOSTONLY; no old reclassification or invented old per-case grades.",
+  "conditions": [
+    "original",
+    "new_native_KV_producer",
+    "shared_native_KV_control",
+    "silent_new_native_KV_producer"
+  ],
+  "fixed_target": "new_native_KV_producer",
+  "fixed_source_layer": 14,
+  "logical_added_layer_index": 35,
+  "physical_added_cache_index": 15,
+  "architecture": {
+    "native_forward": "Actual native TextModel.forward traverses registered36ModuleList before unchanged final RMS/head/softcap. Native decoder/attention/MLP forward functions remain unchanged; no final-output insertion hook.",
+    "base35": "All existing35block objects, base parameter bytes/versions and original15cache entries preserve their native computation. Temporary module/config references restore before durable commit. No base parameter/buffer value assignments.",
+    "PLE": "Keep actual original35slot embedding/projection calls and their original shapes; append one copied source14token-embedding slice and one copied source14model-projection output slice, then actual native scaling/reshape/PLE norm/composition. New PLE parameters are literal pretrained copies, nonaliasing, no fitting.",
+    "new_producer": "Complete copy of native layer14 including attention/QKV/FFN/PLE/norm/scalar. New decoder logical index35; native attention physical cache index15. Original15cache entries plus one native full-attention cache object. Existing shared-KV consumers retain original mapping because added computation follows all35base blocks.",
+    "shared_control": "Separate nonaliasing complete source14copy at logical35 uses the existing native full-attention shared KV and does not write the added cache slot. Same new PLE slot and native copy values. Extra K/V computations differ; no equal-compute claim. This control cannot become a posthoc winner.",
+    "silent": "Separate new-producer source14copy: literalzero only its three post-addition norm gamma Parameters; copied layer_scalar BUFFER literal1. All actual attention/FFN/PLE and new KV computation still execute. Original base and other copies untouched. Count all manual copied Parameter/buffer assignments, objects, elements, bytes and versions.",
+    "serialization_scope": "Custom deterministic compact architecture recipe/config explicitly names copied slots, logical/physical indices and required16-entry cache factory. Not stock HF AutoModel.from_pretrained/default generate or official36-layer-checkpoint compatibility. New independent recipe roundtrip required."
+  },
+  "decisions_and_cache_probe": {
+    "prefill": "72NEW edited full-vocabulary argmax decisions; classify ONLY these once after whole audit. Every condition/context remains, finite invalidA_B counts incorrect.",
+    "native_cached_reference": "After each of24exact native original first-source guards, consume its own actual first argmax in one NEWnative cached forward and record fullFP32/argmax/wholeKV/basehidden. This previously unmeasured native cached reference is not an original regrade.",
+    "edited_cached_probe": "If the edited first argmax is not nativeEOS1/106/50, consume that own actual argmax in exactlyone cached forward; record fullFP32/argmax/whole16-slot cache and actual added-layer operations. If EOS, stop and mark this diagnostic not applicable; never continue past EOS or force a future token.",
+    "counts": "These are fixed cache-engineering diagnostics, not complete response generation. Count72new first decisions,24new native cached argmax observations,Knew edited cached observations and24+Kactual own-choice consumed tokens separately. No generated program/text, hidden answer or forced future. K<=72 is observed, not known before outputs.",
+    "prefix_binding": "All edited prefill old35base output/old15KV must match native exactly. Cached oldbase comparisons to native cached reference are required only when the consumed token is identical. Otherwise preserve previous cache positions, actual own input and finite shape/growth evidence without claiming same-history equality or mediation.",
+    "silent_identity": "All24silent prefill and cached fullFP32/argmax/basehidden/projected-original15KV must equal native references exactly; the additional actual producer slot is separate and is not claimed equal to an absent native slot. Finite silent mismatch is a reported primaryFAIL, not a refusal. Base source/state/shape/nonfinite/counter failure censorswholepanel."
+  },
+  "state": "After EVERYedited condition including its applicable cached diagnostic, restore actual native35graph/config/embedding/projection references and run an actual native first-fullFP32/argmax/fullcache/h restoration plus state/hook/version/RNG/config/buffer/grad observations BEFOREdurablecommit. Actual initial/final metadata and copied-pool nonaliasing/source/version witnesses. Not independent allbaseparameterbyte/caller authentication.",
+  "primary": {
+    "silent_joint_all24_prefill_and_cached_identity_required": true,
+    "target_all_conjunctive": [
+      "preserve EVERY original-correct coding case",
+      "preserve EVERY original-correct retention case",
+      "at least2coding gains",
+      "coding gains across at least2families",
+      "at least2more correct coding than shared_native_KV_control"
+    ],
+    "no_posthoc_control_winner": true,
+    "finite_silent_FAIL": "Whole audited utility is descriptive only; no controlled success."
+  },
+  "grading": "Whole24/72complete +frozen source/structure/state/counter audit before72NEWliteral first-choice hostlabel comparisons. Original role/family/order scores exactcarry N50paired/N48, no old percase regrading. gains=newcorrect withletterdiffold;losses=carriednativecorrect-newcorrect+gains. No cached-probe correctness labels or N41programgrader. All conditions/roles/12families/orders/invalids/gains/losses retained.",
+  "expected_work": {
+    "root_forwards": "192+K (max264):96nativeprefillguards/restores+24newnativecached+72editedprefill+Keditedcached",
+    "input_exposures": "7*S+24+K=15914+K(max15986), S2270",
+    "new_complete_native_block_attention_FFN_PLE_evaluations": "72+K, actual callbacks required",
+    "new_KV_writes": "48+Kproducer, where Kproducer counts eligible probes in target+silent producer arms",
+    "native_sourceguards": 24,
+    "native_restoration_forwards": 72,
+    "new_first_label_comparisons": 72,
+    "new_native_cached_argmax_observations": 24,
+    "new_edited_cached_argmax_observations": "K",
+    "own_choice_tokens_consumed": "24+K",
+    "base_parameter_buffer_value_assignments": 0,
+    "manual_copied_control_Parameter_zero_assignments_global": 6,
+    "manual_copied_control_scalar_BUFFER_one_assignments_global": 2,
+    "backward_optimizer_updates": 0,
+    "free_program_response_generations": 0
+  },
+  "host_requirements": "NEWseed5917 FP32length53/BF16length59 native35graphs and independent explicit full36equations, all3conditions, own-input cached lifecycle and prefix/extraKV, fulltoybase/copy parameterbytes_versions_state/sourcecopy/nonaliasing, restoration. A separate NEWseed5923FP32length31 literal head-zero/EOS0 fixture verifies no postEOS cached continuation and compact recipe roundtrip. Actual counters only; max49randomroots if every first2context probe is nonEOS, observe actualtotal. Exactly1literaltoyheadzero initialization declared; random initialization writes are not optimizer updates. New auditor positive/finitecontrolFAIL/refusals/summarychecks, byteexact package import once with model/tokenizer constructors blocked. No old fixture/import/parser gates repeated.",
+  "no_training": "No optimizer/SFT/LoRA/RL/fittedvectors/signs/gains/bridges/alignments/gradientmask selection. Only prescribed native copying, module/config/cache-reference assignments, copiednorm literalzeros/copiedscalar1. Hiddenlabels/oracles/modelsolutions/grades stayHOSTONLY. N57blindpanel staysdeferred; no oldfailed donor/transpose/rms gate recovery.",
+  "resources": {
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1600,
+    "global_notebook_seconds": 1500,
+    "deadline_utc": "2026-11-02T10:30:50+00:00",
+    "deadline_margin_seconds": 120,
+    "reservation_GPU_hours": 1,
+    "reserve_GPU_hours": 2,
+    "raw_bytes_max": 67108864,
+    "hardware": "Two distinct physicalT4/fullBF16replicas,indexmod2caseownership/all3conditions fixedrotation,sequentialload/sharedtmpcache/barrier. Fresh official quota>=1+2reserve AND all79prior own jobs terminal before new launch. No job active now; no launch until all prerequisites/freeze/privacy/resourcePASS. DefaultPRIVATE datasetcreate only; explicitly forbid -u/--public flags."
+  },
+  "conditional_next": "Only silent identityPASS+ALLtargetutilityclausesPASS on completeaudit permits prospectivelyregistered complete-program followup of this EXACTcustomgraph/operator/allintendedcontrols, with new cases/oracles/resources before measurement. IfFAILcloselead/no promoting sharedcontrol or tuning source/layer/strength/cohort. Ifincomplete/refused preserve/censor/no reroll/recovery/weakening.",
+  "claim_boundary": "Reused answer-choice architecture screen and bounded own-choice cache diagnostic, not complete-program usefulness, knowledge/personality gain, individual meaning, fresh confirmation, mediation, speed, novelty or stock pretrained checkpoint serialization. No success inferred from setup or silent identity alone.",
+  "registration_state": "REGISTERED_BEFORE_IMPLEMENTATION_AND_MEASUREMENTS_UNLAUNCHED",
+  "edition": "Prospective registered design; historical registration state preserved. Dated runtime status separate; no N59 pretrained outcomes accessed."
+}

@@ -1,14 +1,19 @@
 {
-  "utc": "2026-11-01T23:39:53.906268+00:00",
-  "status": "yatinintelligence/digital-surgery-private-n58-branch-deletion has status \"KernelWorkerStatus.RUNNING\"",
+  "utc": "2026-11-02T00:00:31.597879+00:00",
+  "status": "complete_host_audited_closed_all6_PLE_utility_FAIL",
   "source_checkpoint": "f930aefa184aa3b8520c44b1679c10acb59b2d06",
   "server_notebook_JSON_exact": true,
   "current_private_GPU_notebook": true,
   "current_single_READY_private_replacement_dataset": true,
   "one_new_own_job_only": true,
-  "outcome": "Prospective only; no outputs, partials or live counters accessed. Whole-panel frozen audit required before 72 new literal comparisons.",
-  "planned_contexts": 24,
-  "planned_new_decisions": 72,
+  "outcome": "All24contexts/72newdecisions pass the complete frozen audit before72new literal labels. Every fixed PLE utility clause fails. All three deletions score0/16coding0/8retention;71invalidA/B and1validwrong across72. No full-program follow-up or posthoc control winner.",
+  "complete_contexts": 24,
+  "new_first_decision_records": 72,
+  "original_native_group_score_carries": 24,
+  "new_literal_choice_label_comparisons": 72,
+  "old_scorer_model_tokenizer_executor_calls": 0,
   "new_emitted_tokens": 0,
-  "optimizer_steps": 0
+  "optimizer_steps": 0,
+  "notebook_seconds": 239.289640986,
+  "not_charged_GPU_quota": true
 }

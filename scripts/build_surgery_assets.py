@@ -16,13 +16,13 @@ def page(title, body, script=''):
 SOURCES = {
     'Observe': ['research/experiments/n52/assay.py', 'interpretability/native_cache_branch.py', 'interpretability/native_capture.py', 'interpretability/native_timeline.py', 'interpretability/probe.py', 'interpretability/response_regions.py', 'interpretability/python_token_regions.py', 'scripts/export_native_trace.py'],
     'Patch activations': ['research/experiments/n58/assay.py', 'research/experiments/n51/assay.py', 'research/experiments/n50/assay.py', 'research/experiments/n48/assay.py', 'research/experiments/n49/assay.py', 'interpretability/signed_native_mask.py', 'interpretability/native_rms_factor_v2.py', 'interpretability/selector_site.py', 'interpretability/mlp_composition.py', 'research/experiments/n34/inference.py'],
-    'Reuse computation': ['research/experiments/n56/assay.py', 'interpretability/native_ffn_reuse_v2.py'],
+    'Reuse computation': ['research/experiments/n59/assay.py', 'research/experiments/n56/assay.py', 'interpretability/native_ffn_reuse_v2.py'],
     'Edit weights': ['research/experiments/n54/assay.py', 'interpretability/stored_neuron_gain.py', 'interpretability/stored_group_gain.py', 'interpretability/gated_mlp_surgery.py', 'interpretability/expansion.py'],
     'Edit connections': ['research/experiments/n57/generation.py', 'research/experiments/n53/assay.py', 'interpretability/memory_connection.py'],
     'Reconstruct': ['reproduce/model_edits.py'],
     'Evaluate': ['evaluation/native_readout_reporting.py', 'evaluation/native_sensitivity.py', 'evaluation/native_component_reporting.py', 'evaluation/answer_decisions.py', 'evaluation/signed_positions_reporting.py', 'evaluation/signed_mask_reporting.py', 'evaluation/normalization_figure_contract.py', 'evaluation/native_factorial_metrics.py', 'evaluation/paired_generation_metrics.py', 'evaluation/common_history_trace.py', 'evaluation/program_structure.py'],
     'Generate and resume': ['research/experiments/n55/generation.py', 'research/experiments/n47/generation.py', 'interpretability/native_eos_generation.py'],
-    'Record evidence': ['evaluation/durable_zip.py', 'interpretability/durable_measurement_journal_v2.py'],
+    'Record evidence': ['research/experiments/n59/cache_observation.py', 'evaluation/durable_zip.py', 'interpretability/durable_measurement_journal_v2.py'],
 }
 
 
@@ -36,8 +36,12 @@ def toolkit(dest):
             digest = hashlib.sha256(source.encode()).hexdigest()
             title = ast.get_docstring(tree) or name
             guide = ''
+            if name == 'research/experiments/n59/assay.py':
+                title += ' New independent FP32/BF16 full-stack and own-choice cached references, silent identity, EOS stopping and compact recipe checks pass on random weights. The private pretrained panel remains prospective. Preserve the original 35 native blocks and append one complete source14 copy with a copied PLE slot and logical35/physical15 KV producer. Shared-KV and silent controls are fixed. All copied Parameter and buffer assignments are counted; base values remain unchanged. This custom recipe is not stock HF checkpoint or default generation compatibility, fresh confirmation or useful coding gain.'
+            if name == 'research/experiments/n59/cache_observation.py':
+                title += ' Read-only root observers persist both compared surviving-prefix hashes, layouts and bytes, actual own input and before/after whole-cache bindings. No tensor, output or cache value is assigned. Literal cache checks pass; this does not authenticate caller observations or all pretrained parameter bytes.'
             if name == 'research/experiments/n58/assay.py':
-                title += ' New independent FP32 and BF16 explicit 35-layer references pass. Return literal zeros at every native PLE, attention or FFN addition norm across all layers and input positions. Normal component computations still execute; edited KV may change. The fixed PLE target cannot be replaced by a posthoc winning control. Native source, restoration and state guards remain required. Prospective pretrained study only; no outcomes accessed. No fitted mask, parameter update or useful coding gain.'
+                title += ' New independent FP32 and BF16 explicit 35-layer references pass. Return literal zeros at every native PLE, attention or FFN addition norm across all layers and input positions. Normal component computations still execute; edited KV may change. The fixed PLE target cannot be replaced by a posthoc winning control. Native source, restoration and state guards remain required. The complete pretrained panel passes its frozen engineering audit but all six fixed PLE utility clauses fail. Every component deletion scores 0/16 coding and 0/8 retention; 71 choices are invalid A/B and one is valid but wrong. No full-program benefit, semantic role or posthoc control winner is established. No fitted mask or parameter update.'
             if name == 'research/experiments/n57/generation.py':
                 title += ' The complete pretrained panel passes its frozen engineering audit but fails target utility: coding 55/64 native, 52/64 subtractive and 54/64 additive; retention 17/32, 15/32 and 17/32. The fixed block14 state connects to the existing head through native final RMS with unit subtraction or addition. Native-head replay is exact before each accepted branch, with native-support-constrained choices. No learned lens, bridge or strength, exact DoLa reproduction or useful coding gain. Addition remains the control. The original source is preserved unchanged.'
             if name == 'evaluation/native_readout_reporting.py':

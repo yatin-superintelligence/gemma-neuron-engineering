@@ -1,0 +1,195 @@
+{
+  "utc": "2026-11-02T00:03:54.907381+00:00",
+  "status": "CLOSED_COMPLETE_AUDIT_PASS_FIXED_PLE_TARGET_ALL6CLAUSES_FAIL",
+  "aggregate_sha256": "9864ccc67c5fa37965785ba1f6dd8ba0bcb6b8d1c85060506e1fded32cade1d1",
+  "all_conditions": {
+    "original": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 16,
+        "correct": 8,
+        "full_FP32_changes": 0,
+        "gains": 0,
+        "losses": 0,
+        "native_choice_preserved": 16,
+        "valid_A_B": 16,
+        "whole_KV_changes": 0
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 8,
+        "correct": 8,
+        "full_FP32_changes": 0,
+        "gains": 0,
+        "losses": 0,
+        "native_choice_preserved": 8,
+        "valid_A_B": 8,
+        "whole_KV_changes": 0
+      }
+    },
+    "remove_FFN_additions": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 12.875,
+          "mean": 1.5703125,
+          "min": -5.09375
+        },
+        "contexts": 16,
+        "correct": 0,
+        "full_FP32_changes": 16,
+        "gains": 0,
+        "losses": 8,
+        "native_choice_preserved": 0,
+        "valid_A_B": 0,
+        "whole_KV_changes": 16
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 35.5,
+          "mean": 4.55517578125,
+          "min": -29.375
+        },
+        "contexts": 8,
+        "correct": 0,
+        "full_FP32_changes": 8,
+        "gains": 0,
+        "losses": 8,
+        "native_choice_preserved": 0,
+        "valid_A_B": 1,
+        "whole_KV_changes": 8
+      }
+    },
+    "remove_PLE_additions": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 6.1875,
+          "mean": -2.9921875,
+          "min": -11.15625
+        },
+        "contexts": 16,
+        "correct": 0,
+        "full_FP32_changes": 16,
+        "gains": 0,
+        "losses": 8,
+        "native_choice_preserved": 0,
+        "valid_A_B": 0,
+        "whole_KV_changes": 16
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 33.21875,
+          "mean": 3.32470703125,
+          "min": -32.0
+        },
+        "contexts": 8,
+        "correct": 0,
+        "full_FP32_changes": 8,
+        "gains": 0,
+        "losses": 8,
+        "native_choice_preserved": 0,
+        "valid_A_B": 0,
+        "whole_KV_changes": 8
+      }
+    },
+    "remove_attention_additions": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 7.59375,
+          "mean": -3.265625,
+          "min": -9.875
+        },
+        "contexts": 16,
+        "correct": 0,
+        "full_FP32_changes": 16,
+        "gains": 0,
+        "losses": 8,
+        "native_choice_preserved": 0,
+        "valid_A_B": 0,
+        "whole_KV_changes": 16
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 32.34375,
+          "mean": 1.76611328125,
+          "min": -32.71875
+        },
+        "contexts": 8,
+        "correct": 0,
+        "full_FP32_changes": 8,
+        "gains": 0,
+        "losses": 8,
+        "native_choice_preserved": 0,
+        "valid_A_B": 0,
+        "whole_KV_changes": 8
+      }
+    }
+  },
+  "primary": {
+    "clauses": {
+      "beats_FFN_deletion_by_at_least2": false,
+      "beats_attention_deletion_by_at_least2": false,
+      "coding_gains_at_least2": false,
+      "gains_span_at_least2families": false,
+      "preserve_every_original_correct_coding": false,
+      "preserve_every_original_correct_retention": false
+    },
+    "gain_families": [],
+    "passed": false,
+    "posthoc_other_branch_winner_allowed": false,
+    "scope": "Reused development answer-choice screen, not full-program improvement/meaning/mediation/speed/freshconfirmation.",
+    "target": "remove_PLE_additions"
+  },
+  "conclusion": "All three full-network branch deletions score0/16coding and0/8retention, versus native8/16and8/8. Each has0gains8codinglosses8retentionlosses. PLE and attention deletion each have0/24canonical A/B choices; FFN deletion has1/24canonical A/B choice, which is wrong. All six fixed PLE utility clauses fail. No comparator is promoted.",
+  "scope": "All24contexts/all12families/bothorders/all35native layers/allprefillpositions. This is bounded answer-format failure, not complete-program accuracy or a semantic error classification. Components are not count/energy matched; broad disruption does not identify an individual neuron meaning or a selective coding role.",
+  "actual_counters": {
+    "activation_tensor_assignments": 2520,
+    "backward_calls": 0,
+    "base_buffer_assignments": 0,
+    "base_parameter_assignments": 0,
+    "calls": 168,
+    "extra_FFN_evaluations": 0,
+    "extra_PLE_evaluations": 0,
+    "extra_attention_evaluations": 0,
+    "input_token_exposures": 15890,
+    "literal_zero_tensor_attempts": 2520,
+    "native_path_observations": 2520,
+    "native_restoration_forwards": 72,
+    "native_sourceguards": 24,
+    "new_emitted_tokens": 0,
+    "norm_zero_callbacks": 2520,
+    "old_candidate_regrading_calls": 0,
+    "optimizer_steps": 0,
+    "zero_assigned_bytes": 732211200,
+    "zero_assigned_elements": 366105600
+  },
+  "literal_comparisons": {
+    "new_arm_context_labels": 72,
+    "old_native_choice_reclassifications": 0,
+    "old_program_scorer_model_tokenizer_executor_calls": 0,
+    "original24_aggregate_group_scores_carried": true
+  },
+  "actual_all72_edited_full_FP32_and_whole_KV_changed": true,
+  "all24_native_sourceguards_and72_restorations_pass": true,
+  "state_witness_limit": "Actual state/hook/version/RNG/config/buffer/grad/cache observations, not independent allbaseparameterbyte/caller authentication.",
+  "notebook_seconds": 239.289640986,
+  "duration_is_charged_quota": false,
+  "next": "Close the fixed PLE-deletion utility lead and do not force complete-program follow-up, promote another deleted component or search layers/scopes/strengths. Review a distinct architecture-construction uncertainty: the earlier N56 outside copied blocks did not validate a complete inserted native layer with its own PLE slot and KV producer/cache lifecycle. Metadata/source feasibility only before any new protocol or model work.",
+  "actual_outcomes_public_at_closure": false,
+  "edition": "Dated complete-audit interpretation. The closure-time publication flag records historical availability only."
+}

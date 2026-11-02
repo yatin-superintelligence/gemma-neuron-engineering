@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-02T00:55:03.039337+00:00",
+  "status": "yatinintelligence/digital-surgery-private-n59-native-extension has status \"KernelWorkerStatus.RUNNING\"",
+  "source_checkpoint": "6976b6fb1bb6d55ea1bd254dd0e27fb2313bbb59",
+  "private_GPU_server_notebook_JSON_exact": true,
+  "single_DEFAULTPRIVATE_READY_dataset_downloaded_payload_SHA_exact": true,
+  "one_and_only_one_new_own_job": true,
+  "all79_prior_own_project_jobs_terminal_metadata_unchanged": true,
+  "scope": "Prospective pretrained architecture screen only; no output, partial or live counter accessed. No actual utility outcome available before complete frozen audit. Custom native recipe is not stock HF checkpoint/default generation compatibility.",
+  "planned_contexts": 24,
+  "planned_new_first_decision_records": 72,
+  "native_first_choice_group_score_carries": 24,
+  "new_native_cached_argmax_observations_planned": 24,
+  "new_edited_cached_argmax_observations": "K conditional on actual nonEOS first choices, at most72",
+  "own_choice_tokens_consumed": "24+K, actual counts unknown until outputs",
+  "free_program_response_generations": 0,
+  "base_parameter_buffer_VALUE_assignments": 0,
+  "manual_copied_Parameter_zero_assignments_planned_global": 6,
+  "manual_copied_buffer_one_assignments_planned_global": 2,
+  "optimizer_steps": 0
+}

@@ -1,0 +1,61 @@
+{
+  "registered_utc": "2026-11-02T00:34:05.164102+00:00",
+  "protocol_sha256": "f06b9fa7b0e6850329b3932ac7b9e47b1f7d73e7927910c2bef81e5f5eb53289",
+  "before_new_implementation_or_models": true,
+  "contexts": [
+    {
+      "seed": 5917,
+      "dtype": "float32",
+      "length": 53,
+      "EOS": [
+        1,
+        50,
+        63
+      ]
+    },
+    {
+      "seed": 5917,
+      "dtype": "bfloat16",
+      "length": 59,
+      "EOS": [
+        1,
+        50,
+        63
+      ]
+    },
+    {
+      "seed": 5923,
+      "dtype": "float32",
+      "length": 31,
+      "EOS": [
+        0
+      ],
+      "literal_toy_head_zero_initializations": 1
+    }
+  ],
+  "toy_dimensions": {
+    "vocab": 64,
+    "hidden": 24,
+    "FFN": 32,
+    "layers": 35,
+    "PLE": 4,
+    "head_dim": 8,
+    "heads": 3,
+    "KV_heads": 1,
+    "shared_layers": 20,
+    "sliding_window": 16,
+    "max_positions": 128
+  },
+  "input_ids": "arange(length)%57+3; no effects-based reselection",
+  "independent_reference": "Separate native model deepcopy before production pool; explicit embedding/PLE/35or36decoder/RMS/head/softcap/attention/cache equations. No productionGraph.install, PLEwrappers, decoder.forward or TextModel.forward. Native rotary/mask utilities and native eager attention primitive permitted, fixed eager backend for both. Separate reference copied weights built directly from native source14, not productionpool.",
+  "checks": [
+    "Exact rawdtype/fullFP32/argmax/wholecache against independentreference for nativeprefill/cached and ALL3editedprefill/eligiblecached",
+    "Old35basehidden and projected15KV exactnative for prefill and cached same consumed token",
+    "Extra actualproducer15prefill/cachedKVfinitegrowth and expectedshared empty slot",
+    "Fulltoy base/copy parameterbytes_versions_state and nonaliasing, original configs/modules restored before fresh nativefirst after each arm",
+    "One literal toyheadzero EOS0 setup, no postEOS probes; compactrecipe JSON roundtrip into separate copied slots/block references without extra forwards"
+  ],
+  "max_full_random_roots_if_main_all_nonEOS": 49,
+  "actual_root_counts": "Observe actual attempted fullstackroots/exposures; main production=7+eligibleNative+K, independent=4+eligibleNative+K; EOS production7/reference4. No oldfixture repeats.",
+  "failure_policy": "Exclusive fresh result directory; freeze before models; preserve firstfailure with counters. Do not rerun passed contexts or source unchanged."
+}

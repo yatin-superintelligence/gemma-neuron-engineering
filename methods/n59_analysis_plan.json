@@ -1,0 +1,23 @@
+{
+  "registered_utc": "2026-11-02T00:34:05.164102+00:00",
+  "experiment": "N59",
+  "protocol_sha256": "f06b9fa7b0e6850329b3932ac7b9e47b1f7d73e7927910c2bef81e5f5eb53289",
+  "before_new_implementation_or_models": true,
+  "all_conditions": [
+    "new_native_KV_producer",
+    "shared_native_KV_control",
+    "silent_new_native_KV_producer"
+  ],
+  "condition_rotation": "(row_index//2)%3; ALL3 per case; indexmod2 owner",
+  "cohort": "All24 originalN48; native choices/group scores HOSTcarries only; no old native classifications",
+  "acceptance": "Whole24/72 structurally complete/source/state/counters PASS before72new first-label comparisons. Native24 own-choice cached references and Keligible edited probes are ungraded. Finite silent mismatch accepted primaryFAIL. No partial effects.",
+  "native_source": "Pinned actual TextModel/Decoder/Attention/MLP/head forwards remain unchanged; appended registered layer and split packed PLE modules use copies; original GEMM dimensions unchanged.",
+  "native_cached_eos": "Actual recipient native24first choices are A/B nonEOS. Host native reference EOS fixture0 stops native and edited probes; science requires all24native probes.",
+  "cache_observation": "Actual native compact15+one DynamicLayer; instrument added DynamicLayer.update with a bound observer calling saved unchanged native update exactlyonce. Cache assignments and attempts separately counted. Surviving previous prefix checked with documented native sliding trimming; original15comparison only identical own history.",
+  "counter_policy": "All actual root attempts/exposures, added block/attention/FFN/PLE callbacks, added KV update attempts, copied objects/bytes/elements/manualvalues and temporary reference assignments recorded, including failure. Formula crosschecks conditional on observedK.",
+  "silent_criterion": "All24prefill ANDeligiblecached fullFP32/argmax/basehidden/original15KV identity; if silentEOS but native notEOS cachedidentityFalse without postEOScontinuation.",
+  "grading": "Only72NEWprefill label comparisons after full engineering audit. Carry exactN50paired/N48 group scores; gains=newcorrect+letterdiff; losses=nativecorrect-newcorrect+gains; Utility is exact5clauses in protocol plus separate silent conjunction.",
+  "no_new_model_or_measurements_yet": true,
+  "publication": "Reviewed generic source/aggregate only; allrawprompts/IDs/labels/outputs/caches private",
+  "resources": "Exact registered caps unchanged; no launch before all gates/freeze/privacy/resources"
+}

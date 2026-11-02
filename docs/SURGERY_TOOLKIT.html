@@ -655,7 +655,7 @@ def main():
 
 if __name__ == &#x27;__main__&#x27;:
     main()
-</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>assay</h2><p>Literal full-context native branch deletion, with actual source restoration. New independent FP32 and BF16 explicit 35-layer references pass. Return literal zeros at every native PLE, attention or FFN addition norm across all layers and input positions. Normal component computations still execute; edited KV may change. The fixed PLE target cannot be replaced by a posthoc winning control. Native source, restoration and state guards remain required. Prospective pretrained study only; no outcomes accessed. No fitted mask, parameter update or useful coding gain.</p><p><a href="../research/experiments/n58/assay.py">Exact source file</a></p><p class="small">APIs: sites, tensor_record, observe_paths, zero_path, native, order, one_case</p><p class="hash">SHA-256 f0ed96cb50336d3c49d87ade4247df801580bfc0509419cf2457424ada6761a9</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Literal full-context native branch deletion, with actual source restoration.&quot;&quot;&quot;
+</pre></details></article><article class="card tool" data-category="Patch activations"><span class="tag">Patch activations</span><h2>assay</h2><p>Literal full-context native branch deletion, with actual source restoration. New independent FP32 and BF16 explicit 35-layer references pass. Return literal zeros at every native PLE, attention or FFN addition norm across all layers and input positions. Normal component computations still execute; edited KV may change. The fixed PLE target cannot be replaced by a posthoc winning control. Native source, restoration and state guards remain required. The complete pretrained panel passes its frozen engineering audit but all six fixed PLE utility clauses fail. Every component deletion scores 0/16 coding and 0/8 retention; 71 choices are invalid A/B and one is valid but wrong. No full-program benefit, semantic role or posthoc control winner is established. No fitted mask or parameter update.</p><p><a href="../research/experiments/n58/assay.py">Exact source file</a></p><p class="small">APIs: sites, tensor_record, observe_paths, zero_path, native, order, one_case</p><p class="hash">SHA-256 f0ed96cb50336d3c49d87ade4247df801580bfc0509419cf2457424ada6761a9</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Literal full-context native branch deletion, with actual source restoration.&quot;&quot;&quot;
 from contextlib import contextmanager
 import hashlib
 import inspect
@@ -1916,6 +1916,495 @@ def resolved_contract(model):
         k: v for k, v in contract.items() if k != &quot;max_new_tokens&quot;
     }
     return {**actual, &quot;stop_strings&quot;: [&quot;\n&quot;], &quot;manual_full_vocabulary&quot;: True}
+</pre></details></article><article class="card tool" data-category="Reuse computation"><span class="tag">Reuse computation</span><h2>assay</h2><p>Registered36 native graph, split native PLE copies and compact physical KV. New independent FP32/BF16 full-stack and own-choice cached references, silent identity, EOS stopping and compact recipe checks pass on random weights. The private pretrained panel remains prospective. Preserve the original 35 native blocks and append one complete source14 copy with a copied PLE slot and logical35/physical15 KV producer. Shared-KV and silent controls are fixed. All copied Parameter and buffer assignments are counted; base values remain unchanged. This custom recipe is not stock HF checkpoint or default generation compatibility, fresh confirmation or useful coding gain.</p><p><a href="../research/experiments/n59/assay.py">Exact source file</a></p><p class="small">APIs: tensor_record, module_state, native_architecture, AppendedEmbedding, AppendedProjection, compact_recipe, ExtensionPool, projected_cache, cache_retained_prefix, validate_growth, forward_record, source_check, order, one_case</p><p class="hash">SHA-256 65a85771d9830f13059a7f93f69531a01ca264cf5dff56910d53445015c31df7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Registered36 native graph, split native PLE copies and compact physical KV.&quot;&quot;&quot;
+from contextlib import contextmanager
+import copy
+import hashlib
+import inspect
+import types
+
+import torch
+from torch import nn
+from torch.nn import functional as F
+from transformers.cache_utils import DynamicCache, DynamicLayer
+from transformers.models.gemma4.modeling_gemma4 import (
+    Gemma4TextModel, Gemma4TextDecoderLayer, Gemma4TextAttention, Gemma4TextMLP)
+
+from interpretability.signed_native_mask import MODULE_SHA
+from interpretability.cache_proofs import check_cache
+from research.experiments.n19.trajectory import cache_witness
+from research.experiments.n35.core import tensor_sha, stable, snapshot
+from research.experiments.n48.assay import choice_metrics
+
+CONDITIONS = (&#x27;new_native_KV_producer&#x27;, &#x27;shared_native_KV_control&#x27;,
+              &#x27;silent_new_native_KV_producer&#x27;)
+FORWARDS = {c: c.forward for c in
+            (Gemma4TextModel, Gemma4TextDecoderLayer, Gemma4TextAttention, Gemma4TextMLP)}
+OPERATIONS = (
+    &#x27;native_sourceguards&#x27;, &#x27;native_cached_argmax_observations&#x27;,
+    &#x27;native_restoration_forwards&#x27;, &#x27;edited_first_argmax_observations&#x27;,
+    &#x27;edited_cached_argmax_observations&#x27;, &#x27;own_choice_tokens_consumed&#x27;,
+    &#x27;extra_full_block_evaluations&#x27;, &#x27;extra_attention_evaluations&#x27;,
+    &#x27;extra_FFN_evaluations&#x27;, &#x27;extra_PLE_evaluations&#x27;, &#x27;new_KV_update_attempts&#x27;,
+    &#x27;block_copy_constructions&#x27;, &#x27;copied_parameter_objects&#x27;, &#x27;copied_parameter_elements&#x27;,
+    &#x27;copied_parameter_bytes&#x27;, &#x27;copied_buffer_objects&#x27;, &#x27;copied_buffer_elements&#x27;,
+    &#x27;copied_buffer_bytes&#x27;, &#x27;manual_copied_parameter_zero_assignments&#x27;,
+    &#x27;manual_copied_buffer_one_assignments&#x27;, &#x27;copied_attribute_assignments&#x27;,
+    &#x27;temporary_module_reference_assignments&#x27;, &#x27;temporary_config_reference_assignments&#x27;,
+    &#x27;cache_layer_appends&#x27;, &#x27;cache_update_observer_reference_assignments&#x27;,
+    &#x27;prepared_module_reference_bindings&#x27;, &#x27;top_config_object_copies&#x27;,
+    &#x27;new_text_config_value_assignments&#x27;,
+    &#x27;old_PLE_embedding_calls&#x27;, &#x27;new_PLE_embedding_calls&#x27;,
+    &#x27;old_PLE_projection_calls&#x27;, &#x27;new_PLE_projection_calls&#x27;)
+
+
+def tensor_record(t):
+    if not isinstance(t, torch.Tensor) or t.requires_grad or not torch.isfinite(t).all():
+        raise ValueError(&#x27;Actual finite detached tensor required&#x27;)
+    return {&#x27;sha256&#x27;: tensor_sha(t), &#x27;shape&#x27;: list(t.shape), &#x27;dtype&#x27;: str(t.dtype)}
+
+
+def module_state(module):
+    return {kind: {n: {**tensor_record(p), &#x27;version&#x27;: p._version,
+                      &#x27;requires_grad&#x27;: p.requires_grad, &#x27;grad_absent&#x27;: p.grad is None}
+                   for n, p in iterator()}
+            for kind, iterator in [(&#x27;parameters&#x27;, module.named_parameters),
+                                   (&#x27;buffers&#x27;, module.named_buffers)]}
+
+
+def native_architecture(model):
+    text = model.model.language_model
+    cfg = model.config.text_config
+    if (type(text) is not Gemma4TextModel or len(text.layers) != 35
+            or cfg.num_hidden_layers != 35 or cfg.num_kv_shared_layers != 20
+            or not cfg.hidden_size_per_layer_input):
+        raise ValueError(&#x27;Exact original35 native graph required&#x27;)
+    with open(inspect.getsourcefile(Gemma4TextModel), &#x27;rb&#x27;) as stream:
+        if hashlib.sha256(stream.read()).hexdigest() != MODULE_SHA:
+            raise ValueError(&#x27;Pinned native module required&#x27;)
+    for c, fn in FORWARDS.items():
+        if c.forward is not fn:
+            raise ValueError(&#x27;Native forward function changed&#x27;)
+    for i, block in enumerate(text.layers):
+        if (type(block) is not Gemma4TextDecoderLayer or block.layer_idx != i
+                or type(block.self_attn) is not Gemma4TextAttention
+                or type(block.mlp) is not Gemma4TextMLP or block.enable_moe_block
+                or any(&#x27;forward&#x27; in m.__dict__ for m in (block, block.mlp, block.self_attn))):
+            raise ValueError(&#x27;Actual native decoder membership required&#x27;)
+    source = text.layers[14]
+    if (source.self_attn.is_kv_shared_layer or not source.self_attn.store_full_length_kv
+            or source.self_attn.layer_type != &#x27;full_attention&#x27;
+            or source.mlp.intermediate_size != cfg.intermediate_size):
+        raise ValueError(&#x27;Architecture-fixed final native producer14 required&#x27;)
+    return text
+
+
+class AppendedEmbedding(nn.Module):
+    &quot;&quot;&quot;Preserve the actual original embedding call and append one native slice.&quot;&quot;&quot;
+    def __init__(self, original, slot_weight, count):
+        super().__init__()
+        self.original = original
+        self.slot_weight = nn.Parameter(slot_weight.detach().clone(), requires_grad=False)
+        self.register_buffer(&#x27;slot_scale&#x27;, original.embed_scale.detach().clone(), persistent=False)
+        self.count = count
+
+    def forward(self, ids):
+        self.count(&#x27;old_PLE_embedding_calls&#x27;)
+        old = self.original(ids)
+        self.count(&#x27;new_PLE_embedding_calls&#x27;)
+        new = F.embedding(ids, self.slot_weight, self.original.padding_idx,
+                          self.original.max_norm, self.original.norm_type,
+                          self.original.scale_grad_by_freq, self.original.sparse)
+        new = new * self.slot_scale.to(self.slot_weight.dtype)
+        return torch.cat((old, new), dim=-1)
+
+
+class AppendedProjection(nn.Module):
+    def __init__(self, original, slot_weight, count):
+        super().__init__()
+        self.original = original
+        self.slot_weight = nn.Parameter(slot_weight.detach().clone(), requires_grad=False)
+        self.count = count
+
+    def forward(self, hidden):
+        self.count(&#x27;old_PLE_projection_calls&#x27;)
+        old = self.original(hidden)
+        self.count(&#x27;new_PLE_projection_calls&#x27;)
+        return torch.cat((old, F.linear(hidden, self.slot_weight)), dim=-1)
+
+
+def compact_recipe(config):
+    return {&#x27;format&#x27;: &#x27;digital_surgery_native_extension_v1&#x27;, &#x27;base_layers&#x27;: 35,
+            &#x27;source_layer&#x27;: 14, &#x27;logical_added_layer&#x27;: 35, &#x27;physical_added_cache&#x27;: 15,
+            &#x27;cache_slots&#x27;: 16, &#x27;extra_cache_class&#x27;: &#x27;DynamicLayer&#x27;,
+            &#x27;PLE_slot_source&#x27;: 14, &#x27;PLE_width&#x27;: config.hidden_size_per_layer_input,
+            &#x27;preserve_old_embedding_projection_shapes&#x27;: True,
+            &#x27;producer_override&#x27;: {&#x27;new_native_KV_producer&#x27;: False,
+                &#x27;shared_native_KV_control&#x27;: True, &#x27;silent_new_native_KV_producer&#x27;: False},
+            &#x27;silent&#x27;: {&#x27;post_norm_gamma&#x27;: 0, &#x27;layer_scalar_buffer&#x27;: 1},
+            &#x27;stock_AutoModel_or_default_generate_compatible&#x27;: False}
+
+
+class ExtensionPool:
+    &quot;&quot;&quot;Prepared native copies live outside base registration until installed.&quot;&quot;&quot;
+    def __init__(self, model, count, recipe=None):
+        text = native_architecture(model)
+        self.model, self.text, self.count = model, text, count
+        self.base_layers = text.layers
+        self.base_embedding, self.base_projection = text.embed_tokens_per_layer, text.per_layer_model_projection
+        self.base_configs = (model.config, model.model.config, text.config)
+        self.base_ids = {n: id(p) for n, p in model.named_parameters()}
+        self.base_module_ids = {n: id(m) for n, m in model.named_modules()}
+        self.recipe = compact_recipe(text.config)
+        if recipe is not None and recipe != self.recipe:
+            raise ValueError(&#x27;Exact registered compact recipe required&#x27;)
+        self.clones, self.handles = {}, []
+        self.source = text.layers[14]
+        self.native_source_state = module_state(self.source)
+        for condition in CONDITIONS:
+            count(&#x27;block_copy_constructions&#x27;)
+            clone = copy.deepcopy(self.source).eval().requires_grad_(False)
+            if module_state(clone) != self.native_source_state:
+                # deepcopy retains values and tensor versions for parameters; buffers can reset
+                # their version. Require byte/value structure, not assumed version equivalence.
+                for kind in (&#x27;parameters&#x27;, &#x27;buffers&#x27;):
+                    for name, actual in module_state(clone)[kind].items():
+                        if any(actual[k] != self.native_source_state[kind][name][k]
+                               for k in (&#x27;sha256&#x27;, &#x27;shape&#x27;, &#x27;dtype&#x27;, &#x27;requires_grad&#x27;, &#x27;grad_absent&#x27;)):
+                            raise ValueError(&#x27;Native source copy changed values&#x27;)
+            clone.layer_idx = 35
+            clone.self_attn.layer_idx = 15
+            clone.self_attn.is_kv_shared_layer = condition == &#x27;shared_native_KV_control&#x27;
+            clone.self_attn.store_full_length_kv = condition != &#x27;shared_native_KV_control&#x27;
+            count(&#x27;copied_attribute_assignments&#x27;, 4)
+            if condition == &#x27;silent_new_native_KV_producer&#x27;:
+                with torch.no_grad():
+                    for name in (&#x27;post_attention_layernorm&#x27;, &#x27;post_feedforward_layernorm&#x27;,
+                                 &#x27;post_per_layer_input_norm&#x27;):
+                        count(&#x27;manual_copied_parameter_zero_assignments&#x27;)
+                        getattr(clone, name).weight.zero_()
+                    count(&#x27;manual_copied_buffer_one_assignments&#x27;)
+                    clone.layer_scalar.fill_(1)
+            self.clones[condition] = clone
+            for module, name in ((clone, &#x27;extra_full_block_evaluations&#x27;),
+                    (clone.self_attn, &#x27;extra_attention_evaluations&#x27;),
+                    (clone.mlp, &#x27;extra_FFN_evaluations&#x27;),
+                    (clone.per_layer_projection, &#x27;extra_PLE_evaluations&#x27;)):
+                self.handles.append(module.register_forward_pre_hook(
+                    lambda module, args, name=name: count(name)))
+        width = text.config.hidden_size_per_layer_input
+        self.embedding = AppendedEmbedding(self.base_embedding,
+            self.base_embedding.weight[:, 14*width:15*width], count).eval()
+        self.projection = AppendedProjection(self.base_projection,
+            self.base_projection.weight[14*width:15*width, :], count).eval()
+        if (tensor_sha(self.embedding.slot_weight) != tensor_sha(self.base_embedding.weight[:, 14*width:15*width])
+                or tensor_sha(self.projection.slot_weight) != tensor_sha(self.base_projection.weight[14*width:15*width])
+                or tensor_sha(self.embedding.slot_scale) != tensor_sha(self.base_embedding.embed_scale)):
+            raise ValueError(&#x27;Exact native PLE slice and scale copies required&#x27;)
+        count(&#x27;prepared_module_reference_bindings&#x27;, 2)
+        self.outer_config = copy.deepcopy(model.config)
+        count(&#x27;top_config_object_copies&#x27;)
+        cfg = self.outer_config.text_config
+        cfg.num_hidden_layers = 36
+        cfg.num_kv_shared_layers = 21
+        cfg.layer_types = list(cfg.layer_types)+[&#x27;full_attention&#x27;]
+        cfg.digital_surgery_native_extension = copy.deepcopy(self.recipe)
+        count(&#x27;new_text_config_value_assignments&#x27;, 4)
+        self.extended_config = cfg
+        self.extended_lists = {c: nn.ModuleList([*self.base_layers, self.clones[c]]).eval()
+                               for c in CONDITIONS}
+        for graph in self.extended_lists.values():
+            count(&#x27;prepared_module_reference_bindings&#x27;, len(graph))
+        copied = list(self.copied_parameters())
+        buffers = list(self.copied_buffers())
+        base_storages = {p.untyped_storage().data_ptr() for p in model.parameters()}
+        ptrs = [p.untyped_storage().data_ptr() for _, p in copied]
+        if len(set(ptrs)) != len(ptrs) or set(ptrs) &amp; base_storages:
+            raise ValueError(&#x27;Native copies must be nonaliasing&#x27;)
+        buffer_ptrs = [p.untyped_storage().data_ptr() for _, p in buffers]
+        if (len(set(buffer_ptrs)) != len(buffer_ptrs)
+                or set(buffer_ptrs) &amp; {p.untyped_storage().data_ptr() for p in model.buffers()}):
+            raise ValueError(&#x27;Native copied buffers must be nonaliasing&#x27;)
+        for _, p in copied:
+            for key, amount in ((&#x27;copied_parameter_objects&#x27;, 1),
+                    (&#x27;copied_parameter_elements&#x27;, p.numel()),
+                    (&#x27;copied_parameter_bytes&#x27;, p.numel()*p.element_size())):
+                count(key, amount)
+        for _, p in buffers:
+            count(&#x27;copied_buffer_objects&#x27;)
+            count(&#x27;copied_buffer_elements&#x27;, p.numel())
+            count(&#x27;copied_buffer_bytes&#x27;, p.numel()*p.element_size())
+        self.initial = self.witness()
+        self.check()
+
+    def copied_parameters(self):
+        for condition, clone in self.clones.items():
+            for name, p in clone.named_parameters():
+                yield condition+&#x27;.&#x27;+name, p
+        yield &#x27;PLE_embedding.slot_weight&#x27;, self.embedding.slot_weight
+        yield &#x27;PLE_projection.slot_weight&#x27;, self.projection.slot_weight
+
+    def copied_buffers(self):
+        for condition, clone in self.clones.items():
+            for name, p in clone.named_buffers():
+                yield condition+&#x27;.&#x27;+name, p
+        yield &#x27;PLE_embedding.slot_scale&#x27;, self.embedding.slot_scale
+
+    def witness(self):
+        return {&#x27;native_source&#x27;: module_state(self.source),
+                &#x27;copies&#x27;: {c: module_state(v) for c, v in self.clones.items()},
+                &#x27;clone_architecture&#x27;: {c: {&#x27;logical_index&#x27;: v.layer_idx,
+                    &#x27;physical_cache_index&#x27;: v.self_attn.layer_idx,
+                    &#x27;is_KV_shared&#x27;: v.self_attn.is_kv_shared_layer,
+                    &#x27;store_full_length_KV&#x27;: v.self_attn.store_full_length_kv,
+                    &#x27;native_source_config_sha256&#x27;: stable(v.config.to_dict())}
+                    for c, v in self.clones.items()},
+                &#x27;PLE_embedding_copy&#x27;: {**tensor_record(self.embedding.slot_weight),
+                                       &#x27;version&#x27;: self.embedding.slot_weight._version},
+                &#x27;PLE_projection_copy&#x27;: {**tensor_record(self.projection.slot_weight),
+                                        &#x27;version&#x27;: self.projection.slot_weight._version},
+                &#x27;PLE_scale_copy&#x27;: tensor_record(self.embedding.slot_scale),
+                &#x27;actual_copied_parameter_objects&#x27;: sum(1 for _ in self.copied_parameters()),
+                &#x27;actual_copied_parameter_elements&#x27;: sum(p.numel() for _, p in self.copied_parameters()),
+                &#x27;actual_copied_parameter_bytes&#x27;: sum(p.numel()*p.element_size() for _, p in self.copied_parameters()),
+                &#x27;actual_copied_buffer_objects&#x27;: sum(1 for _ in self.copied_buffers()),
+                &#x27;actual_copied_buffer_bytes&#x27;: sum(p.numel()*p.element_size() for _, p in self.copied_buffers()),
+                &#x27;source_and_copies_nonaliasing&#x27;: True, &#x27;recipe&#x27;: self.recipe}
+
+    def check(self):
+        if ({n: id(p) for n, p in self.model.named_parameters()} != self.base_ids
+                or {n: id(m) for n, m in self.model.named_modules()} != self.base_module_ids
+                or any(a is not b for a, b in zip(
+                    (self.model.config, self.model.model.config, self.text.config), self.base_configs))
+                or self.witness() != self.initial):
+            raise ValueError(&#x27;Native/copy values, versions or references changed&#x27;)
+        return True
+
+    def cache(self):
+        cache = DynamicCache(config=self.base_configs[2])
+        if len(cache.layers) != 15:
+            raise ValueError(&#x27;Original15 compact physical KV layers required&#x27;)
+        extra = DynamicLayer()
+        native_update = extra.update
+        def update(layer, *args, **kwargs):
+            self.count(&#x27;new_KV_update_attempts&#x27;)
+            return native_update(*args, **kwargs)
+        extra.update = types.MethodType(update, extra)
+        self.count(&#x27;cache_update_observer_reference_assignments&#x27;)
+        cache.layers.append(extra)
+        self.count(&#x27;cache_layer_appends&#x27;)
+        return cache
+
+    @contextmanager
+    def installed(self, condition):
+        if condition not in CONDITIONS:
+            raise ValueError(&#x27;Fixed native extension condition required&#x27;)
+        self.check()
+        try:
+            for name, value in ((&#x27;layers&#x27;, self.extended_lists[condition]),
+                    (&#x27;embed_tokens_per_layer&#x27;, self.embedding),
+                    (&#x27;per_layer_model_projection&#x27;, self.projection)):
+                self.count(&#x27;temporary_module_reference_assignments&#x27;)
+                setattr(self.text, name, value)
+            for module, config in ((self.model, self.outer_config),
+                    (self.model.model, self.outer_config), (self.text, self.extended_config)):
+                self.count(&#x27;temporary_config_reference_assignments&#x27;)
+                module.config = config
+            if (len(self.text.layers) != 36 or self.text.layers[35] is not self.clones[condition]
+                    or any(self.text.layers[i] is not self.base_layers[i] for i in range(35))):
+                raise ValueError(&#x27;Actual registered36 graph required&#x27;)
+            yield
+        finally:
+            for name, value in ((&#x27;layers&#x27;, self.base_layers),
+                    (&#x27;embed_tokens_per_layer&#x27;, self.base_embedding),
+                    (&#x27;per_layer_model_projection&#x27;, self.base_projection)):
+                self.count(&#x27;temporary_module_reference_assignments&#x27;)
+                setattr(self.text, name, value)
+            for module, config in zip((self.model, self.model.model, self.text), self.base_configs):
+                self.count(&#x27;temporary_config_reference_assignments&#x27;)
+                module.config = config
+        self.check()
+
+    def remove(self):
+        for handle in self.handles:
+            handle.remove()
+
+
+def projected_cache(witness):
+    layers = witness[&#x27;layers&#x27;][:15]
+    return {&#x27;layers&#x27;: layers, &#x27;sha256&#x27;: stable(layers)}
+
+
+def cache_retained_prefix(cache):
+    &quot;&quot;&quot;Fingerprint the exact old positions retained after the next one-token update.&quot;&quot;&quot;
+    rows = []
+    for i, layer in enumerate(cache.layers):
+        if not layer.is_initialized:
+            rows.append({&#x27;layer&#x27;: i, &#x27;empty&#x27;: True})
+            continue
+        old_length = layer.keys.shape[-2]
+        retained = min(old_length, layer.sliding_window-2) if layer.is_sliding else old_length
+        rows.append({&#x27;layer&#x27;: i, &#x27;empty&#x27;: False, &#x27;old_seen&#x27;: int(layer.get_seq_length()),
+            &#x27;old_stored&#x27;: old_length, &#x27;retained_positions&#x27;: retained,
+            &#x27;keys&#x27;: tensor_record(layer.keys[..., -retained:, :]) if retained else None,
+            &#x27;values&#x27;: tensor_record(layer.values[..., -retained:, :]) if retained else None})
+    return rows
+
+
+def validate_growth(cache, before):
+    rows = []
+    for layer, old in zip(cache.layers, before):
+        if old[&#x27;empty&#x27;]:
+            if layer.is_initialized:
+                raise ValueError(&#x27;Shared control unexpectedly wrote extra slot&#x27;)
+            rows.append({&#x27;layer&#x27;: old[&#x27;layer&#x27;], &#x27;empty_unchanged&#x27;: True})
+            continue
+        n = old[&#x27;retained_positions&#x27;]
+        expected = min(old[&#x27;old_stored&#x27;]+1, layer.sliding_window-1) if layer.is_sliding else old[&#x27;old_stored&#x27;]+1
+        if layer.keys.shape[-2] != expected or int(layer.get_seq_length()) != old[&#x27;old_seen&#x27;]+1:
+            raise ValueError(&#x27;Actual one-token native cache growth required&#x27;)
+        for name in (&#x27;keys&#x27;, &#x27;values&#x27;):
+            tensor = getattr(layer, name)
+            if not torch.isfinite(tensor).all() or (n and tensor_record(tensor[..., :n, :]) != old[name]):
+                raise ValueError(&#x27;Retained actual cache prefix changed&#x27;)
+        rows.append({&#x27;layer&#x27;: old[&#x27;layer&#x27;], &#x27;old_positions_retained&#x27;: n,
+                     &#x27;retained_prefix_exact&#x27;: True, &#x27;new_stored&#x27;: expected,
+                     &#x27;new_seen&#x27;: int(layer.get_seq_length())})
+    return rows
+
+
+def forward_record(model, ids, cache, answers, step=0, extended=False, condition=None):
+    text = model.model.language_model
+    observed = {}
+    def base_output(module, args, output):
+        if &#x27;base_hidden&#x27; in observed:
+            raise ValueError(&#x27;Exactly one original35 prefix required&#x27;)
+        observed[&#x27;base_hidden&#x27;] = tensor_record(output)
+    def h_input(module, args):
+        if &#x27;full_h_sha256&#x27; in observed or len(args) != 1:
+            raise ValueError(&#x27;Exactly one last-original MLP h observation required&#x27;)
+        observed[&#x27;full_h_sha256&#x27;] = tensor_sha(args[0])
+    handles = [text.layers[34].register_forward_hook(base_output),
+               text.layers[34].mlp.down_proj.register_forward_pre_hook(h_input)]
+    try:
+        with torch.no_grad():
+            output = model(input_ids=ids, past_key_values=cache, use_cache=True, logits_to_keep=1)
+        logits = output.logits[0, -1]
+        if not torch.isfinite(logits).all() or logits.dtype != next(model.parameters()).dtype:
+            raise ValueError(&#x27;Actual finite native-dtype logits required&#x27;)
+        whole = cache_witness(output.past_key_values)
+        check_cache(whole, 16 if extended else 15, str(logits.dtype))
+        if any(x[&#x27;keys&#x27;] is None for x in whole[&#x27;layers&#x27;][:15]):
+            raise ValueError(&#x27;All original15 cache entries required&#x27;)
+        if extended and ((whole[&#x27;layers&#x27;][15][&#x27;keys&#x27;] is None) != (condition == &#x27;shared_native_KV_control&#x27;)):
+            raise ValueError(&#x27;Actual producer/shared extra cache slot mismatch&#x27;)
+        if len(observed) != 2:
+            raise ValueError(&#x27;Actual base prefix and native h observations required&#x27;)
+        record = {&#x27;decision&#x27;: {&#x27;step&#x27;: step, &#x27;argmax&#x27;: int(logits.argmax()),
+            &#x27;full_logits_sha256&#x27;: tensor_sha(logits.float()), &#x27;cache_sha256&#x27;: whole[&#x27;sha256&#x27;],
+            &#x27;raw_logits_dtype&#x27;: str(logits.dtype)}, &#x27;metrics&#x27;: choice_metrics(logits, answers),
+            &#x27;cache&#x27;: whole, &#x27;original15_cache&#x27;: projected_cache(whole), **observed,
+            &#x27;actual_input_ids_sha256&#x27;: tensor_sha(ids), &#x27;actual_input_tokens&#x27;: ids.numel(),
+            &#x27;actual_cache_classes&#x27;: [type(v).__name__ for v in cache.layers]}
+        return record, output.past_key_values
+    finally:
+        for handle in reversed(handles):
+            handle.remove()
+
+
+def source_check(record, parent):
+    if (record[&#x27;decision&#x27;] != parent[&#x27;original&#x27;][&#x27;decision&#x27;]
+            or record[&#x27;metrics&#x27;] != parent[&#x27;original&#x27;][&#x27;metrics&#x27;]
+            or record[&#x27;cache&#x27;] != parent[&#x27;native_first_full_cache&#x27;]
+            or record[&#x27;full_h_sha256&#x27;] != parent[&#x27;native_full_h_sha256&#x27;]):
+        raise ValueError(&#x27;Frozen original fullFP32/argmax/wholecache/h source changed&#x27;)
+
+
+def order(row_index):
+    k = (row_index//2) % 3
+    return list(CONDITIONS[k:]+CONDITIONS[:k])
+
+
+def one_case(model, encoded, answers, parent, row_index, pool, count,
+             eos=frozenset({1, 106, 50}), require_native_probe=True):
+    initial = snapshot(model)
+    ids = encoded[&#x27;input_ids&#x27;]
+    count(&#x27;native_sourceguards&#x27;)
+    source, source_cache = forward_record(model, ids,
+        DynamicCache(config=model.config.text_config), answers)
+    source_check(source, parent)
+    token = source[&#x27;decision&#x27;][&#x27;argmax&#x27;]
+    native_probe = None
+    if token not in eos:
+        old = cache_retained_prefix(source_cache)
+        count(&#x27;native_cached_argmax_observations&#x27;)
+        count(&#x27;own_choice_tokens_consumed&#x27;)
+        native_probe, source_cache = forward_record(model, ids.new_tensor([[token]]),
+                                                    source_cache, answers, step=1)
+        native_probe[&#x27;growth&#x27;] = validate_growth(source_cache, old)
+        native_probe[&#x27;consumed_own_first_argmax&#x27;] = token
+    elif require_native_probe:
+        raise ValueError(&#x27;Original real-cohort A/B first choice must be nonEOS&#x27;)
+    cells, restorations = {}, {}
+    for condition in order(row_index):
+        with pool.installed(condition):
+            count(&#x27;edited_first_argmax_observations&#x27;)
+            first, edited_cache = forward_record(model, ids, pool.cache(), answers,
+                extended=True, condition=condition)
+            if (first[&#x27;base_hidden&#x27;] != source[&#x27;base_hidden&#x27;]
+                    or first[&#x27;original15_cache&#x27;] != source[&#x27;cache&#x27;]
+                    or first[&#x27;full_h_sha256&#x27;] != source[&#x27;full_h_sha256&#x27;]):
+                raise ValueError(&#x27;Appended graph changed original35 prefill prefix&#x27;)
+            chosen = first[&#x27;decision&#x27;][&#x27;argmax&#x27;]
+            probe, growth = None, None
+            if chosen not in eos:
+                old = cache_retained_prefix(edited_cache)
+                count(&#x27;edited_cached_argmax_observations&#x27;)
+                count(&#x27;own_choice_tokens_consumed&#x27;)
+                probe, edited_cache = forward_record(model, ids.new_tensor([[chosen]]),
+                    edited_cache, answers, step=1, extended=True, condition=condition)
+                growth = validate_growth(edited_cache, old)
+                probe[&#x27;consumed_own_first_argmax&#x27;] = chosen
+                if chosen == token and native_probe is not None:
+                    if (probe[&#x27;base_hidden&#x27;] != native_probe[&#x27;base_hidden&#x27;]
+                            or probe[&#x27;original15_cache&#x27;] != native_probe[&#x27;cache&#x27;]
+                            or probe[&#x27;full_h_sha256&#x27;] != native_probe[&#x27;full_h_sha256&#x27;]):
+                        raise ValueError(&#x27;Original35 same-own-history cached prefix changed&#x27;)
+            prefill_identity = (first[&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;] == source[&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;]
+                                and chosen == token)
+            cached_identity = (probe is not None and native_probe is not None and chosen == token
+                and probe[&#x27;decision&#x27;][&#x27;argmax&#x27;] == native_probe[&#x27;decision&#x27;][&#x27;argmax&#x27;]
+                and probe[&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;] == native_probe[&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;]
+                and probe[&#x27;base_hidden&#x27;] == native_probe[&#x27;base_hidden&#x27;]
+                and probe[&#x27;original15_cache&#x27;] == native_probe[&#x27;cache&#x27;])
+            # Both EOS in the dedicated host fixture: the required behavior is no probe.
+            host_joint_eos = not require_native_probe and chosen in eos and token in eos and probe is None
+            cells[condition] = {&#x27;prefill&#x27;: first, &#x27;cached_probe&#x27;: probe,
+                &#x27;cached_probe_applicable&#x27;: chosen not in eos, &#x27;cache_growth&#x27;: growth,
+                &#x27;same_own_input_as_native&#x27;: chosen == token,
+                &#x27;prefill_full_FP32_argmax_identity&#x27;: prefill_identity,
+                &#x27;cached_full_FP32_argmax_prefix_identity&#x27;: cached_identity,
+                &#x27;host_both_EOS_no_probe&#x27;: host_joint_eos}
+        count(&#x27;native_restoration_forwards&#x27;)
+        restored, unused_cache = forward_record(model, ids,
+            DynamicCache(config=model.config.text_config), answers)
+        source_check(restored, parent)
+        actual_state = snapshot(model)
+        if restored != source or actual_state != initial or not pool.check():
+            raise ValueError(&#x27;Actual native35 graph/source/state restoration failed&#x27;)
+        restorations[condition] = {&#x27;native&#x27;: restored, &#x27;actual_state&#x27;: actual_state,
+                                  &#x27;copy_pool_sha256&#x27;: stable(pool.initial)}
+    silent = cells[&#x27;silent_new_native_KV_producer&#x27;]
+    return {&#x27;parent_binding&#x27;: parent[&#x27;binding&#x27;], &#x27;carried_native&#x27;: parent[&#x27;original&#x27;],
+        &#x27;native_source&#x27;: source, &#x27;native_cached_reference&#x27;: native_probe,
+        &#x27;cells&#x27;: cells, &#x27;native_restorations&#x27;: restorations, &#x27;condition_order&#x27;: order(row_index),
+        &#x27;silent_primary_components&#x27;: {&#x27;prefill_identity&#x27;: silent[&#x27;prefill_full_FP32_argmax_identity&#x27;],
+                                     &#x27;cached_identity&#x27;: silent[&#x27;cached_full_FP32_argmax_prefix_identity&#x27;]},
+        &#x27;joint_silent_primary_pass&#x27;: silent[&#x27;prefill_full_FP32_argmax_identity&#x27;]
+                                    and silent[&#x27;cached_full_FP32_argmax_prefix_identity&#x27;],
+        &#x27;copy_pool_sha256&#x27;: stable(pool.initial), &#x27;base_parameter_assignments&#x27;: 0,
+        &#x27;base_buffer_assignments&#x27;: 0, &#x27;backward_calls&#x27;: 0, &#x27;optimizer_steps&#x27;: 0,
+        &#x27;free_program_response_generations&#x27;: 0}
 </pre></details></article><article class="card tool" data-category="Reuse computation"><span class="tag">Reuse computation</span><h2>assay</h2><p>Actual pretrained block copies with silent and FFN-only internal controls. All 24 contexts pass the frozen engineering audit and silent identity control. Both active full and FFN-only copies produce zero valid A/B choices and fail utility. Prescribed norm zeros and a scalar-buffer one affect copies only. Existing shared KV and per-layer input are reused. This validates scoped execution composition, not a resized or serialized transformer or useful coding gain.</p><p><a href="../research/experiments/n56/assay.py">Exact source file</a></p><p class="small">APIs: module_state, shared_state, CopyPool, composed, native, order, one_case</p><p class="hash">SHA-256 2e9cd2ec69ce0474efdaabd3558285afd6f661be995be11cb647ffc60afd43d0</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Actual pretrained block copies with silent and FFN-only internal controls.&quot;&quot;&quot;
 from contextlib import contextmanager
 import copy
@@ -4521,6 +5010,67 @@ def generate_native_eos(model, tokenizer, encoded, eos, *, resource_guard,
             &#x27;completed_forward_calls&#x27;: completed, &#x27;input_token_exposures&#x27;: exposures,
             &#x27;new_response_token_ceiling&#x27;: None, &#x27;configured_context&#x27;: maximum,
             &#x27;optimizer_steps&#x27;: 0, &#x27;backward_calls&#x27;: 0, &#x27;parameter_assignments&#x27;: 0}
+</pre></details></article><article class="card tool" data-category="Record evidence"><span class="tag">Record evidence</span><h2>cache_observation</h2><p>Read-only persistence of both compared retained-cache prefix hashes. Read-only root observers persist both compared surviving-prefix hashes, layouts and bytes, actual own input and before/after whole-cache bindings. No tensor, output or cache value is assigned. Literal cache checks pass; this does not authenticate caller observations or all pretrained parameter bytes.</p><p><a href="../research/experiments/n59/cache_observation.py">Exact source file</a></p><p class="small">APIs: CachedPrefixObserver</p><p class="hash">SHA-256 30b76bbaa23dca00709d0f42ec224ce19a5a15a26389f0ff4a6292f0cbea7464</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Read-only persistence of both compared retained-cache prefix hashes.&quot;&quot;&quot;
+import torch
+from research.experiments.n19.trajectory import cache_witness
+from research.experiments.n35.core import tensor_sha
+from research.experiments.n59.assay import cache_retained_prefix, validate_growth, tensor_record
+
+
+class CachedPrefixObserver:
+    def __init__(self, count):
+        self.count = count
+        self.records = []
+        self.pending = None
+        self.handles = []
+
+    def before(self, module, args, kwargs):
+        ids, cache = kwargs[&#x27;input_ids&#x27;], kwargs.get(&#x27;past_key_values&#x27;)
+        if cache is None or cache.get_seq_length() == 0:
+            return
+        if self.pending is not None or ids.shape != (1, 1) or ids.dtype != torch.long:
+            raise ValueError(&#x27;Exactly one actual own-choice cached token required&#x27;)
+        self.pending = {&#x27;input_sha256&#x27;: tensor_sha(ids), &#x27;input_token&#x27;: int(ids[0, 0]),
+                        &#x27;before_whole_cache&#x27;: cache_witness(cache),
+                        &#x27;retained_before&#x27;: cache_retained_prefix(cache)}
+
+    def after(self, module, args, kwargs, output):
+        if self.pending is None:
+            return
+        cache = output.past_key_values
+        old = self.pending
+        if len(cache.layers) != len(old[&#x27;retained_before&#x27;]):
+            raise ValueError(&#x27;Cached layer cardinality changed&#x27;)
+        growth = validate_growth(cache, old[&#x27;retained_before&#x27;])
+        compared = []
+        for layer, before in zip(cache.layers, old[&#x27;retained_before&#x27;], strict=True):
+            if before[&#x27;empty&#x27;]:
+                compared.append({&#x27;layer&#x27;: before[&#x27;layer&#x27;], &#x27;empty_unchanged&#x27;: True})
+                continue
+            n = before[&#x27;retained_positions&#x27;]
+            after = {key: tensor_record(getattr(layer, key)[..., :n, :]) if n else None
+                     for key in (&#x27;keys&#x27;, &#x27;values&#x27;)}
+            if any(after[key] != before[key] for key in (&#x27;keys&#x27;, &#x27;values&#x27;)):
+                raise ValueError(&#x27;Both persisted compared prefix hashes must match&#x27;)
+            compared.append({&#x27;layer&#x27;: before[&#x27;layer&#x27;], &#x27;retained_positions&#x27;: n,
+                &#x27;before&#x27;: {key: before[key] for key in (&#x27;keys&#x27;, &#x27;values&#x27;)}, &#x27;after&#x27;: after,
+                &#x27;retained_BF16_bytes_per_K_or_V&#x27;: 0 if not n else
+                    after[&#x27;keys&#x27;][&#x27;shape&#x27;][0]*after[&#x27;keys&#x27;][&#x27;shape&#x27;][1]*n*after[&#x27;keys&#x27;][&#x27;shape&#x27;][3]*2})
+        self.records.append({**old, &#x27;after_whole_cache&#x27;: cache_witness(cache),
+                             &#x27;growth&#x27;: growth, &#x27;compared_retained_prefixes&#x27;: compared})
+        self.count(&#x27;cached_prefix_observations&#x27;)
+        self.pending = None
+
+    def attach(self, model):
+        if self.handles:
+            raise ValueError(&#x27;Observer attachment exactly once&#x27;)
+        self.handles = [model.register_forward_pre_hook(self.before, with_kwargs=True),
+                        model.register_forward_hook(self.after, with_kwargs=True)]
+
+    def remove(self):
+        for handle in self.handles:
+            handle.remove()
+
 </pre></details></article><article class="card tool" data-category="Record evidence"><span class="tag">Record evidence</span><h2>durable_zip</h2><p>Lossless bounded private output transport with strict member provenance.</p><p><a href="../evaluation/durable_zip.py">Exact source file</a></p><p class="small">APIs: sha, safe_name, pack, verify, unpack</p><p class="hash">SHA-256 c70dd154e498c6bc2e29f5fe3bb9461c92724bd2bd214afc680985452f959156</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Lossless bounded private output transport with strict member provenance.&quot;&quot;&quot;
 import hashlib
 import json

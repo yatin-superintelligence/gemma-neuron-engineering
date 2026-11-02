@@ -576,12 +576,19 @@
       "run": "N57_version1",
       "recorded_script_seconds": 3885.433109913,
       "outcome": "Coding original55/subtract52/add54; retention17/15/17; no useful gain."
+    },
+    {
+      "run": "N58_version1",
+      "recorded_script_seconds": 239.289640986,
+      "outcome": "Original8/16code8/8ret; all3branch deletions0/16code0/8ret; PLE all6utilityFAIL.",
+      "duration_scope": "Notebook seconds,not chargedGPUquota",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N58",
-      "launched_utc": "2026-11-01T23:39:28.096486+00:00",
+      "run": "N59",
+      "launched_utc": "2026-11-02T00:54:40.910194+00:00",
       "status": "private_version1_running"
     }
   ]

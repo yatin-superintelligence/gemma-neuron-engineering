@@ -1,0 +1,46 @@
+{
+  "scope": "Closed prelaunch random-model and literal software gates only; no pretrained outcome. Historical host-stage counts do not describe the active worker.",
+  "new_random_fullstack_forwards": 49,
+  "new_random_input_exposures": 1589,
+  "production_root_forwards": 29,
+  "independent_explicit_fullstack_roots": 20,
+  "literal_toy_head_zero_initializations": 1,
+  "main_FP32_BF16_silent_prefill_cached_identity": true,
+  "fulltoy_base_and_copy_parameter_bytes_versions_state_restored": true,
+  "compact_recipe_JSON_roundtrip": "PASS with0additionalforwards; customrecipe NOTstockHF serialization",
+  "new_readonly_prefix_observer_literals": {
+    "positives": 2,
+    "refusals": 6,
+    "models_forwards": 0
+  },
+  "new_literal_audit_gate": {
+    "case_positives": 4,
+    "copy_pool_positive": 1,
+    "refusals": 48,
+    "summary_layouts": 2,
+    "summary_assertions": 8,
+    "SYNTHETIC_literal_labels": 144,
+    "real_old_or_N59_labels": 0
+  },
+  "new_defaultprivate_command_gate": {
+    "positive": 1,
+    "refusals": 4,
+    "CLI_calls": 0,
+    "old_UUID_fixtures_repeated": 0,
+    "old_UUID_parser_AST_exact": true
+  },
+  "exact_package_import": {
+    "utc": "2026-11-02T00:50:17.341520+00:00",
+    "status": "PASS",
+    "sources": 33,
+    "inputs": 9,
+    "payload_exact": true,
+    "active_worker": "worker.py",
+    "isolated_python_B_I_import": "PASS0models0tokenizers0fixtures",
+    "model_tokenizer_fixture_calls": 0,
+    "sources_unchanged": true,
+    "no_pyc": true,
+    "temporary_import_tree_deleted": true
+  },
+  "pretrained_model_tokenizer_scorer_executor_calls": 0
+}

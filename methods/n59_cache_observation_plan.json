@@ -1,0 +1,8 @@
+{
+  "registered_utc": "2026-11-02T00:42:13.332656+00:00",
+  "before_new_observer_implementation_and_measurements": true,
+  "motivation": "The frozen numerical engine checks actual surviving cached-prefix equality and saves whole cache hashes. Add a separate read-only root observer to also persist both compared retained-prefix hashes, shapes and bytecounts as requested by protocol. No changes to seven frozen numerical files, values, forwarding, caches or guards.",
+  "observation": "Root pre/post hooks observe each actual one-token cached root, native and edited, save actual own input rawtensorSHA and before/after cache bindings plus surviving old-position hash/shape/bytes. No return tensor/cache assignment; native numerical calls unchanged. Attach before initial snapshot, retain until final snapshot, actualobservercounter native24+K.",
+  "new_host_gate": "Two new model-free literal cache layouts (native15 and custom16 with shared empty slot); six targeted refusals. No neural model, tokenizer, scorer, executor, scientific root forward or oldfixture call. Sourcefreeze before fixture execution.",
+  "not_a_numerical_rerun": "N59 completed49randomroot gate remains CLOSED. Observer direct methods only on newly constructed literal cache tensors, no replay of any previous source/input."
+}

@@ -206,6 +206,27 @@
     },
     {
       "category": "Reuse computation",
+      "path": "research/experiments/n59/assay.py",
+      "sha256": "65a85771d9830f13059a7f93f69531a01ca264cf5dff56910d53445015c31df7",
+      "symbols": [
+        "tensor_record",
+        "module_state",
+        "native_architecture",
+        "AppendedEmbedding",
+        "AppendedProjection",
+        "compact_recipe",
+        "ExtensionPool",
+        "projected_cache",
+        "cache_retained_prefix",
+        "validate_growth",
+        "forward_record",
+        "source_check",
+        "order",
+        "one_case"
+      ]
+    },
+    {
+      "category": "Reuse computation",
       "path": "research/experiments/n56/assay.py",
       "sha256": "2e9cd2ec69ce0474efdaabd3558285afd6f661be995be11cb647ffc60afd43d0",
       "symbols": [
@@ -474,6 +495,14 @@
       "sha256": "9dc0d62f60e8073f7a82d891cb7e9b08e2d96b6c145a2b1c8cbd2454f50c730d",
       "symbols": [
         "generate_native_eos"
+      ]
+    },
+    {
+      "category": "Record evidence",
+      "path": "research/experiments/n59/cache_observation.py",
+      "sha256": "30b76bbaa23dca00709d0f42ec224ce19a5a15a26389f0ff4a6292f0cbea7464",
+      "symbols": [
+        "CachedPrefixObserver"
       ]
     },
     {
