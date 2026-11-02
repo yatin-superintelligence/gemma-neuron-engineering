@@ -1,0 +1,87 @@
+{
+  "registered_utc": "2026-11-02T03:11:42.070749+00:00",
+  "experiment": "N61",
+  "question_id": "Q76",
+  "title": "Fresh complete-program confirmation of fixed native BOS value deletion",
+  "activation": "N60 complete original frozen auditPASS and all5 preregistered fixed-target clausesPASS, aggregateSHA f60cd21d5971c07c088de46d0b0b5fce472ca61d42d9e55ae86bea0c2ff2978c. N60 3 context gains across2families are dependent answer-order observations, not complete-program evidence.",
+  "question": "Does the unchanged all-native-head/layer current-query BOS value deletion improve complete executable programs on new semantics while preserving every fresh native-correct coding and retention case?",
+  "cohort": {
+    "coding_semantic_units": 32,
+    "coding_bindings_per_unit": 2,
+    "coding_records": 64,
+    "retention_records": 32,
+    "total_cases": 96,
+    "taxonomy": {
+      "integer_polynomials": {
+        "semantic_contract_count": 4
+      },
+      "calendar_fields": {
+        "semantic_contract_count": 4
+      },
+      "record_relations": {
+        "semantic_contract_count": 4
+      },
+      "text_grammars": {
+        "semantic_contract_count": 4
+      },
+      "fixed_width_bits": {
+        "semantic_contract_count": 4
+      },
+      "tree_encodings": {
+        "semantic_contract_count": 4
+      },
+      "stateful_simulations": {
+        "semantic_contract_count": 4
+      },
+      "finite_allocation": {
+        "semantic_contract_count": 4
+      }
+    },
+    "selection": "All listed32contracts authored before any N61model measurement. Two bindings per contract retained unconditionally. New32retention items across8neutral categories. No baseline/effect/headroom/case selection or N60gain-family targeting. Project-new semantics, not a pretraining-disjointness claim. N57 deferred panel remains untouched and unactivated."
+  },
+  "conditions": [
+    "original",
+    "remove_BOS_value_link",
+    "remove_one_nonBOS_value_link"
+  ],
+  "fixed_target": "remove_BOS_value_link",
+  "responses": "288NEW complete nativeEOS response RECORDS, all choices fresh, no old cell/response carries and no forced futures. Identical texts across conditions are not unique programs.",
+  "operation": "EXACT N60 fixed all35native attention calls/allnative heads/current-last-query value-edge deletion: saved native eager called once; actual same-call weights and actual values; extra FULLSHAPE native value BMM replay must equal actual native fullhead dtype/shape/SHA before acceptance; extra FULLSHAPE edited BMM using nonaliasing repeatedV scratch with literal zero selectedrow; assign only current headoutput row, return original weights. ActualKV unchanged by wrapper; no extraQK/softmax/attentionFFNPLE/Parameters/buffers/backward/optimizer or learned quantities. Registry/native source/function identity guards unchanged.",
+  "positions": "BOS actual first ID2, fixed absolute inputposition0. Control random.Random(6001+newrow_index).choice(range(1,prompt_length-1)), fixed for entire case/history/all35calls. No new seed/layer/head/dose. At cached steps map selected absolute position using actual total consumed length minus actual native key length; if sliding window has evicted the position, policy does no zero there (record inactive), never reinsert or shift it. Still perform same native replay and edited fullshape BMM. Native full attention remains available. This is native key availability handling, not a new selected site.",
+  "generation": "All3 arms own actual full-vocabulary greedy argmax, EOS1/106/50, no arbitrary response token ceiling. Native first response establishes fresh own firstdecision/fullFP32/full15KV/h reference; its future choices/program never supplied to other arms. Edited2arms rotate(row_index//2)%2. Indexmod2 case ownership, all3conditions per owner. Actual configured context/memory/storage/freecompute/fixeddeadline interruption censors WHOLEpanel, no partial grades/reroll/automatic continuation.",
+  "cache": "Prefill noncurrent prompt KV prefix exact fresh native reference. On each cached own-input root, compare actual surviving OWN prior KV prefix before/after nativecache update with documented slidingtrim; do not compare different edited histories to a native future. Fullcache first/terminal/restores; perstep prefix observations are recorded, not independent allbase-byte authentication.",
+  "restoration": "Fresh unmodified first fullFP32/argmax/full15KV/h and actualstate/hook/version/RNG/config/buffer/grad/native eager reference after EVERY288response BEFORE durablepreparecommit; native sourceguard before each192edited response; actual initial/final metadata. Witness not independent allparameterbytes/caller authentication/clean-package replay.",
+  "accounting": "Tactual fresh choices across ALL288; Tedit across192edited; Ssum96promptlengths. T+480actual rootcalls,8*S+T-288 input exposures,192sourceguards288restores.35*Tedit callbacks/nativeBMMreplays/editedBMMs/scratchclones/currentrowassigns each, zeroassigns ONLY available selectedkey.384scoped functionreference assignments. Actual attempts/callbacks/shapes/numel/bytes/availability/exposures/choices/emitted/consumed/first/terminal counters required including failures, formulas not substitutes. Nativebaseline traces and choices separate; no unqualified zero-new-token claim.",
+  "trace": "Perstep fsynced lossless JSONL (gzip allowed) with own-input IDs/fullFP32 choice digest and ordered35callback compact binary digestframes. Perframe actual weightsSHA, actual unrepeated V SHA, nativefullheadSHA==replaySHA, assignedcurrentheadSHA plus shape/dtype/actual keylength/absolute/local position/availability and actual checks. Four32byte hashes perframe, packed/base64 is lossless, not a claim that full raw tensor bytes or full callback dictionaries are saved. Hash chain binds frames, masks, choices, cache-prefix observations. Each callback enforces actualV unchanged, noncurrentoutput exact, native replay exact. Resource ceiling enforced on actual raw files.",
+  "assessment": "Whole288nativeEOS COMPLETE plus frozen structural/source/state/trace/counter audit BEFORE any new candidate grade. NEW private contracts/oracles/grading; only new unique SAMECASE complete textSHA scored once, identical new candidate across arms reuses first newgrade. No old cases/candidates/scorers/oracles/grades or N57panel reuse. Pure bounded executor/extractors may be carried, no old fixture mains. Host tokenizer may load ONCE at completeaudit for actualIDs/text; prelaunch tokenization separately counted. No host model replay. Hidden solutions/labels/oracles/individualgrades HOSTONLY, never GPUclosure.",
+  "primary": {
+    "target": "remove_BOS_value_link",
+    "all_conjunctive": [
+      "preserve EVERY fresh-native-correct coding case",
+      "preserve EVERY fresh-native-correct retention case",
+      "at least4 coding gains",
+      "coding gains across at least2 of all8 preregistered coding families",
+      "at least2 more correct coding than remove_one_nonBOS_value_link"
+    ],
+    "no_posthoc_winner": true
+  },
+  "reporting": "All3arms/all8code+all8ret families/bindings/statuses/sourcevalidity/invalids/gains/losses/lengths/availability/counters. Bothbindings dependent. No pvalues/winner/individualmeaning/mediation/speed/novelty/generalcodingclaim. Fresh confirmation only if complete frozen primary passes; taskset-limited executable evidence, not universal benefit.",
+  "stop_rule": "Any primaryFAIL closes tested complete-program claim without head/layer/position/dose/control/cohort retune or forced repeated confirmation. Any incomplete/refusal censors wholepanel without grades/finiteeffects/recovery/guardweakening/reroll.",
+  "asset_host_plan": "Before execution freeze actual32contracts, two independently authored oracle algorithms per contract, explicit manual anchors and deterministic probes seed6151+contract_index, up to72probes/contract (8edge+64newrandom). Crosscheck both refs and types/input preservation, not model answers. New grading8synthetic assessments include complete correct/wrong/source/inputmutation/alias/type/retention/refusal; record actualexecutor counts. No model/tokenizer/oldfixture calls during asset gates.",
+  "numeric_host_plan": "Register implementation host plan before execution. NEWseed6117FP32L71/BF16L73/window16/maxcontextL+3, native35layer graphs, own greedy continuation all3arms versus independent explicit cached35layer equations, EOS1/50/63. SeparateNEWseed6123FP32L37/window11, ONE literaltoyheadzero setup copied to independentreference, EOS0; no postEOS. Maximum69fullstack evaluations if all first2contexts emit4choices each; record actual counts/exposures, not guarantee. AllfullFP32/KV/prefix/keyavailability/replay/baseparameterbytes_versions_state/nativefunctionreference/restoration exact. No pretrained download/host replay. New auditor positives/refusals/wholepanel/state/source/trace/counter/grade-memo gates. ExactGPUclosure -B-Iconstructorblocked importONCE; oldUUID/defaultprivate ASTcarry0oldfixtures.",
+  "no_training": "No optimizer/SFT/LoRA/RL/fittedmask/rank/sign/gain/vector/bridge/alignment; all native weights unchanged. Literal scratchzeros/currentrowassigns only. No hiddenanswers/solutions/labels/grades/oracles/secrets model/GPU supplied. No closed scientific cells/grades/collectors/auditors/fixtures/imports repeated.",
+  "resources": {
+    "platform_seconds": 10800,
+    "notebook_seconds": 10600,
+    "worker_seconds": 10400,
+    "global_notebook_seconds": 10200,
+    "deadline_utc": "2026-11-02T10:30:50+00:00",
+    "deadline_margin_seconds": 120,
+    "scientific_raw_bytes_max": 536870912,
+    "reservation_GPU_hours": 6,
+    "reserve_GPU_hours": 2,
+    "hardware": "2DISTINCTphysicalT4/fullBF16replicas/indexmod2/all3armspercase/sequentialload/sharedcache/barrier. Fresh officialquota>=8GPUh and fullowninventory recognizing BOTHprefixes beforelaunch. DefaultPRIVATE(no-u/public)singleREADYpayload/downloadSHA/pinnedprivateexactserver; exactcreatecommand saved before call."
+  },
+  "state": "REGISTERED_BEFORE_IMPLEMENTATION_UNLAUNCHED",
+  "edition": "Prospective registered design, before any N61 output access. Original registration state preserved; private semantic variants, prompts, bindings, oracle pairs and identifiers excluded."
+}

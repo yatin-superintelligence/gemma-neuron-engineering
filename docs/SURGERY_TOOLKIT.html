@@ -1916,7 +1916,7 @@ def resolved_contract(model):
         k: v for k, v in contract.items() if k != &quot;max_new_tokens&quot;
     }
     return {**actual, &quot;stop_strings&quot;: [&quot;\n&quot;], &quot;manual_full_vocabulary&quot;: True}
-</pre></details></article><article class="card tool" data-category="Reuse computation"><span class="tag">Reuse computation</span><h2>assay</h2><p>Registered36 native graph, split native PLE copies and compact physical KV. New independent FP32/BF16 full-stack and own-choice cached references, silent identity, EOS stopping and compact recipe checks pass on random weights. The private pretrained panel remains prospective. Preserve the original 35 native blocks and append one complete source14 copy with a copied PLE slot and logical35/physical15 KV producer. Shared-KV and silent controls are fixed. All copied Parameter and buffer assignments are counted; base values remain unchanged. This custom recipe is not stock HF checkpoint or default generation compatibility, fresh confirmation or useful coding gain.</p><p><a href="../research/experiments/n59/assay.py">Exact source file</a></p><p class="small">APIs: tensor_record, module_state, native_architecture, AppendedEmbedding, AppendedProjection, compact_recipe, ExtensionPool, projected_cache, cache_retained_prefix, validate_growth, forward_record, source_check, order, one_case</p><p class="hash">SHA-256 65a85771d9830f13059a7f93f69531a01ca264cf5dff56910d53445015c31df7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Registered36 native graph, split native PLE copies and compact physical KV.&quot;&quot;&quot;
+</pre></details></article><article class="card tool" data-category="Reuse computation"><span class="tag">Reuse computation</span><h2>assay</h2><p>Registered36 native graph, split native PLE copies and compact physical KV. New independent FP32/BF16 full-stack and own-choice cached references, silent identity, EOS stopping and compact recipe checks pass on random weights. The complete pretrained audit passes all 24 silent identities, but both active copies produce zero valid A/B choices and fail all five target utility clauses. This is bounded answer-format failure, not complete-program semantics. Preserve the original 35 native blocks and append one complete source14 copy with a copied PLE slot and logical35/physical15 KV producer. Shared-KV and silent controls are fixed. All copied Parameter and buffer assignments are counted; base values remain unchanged. This custom recipe is not stock HF checkpoint or default generation compatibility, fresh confirmation or useful coding gain.</p><p><a href="../research/experiments/n59/assay.py">Exact source file</a></p><p class="small">APIs: tensor_record, module_state, native_architecture, AppendedEmbedding, AppendedProjection, compact_recipe, ExtensionPool, projected_cache, cache_retained_prefix, validate_growth, forward_record, source_check, order, one_case</p><p class="hash">SHA-256 65a85771d9830f13059a7f93f69531a01ca264cf5dff56910d53445015c31df7</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Registered36 native graph, split native PLE copies and compact physical KV.&quot;&quot;&quot;
 from contextlib import contextmanager
 import copy
 import hashlib
@@ -3018,6 +3018,209 @@ def insert_branch(module,branch,placement):
     handle=module.register_forward_hook(hook)
     try:yield receipt
     finally:handle.remove()
+</pre></details></article><article class="card tool" data-category="Edit connections"><span class="tag">Edit connections</span><h2>assay</h2><p>Fixed BOS/current-query value-edge surgery; no parameter or cache writes. Complete frozen engineering audit passes. Fixed BOS value deletion scores 11/16 coding versus 8/16 native and 8/16 nonBOS control, with three context gains, zero losses and retention preserved at 8/8. All five preregistered development clauses pass. Two gains are answer-order variants of one family; this is not complete-program improvement or fresh confirmation. Keep actual per-call native attention weights, require exact full-shape value-BMM replay, zero one scratch V row and assign only the current head output. Noncurrent KV prefixes and the original eager reference restore. Position-cardinality control does not match probability or energy. The original post-result host cleanup failure stays preserved; its numerical gates are not repeated. No individual meaning, mediation, speed or novelty claim.</p><p><a href="../research/experiments/n60/assay.py">Exact source file</a></p><p class="small">APIs: record, check_native, function_witness, control_position, noncurrent_cache_prefix, value_operator, order, one_case</p><p class="hash">SHA-256 2f42fb57fb581fca1e7e6f4f63cb1b9a46ee4a353d73c5a191974877fab7ed06</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Fixed BOS/current-query value-edge surgery; no parameter or cache writes.&quot;&quot;&quot;
+from contextlib import contextmanager
+import hashlib
+import inspect
+import random
+
+import torch
+from transformers.cache_utils import DynamicCache
+from transformers.models.gemma4 import modeling_gemma4 as native_module
+
+from research.experiments.n35.core import snapshot, tensor_sha
+from research.experiments.n59.assay import native_architecture, forward_record, source_check
+
+CONDITIONS = (&#x27;remove_BOS_value_link&#x27;, &#x27;remove_one_nonBOS_value_link&#x27;)
+NATIVE_EAGER = native_module.eager_attention_forward
+EAGER_SHA = &#x27;7f8506e7461c8fb3a702c2c83535c1cd8e4381ce029ccc8a29bc4e0a37fb293e&#x27;
+OPERATIONS = (&#x27;native_sourceguards&#x27;, &#x27;native_restoration_forwards&#x27;,
+    &#x27;new_first_argmax_observations&#x27;, &#x27;source_attention_observations&#x27;,
+    &#x27;edited_attention_callbacks&#x27;, &#x27;native_value_BMM_replay_attempts&#x27;,
+    &#x27;edited_value_BMM_attempts&#x27;, &#x27;scratch_V_clone_attempts&#x27;,
+    &#x27;scratch_V_zero_assignments&#x27;, &#x27;current_head_output_assignments&#x27;,
+    &#x27;zero_assigned_elements&#x27;, &#x27;zero_assigned_bytes&#x27;,
+    &#x27;current_output_assigned_elements&#x27;, &#x27;current_output_assigned_bytes&#x27;,
+    &#x27;global_function_reference_assignments&#x27;)
+
+
+def record(t):
+    if not isinstance(t, torch.Tensor) or t.requires_grad or not torch.isfinite(t).all():
+        raise ValueError(&#x27;Actual finite detached tensor required&#x27;)
+    return {&#x27;sha256&#x27;: tensor_sha(t), &#x27;shape&#x27;: list(t.shape), &#x27;dtype&#x27;: str(t.dtype),
+            &#x27;numel&#x27;: t.numel(), &#x27;bytes&#x27;: t.numel()*t.element_size()}
+
+
+def check_native(model):
+    text = native_architecture(model)
+    if (native_module.eager_attention_forward is not NATIVE_EAGER
+            or hashlib.sha256(inspect.getsource(NATIVE_EAGER).rstrip(&#x27;\n&#x27;).encode()).hexdigest() != EAGER_SHA
+            or &#x27;eager&#x27; in native_module.ALL_ATTENTION_FUNCTIONS
+            or any(b.self_attn.config._attn_implementation != &#x27;eager&#x27; for b in text.layers)):
+        raise ValueError(&#x27;Exact unshadowed native eager fallback required&#x27;)
+    return text
+
+
+def function_witness(model):
+    check_native(model)
+    return {&#x27;native_eager_source_sha256&#x27;: EAGER_SHA,
+            &#x27;actual_global_is_original_reference&#x27;: True, &#x27;eager_registry_shadow_absent&#x27;: True}
+
+
+def control_position(length, row_index):
+    if type(length) is not int or length &lt; 3 or type(row_index) is not int or row_index &lt; 0:
+        raise ValueError(&#x27;Actual nontrivial context and nonnegative case index required&#x27;)
+    return random.Random(6001+row_index).choice(range(1, length-1))
+
+
+def noncurrent_cache_prefix(cache):
+    rows = []
+    for i, layer in enumerate(cache.layers):
+        if not layer.is_initialized or layer.keys.shape[-2] &lt; 2:
+            raise ValueError(&#x27;Actual initialized native noncurrent KV prefix required&#x27;)
+        rows.append({&#x27;layer&#x27;: i, &#x27;keys&#x27;: record(layer.keys[..., :-1, :]),
+                     &#x27;values&#x27;: record(layer.values[..., :-1, :])})
+    if len(rows) != 15:
+        raise ValueError(&#x27;All15 original physical KV entries required&#x27;)
+    return rows
+
+
+@contextmanager
+def value_operator(model, length, control, count, condition=None):
+    text = check_native(model)
+    if condition is not None and condition not in CONDITIONS:
+        raise ValueError(&#x27;Registered fixed value policy required&#x27;)
+    if not 0 &lt; control &lt; length-1:
+        raise ValueError(&#x27;Predetermined nonBOS/noncurrent control required&#x27;)
+    observations = []
+    selected = None if condition is None else (0 if condition == CONDITIONS[0] else control)
+    modules = [b.self_attn for b in text.layers]
+
+    def wrapper(module, query, key, value, attention_mask, dropout=0.0,
+                scaling=None, softcap=None, **kwargs):
+        index = len(observations)
+        if (index &gt;= 35 or module is not modules[index] or dropout != 0.0 or module.training
+                or query.shape[0] != 1 or query.shape[-2] != length
+                or value.shape[-2] != length or key.shape[-2] != length):
+            raise ValueError(&#x27;All35 ordered native full-prefill attention bindings required&#x27;)
+        count(&#x27;source_attention_observations&#x27; if selected is None else &#x27;edited_attention_callbacks&#x27;)
+        output, weights = NATIVE_EAGER(module, query, key, value, attention_mask,
+            dropout=dropout, scaling=scaling, softcap=softcap, **kwargs)
+        repeated = native_module.repeat_kv(value, module.num_key_value_groups)
+        if (output.shape != (1, length, query.shape[1], query.shape[-1])
+                or weights.shape != (1, query.shape[1], length, length)
+                or not torch.isfinite(weights).all() or not torch.isfinite(output).all()):
+            raise ValueError(&#x27;Actual native finite weights/head output shape required&#x27;)
+        observation = {&#x27;layer&#x27;: index, &#x27;layer_type&#x27;: module.layer_type,
+            &#x27;control_position&#x27;: control, &#x27;selected_position&#x27;: selected,
+            &#x27;weights&#x27;: record(weights), &#x27;repeated_value&#x27;: record(repeated),
+            &#x27;native_full_head_output&#x27;: record(output),
+            &#x27;BOS_mass_perhead&#x27;: weights[0, :, -1, 0].float().cpu().tolist(),
+            &#x27;control_mass_perhead&#x27;: weights[0, :, -1, control].float().cpu().tolist(),
+            &#x27;BOS_value&#x27;: record(repeated[:, :, 0, :]),
+            &#x27;control_value&#x27;: record(repeated[:, :, control, :]),
+            &#x27;BOS_value_RMS&#x27;: float(repeated[:, :, 0, :].float().square().mean().sqrt()),
+            &#x27;control_value_RMS&#x27;: float(repeated[:, :, control, :].float().square().mean().sqrt())}
+        if selected is not None:
+            count(&#x27;native_value_BMM_replay_attempts&#x27;)
+            replay = torch.matmul(weights, repeated).transpose(1, 2).contiguous()
+            if record(replay) != observation[&#x27;native_full_head_output&#x27;]:
+                raise ValueError(&#x27;Full-shape native value BMM replay differs; whole panel censored&#x27;)
+            old_value_sha = tensor_sha(value)
+            count(&#x27;scratch_V_clone_attempts&#x27;)
+            scratch = repeated.clone()
+            if scratch.untyped_storage().data_ptr() == repeated.untyped_storage().data_ptr():
+                raise ValueError(&#x27;Scratch V must not alias actual V/KV&#x27;)
+            count(&#x27;scratch_V_zero_assignments&#x27;)
+            scratch[:, :, selected, :] = 0
+            zero = scratch[:, :, selected, :]
+            count(&#x27;zero_assigned_elements&#x27;, zero.numel())
+            count(&#x27;zero_assigned_bytes&#x27;, zero.numel()*zero.element_size())
+            if torch.count_nonzero(zero):
+                raise ValueError(&#x27;Literal selected scratch V row zero required&#x27;)
+            if (tensor_sha(scratch[:, :, :selected, :]) != tensor_sha(repeated[:, :, :selected, :])
+                    or tensor_sha(scratch[:, :, selected+1:, :]) != tensor_sha(repeated[:, :, selected+1:, :])):
+                raise ValueError(&#x27;Unselected scratch value rows changed&#x27;)
+            count(&#x27;edited_value_BMM_attempts&#x27;)
+            edited = torch.matmul(weights, scratch).transpose(1, 2).contiguous()
+            assigned = output.clone()
+            count(&#x27;current_head_output_assignments&#x27;)
+            assigned[:, -1, :, :] = edited[:, -1, :, :]
+            count(&#x27;current_output_assigned_elements&#x27;, assigned[:, -1].numel())
+            count(&#x27;current_output_assigned_bytes&#x27;, assigned[:, -1].numel()*assigned.element_size())
+            if (tensor_sha(assigned[:, :-1]) != tensor_sha(output[:, :-1])
+                    or tensor_sha(value) != old_value_sha):
+                raise ValueError(&#x27;Noncurrent head outputs or actual native V changed&#x27;)
+            observation.update({&#x27;native_replay_exact&#x27;: True, &#x27;actual_value_unchanged&#x27;: True,
+                &#x27;unselected_scratch_rows_exact&#x27;: True, &#x27;noncurrent_head_outputs_exact&#x27;: True,
+                &#x27;scratch_selected_zero&#x27;: record(zero),
+                &#x27;assigned_full_head_output&#x27;: record(assigned),
+                &#x27;assigned_current_head_output&#x27;: record(assigned[:, -1])})
+            output = assigned
+        observations.append(observation)
+        return output, weights
+
+    count(&#x27;global_function_reference_assignments&#x27;)
+    native_module.eager_attention_forward = wrapper
+    try:
+        yield observations
+        if len(observations) != 35:
+            raise ValueError(&#x27;Exactly35 actual native attention calls required&#x27;)
+    finally:
+        count(&#x27;global_function_reference_assignments&#x27;)
+        native_module.eager_attention_forward = NATIVE_EAGER
+        check_native(model)
+
+
+def order(row_index):
+    k = (row_index//2) % 2
+    return list(CONDITIONS[k:]+CONDITIONS[:k])
+
+
+def one_case(model, encoded, answers, parent, row_index, count):
+    check_native(model)
+    initial = snapshot(model)
+    ids = encoded[&#x27;input_ids&#x27;]
+    if ids.ndim != 2 or ids.shape[0] != 1 or int(ids[0, 0]) != 2:
+        raise ValueError(&#x27;Actual first token must be native BOS2&#x27;)
+    length = ids.shape[1]
+    control = control_position(length, row_index)
+    count(&#x27;native_sourceguards&#x27;)
+    with value_operator(model, length, control, count) as source_observations:
+        source, cache = forward_record(model, ids, DynamicCache(config=model.config.text_config), answers)
+    source_check(source, parent)
+    source_prefix = noncurrent_cache_prefix(cache)
+    cells, restorations = {}, {}
+    for condition in order(row_index):
+        count(&#x27;new_first_argmax_observations&#x27;)
+        with value_operator(model, length, control, count, condition) as observations:
+            current, edited_cache = forward_record(model, ids,
+                DynamicCache(config=model.config.text_config), answers)
+        edited_prefix = noncurrent_cache_prefix(edited_cache)
+        if edited_prefix != source_prefix:
+            raise ValueError(&#x27;Actual noncurrent native KV prefix changed&#x27;)
+        cells[condition] = {&#x27;prefill&#x27;: current, &#x27;attention_observations&#x27;: observations,
+            &#x27;noncurrent_KV_prefix&#x27;: edited_prefix, &#x27;noncurrent_prefix_exact_native&#x27;: True,
+            &#x27;whole_KV_equal_native&#x27;: current[&#x27;cache&#x27;] == source[&#x27;cache&#x27;],
+            &#x27;full_FP32_equal_native&#x27;: current[&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;] == source[&#x27;decision&#x27;][&#x27;full_logits_sha256&#x27;]}
+        count(&#x27;native_restoration_forwards&#x27;)
+        restored, restored_cache = forward_record(model, ids,
+            DynamicCache(config=model.config.text_config), answers)
+        source_check(restored, parent)
+        actual_state = snapshot(model)
+        if (restored != source or noncurrent_cache_prefix(restored_cache) != source_prefix
+                or actual_state != initial):
+            raise ValueError(&#x27;Actual native first/state restoration failed&#x27;)
+        restorations[condition] = {&#x27;native&#x27;: restored, &#x27;actual_state&#x27;: actual_state,
+                                   &#x27;function_reference&#x27;: function_witness(model)}
+    return {&#x27;parent_binding&#x27;: parent[&#x27;binding&#x27;], &#x27;carried_native&#x27;: parent[&#x27;original&#x27;],
+        &#x27;native_source&#x27;: source, &#x27;native_attention_observations&#x27;: source_observations,
+        &#x27;native_noncurrent_KV_prefix&#x27;: source_prefix, &#x27;control_position&#x27;: control,
+        &#x27;cells&#x27;: cells, &#x27;native_restorations&#x27;: restorations, &#x27;condition_order&#x27;: order(row_index),
+        &#x27;native_function_reference&#x27;: function_witness(model),
+        &#x27;response_continuation_tokens&#x27;: 0, &#x27;own_choice_tokens_consumed&#x27;: 0,
+        &#x27;base_parameter_assignments&#x27;: 0, &#x27;base_buffer_assignments&#x27;: 0,
+        &#x27;backward_calls&#x27;: 0, &#x27;optimizer_steps&#x27;: 0}
 </pre></details></article><article class="card tool" data-category="Edit connections"><span class="tag">Edit connections</span><h2>generation</h2><p>Own-history generation with a fixed native intermediate-state readout branch. The complete pretrained panel passes its frozen engineering audit but fails target utility: coding 55/64 native, 52/64 subtractive and 54/64 additive; retention 17/32, 15/32 and 17/32. The fixed block14 state connects to the existing head through native final RMS with unit subtraction or addition. Native-head replay is exact before each accepted branch, with native-support-constrained choices. No learned lens, bridge or strength, exact DoLa reproduction or useful coding gain. Addition remains the control. The original source is preserved unchanged.</p><p><a href="../research/experiments/n57/generation.py">Exact source file</a></p><p class="small">APIs: cache_record, native_parts, observe_native_states, project, constrained_scores, readout, generate</p><p class="hash">SHA-256 3d7283d347d4d4d913c7d27460b3af4f394f4568f8aad28240e0151acb04cf58</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Own-history generation with a fixed native intermediate-state readout branch.&quot;&quot;&quot;
 from contextlib import contextmanager
 import math
@@ -4700,6 +4903,186 @@ def compare(original, changed, original_grade, changed_grade):
         &#x27;control_delta&#x27;: {key: changed[&#x27;control_nodes&#x27;][key] - original[&#x27;control_nodes&#x27;][key]
                           for key in CONTROL_NODES},
     }
+</pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>generation</h2><p>Fresh own-history native generation with the fixed N60 value connection. Prospective fresh complete-program confirmation of the exact fixed N60 operator, with native and one-nonBOS-position controls. All 288 response records are new, including native programs; no response or decision carries and no forced future tokens. Cached choices follow their own prior emitted tokens. Native sliding-key eviction makes an unavailable fixed key inactive, without reinsertion or position substitution. Every edited call requires exact full-shape native value-BMM replay before scratch V deletion and current-row assignment. Compact lossless traces bind all 35 callbacks and retained own-cache prefixes. Full native first-decision, cache, h, state and eager-reference restoration precedes durable commits. New random-model and literal gates pass; N61 pretrained outcomes and fresh confirmation remain unknown. No learned mask, vector or parameter update.</p><p><a href="../research/experiments/n61/generation.py">Exact source file</a></p><p class="small">APIs: native_check, function_witness, control_position, noncurrent_prefix, retained_after, ValueOperator, root_forward, native_first, generate</p><p class="hash">SHA-256 d7060f059973a1c5c3ef78fb37dbf4bfb3d1f834fa58884c118e15c42a97e7f2</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Fresh own-history native generation with the fixed N60 value connection.&quot;&quot;&quot;
+from contextlib import nullcontext
+import base64
+import hashlib
+import inspect
+import random
+
+import torch
+from transformers.cache_utils import DynamicCache
+from transformers.models.gemma4 import modeling_gemma4 as native_module
+from research.experiments.n19.trajectory import cache_witness
+from research.experiments.n35.core import tensor_sha,stable
+from research.experiments.n59.assay import cache_retained_prefix,validate_growth
+
+POLICIES=(&#x27;original&#x27;,&#x27;remove_BOS_value_link&#x27;,&#x27;remove_one_nonBOS_value_link&#x27;)
+NATIVE_EAGER=native_module.eager_attention_forward
+EAGER_SHA=&#x27;7f8506e7461c8fb3a702c2c83535c1cd8e4381ce029ccc8a29bc4e0a37fb293e&#x27;
+OPERATIONS=(&#x27;fresh_choices&#x27;,&#x27;native_fresh_choices&#x27;,&#x27;edited_fresh_choices&#x27;,&#x27;native_sourceguards&#x27;,&#x27;native_restoration_forwards&#x27;,
+ &#x27;edited_attention_callbacks&#x27;,&#x27;native_value_BMM_replay_attempts&#x27;,&#x27;edited_value_BMM_attempts&#x27;,&#x27;scratch_V_clone_attempts&#x27;,
+ &#x27;scratch_V_zero_assignments&#x27;,&#x27;selected_position_absent_callbacks&#x27;,&#x27;current_head_output_assignments&#x27;,
+ &#x27;zero_assigned_elements&#x27;,&#x27;zero_assigned_bytes&#x27;,&#x27;current_output_assigned_elements&#x27;,&#x27;current_output_assigned_bytes&#x27;,
+ &#x27;global_function_reference_assignments&#x27;,&#x27;cached_prefix_observations&#x27;)
+
+def native_check(model):
+    text=model.model.language_model
+    if (len(text.layers)!=35 or text.config.num_hidden_layers!=35 or text.config.num_kv_shared_layers!=20
+        or native_module.eager_attention_forward is not NATIVE_EAGER
+        or hashlib.sha256(inspect.getsource(NATIVE_EAGER).rstrip(&#x27;\n&#x27;).encode()).hexdigest()!=EAGER_SHA
+        or &#x27;eager&#x27;in native_module.ALL_ATTENTION_FUNCTIONS
+        or any(b.self_attn.config._attn_implementation!=&#x27;eager&#x27;for b in text.layers)):
+        raise ValueError(&#x27;Unchanged native35/unshadowed eager source reference required&#x27;)
+    return text
+
+def function_witness(model):
+    native_check(model)
+    return {&#x27;native_eager_source_sha256&#x27;:EAGER_SHA,&#x27;actual_global_is_original_reference&#x27;:True,&#x27;eager_registry_shadow_absent&#x27;:True}
+
+def control_position(length,row_index):
+    if type(length)is not int or length&lt;3 or type(row_index)is not int or row_index&lt;0:raise ValueError(&#x27;New exact case index/length&#x27;)
+    return random.Random(6001+row_index).choice(range(1,length-1))
+
+def noncurrent_prefix(cache):
+    if len(cache.layers)!=15:raise ValueError(&#x27;Original15 native physical KV entries&#x27;)
+    return [{&#x27;layer&#x27;:i,&#x27;keys&#x27;:tensor_sha(v.keys[...,:-1,:]),&#x27;values&#x27;:tensor_sha(v.values[...,:-1,:]),
+             &#x27;shape&#x27;:list(v.keys[...,:-1,:].shape),&#x27;dtype&#x27;:str(v.keys.dtype)}for i,v in enumerate(cache.layers)]
+
+def retained_after(cache,before):
+    growth=validate_growth(cache,before)
+    left=[];right=[];shapes=[]
+    for layer,old in zip(cache.layers,before,strict=True):
+        if old[&#x27;empty&#x27;]:raise ValueError(&#x27;All15 initialized own native KV entries required&#x27;)
+        n=old[&#x27;retained_positions&#x27;];shapes.append([old[&#x27;old_seen&#x27;],old[&#x27;old_stored&#x27;],n,growth[old[&#x27;layer&#x27;]][&#x27;new_stored&#x27;]])
+        for key in (&#x27;keys&#x27;,&#x27;values&#x27;):
+            a=None if n==0 else tensor_sha(getattr(layer,key)[...,:n,:])
+            b=None if n==0 else old[key][&#x27;sha256&#x27;]
+            if a!=b:raise ValueError(&#x27;Own retained native cache prefix changed&#x27;)
+            left.append(&#x27;0&#x27;*64 if b is None else b);right.append(&#x27;0&#x27;*64 if a is None else a)
+    pack=lambda xs:base64.b64encode(b&#x27;&#x27;.join(bytes.fromhex(x)for x in xs)).decode()
+    return {&#x27;before_KV_SHA256_base64&#x27;:pack(left),&#x27;after_KV_SHA256_base64&#x27;:pack(right),&#x27;shape_counts&#x27;:shapes,
+            &#x27;both_actual_compared_prefixes_exact&#x27;:True,&#x27;growth_exact&#x27;:True,&#x27;compared_hash_order&#x27;:&#x27;15physical_layers;keys,values;zero hash denotes empty retained prefix&#x27;}
+
+class ValueOperator:
+    def __init__(self,model,condition,control,count):
+        self.model=model;self.condition=condition;self.control=control;self.count=count
+        self.modules=[b.self_attn for b in native_check(model).layers]
+        if condition not in POLICIES[1:]:raise ValueError(&#x27;Exact fixed edited policy&#x27;)
+        self.frames=[];self.query_length=None;self.total=None;self.complete=True
+    def begin(self,query_length,total):
+        if not self.complete:raise ValueError(&#x27;Previous35 attention callbacks incomplete&#x27;)
+        self.frames=[];self.query_length=query_length;self.total=total;self.complete=False
+    def wrapper(self,module,query,key,value,attention_mask,dropout=0.0,scaling=None,softcap=None,**kwargs):
+        i=len(self.frames);q=self.query_length
+        if (i&gt;=35 or module is not self.modules[i] or module.training or dropout!=0.0
+            or query.shape[0]!=1 or query.shape[-2]!=q or key.shape[-2]!=value.shape[-2]
+            or self.total is None or value.shape[-2]&gt;self.total):raise ValueError(&#x27;Actual35 ordered same-call native attention bindings&#x27;)
+        self.count(&#x27;edited_attention_callbacks&#x27;)
+        output,weights=NATIVE_EAGER(module,query,key,value,attention_mask,dropout=dropout,scaling=scaling,softcap=softcap,**kwargs)
+        if (not torch.isfinite(output).all()or not torch.isfinite(weights).all()
+            or output.shape!=(1,q,query.shape[1],query.shape[-1])
+            or weights.shape!=(1,query.shape[1],q,value.shape[-2])):raise ValueError(&#x27;Actual finite native full-shape weights/output&#x27;)
+        repeated=native_module.repeat_kv(value,module.num_key_value_groups)
+        native_sha=tensor_sha(output);value_sha=tensor_sha(value);weights_sha=tensor_sha(weights)
+        self.count(&#x27;native_value_BMM_replay_attempts&#x27;)
+        replay=torch.matmul(weights,repeated).transpose(1,2).contiguous()
+        if replay.dtype!=output.dtype or replay.shape!=output.shape or tensor_sha(replay)!=native_sha:raise ValueError(&#x27;Native FULLSHAPE value BMM replay differs; whole panel censored&#x27;)
+        selected=0 if self.condition==POLICIES[1]else self.control
+        key_start=self.total-value.shape[-2];local=selected-key_start;available=0&lt;=local&lt;value.shape[-2]
+        self.count(&#x27;scratch_V_clone_attempts&#x27;);scratch=repeated.clone()
+        if scratch.untyped_storage().data_ptr()==repeated.untyped_storage().data_ptr():raise ValueError(&#x27;Scratch V must not alias actual KV&#x27;)
+        if available:
+            self.count(&#x27;scratch_V_zero_assignments&#x27;);scratch[:,:,local,:]=0
+            zero=scratch[:,:,local,:];self.count(&#x27;zero_assigned_elements&#x27;,zero.numel());self.count(&#x27;zero_assigned_bytes&#x27;,zero.numel()*zero.element_size())
+            if torch.count_nonzero(zero):raise ValueError(&#x27;Literal zero selected scratch value row&#x27;)
+            if tensor_sha(scratch[:,:,:local,:])!=tensor_sha(repeated[:,:,:local,:])or tensor_sha(scratch[:,:,local+1:,:])!=tensor_sha(repeated[:,:,local+1:,:]):raise ValueError(&#x27;Unselected scratch rows changed&#x27;)
+        else:
+            self.count(&#x27;selected_position_absent_callbacks&#x27;)
+            if tensor_sha(scratch)!=tensor_sha(repeated):raise ValueError(&#x27;Unavailable native key must not be replaced or reinserted&#x27;)
+        self.count(&#x27;edited_value_BMM_attempts&#x27;);edited=torch.matmul(weights,scratch).transpose(1,2).contiguous()
+        assigned=output.clone();self.count(&#x27;current_head_output_assignments&#x27;);assigned[:,-1,:,:]=edited[:,-1,:,:]
+        self.count(&#x27;current_output_assigned_elements&#x27;,assigned[:,-1].numel());self.count(&#x27;current_output_assigned_bytes&#x27;,assigned[:,-1].numel()*assigned.element_size())
+        if tensor_sha(assigned[:,:-1])!=tensor_sha(output[:,:-1])or tensor_sha(value)!=value_sha:raise ValueError(&#x27;Noncurrent headoutput or actual native V changed&#x27;)
+        self.frames.append({&#x27;layer&#x27;:i,&#x27;key_length&#x27;:value.shape[-2],&#x27;key_start&#x27;:key_start,&#x27;selected_absolute&#x27;:selected,
+          &#x27;local&#x27;:local if available else None,&#x27;available&#x27;:available,&#x27;query_length&#x27;:q,&#x27;heads&#x27;:query.shape[1],&#x27;head_dim&#x27;:query.shape[-1],
+          &#x27;dtype&#x27;:str(output.dtype),&#x27;hashes&#x27;:[weights_sha,value_sha,native_sha,tensor_sha(assigned[:,-1])],
+          &#x27;native_replay_exact&#x27;:True,&#x27;actual_V_unchanged&#x27;:True,&#x27;noncurrent_headoutput_exact&#x27;:True,&#x27;unselected_scratch_exact&#x27;:True})
+        return assigned,weights
+    def finish(self):
+        if len(self.frames)!=35:raise ValueError(&#x27;Exactly35 callback frames required&#x27;)
+        frames=self.frames;self.complete=True
+        packed=base64.b64encode(b&#x27;&#x27;.join(bytes.fromhex(h)for f in frames for h in f[&#x27;hashes&#x27;])).decode()
+        return {&#x27;hash_order&#x27;:&#x27;weights,unrepeated_V,native_full_head_equal_replay,assigned_current_head&#x27;,
+          &#x27;four_SHA256_per_layer_base64&#x27;:packed,&#x27;hash_bytes&#x27;:35*4*32,&#x27;frame_shapes&#x27;:[[f[k]for k in (&#x27;key_length&#x27;,&#x27;key_start&#x27;,&#x27;selected_absolute&#x27;,&#x27;local&#x27;,&#x27;available&#x27;,&#x27;query_length&#x27;,&#x27;heads&#x27;,&#x27;head_dim&#x27;)]for f in frames],
+          &#x27;dtype&#x27;:frames[0][&#x27;dtype&#x27;],&#x27;all35_native_fullshape_replays_exact&#x27;:True,&#x27;all35_actualV_unselected_scratch_noncurrent_exact&#x27;:True}
+    def __enter__(self):
+        self.count(&#x27;global_function_reference_assignments&#x27;);native_module.eager_attention_forward=self.wrapper;return self
+    def __exit__(self,*exc):
+        self.count(&#x27;global_function_reference_assignments&#x27;);native_module.eager_attention_forward=NATIVE_EAGER;native_check(self.model)
+
+def root_forward(model,ids,cache,first=False):
+    observed={};handle=None
+    if first:
+        def h(module,args):
+            if observed or len(args)!=1:raise ValueError(&#x27;One actual lastMLP h input&#x27;)
+            observed[&#x27;full_h_sha256&#x27;]=tensor_sha(args[0])
+        handle=model.model.language_model.layers[34].mlp.down_proj.register_forward_pre_hook(h)
+    try:
+        with torch.no_grad():output=model(input_ids=ids,past_key_values=cache,use_cache=True,logits_to_keep=1)
+    finally:
+        if handle is not None:handle.remove()
+    logits=output.logits[0,-1].detach()
+    if logits.ndim!=1 or logits.dtype!=next(model.parameters()).dtype or not torch.isfinite(logits).all():raise ValueError(&#x27;Actual finite full-vocabulary native-dtype logits&#x27;)
+    record={&#x27;argmax&#x27;:int(logits.argmax()),&#x27;full_FP32_logits_sha256&#x27;:tensor_sha(logits.float()),&#x27;raw_logits_dtype&#x27;:str(logits.dtype)}
+    if first:
+        record.update(observed,cache=cache_witness(output.past_key_values),noncurrent_prefix=noncurrent_prefix(output.past_key_values))
+        if &#x27;full_h_sha256&#x27;not in record:raise ValueError(&#x27;Actual fullh observation missing&#x27;)
+    return record,output.past_key_values
+
+def native_first(model,encoded):
+    native_check(model)
+    record,_=root_forward(model,encoded[&#x27;input_ids&#x27;],DynamicCache(config=model.config.text_config),True)
+    return record
+
+def generate(model,tokenizer,encoded,eos,condition,row_index,*,resource_guard,on_decision,count):
+    native_check(model)
+    ids=encoded[&#x27;input_ids&#x27;];n=ids.shape[-1];maximum=model.config.text_config.max_position_embeddings
+    if ids.shape!=(1,n)or n&lt;3 or int(ids[0,0])!=2 or condition not in POLICIES or not eos:raise ValueError(&#x27;New actual BOS prompt and fixed policy/EOS required&#x27;)
+    if any(p.requires_grad or p.grad is not None for p in model.parameters())or any(m.training for m in model.modules()):raise ValueError(&#x27;Frozen inference only&#x27;)
+    emitted=[];cache=DynamicCache(config=model.config.text_config);first=None;terminal=None;attempts=exposures=0
+    interruption=None;termination=&#x27;interrupted&#x27;;control=control_position(n,row_index);chain=&#x27;0&#x27;*64
+    operator=None if condition==&#x27;original&#x27;else ValueOperator(model,condition,control,count)
+    with operator if operator is not None else nullcontext():
+        while True:
+            interruption=resource_guard()
+            if interruption is not None:
+                if not isinstance(interruption,dict)or set(interruption)!={&#x27;reason&#x27;,&#x27;evidence&#x27;}:raise ValueError(&#x27;Actual resource interruption evidence&#x27;)
+                break
+            step=len(emitted);total=n+step
+            if total&gt;maximum:interruption={&#x27;reason&#x27;:&#x27;context_exhausted&#x27;,&#x27;evidence&#x27;:{&#x27;configured_context&#x27;:maximum,&#x27;next_required_input_length&#x27;:total}};break
+            current=ids if step==0 else torch.tensor([[emitted[-1]]],device=ids.device,dtype=torch.long)
+            before=None if step==0 else cache_retained_prefix(cache)
+            if operator is not None:operator.begin(current.shape[-1],total)
+            attempts+=1;exposures+=current.numel()
+            event,cache=root_forward(model,current,cache,step==0)
+            prefix=None if before is None else retained_after(cache,before)
+            if before is not None:count(&#x27;cached_prefix_observations&#x27;)
+            callbacks=None if operator is None else operator.finish()
+            if step==0:first=event
+            token=event[&#x27;argmax&#x27;];event={k:v for k,v in event.items()if k not in (&#x27;cache&#x27;,&#x27;noncurrent_prefix&#x27;,&#x27;full_h_sha256&#x27;)}
+            event.update(step=step,consumed_previous_token=None if step==0 else emitted[-1],actual_input_length=current.numel(),total_consumed_length=total,
+                         own_input_sha256=tensor_sha(current),callbacks=callbacks,retained_own_prefix=prefix,previous_event_sha256=chain)
+            chain=stable(event);event[&#x27;event_sha256&#x27;]=chain
+            emitted.append(token);count(&#x27;fresh_choices&#x27;);count(&#x27;native_fresh_choices&#x27;if condition==&#x27;original&#x27;else&#x27;edited_fresh_choices&#x27;);on_decision(event)
+            if token in eos:termination=&#x27;eos&#x27;;interruption=None;break
+        if emitted:terminal=cache_witness(cache)
+    native_check(model)
+    return {&#x27;condition&#x27;:condition,&#x27;generated_ids&#x27;:emitted,&#x27;text&#x27;:tokenizer.decode(emitted,skip_special_tokens=True),&#x27;generated_tokens&#x27;:len(emitted),
+      &#x27;fresh_choices&#x27;:len(emitted),&#x27;old_cell_carries&#x27;:0,&#x27;first_native_or_edited&#x27;:first,&#x27;terminal_cache&#x27;:terminal,&#x27;complete&#x27;:termination==&#x27;eos&#x27;,&#x27;termination&#x27;:termination,
+      &#x27;interruption&#x27;:interruption,&#x27;new_response_token_ceiling&#x27;:None,&#x27;configured_context&#x27;:maximum,&#x27;input_tokens&#x27;:n,&#x27;control_absolute_position&#x27;:control,
+      &#x27;attempted_forward_calls&#x27;:attempts,&#x27;input_token_exposures&#x27;:exposures,&#x27;own_choice_tokens_consumed&#x27;:max(0,len(emitted)-1),
+      &#x27;last_event_sha256&#x27;:chain,&#x27;per_token_whole_cache_authenticated&#x27;:False,&#x27;full_vocabulary_argmax&#x27;:True}
 </pre></details></article><article class="card tool" data-category="Generate and resume"><span class="tag">Generate and resume</span><h2>generation</h2><p>Own-history native-EOS generation with prescribed numerator-only masks. Random references pass, but N55 stops at its unchanged native RMS reconstruction guard before the whole pretrained panel completes. Every finite effect is censored. No scientific audit, utility grade or actual figure is produced. Full caches are observed at response boundaries, not independently authenticated at every fresh token. The failed source is preserved without recovery or rerun.</p><p><a href="../research/experiments/n55/generation.py">Exact source file</a></p><p class="small">APIs: cache_record, numerator_policy, generate</p><p class="hash">SHA-256 126c0cd50a086f84d0940be4cdfb37f4b9714051eea29c9a425acdd610610fcf</p><details><summary>Read the code</summary><pre>&quot;&quot;&quot;Own-history native-EOS generation with prescribed numerator-only masks.&quot;&quot;&quot;
 from contextlib import contextmanager
 import hashlib

@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-02T03:39:21.618761+00:00",
+  "before_launch_and_any_N61_pretrained_measurements": true,
+  "actual_files": 4273,
+  "parent_N60_actual_files": 4074,
+  "parent_N60_source_freeze_sha256": "83791c63514a72523f974015f37f599fb1c499dbbd85bfd5ab77d929c8013879",
+  "parent_N60_closed_raw_files": 56,
+  "parent_N60_result_receipt_sha256": "23008bcdbbcf8e2f39cb40dd813f255f5cc67f395ccad05986ce3e671b383060",
+  "protocol_sha256": "ef55cdbfd7466e54128d8ee934fcc745db5773c132cc49b9cbd1e390d767358f",
+  "analysis_plan_sha256": "94d7d8e7d1a0f18b2bdc63a1ac9476469ba95b564938b292bdcf77747312904f",
+  "auditor_sha256": "20f1f4149952bd0900e46690399ae5d36dfb957ae87bc41d6fb424027dab6b75",
+  "original_auditor_preserved_scientifically_uninvoked": true,
+  "notebook_sha256": "21795209d6ee84e05476ee06707b0aa6799ca9c7d7a9e801e227f6f5edc3d1b1",
+  "payload_sha256": "37b37cea3426ba85f5d2d57f592dadae02679a14f8bb87a372c5e7badcded3c1",
+  "current_transport_metadata_sha256": "0081015c17ed4a545a0417917248d3dcfb0cde7564c61263916355d899c8dea5",
+  "defaultprivate_dataset_verified": true
+}

@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-02T03:38:31.006892+00:00",
+  "before_any_N61_pretrained_measurements": true,
+  "reason": "New percent_ascii_decode prompt permits standard-library solutions, but inherited executor rejects all urllib imports including pure urllib.parse; detected by read-only source review, no candidate/result used.",
+  "originals_preserved": [
+    "evaluation/contract_execution_v2.py",
+    "research/experiments/n61/grading.py",
+    "research/experiments/n61/audit.py"
+  ],
+  "correction": "NEW executor copy allows only exact pure urllib.parse import forms (import urllib.parse; from urllib.parse import ...; from urllib import parse), preserving all other source, OS, IO, process, reflection, timeout, memory, equality, input mutation and fresh-list checks. No network urllib import permitted.",
+  "minimal_binding_changes": "grading_v2 exactly1module import substitution; audit_v2 exactly1grading import substitution. Original numerical engine/worker/inputs/payload/notebook/protocol/primary untouched; original auditor scientifically UNINVOKED.",
+  "new_gate": "3NEW pure-parser positive solutions with different new literal inputs,2NEW network-import refusals; exactly3bounded executors.0models/tokenizers/oldfixtures/realcandidategrades; no old8grading/37audit matrix repeated."
+}

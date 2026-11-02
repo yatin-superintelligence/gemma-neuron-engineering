@@ -1,0 +1,7 @@
+{
+  "registered_utc": "2026-11-02T02:04:16.856059+00:00",
+  "before_collector_implementation_or_dataset_upload_or_scientific_launch": true,
+  "terminal_requirements": "In addition to pinned private v1 notebook/source and private dataset metadata, require official datasets status ready and exactly one payload file with exact build payload byte size. Actual runtime notebook already checks downloaded payloadSHA and full source/input manifest. No payload reload/model/grade/fixture is added.",
+  "original_collector_single_use": true,
+  "source_private_shape_guards_not_weakened": true
+}

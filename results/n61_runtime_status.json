@@ -1,0 +1,29 @@
+{
+  "utc": "2026-11-02T04:16:01.227331+00:00",
+  "status": "yatinintelligence/digital-surgery-private-n61-bos-programs has status \"KernelWorkerStatus.RUNNING\"",
+  "source_checkpoint": "722c049d1dd66445f82fecf52342c39c2092d02c",
+  "private_GPU_server_notebook_JSON_exact": true,
+  "single_DEFAULTPRIVATE_READY_dataset_downloaded_payload_SHA_exact": true,
+  "one_and_only_one_new_own_job": true,
+  "all81_prior_own_project_jobs_terminal_metadata_unchanged": true,
+  "scope": "Prospective fresh complete-program confirmation. No N61 output, partial or live counter accessed; actual response counts and utility remain unknown.",
+  "planned_new_cases": 96,
+  "planned_new_coding_semantic_units": 32,
+  "planned_new_coding_functionname_binding_records": 64,
+  "planned_new_retention_cases": 32,
+  "planned_all_condition_response_records": 288,
+  "planned_all3_conditions": [
+    "original",
+    "remove_BOS_value_link",
+    "remove_one_nonBOS_value_link"
+  ],
+  "original_response_or_grade_carries": 0,
+  "old_cell_carries": 0,
+  "no_arbitrary_response_token_ceiling": true,
+  "expected_root_calls": "T+480",
+  "expected_input_exposures": "8*S+T-288; S=9752",
+  "expected_actual_edited_callbacks": "35*Tedit; availability, numel and bytes observed separately",
+  "host_pretrained_model_calls": 0,
+  "optimizer_steps": 0,
+  "not_fresh_confirmation_until_complete_audit_and_primary_PASS": true
+}

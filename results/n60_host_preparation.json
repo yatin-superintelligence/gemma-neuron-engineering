@@ -1,0 +1,27 @@
+{
+  "scope": "Closed new random-model and literal gates, not pretrained utility. All numerical assertions pass; process cleanup fails after the result write. Original seven numeric and five audit source bindings preserved; no numeric rerun.",
+  "post_result_cleanup_failure": {
+    "type": "AttributeError",
+    "error": "Counter has no close method; actual API is remove",
+    "after_successful_assertions_and_result_write": true,
+    "host_process_exit_code": 1,
+    "failure_and_first_sources_preserved": true,
+    "scientific_guards_weakened_or_gates_repeated": false
+  },
+  "status": "NEW_NUMERICAL_AUDITOR_PACKAGE_PRIVATE_PREPARATION_COMPLETE",
+  "numeric7source_bindings_exact": true,
+  "audit5source_bindings_exact": true,
+  "numeric_actual_random_fullstack_evaluations": 24,
+  "numeric_actual_input_exposures": 1256,
+  "numeric_gate_not_repeated_or_sources_edited": true,
+  "new_audit_record_positives": 2,
+  "new_audit_refusals": 50,
+  "new_synthetic_label_comparisons": 96,
+  "new_exact_package_sources": 34,
+  "new_exact_package_inputs": 9,
+  "new_exact_package_blocked_constructor_import_calls": 0,
+  "payload_bytes": 123943,
+  "notebook_bytes": 11658,
+  "defaultprivate_READY_single_payload_downloadSHA_exact": true,
+  "host_pretrained_models_or_oldgrades_or_fixtures": 0
+}

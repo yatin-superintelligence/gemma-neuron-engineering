@@ -1,0 +1,33 @@
+{
+  "registered_utc": "2026-11-02T01:39:02.057502+00:00",
+  "protocol_sha256": "d88e0ad03e51c77e44218c39984a1f70d3b863b41123f501b388cb8570e9d9ee",
+  "before_models_and_implementation": true,
+  "contexts": [
+    {
+      "seed": 6017,
+      "dtype": "torch.float32",
+      "length": 61,
+      "sliding_window": 96
+    },
+    {
+      "seed": 6017,
+      "dtype": "torch.bfloat16",
+      "length": 67,
+      "sliding_window": 96
+    },
+    {
+      "seed": 6023,
+      "dtype": "torch.float32",
+      "length": 29,
+      "sliding_window": 11
+    }
+  ],
+  "input": "firstID2;remaining arange(length-1)%57+3",
+  "production_roots_percontext": 5,
+  "independent_explicit_roots_percontext": 3,
+  "expected_total_randomroots": 24,
+  "expected_total_exposures": 1256,
+  "literal_head_zero_setups": 0,
+  "old_fixture_import_repeats": 0,
+  "required": "all35ordered bindings, fullnativeBMM replayexact, fullFP32+KV explicitreferences, noncurrentprefixexact, maskedBOSzero mass, fullbaseparameterbytes_versions_state andnativeglobalfunctionidentity restoration"
+}

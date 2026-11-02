@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-02T02:12:14.479006+00:00",
+  "before_launch_and_any_N60_pretrained_measurements": true,
+  "actual_files": 4074,
+  "parent_N59_actual_files": 3880,
+  "parent_N59_source_freeze_sha256": "dc7938ad9b5d631d1da046d9f38a3b6eece5e20186149ffa00029cd918147b54",
+  "parent_N59_closed_raw_files": 58,
+  "parent_N59_result_receipt_sha256": "ae10e65e29baf38879ecd41bfc6e02417e4de5534384c64bee0b4a125b81007b",
+  "protocol_sha256": "d88e0ad03e51c77e44218c39984a1f70d3b863b41123f501b388cb8570e9d9ee",
+  "analysis_plan_sha256": "5c78459f4d2849b6d6edac0b8030036cf2756b4be60d0d1635e299cc82cba28e",
+  "auditor_sha256": "ee239a20b15bf8538dc59b7e2b98d59f8629bcefdff1219da2b4ce9cd2a0be9f",
+  "notebook_sha256": "64f01a895fb492f1b35e8f166f4950c4807594114dc927e1b91086f0f30c58a3",
+  "payload_sha256": "264a0fb9b8969b9f690e6076b07106f7ad94aa2acbc2efd9fa4b13aeda30903b",
+  "current_transport_metadata_sha256": "676500a10e6b584cf88b2085869861fc4aedff1e4f365a7e87ff0e5003976795",
+  "defaultprivate_dataset_verified": true
+}

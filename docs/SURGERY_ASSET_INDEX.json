@@ -303,6 +303,21 @@
     },
     {
       "category": "Edit connections",
+      "path": "research/experiments/n60/assay.py",
+      "sha256": "2f42fb57fb581fca1e7e6f4f63cb1b9a46ee4a353d73c5a191974877fab7ed06",
+      "symbols": [
+        "record",
+        "check_native",
+        "function_witness",
+        "control_position",
+        "noncurrent_cache_prefix",
+        "value_operator",
+        "order",
+        "one_case"
+      ]
+    },
+    {
+      "category": "Edit connections",
       "path": "research/experiments/n57/generation.py",
       "sha256": "3d7283d347d4d4d913c7d27460b3af4f394f4568f8aad28240e0151acb04cf58",
       "symbols": [
@@ -468,6 +483,22 @@
         "observe",
         "saved_outcome",
         "compare"
+      ]
+    },
+    {
+      "category": "Generate and resume",
+      "path": "research/experiments/n61/generation.py",
+      "sha256": "d7060f059973a1c5c3ef78fb37dbf4bfb3d1f834fa58884c118e15c42a97e7f2",
+      "symbols": [
+        "native_check",
+        "function_witness",
+        "control_position",
+        "noncurrent_prefix",
+        "retained_after",
+        "ValueOperator",
+        "root_forward",
+        "native_first",
+        "generate"
       ]
     },
     {

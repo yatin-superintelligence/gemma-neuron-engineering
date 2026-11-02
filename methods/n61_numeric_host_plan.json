@@ -1,0 +1,41 @@
+{
+  "utc": "2026-11-02T03:23:12.221103+00:00",
+  "before_execution": true,
+  "protocol": "research/experiments/n61/protocol.json",
+  "contexts": [
+    [
+      6117,
+      "FP32",
+      71,
+      16
+    ],
+    [
+      6117,
+      "BF16",
+      73,
+      16
+    ],
+    [
+      6123,
+      "FP32",
+      37,
+      11
+    ]
+  ],
+  "max_context": "actual prompt length+3",
+  "literal_toyheadzero_setups": 1,
+  "EOS_main": [
+    1,
+    50,
+    63
+  ],
+  "EOS_literal": [
+    0
+  ],
+  "maximum_fullstack_evaluations": 69,
+  "actual_attempts_exposures_recorded": true,
+  "all3conditions_independent_ownhistory_cached35equations": true,
+  "actual_fullcache_every_host_step_observer": true,
+  "sourceguards_restores_bytes_versions_state_eagerreference": true,
+  "no_pretrained_or_oldfixtures": true
+}

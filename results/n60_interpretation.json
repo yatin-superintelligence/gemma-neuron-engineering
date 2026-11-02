@@ -1,0 +1,169 @@
+{
+  "utc": "2026-11-02T03:02:01.143745+00:00",
+  "status": "CLOSED_COMPLETE_AUDIT_PASS_FIXED_BOS_DEVELOPMENT_PRIMARY_PASS",
+  "aggregate_sha256": "f60cd21d5971c07c088de46d0b0b5fce472ca61d42d9e55ae86bea0c2ff2978c",
+  "all_conditions": {
+    "original": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 16,
+        "correct": 8,
+        "full_FP32_changes": 0,
+        "gains": 0,
+        "losses": 0,
+        "native_choice_preserved": 16,
+        "valid_A_B": 16,
+        "whole_KV_changes": 0
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 8,
+        "correct": 8,
+        "full_FP32_changes": 0,
+        "gains": 0,
+        "losses": 0,
+        "native_choice_preserved": 8,
+        "valid_A_B": 8,
+        "whole_KV_changes": 0
+      }
+    },
+    "remove_BOS_value_link": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 4.1875,
+          "mean": -2.210205078125,
+          "min": -15.21875
+        },
+        "contexts": 16,
+        "correct": 11,
+        "full_FP32_changes": 16,
+        "gains": 3,
+        "losses": 0,
+        "native_choice_preserved": 13,
+        "valid_A_B": 16,
+        "whole_KV_changes": 16
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 12.0625,
+          "mean": -1.21826171875,
+          "min": -14.625
+        },
+        "contexts": 8,
+        "correct": 8,
+        "full_FP32_changes": 8,
+        "gains": 0,
+        "losses": 0,
+        "native_choice_preserved": 8,
+        "valid_A_B": 8,
+        "whole_KV_changes": 8
+      }
+    },
+    "remove_one_nonBOS_value_link": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 0.6875,
+          "mean": 0.1015625,
+          "min": -0.34375
+        },
+        "contexts": 16,
+        "correct": 8,
+        "full_FP32_changes": 16,
+        "gains": 0,
+        "losses": 0,
+        "native_choice_preserved": 16,
+        "valid_A_B": 16,
+        "whole_KV_changes": 16
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 1.15625,
+          "mean": 0.26513671875,
+          "min": -0.25
+        },
+        "contexts": 8,
+        "correct": 8,
+        "full_FP32_changes": 8,
+        "gains": 0,
+        "losses": 0,
+        "native_choice_preserved": 8,
+        "valid_A_B": 8,
+        "whole_KV_changes": 8
+      }
+    }
+  },
+  "primary": {
+    "clauses": {
+      "beats_matched_position_control_by_at_least2": true,
+      "coding_gains_at_least2": true,
+      "gains_span_at_least2families": true,
+      "preserve_every_original_correct_coding": true,
+      "preserve_every_original_correct_retention": true
+    },
+    "gain_families": [
+      "nested_alias",
+      "short_circuit"
+    ],
+    "passed": true,
+    "posthoc_other_branch_winner_allowed": false,
+    "scope": "Reused development answer-choice screen, not full-program improvement/meaning/mediation/speed/freshconfirmation.",
+    "target": "remove_BOS_value_link"
+  },
+  "conclusion": "Fixed BOS current-query value deletion scores11/16coding versus8/16native and8/16one-position control, with3gains0losses and all8/8retention preserved. All5predeclared clauses pass. Every output remains validA/B. The target is fixed before outputs, not a posthoc winner.",
+  "gain_dependence": "Two nested_alias answer-order records and one short_circuit record gain. These are3context gains across2semantic families, not3independent semantic discoveries. All8coding and4retention families/bothorders remain; no family selected for followup.",
+  "scope": "Reused answer-choice development screen. No complete-program benefit, independent fresh confirmation, individual neuron meaning, selective coding role, mediation, speed, novelty, knowledge or personality gain established. Matched position count is not probability/energy/semantic matching. Native local weights stay unchanged within each call; later edited weights and current KV may differ. Noncurrent KV prefixes exact.",
+  "actual_counters": {
+    "backward_calls": 0,
+    "base_buffer_assignments": 0,
+    "base_parameter_assignments": 0,
+    "calls": 120,
+    "current_head_output_assignments": 1680,
+    "current_output_assigned_bytes": 8257536,
+    "current_output_assigned_elements": 4128768,
+    "edited_attention_callbacks": 1680,
+    "edited_value_BMM_attempts": 1680,
+    "extra_FFN_evaluations": 0,
+    "extra_PLE_evaluations": 0,
+    "extra_QK_evaluations": 0,
+    "extra_full_attention_evaluations": 0,
+    "extra_softmax_evaluations": 0,
+    "global_function_reference_assignments": 144,
+    "input_token_exposures": 11350,
+    "native_restoration_forwards": 48,
+    "native_sourceguards": 24,
+    "native_value_BMM_replay_attempts": 1680,
+    "new_first_argmax_observations": 48,
+    "old_candidate_regrading_calls": 0,
+    "optimizer_steps": 0,
+    "own_choice_tokens_consumed": 0,
+    "response_continuation_tokens": 0,
+    "scratch_V_clone_attempts": 1680,
+    "scratch_V_zero_assignments": 1680,
+    "source_attention_observations": 840,
+    "zero_assigned_bytes": 8257536,
+    "zero_assigned_elements": 4128768
+  },
+  "new_literal_label_comparisons": 48,
+  "old_native_reclassifications_model_tokenizer_executor_scorer_calls": 0,
+  "notebook_seconds": 220.852587697,
+  "duration_is_charged_quota": false,
+  "all4074_original_sources_and_all56raw_outputs_preserved": true,
+  "source_state_limit": "Actual state/hook/version/RNG/config/buffer/grad/source/cache observations, not independent allbaseparameter byte/caller authentication or clean-package replay.",
+  "next": "Activate the preregistered priority for NEW untouched-semantic complete-program confirmation of EXACT BOS operator and ALL3conditions. Register cases/oracles/resources/primary before new measurements. No head/layer/dose/source/cohort selection from these effects; the N57 deferred asset stays inactive.",
+  "actual_outcomes_public_at_closure": false,
+  "availability_note": "Actual outcomes were private at closure; this reviewed all-condition projection records their release. The closure-time publication flag remains historical."
+}

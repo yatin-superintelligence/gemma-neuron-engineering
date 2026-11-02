@@ -1,0 +1,15 @@
+{
+  "registered_utc": "2026-11-02T03:11:42.070749+00:00",
+  "protocol_sha256": "ef55cdbfd7466e54128d8ee934fcc745db5773c132cc49b9cbd1e390d767358f",
+  "all288complete_before_newgrades": true,
+  "conditions": [
+    "original",
+    "remove_BOS_value_link",
+    "remove_one_nonBOS_value_link"
+  ],
+  "target": "remove_BOS_value_link",
+  "primary_exact_protocol": true,
+  "all_source_state_trace_counter_guards": true,
+  "new_samecase_grade_memo_only": true,
+  "no_pvalues_winner_or_oldscoring": true
+}

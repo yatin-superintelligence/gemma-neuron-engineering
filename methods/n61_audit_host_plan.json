@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-02T03:30:39.461241+00:00",
+  "before_first_new_literal_execution": true,
+  "new_complete_record_positives": 3,
+  "new_targeted_refusals": 37,
+  "new_summary_layouts": 2,
+  "summary_assertions": 8,
+  "synthetic_grade_row_visits": 576,
+  "all_real_candidate_model_tokenizer_scorer_executor_oldfixture_calls": 0,
+  "first_failure_preserved_no_completed_gate_rerun": true
+}

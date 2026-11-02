@@ -583,12 +583,26 @@
       "outcome": "Original8/16code8/8ret; all3branch deletions0/16code0/8ret; PLE all6utilityFAIL.",
       "duration_scope": "Notebook seconds,not chargedGPUquota",
       "optimizer_steps": 0
+    },
+    {
+      "run": "N59_version1",
+      "recorded_script_seconds": 440.203315052,
+      "outcome": "All 24 joint silent identities pass. Both active copies produce zero valid A/B choices and score 0/16 coding and 0/8 retention. All five target utility clauses fail.",
+      "duration_scope": "Notebook seconds, not charged GPU quota",
+      "optimizer_steps": 0
+    },
+    {
+      "run": "N60_version1",
+      "recorded_script_seconds": 220.852587697,
+      "outcome": "All five fixed-target development clauses pass. BOS deletion scores 11/16 coding versus 8/16 for native and control, with three gains, no losses and retention preserved at 8/8. Answer-order variants are dependent; complete-program confirmation is still pending.",
+      "duration_scope": "Notebook seconds,notchargedGPUquota",
+      "optimizer_steps": 0
     }
   ],
   "active_runs": [
     {
-      "run": "N59",
-      "launched_utc": "2026-11-02T00:54:40.910194+00:00",
+      "run": "N61",
+      "launched_utc": "2026-11-02T03:42:40.605672+00:00",
       "status": "private_version1_running"
     }
   ]

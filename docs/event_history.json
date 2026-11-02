@@ -5232,6 +5232,104 @@
       "event": "N59 private version1 launches as second additional U27; one new own job, exact private server source and private READYpayload, no output access",
       "experiment": "N59",
       "optimizer_steps": 0
+    },
+    {
+      "sequence": 723,
+      "utc": "2026-11-02T01:46:24.680446+00:00",
+      "event": "N58 actual all-condition release and N59 prospective methods verified public;708remote blobs exact, clean checkout",
+      "experiment": "PUBLIC",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 724,
+      "utc": "2026-11-02T01:46:24.680446+00:00",
+      "event": "Complete single collector and frozen audit PASS; all24joint silent identities PASS but target all5utilityFAIL; both active copies0validA/B",
+      "experiment": "N59",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 725,
+      "utc": "2026-11-02T01:46:24.680446+00:00",
+      "event": "Distinct fixed BOS current-query value connection protocol registered before implementation and measurements; no launch",
+      "experiment": "N60",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 726,
+      "utc": "2026-11-02T01:46:24.680446+00:00",
+      "event": "New independent numerical gate completes24randomfullstack evaluations1256exposures; post-result cleanup exception preserved without rerun",
+      "experiment": "N60",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 727,
+      "utc": "2026-11-02T01:46:24.680446+00:00",
+      "event": "New literal audit positives and50targeted refusals pass;96syntheticlabels, zero real/model/tokenizer/scorer/executor/oldfixture calls",
+      "experiment": "N60",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 728,
+      "utc": "2026-11-02T02:21:52.371740+00:00",
+      "event": "N60 exact34source9input package import passes with constructors blocked; private READY payload downloadSHA exact",
+      "experiment": "N60",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 729,
+      "utc": "2026-11-02T02:21:52.371740+00:00",
+      "event": "N60 all4074actual scientific/input/parent files frozen, including3880N59parents and58closed raw outputs",
+      "experiment": "N60",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 730,
+      "utc": "2026-11-02T02:21:52.371740+00:00",
+      "event": "N60 private version1 launches as third additional U27; one new job, exact private GPU server and no output access",
+      "experiment": "N60",
+      "optimizer_steps": 0
+    },
+    {
+      "sequence": 731,
+      "utc": "2026-11-02T03:41:17.899342+00:00",
+      "event": "complete_single_audit_development_primary_PASS",
+      "experiment": "N60"
+    },
+    {
+      "sequence": 732,
+      "utc": "2026-11-02T03:41:17.899342+00:00",
+      "event": "fresh_complete_program_protocol_registered",
+      "experiment": "N61"
+    },
+    {
+      "sequence": 733,
+      "utc": "2026-11-02T03:41:17.899342+00:00",
+      "event": "new_fresh_asset_and_numeric_audit_gates_closed",
+      "experiment": "N61"
+    },
+    {
+      "sequence": 734,
+      "utc": "2026-11-02T03:41:17.899342+00:00",
+      "event": "premeasurement_pure_parse_grading_correction_closed",
+      "experiment": "N61"
+    },
+    {
+      "sequence": 735,
+      "utc": "2026-11-02T03:45:10.232157+00:00",
+      "event": "single_private_version1_launch",
+      "experiment": "N61"
+    },
+    {
+      "sequence": 736,
+      "utc": "2026-11-02T03:45:10.232157+00:00",
+      "event": "exact_private_server_and_dataset_one_job_verified",
+      "experiment": "N61"
+    },
+    {
+      "sequence": 737,
+      "utc": "2026-11-02T03:45:10.232157+00:00",
+      "event": "actual_launch_status_running_no_outputs_accessed",
+      "experiment": "N61"
     }
   ]
 }

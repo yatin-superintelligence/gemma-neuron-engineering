@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-11-02T01:39:02.057502+00:00",
+  "protocol_sha256": "d88e0ad03e51c77e44218c39984a1f70d3b863b41123f501b388cb8570e9d9ee",
+  "before_implementation": true,
+  "conditions": [
+    "remove_BOS_value_link",
+    "remove_one_nonBOS_value_link"
+  ],
+  "whole24contexts48decisions_before_any_new_literal_comparison": true,
+  "finite_invalid_choices_accepted_wrong": true,
+  "primary_exact_protocol": true,
+  "original_group_scores_carry_only": true,
+  "all_source_state_prefix_replay_counter_guards_required": true,
+  "no_pvalues_winner_or_oldscoring": true,
+  "raw_private_public_aggregate_only": true
+}

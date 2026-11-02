@@ -1,0 +1,215 @@
+{
+  "utc": "2026-11-02T01:22:32.256270+00:00",
+  "status": "CLOSED_COMPLETE_AUDIT_PASS_SILENT_ALL24_PASS_TARGET_ALL5_UTILITY_FAIL",
+  "aggregate_sha256": "9c0759bb010e777b8f415b28ae582a811abcdb0078b65f93b94936a9a0ed3df4",
+  "all_conditions": {
+    "new_native_KV_producer": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 14.3125,
+          "mean": 7.13671875,
+          "min": 1.84375
+        },
+        "contexts": 16,
+        "correct": 0,
+        "full_FP32_changes": 16,
+        "gains": 0,
+        "losses": 8,
+        "native_choice_preserved": 0,
+        "valid_A_B": 0
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 45.59375,
+          "mean": 15.97802734375,
+          "min": -18.53125
+        },
+        "contexts": 8,
+        "correct": 0,
+        "full_FP32_changes": 8,
+        "gains": 0,
+        "losses": 8,
+        "native_choice_preserved": 0,
+        "valid_A_B": 0
+      }
+    },
+    "original": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 16,
+        "correct": 8,
+        "full_FP32_changes": 0,
+        "gains": 0,
+        "losses": 0,
+        "native_choice_preserved": 16,
+        "valid_A_B": 16
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 8,
+        "correct": 8,
+        "full_FP32_changes": 0,
+        "gains": 0,
+        "losses": 0,
+        "native_choice_preserved": 8,
+        "valid_A_B": 8
+      }
+    },
+    "shared_native_KV_control": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 10.5625,
+          "mean": 1.611328125,
+          "min": -6.3125
+        },
+        "contexts": 16,
+        "correct": 0,
+        "full_FP32_changes": 16,
+        "gains": 0,
+        "losses": 8,
+        "native_choice_preserved": 0,
+        "valid_A_B": 0
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 44.875,
+          "mean": 10.802734375,
+          "min": -19.59375
+        },
+        "contexts": 8,
+        "correct": 0,
+        "full_FP32_changes": 8,
+        "gains": 0,
+        "losses": 8,
+        "native_choice_preserved": 0,
+        "valid_A_B": 0
+      }
+    },
+    "silent_new_native_KV_producer": {
+      "coding": {
+        "A_minus_B_delta": {
+          "count": 16,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 16,
+        "correct": 8,
+        "full_FP32_changes": 0,
+        "gains": 0,
+        "losses": 0,
+        "native_choice_preserved": 16,
+        "valid_A_B": 16
+      },
+      "retention": {
+        "A_minus_B_delta": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0
+        },
+        "contexts": 8,
+        "correct": 8,
+        "full_FP32_changes": 0,
+        "gains": 0,
+        "losses": 0,
+        "native_choice_preserved": 8,
+        "valid_A_B": 8
+      }
+    }
+  },
+  "primary": {
+    "clauses": {
+      "beats_shared_KV_control_by_at_least2": false,
+      "coding_gains_at_least2": false,
+      "gains_span_at_least2families": false,
+      "preserve_every_original_correct_coding": false,
+      "preserve_every_original_correct_retention": false
+    },
+    "gain_families": [],
+    "passed": false,
+    "posthoc_control_winner_allowed": false,
+    "scope": "Reused complete-graph answer-choice screen and bounded ungraded cache diagnostic, not full-program improvement/meaning/mediation/speed/freshconfirmation/stock serialization.",
+    "silent_identity_cases": 24,
+    "silent_identity_required_cases": 24,
+    "silent_joint_pass": true,
+    "target": "new_native_KV_producer",
+    "utility_all5_pass": false
+  },
+  "conclusion": "The actual registered36-layer custom native graph and compact16-slot own-choice cache lifecycle pass the frozen audit. Silent new-producer fullFP32/argmax/original35basehidden/projected15KV identity passes every24prefill+cached context. Both active new-producer and shared-KV copies yield0validA/B and0correct in all24contexts,0gains8codinglosses8retentionlosses each. Every one of the5fixed target utility clauses fails. Silentidentity is a function-preserving control, not improvement.",
+  "scope": "Reused answer-choice screen, not complete-program semantic accuracy, individual meaning, freshconfirmation, mediation, speed, novelty or stockHF checkpoint/defaultgenerate serialization. Known copying/Net2Netprior. Original15KV/projected comparisons do not identify added16thslot with an absent native entry.",
+  "actual_counters": {
+    "backward_calls": 0,
+    "base_buffer_assignments": 0,
+    "base_parameter_assignments": 0,
+    "block_copy_constructions": 6,
+    "cache_layer_appends": 72,
+    "cache_update_observer_reference_assignments": 72,
+    "cached_prefix_observations": 96,
+    "calls": 264,
+    "copied_attribute_assignments": 24,
+    "copied_buffer_bytes": 16,
+    "copied_buffer_elements": 8,
+    "copied_buffer_objects": 8,
+    "copied_parameter_bytes": 789157888,
+    "copied_parameter_elements": 394578944,
+    "copied_parameter_objects": 100,
+    "edited_cached_argmax_observations": 72,
+    "edited_first_argmax_observations": 72,
+    "extra_FFN_evaluations": 144,
+    "extra_PLE_evaluations": 144,
+    "extra_attention_evaluations": 144,
+    "extra_full_block_evaluations": 144,
+    "free_program_response_generations": 0,
+    "input_token_exposures": 15986,
+    "manual_copied_buffer_one_assignments": 2,
+    "manual_copied_parameter_zero_assignments": 6,
+    "native_cached_argmax_observations": 24,
+    "native_restoration_forwards": 72,
+    "native_sourceguards": 24,
+    "new_KV_update_attempts": 96,
+    "new_PLE_embedding_calls": 144,
+    "new_PLE_projection_calls": 144,
+    "new_text_config_value_assignments": 8,
+    "old_PLE_embedding_calls": 144,
+    "old_PLE_projection_calls": 144,
+    "old_candidate_regrading_calls": 0,
+    "optimizer_steps": 0,
+    "own_choice_tokens_consumed": 96,
+    "prepared_module_reference_bindings": 220,
+    "temporary_config_reference_assignments": 432,
+    "temporary_module_reference_assignments": 432,
+    "top_config_object_copies": 2
+  },
+  "new_choice_accounting": {
+    "new_prefill_first_decisions": 72,
+    "new_native_cached_argmax_observations": 24,
+    "new_edited_cached_argmax_observations": 72,
+    "own_actual_choice_tokens_consumed": 96,
+    "free_program_response_generations": 0,
+    "cached_probe_correctness_labels": 0,
+    "new_literal_prefill_label_comparisons": 72,
+    "old_native_reclassifications": 0
+  },
+  "source_state_limit": "Actual state/hook/version/RNG/config/buffer/grad/cache and source/copy witnesses, not independent allbaseparameterbytes/caller authentication or clean-package pretrained replay.",
+  "copied_state_accounting": "100actualcopiedParameterobjects/8buffers across2workers;789157888Parameterbytes+16bufferbytes global. Manual6copiedParameterzeros+2copiedbufferones;0BASEvalueassignments/backward/optimizer. Temporary module/config bindings and cache writes counted separately.",
+  "notebook_seconds": 440.203315052,
+  "duration_is_charged_quota": false,
+  "next": "Close this fixed complete-layer copying utility lead. Do not retune source/layer/strength/cohort, promote shared or silent controls, or force complete-program follow-up. Continue U27 by reviewing evidence for a genuinely distinct neuron/connection hypothesis before any new preregistration or launch. No automatic next experiment.",
+  "actual_outcomes_public_at_closure": false,
+  "availability_note": "Actual outcomes were private at closure; this reviewed all-condition projection records their release."
+}

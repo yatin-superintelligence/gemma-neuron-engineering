@@ -1,0 +1,81 @@
+{
+  "registered_utc": "2026-11-02T01:39:02.057502+00:00",
+  "experiment": "N60",
+  "question_id": "Q75",
+  "title": "Native BOS attention-value connection deletion with matched one-position control",
+  "question": "Does deleting the BOS value contribution to each current-query attention output improve bounded coding choices while preserving all originally correct coding and retention choices, compared with deleting one predetermined non-BOS value contribution?",
+  "motivation": "N59 complete copied graphs fail utility despite exact silent identity; that source/layer/strength lead is closed. Primary massive-activation/attention-bias literature motivates a distinct native value-connection question, not another copied block, whole-norm zero, selected layer/head, or N58 scope retune. Published priors establish possible attention bias and necessity risks, not Gemma4 coding benefit or novelty of value ablation.",
+  "prior_review": "research/attention_value_bias_feasibility_U27/intent.json",
+  "source_feasibility": "runs/attention_value_bias_feasibility_U27/source_review.json",
+  "cohort": "ALL24 original N48 contexts,16coding8retention/all12families/bothorders/exactprompts/tokenization/bindings. Reused development answer-choice screen, not complete programs or fresh confirmation.",
+  "conditions": [
+    "original",
+    "remove_BOS_value_link",
+    "remove_one_nonBOS_value_link"
+  ],
+  "fixed_target": "remove_BOS_value_link",
+  "control": "One predetermined non-BOS/non-current input position per case. random.Random(6001+row_index).choice(range(1,L-1)), fixed across all35layers/allqueryheads. Position cardinality matched, NOT probability/energy/semantic matched. No activation/performance selection or winning comparator.",
+  "operation": {
+    "scope": "ALL35native attention calls/allnative queryheads, ONLY current last query output. Native attention/decoder/FFN/PLE/norm computations still execute. BOS actual first token must be ID2. All24 length49..135, below native sliding window512.",
+    "implementation": "Transient scoped native module eager_attention_forward function reference wrapper; saved native eager called EXACTLYONCE. Native Attention.forward and eager interface selection remain unchanged. Native weights and full head output are actual same-call tensors. Reject any eager registry shadow, changed native source/function/class or nonzero dropout.",
+    "replay_guard": "One EXTRA full-shape value BMM with actual native weights and repeated native values, native transpose/contiguous. Require exact dtype/shape/fullSHA against actual full native head output BEFORE acceptance. No current-only GEMM geometry substitution. Any reconstruction refusal censors whole panel, no weakening.",
+    "value_deletion": "Clone repeated actual V into new nonaliasing scratch tensor; assign literal zero only selected key row across all heads. Actual KV tensors are never assigned. One EXTRA full-shape edited value BMM using the SAME actual weights. Clone actual native head output, assign ONLY last-query row from edited BMM; all noncurrent output rows must remain byteexact. Return original weights unchanged. No QK/softmax replay, model Parameter construction, learned vector, sign/gain/bridge or optimization.",
+    "causality": "All15physical cache entries must retain exact native noncurrent-position KV prefixes, excluding the current position; record both compared hashes/shapes/bytes and wholecache. Current K/V may differ through earlier edited current states. Local native weights reused within each call; later edited call weights may differ from original root. No whole-root attention-weight identity claim.",
+    "generation": "48new first-decision observations using actual full-vocabulary argmax. No continuation or cached own-token consumption. Finite invalidA/B is accepted as wrong, not censored."
+  },
+  "original_carries": "Exact original24choices and N50paired_order_swap role/family/order correctcounts crosscheckedN48 HOSTcarry. No old native reclassification or invented percase grade objects. Classify ONLY48NEW choices after whole-panel audit. gains=newcorrect withletterdiffold; losses=carriednativecorrect-newcorrect+gains.48literal comparisons, not48uniqueprogramgrades.",
+  "source_and_restoration": "24native sourceguards exactoldfullFP32/argmax/wholecache/fullh, with previously unsaved actual35perhead BOS/control masses/value hashes/nativehead-output hashes/noncurrentKVprefix witnesses. Do not repeat old105normpath observations. After EVERYeditedcondition restore actual eager function reference, then run fresh nativefirst fullFP32/argmax/wholecache/h and actualstate/hook/version/RNG/config/buffer/grad BEFOREdurablecommit. Actualinitial/final metadata required. Witness does not independently authenticate allbaseparameterbytes/caller or clean-package pretrained replay.",
+  "expected_work": {
+    "root_forwards": 120,
+    "input_token_exposures": 11350,
+    "sourceguards": 24,
+    "restoration_forwards": 48,
+    "new_first_decisions": 48,
+    "source_attention_observations": 840,
+    "edited_attention_callbacks": 1680,
+    "native_value_BMM_replays": 1680,
+    "edited_value_BMMs": 1680,
+    "EXTRA_value_BMMs_total": 3360,
+    "scratch_V_clones": 1680,
+    "scratch_V_zero_assignments": 1680,
+    "current_head_output_assignments": 1680,
+    "zero_assigned_BF16_elements": 4128768,
+    "zero_assigned_BF16_bytes": 8257536,
+    "scoped_global_function_reference_assignments": 144,
+    "extra_QK_softmax_fullattention_FFN_PLE": 0,
+    "base_parameter_buffer_VALUE_assignments": 0,
+    "backward_optimizer_calls": 0,
+    "response_continuation_tokens": 0,
+    "own_choice_tokens_consumed": 0
+  },
+  "counter_scope": "S2270;5*S exposures and5roots percase.35callbacks*48edits. Native28sliding*8*256 +7full*8*512=86016selected elements per edited root. Require actual attempts/callbacks/numel/exposures including failures; constants never replace observed work. Scoped source capture install+restore and two edit install+restores total6references percase.",
+  "primary": {
+    "target": "remove_BOS_value_link",
+    "all_conjunctive": [
+      "preserve EVERY original-correct coding case",
+      "preserve EVERY original-correct retention case",
+      "at least2coding gains",
+      "coding gains across at least2families",
+      "at least2more correct coding than remove_one_nonBOS_value_link"
+    ],
+    "no_posthoc_winner": true
+  },
+  "secondary": "All3conditions/roles/12families/bothorders/invalids/statuses/gains/losses/sourcevalidity/nativeperheadmasses/actualcounters. Mass observations descriptive, never select layer/head/position/dose. No pvalues, mediation, meaning, selective coding role, novelty, speed, fresh confirmation or general coding benefit claim.",
+  "conditional_next": "Only complete auditPASS and ALL5targetclausesPASS permits NEW prospectively registered complete-program followup of EXACT operator/ALLconditions with untouched semantic cases/oracles/resources before measurements. The N57 panel stays deferred. FAIL closes BOS-value lead, no head/layer/position/dose/cohort/control retune. Incomplete/refusal WHOLEcensored/no labels/finite effects/actualfigure/retry/recovery/weakening.",
+  "host_requirements": "NEWseed6017 FP32length61/BF16length67/slidingwindow96; NEWseed6023FP32length29/slidingwindow11 masked-BOS edge.35native graphs. Firstinput2, remaining arange%57+3. Independently explicit embedding/PLE/35decoder/RMS/head/QKV/softmax/valueBMM equations, fullFP32/cache/prefix/nativeeagerref/fulltoyparameterbytes_versions_state/restoration exact. Percontext production5roots+reference3roots; total24randomfullstack evaluations1256exposures.0literalheadzero/modeldownload/tokenizer/pretrained. NEWliteral auditor positives/refusals/source/state/counter/summary gates. ExactGPUclosure -B-Iblockedconstructor importONCE. OldUUIDparserASTcarry,0oldfixtures.",
+  "no_training": "Zero optimizer/SFT/LoRA/RL/fittedmask/rank/sign/gain/vector/bridge/alignment; no hiddenanswers/solutions/labels/grades/oracles uploaded. Direct scratch tensor literalzeros/currentoutput assignment only. No closed scientific cell/grade/collector/auditor/fixture/import rerun.",
+  "resources": {
+    "platform_seconds": 1800,
+    "notebook_seconds": 1700,
+    "worker_seconds": 1600,
+    "global_notebook_seconds": 1500,
+    "deadline_utc": "2026-11-02T10:30:50+00:00",
+    "deadline_margin_seconds": 120,
+    "scientific_raw_bytes_max": 67108864,
+    "reservation_GPU_hours": 1,
+    "reserve_GPU_hours": 2,
+    "hardware": "Two distinct physicalT4/fullBF16replicas/indexmod2/all2policies fixedrotation(row_index//2)%2/sequentialload/sharedtmpcache/barrier. Fresh officialquota andfullowninventory/privateexactv1server/singleREADYdefaultPRIVATEpayloadSHA gates beforelaunch. NEVER-u/--public."
+  },
+  "state": "REGISTERED_BEFORE_IMPLEMENTATION_UNLAUNCHED",
+  "edition": "Registered design predates measurements; original registration state preserved. Complete audited all-condition outcomes are reported separately."
+}
